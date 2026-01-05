@@ -209,14 +209,14 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="foldopen" id="foldopen00100" data-start="{" data-end="};">
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structmtk_1_1_midi_sync.html">  100</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmtk_1_1_midi_sync.html">MidiSync</a></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structmtk_1_1_m_i_d_i_sync_out.html">  100</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structmtk_1_1_m_i_d_i_sync_out.html">MIDISyncOut</a></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  halp_meta(name, <span class="stringliteral">&quot;Midi sync&quot;</span>)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  halp_meta(name, <span class="stringliteral">&quot;MIDI Sync Out&quot;</span>)</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  halp_meta(author, <span class="stringliteral">&quot;ossia team&quot;</span>)</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  halp_meta(c_name, <span class="stringliteral">&quot;avnd_helpers_midisync&quot;</span>)</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/midi-sync.html&quot;</span>)</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  halp_meta(uuid, <span class="stringliteral">&quot;aa7c1ae5-495e-436e-a079-e3f1a19861bb&quot;</span>)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  halp_meta(category, <span class="stringliteral">&quot;Midi&quot;</span>)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  halp_meta(category, <span class="stringliteral">&quot;Midi/Timing&quot;</span>)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  halp_flag(process_exec);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  ossia::exec_state_facade ossia_state;</div>
@@ -253,11 +253,11 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  } outputs;</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
 <div class="foldopen" id="foldopen00141" data-start="{" data-end="};">
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="unionmtk_1_1_midi_sync_1_1storage.html">  141</a></span>  <span class="keyword">union </span><a class="code hl_union" href="unionmtk_1_1_midi_sync_1_1storage.html">storage</a></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html">  141</a></span>  <span class="keyword">union </span><a class="code hl_union" href="unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html">storage</a></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  {</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    uint64_t u;</div>
 <div class="foldopen" id="foldopen00144" data-start="{" data-end="};">
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="structmtk_1_1_midi_sync_1_1storage_1_1impl.html">  144</a></span>    <span class="keyword">struct </span>alignas(uint64_t) <a class="code hl_struct" href="structmtk_1_1_midi_sync_1_1storage_1_1impl.html">impl</a></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="structmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl.html">  144</a></span>    <span class="keyword">struct </span>alignas(uint64_t) <a class="code hl_struct" href="structmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl.html">impl</a></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    {</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      <span class="keywordtype">float</span> tempo = 0.f;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      uint32_t has_clock : 1 = 0;</div>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      uint32_t f : 5 = 0;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    };</div>
 </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structmtk_1_1_midi_sync_1_1storage_1_1impl.html">impl</a>) == 8);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="structmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl.html">impl</a>) == 8);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  };</div>
 </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
@@ -420,7 +420,7 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="keywordflow">return</span> 30.;</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  }</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  MidiSync()</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  MIDISyncOut()</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  {</div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="comment">// Midi Clock handling</span></div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    clock_thread = std::thread{[<span class="keyword">this</span>] {</div>
@@ -560,7 +560,7 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    }};</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>  }</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span> </div>
-<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>  ~MidiSync()</div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>  ~MIDISyncOut()</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>  {</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>    clock_thread_running.store(<span class="keyword">false</span>, std::memory_order_release);</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>    mtc_thread_running.store(<span class="keyword">false</span>, std::memory_order_release);</div>
@@ -663,18 +663,154 @@ $(document).ready(function(){initNavTree('_m_i_d_i_sync_8hpp_source.html',''); i
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="comment">// FIXME midi out : mpmc for output</span></div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    <span class="comment">// Global MTC start / stop input has to be done in a device</span></div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    this-&gt;current_state.store(std::bit_cast&lt;uint64_t&gt;(state), std::memory_order_release);</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    this-&gt;current_song_pos.store(tk.start_position_in_quarters);</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>  }</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>};</div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    handle_audio_thread_output(tk, state);</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span> </div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    this-&gt;current_state.store(std::bit_cast&lt;uint64_t&gt;(state), std::memory_order_release);</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    this-&gt;current_song_pos.store(tk.start_position_in_quarters);</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>  }</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span> </div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  handle_audio_thread_output(<span class="keyword">const</span> halp::tick_flicks&amp; tk, <span class="keyword">const</span> storage::impl&amp; state)</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>  {</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> current_time = tk.start_in_flicks / 705&#39;600&#39;000.0;</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> frame_duration</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>        = std::abs(tk.end_in_flicks - tk.start_in_flicks) / 705&#39;600&#39;000.0;</div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span> </div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <span class="comment">// Handle transport start/stop/continue</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>    <span class="keywordflow">if</span>(tk.relative_position == 0 &amp;&amp; !main_state.transport_started)</div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    {</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>      <span class="keywordflow">if</span>(inputs.clock_startstop == MidiStartStopMode::Enabled)</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>      {</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>        <span class="comment">// Send Start message</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        outputs.midi.push_back({.bytes = {0xFA}, .timestamp = 0});</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>        main_state.transport_started = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>      }</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span> </div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>      <span class="comment">// Send initial Song Position</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>      <span class="keywordflow">if</span>(inputs.clock == MidiClockMode::Enabled)</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>      {</div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>        uint16_t pos = tk.start_position_in_quarters * 4; <span class="comment">// Convert to 16th notes</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>        <span class="keywordflow">if</span>(pos &lt; 16384)</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>        {</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>          outputs.midi.push_back(</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>              {.bytes = {0xF2, uint8_t(pos &amp; 0x7F), uint8_t((pos &gt;&gt; 7) &amp; 0x7F)},</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>               .timestamp = 0});</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>        }</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>      }</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    }</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    <span class="comment">// Generate MIDI Clock messages for this buffer</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="keywordflow">if</span>(inputs.clock == MidiClockMode::Enabled)</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    {</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> seconds_per_tick = 60.0 / (state.tempo * 24.0);</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>      <span class="comment">// Calculate how many clock ticks should occur in this buffer</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>      <span class="keywordtype">double</span> buffer_start_time = current_time;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>      <span class="keywordtype">double</span> buffer_end_time = current_time + frame_duration;</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>      <span class="comment">// Find the next clock tick time</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>      <span class="keywordtype">double</span> next_tick_time = main_state.last_clock_time + seconds_per_tick;</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>      <span class="keywordflow">while</span>(next_tick_time &lt; buffer_end_time)</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>      {</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>        <span class="keywordflow">if</span>(next_tick_time &gt;= buffer_start_time)</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>        {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>          <span class="comment">// Calculate sample offset within this buffer</span></div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>          int64_t sample_offset</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>              = ((next_tick_time - buffer_start_time) / frame_duration) * tk.frames;</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>          sample_offset = std::clamp&lt;int64_t&gt;(sample_offset, 0, tk.frames - 1);</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>          outputs.midi.push_back(</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>              {.bytes = {0xF8}, <span class="comment">// MIDI Clock</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>               .timestamp = sample_offset});</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span> </div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>          main_state.clock_tick_count++;</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        }</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span> </div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        main_state.last_clock_time = next_tick_time;</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        next_tick_time += seconds_per_tick;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>      }</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    }</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="comment">// Generate MTC Quarter Frame messages for this buffer</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    <span class="keywordflow">if</span>(inputs.mtc == MidiTimeCodeMode::Enabled)</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>    {</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>      <span class="keywordtype">double</span> fps = from_mtc_framerate(state.frame_rate);</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      <span class="keywordtype">double</span> seconds_per_quarter_frame = 1.0 / (fps * 4.0);</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>      <span class="keywordtype">double</span> next_qf_time</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>          = main_state.last_mtc_quarter_frame_time + seconds_per_quarter_frame;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>      <span class="keywordflow">while</span>(next_qf_time &lt; current_time + frame_duration)</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      {</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <span class="keywordflow">if</span>(next_qf_time &gt;= current_time)</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        {</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>          int64_t sample_offset</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>              = ((next_qf_time - current_time) / frame_duration) * tk.frames;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>          sample_offset = std::clamp&lt;int64_t&gt;(sample_offset, 0, tk.frames - 1);</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>          <span class="comment">// Generate the quarter frame message</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>          uint8_t qf_data = 0;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>          <span class="keywordflow">switch</span>(main_state.mtc_quarter_frame_index)</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>          {</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>              qf_data = 0x00 | (state.f &amp; 0x0F);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>              qf_data = 0x10 | ((state.f &gt;&gt; 4) &amp; 0x01);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>              qf_data = 0x20 | (state.s &amp; 0x0F);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>              qf_data = 0x30 | ((state.s &gt;&gt; 4) &amp; 0x03);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>              qf_data = 0x40 | (state.m &amp; 0x0F);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>            <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>              qf_data = 0x50 | ((state.m &gt;&gt; 4) &amp; 0x03);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>            <span class="keywordflow">case</span> 6:</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>              qf_data = 0x60 | (state.h &amp; 0x0F);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>            <span class="keywordflow">case</span> 7:</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>              qf_data = 0x70 | (state.frame_rate &lt;&lt; 1) | ((state.h &gt;&gt; 4) &amp; 0x01);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>              <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>          }</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>          outputs.midi.push_back({.bytes = {0xF1, qf_data}, .timestamp = sample_offset});</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>          main_state.mtc_quarter_frame_index</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>              = (main_state.mtc_quarter_frame_index + 1) % 8;</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>        }</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        main_state.last_mtc_quarter_frame_time = next_qf_time;</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        next_qf_time += seconds_per_quarter_frame;</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      }</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    }</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  }</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="foldopen" id="foldopen00676" data-start="{" data-end="};">
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno"><a class="line" href="structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html">  676</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html">MainThreadState</a></div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>  {</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>    <span class="keywordtype">double</span> last_clock_time = 0.0;</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <span class="keywordtype">double</span> last_mtc_quarter_frame_time = 0.0;</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    <span class="keywordtype">int</span> mtc_quarter_frame_index = 0;</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    uint32_t clock_tick_count = 0;</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    <span class="keywordtype">bool</span> transport_started = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  } main_state;</div>
 </div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>}</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>};</div>
+</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>}</div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
-<div class="ttc" id="astructmtk_1_1_midi_sync_1_1storage_1_1impl_html"><div class="ttname"><a href="structmtk_1_1_midi_sync_1_1storage_1_1impl.html">mtk::MidiSync::storage::impl</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:145</div></div>
-<div class="ttc" id="astructmtk_1_1_midi_sync_html"><div class="ttname"><a href="structmtk_1_1_midi_sync.html">mtk::MidiSync</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:101</div></div>
+<div class="ttc" id="astructmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state_html"><div class="ttname"><a href="structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html">mtk::MIDISyncOut::MainThreadState</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:677</div></div>
+<div class="ttc" id="astructmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl_html"><div class="ttname"><a href="structmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl.html">mtk::MIDISyncOut::storage::impl</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:145</div></div>
+<div class="ttc" id="astructmtk_1_1_m_i_d_i_sync_out_html"><div class="ttname"><a href="structmtk_1_1_m_i_d_i_sync_out.html">mtk::MIDISyncOut</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:101</div></div>
 <div class="ttc" id="astructmtk_1_1sleep__accurate_html"><div class="ttname"><a href="structmtk_1_1sleep__accurate.html">mtk::sleep_accurate</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:58</div></div>
 <div class="ttc" id="astructrange_html"><div class="ttname"><a href="structrange.html">range</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:126</div></div>
-<div class="ttc" id="aunionmtk_1_1_midi_sync_1_1storage_html"><div class="ttname"><a href="unionmtk_1_1_midi_sync_1_1storage.html">mtk::MidiSync::storage</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:142</div></div>
+<div class="ttc" id="aunionmtk_1_1_m_i_d_i_sync_out_1_1storage_html"><div class="ttname"><a href="unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html">mtk::MIDISyncOut::storage</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:142</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -1017,7 +1017,7 @@ var annotated_dup =
       [ "PanSliderWidget", "class_mixer_1_1_pan_slider_widget.html", null ]
     ] ],
     [ "mtk", null, [
-      [ "MidiSync", "structmtk_1_1_midi_sync.html", "structmtk_1_1_midi_sync" ],
+      [ "MIDISyncOut", "structmtk_1_1_m_i_d_i_sync_out.html", "structmtk_1_1_m_i_d_i_sync_out" ],
       [ "sleep_accurate", "structmtk_1_1sleep__accurate.html", null ]
     ] ],
     [ "Nodal", null, [

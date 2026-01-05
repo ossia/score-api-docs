@@ -359,7 +359,7 @@ var searchData=
   ['staticpropertycommand_3c_20jit_3a_3ajiteffectmodel_3a_3ap_5fscript_20_3e_356',['StaticPropertyCommand&lt; Jit::JitEffectModel::p_script &gt;',['../structscore_1_1_static_property_command_3_01_jit_1_1_jit_effect_model_1_1p__script_01_4.html',1,'score']]],
   ['staticpropertycommand_3c_20js_3a_3aprocessmodel_3a_3ap_5fprogram_20_3e_357',['StaticPropertyCommand&lt; JS::ProcessModel::p_program &gt;',['../structscore_1_1_static_property_command_3_01_j_s_1_1_process_model_1_1p__program_01_4.html',1,'score']]],
   ['stepcomponent_358',['StepComponent',['../class_execution_1_1_step_component.html',1,'Execution']]],
-  ['storage_359',['storage',['../unionmtk_1_1_midi_sync_1_1storage.html',1,'mtk::MidiSync']]],
+  ['storage_359',['storage',['../unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html',1,'mtk::MIDISyncOut']]],
   ['stream_360',['Stream',['../struct_gfx_1_1_video_1_1_video_props_1_1_stream.html',1,'Gfx::Video::VideoProps']]],
   ['streamoptions_361',['StreamOptions',['../struct_gfx_1_1_stream_options.html',1,'Gfx']]],
   ['streamview_362',['StreamView',['../struct_media_1_1_audio_file_1_1_stream_view.html',1,'Media::AudioFile']]],
