@@ -125,20 +125,20 @@ var NAVTREEINDEX =
 "class_scenario_1_1_drop_layer_in_scenario.html",
 "class_scenario_1_1_scenario_application_plugin.html#a294a7dcbba49620c6eb4cd367f0aa1ac",
 "class_state_1_1_address_fragment_line_edit.html",
-"classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6",
-"classscore_1_1_q_graphics_enum.html",
-"classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6",
-"dir_5038bc1edcdf17b3f8e650ca232aa5fb.html",
+"classscore_1_1_document_validator.html",
+"classscore_1_1_q_graphics_draggable_pixmap.html",
+"classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9",
+"dir_4fa41ce5a7bbd124c7da6a7050b81180.html",
 "functions.html",
-"score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html",
-"struct_dataflow_1_1minmax.html",
-"struct_j_s_o_n_reader_1_1assigner.html",
-"struct_process_1_1_float_spin_box.html",
-"struct_scenario_1_1_slot_path.html",
-"struct_widget_factory_1_1_button.html",
-"structscore_1_1_application_context.html#af021fe95f288b8657dad09af97e67fe5",
-"structscore_1_1_value_slider.html",
-"structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html"
+"score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html",
+"struct_dataflow_1_1control__visitor.html",
+"struct_j_s_1_1js__process.html",
+"struct_process_1_1_float_slider.html",
+"struct_scenario_1_1_slot_id.html",
+"struct_web_socket_handler.html",
+"structscore_1_1_application_context.html#ae40c943760793bab6015490e56a44d34",
+"structscore_1_1_value_double_slider.html",
+"structscore_1_1gfx_1_1_y_u_v420_decoder.html#af93a6c9791adf8b7ca10ba863250272b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

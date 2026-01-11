@@ -262,6 +262,11 @@ var hierarchy =
       [ "Scenario::EditScript< Pd::ProcessModel, Pd::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
         [ "Pd::EditPdPath", "class_pd_1_1_edit_pd_path.html", null ]
       ] ],
+      [ "Scenario::EditScript< YSFX::ProcessModel, YSFX::ProcessModel::p_script >", "class_scenario_1_1_edit_script.html", [
+        [ "YSFX::EditYSFXScript", "class_y_s_f_x_1_1_edit_y_s_f_x_script.html", [
+          [ "score::StaticPropertyCommand< YSFX::ProcessModel::p_script >", "structscore_1_1_static_property_command_3_01_y_s_f_x_1_1_process_model_1_1p__script_01_4.html", null ]
+        ] ]
+      ] ],
       [ "Automation::ChangeAddress", "class_automation_1_1_change_address.html", null ],
       [ "Automation::InitAutomation", "class_automation_1_1_init_automation.html", null ],
       [ "ControlSurface::AddControl", "class_control_surface_1_1_add_control.html", null ],
@@ -1127,8 +1132,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1176,8 +1181,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1374,7 +1379,8 @@ var hierarchy =
         [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ],
         [ "Process::EffectLayerFactory_Base", "class_process_1_1_effect_layer_factory___base.html", [
           [ "JS::LayerFactory", "struct_j_s_1_1_layer_factory.html", null ],
-          [ "Process::EffectLayerFactory_T< Model_T, ExtView_T, ScriptView_T >", "class_process_1_1_effect_layer_factory___t.html", null ]
+          [ "Process::EffectLayerFactory_T< Model_T, ExtView_T, ScriptView_T >", "class_process_1_1_effect_layer_factory___t.html", null ],
+          [ "YSFX::LayerFactory", "struct_y_s_f_x_1_1_layer_factory.html", null ]
         ] ],
         [ "Process::LayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, HeaderDelegate_T >", "class_process_1_1_layer_factory___t.html", null ],
         [ "Process::LayerFactory_T< Model_T, default_t, default_t, default_t >", "class_process_1_1_layer_factory___t_3_01_model___t_00_01default__t_00_01default__t_00_01default__t_01_4.html", null ],
@@ -2217,6 +2223,7 @@ var hierarchy =
     [ "Path< vst3::ControlInlet >", "class_path.html", null ],
     [ "Path< vst3::Model >", "class_path.html", null ],
     [ "Path< vst::ControlInlet >", "class_path.html", null ],
+    [ "Path< YSFX::ProcessModel >", "class_path.html", null ],
     [ "Scenario::PathDetectorState", "struct_scenario_1_1_path_detector_state.html", null ],
     [ "WidgetFactory::PathGeneratorXY", "struct_widget_factory_1_1_path_generator_x_y.html", null ],
     [ "score::PathInfo", "structscore_1_1_path_info.html", null ],

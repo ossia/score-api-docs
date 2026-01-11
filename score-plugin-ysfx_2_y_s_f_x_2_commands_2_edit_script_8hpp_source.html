@@ -116,26 +116,33 @@ $(document).ready(function(){initNavTree('score-plugin-ysfx_2_y_s_f_x_2_commands
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;YSFX/Commands/CommandFactory.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;YSFX/ProcessModel.hpp&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//  namespace YSFX</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//  {</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">//  class EditYSFXScript</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//      : public Scenario::EditScript&lt;YSFX::ProcessModel, YSFX::ProcessModel::p_script&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//  {</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//    SCORE_COMMAND_ DECL(CommandFactoryName(), EditYSFXScript, &quot;Edit a script&quot;)</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//  public:</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//    using EditScript::EditScript;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//  };</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//  }</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//  namespace score</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//  {</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//  template &lt;&gt;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//  struct StaticPropertyCommand&lt;YSFX::ProcessModel::p_script&gt; : YSFX::EditYSFXScript</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//  {</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//    using EditYSFXScript::EditYSFXScript;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//  };</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//  }</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>YSFX</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_y_s_f_x_1_1_edit_y_s_f_x_script.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_y_s_f_x_1_1_edit_y_s_f_x_script.html">EditYSFXScript</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    : <span class="keyword">public</span> <a class="code hl_class" href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a>&lt;YSFX::ProcessModel, YSFX::ProcessModel::p_script&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  SCORE_COMMAND_DECL(CommandFactoryName(), <a class="code hl_class" href="class_y_s_f_x_1_1_edit_y_s_f_x_script.html">EditYSFXScript</a>, <span class="stringliteral">&quot;Edit a script&quot;</span>)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">using </span>EditScript::EditScript;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structscore_1_1_static_property_command_3_01_y_s_f_x_1_1_process_model_1_1p__script_01_4.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_static_property_command.html">StaticPropertyCommand</a>&lt;YSFX::ProcessModel::p_script&gt; : <a class="code hl_class" href="class_y_s_f_x_1_1_edit_y_s_f_x_script.html">YSFX::EditYSFXScript</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">using </span>EditYSFXScript::EditYSFXScript;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="ttc" id="aclass_scenario_1_1_edit_script_html"><div class="ttname"><a href="class_scenario_1_1_edit_script.html">Scenario::EditScript</a></div><div class="ttdef"><b>Definition</b> ScriptEditCommand.hpp:16</div></div>
+<div class="ttc" id="aclass_y_s_f_x_1_1_edit_y_s_f_x_script_html"><div class="ttname"><a href="class_y_s_f_x_1_1_edit_y_s_f_x_script.html">YSFX::EditYSFXScript</a></div><div class="ttdef"><b>Definition</b> score-plugin-ysfx/YSFX/Commands/EditScript.hpp:11</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:106</div></div>
+<div class="ttc" id="astructscore_1_1_static_property_command_html"><div class="ttname"><a href="structscore_1_1_static_property_command.html">score::StaticPropertyCommand</a></div><div class="ttdef"><b>Definition</b> PropertyCommand.hpp:112</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
