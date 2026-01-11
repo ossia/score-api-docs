@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: MIDISpecificSettings.hpp Source File</title>
+        <title>score: TSerializer&lt; JSONObject, ossia::monostate &gt; Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -63,11 +63,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -81,7 +76,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('_m_i_d_i_specific_settings_8hpp_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1monostate_01_4.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -107,41 +102,26 @@ $(document).ready(function(){initNavTree('_m_i_d_i_specific_settings_8hpp_source
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">MIDISpecificSettings.hpp</div></div>
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1monostate_01_4-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">TSerializer&lt; JSONObject, ossia::monostate &gt; Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;libremidi/api.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;libremidi/observer_configuration.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>Protocols</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">MIDISpecificSettings</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  libremidi::port_information handle;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">enum class</span> IO</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    In,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Out</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  } io{};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">bool</span> virtualPort{};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">bool</span> createWholeTree{};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">bool</span> velocityZeroIsNoteOff{};</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
-</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>Q_DECLARE_METATYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>W_REGISTER_ARGTYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
-<div class="ttc" id="astruct_protocols_1_1_m_i_d_i_specific_settings_html"><div class="ttname"><a href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a></div><div class="ttdef"><b>Definition</b> MIDISpecificSettings.hpp:12</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a53e0d70f81372aab0852833651f09e0e" id="r_a53e0d70f81372aab0852833651f09e0e"><td class="memItemLeft" align="right" valign="top"><a id="a53e0d70f81372aab0852833651f09e0e" name="a53e0d70f81372aab0852833651f09e0e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>readFrom</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a> &amp;s, const ossia::monostate &amp;var)</td></tr>
+<tr class="separator:a53e0d70f81372aab0852833651f09e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1028991f481490e39ed114c4ce537d3c" id="r_a1028991f481490e39ed114c4ce537d3c"><td class="memItemLeft" align="right" valign="top"><a id="a1028991f481490e39ed114c4ce537d3c" name="a1028991f481490e39ed114c4ce537d3c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>writeTo</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a> &amp;s, ossia::monostate &amp;var)</td></tr>
+<tr class="separator:a1028991f481490e39ed114c4ce537d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="_boost_variant2_serialization_8hpp_source.html">BoostVariant2Serialization.hpp</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->
