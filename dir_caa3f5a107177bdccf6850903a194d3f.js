@@ -8,6 +8,7 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "Easetanbul.hpp", "_easetanbul_8hpp_source.html", null ],
     [ "Interpolator.hpp", "_interpolator_8hpp_source.html", null ],
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
+    [ "Queue.hpp", "_queue_8hpp_source.html", null ],
     [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
     [ "Sweeper.hpp", "_sweeper_8hpp_source.html", null ],
     [ "Teleplot.hpp", "_teleplot_8hpp_source.html", null ],

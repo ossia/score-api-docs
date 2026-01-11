@@ -78,6 +78,7 @@ var annotated_dup =
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", null ],
       [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", null ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", null ],
+      [ "Queue", "structavnd__tools_1_1_queue.html", null ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
       [ "Teleplot", "structavnd__tools_1_1_teleplot.html", "structavnd__tools_1_1_teleplot" ]
     ] ],
@@ -1038,7 +1039,8 @@ var annotated_dup =
     [ "Nodes", null, [
       [ "Arpeggiator", null, [
         [ "Arpeggios", "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html", "struct_nodes_1_1_arpeggiator_1_1_arpeggios" ],
-        [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ]
+        [ "Node", "struct_nodes_1_1_arpeggiator_1_1_node.html", null ],
+        [ "OctaveMode", "struct_nodes_1_1_arpeggiator_1_1_octave_mode.html", "struct_nodes_1_1_arpeggiator_1_1_octave_mode" ]
       ] ],
       [ "ArrayGenerator", null, [
         [ "Node", "struct_nodes_1_1_array_generator_1_1_node.html", "struct_nodes_1_1_array_generator_1_1_node" ]

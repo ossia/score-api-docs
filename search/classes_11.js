@@ -4,7 +4,7 @@ var searchData=
   ['ramview_1',['RAMView',['../struct_media_1_1_audio_file_1_1_r_a_m_view.html',1,'Media::AudioFile']]],
   ['random_5fid_5fgenerator_2',['random_id_generator',['../structscore_1_1random__id__generator.html',1,'score']]],
   ['randomnameprovider_3',['RandomNameProvider',['../class_random_name_provider.html',1,'']]],
-  ['range_4',['range',['../struct_nodes_1_1combobox__from__array_1_1range.html',1,'Nodes::combobox_from_array&lt; lit, array, init_idx &gt;::range'],['../structrange.html',1,'range'],['../struct_threedim_1_1_deformation_control_1_1range.html',1,'Threedim::DeformationControl::range'],['../struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html',1,'Nodes::Arpeggiator::Arpeggios::range']]],
+  ['range_4',['range',['../struct_nodes_1_1_arpeggiator_1_1_octave_mode_1_1range.html',1,'Nodes::Arpeggiator::OctaveMode::range'],['../struct_nodes_1_1combobox__from__array_1_1range.html',1,'Nodes::combobox_from_array&lt; lit, array, init_idx &gt;::range'],['../structrange.html',1,'range'],['../struct_threedim_1_1_deformation_control_1_1range.html',1,'Threedim::DeformationControl::range'],['../struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html',1,'Nodes::Arpeggiator::Arpeggios::range']]],
   ['range_5fposition_5',['range_position',['../struct_automation_1_1_recreate_on_play_1_1range__position.html',1,'Automation::RecreateOnPlay']]],
   ['rangecapability_6',['RangeCapability',['../struct_protocols_1_1_artnet_1_1_range_capability.html',1,'Protocols::Artnet']]],
   ['ratewidget_7',['RateWidget',['../class_protocols_1_1_rate_widget.html',1,'Protocols']]],

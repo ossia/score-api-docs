@@ -1,11 +1,12 @@
 var NAVTREEINDEX19 =
 {
+"functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -232,7 +233,7 @@ var NAVTREEINDEX19 =
 "score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,0,2,6,0,0,3],
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
-"score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,11],
+"score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,12],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
 "score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,0,2,10,0,7],
 "score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,0,2,10,0,8],
 "score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,0,2,11,0,6],
-"score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,2],
-"score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,12,0,10]
+"score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,2]
 };

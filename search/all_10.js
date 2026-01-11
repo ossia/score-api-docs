@@ -54,6 +54,7 @@ var searchData=
   ['qt_5fproperty_5fconverter_3c_3a_3atimeval_20_3e_51',['qt_property_converter&lt;::TimeVal &gt;',['../structossia_1_1qt__property__converter_3_1_1_time_val_01_4.html',1,'ossia']]],
   ['qtdiagnosticconsumer_52',['QtDiagnosticConsumer',['../class_qt_diagnostic_consumer.html',1,'']]],
   ['quantificationwidget_53',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
-  ['queues_54',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
-  ['quiet_55',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
+  ['queue_54',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
+  ['queues_55',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
+  ['quiet_56',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
 ];

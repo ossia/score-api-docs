@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,12,0,10],
 "score-plugin-deviceexplorer_2_explorer_2_application_plugin_8hpp_source.html":[13,0,0,2,13,0,8],
 "score-plugin-engine_2_engine_2_application_plugin_8hpp_source.html":[13,0,0,2,14,0,2],
 "score-plugin-faust_2_faust_2_effect_model_8hpp_source.html":[13,0,0,2,15,0,3],
@@ -217,18 +218,18 @@ var NAVTREEINDEX20 =
 "struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0],
 "struct_curve_1_1_element_1_1_point__tag.html":[12,0,10,0,1],
 "struct_curve_1_1_element_1_1_segment__tag.html":[12,0,10,0,2],
-"struct_curve_1_1_point_id.html":[11,0,1,28],
 "struct_curve_1_1_point_id.html":[12,0,10,30],
+"struct_curve_1_1_point_id.html":[11,0,1,28],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
 "struct_curve_1_1_segment_data.html":[12,0,10,37],
-"struct_curve_1_1_style.html":[11,0,1,47],
 "struct_curve_1_1_style.html":[12,0,10,49],
+"struct_curve_1_1_style.html":[11,0,1,47],
 "struct_curve_1_1_style_interface.html":[12,0,10,50],
 "struct_curve_1_1_style_interface.html":[11,0,1,48],
-"struct_curve_1_1_tool_palette___t.html":[11,0,1,50],
 "struct_curve_1_1_tool_palette___t.html":[12,0,10,52],
-"struct_curve_1_1point__array__executor.html":[12,0,10,29],
+"struct_curve_1_1_tool_palette___t.html":[11,0,1,50],
 "struct_curve_1_1point__array__executor.html":[11,0,1,27],
+"struct_curve_1_1point__array__executor.html":[12,0,10,29],
 "struct_data_stream_input.html":[12,0,97],
 "struct_data_stream_output.html":[12,0,98],
 "struct_dataflow_1_1_address_propagation_item.html":[12,0,11,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_dataflow_1_1_value_outlet_factory.html":[12,0,11,45],
 "struct_dataflow_1_1_widget_inlet_factory.html":[12,0,11,46],
 "struct_dataflow_1_1_widget_outlet_factory.html":[12,0,11,47],
-"struct_dataflow_1_1control__visitor.html":[12,0,11,18],
-"struct_dataflow_1_1minmax.html":[12,0,11,33]
+"struct_dataflow_1_1control__visitor.html":[12,0,11,18]
 };

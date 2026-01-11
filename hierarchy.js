@@ -2085,6 +2085,7 @@ var hierarchy =
       ] ],
       [ "score::QGraphicsWaveformButton", "classscore_1_1_q_graphics_waveform_button.html", null ]
     ] ],
+    [ "Nodes::Arpeggiator::OctaveMode", "struct_nodes_1_1_arpeggiator_1_1_octave_mode.html", null ],
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
     [ "LV2::on_start", "struct_l_v2_1_1on__start.html", null ],
     [ "OpaqueString", "class_opaque_string.html", [
@@ -2178,8 +2179,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3639,6 +3640,7 @@ var hierarchy =
       [ "Scenario::MessageTreeView", "class_scenario_1_1_message_tree_view.html", null ],
       [ "Scenario::ObjectWidget", "class_scenario_1_1_object_widget.html", null ]
     ] ],
+    [ "avnd_tools::Queue", "structavnd__tools_1_1_queue.html", null ],
     [ "Execution::Queues", "struct_execution_1_1_queues.html", null ],
     [ "RedoStrategy::Quiet", "struct_redo_strategy_1_1_quiet.html", null ],
     [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
@@ -3842,6 +3844,7 @@ var hierarchy =
     [ "score::random_id_generator", "structscore_1_1random__id__generator.html", null ],
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
     [ "Nodes::Arpeggiator::Arpeggios::range", "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html", null ],
+    [ "Nodes::Arpeggiator::OctaveMode::range", "struct_nodes_1_1_arpeggiator_1_1_octave_mode_1_1range.html", null ],
     [ "Nodes::combobox_from_array< lit, array, init_idx >::range", "struct_nodes_1_1combobox__from__array_1_1range.html", null ],
     [ "range", "structrange.html", null ],
     [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
