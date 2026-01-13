@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,0,2,10,0,7],
+"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,0,2,10,0,8],
+"score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,0,2,11,0,6],
 "score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,2],
 "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,12,0,10],
 "score-plugin-deviceexplorer_2_explorer_2_application_plugin_8hpp_source.html":[13,0,0,2,13,0,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX20 =
 "struct_dataflow_1_1_midi_outlet_factory.html":[12,0,11,32],
 "struct_dataflow_1_1_min_max_float_outlet_factory.html":[12,0,11,34],
 "struct_dataflow_1_1_saved_port.html":[12,0,11,42],
-"struct_dataflow_1_1_value_inlet_factory.html":[12,0,11,44],
-"struct_dataflow_1_1_value_outlet_factory.html":[12,0,11,45],
-"struct_dataflow_1_1_widget_inlet_factory.html":[12,0,11,46],
-"struct_dataflow_1_1_widget_outlet_factory.html":[12,0,11,47]
+"struct_dataflow_1_1_value_inlet_factory.html":[12,0,11,44]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"struct_scenario_1_1_slot.html":[11,0,11,244],
+"struct_scenario_1_1_slot.html":[12,0,54,246],
+"struct_scenario_1_1_slot_id.html":[11,0,11,248],
 "struct_scenario_1_1_slot_id.html":[12,0,54,250],
 "struct_scenario_1_1_slot_path.html":[11,0,11,250],
 "struct_scenario_1_1_slot_path.html":[12,0,54,252],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "struct_video_1_1_decoder_configuration.html":[12,0,64,1],
 "struct_video_1_1_frame_queue.html":[12,0,64,3],
 "struct_video_1_1_free_a_v_frame.html":[12,0,64,4],
-"struct_video_1_1_image_format.html":[12,0,64,5],
-"struct_video_1_1_lib_a_v_decoder.html":[12,0,64,6],
-"struct_video_1_1_read_frame.html":[12,0,64,7],
-"struct_video_1_1_video_interface.html":[12,0,64,10]
+"struct_video_1_1_image_format.html":[12,0,64,5]
 };

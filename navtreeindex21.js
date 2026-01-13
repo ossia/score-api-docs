@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"struct_dataflow_1_1_value_outlet_factory.html":[12,0,11,45],
+"struct_dataflow_1_1_widget_inlet_factory.html":[12,0,11,46],
+"struct_dataflow_1_1_widget_outlet_factory.html":[12,0,11,47],
 "struct_dataflow_1_1control__visitor.html":[12,0,11,18],
 "struct_dataflow_1_1minmax.html":[12,0,11,33],
 "struct_device_1_1_address_settings.html":[12,0,12,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "struct_j_s_1_1_qml_source_1_1_member_spec.html":[12,0,31,57,0],
 "struct_j_s_1_1_sample_timings.html":[12,0,31,58],
 "struct_j_s_1_1_token_request_value_type.html":[12,0,31,63],
-"struct_j_s_1_1_vec2f_value_type.html":[12,0,31,68],
-"struct_j_s_1_1_vec3f_value_type.html":[12,0,31,69],
-"struct_j_s_1_1_vec4f_value_type.html":[12,0,31,70],
-"struct_j_s_1_1_video_file_chooser.html":[12,0,31,71]
+"struct_j_s_1_1_vec2f_value_type.html":[12,0,31,68]
 };

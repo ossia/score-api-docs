@@ -1,5 +1,8 @@
 var NAVTREEINDEX15 =
 {
+"classscore_1_1_document_presenter.html":[12,0,55,80],
+"classscore_1_1_document_presenter.html":[11,0,12,75],
+"classscore_1_1_document_validator.html":[12,0,55,81],
 "classscore_1_1_document_validator.html":[11,0,12,76],
 "classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6":[12,0,55,81,0],
 "classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6":[11,0,12,76,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX15 =
 "classscore_1_1_q_graphics_button.html":[11,0,12,202],
 "classscore_1_1_q_graphics_button.html":[12,0,55,207],
 "classscore_1_1_q_graphics_check_box.html":[11,0,12,203],
-"classscore_1_1_q_graphics_check_box.html":[12,0,55,208],
-"classscore_1_1_q_graphics_combo.html":[11,0,12,204],
-"classscore_1_1_q_graphics_combo.html":[12,0,55,209],
-"classscore_1_1_q_graphics_draggable_pixmap.html":[11,0,12,205]
+"classscore_1_1_q_graphics_check_box.html":[12,0,55,208]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX22 =
 {
+"struct_j_s_1_1_vec3f_value_type.html":[12,0,31,69],
+"struct_j_s_1_1_vec4f_value_type.html":[12,0,31,70],
+"struct_j_s_1_1_video_file_chooser.html":[12,0,31,71],
 "struct_j_s_1_1js__process.html":[12,0,31,39],
 "struct_j_s_o_n_reader_1_1assigner.html":[12,0,141,0],
 "struct_j_s_o_n_reader_1_1fake__obj.html":[12,0,141,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX22 =
 "struct_process_1_1_float_knob.html":[12,0,48,42],
 "struct_process_1_1_float_knob.html":[11,0,10,42],
 "struct_process_1_1_float_range_slider.html":[12,0,48,43],
-"struct_process_1_1_float_range_slider.html":[11,0,10,43],
-"struct_process_1_1_float_range_spin_box.html":[12,0,48,44],
-"struct_process_1_1_float_range_spin_box.html":[11,0,10,44],
-"struct_process_1_1_float_slider.html":[11,0,10,45]
+"struct_process_1_1_float_range_slider.html":[11,0,10,43]
 };

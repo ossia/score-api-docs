@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,32,4,3,9],
+"element_finding_helper_8hpp_source.html":[13,0,0,2,32,4,11,1],
+"files.html":[13,0],
 "functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
 "functions_c.html":[12,3,0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp_source.html":[13,0,0,2,10,0,0],
 "score-plugin-controlsurface_2_control_surface_2_executor_8hpp_source.html":[13,0,0,2,10,0,2],
 "score-plugin-controlsurface_2_control_surface_2_layer_8hpp_source.html":[13,0,0,2,10,0,3],
-"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,0,2,10,0,4],
-"score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,0,2,10,0,7],
-"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,0,2,10,0,8],
-"score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,0,2,11,0,6]
+"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,0,2,10,0,4]
 };

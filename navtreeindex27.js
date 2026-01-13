@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"structscore_1_1_value_assigner_3_01float_01_4.html":[11,0,12,312],
+"structscore_1_1_value_assigner_3_01int_01_4.html":[11,0,12,313],
+"structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,55,318],
 "structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html":[12,0,55,319],
 "structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html":[11,0,12,314],
 "structscore_1_1_value_double_slider.html":[12,0,55,320],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#ad98bf288634f499fefe326dbe83185ba":[11,0,12,0,78,1],
 "structscore_1_1gfx_1_1_video_frame_reader.html":[12,0,55,2,79],
 "structscore_1_1gfx_1_1_video_frame_reader.html":[11,0,12,0,79],
-"structscore_1_1gfx_1_1_video_frame_share.html":[12,0,55,2,80],
-"structscore_1_1gfx_1_1_video_frame_share.html":[11,0,12,0,80],
-"structscore_1_1gfx_1_1_video_material_u_b_o.html":[12,0,55,2,81],
-"structscore_1_1gfx_1_1_video_material_u_b_o.html":[11,0,12,0,81]
+"structscore_1_1gfx_1_1_video_frame_share.html":[12,0,55,2,80]
 };

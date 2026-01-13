@@ -1,5 +1,8 @@
 var NAVTREEINDEX28 =
 {
+"structscore_1_1gfx_1_1_video_frame_share.html":[11,0,12,0,80],
+"structscore_1_1gfx_1_1_video_material_u_b_o.html":[12,0,55,2,81],
+"structscore_1_1gfx_1_1_video_material_u_b_o.html":[11,0,12,0,81],
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html":[12,0,55,2,86],
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html":[11,0,12,0,86],
 "structscore_1_1gfx_1_1_y_u_v420_decoder.html#af93a6c9791adf8b7ca10ba863250272b":[11,0,12,0,86,0],

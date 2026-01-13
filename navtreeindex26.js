@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064":[11,0,12,14,3],
+"structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14":[12,0,55,19,0],
+"structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14":[11,0,12,14,0],
 "structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3":[12,0,55,19,4],
 "structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3":[11,0,12,14,4],
 "structscore_1_1_application_context.html#ae40c943760793bab6015490e56a44d34":[11,0,12,14,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "structscore_1_1_tree_view_expand_state.html":[12,0,55,309],
 "structscore_1_1_value_assigner.html":[11,0,12,311],
 "structscore_1_1_value_assigner.html":[12,0,55,316],
-"structscore_1_1_value_assigner_3_01float_01_4.html":[12,0,55,317],
-"structscore_1_1_value_assigner_3_01float_01_4.html":[11,0,12,312],
-"structscore_1_1_value_assigner_3_01int_01_4.html":[11,0,12,313],
-"structscore_1_1_value_assigner_3_01int_01_4.html":[12,0,55,318]
+"structscore_1_1_value_assigner_3_01float_01_4.html":[12,0,55,317]
 };
