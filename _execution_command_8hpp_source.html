@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('_execution_command_8hpp_source.html','
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">using </span>ExecutionCommand = smallfun::function&lt;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    void(),</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(NDEBUG)</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    256,</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    128,</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('_execution_command_8hpp_source.html','
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using </span>GCCommand = smallfun::function&lt;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    void(),</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(NDEBUG)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    2 * (128 + 4 * 8),</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>#<span class="keywordflow">else</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    128 + 4 * 8,</div>
