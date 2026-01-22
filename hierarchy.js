@@ -633,7 +633,6 @@ var hierarchy =
     [ "Engine::score_to_ossia::CurveTraits< float >", "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html", null ],
     [ "Engine::score_to_ossia::CurveTraits< int >", "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html", null ],
     [ "oscr::CustomItem< Item, Control >::custom_mouse_event", "structoscr_1_1_custom_item_1_1custom__mouse__event.html", null ],
-    [ "Threedim::custom_texture", "struct_threedim_1_1custom__texture.html", null ],
     [ "oscr::CustomControlFactory< Node, Refl >", "structoscr_1_1_custom_control_factory.html", null ],
     [ "Scenario::CycleDetector", "struct_scenario_1_1_cycle_detector.html", null ],
     [ "DataStream", "class_data_stream.html", null ],
@@ -672,6 +671,7 @@ var hierarchy =
     [ "oscr::Deserializer", "structoscr_1_1_deserializer.html", null ],
     [ "State::DestinationQualifiers", "struct_state_1_1_destination_qualifiers.html", null ],
     [ "ossia::net::device_base", null, [
+      [ "Gfx::background_device", "class_gfx_1_1background__device.html", null ],
       [ "Gfx::libav_output_device", "class_gfx_1_1libav__output__device.html", null ],
       [ "Gfx::sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", null ],
       [ "Gfx::shmdata_output_device", "class_gfx_1_1shmdata__output__device.html", null ],
@@ -1132,8 +1132,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1236,6 +1236,7 @@ var hierarchy =
     [ "Threedim::PCLToMesh2::ins", "struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html", null ],
     [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
     [ "Threedim::StrucSynth::ins", "struct_threedim_1_1_struc_synth_1_1ins.html", null ],
+    [ "Threedim::TextureToBuffer::ins", "struct_threedim_1_1_texture_to_buffer_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
@@ -1503,6 +1504,9 @@ var hierarchy =
         [ "Execution::JackTransport", "class_execution_1_1_jack_transport.html", null ],
         [ "Transport::DirectTransport", "class_transport_1_1_direct_transport.html", null ]
       ] ],
+      [ "score::BackgroundRendererFactory", "classscore_1_1_background_renderer_factory.html", [
+        [ "Gfx::TextureOutletBackgroundRendererFactory", "class_gfx_1_1_texture_outlet_background_renderer_factory.html", null ]
+      ] ],
       [ "score::DocumentDelegateFactory", "classscore_1_1_document_delegate_factory.html", [
         [ "Scenario::ScenarioDocumentFactory", "class_scenario_1_1_scenario_document_factory.html", null ]
       ] ],
@@ -1612,6 +1616,7 @@ var hierarchy =
         [ "score::InterfaceList< TransportInterface >", "classscore_1_1_interface_list.html", [
           [ "Transport::TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
         ] ],
+        [ "score::InterfaceList< BackgroundRendererFactory >", "classscore_1_1_interface_list.html", null ],
         [ "score::InterfaceList< Factory_T >", "classscore_1_1_interface_list.html", [
           [ "score::DefaultedGenericComponentFactoryList< Model_T, System_T, Factory_T, DefaultFactory_T >", "classscore_1_1_defaulted_generic_component_factory_list.html", null ],
           [ "score::GenericComponentFactoryList< Model_T, System_T, Factory_T >", "classscore_1_1_generic_component_factory_list.html", null ]
@@ -1655,6 +1660,9 @@ var hierarchy =
           ] ],
           [ "score::MatchingFactory< DisplayedElementsToolPaletteFactory >", "classscore_1_1_matching_factory.html", [
             [ "Scenario::DisplayedElementsToolPaletteFactoryList", "class_scenario_1_1_displayed_elements_tool_palette_factory_list.html", null ]
+          ] ],
+          [ "score::MatchingFactory< BackgroundRendererFactory >", "classscore_1_1_matching_factory.html", [
+            [ "score::BackgroundRendererList", "classscore_1_1_background_renderer_list.html", null ]
           ] ]
         ] ]
       ] ]
@@ -3388,6 +3396,10 @@ var hierarchy =
         [ "score::GUIApplicationRegistrar", "classscore_1_1_g_u_i_application_registrar.html", null ]
       ] ],
       [ "score::ArrowDialog", "classscore_1_1_arrow_dialog.html", null ],
+      [ "score::BackgroundRenderer", "classscore_1_1_background_renderer.html", [
+        [ "Gfx::DeviceBackgroundRenderer", "class_gfx_1_1_device_background_renderer.html", null ],
+        [ "Gfx::TextureOutletBackgroundRenderer", "class_gfx_1_1_texture_outlet_background_renderer.html", null ]
+      ] ],
       [ "score::CommandBackupFile", "classscore_1_1_command_backup_file.html", null ],
       [ "score::CommandSpinbox< Property, Command, SpinBox >", "structscore_1_1_command_spinbox.html", null ],
       [ "score::CommandStack", "classscore_1_1_command_stack.html", null ],
@@ -3518,6 +3530,7 @@ var hierarchy =
           [ "Gfx::Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", null ],
           [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
           [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
+          [ "score::gfx::BackgroundNode", "structscore_1_1gfx_1_1_background_node.html", null ],
           [ "score::gfx::PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", null ],
           [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
         ] ],
@@ -4128,6 +4141,7 @@ var hierarchy =
       [ "Gfx::video_texture_input_parameter", "class_gfx_1_1video__texture__input__parameter.html", null ]
     ] ],
     [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
+    [ "Threedim::TextureToBuffer", "class_threedim_1_1_texture_to_buffer.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
     [ "Execution::Settings::TickPolicies", "struct_execution_1_1_settings_1_1_tick_policies.html", null ],
     [ "ossia::time_sync_callback", null, [
@@ -4396,6 +4410,7 @@ var hierarchy =
     [ "bitfocus::win32_handles", "structbitfocus_1_1win32__handles.html", null ],
     [ "vst3::WindowContainer", "structvst3_1_1_window_container.html", null ],
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
+    [ "Gfx::WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],
     [ "gpp::qrhi::generate_shaders::write_binding", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__binding.html", null ],

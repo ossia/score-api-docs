@@ -1518,161 +1518,172 @@ $(document).ready(function(){initNavTree('_texture_conversion_8hpp_source.html',
 <div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
 <div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>    <span class="keywordflow">case</span> QRhiTexture::R8UI:</div>
 <div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span>      <span class="keywordflow">return</span> toR8(in_format, buf, width, height);</div>
-<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span> </div>
-<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span>    <span class="keywordflow">case</span> QRhiTexture::R16:</div>
-<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>      <span class="keywordflow">return</span> toR16(in_format, buf, width, height);</div>
+<div class="line"><a id="l01409" name="l01409"></a><span class="lineno"> 1409</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 10, 0)</span></div>
+<div class="line"><a id="l01410" name="l01410"></a><span class="lineno"> 1410</span>    <span class="keywordflow">case</span> QRhiTexture::R8SI:</div>
+<div class="line"><a id="l01411" name="l01411"></a><span class="lineno"> 1411</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01412" name="l01412"></a><span class="lineno"> 1412</span>      <span class="keywordflow">return</span> toR8(in_format, buf, width, height);</div>
 <div class="line"><a id="l01413" name="l01413"></a><span class="lineno"> 1413</span> </div>
-<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA32F:</div>
-<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>      <span class="keywordflow">return</span> toRGBA32F(in_format, buf, width, height);</div>
+<div class="line"><a id="l01414" name="l01414"></a><span class="lineno"> 1414</span>    <span class="keywordflow">case</span> QRhiTexture::R16:</div>
+<div class="line"><a id="l01415" name="l01415"></a><span class="lineno"> 1415</span>      <span class="keywordflow">return</span> toR16(in_format, buf, width, height);</div>
 <div class="line"><a id="l01416" name="l01416"></a><span class="lineno"> 1416</span> </div>
-<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    <span class="keywordflow">case</span> QRhiTexture::R32F:</div>
-<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>      <span class="keywordflow">return</span> toR32F(in_format, buf, width, height);</div>
+<div class="line"><a id="l01417" name="l01417"></a><span class="lineno"> 1417</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA32F:</div>
+<div class="line"><a id="l01418" name="l01418"></a><span class="lineno"> 1418</span>      <span class="keywordflow">return</span> toRGBA32F(in_format, buf, width, height);</div>
 <div class="line"><a id="l01419" name="l01419"></a><span class="lineno"> 1419</span> </div>
-<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
-<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>    <span class="keywordflow">case</span> QRhiTexture::R32UI:</div>
-<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span>      <span class="keywordflow">return</span> toR32UI(in_format, buf, width, height);</div>
-<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span> </div>
-<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA32UI:</div>
-<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>      <span class="keywordflow">return</span> toRGBA32UI(in_format, buf, width, height);</div>
-<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span> </div>
-<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span>    <span class="keywordflow">case</span> QRhiTexture::RG16:</div>
-<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA16F:</div>
-<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span>    <span class="keywordflow">case</span> QRhiTexture::RG8:</div>
-<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    <span class="keywordflow">case</span> QRhiTexture::R16F:</div>
-<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 4, 0)</span></div>
-<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    <span class="keywordflow">case</span> QRhiTexture::RGB10A2:</div>
-<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
-<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span>    <span class="keywordflow">case</span> QRhiTexture::RG32UI:</div>
+<div class="line"><a id="l01420" name="l01420"></a><span class="lineno"> 1420</span>    <span class="keywordflow">case</span> QRhiTexture::R32F:</div>
+<div class="line"><a id="l01421" name="l01421"></a><span class="lineno"> 1421</span>      <span class="keywordflow">return</span> toR32F(in_format, buf, width, height);</div>
+<div class="line"><a id="l01422" name="l01422"></a><span class="lineno"> 1422</span> </div>
+<div class="line"><a id="l01423" name="l01423"></a><span class="lineno"> 1423</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
+<div class="line"><a id="l01424" name="l01424"></a><span class="lineno"> 1424</span>    <span class="keywordflow">case</span> QRhiTexture::R32UI:</div>
+<div class="line"><a id="l01425" name="l01425"></a><span class="lineno"> 1425</span>      <span class="keywordflow">return</span> toR32UI(in_format, buf, width, height);</div>
+<div class="line"><a id="l01426" name="l01426"></a><span class="lineno"> 1426</span> </div>
+<div class="line"><a id="l01427" name="l01427"></a><span class="lineno"> 1427</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA32UI:</div>
+<div class="line"><a id="l01428" name="l01428"></a><span class="lineno"> 1428</span>      <span class="keywordflow">return</span> toRGBA32UI(in_format, buf, width, height);</div>
+<div class="line"><a id="l01429" name="l01429"></a><span class="lineno"> 1429</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01430" name="l01430"></a><span class="lineno"> 1430</span> </div>
+<div class="line"><a id="l01431" name="l01431"></a><span class="lineno"> 1431</span>    <span class="keywordflow">case</span> QRhiTexture::RG16:</div>
+<div class="line"><a id="l01432" name="l01432"></a><span class="lineno"> 1432</span>    <span class="keywordflow">case</span> QRhiTexture::RGBA16F:</div>
+<div class="line"><a id="l01433" name="l01433"></a><span class="lineno"> 1433</span>    <span class="keywordflow">case</span> QRhiTexture::RG8:</div>
+<div class="line"><a id="l01434" name="l01434"></a><span class="lineno"> 1434</span>    <span class="keywordflow">case</span> QRhiTexture::R16F:</div>
+<div class="line"><a id="l01435" name="l01435"></a><span class="lineno"> 1435</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 4, 0)</span></div>
+<div class="line"><a id="l01436" name="l01436"></a><span class="lineno"> 1436</span>    <span class="keywordflow">case</span> QRhiTexture::RGB10A2:</div>
 <div class="line"><a id="l01437" name="l01437"></a><span class="lineno"> 1437</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span>    <span class="keywordflow">case</span> QRhiTexture::D16:</div>
-<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>    <span class="keywordflow">case</span> QRhiTexture::D24:</div>
-<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span>    <span class="keywordflow">case</span> QRhiTexture::D24S8:</div>
-<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    <span class="keywordflow">case</span> QRhiTexture::D32F:</div>
-<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
-<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>    <span class="keywordflow">case</span> QRhiTexture::D32FS8:</div>
-<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span>    <span class="keywordflow">case</span> QRhiTexture::UnknownFormat:</div>
-<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>    <span class="keywordflow">case</span> QRhiTexture::BC1:</div>
-<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span>    <span class="keywordflow">case</span> QRhiTexture::BC2:</div>
-<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>    <span class="keywordflow">case</span> QRhiTexture::BC3:</div>
-<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>    <span class="keywordflow">case</span> QRhiTexture::BC4:</div>
-<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="keywordflow">case</span> QRhiTexture::BC5:</div>
-<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>    <span class="keywordflow">case</span> QRhiTexture::BC6H:</div>
-<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>    <span class="keywordflow">case</span> QRhiTexture::BC7:</div>
-<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGB8:</div>
-<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGB8A1:</div>
-<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGBA8:</div>
-<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_4x4:</div>
-<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_5x4:</div>
-<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_5x5:</div>
-<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_6x5:</div>
-<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_6x6:</div>
-<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x5:</div>
-<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x6:</div>
-<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x8:</div>
-<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x5:</div>
-<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x6:</div>
-<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x8:</div>
-<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x10:</div>
-<div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_12x10:</div>
-<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_12x12:</div>
-<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>      <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>  }</div>
-<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>}</div>
-<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span>}</div>
-<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span> </div>
-<div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoscr.html">oscr</a></div>
-<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>{</div>
+<div class="line"><a id="l01438" name="l01438"></a><span class="lineno"> 1438</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
+<div class="line"><a id="l01439" name="l01439"></a><span class="lineno"> 1439</span>    <span class="keywordflow">case</span> QRhiTexture::RG32UI:</div>
+<div class="line"><a id="l01440" name="l01440"></a><span class="lineno"> 1440</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01441" name="l01441"></a><span class="lineno"> 1441</span>    <span class="keywordflow">case</span> QRhiTexture::D16:</div>
+<div class="line"><a id="l01442" name="l01442"></a><span class="lineno"> 1442</span>    <span class="keywordflow">case</span> QRhiTexture::D24:</div>
+<div class="line"><a id="l01443" name="l01443"></a><span class="lineno"> 1443</span>    <span class="keywordflow">case</span> QRhiTexture::D24S8:</div>
+<div class="line"><a id="l01444" name="l01444"></a><span class="lineno"> 1444</span>    <span class="keywordflow">case</span> QRhiTexture::D32F:</div>
+<div class="line"><a id="l01445" name="l01445"></a><span class="lineno"> 1445</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
+<div class="line"><a id="l01446" name="l01446"></a><span class="lineno"> 1446</span>    <span class="keywordflow">case</span> QRhiTexture::D32FS8:</div>
+<div class="line"><a id="l01447" name="l01447"></a><span class="lineno"> 1447</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01448" name="l01448"></a><span class="lineno"> 1448</span>    <span class="keywordflow">case</span> QRhiTexture::UnknownFormat:</div>
+<div class="line"><a id="l01449" name="l01449"></a><span class="lineno"> 1449</span>    <span class="keywordflow">case</span> QRhiTexture::BC1:</div>
+<div class="line"><a id="l01450" name="l01450"></a><span class="lineno"> 1450</span>    <span class="keywordflow">case</span> QRhiTexture::BC2:</div>
+<div class="line"><a id="l01451" name="l01451"></a><span class="lineno"> 1451</span>    <span class="keywordflow">case</span> QRhiTexture::BC3:</div>
+<div class="line"><a id="l01452" name="l01452"></a><span class="lineno"> 1452</span>    <span class="keywordflow">case</span> QRhiTexture::BC4:</div>
+<div class="line"><a id="l01453" name="l01453"></a><span class="lineno"> 1453</span>    <span class="keywordflow">case</span> QRhiTexture::BC5:</div>
+<div class="line"><a id="l01454" name="l01454"></a><span class="lineno"> 1454</span>    <span class="keywordflow">case</span> QRhiTexture::BC6H:</div>
+<div class="line"><a id="l01455" name="l01455"></a><span class="lineno"> 1455</span>    <span class="keywordflow">case</span> QRhiTexture::BC7:</div>
+<div class="line"><a id="l01456" name="l01456"></a><span class="lineno"> 1456</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGB8:</div>
+<div class="line"><a id="l01457" name="l01457"></a><span class="lineno"> 1457</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGB8A1:</div>
+<div class="line"><a id="l01458" name="l01458"></a><span class="lineno"> 1458</span>    <span class="keywordflow">case</span> QRhiTexture::ETC2_RGBA8:</div>
+<div class="line"><a id="l01459" name="l01459"></a><span class="lineno"> 1459</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_4x4:</div>
+<div class="line"><a id="l01460" name="l01460"></a><span class="lineno"> 1460</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_5x4:</div>
+<div class="line"><a id="l01461" name="l01461"></a><span class="lineno"> 1461</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_5x5:</div>
+<div class="line"><a id="l01462" name="l01462"></a><span class="lineno"> 1462</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_6x5:</div>
+<div class="line"><a id="l01463" name="l01463"></a><span class="lineno"> 1463</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_6x6:</div>
+<div class="line"><a id="l01464" name="l01464"></a><span class="lineno"> 1464</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x5:</div>
+<div class="line"><a id="l01465" name="l01465"></a><span class="lineno"> 1465</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x6:</div>
+<div class="line"><a id="l01466" name="l01466"></a><span class="lineno"> 1466</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_8x8:</div>
+<div class="line"><a id="l01467" name="l01467"></a><span class="lineno"> 1467</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x5:</div>
+<div class="line"><a id="l01468" name="l01468"></a><span class="lineno"> 1468</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x6:</div>
+<div class="line"><a id="l01469" name="l01469"></a><span class="lineno"> 1469</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x8:</div>
+<div class="line"><a id="l01470" name="l01470"></a><span class="lineno"> 1470</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_10x10:</div>
+<div class="line"><a id="l01471" name="l01471"></a><span class="lineno"> 1471</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_12x10:</div>
+<div class="line"><a id="l01472" name="l01472"></a><span class="lineno"> 1472</span>    <span class="keywordflow">case</span> QRhiTexture::ASTC_12x12:</div>
+<div class="line"><a id="l01473" name="l01473"></a><span class="lineno"> 1473</span>      <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01474" name="l01474"></a><span class="lineno"> 1474</span>  }</div>
+<div class="line"><a id="l01475" name="l01475"></a><span class="lineno"> 1475</span>}</div>
+<div class="line"><a id="l01476" name="l01476"></a><span class="lineno"> 1476</span>}</div>
 <div class="line"><a id="l01477" name="l01477"></a><span class="lineno"> 1477</span> </div>
-<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"> 1478</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span>inplaceMirror(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* bytes, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> bytes_per_pixel)</div>
-<div class="line"><a id="l01480" name="l01480"></a><span class="lineno"> 1480</span>{</div>
-<div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span>  <span class="keywordflow">if</span>(width &lt; 1 || height &lt;= 1)</div>
-<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> row_size = width * bytes_per_pixel;</div>
-<div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span> </div>
-<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span>  <span class="keyword">auto</span> temp_row = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)alloca(row_size);</div>
-<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>  <span class="keyword">auto</span> top = bytes;</div>
-<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span>  <span class="keyword">auto</span> bottom = bytes + (height - 1) * row_size;</div>
-<div class="line"><a id="l01488" name="l01488"></a><span class="lineno"> 1488</span> </div>
-<div class="line"><a id="l01489" name="l01489"></a><span class="lineno"> 1489</span>  <span class="keywordflow">while</span>(top &lt; bottom)</div>
-<div class="line"><a id="l01490" name="l01490"></a><span class="lineno"> 1490</span>  {</div>
-<div class="line"><a id="l01491" name="l01491"></a><span class="lineno"> 1491</span>    memcpy(temp_row, top, row_size);</div>
-<div class="line"><a id="l01492" name="l01492"></a><span class="lineno"> 1492</span>    memcpy(top, bottom, row_size);</div>
-<div class="line"><a id="l01493" name="l01493"></a><span class="lineno"> 1493</span>    memcpy(bottom, temp_row, row_size);</div>
-<div class="line"><a id="l01494" name="l01494"></a><span class="lineno"> 1494</span> </div>
-<div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>    top += row_size;</div>
-<div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>    bottom -= row_size;</div>
-<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span>  }</div>
-<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>}</div>
-<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span> </div>
-<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span><span class="keyword">template</span> &lt;avnd::cpu_texture Tex&gt;</div>
-<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span><span class="keywordtype">void</span> loadInputTexture(QRhi&amp; rhi, <span class="keyword">auto</span>&amp; m_readbacks, Tex&amp; cpu_tex, <span class="keywordtype">int</span> k)</div>
-<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>{</div>
-<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>  <span class="keyword">auto</span>&amp; rb = m_readbacks[k];</div>
-<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>  <span class="keyword">auto</span>&amp; buf = rb.data;</div>
-<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>  qsizetype bytesize{};</div>
-<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>  if_possible(bytesize = cpu_tex.bytesize())</div>
-<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>  else if_possible(bytesize = cpu_tex.bytesize)</div>
-<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>  else return;</div>
-<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span> </div>
-<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>  if(buf.size() &lt; bytesize)</div>
-<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>  {</div>
-<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span>    cpu_tex.bytes = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>  }</div>
-<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>  {</div>
-<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>    <span class="comment">// FIXME ARGB needs special handling too</span></div>
-<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { std::string_view{Tex::format()}; })</div>
-<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>    {</div>
-<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>      <span class="keyword">constexpr</span> std::string_view fmt = Tex::format();</div>
-<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>      <span class="keywordflow">if</span>(fmt == <span class="stringliteral">&quot;rgb&quot;</span>) {</div>
-<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>      }</div>
-<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>      {</div>
-<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>        <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>        gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>      }</div>
-<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>    }</div>
-<div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Tex::RGB; })</div>
-<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>    {</div>
-<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::cpu_dynamic_format_texture&lt;Tex&gt;){</div>
-<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>        <span class="keywordflow">if</span>(cpu_tex.format == Tex::RGB)</div>
-<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>          gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>        {</div>
-<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>          <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>          gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>        }</div>
-<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>      }</div>
-<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>      {</div>
-<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>      }</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>    }</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>    {</div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>      <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>      gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>    }</div>
-<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span> </div>
-<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>    <span class="keyword">using </span>components_type = std::decay_t&lt;<span class="keyword">decltype</span>(cpu_tex.bytes)&gt;;</div>
-<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>    cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span>components_type<span class="keyword">&gt;</span>(buf.data());</div>
+<div class="line"><a id="l01478" name="l01478"></a><span class="lineno"> 1478</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceoscr.html">oscr</a></div>
+<div class="line"><a id="l01479" name="l01479"></a><span class="lineno"> 1479</span>{</div>
+<div class="line"><a id="l01480" name="l01480"></a><span class="lineno"> 1480</span> </div>
+<div class="line"><a id="l01481" name="l01481"></a><span class="lineno"> 1481</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l01482" name="l01482"></a><span class="lineno"> 1482</span>inplaceMirror(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* bytes, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> bytes_per_pixel)</div>
+<div class="line"><a id="l01483" name="l01483"></a><span class="lineno"> 1483</span>{</div>
+<div class="line"><a id="l01484" name="l01484"></a><span class="lineno"> 1484</span>  <span class="keywordflow">if</span>(width &lt; 1 || height &lt;= 1)</div>
+<div class="line"><a id="l01485" name="l01485"></a><span class="lineno"> 1485</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01486" name="l01486"></a><span class="lineno"> 1486</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span> row_size = width * bytes_per_pixel;</div>
+<div class="line"><a id="l01487" name="l01487"></a><span class="lineno"> 1487</span> </div>
+<div class="line"><a id="l01488" name="l01488"></a><span class="lineno"> 1488</span>  <span class="keyword">auto</span> temp_row = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*)alloca(row_size);</div>
+<div class="line"><a id="l01489" name="l01489"></a><span class="lineno"> 1489</span>  <span class="keyword">auto</span> top = bytes;</div>
+<div class="line"><a id="l01490" name="l01490"></a><span class="lineno"> 1490</span>  <span class="keyword">auto</span> bottom = bytes + (height - 1) * row_size;</div>
+<div class="line"><a id="l01491" name="l01491"></a><span class="lineno"> 1491</span> </div>
+<div class="line"><a id="l01492" name="l01492"></a><span class="lineno"> 1492</span>  <span class="keywordflow">while</span>(top &lt; bottom)</div>
+<div class="line"><a id="l01493" name="l01493"></a><span class="lineno"> 1493</span>  {</div>
+<div class="line"><a id="l01494" name="l01494"></a><span class="lineno"> 1494</span>    memcpy(temp_row, top, row_size);</div>
+<div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>    memcpy(top, bottom, row_size);</div>
+<div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>    memcpy(bottom, temp_row, row_size);</div>
+<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span> </div>
+<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>    top += row_size;</div>
+<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>    bottom -= row_size;</div>
+<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>  }</div>
+<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>}</div>
+<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span> </div>
+<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span><span class="keyword">template</span> &lt;avnd::cpu_texture Tex&gt;</div>
+<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span><span class="keywordtype">void</span> loadInputTexture(QRhi&amp; rhi, <span class="keyword">auto</span>&amp; m_readbacks, Tex&amp; cpu_tex, <span class="keywordtype">int</span> k)</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>{</div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>  <span class="keyword">auto</span>&amp; rb = m_readbacks[k];</div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>  <span class="keyword">auto</span>&amp; buf = rb.data;</div>
+<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>  qsizetype bytesize{};</div>
+<div class="line"><a id="l01509" name="l01509"></a><span class="lineno"> 1509</span>  if_possible(bytesize = cpu_tex.bytesize())</div>
+<div class="line"><a id="l01510" name="l01510"></a><span class="lineno"> 1510</span>  else if_possible(bytesize = cpu_tex.bytesize)</div>
+<div class="line"><a id="l01511" name="l01511"></a><span class="lineno"> 1511</span>  else return;</div>
+<div class="line"><a id="l01512" name="l01512"></a><span class="lineno"> 1512</span> </div>
+<div class="line"><a id="l01513" name="l01513"></a><span class="lineno"> 1513</span>  if(buf.size() &lt; bytesize)</div>
+<div class="line"><a id="l01514" name="l01514"></a><span class="lineno"> 1514</span>  {</div>
+<div class="line"><a id="l01515" name="l01515"></a><span class="lineno"> 1515</span>    cpu_tex.bytes = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l01516" name="l01516"></a><span class="lineno"> 1516</span>  }</div>
+<div class="line"><a id="l01517" name="l01517"></a><span class="lineno"> 1517</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01518" name="l01518"></a><span class="lineno"> 1518</span>  {</div>
+<div class="line"><a id="l01519" name="l01519"></a><span class="lineno"> 1519</span>    <span class="comment">// FIXME ARGB needs special handling too</span></div>
+<div class="line"><a id="l01520" name="l01520"></a><span class="lineno"> 1520</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { std::string_view{Tex::format()}; })</div>
+<div class="line"><a id="l01521" name="l01521"></a><span class="lineno"> 1521</span>    {</div>
+<div class="line"><a id="l01522" name="l01522"></a><span class="lineno"> 1522</span>      <span class="keyword">constexpr</span> std::string_view fmt = Tex::format();</div>
+<div class="line"><a id="l01523" name="l01523"></a><span class="lineno"> 1523</span>      <span class="keywordflow">if</span>(fmt == <span class="stringliteral">&quot;rgb&quot;</span>) {</div>
+<div class="line"><a id="l01524" name="l01524"></a><span class="lineno"> 1524</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01525" name="l01525"></a><span class="lineno"> 1525</span>      }</div>
+<div class="line"><a id="l01526" name="l01526"></a><span class="lineno"> 1526</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01527" name="l01527"></a><span class="lineno"> 1527</span>      {</div>
+<div class="line"><a id="l01528" name="l01528"></a><span class="lineno"> 1528</span>        <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01529" name="l01529"></a><span class="lineno"> 1529</span>        gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01530" name="l01530"></a><span class="lineno"> 1530</span>      }</div>
+<div class="line"><a id="l01531" name="l01531"></a><span class="lineno"> 1531</span>    }</div>
+<div class="line"><a id="l01532" name="l01532"></a><span class="lineno"> 1532</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Tex::RGB; })</div>
+<div class="line"><a id="l01533" name="l01533"></a><span class="lineno"> 1533</span>    {</div>
+<div class="line"><a id="l01534" name="l01534"></a><span class="lineno"> 1534</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::cpu_dynamic_format_texture&lt;Tex&gt;){</div>
+<div class="line"><a id="l01535" name="l01535"></a><span class="lineno"> 1535</span>        <span class="keywordflow">if</span>(cpu_tex.format == Tex::RGB)</div>
+<div class="line"><a id="l01536" name="l01536"></a><span class="lineno"> 1536</span>          gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01537" name="l01537"></a><span class="lineno"> 1537</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01538" name="l01538"></a><span class="lineno"> 1538</span>        {</div>
+<div class="line"><a id="l01539" name="l01539"></a><span class="lineno"> 1539</span>          <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01540" name="l01540"></a><span class="lineno"> 1540</span>          gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01541" name="l01541"></a><span class="lineno"> 1541</span>        }</div>
+<div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>      }</div>
+<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>      {</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>      }</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>    }</div>
+<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>    {</div>
+<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>      <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>      gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>    }</div>
 <div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span> </div>
-<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>    <span class="keywordflow">if</span>(rhi.isYUpInNDC())</div>
-<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>      <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
-<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span>        inplaceMirror(</div>
-<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>            <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(cpu_tex.bytes), cpu_tex.width,</div>
-<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>            cpu_tex.height, cpu_tex.bytes_per_pixel);</div>
-<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span> </div>
-<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>    cpu_tex.changed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>  }</div>
-<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>}</div>
-<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>}</div>
+<div class="line"><a id="l01554" name="l01554"></a><span class="lineno"> 1554</span>    <span class="keyword">using </span>components_type = std::decay_t&lt;<span class="keyword">decltype</span>(cpu_tex.bytes)&gt;;</div>
+<div class="line"><a id="l01555" name="l01555"></a><span class="lineno"> 1555</span>    cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span>components_type<span class="keyword">&gt;</span>(buf.data());</div>
+<div class="line"><a id="l01556" name="l01556"></a><span class="lineno"> 1556</span> </div>
+<div class="line"><a id="l01557" name="l01557"></a><span class="lineno"> 1557</span>    <span class="keywordflow">if</span>(rhi.isYUpInNDC())</div>
+<div class="line"><a id="l01558" name="l01558"></a><span class="lineno"> 1558</span>      <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
+<div class="line"><a id="l01559" name="l01559"></a><span class="lineno"> 1559</span>      {</div>
+<div class="line"><a id="l01560" name="l01560"></a><span class="lineno"> 1560</span>        <span class="keywordtype">int</span> bpp = 0;</div>
+<div class="line"><a id="l01561" name="l01561"></a><span class="lineno"> 1561</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { cpu_tex.bytes_per_pixel(); })</div>
+<div class="line"><a id="l01562" name="l01562"></a><span class="lineno"> 1562</span>          bpp = cpu_tex.bytes_per_pixel();</div>
+<div class="line"><a id="l01563" name="l01563"></a><span class="lineno"> 1563</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01564" name="l01564"></a><span class="lineno"> 1564</span>          bpp = cpu_tex.bytes_per_pixel;</div>
+<div class="line"><a id="l01565" name="l01565"></a><span class="lineno"> 1565</span> </div>
+<div class="line"><a id="l01566" name="l01566"></a><span class="lineno"> 1566</span>        inplaceMirror(</div>
+<div class="line"><a id="l01567" name="l01567"></a><span class="lineno"> 1567</span>            <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(cpu_tex.bytes), cpu_tex.width,</div>
+<div class="line"><a id="l01568" name="l01568"></a><span class="lineno"> 1568</span>            cpu_tex.height, bpp);</div>
+<div class="line"><a id="l01569" name="l01569"></a><span class="lineno"> 1569</span>      }</div>
+<div class="line"><a id="l01570" name="l01570"></a><span class="lineno"> 1570</span> </div>
+<div class="line"><a id="l01571" name="l01571"></a><span class="lineno"> 1571</span>    cpu_tex.changed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01572" name="l01572"></a><span class="lineno"> 1572</span>  }</div>
+<div class="line"><a id="l01573" name="l01573"></a><span class="lineno"> 1573</span>}</div>
+<div class="line"><a id="l01574" name="l01574"></a><span class="lineno"> 1574</span>}</div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Factories.hpp:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

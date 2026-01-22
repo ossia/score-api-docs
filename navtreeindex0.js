@@ -109,6 +109,8 @@ var NAVTREEINDEX0 =
 "_automation_view_8hpp_source.html":[13,0,0,2,7,0,8],
 "_avnd_device_8hpp_source.html":[13,0,0,2,8,1,0],
 "_avnd_jit_8hpp_source.html":[13,0,0,2,19,2,3],
+"_background_node_8hpp_source.html":[13,0,0,2,17,1,3,1],
+"_background_renderer_8hpp_source.html":[13,0,0,1,1,5,3],
 "_base_callback_wrapper_8hpp_source.html":[13,0,0,2,2,0,0],
 "_base_element_context_8hpp_source.html":[13,0,0,2,32,4,3,0,0],
 "_base_property_8hpp_source.html":[13,0,0,2,2,0,1],
@@ -209,7 +211,7 @@ var NAVTREEINDEX0 =
 "_comment_edit_8hpp_source.html":[13,0,0,2,32,4,6,8],
 "_common_selection_state_8hpp_source.html":[13,0,0,1,1,11,0],
 "_common_types_8hpp_source.html":[13,0,0,1,1,10,2],
-"_common_u_b_os_8hpp_source.html":[13,0,0,2,17,1,3,1],
+"_common_u_b_os_8hpp_source.html":[13,0,0,2,17,1,3,2],
 "_common_widgets_8hpp_source.html":[13,0,0,2,14,0,1,0],
 "_compiler_8hpp_source.html":[13,0,0,2,19,2,0,0],
 "_complex_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "_create_modulation_8hpp_source.html":[13,0,0,2,32,0,0,1],
 "_create_point_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,0],
 "_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4],
-"_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5],
-"_create_sequence_8hpp_source.html":[13,0,0,2,32,4,1,5,0,6],
-"_create_state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,7]
+"_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5]
 };

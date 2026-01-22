@@ -3,6 +3,7 @@ var namespace_gfx =
     [ "ACodecInfo", "struct_gfx_1_1_a_codec_info.html", null ],
     [ "ApplicationPlugin", "class_gfx_1_1_application_plugin.html", "class_gfx_1_1_application_plugin" ],
     [ "AudioFrameEncoder", "struct_gfx_1_1_audio_frame_encoder.html", null ],
+    [ "background_device", "class_gfx_1_1background__device.html", null ],
     [ "BasicRenderer", "class_gfx_1_1_basic_renderer.html", null ],
     [ "CameraDevice", "class_gfx_1_1_camera_device.html", null ],
     [ "CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", null ],
@@ -16,6 +17,7 @@ var namespace_gfx =
     [ "con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
     [ "DblIAudioFrameEncoder", "struct_gfx_1_1_dbl_i_audio_frame_encoder.html", null ],
     [ "DemuxerInfo", "struct_gfx_1_1_demuxer_info.html", null ],
+    [ "DeviceBackgroundRenderer", "class_gfx_1_1_device_background_renderer.html", null ],
     [ "DocumentPlugin", "class_gfx_1_1_document_plugin.html", null ],
     [ "DShowCameraDeviceEnumerator", "struct_gfx_1_1_d_show_camera_device_enumerator.html", null ],
     [ "DShowCameraEnumerator", "struct_gfx_1_1_d_show_camera_enumerator.html", null ],
@@ -89,6 +91,8 @@ var namespace_gfx =
     [ "SyphonDevice", "class_gfx_1_1_syphon_device.html", null ],
     [ "SyphonProtocolFactory", "class_gfx_1_1_syphon_protocol_factory.html", null ],
     [ "SyphonSettingsWidget", "class_gfx_1_1_syphon_settings_widget.html", null ],
+    [ "TextureOutletBackgroundRenderer", "class_gfx_1_1_texture_outlet_background_renderer.html", null ],
+    [ "TextureOutletBackgroundRendererFactory", "class_gfx_1_1_texture_outlet_background_renderer_factory.html", null ],
     [ "TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
     [ "V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ],
     [ "V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
@@ -101,5 +105,6 @@ var namespace_gfx =
     [ "WindowDevice", "class_gfx_1_1_window_device.html", null ],
     [ "WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
+    [ "WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ]
 ];

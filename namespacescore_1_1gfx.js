@@ -2,6 +2,7 @@ var namespacescore_1_1gfx =
 [
     [ "AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
     [ "AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
+    [ "BackgroundNode", "structscore_1_1gfx_1_1_background_node.html", "structscore_1_1gfx_1_1_background_node" ],
     [ "BasicMesh", "structscore_1_1gfx_1_1_basic_mesh.html", null ],
     [ "BufferView", "structscore_1_1gfx_1_1_buffer_view.html", null ],
     [ "CustomMesh", "classscore_1_1gfx_1_1_custom_mesh.html", "classscore_1_1gfx_1_1_custom_mesh" ],

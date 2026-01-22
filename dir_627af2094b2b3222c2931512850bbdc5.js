@@ -3,6 +3,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "layouts", "dir_dc52dfb2a523e7b3b2a561ac78a77040.html", "dir_dc52dfb2a523e7b3b2a561ac78a77040" ],
     [ "widgets", "dir_aa638cb09df48c01e6deabc296ba21ac.html", "dir_aa638cb09df48c01e6deabc296ba21ac" ],
     [ "ArrowDialog.hpp", "_arrow_dialog_8hpp_source.html", null ],
+    [ "BackgroundRenderer.hpp", "_background_renderer_8hpp_source.html", null ],
     [ "DefaultControlImpl.hpp", "_default_control_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsKnobImpl.hpp", "_default_graphics_knob_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsSliderImpl.hpp", "_default_graphics_slider_impl_8hpp_source.html", null ],

@@ -34,5 +34,6 @@ var dir_f42e6fcfe3ff5704dbc406f95332be77 =
     [ "SharedInputSettings.hpp", "_shared_input_settings_8hpp_source.html", null ],
     [ "SharedOutputSettings.hpp", "_shared_output_settings_8hpp_source.html", null ],
     [ "TexturePort.hpp", "_texture_port_8hpp_source.html", null ],
+    [ "TexturePortBackgroundRenderer.hpp", "_texture_port_background_renderer_8hpp_source.html", null ],
     [ "WindowDevice.hpp", "_window_device_8hpp_source.html", null ]
 ];
