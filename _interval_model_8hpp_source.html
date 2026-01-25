@@ -310,171 +310,174 @@ $(document).ready(function(){initNavTree('_interval_model_8hpp_source.html','');
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordtype">void</span> setStartMarker(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> t);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> startMarker() const noexcept;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordtype">void</span> hasTimeSignatureChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, hasTimeSignatureChanged, arg_1)</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="keywordtype">void</span> timeSignaturesChanged(const TimeSignatureMap&amp; arg_1)</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, timeSignaturesChanged, arg_1)</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keywordtype">void</span> quantizationRateChanged(ossia::musical_sync arg)</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, quantizationRateChanged, arg)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keywordtype">void</span> requestHeightChange(<span class="keywordtype">double</span> y)</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, requestHeightChange, y)</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keywordtype">void</span> heightPercentageChanged(<span class="keywordtype">double</span> arg_1)</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, heightPercentageChanged, arg_1)</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordtype">void</span> dateChanged(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, dateChanged, arg_1)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keywordtype">void</span> startMarkerChanged(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startMarkerChanged, arg_1)</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keywordtype">void</span> focusChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, focusChanged, arg_1)</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordtype">void</span> executionStateChanged(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalExecutionState arg_1)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executionStateChanged, arg_1)</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keywordtype">void</span> executionEvent(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalExecutionEvent ev)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executionEvent, ev)</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> smallViewVisibleChanged(<span class="keywordtype">bool</span> fv)</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, smallViewVisibleChanged, fv)</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">void</span> rackChanged(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::Slot::RackView fv)</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, rackChanged, fv)</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">void</span> slotAdded(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1)</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotAdded, arg_1)</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="keywordtype">void</span> slotRemoved(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1)</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotRemoved, arg_1)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">void</span> slotResized(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1)</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotResized, arg_1)</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordtype">void</span> slotsSwapped(<span class="keywordtype">int</span> slot1, <span class="keywordtype">int</span> slot2, Slot::RackView fv)</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotsSwapped, slot1, slot2, fv)</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keywordtype">void</span> heightFinishedChanging()</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, heightFinishedChanging)</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordtype">void</span> layerAdded(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, layerAdded, arg_1, arg_2)</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordtype">void</span> layerRemoved(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, layerRemoved, arg_1, arg_2)</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordtype">void</span> frontLayerChanged(<span class="keywordtype">int</span> arg_1, OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, frontLayerChanged, arg_1, arg_2)</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keywordtype">void</span> mutedChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, mutedChanged, arg_1)</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordtype">void</span> executingChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executingChanged, arg_1)</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="keywordtype">void</span> busChanged(<span class="keywordtype">bool</span> arg_1) E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busChanged, arg_1)</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordtype">void</span> graphalChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, graphalChanged, arg_1)</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keywordtype">void</span> nodalOffsetChanged(QPointF arg_1)</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, nodalOffsetChanged, arg_1)</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keywordtype">void</span> nodalScaleChanged(<span class="keywordtype">double</span> arg_1)</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, nodalScaleChanged, arg_1)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  PROPERTY(<span class="keywordtype">bool</span>, muted READ muted WRITE setMuted NOTIFY mutedChanged)</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  PROPERTY(<span class="keywordtype">bool</span>, graphal READ graphal WRITE setGraphal NOTIFY graphalChanged)</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  PROPERTY(</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      <span class="keywordtype">double</span>, heightPercentage READ heightPercentage WRITE setHeightPercentage NOTIFY</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                  heightPercentageChanged)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  PROPERTY(</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="keywordtype">bool</span>, timeSignature READ hasTimeSignature WRITE setHasTimeSignature NOTIFY</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                hasTimeSignatureChanged)</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  PROPERTY(</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>      ossia::musical_sync, quantizationRate READ quantizationRate WRITE</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                               setQuantizationRate NOTIFY quantizationRateChanged)</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>private:</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordtype">void</span> on_addProcess(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&amp;);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keywordtype">void</span> on_removingProcess(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&amp;);</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keywordtype">void</span> initConnections();</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">// Model for the full view.</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="comment">// Note : it is also present in m_intervalViewModels.</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  const <a class="code hl_namespace" href="namespacescore.html">score</a>::DocumentContext&amp; m_context;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  Rack m_smallView;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  FullRack m_fullView;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  inline IntervalDurations* getDurations() noexcept { <span class="keywordflow">return</span> &amp;duration; }</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">void</span> hasTimeSignatureChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, hasTimeSignatureChanged, arg_1)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordtype">void</span> timeSignaturesChanged(<span class="keyword">const</span> TimeSignatureMap&amp; arg_1)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, timeSignaturesChanged, arg_1)</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">void</span> quantizationRateChanged(ossia::musical_sync arg)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, quantizationRateChanged, arg)</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">void</span> requestHeightChange(<span class="keywordtype">double</span> y)</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, requestHeightChange, y)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">void</span> heightPercentageChanged(<span class="keywordtype">double</span> arg_1)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, heightPercentageChanged, arg_1)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordtype">void</span> dateChanged(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, dateChanged, arg_1)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordtype">void</span> startMarkerChanged(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startMarkerChanged, arg_1)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordtype">void</span> focusChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, focusChanged, arg_1)</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">void</span> executionStateChanged(Scenario::IntervalExecutionState arg_1)</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executionStateChanged, arg_1)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">void</span> executionEvent(Scenario::IntervalExecutionEvent ev)</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executionEvent, ev)</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">void</span> smallViewVisibleChanged(<span class="keywordtype">bool</span> fv)</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, smallViewVisibleChanged, fv)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">void</span> rackChanged(Scenario::Slot::RackView fv)</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, rackChanged, fv)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">void</span> slotAdded(<a class="code hl_struct" href="struct_scenario_1_1_slot_id.html">Scenario::SlotId</a> arg_1)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotAdded, arg_1)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="keywordtype">void</span> slotRemoved(<a class="code hl_struct" href="struct_scenario_1_1_slot_id.html">Scenario::SlotId</a> arg_1)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotRemoved, arg_1)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">void</span> slotResized(<a class="code hl_struct" href="struct_scenario_1_1_slot_id.html">Scenario::SlotId</a> arg_1)</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotResized, arg_1)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">void</span> slotsSwapped(<span class="keywordtype">int</span> slot1, <span class="keywordtype">int</span> slot2, Slot::RackView fv)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, slotsSwapped, slot1, slot2, fv)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordtype">void</span> heightFinishedChanging()</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, heightFinishedChanging)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keywordtype">void</span> layerAdded(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, layerAdded, arg_1, arg_2)</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordtype">void</span> layerRemoved(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::SlotId arg_1, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, layerRemoved, arg_1, arg_2)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="keywordtype">void</span> frontLayerChanged(<span class="keywordtype">int</span> arg_1, OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt; arg_2)</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, frontLayerChanged, arg_1, arg_2)</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <span class="keywordtype">void</span> mutedChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, mutedChanged, arg_1)</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> executingChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, executingChanged, arg_1)</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">void</span> busChanged(<span class="keywordtype">bool</span> arg_1) E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, busChanged, arg_1)</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keywordtype">void</span> graphalChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, graphalChanged, arg_1)</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keywordtype">void</span> nodalOffsetChanged(QPointF arg_1)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, nodalOffsetChanged, arg_1)</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordtype">void</span> nodalScaleChanged(<span class="keywordtype">double</span> arg_1)</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, nodalScaleChanged, arg_1)</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  PROPERTY(<span class="keywordtype">bool</span>, muted READ muted WRITE setMuted NOTIFY mutedChanged)</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  PROPERTY(<span class="keywordtype">bool</span>, graphal READ graphal WRITE setGraphal NOTIFY graphalChanged)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  PROPERTY(</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordtype">double</span>, heightPercentage READ heightPercentage WRITE setHeightPercentage NOTIFY</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                  heightPercentageChanged)</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  PROPERTY(</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="keywordtype">bool</span>, timeSignature READ hasTimeSignature WRITE setHasTimeSignature NOTIFY</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                hasTimeSignatureChanged)</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  PROPERTY(</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      ossia::musical_sync, quantizationRate READ quantizationRate WRITE</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                               setQuantizationRate NOTIFY quantizationRateChanged)</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  W_PROPERTY(IntervalDurations*, durations READ getDurations CONSTANT)</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>private:</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordtype">void</span> on_addProcess(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&amp;);</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keywordtype">void</span> on_removingProcess(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&amp;);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keywordtype">void</span> initConnections();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="comment">// Model for the full view.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">// Note : it is also present in m_intervalViewModels.</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  const <a class="code hl_namespace" href="namespacescore.html">score</a>::DocumentContext&amp; m_context;</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  TimeSignatureMap m_signatures;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;StateModel&gt; m_startState;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;StateModel&gt; m_endState;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  Rack m_smallView;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  FullRack m_fullView;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  TimeSignatureMap m_signatures;</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_startMarker;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_date;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <span class="keywordtype">double</span> m_heightPercentage{0.5};</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;StateModel&gt; m_startState;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;StateModel&gt; m_endState;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_startMarker;</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="keywordtype">double</span> m_nodalFullViewSlotHeight{100};</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordtype">double</span> m_quantRate{-1.0};</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_date;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordtype">double</span> m_heightPercentage{0.5};</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  ::ZoomRatio m_zoom{-1};</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_center{};</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  QPointF m_nodalOffset{};</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="keywordtype">double</span> m_nodalScale{1.0};</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  IntervalExecutionState m_executionState : 2;</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  ViewMode m_viewMode : 1;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">bool</span> m_smallViewShown : 1;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keywordtype">bool</span> m_muted : 1;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="keywordtype">bool</span> m_executing : 1;</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">bool</span> m_hasSignature : 1;</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="keywordtype">bool</span> m_graphal : 1;</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>};</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordtype">double</span> m_nodalFullViewSlotHeight{100};</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="keywordtype">double</span> m_quantRate{-1.0};</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  ::ZoomRatio m_zoom{-1};</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_center{};</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  QPointF m_nodalOffset{};</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">double</span> m_nodalScale{1.0};</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  IntervalExecutionState m_executionState : 2;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  ViewMode m_viewMode : 1;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordtype">bool</span> m_smallViewShown : 1;</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">bool</span> m_muted : 1;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="keywordtype">bool</span> m_executing : 1;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">bool</span> m_hasSignature : 1;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">bool</span> m_graphal : 1;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>};</div>
 </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keywordtype">bool</span> isInFullView(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; cstr) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="keywordtype">bool</span> isInFullView(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; cstr) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keywordtype">bool</span> isInFullView(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; cstr) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="keywordtype">bool</span> isBus(</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>QPointF newProcessPosition(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; model) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="keywordtype">bool</span> isInFullView(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; cstr) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="keywordtype">bool</span> isBus(</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="foldopen" id="foldopen00331" data-start="{" data-end="};">
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_parent_time_info.html">  331</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>{</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent;</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* lastFound;</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> delta;</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>};</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>QPointF newProcessPosition(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>&amp; model) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="foldopen" id="foldopen00334" data-start="{" data-end="};">
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_parent_time_info.html">  334</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>{</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent;</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* lastFound;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> delta;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>};</div>
 </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* closestParentInterval(<span class="keyword">const</span> QObject*) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithMusicalMetrics(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithTempo(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithQuantification(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* self);</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* closestParentInterval(<span class="keyword">const</span> QObject*) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithMusicalMetrics(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithTempo(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>*);</div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><a class="code hl_struct" href="struct_time_val.html">TimeVal</a> timeDelta(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* child, <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent);</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>}</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>, <span class="stringliteral">&quot;Interval&quot;</span>)</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>Q_DECLARE_METATYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>TR_TEXT_METADATA(, <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel, <a class="code hl_class" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Interval&quot;)</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><a class="code hl_struct" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a> closestParentWithQuantification(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* self);</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><a class="code hl_struct" href="struct_time_val.html">TimeVal</a> timeDelta(<span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* child, <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>* parent);</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>}</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span> </div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a>, <span class="stringliteral">&quot;Interval&quot;</span>)</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel::ViewMode)</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>Q_DECLARE_METATYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel&gt;)</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>TR_TEXT_METADATA(, <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel, <a class="code hl_class" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Interval&quot;)</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::IntervalModel*)</div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:61</div></div>
@@ -493,7 +496,8 @@ $(document).ready(function(){initNavTree('_interval_model_8hpp_source.html','');
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:111</div></div>
 <div class="ttc" id="astruct_scenario_1_1_interval_save_data_html"><div class="ttname"><a href="struct_scenario_1_1_interval_save_data.html">Scenario::IntervalSaveData</a></div><div class="ttdef"><b>Definition</b> dataStructures.hpp:40</div></div>
-<div class="ttc" id="astruct_scenario_1_1_parent_time_info_html"><div class="ttname"><a href="struct_scenario_1_1_parent_time_info.html">Scenario::ParentTimeInfo</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:332</div></div>
+<div class="ttc" id="astruct_scenario_1_1_parent_time_info_html"><div class="ttname"><a href="struct_scenario_1_1_parent_time_info.html">Scenario::ParentTimeInfo</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:335</div></div>
+<div class="ttc" id="astruct_scenario_1_1_slot_id_html"><div class="ttname"><a href="struct_scenario_1_1_slot_id.html">Scenario::SlotId</a></div><div class="ttdef"><b>Definition</b> Slot.hpp:86</div></div>
 <div class="ttc" id="astruct_scenario_1_1_slot_path_html"><div class="ttname"><a href="struct_scenario_1_1_slot_path.html">Scenario::SlotPath</a></div><div class="ttdef"><b>Definition</b> Slot.hpp:54</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition</b> TimeValue.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
