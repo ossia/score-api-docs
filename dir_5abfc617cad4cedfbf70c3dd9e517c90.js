@@ -29,6 +29,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "ScreenNode.hpp", "_screen_node_8hpp_source.html", null ],
     [ "ShaderCache.hpp", "_shader_cache_8hpp_source.html", null ],
     [ "SimpleRenderedISFNode.hpp", "_simple_rendered_i_s_f_node_8hpp_source.html", null ],
+    [ "SSBO.hpp", "_s_s_b_o_8hpp_source.html", null ],
     [ "TexgenNode.hpp", "_texgen_node_8hpp_source.html", null ],
     [ "TextNode.hpp", "_text_node_8hpp_source.html", null ],
     [ "Uniforms.hpp", "_uniforms_8hpp_source.html", null ],

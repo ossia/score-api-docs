@@ -70,6 +70,15 @@ var annotated_dup =
       [ "StateInspectorWidget", "class_automation_1_1_state_inspector_widget.html", null ]
     ] ],
     [ "avnd_tools", null, [
+      [ "detail", null, [
+        [ "bounds_checker", "structavnd__tools_1_1detail_1_1bounds__checker.html", null ],
+        [ "dimension_changer", "structavnd__tools_1_1detail_1_1dimension__changer.html", null ],
+        [ "element_accessor", "structavnd__tools_1_1detail_1_1element__accessor.html", null ],
+        [ "extent_generator", "structavnd__tools_1_1detail_1_1extent__generator.html", null ],
+        [ "make_multi_array_variant", "structavnd__tools_1_1detail_1_1make__multi__array__variant.html", null ],
+        [ "needs_resize_check", "structavnd__tools_1_1detail_1_1needs__resize__check.html", null ],
+        [ "table_operations", "structavnd__tools_1_1detail_1_1table__operations.html", null ]
+      ] ],
       [ "AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", "structavnd__tools_1_1_audio_recorder" ],
       [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
       [ "Interpolator", "structavnd__tools_1_1_interpolator.html", null ],
@@ -80,6 +89,9 @@ var annotated_dup =
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", null ],
       [ "Queue", "structavnd__tools_1_1_queue.html", null ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
+      [ "Table", "structavnd__tools_1_1_table.html", null ],
+      [ "Table1D", "structavnd__tools_1_1_table1_d.html", null ],
+      [ "Table2D", "structavnd__tools_1_1_table2_d.html", null ],
       [ "Teleplot", "structavnd__tools_1_1_teleplot.html", "structavnd__tools_1_1_teleplot" ]
     ] ],
     [ "AvndJit", null, [
@@ -2061,6 +2073,7 @@ var annotated_dup =
         [ "dereference_visitor", "structscore_1_1detail_1_1dereference__visitor.html", null ]
       ] ],
       [ "gfx", "namespacescore_1_1gfx.html", [
+        [ "ArrayParseResult", "structscore_1_1gfx_1_1_array_parse_result.html", null ],
         [ "AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
         [ "AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
         [ "BackgroundNode", "structscore_1_1gfx_1_1_background_node.html", "structscore_1_1gfx_1_1_background_node" ],
@@ -2090,6 +2103,7 @@ var annotated_dup =
         [ "isf_input_port_vis", "structscore_1_1gfx_1_1isf__input__port__vis.html", null ],
         [ "isf_input_size_vis", "structscore_1_1gfx_1_1isf__input__size__vis.html", null ],
         [ "ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", "classscore_1_1gfx_1_1_i_s_f_node" ],
+        [ "LayoutResult", "structscore_1_1gfx_1_1_layout_result.html", null ],
         [ "Mesh", "structscore_1_1gfx_1_1_mesh.html", "structscore_1_1gfx_1_1_mesh" ],
         [ "MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
         [ "Message", "structscore_1_1gfx_1_1_message.html", null ],
@@ -2133,6 +2147,7 @@ var annotated_dup =
         [ "ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
         [ "SimpleRenderedISFNode", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html", null ],
         [ "SimpleRenderedVSANode", "structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html", null ],
+        [ "Std430TypeInfo", "structscore_1_1gfx_1_1_std430_type_info.html", null ],
         [ "TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", "structscore_1_1gfx_1_1_texgen_node" ],
         [ "TextNode", "structscore_1_1gfx_1_1_text_node.html", "structscore_1_1gfx_1_1_text_node" ],
         [ "TexturedMesh", "structscore_1_1gfx_1_1_textured_mesh.html", "structscore_1_1gfx_1_1_textured_mesh" ],

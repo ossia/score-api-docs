@@ -93,6 +93,7 @@ var hierarchy =
       [ "TSerializer< JSONObject, boost::container::small_vector< T *, N > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html", null ],
       [ "TSerializer< JSONObject, std::vector< T *, Alloc > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html", null ]
     ] ],
+    [ "score::gfx::ArrayParseResult", "structscore_1_1gfx_1_1_array_parse_result.html", null ],
     [ "ArraySerializer", "struct_array_serializer.html", [
       [ "TSerializer< JSONObject, IdContainer< T, U, O > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_o_01_4_01_4.html", null ],
       [ "TSerializer< JSONObject, QList< Args... > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_q_list_3_01_args_8_8_8_01_4_01_4.html", null ],
@@ -159,6 +160,7 @@ var hierarchy =
     [ "gpp::qrhi::DefaultPipeline::layout::bindings", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html", null ],
     [ "halp::position_gpu_geometry::bindings", "structhalp_1_1position__gpu__geometry_1_1bindings.html", null ],
     [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
+    [ "avnd_tools::detail::bounds_checker< Dim >", "structavnd__tools_1_1detail_1_1bounds__checker.html", null ],
     [ "Recording::Box", "struct_recording_1_1_box.html", null ],
     [ "score::Brush", "structscore_1_1_brush.html", null ],
     [ "score::BrushSet", "structscore_1_1_brush_set.html", null ],
@@ -689,6 +691,7 @@ var hierarchy =
     [ "DiagnosticConsumer", null, [
       [ "QtDiagnosticConsumer", "class_qt_diagnostic_consumer.html", null ]
     ] ],
+    [ "avnd_tools::detail::dimension_changer< T >", "structavnd__tools_1_1detail_1_1dimension__changer.html", null ],
     [ "Threedim::DirectBufferReferenceStrategy", "class_threedim_1_1_direct_buffer_reference_strategy.html", null ],
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
     [ "Threedim::DirectReferenceStrategy", "class_threedim_1_1_direct_reference_strategy.html", null ],
@@ -733,6 +736,7 @@ var hierarchy =
     [ "score::gfx::Edge", "structscore_1_1gfx_1_1_edge.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
+    [ "avnd_tools::detail::element_accessor< Dim, CurrentIdx >", "structavnd__tools_1_1detail_1_1element__accessor.html", null ],
     [ "Scenario::ElementsProperties", "struct_scenario_1_1_elements_properties.html", null ],
     [ "Scenario::ElementTraits< Scenario_T, Element_T >", "struct_scenario_1_1_element_traits.html", null ],
     [ "Scenario::ElementTraits< BaseScenarioContainer, EventModel >", "struct_scenario_1_1_element_traits_3_01_base_scenario_container_00_01_event_model_01_4.html", null ],
@@ -798,6 +802,7 @@ var hierarchy =
     [ "ExprData", null, [
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
+    [ "avnd_tools::detail::extent_generator< Dim >", "structavnd__tools_1_1detail_1_1extent__generator.html", null ],
     [ "Threedim::ExtractBuffer", "class_threedim_1_1_extract_buffer.html", null ],
     [ "Face", null, [
       [ "Threedim::TFace", "class_threedim_1_1_t_face.html", null ]
@@ -1132,8 +1137,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1181,8 +1186,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1727,6 +1732,7 @@ var hierarchy =
     [ "Process::LayoutBuilderBase", "struct_process_1_1_layout_builder_base.html", [
       [ "oscr::LayoutBuilder< Info >", "structoscr_1_1_layout_builder.html", null ]
     ] ],
+    [ "score::gfx::LayoutResult", "structscore_1_1gfx_1_1_layout_result.html", null ],
     [ "score::lazy_init_t", "structscore_1_1lazy__init__t.html", null ],
     [ "Protocols::Artnet::LEDPaneLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_pane_layout.html", null ],
     [ "Protocols::Artnet::LEDStripLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_strip_layout.html", null ],
@@ -1770,6 +1776,7 @@ var hierarchy =
     [ "Scenario::MagneticStates", "struct_scenario_1_1_magnetic_states.html", null ],
     [ "mtk::MIDISyncOut::MainThreadState", "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html", null ],
     [ "Explorer::make_dataspace", "struct_explorer_1_1make__dataspace.html", null ],
+    [ "avnd_tools::detail::make_multi_array_variant< T, MaxDims >", "structavnd__tools_1_1detail_1_1make__multi__array__variant.html", null ],
     [ "Explorer::make_unit", "struct_explorer_1_1make__unit.html", null ],
     [ "MapSerializer", "struct_map_serializer.html", [
       [ "TSerializer< DataStream, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, BC, IsSegmented > >", "struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key41104e411901c768d82ebf5dde8e463c.html", null ],
@@ -1908,6 +1915,7 @@ var hierarchy =
     [ "JS::MidiMessage ::W_MetaObjectCreatorHelper::Name", "struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
     [ "JS::OutValueMessage ::W_MetaObjectCreatorHelper::Name", "struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
     [ "State::DestinationQualifiers ::W_MetaObjectCreatorHelper::Name", "struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
+    [ "avnd_tools::detail::needs_resize_check< Dim >", "structavnd__tools_1_1detail_1_1needs__resize__check.html", null ],
     [ "Scenario::NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
@@ -4045,6 +4053,7 @@ var hierarchy =
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
+    [ "score::gfx::Std430TypeInfo", "structscore_1_1gfx_1_1_std430_type_info.html", null ],
     [ "mtk::MIDISyncOut::storage", "unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html", null ],
     [ "Gfx::Video::VideoProps::Stream", "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html", null ],
     [ "Gfx::StreamOptions", "struct_gfx_1_1_stream_options.html", null ],
@@ -4127,6 +4136,10 @@ var hierarchy =
       ] ],
       [ "score::VisibilityNotifying< T >", "classscore_1_1_visibility_notifying.html", null ]
     ] ],
+    [ "avnd_tools::Table", "structavnd__tools_1_1_table.html", null ],
+    [ "avnd_tools::Table1D", "structavnd__tools_1_1_table1_d.html", null ],
+    [ "avnd_tools::Table2D", "structavnd__tools_1_1_table2_d.html", null ],
+    [ "avnd_tools::detail::table_operations< T >", "structavnd__tools_1_1detail_1_1table__operations.html", null ],
     [ "Tags_k", "class_tags__k.html", null ],
     [ "score::TaskPool", "classscore_1_1_task_pool.html", null ],
     [ "Device::TCPPortDeviceResource", "struct_device_1_1_t_c_p_port_device_resource.html", null ],

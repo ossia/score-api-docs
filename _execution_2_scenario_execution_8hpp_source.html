@@ -154,16 +154,22 @@ $(document).ready(function(){initNavTree('_execution_2_scenario_execution_8hpp_s
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> transport(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, transport, arg_1)</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_execution.html#a4c2b94652e0a7c1d1eb9ae7cd1cce59a">   58</a></span>  <span class="keywordtype">void</span> startRecording(<a class="code hl_class" href="class_scenario_1_1_process_model.html">ProcessModel</a>* arg_1, <a class="code hl_struct" href="struct_scenario_1_1_point.html">Point</a> arg_2)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startRecording, arg_1, arg_2)</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_execution.html#a50fbb510ce013bfc32d641254f053b34">   62</a></span>  <span class="keywordtype">void</span> startRecordingMessages(<a class="code hl_class" href="class_scenario_1_1_process_model.html">ProcessModel</a>* arg_1, <a class="code hl_struct" href="struct_scenario_1_1_point.html">Point</a> arg_2)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startRecordingMessages, arg_1, arg_2)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> stopRecording() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, stopRecording)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">void</span> beginScrub(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, beginScrub, arg_1)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> scrub(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1) E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, scrub, arg_1)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> endScrub(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, endScrub, arg_1)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_execution.html#a4c2b94652e0a7c1d1eb9ae7cd1cce59a">   64</a></span>  <span class="keywordtype">void</span> startRecording(<a class="code hl_class" href="class_scenario_1_1_process_model.html">ProcessModel</a>* arg_1, <a class="code hl_struct" href="struct_scenario_1_1_point.html">Point</a> arg_2)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startRecording, arg_1, arg_2)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_execution.html#a50fbb510ce013bfc32d641254f053b34">   68</a></span>  <span class="keywordtype">void</span> startRecordingMessages(<a class="code hl_class" href="class_scenario_1_1_process_model.html">ProcessModel</a>* arg_1, <a class="code hl_struct" href="struct_scenario_1_1_point.html">Point</a> arg_2)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, startRecordingMessages, arg_1, arg_2)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> stopRecording() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, stopRecording)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>
 <div class="ttc" id="aclass_scenario_1_1_process_model_html"><div class="ttname"><a href="class_scenario_1_1_process_model.html">Scenario::ProcessModel</a></div><div class="ttdoc">The core hierarchical and temporal process of score.</div><div class="ttdef"><b>Definition</b> ScenarioModel.hpp:37</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_execution_html"><div class="ttname"><a href="class_scenario_1_1_scenario_execution.html">Scenario::ScenarioExecution</a></div><div class="ttdoc">API for the various elements that we can execute.</div><div class="ttdef"><b>Definition</b> Execution/ScenarioExecution.hpp:25</div></div>
