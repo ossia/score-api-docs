@@ -151,8 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a78fbf488771dc13ba96a94df9b44c989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ec55d7b0d729855166b018f160880d9" id="r_a0ec55d7b0d729855166b018f160880d9"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_outlet.html#a0ec55d7b0d729855166b018f160880d9">saveData</a> () const noexcept override</td></tr>
 <tr class="separator:a0ec55d7b0d729855166b018f160880d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad490dc42fa10bb8ecce231e50b41424d" id="r_ad490dc42fa10bb8ecce231e50b41424d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_outlet.html#ad490dc42fa10bb8ecce231e50b41424d">loadData</a> (const QByteArray &amp;arr) noexcept override</td></tr>
-<tr class="separator:ad490dc42fa10bb8ecce231e50b41424d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea9df52e72b9d899354338376bf2295" id="r_a0ea9df52e72b9d899354338376bf2295"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_outlet.html#a0ea9df52e72b9d899354338376bf2295">loadData</a> (const QByteArray &amp;arr, PortLoadDataFlags={}) noexcept override</td></tr>
+<tr class="separator:a0ea9df52e72b9d899354338376bf2295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c08892d650247ea2c8b5cd01fec2e48" id="r_a8c08892d650247ea2c8b5cd01fec2e48"><td class="memItemLeft" align="right" valign="top"><a id="a8c08892d650247ea2c8b5cd01fec2e48" name="a8c08892d650247ea2c8b5cd01fec2e48"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>propagate</b> () const</td></tr>
 <tr class="separator:a8c08892d650247ea2c8b5cd01fec2e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -410,8 +410,8 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 
 </div>
 </div>
-<a id="ad490dc42fa10bb8ecce231e50b41424d" name="ad490dc42fa10bb8ecce231e50b41424d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad490dc42fa10bb8ecce231e50b41424d">&#9670;&#160;</a></span>loadData()</h2>
+<a id="a0ea9df52e72b9d899354338376bf2295" name="a0ea9df52e72b9d899354338376bf2295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea9df52e72b9d899354338376bf2295">&#9670;&#160;</a></span>loadData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -423,8 +423,18 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
           <td class="memname">void Process::AudioOutlet::loadData </td>
           <td>(</td>
           <td class="paramtype">const QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>arr</em></td><td>)</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">PortLoadDataFlags&#160;</td>
+          <td class="paramname"><em>flags</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
