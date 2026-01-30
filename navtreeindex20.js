@@ -245,8 +245,8 @@ var NAVTREEINDEX20 =
 "struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0],
 "struct_curve_1_1_element_1_1_point__tag.html":[12,0,10,0,1],
 "struct_curve_1_1_element_1_1_segment__tag.html":[12,0,10,0,2],
-"struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_point_id.html":[11,0,1,28],
+"struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
 "struct_curve_1_1_segment_data.html":[12,0,10,37],
 "struct_curve_1_1_style.html":[12,0,10,49]

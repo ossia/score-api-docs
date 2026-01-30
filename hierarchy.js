@@ -890,6 +890,7 @@ var hierarchy =
     [ "WidgetFactory::FloatRangeSlider", "struct_widget_factory_1_1_float_range_slider.html", null ],
     [ "WidgetFactory::FloatRangeSpinBox", "struct_widget_factory_1_1_float_range_spin_box.html", null ],
     [ "WidgetFactory::FloatSpinBox", "struct_widget_factory_1_1_float_spin_box.html", null ],
+    [ "avnd_tools::fmt_csv_writer", "structavnd__tools_1_1fmt__csv__writer.html", null ],
     [ "score::FocusFacade", "structscore_1_1_focus_facade.html", null ],
     [ "WidgetFactory::FolderChooser", "struct_widget_factory_1_1_folder_chooser.html", null ],
     [ "foo", "classfoo.html", null ],
@@ -1186,8 +1187,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

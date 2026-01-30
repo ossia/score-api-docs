@@ -137,8 +137,8 @@ var NAVTREEINDEX =
 "struct_scenario_1_1_path_detector.html",
 "struct_threedim_1_1_texture_to_buffer_1_1ins.html",
 "structoscr_1_1setup__control__for__exec.html",
-"structscore_1_1_static_property_command_3_01_gfx_1_1_c_s_f_1_1_model_1_1p__compute_01_4.html",
-"structscore_1_1gfx_1_1_shader_cache.html"
+"structscore_1_1_static_property_command_3_01_faust_1_1_faust_effect_model_1_1p__script_01_4.html",
+"structscore_1_1gfx_1_1_screen_node.html#ab1dc3eeb47d4714d3ed55862e4a8d161"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

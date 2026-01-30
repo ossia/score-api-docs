@@ -81,6 +81,7 @@ var annotated_dup =
       ] ],
       [ "AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", "structavnd__tools_1_1_audio_recorder" ],
       [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
+      [ "fmt_csv_writer", "structavnd__tools_1_1fmt__csv__writer.html", null ],
       [ "Interpolator", "structavnd__tools_1_1_interpolator.html", null ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
       [ "PatternObject", "structavnd__tools_1_1_pattern_object.html", null ],
