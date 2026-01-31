@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"dir_edc90bc704e584e3d423d67cd707b2b9.html":[13,0,0,2,29,0,11],
 "dir_ee9d2bc7695260c1af76369b7ef51a9b.html":[13,0,0,2,14,1,0],
 "dir_eeff32359466cfff359724ae55c03b7e.html":[13,0,0,2,32,1],
 "dir_ef2865f0059821f2b08b8f6b276a0210.html":[13,0,0,2,29,0,5],
@@ -26,8 +27,8 @@ var NAVTREEINDEX19 =
 "dir_ff56996379f66a234579aa3f0401ac06.html":[13,0,0,2,32,4,3,9],
 "element_finding_helper_8hpp_source.html":[13,0,0,2,32,4,11,1],
 "files.html":[13,0],
-"functions.html":[12,3,0],
 "functions.html":[12,3,0,0],
+"functions.html":[12,3,0],
 "functions_c.html":[12,3,0,1],
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
@@ -86,8 +87,8 @@ var NAVTREEINDEX19 =
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
 "lib_2score_2tools_2_debug_8hpp_source.html":[13,0,0,1,1,12,6],
-"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,8],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,17],
+"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,9],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,18],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5],
 "lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14],
 "score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
 "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,14],
-"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,27],
-"score-lib-process_2_process_2_process_8hpp_source.html":[13,0,0,2,3,4,32]
+"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,27]
 };

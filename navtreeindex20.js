@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"score-lib-process_2_process_2_process_8hpp_source.html":[13,0,0,2,3,4,32],
 "score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,0,2,3,4,35],
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,0,2,3,4,38],
 "score-lib-process_2_remote_control_2_remote_control_provider_8hpp_source.html":[13,0,0,2,3,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "struct_curve_1_1_point_id.html":[11,0,1,28],
 "struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
-"struct_curve_1_1_segment_data.html":[12,0,10,37],
-"struct_curve_1_1_style.html":[12,0,10,49]
+"struct_curve_1_1_segment_data.html":[12,0,10,37]
 };
