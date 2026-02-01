@@ -1,5 +1,9 @@
 var NAVTREEINDEX28 =
 {
+"structscore_1_1gfx_1_1_screen_node.html":[12,0,55,2,70],
+"structscore_1_1gfx_1_1_screen_node.html":[11,0,12,0,70],
+"structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352":[11,0,12,0,70,0],
+"structscore_1_1gfx_1_1_screen_node.html#a7057c698de89ebde92bfdc38bfa01352":[12,0,55,2,70,0],
 "structscore_1_1gfx_1_1_screen_node.html#ab1dc3eeb47d4714d3ed55862e4a8d161":[11,0,12,0,70,1],
 "structscore_1_1gfx_1_1_screen_node.html#ab1dc3eeb47d4714d3ed55862e4a8d161":[12,0,55,2,70,1],
 "structscore_1_1gfx_1_1_shader_cache.html":[11,0,12,0,71],

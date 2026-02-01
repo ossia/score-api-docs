@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_get_property_8hpp_source.html":[13,0,0,2,2,0,2],
 "_gfx_application_plugin_8hpp_source.html":[13,0,0,2,17,1,18],
 "_gfx_context_8hpp_source.html":[13,0,0,2,17,1,19],
 "_gfx_device_8hpp_source.html":[13,0,0,2,17,1,20],
@@ -63,7 +64,7 @@ var NAVTREEINDEX2 =
 "_identified_object_map_8hpp_source.html":[13,0,0,1,1,7,19],
 "_identifier_8hpp_source.html":[13,0,0,1,1,7,20],
 "_identifier_debug_8hpp_source.html":[13,0,0,1,1,7,21],
-"_identifier_generation_8hpp_source.html":[13,0,0,1,1,12,14],
+"_identifier_generation_8hpp_source.html":[13,0,0,1,1,12,15],
 "_image_list_chooser_8hpp_source.html":[13,0,0,2,17,1,4,1],
 "_image_node_8hpp_source.html":[13,0,0,2,17,1,3,8],
 "_include_libpd_8hpp_source.html":[13,0,0,2,28,0,3],
@@ -115,7 +116,7 @@ var NAVTREEINDEX2 =
 "_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,12],
 "_invert_y_renderer_8hpp_source.html":[13,0,0,2,17,1,25],
 "_invisible_root_node_8hpp_source.html":[13,0,0,1,1,7,1,0],
-"_invisible_window_8hpp_source.html":[13,0,0,1,1,12,15],
+"_invisible_window_8hpp_source.html":[13,0,0,1,1,12,16],
 "_invoke_8hpp_source.html":[13,0,0,1,1,12,2,5],
 "_is_template_8hpp_source.html":[13,0,0,1,1,10,6],
 "_item_bounder_8hpp_source.html":[13,0,0,1,1,5,14],
@@ -165,7 +166,7 @@ var NAVTREEINDEX2 =
 "_library_widget_8hpp_source.html":[13,0,0,2,21,0,5],
 "_linear_segment_8hpp_source.html":[13,0,0,2,11,0,4,0,0],
 "_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,39,0,0,0,0],
-"_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,16],
+"_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,17],
 "_listening_handler_8hpp_source.html":[13,0,0,2,13,0,4,2],
 "_listening_handler_factory_8hpp_source.html":[13,0,0,2,13,0,4,3],
 "_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,13,0,4,4],
@@ -191,6 +192,7 @@ var NAVTREEINDEX2 =
 "_m_c_u_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,9,1],
 "_m_c_u_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,9,2],
 "_m_c_u_specific_settings_8hpp_source.html":[13,0,0,2,29,0,9,3],
+"_m_d_m_enrollment_detection_8hpp_source.html":[13,0,0,1,1,12,19],
 "_m_f_c_c_8hpp_source.html":[13,0,0,2,5,0,10],
 "_m_i_d_i_device_8hpp_source.html":[13,0,0,2,29,0,10,0],
 "_m_i_d_i_keyboard_event_filter_8linux_8hpp_source.html":[13,0,0,2,29,0,10,1],
@@ -210,7 +212,7 @@ var NAVTREEINDEX2 =
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
-"_map_copy_8hpp_source.html":[13,0,0,1,1,12,17],
+"_map_copy_8hpp_source.html":[13,0,0,1,1,12,18],
 "_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9],
 "_mapper_device_8hpp_source.html":[13,0,0,2,29,0,8,0],
 "_mapping_colors_8hpp_source.html":[13,0,0,2,23,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_message_list_serialization_8hpp_source.html":[13,0,0,2,4,0,8],
 "_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0],
 "_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1],
-"_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
-"_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
-"_metadata_widget_8hpp_source.html":[13,0,0,2,32,4,6,10]
+"_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0]
 };

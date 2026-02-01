@@ -872,6 +872,7 @@ var hierarchy =
       [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ]
     ] ],
     [ "bitfocus::module_data::feedback_definition", "structbitfocus_1_1module__data_1_1feedback__definition.html", null ],
+    [ "bitfocus::module_data::feedback_instance", "structbitfocus_1_1module__data_1_1feedback__instance.html", null ],
     [ "halp::file_port", null, [
       [ "Threedim::ObjLoader::ins::obj_t", "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html", null ]
     ] ],
@@ -2202,8 +2203,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3258,6 +3259,7 @@ var hierarchy =
         [ "JS::MidiInlet", "class_j_s_1_1_midi_inlet.html", null ],
         [ "JS::ValueInlet", "class_j_s_1_1_value_inlet.html", null ]
       ] ],
+      [ "JS::JsSystem", "class_j_s_1_1_js_system.html", null ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "JS::ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", null ],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"dir_ea75b010d84c3554955856059344eff1.html":[13,0,0,2,31,0],
+"dir_ec0fb10a2a8fc6289ba6216e63fd3c6c.html":[13,0,0,2,29,0,21],
+"dir_ecdd0f34417e07dd9624574090edc529.html":[13,0,0,2,32,4,3,10],
 "dir_edc90bc704e584e3d423d67cd707b2b9.html":[13,0,0,2,29,0,11],
 "dir_ee9d2bc7695260c1af76369b7ef51a9b.html":[13,0,0,2,14,1,0],
 "dir_eeff32359466cfff359724ae55c03b7e.html":[13,0,0,2,32,1],
@@ -33,8 +36,8 @@ var NAVTREEINDEX19 =
 "functions_d.html":[12,3,0,2],
 "functions_e.html":[12,3,0,3],
 "functions_f.html":[12,3,0,4],
-"functions_func.html":[12,3,1],
 "functions_func.html":[12,3,1,0],
+"functions_func.html":[12,3,1],
 "functions_func_c.html":[12,3,1,1],
 "functions_func_d.html":[12,3,1,2],
 "functions_func_e.html":[12,3,1,3],
@@ -86,9 +89,9 @@ var NAVTREEINDEX19 =
 "lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
-"lib_2score_2tools_2_debug_8hpp_source.html":[13,0,0,1,1,12,6],
-"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,9],
-"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,18],
+"lib_2score_2tools_2_debug_8hpp_source.html":[13,0,0,1,1,12,7],
+"lib_2score_2tools_2_file_8hpp_source.html":[13,0,0,1,1,12,10],
+"lib_2score_2tools_2_metadata_8hpp_source.html":[13,0,0,1,1,12,20],
 "lib_2score_2widgets_2_control_widgets_8hpp_source.html":[13,0,0,1,1,13,5],
 "lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
 "lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
 "score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
-"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14],
-"score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
-"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,14],
-"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,27]
+"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14]
 };
