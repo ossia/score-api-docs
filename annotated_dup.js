@@ -826,6 +826,7 @@ var annotated_dup =
       [ "PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "PortSource", "struct_j_s_1_1_port_source.html", null ],
       [ "ProcessModel", "class_j_s_1_1_process_model.html", null ],
+      [ "QmlProcess", "class_j_s_1_1_qml_process.html", null ],
       [ "QmlSource", "struct_j_s_1_1_qml_source.html", "struct_j_s_1_1_qml_source" ],
       [ "SampleTimings", "struct_j_s_1_1_sample_timings.html", null ],
       [ "Script", "class_j_s_1_1_script.html", null ],

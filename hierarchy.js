@@ -2203,8 +2203,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3576,6 +3576,9 @@ var hierarchy =
     [ "Media::Sound::WaveformComputerImpl::QPainterCleanup", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_q_painter_cleanup.html", null ],
     [ "QPointF", null, [
       [ "Scenario::VerticalExtent", "struct_scenario_1_1_vertical_extent.html", null ]
+    ] ],
+    [ "QProcess", null, [
+      [ "JS::QmlProcess", "class_j_s_1_1_qml_process.html", null ]
     ] ],
     [ "QPushButton", null, [
       [ "score::ToggleButton", "structscore_1_1_toggle_button.html", null ]

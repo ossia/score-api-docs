@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"prefix_8hpp_source.html":[13,0,0,1,1,15],
+"score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
 "score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14],
 "score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
 "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,14],
@@ -79,7 +81,7 @@ var NAVTREEINDEX20 =
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,20,0,0,2],
 "score-plugin-js_2_j_s_2_executor_2_g_p_u_node_8hpp_source.html":[13,0,0,2,20,0,1,3],
 "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,4],
-"score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,20,0,2,11],
+"score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,20,0,2,12],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,22,0,0],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,0,2,22,0,2],
 "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html":[13,0,0,2,22,0,3],
@@ -241,13 +243,11 @@ var NAVTREEINDEX20 =
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
 "struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_domain.html":[12,0,10,9],
-"struct_curve_1_1_curve_event.html":[12,0,10,11],
 "struct_curve_1_1_curve_event.html":[11,0,1,9],
+"struct_curve_1_1_curve_event.html":[12,0,10,11],
 "struct_curve_1_1_curve_segment_map.html":[12,0,10,15],
 "struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
 "struct_curve_1_1_easing_data.html":[12,0,10,17],
 "struct_curve_1_1_easing_data.html":[11,0,1,15],
-"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0],
-"struct_curve_1_1_element_1_1_point__tag.html":[12,0,10,0,1],
-"struct_curve_1_1_element_1_1_segment__tag.html":[12,0,10,0,2]
+"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0]
 };
