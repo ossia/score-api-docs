@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_process_1_1_control_outlet.html":[11,0,10,22],
 "class_process_1_1_dataflow_manager.html":[11,0,10,24],
 "class_process_1_1_dataflow_manager.html":[12,0,48,24],
 "class_process_1_1_default_effect_item.html":[11,0,10,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "class_protocols_1_1_u_d_p_widget.html":[12,0,49,105],
 "class_protocols_1_1_unix_datagram_widget.html":[12,0,49,106],
 "class_protocols_1_1_unix_stream_widget.html":[12,0,49,107],
-"class_protocols_1_1_w_s_device.html":[12,0,49,116],
-"class_protocols_1_1_w_s_protocol_factory.html":[12,0,49,117]
+"class_protocols_1_1_w_s_device.html":[12,0,49,116]
 };

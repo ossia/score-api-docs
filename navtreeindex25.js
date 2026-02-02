@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"struct_threedim_1_1_scale_control.html":[12,0,61,33],
 "struct_threedim_1_1_sphere.html":[12,0,61,34],
 "struct_threedim_1_1_struc_synth_1_1ins.html":[12,0,61,37,0],
 "struct_threedim_1_1_struc_synth_1_1worker.html":[12,0,61,37,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "structoscr_1_1multichannel__audio.html":[12,0,43,33],
 "structoscr_1_1multichannel__audio.html":[11,0,8,33],
 "structoscr_1_1multichannel__audio__view.html":[11,0,8,34],
-"structoscr_1_1multichannel__audio__view.html":[12,0,43,34],
-"structoscr_1_1pmf__member__type.html":[12,0,43,38]
+"structoscr_1_1multichannel__audio__view.html":[12,0,43,34]
 };

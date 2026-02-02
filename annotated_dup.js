@@ -807,6 +807,7 @@ var annotated_dup =
       [ "InValueMessage", "struct_j_s_1_1_in_value_message.html", null ],
       [ "js_node", "class_j_s_1_1js__node.html", null ],
       [ "js_process", "struct_j_s_1_1js__process.html", null ],
+      [ "JsLibrary", "class_j_s_1_1_js_library.html", null ],
       [ "JsSystem", "class_j_s_1_1_js_system.html", null ],
       [ "JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],

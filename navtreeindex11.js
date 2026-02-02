@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"class_protocols_1_1_w_s_protocol_factory.html":[12,0,49,117],
 "class_protocols_1_1_w_s_protocol_settings_widget.html":[12,0,49,118],
 "class_protocols_1_1_websocket_client_widget.html":[12,0,49,108],
 "class_protocols_1_1_websocket_server_widget.html":[12,0,49,109],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "class_scenario_1_1_creation_state_base.html":[12,0,54,41],
 "class_scenario_1_1_creation_tool.html":[11,0,11,40],
 "class_scenario_1_1_creation_tool.html":[12,0,54,42],
-"class_scenario_1_1_cross_overlay.html":[11,0,11,41],
-"class_scenario_1_1_cross_overlay.html":[12,0,54,43]
+"class_scenario_1_1_cross_overlay.html":[11,0,11,41]
 };

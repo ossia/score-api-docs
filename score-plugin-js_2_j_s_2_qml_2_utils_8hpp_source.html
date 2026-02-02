@@ -165,7 +165,30 @@ $(document).ready(function(){initNavTree('score-plugin-js_2_j_s_2_qml_2_utils_8h
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  W_SLOT(availableCudaToolkitDylibs)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="};">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_j_s_1_1_js_library.html">   53</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1_js_library.html">JsLibrary</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  W_OBJECT(<a class="code hl_class" href="class_j_s_1_1_js_library.html">JsLibrary</a>)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// On this machine</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QVariantList installedPackages();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  W_SLOT(installedPackages)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// On the server</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> refreshAvailablePackages();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  W_SLOT(refreshAvailablePackages)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  QVariantList availablePackages();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  W_SLOT(availablePackages)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">// From the server to this machine</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> installPackage(<span class="keyword">const</span> QString&amp; uid);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  W_SLOT(installPackage)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="ttc" id="aclass_j_s_1_1_js_library_html"><div class="ttname"><a href="class_j_s_1_1_js_library.html">JS::JsLibrary</a></div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/Qml/Utils.hpp:54</div></div>
 <div class="ttc" id="aclass_j_s_1_1_js_system_html"><div class="ttname"><a href="class_j_s_1_1_js_system.html">JS::JsSystem</a></div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/Qml/Utils.hpp:40</div></div>
 <div class="ttc" id="aclass_j_s_1_1_js_utils_html"><div class="ttname"><a href="class_j_s_1_1_js_utils.html">JS::JsUtils</a></div><div class="ttdef"><b>Definition</b> score-plugin-js/JS/Qml/Utils.hpp:14</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition</b> TimeValue.hpp:21</div></div>

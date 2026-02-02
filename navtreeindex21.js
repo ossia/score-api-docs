@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_point_id.html":[11,0,1,28],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
 "struct_curve_1_1_segment_data.html":[12,0,10,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "struct_hierarchical_base_scenario_1_1_time_sync_pair.html":[12,0,121,3],
 "struct_hierarchical_scenario_component_1_1_event_pair.html":[12,0,122,0],
 "struct_hierarchical_scenario_component_1_1_interval_pair.html":[12,0,122,1],
-"struct_hierarchical_scenario_component_1_1_state_pair.html":[12,0,122,2],
-"struct_hierarchical_scenario_component_1_1_time_sync_pair.html":[12,0,122,3]
+"struct_hierarchical_scenario_component_1_1_state_pair.html":[12,0,122,2]
 };

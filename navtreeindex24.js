@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"struct_scenario_1_1_object_mapper.html":[12,0,54,181],
 "struct_scenario_1_1_object_mapper.html":[11,0,11,179],
 "struct_scenario_1_1_parent_time_info.html":[12,0,54,186],
 "struct_scenario_1_1_parent_time_info.html":[11,0,11,184],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "struct_threedim_1_1_position_control.html":[12,0,61,29],
 "struct_threedim_1_1_primitive.html":[12,0,61,30],
 "struct_threedim_1_1_primitive_outputs.html":[12,0,61,31],
-"struct_threedim_1_1_rotation_control.html":[12,0,61,32],
-"struct_threedim_1_1_scale_control.html":[12,0,61,33]
+"struct_threedim_1_1_rotation_control.html":[12,0,61,32]
 };

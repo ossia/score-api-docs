@@ -1139,8 +1139,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -3259,6 +3259,7 @@ var hierarchy =
         [ "JS::MidiInlet", "class_j_s_1_1_midi_inlet.html", null ],
         [ "JS::ValueInlet", "class_j_s_1_1_value_inlet.html", null ]
       ] ],
+      [ "JS::JsLibrary", "class_j_s_1_1_js_library.html", null ],
       [ "JS::JsSystem", "class_j_s_1_1_js_system.html", null ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],

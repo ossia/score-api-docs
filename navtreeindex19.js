@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"dir_e96d1fbaa1cb3122fe8a8f8cefea2679.html":[13,0,0,2,17,1,12],
 "dir_ea75b010d84c3554955856059344eff1.html":[13,0,0,2,31,0],
 "dir_ec0fb10a2a8fc6289ba6216e63fd3c6c.html":[13,0,0,2,29,0,21],
 "dir_ecdd0f34417e07dd9624574090edc529.html":[13,0,0,2,32,4,3,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,0,2,38,0,1],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
-"score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
-"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14]
+"score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0]
 };
