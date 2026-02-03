@@ -498,9 +498,10 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a904817600939b14aaf314f5184b4a7d5">ScriptEditingSupported</a> = (1 &lt;&lt; 16 )
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667">ExternalUISupported</a> = (1 &lt;&lt; 17 )
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69">ExternalUIAvailable</a> = (1 &lt;&lt; 18 )
-, <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
+, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af">NodeHasNoBackground</a> = (1 &lt;&lt; 19 )
 , <br />
-&#160;&#160;<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
+&#160;&#160;<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
+, <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
 , <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
@@ -811,6 +812,8 @@ template&lt;typename T &gt; </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667" name="a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667"></a>ExternalUISupported&#160;</td><td class="fielddoc"><p>The process supports having a custom external UI (VST, etc.). Per-type flag. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69" name="a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69"></a>ExternalUIAvailable&#160;</td><td class="fielddoc"><p>The process currently has a custom UI available (not necessarily shown). Can vary, for instance depending on the JS script. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af" name="a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af"></a>NodeHasNoBackground&#160;</td><td class="fielddoc"><p>No background will be drawn for the node. </p>
 </td></tr>
 </table>
 

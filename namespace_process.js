@@ -157,6 +157,7 @@ var namespace_process =
       [ "ScriptEditingSupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a904817600939b14aaf314f5184b4a7d5", null ],
       [ "ExternalUISupported", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae7e4d4d89c439a38bba5de1e10dfe667", null ],
       [ "ExternalUIAvailable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69", null ],
+      [ "NodeHasNoBackground", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af", null ],
       [ "SupportsLasting", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a29b3036018dcd388b9502a6aae1912b2", null ],
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]

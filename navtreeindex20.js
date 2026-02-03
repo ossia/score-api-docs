@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,0,2,38,0,1],
+"plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
 "score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
 "score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14],
@@ -243,11 +245,9 @@ var NAVTREEINDEX20 =
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
 "struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_domain.html":[12,0,10,9],
-"struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_event.html":[12,0,10,11],
+"struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_segment_map.html":[12,0,10,15],
 "struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
-"struct_curve_1_1_easing_data.html":[12,0,10,17],
-"struct_curve_1_1_easing_data.html":[11,0,1,15],
-"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0]
+"struct_curve_1_1_easing_data.html":[12,0,10,17]
 };

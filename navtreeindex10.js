@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"class_process_1_1_control_inlet.html":[12,0,48,19],
 "class_process_1_1_control_inlet.html":[11,0,10,19],
 "class_process_1_1_control_outlet.html":[12,0,48,22],
 "class_process_1_1_control_outlet.html":[11,0,10,22],
@@ -43,8 +44,8 @@ var NAVTREEINDEX10 =
 "class_process_1_1_inspector_widget_delegate_factory.html":[11,0,10,57],
 "class_process_1_1_inspector_widget_delegate_factory.html#a39b673d25042f60e7542a79fa28a05f9":[12,0,48,57,0],
 "class_process_1_1_inspector_widget_delegate_factory.html#a39b673d25042f60e7542a79fa28a05f9":[11,0,10,57,0],
-"class_process_1_1_inspector_widget_delegate_factory___t.html":[12,0,48,58],
 "class_process_1_1_inspector_widget_delegate_factory___t.html":[11,0,10,58],
+"class_process_1_1_inspector_widget_delegate_factory___t.html":[12,0,48,58],
 "class_process_1_1_layer_context_menu.html":[12,0,48,64],
 "class_process_1_1_layer_context_menu.html":[11,0,10,64],
 "class_process_1_1_layer_context_menu_manager.html":[11,0,10,65],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "class_protocols_1_1_subfolder_device_enumerator.html":[12,0,49,102],
 "class_protocols_1_1_t_c_p_server_widget.html":[12,0,49,103],
 "class_protocols_1_1_t_c_p_widget.html":[12,0,49,104],
-"class_protocols_1_1_u_d_p_widget.html":[12,0,49,105],
-"class_protocols_1_1_unix_datagram_widget.html":[12,0,49,106]
+"class_protocols_1_1_u_d_p_widget.html":[12,0,49,105]
 };

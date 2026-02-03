@@ -1114,6 +1114,7 @@ var hierarchy =
       [ "SingleOngoingCommandDispatcher< MoveBraceCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< MoveTimeSyncCommand_T >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< Scenario::Command::ResizeSlotVertically >", "class_single_ongoing_command_dispatcher.html", null ],
+      [ "SingleOngoingCommandDispatcher< Process::SetControlValue >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "SingleOngoingCommandDispatcher< score::Command >", "class_single_ongoing_command_dispatcher.html", null ],
       [ "CommandDispatcher< SendStrategy >", "class_command_dispatcher.html", null ],
       [ "GenericMacroCommandDispatcher< Command_T, RedoStrategy_T, SendStrategy_T >", "class_generic_macro_command_dispatcher.html", null ],
@@ -1951,6 +1952,7 @@ var hierarchy =
     [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::RateLimiter::Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", null ],
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
+    [ "Ui::TextBox::Node", "struct_ui_1_1_text_box_1_1_node.html", null ],
     [ "Ui::ValueDisplay::Node", "struct_ui_1_1_value_display_1_1_node.html", null ],
     [ "ossia::net::node_base", null, [
       [ "Gfx::Kinect2::kinect2_node", "class_gfx_1_1_kinect2_1_1kinect2__node.html", null ],
@@ -2203,8 +2205,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2747,6 +2749,7 @@ var hierarchy =
         [ "Process::DefaultLayerView", "class_process_1_1_default_layer_view.html", null ],
         [ "Process::EffectLayerView", "class_process_1_1_effect_layer_view.html", [
           [ "Ui::SignalDisplay::Node::Layer", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html", null ],
+          [ "Ui::TextBox::Node::Layer", "struct_ui_1_1_text_box_1_1_node_1_1_layer.html", null ],
           [ "Ui::ValueDisplay::Node::Layer", "struct_ui_1_1_value_display_1_1_node_1_1_layer.html", null ]
         ] ],
         [ "Scenario::ScenarioView", "class_scenario_1_1_scenario_view.html", null ],

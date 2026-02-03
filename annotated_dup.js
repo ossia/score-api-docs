@@ -2647,6 +2647,9 @@ var annotated_dup =
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
       ] ],
+      [ "TextBox", null, [
+        [ "Node", "struct_ui_1_1_text_box_1_1_node.html", "struct_ui_1_1_text_box_1_1_node" ]
+      ] ],
       [ "ValueDisplay", null, [
         [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ]
       ] ]
