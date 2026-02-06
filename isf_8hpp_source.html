@@ -395,68 +395,69 @@ $(document).ready(function(){initNavTree('isf_8hpp_source.html',''); initResizab
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    std::string execution_type{<span class="stringliteral">&quot;2D_IMAGE&quot;</span>}; <span class="comment">// &quot;2D_IMAGE&quot;, &quot;1D_BUFFER&quot;, &quot;MANUAL&quot;, etc.</span></div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    std::string target_resource;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    std::array&lt;int, 3&gt; workgroups{1, 1, 1}; <span class="comment">// For MANUAL mode</span></div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  };</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  std::vector&lt;dispatch_info&gt; csf_passes;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">// For raw shaders</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  std::vector&lt;vertex_input&gt; vertex_inputs;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  std::vector&lt;vertex_output&gt; vertex_outputs;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  std::vector&lt;fragment_input&gt; fragment_inputs;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  std::vector&lt;fragment_output&gt; fragment_outputs;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>};</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT parser</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>{</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  std::string m_sourceVertex;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  std::string m_sourceFragment;</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  std::string m_source_geometry_filter;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="keywordtype">int</span> m_version{450};</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  std::string m_vertex;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  std::string m_fragment;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  std::string m_geometry_filter;</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  descriptor m_desc;</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keyword">enum class</span> ShaderType</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  {</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>    Autodetect,</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    ISF,</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    ShaderToy,</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    GLSLSandBox,</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    GeometryFilter,</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    VertexShaderArt,</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    CSF,</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    RawRasterPipeline,</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    RawRaytracePipeline,</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    RawMeshPipeline</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  };</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  parser(std::string vert, std::string frag, <span class="keywordtype">int</span> glslVersion, ShaderType);</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keyword">explicit</span> parser(std::string isf_geom_filter, ShaderType t);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  descriptor data() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  descriptor::Mode mode() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  std::string vertex() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  std::string fragment() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  std::string geometry_filter() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  std::string compute_shader() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keyword">static</span> std::pair&lt;int, descriptor&gt; parse_isf_header(std::string_view source);</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keywordtype">void</span> parse_shadertoy_json(<span class="keyword">const</span> std::string&amp; json);</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  std::string write_isf() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordtype">void</span> parse_isf();</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordtype">void</span> parse_raw_raster_pipeline();</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordtype">void</span> parse_shadertoy();</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keywordtype">void</span> parse_glsl_sandbox();</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keywordtype">void</span> parse_geometry_filter();</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">void</span> parse_vsa();</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordtype">void</span> parse_csf();</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>};</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>}</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    <span class="keywordtype">int</span> stride{1};                          <span class="comment">// For 1D_BUFFER / 2D_IMAGE. 0 == default</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  };</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  std::vector&lt;dispatch_info&gt; csf_passes;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="comment">// For raw shaders</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  std::vector&lt;vertex_input&gt; vertex_inputs;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  std::vector&lt;vertex_output&gt; vertex_outputs;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  std::vector&lt;fragment_input&gt; fragment_inputs;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  std::vector&lt;fragment_output&gt; fragment_outputs;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>};</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT parser</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>{</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  std::string m_sourceVertex;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  std::string m_sourceFragment;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  std::string m_source_geometry_filter;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="keywordtype">int</span> m_version{450};</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  std::string m_vertex;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  std::string m_fragment;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  std::string m_geometry_filter;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  descriptor m_desc;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keyword">enum class</span> ShaderType</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  {</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    Autodetect,</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    ISF,</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    ShaderToy,</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>    GLSLSandBox,</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>    GeometryFilter,</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    VertexShaderArt,</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    CSF,</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    RawRasterPipeline,</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    RawRaytracePipeline,</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    RawMeshPipeline</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  };</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  parser(std::string vert, std::string frag, <span class="keywordtype">int</span> glslVersion, ShaderType);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <span class="keyword">explicit</span> parser(std::string isf_geom_filter, ShaderType t);</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  descriptor data() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  descriptor::Mode mode() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  std::string vertex() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  std::string fragment() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  std::string geometry_filter() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  std::string compute_shader() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keyword">static</span> std::pair&lt;int, descriptor&gt; parse_isf_header(std::string_view source);</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordtype">void</span> parse_shadertoy_json(<span class="keyword">const</span> std::string&amp; json);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  std::string write_isf() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordtype">void</span> parse_isf();</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordtype">void</span> parse_raw_raster_pipeline();</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <span class="keywordtype">void</span> parse_shadertoy();</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keywordtype">void</span> parse_glsl_sandbox();</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">void</span> parse_geometry_filter();</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordtype">void</span> parse_vsa();</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keywordtype">void</span> parse_csf();</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>};</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
