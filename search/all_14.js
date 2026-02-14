@@ -52,5 +52,6 @@ var searchData=
   ['uuidkey_3c_20process_3a_3aprocessmodel_20_3e_49',['UuidKey&lt; Process::ProcessModel &gt;',['../class_uuid_key.html',1,'']]],
   ['uuidkey_3c_20score_3a_3aaddon_20_3e_50',['UuidKey&lt; score::Addon &gt;',['../class_uuid_key.html',1,'']]],
   ['uuidkey_3c_20score_3a_3aplugin_20_3e_51',['UuidKey&lt; score::Plugin &gt;',['../class_uuid_key.html',1,'']]],
-  ['uyvy422decoder_52',['UYVY422Decoder',['../structscore_1_1gfx_1_1_u_y_v_y422_decoder.html',1,'score::gfx']]]
+  ['uuidkey_3c_20score_3a_3asettingsdelegatefactory_20_3e_52',['UuidKey&lt; score::SettingsDelegateFactory &gt;',['../class_uuid_key.html',1,'']]],
+  ['uyvy422decoder_53',['UYVY422Decoder',['../structscore_1_1gfx_1_1_u_y_v_y422_decoder.html',1,'score::gfx']]]
 ];

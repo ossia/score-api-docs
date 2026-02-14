@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5],
 "_create_sequence_8hpp_source.html":[13,0,0,2,32,4,1,5,0,6],
 "_create_state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,7],
 "_create_state_macro_8hpp_source.html":[13,0,0,2,32,4,1,5,0,8],
@@ -239,6 +240,7 @@ var NAVTREEINDEX1 =
 "_g_u_i_application_plugin_8hpp_source.html":[13,0,0,1,1,8,0,0],
 "_g_u_i_application_plugin___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,3],
 "_gain_8hpp_source.html":[13,0,0,2,19,0,0],
+"_gaussian_splat_node_8hpp_source.html":[13,0,0,2,35,0,2,1],
 "_generic_mini_audio_interface_8hpp_source.html":[13,0,0,2,6,0,13],
 "_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,14],
 "_generic_process_factory_8hpp_source.html":[13,0,0,2,3,4,25],
@@ -246,8 +248,6 @@ var NAVTREEINDEX1 =
 "_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,2,4],
 "_geometry_filter_node_8hpp_source.html":[13,0,0,2,17,1,3,5],
 "_geometry_filter_node_renderer_8hpp_source.html":[13,0,0,2,17,1,3,6],
-"_geometry_info_8hpp_source.html":[13,0,0,2,35,0,6],
-"_geometry_packer_8hpp_source.html":[13,0,0,2,35,0,7],
-"_geometry_to_buffer_8hpp_source.html":[13,0,0,2,35,0,8],
-"_geometry_to_buffer_strategies_8hpp_source.html":[13,0,0,2,35,0,9]
+"_geometry_info_8hpp_source.html":[13,0,0,2,35,0,8],
+"_geometry_packer_8hpp_source.html":[13,0,0,2,35,0,9]
 };

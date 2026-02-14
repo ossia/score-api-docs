@@ -534,6 +534,11 @@ var annotated_dup =
         [ "InputFactory", "class_gfx_1_1_shmdata_1_1_input_factory.html", null ],
         [ "InputSettingsWidget", "class_gfx_1_1_shmdata_1_1_input_settings_widget.html", null ]
       ] ],
+      [ "Splat", null, [
+        [ "Model", "class_gfx_1_1_splat_1_1_model.html", null ],
+        [ "model_display_node", "class_gfx_1_1_splat_1_1model__display__node.html", null ],
+        [ "ProcessExecutorComponent", "class_gfx_1_1_splat_1_1_process_executor_component.html", null ]
+      ] ],
       [ "Spout", null, [
         [ "InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", null ],
         [ "InputFactory", "class_gfx_1_1_spout_1_1_input_factory.html", null ],
@@ -2090,6 +2095,8 @@ var annotated_dup =
         [ "Edge", "structscore_1_1gfx_1_1_edge.html", null ],
         [ "EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", "structscore_1_1gfx_1_1_empty_decoder" ],
         [ "FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", "structscore_1_1gfx_1_1_full_screen_image_node" ],
+        [ "GaussianSplatNode", "structscore_1_1gfx_1_1_gaussian_splat_node.html", "structscore_1_1gfx_1_1_gaussian_splat_node" ],
+        [ "GaussianSplatRenderer", "classscore_1_1gfx_1_1_gaussian_splat_renderer.html", null ],
         [ "GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", null ],
         [ "geometry", "structscore_1_1gfx_1_1geometry.html", null ],
         [ "geometry_input_port_vis", "structscore_1_1gfx_1_1geometry__input__port__vis.html", null ],
@@ -2601,6 +2608,7 @@ var annotated_dup =
       [ "DirectBufferReferenceStrategy", "class_threedim_1_1_direct_buffer_reference_strategy.html", null ],
       [ "DirectReferenceStrategy", "class_threedim_1_1_direct_reference_strategy.html", null ],
       [ "ExtractBuffer", "class_threedim_1_1_extract_buffer.html", "class_threedim_1_1_extract_buffer" ],
+      [ "GaussianSplatData", "struct_threedim_1_1_gaussian_splat_data.html", null ],
       [ "GeometryInfo", "class_threedim_1_1_geometry_info.html", null ],
       [ "GeometryPacker", "class_threedim_1_1_geometry_packer.html", "class_threedim_1_1_geometry_packer" ],
       [ "GeometryPort", "struct_threedim_1_1_geometry_port.html", null ],
@@ -2624,6 +2632,7 @@ var annotated_dup =
       [ "RotationControl", "struct_threedim_1_1_rotation_control.html", null ],
       [ "ScaleControl", "struct_threedim_1_1_scale_control.html", null ],
       [ "Sphere", "struct_threedim_1_1_sphere.html", null ],
+      [ "SplatLoader", "class_threedim_1_1_splat_loader.html", null ],
       [ "SSynthDropHandler", "class_threedim_1_1_s_synth_drop_handler.html", null ],
       [ "SSynthLibraryHandler", "class_threedim_1_1_s_synth_library_handler.html", null ],
       [ "StrucSynth", "class_threedim_1_1_struc_synth.html", "class_threedim_1_1_struc_synth" ],
@@ -2652,6 +2661,9 @@ var annotated_dup =
       ] ],
       [ "ValueDisplay", null, [
         [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ]
+      ] ],
+      [ "VUMeter", null, [
+        [ "Node", "struct_ui_1_1_v_u_meter_1_1_node.html", "struct_ui_1_1_v_u_meter_1_1_node" ]
       ] ]
     ] ],
     [ "Video", null, [

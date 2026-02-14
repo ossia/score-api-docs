@@ -66,8 +66,8 @@ var NAVTREEINDEX0 =
 "_application_services_8hpp_source.html":[13,0,0,1,1,1,2],
 "_application_settings_8hpp_source.html":[13,0,0,1,0,0,2],
 "_arpeggiator_8hpp_source.html":[13,0,0,2,16,0,1],
-"_array_to_geometry_8hpp_source.html":[13,0,0,2,35,0,2],
-"_array_to_texture_8hpp_source.html":[13,0,0,2,35,0,3],
+"_array_to_geometry_8hpp_source.html":[13,0,0,2,35,0,3],
+"_array_to_texture_8hpp_source.html":[13,0,0,2,35,0,4],
 "_array_view_8hpp_source.html":[13,0,0,1,1,12,2,1],
 "_arraygen_8hpp_source.html":[13,0,0,2,16,0,2],
 "_arraymap_8hpp_source.html":[13,0,0,2,16,0,3],
@@ -132,7 +132,8 @@ var NAVTREEINDEX0 =
 "_bitfocus_specific_settings_8hpp_source.html":[13,0,0,2,29,0,1,5],
 "_bool_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,0],
 "_boost_variant2_serialization_8hpp_source.html":[13,0,0,1,1,10,1],
-"_buffer_to_geometry_8hpp_source.html":[13,0,0,2,35,0,4],
+"_buffer_loader_8hpp_source.html":[13,0,0,2,35,0,5],
+"_buffer_to_geometry_8hpp_source.html":[13,0,0,2,35,0,6],
 "_bytebeat_8hpp_source.html":[13,0,0,2,19,1,0],
 "_c_p_u_node_8hpp_source.html":[13,0,0,2,20,0,1,1],
 "_c_s_p_coherency_checker_interface_8hpp_source.html":[13,0,0,2,32,4,5,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_create_interval___state___event___time_sync_8hpp_source.html":[13,0,0,2,32,4,1,5,0,5],
 "_create_modulation_8hpp_source.html":[13,0,0,2,32,0,0,1],
 "_create_point_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,0],
-"_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4],
-"_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5]
+"_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4]
 };

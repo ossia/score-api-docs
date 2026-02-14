@@ -143,32 +143,35 @@ $(document).ready(function(){initNavTree('_curve_settings_model_8hpp_source.html
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  W_OBJECT(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>(QSettings&amp; set, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">int</span>, SimplificationRatio)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">bool</span>, Simplify)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  SCORE_SETTINGS_PARAMETER_HPP(</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      SCORE_PLUGIN_CURVE_EXPORT, Curve::Settings::Mode, CurveMode)</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">bool</span>, PlayWhileRecording)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">int</span> m_SimplificationRatio{};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">bool</span> m_Simplify = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  Mode m_CurveMode = Mode::Parameter;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span> m_PlayWhileRecording{};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>(</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;score::SettingsDelegateFactory&gt;</a>&amp; k, QSettings&amp; set,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_application_context.html">score::ApplicationContext</a>&amp; ctx);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">int</span>, SimplificationRatio)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">bool</span>, Simplify)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  SCORE_SETTINGS_PARAMETER_HPP(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      SCORE_PLUGIN_CURVE_EXPORT, Curve::Settings::Mode, CurveMode)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  SCORE_SETTINGS_PARAMETER_HPP(SCORE_PLUGIN_CURVE_EXPORT, <span class="keywordtype">bool</span>, PlayWhileRecording)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">int</span> m_SimplificationRatio{};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span> m_Simplify = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  Mode m_CurveMode = Mode::Parameter;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">bool</span> m_PlayWhileRecording{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, SimplificationRatio)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, Simplify)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, CurveMode)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, PlayWhileRecording)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, SimplificationRatio)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, Simplify)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, CurveMode)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>SCORE_SETTINGS_PARAMETER(<a class="code hl_class" href="class_curve_1_1_settings_1_1_model.html">Model</a>, PlayWhileRecording)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="ttc" id="aclass_curve_1_1_settings_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_settings_1_1_model.html">Curve::Settings::Model</a></div><div class="ttdef"><b>Definition</b> CurveSettingsModel.hpp:29</div></div>
-<div class="ttc" id="aclassscore_1_1_settings_delegate_model_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div><div class="ttdef"><b>Definition</b> SettingsDelegateModel.hpp:16</div></div>
+<div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:345</div></div>
+<div class="ttc" id="aclassscore_1_1_settings_delegate_model_html"><div class="ttname"><a href="classscore_1_1_settings_delegate_model.html">score::SettingsDelegateModel</a></div><div class="ttdef"><b>Definition</b> SettingsDelegateModel.hpp:18</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:12</div></div>
-<div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition</b> ApplicationContext.hpp:24</div></div>
+<div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition</b> ApplicationContext.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

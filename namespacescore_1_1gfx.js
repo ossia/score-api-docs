@@ -13,6 +13,8 @@ var namespacescore_1_1gfx =
     [ "Edge", "structscore_1_1gfx_1_1_edge.html", null ],
     [ "EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", "structscore_1_1gfx_1_1_empty_decoder" ],
     [ "FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", "structscore_1_1gfx_1_1_full_screen_image_node" ],
+    [ "GaussianSplatNode", "structscore_1_1gfx_1_1_gaussian_splat_node.html", "structscore_1_1gfx_1_1_gaussian_splat_node" ],
+    [ "GaussianSplatRenderer", "classscore_1_1gfx_1_1_gaussian_splat_renderer.html", null ],
     [ "GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", null ],
     [ "geometry", "structscore_1_1gfx_1_1geometry.html", null ],
     [ "geometry_input_port_vis", "structscore_1_1gfx_1_1geometry__input__port__vis.html", null ],

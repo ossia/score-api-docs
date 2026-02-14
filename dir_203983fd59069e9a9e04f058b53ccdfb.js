@@ -2,8 +2,10 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
 [
     [ "ModelDisplay", "dir_41c6fd1e6a1d308c328d3d0f6a6c31a3.html", "dir_41c6fd1e6a1d308c328d3d0f6a6c31a3" ],
     [ "RenderPipeline", "dir_d1746bec0e9872e1ab0965d474ff09c8.html", "dir_d1746bec0e9872e1ab0965d474ff09c8" ],
+    [ "Splat", "dir_d47f130f90e802f7a3ebab67ec5bb183.html", "dir_d47f130f90e802f7a3ebab67ec5bb183" ],
     [ "ArrayToGeometry.hpp", "_array_to_geometry_8hpp_source.html", null ],
     [ "ArrayToTexture.hpp", "_array_to_texture_8hpp_source.html", null ],
+    [ "BufferLoader.hpp", "_buffer_loader_8hpp_source.html", null ],
     [ "BufferToGeometry.hpp", "_buffer_to_geometry_8hpp_source.html", null ],
     [ "plugins/score-plugin-threedim/Threedim/Debug.hpp", "plugins_2score-plugin-threedim_2_threedim_2_debug_8hpp_source.html", null ],
     [ "GeometryInfo.hpp", "_geometry_info_8hpp_source.html", null ],

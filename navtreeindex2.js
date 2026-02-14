@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"_geometry_to_buffer_8hpp_source.html":[13,0,0,2,35,0,10],
+"_geometry_to_buffer_strategies_8hpp_source.html":[13,0,0,2,35,0,11],
 "_get_property_8hpp_source.html":[13,0,0,2,2,0,2],
 "_gfx_application_plugin_8hpp_source.html":[13,0,0,2,17,1,18],
 "_gfx_context_8hpp_source.html":[13,0,0,2,17,1,19],
@@ -239,7 +241,7 @@ var NAVTREEINDEX2 =
 "_merge_events_8hpp_source.html":[13,0,0,2,32,4,1,5,3,0],
 "_merge_time_syncs_8hpp_source.html":[13,0,0,2,32,4,1,5,3,1],
 "_mesh_8hpp_source.html":[13,0,0,2,17,1,3,11],
-"_mesh_helpers_8hpp_source.html":[13,0,0,2,35,0,10],
+"_mesh_helpers_8hpp_source.html":[13,0,0,2,35,0,12],
 "_message_8hpp_source.html":[13,0,0,2,4,0,7],
 "_message_box_8hpp_source.html":[13,0,0,1,1,13,14],
 "_message_bus_8hpp_source.html":[13,0,0,2,8,3,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_message_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,1],
 "_message_item_model_algorithms_8hpp_source.html":[13,0,0,2,32,4,3,8,0,2],
 "_message_list_serialization_8hpp_source.html":[13,0,0,2,4,0,8],
-"_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0],
-"_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1],
-"_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0]
+"_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0]
 };

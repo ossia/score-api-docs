@@ -185,6 +185,8 @@ var hierarchy =
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "Protocols::Artnet::Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
+    [ "Ui::VUMeter::Node::Layer::ChannelDisplay", "struct_ui_1_1_v_u_meter_1_1_node_1_1_layer_1_1_channel_display.html", null ],
+    [ "Ui::VUMeter::Node::ChannelState", "struct_ui_1_1_v_u_meter_1_1_node_1_1_channel_state.html", null ],
     [ "check_enum_size< T >", "structcheck__enum__size.html", null ],
     [ "Nodal::HierarchyManager::ChildPair", "struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html", null ],
     [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >::ChildPair", "structscore_1_1_component_hierarchy_manager_1_1_child_pair.html", null ],
@@ -552,6 +554,7 @@ var hierarchy =
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Filter::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::GeometryFilter::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Images::Model >", "class_process_1_1_generic_process_component___t.html", null ],
+        [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Splat::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Text::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gfx::Video::Model >", "class_process_1_1_generic_process_component___t.html", null ],
         [ "Process::GenericProcessComponent_T< ProcessComponent, Gradient::ProcessModel >", "class_process_1_1_generic_process_component___t.html", null ],
@@ -905,6 +908,7 @@ var hierarchy =
     [ "Device::FullAddressAccessorSettings", "struct_device_1_1_full_address_accessor_settings.html", null ],
     [ "Scenario::FullSlot", "struct_scenario_1_1_full_slot.html", null ],
     [ "FW_T< Factory_T, Types_T >", "struct_f_w___t.html", null ],
+    [ "Threedim::GaussianSplatData", "struct_threedim_1_1_gaussian_splat_data.html", null ],
     [ "gpp::qrhi::generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", null ],
     [ "generator", "structgenerator.html", null ],
     [ "ossia::net::generic_device", null, [
@@ -979,6 +983,7 @@ var hierarchy =
         [ "Gfx::GeometryFilter::geometry_filter_node", "class_gfx_1_1_geometry_filter_1_1geometry__filter__node.html", null ],
         [ "Gfx::Images::image_node", "class_gfx_1_1_images_1_1image__node.html", null ],
         [ "Gfx::ModelDisplay::model_display_node", "class_gfx_1_1_model_display_1_1model__display__node.html", null ],
+        [ "Gfx::Splat::model_display_node", "class_gfx_1_1_splat_1_1model__display__node.html", null ],
         [ "Gfx::Text::text_node", "class_gfx_1_1_text_1_1text__node.html", null ],
         [ "Gfx::Video::video_node", "class_gfx_1_1_video_1_1video__node.html", null ],
         [ "Gfx::filter_node", "class_gfx_1_1filter__node.html", null ],
@@ -1140,8 +1145,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1189,8 +1194,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1954,6 +1959,7 @@ var hierarchy =
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Ui::TextBox::Node", "struct_ui_1_1_text_box_1_1_node.html", null ],
     [ "Ui::ValueDisplay::Node", "struct_ui_1_1_value_display_1_1_node.html", null ],
+    [ "Ui::VUMeter::Node", "struct_ui_1_1_v_u_meter_1_1_node.html", null ],
     [ "ossia::net::node_base", null, [
       [ "Gfx::Kinect2::kinect2_node", "class_gfx_1_1_kinect2_1_1kinect2__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
@@ -1972,6 +1978,7 @@ var hierarchy =
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
+        [ "score::gfx::GaussianSplatRenderer", "classscore_1_1gfx_1_1_gaussian_splat_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
         [ "score::gfx::RenderedPhongNode", "structscore_1_1gfx_1_1_rendered_phong_node.html", null ],
         [ "score::gfx::TexgenNode::Rendered", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html", null ],
@@ -2400,6 +2407,9 @@ var hierarchy =
         [ "Execution::ProcessComponent_T< Gfx::Images::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Gfx::Images::ProcessExecutorComponent", "class_gfx_1_1_images_1_1_process_executor_component.html", null ]
         ] ],
+        [ "Execution::ProcessComponent_T< Gfx::Splat::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
+          [ "Gfx::Splat::ProcessExecutorComponent", "class_gfx_1_1_splat_1_1_process_executor_component.html", null ]
+        ] ],
         [ "Execution::ProcessComponent_T< Gfx::Text::Model, ossia::node_process >", "struct_execution_1_1_process_component___t.html", [
           [ "Gfx::Text::ProcessExecutorComponent", "class_gfx_1_1_text_1_1_process_executor_component.html", null ]
         ] ],
@@ -2750,6 +2760,7 @@ var hierarchy =
         [ "Process::EffectLayerView", "class_process_1_1_effect_layer_view.html", [
           [ "Ui::SignalDisplay::Node::Layer", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html", null ],
           [ "Ui::TextBox::Node::Layer", "struct_ui_1_1_text_box_1_1_node_1_1_layer.html", null ],
+          [ "Ui::VUMeter::Node::Layer", "struct_ui_1_1_v_u_meter_1_1_node_1_1_layer.html", null ],
           [ "Ui::ValueDisplay::Node::Layer", "struct_ui_1_1_value_display_1_1_node_1_1_layer.html", null ]
         ] ],
         [ "Scenario::ScenarioView", "class_scenario_1_1_scenario_view.html", null ],
@@ -3170,6 +3181,7 @@ var hierarchy =
               [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
               [ "Gfx::ModelDisplay::Model", "class_gfx_1_1_model_display_1_1_model.html", null ],
               [ "Gfx::RenderPipeline::Model", "class_gfx_1_1_render_pipeline_1_1_model.html", null ],
+              [ "Gfx::Splat::Model", "class_gfx_1_1_splat_1_1_model.html", null ],
               [ "Gfx::Text::Model", "class_gfx_1_1_text_1_1_model.html", null ],
               [ "Gfx::VSA::Model", "class_gfx_1_1_v_s_a_1_1_model.html", null ],
               [ "Gfx::Video::Model", "class_gfx_1_1_video_1_1_model.html", null ],
@@ -3556,6 +3568,7 @@ var hierarchy =
           [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
           [ "score::gfx::NodeModel", "classscore_1_1gfx_1_1_node_model.html", [
             [ "score::gfx::FullScreenImageNode", "structscore_1_1gfx_1_1_full_screen_image_node.html", null ],
+            [ "score::gfx::GaussianSplatNode", "structscore_1_1gfx_1_1_gaussian_splat_node.html", null ],
             [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
             [ "score::gfx::ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", null ],
             [ "score::gfx::PhongNode", "structscore_1_1gfx_1_1_phong_node.html", null ],
@@ -4037,6 +4050,7 @@ var hierarchy =
       ] ],
       [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
     ] ],
+    [ "Threedim::SplatLoader", "class_threedim_1_1_splat_loader.html", null ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
@@ -4347,6 +4361,7 @@ var hierarchy =
       [ "UuidKey< Process::ProcessModel >", "class_uuid_key.html", null ],
       [ "UuidKey< score::Addon >", "class_uuid_key.html", null ],
       [ "UuidKey< score::Plugin >", "class_uuid_key.html", null ],
+      [ "UuidKey< score::SettingsDelegateFactory >", "class_uuid_key.html", null ],
       [ "UuidKey< Tag >", "class_uuid_key.html", null ]
     ] ],
     [ "halp::val_port", null, [

@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_q_graphics_pixmap_button_8hpp_source.html":[13,0,0,1,1,5,1,15],
+"_q_graphics_pixmap_enum_8hpp_source.html":[13,0,0,1,1,5,1,16],
 "_q_graphics_pixmap_toggle_8hpp_source.html":[13,0,0,1,1,5,1,17],
 "_q_graphics_range_slider_8hpp_source.html":[13,0,0,1,1,5,1,18],
 "_q_graphics_selectable_pixmap_toggle_8hpp_source.html":[13,0,0,1,1,5,1,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_spline_2_execution_8hpp_source.html":[13,0,0,2,33,0,1],
 "_spline_2_generator_dialog_8hpp_source.html":[13,0,0,2,33,0,2],
 "_split_event_8hpp_source.html":[13,0,0,2,32,4,1,2,2],
-"_split_time_sync_8hpp_source.html":[13,0,0,2,32,4,1,8,5],
-"_spout_input_8hpp_source.html":[13,0,0,2,17,1,9,0],
-"_spout_output_8hpp_source.html":[13,0,0,2,17,1,9,1]
+"_split_time_sync_8hpp_source.html":[13,0,0,2,32,4,1,8,5]
 };
