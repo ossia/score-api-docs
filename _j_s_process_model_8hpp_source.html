@@ -254,14 +254,14 @@ $(document).ready(function(){initNavTree('_j_s_process_model_8hpp_source.html','
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <a class="code hl_class" href="class_j_s_1_1_process_model.html">~ProcessModel</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keywordtype">bool</span> validate(<span class="keyword">const</span> std::vector&lt;QString&gt;&amp; str) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordtype">void</span> errorMessage(<span class="keyword">const</span> QString&amp; arg_2) <span class="keyword">const</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      W_SIGNAL(errorMessage, arg_2);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a>&amp; program() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_program; }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  [[nodiscard]] <a class="code hl_struct" href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a> setProgram(<span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a>&amp; f);</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordtype">void</span> programChanged() W_SIGNAL(programChanged);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">const</span> QString&amp; rootPath() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_root; }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>  <span class="keywordtype">bool</span> validate(<span class="keyword">const</span> std::vector&lt;QString&gt;&amp; str) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordtype">void</span> errorMessage(<span class="keyword">const</span> QString&amp; arg_2) <span class="keyword">const</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      W_SIGNAL(errorMessage, arg_2);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a>&amp; program() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_program; }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  [[nodiscard]] <a class="code hl_struct" href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a> setProgram(<span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a>&amp; f);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> programChanged() W_SIGNAL(programChanged);</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordtype">void</span> uiToExecution(<span class="keyword">const</span> QVariant&amp; v) W_SIGNAL(uiToExecution, v);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">void</span> executionToUi(<span class="keyword">const</span> QVariant&amp; v) W_SIGNAL(executionToUi, v);</div>
@@ -276,20 +276,21 @@ $(document).ready(function(){initNavTree('_j_s_process_model_8hpp_source.html','
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <a class="code hl_struct" href="struct_process_1_1_preset.html">Process::Preset</a> savePreset() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <a class="code hl_struct" href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a> setQmlData(<span class="keyword">const</span> QByteArray&amp;, <span class="keywordtype">bool</span> isFile);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a> m_program;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  QByteArray m_qmlData;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  QQmlComponent* m_ui_component{};</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">mutable</span> QPointer&lt;QQuickItem&gt; m_ui_object{};</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">mutable</span> <a class="code hl_struct" href="struct_j_s_1_1_component_cache.html">ComponentCache</a> m_cache;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  JS::JSState m_state;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordtype">bool</span> m_isFile{};</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>};</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  QString m_root;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <a class="code hl_struct" href="struct_j_s_1_1_qml_source.html">QmlSource</a> m_program;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  QByteArray m_qmlData;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  QQmlComponent* m_ui_component{};</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">mutable</span> QPointer&lt;QQuickItem&gt; m_ui_object{};</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">mutable</span> <a class="code hl_struct" href="struct_j_s_1_1_component_cache.html">ComponentCache</a> m_cache;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  JS::JSState m_state;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordtype">bool</span> m_isFile{};</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>};</div>
 </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>}</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>W_REGISTER_ARGTYPE(JS::JSState)</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>W_REGISTER_ARGTYPE(JS::JSState)</div>
 <div class="ttc" id="aclass_j_s_1_1_process_model_html"><div class="ttname"><a href="class_j_s_1_1_process_model.html">JS::ProcessModel</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:91</div></div>
 <div class="ttc" id="aclass_j_s_1_1_script_html"><div class="ttname"><a href="class_j_s_1_1_script.html">JS::Script</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:845</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:62</div></div>
