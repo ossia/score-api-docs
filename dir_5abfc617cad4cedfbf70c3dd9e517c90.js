@@ -12,6 +12,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "ISFNode.hpp", "_i_s_f_node_8hpp_source.html", null ],
     [ "ISFVisitors.hpp", "_i_s_f_visitors_8hpp_source.html", null ],
     [ "Mesh.hpp", "_mesh_8hpp_source.html", null ],
+    [ "MultiWindowNode.hpp", "_multi_window_node_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Graph/Node.hpp", "score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html", null ],
     [ "NodeRenderer.hpp", "_node_renderer_8hpp_source.html", null ],
     [ "OutputNode.hpp", "_output_node_8hpp_source.html", null ],

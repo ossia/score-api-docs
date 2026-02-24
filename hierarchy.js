@@ -678,6 +678,7 @@ var hierarchy =
     [ "ossia::net::device_base", null, [
       [ "Gfx::background_device", "class_gfx_1_1background__device.html", null ],
       [ "Gfx::libav_output_device", "class_gfx_1_1libav__output__device.html", null ],
+      [ "Gfx::multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
       [ "Gfx::sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", null ],
       [ "Gfx::shmdata_output_device", "class_gfx_1_1shmdata__output__device.html", null ],
       [ "Gfx::simple_texture_input_device", "class_gfx_1_1simple__texture__input__device.html", null ],
@@ -1989,6 +1990,7 @@ var hierarchy =
         [ "Gfx::BasicRenderer", "class_gfx_1_1_basic_renderer.html", null ],
         [ "Gfx::InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
         [ "Gfx::ScaledRenderer", "class_gfx_1_1_scaled_renderer.html", null ],
+        [ "score::gfx::MultiWindowRenderer", "classscore_1_1gfx_1_1_multi_window_renderer.html", null ],
         [ "score::gfx::PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
         [ "score::gfx::PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ]
       ] ],
@@ -2156,6 +2158,7 @@ var hierarchy =
     [ "oscr::OutletInitFunc< Node >", "structoscr_1_1_outlet_init_func.html", null ],
     [ "Nodes::MidiHiRes::Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ],
     [ "score::gfx::OutputConfiguration", "structscore_1_1gfx_1_1_output_configuration.html", null ],
+    [ "Gfx::OutputMapping", "struct_gfx_1_1_output_mapping.html", null ],
     [ "Gfx::OutputStream", "struct_gfx_1_1_output_stream.html", null ],
     [ "score::gfx::OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],
     [ "Threedim::GeometryPacker::outs", "struct_threedim_1_1_geometry_packer_1_1outs.html", null ],
@@ -2267,6 +2270,7 @@ var hierarchy =
     [ "Threedim::PCLToMesh2", "class_threedim_1_1_p_c_l_to_mesh2.html", null ],
     [ "PdDataflowTest", "class_pd_dataflow_test.html", null ],
     [ "score::gfx::PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
+    [ "score::gfx::MultiWindowRenderer::PerWindowData", "structscore_1_1gfx_1_1_multi_window_renderer_1_1_per_window_data.html", null ],
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
     [ "score::gfx::Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
     [ "Protocols::Pixel", "struct_protocols_1_1_pixel.html", null ],
@@ -2895,6 +2899,9 @@ var hierarchy =
       [ "score::QGraphicsPixmapToggle", "classscore_1_1_q_graphics_pixmap_toggle.html", null ],
       [ "score::QGraphicsSelectablePixmapToggle", "classscore_1_1_q_graphics_selectable_pixmap_toggle.html", null ]
     ] ],
+    [ "QGraphicsRectItem", null, [
+      [ "Gfx::OutputMappingItem", "class_gfx_1_1_output_mapping_item.html", null ]
+    ] ],
     [ "QGraphicsScene", null, [
       [ "Scenario::ScenarioScene", "class_scenario_1_1_scenario_scene.html", null ]
     ] ],
@@ -2904,6 +2911,7 @@ var hierarchy =
       [ "score::TextItem", "classscore_1_1_text_item.html", null ]
     ] ],
     [ "QGraphicsView", null, [
+      [ "Gfx::OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", null ],
       [ "Scenario::ProcessGraphicsView", "class_scenario_1_1_process_graphics_view.html", null ],
       [ "Scenario::TimeRulerGraphicsView", "class_scenario_1_1_time_ruler_graphics_view.html", [
         [ "Scenario::MinimapGraphicsView", "class_scenario_1_1_minimap_graphics_view.html", null ]
@@ -3558,6 +3566,7 @@ var hierarchy =
           [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
           [ "Gfx::SpoutNode", "struct_gfx_1_1_spout_node.html", null ],
           [ "score::gfx::BackgroundNode", "structscore_1_1gfx_1_1_background_node.html", null ],
+          [ "score::gfx::MultiWindowNode", "structscore_1_1gfx_1_1_multi_window_node.html", null ],
           [ "score::gfx::PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", null ],
           [ "score::gfx::ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", null ]
         ] ],
@@ -4447,6 +4456,7 @@ var hierarchy =
     [ "Protocols::WiimoteSpecificSettings", "struct_protocols_1_1_wiimote_specific_settings.html", null ],
     [ "bitfocus::win32_handles", "structbitfocus_1_1win32__handles.html", null ],
     [ "vst3::WindowContainer", "structvst3_1_1_window_container.html", null ],
+    [ "score::gfx::MultiWindowNode::WindowOutput", "structscore_1_1gfx_1_1_multi_window_node_1_1_window_output.html", null ],
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "Gfx::WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
