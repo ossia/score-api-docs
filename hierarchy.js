@@ -629,6 +629,7 @@ var hierarchy =
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
     [ "Protocols::convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", null ],
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
+    [ "Gfx::CornerWarp", "struct_gfx_1_1_corner_warp.html", null ],
     [ "Scenario::CSPCoherencyCheckerInterface", "class_scenario_1_1_c_s_p_coherency_checker_interface.html", null ],
     [ "Scenario::CurveCreator", "struct_scenario_1_1_curve_creator.html", null ],
     [ "Curve::CurveDataHash", "class_curve_1_1_curve_data_hash.html", null ],
@@ -738,6 +739,8 @@ var hierarchy =
     [ "ao::Easetanbul", "structao_1_1_easetanbul.html", null ],
     [ "Curve::EasingData", "struct_curve_1_1_easing_data.html", null ],
     [ "score::gfx::Edge", "structscore_1_1gfx_1_1_edge.html", null ],
+    [ "Gfx::EdgeBlend", "struct_gfx_1_1_edge_blend.html", null ],
+    [ "score::gfx::MultiWindowNode::EdgeBlendData", "structscore_1_1gfx_1_1_multi_window_node_1_1_edge_blend_data.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
     [ "avnd_tools::detail::element_accessor< Dim, CurrentIdx >", "structavnd__tools_1_1detail_1_1element__accessor.html", null ],
@@ -1146,8 +1149,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1195,8 +1198,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2215,8 +2218,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2911,6 +2914,7 @@ var hierarchy =
       [ "score::TextItem", "classscore_1_1_text_item.html", null ]
     ] ],
     [ "QGraphicsView", null, [
+      [ "Gfx::CornerWarpCanvas", "class_gfx_1_1_corner_warp_canvas.html", null ],
       [ "Gfx::OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", null ],
       [ "Scenario::ProcessGraphicsView", "class_scenario_1_1_process_graphics_view.html", null ],
       [ "Scenario::TimeRulerGraphicsView", "class_scenario_1_1_time_ruler_graphics_view.html", [
@@ -3058,6 +3062,7 @@ var hierarchy =
       [ "FocusDispatcher", "class_focus_dispatcher.html", null ],
       [ "Gfx::Filter::ShadertoyDownloader", "class_gfx_1_1_filter_1_1_shadertoy_downloader.html", null ],
       [ "Gfx::GfxContext", "class_gfx_1_1_gfx_context.html", null ],
+      [ "Gfx::OutputPreviewWindows", "class_gfx_1_1_output_preview_windows.html", null ],
       [ "Gfx::ShaderPreviewManager", "class_gfx_1_1_shader_preview_manager.html", null ],
       [ "GraphicsSceneToolPalette", "class_graphics_scene_tool_palette.html", [
         [ "Curve::ToolPalette", "class_curve_1_1_tool_palette.html", [
@@ -3806,6 +3811,7 @@ var hierarchy =
       ] ],
       [ "Explorer::DeviceExplorerWidget", "class_explorer_1_1_device_explorer_widget.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
+      [ "Gfx::PreviewWidget", "class_gfx_1_1_preview_widget.html", null ],
       [ "Gfx::ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", null ],
       [ "Gfx::TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
       [ "Inspector::InspectorSectionWidget", "class_inspector_1_1_inspector_section_widget.html", null ],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"dir_dc52dfb2a523e7b3b2a561ac78a77040.html":[13,0,0,1,1,5,0],
+"dir_dce1daecf17901e24014fcdcf22990fe.html":[13,0,0,2,0,1],
+"dir_dd4c31fa344d03c8cb0845f4089ea978.html":[13,0,0,2,29,0,18],
+"dir_dee693d6ddfed3312256d986cfff2e83.html":[13,0,0,2,32,4,9],
+"dir_df08b49d3796e3f42628005218e02f2f.html":[13,0,0,2,3,4,13],
+"dir_e03522be67fd455b97ed6191771f192a.html":[13,0,0,2,1,0],
 "dir_e0f0a2e5702e7fb434434342fa318f9f.html":[13,0,0,1,1,13],
 "dir_e13d515f1403cbfcbdef02e7c420f014.html":[13,0,0,2,14,1,2],
 "dir_e19e19461813f7d31d421e9705b70474.html":[13,0,0,2,31,1,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "plugins_2score-plugin-js_2_j_s_2_executor_2_component_8hpp_source.html":[13,0,0,2,20,0,1,0],
 "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html":[13,0,0,2,22,0,7],
 "plugins_2score-plugin-media_2_media_2_effect_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,24,0,1,0,2],
-"plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,0,2,24,0,3,4],
-"plugins_2score-plugin-media_2_media_2_merger_2commands_8hpp_source.html":[13,0,0,2,24,0,3,0],
-"plugins_2score-plugin-media_2_media_2_step_2_metadata_8hpp_source.html":[13,0,0,2,24,0,6,4],
-"plugins_2score-plugin-media_2_media_2_step_2_presenter_8hpp_source.html":[13,0,0,2,24,0,6,6],
-"plugins_2score-plugin-media_2_media_2_step_2commands_8hpp_source.html":[13,0,0,2,24,0,6,0],
-"plugins_2score-plugin-nodal_2_nodal_2_metadata_8hpp_source.html":[13,0,0,2,26,0,4],
-"plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,0,2,26,0,5]
+"plugins_2score-plugin-media_2_media_2_merger_2_metadata_8hpp_source.html":[13,0,0,2,24,0,3,4]
 };

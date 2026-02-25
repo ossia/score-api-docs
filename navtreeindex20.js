@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"plugins_2score-plugin-media_2_media_2_merger_2commands_8hpp_source.html":[13,0,0,2,24,0,3,0],
+"plugins_2score-plugin-media_2_media_2_step_2_metadata_8hpp_source.html":[13,0,0,2,24,0,6,4],
+"plugins_2score-plugin-media_2_media_2_step_2_presenter_8hpp_source.html":[13,0,0,2,24,0,6,6],
+"plugins_2score-plugin-media_2_media_2_step_2commands_8hpp_source.html":[13,0,0,2,24,0,6,0],
+"plugins_2score-plugin-nodal_2_nodal_2_metadata_8hpp_source.html":[13,0,0,2,26,0,4],
+"plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,0,2,26,0,5],
 "plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,0,2,26,0,1],
 "plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,0,2,27,0,4],
 "plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,0,2,29,0,13,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "struct_analysis_1_1audio__in.html":[12,0,0,0],
 "struct_analysis_1_1audio__out.html":[12,0,0,1],
 "struct_analysis_1_1gain__slider.html":[12,0,0,8],
-"struct_analysis_1_1gate__slider.html":[12,0,0,9],
-"struct_analysis_1_1pulse__out.html":[12,0,0,17],
-"struct_analysis_1_1value__out.html":[12,0,0,23],
-"struct_array_entity_serializer.html":[12,0,75],
-"struct_array_serializer.html":[12,0,76],
-"struct_atom_buffer.html":[12,0,77],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,2,4,0]
+"struct_analysis_1_1gate__slider.html":[12,0,0,9]
 };

@@ -124,6 +124,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02225ad155cf27b908dfad2d691d5ef9" id="r_a02225ad155cf27b908dfad2d691d5ef9"><td class="memItemLeft" align="right" valign="top"><a id="a02225ad155cf27b908dfad2d691d5ef9" name="a02225ad155cf27b908dfad2d691d5ef9"></a>
 <a class="el" href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>window</b> () const noexcept</td></tr>
 <tr class="separator:a02225ad155cf27b908dfad2d691d5ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20131ae4772f36425fa6c9fc1931810" id="r_aa20131ae4772f36425fa6c9fc1931810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#aa20131ae4772f36425fa6c9fc1931810">addAddress</a> (const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;settings) override</td></tr>
+<tr class="separator:aa20131ae4772f36425fa6c9fc1931810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf4337f4288df8c0b42a85d8c3c55cee" id="r_abf4337f4288df8c0b42a85d8c3c55cee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#abf4337f4288df8c0b42a85d8c3c55cee">setupContextMenu</a> (QMenu &amp;) const override</td></tr>
+<tr class="separator:abf4337f4288df8c0b42a85d8c3c55cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057a5a7a6d35b6f66447932f7b1cae5a" id="r_a057a5a7a6d35b6f66447932f7b1cae5a"><td class="memItemLeft" align="right" valign="top">ossia::net::device_base *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a057a5a7a6d35b6f66447932f7b1cae5a">getDevice</a> () const override</td></tr>
+<tr class="separator:a057a5a7a6d35b6f66447932f7b1cae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a866ba935bc806cc6bd4470f92a0c3551" id="r_a866ba935bc806cc6bd4470f92a0c3551"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a866ba935bc806cc6bd4470f92a0c3551">disconnect</a> () override</td></tr>
+<tr class="separator:a866ba935bc806cc6bd4470f92a0c3551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4962274143a3ed0e036127b309024d4a" id="r_a4962274143a3ed0e036127b309024d4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a4962274143a3ed0e036127b309024d4a">reconnect</a> () override</td></tr>
+<tr class="separator:a4962274143a3ed0e036127b309024d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3509b9db476a3919f2ff22e3c9ad9a3" id="r_ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memItemLeft" align="right" valign="top"><a id="ab3509b9db476a3919f2ff22e3c9ad9a3" name="ab3509b9db476a3919f2ff22e3c9ad9a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GfxOutputDevice</b> (const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;settings, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,6 +308,144 @@ const <a class="el" href="structscore_1_1_document_context.html">score::Document
 score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a>, callback_pair &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_callbacks</b></td></tr>
 <tr class="separator:a1fbc2fbde0100ec5ba04e1425f487fd6 inherit pro_attribs_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa20131ae4772f36425fa6c9fc1931810" name="aa20131ae4772f36425fa6c9fc1931810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20131ae4772f36425fa6c9fc1931810">&#9670;&#160;</a></span>addAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::addAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a>.</p>
+
+</div>
+</div>
+<a id="a866ba935bc806cc6bd4470f92a0c3551" name="a866ba935bc806cc6bd4470f92a0c3551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a866ba935bc806cc6bd4470f92a0c3551">&#9670;&#160;</a></span>disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a>.</p>
+
+</div>
+</div>
+<a id="a057a5a7a6d35b6f66447932f7b1cae5a" name="a057a5a7a6d35b6f66447932f7b1cae5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057a5a7a6d35b6f66447932f7b1cae5a">&#9670;&#160;</a></span>getDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::net::device_base * Gfx::WindowDevice::getDevice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>.</p>
+
+</div>
+</div>
+<a id="a4962274143a3ed0e036127b309024d4a" name="a4962274143a3ed0e036127b309024d4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4962274143a3ed0e036127b309024d4a">&#9670;&#160;</a></span>reconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gfx::WindowDevice::reconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>.</p>
+
+</div>
+</div>
+<a id="abf4337f4288df8c0b42a85d8c3c55cee" name="abf4337f4288df8c0b42a85d8c3c55cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4337f4288df8c0b42a85d8c3c55cee">&#9670;&#160;</a></span>setupContextMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::setupContextMenu </td>
+          <td>(</td>
+          <td class="paramtype">QMenu &amp;&#160;</td>
+          <td class="paramname"><em>menu</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_window_device_8hpp_source.html">WindowDevice.hpp</a></li>
 <li><b>WindowDevice.cpp</b></li>
