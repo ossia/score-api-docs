@@ -138,82 +138,81 @@ $(document).ready(function(){initNavTree('_window_device_8hpp_source.html',''); 
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">class </span>OutputMappingCanvas;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">class </span>OutputPreviewWindows;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">class </span>CornerWarpCanvas;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_protocol_factory.html">   31</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_window_protocol_factory.html">WindowProtocolFactory</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;5a181207-7d40-4ad8-814e-879fcdf8cc31&quot;</span>)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  QString prettyName() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  QString category() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  QUrl manual() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>* makeDevice(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keyword">const</span> Explorer::DeviceDocumentPlugin&amp; plugin,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeAddAddressDialog(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      QWidget* parent) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeEditAddressDialog(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&amp;, <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget*) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  QVariant makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code hl_struct" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">const</span> QVariant&amp; data, <span class="keyword">const</span> <a class="code hl_struct" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> checkCompatibility(</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_protocol_factory.html">   30</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_window_protocol_factory.html">WindowProtocolFactory</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;5a181207-7d40-4ad8-814e-879fcdf8cc31&quot;</span>)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  QString prettyName() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  QString category() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  QUrl manual() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>* makeDevice(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; settings,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keyword">const</span> Explorer::DeviceDocumentPlugin&amp; plugin,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; defaultSettings() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeAddAddressDialog(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      QWidget* parent) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="class_device_1_1_address_dialog.html">Device::AddressDialog</a>* makeEditAddressDialog(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a>&amp;, <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>&amp; dev,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget*) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a>* makeSettingsWidget() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  QVariant makeProtocolSpecificSettings(<span class="keyword">const</span> <a class="code hl_struct" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> serializeProtocolSpecificSettings(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keyword">const</span> QVariant&amp; data, <span class="keyword">const</span> <a class="code hl_struct" href="struct_visitor_variant.html">VisitorVariant</a>&amp; visitor) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">bool</span> checkCompatibility(</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; a,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>&amp; b) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_device.html">   62</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="class_gfx_1_1_window_device.html">WindowDevice</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_gfx_1_1_gfx_output_device.html">GfxOutputDevice</a></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  W_OBJECT(<a class="code hl_class" href="class_gfx_1_1_window_device.html">WindowDevice</a>)</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">using </span>GfxOutputDevice::GfxOutputDevice;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_class" href="class_gfx_1_1_window_device.html">~WindowDevice</a>();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a>* window() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  W_SLOT(window)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> addAddress(<span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> setupContextMenu(QMenu&amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="class_gfx_1_1_window_device.html">   61</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="class_gfx_1_1_window_device.html">WindowDevice</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_gfx_1_1_gfx_output_device.html">GfxOutputDevice</a></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  W_OBJECT(<a class="code hl_class" href="class_gfx_1_1_window_device.html">WindowDevice</a>)</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">using </span>GfxOutputDevice::GfxOutputDevice;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_class" href="class_gfx_1_1_window_device.html">~WindowDevice</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a>* window() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  W_SLOT(window)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> addAddress(<span class="keyword">const</span> <a class="code hl_struct" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a>&amp; settings) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> setupContextMenu(QMenu&amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  ossia::net::device_base* getDevice()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">bool</span> reconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="class_gfx_1_1gfx__protocol__base.html">gfx_protocol_base</a>* m_protocol{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">mutable</span> std::unique_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_settings.html">   83</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_settings.html">WindowSettings</a></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  WindowMode mode{WindowMode::Single};</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  std::vector&lt;OutputMapping&gt; outputs;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">int</span> inputWidth{1920};</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">int</span> inputHeight{1080};</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="};">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_settings.html">   82</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_settings.html">WindowSettings</a></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  WindowMode mode{WindowMode::Single};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::vector&lt;OutputMapping&gt; outputs;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">int</span> inputWidth{1920};</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">int</span> inputHeight{1080};</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition</b> ProtocolSettingsWidget.hpp:41</div></div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:66</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition</b> ProtocolFactoryInterface.hpp:49</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_settings_widget_html"><div class="ttname"><a href="class_device_1_1_protocol_settings_widget.html">Device::ProtocolSettingsWidget</a></div><div class="ttdef"><b>Definition</b> ProtocolSettingsWidget.hpp:22</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_output_device_html"><div class="ttname"><a href="class_gfx_1_1_gfx_output_device.html">Gfx::GfxOutputDevice</a></div><div class="ttdef"><b>Definition</b> GfxDevice.hpp:36</div></div>
-<div class="ttc" id="aclass_gfx_1_1_window_device_html"><div class="ttname"><a href="class_gfx_1_1_window_device.html">Gfx::WindowDevice</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:63</div></div>
-<div class="ttc" id="aclass_gfx_1_1_window_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_window_protocol_factory.html">Gfx::WindowProtocolFactory</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:32</div></div>
+<div class="ttc" id="aclass_gfx_1_1_window_device_html"><div class="ttname"><a href="class_gfx_1_1_window_device.html">Gfx::WindowDevice</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:62</div></div>
+<div class="ttc" id="aclass_gfx_1_1_window_protocol_factory_html"><div class="ttname"><a href="class_gfx_1_1_window_protocol_factory.html">Gfx::WindowProtocolFactory</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:31</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__protocol__base_html"><div class="ttname"><a href="class_gfx_1_1gfx__protocol__base.html">Gfx::gfx_protocol_base</a></div><div class="ttdef"><b>Definition</b> GfxParameter.hpp:41</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_window_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_window.html">score::gfx::Window</a></div><div class="ttdoc">A platform window in which the content is going to be rendered.</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-gfx/Gfx/Graph/Window.hpp:24</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:30</div></div>
@@ -221,7 +220,7 @@ $(document).ready(function(){initNavTree('_window_device_8hpp_source.html',''); 
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition</b> AddressSettings.hpp:49</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition</b> DeviceSettings.hpp:20</div></div>
 <div class="ttc" id="astruct_device_1_1_full_address_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a></div><div class="ttdef"><b>Definition</b> AddressSettings.hpp:62</div></div>
-<div class="ttc" id="astruct_gfx_1_1_window_settings_html"><div class="ttname"><a href="struct_gfx_1_1_window_settings.html">Gfx::WindowSettings</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:84</div></div>
+<div class="ttc" id="astruct_gfx_1_1_window_settings_html"><div class="ttname"><a href="struct_gfx_1_1_window_settings.html">Gfx::WindowSettings</a></div><div class="ttdef"><b>Definition</b> WindowDevice.hpp:83</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:26</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
