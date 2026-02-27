@@ -143,6 +143,27 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>canvasWidth</b> () 
 <tr class="memitem:a5b995103737598964d74b96da1239dc4" id="r_a5b995103737598964d74b96da1239dc4"><td class="memItemLeft" align="right" valign="top"><a id="a5b995103737598964d74b96da1239dc4" name="a5b995103737598964d74b96da1239dc4"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>canvasHeight</b> () const noexcept</td></tr>
 <tr class="separator:a5b995103737598964d74b96da1239dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af68a70ec7f2289912fa61b859a0dd076" id="r_af68a70ec7f2289912fa61b859a0dd076"><td class="memItemLeft" align="right" valign="top"><a id="af68a70ec7f2289912fa61b859a0dd076" name="af68a70ec7f2289912fa61b859a0dd076"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>snapEnabled</b> () const noexcept</td></tr>
+<tr class="separator:af68a70ec7f2289912fa61b859a0dd076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585a25876645d3fa72941a030b81891e" id="r_a585a25876645d3fa72941a030b81891e"><td class="memItemLeft" align="right" valign="top"><a id="a585a25876645d3fa72941a030b81891e" name="a585a25876645d3fa72941a030b81891e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSnapEnabled</b> (bool enabled)</td></tr>
+<tr class="separator:a585a25876645d3fa72941a030b81891e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0742b013fe3fc2f9a9472010c67e450" id="r_ab0742b013fe3fc2f9a9472010c67e450"><td class="memItemLeft" align="right" valign="top"><a id="ab0742b013fe3fc2f9a9472010c67e450" name="ab0742b013fe3fc2f9a9472010c67e450"></a>
+QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>snapPosition</b> (const <a class="el" href="class_gfx_1_1_output_mapping_item.html">OutputMappingItem</a> *item, QPointF proposedPos) const</td></tr>
+<tr class="separator:ab0742b013fe3fc2f9a9472010c67e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d5bcfe9bb38acc57f2a31e43ab24fb" id="r_a23d5bcfe9bb38acc57f2a31e43ab24fb"><td class="memItemLeft" align="right" valign="top"><a id="a23d5bcfe9bb38acc57f2a31e43ab24fb" name="a23d5bcfe9bb38acc57f2a31e43ab24fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enterWarpMode</b> (int outputIndex)</td></tr>
+<tr class="separator:a23d5bcfe9bb38acc57f2a31e43ab24fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ab95f6ecc12f733622b34523c5b8e7" id="r_a30ab95f6ecc12f733622b34523c5b8e7"><td class="memItemLeft" align="right" valign="top"><a id="a30ab95f6ecc12f733622b34523c5b8e7" name="a30ab95f6ecc12f733622b34523c5b8e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>exitWarpMode</b> ()</td></tr>
+<tr class="separator:a30ab95f6ecc12f733622b34523c5b8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d26e9ac88eb2fa3973ed96f23022c64" id="r_a8d26e9ac88eb2fa3973ed96f23022c64"><td class="memItemLeft" align="right" valign="top"><a id="a8d26e9ac88eb2fa3973ed96f23022c64" name="a8d26e9ac88eb2fa3973ed96f23022c64"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>inWarpMode</b> () const noexcept</td></tr>
+<tr class="separator:a8d26e9ac88eb2fa3973ed96f23022c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d7385e09ebfce93781d1f3d7466f207" id="r_a0d7385e09ebfce93781d1f3d7466f207"><td class="memItemLeft" align="right" valign="top"><a id="a0d7385e09ebfce93781d1f3d7466f207" name="a0d7385e09ebfce93781d1f3d7466f207"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetWarp</b> ()</td></tr>
+<tr class="separator:a0d7385e09ebfce93781d1f3d7466f207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,16 +173,34 @@ std::function&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a327fe81baf3324767b1d2a055d90353e" id="r_a327fe81baf3324767b1d2a055d90353e"><td class="memItemLeft" align="right" valign="top"><a id="a327fe81baf3324767b1d2a055d90353e" name="a327fe81baf3324767b1d2a055d90353e"></a>
 std::function&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onItemGeometryChanged</b></td></tr>
 <tr class="separator:a327fe81baf3324767b1d2a055d90353e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92661e1dd3c822013c67a67dc8a283c" id="r_ab92661e1dd3c822013c67a67dc8a283c"><td class="memItemLeft" align="right" valign="top"><a id="ab92661e1dd3c822013c67a67dc8a283c" name="ab92661e1dd3c822013c67a67dc8a283c"></a>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onWarpChanged</b></td></tr>
+<tr class="separator:ab92661e1dd3c822013c67a67dc8a283c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9c87864b9243244aa97f6d4edee9b2ec" id="r_a9c87864b9243244aa97f6d4edee9b2ec"><td class="memItemLeft" align="right" valign="top"><a id="a9c87864b9243244aa97f6d4edee9b2ec" name="a9c87864b9243244aa97f6d4edee9b2ec"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
 <tr class="separator:a9c87864b9243244aa97f6d4edee9b2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62599ffc0d0ab5f1a771f00512a12f74" id="r_a62599ffc0d0ab5f1a771f00512a12f74"><td class="memItemLeft" align="right" valign="top"><a id="a62599ffc0d0ab5f1a771f00512a12f74" name="a62599ffc0d0ab5f1a771f00512a12f74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a62599ffc0d0ab5f1a771f00512a12f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81162b6e2a4b8690e5cac387281a5566" id="r_a81162b6e2a4b8690e5cac387281a5566"><td class="memItemLeft" align="right" valign="top"><a id="a81162b6e2a4b8690e5cac387281a5566" name="a81162b6e2a4b8690e5cac387281a5566"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:a81162b6e2a4b8690e5cac387281a5566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af879d95cfc5e51fcbf4cb4e26bfe4b76" id="r_af879d95cfc5e51fcbf4cb4e26bfe4b76"><td class="memItemLeft" align="right" valign="top"><a id="af879d95cfc5e51fcbf4cb4e26bfe4b76" name="af879d95cfc5e51fcbf4cb4e26bfe4b76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:af879d95cfc5e51fcbf4cb4e26bfe4b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fae29f1cf81fd7031260c56706e325" id="r_ac7fae29f1cf81fd7031260c56706e325"><td class="memItemLeft" align="right" valign="top"><a id="ac7fae29f1cf81fd7031260c56706e325" name="ac7fae29f1cf81fd7031260c56706e325"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *event) override</td></tr>
+<tr class="separator:ac7fae29f1cf81fd7031260c56706e325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7775207d604e94faeda5e6fc87588f74" id="r_a7775207d604e94faeda5e6fc87588f74"><td class="memItemLeft" align="right" valign="top"><a id="a7775207d604e94faeda5e6fc87588f74" name="a7775207d604e94faeda5e6fc87588f74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
+<tr class="separator:a7775207d604e94faeda5e6fc87588f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_window_device_8hpp_source.html">WindowDevice.hpp</a></li>
-<li><b>WindowDevice.cpp</b></li>
+<li><a class="el" href="_output_mapping_8hpp_source.html">OutputMapping.hpp</a></li>
+<li><b>OutputMapping.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

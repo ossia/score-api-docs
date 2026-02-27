@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"_q_graphics_line_edit_8hpp_source.html":[13,0,0,1,1,5,1,8],
+"_q_graphics_log_knob_8hpp_source.html":[13,0,0,1,1,5,1,9],
+"_q_graphics_log_slider_8hpp_source.html":[13,0,0,1,1,5,1,10],
+"_q_graphics_multi_slider_8hpp_source.html":[13,0,0,1,1,5,1,11],
+"_q_graphics_multi_slider_x_y_8hpp_source.html":[13,0,0,1,1,5,1,12],
+"_q_graphics_note_chooser_8hpp_source.html":[13,0,0,1,1,5,1,13],
 "_q_graphics_path_generator_x_y_8hpp_source.html":[13,0,0,1,1,5,1,14],
 "_q_graphics_pixmap_button_8hpp_source.html":[13,0,0,1,1,5,1,15],
 "_q_graphics_pixmap_enum_8hpp_source.html":[13,0,0,1,1,5,1,16],
@@ -205,9 +211,9 @@ var NAVTREEINDEX4 =
 "_sh4lt_input_device_8hpp_source.html":[13,0,0,2,17,1,7,0],
 "_sh4lt_output_device_8hpp_source.html":[13,0,0,2,17,1,7,1],
 "_shader_cache_8hpp_source.html":[13,0,0,2,17,1,3,28],
-"_shader_program_8hpp_source.html":[13,0,0,2,17,1,30],
-"_shared_input_settings_8hpp_source.html":[13,0,0,2,17,1,31],
-"_shared_output_settings_8hpp_source.html":[13,0,0,2,17,1,32],
+"_shader_program_8hpp_source.html":[13,0,0,2,17,1,31],
+"_shared_input_settings_8hpp_source.html":[13,0,0,2,17,1,32],
+"_shared_output_settings_8hpp_source.html":[13,0,0,2,17,1,33],
 "_shmdata_input_device_8hpp_source.html":[13,0,0,2,17,1,8,0],
 "_shmdata_output_device_8hpp_source.html":[13,0,0,2,17,1,8,1],
 "_show_rack_in_view_model_8hpp_source.html":[13,0,0,2,32,4,1,5,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "_sound_presenter_8hpp_source.html":[13,0,0,2,24,0,5,7],
 "_sound_view_8hpp_source.html":[13,0,0,2,24,0,5,8],
 "_spammer_8hpp_source.html":[13,0,0,2,8,2,9],
-"_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,13],
-"_spectral_difference___h_w_r_8hpp_source.html":[13,0,0,2,5,0,14],
-"_speed_slider_8hpp_source.html":[13,0,0,2,32,4,6,3,4],
-"_spin_boxes_8hpp_source.html":[13,0,0,1,1,13,26],
-"_spline_2_execution_8hpp_source.html":[13,0,0,2,33,0,1],
-"_spline_2_generator_dialog_8hpp_source.html":[13,0,0,2,33,0,2],
-"_split_event_8hpp_source.html":[13,0,0,2,32,4,1,2,2]
+"_spectral_difference_8hpp_source.html":[13,0,0,2,5,0,13]
 };

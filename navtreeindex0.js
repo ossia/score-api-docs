@@ -109,6 +109,7 @@ var NAVTREEINDEX0 =
 "_automation_view_8hpp_source.html":[13,0,0,2,7,0,8],
 "_avnd_device_8hpp_source.html":[13,0,0,2,8,1,0],
 "_avnd_jit_8hpp_source.html":[13,0,0,2,19,2,3],
+"_background_device_8hpp_source.html":[13,0,0,2,17,1,14,0],
 "_background_node_8hpp_source.html":[13,0,0,2,17,1,3,1],
 "_background_renderer_8hpp_source.html":[13,0,0,1,1,5,3],
 "_base_callback_wrapper_8hpp_source.html":[13,0,0,2,2,0,0],
@@ -144,10 +145,10 @@ var NAVTREEINDEX0 =
 "_cable_helpers_8hpp_source.html":[13,0,0,2,32,0,0,0],
 "_cable_inspector_8hpp_source.html":[13,0,0,2,12,0,2],
 "_cable_item_8hpp_source.html":[13,0,0,2,3,4,3,6],
-"_camera_device_8hpp_source.html":[13,0,0,2,17,1,14],
-"_camera_device_enumerator_8hpp_source.html":[13,0,0,2,17,1,15],
+"_camera_device_8hpp_source.html":[13,0,0,2,17,1,15],
+"_camera_device_enumerator_8hpp_source.html":[13,0,0,2,17,1,16],
 "_camera_input_8hpp_source.html":[13,0,0,2,24,2,0],
-"_camera_settings_8hpp_source.html":[13,0,0,2,17,1,16],
+"_camera_settings_8hpp_source.html":[13,0,0,2,17,1,17],
 "_central_interval_display_8hpp_source.html":[13,0,0,2,32,4,3,7,1],
 "_central_nodal_display_8hpp_source.html":[13,0,0,2,32,4,3,7,2],
 "_centroid_8hpp_source.html":[13,0,0,2,5,0,0],
@@ -180,6 +181,7 @@ var NAVTREEINDEX0 =
 "_coding_style.html#Templates":[0,4],
 "_coding_style.html#Values":[0,3],
 "_coherency_checker_factory_interface_8hpp_source.html":[13,0,0,2,32,4,5,0],
+"_collapsible_section_8hpp_source.html":[13,0,0,2,17,1,14,1],
 "_color_interpolator_8hpp_source.html":[13,0,0,1,1,7,2],
 "_color_reference_8hpp_source.html":[13,0,0,1,1,7,3],
 "_color_space_8hpp_source.html":[13,0,0,2,17,1,3,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "_create_interval___state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,3],
 "_create_interval___state___event_8hpp_source.html":[13,0,0,2,32,4,1,5,0,4],
 "_create_interval___state___event___time_sync_8hpp_source.html":[13,0,0,2,32,4,1,5,0,5],
-"_create_modulation_8hpp_source.html":[13,0,0,2,32,0,0,1],
-"_create_point_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,0],
-"_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4]
+"_create_modulation_8hpp_source.html":[13,0,0,2,32,0,0,1]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"_message_item_model_algorithms_8hpp_source.html":[13,0,0,2,32,4,3,8,0,2],
+"_message_list_serialization_8hpp_source.html":[13,0,0,2,4,0,8],
+"_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0],
 "_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1],
 "_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
 "_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
@@ -80,6 +83,7 @@ var NAVTREEINDEX3 =
 "_move_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,1],
 "_multi_ongoing_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,3],
 "_multi_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,0],
+"_multi_window_device_8hpp_source.html":[13,0,0,2,17,1,14,3],
 "_multi_window_node_8hpp_source.html":[13,0,0,2,17,1,3,12],
 "_musical_grid_8hpp_source.html":[13,0,0,2,32,4,3,7,3],
 "_n_v12_8hpp_source.html":[13,0,0,2,17,1,3,0,3],
@@ -121,7 +125,9 @@ var NAVTREEINDEX3 =
 "_open_documents_file_8hpp_source.html":[13,0,0,1,0,0,6],
 "_open_g_l_8hpp_source.html":[13,0,0,1,1,4,0],
 "_optional_8hpp_source.html":[13,0,0,1,1,12,2,6],
+"_output_mapping_8hpp_source.html":[13,0,0,2,17,1,14,4],
 "_output_node_8hpp_source.html":[13,0,0,2,17,1,3,15],
+"_output_preview_8hpp_source.html":[13,0,0,2,17,1,14,5],
 "_owning_vector_8hpp_source.html":[13,0,0,1,1,12,2,7],
 "_p_c_l_to_geometry_8hpp_source.html":[13,0,0,2,35,0,15],
 "_painter_8hpp_source.html":[13,0,0,2,8,3,19],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "_q_graphics_enum_8hpp_source.html":[13,0,0,1,1,5,1,4],
 "_q_graphics_h_s_v_chooser_8hpp_source.html":[13,0,0,1,1,5,1,5],
 "_q_graphics_int_slider_8hpp_source.html":[13,0,0,1,1,5,1,6],
-"_q_graphics_knob_8hpp_source.html":[13,0,0,1,1,5,1,7],
-"_q_graphics_line_edit_8hpp_source.html":[13,0,0,1,1,5,1,8],
-"_q_graphics_log_knob_8hpp_source.html":[13,0,0,1,1,5,1,9],
-"_q_graphics_log_slider_8hpp_source.html":[13,0,0,1,1,5,1,10],
-"_q_graphics_multi_slider_8hpp_source.html":[13,0,0,1,1,5,1,11],
-"_q_graphics_multi_slider_x_y_8hpp_source.html":[13,0,0,1,1,5,1,12],
-"_q_graphics_note_chooser_8hpp_source.html":[13,0,0,1,1,5,1,13]
+"_q_graphics_knob_8hpp_source.html":[13,0,0,1,1,5,1,7]
 };

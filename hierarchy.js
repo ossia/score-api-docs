@@ -1149,8 +1149,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -2218,8 +2218,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2903,6 +2903,7 @@ var hierarchy =
       [ "score::QGraphicsSelectablePixmapToggle", "classscore_1_1_q_graphics_selectable_pixmap_toggle.html", null ]
     ] ],
     [ "QGraphicsRectItem", null, [
+      [ "Gfx::DesktopLayoutItem", "class_gfx_1_1_desktop_layout_item.html", null ],
       [ "Gfx::OutputMappingItem", "class_gfx_1_1_output_mapping_item.html", null ]
     ] ],
     [ "QGraphicsScene", null, [
@@ -2914,7 +2915,7 @@ var hierarchy =
       [ "score::TextItem", "classscore_1_1_text_item.html", null ]
     ] ],
     [ "QGraphicsView", null, [
-      [ "Gfx::CornerWarpCanvas", "class_gfx_1_1_corner_warp_canvas.html", null ],
+      [ "Gfx::DesktopLayoutCanvas", "class_gfx_1_1_desktop_layout_canvas.html", null ],
       [ "Gfx::OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", null ],
       [ "Scenario::ProcessGraphicsView", "class_scenario_1_1_process_graphics_view.html", null ],
       [ "Scenario::TimeRulerGraphicsView", "class_scenario_1_1_time_ruler_graphics_view.html", [
@@ -3696,6 +3697,7 @@ var hierarchy =
       [ "Execution::ManualClock::TimeWidget", "class_execution_1_1_manual_clock_1_1_time_widget.html", null ]
     ] ],
     [ "QToolButton", null, [
+      [ "Gfx::FlatHeaderButton", "class_gfx_1_1_flat_header_button.html", null ],
       [ "Inspector::MenuButton", "class_inspector_1_1_menu_button.html", null ],
       [ "SelectionButton", "class_selection_button.html", null ],
       [ "score::ArrowButton", "classscore_1_1_arrow_button.html", null ],
@@ -3810,6 +3812,7 @@ var hierarchy =
         [ "Explorer::SliderValueWidget", "class_explorer_1_1_slider_value_widget.html", null ]
       ] ],
       [ "Explorer::DeviceExplorerWidget", "class_explorer_1_1_device_explorer_widget.html", null ],
+      [ "Gfx::CollapsibleSection", "class_gfx_1_1_collapsible_section.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
       [ "Gfx::PreviewWidget", "class_gfx_1_1_preview_widget.html", null ],
       [ "Gfx::ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", null ],

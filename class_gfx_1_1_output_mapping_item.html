@@ -119,15 +119,18 @@ Inheritance diagram for Gfx::OutputMappingItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec5003c3bd6fb9e7d9189d64057379ca" id="r_aec5003c3bd6fb9e7d9189d64057379ca"><td class="memItemLeft" align="right" valign="top"><a id="aec5003c3bd6fb9e7d9189d64057379ca" name="aec5003c3bd6fb9e7d9189d64057379ca"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OutputMappingItem</b> (int index, const QRectF &amp;rect, QGraphicsItem *parent=nullptr)</td></tr>
-<tr class="separator:aec5003c3bd6fb9e7d9189d64057379ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5097fe2a4c3269ad594b1765b61ee72d" id="r_a5097fe2a4c3269ad594b1765b61ee72d"><td class="memItemLeft" align="right" valign="top"><a id="a5097fe2a4c3269ad594b1765b61ee72d" name="a5097fe2a4c3269ad594b1765b61ee72d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>OutputMappingItem</b> (int index, const QRectF &amp;rect, <a class="el" href="class_gfx_1_1_output_mapping_canvas.html">OutputMappingCanvas</a> *canvas, QGraphicsItem *parent=nullptr)</td></tr>
+<tr class="separator:a5097fe2a4c3269ad594b1765b61ee72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53d360b8d3e78637370c1621671d5451" id="r_a53d360b8d3e78637370c1621671d5451"><td class="memItemLeft" align="right" valign="top"><a id="a53d360b8d3e78637370c1621671d5451" name="a53d360b8d3e78637370c1621671d5451"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>outputIndex</b> () const noexcept</td></tr>
 <tr class="separator:a53d360b8d3e78637370c1621671d5451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20643462bd37a343f98dc9ef03e9703c" id="r_a20643462bd37a343f98dc9ef03e9703c"><td class="memItemLeft" align="right" valign="top"><a id="a20643462bd37a343f98dc9ef03e9703c" name="a20643462bd37a343f98dc9ef03e9703c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setOutputIndex</b> (int idx)</td></tr>
 <tr class="separator:a20643462bd37a343f98dc9ef03e9703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb7693ae13899987e4cbe92a3a689f6" id="r_a2cb7693ae13899987e4cbe92a3a689f6"><td class="memItemLeft" align="right" valign="top"><a id="a2cb7693ae13899987e4cbe92a3a689f6" name="a2cb7693ae13899987e4cbe92a3a689f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>applyLockedState</b> ()</td></tr>
+<tr class="separator:a2cb7693ae13899987e4cbe92a3a689f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828de34a39753c53a17e99cf59f247ab" id="r_a828de34a39753c53a17e99cf59f247ab"><td class="memItemLeft" align="right" valign="top"><a id="a828de34a39753c53a17e99cf59f247ab" name="a828de34a39753c53a17e99cf59f247ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:a828de34a39753c53a17e99cf59f247ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +164,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>fullscreen</b> {false
 <tr class="memitem:a564039db578d6aaf9c1dc7667cfa518d" id="r_a564039db578d6aaf9c1dc7667cfa518d"><td class="memItemLeft" align="right" valign="top"><a id="a564039db578d6aaf9c1dc7667cfa518d" name="a564039db578d6aaf9c1dc7667cfa518d"></a>
 <a class="el" href="struct_gfx_1_1_corner_warp.html">CornerWarp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cornerWarp</b></td></tr>
 <tr class="separator:a564039db578d6aaf9c1dc7667cfa518d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922958ecdf2b48ce0ceaf9dc71377882" id="r_a922958ecdf2b48ce0ceaf9dc71377882"><td class="memItemLeft" align="right" valign="top"><a id="a922958ecdf2b48ce0ceaf9dc71377882" name="a922958ecdf2b48ce0ceaf9dc71377882"></a>
+OutputLockMode&#160;</td><td class="memItemRight" valign="bottom"><b>lockMode</b> {OutputLockMode::Free}</td></tr>
+<tr class="separator:a922958ecdf2b48ce0ceaf9dc71377882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c4a3231631524eeb1ec270b96abf015" id="r_a4c4a3231631524eeb1ec270b96abf015"><td class="memItemLeft" align="right" valign="top"><a id="a4c4a3231631524eeb1ec270b96abf015" name="a4c4a3231631524eeb1ec270b96abf015"></a>
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onChanged</b></td></tr>
 <tr class="separator:a4c4a3231631524eeb1ec270b96abf015"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,8 +190,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>hoverMoveEvent</b> (Q
 <tr class="separator:a2746e6716e570654c37d259328c90e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_window_device_8hpp_source.html">WindowDevice.hpp</a></li>
-<li><b>WindowDevice.cpp</b></li>
+<li><a class="el" href="_output_mapping_8hpp_source.html">OutputMapping.hpp</a></li>
+<li><b>OutputMapping.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

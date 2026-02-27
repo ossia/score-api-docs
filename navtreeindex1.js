@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"_create_point_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,0],
+"_create_process_in_existing_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,4],
 "_create_process_in_new_slot_8hpp_source.html":[13,0,0,2,32,4,1,3,5],
 "_create_sequence_8hpp_source.html":[13,0,0,2,32,4,1,5,0,6],
 "_create_state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,7],
@@ -69,6 +71,7 @@ var NAVTREEINDEX1 =
 "_depth_node_8hpp_source.html":[13,0,0,2,17,1,3,4],
 "_descriptor_8hpp_source.html":[13,0,0,2,15,0,1],
 "_deserialize_known_sub_type_8hpp_source.html":[13,0,0,1,1,8,7],
+"_desktop_layout_8hpp_source.html":[13,0,0,2,17,1,14,2],
 "_device_completer_8hpp_source.html":[13,0,0,2,0,0,5,0],
 "_device_context_8hpp_source.html":[13,0,0,2,20,0,2,1],
 "_device_document_plugin_8hpp_source.html":[13,0,0,2,13,0,2,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "_generic_process_factory_8hpp_source.html":[13,0,0,2,3,4,25],
 "_geometry_8hpp_source.html":[13,0,0,2,8,3,8],
 "_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,2,4],
-"_geometry_filter_node_8hpp_source.html":[13,0,0,2,17,1,3,5],
-"_geometry_filter_node_renderer_8hpp_source.html":[13,0,0,2,17,1,3,6],
-"_geometry_info_8hpp_source.html":[13,0,0,2,35,0,8],
-"_geometry_packer_8hpp_source.html":[13,0,0,2,35,0,9]
+"_geometry_filter_node_8hpp_source.html":[13,0,0,2,17,1,3,5]
 };
