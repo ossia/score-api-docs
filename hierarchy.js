@@ -951,23 +951,41 @@ var hierarchy =
     [ "Scenario::GoodOldDisplacementPolicy", "class_scenario_1_1_good_old_displacement_policy.html", null ],
     [ "Threedim::gpu_buffer_view", "struct_threedim_1_1gpu__buffer__view.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
+      [ "score::gfx::DXVDecoder", "structscore_1_1gfx_1_1_d_x_v_decoder.html", null ],
+      [ "score::gfx::DXVYCoCgDecoder", "structscore_1_1gfx_1_1_d_x_v_y_co_cg_decoder.html", null ],
       [ "score::gfx::EmptyDecoder", "structscore_1_1gfx_1_1_empty_decoder.html", null ],
       [ "score::gfx::HAPDecoder", "structscore_1_1gfx_1_1_h_a_p_decoder.html", [
         [ "score::gfx::HAPDefaultDecoder", "structscore_1_1gfx_1_1_h_a_p_default_decoder.html", null ],
         [ "score::gfx::HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", null ]
       ] ],
       [ "score::gfx::NV12Decoder", "structscore_1_1gfx_1_1_n_v12_decoder.html", null ],
+      [ "score::gfx::NV16Decoder", "structscore_1_1gfx_1_1_n_v16_decoder.html", null ],
+      [ "score::gfx::NV24Decoder", "structscore_1_1gfx_1_1_n_v24_decoder.html", null ],
+      [ "score::gfx::P010Decoder", "structscore_1_1gfx_1_1_p010_decoder.html", null ],
+      [ "score::gfx::P016Decoder", "structscore_1_1gfx_1_1_p016_decoder.html", null ],
+      [ "score::gfx::P210Decoder", "structscore_1_1gfx_1_1_p210_decoder.html", null ],
+      [ "score::gfx::P410Decoder", "structscore_1_1gfx_1_1_p410_decoder.html", null ],
       [ "score::gfx::PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", null ],
       [ "score::gfx::PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", null ],
       [ "score::gfx::PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", null ],
       [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
+      [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
+      [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
+      [ "score::gfx::Y210Decoder", "structscore_1_1gfx_1_1_y210_decoder.html", null ],
       [ "score::gfx::YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", null ],
       [ "score::gfx::YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", null ],
       [ "score::gfx::YUV420P12Decoder", "structscore_1_1gfx_1_1_y_u_v420_p12_decoder.html", null ],
       [ "score::gfx::YUV422Decoder", "structscore_1_1gfx_1_1_y_u_v422_decoder.html", null ],
       [ "score::gfx::YUV422P10Decoder", "structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html", null ],
       [ "score::gfx::YUV422P12Decoder", "structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html", null ],
+      [ "score::gfx::YUV440Decoder", "structscore_1_1gfx_1_1_y_u_v440_decoder.html", null ],
+      [ "score::gfx::YUV444Decoder", "structscore_1_1gfx_1_1_y_u_v444_decoder.html", null ],
+      [ "score::gfx::YUV444P10Decoder", "structscore_1_1gfx_1_1_y_u_v444_p10_decoder.html", null ],
+      [ "score::gfx::YUV444P12Decoder", "structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html", null ],
+      [ "score::gfx::YUVA420Decoder", "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html", null ],
+      [ "score::gfx::YUVA444Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_decoder.html", null ],
+      [ "score::gfx::YUVA444P10Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html", null ],
       [ "score::gfx::YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", null ]
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
@@ -1149,8 +1167,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1198,8 +1216,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1981,6 +1999,7 @@ var hierarchy =
     [ "score::gfx::NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", [
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
+      [ "score::gfx::DirectVideoNodeRenderer", "classscore_1_1gfx_1_1_direct_video_node_renderer.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
         [ "score::gfx::GaussianSplatRenderer", "classscore_1_1gfx_1_1_gaussian_splat_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
@@ -2170,6 +2189,7 @@ var hierarchy =
     [ "Threedim::packed_attribute_info", "struct_threedim_1_1packed__attribute__info.html", null ],
     [ "Threedim::packed_attribute_spec", "struct_threedim_1_1packed__attribute__spec.html", null ],
     [ "Threedim::PackedExtractionStrategy", "class_threedim_1_1_packed_extraction_strategy.html", null ],
+    [ "score::gfx::DXVDecoder::PacketHeader", "structscore_1_1gfx_1_1_d_x_v_decoder_1_1_packet_header.html", null ],
     [ "score::PaintVisitor", "structscore_1_1_paint_visitor.html", null ],
     [ "score::Brush::Pair", "structscore_1_1_brush_1_1_pair.html", null ],
     [ "score::PanelDelegate", "classscore_1_1_panel_delegate.html", [
@@ -2218,8 +2238,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

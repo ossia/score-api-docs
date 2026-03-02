@@ -1,6 +1,8 @@
 var NAVTREEINDEX2 =
 {
-"_geometry_filter_node_renderer_8hpp_source.html":[13,0,0,2,17,1,3,6],
+"_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,2,4],
+"_geometry_filter_node_8hpp_source.html":[13,0,0,2,17,1,3,6],
+"_geometry_filter_node_renderer_8hpp_source.html":[13,0,0,2,17,1,3,7],
 "_geometry_info_8hpp_source.html":[13,0,0,2,35,0,8],
 "_geometry_packer_8hpp_source.html":[13,0,0,2,35,0,9],
 "_geometry_to_buffer_8hpp_source.html":[13,0,0,2,35,0,10],
@@ -42,7 +44,7 @@ var NAVTREEINDEX2 =
 "_graphics_slider_base_impl_8hpp_source.html":[13,0,0,1,1,5,11],
 "_graphics_split_layout_8hpp_source.html":[13,0,0,1,1,5,0,3],
 "_graphics_tab_layout_8hpp_source.html":[13,0,0,1,1,5,0,4],
-"_h_a_p_8hpp_source.html":[13,0,0,2,17,1,3,0,2],
+"_h_a_p_8hpp_source.html":[13,0,0,2,17,1,3,0,3],
 "_h_t_t_p_device_8hpp_source.html":[13,0,0,2,29,0,5,0],
 "_h_t_t_p_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,5,1],
 "_h_t_t_p_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,5,2],
@@ -60,9 +62,9 @@ var NAVTREEINDEX2 =
 "_i_o_type_8hpp_source.html":[13,0,0,2,0,0,0,2],
 "_i_s_f_executor_8hpp_source.html":[13,0,0,2,17,1,27],
 "_i_s_f_executor_node_8hpp_source.html":[13,0,0,2,17,1,28],
-"_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,3,9],
+"_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,3,10],
 "_i_s_f_process_8hpp_source.html":[13,0,0,2,17,1,29],
-"_i_s_f_visitors_8hpp_source.html":[13,0,0,2,17,1,3,10],
+"_i_s_f_visitors_8hpp_source.html":[13,0,0,2,17,1,3,11],
 "_icon_provider_8hpp_source.html":[13,0,0,1,1,13,10],
 "_identified_object_8hpp_source.html":[13,0,0,1,1,7,17],
 "_identified_object_abstract_8hpp_source.html":[13,0,0,1,1,7,18],
@@ -71,7 +73,7 @@ var NAVTREEINDEX2 =
 "_identifier_debug_8hpp_source.html":[13,0,0,1,1,7,21],
 "_identifier_generation_8hpp_source.html":[13,0,0,1,1,12,15],
 "_image_list_chooser_8hpp_source.html":[13,0,0,2,17,1,4,1],
-"_image_node_8hpp_source.html":[13,0,0,2,17,1,3,8],
+"_image_node_8hpp_source.html":[13,0,0,2,17,1,3,9],
 "_include_libpd_8hpp_source.html":[13,0,0,2,28,0,3],
 "_indirect_container_8hpp_source.html":[13,0,0,1,1,12,2,4],
 "_infinite_scroller_8hpp_source.html":[13,0,0,1,1,5,13],
@@ -243,11 +245,9 @@ var NAVTREEINDEX2 =
 "_menu_manager_8hpp_source.html":[13,0,0,1,1,0,3],
 "_merge_events_8hpp_source.html":[13,0,0,2,32,4,1,5,3,0],
 "_merge_time_syncs_8hpp_source.html":[13,0,0,2,32,4,1,5,3,1],
-"_mesh_8hpp_source.html":[13,0,0,2,17,1,3,11],
+"_mesh_8hpp_source.html":[13,0,0,2,17,1,3,12],
 "_mesh_helpers_8hpp_source.html":[13,0,0,2,35,0,12],
 "_message_8hpp_source.html":[13,0,0,2,4,0,7],
 "_message_box_8hpp_source.html":[13,0,0,1,1,13,14],
-"_message_bus_8hpp_source.html":[13,0,0,2,8,3,16],
-"_message_drop_handler_8hpp_source.html":[13,0,0,2,32,4,0,0,11],
-"_message_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,1]
+"_message_bus_8hpp_source.html":[13,0,0,2,8,3,16]
 };

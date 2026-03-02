@@ -50,6 +50,7 @@ var NAVTREEINDEX1 =
 "_d_m_x_protocol_creation_8hpp_source.html":[13,0,0,2,29,0,0,5],
 "_d_n_s_s_d_device_enumerator_8hpp_source.html":[13,0,0,2,29,0,22],
 "_d_s_p_wrapper_8hpp_source.html":[13,0,0,2,15,0,2],
+"_d_x_v_8hpp_source.html":[13,0,0,2,17,1,3,0,1],
 "_data_stream_8hpp_source.html":[13,0,0,2,39,0,4],
 "_data_stream_fwd_8hpp_source.html":[13,0,0,1,1,10,3],
 "_data_stream_helpers_8hpp_source.html":[13,0,0,1,1,10,4],
@@ -93,6 +94,7 @@ var NAVTREEINDEX1 =
 "_device_node_8hpp_source.html":[13,0,0,2,0,0,3,0],
 "_device_recorder_8hpp_source.html":[13,0,0,2,8,2,4],
 "_device_settings_8hpp_source.html":[13,0,0,2,0,0,4,1],
+"_direct_video_node_renderer_8hpp_source.html":[13,0,0,2,17,1,3,5],
 "_displayed_elements_container_8hpp_source.html":[13,0,0,2,32,4,3,3,2],
 "_displayed_elements_model_8hpp_source.html":[13,0,0,2,32,4,3,3,3],
 "_displayed_elements_presenter_8hpp_source.html":[13,0,0,2,32,4,3,3,4],
@@ -237,7 +239,7 @@ var NAVTREEINDEX1 =
 "_g_p_s_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,4,1],
 "_g_p_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,4,2],
 "_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,4,3],
-"_g_p_u_video_decoder_8hpp_source.html":[13,0,0,2,17,1,3,0,1],
+"_g_p_u_video_decoder_8hpp_source.html":[13,0,0,2,17,1,3,0,2],
 "_g_streamer_compatibility_8hpp_source.html":[13,0,0,2,24,2,4],
 "_g_u_i_application_context_8hpp_source.html":[13,0,0,1,1,1,3],
 "_g_u_i_application_plugin_8hpp_source.html":[13,0,0,1,1,8,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_generic_mini_audio_interface_8hpp_source.html":[13,0,0,2,6,0,13],
 "_generic_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,14],
 "_generic_process_factory_8hpp_source.html":[13,0,0,2,3,4,25],
-"_geometry_8hpp_source.html":[13,0,0,2,8,3,8],
-"_geometry_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,2,4],
-"_geometry_filter_node_8hpp_source.html":[13,0,0,2,17,1,3,5]
+"_geometry_8hpp_source.html":[13,0,0,2,8,3,8]
 };

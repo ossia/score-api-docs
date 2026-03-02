@@ -91,5 +91,6 @@ var searchData=
   ['vstcontrolportitem_88',['VSTControlPortItem',['../structvst3_1_1_v_s_t_control_port_item.html',1,'vst3']]],
   ['vstfloatslider_89',['vstfloatslider',['../structvst3_1_1_v_s_t_float_slider.html',1,'vst3::VSTFloatSlider'],['../structvst_1_1_v_s_t_float_slider.html',1,'vst::VSTFloatSlider']]],
   ['vstgraphicsslider_90',['VSTGraphicsSlider',['../classvst3_1_1_v_s_t_graphics_slider.html',1,'vst3']]],
-  ['vstinfo_91',['VSTInfo',['../structvst_1_1_v_s_t_info.html',1,'vst']]]
+  ['vstinfo_91',['VSTInfo',['../structvst_1_1_v_s_t_info.html',1,'vst']]],
+  ['vuyadecoder_92',['VUYADecoder',['../structscore_1_1gfx_1_1_v_u_y_a_decoder.html',1,'score::gfx']]]
 ];

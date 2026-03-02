@@ -5,6 +5,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "CommonUBOs.hpp", "_common_u_b_os_8hpp_source.html", null ],
     [ "CustomMesh.hpp", "_custom_mesh_8hpp_source.html", null ],
     [ "DepthNode.hpp", "_depth_node_8hpp_source.html", null ],
+    [ "DirectVideoNodeRenderer.hpp", "_direct_video_node_renderer_8hpp_source.html", null ],
     [ "GeometryFilterNode.hpp", "_geometry_filter_node_8hpp_source.html", null ],
     [ "GeometryFilterNodeRenderer.hpp", "_geometry_filter_node_renderer_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Graph/Graph.hpp", "score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html", null ],

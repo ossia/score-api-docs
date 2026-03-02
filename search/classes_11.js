@@ -101,13 +101,14 @@ var searchData=
   ['resizeslotverticallytest_98',['ResizeSlotVerticallyTest',['../class_resize_slot_vertically_test.html',1,'']]],
   ['restorabledocument_99',['RestorableDocument',['../structscore_1_1_restorable_document.html',1,'score']]],
   ['rgb24decoder_100',['RGB24Decoder',['../structscore_1_1gfx_1_1_r_g_b24_decoder.html',1,'score::gfx']]],
-  ['rgba_5fcolor_101',['rgba_color',['../structoscr_1_1rgba__color.html',1,'oscr']]],
-  ['rightbraceview_102',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
-  ['rightclickimpl_103',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
-  ['rms_104',['RMS',['../struct_analysis_1_1_r_m_s.html',1,'Analysis']]],
-  ['rmsdata_105',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],
-  ['rolloff_106',['Rolloff',['../struct_analysis_1_1_rolloff.html',1,'Analysis']]],
-  ['rootitem_107',['RootItem',['../structoscr_1_1_root_item.html',1,'oscr']]],
-  ['rotationcontrol_108',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]],
-  ['runtimeinterposeplugin_109',['RuntimeInterposePlugin',['../class_jit_1_1_runtime_interpose_plugin.html',1,'Jit']]]
+  ['rgb48decoder_101',['RGB48Decoder',['../structscore_1_1gfx_1_1_r_g_b48_decoder.html',1,'score::gfx']]],
+  ['rgba_5fcolor_102',['rgba_color',['../structoscr_1_1rgba__color.html',1,'oscr']]],
+  ['rightbraceview_103',['RightBraceView',['../class_scenario_1_1_right_brace_view.html',1,'Scenario']]],
+  ['rightclickimpl_104',['RightClickImpl',['../structscore_1_1_right_click_impl.html',1,'score']]],
+  ['rms_105',['RMS',['../struct_analysis_1_1_r_m_s.html',1,'Analysis']]],
+  ['rmsdata_106',['RMSData',['../struct_media_1_1_r_m_s_data.html',1,'Media']]],
+  ['rolloff_107',['Rolloff',['../struct_analysis_1_1_rolloff.html',1,'Analysis']]],
+  ['rootitem_108',['RootItem',['../structoscr_1_1_root_item.html',1,'oscr']]],
+  ['rotationcontrol_109',['RotationControl',['../struct_threedim_1_1_rotation_control.html',1,'Threedim']]],
+  ['runtimeinterposeplugin_110',['RuntimeInterposePlugin',['../class_jit_1_1_runtime_interpose_plugin.html',1,'Jit']]]
 ];

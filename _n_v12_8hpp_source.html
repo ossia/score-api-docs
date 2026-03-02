@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('_n_v12_8hpp_source.html',''); initResi
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="stringliteral">{</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="stringliteral">  float y = texture(y_tex, v_texcoord).r;</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="stringliteral">  float u = texture(uv_tex, v_texcoord).r;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="stringliteral">  float v = texture(uv_tex, v_texcoord).a;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="stringliteral">  float v = texture(uv_tex, v_texcoord).g;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral">)_&quot;;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral"></span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">  </span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> nv12_filter_epilogue = R<span class="stringliteral">&quot;_(</span></div>
@@ -182,7 +182,7 @@ $(document).ready(function(){initNavTree('_n_v12_8hpp_source.html',''); initResi
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// UV</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keyword">auto</span> tex</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          = rhi.newTexture(QRhiTexture::RGBA8, {w / 4, h / 2}, 1, QRhiTexture::Flag{});</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          = rhi.newTexture(QRhiTexture::RG8, {w / 2, h / 2}, 1, QRhiTexture::Flag{});</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      tex-&gt;create();</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
@@ -227,10 +227,10 @@ $(document).ready(function(){initNavTree('_n_v12_8hpp_source.html',''); initResi
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  setUVPixels(QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  {</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width / 4, h = decoder.height / 2;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width / 2, h = decoder.height / 2;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">auto</span> uv_tex = samplers[1].texture;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 4, stride)};</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 2, stride)};</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    QRhiTextureUploadDescription desc{entry};</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    res.uploadTexture(uv_tex, desc);</div>
@@ -245,7 +245,7 @@ $(document).ready(function(){initNavTree('_n_v12_8hpp_source.html',''); initResi
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:94</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:394</div></div>
-<div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:16</div></div>
+<div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_n_v12_decoder_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_n_v12_decoder.html">score::gfx::NV12Decoder</a></div><div class="ttdoc">Decodes NV12 videos.</div><div class="ttdef"><b>Definition</b> NV12.hpp:17</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_n_v12_decoder_html_a9b98345d3d97d0f7d283e482ad32c7fc"><div class="ttname"><a href="structscore_1_1gfx_1_1_n_v12_decoder.html#a9b98345d3d97d0f7d283e482ad32c7fc">score::gfx::NV12Decoder::exec</a></div><div class="ttdeci">void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div><div class="ttdef"><b>Definition</b> NV12.hpp:97</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_n_v12_decoder_html_ab9368477b1952f18b597064c9fe17a23"><div class="ttname"><a href="structscore_1_1gfx_1_1_n_v12_decoder.html#ab9368477b1952f18b597064c9fe17a23">score::gfx::NV12Decoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition</b> NV12.hpp:56</div></div>

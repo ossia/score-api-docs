@@ -120,15 +120,16 @@ Inheritance diagram for score::gfx::NodeRenderer:</div>
   <map id="score::gfx::NodeRenderer_map" name="score::gfx::NodeRenderer_map">
 <area href="class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html" alt="Gfx::Spout::SpoutInputNode::Renderer" shape="rect" coords="273,56,536,80"/>
 <area href="struct_rendered_depth_node.html" alt="RenderedDepthNode" shape="rect" coords="273,112,536,136"/>
-<area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="273,168,536,192"/>
-<area href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html" alt="score::gfx::GeometryFilterNodeRenderer" shape="rect" coords="273,224,536,248"/>
-<area href="classscore_1_1gfx_1_1_output_node_renderer.html" alt="score::gfx::OutputNodeRenderer" shape="rect" coords="273,280,536,304"/>
-<area href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html" alt="score::gfx::RenderedCSFNode" shape="rect" coords="273,336,536,360"/>
-<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="273,392,536,416"/>
-<area href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html" alt="score::gfx::RenderedRawRasterPipelineNode" shape="rect" coords="273,448,536,472"/>
-<area href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html" alt="score::gfx::SimpleRenderedISFNode" shape="rect" coords="273,504,536,528"/>
-<area href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html" alt="score::gfx::SimpleRenderedVSANode" shape="rect" coords="273,560,536,584"/>
-<area href="classscore_1_1gfx_1_1_video_node_renderer.html" alt="score::gfx::VideoNodeRenderer" shape="rect" coords="273,616,536,640"/>
+<area href="classscore_1_1gfx_1_1_direct_video_node_renderer.html" title="Renderer for intra-only video codecs with instant seeking." alt="score::gfx::DirectVideoNodeRenderer" shape="rect" coords="273,168,536,192"/>
+<area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="273,224,536,248"/>
+<area href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html" alt="score::gfx::GeometryFilterNodeRenderer" shape="rect" coords="273,280,536,304"/>
+<area href="classscore_1_1gfx_1_1_output_node_renderer.html" alt="score::gfx::OutputNodeRenderer" shape="rect" coords="273,336,536,360"/>
+<area href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html" alt="score::gfx::RenderedCSFNode" shape="rect" coords="273,392,536,416"/>
+<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="273,448,536,472"/>
+<area href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html" alt="score::gfx::RenderedRawRasterPipelineNode" shape="rect" coords="273,504,536,528"/>
+<area href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html" alt="score::gfx::SimpleRenderedISFNode" shape="rect" coords="273,560,536,584"/>
+<area href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html" alt="score::gfx::SimpleRenderedVSANode" shape="rect" coords="273,616,536,640"/>
+<area href="classscore_1_1gfx_1_1_video_node_renderer.html" alt="score::gfx::VideoNodeRenderer" shape="rect" coords="273,672,536,696"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -148,6 +149,8 @@ virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView<
 <tr class="memitem:a8c79c917b2fe655d96bb0669711a1d99" id="r_a8c79c917b2fe655d96bb0669711a1d99"><td class="memItemLeft" align="right" valign="top"><a id="a8c79c917b2fe655d96bb0669711a1d99" name="a8c79c917b2fe655d96bb0669711a1d99"></a>
 virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForOutput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
 <tr class="separator:a8c79c917b2fe655d96bb0669711a1d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae350342d608a9f725d0a5be082421987" id="r_ae350342d608a9f725d0a5be082421987"><td class="memItemLeft" align="right" valign="top">virtual QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae350342d608a9f725d0a5be082421987">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
+<tr class="separator:ae350342d608a9f725d0a5be082421987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2730bcef91168ca755cb5e8c6b6dc7" id="r_a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a0a2730bcef91168ca755cb5e8c6b6dc7">inputAboutToFinish</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p, QRhiResourceUpdateBatch *&amp;)</td></tr>
 <tr class="separator:a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1641e676462687fe1f46de74da1b8d66" id="r_a1641e676462687fe1f46de74da1b8d66"><td class="memItemLeft" align="right" valign="top"><a id="a1641e676462687fe1f46de74da1b8d66" name="a1641e676462687fe1f46de74da1b8d66"></a>
@@ -237,6 +240,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </table>
 </div><div class="memdoc">
 <p>Called when all the inbound nodes to a texture input have finished rendering. Mainly useful to slip in a readback. </p>
+
+</div>
+</div>
+<a id="ae350342d608a9f725d0a5be082421987" name="ae350342d608a9f725d0a5be082421987"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae350342d608a9f725d0a5be082421987">&#9670;&#160;</a></span>textureForOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiTexture * score::gfx::NodeRenderer::textureForOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a texture owned by this renderer for a given output port. Used for GrabsFromSource ports (e.g. cubemaps) where the upstream node produces a texture directly rather than rendering into a downstream-provided render target. </p>
 
 </div>
 </div>
