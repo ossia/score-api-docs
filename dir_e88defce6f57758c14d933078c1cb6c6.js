@@ -8,5 +8,6 @@ var dir_e88defce6f57758c14d933078c1cb6c6 =
     [ "Rescale.hpp", "_rescale_8hpp_source.html", null ],
     [ "Thumbnailer.hpp", "_thumbnailer_8hpp_source.html", null ],
     [ "VideoDecoder.hpp", "_video_decoder_8hpp_source.html", null ],
+    [ "VideoEnums.hpp", "_video_enums_8hpp_source.html", null ],
     [ "VideoInterface.hpp", "_video_interface_8hpp_source.html", null ]
 ];

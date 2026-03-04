@@ -199,13 +199,15 @@ $(document).ready(function(){initNavTree('_window_device_8hpp_source.html',''); 
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_settings.html">   82</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_settings.html">WindowSettings</a></div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>{</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  WindowMode mode{WindowMode::Single};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::vector&lt;OutputMapping&gt; outputs;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">int</span> inputWidth{1920};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">int</span> inputHeight{1080};</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  SwapchainFlag flag{};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  SwapchainFormat format{};</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  std::vector&lt;OutputMapping&gt; outputs;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">int</span> inputWidth{1920};</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">int</span> inputHeight{1080};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
 </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="ttc" id="aclass_device_1_1_address_dialog_html"><div class="ttname"><a href="class_device_1_1_address_dialog.html">Device::AddressDialog</a></div><div class="ttdef"><b>Definition</b> ProtocolSettingsWidget.hpp:41</div></div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:66</div></div>
 <div class="ttc" id="aclass_device_1_1_protocol_factory_html"><div class="ttname"><a href="class_device_1_1_protocol_factory.html">Device::ProtocolFactory</a></div><div class="ttdef"><b>Definition</b> ProtocolFactoryInterface.hpp:49</div></div>

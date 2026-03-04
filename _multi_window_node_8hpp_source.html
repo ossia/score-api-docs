@@ -176,32 +176,36 @@ $(document).ready(function(){initNavTree('_multi_window_node_8hpp_source.html','
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> setSourceRect(<span class="keywordtype">int</span> windowIndex, QRectF rect);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> setEdgeBlend(<span class="keywordtype">int</span> windowIndex, <span class="keywordtype">int</span> side, <span class="keywordtype">float</span> width, <span class="keywordtype">float</span> gamma);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> setCornerWarp(<span class="keywordtype">int</span> windowIndex, <span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_corner_warp.html">Gfx::CornerWarp</a>&amp; warp);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::function&lt;void(<span class="keywordtype">float</span>)&gt; onFps;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// Called after all windows are created in createOutput(), before swap chains are initialized</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  std::function&lt;void()&gt; onWindowsCreated;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">void</span> renderBlack();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> initWindow(<span class="keywordtype">int</span> index, <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> api);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  Configuration m_conf;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  std::vector&lt;Gfx::OutputMapping&gt; m_mappings;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  std::vector&lt;WindowOutput&gt; m_windowOutputs;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::shared_ptr&lt;RenderState&gt; m_renderState;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  std::weak_ptr&lt;RenderList&gt; m_renderer;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  std::function&lt;void()&gt; m_vsyncCallback;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> setSwapchainFlag(Gfx::SwapchainFlag flag);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> setSwapchainFormat(Gfx::SwapchainFormat format);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  std::function&lt;void(<span class="keywordtype">float</span>)&gt; onFps;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// Called after all windows are created in createOutput(), before swap chains are initialized</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::function&lt;void()&gt; onWindowsCreated;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">void</span> renderBlack();</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> initWindow(<span class="keywordtype">int</span> index, <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> api);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  Configuration m_conf;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  std::vector&lt;Gfx::OutputMapping&gt; m_mappings;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::vector&lt;WindowOutput&gt; m_windowOutputs;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  std::shared_ptr&lt;RenderState&gt; m_renderState;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  std::weak_ptr&lt;RenderList&gt; m_renderer;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  Gfx::SwapchainFlag m_swapchainFlag{};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  Gfx::SwapchainFormat m_swapchainFormat{};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  std::function&lt;void()&gt; m_vsyncCallback;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>}</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:31</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:20</div></div>
-<div class="ttc" id="astruct_gfx_1_1_corner_warp_html"><div class="ttname"><a href="struct_gfx_1_1_corner_warp.html">Gfx::CornerWarp</a></div><div class="ttdef"><b>Definition</b> WindowSettings.hpp:33</div></div>
+<div class="ttc" id="astruct_gfx_1_1_corner_warp_html"><div class="ttname"><a href="struct_gfx_1_1_corner_warp.html">Gfx::CornerWarp</a></div><div class="ttdef"><b>Definition</b> WindowSettings.hpp:49</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_multi_window_node_1_1_edge_blend_data_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_multi_window_node_1_1_edge_blend_data.html">score::gfx::MultiWindowNode::EdgeBlendData</a></div><div class="ttdef"><b>Definition</b> MultiWindowNode.hpp:34</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_multi_window_node_1_1_window_output_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_multi_window_node_1_1_window_output.html">score::gfx::MultiWindowNode::WindowOutput</a></div><div class="ttdef"><b>Definition</b> MultiWindowNode.hpp:40</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_multi_window_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_multi_window_node.html">score::gfx::MultiWindowNode</a></div><div class="ttdef"><b>Definition</b> MultiWindowNode.hpp:10</div></div>

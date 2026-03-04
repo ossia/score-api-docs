@@ -1,5 +1,7 @@
 var NAVTREEINDEX20 =
 {
+"namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8":[11,0,12,0,135],
+"namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac":[11,0,12,0,124],
 "namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf":[11,0,12,0,132],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58":[11,0,12,0,122],
 "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a758e4ffdefb224d656644eb82662a2f6":[11,0,12,0,122,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX20 =
 "score__plugin__jit_8hpp_source.html":[13,0,0,2,19,4],
 "score__plugin__js_8hpp_source.html":[13,0,0,2,20,1],
 "score__plugin__library_8hpp_source.html":[13,0,0,2,21,1],
-"score__plugin__lv2_8hpp_source.html":[13,0,0,2,22,1],
-"score__plugin__mapping_8hpp_source.html":[13,0,0,2,23,1],
-"score__plugin__media_8hpp_source.html":[13,0,0,2,24,3]
+"score__plugin__lv2_8hpp_source.html":[13,0,0,2,22,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,324],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,323],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,338],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,339],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_o_01_4_01_4.html":[12,0,340],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structhalp_1_1position__gpu__geometry_1_1attributes.html":[12,0,24,0,0],
 "structhalp_1_1position__gpu__geometry_1_1bindings.html":[12,0,24,0,1],
 "structhalp_1_1position__gpu__geometry_1_1buffers.html":[12,0,24,0,2],
-"structhas__base.html":[12,0,116],
-"structhas__no__base.html":[12,0,117],
-"structhas__ui.html":[12,0,118]
+"structhas__base.html":[12,0,116]
 };
