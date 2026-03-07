@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5c26c0477d810969726669a872fe356d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d70a4180c71753fbb295dbf6a23e6ab" id="r_a1d70a4180c71753fbb295dbf6a23e6ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d70a4180c71753fbb295dbf6a23e6ab">renderTargetForInput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p) override</td></tr>
 <tr class="separator:a1d70a4180c71753fbb295dbf6a23e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7e4c6da68cc89cf455f506654f43d6" id="r_a1d7e4c6da68cc89cf455f506654f43d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d7e4c6da68cc89cf455f506654f43d6">updateInputTexture</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, QRhiTexture *tex) override</td></tr>
+<tr class="separator:a1d7e4c6da68cc89cf455f506654f43d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e1cdea5adbc46b281024bda97a1c430" id="r_a2e1cdea5adbc46b281024bda97a1c430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2e1cdea5adbc46b281024bda97a1c430">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
 <tr class="separator:a2e1cdea5adbc46b281024bda97a1c430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13738ff37efe6018243b005ae0a87209" id="r_a13738ff37efe6018243b005ae0a87209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a13738ff37efe6018243b005ae0a87209">update</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *e) override</td></tr>
@@ -412,6 +414,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="a1d7e4c6da68cc89cf455f506654f43d6" name="a1d7e4c6da68cc89cf455f506654f43d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d7e4c6da68cc89cf455f506654f43d6">&#9670;&#160;</a></span>updateInputTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderedISFNode::updateInputTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture *&#160;</td>
+          <td class="paramname"><em>tex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the sampler texture for a GrabsFromSource input port. Called from the render loop when the upstream texture may have changed. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#adbba3751aca99e0978ddc2af667dd1d8">score::gfx::NodeRenderer</a>.</p>
 
 </div>
 </div>

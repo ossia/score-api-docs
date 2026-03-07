@@ -151,6 +151,8 @@ virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView<
 <tr class="separator:a8c79c917b2fe655d96bb0669711a1d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae350342d608a9f725d0a5be082421987" id="r_ae350342d608a9f725d0a5be082421987"><td class="memItemLeft" align="right" valign="top">virtual QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae350342d608a9f725d0a5be082421987">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
 <tr class="separator:ae350342d608a9f725d0a5be082421987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbba3751aca99e0978ddc2af667dd1d8" id="r_adbba3751aca99e0978ddc2af667dd1d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#adbba3751aca99e0978ddc2af667dd1d8">updateInputTexture</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, QRhiTexture *tex)</td></tr>
+<tr class="separator:adbba3751aca99e0978ddc2af667dd1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2730bcef91168ca755cb5e8c6b6dc7" id="r_a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a0a2730bcef91168ca755cb5e8c6b6dc7">inputAboutToFinish</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p, QRhiResourceUpdateBatch *&amp;)</td></tr>
 <tr class="separator:a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1641e676462687fe1f46de74da1b8d66" id="r_a1641e676462687fe1f46de74da1b8d66"><td class="memItemLeft" align="right" valign="top"><a id="a1641e676462687fe1f46de74da1b8d66" name="a1641e676462687fe1f46de74da1b8d66"></a>
@@ -267,6 +269,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </table>
 </div><div class="memdoc">
 <p>Returns a texture owned by this renderer for a given output port. Used for GrabsFromSource ports (e.g. cubemaps) where the upstream node produces a texture directly rather than rendering into a downstream-provided render target. </p>
+
+</div>
+</div>
+<a id="adbba3751aca99e0978ddc2af667dd1d8" name="adbba3751aca99e0978ddc2af667dd1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbba3751aca99e0978ddc2af667dd1d8">&#9670;&#160;</a></span>updateInputTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::updateInputTexture </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture *&#160;</td>
+          <td class="paramname"><em>tex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the sampler texture for a GrabsFromSource input port. Called from the render loop when the upstream texture may have changed. </p>
+
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a9cd8e682d71d84e2f33d4dd19f6347b1">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a180cadc5b5aeddbcf06b96e000a38507">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d7e4c6da68cc89cf455f506654f43d6">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#af7c3a99d42166a004dbe70bc3969ca7b">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a8e2d152f046d62bcd3f450264a7c3c02">score::gfx::SimpleRenderedVSANode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a9262a234d9fa85d2c4e788e6a52b615c">score::gfx::SimpleRenderedISFNode</a>.</p>
 
 </div>
 </div>

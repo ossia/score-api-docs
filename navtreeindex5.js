@@ -246,8 +246,8 @@ var NAVTREEINDEX5 =
 "class_automation_1_1_change_address.html":[12,0,3,1],
 "class_automation_1_1_colors.html":[11,0,0,1],
 "class_automation_1_1_colors.html":[12,0,3,2],
-"class_automation_1_1_init_automation.html":[11,0,0,2],
 "class_automation_1_1_init_automation.html":[12,0,3,3],
-"class_automation_1_1_inspector_factory.html":[11,0,0,3],
-"class_automation_1_1_inspector_factory.html":[12,0,3,4]
+"class_automation_1_1_init_automation.html":[11,0,0,2],
+"class_automation_1_1_inspector_factory.html":[12,0,3,4],
+"class_automation_1_1_inspector_factory.html":[11,0,0,3]
 };

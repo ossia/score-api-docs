@@ -1,5 +1,9 @@
 var NAVTREEINDEX25 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,320],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,321],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html":[12,0,322],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html":[12,0,325],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,324],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,323],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,338],
@@ -245,9 +249,5 @@ var NAVTREEINDEX25 =
 "structgpp_1_1qrhi_1_1handle__release.html":[12,0,22,0,3],
 "structgpp_1_1qrhi_1_1handle__update.html":[12,0,22,0,4],
 "structgraphics__item__ptr.html":[12,0,113],
-"structhalp_1_1position__gpu__geometry.html":[12,0,24,0],
-"structhalp_1_1position__gpu__geometry_1_1attributes.html":[12,0,24,0,0],
-"structhalp_1_1position__gpu__geometry_1_1bindings.html":[12,0,24,0,1],
-"structhalp_1_1position__gpu__geometry_1_1buffers.html":[12,0,24,0,2],
-"structhas__base.html":[12,0,116]
+"structhalp_1_1position__gpu__geometry.html":[12,0,24,0]
 };

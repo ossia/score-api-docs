@@ -128,18 +128,18 @@ var NAVTREEINDEX =
 "classscore_1_1_background_renderer.html",
 "classscore_1_1_interface_list_main.html#afcabbbb7abae27076d5920b905aea234",
 "classscore_1_1dynarray__impl.html",
-"dir_0b7bc471b265a64a0ea0fa8497fe4806.html",
-"dir_c604cc011f27174b86f8298fffef50ae.html",
-"namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8",
-"score__plugin__mapping_8hpp_source.html",
-"struct_gfx_1_1_libav_encoder.html",
-"struct_nodes_1_1_direction.html",
-"struct_remote_control_1_1_w_s_1_1_handler.html#ad233d3e97577d021e6672abb5efe8ebd",
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html",
-"structhas__no__base.html",
-"structscore_1_1_g_u_i_application_context.html#a56e095a4a7ae4751638f5dc9afdb06b5",
-"structscore_1_1gfx_1_1_h_a_p_m_decoder.html#a2c4d54828b1ec6775a4626c101077466",
-"structscore_1_1gfx_1_1_y_u_v422_decoder.html"
+"dir_0674c3e0b7083766fecbefaa622827da.html",
+"dir_c430c27dc34bc7889062a4ffaa2954b6.html",
+"namespacescore_1_1gfx.html#a6b3dbe9777899456b6f1336bf14a4b04aad863c0f702f90584c586d2a2b3ac3ec",
+"score__plugin__jit_8hpp_source.html",
+"struct_gfx_1_1_kinect2_1_1_kinect2_settings.html",
+"struct_nodes_1_1_chord_1_1_node.html",
+"struct_recording_1_1_recorded_message.html",
+"struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html",
+"structhalp_1_1position__gpu__geometry_1_1attributes.html",
+"structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c",
+"structscore_1_1gfx_1_1_h_a_p_default_decoder.html#a1f2b1b8520f6e40ca0414e89442b9ce4",
+"structscore_1_1gfx_1_1_y_u_v420_decoder.html#afcbbd7913eaca66b7bc6790a0534cbd3"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
