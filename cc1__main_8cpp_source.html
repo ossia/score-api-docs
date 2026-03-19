@@ -379,62 +379,65 @@ $(document).ready(function(){initNavTree('cc1__main_8cpp_source.html',''); initR
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  }</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="comment">// Infer the builtin include path if unspecified.</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordflow">if</span>(Clang-&gt;getHeaderSearchOpts().UseBuiltinIncludes</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>     &amp;&amp; Clang-&gt;getHeaderSearchOpts().ResourceDir.empty())</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    Clang-&gt;getHeaderSearchOpts().ResourceDir</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        = CompilerInvocation::GetResourcesPath(Argv0, MainAddr);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  Clang-&gt;setDiagnostics(Diags.get());</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keywordflow">if</span>(!Clang-&gt;hasDiagnostics())</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        <span class="stringliteral">&quot;No diagnostics&quot;</span>, std::error_code(1, std::system_category()));</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  }</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="comment">// Set an error handler, so that any LLVM backend diagnostics go through our</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="comment">// error handler.</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  llvm::install_fatal_error_handler(</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>      LLVMErrorHandler, <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(&amp;Clang-&gt;getDiagnostics()));</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="comment">//if(Clang &amp;&amp; DiagsBuffer)</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="comment">//  DiagsBuffer-&gt;FlushDiagnostics(Clang-&gt;getDiagnostics());</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  Clang-&gt;getDiagnostics().setSeverity(clang::diag::ext_constexpr_function_never_constant_expr, diag::Severity::Ignored, {});</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="keywordflow">if</span>(!Success)</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        printErrors(*DiagsBuffer, Clang-&gt;getSourceManager()),</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        std::error_code(1, std::system_category()));</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="comment">// Execute the frontend actions.</span></div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  {</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    llvm::TimeTraceScope TimeScope(<span class="stringliteral">&quot;ExecuteCompiler&quot;</span>);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    Success = ExecuteCompilerInvocation(Clang.get());</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  }</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <span class="comment">// If any timers were active but haven&#39;t been destroyed yet, print their</span></div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="comment">// results now.  This happens in -disable-free mode.</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  llvm::TimerGroup::printAll(llvm::errs());</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  llvm::TimerGroup::clearAll();</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="keyword">auto</span> res = Success ? llvm::Error::success()</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                     : llvm::make_error&lt;llvm::StringError&gt;(</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                         printErrors(*DiagsBuffer, Clang-&gt;getSourceManager()),</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                         <a class="code hl_namespace" href="namespacestd.html">std</a>::error_code(1, <a class="code hl_namespace" href="namespacestd.html">std</a>::system_category()));</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="comment">// Our error handler depends on the Diagnostics object, which we&#39;re</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="comment">// potentially about to delete. Uninstall the handler now so that any</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="comment">// later errors use the default handling behavior instead.</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  llvm::remove_fatal_error_handler();</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="comment">// When running with -disable-free, don&#39;t do any destruction or shutdown.</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordflow">if</span>(Clang-&gt;getFrontendOpts().DisableFree)</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  {</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    llvm::BuryPointer(std::move(Clang));</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  }</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordflow">return</span> res;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#if LLVM_VERSION_MAJOR &lt; 22</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordflow">if</span>(Clang-&gt;getHeaderSearchOpts().UseBuiltinIncludes</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>     &amp;&amp; Clang-&gt;getHeaderSearchOpts().ResourceDir.empty())</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    Clang-&gt;getHeaderSearchOpts().ResourceDir</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        = CompilerInvocation::GetResourcesPath(Argv0, MainAddr);</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  Clang-&gt;setDiagnostics(Diags.get());</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <span class="keywordflow">if</span>(!Clang-&gt;hasDiagnostics())</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="stringliteral">&quot;No diagnostics&quot;</span>, std::error_code(1, std::system_category()));</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="comment">// Set an error handler, so that any LLVM backend diagnostics go through our</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="comment">// error handler.</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  llvm::install_fatal_error_handler(</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>      LLVMErrorHandler, <span class="keyword">static_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(&amp;Clang-&gt;getDiagnostics()));</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="comment">//if(Clang &amp;&amp; DiagsBuffer)</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="comment">//  DiagsBuffer-&gt;FlushDiagnostics(Clang-&gt;getDiagnostics());</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  Clang-&gt;getDiagnostics().setSeverity(clang::diag::ext_constexpr_function_never_constant_expr, diag::Severity::Ignored, {});</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keywordflow">if</span>(!Success)</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  {</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">return</span> llvm::make_error&lt;llvm::StringError&gt;(</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        printErrors(*DiagsBuffer, Clang-&gt;getSourceManager()),</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        std::error_code(1, std::system_category()));</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  }</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="comment">// Execute the frontend actions.</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    llvm::TimeTraceScope TimeScope(<span class="stringliteral">&quot;ExecuteCompiler&quot;</span>);</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    Success = ExecuteCompilerInvocation(Clang.get());</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  }</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="comment">// If any timers were active but haven&#39;t been destroyed yet, print their</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// results now.  This happens in -disable-free mode.</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  llvm::TimerGroup::printAll(llvm::errs());</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  llvm::TimerGroup::clearAll();</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keyword">auto</span> res = Success ? llvm::Error::success()</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                     : llvm::make_error&lt;llvm::StringError&gt;(</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                         printErrors(*DiagsBuffer, Clang-&gt;getSourceManager()),</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                         <a class="code hl_namespace" href="namespacestd.html">std</a>::error_code(1, <a class="code hl_namespace" href="namespacestd.html">std</a>::system_category()));</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="comment">// Our error handler depends on the Diagnostics object, which we&#39;re</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="comment">// potentially about to delete. Uninstall the handler now so that any</span></div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="comment">// later errors use the default handling behavior instead.</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  llvm::remove_fatal_error_handler();</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="comment">// When running with -disable-free, don&#39;t do any destruction or shutdown.</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordflow">if</span>(Clang-&gt;getFrontendOpts().DisableFree)</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  {</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    llvm::BuryPointer(std::move(Clang));</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  }</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>}</div>
 <div class="ttc" id="aclass_qt_diagnostic_consumer_html"><div class="ttname"><a href="class_qt_diagnostic_consumer.html">QtDiagnosticConsumer</a></div><div class="ttdef"><b>Definition</b> cc1_main.cpp:60</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 </div><!-- fragment --></div><!-- contents -->
