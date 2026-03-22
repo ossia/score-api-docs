@@ -2122,6 +2122,7 @@ var annotated_dup =
         [ "HAPDecoder", "structscore_1_1gfx_1_1_h_a_p_decoder.html", "structscore_1_1gfx_1_1_h_a_p_decoder" ],
         [ "HAPDefaultDecoder", "structscore_1_1gfx_1_1_h_a_p_default_decoder.html", "structscore_1_1gfx_1_1_h_a_p_default_decoder" ],
         [ "HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", "structscore_1_1gfx_1_1_h_a_p_m_decoder" ],
+        [ "HWTransferDecoder", "structscore_1_1gfx_1_1_h_w_transfer_decoder.html", "structscore_1_1gfx_1_1_h_w_transfer_decoder" ],
         [ "image", "structscore_1_1gfx_1_1image.html", null ],
         [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
         [ "ImagesNode", "structscore_1_1gfx_1_1_images_node.html", "structscore_1_1gfx_1_1_images_node" ],
@@ -2157,6 +2158,7 @@ var annotated_dup =
         [ "PersistSampler", "structscore_1_1gfx_1_1_persist_sampler.html", null ],
         [ "PhongNode", "structscore_1_1gfx_1_1_phong_node.html", "structscore_1_1gfx_1_1_phong_node" ],
         [ "Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
+        [ "PixelFormatInfo", "structscore_1_1gfx_1_1_pixel_format_info.html", "structscore_1_1gfx_1_1_pixel_format_info" ],
         [ "PlainMesh", "structscore_1_1gfx_1_1_plain_mesh.html", "structscore_1_1gfx_1_1_plain_mesh" ],
         [ "PlainTriangle", "structscore_1_1gfx_1_1_plain_triangle.html", null ],
         [ "PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", "structscore_1_1gfx_1_1_planar_decoder" ],
@@ -2199,6 +2201,7 @@ var annotated_dup =
         [ "VideoNodeRenderer", "classscore_1_1gfx_1_1_video_node_renderer.html", null ],
         [ "VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", "structscore_1_1gfx_1_1_v_u_y_a_decoder" ],
         [ "Window", "classscore_1_1gfx_1_1_window.html", null ],
+        [ "XV30Decoder", "structscore_1_1gfx_1_1_x_v30_decoder.html", "structscore_1_1gfx_1_1_x_v30_decoder" ],
         [ "Y210Decoder", "structscore_1_1gfx_1_1_y210_decoder.html", "structscore_1_1gfx_1_1_y210_decoder" ],
         [ "YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_decoder" ],
         [ "YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder" ],
@@ -2213,6 +2216,7 @@ var annotated_dup =
         [ "YUVA420Decoder", "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html", "structscore_1_1gfx_1_1_y_u_v_a420_decoder" ],
         [ "YUVA444Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_decoder.html", "structscore_1_1gfx_1_1_y_u_v_a444_decoder" ],
         [ "YUVA444P10Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html", "structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder" ],
+        [ "YUVA444P12Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder" ],
         [ "YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", "structscore_1_1gfx_1_1_y_u_y_v422_decoder" ]
       ] ],
       [ "PluginLoader", null, [

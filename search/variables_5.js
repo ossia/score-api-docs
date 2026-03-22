@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['last_5fstate_5f_0',['last_state_',['../class_factor_1_1_single_transition.html#af053fedb74287783ecf9ff3a1780cf08',1,'Factor::SingleTransition::last_state_'],['../class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a66d04b56ea6b82da0536ce66540b47f8',1,'FactorOracle2MIDI::SingleTransition::last_state_']]],
-  ['loadlist_1',['loadList',['../structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241',1,'score::ApplicationSettings']]]
+  ['hasalpha_0',['hasAlpha',['../structscore_1_1gfx_1_1_pixel_format_info.html#aba5f037aab1570c30a3d3a34d8163dad',1,'score::gfx::PixelFormatInfo']]],
+  ['hasframe_1',['hasFrame',['../classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a17ec177295eb2e8172032a9571bfc1ac',1,'score::gfx::GPUVideoDecoder']]]
 ];

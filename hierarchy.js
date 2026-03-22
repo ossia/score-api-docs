@@ -958,6 +958,7 @@ var hierarchy =
         [ "score::gfx::HAPDefaultDecoder", "structscore_1_1gfx_1_1_h_a_p_default_decoder.html", null ],
         [ "score::gfx::HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", null ]
       ] ],
+      [ "score::gfx::HWTransferDecoder", "structscore_1_1gfx_1_1_h_w_transfer_decoder.html", null ],
       [ "score::gfx::NV12Decoder", "structscore_1_1gfx_1_1_n_v12_decoder.html", null ],
       [ "score::gfx::NV16Decoder", "structscore_1_1gfx_1_1_n_v16_decoder.html", null ],
       [ "score::gfx::NV24Decoder", "structscore_1_1gfx_1_1_n_v24_decoder.html", null ],
@@ -972,6 +973,7 @@ var hierarchy =
       [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
       [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
+      [ "score::gfx::XV30Decoder", "structscore_1_1gfx_1_1_x_v30_decoder.html", null ],
       [ "score::gfx::Y210Decoder", "structscore_1_1gfx_1_1_y210_decoder.html", null ],
       [ "score::gfx::YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", null ],
       [ "score::gfx::YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", null ],
@@ -986,6 +988,7 @@ var hierarchy =
       [ "score::gfx::YUVA420Decoder", "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html", null ],
       [ "score::gfx::YUVA444Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_decoder.html", null ],
       [ "score::gfx::YUVA444P10Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html", null ],
+      [ "score::gfx::YUVA444P12Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html", null ],
       [ "score::gfx::YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", null ]
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
@@ -2297,6 +2300,7 @@ var hierarchy =
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
     [ "score::gfx::Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
     [ "Protocols::Pixel", "struct_protocols_1_1_pixel.html", null ],
+    [ "score::gfx::PixelFormatInfo", "structscore_1_1gfx_1_1_pixel_format_info.html", null ],
     [ "Protocols::PixelGroup", "struct_protocols_1_1_pixel_group.html", null ],
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],

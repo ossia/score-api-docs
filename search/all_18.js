@@ -16,5 +16,6 @@ var searchData=
   ['yuva420decoder_13',['YUVA420Decoder',['../structscore_1_1gfx_1_1_y_u_v_a420_decoder.html',1,'score::gfx']]],
   ['yuva444decoder_14',['YUVA444Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_decoder.html',1,'score::gfx']]],
   ['yuva444p10decoder_15',['YUVA444P10Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html',1,'score::gfx']]],
-  ['yuyv422decoder_16',['YUYV422Decoder',['../structscore_1_1gfx_1_1_y_u_y_v422_decoder.html',1,'score::gfx']]]
+  ['yuva444p12decoder_16',['YUVA444P12Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html',1,'score::gfx']]],
+  ['yuyv422decoder_17',['YUYV422Decoder',['../structscore_1_1gfx_1_1_y_u_y_v422_decoder.html',1,'score::gfx']]]
 ];

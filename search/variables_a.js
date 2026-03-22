@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['renderednodes_0',['renderedNodes',['../classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8',1,'score::gfx::Node']]],
-  ['renderers_1',['renderers',['../classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110',1,'score::gfx::RenderList']]],
-  ['rendertargetspecs_2',['renderTargetSpecs',['../classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d',1,'score::gfx::Node']]],
-  ['revsuffix_3',['revsuffix',['../class_factor_1_1_factor_oracle.html#a0c8087389175332cb57cb425fb2aa9d0',1,'Factor::FactorOracle::RevSuffix'],['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a88ce8dd41abafefe78d4054d728ffd84',1,'FactorOracle2MIDI::FactorOracle2MIDI::RevSuffix']]]
+  ['opengl_0',['opengl',['../structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1',1,'score::ApplicationSettings']]],
+  ['output_1',['output',['../classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5',1,'score::gfx::Node::output'],['../classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4',1,'score::gfx::RenderList::output']]]
 ];

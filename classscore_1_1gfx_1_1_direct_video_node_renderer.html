@@ -124,7 +124,8 @@ Inheritance diagram for score::gfx::DirectVideoNodeRenderer:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Renderer for intra-only video codecs with instant seeking. </p>
 <p>Unlike <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html">VideoNodeRenderer</a> which reads from a frame queue fed by a background thread, this renderer owns its own LibAV decoding context and performs synchronous seek + decode + GPU upload directly in update().</p>
-<p>This enables instant seeking for all-intra codecs (ProRes, MJPEG, DNxHD, HAP, etc.) where every frame is independently decodable. </p>
+<p>This enables instant seeking for all-intra codecs (ProRes, MJPEG, DNxHD, HAP, etc.) where every frame is independently decodable.</p>
+<p>Supports hardware-accelerated decoding when available (VAAPI, D3D11VA, CUDA, VideoToolbox, Vulkan Video). When zero-copy GPU texture import is not possible for the current RHI backend, falls back to av_hwframe_transfer_data() which still avoids software decode CPU cost. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

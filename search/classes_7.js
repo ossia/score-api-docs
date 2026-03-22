@@ -55,5 +55,6 @@ var searchData=
   ['httpdevice_52',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
   ['httpprotocolfactory_53',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
   ['httpprotocolsettingswidget_54',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
-  ['httpspecificsettings_55',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]]
+  ['httpspecificsettings_55',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]],
+  ['hwtransferdecoder_56',['HWTransferDecoder',['../structscore_1_1gfx_1_1_h_w_transfer_decoder.html',1,'score::gfx']]]
 ];

@@ -9,6 +9,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "GeometryFilterNode.hpp", "_geometry_filter_node_8hpp_source.html", null ],
     [ "GeometryFilterNodeRenderer.hpp", "_geometry_filter_node_renderer_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Graph/Graph.hpp", "score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html", null ],
+    [ "HWAccelSetup.hpp", "_h_w_accel_setup_8hpp_source.html", null ],
     [ "ImageNode.hpp", "_image_node_8hpp_source.html", null ],
     [ "ISFNode.hpp", "_i_s_f_node_8hpp_source.html", null ],
     [ "ISFVisitors.hpp", "_i_s_f_visitors_8hpp_source.html", null ],
@@ -38,5 +39,6 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "score-plugin-gfx/Gfx/Graph/Utils.hpp", "score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html", null ],
     [ "VideoNode.hpp", "_video_node_8hpp_source.html", null ],
     [ "VideoNodeRenderer.hpp", "_video_node_renderer_8hpp_source.html", null ],
+    [ "VulkanVideoDevice.hpp", "_vulkan_video_device_8hpp_source.html", null ],
     [ "plugins/score-plugin-gfx/Gfx/Graph/Window.hpp", "plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html", null ]
 ];
