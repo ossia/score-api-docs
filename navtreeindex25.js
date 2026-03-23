@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,291],
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,292],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,294],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,295],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,296],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0":[12,0,6,1,0],
 "structbitfocus_1_1module__handler__base.html":[12,0,6,2],
 "structbitfocus_1_1win32__handles.html":[12,0,6,3],
-"structbitfocus_1_1win32__handles_1_1message.html":[12,0,6,3,0],
-"structboost_1_1spirit_1_1traits_1_1container__value_3_01_q_string_01_4.html":[12,0,7,0,0,0],
-"structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html":[12,0,7,0,0,1]
+"structbitfocus_1_1win32__handles_1_1message.html":[12,0,6,3,0]
 };

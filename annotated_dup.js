@@ -2259,6 +2259,7 @@ var annotated_dup =
       [ "BottomToolbarWidget", "classscore_1_1_bottom_toolbar_widget.html", null ],
       [ "Brush", "structscore_1_1_brush.html", "structscore_1_1_brush" ],
       [ "BrushSet", "structscore_1_1_brush_set.html", null ],
+      [ "ClickableTextItem", "classscore_1_1_clickable_text_item.html", null ],
       [ "ColorBang", "classscore_1_1_color_bang.html", null ],
       [ "ColorRef", "structscore_1_1_color_ref.html", null ],
       [ "ComboBox", "classscore_1_1_combo_box.html", null ],

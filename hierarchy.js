@@ -2913,7 +2913,8 @@ var hierarchy =
         [ "score::RectItem", "classscore_1_1_rect_item.html", null ]
       ] ],
       [ "score::SimpleTextItem", "classscore_1_1_simple_text_item.html", [
-        [ "Scenario::ClickableLabelItem", "class_scenario_1_1_clickable_label_item.html", null ]
+        [ "Scenario::ClickableLabelItem", "class_scenario_1_1_clickable_label_item.html", null ],
+        [ "score::ClickableTextItem", "classscore_1_1_clickable_text_item.html", null ]
       ] ],
       [ "score::ZoomItem", "classscore_1_1_zoom_item.html", null ]
     ] ],

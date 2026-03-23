@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"struct_nodal_1_1_add_node.html":[12,0,41,0],
+"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html":[12,0,41,3,0],
 "struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html":[12,0,41,6,0],
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html":[12,0,42,0,0],
 "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html":[12,0,42,0,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "struct_protocols_1_1_m_i_d_i_specific_settings.html":[12,0,49,63],
 "struct_protocols_1_1_m_q_t_t_specific_settings.html":[12,0,49,71],
 "struct_protocols_1_1_minuit_specific_settings.html":[12,0,49,67],
-"struct_protocols_1_1_o_s_c_compatible_check.html":[12,0,49,75],
-"struct_protocols_1_1_o_s_c_query_specific_settings.html":[12,0,49,84],
-"struct_protocols_1_1_o_s_c_specific_settings.html":[12,0,49,85]
+"struct_protocols_1_1_o_s_c_compatible_check.html":[12,0,49,75]
 };

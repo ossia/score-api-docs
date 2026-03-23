@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[12,0,21,33],
+"struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[11,0,5,17],
 "struct_gfx_1_1_demuxer_info.html":[12,0,21,34],
 "struct_gfx_1_1_demuxer_info.html":[11,0,5,18],
 "struct_gfx_1_1_edge_blend.html":[12,0,21,41],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "struct_mime_writer.html":[12,0,173],
 "struct_mime_writer_3_01_device_1_1_free_node_list_01_4.html":[12,0,174],
 "struct_mime_writer_3_01_process_1_1_process_data_01_4.html":[12,0,175],
-"struct_mime_writer_3_01_state_1_1_message_list_01_4.html":[12,0,176],
-"struct_nodal_1_1_add_node.html":[12,0,41,0],
-"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html":[12,0,41,3,0]
+"struct_mime_writer_3_01_state_1_1_message_list_01_4.html":[12,0,176]
 };

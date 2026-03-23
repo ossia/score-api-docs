@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"struct_protocols_1_1_o_s_c_query_specific_settings.html":[12,0,49,84],
+"struct_protocols_1_1_o_s_c_specific_settings.html":[12,0,49,85],
 "struct_protocols_1_1_phidget_specific_settings.html":[12,0,49,92],
 "struct_protocols_1_1_pixel.html":[12,0,49,93],
 "struct_protocols_1_1_pixel_group.html":[12,0,49,94],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html":[12,0,288],
 "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,289],
 "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html":[12,0,293],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,290],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,291],
-"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,292]
+"struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html":[12,0,290]
 };

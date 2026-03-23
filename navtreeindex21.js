@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"score-plugin-ysfx_2_y_s_f_x_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,40,0,0,2],
+"score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html":[13,0,0,2,40,0,3],
 "score-plugin-ysfx_2_y_s_f_x_2_process_metadata_8hpp_source.html":[13,0,0,2,40,0,4],
 "score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp_source.html":[13,0,0,2,40,0,5],
 "score2_o_s_s_i_a_8hpp_source.html":[13,0,0,2,32,4,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_gfx_1_1_d_show_camera_device_enumerator.html":[12,0,21,39],
 "struct_gfx_1_1_d_show_camera_device_enumerator.html":[11,0,5,23],
 "struct_gfx_1_1_d_show_camera_enumerator.html":[12,0,21,40],
-"struct_gfx_1_1_d_show_camera_enumerator.html":[11,0,5,24],
-"struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[12,0,21,33],
-"struct_gfx_1_1_dbl_i_audio_frame_encoder.html":[11,0,5,17]
+"struct_gfx_1_1_d_show_camera_enumerator.html":[11,0,5,24]
 };
