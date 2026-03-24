@@ -2000,6 +2000,7 @@ var annotated_dup =
       [ "ScenarioValidityChecker", "class_scenario_1_1_scenario_validity_checker.html", null ],
       [ "ScenarioView", "class_scenario_1_1_scenario_view.html", null ],
       [ "ScenarioViewInterface", "class_scenario_1_1_scenario_view_interface.html", null ],
+      [ "ScrubHandler", "class_scenario_1_1_scrub_handler.html", null ],
       [ "SearchReplaceWidget", "class_scenario_1_1_search_replace_widget.html", null ],
       [ "SearchWidget", "class_scenario_1_1_search_widget.html", null ],
       [ "SelectedNodes", "struct_scenario_1_1_selected_nodes.html", "struct_scenario_1_1_selected_nodes" ],
