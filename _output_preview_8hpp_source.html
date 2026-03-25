@@ -170,29 +170,33 @@ $(document).ready(function(){initNavTree('_output_preview_8hpp_source.html','');
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> setBlend(<a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> left, <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> right, <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> top, <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> bottom);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">void</span> setSourceRect(QRectF rect);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">void</span> setCornerWarp(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_corner_warp.html">CornerWarp</a>&amp; warp);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> setGlobalTestCard(<span class="keyword">const</span> QImage&amp; img);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// Called when fullscreen is toggled via double-click (index, isFullscreen)</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::function&lt;void(<span class="keywordtype">int</span>, <span class="keywordtype">bool</span>)&gt; onFullscreenToggled;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">int</span> m_index{};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  PreviewContent m_content{PreviewContent::Black};</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  QSize m_resolution{1280, 720};</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  QRectF m_sourceRect{0, 0, 1, 1};</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  QImage m_globalTestCard;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendLeft;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendRight;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendTop;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendBottom;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="struct_gfx_1_1_corner_warp.html">CornerWarp</a> m_cornerWarp;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> setTransform(<span class="keywordtype">int</span> rotation, <span class="keywordtype">bool</span> mirrorX, <span class="keywordtype">bool</span> mirrorY);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> setGlobalTestCard(<span class="keyword">const</span> QImage&amp; img);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// Called when fullscreen is toggled via double-click (index, isFullscreen)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  std::function&lt;void(<span class="keywordtype">int</span>, <span class="keywordtype">bool</span>)&gt; onFullscreenToggled;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> mouseDoubleClickEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">int</span> m_index{};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  PreviewContent m_content{PreviewContent::Black};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  QSize m_resolution{1280, 720};</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  QRectF m_sourceRect{0, 0, 1, 1};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  QImage m_globalTestCard;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendLeft;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendRight;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendTop;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="struct_gfx_1_1_edge_blend.html">EdgeBlend</a> m_blendBottom;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_struct" href="struct_gfx_1_1_corner_warp.html">CornerWarp</a> m_cornerWarp;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">int</span> m_rotation{0};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">bool</span> m_mirrorX{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">bool</span> m_mirrorY{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_output_preview_windows_html"><div class="ttname"><a href="class_gfx_1_1_output_preview_windows.html">Gfx::OutputPreviewWindows</a></div><div class="ttdef"><b>Definition</b> OutputPreview.hpp:24</div></div>
 <div class="ttc" id="aclass_gfx_1_1_preview_widget_html"><div class="ttname"><a href="class_gfx_1_1_preview_widget.html">Gfx::PreviewWidget</a></div><div class="ttdef"><b>Definition</b> OutputPreview.hpp:48</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:30</div></div>
