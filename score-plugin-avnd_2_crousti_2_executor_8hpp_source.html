@@ -741,25 +741,28 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>      <span class="comment">// FIXME this must move in the Node dtor. See video_node</span></div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      <span class="keyword">auto</span>&amp; gfx_exec = this-&gt;system().doc.template plugin&lt;Gfx::DocumentPlugin&gt;().exec;</div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>      <span class="keywordflow">if</span>(node_id &gt;= 0)</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        gfx_exec.ui-&gt;unregister_node(node_id);</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    }</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    {</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>      {</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        out-&gt;nodeId = -1;</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      }</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>    }</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    ::Execution::ProcessComponent::cleanup();</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  }</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  <a class="code hl_class" href="classoscr_1_1_executor.html">~Executor</a>() { }</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>};</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>      {</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        gfx_exec.ui-&gt;unregister_node(node_id);</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        node_id = score::gfx::invalid_node_index;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      }</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    }</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    {</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      {</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>        out-&gt;nodeId = -1;</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>      }</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    }</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    ::Execution::ProcessComponent::cleanup();</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  }</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <a class="code hl_class" href="classoscr_1_1_executor.html">~Executor</a>() { }</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>};</div>
 </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>}</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_document_plugin_html"><div class="ttname"><a href="class_gfx_1_1_document_plugin.html">Gfx::DocumentPlugin</a></div><div class="ttdef"><b>Definition</b> GfxApplicationPlugin.hpp:13</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition</b> GfxExecNode.hpp:40</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path</a></div><div class="ttdoc">The Path class is a typesafe wrapper around ObjectPath.</div><div class="ttdef"><b>Definition</b> Path.hpp:52</div></div>
