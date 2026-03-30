@@ -104,10 +104,12 @@ $(document).ready(function(){initNavTree('class_device_1_1_device_interface.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_device_1_1_device_interface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Device::DeviceInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -289,6 +291,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>logOutbound</b> (cons
 void&#160;</td><td class="memItemRight" valign="bottom"><b>connectionChanged</b> (bool arg_1) const</td></tr>
 <tr class="separator:a9f8374f042772d605469dbbba1dff785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1fb59127436f22b8151699195e9e996d" id="r_a1fb59127436f22b8151699195e9e996d"><td class="memItemLeft" align="right" valign="top"><a id="a1fb59127436f22b8151699195e9e996d" name="a1fb59127436f22b8151699195e9e996d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>w_GetAccessSpecifierHelper</b> (std::integral_constant&lt; decltype((&amp;W_ThisType::connected)), &amp;W_ThisType::connected &gt;)</td></tr>
+<tr class="separator:a1fb59127436f22b8151699195e9e996d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a09d3bc9a0282f525a07e831af4171011" id="r_a09d3bc9a0282f525a07e831af4171011"><td class="memItemLeft" align="right" valign="top"><a id="a09d3bc9a0282f525a07e831af4171011" name="a09d3bc9a0282f525a07e831af4171011"></a>
@@ -336,6 +344,12 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a1fbc2fbde0100ec5ba04e1425f487fd6" id="r_a1fbc2fbde0100ec5ba04e1425f487fd6"><td class="memItemLeft" align="right" valign="top"><a id="a1fbc2fbde0100ec5ba04e1425f487fd6" name="a1fbc2fbde0100ec5ba04e1425f487fd6"></a>
 score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a>, callback_pair &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_callbacks</b></td></tr>
 <tr class="separator:a1fbc2fbde0100ec5ba04e1425f487fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2b91473be2a79f5f63847fcf153c5aa1" id="r_a2b91473be2a79f5f63847fcf153c5aa1"><td class="memItemLeft" align="right" valign="top"><a id="a2b91473be2a79f5f63847fcf153c5aa1" name="a2b91473be2a79f5f63847fcf153c5aa1"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt; &gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::connected), w_internal::viewLiteral(&quot;connected&quot;), std::integral_constant&lt; decltype((&amp;W_ThisType::connected)), &amp;W_ThisType::connected &gt;(), w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;&quot;)&gt;(&quot;&quot; &quot;&quot;), w_internal::W_EmptyFlag)))</td></tr>
+<tr class="separator:a2b91473be2a79f5f63847fcf153c5aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_device_interface_8hpp_source.html">DeviceInterface.hpp</a></li>
