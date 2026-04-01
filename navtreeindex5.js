@@ -101,8 +101,8 @@ var NAVTREEINDEX5 =
 "_text_node_8hpp_source.html":[13,0,0,2,17,1,4,35],
 "_texture_conversion_8hpp_source.html":[13,0,0,2,8,3,23],
 "_texture_format_8hpp_source.html":[13,0,0,2,8,3,24],
-"_texture_port_8hpp_source.html":[13,0,0,2,17,1,36],
-"_texture_port_background_renderer_8hpp_source.html":[13,0,0,2,17,1,37],
+"_texture_port_8hpp_source.html":[13,0,0,2,17,1,37],
+"_texture_port_background_renderer_8hpp_source.html":[13,0,0,2,17,1,38],
 "_texture_source_8hpp_source.html":[13,0,0,2,20,0,2,11],
 "_texture_to_buffer_8hpp_source.html":[13,0,0,2,35,0,19],
 "_thread_local_qml_engine_8hpp_source.html":[13,0,0,2,20,0,11],
@@ -222,8 +222,11 @@ var NAVTREEINDEX5 =
 "_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,20,3],
 "_win_main_to_main_8hpp_source.html":[13,0,0,1,1,12,31],
 "_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,16,7],
+"_window_capture_backend_8hpp_source.html":[13,0,0,2,17,1,17,0],
+"_window_capture_device_8hpp_source.html":[13,0,0,2,17,1,17,1],
+"_window_capture_node_8hpp_source.html":[13,0,0,2,17,1,17,2],
 "_window_container_8hpp_source.html":[13,0,0,2,39,0,0,3],
-"_window_device_8hpp_source.html":[13,0,0,2,17,1,38],
+"_window_device_8hpp_source.html":[13,0,0,2,17,1,39],
 "_window_settings_8hpp_source.html":[13,0,0,2,17,1,16,8],
 "_window_settings_widget_8hpp_source.html":[13,0,0,2,17,1,16,9],
 "_y210_8hpp_source.html":[13,0,0,2,17,1,4,0,25],
@@ -246,8 +249,5 @@ var NAVTREEINDEX5 =
 "_zoom_helper_8hpp_source.html":[13,0,0,2,3,4,43],
 "_zoom_item_8hpp_source.html":[13,0,0,1,1,5,19],
 "_zoom_policy_8hpp_source.html":[13,0,0,2,32,4,3,7,14],
-"annotated.html":[12,0],
-"cc1__main_8cpp_source.html":[13,0,0,2,19,2,4],
-"class_abstract_visitor.html":[12,0,74],
-"class_add_layer_model_to_slot_test.html":[12,0,75]
+"annotated.html":[12,0]
 };

@@ -1,5 +1,15 @@
 var NAVTREEINDEX20 =
 {
+"namespace_device.html":[11,0,2],
+"namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc":[11,0,2,22],
+"namespace_device.html#a8d0d2923bc93c55003d111113918c390":[11,0,2,25],
+"namespace_device.html#a90b6372360427200d5581942af7a7426":[11,0,2,24],
+"namespace_device.html#aa98fcd53aa1fbb8e0fc4f94a872c64ac":[11,0,2,27],
+"namespace_device.html#ae28e7db29ec71528be7138e7ff38e166":[11,0,2,26],
+"namespace_device.html#ae65099905f3608fe0ceba75eee07de0a":[11,0,2,23],
+"namespace_engine.html":[11,0,3],
+"namespace_engine_1_1_network.html":[11,0,3,0],
+"namespace_execution.html":[11,0,4],
 "namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d":[11,0,4,50],
 "namespace_gfx.html":[11,0,5],
 "namespace_inspector.html":[11,0,6],
@@ -193,7 +203,7 @@ var NAVTREEINDEX20 =
 "score-plugin-gfx_2_gfx_2_c_s_f_2_layer_8hpp_source.html":[13,0,0,2,17,1,0,1],
 "score-plugin-gfx_2_gfx_2_c_s_f_2_library_8hpp_source.html":[13,0,0,2,17,1,0,2],
 "score-plugin-gfx_2_gfx_2_c_s_f_2_process_8hpp_source.html":[13,0,0,2,17,1,0,4],
-"score-plugin-gfx_2_gfx_2_command_factory_8hpp_source.html":[13,0,0,2,17,1,20],
+"score-plugin-gfx_2_gfx_2_command_factory_8hpp_source.html":[13,0,0,2,17,1,21],
 "score-plugin-gfx_2_gfx_2_filter_2_executor_8hpp_source.html":[13,0,0,2,17,1,1,0],
 "score-plugin-gfx_2_gfx_2_filter_2_layer_8hpp_source.html":[13,0,0,2,17,1,1,1],
 "score-plugin-gfx_2_gfx_2_filter_2_library_8hpp_source.html":[13,0,0,2,17,1,1,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-media_2_media_2_effect_2_settings_2_model_8hpp_source.html":[13,0,0,2,24,0,1,0,1],
 "score-plugin-media_2_media_2_effect_2_settings_2_view_8hpp_source.html":[13,0,0,2,24,0,1,0,3],
 "score-plugin-media_2_media_2_inspector_2_factory_8hpp_source.html":[13,0,0,2,24,0,2,1],
-"score-plugin-media_2_media_2_merger_2_executor_8hpp_source.html":[13,0,0,2,24,0,3,1],
-"score-plugin-media_2_media_2_merger_2_factory_8hpp_source.html":[13,0,0,2,24,0,3,2],
-"score-plugin-media_2_media_2_merger_2_inspector_8hpp_source.html":[13,0,0,2,24,0,3,3],
-"score-plugin-media_2_media_2_merger_2_model_8hpp_source.html":[13,0,0,2,24,0,3,5],
-"score-plugin-media_2_media_2_step_2_executor_8hpp_source.html":[13,0,0,2,24,0,6,1],
-"score-plugin-media_2_media_2_step_2_factory_8hpp_source.html":[13,0,0,2,24,0,6,2],
-"score-plugin-media_2_media_2_step_2_inspector_8hpp_source.html":[13,0,0,2,24,0,6,3],
-"score-plugin-media_2_media_2_step_2_model_8hpp_source.html":[13,0,0,2,24,0,6,5],
-"score-plugin-media_2_media_2_step_2_view_8hpp_source.html":[13,0,0,2,24,0,6,7],
-"score-plugin-midi_2_midi_2_commands_2_command_factory_8hpp_source.html":[13,0,0,2,25,0,0,1],
-"score-plugin-nodal_2_nodal_2_command_factory_8hpp_source.html":[13,0,0,2,26,0,0]
+"score-plugin-media_2_media_2_merger_2_executor_8hpp_source.html":[13,0,0,2,24,0,3,1]
 };

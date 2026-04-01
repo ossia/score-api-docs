@@ -77,7 +77,7 @@ var searchData=
   ['renderedisfnode_74',['RenderedISFNode',['../structscore_1_1gfx_1_1_rendered_i_s_f_node.html',1,'score::gfx']]],
   ['renderedphongnode_75',['RenderedPhongNode',['../structscore_1_1gfx_1_1_rendered_phong_node.html',1,'score::gfx']]],
   ['renderedrawrasterpipelinenode_76',['RenderedRawRasterPipelineNode',['../structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html',1,'score::gfx']]],
-  ['renderer_77',['renderer',['../class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html',1,'Gfx::Spout::SpoutInputNode::Renderer'],['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer']]],
+  ['renderer_77',['renderer',['../class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html',1,'Gfx::Spout::SpoutInputNode::Renderer'],['../class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html',1,'Gfx::WindowCapture::WindowCaptureNode::Renderer'],['../classscore_1_1gfx_1_1_text_node_1_1_renderer.html',1,'score::gfx::TextNode::Renderer']]],
   ['renderlist_78',['RenderList',['../classscore_1_1gfx_1_1_render_list.html',1,'score::gfx']]],
   ['renderstate_79',['RenderState',['../structscore_1_1gfx_1_1_render_state.html',1,'score::gfx']]],
   ['rendertargetspecs_80',['RenderTargetSpecs',['../structscore_1_1gfx_1_1_render_target_specs.html',1,'score::gfx']]],

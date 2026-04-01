@@ -17,6 +17,7 @@ var dir_f42e6fcfe3ff5704dbc406f95332be77 =
     [ "Video", "dir_e96d1fbaa1cb3122fe8a8f8cefea2679.html", "dir_e96d1fbaa1cb3122fe8a8f8cefea2679" ],
     [ "VSA", "dir_3b2f49b6b2ca0190ec72f1c4d4a6e2ed.html", "dir_3b2f49b6b2ca0190ec72f1c4d4a6e2ed" ],
     [ "Window", "dir_138f4802af862fcf99fd1df27fca8235.html", "dir_138f4802af862fcf99fd1df27fca8235" ],
+    [ "WindowCapture", "dir_68a41df5c61dd07ade79ae489f43b9cb.html", "dir_68a41df5c61dd07ade79ae489f43b9cb" ],
     [ "CameraDevice.hpp", "_camera_device_8hpp_source.html", null ],
     [ "CameraDeviceEnumerator.hpp", "_camera_device_enumerator_8hpp_source.html", null ],
     [ "CameraSettings.hpp", "_camera_settings_8hpp_source.html", null ],

@@ -193,6 +193,10 @@ var hierarchy =
     [ "CameraAbilities", "struct_camera_abilities.html", null ],
     [ "Gfx::CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
     [ "ossia::net::can_learn< T >", "classossia_1_1net_1_1can__learn.html", null ],
+    [ "Gfx::WindowCapture::CapturableScreen", "struct_gfx_1_1_window_capture_1_1_capturable_screen.html", null ],
+    [ "Gfx::WindowCapture::CapturableWindow", "struct_gfx_1_1_window_capture_1_1_capturable_window.html", null ],
+    [ "Gfx::WindowCapture::CapturedFrame", "struct_gfx_1_1_window_capture_1_1_captured_frame.html", null ],
+    [ "Gfx::WindowCapture::CaptureTarget", "struct_gfx_1_1_window_capture_1_1_capture_target.html", null ],
     [ "Scenario::CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", null ],
     [ "Scenario::CategorizedAddress", "struct_scenario_1_1_categorized_address.html", null ],
     [ "Scenario::CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
@@ -1208,8 +1212,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1257,8 +1261,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1359,6 +1363,7 @@ var hierarchy =
           [ "Gfx::SpoutProtocolFactory", "class_gfx_1_1_spout_protocol_factory.html", null ],
           [ "Gfx::SyphonProtocolFactory", "class_gfx_1_1_syphon_protocol_factory.html", null ]
         ] ],
+        [ "Gfx::WindowCapture::WindowCaptureProtocolFactory", "class_gfx_1_1_window_capture_1_1_window_capture_protocol_factory.html", null ],
         [ "Gfx::WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
         [ "Protocols::DefaultProtocolFactory", "class_protocols_1_1_default_protocol_factory.html", [
           [ "Protocols::ArtnetProtocolFactory", "class_protocols_1_1_artnet_protocol_factory.html", null ],
@@ -1826,7 +1831,10 @@ var hierarchy =
     [ "Gfx::GStreamer::libgstreamer", "struct_gfx_1_1_g_streamer_1_1libgstreamer.html", null ],
     [ "Protocols::LibmapperClientSpecificSettings", "struct_protocols_1_1_libmapper_client_specific_settings.html", null ],
     [ "Pd::libpd_list_wrapper", "struct_pd_1_1libpd__list__wrapper.html", null ],
+    [ "Gfx::WindowCapture::libpipewire_capture", "struct_gfx_1_1_window_capture_1_1libpipewire__capture.html", null ],
+    [ "Gfx::WindowCapture::libsdbus", "struct_gfx_1_1_window_capture_1_1libsdbus.html", null ],
     [ "libsuil", "classlibsuil.html", null ],
+    [ "Gfx::WindowCapture::libx11", "struct_gfx_1_1_window_capture_1_1libx11.html", null ],
     [ "score::linear_id_generator", "structscore_1_1linear__id__generator.html", null ],
     [ "WidgetFactory::LinearNormalizer", "struct_widget_factory_1_1_linear_normalizer.html", null ],
     [ "halp::lineedit", null, [
@@ -2048,6 +2056,7 @@ var hierarchy =
     ] ],
     [ "score::gfx::NodeRenderer", "classscore_1_1gfx_1_1_node_renderer.html", [
       [ "Gfx::Spout::SpoutInputNode::Renderer", "class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html", null ],
+      [ "Gfx::WindowCapture::WindowCaptureNode::Renderer", "class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html", null ],
       [ "RenderedDepthNode", "struct_rendered_depth_node.html", null ],
       [ "score::gfx::DirectVideoNodeRenderer", "classscore_1_1gfx_1_1_direct_video_node_renderer.html", null ],
       [ "score::gfx::GenericNodeRenderer", "classscore_1_1gfx_1_1_generic_node_renderer.html", [
@@ -2136,7 +2145,8 @@ var hierarchy =
           [ "Gfx::Kinect2::InputDevice", "class_gfx_1_1_kinect2_1_1_input_device.html", null ],
           [ "Gfx::Sh4lt::InputDevice", "class_gfx_1_1_sh4lt_1_1_input_device.html", null ],
           [ "Gfx::Shmdata::InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", null ],
-          [ "Gfx::Spout::InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", null ]
+          [ "Gfx::Spout::InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", null ],
+          [ "Gfx::WindowCapture::WindowCaptureDevice", "class_gfx_1_1_window_capture_1_1_window_capture_device.html", null ]
         ] ],
         [ "Gfx::GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", [
           [ "Gfx::GStreamer::OutputDevice", "class_gfx_1_1_g_streamer_1_1_output_device.html", null ],
@@ -2587,6 +2597,8 @@ var hierarchy =
     [ "State::Pulse", "struct_state_1_1_pulse.html", null ],
     [ "boost::spirit::traits::push_back_container< QString, QChar >", "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html", null ],
     [ "Scenario::PutLayerModelToFront", "class_scenario_1_1_put_layer_model_to_front.html", null ],
+    [ "pw_buffer", "structpw__buffer.html", null ],
+    [ "pw_stream_events", "structpw__stream__events.html", null ],
     [ "QAbstractItemModel", null, [
       [ "Explorer::AddressItemModel", "class_explorer_1_1_address_item_model.html", null ],
       [ "Library::PresetItemModel", "class_library_1_1_preset_item_model.html", null ],
@@ -3661,6 +3673,7 @@ var hierarchy =
         ] ],
         [ "score::gfx::ProcessNode", "classscore_1_1gfx_1_1_process_node.html", [
           [ "Gfx::Spout::SpoutInputNode", "struct_gfx_1_1_spout_1_1_spout_input_node.html", null ],
+          [ "Gfx::WindowCapture::WindowCaptureNode", "struct_gfx_1_1_window_capture_1_1_window_capture_node.html", null ],
           [ "score::gfx::DepthNode", "structscore_1_1gfx_1_1_depth_node.html", null ],
           [ "score::gfx::GeometryFilterNode", "classscore_1_1gfx_1_1_geometry_filter_node.html", null ],
           [ "score::gfx::ISFNode", "classscore_1_1gfx_1_1_i_s_f_node.html", null ],
@@ -3859,6 +3872,7 @@ var hierarchy =
           [ "Gfx::SpoutSettingsWidget", "class_gfx_1_1_spout_settings_widget.html", null ],
           [ "Gfx::SyphonSettingsWidget", "class_gfx_1_1_syphon_settings_widget.html", null ]
         ] ],
+        [ "Gfx::WindowCapture::WindowCaptureSettingsWidget", "class_gfx_1_1_window_capture_1_1_window_capture_settings_widget.html", null ],
         [ "Gfx::WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
         [ "Protocols::ArtnetProtocolSettingsWidget", "class_protocols_1_1_artnet_protocol_settings_widget.html", null ],
         [ "Protocols::BitfocusProtocolSettingsWidget", "class_protocols_1_1_bitfocus_protocol_settings_widget.html", null ],
@@ -4074,6 +4088,7 @@ var hierarchy =
     [ "Execution::Settings::SchedulingPolicies", "struct_execution_1_1_settings_1_1_scheduling_policies.html", null ],
     [ "Process::ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
     [ "Scenario::ScrubHandler", "class_scenario_1_1_scrub_handler.html", null ],
+    [ "sd_bus_error", "structsd__bus__error.html", null ],
     [ "score::SecondSpinBox", "structscore_1_1_second_spin_box.html", null ],
     [ "Curve::Element::Segment_tag", "struct_curve_1_1_element_1_1_segment__tag.html", null ],
     [ "Curve::SegmentData", "struct_curve_1_1_segment_data.html", null ],
@@ -4142,6 +4157,15 @@ var hierarchy =
     [ "Media::SndfileDecoder", "class_media_1_1_sndfile_decoder.html", null ],
     [ "Audio::AudioPreviewExecutor::sound", "struct_audio_1_1_audio_preview_executor_1_1sound.html", null ],
     [ "Media::SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ],
+    [ "spa_buffer", "structspa__buffer.html", null ],
+    [ "spa_chunk", "structspa__chunk.html", null ],
+    [ "spa_data", "structspa__data.html", null ],
+    [ "spa_hook", "structspa__hook.html", null ],
+    [ "spa_list", "structspa__list.html", null ],
+    [ "spa_meta", "structspa__meta.html", null ],
+    [ "spa_pod", "structspa__pod.html", null ],
+    [ "spa_pod_object", "structspa__pod__object.html", null ],
+    [ "spa_pod_object_body", "structspa__pod__object__body.html", null ],
     [ "SpinBox::spinbox_type", null, [
       [ "score::MaxRangeSpinBox< TemplatedSpinBox< T > >", "classscore_1_1_max_range_spin_box.html", [
         [ "score::SpinBox< T >", "classscore_1_1_spin_box.html", null ]
@@ -4551,6 +4575,11 @@ var hierarchy =
     [ "Protocols::WheelSlot", "struct_protocols_1_1_wheel_slot.html", null ],
     [ "Protocols::WiimoteSpecificSettings", "struct_protocols_1_1_wiimote_specific_settings.html", null ],
     [ "bitfocus::win32_handles", "structbitfocus_1_1win32__handles.html", null ],
+    [ "Gfx::WindowCapture::WindowCaptureBackend", "struct_gfx_1_1_window_capture_1_1_window_capture_backend.html", [
+      [ "Gfx::WindowCapture::PipeWireWindowCaptureBackend", "class_gfx_1_1_window_capture_1_1_pipe_wire_window_capture_backend.html", null ],
+      [ "Gfx::WindowCapture::X11WindowCaptureBackend", "class_gfx_1_1_window_capture_1_1_x11_window_capture_backend.html", null ]
+    ] ],
+    [ "Gfx::WindowCapture::WindowCaptureSettings", "struct_gfx_1_1_window_capture_1_1_window_capture_settings.html", null ],
     [ "vst3::WindowContainer", "structvst3_1_1_window_container.html", null ],
     [ "score::gfx::MultiWindowNode::WindowOutput", "structscore_1_1gfx_1_1_multi_window_node_1_1_window_output.html", null ],
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
