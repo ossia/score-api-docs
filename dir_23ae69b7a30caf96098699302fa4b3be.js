@@ -15,7 +15,7 @@ var dir_23ae69b7a30caf96098699302fa4b3be =
     [ "HWVideoToolbox_metal.hpp", "_h_w_video_toolbox__metal_8hpp_source.html", null ],
     [ "HWVulkan.hpp", "_h_w_vulkan_8hpp_source.html", null ],
     [ "HWVulkanShared.hpp", "_h_w_vulkan_shared_8hpp_source.html", null ],
-    [ "NV12.hpp", "_n_v12_8hpp_source.html", null ],
+    [ "decoders/NV12.hpp", "decoders_2_n_v12_8hpp_source.html", null ],
     [ "NV16.hpp", "_n_v16_8hpp_source.html", null ],
     [ "NV24.hpp", "_n_v24_8hpp_source.html", null ],
     [ "P010.hpp", "_p010_8hpp_source.html", null ],

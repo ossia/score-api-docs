@@ -3,6 +3,11 @@ var hierarchy =
     [ "Execution:: ProcessComponent_T", null, [
       [ "Gfx::ModelDisplay::ProcessExecutorComponent", "class_gfx_1_1_model_display_1_1_process_executor_component.html", null ]
     ] ],
+    [ "_CameraFileHandler", "struct___camera_file_handler.html", null ],
+    [ "_GError", "struct___g_error.html", null ],
+    [ "_GParamSpec", "struct___g_param_spec.html", null ],
+    [ "_GstMapInfo", "struct___gst_map_info.html", null ],
+    [ "_GValue", "struct___g_value.html", null ],
     [ "AbstractVisitor", "class_abstract_visitor.html", [
       [ "DataStreamReader", "class_data_stream_reader.html", null ],
       [ "DataStreamWriter", "class_data_stream_writer.html", null ],
@@ -86,6 +91,7 @@ var hierarchy =
     ] ],
     [ "score::ApplicationServices", "structscore_1_1_application_services.html", null ],
     [ "score::ApplicationSettings", "structscore_1_1_application_settings.html", null ],
+    [ "Gfx::GStreamer::gstreamer_pipeline::AppsinkInfo", "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline_1_1_appsink_info.html", null ],
     [ "Nodes::Arpeggiator::Arpeggios", "struct_nodes_1_1_arpeggiator_1_1_arpeggios.html", null ],
     [ "ArrayEntitySerializer", "struct_array_entity_serializer.html", [
       [ "TSerializer< DataStream, boost::container::small_vector< T *, N > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html", null ],
@@ -117,18 +123,26 @@ var hierarchy =
     [ "audio_kind_attr", "structaudio__kind__attr.html", null ],
     [ "audio_mapping_attr", "structaudio__mapping__attr.html", null ],
     [ "ossia::audio_parameter", null, [
-      [ "Gfx::record_audio_parameter", "class_gfx_1_1record__audio__parameter.html", null ]
+      [ "Gfx::GStreamer::gstreamer_audio_parameter", "class_gfx_1_1_g_streamer_1_1gstreamer__audio__parameter.html", null ],
+      [ "Gfx::GStreamer::gstreamer_output_audio_parameter", "class_gfx_1_1_g_streamer_1_1gstreamer__output__audio__parameter.html", null ],
+      [ "Gfx::libav_input_audio_parameter", "class_gfx_1_1libav__input__audio__parameter.html", null ],
+      [ "Gfx::libav_record_audio_parameter", "class_gfx_1_1libav__record__audio__parameter.html", null ]
     ] ],
+    [ "Gfx::GStreamer::gstreamer_pipeline::AudioBuffer", "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline_1_1_audio_buffer.html", null ],
     [ "Gfx::AudioFrameEncoder", "struct_gfx_1_1_audio_frame_encoder.html", [
       [ "Gfx::DblIAudioFrameEncoder", "struct_gfx_1_1_dbl_i_audio_frame_encoder.html", null ],
+      [ "Gfx::DblPAudioFrameEncoder", "struct_gfx_1_1_dbl_p_audio_frame_encoder.html", null ],
       [ "Gfx::FltIAudioFrameEncoder", "struct_gfx_1_1_flt_i_audio_frame_encoder.html", null ],
       [ "Gfx::FltPAudioFrameEncoder", "struct_gfx_1_1_flt_p_audio_frame_encoder.html", null ],
       [ "Gfx::S16IAudioFrameEncoder", "struct_gfx_1_1_s16_i_audio_frame_encoder.html", null ],
+      [ "Gfx::S16PAudioFrameEncoder", "struct_gfx_1_1_s16_p_audio_frame_encoder.html", null ],
       [ "Gfx::S24IAudioFrameEncoder", "struct_gfx_1_1_s24_i_audio_frame_encoder.html", null ],
-      [ "Gfx::S32IAudioFrameEncoder", "struct_gfx_1_1_s32_i_audio_frame_encoder.html", null ]
+      [ "Gfx::S32IAudioFrameEncoder", "struct_gfx_1_1_s32_i_audio_frame_encoder.html", null ],
+      [ "Gfx::S32PAudioFrameEncoder", "struct_gfx_1_1_s32_p_audio_frame_encoder.html", null ]
     ] ],
     [ "Media::AudioInfo", "struct_media_1_1_audio_info.html", null ],
     [ "avnd_tools::AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", null ],
+    [ "Video::AudioRingBuffer", "struct_video_1_1_audio_ring_buffer.html", null ],
     [ "score::gfx::AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
     [ "score::gfx::AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
     [ "ControlSurface::NodeObserver< Identifier, Func >::AvailableNode", "struct_control_surface_1_1_node_observer_1_1_available_node.html", null ],
@@ -176,6 +190,7 @@ var hierarchy =
       [ "Analysis::pulse_out", "struct_analysis_1_1pulse__out.html", null ]
     ] ],
     [ "score::RecursiveWatch::Callbacks", "structscore_1_1_recursive_watch_1_1_callbacks.html", null ],
+    [ "CameraAbilities", "struct_camera_abilities.html", null ],
     [ "Gfx::CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
     [ "ossia::net::can_learn< T >", "classossia_1_1net_1_1can__learn.html", null ],
     [ "Scenario::CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", null ],
@@ -611,6 +626,8 @@ var hierarchy =
       [ "Execution::GCCommandQueue", "struct_execution_1_1_g_c_command_queue.html", null ]
     ] ],
     [ "bitfocus::module_data::config_field", "structbitfocus_1_1module__data_1_1config__field.html", null ],
+    [ "Gfx::GPhoto2::gphoto2_camera::ConfigChange", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera_1_1_config_change.html", null ],
+    [ "Gfx::GPhoto2::gphoto2_camera::ConfigEntry", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera_1_1_config_entry.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
     [ "Container< std::unique_ptr< T >, std::allocator< std::unique_ptr< T > > >", null, [
@@ -677,7 +694,11 @@ var hierarchy =
     [ "oscr::Deserializer", "structoscr_1_1_deserializer.html", null ],
     [ "State::DestinationQualifiers", "struct_state_1_1_destination_qualifiers.html", null ],
     [ "ossia::net::device_base", null, [
+      [ "Gfx::GPhoto2::gphoto2_device", "class_gfx_1_1_g_photo2_1_1gphoto2__device.html", null ],
+      [ "Gfx::GStreamer::gstreamer_device", "class_gfx_1_1_g_streamer_1_1gstreamer__device.html", null ],
+      [ "Gfx::GStreamer::gstreamer_output_device", "class_gfx_1_1_g_streamer_1_1gstreamer__output__device.html", null ],
       [ "Gfx::background_device", "class_gfx_1_1background__device.html", null ],
+      [ "Gfx::libav_input_device", "class_gfx_1_1libav__input__device.html", null ],
       [ "Gfx::libav_output_device", "class_gfx_1_1libav__output__device.html", null ],
       [ "Gfx::multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
       [ "Gfx::sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", null ],
@@ -949,6 +970,16 @@ var hierarchy =
     [ "Jit::GlobalAtExit", "struct_jit_1_1_global_at_exit.html", null ],
     [ "LV2::GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
     [ "Scenario::GoodOldDisplacementPolicy", "class_scenario_1_1_good_old_displacement_policy.html", null ],
+    [ "GParamSpecDouble", "struct_g_param_spec_double.html", null ],
+    [ "GParamSpecFloat", "struct_g_param_spec_float.html", null ],
+    [ "GParamSpecInt", "struct_g_param_spec_int.html", null ],
+    [ "GParamSpecInt64", "struct_g_param_spec_int64.html", null ],
+    [ "GParamSpecLong", "struct_g_param_spec_long.html", null ],
+    [ "GParamSpecUInt", "struct_g_param_spec_u_int.html", null ],
+    [ "GParamSpecUInt64", "struct_g_param_spec_u_int64.html", null ],
+    [ "GParamSpecULong", "struct_g_param_spec_u_long.html", null ],
+    [ "Gfx::GPhoto2::gphoto2_camera", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera.html", null ],
+    [ "Gfx::GPhoto2::GPhoto2Settings", "struct_gfx_1_1_g_photo2_1_1_g_photo2_settings.html", null ],
     [ "Threedim::gpu_buffer_view", "struct_threedim_1_1gpu__buffer__view.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
       [ "score::gfx::DXVDecoder", "structscore_1_1gfx_1_1_d_x_v_decoder.html", null ],
@@ -990,6 +1021,11 @@ var hierarchy =
       [ "score::gfx::YUVA444P10Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html", null ],
       [ "score::gfx::YUVA444P12Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html", null ],
       [ "score::gfx::YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", null ]
+    ] ],
+    [ "score::gfx::GPUVideoEncoder", "structscore_1_1gfx_1_1_g_p_u_video_encoder.html", [
+      [ "score::gfx::I420Encoder", "structscore_1_1gfx_1_1_i420_encoder.html", null ],
+      [ "score::gfx::NV12Encoder", "structscore_1_1gfx_1_1_n_v12_encoder.html", null ],
+      [ "score::gfx::UYVYEncoder", "structscore_1_1gfx_1_1_u_y_v_y_encoder.html", null ]
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
     [ "ossia::graph_node", null, [
@@ -1064,6 +1100,8 @@ var hierarchy =
     ] ],
     [ "score::PluginLoader::PluginDependencyGraph::GraphVertex", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html", null ],
     [ "score::GridWidget< T >", "structscore_1_1_grid_widget.html", null ],
+    [ "Gfx::GStreamer::gstreamer_pipeline", "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline.html", null ],
+    [ "Gfx::GStreamer::GStreamerSettings", "struct_gfx_1_1_g_streamer_1_1_g_streamer_settings.html", null ],
     [ "score::GUIApplicationPlugin", "classscore_1_1_g_u_i_application_plugin.html", [
       [ "Audio::ApplicationPlugin", "class_audio_1_1_application_plugin.html", null ],
       [ "Clap::ApplicationPlugin", "class_clap_1_1_application_plugin.html", null ],
@@ -1226,8 +1264,11 @@ var hierarchy =
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
         [ "Video::VideoInterface", "struct_video_1_1_video_interface.html", [
           [ "Video::ExternalInput", "class_video_1_1_external_input.html", [
+            [ "Gfx::GPhoto2::gphoto2_decoder", "class_gfx_1_1_g_photo2_1_1gphoto2__decoder.html", null ],
+            [ "Gfx::GStreamer::gstreamer_video_decoder", "class_gfx_1_1_g_streamer_1_1gstreamer__video__decoder.html", null ],
             [ "Gfx::Kinect2::kinect2_decoder", "class_gfx_1_1_kinect2_1_1kinect2__decoder.html", null ],
-            [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ]
+            [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ],
+            [ "Video::LibavStreamInput", "class_video_1_1_libav_stream_input.html", null ]
           ] ],
           [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
         ] ],
@@ -1302,7 +1343,9 @@ var hierarchy =
       [ "Device::ProtocolFactory", "class_device_1_1_protocol_factory.html", [
         [ "Dataflow::AudioProtocolFactory", "class_dataflow_1_1_audio_protocol_factory.html", null ],
         [ "Gfx::CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
-        [ "Gfx::LibavOutputProtocolFactory", "class_gfx_1_1_libav_output_protocol_factory.html", null ],
+        [ "Gfx::GPhoto2::ProtocolFactory", "class_gfx_1_1_g_photo2_1_1_protocol_factory.html", null ],
+        [ "Gfx::GStreamer::ProtocolFactory", "class_gfx_1_1_g_streamer_1_1_protocol_factory.html", null ],
+        [ "Gfx::LibavProtocolFactory", "class_gfx_1_1_libav_protocol_factory.html", null ],
         [ "Gfx::SharedInputProtocolFactory", "class_gfx_1_1_shared_input_protocol_factory.html", [
           [ "Gfx::Kinect2::ProtocolFactory", "class_gfx_1_1_kinect2_1_1_protocol_factory.html", null ],
           [ "Gfx::Sh4lt::InputFactory", "class_gfx_1_1_sh4lt_1_1_input_factory.html", null ],
@@ -1772,12 +1815,15 @@ var hierarchy =
     [ "Protocols::Artnet::LEDVolumeLayout", "struct_protocols_1_1_artnet_1_1_l_e_d_volume_layout.html", null ],
     [ "Video::LibAVDecoder", "struct_video_1_1_lib_a_v_decoder.html", [
       [ "Video::CameraInput", "class_video_1_1_camera_input.html", null ],
+      [ "Video::LibavStreamInput", "class_video_1_1_libav_stream_input.html", null ],
       [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
     ] ],
     [ "Gfx::LibavEncoder", "struct_gfx_1_1_libav_encoder.html", null ],
     [ "Gfx::LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", null ],
     [ "Gfx::LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", null ],
+    [ "Gfx::LibavSettings", "struct_gfx_1_1_libav_settings.html", null ],
     [ "Media::AudioFile::LibavStreamReader", "struct_media_1_1_audio_file_1_1_libav_stream_reader.html", null ],
+    [ "Gfx::GStreamer::libgstreamer", "struct_gfx_1_1_g_streamer_1_1libgstreamer.html", null ],
     [ "Protocols::LibmapperClientSpecificSettings", "struct_protocols_1_1_libmapper_client_specific_settings.html", null ],
     [ "Pd::libpd_list_wrapper", "struct_pd_1_1libpd__list__wrapper.html", null ],
     [ "libsuil", "classlibsuil.html", null ],
@@ -1986,6 +2032,7 @@ var hierarchy =
     [ "Ui::ValueDisplay::Node", "struct_ui_1_1_value_display_1_1_node.html", null ],
     [ "Ui::VUMeter::Node", "struct_ui_1_1_v_u_meter_1_1_node.html", null ],
     [ "ossia::net::node_base", null, [
+      [ "Gfx::GPhoto2::gphoto2_root_node", "class_gfx_1_1_g_photo2_1_1gphoto2__root__node.html", null ],
       [ "Gfx::Kinect2::kinect2_node", "class_gfx_1_1_kinect2_1_1kinect2__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
       [ "Gfx::simple_texture_input_node", "class_gfx_1_1simple__texture__input__node.html", null ],
@@ -2084,13 +2131,16 @@ var hierarchy =
         ] ],
         [ "Gfx::GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", [
           [ "Gfx::CameraDevice", "class_gfx_1_1_camera_device.html", null ],
+          [ "Gfx::GPhoto2::InputDevice", "class_gfx_1_1_g_photo2_1_1_input_device.html", null ],
+          [ "Gfx::GStreamer::InputDevice", "class_gfx_1_1_g_streamer_1_1_input_device.html", null ],
           [ "Gfx::Kinect2::InputDevice", "class_gfx_1_1_kinect2_1_1_input_device.html", null ],
           [ "Gfx::Sh4lt::InputDevice", "class_gfx_1_1_sh4lt_1_1_input_device.html", null ],
           [ "Gfx::Shmdata::InputDevice", "class_gfx_1_1_shmdata_1_1_input_device.html", null ],
           [ "Gfx::Spout::InputDevice", "class_gfx_1_1_spout_1_1_input_device.html", null ]
         ] ],
         [ "Gfx::GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", [
-          [ "Gfx::LibavOutputDevice", "class_gfx_1_1_libav_output_device.html", null ],
+          [ "Gfx::GStreamer::OutputDevice", "class_gfx_1_1_g_streamer_1_1_output_device.html", null ],
+          [ "Gfx::LibavDevice", "class_gfx_1_1_libav_device.html", null ],
           [ "Gfx::Sh4ltOutputDevice", "class_gfx_1_1_sh4lt_output_device.html", null ],
           [ "Gfx::ShmdataOutputDevice", "class_gfx_1_1_shmdata_output_device.html", null ],
           [ "Gfx::SpoutDevice", "class_gfx_1_1_spout_device.html", null ],
@@ -2241,8 +2291,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2305,6 +2355,7 @@ var hierarchy =
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
     [ "Threedim::Plane", "struct_threedim_1_1_plane.html", null ],
+    [ "score::gfx::I420Encoder::PlaneResources", "structscore_1_1gfx_1_1_i420_encoder_1_1_plane_resources.html", null ],
     [ "avnd_tools::DeviceRecorder::playback_message", "structavnd__tools_1_1_device_recorder_1_1playback__message.html", null ],
     [ "ossia::nodes::audio_metronome::played_sound", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html", null ],
     [ "avnd_tools::DeviceRecorder::player_thread", "structavnd__tools_1_1_device_recorder_1_1player__thread.html", null ],
@@ -2519,10 +2570,14 @@ var hierarchy =
     [ "WidgetFactory::ProgramEdit", "struct_widget_factory_1_1_program_edit.html", null ],
     [ "score::ProjectSettings", "classscore_1_1_project_settings.html", null ],
     [ "ossia::net::protocol_base", null, [
+      [ "Gfx::GPhoto2::gphoto2_protocol", "class_gfx_1_1_g_photo2_1_1gphoto2__protocol.html", null ],
+      [ "Gfx::GStreamer::gstreamer_protocol", "class_gfx_1_1_g_streamer_1_1gstreamer__protocol.html", null ],
       [ "Gfx::Kinect2::kinect2_protocol", "class_gfx_1_1_kinect2_1_1kinect2__protocol.html", null ],
       [ "Gfx::gfx_protocol_base", "class_gfx_1_1gfx__protocol__base.html", [
+        [ "Gfx::GStreamer::gstreamer_output_protocol", "class_gfx_1_1_g_streamer_1_1gstreamer__output__protocol.html", null ],
         [ "Gfx::libav_output_protocol", "class_gfx_1_1libav__output__protocol.html", null ]
       ] ],
+      [ "Gfx::libav_input_protocol", "class_gfx_1_1libav__input__protocol.html", null ],
       [ "Gfx::simple_texture_input_protocol", "class_gfx_1_1simple__texture__input__protocol.html", null ],
       [ "Gfx::video_texture_input_protocol", "class_gfx_1_1video__texture__input__protocol.html", null ],
       [ "Protocols::mcu_protocol", "class_protocols_1_1mcu__protocol.html", null ],
@@ -3048,6 +3103,8 @@ var hierarchy =
       [ "Dataflow::PortItem", "class_dataflow_1_1_port_item.html", null ],
       [ "Device::DeviceEnumerator", "class_device_1_1_device_enumerator.html", [
         [ "Gfx::DShowCameraEnumerator", "struct_gfx_1_1_d_show_camera_enumerator.html", null ],
+        [ "Gfx::GPhoto2::DefaultGPhoto2Enumerator", "class_gfx_1_1_g_photo2_1_1_default_g_photo2_enumerator.html", null ],
+        [ "Gfx::GPhoto2::GPhoto2Enumerator", "class_gfx_1_1_g_photo2_1_1_g_photo2_enumerator.html", null ],
         [ "Gfx::Kinect2::Kinect2Enumerator", "class_gfx_1_1_kinect2_1_1_kinect2_enumerator.html", null ],
         [ "Gfx::Spout::SpoutEnumerator", "class_gfx_1_1_spout_1_1_spout_enumerator.html", null ],
         [ "Gfx::V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
@@ -3592,6 +3649,7 @@ var hierarchy =
       [ "score::ZoomItem", "classscore_1_1_zoom_item.html", null ],
       [ "score::gfx::Node", "classscore_1_1gfx_1_1_node.html", [
         [ "score::gfx::OutputNode", "classscore_1_1gfx_1_1_output_node.html", [
+          [ "Gfx::GStreamer::GStreamerOutputNode", "struct_gfx_1_1_g_streamer_1_1_g_streamer_output_node.html", null ],
           [ "Gfx::LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html", null ],
           [ "Gfx::Sh4ltOutputNode", "struct_gfx_1_1_sh4lt_output_node.html", null ],
           [ "Gfx::ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", null ],
@@ -3785,6 +3843,9 @@ var hierarchy =
       [ "Dataflow::PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
       [ "Device::ProtocolSettingsWidget", "class_device_1_1_protocol_settings_widget.html", [
         [ "Dataflow::AudioSettingsWidget", "class_dataflow_1_1_audio_settings_widget.html", null ],
+        [ "Gfx::GPhoto2::GPhoto2SettingsWidget", "class_gfx_1_1_g_photo2_1_1_g_photo2_settings_widget.html", null ],
+        [ "Gfx::GStreamer::GStreamerSettingsWidget", "class_gfx_1_1_g_streamer_1_1_g_streamer_settings_widget.html", null ],
+        [ "Gfx::LibavSettingsWidget", "class_gfx_1_1_libav_settings_widget.html", null ],
         [ "Gfx::SharedInputSettingsWidget", "class_gfx_1_1_shared_input_settings_widget.html", [
           [ "Gfx::Kinect2::Kinect2SettingsWidget", "class_gfx_1_1_kinect2_1_1_kinect2_settings_widget.html", null ],
           [ "Gfx::Sh4lt::InputSettingsWidget", "class_gfx_1_1_sh4lt_1_1_input_settings_widget.html", null ],
@@ -3793,7 +3854,6 @@ var hierarchy =
           [ "Gfx::Syphon::InputSettingsWidget", "class_gfx_1_1_syphon_1_1_input_settings_widget.html", null ]
         ] ],
         [ "Gfx::SharedOutputSettingsWidget", "class_gfx_1_1_shared_output_settings_widget.html", [
-          [ "Gfx::LibavOutputSettingsWidget", "class_gfx_1_1_libav_output_settings_widget.html", null ],
           [ "Gfx::Sh4ltOutputSettingsWidget", "class_gfx_1_1_sh4lt_output_settings_widget.html", null ],
           [ "Gfx::ShmdataOutputSettingsWidget", "class_gfx_1_1_shmdata_output_settings_widget.html", null ],
           [ "Gfx::SpoutSettingsWidget", "class_gfx_1_1_spout_settings_widget.html", null ],
@@ -4216,6 +4276,7 @@ var hierarchy =
     [ "score::TemplatedSpinBox< float >", "structscore_1_1_templated_spin_box_3_01float_01_4.html", null ],
     [ "score::TemplatedSpinBox< int >", "structscore_1_1_templated_spin_box_3_01int_01_4.html", null ],
     [ "ossia::gfx::texture_parameter", null, [
+      [ "Gfx::GPhoto2::gphoto2_parameter", "class_gfx_1_1_g_photo2_1_1gphoto2__parameter.html", null ],
       [ "Gfx::Kinect2::kinect2_parameter", "class_gfx_1_1_kinect2_1_1kinect2__parameter.html", null ],
       [ "Gfx::gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ],
       [ "Gfx::simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", null ],

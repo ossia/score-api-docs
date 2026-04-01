@@ -129,7 +129,16 @@ $(document).ready(function(){initNavTree('_audio_tick_8hpp_source.html',''); ini
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>SCORE_PLUGIN_AUDIO_EXPORT</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> std::atomic&lt;ossia::transport_status&gt; execution_status;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Monotonic sample counter incremented by the play tick, reset on stop.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Used by video input devices for audio-clock-referenced frame pacing.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>SCORE_PLUGIN_AUDIO_EXPORT</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">extern</span> std::atomic&lt;int64_t&gt; execution_samples;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// Audio sample rate during execution (set once at play, stable during playback).</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>SCORE_PLUGIN_AUDIO_EXPORT</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">extern</span> std::atomic&lt;int&gt; execution_sample_rate;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 <div class="ttc" id="astructscore_1_1_application_context_html"><div class="ttname"><a href="structscore_1_1_application_context.html">score::ApplicationContext</a></div><div class="ttdoc">Used to access all the application-wide state and structures.</div><div class="ttdef"><b>Definition</b> ApplicationContext.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -127,9 +127,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>add_frame</b> (std::sp
 <tr class="memitem:ae9085699c31b5de6028a532ab40d330d" id="r_ae9085699c31b5de6028a532ab40d330d"><td class="memItemLeft" align="right" valign="top"><a id="ae9085699c31b5de6028a532ab40d330d" name="ae9085699c31b5de6028a532ab40d330d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>add_frame</b> (const unsigned char *data, AVPixelFormat fmt, int width, int height)</td></tr>
 <tr class="separator:ae9085699c31b5de6028a532ab40d330d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017d2b1e4e06bd1fcdd466d4d6ef3188" id="r_a017d2b1e4e06bd1fcdd466d4d6ef3188"><td class="memItemLeft" align="right" valign="top"><a id="a017d2b1e4e06bd1fcdd466d4d6ef3188" name="a017d2b1e4e06bd1fcdd466d4d6ef3188"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>add_frame_converted</b> (const unsigned char *const planes[], const int strides[], int planeCount, int width, int height)</td></tr>
+<tr class="separator:a017d2b1e4e06bd1fcdd466d4d6ef3188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadced8c8cb511cacb7aeaf9c3ab5a90f" id="r_aadced8c8cb511cacb7aeaf9c3ab5a90f"><td class="memItemLeft" align="right" valign="top"><a id="aadced8c8cb511cacb7aeaf9c3ab5a90f" name="aadced8c8cb511cacb7aeaf9c3ab5a90f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="separator:aadced8c8cb511cacb7aeaf9c3ab5a90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876da902e22bf2af61f6bd286c67463a" id="r_a876da902e22bf2af61f6bd286c67463a"><td class="memItemLeft" align="right" valign="top"><a id="a876da902e22bf2af61f6bd286c67463a" name="a876da902e22bf2af61f6bd286c67463a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>stop_impl</b> ()</td></tr>
+<tr class="separator:a876da902e22bf2af61f6bd286c67463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb28327c68590edaa845669cf09722a2" id="r_acb28327c68590edaa845669cf09722a2"><td class="memItemLeft" align="right" valign="top"><a id="acb28327c68590edaa845669cf09722a2" name="acb28327c68590edaa845669cf09722a2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>available</b> () const noexcept</td></tr>
 <tr class="separator:acb28327c68590edaa845669cf09722a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,20 +145,20 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6ae5d8edfa7f644c88f0ca1b2e0b37fd" id="r_a6ae5d8edfa7f644c88f0ca1b2e0b37fd"><td class="memItemLeft" align="right" valign="top"><a id="a6ae5d8edfa7f644c88f0ca1b2e0b37fd" name="a6ae5d8edfa7f644c88f0ca1b2e0b37fd"></a>
 <a class="el" href="struct_gfx_1_1_libav_output_settings.html">LibavOutputSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_set</b></td></tr>
 <tr class="separator:a6ae5d8edfa7f644c88f0ca1b2e0b37fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4ae72019a8f2768da415409a4799072" id="r_ac4ae72019a8f2768da415409a4799072"><td class="memItemLeft" align="right" valign="top"><a id="ac4ae72019a8f2768da415409a4799072" name="ac4ae72019a8f2768da415409a4799072"></a>
-AVDictionary *&#160;</td><td class="memItemRight" valign="bottom"><b>opt</b> = NULL</td></tr>
-<tr class="separator:ac4ae72019a8f2768da415409a4799072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c20931f0e769ffb6e18c2efeaba65d" id="r_ab7c20931f0e769ffb6e18c2efeaba65d"><td class="memItemLeft" align="right" valign="top"><a id="ab7c20931f0e769ffb6e18c2efeaba65d" name="ab7c20931f0e769ffb6e18c2efeaba65d"></a>
 AVFormatContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_formatContext</b> {}</td></tr>
 <tr class="separator:ab7c20931f0e769ffb6e18c2efeaba65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11f78ede8b0e58f2fe9af6aaf2a2863f" id="r_a11f78ede8b0e58f2fe9af6aaf2a2863f"><td class="memItemLeft" align="right" valign="top"><a id="a11f78ede8b0e58f2fe9af6aaf2a2863f" name="a11f78ede8b0e58f2fe9af6aaf2a2863f"></a>
 std::vector&lt; <a class="el" href="struct_gfx_1_1_output_stream.html">OutputStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>streams</b></td></tr>
 <tr class="separator:a11f78ede8b0e58f2fe9af6aaf2a2863f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c57f4386d261b9fc4ef41721a19c03" id="r_aa0c57f4386d261b9fc4ef41721a19c03"><td class="memItemLeft" align="right" valign="top"><a id="aa0c57f4386d261b9fc4ef41721a19c03" name="aa0c57f4386d261b9fc4ef41721a19c03"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_muxMutex</b></td></tr>
+<tr class="separator:aa0c57f4386d261b9fc4ef41721a19c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a983ccfe4a6c4d609dcdc5acd2fceaa92" id="r_a983ccfe4a6c4d609dcdc5acd2fceaa92"><td class="memItemLeft" align="right" valign="top"><a id="a983ccfe4a6c4d609dcdc5acd2fceaa92" name="a983ccfe4a6c4d609dcdc5acd2fceaa92"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>audio_stream_index</b> = 0</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>audio_stream_index</b> = -1</td></tr>
 <tr class="separator:a983ccfe4a6c4d609dcdc5acd2fceaa92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa6f17c4bedbf4711b6ec70befcf652" id="r_a3fa6f17c4bedbf4711b6ec70befcf652"><td class="memItemLeft" align="right" valign="top"><a id="a3fa6f17c4bedbf4711b6ec70befcf652" name="a3fa6f17c4bedbf4711b6ec70befcf652"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>video_stream_index</b> = 0</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>video_stream_index</b> = -1</td></tr>
 <tr class="separator:a3fa6f17c4bedbf4711b6ec70befcf652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>

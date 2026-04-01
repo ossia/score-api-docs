@@ -218,21 +218,33 @@ std::weak_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">sc
 <tr class="memitem:a152b980f23335e90e4609a25a00b1068" id="r_a152b980f23335e90e4609a25a00b1068"><td class="memItemLeft" align="right" valign="top"><a id="a152b980f23335e90e4609a25a00b1068" name="a152b980f23335e90e4609a25a00b1068"></a>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>m_texture</b> {}</td></tr>
 <tr class="separator:a152b980f23335e90e4609a25a00b1068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd1571ea31d68aec64781e63c200560" id="r_aabd1571ea31d68aec64781e63c200560"><td class="memItemLeft" align="right" valign="top"><a id="aabd1571ea31d68aec64781e63c200560" name="aabd1571ea31d68aec64781e63c200560"></a>
+QRhiRenderBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_depthStencil</b> {}</td></tr>
+<tr class="separator:aabd1571ea31d68aec64781e63c200560"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5ee7f0b8895e385d8dc42daf6ef2f4f" id="r_ae5ee7f0b8895e385d8dc42daf6ef2f4f"><td class="memItemLeft" align="right" valign="top"><a id="ae5ee7f0b8895e385d8dc42daf6ef2f4f" name="ae5ee7f0b8895e385d8dc42daf6ef2f4f"></a>
 QRhiTextureRenderTarget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_renderTarget</b> {}</td></tr>
 <tr class="separator:ae5ee7f0b8895e385d8dc42daf6ef2f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68c5d57531c445b75df6ad97e9708e6e" id="r_a68c5d57531c445b75df6ad97e9708e6e"><td class="memItemLeft" align="right" valign="top"><a id="a68c5d57531c445b75df6ad97e9708e6e" name="a68c5d57531c445b75df6ad97e9708e6e"></a>
 std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_renderState</b> {}</td></tr>
 <tr class="separator:a68c5d57531c445b75df6ad97e9708e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80894ce4df7e7b2af288f504810e8dcb" id="r_a80894ce4df7e7b2af288f504810e8dcb"><td class="memItemLeft" align="right" valign="top"><a id="a80894ce4df7e7b2af288f504810e8dcb" name="a80894ce4df7e7b2af288f504810e8dcb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_hasSender</b> {}</td></tr>
-<tr class="separator:a80894ce4df7e7b2af288f504810e8dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f5c6983cb156575b4bdefcb470d7507" id="r_a7f5c6983cb156575b4bdefcb470d7507"><td class="memItemLeft" align="right" valign="top"><a id="a7f5c6983cb156575b4bdefcb470d7507" name="a7f5c6983cb156575b4bdefcb470d7507"></a>
+std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">score::gfx::GPUVideoEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_encoder</b> [2]</td></tr>
+<tr class="separator:a7f5c6983cb156575b4bdefcb470d7507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63ed638f954b75c170a4b626d172b0e1" id="r_a63ed638f954b75c170a4b626d172b0e1"><td class="memItemLeft" align="right" valign="top"><a id="a63ed638f954b75c170a4b626d172b0e1" name="a63ed638f954b75c170a4b626d172b0e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_encoderIdx</b> {}</td></tr>
+<tr class="separator:a63ed638f954b75c170a4b626d172b0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa36e5d9050ceddbf3e4deddff7c1d44" id="r_afa36e5d9050ceddbf3e4deddff7c1d44"><td class="memItemLeft" align="right" valign="top"><a id="afa36e5d9050ceddbf3e4deddff7c1d44" name="afa36e5d9050ceddbf3e4deddff7c1d44"></a>
+QRhiReadbackResult&#160;</td><td class="memItemRight" valign="bottom"><b>m_readback</b> [2]</td></tr>
+<tr class="separator:afa36e5d9050ceddbf3e4deddff7c1d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9669fb7e8c2d1ea5bc485b4ae8731ae7" id="r_a9669fb7e8c2d1ea5bc485b4ae8731ae7"><td class="memItemLeft" align="right" valign="top"><a id="a9669fb7e8c2d1ea5bc485b4ae8731ae7" name="a9669fb7e8c2d1ea5bc485b4ae8731ae7"></a>
+QRhiReadbackResult *&#160;</td><td class="memItemRight" valign="bottom"><b>m_currentReadback</b> {&amp;m_readback[0]}</td></tr>
+<tr class="separator:a9669fb7e8c2d1ea5bc485b4ae8731ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca306b9c4699c11b9d378d02bc8e1efb" id="r_aca306b9c4699c11b9d378d02bc8e1efb"><td class="memItemLeft" align="right" valign="top"><a id="aca306b9c4699c11b9d378d02bc8e1efb" name="aca306b9c4699c11b9d378d02bc8e1efb"></a>
+<a class="el" href="class_gfx_1_1_invert_y_renderer.html">Gfx::InvertYRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_inv_y_renderer</b> {}</td></tr>
+<tr class="separator:aca306b9c4699c11b9d378d02bc8e1efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e6c215db03799944dd8e9ec408e5d1e" id="r_a1e6c215db03799944dd8e9ec408e5d1e"><td class="memItemLeft" align="right" valign="top"><a id="a1e6c215db03799944dd8e9ec408e5d1e" name="a1e6c215db03799944dd8e9ec408e5d1e"></a>
 <a class="el" href="struct_gfx_1_1_libav_output_settings.html">LibavOutputSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settings</b></td></tr>
 <tr class="separator:a1e6c215db03799944dd8e9ec408e5d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd8330782234a055bf646b899e5630ac" id="r_afd8330782234a055bf646b899e5630ac"><td class="memItemLeft" align="right" valign="top"><a id="afd8330782234a055bf646b899e5630ac" name="afd8330782234a055bf646b899e5630ac"></a>
-QRhiReadbackResult&#160;</td><td class="memItemRight" valign="bottom"><b>m_readback</b></td></tr>
-<tr class="separator:afd8330782234a055bf646b899e5630ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a32f530890af66e0ecee6c66cdf430146"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>

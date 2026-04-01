@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('_library_handler_8hpp_source.html','')
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span>(!f.open(QIODevice::ReadOnly))</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span>&amp; p = ctx.app.<a class="code hl_function" href="structscore_1_1_g_u_i_application_context.html#a56e095a4a7ae4751638f5dc9afdb06b5">panel</a>&lt;<a class="code hl_class" href="class_j_s_1_1_panel_delegate.html">JS::PanelDelegate</a>&gt;();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span>&amp; p = ctx.app.panel&lt;<a class="code hl_class" href="class_j_s_1_1_panel_delegate.html">JS::PanelDelegate</a>&gt;();</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">if</span>(QFileInfo{f}.suffix() == <span class="stringliteral">&quot;mjs&quot;</span>)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      p.importModule(path);</div>

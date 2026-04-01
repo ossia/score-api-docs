@@ -143,6 +143,9 @@ AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>get_audio_frame<
 <tr class="memitem:a45c11160a04d9f25cca35e2e3205a919" id="r_a45c11160a04d9f25cca35e2e3205a919"><td class="memItemLeft" align="right" valign="top"><a id="a45c11160a04d9f25cca35e2e3205a919" name="a45c11160a04d9f25cca35e2e3205a919"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>write_video_frame</b> (AVFormatContext *fmt_ctx, AVFrame *input_frame)</td></tr>
 <tr class="separator:a45c11160a04d9f25cca35e2e3205a919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611c66a98df2736241641e711f0084da" id="r_a611c66a98df2736241641e711f0084da"><td class="memItemLeft" align="right" valign="top"><a id="a611c66a98df2736241641e711f0084da" name="a611c66a98df2736241641e711f0084da"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>write_video_frame_direct</b> (AVFormatContext *fmt_ctx, AVFrame *frame)</td></tr>
+<tr class="separator:a611c66a98df2736241641e711f0084da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a919a40b4f754da76ab4a104bcff55015" id="r_a919a40b4f754da76ab4a104bcff55015"><td class="memItemLeft" align="right" valign="top"><a id="a919a40b4f754da76ab4a104bcff55015" name="a919a40b4f754da76ab4a104bcff55015"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>write_audio_frame</b> (AVFormatContext *fmt_ctx, AVFrame *input_frame)</td></tr>
 <tr class="separator:a919a40b4f754da76ab4a104bcff55015"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +194,15 @@ std::vector&lt; std::unique_ptr&lt; r8b::CDSPResampler &gt; &gt;&#160;</td><td c
 <tr class="memitem:a74ec04b48f863e6e16cb9fda99af4a63" id="r_a74ec04b48f863e6e16cb9fda99af4a63"><td class="memItemLeft" align="right" valign="top"><a id="a74ec04b48f863e6e16cb9fda99af4a63" name="a74ec04b48f863e6e16cb9fda99af4a63"></a>
 std::unique_ptr&lt; <a class="el" href="struct_gfx_1_1_audio_frame_encoder.html">AudioFrameEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>encoder</b></td></tr>
 <tr class="separator:a74ec04b48f863e6e16cb9fda99af4a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90aef734628e8049d89ca0ae530e818e" id="r_a90aef734628e8049d89ca0ae530e818e"><td class="memItemLeft" align="right" valign="top"><a id="a90aef734628e8049d89ca0ae530e818e" name="a90aef734628e8049d89ca0ae530e818e"></a>
+std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resample_in_buf</b></td></tr>
+<tr class="separator:a90aef734628e8049d89ca0ae530e818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2099f75e3cf1ad3e91155880e5c351d9" id="r_a2099f75e3cf1ad3e91155880e5c351d9"><td class="memItemLeft" align="right" valign="top"><a id="a2099f75e3cf1ad3e91155880e5c351d9" name="a2099f75e3cf1ad3e91155880e5c351d9"></a>
+std::vector&lt; ossia::float_vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resample_out_buf</b></td></tr>
+<tr class="separator:a2099f75e3cf1ad3e91155880e5c351d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add226b65e3fce0fff73f5df2e9eb6a61" id="r_add226b65e3fce0fff73f5df2e9eb6a61"><td class="memItemLeft" align="right" valign="top"><a id="add226b65e3fce0fff73f5df2e9eb6a61" name="add226b65e3fce0fff73f5df2e9eb6a61"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_valid</b> {}</td></tr>
+<tr class="separator:add226b65e3fce0fff73f5df2e9eb6a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_libav_output_stream_8hpp_source.html">LibavOutputStream.hpp</a></li>
