@@ -1,5 +1,11 @@
 var NAVTREEINDEX25 =
 {
+"struct_scenario_1_1_slot_id.html":[12,0,54,251],
+"struct_scenario_1_1_slot_id.html":[11,0,11,249],
+"struct_scenario_1_1_slot_path.html":[12,0,54,253],
+"struct_scenario_1_1_slot_path.html":[11,0,11,251],
+"struct_scenario_1_1_slot_presenter.html":[12,0,54,254],
+"struct_scenario_1_1_slot_presenter.html":[11,0,11,252],
 "struct_scenario_1_1_snapshot_action.html":[12,0,54,257],
 "struct_scenario_1_1_snapshot_action.html":[11,0,11,255],
 "struct_scenario_1_1_start_date_comparator.html":[12,0,54,260],
@@ -243,11 +249,5 @@ var NAVTREEINDEX25 =
 "struct_value_variant_datastream_serializer.html":[12,0,416],
 "struct_variant_data_stream_deserializer.html":[12,0,417],
 "struct_variant_data_stream_serializer.html":[12,0,418],
-"struct_variant_j_s_o_n_deserializer.html":[12,0,419],
-"struct_variant_j_s_o_n_serializer.html":[12,0,420],
-"struct_video_1_1_audio_ring_buffer.html":[12,0,64,0],
-"struct_video_1_1_decoder_configuration.html":[12,0,64,2],
-"struct_video_1_1_frame_queue.html":[12,0,64,4],
-"struct_video_1_1_free_a_v_frame.html":[12,0,64,5],
-"struct_video_1_1_image_format.html":[12,0,64,6]
+"struct_variant_j_s_o_n_deserializer.html":[12,0,419]
 };

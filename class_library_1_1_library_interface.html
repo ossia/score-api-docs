@@ -165,6 +165,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addPath</b> (
 <tr class="memitem:a1e216231ba9d432e2bd82b3ec7480916" id="r_a1e216231ba9d432e2bd82b3ec7480916"><td class="memItemLeft" align="right" valign="top"><a id="a1e216231ba9d432e2bd82b3ec7480916" name="a1e216231ba9d432e2bd82b3ec7480916"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>removePath</b> (std::string_view)</td></tr>
 <tr class="separator:a1e216231ba9d432e2bd82b3ec7480916"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9280369e4acd88ad958422d1300f8b39" id="r_a9280369e4acd88ad958422d1300f8b39"><td class="memItemLeft" align="right" valign="top">virtual std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39">asyncAddPath</a> (std::string_view path)</td></tr>
+<tr class="separator:a9280369e4acd88ad958422d1300f8b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a811b0e0c4fe06b9e1daecbc50d48cfdb" id="r_a811b0e0c4fe06b9e1daecbc50d48cfdb"><td class="memItemLeft" align="right" valign="top"><a id="a811b0e0c4fe06b9e1daecbc50d48cfdb" name="a811b0e0c4fe06b9e1daecbc50d48cfdb"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>onDrop</b> (const QMimeData &amp;mime, int row, int column, const QDir &amp;parent)</td></tr>
 <tr class="separator:a811b0e0c4fe06b9e1daecbc50d48cfdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +179,36 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9280369e4acd88ad958422d1300f8b39" name="a9280369e4acd88ad958422d1300f8b39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9280369e4acd88ad958422d1300f8b39">&#9670;&#160;</a></span>asyncAddPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void()&gt; Library::LibraryInterface::asyncAddPath </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called on a worker thread during async scanning. Return a non-empty function to accept the file; that function will be invoked on the GUI thread (the "commit" phase). Return {} to reject the file. Default implementation defers everything to addPath on the GUI thread. </p>
+
+<p>Reimplemented in <a class="el" href="class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530">JS::ModuleLibraryHandler</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_library_interface_8hpp_source.html">LibraryInterface.hpp</a></li>
 <li><b>LibraryInterface.cpp</b></li>

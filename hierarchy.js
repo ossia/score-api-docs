@@ -115,6 +115,7 @@ var hierarchy =
     [ "Threedim::ArrayToTexture", "class_threedim_1_1_array_to_texture.html", null ],
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
+    [ "score::RecursiveWatch::AsyncCallbacks", "structscore_1_1_recursive_watch_1_1_async_callbacks.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
     [ "Threedim::attribute_lookup", "struct_threedim_1_1attribute__lookup.html", null ],
     [ "halp::position_gpu_geometry::attributes", "structhalp_1_1position__gpu__geometry_1_1attributes.html", null ],

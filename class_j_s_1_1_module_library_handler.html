@@ -129,6 +129,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const QStrin
 <tr class="separator:ad1d7c7824eed3cdfd13cd21485091385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc9de4df9a77154778473ae83bcd7b4a" id="r_abc9de4df9a77154778473ae83bcd7b4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_module_library_handler.html#abc9de4df9a77154778473ae83bcd7b4a">addPath</a> (std::string_view path) override</td></tr>
 <tr class="separator:abc9de4df9a77154778473ae83bcd7b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96199a3c2060db6d7d1b006649dc1530" id="r_a96199a3c2060db6d7d1b006649dc1530"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530">asyncAddPath</a> (std::string_view path) override</td></tr>
+<tr class="separator:a96199a3c2060db6d7d1b006649dc1530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f05465bf2475d0860403ccd646bbff9" id="r_a4f05465bf2475d0860403ccd646bbff9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_module_library_handler.html#a4f05465bf2475d0860403ccd646bbff9">onDoubleClick</a> (const QString &amp;path, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) override</td></tr>
 <tr class="separator:a4f05465bf2475d0860403ccd646bbff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_library_1_1_library_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_library_1_1_library_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></td></tr>
@@ -215,6 +217,35 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_library_1_1_library_interface.html">Library::LibraryInterface</a>.</p>
+
+</div>
+</div>
+<a id="a96199a3c2060db6d7d1b006649dc1530" name="a96199a3c2060db6d7d1b006649dc1530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96199a3c2060db6d7d1b006649dc1530">&#9670;&#160;</a></span>asyncAddPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; void()&gt; JS::ModuleLibraryHandler::asyncAddPath </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called on a worker thread during async scanning. Return a non-empty function to accept the file; that function will be invoked on the GUI thread (the "commit" phase). Return {} to reject the file. Default implementation defers everything to addPath on the GUI thread. </p>
+
+<p>Reimplemented from <a class="el" href="class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39">Library::LibraryInterface</a>.</p>
 
 </div>
 </div>

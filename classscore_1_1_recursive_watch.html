@@ -112,6 +112,8 @@ $(document).ready(function(){initNavTree('classscore_1_1_recursive_watch.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_recursive_watch_1_1_async_callbacks.html">AsyncCallbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_recursive_watch_1_1_callbacks.html">Callbacks</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_recursive_watch_1_1_watched.html">Watched</a></td></tr>
@@ -125,13 +127,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setWatchedFolder</b> 
 <tr class="memitem:a8492198c3eb175031947b044f52fc486" id="r_a8492198c3eb175031947b044f52fc486"><td class="memItemLeft" align="right" valign="top"><a id="a8492198c3eb175031947b044f52fc486" name="a8492198c3eb175031947b044f52fc486"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>registerWatch</b> (std::string extension, <a class="el" href="structscore_1_1_recursive_watch_1_1_callbacks.html">Callbacks</a> callbacks)</td></tr>
 <tr class="separator:a8492198c3eb175031947b044f52fc486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d1cdd6276dba42bf4def578cebce69" id="r_a39d1cdd6276dba42bf4def578cebce69"><td class="memItemLeft" align="right" valign="top"><a id="a39d1cdd6276dba42bf4def578cebce69" name="a39d1cdd6276dba42bf4def578cebce69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerWatch</b> (std::string extension, <a class="el" href="structscore_1_1_recursive_watch_1_1_async_callbacks.html">AsyncCallbacks</a> callbacks)</td></tr>
+<tr class="separator:a39d1cdd6276dba42bf4def578cebce69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac991da96084522c87ed4538bb5115ff0" id="r_ac991da96084522c87ed4538bb5115ff0"><td class="memItemLeft" align="right" valign="top"><a id="ac991da96084522c87ed4538bb5115ff0" name="ac991da96084522c87ed4538bb5115ff0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>scan</b> () const</td></tr>
+<tr class="memdesc:ac991da96084522c87ed4538bb5115ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronous scan: calls Callbacks::added on the calling thread. <br /></td></tr>
 <tr class="separator:ac991da96084522c87ed4538bb5115ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af04c3360f3e722ed2b9966759101784d" id="r_af04c3360f3e722ed2b9966759101784d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_recursive_watch.html#af04c3360f3e722ed2b9966759101784d">scanAsync</a> (QObject *context)</td></tr>
+<tr class="separator:af04c3360f3e722ed2b9966759101784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f0d374e1ba0ac03f25a03d61a9dfd5" id="r_af2f0d374e1ba0ac03f25a03d61a9dfd5"><td class="memItemLeft" align="right" valign="top"><a id="af2f0d374e1ba0ac03f25a03d61a9dfd5" name="af2f0d374e1ba0ac03f25a03d61a9dfd5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:af2f0d374e1ba0ac03f25a03d61a9dfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af04c3360f3e722ed2b9966759101784d" name="af04c3360f3e722ed2b9966759101784d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04c3360f3e722ed2b9966759101784d">&#9670;&#160;</a></span>scanAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::RecursiveWatch::scanAsync </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Asynchronous scan: runs directory traversal + AsyncCallbacks::filter on a worker thread, then batch-delivers the returned commit actions on the GUI thread via <em>context's</em> event loop. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_recursive_watch_8hpp_source.html">RecursiveWatch.hpp</a></li>
 <li><b>RecursiveWatch.cpp</b></li>

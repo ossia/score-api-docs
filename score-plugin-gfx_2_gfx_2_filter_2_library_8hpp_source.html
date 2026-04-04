@@ -138,62 +138,63 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_filter_2_libr
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> addPath(std::string_view path) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  QWidget* previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  QWidget*</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  previewWidget(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_struct" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  std::function&lt;void()&gt; asyncAddPath(std::string_view path) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  QWidget* previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  QWidget*</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  previewWidget(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_struct" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_drop_handler.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_filter_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;d1e16bba-4c53-4d24-8b6b-71b94daef68d&quot;</span>)</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> dropPath(</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      std::vector&lt;ProcessDrop&gt;&amp;, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_file_path.html">score::FilePath</a>&amp; data,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> dropCustom(</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      std::vector&lt;ProcessDrop&gt;&amp; drops, <span class="keyword">const</span> QMimeData&amp; mime,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_gfx_1_1_filter_1_1_drop_handler.html">   36</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_filter_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;d1e16bba-4c53-4d24-8b6b-71b94daef68d&quot;</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> dropPath(</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      std::vector&lt;ProcessDrop&gt;&amp;, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_file_path.html">score::FilePath</a>&amp; data,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> dropCustom(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      std::vector&lt;ProcessDrop&gt;&amp; drops, <span class="keyword">const</span> QMimeData&amp; mime,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">   50</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">VideoTextureDropHandler</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;e9bf6cf8-c872-4638-b98a-ed76edc8e2dd&quot;</span>)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> create(</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      std::vector&lt;ProcessDrop&gt;&amp; drops,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> std::vector&lt;State::Address&gt;&amp; addresses) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">bool</span> isTexture(<span class="keyword">const</span> <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_list.html">Device::DeviceList</a>&amp; devicelist) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> dropCustom(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      std::vector&lt;ProcessDrop&gt;&amp; drops, <span class="keyword">const</span> QMimeData&amp; mime,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">final</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">VideoTextureDropHandler</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;e9bf6cf8-c872-4638-b98a-ed76edc8e2dd&quot;</span>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QSet&lt;QString&gt; mimeTypes() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">bool</span> create(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      std::vector&lt;ProcessDrop&gt;&amp; drops,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keyword">const</span> std::vector&lt;State::Address&gt;&amp; addresses) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">bool</span> isTexture(<span class="keyword">const</span> <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keyword">const</span> <a class="code hl_class" href="class_device_1_1_device_list.html">Device::DeviceList</a>&amp; devicelist) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> dropCustom(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      std::vector&lt;ProcessDrop&gt;&amp; drops, <span class="keyword">const</span> QMimeData&amp; mime,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">final</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="ttc" id="aclass_device_1_1_device_list_html"><div class="ttname"><a href="class_device_1_1_device_list.html">Device::DeviceList</a></div><div class="ttdoc">The DeviceList class.</div><div class="ttdef"><b>Definition</b> DeviceList.hpp:26</div></div>
-<div class="ttc" id="aclass_gfx_1_1_filter_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_drop_handler.html">Gfx::Filter::DropHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Filter/Library.hpp:36</div></div>
+<div class="ttc" id="aclass_gfx_1_1_filter_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_drop_handler.html">Gfx::Filter::DropHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Filter/Library.hpp:37</div></div>
 <div class="ttc" id="aclass_gfx_1_1_filter_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_filter_1_1_library_handler.html">Gfx::Filter::LibraryHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Filter/Library.hpp:19</div></div>
-<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:22</div></div>
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:43</div></div>
+<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:24</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:44</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition</b> ProcessDropHandler.hpp:25</div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition</b> AddressSettings.cpp:14</div></div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:33</div></div>
-<div class="ttc" id="astruct_gfx_1_1_filter_1_1_video_texture_drop_handler_html"><div class="ttname"><a href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">Gfx::Filter::VideoTextureDropHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Filter/Library.hpp:51</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:84</div></div>
+<div class="ttc" id="astruct_gfx_1_1_filter_1_1_video_texture_drop_handler_html"><div class="ttname"><a href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html">Gfx::Filter::VideoTextureDropHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Filter/Library.hpp:52</div></div>
+<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:85</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition</b> Preset.hpp:32</div></div>
 <div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition</b> Address.hpp:58</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>

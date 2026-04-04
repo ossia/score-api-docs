@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_protocols_1_1_d_n_s_s_d_worker.h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_protocols_1_1_d_n_s_s_d_worker-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Protocols::DNSSDWorker Class Reference</div></div>
@@ -121,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca7dad5cbb8fa645d1451e91e2b431f9" id="r_aca7dad5cbb8fa645d1451e91e2b431f9"><td class="memItemLeft" align="right" valign="top"><a id="aca7dad5cbb8fa645d1451e91e2b431f9" name="aca7dad5cbb8fa645d1451e91e2b431f9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DNSSDWorker</b> (const std::string &amp;service)</td></tr>
 <tr class="separator:aca7dad5cbb8fa645d1451e91e2b431f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea95356cfab5dc056ac1afb2caa35363" id="r_aea95356cfab5dc056ac1afb2caa35363"><td class="memItemLeft" align="right" valign="top"><a id="aea95356cfab5dc056ac1afb2caa35363" name="aea95356cfab5dc056ac1afb2caa35363"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>instanceResolved</b> (const std::string &amp;instance, const std::string &amp;ip, const std::string &amp;port)</td></tr>
+<tr class="separator:aea95356cfab5dc056ac1afb2caa35363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76b07235c781be1173b27faa56310293" id="r_a76b07235c781be1173b27faa56310293"><td class="memItemLeft" align="right" valign="top"><a id="a76b07235c781be1173b27faa56310293" name="a76b07235c781be1173b27faa56310293"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>instanceAdded</b> (const std::string &amp;instance) override</td></tr>
 <tr class="separator:a76b07235c781be1173b27faa56310293"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +146,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_newHost</b> (const
 <tr class="memitem:a3bad5b4393bb110e45d8196509930554" id="r_a3bad5b4393bb110e45d8196509930554"><td class="memItemLeft" align="right" valign="top"><a id="a3bad5b4393bb110e45d8196509930554" name="a3bad5b4393bb110e45d8196509930554"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_removedHost</b> (QString name)</td></tr>
 <tr class="separator:a3bad5b4393bb110e45d8196509930554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ade3e5b97de64e6d335add93eadbbcace" id="r_ade3e5b97de64e6d335add93eadbbcace"><td class="memItemLeft" align="right" valign="top"><a id="ade3e5b97de64e6d335add93eadbbcace" name="ade3e5b97de64e6d335add93eadbbcace"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_num_port</b> (std::string_view v)</td></tr>
+<tr class="separator:ade3e5b97de64e6d335add93eadbbcace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

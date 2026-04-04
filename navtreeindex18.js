@@ -1,5 +1,11 @@
 var NAVTREEINDEX18 =
 {
+"classscore__plugin__nodal.html":[12,0,256],
+"classscore__plugin__packagemanager.html":[12,0,257],
+"classscore__plugin__pd.html":[12,0,258],
+"classscore__plugin__protocols.html":[12,0,259],
+"classscore__plugin__recording.html":[12,0,260],
+"classscore__plugin__remotecontrol.html":[12,0,261],
 "classscore__plugin__scenario.html":[12,0,262],
 "classscore__plugin__spline.html":[12,0,263],
 "classscore__plugin__spline3d.html":[12,0,264],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "dir_883d772ecaec989c44076c6abb3001ab.html":[13,0,0,2,17,1,4,1],
 "dir_884a69d3a277720cb0017286bbb1fc0c.html":[13,0,0,2,32,4,1,7],
 "dir_88e1cc06505da4c2098a708f9c7d3f0f.html":[13,0,0,1,1,1],
-"dir_8926c7d91bde3f11016c686dc222e59c.html":[13,0,0,2,12],
-"dir_8940b9717eab7226735774e0c7e02de1.html":[13,0,0,2,24,0],
-"dir_8a4e6332f07504b8c84a82f112e8278a.html":[13,0,0,2,22,0],
-"dir_8af49bb2db8de1b7e3b4987c95048e76.html":[13,0,0,2,32,4,8,1],
-"dir_8c54626366688ab76b573678aecbbb8a.html":[13,0,0,2,32,4,1,5,1],
-"dir_8deb4d6903baf6da043b436ca15a3aa4.html":[13,0,0,1,1,8,5],
-"dir_8dfcbef686e51a4a19cbd8034939bcd1.html":[13,0,0,1,1,0]
+"dir_8926c7d91bde3f11016c686dc222e59c.html":[13,0,0,2,12]
 };

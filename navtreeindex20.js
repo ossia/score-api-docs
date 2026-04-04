@@ -1,5 +1,11 @@
 var NAVTREEINDEX20 =
 {
+"lib_2score_2widgets_2_layout_8hpp_source.html":[13,0,0,1,1,13,12],
+"lv2__atom__helpers_8hpp_source.html":[13,0,0,2,22,0,4],
+"models_8hpp_source.html":[13,0,0,1,0,3,5],
+"mvp_8hpp_source.html":[13,0,0,1,0,3,6],
+"namespace_automation.html":[11,0,0],
+"namespace_curve.html":[11,0,1],
 "namespace_device.html":[11,0,2],
 "namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc":[11,0,2,22],
 "namespace_device.html#a8d0d2923bc93c55003d111113918c390":[11,0,2,25],
@@ -243,11 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,22,0,0],
 "score-plugin-lv2_2_l_v2_2_effect_model_8hpp_source.html":[13,0,0,2,22,0,2],
 "score-plugin-lv2_2_l_v2_2_library_8hpp_source.html":[13,0,0,2,22,0,3],
-"score-plugin-lv2_2_l_v2_2_node_8hpp_source.html":[13,0,0,2,22,0,5],
-"score-plugin-mapping_2_mapping_2_local_tree_8hpp_source.html":[13,0,0,2,23,0,2],
-"score-plugin-media_2_media_2_effect_2_settings_2_factory_8hpp_source.html":[13,0,0,2,24,0,1,0,0],
-"score-plugin-media_2_media_2_effect_2_settings_2_model_8hpp_source.html":[13,0,0,2,24,0,1,0,1],
-"score-plugin-media_2_media_2_effect_2_settings_2_view_8hpp_source.html":[13,0,0,2,24,0,1,0,3],
-"score-plugin-media_2_media_2_inspector_2_factory_8hpp_source.html":[13,0,0,2,24,0,2,1],
-"score-plugin-media_2_media_2_merger_2_executor_8hpp_source.html":[13,0,0,2,24,0,3,1]
+"score-plugin-lv2_2_l_v2_2_node_8hpp_source.html":[13,0,0,2,22,0,5]
 };
