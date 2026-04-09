@@ -23,9 +23,9 @@ var namespace_device =
     [ "TCPPortDeviceResource", "struct_device_1_1_t_c_p_port_device_resource.html", null ],
     [ "UDPPortDeviceResource", "struct_device_1_1_u_d_p_port_device_resource.html", null ],
     [ "Node", "namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc", null ],
-    [ "AccessModePrettyText", "namespace_device.html#ae65099905f3608fe0ceba75eee07de0a", null ],
-    [ "AccessModeText", "namespace_device.html#a90b6372360427200d5581942af7a7426", null ],
-    [ "dumpTree", "namespace_device.html#a8d0d2923bc93c55003d111113918c390", null ],
+    [ "AccessModePrettyText", "namespace_device.html#ab927322401b8b91cdd6a510e26c78bf2", null ],
+    [ "AccessModeText", "namespace_device.html#a714cf56cb0518d4b1ed7435a1b4483ef", null ],
+    [ "dumpTree", "namespace_device.html#af138298eb48504f15c32869a67ed87b2", null ],
     [ "loadDeviceFromXML", "namespace_device.html#ae28e7db29ec71528be7138e7ff38e166", null ],
-    [ "parametersList", "namespace_device.html#aa98fcd53aa1fbb8e0fc4f94a872c64ac", null ]
+    [ "parametersList", "namespace_device.html#ad3ff516de47154c46a70d85230500ed4", null ]
 ];

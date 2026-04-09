@@ -10,5 +10,5 @@ var searchData=
   ['displaynameforport_7',['displayNameForPort',['../namespace_process.html#a535ae95f6170e17fce20ef59f292c707',1,'Process']]],
   ['document_8',['document',['../classscore_1_1_panel_delegate.html#aece2f08d7c2418a7ad2db0a596d5bbcf',1,'score::PanelDelegate']]],
   ['documentbackupmanager_9',['documentbackupmanager',['../classscore_1_1_document_backup_manager.html#a73ec4b51126b8eceb6417abce6c0bdbd',1,'score::DocumentBackupManager::DocumentBackupManager(const QByteArray &amp;data, Document &amp;doc)'],['../classscore_1_1_document_backup_manager.html#a3ce83b417bd5675790184b16772a0b56',1,'score::DocumentBackupManager::DocumentBackupManager(const score::RestorableDocument &amp;prev, Document &amp;doc)']]],
-  ['dumptree_10',['dumpTree',['../namespace_device.html#a8d0d2923bc93c55003d111113918c390',1,'Device']]]
+  ['dumptree_10',['dumpTree',['../namespace_device.html#af138298eb48504f15c32869a67ed87b2',1,'Device']]]
 ];

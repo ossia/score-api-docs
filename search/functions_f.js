@@ -6,7 +6,7 @@ var searchData=
   ['score_5fplugin_5fthreedim_3',['score_plugin_threedim',['../classscore__plugin__threedim.html#a3fc7dd3144b170b6422d2879a943dda6',1,'score_plugin_threedim']]],
   ['selectablechildren_4',['selectablechildren',['../class_process_1_1_process_model.html#a5b2ed6f42effa546e738b6d991a6e3d5',1,'Process::ProcessModel::selectableChildren()'],['../class_curve_1_1_curve_process_model.html#a29ec0272b5510036a73a6e3930ca8e4a',1,'Curve::CurveProcessModel::selectableChildren()'],['../class_scenario_1_1_process_model.html#acaa8ce6edbfe4d95eca7acf3a28369f7',1,'Scenario::ProcessModel::selectableChildren()']]],
   ['selectedobject_5',['selectedObject',['../class_j_s_1_1_edit_js_context.html#adc4c51aec152f3728c43a0d4b1b4d014',1,'JS::EditJsContext']]],
-  ['selecthardwareacceleration_6',['selectHardwareAcceleration',['../namespacescore_1_1gfx.html#a258018916d9848c4ad504f79535ebd7d',1,'score::gfx']]],
+  ['selecthardwareacceleration_6',['selectHardwareAcceleration',['../namespacescore_1_1gfx.html#a6bafd0cbfed36e17ea43c7a530322092',1,'score::gfx']]],
   ['setcursor_7',['setCursor',['../namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f',1,'score']]],
   ['setenabled_8',['setEnabled',['../structscore_1_1_action_condition.html#a5e149e30aa1506eb7d614fefe94e2b1f',1,'score::ActionCondition']]],
   ['setfile_9',['setFile',['../class_media_1_1_sound_1_1_process_model.html#a0cb6f5d590f82113519edabee77a5621',1,'Media::Sound::ProcessModel']]],
