@@ -111,322 +111,268 @@ $(document).ready(function(){initNavTree('_buffer_to_geometry_8hpp_source.html',
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Threedim/TinyObj.hpp&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;halp/buffer.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;halp/controls.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;halp/geometry.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;halp/layout.hpp&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;climits&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>Threedim</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_threedim_1_1_buffers_to_geometry.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_threedim_1_1_buffers_to_geometry.html">BuffersToGeometry</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  halp_meta(name, <span class="stringliteral">&quot;Buffers to geometry&quot;</span>)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Utilities&quot;</span>)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(c_name, <span class="stringliteral">&quot;buffers_to_geometry&quot;</span>)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/buffers-to-geometry.html&quot;</span>)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  halp_meta(uuid, <span class="stringliteral">&quot;d5dd3b9a-f57b-4546-9890-d5b5e351dcea&quot;</span>)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// Matches QRhiVertexInputAttribute::Format</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">enum</span> AttributeFormat</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Float4,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Float3,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Float2,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Float,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    UNormByte4,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    UNormByte2,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    UNormByte,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    UInt4,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    UInt2,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    UInt,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    SInt4,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    SInt2,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    SInt,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Half4,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    Half3,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    Half2,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Half,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    UShort4,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    UShort2,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    UShort,</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    SShort4,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    SShort2,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    SShort,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  };</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">enum</span> PrimitiveTopology</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    Triangles,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    TriangleStrip,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    TriangleFan,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Lines,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    LineStrip,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    Points</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  };</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">enum</span> CullMode</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    None,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    Front,</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    Back</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  };</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">enum</span> FrontFace</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    CounterClockwise,</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    Clockwise</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  };</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">enum</span> IndexFormat</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    UInt16,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    UInt32</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  };</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">   80</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Input buffers</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 0&quot;</span>&gt; buffer_0;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 1&quot;</span>&gt; buffer_1;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 2&quot;</span>&gt; buffer_2;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 3&quot;</span>&gt; buffer_3;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 4&quot;</span>&gt; buffer_4;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 5&quot;</span>&gt; buffer_5;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 6&quot;</span>&gt; buffer_6;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 7&quot;</span>&gt; buffer_7;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#define ATTRIBUTE(i) \</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; buffer&quot;, halp::irange{-1, 7, -1}&gt; attribute_buffer_ ## i; \</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; offset&quot;, halp::irange{0, INT32_MAX, 0}&gt; attribute_offset_ ## i; \</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; stride&quot;, halp::irange{0, 1024, 0}&gt; attribute_stride_ ## i; \</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">        halp::combobox_t&lt;&quot;Attr&quot; #i &quot; format&quot;, AttributeFormat&gt; format_ ## i; \</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; location&quot;, halp::irange{0, 15, i}&gt; location_ ## i; \</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">        halp::toggle&lt;&quot;Attr&quot; #i &quot; instanced&quot;&gt; instanced_ ## i;</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    ATTRIBUTE(0)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    ATTRIBUTE(1)</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    ATTRIBUTE(2)</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    ATTRIBUTE(3)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    ATTRIBUTE(4)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    ATTRIBUTE(5)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    ATTRIBUTE(6) </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    ATTRIBUTE(7)</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#undef ATTRIBUTE</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// Index buffer</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index Buffer&quot;</span>, halp::irange{-1, 7, -1}&gt; index_buffer;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Index Format&quot;</span>, IndexFormat&gt; index_format;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index Offset&quot;</span>, halp::irange{0, 1000000, 0}&gt; index_offset;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// Geometry settings</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Vertices&quot;</span>, halp::irange{0, 1000000000, 0}&gt; vertices;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Instances&quot;</span>, halp::irange{1, 1000000000, 1}&gt; instances;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Topology&quot;</span>, PrimitiveTopology&gt; topology;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Cull Mode&quot;</span>, CullMode&gt; cull_mode;</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Front Face&quot;</span>, FrontFace&gt; front_face;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// Transform</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  } inputs;</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;BufferToGeometryCommon.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Threedim/TinyObj.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;halp/buffer.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;halp/controls.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;halp/geometry.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;halp/layout.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;climits&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Threedim</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_threedim_1_1_buffers_to_geometry.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_threedim_1_1_buffers_to_geometry.html">BuffersToGeometry</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(name, <span class="stringliteral">&quot;Buffers to geometry&quot;</span>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Utilities&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  halp_meta(c_name, <span class="stringliteral">&quot;buffers_to_geometry&quot;</span>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/buffers-to-geometry.html&quot;</span>)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  halp_meta(uuid, <span class="stringliteral">&quot;d5dd3b9a-f57b-4546-9890-d5b5e351dcea&quot;</span>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  halp_flag(deprecated);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">   26</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Input buffers</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 0&quot;</span>&gt; buffer_0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 1&quot;</span>&gt; buffer_1;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 2&quot;</span>&gt; buffer_2;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 3&quot;</span>&gt; buffer_3;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 4&quot;</span>&gt; buffer_4;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 5&quot;</span>&gt; buffer_5;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 6&quot;</span>&gt; buffer_6;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer 7&quot;</span>&gt; buffer_7;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#define ATTRIBUTE(i) \</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; buffer&quot;, halp::irange{-1, 7, -1}&gt; attribute_buffer_ ## i; \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; offset&quot;, halp::irange{0, INT32_MAX, 0}&gt; attribute_offset_ ## i; \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; stride&quot;, halp::irange{0, 1024, 0}&gt; attribute_stride_ ## i; \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">        halp::combobox_t&lt;&quot;Attr&quot; #i &quot; format&quot;, AttributeFormat&gt; format_ ## i; \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">        halp::spinbox_i32&lt;&quot;Attr&quot; #i &quot; location&quot;, halp::irange{0, 15, i}&gt; location_ ## i; \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">        halp::toggle&lt;&quot;Attr&quot; #i &quot; instanced&quot;&gt; instanced_ ## i;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    ATTRIBUTE(0)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    ATTRIBUTE(1)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    ATTRIBUTE(2)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    ATTRIBUTE(3)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    ATTRIBUTE(4)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    ATTRIBUTE(5)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ATTRIBUTE(6) </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    ATTRIBUTE(7)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#undef ATTRIBUTE</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Index buffer</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index Buffer&quot;</span>, halp::irange{-1, 7, -1}&gt; index_buffer;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Index Format&quot;</span>, IndexFormat&gt; index_format;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index Offset&quot;</span>, halp::irange{0, 1000000, 0}&gt; index_offset;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">// Geometry settings</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Vertices&quot;</span>, halp::irange{0, 1000000000, 0}&gt; vertices;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Instances&quot;</span>, halp::irange{1, 1000000000, 1}&gt; instances;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Topology&quot;</span>, PrimitiveTopology&gt; topology;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Cull Mode&quot;</span>, CullMode&gt; cull_mode;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Front Face&quot;</span>, FrontFace&gt; front_face;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Transform</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keyword">struct</span></div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      <span class="keywordtype">float</span> transform[16]{};</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    } geometry;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  } outputs;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  BuffersToGeometry();</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> operator()();</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="comment">// Cache previous state to detect changes</span></div>
-<div class="foldopen" id="foldopen00146" data-start="{" data-end="};">
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">  146</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">AttributeState</a></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordtype">bool</span> enabled{};</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    int32_t buffer{};</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    int32_t offset{};</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    int32_t stride{};</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    AttributeFormat format{};</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    int32_t location{};</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordtype">bool</span> instanced{};</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keywordtype">float</span> transform[16]{};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    } geometry;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  } outputs;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  BuffersToGeometry();</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span> operator()();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// Cache previous state to detect changes</span></div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="};">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">   92</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">AttributeState</a></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordtype">bool</span> enabled{};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    int32_t buffer{};</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    int32_t offset{};</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    int32_t stride{};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    AttributeFormat format{};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    int32_t location{};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">bool</span> instanced{};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  };</div>
 </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  std::array&lt;AttributeState, 8&gt; m_prevAttributes{};</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  std::array&lt;halp::gpu_buffer, 8&gt; m_prevBuffers;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  int32_t m_prevUseIndexBuffer{};</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  IndexFormat m_prevIndexFormat{};</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  int32_t m_prevIndexOffset{};</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  int32_t m_prevVertices{};</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  PrimitiveTopology m_prevTopology{};</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  CullMode m_prevCullMode{};</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  FrontFace m_prevFrontFace{};</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="foldopen" id="foldopen00167" data-start="{" data-end="};">
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">  167</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">ui</a></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    halp_meta(name, <span class="stringliteral">&quot;Main&quot;</span>)</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    halp_meta(layout, halp::layouts::hbox)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    halp_meta(background, halp::colors::background_mid)</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">struct </span>T</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      halp_meta(name, <span class="stringliteral">&quot;Tabs&quot;</span>)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      halp_meta(layout, halp::layouts::tabs)</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      halp_meta(background, halp::colors::background_darker)</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keyword">struct </span>G</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        halp_meta(name, <span class="stringliteral">&quot;Global&quot;</span>)</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        halp_meta(layout, halp::layouts::hbox)</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="keyword">struct </span>A</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        {</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>          halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>          halp::item&lt;&amp;ins::vertices&gt; vertices;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>          halp::item&lt;&amp;ins::instances&gt; instances;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>          halp::item&lt;&amp;ins::topology&gt; topology;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>          halp::item&lt;&amp;ins::cull_mode&gt; cull_mode;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>          halp::item&lt;&amp;ins::front_face&gt; front_face;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        } a;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keyword">struct </span>B</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>          halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>          halp::item&lt;&amp;ins::position&gt; p;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>          halp::item&lt;&amp;ins::rotation&gt; r;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>          halp::item&lt;&amp;ins::scale&gt; s;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        } b;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      } global;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      <span class="keyword">struct </span>A1</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        halp_meta(name, <span class="stringliteral">&quot;0&quot;</span>)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        halp::item&lt;&amp;ins::attribute_buffer_0&gt; buffer;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        halp::item&lt;&amp;ins::attribute_offset_0&gt; offset;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        halp::item&lt;&amp;ins::attribute_stride_0&gt; stride;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        halp::item&lt;&amp;ins::format_0&gt; format;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        halp::item&lt;&amp;ins::location_0&gt; location;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        halp::item&lt;&amp;ins::instanced_0&gt; instanced;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      } a0;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      <span class="keyword">struct </span>A2</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      {</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        halp_meta(name, <span class="stringliteral">&quot;1&quot;</span>)</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        halp::item&lt;&amp;ins::attribute_buffer_1&gt; buffer;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        halp::item&lt;&amp;ins::attribute_offset_1&gt; offset;</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        halp::item&lt;&amp;ins::attribute_stride_1&gt; stride;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        halp::item&lt;&amp;ins::format_1&gt; format;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        halp::item&lt;&amp;ins::location_1&gt; location;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        halp::item&lt;&amp;ins::instanced_1&gt; instanced;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      } a1;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      <span class="keyword">struct</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      {</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        halp_meta(name, <span class="stringliteral">&quot;2&quot;</span>)</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        halp::item&lt;&amp;ins::attribute_buffer_2&gt; buffer;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        halp::item&lt;&amp;ins::attribute_offset_2&gt; offset;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        halp::item&lt;&amp;ins::attribute_stride_2&gt; stride;</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        halp::item&lt;&amp;ins::format_2&gt; format;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        halp::item&lt;&amp;ins::location_2&gt; location;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        halp::item&lt;&amp;ins::instanced_2&gt; instanced;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      } a2;</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <span class="keyword">struct </span>A3</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      {</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        halp_meta(name, <span class="stringliteral">&quot;3&quot;</span>)</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        halp::item&lt;&amp;ins::attribute_buffer_3&gt; buffer;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        halp::item&lt;&amp;ins::attribute_offset_3&gt; offset;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        halp::item&lt;&amp;ins::attribute_stride_3&gt; stride;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        halp::item&lt;&amp;ins::format_3&gt; format;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        halp::item&lt;&amp;ins::location_3&gt; location;</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        halp::item&lt;&amp;ins::instanced_3&gt; instanced;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      } a3;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      <span class="keyword">struct </span>A4</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      {</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        halp_meta(name, <span class="stringliteral">&quot;4&quot;</span>)</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        halp::item&lt;&amp;ins::attribute_buffer_4&gt; buffer;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        halp::item&lt;&amp;ins::attribute_offset_4&gt; offset;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        halp::item&lt;&amp;ins::attribute_stride_4&gt; stride;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        halp::item&lt;&amp;ins::format_4&gt; format;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        halp::item&lt;&amp;ins::location_4&gt; location;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        halp::item&lt;&amp;ins::instanced_4&gt; instanced;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      } a4;</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      <span class="keyword">struct </span>A5</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        halp_meta(name, <span class="stringliteral">&quot;5&quot;</span>)</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        halp::item&lt;&amp;ins::attribute_buffer_5&gt; buffer;</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        halp::item&lt;&amp;ins::attribute_offset_5&gt; offset;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        halp::item&lt;&amp;ins::attribute_stride_5&gt; stride;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        halp::item&lt;&amp;ins::format_5&gt; format;</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        halp::item&lt;&amp;ins::location_5&gt; location;</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        halp::item&lt;&amp;ins::instanced_5&gt; instanced;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      } a5;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      <span class="keyword">struct </span>A6</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      {</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        halp_meta(name, <span class="stringliteral">&quot;6&quot;</span>)</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        halp::item&lt;&amp;ins::attribute_buffer_6&gt; buffer;</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        halp::item&lt;&amp;ins::attribute_offset_6&gt; offset;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>        halp::item&lt;&amp;ins::attribute_stride_6&gt; stride;</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        halp::item&lt;&amp;ins::format_6&gt; format;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        halp::item&lt;&amp;ins::location_6&gt; location;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        halp::item&lt;&amp;ins::instanced_6&gt; instanced;</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      } a6;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>      <span class="keyword">struct </span>A7</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        halp_meta(name, <span class="stringliteral">&quot;7&quot;</span>)</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        halp::item&lt;&amp;ins::attribute_buffer_7&gt; buffer;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        halp::item&lt;&amp;ins::attribute_offset_7&gt; offset;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        halp::item&lt;&amp;ins::attribute_stride_7&gt; stride;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        halp::item&lt;&amp;ins::format_7&gt; format;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        halp::item&lt;&amp;ins::location_7&gt; location;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        halp::item&lt;&amp;ins::instanced_7&gt; instanced;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      } a7;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      <span class="keyword">struct</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        halp_meta(name, <span class="stringliteral">&quot;Index&quot;</span>)</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        halp::item&lt;&amp;ins::index_buffer&gt; buffer;</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        halp::item&lt;&amp;ins::index_offset&gt; offset;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        halp::item&lt;&amp;ins::index_format&gt; format;</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      } index;</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    } tabs;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  };</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  std::array&lt;AttributeState, 8&gt; m_prevAttributes{};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  std::array&lt;halp::gpu_buffer, 8&gt; m_prevBuffers;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  int32_t m_prevUseIndexBuffer{};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  IndexFormat m_prevIndexFormat{};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  int32_t m_prevIndexOffset{};</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  int32_t m_prevVertices{};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  PrimitiveTopology m_prevTopology{};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  CullMode m_prevCullMode{};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  FrontFace m_prevFrontFace{};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="foldopen" id="foldopen00113" data-start="{" data-end="};">
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">  113</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">ui</a></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  {</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    halp_meta(name, <span class="stringliteral">&quot;Main&quot;</span>)</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    halp_meta(layout, halp::layouts::hbox)</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    halp_meta(background, halp::colors::background_mid)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">struct </span>T</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      halp_meta(name, <span class="stringliteral">&quot;Tabs&quot;</span>)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      halp_meta(layout, halp::layouts::tabs)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      halp_meta(background, halp::colors::background_darker)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <span class="keyword">struct </span>G</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        halp_meta(name, <span class="stringliteral">&quot;Global&quot;</span>)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        halp_meta(layout, halp::layouts::hbox)</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keyword">struct </span>A</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>          halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>          halp::item&lt;&amp;ins::vertices&gt; vertices;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>          halp::item&lt;&amp;ins::instances&gt; instances;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>          halp::item&lt;&amp;ins::topology&gt; topology;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>          halp::item&lt;&amp;ins::cull_mode&gt; cull_mode;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>          halp::item&lt;&amp;ins::front_face&gt; front_face;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        } a;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keyword">struct </span>B</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        {</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>          halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>          halp::item&lt;&amp;ins::position&gt; p;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>          halp::item&lt;&amp;ins::rotation&gt; r;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>          halp::item&lt;&amp;ins::scale&gt; s;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        } b;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      } global;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keyword">struct </span>A1</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        halp_meta(name, <span class="stringliteral">&quot;0&quot;</span>)</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        halp::item&lt;&amp;ins::attribute_buffer_0&gt; buffer;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        halp::item&lt;&amp;ins::attribute_offset_0&gt; offset;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        halp::item&lt;&amp;ins::attribute_stride_0&gt; stride;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        halp::item&lt;&amp;ins::format_0&gt; format;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        halp::item&lt;&amp;ins::location_0&gt; location;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        halp::item&lt;&amp;ins::instanced_0&gt; instanced;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      } a0;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      <span class="keyword">struct </span>A2</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        halp_meta(name, <span class="stringliteral">&quot;1&quot;</span>)</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        halp::item&lt;&amp;ins::attribute_buffer_1&gt; buffer;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        halp::item&lt;&amp;ins::attribute_offset_1&gt; offset;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        halp::item&lt;&amp;ins::attribute_stride_1&gt; stride;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        halp::item&lt;&amp;ins::format_1&gt; format;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        halp::item&lt;&amp;ins::location_1&gt; location;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        halp::item&lt;&amp;ins::instanced_1&gt; instanced;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      } a1;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <span class="keyword">struct</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        halp_meta(name, <span class="stringliteral">&quot;2&quot;</span>)</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        halp::item&lt;&amp;ins::attribute_buffer_2&gt; buffer;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        halp::item&lt;&amp;ins::attribute_offset_2&gt; offset;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        halp::item&lt;&amp;ins::attribute_stride_2&gt; stride;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        halp::item&lt;&amp;ins::format_2&gt; format;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        halp::item&lt;&amp;ins::location_2&gt; location;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        halp::item&lt;&amp;ins::instanced_2&gt; instanced;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      } a2;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      <span class="keyword">struct </span>A3</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        halp_meta(name, <span class="stringliteral">&quot;3&quot;</span>)</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        halp::item&lt;&amp;ins::attribute_buffer_3&gt; buffer;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        halp::item&lt;&amp;ins::attribute_offset_3&gt; offset;</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        halp::item&lt;&amp;ins::attribute_stride_3&gt; stride;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        halp::item&lt;&amp;ins::format_3&gt; format;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        halp::item&lt;&amp;ins::location_3&gt; location;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        halp::item&lt;&amp;ins::instanced_3&gt; instanced;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      } a3;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keyword">struct </span>A4</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>      {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        halp_meta(name, <span class="stringliteral">&quot;4&quot;</span>)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        halp::item&lt;&amp;ins::attribute_buffer_4&gt; buffer;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>        halp::item&lt;&amp;ins::attribute_offset_4&gt; offset;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        halp::item&lt;&amp;ins::attribute_stride_4&gt; stride;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>        halp::item&lt;&amp;ins::format_4&gt; format;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>        halp::item&lt;&amp;ins::location_4&gt; location;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        halp::item&lt;&amp;ins::instanced_4&gt; instanced;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      } a4;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      <span class="keyword">struct </span>A5</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        halp_meta(name, <span class="stringliteral">&quot;5&quot;</span>)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        halp::item&lt;&amp;ins::attribute_buffer_5&gt; buffer;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        halp::item&lt;&amp;ins::attribute_offset_5&gt; offset;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        halp::item&lt;&amp;ins::attribute_stride_5&gt; stride;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        halp::item&lt;&amp;ins::format_5&gt; format;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        halp::item&lt;&amp;ins::location_5&gt; location;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        halp::item&lt;&amp;ins::instanced_5&gt; instanced;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      } a5;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <span class="keyword">struct </span>A6</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        halp_meta(name, <span class="stringliteral">&quot;6&quot;</span>)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        halp::item&lt;&amp;ins::attribute_buffer_6&gt; buffer;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        halp::item&lt;&amp;ins::attribute_offset_6&gt; offset;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        halp::item&lt;&amp;ins::attribute_stride_6&gt; stride;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        halp::item&lt;&amp;ins::format_6&gt; format;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        halp::item&lt;&amp;ins::location_6&gt; location;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        halp::item&lt;&amp;ins::instanced_6&gt; instanced;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      } a6;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      <span class="keyword">struct </span>A7</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        halp_meta(name, <span class="stringliteral">&quot;7&quot;</span>)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        halp::item&lt;&amp;ins::attribute_buffer_7&gt; buffer;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        halp::item&lt;&amp;ins::attribute_offset_7&gt; offset;</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        halp::item&lt;&amp;ins::attribute_stride_7&gt; stride;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        halp::item&lt;&amp;ins::format_7&gt; format;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        halp::item&lt;&amp;ins::location_7&gt; location;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        halp::item&lt;&amp;ins::instanced_7&gt; instanced;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      } a7;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      <span class="keyword">struct</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      {</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        halp_meta(name, <span class="stringliteral">&quot;Index&quot;</span>)</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        halp::item&lt;&amp;ins::index_buffer&gt; buffer;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        halp::item&lt;&amp;ins::index_offset&gt; offset;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        halp::item&lt;&amp;ins::index_format&gt; format;</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      } index;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    } tabs;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  };</div>
 </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>};</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>};</div>
 </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>} <span class="comment">// namespace Threedim</span></div>
-<div class="ttc" id="aclass_threedim_1_1_buffers_to_geometry_html"><div class="ttname"><a href="class_threedim_1_1_buffers_to_geometry.html">Threedim::BuffersToGeometry</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:15</div></div>
-<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1_attribute_state_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">Threedim::BuffersToGeometry::AttributeState</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:147</div></div>
-<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">Threedim::BuffersToGeometry::ins</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:81</div></div>
-<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1ui_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">Threedim::BuffersToGeometry::ui</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:168</div></div>
-<div class="ttc" id="astruct_threedim_1_1_position_control_html"><div class="ttname"><a href="struct_threedim_1_1_position_control.html">Threedim::PositionControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:64</div></div>
-<div class="ttc" id="astruct_threedim_1_1_rotation_control_html"><div class="ttname"><a href="struct_threedim_1_1_rotation_control.html">Threedim::RotationControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:69</div></div>
-<div class="ttc" id="astruct_threedim_1_1_scale_control_html"><div class="ttname"><a href="struct_threedim_1_1_scale_control.html">Threedim::ScaleControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:73</div></div>
-<div class="ttc" id="astruct_threedim_1_1mesh_html"><div class="ttname"><a href="struct_threedim_1_1mesh.html">Threedim::mesh</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:19</div></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>} <span class="comment">// namespace Threedim</span></div>
+<div class="ttc" id="aclass_threedim_1_1_buffers_to_geometry_html"><div class="ttname"><a href="class_threedim_1_1_buffers_to_geometry.html">Threedim::BuffersToGeometry</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:17</div></div>
+<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1_attribute_state_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html">Threedim::BuffersToGeometry::AttributeState</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:93</div></div>
+<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1ins.html">Threedim::BuffersToGeometry::ins</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:27</div></div>
+<div class="ttc" id="astruct_threedim_1_1_buffers_to_geometry_1_1ui_html"><div class="ttname"><a href="struct_threedim_1_1_buffers_to_geometry_1_1ui.html">Threedim::BuffersToGeometry::ui</a></div><div class="ttdef"><b>Definition</b> BufferToGeometry.hpp:114</div></div>
+<div class="ttc" id="astruct_threedim_1_1_position_control_html"><div class="ttname"><a href="struct_threedim_1_1_position_control.html">Threedim::PositionControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:74</div></div>
+<div class="ttc" id="astruct_threedim_1_1_rotation_control_html"><div class="ttname"><a href="struct_threedim_1_1_rotation_control.html">Threedim::RotationControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:79</div></div>
+<div class="ttc" id="astruct_threedim_1_1_scale_control_html"><div class="ttname"><a href="struct_threedim_1_1_scale_control.html">Threedim::ScaleControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:83</div></div>
+<div class="ttc" id="astruct_threedim_1_1mesh_html"><div class="ttname"><a href="struct_threedim_1_1mesh.html">Threedim::mesh</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

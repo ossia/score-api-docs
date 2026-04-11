@@ -335,7 +335,7 @@ var namespacescore =
     [ "findComponent", "namespacescore.html#a9d0f6126642097ffac522396a72339b6", null ],
     [ "locateFilePath", "namespacescore.html#aa5dc206faf740132f1dbb03714aa6070", null ],
     [ "marshall", "namespacescore.html#aba88450f2e8b9397ef16609ee1d5952f", null ],
-    [ "newProcessedFilePath", "namespacescore.html#a0f578ca1f138cd66f8bed72b4d1ac20d", null ],
+    [ "newProcessedFilePath", "namespacescore.html#a32796149f51ff5e6483f20895442a6b3", null ],
     [ "relativizeFilePath", "namespacescore.html#aed5a0183b4501783c177e506781cec28", null ],
     [ "setCursor", "namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f", null ]
 ];

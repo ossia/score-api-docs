@@ -317,109 +317,108 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      cat = Info::kind();</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      cat = Process::ProcessCategory::Other;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_deprecated&lt;Info&gt;)</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      cat = Process::ProcessCategory(cat | Process::ProcessCategory::Deprecated);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordflow">return</span> cat;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_process_1_1_descriptor.html">Process::Descriptor</a> get()</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">// literate programming goes brr</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#define if_exists(Expr, Else) \</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">  []() noexcept {             \</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">    if(false)                 \</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">    {                         \</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">    }                         \</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">    Else;                     \</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">  }()</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">#define if_attribute(Attr) QString{}</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#define if_exists(Expr, Else)        \</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">  []() noexcept {                    \</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">    if constexpr(requires { Expr; }) \</span></div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">      return Expr;                   \</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">    Else;                            \</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="preprocessor">  }()</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="preprocessor">#define if_attribute(Attr)                                   \</span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">  []() noexcept -&gt; QString {                                 \</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">    if constexpr(avnd::has_##Attr&lt;Info&gt;)                     \</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">      return oscr::fromStringView(avnd::get_##Attr&lt;Info&gt;()); \</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">    else                                                     \</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">      return QString{};                                      \</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">  }()</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_process_1_1_descriptor.html">Process::Descriptor</a> desc{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;PrettyName_k, oscr::ProcessModel&lt;Info&gt;</a>&gt;::get(),</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        kind(),</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        if_attribute(category),</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        if_attribute(description),</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        if_attribute(author),</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;Tags_k, oscr::ProcessModel&lt;Info&gt;</a>&gt;::get(),</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        inletDescription(),</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        outletDescription(),</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        if_attribute(manual_url)};</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordflow">return</span> desc;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  }</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>};</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">return</span> cat;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_process_1_1_descriptor.html">Process::Descriptor</a> get()</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  {</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">// literate programming goes brr</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#define if_exists(Expr, Else) \</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">  []() noexcept {             \</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">    if(false)                 \</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">    {                         \</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">    }                         \</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">    Else;                     \</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">  }()</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#define if_attribute(Attr) QString{}</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#define if_exists(Expr, Else)        \</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">  []() noexcept {                    \</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">    if constexpr(requires { Expr; }) \</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">      return Expr;                   \</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">    Else;                            \</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">  }()</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">#define if_attribute(Attr)                                   \</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="preprocessor">  []() noexcept -&gt; QString {                                 \</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">    if constexpr(avnd::has_##Attr&lt;Info&gt;)                     \</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="preprocessor">      return oscr::fromStringView(avnd::get_##Attr&lt;Info&gt;()); \</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">    else                                                     \</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">      return QString{};                                      \</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">  }()</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keyword">static</span> <a class="code hl_struct" href="struct_process_1_1_descriptor.html">Process::Descriptor</a> desc{</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;PrettyName_k, oscr::ProcessModel&lt;Info&gt;</a>&gt;::get(),</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        kind(),</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        if_attribute(category),</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        if_attribute(description),</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        if_attribute(author),</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;Tags_k, oscr::ProcessModel&lt;Info&gt;</a>&gt;::get(),</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        inletDescription(),</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        outletDescription(),</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        if_attribute(manual_url)};</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keywordflow">return</span> desc;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  }</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>};</div>
 </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="foldopen" id="foldopen00247" data-start="{" data-end="};">
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  247</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_flags__k.html">ProcessFlags_k</a>, <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel</a>&lt;Info&gt;&gt;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>{</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> get() <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Info::flags(); })</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    {</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      <span class="keywordflow">return</span> Info::flags();</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    {</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> flags{};</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>      flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254">Process::ProcessFlags::ControlSurface</a>;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_temporal&lt;Info&gt;)</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96">Process::ProcessFlags::SupportsTemporal</a>;</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        flags |= Process::ProcessFlags::SupportsLasting;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="};">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  244</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_flags__k.html">ProcessFlags_k</a>, <a class="code hl_class" href="classoscr_1_1_process_model.html">oscr::ProcessModel</a>&lt;Info&gt;&gt;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keyword">static</span> <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> get() <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Info::flags(); })</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    {</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>      <span class="keywordflow">return</span> Info::flags();</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    {</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a> flags{};</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254">Process::ProcessFlags::ControlSurface</a>;</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_temporal&lt;Info&gt;)</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96">Process::ProcessFlags::SupportsTemporal</a>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        flags |= Process::ProcessFlags::SupportsLasting;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_single_exec&lt;Info&gt;)</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa">Process::ProcessFlags::SupportsState</a>;</div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_single_exec&lt;Info&gt;)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa">Process::ProcessFlags::SupportsState</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_fully_custom_item&lt;Info&gt;)</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e">Process::ProcessFlags::FullyCustomItem</a>;</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_fully_custom_item&lt;Info&gt;)</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e">Process::ProcessFlags::FullyCustomItem</a>;</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_no_background&lt;Info&gt;)</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af">Process::ProcessFlags::NodeHasNoBackground</a>;</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_no_background&lt;Info&gt;)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af">Process::ProcessFlags::NodeHasNoBackground</a>;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_ports_input_introspection&lt;Info&gt;::size &gt; 0)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85">Process::ProcessFlags::DynamicPorts</a>;</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_ports_input_introspection&lt;Info&gt;::size &gt; 0)</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_ports_output_introspection&lt;Info&gt;::size &gt; 0)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85">Process::ProcessFlags::DynamicPorts</a>;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_ports_output_introspection&lt;Info&gt;::size &gt; 0)</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85">Process::ProcessFlags::DynamicPorts</a>;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>      <span class="keywordflow">return</span> flags;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    }</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  }</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>};</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::tag_deprecated&lt;Info&gt;)</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        flags |= <a class="code hl_enumvalue" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e">Process::ProcessFlags::Deprecated</a>;</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      <span class="keywordflow">return</span> flags;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  }</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>};</div>
 </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="foldopen" id="foldopen00285" data-start="{" data-end="};">
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  285</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;<a class="code hl_class" href="class_object_key__k.html">ObjectKey_k</a>, <a class="code hl_namespace" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>{</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> get() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> avnd::get_c_name&lt;Info&gt;().data(); }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>};</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
+<div class="foldopen" id="foldopen00284" data-start="{" data-end="};">
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_object_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  284</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;<a class="code hl_class" href="class_object_key__k.html">ObjectKey_k</a>, <a class="code hl_namespace" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>{</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> get() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> avnd::get_c_name&lt;Info&gt;().data(); }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>};</div>
 </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
-<div class="foldopen" id="foldopen00290" data-start="{" data-end="};">
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  290</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;ConcreteKey_k, <a class="code hl_namespace" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>{</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a> get()</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  {</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordflow">return</span> oscr::uuid_from_string&lt;Info&gt;();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  }</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>};</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Info&gt;</div>
+<div class="foldopen" id="foldopen00289" data-start="{" data-end="};">
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="struct_metadata_3_01_concrete_key__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html">  289</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_metadata.html">Metadata</a>&lt;ConcreteKey_k, <a class="code hl_namespace" href="namespaceoscr.html">oscr</a>::ProcessModel&lt;Info&gt;&gt;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>{</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keyword">static</span> Q_DECL_RELAXED_CONSTEXPR <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;Process::ProcessModel&gt;</a> get()</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keywordflow">return</span> oscr::uuid_from_string&lt;Info&gt;();</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>};</div>
 </div>
 <div class="ttc" id="aclass_category__k_html"><div class="ttname"><a href="class_category__k.html">Category_k</a></div><div class="ttdoc">Metadata to categorize objects: curves, audio, etc.</div></div>
 <div class="ttc" id="aclass_object_key__k_html"><div class="ttname"><a href="class_object_key__k.html">ObjectKey_k</a></div><div class="ttdoc">Metadata to get the key part of ObjectIdentifier.</div></div>
@@ -435,11 +434,12 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa">Process::SupportsState</a></div><div class="ttdeci">@ SupportsState</div><div class="ttdoc">Can be loaded in a state.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:25</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96">Process::SupportsTemporal</a></div><div class="ttdeci">@ SupportsTemporal</div><div class="ttdoc">Can be loaded as a process of an interval.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:19</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af">Process::NodeHasNoBackground</a></div><div class="ttdeci">@ NodeHasNoBackground</div><div class="ttdoc">No background will be drawn for the node.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:80</div></div>
+<div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e">Process::Deprecated</a></div><div class="ttdeci">@ Deprecated</div><div class="ttdoc">Process kind is deprecated.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:83</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85">Process::DynamicPorts</a></div><div class="ttdeci">@ DynamicPorts</div><div class="ttdoc">The process has a variable structure, e.g. its ports can change dynamically.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:59</div></div>
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e">Process::FullyCustomItem</a></div><div class="ttdeci">@ FullyCustomItem</div><div class="ttdoc">The process's item handles all the decoration (won't be title, etc)</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:40</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Factories.hpp:19</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition</b> lib/score/tools/Metadata.hpp:36</div></div>
-<div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition</b> score-lib-process/Process/ProcessMetadata.hpp:37</div></div>
+<div class="ttc" id="astruct_process_1_1_descriptor_html"><div class="ttname"><a href="struct_process_1_1_descriptor.html">Process::Descriptor</a></div><div class="ttdef"><b>Definition</b> score-lib-process/Process/ProcessMetadata.hpp:36</div></div>
 <div class="ttc" id="astruct_process_port_visitor_html"><div class="ttname"><a href="struct_process_port_visitor.html">ProcessPortVisitor</a></div><div class="ttdef"><b>Definition</b> plugins/score-plugin-avnd/Crousti/Metadata.hpp:75</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

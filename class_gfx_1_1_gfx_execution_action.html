@@ -124,7 +124,7 @@ Inheritance diagram for Gfx::GfxExecutionAction:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aac27b64227366252bf1decdcdde30c2a" id="r_aac27b64227366252bf1decdcdde30c2a"><td class="memItemLeft" align="right" valign="top"><a id="aac27b64227366252bf1decdcdde30c2a" name="aac27b64227366252bf1decdcdde30c2a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>edge_queue</b> = moodycamel::ConcurrentQueue&lt; EdgeSpec &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>edge_queue</b> = moodycamel::ConcurrentQueue&lt; <a class="el" href="struct_gfx_1_1_edge_spec.html">EdgeSpec</a> &gt;</td></tr>
 <tr class="separator:aac27b64227366252bf1decdcdde30c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -140,9 +140,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseMessage</b> (<
 <tr class="separator:aefdbbd7af87ee30daafce202351f97b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe7e9eac9e269934aa0235a0cc3b1e4e" id="r_abe7e9eac9e269934aa0235a0cc3b1e4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_execution_action.html#abe7e9eac9e269934aa0235a0cc3b1e4e">startTick</a> (const ossia::audio_tick_state &amp;st) override</td></tr>
 <tr class="separator:abe7e9eac9e269934aa0235a0cc3b1e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e01bf0df06ea988a47fb0c7127783a" id="r_a85e01bf0df06ea988a47fb0c7127783a"><td class="memItemLeft" align="right" valign="top"><a id="a85e01bf0df06ea988a47fb0c7127783a" name="a85e01bf0df06ea988a47fb0c7127783a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEdge</b> (port_index source, port_index sink)</td></tr>
-<tr class="separator:a85e01bf0df06ea988a47fb0c7127783a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead7611e6a9a02eb4a470e19a3668cfb" id="r_aead7611e6a9a02eb4a470e19a3668cfb"><td class="memItemLeft" align="right" valign="top"><a id="aead7611e6a9a02eb4a470e19a3668cfb" name="aead7611e6a9a02eb4a470e19a3668cfb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEdge</b> (port_index source, port_index sink, Process::CableType t)</td></tr>
+<tr class="separator:aead7611e6a9a02eb4a470e19a3668cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7dc49620226e4f02b9eb0dbcd1e4d3d" id="r_aa7dc49620226e4f02b9eb0dbcd1e4d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_execution_action.html#aa7dc49620226e4f02b9eb0dbcd1e4d3d">endTick</a> (const ossia::audio_tick_state &amp;st) override</td></tr>
 <tr class="separator:aa7dc49620226e4f02b9eb0dbcd1e4d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
@@ -157,10 +157,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b> {}</td></tr>
 <tr class="separator:a9d493b637b092309db06f0c39f562b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ef9ae481bff0b3eb6b561813fd551f0" id="r_a6ef9ae481bff0b3eb6b561813fd551f0"><td class="memItemLeft" align="right" valign="top"><a id="a6ef9ae481bff0b3eb6b561813fd551f0" name="a6ef9ae481bff0b3eb6b561813fd551f0"></a>
-std::vector&lt; EdgeSpec &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
+std::vector&lt; <a class="el" href="struct_gfx_1_1_edge_spec.html">EdgeSpec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>prev_edges</b></td></tr>
 <tr class="separator:a6ef9ae481bff0b3eb6b561813fd551f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642a79465f5f8af0d6e98ced8e99cc76" id="r_a642a79465f5f8af0d6e98ced8e99cc76"><td class="memItemLeft" align="right" valign="top"><a id="a642a79465f5f8af0d6e98ced8e99cc76" name="a642a79465f5f8af0d6e98ced8e99cc76"></a>
-std::vector&lt; EdgeSpec &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges_cache</b></td></tr>
+std::vector&lt; <a class="el" href="struct_gfx_1_1_edge_spec.html">EdgeSpec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>edges_cache</b></td></tr>
 <tr class="separator:a642a79465f5f8af0d6e98ced8e99cc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5197234019f84664e49b27dac7cb2b5f" id="r_a5197234019f84664e49b27dac7cb2b5f"><td class="memItemLeft" align="right" valign="top"><a id="a5197234019f84664e49b27dac7cb2b5f" name="a5197234019f84664e49b27dac7cb2b5f"></a>
 edge_queue&#160;</td><td class="memItemRight" valign="bottom"><b>incoming_edges</b></td></tr>

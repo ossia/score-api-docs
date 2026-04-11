@@ -7,6 +7,10 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
     [ "ArrayToTexture.hpp", "_array_to_texture_8hpp_source.html", null ],
     [ "BufferLoader.hpp", "_buffer_loader_8hpp_source.html", null ],
     [ "BufferToGeometry.hpp", "_buffer_to_geometry_8hpp_source.html", null ],
+    [ "BufferToGeometry2.hpp", "_buffer_to_geometry2_8hpp_source.html", null ],
+    [ "BufferToGeometryCommon.hpp", "_buffer_to_geometry_common_8hpp_source.html", null ],
+    [ "CubemapComposer.hpp", "_cubemap_composer_8hpp_source.html", null ],
+    [ "CubemapLoader.hpp", "_cubemap_loader_8hpp_source.html", null ],
     [ "plugins/score-plugin-threedim/Threedim/Debug.hpp", "plugins_2score-plugin-threedim_2_threedim_2_debug_8hpp_source.html", null ],
     [ "GeometryInfo.hpp", "_geometry_info_8hpp_source.html", null ],
     [ "GeometryPacker.hpp", "_geometry_packer_8hpp_source.html", null ],
@@ -20,5 +24,7 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
     [ "Primitive.hpp", "_primitive_8hpp_source.html", null ],
     [ "StructureSynth.hpp", "_structure_synth_8hpp_source.html", null ],
     [ "TextureToBuffer.hpp", "_texture_to_buffer_8hpp_source.html", null ],
-    [ "TinyObj.hpp", "_tiny_obj_8hpp_source.html", null ]
+    [ "TinyObj.hpp", "_tiny_obj_8hpp_source.html", null ],
+    [ "Vox.hpp", "_vox_8hpp_source.html", null ],
+    [ "VoxelLoader.hpp", "_voxel_loader_8hpp_source.html", null ]
 ];

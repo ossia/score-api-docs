@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('_gpu_formats_8hpp_source.html',''); in
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>}</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">inline</span> std::string <a class="code hl_function" href="namespacescore_1_1gfx.html#a1a88b46411a3cb191efe532dca7dc7a9">hwCodecName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* codec_name, AVHWDeviceType device)</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="keyword">inline</span> std::string <a class="code hl_function" href="namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0">hwCodecName</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* codec_name, AVHWDeviceType device)</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>{</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  std::string name{codec_name};</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keywordflow">switch</span>(device)</div>
@@ -436,7 +436,7 @@ $(document).ready(function(){initNavTree('_gpu_formats_8hpp_source.html',''); in
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  }</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>}</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a3b1a3961a792d3320aac021d5c6fa76b">codecSupportsHWPixelFormat</a>(</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#aa2a12eab0b01271aa477854a9b4d2c63">codecSupportsHWPixelFormat</a>(</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    AVCodecID codec_id, AVPixelFormat pix_fmt, uint32_t gpuVendorId = 0)</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>{</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  (void)gpuVendorId;</div>
@@ -449,7 +449,7 @@ $(document).ready(function(){initNavTree('_gpu_formats_8hpp_source.html',''); in
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordflow">if</span>(!codec)</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">auto</span> dedicated = <a class="code hl_function" href="namespacescore_1_1gfx.html#a1a88b46411a3cb191efe532dca7dc7a9">hwCodecName</a>(codec-&gt;name, hwInfo.device);</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">auto</span> dedicated = <a class="code hl_function" href="namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0">hwCodecName</a>(codec-&gt;name, hwInfo.device);</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keywordflow">if</span>(!dedicated.empty() &amp;&amp; dedicated != codec-&gt;name)</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  {</div>
 <div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    <span class="keywordflow">if</span>(avcodec_find_decoder_by_name(dedicated.c_str()))</div>
@@ -586,13 +586,13 @@ $(document).ready(function(){initNavTree('_gpu_formats_8hpp_source.html',''); in
 <div class="line"><a id="l00483" name="l00483"></a><span class="lineno">  483</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : candidates)</div>
 <div class="line"><a id="l00484" name="l00484"></a><span class="lineno">  484</span>  {</div>
 <div class="line"><a id="l00485" name="l00485"></a><span class="lineno">  485</span>    <span class="keywordflow">if</span>(hardwareDecoderIsAvailable(c.fmt)</div>
-<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>       &amp;&amp; <a class="code hl_function" href="namespacescore_1_1gfx.html#a3b1a3961a792d3320aac021d5c6fa76b">codecSupportsHWPixelFormat</a>(codec_id, c.fmt, gpuVendorId))</div>
+<div class="line"><a id="l00486" name="l00486"></a><span class="lineno">  486</span>       &amp;&amp; <a class="code hl_function" href="namespacescore_1_1gfx.html#aa2a12eab0b01271aa477854a9b4d2c63">codecSupportsHWPixelFormat</a>(codec_id, c.fmt, gpuVendorId))</div>
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>      result.push_back(c.fmt);</div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  }</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span>}</div>
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span> </div>
-<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="keyword">inline</span> AVPixelFormat <a class="code hl_function" href="namespacescore_1_1gfx.html#a6bafd0cbfed36e17ea43c7a530322092">selectHardwareAcceleration</a>(</div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="keyword">inline</span> AVPixelFormat <a class="code hl_function" href="namespacescore_1_1gfx.html#a258018916d9848c4ad504f79535ebd7d">selectHardwareAcceleration</a>(</div>
 <div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span>    <span class="keywordtype">int</span> graphicsApi, AVCodecID codec_id, uint32_t gpuVendorId = 0)</div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno">  495</span>{</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>  <span class="keyword">auto</span> fmts = selectHardwareAccelerations(graphicsApi, codec_id, gpuVendorId);</div>
@@ -603,9 +603,9 @@ $(document).ready(function(){initNavTree('_gpu_formats_8hpp_source.html',''); in
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span>}</div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span> </div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a1a88b46411a3cb191efe532dca7dc7a9"><div class="ttname"><a href="namespacescore_1_1gfx.html#a1a88b46411a3cb191efe532dca7dc7a9">score::gfx::hwCodecName</a></div><div class="ttdeci">std::string hwCodecName(const char *codec_name, AVHWDeviceType device)</div><div class="ttdoc">Delegates to Video::hwCodecName (score-plugin-gfx wrapper)</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:18</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a3b1a3961a792d3320aac021d5c6fa76b"><div class="ttname"><a href="namespacescore_1_1gfx.html#a3b1a3961a792d3320aac021d5c6fa76b">score::gfx::codecSupportsHWPixelFormat</a></div><div class="ttdeci">bool codecSupportsHWPixelFormat(AVCodecID codec_id, AVPixelFormat pix_fmt)</div><div class="ttdoc">Delegates to Video::codecSupportsHWPixelFormat (score-plugin-gfx wrapper)</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:27</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a6bafd0cbfed36e17ea43c7a530322092"><div class="ttname"><a href="namespacescore_1_1gfx.html#a6bafd0cbfed36e17ea43c7a530322092">score::gfx::selectHardwareAcceleration</a></div><div class="ttdeci">AVPixelFormat selectHardwareAcceleration(score::gfx::GraphicsApi api, AVCodecID codec_id, QRhi *rhi)</div><div class="ttdoc">Picks the best HW accel for the given API/codec, using QRhi for vendor detection.</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:36</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a258018916d9848c4ad504f79535ebd7d"><div class="ttname"><a href="namespacescore_1_1gfx.html#a258018916d9848c4ad504f79535ebd7d">score::gfx::selectHardwareAcceleration</a></div><div class="ttdeci">AVPixelFormat selectHardwareAcceleration(score::gfx::GraphicsApi api, AVCodecID codec_id, QRhi *rhi)</div><div class="ttdoc">Picks the best HW accel for the given API/codec, using QRhi for vendor detection.</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:36</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a92fd59953f2b6e16a7360894cee555b0"><div class="ttname"><a href="namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0">score::gfx::hwCodecName</a></div><div class="ttdeci">std::string hwCodecName(const char *codec_name, AVHWDeviceType device)</div><div class="ttdoc">Delegates to Video::hwCodecName (score-plugin-gfx wrapper)</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:18</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_aa2a12eab0b01271aa477854a9b4d2c63"><div class="ttname"><a href="namespacescore_1_1gfx.html#aa2a12eab0b01271aa477854a9b4d2c63">score::gfx::codecSupportsHWPixelFormat</a></div><div class="ttdeci">bool codecSupportsHWPixelFormat(AVCodecID codec_id, AVPixelFormat pix_fmt)</div><div class="ttdoc">Delegates to Video::codecSupportsHWPixelFormat (score-plugin-gfx wrapper)</div><div class="ttdef"><b>Definition</b> HWAccelSetup.cpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

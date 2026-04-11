@@ -161,6 +161,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (boo
 <tr class="memitem:a98d894ff589d1fa80d36a99e59801e8f" id="r_a98d894ff589d1fa80d36a99e59801e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
 <tr class="memdesc:a98d894ff589d1fa80d36a99e59801e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <br /></td></tr>
 <tr class="separator:a98d894ff589d1fa80d36a99e59801e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade6c9eec96117aa9ad415aeed9dad218" id="r_ade6c9eec96117aa9ad415aeed9dad218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ade6c9eec96117aa9ad415aeed9dad218">renderTargetForInputPort</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p) const noexcept</td></tr>
+<tr class="memdesc:ade6c9eec96117aa9ad415aeed9dad218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the render target for a given input port.  <br /></td></tr>
+<tr class="separator:ade6c9eec96117aa9ad415aeed9dad218"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2c35d07c28ff10de0c59288187d2f62" id="r_aa2c35d07c28ff10de0c59288187d2f62"><td class="memItemLeft" align="right" valign="top"><a id="aa2c35d07c28ff10de0c59288187d2f62" name="aa2c35d07c28ff10de0c59288187d2f62"></a>
 <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
 <tr class="separator:aa2c35d07c28ff10de0c59288187d2f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,6 +210,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b> () cons
 <tr class="memitem:ab68845f6d4ca5b83aa92fce4846ffb05" id="r_ab68845f6d4ca5b83aa92fce4846ffb05"><td class="memItemLeft" align="right" valign="top"><a id="ab68845f6d4ca5b83aa92fce4846ffb05" name="ab68845f6d4ca5b83aa92fce4846ffb05"></a>
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>renderSize</b> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *e) const noexcept</td></tr>
 <tr class="separator:ab68845f6d4ca5b83aa92fce4846ffb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34ef31a499d3a47789819f5e61c5350" id="r_ab34ef31a499d3a47789819f5e61c5350"><td class="memItemLeft" align="right" valign="top"><a id="ab34ef31a499d3a47789819f5e61c5350" name="ab34ef31a499d3a47789819f5e61c5350"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createAllInputRenderTargets</b> ()</td></tr>
+<tr class="separator:ab34ef31a499d3a47789819f5e61c5350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -339,6 +345,35 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> = 0</td>
 <li>Render size</li>
 <li>Per-API adjustments and globals </li>
 </ul>
+
+</div>
+</div>
+<a id="ade6c9eec96117aa9ad415aeed9dad218" name="ade6c9eec96117aa9ad415aeed9dad218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade6c9eec96117aa9ad415aeed9dad218">&#9670;&#160;</a></span>renderTargetForInputPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> score::gfx::RenderList::renderTargetForInputPort </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Look up the render target for a given input port. </p>
+<p>All input render targets are created centrally before any node <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> so that they are available regardless of initialization order. </p>
 
 </div>
 </div>

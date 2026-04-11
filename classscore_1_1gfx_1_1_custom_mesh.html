@@ -123,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fd9ee82e4f1664288bdba5ad066c18b" id="r_a6fd9ee82e4f1664288bdba5ad066c18b"><td class="memItemLeft" align="right" valign="top"><a id="a6fd9ee82e4f1664288bdba5ad066c18b" name="a6fd9ee82e4f1664288bdba5ad066c18b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CustomMesh</b> (const ossia::mesh_list &amp;g, const ossia::geometry_filter_list_ptr &amp;f)</td></tr>
 <tr class="separator:a6fd9ee82e4f1664288bdba5ad066c18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a2e596425f0abbc1e83566ffe18f5d" id="r_a14a2e596425f0abbc1e83566ffe18f5d"><td class="memItemLeft" align="right" valign="top"><a id="a14a2e596425f0abbc1e83566ffe18f5d" name="a14a2e596425f0abbc1e83566ffe18f5d"></a>
+const ossia::mesh_list &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>meshList</b> () const noexcept</td></tr>
+<tr class="separator:a14a2e596425f0abbc1e83566ffe18f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4b2b614d3fdae79620b71388e575e62" id="r_ac4b2b614d3fdae79620b71388e575e62"><td class="memItemLeft" align="right" valign="top"><a id="ac4b2b614d3fdae79620b71388e575e62" name="ac4b2b614d3fdae79620b71388e575e62"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>init_vbo</b> (const ossia::geometry::cpu_buffer &amp;buf, QRhi &amp;rhi) const noexcept</td></tr>
 <tr class="separator:ac4b2b614d3fdae79620b71388e575e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +169,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reload</b> (const oss
 <tr class="memitem:afac178980cad286cc271a7f52e4d9cd6" id="r_afac178980cad286cc271a7f52e4d9cd6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#afac178980cad286cc271a7f52e4d9cd6">defaultVertexShader</a> () const noexcept override</td></tr>
 <tr class="memdesc:afac178980cad286cc271a7f52e4d9cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh.  <br /></td></tr>
 <tr class="separator:afac178980cad286cc271a7f52e4d9cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cb7ecb425bdfb3a3a8cde7973c8f32" id="r_a65cb7ecb425bdfb3a3a8cde7973c8f32"><td class="memItemLeft" align="right" valign="top">const ossia::geometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a65cb7ecb425bdfb3a3a8cde7973c8f32">semanticGeometry</a> () const noexcept override</td></tr>
+<tr class="memdesc:a65cb7ecb425bdfb3a3a8cde7973c8f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the underlying semantic geometry if available.  <br /></td></tr>
+<tr class="separator:a65cb7ecb425bdfb3a3a8cde7973c8f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structscore_1_1gfx_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structscore_1_1gfx_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></td></tr>
 <tr class="memitem:a58ec265596d3ffe643c42653596b303a inherit pub_methods_structscore_1_1gfx_1_1_mesh" id="r_a58ec265596d3ffe643c42653596b303a"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometryChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
@@ -343,6 +349,36 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>.</p>
+
+</div>
+</div>
+<a id="a65cb7ecb425bdfb3a3a8cde7973c8f32" name="a65cb7ecb425bdfb3a3a8cde7973c8f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65cb7ecb425bdfb3a3a8cde7973c8f32">&#9670;&#160;</a></span>semanticGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ossia::geometry * score::gfx::CustomMesh::semanticGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the underlying semantic geometry if available. </p>
+<p>Used by buildPipeline() to remap vertex input layouts by matching shader input variable names to geometry attribute semantics. Meshes that carry semantic information (e.g. <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a>) should override this. </p>
+
+<p>Reimplemented from <a class="el" href="structscore_1_1gfx_1_1_mesh.html#a4f48d3301fc0dfc0371bbc2097edac60">score::gfx::Mesh</a>.</p>
 
 </div>
 </div>

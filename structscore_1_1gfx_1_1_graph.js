@@ -1,8 +1,8 @@
 var structscore_1_1gfx_1_1_graph =
 [
     [ "Graph", "structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c", null ],
-    [ "addAndLinkEdge", "structscore_1_1gfx_1_1_graph.html#a30516df5d2ae6aa857533489e7e34c19", null ],
-    [ "addEdge", "structscore_1_1gfx_1_1_graph.html#a27b1df43407c54984e12e5717382c983", null ],
+    [ "addAndLinkEdge", "structscore_1_1gfx_1_1_graph.html#a6af1baed64b20b83f6a59d7b09b672f2", null ],
+    [ "addEdge", "structscore_1_1gfx_1_1_graph.html#a5fc6d53ad6b3643a2d41f2fadab5543a", null ],
     [ "addNode", "structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993", null ],
     [ "canDoVSync", "structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6", null ],
     [ "clearEdges", "structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975", null ],

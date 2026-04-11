@@ -119,6 +119,8 @@ var hierarchy =
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
     [ "Threedim::attribute_lookup", "struct_threedim_1_1attribute__lookup.html", null ],
     [ "halp::position_gpu_geometry::attributes", "structhalp_1_1position__gpu__geometry_1_1attributes.html", null ],
+    [ "score::gfx::RenderedCSFNode::GeometryBinding::AttributeSSBO", "structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_attribute_s_s_b_o.html", null ],
+    [ "Threedim::BuffersToGeometry2::AttributeState", "struct_threedim_1_1_buffers_to_geometry2_1_1_attribute_state.html", null ],
     [ "Threedim::BuffersToGeometry::AttributeState", "struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html", null ],
     [ "audio_channels_attr", "structaudio__channels__attr.html", null ],
     [ "audio_kind_attr", "structaudio__kind__attr.html", null ],
@@ -146,6 +148,7 @@ var hierarchy =
     [ "Video::AudioRingBuffer", "struct_video_1_1_audio_ring_buffer.html", null ],
     [ "score::gfx::AudioTexture", "structscore_1_1gfx_1_1_audio_texture.html", null ],
     [ "score::gfx::AudioTextureUpload", "structscore_1_1gfx_1_1_audio_texture_upload.html", null ],
+    [ "score::gfx::RenderedCSFNode::GeometryBinding::AuxiliarySSBO", "structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_auxiliary_s_s_b_o.html", null ],
     [ "ControlSurface::NodeObserver< Identifier, Func >::AvailableNode", "struct_control_surface_1_1_node_observer_1_1_available_node.html", null ],
     [ "vst3::AvailablePlugin", "structvst3_1_1_available_plugin.html", null ],
     [ "Media::AVCodecContext_Free", "struct_media_1_1_a_v_codec_context___free.html", null ],
@@ -181,6 +184,7 @@ var hierarchy =
     [ "score::BrushSet", "structscore_1_1_brush_set.html", null ],
     [ "halp::position_gpu_geometry::buffers", "structhalp_1_1position__gpu__geometry_1_1buffers.html", null ],
     [ "Threedim::BuffersToGeometry", "class_threedim_1_1_buffers_to_geometry.html", null ],
+    [ "Threedim::BuffersToGeometry2", "class_threedim_1_1_buffers_to_geometry2.html", null ],
     [ "score::gfx::BufferView", "structscore_1_1gfx_1_1_buffer_view.html", null ],
     [ "vst3::BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
@@ -653,6 +657,8 @@ var hierarchy =
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
     [ "Gfx::CornerWarp", "struct_gfx_1_1_corner_warp.html", null ],
     [ "Scenario::CSPCoherencyCheckerInterface", "class_scenario_1_1_c_s_p_coherency_checker_interface.html", null ],
+    [ "Threedim::CubemapComposer", "class_threedim_1_1_cubemap_composer.html", null ],
+    [ "Threedim::CubemapLoader", "class_threedim_1_1_cubemap_loader.html", null ],
     [ "Scenario::CurveCreator", "struct_scenario_1_1_curve_creator.html", null ],
     [ "Curve::CurveDataHash", "class_curve_1_1_curve_data_hash.html", null ],
     [ "Curve::CurveDomain", "struct_curve_1_1_curve_domain.html", null ],
@@ -767,6 +773,7 @@ var hierarchy =
     [ "score::gfx::Edge", "structscore_1_1gfx_1_1_edge.html", null ],
     [ "Gfx::EdgeBlend", "struct_gfx_1_1_edge_blend.html", null ],
     [ "score::gfx::MultiWindowNode::EdgeBlendData", "structscore_1_1gfx_1_1_multi_window_node_1_1_edge_blend_data.html", null ],
+    [ "Gfx::EdgeSpec", "struct_gfx_1_1_edge_spec.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
     [ "avnd_tools::detail::element_accessor< Dim, CurrentIdx >", "structavnd__tools_1_1detail_1_1element__accessor.html", null ],
@@ -836,10 +843,12 @@ var hierarchy =
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
     [ "avnd_tools::detail::extent_generator< Dim >", "structavnd__tools_1_1detail_1_1extent__generator.html", null ],
+    [ "Threedim::extra_attribute", "struct_threedim_1_1extra__attribute.html", null ],
     [ "Threedim::ExtractBuffer", "class_threedim_1_1_extract_buffer.html", null ],
     [ "Face", null, [
       [ "Threedim::TFace", "class_threedim_1_1_t_face.html", null ]
     ] ],
+    [ "Threedim::CubemapLoader::FaceRT", "struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html", null ],
     [ "Factor::FactorOracle< T >", "class_factor_1_1_factor_oracle.html", null ],
     [ "Nodes::FactorOracle::FactorOracle", "class_nodes_1_1_factor_oracle_1_1_factor_oracle.html", null ],
     [ "FactorOracle2MIDI::FactorOracle2MIDI< T >", "class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html", null ],
@@ -907,7 +916,8 @@ var hierarchy =
     [ "bitfocus::module_data::feedback_definition", "structbitfocus_1_1module__data_1_1feedback__definition.html", null ],
     [ "bitfocus::module_data::feedback_instance", "structbitfocus_1_1module__data_1_1feedback__instance.html", null ],
     [ "halp::file_port", null, [
-      [ "Threedim::ObjLoader::ins::obj_t", "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html", null ]
+      [ "Threedim::ObjLoader::ins::obj_t", "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html", null ],
+      [ "Threedim::VoxelLoader::ins::vox_t", "struct_threedim_1_1_voxel_loader_1_1ins_1_1vox__t.html", null ]
     ] ],
     [ "WidgetFactory::FileChooser", "struct_widget_factory_1_1_file_chooser.html", null ],
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
@@ -986,6 +996,7 @@ var hierarchy =
     [ "Gfx::GPhoto2::gphoto2_camera", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera.html", null ],
     [ "Gfx::GPhoto2::GPhoto2Settings", "struct_gfx_1_1_g_photo2_1_1_g_photo2_settings.html", null ],
     [ "Threedim::gpu_buffer_view", "struct_threedim_1_1gpu__buffer__view.html", null ],
+    [ "score::gfx::GPUBufferScatter", "classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
       [ "score::gfx::DXVDecoder", "structscore_1_1gfx_1_1_d_x_v_decoder.html", null ],
       [ "score::gfx::DXVYCoCgDecoder", "structscore_1_1gfx_1_1_d_x_v_y_co_cg_decoder.html", null ],
@@ -1262,8 +1273,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1313,7 +1324,10 @@ var hierarchy =
     [ "Nodes::RateLimiter::Node::ins", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html", null ],
     [ "Threedim::ArrayToMesh::ins", "struct_threedim_1_1_array_to_mesh_1_1ins.html", null ],
     [ "Threedim::ArrayToTexture::ins", "struct_threedim_1_1_array_to_texture_1_1ins.html", null ],
+    [ "Threedim::BuffersToGeometry2::ins", "struct_threedim_1_1_buffers_to_geometry2_1_1ins.html", null ],
     [ "Threedim::BuffersToGeometry::ins", "struct_threedim_1_1_buffers_to_geometry_1_1ins.html", null ],
+    [ "Threedim::CubemapComposer::ins", "struct_threedim_1_1_cubemap_composer_1_1ins.html", null ],
+    [ "Threedim::CubemapLoader::ins", "struct_threedim_1_1_cubemap_loader_1_1ins.html", null ],
     [ "Threedim::ExtractBuffer::ins", "struct_threedim_1_1_extract_buffer_1_1ins.html", null ],
     [ "Threedim::GeometryPacker::ins", "struct_threedim_1_1_geometry_packer_1_1ins.html", null ],
     [ "Threedim::ObjLoader::ins", "struct_threedim_1_1_obj_loader_1_1ins.html", null ],
@@ -1321,6 +1335,7 @@ var hierarchy =
     [ "Threedim::PCLToMesh::ins", "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html", null ],
     [ "Threedim::StrucSynth::ins", "struct_threedim_1_1_struc_synth_1_1ins.html", null ],
     [ "Threedim::TextureToBuffer::ins", "struct_threedim_1_1_texture_to_buffer_1_1ins.html", null ],
+    [ "Threedim::VoxelLoader::ins", "struct_threedim_1_1_voxel_loader_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
@@ -1436,6 +1451,7 @@ var hierarchy =
         [ "Gfx::CSF::LibraryHandler", "class_gfx_1_1_c_s_f_1_1_library_handler.html", null ],
         [ "Gfx::Filter::LibraryHandler", "class_gfx_1_1_filter_1_1_library_handler.html", null ],
         [ "Gfx::GeometryFilter::LibraryHandler", "class_gfx_1_1_geometry_filter_1_1_library_handler.html", null ],
+        [ "Gfx::RawRasterLibraryHandler", "class_gfx_1_1_raw_raster_library_handler.html", null ],
         [ "Gfx::VSA::LibraryHandler", "class_gfx_1_1_v_s_a_1_1_library_handler.html", null ],
         [ "Gfx::Video::LibraryHandler", "class_gfx_1_1_video_1_1_library_handler.html", null ],
         [ "JS::ConsoleLibraryHandler", "class_j_s_1_1_console_library_handler.html", null ],
@@ -1450,8 +1466,6 @@ var hierarchy =
         [ "Protocols::OSCLibraryHandler", "class_protocols_1_1_o_s_c_library_handler.html", null ],
         [ "Scenario::ScenarioLibraryHandler", "class_scenario_1_1_scenario_library_handler.html", null ],
         [ "Scenario::SlotLibraryHandler", "class_scenario_1_1_slot_library_handler.html", null ],
-        [ "Threedim::OBJLibraryHandler", "class_threedim_1_1_o_b_j_library_handler.html", null ],
-        [ "Threedim::SSynthLibraryHandler", "class_threedim_1_1_s_synth_library_handler.html", null ],
         [ "YSFX::LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
         [ "vst3::LibraryHandler", "classvst3_1_1_library_handler.html", null ],
         [ "vst::LibraryHandler", "classvst_1_1_library_handler.html", null ]
@@ -1520,8 +1534,6 @@ var hierarchy =
         [ "Patternist::DropHandler", "class_patternist_1_1_drop_handler.html", null ],
         [ "Pd::DropHandler", "class_pd_1_1_drop_handler.html", null ],
         [ "Scenario::ProcessDataDropHandler", "class_scenario_1_1_process_data_drop_handler.html", null ],
-        [ "Threedim::OBJDropHandler", "class_threedim_1_1_o_b_j_drop_handler.html", null ],
-        [ "Threedim::SSynthDropHandler", "class_threedim_1_1_s_synth_drop_handler.html", null ],
         [ "YSFX::DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ]
       ] ],
       [ "Process::ProcessModelFactory", "class_process_1_1_process_model_factory.html", [
@@ -1957,6 +1969,7 @@ var hierarchy =
     [ "Midi::MidiStyle", "struct_midi_1_1_midi_style.html", null ],
     [ "mtk::MIDISyncOut", "structmtk_1_1_m_i_d_i_sync_out.html", null ],
     [ "Midi::MidiTrack", "struct_midi_1_1_midi_track.html", null ],
+    [ "Threedim::MikkTSpaceUserData", "struct_threedim_1_1_mikk_t_space_user_data.html", null ],
     [ "Mime< T >", "struct_mime.html", null ],
     [ "MimeDataReader", "struct_mime_data_reader.html", [
       [ "MimeReader< Device::NodeList >", "struct_mime_reader_3_01_device_1_1_node_list_01_4.html", null ],
@@ -2005,6 +2018,7 @@ var hierarchy =
     [ "State::DestinationQualifiers ::W_MetaObjectCreatorHelper::Name", "struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper_1_1_name.html", null ],
     [ "avnd_tools::detail::needs_resize_check< Dim >", "structavnd__tools_1_1detail_1_1needs__resize__check.html", null ],
     [ "Scenario::NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
+    [ "score::gfx::no_delay_edges", "structscore_1_1gfx_1_1no__delay__edges.html", null ],
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
     [ "Scenario::NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
@@ -2271,6 +2285,7 @@ var hierarchy =
     ] ],
     [ "score::PanelStatus", "structscore_1_1_panel_status.html", null ],
     [ "Recording::ParameterPolicy", "struct_recording_1_1_parameter_policy.html", null ],
+    [ "score::gfx::GPUBufferScatter::Params", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_params.html", null ],
     [ "ParentComponent_T", null, [
       [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >", "classscore_1_1_component_hierarchy_manager.html", null ],
       [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >", "classscore_1_1_polymorphic_component_hierarchy_manager.html", null ]
@@ -2302,8 +2317,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2420,6 +2435,8 @@ var hierarchy =
     [ "score::PluginLoader::PluginDependencyGraph", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html", null ],
     [ "vst3::vst_node_base::PluginHandle", "structvst3_1_1vst__node__base_1_1_plugin_handle.html", null ],
     [ "Clap::PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
+    [ "Threedim::PlyNameAlias", "struct_threedim_1_1_ply_name_alias.html", null ],
+    [ "Threedim::PlyPropertyGroup", "struct_threedim_1_1_ply_property_group.html", null ],
     [ "oscr::pmf_member_type< T >", "structoscr_1_1pmf__member__type.html", null ],
     [ "oscr::pmf_member_type< V T::* >", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html", null ],
     [ "Scenario::Point", "struct_scenario_1_1_point.html", null ],
@@ -2431,12 +2448,14 @@ var hierarchy =
     [ "oscr::Port", "structoscr_1_1_port.html", null ],
     [ "score::gfx::Port", "structscore_1_1gfx_1_1_port.html", null ],
     [ "score::gfx::port_indices", "structscore_1_1gfx_1_1port__indices.html", null ],
+    [ "serial::port_info", "structserial_1_1port__info.html", null ],
     [ "Audio::PortAudioCard", "struct_audio_1_1_port_audio_card.html", null ],
     [ "Audio::PortAudioScope", "struct_audio_1_1_port_audio_scope.html", null ],
     [ "vst3::PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
     [ "Process::PortItemLayout", "struct_process_1_1_port_item_layout.html", null ],
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "halp::position_gpu_geometry", "structhalp_1_1position__gpu__geometry.html", null ],
+    [ "score::gfx::GPUBufferScatter::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_prepared_op.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
@@ -3512,8 +3531,6 @@ var hierarchy =
       [ "Selectable", "class_selectable.html", null ],
       [ "ShowRackInViewModelTest", "class_show_rack_in_view_model_test.html", null ],
       [ "SplitTimeSyncTest", "class_split_time_sync_test.html", null ],
-      [ "Threedim::OBJLibraryHandler", "class_threedim_1_1_o_b_j_library_handler.html", null ],
-      [ "Threedim::SSynthLibraryHandler", "class_threedim_1_1_s_synth_library_handler.html", null ],
       [ "TimeSyncModelTests", "class_time_sync_model_tests.html", null ],
       [ "ToolPaletteInputDispatcher< Tool_T, ToolPalette_T, Context_T, Input_T >", "class_tool_palette_input_dispatcher.html", null ],
       [ "Transport::TransportInterface", "class_transport_1_1_transport_interface.html", null ],
@@ -4467,6 +4484,7 @@ var hierarchy =
     [ "Nodes::MathMapping::Node::ui", "struct_nodes_1_1_math_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::MicroMapping::Node::ui", "struct_nodes_1_1_micro_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::RateLimiter::Node::ui", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html", null ],
+    [ "Threedim::BuffersToGeometry2::ui", "struct_threedim_1_1_buffers_to_geometry2_1_1ui.html", null ],
     [ "Threedim::BuffersToGeometry::ui", "struct_threedim_1_1_buffers_to_geometry_1_1ui.html", null ],
     [ "UI", null, [
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", null ],
@@ -4560,6 +4578,7 @@ var hierarchy =
     [ "visitor_object_tag", "structvisitor__object__tag.html", null ],
     [ "visitor_template_tag", "structvisitor__template__tag.html", null ],
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
+    [ "Threedim::VoxelLoader", "class_threedim_1_1_voxel_loader.html", null ],
     [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst3::VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],

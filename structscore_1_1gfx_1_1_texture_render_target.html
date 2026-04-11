@@ -120,6 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c68fec5b45cf4b88f262bed320b1dd0" id="r_a7c68fec5b45cf4b88f262bed320b1dd0"><td class="memItemLeft" align="right" valign="top"><a id="a7c68fec5b45cf4b88f262bed320b1dd0" name="a7c68fec5b45cf4b88f262bed320b1dd0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const noexcept</td></tr>
 <tr class="separator:a7c68fec5b45cf4b88f262bed320b1dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b70ae65479595c8a80d9b124293fd1" id="r_a56b70ae65479595c8a80d9b124293fd1"><td class="memItemLeft" align="right" valign="top"><a id="a56b70ae65479595c8a80d9b124293fd1" name="a56b70ae65479595c8a80d9b124293fd1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>colorAttachmentCount</b> () const noexcept</td></tr>
+<tr class="separator:a56b70ae65479595c8a80d9b124293fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe2ddcc076c32aacdfd5f740f9b707c" id="r_a6fe2ddcc076c32aacdfd5f740f9b707c"><td class="memItemLeft" align="right" valign="top"><a id="a6fe2ddcc076c32aacdfd5f740f9b707c" name="a6fe2ddcc076c32aacdfd5f740f9b707c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>sampleCount</b> () const noexcept</td></tr>
+<tr class="separator:a6fe2ddcc076c32aacdfd5f740f9b707c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d7728b0d7222c68fa1e70581d6e79c" id="r_a37d7728b0d7222c68fa1e70581d6e79c"><td class="memItemLeft" align="right" valign="top"><a id="a37d7728b0d7222c68fa1e70581d6e79c" name="a37d7728b0d7222c68fa1e70581d6e79c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="separator:a37d7728b0d7222c68fa1e70581d6e79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,12 +135,21 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0aca7e827e4bbaf25cd10bc37ccca524" id="r_a0aca7e827e4bbaf25cd10bc37ccca524"><td class="memItemLeft" align="right" valign="top"><a id="a0aca7e827e4bbaf25cd10bc37ccca524" name="a0aca7e827e4bbaf25cd10bc37ccca524"></a>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b> {}</td></tr>
 <tr class="separator:a0aca7e827e4bbaf25cd10bc37ccca524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4eedaade7e3d59507a499eee10261a5" id="r_ac4eedaade7e3d59507a499eee10261a5"><td class="memItemLeft" align="right" valign="top"><a id="ac4eedaade7e3d59507a499eee10261a5" name="ac4eedaade7e3d59507a499eee10261a5"></a>
+std::vector&lt; QRhiTexture * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>additionalColorTextures</b></td></tr>
+<tr class="separator:ac4eedaade7e3d59507a499eee10261a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09782f57498b42dc682006b0e42d3371" id="r_a09782f57498b42dc682006b0e42d3371"><td class="memItemLeft" align="right" valign="top"><a id="a09782f57498b42dc682006b0e42d3371" name="a09782f57498b42dc682006b0e42d3371"></a>
 QRhiRenderBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>colorRenderBuffer</b> {}</td></tr>
 <tr class="separator:a09782f57498b42dc682006b0e42d3371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a97edb06b2ccff2b423419cf1bd79bc" id="r_a4a97edb06b2ccff2b423419cf1bd79bc"><td class="memItemLeft" align="right" valign="top"><a id="a4a97edb06b2ccff2b423419cf1bd79bc" name="a4a97edb06b2ccff2b423419cf1bd79bc"></a>
 QRhiRenderBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>depthRenderBuffer</b> {}</td></tr>
 <tr class="separator:a4a97edb06b2ccff2b423419cf1bd79bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b4493905f2a0659ffd6d53f067397c4" id="r_a6b4493905f2a0659ffd6d53f067397c4"><td class="memItemLeft" align="right" valign="top"><a id="a6b4493905f2a0659ffd6d53f067397c4" name="a6b4493905f2a0659ffd6d53f067397c4"></a>
+QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>depthTexture</b> {}</td></tr>
+<tr class="separator:a6b4493905f2a0659ffd6d53f067397c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c7a4994b42b4a95f0ed15cc7b52965" id="r_af8c7a4994b42b4a95f0ed15cc7b52965"><td class="memItemLeft" align="right" valign="top"><a id="af8c7a4994b42b4a95f0ed15cc7b52965" name="af8c7a4994b42b4a95f0ed15cc7b52965"></a>
+QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>msDepthTexture</b> {}</td></tr>
+<tr class="separator:af8c7a4994b42b4a95f0ed15cc7b52965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4957b19dcad73c927b9e3ee39991f473" id="r_a4957b19dcad73c927b9e3ee39991f473"><td class="memItemLeft" align="right" valign="top"><a id="a4957b19dcad73c927b9e3ee39991f473" name="a4957b19dcad73c927b9e3ee39991f473"></a>
 QRhiRenderPassDescriptor *&#160;</td><td class="memItemRight" valign="bottom"><b>renderPass</b> {}</td></tr>
 <tr class="separator:a4957b19dcad73c927b9e3ee39991f473"><td class="memSeparator" colspan="2">&#160;</td></tr>

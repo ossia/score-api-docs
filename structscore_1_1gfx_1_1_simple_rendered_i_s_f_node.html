@@ -123,10 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a571912a0d6ffe3acbbeb9a547920679a" id="r_a571912a0d6ffe3acbbeb9a547920679a"><td class="memItemLeft" align="right" valign="top"><a id="a571912a0d6ffe3acbbeb9a547920679a" name="a571912a0d6ffe3acbbeb9a547920679a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SimpleRenderedISFNode</b> (const <a class="el" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a> &amp;node) noexcept</td></tr>
 <tr class="separator:a571912a0d6ffe3acbbeb9a547920679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca43b3cd890f1ab9ca3537733831fef1" id="r_aca43b3cd890f1ab9ca3537733831fef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#aca43b3cd890f1ab9ca3537733831fef1">renderTargetForInput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p) override</td></tr>
-<tr class="separator:aca43b3cd890f1ab9ca3537733831fef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9262a234d9fa85d2c4e788e6a52b615c" id="r_a9262a234d9fa85d2c4e788e6a52b615c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a9262a234d9fa85d2c4e788e6a52b615c">updateInputTexture</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, QRhiTexture *tex) override</td></tr>
 <tr class="separator:a9262a234d9fa85d2c4e788e6a52b615c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9597e36cb4ed688f51dd83fed15fc4" id="r_afa9597e36cb4ed688f51dd83fed15fc4"><td class="memItemLeft" align="right" valign="top">QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#afa9597e36cb4ed688f51dd83fed15fc4">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output) override</td></tr>
+<tr class="separator:afa9597e36cb4ed688f51dd83fed15fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5e20591306246ce718ec95db64af3f2" id="r_ac5e20591306246ce718ec95db64af3f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ac5e20591306246ce718ec95db64af3f2">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
 <tr class="separator:ac5e20591306246ce718ec95db64af3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768d6a26389823285af3235c0951bd86" id="r_a768d6a26389823285af3235c0951bd86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a768d6a26389823285af3235c0951bd86">update</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *edge) override</td></tr>
@@ -141,14 +141,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8403de351fee4cf2990283c63cc8e1c0 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a8403de351fee4cf2990283c63cc8e1c0"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>NodeRenderer</b> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;node)</td></tr>
 <tr class="separator:a8403de351fee4cf2990283c63cc8e1c0 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8148a74decf5625da7ad67b715759316 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a8148a74decf5625da7ad67b715759316"><td class="memItemLeft" align="right" valign="top">
+virtual <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input)</td></tr>
+<tr class="separator:a8148a74decf5625da7ad67b715759316 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0075cc63689dc01df620f5c58a70abd4 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a0075cc63689dc01df620f5c58a70abd4"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input)</td></tr>
 <tr class="separator:a0075cc63689dc01df620f5c58a70abd4 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c79c917b2fe655d96bb0669711a1d99 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a8c79c917b2fe655d96bb0669711a1d99"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForOutput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
 <tr class="separator:a8c79c917b2fe655d96bb0669711a1d99 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae350342d608a9f725d0a5be082421987 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_ae350342d608a9f725d0a5be082421987"><td class="memItemLeft" align="right" valign="top">virtual QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae350342d608a9f725d0a5be082421987">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
-<tr class="separator:ae350342d608a9f725d0a5be082421987 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2730bcef91168ca755cb5e8c6b6dc7 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a0a2730bcef91168ca755cb5e8c6b6dc7">inputAboutToFinish</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p, QRhiResourceUpdateBatch *&amp;)</td></tr>
 <tr class="separator:a0a2730bcef91168ca755cb5e8c6b6dc7 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4ba7581605702479a1e2b9899a83f6 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_ada4ba7581605702479a1e2b9899a83f6"><td class="memItemLeft" align="right" valign="top">
@@ -170,6 +171,8 @@ const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;<
 <tr class="memitem:a569e44aa1e4837f7edf5e47111bd9b47 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer" id="r_a569e44aa1e4837f7edf5e47111bd9b47"><td class="memItemLeft" align="right" valign="top">ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a569e44aa1e4837f7edf5e47111bd9b47">geometry</a></td></tr>
 <tr class="memdesc:a569e44aa1e4837f7edf5e47111bd9b47 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <br /></td></tr>
 <tr class="separator:a569e44aa1e4837f7edf5e47111bd9b47 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4903f873277548af456aabba270f9a1f inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer" id="r_a4903f873277548af456aabba270f9a1f"><td class="memItemLeft" align="right" valign="top">ossia::small_flat_map&lt; int32_t, ossia::geometry_spec, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a4903f873277548af456aabba270f9a1f">m_portGeometries</a></td></tr>
+<tr class="separator:a4903f873277548af456aabba270f9a1f inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a30302a09783bc9ad3ea54582a0427 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer" id="r_aa8a30302a09783bc9ad3ea54582a0427"><td class="memItemLeft" align="right" valign="top">
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeId</b> {-1}</td></tr>
 <tr class="separator:aa8a30302a09783bc9ad3ea54582a0427 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,34 +239,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
           <td>(</td>
           <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
           <td class="paramname"><em>r</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>.</p>
-
-</div>
-</div>
-<a id="aca43b3cd890f1ab9ca3537733831fef1" name="aca43b3cd890f1ab9ca3537733831fef1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca43b3cd890f1ab9ca3537733831fef1">&#9670;&#160;</a></span>renderTargetForInput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> score::gfx::SimpleRenderedISFNode::renderTargetForInput </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -369,6 +344,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="afa9597e36cb4ed688f51dd83fed15fc4" name="afa9597e36cb4ed688f51dd83fed15fc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9597e36cb4ed688f51dd83fed15fc4">&#9670;&#160;</a></span>textureForOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiTexture * score::gfx::SimpleRenderedISFNode::textureForOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a texture owned by this renderer for a given output port. Used for GrabsFromSource ports (e.g. cubemaps) where the upstream node produces a texture directly rather than rendering into a downstream-provided render target. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae350342d608a9f725d0a5be082421987">score::gfx::NodeRenderer</a>.</p>
 
 </div>
 </div>

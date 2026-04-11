@@ -168,6 +168,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (con
 <tr class="memitem:a1efe5a9256e4098ec590f83a36e4e5b6" id="r_a1efe5a9256e4098ec590f83a36e4e5b6"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#a1efe5a9256e4098ec590f83a36e4e5b6">defaultVertexShader</a> () const noexcept=0</td></tr>
 <tr class="memdesc:a1efe5a9256e4098ec590f83a36e4e5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh.  <br /></td></tr>
 <tr class="separator:a1efe5a9256e4098ec590f83a36e4e5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f48d3301fc0dfc0371bbc2097edac60" id="r_a4f48d3301fc0dfc0371bbc2097edac60"><td class="memItemLeft" align="right" valign="top">virtual const ossia::geometry *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh.html#a4f48d3301fc0dfc0371bbc2097edac60">semanticGeometry</a> () const noexcept</td></tr>
+<tr class="memdesc:a4f48d3301fc0dfc0371bbc2097edac60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the underlying semantic geometry if available.  <br /></td></tr>
+<tr class="separator:a4f48d3301fc0dfc0371bbc2097edac60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ec265596d3ffe643c42653596b303a" id="r_a58ec265596d3ffe643c42653596b303a"><td class="memItemLeft" align="right" valign="top"><a id="a58ec265596d3ffe643c42653596b303a" name="a58ec265596d3ffe643c42653596b303a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometryChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
 <tr class="separator:a58ec265596d3ffe643c42653596b303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +211,36 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 <p>A basic vertex shader that is going to work with this mesh. </p>
 
 <p>Implemented in <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#afac178980cad286cc271a7f52e4d9cd6">score::gfx::CustomMesh</a>, <a class="el" href="structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30">score::gfx::DummyMesh</a>, <a class="el" href="structscore_1_1gfx_1_1_plain_mesh.html#ac831d7b47c4e3680439d6689de4b9673">score::gfx::PlainMesh</a>, and <a class="el" href="structscore_1_1gfx_1_1_textured_mesh.html#acbcbf92d0d4b9a568b85d0124df4220e">score::gfx::TexturedMesh</a>.</p>
+
+</div>
+</div>
+<a id="a4f48d3301fc0dfc0371bbc2097edac60" name="a4f48d3301fc0dfc0371bbc2097edac60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f48d3301fc0dfc0371bbc2097edac60">&#9670;&#160;</a></span>semanticGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const ossia::geometry * score::gfx::Mesh::semanticGeometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the underlying semantic geometry if available. </p>
+<p>Used by buildPipeline() to remap vertex input layouts by matching shader input variable names to geometry attribute semantics. Meshes that carry semantic information (e.g. <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a>) should override this. </p>
+
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a65cb7ecb425bdfb3a3a8cde7973c8f32">score::gfx::CustomMesh</a>.</p>
 
 </div>
 </div>

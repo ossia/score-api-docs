@@ -141,9 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8403de351fee4cf2990283c63cc8e1c0" id="r_a8403de351fee4cf2990283c63cc8e1c0"><td class="memItemLeft" align="right" valign="top"><a id="a8403de351fee4cf2990283c63cc8e1c0" name="a8403de351fee4cf2990283c63cc8e1c0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NodeRenderer</b> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;node)</td></tr>
 <tr class="separator:a8403de351fee4cf2990283c63cc8e1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fca9eddd9b9321ff6db77435f5924f8" id="r_a6fca9eddd9b9321ff6db77435f5924f8"><td class="memItemLeft" align="right" valign="top"><a id="a6fca9eddd9b9321ff6db77435f5924f8" name="a6fca9eddd9b9321ff6db77435f5924f8"></a>
-virtual <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input)=0</td></tr>
-<tr class="separator:a6fca9eddd9b9321ff6db77435f5924f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8148a74decf5625da7ad67b715759316" id="r_a8148a74decf5625da7ad67b715759316"><td class="memItemLeft" align="right" valign="top"><a id="a8148a74decf5625da7ad67b715759316" name="a8148a74decf5625da7ad67b715759316"></a>
+virtual <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input)</td></tr>
+<tr class="separator:a8148a74decf5625da7ad67b715759316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0075cc63689dc01df620f5c58a70abd4" id="r_a0075cc63689dc01df620f5c58a70abd4"><td class="memItemLeft" align="right" valign="top"><a id="a0075cc63689dc01df620f5c58a70abd4" name="a0075cc63689dc01df620f5c58a70abd4"></a>
 virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>bufferForInput</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input)</td></tr>
 <tr class="separator:a0075cc63689dc01df620f5c58a70abd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +189,8 @@ const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;<
 <tr class="memitem:a569e44aa1e4837f7edf5e47111bd9b47" id="r_a569e44aa1e4837f7edf5e47111bd9b47"><td class="memItemLeft" align="right" valign="top">ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a569e44aa1e4837f7edf5e47111bd9b47">geometry</a></td></tr>
 <tr class="memdesc:a569e44aa1e4837f7edf5e47111bd9b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <br /></td></tr>
 <tr class="separator:a569e44aa1e4837f7edf5e47111bd9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4903f873277548af456aabba270f9a1f" id="r_a4903f873277548af456aabba270f9a1f"><td class="memItemLeft" align="right" valign="top">ossia::small_flat_map&lt; int32_t, ossia::geometry_spec, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a4903f873277548af456aabba270f9a1f">m_portGeometries</a></td></tr>
+<tr class="separator:a4903f873277548af456aabba270f9a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a30302a09783bc9ad3ea54582a0427" id="r_aa8a30302a09783bc9ad3ea54582a0427"><td class="memItemLeft" align="right" valign="top"><a id="aa8a30302a09783bc9ad3ea54582a0427" name="aa8a30302a09783bc9ad3ea54582a0427"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeId</b> {-1}</td></tr>
 <tr class="separator:aa8a30302a09783bc9ad3ea54582a0427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -271,6 +273,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 <p>Returns a texture owned by this renderer for a given output port. Used for GrabsFromSource ports (e.g. cubemaps) where the upstream node produces a texture directly rather than rendering into a downstream-provided render target. </p>
 
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#aa2c452a433931ec520b0789949bc1613">score::gfx::RenderedCSFNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#afa9597e36cb4ed688f51dd83fed15fc4">score::gfx::SimpleRenderedISFNode</a>.</p>
+
 </div>
 </div>
 <a id="adbba3751aca99e0978ddc2af667dd1d8" name="adbba3751aca99e0978ddc2af667dd1d8"></a>
@@ -326,7 +330,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 
 <p>The geometry to use. </p>
-<p>If not set, then a relevant default geometry for the node will be used, e.g. a full-screen quad or triangle </p>
+<p>If not set, then a relevant default geometry for the node will be used, e.g. a full-screen quad or triangle.</p>
+<p>For backward compatibility with single-port nodes (<a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer.">GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html">RenderedRawRasterPipelineNode</a>, etc.), this holds the last received geometry. Multi-geometry-port nodes (CSF) should use m_portGeometries instead. </p>
+
+</div>
+</div>
+<a id="a4903f873277548af456aabba270f9a1f" name="a4903f873277548af456aabba270f9a1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4903f873277548af456aabba270f9a1f">&#9670;&#160;</a></span>m_portGeometries</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::small_flat_map&lt;int32_t, ossia::geometry_spec, 4&gt; score::gfx::NodeRenderer::m_portGeometries</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Per-port geometry storage for nodes with multiple geometry inputs. Key is the input port index. </p>
 
 </div>
 </div>

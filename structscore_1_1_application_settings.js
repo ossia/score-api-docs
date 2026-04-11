@@ -11,5 +11,6 @@ var structscore_1_1_application_settings =
     [ "tryToRestore", "structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714", null ],
     [ "ui", "structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b", null ],
     [ "uiEventRate", "structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a", null ],
+    [ "vector_gui", "structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33", null ],
     [ "waitAfterLoad", "structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011", null ]
 ];

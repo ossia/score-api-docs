@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('_h_w_vulkan_8hpp_source.html',''); ini
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        sampler-&gt;create();</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        samplers.push_back({sampler, tex});</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>          r.state, vertexShader(),</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>          QString(P010Decoder::frag).arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    }</div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('_h_w_vulkan_8hpp_source.html',''); ini
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      QString frag = NV12Decoder::nv12_filter_prologue;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      frag += <span class="stringliteral">&quot;    vec3 yuv = vec3(y, u, v);\n&quot;</span>;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      frag += NV12Decoder::nv12_filter_epilogue;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          r.state, vertexShader(), frag.arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    }</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  }</div>
@@ -391,7 +391,7 @@ $(document).ready(function(){initNavTree('_h_w_vulkan_8hpp_source.html',''); ini
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">#endif </span><span class="comment">// QT_HAS_VULKAN &amp;&amp; SCORE_HAS_DRM_HWCONTEXT_VK</span></div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">#endif </span><span class="comment">// __linux__</span></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_ac36c19f883f361de43e1d6e1eee7ce3d"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:395</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:647</div></div>
 <div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

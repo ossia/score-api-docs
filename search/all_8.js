@@ -62,6 +62,6 @@ var searchData=
   ['httpprotocolfactory_59',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
   ['httpprotocolsettingswidget_60',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
   ['httpspecificsettings_61',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]],
-  ['hwcodecname_62',['hwCodecName',['../namespacescore_1_1gfx.html#a1a88b46411a3cb191efe532dca7dc7a9',1,'score::gfx']]],
+  ['hwcodecname_62',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]],
   ['hwtransferdecoder_63',['HWTransferDecoder',['../structscore_1_1gfx_1_1_h_w_transfer_decoder.html',1,'score::gfx']]]
 ];

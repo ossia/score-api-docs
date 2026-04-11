@@ -164,35 +164,43 @@ $(document).ready(function(){initNavTree('_render_state_8hpp_source.html',''); i
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> api{};</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QShaderVersion version{};</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// Called after QRhi is destroyed to clean up an imported VkDevice</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::function&lt;void()&gt; customDeviceCleanup;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> destroy()</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    window.reset();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">delete</span> rhi;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    rhi = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Destroy imported VkDevice AFTER QRhi (which still references it during shutdown)</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">if</span>(customDeviceCleanup)</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      customDeviceCleanup();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      customDeviceCleanup = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">delete</span> surface;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    surface = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 12, 0)</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">bool</span> drawIndirect{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">bool</span> drawIndirectMulti{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  } caps;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// Called after QRhi is destroyed to clean up an imported VkDevice</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::function&lt;void()&gt; customDeviceCleanup;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> destroy()</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    window.reset();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">delete</span> rhi;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    rhi = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Destroy imported VkDevice AFTER QRhi (which still references it during shutdown)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span>(customDeviceCleanup)</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      customDeviceCleanup();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      customDeviceCleanup = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">delete</span> surface;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    surface = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
 </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>std::shared_ptr&lt;RenderState&gt;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>createRenderState(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, QSize sz, QWindow* window);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> int32_t invalid_node_index = -1;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>std::shared_ptr&lt;RenderState&gt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>createRenderState(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi, QSize sz, QWindow* window);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> int32_t invalid_node_index = -1;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:22</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:37</div></div>

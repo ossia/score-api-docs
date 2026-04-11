@@ -249,7 +249,7 @@ $(document).ready(function(){initNavTree('_h_w_video_toolbox_8hpp_source.html','
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      sampler-&gt;create();</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      samplers.push_back({sampler, tex});</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>          r.state, vertexShader(),</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>          QString(ayuv_frag).arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    }</div>
@@ -281,7 +281,7 @@ $(document).ready(function(){initNavTree('_h_w_video_toolbox_8hpp_source.html','
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">if</span>(m_fmt.is10bit())</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    {</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>          r.state, vertexShader(),</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>          QString(P010Decoder::frag).arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
@@ -289,7 +289,7 @@ $(document).ready(function(){initNavTree('_h_w_video_toolbox_8hpp_source.html','
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    QString frag = NV12Decoder::nv12_filter_prologue;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    frag += <span class="stringliteral">&quot;    vec3 yuv = vec3(y, u, v);\n&quot;</span>;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    frag += NV12Decoder::nv12_filter_epilogue;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        r.state, vertexShader(), frag.arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  }</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('_h_w_video_toolbox_8hpp_source.html','
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="preprocessor">#endif </span><span class="comment">// SCORE_HAS_VTB_HWCONTEXT</span></div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="preprocessor">#endif </span><span class="comment">// __APPLE__</span></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_ac36c19f883f361de43e1d6e1eee7ce3d"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac36c19f883f361de43e1d6e1eee7ce3d">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:395</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:647</div></div>
 <div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

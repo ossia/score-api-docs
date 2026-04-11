@@ -152,68 +152,58 @@ $(document).ready(function(){initNavTree('_pattern_library_8hpp_source.html','')
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        ctx);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> addPath(std::string_view path)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  std::function&lt;void()&gt; asyncAddPath(std::string_view path)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    QFileInfo file{QString::fromUtf8(path.data(), path.length())};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structscore_1_1_path_info.html">score::PathInfo</a> file{path};</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    pdata.prettyName = file.completeBaseName();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    pdata.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    pdata.customData = file.absoluteFilePath();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    categories.add(file, std::move(pdata));</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    pdata.prettyName</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        = QString::fromUtf8(file.completeBaseName.data(), file.completeBaseName.size());</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    pdata.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    pdata.customData</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        = QString::fromUtf8(file.absoluteFilePath.data(), file.absoluteFilePath.size());</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  std::function&lt;void()&gt; asyncAddPath(std::string_view path)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_struct" href="structscore_1_1_path_info.html">score::PathInfo</a> file{path};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_struct" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    pdata.prettyName</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        = QString::fromUtf8(file.completeBaseName.data(), file.completeBaseName.size());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    pdata.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    pdata.customData</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        = QString::fromUtf8(file.absoluteFilePath.data(), file.absoluteFilePath.size());</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> [<span class="keyword">this</span>, p = std::string(path), pdata = std::move(pdata)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <a class="code hl_struct" href="structscore_1_1_path_info.html">score::PathInfo</a> file{p};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      categories.add(file, std::move(pdata));</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> [<span class="keyword">this</span>, p = std::string(path), pdata = std::move(pdata)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <a class="code hl_struct" href="structscore_1_1_path_info.html">score::PathInfo</a> file{p};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      categories.add(file, std::move(pdata));</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_patternist_1_1_drop_handler.html">   69</a></span><span class="keyword">class </span><a class="code hl_class" href="class_patternist_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;6ba4246f-45cd-49f5-a103-8718ec52576b&quot;</span>)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;pat&quot;</span>}; }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> dropData(</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      std::vector&lt;ProcessDrop&gt;&amp; vec, <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; [filename, content] = data;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">auto</span> pat = parsePatterns(content);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">if</span>(!pat.empty())</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <a class="code hl_struct" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a> p;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      p.creation.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      p.creation.prettyName = filename.basename;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      p.setup = [pat = std::move(pat)](</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; m, <a class="code hl_struct" href="structscore_1_1_dispatcher.html">score::Dispatcher</a>&amp; disp) <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keyword">auto</span>&amp; proc = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>&amp;<span class="keyword">&gt;</span>(m);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        disp.submit(<span class="keyword">new</span> <a class="code hl_class" href="class_patternist_1_1_update_patterns.html">Patternist::UpdatePatterns</a>{proc, std::move(pat)});</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      };</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      vec.push_back(std::move(p));</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="};">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_patternist_1_1_drop_handler.html">   59</a></span><span class="keyword">class </span><a class="code hl_class" href="class_patternist_1_1_drop_handler.html">DropHandler</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  SCORE_CONCRETE(<span class="stringliteral">&quot;6ba4246f-45cd-49f5-a103-8718ec52576b&quot;</span>)</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  QSet&lt;QString&gt; fileExtensions() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> {<span class="stringliteral">&quot;pat&quot;</span>}; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> dropData(</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      std::vector&lt;ProcessDrop&gt;&amp; vec, <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_process_drop_handler_1_1_dropped_file.html">DroppedFile</a>&amp; data,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; [filename, content] = data;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">auto</span> pat = parsePatterns(content);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span>(!pat.empty())</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <a class="code hl_struct" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">Process::ProcessDropHandler::ProcessDrop</a> p;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      p.creation.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, Patternist::ProcessModel&gt;::get</a>();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      p.creation.prettyName = filename.basename;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      p.setup = [pat = std::move(pat)](</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                    <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; m, <a class="code hl_struct" href="structscore_1_1_dispatcher.html">score::Dispatcher</a>&amp; disp) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">auto</span>&amp; proc = <span class="keyword">static_cast&lt;</span><a class="code hl_class" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>&amp;<span class="keyword">&gt;</span>(m);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        disp.submit(<span class="keyword">new</span> <a class="code hl_class" href="class_patternist_1_1_update_patterns.html">Patternist::UpdatePatterns</a>{proc, std::move(pat)});</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      };</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      vec.push_back(std::move(p));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:24</div></div>
 <div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:44</div></div>
-<div class="ttc" id="aclass_patternist_1_1_drop_handler_html"><div class="ttname"><a href="class_patternist_1_1_drop_handler.html">Patternist::DropHandler</a></div><div class="ttdef"><b>Definition</b> PatternLibrary.hpp:70</div></div>
+<div class="ttc" id="aclass_patternist_1_1_drop_handler_html"><div class="ttname"><a href="class_patternist_1_1_drop_handler.html">Patternist::DropHandler</a></div><div class="ttdef"><b>Definition</b> PatternLibrary.hpp:60</div></div>
 <div class="ttc" id="aclass_patternist_1_1_library_handler_html"><div class="ttname"><a href="class_patternist_1_1_library_handler.html">Patternist::LibraryHandler</a></div><div class="ttdef"><b>Definition</b> PatternLibrary.hpp:21</div></div>
 <div class="ttc" id="aclass_patternist_1_1_process_model_html"><div class="ttname"><a href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:48</div></div>
 <div class="ttc" id="aclass_patternist_1_1_update_patterns_html"><div class="ttname"><a href="class_patternist_1_1_update_patterns.html">Patternist::UpdatePatterns</a></div><div class="ttdef"><b>Definition</b> PatternProperties.hpp:58</div></div>

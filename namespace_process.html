@@ -500,7 +500,8 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69">ExternalUIAvailable</a> = (1 &lt;&lt; 18 )
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af">NodeHasNoBackground</a> = (1 &lt;&lt; 19 )
 , <br />
-&#160;&#160;<b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
+&#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e">Deprecated</a> = (1 &lt;&lt; 20 )
+, <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
 , <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
 , <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
@@ -522,8 +523,6 @@ Enumerations</h2></td></tr>
 , <b>Script</b>
 , <b>Structure</b>
 , <b>Visual</b>
-, <br />
-&#160;&#160;<b>Deprecated</b> = (1ULL &lt;&lt; 63)
 <br />
  }</td></tr>
 <tr class="separator:a76ebf99efe2e64f692e425b778254e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -556,15 +555,15 @@ QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeExtern
 <tr class="memitem:a2d39a634ea7ae1242c45e31eab91704c" id="r_a2d39a634ea7ae1242c45e31eab91704c"><td class="memItemLeft" align="right" valign="top"><a id="a2d39a634ea7ae1242c45e31eab91704c" name="a2d39a634ea7ae1242c45e31eab91704c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>copyProcess</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;r, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc)</td></tr>
 <tr class="separator:a2d39a634ea7ae1242c45e31eab91704c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82f08190e54ec69c49dd98aeda17d7b" id="r_ab82f08190e54ec69c49dd98aeda17d7b"><td class="memItemLeft" align="right" valign="top"><a id="ab82f08190e54ec69c49dd98aeda17d7b" name="ab82f08190e54ec69c49dd98aeda17d7b"></a>
+<tr class="memitem:aca9caf5b23b73ab96c7ccdd34bad0878" id="r_aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memItemLeft" align="right" valign="top"><a id="aca9caf5b23b73ab96c7ccdd34bad0878" name="aca9caf5b23b73ab96c7ccdd34bad0878"></a>
 const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandFactoryName</b> ()</td></tr>
-<tr class="separator:ab82f08190e54ec69c49dd98aeda17d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86d4cbab23de189feabf5c05c0aae19" id="r_ae86d4cbab23de189feabf5c05c0aae19"><td class="memItemLeft" align="right" valign="top"><a id="ae86d4cbab23de189feabf5c05c0aae19" name="ae86d4cbab23de189feabf5c05c0aae19"></a>
+<tr class="separator:aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032caee5dd5326954a1234cadef2da91" id="r_a032caee5dd5326954a1234cadef2da91"><td class="memItemLeft" align="right" valign="top"><a id="a032caee5dd5326954a1234cadef2da91" name="a032caee5dd5326954a1234cadef2da91"></a>
 QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeAddressCombo</b> (<a class="el" href="struct_state_1_1_address.html">State::Address</a> root, const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;out_node, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
-<tr class="separator:ae86d4cbab23de189feabf5c05c0aae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca4383daf47112b89512bf159ca56cd2" id="r_aca4383daf47112b89512bf159ca56cd2"><td class="memItemLeft" align="right" valign="top"><a id="aca4383daf47112b89512bf159ca56cd2" name="aca4383daf47112b89512bf159ca56cd2"></a>
+<tr class="separator:a032caee5dd5326954a1234cadef2da91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f1ade7ee98746f889338b599c7b3e9" id="r_ad0f1ade7ee98746f889338b599c7b3e9"><td class="memItemLeft" align="right" valign="top"><a id="ad0f1ade7ee98746f889338b599c7b3e9" name="ad0f1ade7ee98746f889338b599c7b3e9"></a>
 QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeDeviceCombo</b> (std::function&lt; bool(<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;)&gt; condition, <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;list, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
-<tr class="separator:aca4383daf47112b89512bf159ca56cd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad0f1ade7ee98746f889338b599c7b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a339ce34599014678a81f9572e05489" id="r_a1a339ce34599014678a81f9572e05489"><td class="memItemLeft" align="right" valign="top"><a id="a1a339ce34599014678a81f9572e05489" name="a1a339ce34599014678a81f9572e05489"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAndUpdateIfChildOf</b> (<a class="el" href="class_object_path.html">ObjectPath</a> &amp;path, const <a class="el" href="class_object_path.html">ObjectPath</a> &amp;parent)</td></tr>
 <tr class="separator:a1a339ce34599014678a81f9572e05489"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -659,15 +658,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a cla
 <tr class="memitem:a9b147f3962a1beaacd3896cccb9c0b50" id="r_a9b147f3962a1beaacd3896cccb9c0b50"><td class="memItemLeft" align="right" valign="top"><a id="a9b147f3962a1beaacd3896cccb9c0b50" name="a9b147f3962a1beaacd3896cccb9c0b50"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>writePorts</b> (const <a class="el" href="class_j_s_o_n_writer.html">JSONWriter</a> &amp;obj, const <a class="el" href="class_process_1_1_port_factory_list.html">Process::PortFactoryList</a> &amp;pl, <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs, QObject *parent)</td></tr>
 <tr class="separator:a9b147f3962a1beaacd3896cccb9c0b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac095eee3634e2e8e16fc0a68c94d64e" id="r_aac095eee3634e2e8e16fc0a68c94d64e"><td class="memItemLeft" align="right" valign="top"><a id="aac095eee3634e2e8e16fc0a68c94d64e" name="aac095eee3634e2e8e16fc0a68c94d64e"></a>
+<tr class="memitem:a950e99cc1331cd659205568412c89031" id="r_a950e99cc1331cd659205568412c89031"><td class="memItemLeft" align="right" valign="top"><a id="a950e99cc1331cd659205568412c89031" name="a950e99cc1331cd659205568412c89031"></a>
 const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>portBrush</b> (Process::PortType type)</td></tr>
-<tr class="separator:aac095eee3634e2e8e16fc0a68c94d64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5946206934769bef861c72066ea7dc57" id="r_a5946206934769bef861c72066ea7dc57"><td class="memItemLeft" align="right" valign="top"><a id="a5946206934769bef861c72066ea7dc57" name="a5946206934769bef861c72066ea7dc57"></a>
+<tr class="separator:a950e99cc1331cd659205568412c89031"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42d5f227e73f75b6f39a373a72b7c71" id="r_ad42d5f227e73f75b6f39a373a72b7c71"><td class="memItemLeft" align="right" valign="top"><a id="ad42d5f227e73f75b6f39a373a72b7c71" name="ad42d5f227e73f75b6f39a373a72b7c71"></a>
 const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>labelBrush</b> ()</td></tr>
-<tr class="separator:a5946206934769bef861c72066ea7dc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae50dd0975e88e6327c635aef867afc50" id="r_ae50dd0975e88e6327c635aef867afc50"><td class="memItemLeft" align="right" valign="top"><a id="ae50dd0975e88e6327c635aef867afc50" name="ae50dd0975e88e6327c635aef867afc50"></a>
+<tr class="separator:ad42d5f227e73f75b6f39a373a72b7c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacec3e4356f28879035d9c11d7a21e8b" id="r_aacec3e4356f28879035d9c11d7a21e8b"><td class="memItemLeft" align="right" valign="top"><a id="aacec3e4356f28879035d9c11d7a21e8b" name="aacec3e4356f28879035d9c11d7a21e8b"></a>
 const <a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>labelBrush</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;p)</td></tr>
-<tr class="separator:ae50dd0975e88e6327c635aef867afc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aacec3e4356f28879035d9c11d7a21e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01a4c533a7383d3c98200409d377f3a" id="r_ae01a4c533a7383d3c98200409d377f3a"><td class="memItemLeft" align="right" valign="top"><a id="ae01a4c533a7383d3c98200409d377f3a" name="ae01a4c533a7383d3c98200409d377f3a"></a>
 QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>makeGlyphs</b> (const QString &amp;glyph, const QPen &amp;pen)</td></tr>
 <tr class="separator:ae01a4c533a7383d3c98200409d377f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,63 +689,63 @@ template&lt;typename ScriptProperty , typename T &gt; </td></tr>
 <tr class="memitem:aecf0b7c66529f5b01f96fc9c6d061a5f" id="r_aecf0b7c66529f5b01f96fc9c6d061a5f"><td class="memItemLeft" align="right" valign="top"><a id="aecf0b7c66529f5b01f96fc9c6d061a5f" name="aecf0b7c66529f5b01f96fc9c6d061a5f"></a>
 const QIcon &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCategoryIcon</b> (const QString &amp;category) noexcept</td></tr>
 <tr class="separator:aecf0b7c66529f5b01f96fc9c6d061a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad42ad48f56e123ec5159647361738355" id="r_ad42ad48f56e123ec5159647361738355"><td class="memItemLeft" align="right" valign="top"><a id="ad42ad48f56e123ec5159647361738355" name="ad42ad48f56e123ec5159647361738355"></a>
+<tr class="memitem:ab1d70f8406d658f24dbb43ce27b63398" id="r_ab1d70f8406d658f24dbb43ce27b63398"><td class="memItemLeft" align="right" valign="top"><a id="ab1d70f8406d658f24dbb43ce27b63398" name="ab1d70f8406d658f24dbb43ce27b63398"></a>
 <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parentProcess</b> (QObject *obj) noexcept</td></tr>
-<tr class="separator:ad42ad48f56e123ec5159647361738355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43df2cd2166ffb07dce61d37bc2a4f57" id="r_a43df2cd2166ffb07dce61d37bc2a4f57"><td class="memItemLeft" align="right" valign="top"><a id="a43df2cd2166ffb07dce61d37bc2a4f57" name="a43df2cd2166ffb07dce61d37bc2a4f57"></a>
+<tr class="separator:ab1d70f8406d658f24dbb43ce27b63398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1410ea4c1c3e482407168928fb7c7de0" id="r_a1410ea4c1c3e482407168928fb7c7de0"><td class="memItemLeft" align="right" valign="top"><a id="a1410ea4c1c3e482407168928fb7c7de0" name="a1410ea4c1c3e482407168928fb7c7de0"></a>
 const <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parentProcess</b> (const QObject *obj) noexcept</td></tr>
-<tr class="separator:a43df2cd2166ffb07dce61d37bc2a4f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6936679f2d22c770bd9a61348d967b7" id="r_ab6936679f2d22c770bd9a61348d967b7"><td class="memItemLeft" align="right" valign="top"><a id="ab6936679f2d22c770bd9a61348d967b7" name="ab6936679f2d22c770bd9a61348d967b7"></a>
+<tr class="separator:a1410ea4c1c3e482407168928fb7c7de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0a7d6010699fa0bf80b3ad7390d9b6" id="r_a7f0a7d6010699fa0bf80b3ad7390d9b6"><td class="memItemLeft" align="right" valign="top"><a id="a7f0a7d6010699fa0bf80b3ad7390d9b6" name="a7f0a7d6010699fa0bf80b3ad7390d9b6"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>processLocalTreeAddress</b> (const <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &amp;proc)</td></tr>
-<tr class="separator:ab6936679f2d22c770bd9a61348d967b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7f0a7d6010699fa0bf80b3ad7390d9b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad749c710ee9e8f372c68512bc2f8d77f" id="r_ad749c710ee9e8f372c68512bc2f8d77f"><td class="memItemLeft" align="right" valign="top"><a id="ad749c710ee9e8f372c68512bc2f8d77f" name="ad749c710ee9e8f372c68512bc2f8d77f"></a>
 constexpr <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> a, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> b) noexcept</td></tr>
 <tr class="separator:ad749c710ee9e8f372c68512bc2f8d77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad62b60dfb3092f17a003484a7dcc4dea" id="r_ad62b60dfb3092f17a003484a7dcc4dea"><td class="memItemLeft" align="right" valign="top"><a id="ad62b60dfb3092f17a003484a7dcc4dea" name="ad62b60dfb3092f17a003484a7dcc4dea"></a>
 constexpr <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> &amp;a, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> b) noexcept</td></tr>
 <tr class="separator:ad62b60dfb3092f17a003484a7dcc4dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4536bb69f34c1ea53a64c770ae469a4" id="r_ae4536bb69f34c1ea53a64c770ae469a4"><td class="memItemLeft" align="right" valign="top"><a id="ae4536bb69f34c1ea53a64c770ae469a4" name="ae4536bb69f34c1ea53a64c770ae469a4"></a>
+<tr class="memitem:a5be9a0d7a99646cc73b990d1f298e69b" id="r_a5be9a0d7a99646cc73b990d1f298e69b"><td class="memItemLeft" align="right" valign="top"><a id="a5be9a0d7a99646cc73b990d1f298e69b" name="a5be9a0d7a99646cc73b990d1f298e69b"></a>
 QTextEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>createScriptWidget</b> (const std::string_view language)</td></tr>
-<tr class="separator:ae4536bb69f34c1ea53a64c770ae469a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a5be9a0d7a99646cc73b990d1f298e69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82a03b053dd524dda0aad38f6ddc008" id="r_ac82a03b053dd524dda0aad38f6ddc008"><td class="memItemLeft" align="right" valign="top"><a id="ac82a03b053dd524dda0aad38f6ddc008" name="ac82a03b053dd524dda0aad38f6ddc008"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_process_1_1_process_state_data.html">Process::ProcessStateData</a> &amp;lhs, const <a class="el" href="struct_process_1_1_process_state_data.html">Process::ProcessStateData</a> &amp;rhs)</td></tr>
 <tr class="separator:ac82a03b053dd524dda0aad38f6ddc008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae42bd6a3d1cc57591469fa7f6cb57add" id="r_ae42bd6a3d1cc57591469fa7f6cb57add"><td class="memItemLeft" align="right" valign="top"><a id="ae42bd6a3d1cc57591469fa7f6cb57add" name="ae42bd6a3d1cc57591469fa7f6cb57add"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_process_1_1_state_node_data.html">Process::StateNodeData</a> &amp;lhs, const <a class="el" href="struct_process_1_1_state_node_data.html">Process::StateNodeData</a> &amp;rhs)</td></tr>
 <tr class="separator:ae42bd6a3d1cc57591469fa7f6cb57add"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4d6ee0fadf8fa6104ac2d4ab383c6a" id="r_a0a4d6ee0fadf8fa6104ac2d4ab383c6a"><td class="memItemLeft" align="right" valign="top"><a id="a0a4d6ee0fadf8fa6104ac2d4ab383c6a" name="a0a4d6ee0fadf8fa6104ac2d4ab383c6a"></a>
+<tr class="memitem:abcd16b61d6e13f878e64bd2a9e77ba00" id="r_abcd16b61d6e13f878e64bd2a9e77ba00"><td class="memItemLeft" align="right" valign="top"><a id="abcd16b61d6e13f878e64bd2a9e77ba00" name="abcd16b61d6e13f878e64bd2a9e77ba00"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasMatchingAddress</b> (const <a class="el" href="class_tree_node.html">MessageNode</a> &amp;root, const std::vector&lt; <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &gt; &amp;addresses, State::MessageList &amp;msglist, std::vector&lt; QString &gt; &amp;converted_addresses)</td></tr>
-<tr class="separator:a0a4d6ee0fadf8fa6104ac2d4ab383c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca80503ea5ee54d0b5b38e3fd33648cb" id="r_aca80503ea5ee54d0b5b38e3fd33648cb"><td class="memItemLeft" align="right" valign="top"><a id="aca80503ea5ee54d0b5b38e3fd33648cb" name="aca80503ea5ee54d0b5b38e3fd33648cb"></a>
+<tr class="separator:abcd16b61d6e13f878e64bd2a9e77ba00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad8f1acf6f8c7d173ce6a9d739c36ee" id="r_a2ad8f1acf6f8c7d173ce6a9d739c36ee"><td class="memItemLeft" align="right" valign="top"><a id="a2ad8f1acf6f8c7d173ce6a9d739c36ee" name="a2ad8f1acf6f8c7d173ce6a9d739c36ee"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasMatchingText</b> (const <a class="el" href="class_tree_node.html">MessageNode</a> &amp;root, const QString &amp;txt, State::MessageList &amp;msglist, std::vector&lt; QString &gt; &amp;converted_addresses)</td></tr>
-<tr class="separator:aca80503ea5ee54d0b5b38e3fd33648cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abce6228466e7e503a37051be3fde9162" id="r_abce6228466e7e503a37051be3fde9162"><td class="memItemLeft" align="right" valign="top"><a id="abce6228466e7e503a37051be3fde9162" name="abce6228466e7e503a37051be3fde9162"></a>
+<tr class="separator:a2ad8f1acf6f8c7d173ce6a9d739c36ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa03953b3f3e2368f2e17c78873ff60e1" id="r_aa03953b3f3e2368f2e17c78873ff60e1"><td class="memItemLeft" align="right" valign="top"><a id="aa03953b3f3e2368f2e17c78873ff60e1" name="aa03953b3f3e2368f2e17c78873ff60e1"></a>
 <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>address</b> (const <a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;treeNode)</td></tr>
-<tr class="separator:abce6228466e7e503a37051be3fde9162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c8d9ddcba8be6db15cb66de1d9353b0" id="r_a2c8d9ddcba8be6db15cb66de1d9353b0"><td class="memItemLeft" align="right" valign="top"><a id="a2c8d9ddcba8be6db15cb66de1d9353b0" name="a2c8d9ddcba8be6db15cb66de1d9353b0"></a>
+<tr class="separator:aa03953b3f3e2368f2e17c78873ff60e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893be450b30a1213607984df2369e325" id="r_a893be450b30a1213607984df2369e325"><td class="memItemLeft" align="right" valign="top"><a id="a893be450b30a1213607984df2369e325" name="a893be450b30a1213607984df2369e325"></a>
 <a class="el" href="struct_state_1_1_message.html">State::Message</a>&#160;</td><td class="memItemRight" valign="bottom"><b>userMessage</b> (const <a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;node)</td></tr>
-<tr class="separator:a2c8d9ddcba8be6db15cb66de1d9353b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad906d4d203a6441a7b417d8ac79ec828" id="r_ad906d4d203a6441a7b417d8ac79ec828"><td class="memItemLeft" align="right" valign="top"><a id="ad906d4d203a6441a7b417d8ac79ec828" name="ad906d4d203a6441a7b417d8ac79ec828"></a>
+<tr class="separator:a893be450b30a1213607984df2369e325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee44091c423c2c30c66be0f4cdb8ef62" id="r_aee44091c423c2c30c66be0f4cdb8ef62"><td class="memItemLeft" align="right" valign="top"><a id="aee44091c423c2c30c66be0f4cdb8ef62" name="aee44091c423c2c30c66be0f4cdb8ef62"></a>
 <a class="el" href="struct_state_1_1_message.html">State::Message</a>&#160;</td><td class="memItemRight" valign="bottom"><b>message</b> (const <a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;node)</td></tr>
-<tr class="separator:ad906d4d203a6441a7b417d8ac79ec828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a41ee8e15a88f5db59d1c531ad2b3c" id="r_ac8a41ee8e15a88f5db59d1c531ad2b3c"><td class="memItemLeft" align="right" valign="top"><a id="ac8a41ee8e15a88f5db59d1c531ad2b3c" name="ac8a41ee8e15a88f5db59d1c531ad2b3c"></a>
+<tr class="separator:aee44091c423c2c30c66be0f4cdb8ef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bedf21deda81bc32668978add1f23d5" id="r_a5bedf21deda81bc32668978add1f23d5"><td class="memItemLeft" align="right" valign="top"><a id="a5bedf21deda81bc32668978add1f23d5" name="a5bedf21deda81bc32668978add1f23d5"></a>
 State::MessageList&#160;</td><td class="memItemRight" valign="bottom"><b>flatten</b> (const <a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;n)</td></tr>
-<tr class="separator:ac8a41ee8e15a88f5db59d1c531ad2b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ab25c8ebdab4e944845523590e4821" id="r_a35ab25c8ebdab4e944845523590e4821"><td class="memItemLeft" align="right" valign="top"><a id="a35ab25c8ebdab4e944845523590e4821" name="a35ab25c8ebdab4e944845523590e4821"></a>
+<tr class="separator:a5bedf21deda81bc32668978add1f23d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158a4df924498865abc3244a9d078422" id="r_a158a4df924498865abc3244a9d078422"><td class="memItemLeft" align="right" valign="top"><a id="a158a4df924498865abc3244a9d078422" name="a158a4df924498865abc3244a9d078422"></a>
 State::MessageList&#160;</td><td class="memItemRight" valign="bottom"><b>getUserMessages</b> (const <a class="el" href="class_tree_node.html">MessageNode</a> &amp;n)</td></tr>
-<tr class="separator:a35ab25c8ebdab4e944845523590e4821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af86a80d875460cf1eb52b8a62316fd48" id="r_af86a80d875460cf1eb52b8a62316fd48"><td class="memItemLeft" align="right" valign="top"><a id="af86a80d875460cf1eb52b8a62316fd48" name="af86a80d875460cf1eb52b8a62316fd48"></a>
+<tr class="separator:a158a4df924498865abc3244a9d078422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f1f1fa88ba0acd56837069f70dc380c" id="r_a2f1f1fa88ba0acd56837069f70dc380c"><td class="memItemLeft" align="right" valign="top"><a id="a2f1f1fa88ba0acd56837069f70dc380c" name="a2f1f1fa88ba0acd56837069f70dc380c"></a>
 std::vector&lt; <a class="el" href="class_tree_node.html">Process::MessageNode</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>try_getNodesFromAddress</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;root, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;addr)</td></tr>
-<tr class="separator:af86a80d875460cf1eb52b8a62316fd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2342810055e58a5a1f86609a4c7ae1" id="r_abd2342810055e58a5a1f86609a4c7ae1"><td class="memItemLeft" align="right" valign="top"><a id="abd2342810055e58a5a1f86609a4c7ae1" name="abd2342810055e58a5a1f86609a4c7ae1"></a>
+<tr class="separator:a2f1f1fa88ba0acd56837069f70dc380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb5c652408c4e4771187d36093b72e6" id="r_a2fb5c652408c4e4771187d36093b72e6"><td class="memItemLeft" align="right" valign="top"><a id="a2fb5c652408c4e4771187d36093b72e6" name="a2fb5c652408c4e4771187d36093b72e6"></a>
 <a class="el" href="class_tree_node.html">Process::MessageNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>try_getNodeFromAddress</b> (<a class="el" href="class_tree_node.html">Process::MessageNode</a> &amp;root, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;addr)</td></tr>
-<tr class="separator:abd2342810055e58a5a1f86609a4c7ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af265dbe855cec369b3acb5000325de01" id="r_af265dbe855cec369b3acb5000325de01"><td class="memItemLeft" align="right" valign="top"><a id="af265dbe855cec369b3acb5000325de01" name="af265dbe855cec369b3acb5000325de01"></a>
+<tr class="separator:a2fb5c652408c4e4771187d36093b72e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f6b006411fbe7446268bb6f0b7c546" id="r_a97f6b006411fbe7446268bb6f0b7c546"><td class="memItemLeft" align="right" valign="top"><a id="a97f6b006411fbe7446268bb6f0b7c546" name="a97f6b006411fbe7446268bb6f0b7c546"></a>
 QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDebug d, const <a class="el" href="struct_process_1_1_process_state_data.html">ProcessStateData</a> &amp;mess)</td></tr>
-<tr class="separator:af265dbe855cec369b3acb5000325de01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45eb2db5781e5e1c13368028e672b27e" id="r_a45eb2db5781e5e1c13368028e672b27e"><td class="memItemLeft" align="right" valign="top"><a id="a45eb2db5781e5e1c13368028e672b27e" name="a45eb2db5781e5e1c13368028e672b27e"></a>
+<tr class="separator:a97f6b006411fbe7446268bb6f0b7c546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f313f2f789577aea33385dc21c31cb0" id="r_a4f313f2f789577aea33385dc21c31cb0"><td class="memItemLeft" align="right" valign="top"><a id="a4f313f2f789577aea33385dc21c31cb0" name="a4f313f2f789577aea33385dc21c31cb0"></a>
 QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDebug d, const <a class="el" href="struct_process_1_1_state_node_data.html">StateNodeData</a> &amp;mess)</td></tr>
-<tr class="separator:a45eb2db5781e5e1c13368028e672b27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4f313f2f789577aea33385dc21c31cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6" id="r_a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplParams" colspan="2"><a id="a091e3079dd365daa1e97e99a8a9e45e6" name="a091e3079dd365daa1e97e99a8a9e45e6"></a>
 template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a091e3079dd365daa1e97e99a8a9e45e6"><td class="memTemplItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memTemplItemRight" valign="bottom"><b>currentWidgetPos</b> (int controlIndex, F getControlSize) noexcept(noexcept(getControlSize(0)))</td></tr>
@@ -814,6 +813,8 @@ template&lt;typename T &gt; </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69" name="a592bb361ebf8fbc09c929c93208c71f1a72fe866a84cc50d4400605b060322e69"></a>ExternalUIAvailable&#160;</td><td class="fielddoc"><p>The process currently has a custom UI available (not necessarily shown). Can vary, for instance depending on the JS script. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af" name="a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af"></a>NodeHasNoBackground&#160;</td><td class="fielddoc"><p>No background will be drawn for the node. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e" name="a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e"></a>Deprecated&#160;</td><td class="fielddoc"><p><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> kind is deprecated. </p>
 </td></tr>
 </table>
 

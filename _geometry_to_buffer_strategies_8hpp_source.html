@@ -282,11 +282,11 @@ $(document).ready(function(){initNavTree('_geometry_to_buffer_strategies_8hpp_so
 </div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>[[nodiscard]] <span class="keyword">inline</span> std::optional&lt;attribute_lookup&gt; findAttribute(</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">const</span> halp::dynamic_gpu_geometry&amp; <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>, halp::attribute_location location) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">const</span> halp::dynamic_gpu_geometry&amp; <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>, halp::attribute_semantic location) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; attr : <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>.attributes)</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">if</span>(attr.location == location)</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordflow">if</span>(attr.semantic == location)</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    {</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keyword">const</span> <span class="keyword">auto</span> binding_idx = attr.binding;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keywordflow">if</span>(binding_idx &lt; 0 || binding_idx &gt;= <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>.bindings.size()))</div>
@@ -685,7 +685,7 @@ $(document).ready(function(){initNavTree('_geometry_to_buffer_strategies_8hpp_so
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="stringliteral">}</span></div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="stringliteral">)&quot;);</span></div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="stringliteral">    QShader shader = <a class="code hl_function" href="namespacescore_1_1gfx.html#ad528ce932ef3a9bbbae90dd43035270e">score::gfx::makeCompute</a>(renderState, shaderCode);</span></div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="stringliteral">    QShader shader = <a class="code hl_function" href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a>(renderState, shaderCode);</span></div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="stringliteral">    </span><span class="keywordflow">if</span>(!shader.isValid())</div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    {</div>
 <div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>      qDebug() &lt;&lt; <span class="stringliteral">&quot;ComputeExtractionStrategy: Shader compilation failed&quot;</span>;</div>
@@ -1002,7 +1002,7 @@ $(document).ready(function(){initNavTree('_geometry_to_buffer_strategies_8hpp_so
 <div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="stringliteral">}</span></div>
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="stringliteral">)&quot;);</span></div>
 <div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="stringliteral">    QShader shader = <a class="code hl_function" href="namespacescore_1_1gfx.html#ad528ce932ef3a9bbbae90dd43035270e">score::gfx::makeCompute</a>(renderState, shaderCode);</span></div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="stringliteral">    QShader shader = <a class="code hl_function" href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a>(renderState, shaderCode);</span></div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span><span class="stringliteral">    </span><span class="keywordflow">if</span>(!shader.isValid())</div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    {</div>
 <div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>      qDebug() &lt;&lt; <span class="stringliteral">&quot;IndexedExtractionStrategy: Shader compilation failed&quot;</span>;</div>
@@ -1080,10 +1080,10 @@ $(document).ready(function(){initNavTree('_geometry_to_buffer_strategies_8hpp_so
 <div class="ttc" id="aclass_threedim_1_1_direct_buffer_reference_strategy_html"><div class="ttname"><a href="class_threedim_1_1_direct_buffer_reference_strategy.html">Threedim::DirectBufferReferenceStrategy</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:255</div></div>
 <div class="ttc" id="aclass_threedim_1_1_direct_reference_strategy_html"><div class="ttname"><a href="class_threedim_1_1_direct_reference_strategy.html">Threedim::DirectReferenceStrategy</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:307</div></div>
 <div class="ttc" id="aclass_threedim_1_1_indexed_extraction_strategy_html"><div class="ttname"><a href="class_threedim_1_1_indexed_extraction_strategy.html">Threedim::IndexedExtractionStrategy</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:632</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_ad528ce932ef3a9bbbae90dd43035270e"><div class="ttname"><a href="namespacescore_1_1gfx.html#ad528ce932ef3a9bbbae90dd43035270e">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:422</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a433eac87f8111d670824ff45923297fc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:674</div></div>
 <div class="ttc" id="astruct_threedim_1_1attribute__lookup_html"><div class="ttname"><a href="struct_threedim_1_1attribute__lookup.html">Threedim::attribute_lookup</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:152</div></div>
 <div class="ttc" id="astruct_threedim_1_1gpu__buffer__view_html"><div class="ttname"><a href="struct_threedim_1_1gpu__buffer__view.html">Threedim::gpu_buffer_view</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:246</div></div>
-<div class="ttc" id="astruct_threedim_1_1mesh_html"><div class="ttname"><a href="struct_threedim_1_1mesh.html">Threedim::mesh</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:19</div></div>
+<div class="ttc" id="astruct_threedim_1_1mesh_html"><div class="ttname"><a href="struct_threedim_1_1mesh.html">Threedim::mesh</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:27</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

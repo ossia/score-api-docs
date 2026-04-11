@@ -12,6 +12,7 @@ var classscore_1_1gfx_1_1_render_list =
     [ "outputUBO", "classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e", null ],
     [ "release", "classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd", null ],
     [ "render", "classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11", null ],
+    [ "renderTargetForInputPort", "classscore_1_1gfx_1_1_render_list.html#ade6c9eec96117aa9ad415aeed9dad218", null ],
     [ "renderTargetForOutput", "classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f", null ],
     [ "requiresDepth", "classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9", null ],
     [ "update", "classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987", null ],

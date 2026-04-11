@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('_gfx_exec_context_8hpp_source.html',''
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> releaseMessage(<a class="code hl_struct" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a>&amp;&amp;);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> startTick(<span class="keyword">const</span> ossia::audio_tick_state&amp; st) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> setEdge(port_index source, port_index sink);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> setEdge(port_index source, port_index sink, Process::CableType t);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> endTick(<span class="keyword">const</span> ossia::audio_tick_state&amp; st) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="class_gfx_1_1_gfx_context.html">GfxContext</a>* ui{};</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('_gfx_exec_context_8hpp_source.html',''
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
 <div class="ttc" id="aclass_execution_1_1_execution_action_html"><div class="ttname"><a href="class_execution_1_1_execution_action.html">Execution::ExecutionAction</a></div><div class="ttdef"><b>Definition</b> ExecutionAction.hpp:12</div></div>
-<div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition</b> GfxContext.hpp:37</div></div>
+<div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition</b> GfxContext.hpp:59</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_execution_action_html"><div class="ttname"><a href="class_gfx_1_1_gfx_execution_action.html">Gfx::GfxExecutionAction</a></div><div class="ttdef"><b>Definition</b> GfxExecContext.hpp:16</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:30</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:49</div></div>
