@@ -1,6 +1,11 @@
 var NAVTREEINDEX18 =
 {
-"classscore_1_1gfx_1_1_window.html":[12,0,55,2,112],
+"classscore_1_1gfx_1_1_video_node_base.html":[11,0,12,0,116],
+"classscore_1_1gfx_1_1_video_node_base.html":[12,0,55,2,116],
+"classscore_1_1gfx_1_1_video_node_renderer.html":[11,0,12,0,117],
+"classscore_1_1gfx_1_1_video_node_renderer.html":[12,0,55,2,117],
+"classscore_1_1gfx_1_1_window.html":[11,0,12,0,119],
+"classscore_1_1gfx_1_1_window.html":[12,0,55,2,119],
 "classscore__lib__process.html":[12,0,235],
 "classscore__plugin__analysis.html":[12,0,236],
 "classscore__plugin__audio.html":[12,0,237],
@@ -87,6 +92,7 @@ var NAVTREEINDEX18 =
 "d_2_spline3_d_2_generator_dialog_8hpp_source.html":[13,0,0,2,34,0,2],
 "data_structures_8hpp_source.html":[13,0,0,2,32,4,11,0],
 "decoders_2_n_v12_8hpp_source.html":[13,0,0,2,17,1,4,0,15],
+"decoders_2_v210_8hpp_source.html":[13,0,0,2,17,1,4,0,24],
 "dir_0004ed9aedabab06675ccf2cafe0b20d.html":[13,0,0,2,27],
 "dir_01070f5010cc11784fcf16d6890bac7f.html":[13,0,0,2,24,0,1,0],
 "dir_011d5323baa8da4d0eb6c013090d4a96.html":[13,0,0,2,28,0,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX18 =
 "dir_7536f9beaa8f88ac667bb410c98c1adf.html":[13,0,0,2,13,0,3,0],
 "dir_76368fd573c4e19c24e6a681ae7cab3b.html":[13,0,0,2,6,0],
 "dir_769761bec613a5743ddd48d52ed5b22e.html":[13,0,0,2,32,4,1,4],
-"dir_77abe1cadec1649f8c16ee3e6195502d.html":[13,0,0,2,14,0],
-"dir_78864e7f8356eeec9b51d221027bb3d7.html":[13,0,0,2,25,0],
-"dir_793519f2a17488e57834d935a6b6bcdc.html":[13,0,0,2,32,4,3,1],
-"dir_7a69cd066689a1e081e6ce458bde6143.html":[13,0,0,2,32,0,0],
-"dir_7aab21c1898d23816214f43f8b89dafb.html":[13,0,0,2,19],
-"dir_7b801358ae2ff37caa5a348da971a525.html":[13,0,0,1,1,11],
-"dir_7b88acaaf65572c1f6869262975b8f10.html":[13,0,0,2,29,0,3]
+"dir_77abe1cadec1649f8c16ee3e6195502d.html":[13,0,0,2,14,0]
 };

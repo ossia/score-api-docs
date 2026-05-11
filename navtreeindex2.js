@@ -1,8 +1,11 @@
 var NAVTREEINDEX2 =
 {
+"_g_p_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,4,2],
+"_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,4,3],
+"_g_p_u_buffer_scatter_8hpp_source.html":[13,0,0,2,17,1,4,9],
 "_g_p_u_video_decoder_8hpp_source.html":[13,0,0,2,17,1,4,0,3],
 "_g_p_u_video_decoder_factory_8hpp_source.html":[13,0,0,2,17,1,4,0,4],
-"_g_p_u_video_encoder_8hpp_source.html":[13,0,0,2,17,1,4,1,1],
+"_g_p_u_video_encoder_8hpp_source.html":[13,0,0,2,17,1,4,1,4],
 "_g_photo2_device_8hpp_source.html":[13,0,0,2,17,1,3,0],
 "_g_streamer_compatibility_8hpp_source.html":[13,0,0,2,24,2,4],
 "_g_streamer_device_8hpp_source.html":[13,0,0,2,17,1,5,0],
@@ -84,7 +87,7 @@ var NAVTREEINDEX2 =
 "_hide_rack_in_view_model_8hpp_source.html":[13,0,0,2,32,4,1,5,6],
 "_hierarchical_model_8hpp_source.html":[13,0,0,1,1,7,16],
 "_high_frequency_content_8hpp_source.html":[13,0,0,2,5,0,8],
-"_i420_8hpp_source.html":[13,0,0,2,17,1,4,1,2],
+"_i420_8hpp_source.html":[13,0,0,2,17,1,4,1,5],
 "_i_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,1],
 "_i_o_type_8hpp_source.html":[13,0,0,2,0,0,0,2],
 "_i_s_f_executor_8hpp_source.html":[13,0,0,2,17,1,30],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2],
 "_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
-"_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
-"_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
-"_map_copy_8hpp_source.html":[13,0,0,1,1,12,18],
-"_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9]
+"_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7]
 };

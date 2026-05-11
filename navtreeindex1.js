@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"_create_comment_block_8hpp_source.html":[13,0,0,2,32,4,1,5,0,0],
+"_create_curve_from_states_8hpp_source.html":[13,0,0,2,32,4,1,0,0],
+"_create_curves_8cpp_source.html":[13,0,0,2,32,4,1,0,1],
 "_create_curves_8hpp_source.html":[13,0,0,2,32,4,1,0,2],
 "_create_event___state_8hpp_source.html":[13,0,0,2,32,4,1,5,0,1],
 "_create_interval_8hpp_source.html":[13,0,0,2,32,4,1,5,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "_full_view_interval_presenter_8hpp_source.html":[13,0,0,2,32,4,3,5,0,3],
 "_full_view_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,0,4],
 "_g_p_s_device_8hpp_source.html":[13,0,0,2,29,0,4,0],
-"_g_p_s_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,4,1],
-"_g_p_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,4,2],
-"_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,4,3],
-"_g_p_u_buffer_scatter_8hpp_source.html":[13,0,0,2,17,1,4,9]
+"_g_p_s_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,4,1]
 };

@@ -118,9 +118,11 @@ Inheritance diagram for score::gfx::GPUVideoEncoder:</div>
  <div class="center">
   <img src="structscore_1_1gfx_1_1_g_p_u_video_encoder.png" usemap="#score::gfx::GPUVideoEncoder_map" alt=""/>
   <map id="score::gfx::GPUVideoEncoder_map" name="score::gfx::GPUVideoEncoder_map">
-<area href="structscore_1_1gfx_1_1_i420_encoder.html" title="GPU RGBA-&gt;I420 encoder (planar 4:2:0)." alt="score::gfx::I420Encoder" shape="rect" coords="0,56,179,80"/>
-<area href="structscore_1_1gfx_1_1_n_v12_encoder.html" title="GPU RGBA-&gt;NV12 encoder (semi-planar 4:2:0)." alt="score::gfx::NV12Encoder" shape="rect" coords="189,56,368,80"/>
-<area href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html" title="GPU RGBA-&gt;UYVY encoder (packed 4:2:2)." alt="score::gfx::UYVYEncoder" shape="rect" coords="378,56,557,80"/>
+<area href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html" title="Cross-backend RGBA -&gt; BGRA byte-order encoder." alt="score::gfx::BGRAEncoder" shape="rect" coords="0,56,179,80"/>
+<area href="structscore_1_1gfx_1_1_i420_encoder.html" title="GPU RGBA-&gt;I420 encoder (planar 4:2:0)." alt="score::gfx::I420Encoder" shape="rect" coords="189,56,368,80"/>
+<area href="structscore_1_1gfx_1_1_n_v12_encoder.html" title="GPU RGBA-&gt;NV12 encoder (semi-planar 4:2:0)." alt="score::gfx::NV12Encoder" shape="rect" coords="378,56,557,80"/>
+<area href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html" title="GPU RGBA-&gt;UYVY encoder (packed 4:2:2)." alt="score::gfx::UYVYEncoder" shape="rect" coords="567,56,746,80"/>
+<area href="structscore_1_1gfx_1_1_v210_encoder.html" title="Cross-backend RGBA -&gt; v210 encoder." alt="score::gfx::V210Encoder" shape="rect" coords="756,56,935,80"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -197,7 +199,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Execute the conversion pass. Call inside beginOffscreenFrame/endOffscreenFrame. Renders the conversion shader and schedules GPU-&gt;CPU readback(s). </p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a208e6bf87e188623c193e3202fcf6887">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a10781bfc94ed7c4b6bf0ca2a2295fc70">score::gfx::NV12Encoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a96cd7e435a17fa970db9bfd736073469">score::gfx::UYVYEncoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a52ea0740993c516298403db15d0a72a5">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a208e6bf87e188623c193e3202fcf6887">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a10781bfc94ed7c4b6bf0ca2a2295fc70">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a96cd7e435a17fa970db9bfd736073469">score::gfx::UYVYEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a7d4a057528bb95e6a49df5ea4213aa1b">score::gfx::V210Encoder</a>.</p>
 
 </div>
 </div>
@@ -270,7 +272,7 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a66037319954a50b958b405d18ae77c4b">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a06b8430821fcda9767d73e12405a77e0">score::gfx::NV12Encoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ad21082673314dbc1b86fd7e007589bf7">score::gfx::UYVYEncoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#ad5a2b043fdb73af6e5109eedf1f51c0a">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a66037319954a50b958b405d18ae77c4b">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a06b8430821fcda9767d73e12405a77e0">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ad21082673314dbc1b86fd7e007589bf7">score::gfx::UYVYEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a905d5f7198bb0c985d8a256c93a0544d">score::gfx::V210Encoder</a>.</p>
 
 </div>
 </div>
@@ -299,7 +301,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Number of readback planes (1 for UYVY, 2 for NV12, 3 for I420). </p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a59ac7c900b26e59016b781bb15d181df">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a745263bfc76de512d0379898d69427d4">score::gfx::NV12Encoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a8672fd3bd904673fcaa7a508dfbd7de4">score::gfx::UYVYEncoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a348446515a1022f2c759bdf4a1de5575">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a59ac7c900b26e59016b781bb15d181df">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a745263bfc76de512d0379898d69427d4">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a8672fd3bd904673fcaa7a508dfbd7de4">score::gfx::UYVYEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a2ff36ea4148e524d3ecd77cbd9731297">score::gfx::V210Encoder</a>.</p>
 
 </div>
 </div>
@@ -329,7 +331,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the readback result for a given plane. Valid after endOffscreenFrame. </p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a25df502952c7f67f9481585a31082dbf">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a8123a683c0abcf3116a1040a2db7b752">score::gfx::NV12Encoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ab74f36f267e0edcb0b0dfa114d47d283">score::gfx::UYVYEncoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a25df502952c7f67f9481585a31082dbf">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a8123a683c0abcf3116a1040a2db7b752">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a189ef271771d67589dd1f6822af21760">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ab74f36f267e0edcb0b0dfa114d47d283">score::gfx::UYVYEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a9fac48602a98545901add15d8983d04c">score::gfx::V210Encoder</a>.</p>
 
 </div>
 </div>
@@ -358,7 +360,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Release all GPU resources. </p>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a940f242d18e2c1e60b3cc7e8bfe37a6d">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a02bd2248ceff9299df616f469df1119f">score::gfx::NV12Encoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a5b4e66209a72c3e3012056fe351859b7">score::gfx::UYVYEncoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a7ffdaf9206262a0dea00ec44b77a491b">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a940f242d18e2c1e60b3cc7e8bfe37a6d">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a02bd2248ceff9299df616f469df1119f">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a5b4e66209a72c3e3012056fe351859b7">score::gfx::UYVYEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a73c71bdf52d47d5d85ca12aded71fb1b">score::gfx::V210Encoder</a>.</p>
 
 </div>
 </div>

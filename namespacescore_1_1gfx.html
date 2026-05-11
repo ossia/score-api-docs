@@ -156,7 +156,16 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_basic_mesh.html">BasicMesh</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_compute_encoder.html">BGRAComputeEncoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute-shader RGBA -&gt; BGRA (NTV2_FBF_ARGB byte order) encoder targeting an external SSBO.  <a href="structscore_1_1gfx_1_1_b_g_r_a_compute_encoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html">BGRAEncoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-backend RGBA -&gt; BGRA byte-order encoder.  <a href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_compute_encoder.html">ComputeEncoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base interface for compute-shader RGBA -&gt; AJA-format encoders.  <a href="structscore_1_1gfx_1_1_compute_encoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -410,8 +419,20 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html">UYVY422Decoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes UYVY422 video, mostly used for NDI.  <a href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_compute_encoder.html">UYVYComputeEncoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute-shader RGBA -&gt; UYVY (2vuy) encoder targeting an external SSBO.  <a href="structscore_1_1gfx_1_1_u_y_v_y_compute_encoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html">UYVYEncoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPU RGBA-&gt;UYVY encoder (packed 4:2:2).  <a href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_v210_compute_encoder.html">V210ComputeEncoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute-shader RGBA -&gt; v210 encoder targeting an external SSBO.  <a href="structscore_1_1gfx_1_1_v210_compute_encoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_v210_decoder.html">V210Decoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes 10-bit 4:2:2 YCbCr packed in v210 (SMPTE ST 2110-20 / SDI native).  <a href="structscore_1_1gfx_1_1_v210_decoder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html">V210Encoder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross-backend RGBA -&gt; v210 encoder.  <a href="structscore_1_1gfx_1_1_v210_encoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_video_frame_reader.html">VideoFrameReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -24,6 +24,7 @@ var dir_23ae69b7a30caf96098699302fa4b3be =
     [ "P410.hpp", "_p410_8hpp_source.html", null ],
     [ "RGBA.hpp", "_r_g_b_a_8hpp_source.html", null ],
     [ "Tonemap.hpp", "_tonemap_8hpp_source.html", null ],
+    [ "decoders/V210.hpp", "decoders_2_v210_8hpp_source.html", null ],
     [ "VUYA.hpp", "_v_u_y_a_8hpp_source.html", null ],
     [ "Y210.hpp", "_y210_8hpp_source.html", null ],
     [ "YUV420.hpp", "_y_u_v420_8hpp_source.html", null ],

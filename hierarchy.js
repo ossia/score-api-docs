@@ -625,6 +625,11 @@ var hierarchy =
       ] ]
     ] ],
     [ "Media::Sound::ComputedWaveform", "struct_media_1_1_sound_1_1_computed_waveform.html", null ],
+    [ "score::gfx::ComputeEncoder", "structscore_1_1gfx_1_1_compute_encoder.html", [
+      [ "score::gfx::BGRAComputeEncoder", "structscore_1_1gfx_1_1_b_g_r_a_compute_encoder.html", null ],
+      [ "score::gfx::UYVYComputeEncoder", "structscore_1_1gfx_1_1_u_y_v_y_compute_encoder.html", null ],
+      [ "score::gfx::V210ComputeEncoder", "structscore_1_1gfx_1_1_v210_compute_encoder.html", null ]
+    ] ],
     [ "Threedim::ComputeExtractionStrategy", "class_threedim_1_1_compute_extraction_strategy.html", null ],
     [ "ControlSurface::con_unvalidated", "struct_control_surface_1_1con__unvalidated.html", null ],
     [ "Gfx::con_unvalidated", "struct_gfx_1_1con__unvalidated.html", null ],
@@ -1019,6 +1024,7 @@ var hierarchy =
       [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
       [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
+      [ "score::gfx::V210Decoder", "structscore_1_1gfx_1_1_v210_decoder.html", null ],
       [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
       [ "score::gfx::XV30Decoder", "structscore_1_1gfx_1_1_x_v30_decoder.html", null ],
       [ "score::gfx::Y210Decoder", "structscore_1_1gfx_1_1_y210_decoder.html", null ],
@@ -1039,9 +1045,11 @@ var hierarchy =
       [ "score::gfx::YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", null ]
     ] ],
     [ "score::gfx::GPUVideoEncoder", "structscore_1_1gfx_1_1_g_p_u_video_encoder.html", [
+      [ "score::gfx::BGRAEncoder", "structscore_1_1gfx_1_1_b_g_r_a_encoder.html", null ],
       [ "score::gfx::I420Encoder", "structscore_1_1gfx_1_1_i420_encoder.html", null ],
       [ "score::gfx::NV12Encoder", "structscore_1_1gfx_1_1_n_v12_encoder.html", null ],
-      [ "score::gfx::UYVYEncoder", "structscore_1_1gfx_1_1_u_y_v_y_encoder.html", null ]
+      [ "score::gfx::UYVYEncoder", "structscore_1_1gfx_1_1_u_y_v_y_encoder.html", null ],
+      [ "score::gfx::V210Encoder", "structscore_1_1gfx_1_1_v210_encoder.html", null ]
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
     [ "ossia::graph_node", null, [
@@ -2317,8 +2325,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
