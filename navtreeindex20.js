@@ -218,7 +218,7 @@ var NAVTREEINDEX20 =
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,15],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
-"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
+"score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,0,2,8,3,13],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,15],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,20],
 "score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
