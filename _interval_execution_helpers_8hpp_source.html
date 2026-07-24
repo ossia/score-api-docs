@@ -367,54 +367,75 @@ $(document).ready(function(){initNavTree('_interval_execution_helpers_8hpp_sourc
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>{</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  std::weak_ptr&lt;ossia::graph_node&gt; cst_node_weak;</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  std::weak_ptr&lt;ossia::time_process&gt; oproc_weak;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  std::weak_ptr&lt;ossia::graph_interface&gt; g_weak;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordtype">void</span> operator()(</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      <span class="keyword">const</span> ossia::node_ptr&amp; old_node, <span class="keyword">const</span> ossia::node_ptr&amp; new_node,</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      <a class="code hl_struct" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>* commands) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  {</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    OSSIA_ENSURE_CURRENT_THREAD_KIND(ossia::thread_type::Ui);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    commands-&gt;push_back([cst_node_weak = this-&gt;cst_node_weak, g_weak = this-&gt;g_weak,</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>                         propagated = propagatedOutlets(proc.outlets()), old_node,</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                         new_node] {</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      OSSIA_ENSURE_CURRENT_THREAD_KIND(ossia::thread_type::Audio);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      auto cst_node = cst_node_weak.lock();</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      if(!cst_node)</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        return;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      auto g = g_weak.lock();</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      if(!g)</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  std::weak_ptr&lt;ossia::time_interval&gt; itv_weak;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  std::weak_ptr&lt;ossia::graph_interface&gt; g_weak;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> operator()(</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>      <span class="keyword">const</span> ossia::node_ptr&amp; old_node, <span class="keyword">const</span> ossia::node_ptr&amp; new_node,</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      <a class="code hl_struct" href="struct_execution_1_1_transaction.html">Execution::Transaction</a>* commands) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  {</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    OSSIA_ENSURE_CURRENT_THREAD_KIND(ossia::thread_type::Ui);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    commands-&gt;push_back([cst_node_weak = this-&gt;cst_node_weak,</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>                         oproc_weak = this-&gt;oproc_weak,</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>                         itv_weak = this-&gt;itv_weak, g_weak = this-&gt;g_weak,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>                         propagated = propagatedOutlets(proc.outlets()), old_node,</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>                         new_node] {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      OSSIA_ENSURE_CURRENT_THREAD_KIND(ossia::thread_type::Audio);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      auto cst_node = cst_node_weak.lock();</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      if(!cst_node)</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        return;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      <span class="comment">// Remove propagate edges from the old node</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      if(old_node)</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        ossia::graph_node&amp; n = *old_node;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        for(auto&amp; outlet : n.root_outputs())</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>          auto targets = outlet-&gt;targets;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>          for(auto e : targets)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>          {</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>            if(e-&gt;in_node.get() == cst_node.get())</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            {</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>              g-&gt;disconnect(e);</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            }</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      auto g = g_weak.lock();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      if(!g)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        return;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      <span class="comment">// Re-seek the resampler to the current model time so a file swap</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="comment">// on a running interval lands in phase.</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>      if(auto itv = itv_weak.lock())</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      {</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>        if(auto oproc = oproc_weak.lock())</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        {</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>          const auto date = itv-&gt;get_date();</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>          if(date.impl != 0)</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>          {</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>            oproc-&gt;transport(date, itv-&gt;current_transport_info());</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>          }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>      }</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      <span class="comment">// Add edges to the new node</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      <span class="keywordflow">if</span>(new_node)</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        connectPropagated(new_node, cst_node, *g, propagated);</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>      }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    });</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  }</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>};</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      <span class="comment">// In-place reload: skip the rewire to avoid a momentary audio break.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      <span class="keywordflow">if</span>(old_node == new_node)</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>      <span class="comment">// Remove propagate edges from the old node</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>      <span class="keywordflow">if</span>(old_node)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      {</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        ossia::graph_node&amp; n = *old_node;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; outlet : n.root_outputs())</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        {</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>          <span class="keyword">auto</span> targets = outlet-&gt;targets;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>          <span class="keywordflow">for</span>(<span class="keyword">auto</span> e : targets)</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>          {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            <span class="keywordflow">if</span>(e-&gt;in_node.get() == cst_node.get())</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>            {</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>              g-&gt;disconnect(e);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>            }</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>          }</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>        }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>      }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span> </div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>      <span class="comment">// Add edges to the new node</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      <span class="keywordflow">if</span>(new_node)</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        connectPropagated(new_node, cst_node, *g, propagated);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>      }</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    });</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  }</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>};</div>
 </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>}</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>}</div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:275</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:62</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>

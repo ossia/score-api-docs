@@ -191,6 +191,7 @@ var NAVTREEINDEX2 =
 "_libav_encoder_8hpp_source.html":[13,0,0,2,17,1,7,2],
 "_libav_encoder_node_8hpp_source.html":[13,0,0,2,17,1,7,3],
 "_libav_introspection_8hpp_source.html":[13,0,0,2,24,0,11],
+"_libav_media_info_8hpp_source.html":[13,0,0,2,24,0,12],
 "_libav_output_settings_8hpp_source.html":[13,0,0,2,17,1,7,4],
 "_libav_output_stream_8hpp_source.html":[13,0,0,2,17,1,7,5],
 "_libav_settings_widget_8hpp_source.html":[13,0,0,2,17,1,7,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_m_q_t_t_specific_settings_8hpp_source.html":[13,0,0,2,29,0,12,3],
 "_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2],
 "_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
-"_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
-"_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7]
+"_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1]
 };

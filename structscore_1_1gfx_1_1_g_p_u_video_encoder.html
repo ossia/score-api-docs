@@ -131,7 +131,7 @@ Inheritance diagram for score::gfx::GPUVideoEncoder:</div>
 <p>The encoder includes Y-flip (GL Y-up -&gt; video Y-down) in its fragment shader, so InvertYRenderer is not needed in the output pipeline.</p>
 <p>Readback is also included because there's not going to be a case anytime soon where we can do something useful GPU-side with the Yuv tex.</p>
 <p>Usage:</p><ol type="1">
-<li>init() — create textures, samplers, pipeline</li>
+<li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a9b16439d881feadd3d7085b75a003abf">init()</a> — create textures, samplers, pipeline</li>
 <li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a5f218cd270dc57019c03323bd40454bb">exec()</a> — render the conversion pass + schedule readback</li>
 <li>After QRhi::endOffscreenFrame(), call readbackData() to get results</li>
 <li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#afbcf1fa53b70a82e1bd3562990dfabee" title="Release all GPU resources.">release()</a> — free GPU resources </li>

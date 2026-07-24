@@ -471,7 +471,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:a855ad085613b24425b80b94445d32b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f53a9d13badc300e89917bc97878f8a" id="r_a9f53a9d13badc300e89917bc97878f8a"><td class="memItemLeft" align="right" valign="top"><a id="a9f53a9d13badc300e89917bc97878f8a" name="a9f53a9d13badc300e89917bc97878f8a"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PortLoadDataFlags</b> { <b>NoFlag</b> = 0
-, <b>DontReloadValue</b> = (1 &lt;&lt; 0)
+, <b>ReloadValue</b> = (1 &lt;&lt; 0)
  }</td></tr>
 <tr class="separator:a9f53a9d13badc300e89917bc97878f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592bb361ebf8fbc09c929c93208c71f1" id="r_a592bb361ebf8fbc09c929c93208c71f1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> : int64_t { <br />
@@ -564,6 +564,9 @@ QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeAddressCom
 <tr class="memitem:ad0f1ade7ee98746f889338b599c7b3e9" id="r_ad0f1ade7ee98746f889338b599c7b3e9"><td class="memItemLeft" align="right" valign="top"><a id="ad0f1ade7ee98746f889338b599c7b3e9" name="ad0f1ade7ee98746f889338b599c7b3e9"></a>
 QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeDeviceCombo</b> (std::function&lt; bool(<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;)&gt; condition, <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;list, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
 <tr class="separator:ad0f1ade7ee98746f889338b599c7b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e0534a72677a078aefad73eecc64e22" id="r_a6e0534a72677a078aefad73eecc64e22"><td class="memItemLeft" align="right" valign="top"><a id="a6e0534a72677a078aefad73eecc64e22" name="a6e0534a72677a078aefad73eecc64e22"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;lhs, const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;rhs)</td></tr>
+<tr class="separator:a6e0534a72677a078aefad73eecc64e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a339ce34599014678a81f9572e05489" id="r_a1a339ce34599014678a81f9572e05489"><td class="memItemLeft" align="right" valign="top"><a id="a1a339ce34599014678a81f9572e05489" name="a1a339ce34599014678a81f9572e05489"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>verifyAndUpdateIfChildOf</b> (<a class="el" href="class_object_path.html">ObjectPath</a> &amp;path, const <a class="el" href="class_object_path.html">ObjectPath</a> &amp;parent)</td></tr>
 <tr class="separator:a1a339ce34599014678a81f9572e05489"><td class="memSeparator" colspan="2">&#160;</td></tr>

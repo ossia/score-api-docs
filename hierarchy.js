@@ -468,6 +468,7 @@ var hierarchy =
         [ "Scenario::Command::MoveIntervalMacro", "class_scenario_1_1_command_1_1_move_interval_macro.html", null ],
         [ "Scenario::Command::MoveStateMacro", "class_scenario_1_1_command_1_1_move_state_macro.html", null ],
         [ "Scenario::Command::RefreshStatesMacro", "class_scenario_1_1_command_1_1_refresh_states_macro.html", null ],
+        [ "Scenario::Command::RemoveMultipleProcessesFromInterval", "class_scenario_1_1_command_1_1_remove_multiple_processes_from_interval.html", null ],
         [ "Scenario::Command::RemoveProcessAndKeepLinked", "class_scenario_1_1_command_1_1_remove_process_and_keep_linked.html", null ],
         [ "Scenario::Command::ReplaceAddresses", "class_scenario_1_1_command_1_1_replace_addresses.html", null ],
         [ "Scenario::Command::ScenarioPasteContent", "class_scenario_1_1_command_1_1_scenario_paste_content.html", null ],
@@ -687,6 +688,7 @@ var hierarchy =
       [ "Scenario::PathDetector", "struct_scenario_1_1_path_detector.html", null ]
     ] ],
     [ "Process::default_t", "struct_process_1_1default__t.html", null ],
+    [ "score::MinimalApplication::DefaultArgs", "structscore_1_1_minimal_application_1_1_default_args.html", null ],
     [ "Explorer::DefaultBounds< T >", "struct_explorer_1_1_default_bounds.html", null ],
     [ "Explorer::DefaultBounds< float >", "struct_explorer_1_1_default_bounds_3_01float_01_4.html", null ],
     [ "Explorer::DefaultBounds< int >", "struct_explorer_1_1_default_bounds_3_01int_01_4.html", null ],
@@ -943,6 +945,7 @@ var hierarchy =
     [ "score::FocusFacade", "structscore_1_1_focus_facade.html", null ],
     [ "WidgetFactory::FolderChooser", "struct_widget_factory_1_1_folder_chooser.html", null ],
     [ "foo", "classfoo.html", null ],
+    [ "score::libav::MediaInfo::FormatContextDeleter", "structscore_1_1libav_1_1_media_info_1_1_format_context_deleter.html", null ],
     [ "Faust::FoundKeys", "struct_faust_1_1_found_keys.html", null ],
     [ "gpp::qrhi::DefaultPipeline::layout::fragment_input", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input.html", null ],
     [ "libfreenect2::FrameListener", null, [
@@ -1903,6 +1906,7 @@ var hierarchy =
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", null ],
     [ "avnd_tools::PatternCombiner::maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
     [ "Protocols::MCUSpecificSettings", "struct_protocols_1_1_m_c_u_specific_settings.html", null ],
+    [ "score::libav::MediaInfo", "structscore_1_1libav_1_1_media_info.html", null ],
     [ "Gfx::ShaderSource::MemberSpec", "struct_gfx_1_1_shader_source_1_1_member_spec.html", null ],
     [ "JS::QmlSource::MemberSpec", "struct_j_s_1_1_qml_source_1_1_member_spec.html", null ],
     [ "score::Menu", "classscore_1_1_menu.html", null ],
@@ -2396,7 +2400,6 @@ var hierarchy =
     [ "Execution::PlayFromIntervalScenarioPruner", "struct_execution_1_1_play_from_interval_scenario_pruner.html", null ],
     [ "Scenario::PlayToolState", "class_scenario_1_1_play_tool_state.html", null ],
     [ "llvm::orc::ObjectLinkingLayer::Plugin", null, [
-      [ "Jit::EagerLinkingPlugin", "class_jit_1_1_eager_linking_plugin.html", null ],
       [ "Jit::RuntimeInterposePlugin", "class_jit_1_1_runtime_interpose_plugin.html", null ]
     ] ],
     [ "score::Plugin", "structscore_1_1_plugin.html", null ],
@@ -3413,6 +3416,7 @@ var hierarchy =
       [ "JS::JsLibrary", "class_j_s_1_1_js_library.html", null ],
       [ "JS::JsSystem", "class_j_s_1_1_js_system.html", null ],
       [ "JS::JsUtils", "class_j_s_1_1_js_utils.html", null ],
+      [ "JS::JsViewContext", "class_j_s_1_1_js_view_context.html", null ],
       [ "JS::LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
       [ "JS::ModuleLibraryHandler", "class_j_s_1_1_module_library_handler.html", null ],
       [ "JS::Outlet", "class_j_s_1_1_outlet.html", [

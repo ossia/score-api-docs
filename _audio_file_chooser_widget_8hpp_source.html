@@ -181,14 +181,14 @@ $(document).ready(function(){initNavTree('_audio_file_chooser_widget_8hpp_source
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> bt = <span class="keyword">new</span> <a class="code hl_class" href="classscore_1_1_q_graphics_waveform_button.html">score::QGraphicsWaveformButton</a>{parent};</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span> on_open = [&amp;inlet, &amp;ctx] {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keyword">auto</span> filename</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          = QFileDialog::getOpenFileName(<span class="keyword">nullptr</span>, <span class="stringliteral">&quot;Open File&quot;</span>, {}, inlet.filters());</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordflow">if</span>(filename.isEmpty())</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <a class="code hl_class" href="class_command_dispatcher.html">CommandDispatcher&lt;&gt;</a>{ctx.commandStack}</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          .submit&lt;WidgetFactory::SetControlValue&lt;Control_T&gt;&gt;(</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>              inlet, filename.toStdString());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      WidgetFactory::openFileToImport(inlet.filters(), [&amp;inlet, &amp;ctx](<span class="keyword">const</span> QString&amp; filename) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="comment">// On wasm `filename` is the staged MEMFS path; relativize so it is</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">// stored consistently with drops.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        auto path = score::relativizeFilePath(filename, ctx);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        CommandDispatcher&lt;&gt;{ctx.commandStack}</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            .submit&lt;WidgetFactory::SetControlValue&lt;Control_T&gt;&gt;(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                inlet, path.toStdString());</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      });</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    };</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">auto</span> on_set = [&amp;inlet, &amp;ctx](<span class="keyword">const</span> QString&amp; filename) {</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keywordflow">if</span>(filename.isEmpty())</div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('_audio_file_chooser_widget_8hpp_source
 <div class="ttc" id="aclassscore_1_1_q_graphics_waveform_button_html"><div class="ttname"><a href="classscore_1_1_q_graphics_waveform_button.html">score::QGraphicsWaveformButton</a></div><div class="ttdef"><b>Definition</b> AudioFileChooserWidget.hpp:20</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
 <div class="ttc" id="astruct_media_1_1_sound_1_1_waveform_computer_html"><div class="ttname"><a href="struct_media_1_1_sound_1_1_waveform_computer.html">Media::Sound::WaveformComputer</a></div><div class="ttdef"><b>Definition</b> WaveformComputer.hpp:55</div></div>
-<div class="ttc" id="astruct_widget_factory_1_1_file_chooser_html"><div class="ttname"><a href="struct_widget_factory_1_1_file_chooser.html">WidgetFactory::FileChooser</a></div><div class="ttdef"><b>Definition</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1013</div></div>
+<div class="ttc" id="astruct_widget_factory_1_1_file_chooser_html"><div class="ttname"><a href="struct_widget_factory_1_1_file_chooser.html">WidgetFactory::FileChooser</a></div><div class="ttdef"><b>Definition</b> plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp:1039</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

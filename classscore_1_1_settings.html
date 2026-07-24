@@ -129,6 +129,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setupView</b> ()</td>
 <tr class="memitem:ac01a106edffd1cce0f84c0fb35ac9cf0" id="r_ac01a106edffd1cce0f84c0fb35ac9cf0"><td class="memItemLeft" align="right" valign="top"><a id="ac01a106edffd1cce0f84c0fb35ac9cf0" name="ac01a106edffd1cce0f84c0fb35ac9cf0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>teardownView</b> ()</td></tr>
 <tr class="separator:ac01a106edffd1cce0f84c0fb35ac9cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7087de7ad92e3bfd0a1a61a77f9df4" id="r_a2c7087de7ad92e3bfd0a1a61a77f9df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_settings.html#a2c7087de7ad92e3bfd0a1a61a77f9df4">teardownModels</a> () noexcept</td></tr>
+<tr class="separator:a2c7087de7ad92e3bfd0a1a61a77f9df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04421a2c017ccf629f9a58a59fdcc459" id="r_a04421a2c017ccf629f9a58a59fdcc459"><td class="memItemLeft" align="right" valign="top"><a id="a04421a2c017ccf629f9a58a59fdcc459" name="a04421a2c017ccf629f9a58a59fdcc459"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Settings</b> (const <a class="el" href="classscore_1_1_settings.html">Settings</a> &amp;)=delete</td></tr>
 <tr class="separator:a04421a2c017ccf629f9a58a59fdcc459"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +153,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setupSettingsPlugin</
 auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b> () const</td></tr>
 <tr class="separator:a4513b4fc21ed47a4637deb8bd5a68564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c7087de7ad92e3bfd0a1a61a77f9df4" name="a2c7087de7ad92e3bfd0a1a61a77f9df4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c7087de7ad92e3bfd0a1a61a77f9df4">&#9670;&#160;</a></span>teardownModels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::Settings::teardownModels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroy the registered settings models. The models are QObjects: they must go before the QApplication does. Owners that also own the QApplication (the Minimal*Application test scaffolding) call this explicitly before deleting the app; the destructor calls it too (idempotent) for the normal case where the app outlives us. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="lib_2core_2settings_2_settings_8hpp_source.html">lib/core/settings/Settings.hpp</a></li>
 <li><b>lib/core/settings/Settings.cpp</b></li>

@@ -18,5 +18,6 @@ var searchData=
   ['jsonvalue_15',['JsonValue',['../struct_json_value.html',1,'']]],
   ['jsonwriter_16',['JSONWriter',['../class_j_s_o_n_writer.html',1,'']]],
   ['jssystem_17',['JsSystem',['../class_j_s_1_1_js_system.html',1,'JS']]],
-  ['jsutils_18',['JsUtils',['../class_j_s_1_1_js_utils.html',1,'JS']]]
+  ['jsutils_18',['JsUtils',['../class_j_s_1_1_js_utils.html',1,'JS']]],
+  ['jsviewcontext_19',['JsViewContext',['../class_j_s_1_1_js_view_context.html',1,'JS']]]
 ];

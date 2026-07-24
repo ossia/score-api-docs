@@ -1,5 +1,13 @@
 var NAVTREEINDEX20 =
 {
+"functions_func_~.html":[12,3,1,19],
+"functions_g.html":[12,3,0,6],
+"functions_h.html":[12,3,0,7],
+"functions_i.html":[12,3,0,8],
+"functions_l.html":[12,3,0,9],
+"functions_m.html":[12,3,0,10],
+"functions_n.html":[12,3,0,11],
+"functions_o.html":[12,3,0,12],
 "functions_p.html":[12,3,0,13],
 "functions_r.html":[12,3,0,14],
 "functions_s.html":[12,3,0,15],
@@ -218,7 +226,7 @@ var NAVTREEINDEX20 =
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,15],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
-"score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,0,2,8,3,13],
+"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,15],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,20],
 "score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-faust_2_faust_2_utils_8hpp_source.html":[13,0,0,2,15,0,5],
 "score-plugin-fx_2_fx_2_envelope_8hpp_source.html":[13,0,0,2,16,0,8],
 "score-plugin-gfx_2_gfx_2_c_s_f_2_executor_8hpp_source.html":[13,0,0,2,17,1,0,0],
-"score-plugin-gfx_2_gfx_2_c_s_f_2_layer_8hpp_source.html":[13,0,0,2,17,1,0,1],
-"score-plugin-gfx_2_gfx_2_c_s_f_2_library_8hpp_source.html":[13,0,0,2,17,1,0,2],
-"score-plugin-gfx_2_gfx_2_c_s_f_2_process_8hpp_source.html":[13,0,0,2,17,1,0,4],
-"score-plugin-gfx_2_gfx_2_command_factory_8hpp_source.html":[13,0,0,2,17,1,21],
-"score-plugin-gfx_2_gfx_2_filter_2_executor_8hpp_source.html":[13,0,0,2,17,1,1,0],
-"score-plugin-gfx_2_gfx_2_filter_2_layer_8hpp_source.html":[13,0,0,2,17,1,1,1],
-"score-plugin-gfx_2_gfx_2_filter_2_library_8hpp_source.html":[13,0,0,2,17,1,1,2],
-"score-plugin-gfx_2_gfx_2_filter_2_process_8hpp_source.html":[13,0,0,2,17,1,1,5],
-"score-plugin-gfx_2_gfx_2_geometry_filter_2_executor_8hpp_source.html":[13,0,0,2,17,1,2,0]
+"score-plugin-gfx_2_gfx_2_c_s_f_2_layer_8hpp_source.html":[13,0,0,2,17,1,0,1]
 };

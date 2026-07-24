@@ -122,9 +122,9 @@ Inheritance diagram for score::MinimalGUIApplication:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a552751ebfe62d9972d0666ed8d22d9" id="r_a0a552751ebfe62d9972d0666ed8d22d9"><td class="memItemLeft" align="right" valign="top"><a id="a0a552751ebfe62d9972d0666ed8d22d9" name="a0a552751ebfe62d9972d0666ed8d22d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MinimalGUIApplication</b> (int &amp;argc, char **argv)</td></tr>
-<tr class="separator:a0a552751ebfe62d9972d0666ed8d22d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a525eacebda626575da73f454c10f0faf" id="r_a525eacebda626575da73f454c10f0faf"><td class="memItemLeft" align="right" valign="top"><a id="a525eacebda626575da73f454c10f0faf" name="a525eacebda626575da73f454c10f0faf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MinimalGUIApplication</b> (int &amp;argc, char **argv, bool show=true)</td></tr>
+<tr class="separator:a525eacebda626575da73f454c10f0faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc80dc7122fc65bb431721cb4a1a16a" id="r_adfc80dc7122fc65bb431721cb4a1a16a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_minimal_g_u_i_application.html#adfc80dc7122fc65bb431721cb4a1a16a">context</a> () const override</td></tr>
 <tr class="separator:adfc80dc7122fc65bb431721cb4a1a16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a511781a206c8a07d900c970f71c93ae0" id="r_a511781a206c8a07d900c970f71c93ae0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classscore_1_1_application_components.html">score::ApplicationComponents</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_minimal_g_u_i_application.html#a511781a206c8a07d900c970f71c93ae0">components</a> () const override</td></tr>
@@ -157,9 +157,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>forceExit</b> ()</td>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae7802868862b5a8209c5d491ea6f51ab" id="r_ae7802868862b5a8209c5d491ea6f51ab"><td class="memItemLeft" align="right" valign="top"><a id="ae7802868862b5a8209c5d491ea6f51ab" name="ae7802868862b5a8209c5d491ea6f51ab"></a>
-QApplication *&#160;</td><td class="memItemRight" valign="bottom"><b>m_app</b> {}</td></tr>
-<tr class="separator:ae7802868862b5a8209c5d491ea6f51ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5d639f49b53241aa92cea469d73c19" id="r_aec5d639f49b53241aa92cea469d73c19"><td class="memItemLeft" align="right" valign="top"><a id="aec5d639f49b53241aa92cea469d73c19" name="aec5d639f49b53241aa92cea469d73c19"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_show</b> {true}</td></tr>
+<tr class="separator:aec5d639f49b53241aa92cea469d73c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8770f952d1ab1858ebab3cfcc185e212" id="r_a8770f952d1ab1858ebab3cfcc185e212"><td class="memItemLeft" align="right" valign="top"><a id="a8770f952d1ab1858ebab3cfcc185e212" name="a8770f952d1ab1858ebab3cfcc185e212"></a>
+std::unique_ptr&lt; QApplication &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_app</b></td></tr>
+<tr class="separator:a8770f952d1ab1858ebab3cfcc185e212"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b9e88cbccd37b4896d41b88a6511e2" id="r_a79b9e88cbccd37b4896d41b88a6511e2"><td class="memItemLeft" align="right" valign="top"><a id="a79b9e88cbccd37b4896d41b88a6511e2" name="a79b9e88cbccd37b4896d41b88a6511e2"></a>
 <a class="el" href="classscore_1_1_settings.html">score::Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settings</b></td></tr>
 <tr class="separator:a79b9e88cbccd37b4896d41b88a6511e2"><td class="memSeparator" colspan="2">&#160;</td></tr>

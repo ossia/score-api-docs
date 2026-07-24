@@ -12,6 +12,7 @@ var dir_8940b9717eab7226735774e0c7e02de1 =
     [ "AudioFileChooserWidget.hpp", "_audio_file_chooser_widget_8hpp_source.html", null ],
     [ "Libav.hpp", "_libav_8hpp_source.html", null ],
     [ "LibavIntrospection.hpp", "_libav_introspection_8hpp_source.html", null ],
+    [ "LibavMediaInfo.hpp", "_libav_media_info_8hpp_source.html", null ],
     [ "MediaFileHandle.hpp", "_media_file_handle_8hpp_source.html", null ],
     [ "RMSData.hpp", "_r_m_s_data_8hpp_source.html", null ],
     [ "SndfileDecoder.hpp", "_sndfile_decoder_8hpp_source.html", null ],

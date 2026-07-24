@@ -21,5 +21,6 @@ var dir_76368fd573c4e19c24e6a681ae7cab3b =
     [ "PortAudioInterface.hpp", "_port_audio_interface_8hpp_source.html", null ],
     [ "SDLInterface.hpp", "_s_d_l_interface_8hpp_source.html", null ],
     [ "WASAPIPortAudioInterface.hpp", "_w_a_s_a_p_i_port_audio_interface_8hpp_source.html", null ],
+    [ "WASMMiniAudioInterface.hpp", "_w_a_s_m_mini_audio_interface_8hpp_source.html", null ],
     [ "WDMKSPortAudioInterface.hpp", "_w_d_m_k_s_port_audio_interface_8hpp_source.html", null ]
 ];

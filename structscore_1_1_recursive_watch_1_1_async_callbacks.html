@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('structscore_1_1_recursive_watch_1_1_as
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structscore_1_1_recursive_watch_1_1_async_callbacks-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::RecursiveWatch::AsyncCallbacks Struct Reference</div></div>
@@ -111,11 +112,17 @@ $(document).ready(function(){initNavTree('structscore_1_1_recursive_watch_1_1_as
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Async two-phase callbacks for off-main-thread scanning. <em>filter</em> is called on a worker thread for each file matching the extension. It should return a non-empty std::function&lt;void()&gt; (a "commit action") to accept the file; that action will be invoked on the GUI thread. Return an empty std::function (or {}) to reject the file. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a7ebe759842c2e44803a1e1db89070f22" id="r_a7ebe759842c2e44803a1e1db89070f22"><td class="memItemLeft" align="right" valign="top"><a id="a7ebe759842c2e44803a1e1db89070f22" name="a7ebe759842c2e44803a1e1db89070f22"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Filter</b> = smallfun::function&lt; std::function&lt; void()&gt;(std::string_view), 64, smallfun::DefaultAlign, smallfun::Methods::Move &gt;</td></tr>
+<tr class="separator:a7ebe759842c2e44803a1e1db89070f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6eab21dd431553069193c97c3b699daf" id="r_a6eab21dd431553069193c97c3b699daf"><td class="memItemLeft" align="right" valign="top"><a id="a6eab21dd431553069193c97c3b699daf" name="a6eab21dd431553069193c97c3b699daf"></a>
-std::function&lt; std::function&lt; void()&gt;(std::string_view path)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b></td></tr>
-<tr class="separator:a6eab21dd431553069193c97c3b699daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fab9e4f7ca7b9220c8a2699cbd0221d" id="r_a7fab9e4f7ca7b9220c8a2699cbd0221d"><td class="memItemLeft" align="right" valign="top"><a id="a7fab9e4f7ca7b9220c8a2699cbd0221d" name="a7fab9e4f7ca7b9220c8a2699cbd0221d"></a>
+Filter&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b></td></tr>
+<tr class="separator:a7fab9e4f7ca7b9220c8a2699cbd0221d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_recursive_watch_8hpp_source.html">RecursiveWatch.hpp</a></li>

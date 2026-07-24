@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('_load_preset_command_8hpp_source.html'
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">auto</span> cables = Dataflow::reloadPortsInNewProcess(</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        m_oldInlets, m_oldOutlets, m_oldCables, cmt,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        Process::PortLoadDataFlags::DontReloadValue, ctx);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        Process::PortLoadDataFlags::ReloadValue, ctx);</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    cmt.inletsChanged();</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    cmt.outletsChanged();</div>

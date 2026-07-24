@@ -816,7 +816,6 @@ var annotated_dup =
       [ "ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],
       [ "CompilerOptions", "struct_jit_1_1_compiler_options.html", null ],
       [ "Driver", "struct_jit_1_1_driver.html", null ],
-      [ "EagerLinkingPlugin", "class_jit_1_1_eager_linking_plugin.html", null ],
       [ "EditBytebeat", "class_jit_1_1_edit_bytebeat.html", null ],
       [ "EditScript", "class_jit_1_1_edit_script.html", null ],
       [ "Exception", "struct_jit_1_1_exception.html", null ],
@@ -884,6 +883,7 @@ var annotated_dup =
       [ "JsLibrary", "class_j_s_1_1_js_library.html", null ],
       [ "JsSystem", "class_j_s_1_1_js_system.html", null ],
       [ "JsUtils", "class_j_s_1_1_js_utils.html", null ],
+      [ "JsViewContext", "class_j_s_1_1_js_view_context.html", null ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "LayerFactory", "struct_j_s_1_1_layer_factory.html", null ],
       [ "LibraryHandler", "class_j_s_1_1_library_handler.html", null ],
@@ -1780,6 +1780,7 @@ var annotated_dup =
         [ "RefreshStatesMacro", "class_scenario_1_1_command_1_1_refresh_states_macro.html", null ],
         [ "RemoveCommentBlock", "class_scenario_1_1_command_1_1_remove_comment_block.html", null ],
         [ "RemoveMessageNodes", "class_scenario_1_1_command_1_1_remove_message_nodes.html", null ],
+        [ "RemoveMultipleProcessesFromInterval", "class_scenario_1_1_command_1_1_remove_multiple_processes_from_interval.html", null ],
         [ "RemoveProcessAndKeepLinked", "class_scenario_1_1_command_1_1_remove_process_and_keep_linked.html", null ],
         [ "RemoveProcessFromInterval", "class_scenario_1_1_command_1_1_remove_process_from_interval.html", null ],
         [ "RemoveSelection", "class_scenario_1_1_command_1_1_remove_selection.html", null ],
@@ -2290,6 +2291,9 @@ var annotated_dup =
         [ "YUVA444P12Decoder", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html", "structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder" ],
         [ "YUYV422Decoder", "structscore_1_1gfx_1_1_y_u_y_v422_decoder.html", "structscore_1_1gfx_1_1_y_u_y_v422_decoder" ]
       ] ],
+      [ "libav", null, [
+        [ "MediaInfo", "structscore_1_1libav_1_1_media_info.html", "structscore_1_1libav_1_1_media_info" ]
+      ] ],
       [ "PluginLoader", null, [
         [ "PluginDependencyGraph", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph" ]
       ] ],
@@ -2475,7 +2479,7 @@ var annotated_dup =
       [ "MessagesPanelDelegate", "classscore_1_1_messages_panel_delegate.html", "classscore_1_1_messages_panel_delegate" ],
       [ "MessagesPanelDelegateFactory", "classscore_1_1_messages_panel_delegate_factory.html", null ],
       [ "MetaAction", "structscore_1_1_meta_action.html", null ],
-      [ "MinimalApplication", "classscore_1_1_minimal_application.html", null ],
+      [ "MinimalApplication", "classscore_1_1_minimal_application.html", "classscore_1_1_minimal_application" ],
       [ "MinimalGUIApplication", "classscore_1_1_minimal_g_u_i_application.html", null ],
       [ "MissingCommandException", "classscore_1_1_missing_command_exception.html", null ],
       [ "ModelMetadata", "classscore_1_1_model_metadata.html", null ],
@@ -2555,7 +2559,7 @@ var annotated_dup =
       [ "SelectionStack", "classscore_1_1_selection_stack.html", null ],
       [ "SerializableDocumentPlugin", "classscore_1_1_serializable_document_plugin.html", null ],
       [ "SerializableInterface", "classscore_1_1_serializable_interface.html", null ],
-      [ "Settings", "classscore_1_1_settings.html", null ],
+      [ "Settings", "classscore_1_1_settings.html", "classscore_1_1_settings" ],
       [ "SettingsCommand", "classscore_1_1_settings_command.html", null ],
       [ "SettingsCommandBase", "classscore_1_1_settings_command_base.html", null ],
       [ "SettingsCommandDispatcher", "classscore_1_1_settings_command_dispatcher.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"_settings_view_8hpp_source.html":[13,0,0,1,0,7,2],
+"_sh4lt_input_device_8hpp_source.html":[13,0,0,2,17,1,9,0],
 "_sh4lt_output_device_8hpp_source.html":[13,0,0,2,17,1,9,1],
 "_shader_cache_8hpp_source.html":[13,0,0,2,17,1,4,33],
 "_shader_program_8hpp_source.html":[13,0,0,2,17,1,34],
@@ -30,7 +32,7 @@ var NAVTREEINDEX5 =
 "_snapshot_action_8hpp_source.html":[13,0,0,2,32,4,3,7,12],
 "_snapshot_parameters_8hpp_source.html":[13,0,0,2,32,4,1,0,8],
 "_snapshot_states_macro_8hpp_source.html":[13,0,0,2,32,4,1,7,5],
-"_sndfile_decoder_8hpp_source.html":[13,0,0,2,24,0,14],
+"_sndfile_decoder_8hpp_source.html":[13,0,0,2,24,0,15],
 "_sound_component_8hpp_source.html":[13,0,0,2,24,0,5,2],
 "_sound_drop_8hpp_source.html":[13,0,0,2,24,0,5,0,0],
 "_sound_factory_8hpp_source.html":[13,0,0,2,24,0,5,3],
@@ -92,7 +94,7 @@ var NAVTREEINDEX5 =
 "_table2_d_8hpp_source.html":[13,0,0,2,8,2,13],
 "_table_8hpp_source.html":[13,0,0,2,8,2,11],
 "_teleplot_8hpp_source.html":[13,0,0,2,8,2,14],
-"_tempo_8hpp_source.html":[13,0,0,2,24,0,15],
+"_tempo_8hpp_source.html":[13,0,0,2,24,0,16],
 "_tempo_factory_8hpp_source.html":[13,0,0,2,32,4,3,9,0],
 "_tempo_inspector_8hpp_source.html":[13,0,0,2,32,4,3,9,1],
 "_tempo_process_8hpp_source.html":[13,0,0,2,32,4,3,9,2],
@@ -205,6 +207,7 @@ var NAVTREEINDEX5 =
 "_video_interface_8hpp_source.html":[13,0,0,2,24,2,10],
 "_video_node_8hpp_source.html":[13,0,0,2,17,1,4,40],
 "_video_node_renderer_8hpp_source.html":[13,0,0,2,17,1,4,41],
+"_view_context_8hpp_source.html":[13,0,0,2,20,0,2,15],
 "_visitor_common_8hpp.html":[13,0,0,1,1,10,14],
 "_visitor_common_8hpp.html#aba88450f2e8b9397ef16609ee1d5952f":[13,0,0,1,1,10,14,0],
 "_visitor_common_8hpp_source.html":[13,0,0,1,1,10,14],
@@ -217,7 +220,8 @@ var NAVTREEINDEX5 =
 "_vulkan_8hpp_source.html":[13,0,0,1,1,4,2],
 "_vulkan_video_device_8hpp_source.html":[13,0,0,2,17,1,4,42],
 "_w_a_s_a_p_i_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,20],
-"_w_d_m_k_s_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,21],
+"_w_a_s_m_mini_audio_interface_8hpp_source.html":[13,0,0,2,6,0,21],
+"_w_d_m_k_s_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,22],
 "_w_s_device_8hpp_source.html":[13,0,0,2,29,0,21,0],
 "_w_s_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,21,1],
 "_w_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,21,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "_window_settings_widget_8hpp_source.html":[13,0,0,2,17,1,16,9],
 "_y210_8hpp_source.html":[13,0,0,2,17,1,4,0,26],
 "_y_pos_8hpp_source.html":[13,0,0,1,1,5,18],
-"_y_u_v420_8hpp_source.html":[13,0,0,2,17,1,4,0,27],
-"_y_u_v420_p10_8hpp_source.html":[13,0,0,2,17,1,4,0,28],
-"_y_u_v420_p12_8hpp_source.html":[13,0,0,2,17,1,4,0,29],
-"_y_u_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,30],
-"_y_u_v422_p10_8hpp_source.html":[13,0,0,2,17,1,4,0,31]
+"_y_u_v420_8hpp_source.html":[13,0,0,2,17,1,4,0,27]
 };
