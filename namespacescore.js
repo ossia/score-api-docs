@@ -333,9 +333,13 @@ var namespacescore =
     [ "anySerializers", "namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981", null ],
     [ "component", "namespacescore.html#adb7b1132a5013c8ee6f959bee4436405", null ],
     [ "findComponent", "namespacescore.html#a9d0f6126642097ffac522396a72339b6", null ],
+    [ "installDragImageWorkaround", "namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4", null ],
     [ "locateFilePath", "namespacescore.html#aa5dc206faf740132f1dbb03714aa6070", null ],
     [ "marshall", "namespacescore.html#aba88450f2e8b9397ef16609ee1d5952f", null ],
     [ "newProcessedFilePath", "namespacescore.html#a32796149f51ff5e6483f20895442a6b3", null ],
     [ "relativizeFilePath", "namespacescore.html#aed5a0183b4501783c177e506781cec28", null ],
-    [ "setCursor", "namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f", null ]
+    [ "retargetInputMethod", "namespacescore.html#a0953a774cc82c9bbc6d93776c447e5d7", null ],
+    [ "setCursor", "namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f", null ],
+    [ "setItemViewDragPixmap", "namespacescore.html#ab11dec7313a08388192b2259f2b50e62", null ],
+    [ "watchSceneInputMethod", "namespacescore.html#aef4d345fb028b5062609d81fb438e2ce", null ]
 ];

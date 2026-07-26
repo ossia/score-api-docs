@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('_default_graphics_knob_impl_8hpp_sourc
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">requires</span> std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> contextMenuEvent(T&amp; self, QPointF pos)</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  {</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    QTimer::singleShot(0, &amp;self, [&amp;, self_p = &amp;self, pos] {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">auto</span> build = [&amp;, self_p = &amp;self, pos] {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keyword">auto</span> w = <span class="keyword">new</span> <a class="code hl_struct" href="structscore_1_1_spinbox_with_enter.html">SpinboxWithEnter</a>;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      w-&gt;setRange(self.min, self.max);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
@@ -274,86 +274,104 @@ $(document).ready(function(){initNavTree('_default_graphics_knob_impl_8hpp_sourc
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>          w, Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      obj-&gt;setPos(pos);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      QTimer::singleShot(0, w, [w] { w-&gt;setFocus(); });</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      <span class="keyword">auto</span> con = QObject::connect(</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>          w, SignalUtils::QSpinBox_valueChanged_int(), &amp;self,</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>          [&amp;self, obj, scene = self.scene()](<span class="keywordtype">double</span> v) {</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        DefaultControlImpl::editWidgetInContextMenu(self, scene, obj, v);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      });</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      QObject::connect(</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>          w, &amp;SpinboxWithEnter::editingFinished, &amp;self, [obj, con, self_p]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        <span class="keywordflow">if</span>(obj != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>          self_p-&gt;sliderReleased();</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>          QObject::disconnect(con);</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>          QTimer::singleShot(0, obj, [scene = self_p-&gt;scene(), obj] {</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            scene-&gt;removeItem(obj);</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            delete obj;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>          });</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        }</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        obj = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      });</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    });</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  }</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">requires</span> std::is_floating_point_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> contextMenuEvent(T&amp; self, QPointF pos)</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  {</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    QTimer::singleShot(0, &amp;self, [&amp;, self_p = &amp;self, pos] {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      <span class="keyword">auto</span> w = <span class="keyword">new</span> <a class="code hl_struct" href="structscore_1_1_double_spinbox_with_enter.html">DoubleSpinboxWithEnter</a>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>      w-&gt;setRange(self.min, self.max);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      w-&gt;setDecimals(6);</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      w-&gt;setValue(self.map(self.m_value));</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      <span class="keyword">auto</span> obj = self.scene()-&gt;addWidget(</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>          w, Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>      obj-&gt;setPos(pos);</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      QTimer::singleShot(0, w, [w] { w-&gt;setFocus(); });</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      <span class="keyword">auto</span> con = QObject::connect(</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>          w, SignalUtils::QDoubleSpinBox_valueChanged_double(), &amp;self,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>          [&amp;self, obj, scene = self.scene()](<span class="keywordtype">double</span> v) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        DefaultControlImpl::editWidgetInContextMenu(self, scene, obj, v);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      });</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      QObject::connect(</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>          w, &amp;DoubleSpinboxWithEnter::editingFinished, &amp;self,</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>          [obj, con, self_p]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">if</span>(obj != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>          self_p-&gt;sliderReleased();</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>          QObject::disconnect(con);</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>          QTimer::singleShot(0, obj, [scene = self_p-&gt;scene(), obj] {</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>            scene-&gt;removeItem(obj);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>            delete obj;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>          });</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        }</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        obj = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      });</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    });</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  }</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> mouseDoubleClickEvent(T&amp; self, QGraphicsSceneMouseEvent* event)</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  {</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    self.m_value = self.unmap(self.init);</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    self.m_grab = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    self.sliderMoved();</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    self.sliderReleased();</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    self.m_grab = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    self.update();</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">event</span>-&gt;accept();</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  }</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>};</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      w-&gt;setFocus();</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      QTimer::singleShot(0, w, [w] { w-&gt;setFocus(); });</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <span class="keyword">auto</span> con = QObject::connect(</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>          w, SignalUtils::QSpinBox_valueChanged_int(), &amp;self,</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>          [&amp;self, obj, scene = self.scene()](<span class="keywordtype">double</span> v) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        DefaultControlImpl::editWidgetInContextMenu(self, scene, obj, v);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      });</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>      QObject::connect(</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>          w, &amp;SpinboxWithEnter::editingFinished, &amp;self, [obj, con, self_p]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">if</span>(obj != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>          self_p-&gt;sliderReleased();</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>          QObject::disconnect(con);</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>          QTimer::singleShot(0, obj, [scene = self_p-&gt;scene(), obj] {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            scene-&gt;removeItem(obj);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            delete obj;</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>          });</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>        }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        obj = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      });</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    };</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    build();</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    QTimer::singleShot(0, &amp;self, build);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">requires</span> std::is_floating_point_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> contextMenuEvent(T&amp; self, QPointF pos)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">auto</span> build = [&amp;, self_p = &amp;self, pos] {</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      <span class="keyword">auto</span> w = <span class="keyword">new</span> <a class="code hl_struct" href="structscore_1_1_double_spinbox_with_enter.html">DoubleSpinboxWithEnter</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      w-&gt;setRange(self.min, self.max);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      w-&gt;setDecimals(6);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>      w-&gt;setValue(self.map(self.m_value));</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      <span class="keyword">auto</span> obj = self.scene()-&gt;addWidget(</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>          w, Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      obj-&gt;setPos(pos);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      w-&gt;setFocus();</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      QTimer::singleShot(0, w, [w] { w-&gt;setFocus(); });</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>      <span class="keyword">auto</span> con = QObject::connect(</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>          w, SignalUtils::QDoubleSpinBox_valueChanged_double(), &amp;self,</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>          [&amp;self, obj, scene = self.scene()](<span class="keywordtype">double</span> v) {</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        DefaultControlImpl::editWidgetInContextMenu(self, scene, obj, v);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      });</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      QObject::connect(</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>          w, &amp;DoubleSpinboxWithEnter::editingFinished, &amp;self,</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>          [obj, con, self_p]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="keywordflow">if</span>(obj != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        {</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>          self_p-&gt;sliderReleased();</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>          QObject::disconnect(con);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>          QTimer::singleShot(0, obj, [scene = self_p-&gt;scene(), obj] {</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>            scene-&gt;removeItem(obj);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>            delete obj;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>          });</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        obj = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      });</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    };</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    build();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    QTimer::singleShot(0, &amp;self, build);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  }</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> mouseDoubleClickEvent(T&amp; self, QGraphicsSceneMouseEvent* event)</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    self.m_value = self.unmap(self.init);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    self.m_grab = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    self.sliderMoved();</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    self.sliderReleased();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    self.m_grab = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    self.update();</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>};</div>
 </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
 <div class="ttc" id="aclassscore_1_1_skin_html"><div class="ttname"><a href="classscore_1_1_skin.html">score::Skin</a></div><div class="ttdef"><b>Definition</b> Skin.hpp:94</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
 <div class="ttc" id="astructscore_1_1_default_graphics_knob_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_knob_impl.html">score::DefaultGraphicsKnobImpl</a></div><div class="ttdef"><b>Definition</b> DefaultGraphicsKnobImpl.hpp:25</div></div>

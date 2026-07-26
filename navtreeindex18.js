@@ -1,6 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f":[12,0,55,2,88,8],
+"classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f":[11,0,12,0,88,8],
 "classscore_1_1gfx_1_1_text_node_1_1_renderer.html":[12,0,55,2,100,0],
+"classscore_1_1gfx_1_1_text_node_1_1_renderer.html":[11,0,12,0,100,0],
 "classscore_1_1gfx_1_1_video_node.html":[11,0,12,0,115],
 "classscore_1_1gfx_1_1_video_node.html":[12,0,55,2,115],
 "classscore_1_1gfx_1_1_video_node.html#a7e11fd2b8096f8725d8f463ab45db047":[11,0,12,0,115,1],
@@ -9,8 +12,8 @@ var NAVTREEINDEX18 =
 "classscore_1_1gfx_1_1_video_node.html#aeda0afb80c2418e657e74c3317d16d9b":[11,0,12,0,115,0],
 "classscore_1_1gfx_1_1_video_node_base.html":[12,0,55,2,116],
 "classscore_1_1gfx_1_1_video_node_base.html":[11,0,12,0,116],
-"classscore_1_1gfx_1_1_video_node_renderer.html":[12,0,55,2,117],
 "classscore_1_1gfx_1_1_video_node_renderer.html":[11,0,12,0,117],
+"classscore_1_1gfx_1_1_video_node_renderer.html":[12,0,55,2,117],
 "classscore_1_1gfx_1_1_window.html":[12,0,55,2,119],
 "classscore_1_1gfx_1_1_window.html":[11,0,12,0,119],
 "classscore__lib__process.html":[12,0,235],
@@ -51,8 +54,8 @@ var NAVTREEINDEX18 =
 "classscore__plugin__vst.html":[12,0,269],
 "classscore__plugin__vst3.html":[12,0,270],
 "classscore__plugin__ysfx.html":[12,0,271],
-"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,61,8],
 "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[11,0,14,8],
+"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,61,8],
 "classvst3_1_1_application_plugin.html":[12,0,67,0],
 "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21":[12,0,67,0,0],
 "classvst3_1_1_component_handler.html":[12,0,67,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX18 =
 "dir_6ea753a7f62ee594e4b6f10e4775fd30.html":[13,0,0,2,25,1,0],
 "dir_6f14969f27df952eb6844cc4a9cf4793.html":[13,0,0,2,40,0,0],
 "dir_6faf9e86e19050fdbcdd44d6c9446b2e.html":[13,0,0,2,32,4,6,0,0],
-"dir_7020b8b7abcceffa3f9f7a2d24718f16.html":[13,0,0,2],
-"dir_71f2db9d82f9b28ab1d354a7f61b9ae7.html":[13,0,0,2,17,0,0],
-"dir_72590f0b9ce1b0f1ffbe04f9b4faec7e.html":[13,0,0,2,24,0,1],
-"dir_72ab4b44fa971c64fe6f5381cc8b0846.html":[13,0,0,2,13,0,0,0]
+"dir_7020b8b7abcceffa3f9f7a2d24718f16.html":[13,0,0,2]
 };

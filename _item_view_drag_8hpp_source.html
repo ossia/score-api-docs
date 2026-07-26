@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: TestCard.hpp Source File</title>
+        <title>score: ItemViewDrag.hpp Source File</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -81,7 +81,7 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('_test_card_8hpp_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('_item_view_drag_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -107,17 +107,31 @@ $(document).ready(function(){initNavTree('_test_card_8hpp_source.html',''); init
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">TestCard.hpp</div></div>
+  <div class="headertitle"><div class="title">ItemViewDrag.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QModelIndexList&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_gfx.html">Gfx</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>QImage renderTestCard(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>}</div>
-<div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> CameraDevice.cpp:31</div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span>QAbstractItemView;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>QDrag;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span>QStyleOptionViewItem;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore.html#ab11dec7313a08388192b2259f2b50e62">setItemViewDragPixmap</a>(</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    QDrag&amp; drag, QAbstractItemView&amp; view, <span class="keyword">const</span> QStyleOptionViewItem&amp; option,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> QModelIndexList&amp; indexes);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4">installDragImageWorkaround</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
+<div class="ttc" id="anamespacescore_html_ab11dec7313a08388192b2259f2b50e62"><div class="ttname"><a href="namespacescore.html#ab11dec7313a08388192b2259f2b50e62">score::setItemViewDragPixmap</a></div><div class="ttdeci">void setItemViewDragPixmap(QDrag &amp;drag, QAbstractItemView &amp;view, const QStyleOptionViewItem &amp;option, const QModelIndexList &amp;indexes)</div><div class="ttdoc">Give a QDrag the drag image QAbstractItemView::startDrag would have made.</div><div class="ttdef"><b>Definition</b> ItemViewDrag.cpp:65</div></div>
+<div class="ttc" id="anamespacescore_html_afbf073827b8d422b3c7a0accb964dfd4"><div class="ttname"><a href="namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4">score::installDragImageWorkaround</a></div><div class="ttdeci">void installDragImageWorkaround()</div><div class="ttdoc">Keep Qt's temporary drag-image element out of sight.</div><div class="ttdef"><b>Definition</b> ItemViewDrag.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

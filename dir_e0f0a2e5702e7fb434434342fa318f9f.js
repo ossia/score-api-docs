@@ -12,6 +12,7 @@ var dir_e0f0a2e5702e7fb434434342fa318f9f =
     [ "HelpInteraction.hpp", "_help_interaction_8hpp_source.html", null ],
     [ "IconProvider.hpp", "_icon_provider_8hpp_source.html", null ],
     [ "IntSlider.hpp", "_int_slider_8hpp_source.html", null ],
+    [ "ItemViewDrag.hpp", "_item_view_drag_8hpp_source.html", null ],
     [ "lib/score/widgets/Layout.hpp", "lib_2score_2widgets_2_layout_8hpp_source.html", null ],
     [ "MarginLess.hpp", "_margin_less_8hpp_source.html", null ],
     [ "MessageBox.hpp", "_message_box_8hpp_source.html", null ],

@@ -7,5 +7,6 @@ var dir_9dc403dfeea06d03f915de27a7a2ab94 =
     [ "MinimalApplication.hpp", "_minimal_application_8hpp_source.html", null ],
     [ "MockApplication.hpp", "_mock_application_8hpp_source.html", null ],
     [ "OpenDocumentsFile.hpp", "_open_documents_file_8hpp_source.html", null ],
-    [ "SafeQApplication.hpp", "_safe_q_application_8hpp_source.html", null ]
+    [ "SafeQApplication.hpp", "_safe_q_application_8hpp_source.html", null ],
+    [ "WasmLogging.hpp", "_wasm_logging_8hpp_source.html", null ]
 ];

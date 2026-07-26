@@ -145,7 +145,39 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6401bbcfae5b132cb1640ae212a6fe1a" id="r_a6401bbcfae5b132cb1640ae212a6fe1a"><td class="memItemLeft" align="right" valign="top"><a id="a6401bbcfae5b132cb1640ae212a6fe1a" name="a6401bbcfae5b132cb1640ae212a6fe1a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>DebugOutput</b> (QtMsgType type, const QMessageLogContext &amp;context, const QString &amp;msg)</td></tr>
 <tr class="separator:a6401bbcfae5b132cb1640ae212a6fe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e08f133fdac34ad41aa236a6734297a" id="r_a8e08f133fdac34ad41aa236a6734297a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_safe_q_application.html#a8e08f133fdac34ad41aa236a6734297a">lastMessageWasSuppressed</a> () noexcept</td></tr>
+<tr class="memdesc:a8e08f133fdac34ad41aa236a6734297a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the message DebugOutput last handled on this thread was dropped by the repeated-message throttle.  <br /></td></tr>
+<tr class="separator:a8e08f133fdac34ad41aa236a6734297a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8e08f133fdac34ad41aa236a6734297a" name="a8e08f133fdac34ad41aa236a6734297a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e08f133fdac34ad41aa236a6734297a">&#9670;&#160;</a></span>lastMessageWasSuppressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SafeQApplication::lastMessageWasSuppressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the message DebugOutput last handled on this thread was dropped by the repeated-message throttle. </p>
+<p>Lets the other sinks (the Messages panel) drop it too, without counting the message twice. Always false outside of WebAssembly. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_safe_q_application_8hpp_source.html">SafeQApplication.hpp</a></li>
 <li><b>SafeQApplication.cpp</b></li>

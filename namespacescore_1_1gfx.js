@@ -156,6 +156,7 @@ var namespacescore_1_1gfx =
       [ "Fill", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58a77344a58890b502d0c2ac1c4fab38279", null ],
       [ "Stretch", "namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58aa9237ec7e51646b8653b2f43a413ff02", null ]
     ] ],
+    [ "adaptImageFormat", "namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6", null ],
     [ "buildPipeline", "namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259", null ],
     [ "codecSupportsHWPixelFormat", "namespacescore_1_1gfx.html#aa2a12eab0b01271aa477854a9b4d2c63", null ],
     [ "computeScaleForMeshSizing", "namespacescore_1_1gfx.html#ab0efa85a0401f25fe4c0b77474942eac", null ],
@@ -167,6 +168,7 @@ var namespacescore_1_1gfx =
     [ "createRenderTarget", "namespacescore_1_1gfx.html#afd369167c62119471d4e47fdcd901a43", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#a0f574466ac2aede8e5ce6d6835f57f77", null ],
     [ "hwCodecName", "namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0", null ],
+    [ "imageTextureFormat", "namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08", null ],
     [ "insertComputeBarrier", "namespacescore_1_1gfx.html#a58beeaecc2ea67c13d7e7fceee9bc7fa", null ],
     [ "makeCompute", "namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc", null ],
     [ "makeShaders", "namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0", null ],

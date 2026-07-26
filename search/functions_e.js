@@ -26,5 +26,6 @@ var searchData=
   ['requiresdepth_23',['requiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9',1,'score::gfx::RenderList']]],
   ['resizetexture_24',['resizeTexture',['../namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8',1,'score::gfx']]],
   ['resizetexturesize_25',['resizeTextureSize',['../namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e',1,'score::gfx']]],
-  ['rollback_26',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
+  ['retargetinputmethod_26',['retargetInputMethod',['../namespacescore.html#a0953a774cc82c9bbc6d93776c447e5d7',1,'score']]],
+  ['rollback_27',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
 ];

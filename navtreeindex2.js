@@ -158,6 +158,7 @@ var NAVTREEINDEX2 =
 "_is_template_8hpp_source.html":[13,0,0,1,1,10,6],
 "_item_bounder_8hpp_source.html":[13,0,0,1,1,5,14],
 "_item_model_filter_line_edit_8hpp_source.html":[13,0,0,2,21,0,2],
+"_item_view_drag_8hpp_source.html":[13,0,0,1,1,13,12],
 "_j_s_a_p_i_wrapper_8hpp_source.html":[13,0,0,2,20,0,1,4],
 "_j_s_command_factory_8hpp_source.html":[13,0,0,2,20,0,0,1],
 "_j_s_o_n_value_visitor_8hpp_source.html":[13,0,0,1,1,10,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,12,2],
 "_m_q_t_t_specific_settings_8hpp_source.html":[13,0,0,2,29,0,12,3],
 "_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2],
-"_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
-"_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1]
+"_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0]
 };
