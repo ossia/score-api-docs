@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['node_0',['node',['../structscore_1_1gfx_1_1_port.html#a6be11bbdf8a6631a446c943d42562818',1,'score::gfx::Port']]],
-  ['nodes_1',['nodes',['../classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4',1,'score::gfx::RenderList']]],
-  ['numplanes_2',['numPlanes',['../structscore_1_1gfx_1_1_pixel_format_info.html#aca736a46d2b3ade23e6c70468fb2ba0c',1,'score::gfx::PixelFormatInfo']]]
+  ['m_5fportgeometries_0',['m_portGeometries',['../classscore_1_1gfx_1_1_node_renderer.html#a4903f873277548af456aabba270f9a1f',1,'score::gfx::NodeRenderer']]],
+  ['messages_1',['messages',['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages'],['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages']]]
 ];
