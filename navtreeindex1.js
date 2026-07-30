@@ -219,7 +219,7 @@ var NAVTREEINDEX1 =
 "_expression_8hpp_source.html":[13,0,0,2,4,0,5],
 "_expression_editor_widget_8hpp_source.html":[13,0,0,2,32,4,6,1,0],
 "_expression_menu_8hpp_source.html":[13,0,0,2,32,4,6,1,1],
-"_expression_parser_8cpp_source.html":[13,0,0,2,4,0,6],
+"_expression_parser_8hpp_source.html":[13,0,0,2,4,0,6],
 "_expression_validator_8hpp_source.html":[13,0,0,2,32,4,6,9],
 "_external_input_8hpp_source.html":[13,0,0,2,24,2,1],
 "_factor_oracle2_8hpp_source.html":[13,0,0,2,16,0,10],

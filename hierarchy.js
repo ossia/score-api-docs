@@ -829,6 +829,7 @@ var hierarchy =
     [ "WidgetFactory::Enum", "struct_widget_factory_1_1_enum.html", null ],
     [ "magic_enum::customize::enum_range< Nodes::MidiUtil::scale_type >", "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html", null ],
     [ "Analysis::EnvelopeFollower", "struct_analysis_1_1_envelope_follower.html", null ],
+    [ "Ui::MidiDisplay::Node::Layer::Event", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html", null ],
     [ "Clap::event_storage", "struct_clap_1_1event__storage.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::EventPair", "struct_hierarchical_base_scenario_1_1_event_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::EventPair", "struct_hierarchical_scenario_component_1_1_event_pair.html", null ],
@@ -1181,6 +1182,7 @@ var hierarchy =
       [ "score::CommandStore", "structscore_1_1_command_store.html", null ]
     ] ],
     [ "Media::RMSData::Header", "struct_media_1_1_r_m_s_data_1_1_header.html", null ],
+    [ "Ui::MidiDisplay::Node::held_note", "struct_ui_1_1_midi_display_1_1_node_1_1held__note.html", null ],
     [ "score::HierarchicalMember< Model, T, ptr >", "structscore_1_1_hierarchical_member.html", null ],
     [ "score::HierarchicModel< Model, Args >", "structscore_1_1_hierarchic_model.html", null ],
     [ "score::HierarchicModel< Model, Args... >", "structscore_1_1_hierarchic_model.html", [
@@ -1284,8 +1286,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2062,6 +2064,7 @@ var hierarchy =
     [ "Nodes::PulseToNote::Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", null ],
     [ "Nodes::Quantifier::Node", "struct_nodes_1_1_quantifier_1_1_node.html", null ],
     [ "Nodes::RateLimiter::Node", "struct_nodes_1_1_rate_limiter_1_1_node.html", null ],
+    [ "Ui::MidiDisplay::Node", "struct_ui_1_1_midi_display_1_1_node.html", null ],
     [ "Ui::SignalDisplay::Node", "struct_ui_1_1_signal_display_1_1_node.html", null ],
     [ "Ui::TextBox::Node", "struct_ui_1_1_text_box_1_1_node.html", null ],
     [ "Ui::ValueDisplay::Node", "struct_ui_1_1_value_display_1_1_node.html", null ],
@@ -2126,6 +2129,7 @@ var hierarchy =
     [ "Nodes::MidiUtil::Node::Note", "struct_nodes_1_1_midi_util_1_1_node_1_1_note.html", null ],
     [ "Nodes::PulseToNote::Node::Note", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note.html", null ],
     [ "Nodes::Quantifier::Node::Note", "struct_nodes_1_1_quantifier_1_1_node_1_1_note.html", null ],
+    [ "Ui::MidiDisplay::Node::Layer::Note", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_note.html", null ],
     [ "Midi::NoteComparator", "struct_midi_1_1_note_comparator.html", null ],
     [ "Midi::NoteData", "struct_midi_1_1_note_data.html", null ],
     [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
@@ -2247,8 +2251,10 @@ var hierarchy =
       [ "StringKey< Tag >", "class_string_key.html", null ]
     ] ],
     [ "score::OpenDocumentsFile", "structscore_1_1_open_documents_file.html", null ],
+    [ "Ui::MidiDisplay::Node::Layer::OpenNote", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_open_note.html", null ],
     [ "OptionalSentinel", "struct_optional_sentinel.html", null ],
     [ "Execution::Settings::OrderingPolicies", "struct_execution_1_1_settings_1_1_ordering_policies.html", null ],
+    [ "Ui::MidiDisplay::Node::Layer::OrphanOff", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_orphan_off.html", null ],
     [ "Protocols::osc_protocols", "struct_protocols_1_1osc__protocols.html", null ],
     [ "Protocols::OSCCompatibleCheck", "struct_protocols_1_1_o_s_c_compatible_check.html", null ],
     [ "Protocols::OSCQuerySpecificSettings", "struct_protocols_1_1_o_s_c_query_specific_settings.html", null ],
@@ -2329,8 +2335,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2887,6 +2893,7 @@ var hierarchy =
         [ "Patternist::View", "class_patternist_1_1_view.html", null ],
         [ "Process::DefaultLayerView", "class_process_1_1_default_layer_view.html", null ],
         [ "Process::EffectLayerView", "class_process_1_1_effect_layer_view.html", [
+          [ "Ui::MidiDisplay::Node::Layer", "struct_ui_1_1_midi_display_1_1_node_1_1_layer.html", null ],
           [ "Ui::SignalDisplay::Node::Layer", "struct_ui_1_1_signal_display_1_1_node_1_1_layer.html", null ],
           [ "Ui::TextBox::Node::Layer", "struct_ui_1_1_text_box_1_1_node_1_1_layer.html", null ],
           [ "Ui::VUMeter::Node::Layer", "struct_ui_1_1_v_u_meter_1_1_node_1_1_layer.html", null ],
@@ -3472,6 +3479,7 @@ var hierarchy =
         [ "Patternist::Presenter", "class_patternist_1_1_presenter.html", null ],
         [ "Process::DefaultLayerPresenter", "class_process_1_1_default_layer_presenter.html", null ],
         [ "Process::EffectLayerPresenter", "class_process_1_1_effect_layer_presenter.html", [
+          [ "Ui::MidiDisplay::Node::Presenter", "struct_ui_1_1_midi_display_1_1_node_1_1_presenter.html", null ],
           [ "Ui::ValueDisplay::Node::Presenter", "struct_ui_1_1_value_display_1_1_node_1_1_presenter.html", null ]
         ] ],
         [ "Scenario::ScenarioPresenter", "class_scenario_1_1_scenario_presenter.html", null ],
@@ -4050,6 +4058,8 @@ var hierarchy =
     [ "range", "structrange.html", null ],
     [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
+    [ "Ui::ValueDisplay::raw_port< lit, T >", "struct_ui_1_1_value_display_1_1raw__port.html", null ],
+    [ "Ui::ValueDisplay::raw_port<\"in\", ossia::value_port >", "struct_ui_1_1_value_display_1_1raw__port.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "moodycamel::ReaderWriterQueue", null, [
       [ "Execution::ExecutionCommandQueue", "struct_execution_1_1_execution_command_queue.html", null ]
@@ -4154,6 +4164,7 @@ var hierarchy =
     [ "score::SettingsParameterMetadata< Parameter >", "structscore_1_1_settings_parameter_metadata.html", null ],
     [ "oscr::setup_control_for_exec_base< Node, Field >", "structoscr_1_1setup__control__for__exec__base.html", [
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec.html", null ],
+      [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ]

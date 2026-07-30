@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_primitive_8hpp_source.html":[13,0,0,2,35,0,21],
 "_process_2_execution_2_process_component_8hpp_source.html":[13,0,0,2,3,4,5,0],
 "_process_2_process_component_8hpp_source.html":[13,0,0,2,3,4,33],
 "_process_2_scenario_execution_8hpp_source.html":[13,0,0,2,32,4,9,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_settings_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,7],
 "_settings_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,5,0],
 "_settings_delegate_model_8hpp_source.html":[13,0,0,1,1,8,5,1],
-"_settings_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,5,2],
-"_settings_delegate_view_8hpp_source.html":[13,0,0,1,1,8,5,3]
+"_settings_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,5,2]
 };

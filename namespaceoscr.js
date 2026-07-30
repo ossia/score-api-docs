@@ -58,6 +58,7 @@ var namespaceoscr =
     [ "update_control_out_value_in_ui", "structoscr_1_1update__control__out__value__in__ui.html", null ],
     [ "update_control_value_in_ui", "structoscr_1_1update__control__value__in__ui.html", null ],
     [ "View", "structoscr_1_1_view.html", null ],
+    [ "folder_control_port", "conceptoscr_1_1folder__control__port.html", null ],
     [ "recursive_container_layout", "conceptoscr_1_1recursive__container__layout.html", null ],
     [ "GpuNode", "conceptoscr_1_1_gpu_node.html", null ],
     [ "GpuGraphicsNode2", "conceptoscr_1_1_gpu_graphics_node2.html", null ],

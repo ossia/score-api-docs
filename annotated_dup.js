@@ -2773,6 +2773,9 @@ var annotated_dup =
       [ "TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
     ] ],
     [ "Ui", null, [
+      [ "MidiDisplay", "namespace_ui_1_1_midi_display.html", [
+        [ "Node", "struct_ui_1_1_midi_display_1_1_node.html", "struct_ui_1_1_midi_display_1_1_node" ]
+      ] ],
       [ "SignalDisplay", null, [
         [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
       ] ],
@@ -2780,7 +2783,8 @@ var annotated_dup =
         [ "Node", "struct_ui_1_1_text_box_1_1_node.html", "struct_ui_1_1_text_box_1_1_node" ]
       ] ],
       [ "ValueDisplay", null, [
-        [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ]
+        [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ],
+        [ "raw_port", "struct_ui_1_1_value_display_1_1raw__port.html", null ]
       ] ],
       [ "VUMeter", null, [
         [ "Node", "struct_ui_1_1_v_u_meter_1_1_node.html", "struct_ui_1_1_v_u_meter_1_1_node" ]

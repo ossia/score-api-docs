@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"score-plugin-controlsurface_2_control_surface_2_view_8hpp_source.html":[13,0,0,2,10,0,8],
+"score-plugin-curve_2_curve_2_application_plugin_8hpp_source.html":[13,0,0,2,11,0,6],
+"score-plugin-curve_2_curve_2_palette_2_tools_2_smart_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,2],
 "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,12,0,10],
 "score-plugin-deviceexplorer_2_explorer_2_application_plugin_8hpp_source.html":[13,0,0,2,13,0,8],
 "score-plugin-engine_2_engine_2_application_plugin_8hpp_source.html":[13,0,0,2,14,0,2],
@@ -216,8 +219,8 @@ var NAVTREEINDEX21 =
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,9,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,9,6,0],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
-"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_domain.html":[12,0,10,9],
+"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_event.html":[12,0,10,11],
 "struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_segment_map.html":[12,0,10,15],
@@ -231,14 +234,14 @@ var NAVTREEINDEX21 =
 "struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_segment_data.html":[12,0,10,37],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
-"struct_curve_1_1_style.html":[12,0,10,49],
 "struct_curve_1_1_style.html":[11,0,1,47],
-"struct_curve_1_1_style_interface.html":[11,0,1,48],
+"struct_curve_1_1_style.html":[12,0,10,49],
 "struct_curve_1_1_style_interface.html":[12,0,10,50],
+"struct_curve_1_1_style_interface.html":[11,0,1,48],
 "struct_curve_1_1_tool_palette___t.html":[11,0,1,50],
 "struct_curve_1_1_tool_palette___t.html":[12,0,10,52],
-"struct_curve_1_1point__array__executor.html":[12,0,10,29],
 "struct_curve_1_1point__array__executor.html":[11,0,1,27],
+"struct_curve_1_1point__array__executor.html":[12,0,10,29],
 "struct_data_stream_input.html":[12,0,104],
 "struct_data_stream_output.html":[12,0,105],
 "struct_dataflow_1_1_address_propagation_item.html":[12,0,11,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "struct_dataflow_1_1_audio_outlet_factory.html":[12,0,11,4],
 "struct_dataflow_1_1_control_inlet_factory.html":[12,0,11,19],
 "struct_dataflow_1_1_control_outlet_factory.html":[12,0,11,20],
-"struct_dataflow_1_1_curve_inlet.html":[12,0,11,23],
-"struct_dataflow_1_1_curve_item.html":[12,0,11,24],
-"struct_dataflow_1_1_drag_line.html":[12,0,11,25],
-"struct_dataflow_1_1_drag_move_filter.html":[12,0,11,26]
+"struct_dataflow_1_1_curve_inlet.html":[12,0,11,23]
 };
