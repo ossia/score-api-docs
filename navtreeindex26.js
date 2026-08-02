@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_args_8_8_8_01_4_01_4.html":[12,0,407],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,408],
 "struct_threedim_1_1_array_to_mesh_1_1ins.html":[12,0,62,0,0],
 "struct_threedim_1_1_array_to_texture_1_1ins.html":[12,0,62,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "structoscr_1_1_edge_item.html":[11,0,8,14],
 "structoscr_1_1_executor_factory.html":[12,0,43,16],
 "structoscr_1_1_executor_factory.html":[11,0,8,16],
-"structoscr_1_1_graph_widget.html":[12,0,43,17],
-"structoscr_1_1_graph_widget.html":[11,0,8,17]
+"structoscr_1_1_graph_widget.html":[12,0,43,17]
 };

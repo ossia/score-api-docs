@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"structscore_1_1_menu_1_1is__toplevel.html":[12,0,55,176,0],
 "structscore_1_1_menu_1_1is__toplevel.html":[11,0,12,170,0],
 "structscore_1_1_menus.html":[12,0,55,178],
 "structscore_1_1_menus.html":[11,0,12,172],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "structscore_1_1gfx_1_1_h_a_p_decoder.html":[11,0,12,0,30],
 "structscore_1_1gfx_1_1_h_a_p_decoder.html":[12,0,55,2,30],
 "structscore_1_1gfx_1_1_h_a_p_decoder.html#a0e52aeea608d585a83d289e15fb01f69":[11,0,12,0,30,1],
-"structscore_1_1gfx_1_1_h_a_p_decoder.html#a0e52aeea608d585a83d289e15fb01f69":[12,0,55,2,30,1],
-"structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html":[11,0,12,0,30,0]
+"structscore_1_1gfx_1_1_h_a_p_decoder.html#a0e52aeea608d585a83d289e15fb01f69":[12,0,55,2,30,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"struct_gfx_1_1_window_capture_1_1_capturable_window.html":[12,0,21,18,1],
 "struct_gfx_1_1_window_capture_1_1_capture_target.html":[12,0,21,18,3],
 "struct_gfx_1_1_window_capture_1_1_captured_frame.html":[12,0,21,18,2],
 "struct_gfx_1_1_window_capture_1_1_window_capture_backend.html":[12,0,21,18,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html":[12,0,42,27,0,1],
 "struct_nodes_1_1_smooth_1_1v1_1_1_node.html":[12,0,42,28,0,0],
 "struct_nodes_1_1_smooth_1_1v2_1_1_node.html":[12,0,42,28,1,0],
-"struct_nodes_1_1combobox__from__array.html":[12,0,42,29],
-"struct_nodes_1_1combobox__from__array_1_1range.html":[12,0,42,29,0]
+"struct_nodes_1_1combobox__from__array.html":[12,0,42,29]
 };

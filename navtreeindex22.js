@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"struct_dataflow_1_1_curve_inlet.html":[12,0,11,23],
 "struct_dataflow_1_1_curve_item.html":[12,0,11,24],
 "struct_dataflow_1_1_drag_line.html":[12,0,11,25],
 "struct_dataflow_1_1_drag_move_filter.html":[12,0,11,26],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "struct_gfx_1_1_v_s_a_1_1_process_factory.html":[12,0,21,17,5],
 "struct_gfx_1_1_video_1_1_video_props.html":[12,0,21,16,9],
 "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html":[12,0,21,16,9,0],
-"struct_gfx_1_1_window_capture_1_1_capturable_screen.html":[12,0,21,18,0],
-"struct_gfx_1_1_window_capture_1_1_capturable_window.html":[12,0,21,18,1]
+"struct_gfx_1_1_window_capture_1_1_capturable_screen.html":[12,0,21,18,0]
 };

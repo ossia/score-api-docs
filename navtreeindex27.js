@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"structoscr_1_1_graph_widget.html":[11,0,8,17],
 "structoscr_1_1_inlet_init_func.html":[12,0,43,18],
 "structoscr_1_1_inlet_init_func.html":[11,0,8,18],
 "structoscr_1_1_layout_builder.html":[12,0,43,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "structscore_1_1_loaded_plugin_versions.html":[12,0,55,168],
 "structscore_1_1_loaded_plugin_versions.html":[11,0,12,162],
 "structscore_1_1_log_message.html":[11,0,12,164],
-"structscore_1_1_log_message.html":[12,0,55,170],
-"structscore_1_1_menu_1_1is__toplevel.html":[12,0,55,176,0]
+"structscore_1_1_log_message.html":[12,0,55,170]
 };

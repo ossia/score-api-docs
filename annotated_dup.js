@@ -2840,6 +2840,7 @@ var annotated_dup =
       [ "Model", "classvst3_1_1_model.html", null ],
       [ "param_changes", "classvst3_1_1param__changes.html", null ],
       [ "param_queue", "classvst3_1_1param__queue.html", null ],
+      [ "PlugFrame", "classvst3_1_1_plug_frame.html", null ],
       [ "Plugin", "structvst3_1_1_plugin.html", null ],
       [ "PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
       [ "RemoveControl", "classvst3_1_1_remove_control.html", null ],

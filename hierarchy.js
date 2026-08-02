@@ -1801,6 +1801,9 @@ var hierarchy =
     [ "Steinberg::Vst::IParamValueQueue", null, [
       [ "vst3::param_queue", "classvst3_1_1param__queue.html", null ]
     ] ],
+    [ "Steinberg::IPlugFrame", null, [
+      [ "vst3::PlugFrame", "classvst3_1_1_plug_frame.html", null ]
+    ] ],
     [ "boost::spirit::traits::is_empty_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__empty__container_3_01_q_string_01_4.html", null ],
     [ "score::gfx::is_output", "structscore_1_1gfx_1_1is__output.html", null ],
     [ "score::Menu::is_toplevel", "structscore_1_1_menu_1_1is__toplevel.html", null ],

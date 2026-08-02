@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"functions_func_p.html":[12,3,1,12],
 "functions_func_r.html":[12,3,1,13],
 "functions_func_s.html":[12,3,1,14],
 "functions_func_t.html":[12,3,1,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp_source.html":[13,0,0,2,10,0,0],
 "score-plugin-controlsurface_2_control_surface_2_executor_8hpp_source.html":[13,0,0,2,10,0,2],
 "score-plugin-controlsurface_2_control_surface_2_layer_8hpp_source.html":[13,0,0,2,10,0,3],
-"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,0,2,10,0,4],
-"score-plugin-controlsurface_2_control_surface_2_process_8hpp_source.html":[13,0,0,2,10,0,7]
+"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,0,2,10,0,4]
 };
