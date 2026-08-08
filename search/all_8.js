@@ -47,7 +47,7 @@ var searchData=
   ['hiderackinviewmodeltest_44',['HideRackInViewModelTest',['../class_hide_rack_in_view_model_test.html',1,'']]],
   ['hierarchicalbasescenario_45',['HierarchicalBaseScenario',['../class_hierarchical_base_scenario.html',1,'']]],
   ['hierarchicalmember_46',['HierarchicalMember',['../structscore_1_1_hierarchical_member.html',1,'score']]],
-  ['hierarchicalscenariocomponent_47',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html',1,'HierarchicalScenarioComponent&lt; Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership &gt;']]],
+  ['hierarchicalscenariocomponent_47',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html',1,'HierarchicalScenarioComponent&lt; Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership &gt;'],['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)']]],
   ['hierarchicmodel_48',['HierarchicModel',['../structscore_1_1_hierarchic_model.html',1,'score']]],
   ['hierarchicmodel_3c_20model_2c_20arg_20_3e_49',['HierarchicModel&lt; Model, Arg &gt;',['../structscore_1_1_hierarchic_model_3_01_model_00_01_arg_01_4.html',1,'score']]],
   ['hierarchicmodel_3c_20model_2c_20arg_2c_20args_2e_2e_2e_20_3e_50',['HierarchicModel&lt; Model, Arg, Args... &gt;',['../structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html',1,'score']]],
@@ -62,7 +62,8 @@ var searchData=
   ['httpdevice_59',['HTTPDevice',['../class_protocols_1_1_h_t_t_p_device.html',1,'Protocols']]],
   ['httpprotocolfactory_60',['HTTPProtocolFactory',['../class_protocols_1_1_h_t_t_p_protocol_factory.html',1,'Protocols']]],
   ['httpprotocolsettingswidget_61',['HTTPProtocolSettingsWidget',['../class_protocols_1_1_h_t_t_p_protocol_settings_widget.html',1,'Protocols']]],
-  ['httpspecificsettings_62',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]],
-  ['hwcodecname_63',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]],
-  ['hwtransferdecoder_64',['HWTransferDecoder',['../structscore_1_1gfx_1_1_h_w_transfer_decoder.html',1,'score::gfx']]]
+  ['httpserver_62',['HttpServer',['../class_remote_control_1_1_http_server_1_1_http_server.html',1,'RemoteControl::HttpServer']]],
+  ['httpspecificsettings_63',['HTTPSpecificSettings',['../struct_protocols_1_1_h_t_t_p_specific_settings.html',1,'Protocols']]],
+  ['hwcodecname_64',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]],
+  ['hwtransferdecoder_65',['HWTransferDecoder',['../structscore_1_1gfx_1_1_h_w_transfer_decoder.html',1,'score::gfx']]]
 ];

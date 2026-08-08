@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_settings_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,5,2],
 "_settings_delegate_view_8hpp_source.html":[13,0,0,1,1,8,5,3],
 "_settings_presenter_8hpp_source.html":[13,0,0,1,0,7,1],
 "_settings_view_8hpp_source.html":[13,0,0,1,0,7,2],
@@ -58,7 +59,7 @@ var NAVTREEINDEX5 =
 "_standard_displacement_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,6],
 "_standard_removal_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,7],
 "_start_screen_8hpp_source.html":[13,0,0,0,1],
-"_state_8hpp_source.html":[13,0,0,2,31,1,2,0,4],
+"_state_8hpp_source.html":[13,0,0,2,31,1,3,0,4],
 "_state_component_8hpp_source.html":[13,0,0,2,32,3,3],
 "_state_execution_8hpp_source.html":[13,0,0,2,32,4,3,8,1],
 "_state_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,5,0],
@@ -85,7 +86,7 @@ var NAVTREEINDEX5 =
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0],
 "_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3],
 "_sweeper_8hpp_source.html":[13,0,0,2,8,2,10],
-"_sync_8hpp_source.html":[13,0,0,2,31,1,2,0,5],
+"_sync_8hpp_source.html":[13,0,0,2,31,1,3,0,5],
 "_syphon_helpers_8hpp_source.html":[13,0,0,2,17,1,12,0],
 "_syphon_input_8hpp_source.html":[13,0,0,2,17,1,12,1],
 "_syphon_output_8hpp_source.html":[13,0,0,2,17,1,12,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_window_capture_backend_8hpp_source.html":[13,0,0,2,17,1,17,0],
 "_window_capture_device_8hpp_source.html":[13,0,0,2,17,1,17,1],
 "_window_capture_node_8hpp_source.html":[13,0,0,2,17,1,17,2],
-"_window_container_8hpp_source.html":[13,0,0,2,39,0,0,3],
-"_window_device_8hpp_source.html":[13,0,0,2,17,1,39]
+"_window_container_8hpp_source.html":[13,0,0,2,39,0,0,3]
 };

@@ -177,7 +177,7 @@ var NAVTREEINDEX1 =
 "_evdev_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,3,1],
 "_evdev_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,3,2],
 "_evdev_specific_settings_8hpp_source.html":[13,0,0,2,29,0,3,3],
-"_event_8hpp_source.html":[13,0,0,2,31,1,2,0,0],
+"_event_8hpp_source.html":[13,0,0,2,31,1,3,0,0],
 "_event_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,0,0],
 "_event_component_8hpp_source.html":[13,0,0,2,32,3,0],
 "_event_execution_8hpp_source.html":[13,0,0,2,32,4,3,4,1],

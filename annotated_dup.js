@@ -1666,6 +1666,10 @@ var annotated_dup =
         [ "RemoteControlImpl", "class_remote_control_1_1_controller_1_1_remote_control_impl.html", null ],
         [ "RemoteControlProvider", "class_remote_control_1_1_controller_1_1_remote_control_provider.html", null ]
       ] ],
+      [ "HttpServer", null, [
+        [ "DocumentPlugin", "struct_remote_control_1_1_http_server_1_1_document_plugin.html", null ],
+        [ "HttpServer", "class_remote_control_1_1_http_server_1_1_http_server.html", null ]
+      ] ],
       [ "Settings", null, [
         [ "Model", "class_remote_control_1_1_settings_1_1_model.html", null ],
         [ "Presenter", "class_remote_control_1_1_settings_1_1_presenter.html", null ],

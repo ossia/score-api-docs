@@ -1195,6 +1195,7 @@ var hierarchy =
       [ "Analysis::gate_slider", "struct_analysis_1_1gate__slider.html", null ]
     ] ],
     [ "WidgetFactory::HSVSlider", "struct_widget_factory_1_1_h_s_v_slider.html", null ],
+    [ "RemoteControl::HttpServer::HttpServer", "class_remote_control_1_1_http_server_1_1_http_server.html", null ],
     [ "Protocols::HTTPSpecificSettings", "struct_protocols_1_1_h_t_t_p_specific_settings.html", null ],
     [ "Steinberg::IBStream", null, [
       [ "vst3::Vst3DataStream", "structvst3_1_1_vst3_data_stream.html", null ]
@@ -1286,8 +1287,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3606,6 +3607,7 @@ var hierarchy =
         [ "Gfx::DocumentPlugin", "class_gfx_1_1_document_plugin.html", null ],
         [ "LocalTree::DocumentPlugin", "class_local_tree_1_1_document_plugin.html", null ],
         [ "RemoteControl::Controller::DocumentPlugin", "class_remote_control_1_1_controller_1_1_document_plugin.html", null ],
+        [ "RemoteControl::HttpServer::DocumentPlugin", "struct_remote_control_1_1_http_server_1_1_document_plugin.html", null ],
         [ "RemoteControl::WS::DocumentPlugin", "class_remote_control_1_1_w_s_1_1_document_plugin.html", null ],
         [ "Transport::DocumentPlugin", "class_transport_1_1_document_plugin.html", null ],
         [ "score::SerializableDocumentPlugin", "classscore_1_1_serializable_document_plugin.html", [

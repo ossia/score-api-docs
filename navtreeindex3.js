@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31],
 "_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
 "_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
-"_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18],
-"_preview_node_8hpp_source.html":[13,0,0,2,17,1,4,21]
+"_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18]
 };

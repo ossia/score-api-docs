@@ -1,5 +1,8 @@
 var NAVTREEINDEX20 =
 {
+"functions_func_m.html":[12,3,1,9],
+"functions_func_n.html":[12,3,1,10],
+"functions_func_o.html":[12,3,1,11],
 "functions_func_p.html":[12,3,1,12],
 "functions_func_r.html":[12,3,1,13],
 "functions_func_s.html":[12,3,1,14],
@@ -202,8 +205,9 @@ var NAVTREEINDEX20 =
 "plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,0,2,29,0,13,0],
 "plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,29,0,18,2],
 "plugins_2score-plugin-remotecontrol_2_remote_control_2_controller_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,0,0],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,31,1,1,2],
-"plugins_2score-plugin-remotecontrol_2_remote_control_2_websockets_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,2,1],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_http_server_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,1,0],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,31,1,2,2],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_websockets_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,3,1],
 "plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,0,2,34,0,3],
 "plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,0,2,34,0,0],
 "plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,0,2,33,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
 "score-plugin-clap_2_clap_2_effect_model_8hpp_source.html":[13,0,0,2,9,0,1],
 "score-plugin-clap_2_clap_2_executor_8hpp_source.html":[13,0,0,2,9,0,2],
-"score-plugin-clap_2_clap_2_library_8hpp_source.html":[13,0,0,2,9,0,3],
-"score-plugin-controlsurface_2_control_surface_2_command_factory_8hpp_source.html":[13,0,0,2,10,0,0],
-"score-plugin-controlsurface_2_control_surface_2_executor_8hpp_source.html":[13,0,0,2,10,0,2],
-"score-plugin-controlsurface_2_control_surface_2_layer_8hpp_source.html":[13,0,0,2,10,0,3],
-"score-plugin-controlsurface_2_control_surface_2_local_tree_8hpp_source.html":[13,0,0,2,10,0,4]
+"score-plugin-clap_2_clap_2_library_8hpp_source.html":[13,0,0,2,9,0,3]
 };
