@@ -28,5 +28,7 @@ var searchData=
   ['startrecording_25',['startRecording',['../class_scenario_1_1_scenario_execution.html#a4c2b94652e0a7c1d1eb9ae7cd1cce59a',1,'Scenario::ScenarioExecution']]],
   ['startrecordingmessages_26',['startRecordingMessages',['../class_scenario_1_1_scenario_execution.html#a50fbb510ce013bfc32d641254f053b34',1,'Scenario::ScenarioExecution']]],
   ['startstatedata_27',['startStateData',['../class_process_1_1_process_model.html#a3429fdf0a147b5a2c1a200acabeab1a7',1,'Process::ProcessModel']]],
-  ['submit_28',['submit',['../class_ongoing_command_dispatcher.html#a6aaea238af6367fa225a3b06dc496e77',1,'OngoingCommandDispatcher']]]
+  ['stash_5fmidi_28',['stash_midi',['../class_clap_1_1clap__node__base.html#ac1c34e0cf34cda3f90bb1b3cdf2df76e',1,'Clap::clap_node_base']]],
+  ['stashmidi_29',['stashmidi',['../classvst_1_1vst__node.html#ae3d5c304036842daa4e731fd608a5dd5',1,'vst::vst_node::stashMidi()'],['../classvst3_1_1vst__node__base.html#a17bd0d5bbf70417838a140500d056491',1,'vst3::vst_node_base::stashMidi()']]],
+  ['submit_30',['submit',['../class_ongoing_command_dispatcher.html#a6aaea238af6367fa225a3b06dc496e77',1,'OngoingCommandDispatcher']]]
 ];

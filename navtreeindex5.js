@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_settings_delegate_model_8hpp_source.html":[13,0,0,1,1,8,5,1],
 "_settings_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,5,2],
 "_settings_delegate_view_8hpp_source.html":[13,0,0,1,1,8,5,3],
 "_settings_presenter_8hpp_source.html":[13,0,0,1,0,7,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,16,7],
 "_window_capture_backend_8hpp_source.html":[13,0,0,2,17,1,17,0],
 "_window_capture_device_8hpp_source.html":[13,0,0,2,17,1,17,1],
-"_window_capture_node_8hpp_source.html":[13,0,0,2,17,1,17,2],
-"_window_container_8hpp_source.html":[13,0,0,2,39,0,0,3]
+"_window_capture_node_8hpp_source.html":[13,0,0,2,17,1,17,2]
 };

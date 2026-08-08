@@ -124,7 +124,7 @@ var annotated_dup =
       [ "clap_node", "class_clap_1_1clap__node.html", null ],
       [ "clap_node_32", "class_clap_1_1clap__node__32.html", null ],
       [ "clap_node_64", "class_clap_1_1clap__node__64.html", null ],
-      [ "clap_node_base", "class_clap_1_1clap__node__base.html", null ],
+      [ "clap_node_base", "class_clap_1_1clap__node__base.html", "class_clap_1_1clap__node__base" ],
       [ "clap_node_mono", "class_clap_1_1clap__node__mono.html", "class_clap_1_1clap__node__mono" ],
       [ "clap_node_mono_32", "class_clap_1_1clap__node__mono__32.html", null ],
       [ "clap_node_mono_64", "class_clap_1_1clap__node__mono__64.html", null ],
@@ -1326,6 +1326,7 @@ var annotated_dup =
       [ "LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
       [ "Pattern", "struct_patternist_1_1_pattern.html", null ],
       [ "pattern_node", "class_patternist_1_1pattern__node.html", null ],
+      [ "pattern_node_process", "class_patternist_1_1pattern__node__process.html", null ],
       [ "Presenter", "class_patternist_1_1_presenter.html", null ],
       [ "ProcessModel", "class_patternist_1_1_process_model.html", null ],
       [ "UpdatePattern", "class_patternist_1_1_update_pattern.html", null ],
@@ -2897,7 +2898,7 @@ var annotated_dup =
       [ "Executor", null, [
         [ "Component", "class_y_s_f_x_1_1_executor_1_1_component.html", null ],
         [ "ysfx_midi_event_impl", "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html", null ],
-        [ "ysfx_node", "class_y_s_f_x_1_1_executor_1_1ysfx__node.html", null ]
+        [ "ysfx_node", "class_y_s_f_x_1_1_executor_1_1ysfx__node.html", "class_y_s_f_x_1_1_executor_1_1ysfx__node" ]
       ] ],
       [ "ApplicationPlugin", "class_y_s_f_x_1_1_application_plugin.html", null ],
       [ "DropHandler", "class_y_s_f_x_1_1_drop_handler.html", null ],

@@ -1,5 +1,14 @@
 var NAVTREEINDEX20 =
 {
+"functions_func.html":[12,3,1,0],
+"functions_func_c.html":[12,3,1,1],
+"functions_func_d.html":[12,3,1,2],
+"functions_func_e.html":[12,3,1,3],
+"functions_func_f.html":[12,3,1,4],
+"functions_func_g.html":[12,3,1,5],
+"functions_func_h.html":[12,3,1,6],
+"functions_func_i.html":[12,3,1,7],
+"functions_func_l.html":[12,3,1,8],
 "functions_func_m.html":[12,3,1,9],
 "functions_func_n.html":[12,3,1,10],
 "functions_func_o.html":[12,3,1,11],
@@ -240,14 +249,5 @@ var NAVTREEINDEX20 =
 "score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html":[13,0,0,2,6,0,0,1],
 "score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,0,2,6,0,0,3],
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
-"score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
-"score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,15],
-"score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
-"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
-"score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,15],
-"score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,20],
-"score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
-"score-plugin-clap_2_clap_2_effect_model_8hpp_source.html":[13,0,0,2,9,0,1],
-"score-plugin-clap_2_clap_2_executor_8hpp_source.html":[13,0,0,2,9,0,2],
-"score-plugin-clap_2_clap_2_library_8hpp_source.html":[13,0,0,2,9,0,3]
+"score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9]
 };

@@ -2085,6 +2085,7 @@ var hierarchy =
       [ "Clap::clap_process", "struct_clap_1_1clap__process.html", null ],
       [ "Gfx::Video::video_process", "class_gfx_1_1_video_1_1video__process.html", null ],
       [ "JS::js_process", "struct_j_s_1_1js__process.html", null ],
+      [ "Patternist::pattern_node_process", "class_patternist_1_1pattern__node__process.html", null ],
       [ "Pd::pd_process", "class_pd_1_1pd__process.html", null ],
       [ "oscr::CustomNodeProcess< Node >", "classoscr_1_1_custom_node_process.html", null ]
     ] ],
@@ -2339,8 +2340,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    lv2_atom_forge_object(&amp;forge, &amp;frame, 0, host.time_Position_id);</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    lv2_atom_forge_key(&amp;forge, host.time_frame_id);</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    lv2_atom_forge_long(&amp;forge, this-&gt;m_processed_frames);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>    lv2_atom_forge_long(&amp;forge, this-&gt;m_transport_frames);</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    lv2_atom_forge_key(&amp;forge, host.time_framesPerSecond_id);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    lv2_atom_forge_long(&amp;forge, st.sampleRate());</div>
@@ -628,7 +628,7 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span> </div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade st) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span>  {</div>
-<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    <span class="keywordflow">if</span>(tk.date &gt; tk.prev_date)</div>
+<div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>    <span class="keywordflow">if</span>(!tk.paused())</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    {</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>      data.host.current = &amp;data.effect;</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>      <span class="keywordflow">if</span>(!data.time_Position_ports.empty())</div>

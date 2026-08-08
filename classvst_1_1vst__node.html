@@ -137,10 +137,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () c
 <tr class="memitem:aed0ebec822928cdcfc3ed39e35cc32b2" id="r_aed0ebec822928cdcfc3ed39e35cc32b2"><td class="memItemLeft" align="right" valign="top"><a id="aed0ebec822928cdcfc3ed39e35cc32b2" name="aed0ebec822928cdcfc3ed39e35cc32b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:aed0ebec822928cdcfc3ed39e35cc32b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884e214cad2c0da03558f29daf7a1149" id="r_a884e214cad2c0da03558f29daf7a1149"><td class="memTemplParams" colspan="2"><a id="a884e214cad2c0da03558f29daf7a1149" name="a884e214cad2c0da03558f29daf7a1149"></a>
+<tr class="memitem:ae3d5c304036842daa4e731fd608a5dd5" id="r_ae3d5c304036842daa4e731fd608a5dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#ae3d5c304036842daa4e731fd608a5dd5">stashMidi</a> ()</td></tr>
+<tr class="separator:ae3d5c304036842daa4e731fd608a5dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9378f0246dedd69e9c5d8989087fb82" id="r_aa9378f0246dedd69e9c5d8989087fb82"><td class="memTemplParams" colspan="2"><a id="aa9378f0246dedd69e9c5d8989087fb82" name="aa9378f0246dedd69e9c5d8989087fb82"></a>
 template&lt;typename Fun &gt; </td></tr>
-<tr class="memitem:a884e214cad2c0da03558f29daf7a1149"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchMidi</b> (int64_t offset, Fun &amp;&amp;f)</td></tr>
-<tr class="separator:a884e214cad2c0da03558f29daf7a1149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9378f0246dedd69e9c5d8989087fb82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchMidi</b> (int64_t offset, int64_t samples, Fun &amp;&amp;f)</td></tr>
+<tr class="separator:aa9378f0246dedd69e9c5d8989087fb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354a831caf8d60318264918392f3b790" id="r_a354a831caf8d60318264918392f3b790"><td class="memItemLeft" align="right" valign="top"><a id="a354a831caf8d60318264918392f3b790" name="a354a831caf8d60318264918392f3b790"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a354a831caf8d60318264918392f3b790"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +180,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_bs</b> {}</td></tr>
 <tr class="memitem:a01d70fb3593692add755c8ef4a1ce8ec" id="r_a01d70fb3593692add755c8ef4a1ce8ec"><td class="memItemLeft" align="right" valign="top"><a id="a01d70fb3593692add755c8ef4a1ce8ec" name="a01d70fb3593692add755c8ef4a1ce8ec"></a>
 std::conditional_t&lt;!UseDouble, std::array&lt; ossia::float_vector, 2 &gt;, <a class="el" href="structvst_1_1vst__node_1_1dummy__t.html">dummy_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>float_v</b></td></tr>
 <tr class="separator:a01d70fb3593692add755c8ef4a1ce8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cd2b08f631d711a487c653f673f2ee" id="r_a81cd2b08f631d711a487c653f673f2ee"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; libremidi::ump, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#a81cd2b08f631d711a487c653f673f2ee">m_deferred</a></td></tr>
+<tr class="separator:a81cd2b08f631d711a487c653f673f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classvst_1_1vst__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvst_1_1vst__node__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvst_1_1vst__node__base.html">vst::vst_node_base</a></td></tr>
 <tr class="memitem:a7e7ab8608a1a98d88ab18526f3c918bd inherit pub_attribs_classvst_1_1vst__node__base" id="r_a7e7ab8608a1a98d88ab18526f3c918bd"><td class="memItemLeft" align="right" valign="top">
 std::shared_ptr&lt; AEffectWrapper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fx</b> {}</td></tr>
@@ -202,6 +206,53 @@ Additional Inherited Members</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (int32_t opcode, int32_t index=0, intptr_t value=0, void *ptr=nullptr, float opt=0.0f)</td></tr>
 <tr class="separator:ae8555db49dbf264c3d5c166ac99212b0 inherit pro_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae3d5c304036842daa4e731fd608a5dd5" name="ae3d5c304036842daa4e731fd608a5dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3d5c304036842daa4e731fd608a5dd5">&#9670;&#160;</a></span>stashMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool UseDouble, bool IsSynth&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvst_1_1vst__node.html">vst::vst_node</a>&lt; UseDouble, IsSynth &gt;::stashMidi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Keep this tick's events for the next block rather than dropping them: the span covers no whole sample, so every date in the tick maps to the sample the span starts on, which is offset 0 of the next block that covers one. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a81cd2b08f631d711a487c653f673f2ee" name="a81cd2b08f631d711a487c653f673f2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81cd2b08f631d711a487c653f673f2ee">&#9670;&#160;</a></span>m_deferred</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool UseDouble, bool IsSynth&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::small_vector&lt;libremidi::ump, 8&gt; <a class="el" href="classvst_1_1vst__node.html">vst::vst_node</a>&lt; UseDouble, IsSynth &gt;::m_deferred</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Events from ticks that covered no whole sample, waiting for the next block that does cover one. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-vst_2_vst_2_node_8hpp_source.html">score-plugin-vst/Vst/Node.hpp</a></li>
 </ul>

@@ -124,9 +124,18 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () c
 <tr class="memitem:a7821b740c555e1a35fdb8eaff7a19dc8" id="r_a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memItemLeft" align="right" valign="top"><a id="a7821b740c555e1a35fdb8eaff7a19dc8" name="a7821b740c555e1a35fdb8eaff7a19dc8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>legato</b> (int note) const noexcept</td></tr>
 <tr class="separator:a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a073fd1821c42266aa7dd37e2ebdbfe34" id="r_a073fd1821c42266aa7dd37e2ebdbfe34"><td class="memItemLeft" align="right" valign="top"><a id="a073fd1821c42266aa7dd37e2ebdbfe34" name="a073fd1821c42266aa7dd37e2ebdbfe34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release_all</b> (int64_t timestamp) noexcept</td></tr>
+<tr class="separator:a073fd1821c42266aa7dd37e2ebdbfe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad45d6374b738a9426a2512f5f3e0c15" id="r_aad45d6374b738a9426a2512f5f3e0c15"><td class="memItemLeft" align="right" valign="top"><a id="aad45d6374b738a9426a2512f5f3e0c15" name="aad45d6374b738a9426a2512f5f3e0c15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_channel</b> (uint8_t c) noexcept</td></tr>
+<tr class="separator:aad45d6374b738a9426a2512f5f3e0c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f59520d29ed73dfb4d89284e87fff6" id="r_ae0f59520d29ed73dfb4d89284e87fff6"><td class="memItemLeft" align="right" valign="top"><a id="ae0f59520d29ed73dfb4d89284e87fff6" name="ae0f59520d29ed73dfb4d89284e87fff6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:ae0f59520d29ed73dfb4d89284e87fff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcc5db0022deefac6298e892a3c6d94" id="r_a7bcc5db0022deefac6298e892a3c6d94"><td class="memItemLeft" align="right" valign="top"><a id="a7bcc5db0022deefac6298e892a3c6d94" name="a7bcc5db0022deefac6298e892a3c6d94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>play_step</b> (int64_t date, bool rewinding=false) noexcept</td></tr>
+<tr class="separator:a7bcc5db0022deefac6298e892a3c6d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3f022d15cf2ed57716daa71f3ae719" id="r_a6e3f022d15cf2ed57716daa71f3ae719"><td class="memItemLeft" align="right" valign="top"><a id="a6e3f022d15cf2ed57716daa71f3ae719" name="a6e3f022d15cf2ed57716daa71f3ae719"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:a6e3f022d15cf2ed57716daa71f3ae719"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +166,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>last</b> = -1</td></tr
 <tr class="memitem:a56a0a511de64e0a0df9857568679699a" id="r_a56a0a511de64e0a0df9857568679699a"><td class="memItemLeft" align="right" valign="top"><a id="a56a0a511de64e0a0df9857568679699a" name="a56a0a511de64e0a0df9857568679699a"></a>
 uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>channel</b> {1}</td></tr>
 <tr class="separator:a56a0a511de64e0a0df9857568679699a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8c9264b4f9a5e60f3600926595075a5" id="r_af8c9264b4f9a5e60f3600926595075a5"><td class="memItemLeft" align="right" valign="top"><a id="af8c9264b4f9a5e60f3600926595075a5" name="af8c9264b4f9a5e60f3600926595075a5"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_flight_channel</b> {1}</td></tr>
+<tr class="separator:af8c9264b4f9a5e60f3600926595075a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e6fd89fdd9c2cf7d23d061ed3cc3d6" id="r_a70e6fd89fdd9c2cf7d23d061ed3cc3d6"><td class="memItemLeft" align="right" valign="top"><a id="a70e6fd89fdd9c2cf7d23d061ed3cc3d6" name="a70e6fd89fdd9c2cf7d23d061ed3cc3d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>release_pending</b> {}</td></tr>
+<tr class="separator:a70e6fd89fdd9c2cf7d23d061ed3cc3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844a1fc5f239a168ead7d00ab84317c0" id="r_a844a1fc5f239a168ead7d00ab84317c0"><td class="memItemLeft" align="right" valign="top"><a id="a844a1fc5f239a168ead7d00ab84317c0" name="a844a1fc5f239a168ead7d00ab84317c0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td></tr>
+<tr class="separator:a844a1fc5f239a168ead7d00ab84317c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>PatternExecutor.cpp</b></li>
+<li><a class="el" href="_pattern_node_8hpp_source.html">PatternNode.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

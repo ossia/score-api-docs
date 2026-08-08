@@ -188,10 +188,11 @@ var NAVTREEINDEX3 =
 "_pattern_library_8hpp_source.html":[13,0,0,2,25,1,5],
 "_pattern_metadata_8hpp_source.html":[13,0,0,2,25,1,6],
 "_pattern_model_8hpp_source.html":[13,0,0,2,25,1,7],
-"_pattern_parsing_8hpp_source.html":[13,0,0,2,25,1,8],
-"_pattern_presenter_8hpp_source.html":[13,0,0,2,25,1,9],
+"_pattern_node_8hpp_source.html":[13,0,0,2,25,1,8],
+"_pattern_parsing_8hpp_source.html":[13,0,0,2,25,1,9],
+"_pattern_presenter_8hpp_source.html":[13,0,0,2,25,1,10],
 "_pattern_properties_8hpp_source.html":[13,0,0,2,25,1,0,0],
-"_pattern_view_8hpp_source.html":[13,0,0,2,25,1,10],
+"_pattern_view_8hpp_source.html":[13,0,0,2,25,1,11],
 "_pd_command_factory_8hpp_source.html":[13,0,0,2,28,0,0,1],
 "_pd_executor_8hpp_source.html":[13,0,0,2,28,0,1,0],
 "_pd_factory_8hpp_source.html":[13,0,0,2,28,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_preset_8hpp_source.html":[13,0,0,2,3,4,30],
 "_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31],
 "_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
-"_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
-"_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18]
+"_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7]
 };

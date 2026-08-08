@@ -140,15 +140,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control</b> (std:
 <tr class="memitem:a8a8da367dcb1ea32493b9b23710e8627" id="r_a8a8da367dcb1ea32493b9b23710e8627"><td class="memItemLeft" align="right" valign="top"><a id="a8a8da367dcb1ea32493b9b23710e8627" name="a8a8da367dcb1ea32493b9b23710e8627"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setControls</b> ()</td></tr>
 <tr class="separator:a8a8da367dcb1ea32493b9b23710e8627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487e7887b95d1b0c1df691d617554825" id="r_a487e7887b95d1b0c1df691d617554825"><td class="memItemLeft" align="right" valign="top"><a id="a487e7887b95d1b0c1df691d617554825" name="a487e7887b95d1b0c1df691d617554825"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> ()</td></tr>
-<tr class="separator:a487e7887b95d1b0c1df691d617554825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b52cdec60800f8ec995db959fed9121" id="r_a6b52cdec60800f8ec995db959fed9121"><td class="memItemLeft" align="right" valign="top"><a id="a6b52cdec60800f8ec995db959fed9121" name="a6b52cdec60800f8ec995db959fed9121"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> (ossia::midi_port &amp;port, int index)</td></tr>
-<tr class="separator:a6b52cdec60800f8ec995db959fed9121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacacfb18e922f4c8f01dcd75b57dfe62" id="r_aacacfb18e922f4c8f01dcd75b57dfe62"><td class="memItemLeft" align="right" valign="top"><a id="aacacfb18e922f4c8f01dcd75b57dfe62" name="aacacfb18e922f4c8f01dcd75b57dfe62"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readbackMidi</b> ()</td></tr>
-<tr class="separator:aacacfb18e922f4c8f01dcd75b57dfe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42e436a13093b37b2dcd8c410c6ca5f" id="r_ac42e436a13093b37b2dcd8c410c6ca5f"><td class="memItemLeft" align="right" valign="top"><a id="ac42e436a13093b37b2dcd8c410c6ca5f" name="ac42e436a13093b37b2dcd8c410c6ca5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> (int64_t tick_start, int64_t samples)</td></tr>
+<tr class="separator:ac42e436a13093b37b2dcd8c410c6ca5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17bd0d5bbf70417838a140500d056491" id="r_a17bd0d5bbf70417838a140500d056491"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a17bd0d5bbf70417838a140500d056491">stashMidi</a> ()</td></tr>
+<tr class="separator:a17bd0d5bbf70417838a140500d056491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a446ce19c8721dad0452aaa82e30896f7" id="r_a446ce19c8721dad0452aaa82e30896f7"><td class="memItemLeft" align="right" valign="top"><a id="a446ce19c8721dad0452aaa82e30896f7" name="a446ce19c8721dad0452aaa82e30896f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> (ossia::midi_port &amp;port, int index, int64_t tick_start, int64_t samples)</td></tr>
+<tr class="separator:a446ce19c8721dad0452aaa82e30896f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f47efcd0a1755ecfd43081a23aa2a55" id="r_a5f47efcd0a1755ecfd43081a23aa2a55"><td class="memItemLeft" align="right" valign="top"><a id="a5f47efcd0a1755ecfd43081a23aa2a55" name="a5f47efcd0a1755ecfd43081a23aa2a55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readbackMidi</b> (int64_t tick_start)</td></tr>
+<tr class="separator:a5f47efcd0a1755ecfd43081a23aa2a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5d7d96fdc769edc0116a036a1c1523b" id="r_ac5d7d96fdc769edc0116a036a1c1523b"><td class="memItemLeft" align="right" valign="top"><a id="ac5d7d96fdc769edc0116a036a1c1523b" name="ac5d7d96fdc769edc0116a036a1c1523b"></a>
 auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>preparePort</b> (ossia::audio_port &amp;port, int numChannels, std::size_t samples)</td></tr>
 <tr class="separator:ac5d7d96fdc769edc0116a036a1c1523b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +208,8 @@ Steinberg::Vst::EventList&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a9050ceb060ec2032494f0bd02b4f493c" id="r_a9050ceb060ec2032494f0bd02b4f493c"><td class="memItemLeft" align="right" valign="top"><a id="a9050ceb060ec2032494f0bd02b4f493c" name="a9050ceb060ec2032494f0bd02b4f493c"></a>
 Steinberg::Vst::EventList&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputEvents</b></td></tr>
 <tr class="separator:a9050ceb060ec2032494f0bd02b4f493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390036fda4567d5ec4299635535a5934" id="r_a390036fda4567d5ec4299635535a5934"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::pair&lt; int, libremidi::ump &gt;, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a390036fda4567d5ec4299635535a5934">m_deferred</a></td></tr>
+<tr class="separator:a390036fda4567d5ec4299635535a5934"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -219,6 +223,49 @@ Protected Attributes</h2></td></tr>
 ossia::hash_map&lt; Steinberg::Vst::ParamID, std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_map</b></td></tr>
 <tr class="separator:a969bfef9d4f2a0b59810259f072f24cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a17bd0d5bbf70417838a140500d056491" name="a17bd0d5bbf70417838a140500d056491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17bd0d5bbf70417838a140500d056491">&#9670;&#160;</a></span>stashMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vst3::vst_node_base::stashMidi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Keep this tick's events for the next block instead of dropping them. The span covers no whole sample, so every date in the tick maps to the sample the span starts on, which is offset 0 of the next block that does cover one: deferring is exact here, not an approximation. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a390036fda4567d5ec4299635535a5934" name="a390036fda4567d5ec4299635535a5934"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a390036fda4567d5ec4299635535a5934">&#9670;&#160;</a></span>m_deferred</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::small_vector&lt;std::pair&lt;int, libremidi::ump&gt;, 8&gt; vst3::vst_node_base::m_deferred</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Events from ticks that covered no whole sample, with the bus they came in on, waiting for the next block that does cover one. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-vst3_2_vst3_2_node_8hpp_source.html">score-plugin-vst3/Vst3/Node.hpp</a></li>
 </ul>
