@@ -195,6 +195,7 @@ var namespacescore =
     [ "Plugin", "structscore_1_1_plugin.html", null ],
     [ "Plugin_QtInterface", "classscore_1_1_plugin___qt_interface.html", null ],
     [ "PluginWindow", "classscore_1_1_plugin_window.html", null ],
+    [ "PointerLock", "structscore_1_1_pointer_lock.html", null ],
     [ "PolymorphicComponentHierarchyManager", "classscore_1_1_polymorphic_component_hierarchy_manager.html", "classscore_1_1_polymorphic_component_hierarchy_manager" ],
     [ "PositionedEvent", "structscore_1_1_positioned_event.html", null ],
     [ "PositionedEvent< Scenario::Point >", "structscore_1_1_positioned_event_3_01_scenario_1_1_point_01_4.html", null ],

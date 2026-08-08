@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
+"score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,15],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
 "score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
@@ -233,8 +235,8 @@ var NAVTREEINDEX21 =
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,9,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,9,6,0],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
-"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_domain.html":[12,0,10,9],
+"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_event.html":[12,0,10,11],
 "struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "struct_curve_1_1_point_id.html":[11,0,1,28],
 "struct_curve_1_1_point_id.html":[12,0,10,30],
 "struct_curve_1_1_segment_data.html":[11,0,1,35],
-"struct_curve_1_1_segment_data.html":[12,0,10,37],
-"struct_curve_1_1_style.html":[12,0,10,49],
-"struct_curve_1_1_style.html":[11,0,1,47]
+"struct_curve_1_1_segment_data.html":[12,0,10,37]
 };

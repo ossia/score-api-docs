@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
+"_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
 "_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18],
 "_preview_node_8hpp_source.html":[13,0,0,2,17,1,4,21],
 "_primitive_8hpp_source.html":[13,0,0,2,35,0,21],
@@ -68,8 +70,8 @@ var NAVTREEINDEX4 =
 "_q_graphics_x_y_z_chooser_8hpp_source.html":[13,0,0,1,1,5,1,28],
 "_q_graphics_x_y_z_spinbox_8hpp_source.html":[13,0,0,1,1,5,1,29],
 "_q_image_pool_8hpp_source.html":[13,0,0,2,24,0,5,1],
-"_q_map_helper_8hpp.html":[13,0,0,1,1,12,22],
-"_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,22],
+"_q_map_helper_8hpp.html":[13,0,0,1,1,12,24],
+"_q_map_helper_8hpp_source.html":[13,0,0,1,1,12,24],
 "_q_rhi_gles2_8hpp_source.html":[13,0,0,1,1,4,1],
 "_qml_objects_8hpp_source.html":[13,0,0,2,20,0,2,7],
 "_qml_process_8hpp_source.html":[13,0,0,2,20,0,2,8],
@@ -80,7 +82,7 @@ var NAVTREEINDEX4 =
 "_queue_8hpp_source.html":[13,0,0,2,8,2,8],
 "_r_g_b_a_8hpp_source.html":[13,0,0,2,17,1,4,0,22],
 "_r_m_s_data_8hpp_source.html":[13,0,0,2,24,0,14],
-"_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,23],
+"_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,25],
 "_rate_limiter_8hpp_source.html":[13,0,0,2,16,0,30],
 "_rate_widget_8hpp_source.html":[13,0,0,2,29,0,27],
 "_reactive_label_8hpp_source.html":[13,0,0,1,1,13,21],
@@ -96,7 +98,7 @@ var NAVTREEINDEX4 =
 "_recording_command_factory_8hpp_source.html":[13,0,0,2,30,0,0,1],
 "_rect_item_8hpp_source.html":[13,0,0,1,1,5,16],
 "_recursive_filter_proxy_8hpp_source.html":[13,0,0,2,21,0,12],
-"_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,24],
+"_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,26],
 "_refresh_states_8hpp_source.html":[13,0,0,2,32,4,1,0,6],
 "_refresh_states_macro_8hpp_source.html":[13,0,0,2,32,4,1,0,7],
 "_relation_8hpp_source.html":[13,0,0,2,4,0,10],
@@ -132,7 +134,7 @@ var NAVTREEINDEX4 =
 "_runtime_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,5],
 "_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,19],
 "_s_s_b_o_8hpp_source.html":[13,0,0,2,17,1,4,35],
-"_safe_cast_8hpp_source.html":[13,0,0,1,1,12,25],
+"_safe_cast_8hpp_source.html":[13,0,0,1,1,12,27],
 "_safe_q_application_8hpp_source.html":[13,0,0,1,0,0,7],
 "_scale_8hpp_source.html":[13,0,0,2,17,1,4,31],
 "_scale_notes_8hpp_source.html":[13,0,0,2,25,0,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_set_segment_parameters_8hpp_source.html":[13,0,0,2,11,0,0,2],
 "_set_segment_parameters_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,5],
 "_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4],
-"_settings_command_8hpp_source.html":[13,0,0,1,1,2,9],
-"_settings_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,7],
-"_settings_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,5,0]
+"_settings_command_8hpp_source.html":[13,0,0,1,1,2,9]
 };

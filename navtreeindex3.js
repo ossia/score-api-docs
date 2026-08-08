@@ -234,6 +234,8 @@ var NAVTREEINDEX3 =
 "_ply_8hpp_source.html":[13,0,0,2,35,0,20],
 "_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0],
 "_pointer_8hpp_source.html":[13,0,0,1,1,12,2,8],
+"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,22],
+"_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,23],
 "_port_8hpp_source.html":[13,0,0,2,3,4,3,11],
 "_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,18],
 "_port_factory_8hpp_source.html":[13,0,0,2,3,4,3,12],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_power_segment_8hpp_source.html":[13,0,0,2,11,0,4,2,0],
 "_presenter_instantiations_8hpp_source.html":[13,0,0,2,32,4,14],
 "_preset_8hpp_source.html":[13,0,0,2,3,4,30],
-"_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31],
-"_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
-"_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7]
+"_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31]
 };

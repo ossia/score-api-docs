@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('_cursor_8hpp_source.html',''); initRes
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      = CGEventCreateMouseEvent(<span class="keyword">nullptr</span>, kCGEventMouseMoved, ppos, kCGMouseButtonLeft);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  CGEventPost(kCGHIDEventTap, e);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  CFRelease(e);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#elif !defined(__EMSCRIPTEN__)</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  QCursor::setPos(pos.toPoint());</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}</div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('_cursor_8hpp_source.html',''); initRes
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      = CGEventCreateMouseEvent(<span class="keyword">nullptr</span>, kCGEventMouseMoved, ppos, kCGMouseButtonLeft);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  CGEventPost(kCGHIDEventTap, e);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  CFRelease(e);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#elif !defined(__EMSCRIPTEN__)</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  QCursor::setPos(pos.toPoint());</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
