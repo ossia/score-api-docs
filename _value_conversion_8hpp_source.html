@@ -164,25 +164,30 @@ $(document).ready(function(){initNavTree('_value_conversion_8hpp_source.html',''
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// &#39;a&#39;, [&#39;a&#39;, 12], or &quot;str&quot; for a string.</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>SCORE_LIB_STATE_EXPORT QString toPrettyString(<span class="keyword">const</span> ossia::value&amp; val);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// We require the type to crrectly read back (e.g. int / float / char)</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// and as an optimization, since we may need it multiple times,</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// we chose to leave the caller save it however he wants. Hence the specific</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// API.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>SCORE_LIB_STATE_EXPORT QString</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>textualType(<span class="keyword">const</span> ossia::value&amp; val); <span class="comment">// For JSONValue serialization</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>SCORE_LIB_STATE_EXPORT ossia::value fromQVariant(<span class="keyword">const</span> QVariant&amp; val);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>SCORE_LIB_STATE_EXPORT QString</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>prettyType(<span class="keyword">const</span> ossia::value&amp; val); <span class="comment">// For display to the user, translated</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>SCORE_LIB_STATE_EXPORT</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>QString prettyType(ossia::val_type); <span class="comment">// For display to the user, translated</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> std::array&lt;const QString, 11&gt;&amp;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>ValuePrettyTypesArray(); <span class="comment">// For display to the user, translated</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> QStringList&amp;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>ValuePrettyTypesList(); <span class="comment">// For display to the user, translated</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> std::array&lt;std::pair&lt;QString, ossia::val_type&gt;, 10&gt;&amp;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>ValuePrettyTypesMap();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// Decimal notation, so that e.g. a byte count reads 137438953472 instead of</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// 1.37439e+11. Falls back to the exponent form for magnitudes where decimal</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// notation would be unreadable.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>SCORE_LIB_STATE_EXPORT QString toPrettyString(<span class="keywordtype">float</span> f);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// We require the type to crrectly read back (e.g. int / float / char)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// and as an optimization, since we may need it multiple times,</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// we chose to leave the caller save it however he wants. Hence the specific</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">// API.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>SCORE_LIB_STATE_EXPORT QString</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>textualType(<span class="keyword">const</span> ossia::value&amp; val); <span class="comment">// For JSONValue serialization</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>SCORE_LIB_STATE_EXPORT ossia::value fromQVariant(<span class="keyword">const</span> QVariant&amp; val);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>SCORE_LIB_STATE_EXPORT QString</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>prettyType(<span class="keyword">const</span> ossia::value&amp; val); <span class="comment">// For display to the user, translated</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>SCORE_LIB_STATE_EXPORT</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>QString prettyType(ossia::val_type); <span class="comment">// For display to the user, translated</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> std::array&lt;const QString, 11&gt;&amp;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>ValuePrettyTypesArray(); <span class="comment">// For display to the user, translated</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> QStringList&amp;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>ValuePrettyTypesList(); <span class="comment">// For display to the user, translated</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>SCORE_LIB_STATE_EXPORT <span class="keyword">const</span> std::array&lt;std::pair&lt;QString, ossia::val_type&gt;, 10&gt;&amp;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>ValuePrettyTypesMap();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
