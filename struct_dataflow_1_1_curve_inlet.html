@@ -146,7 +146,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:a8705da745530f6217f8ca3c5084680cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33840a2a4a201f7248e706bbb6cc7439" id="r_a33840a2a4a201f7248e706bbb6cc7439"><td class="memItemLeft" align="right" valign="top"><a id="a33840a2a4a201f7248e706bbb6cc7439" name="a33840a2a4a201f7248e706bbb6cc7439"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_curveChange</b> ()</td></tr>
+<tr class="memdesc:a33840a2a4a201f7248e706bbb6cc7439"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_curve.html" title="Utilities and base classes for 1D curves.">Curve</a> editor -&gt; port value. <br /></td></tr>
 <tr class="separator:a33840a2a4a201f7248e706bbb6cc7439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1587139603ace7c919483fdc6f82c2f" id="r_ae1587139603ace7c919483fdc6f82c2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dataflow_1_1_curve_inlet.html#ae1587139603ace7c919483fdc6f82c2f">on_valueChange</a> (const ossia::value &amp;v)</td></tr>
+<tr class="separator:ae1587139603ace7c919483fdc6f82c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_control_inlet"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_control_inlet')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></td></tr>
 <tr class="memitem:ae93772d6138bb1fcf5d584017ac02b86 inherit pub_methods_class_process_1_1_control_inlet" id="r_ae93772d6138bb1fcf5d584017ac02b86"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ControlInlet</b> (const <a class="el" href="class_process_1_1_control_inlet.html">ControlInlet</a> &amp;)=delete</td></tr>
@@ -328,6 +331,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:adcd1b93eaa46ba9d96caf87c77551a62" id="r_adcd1b93eaa46ba9d96caf87c77551a62"><td class="memItemLeft" align="right" valign="top"><a id="adcd1b93eaa46ba9d96caf87c77551a62" name="adcd1b93eaa46ba9d96caf87c77551a62"></a>
 <a class="el" href="class_curve_1_1_model.html">Curve::Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_curve</b> {}</td></tr>
 <tr class="separator:adcd1b93eaa46ba9d96caf87c77551a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bfd7e88c5c6cf1d7bfd0847e59c299" id="r_a90bfd7e88c5c6cf1d7bfd0847e59c299"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dataflow_1_1_curve_inlet.html#a90bfd7e88c5c6cf1d7bfd0847e59c299">m_syncing</a> {}</td></tr>
+<tr class="separator:a90bfd7e88c5c6cf1d7bfd0847e59c299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_process_1_1_port"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_process_1_1_port')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_process_1_1_port.html">Process::Port</a></td></tr>
 <tr class="memitem:a00897fdc9c42c2cee7416a3da07caa89 inherit pub_attribs_class_process_1_1_port" id="r_a00897fdc9c42c2cee7416a3da07caa89"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_selectable.html">Selectable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selection</b> {this}</td></tr>
@@ -429,6 +434,42 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_address</b></td></tr>
 <tr class="separator:a67ef36d6deb81f7dc6a574d95113a466 inherit pro_attribs_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae1587139603ace7c919483fdc6f82c2f" name="ae1587139603ace7c919483fdc6f82c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1587139603ace7c919483fdc6f82c2f">&#9670;&#160;</a></span>on_valueChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dataflow::CurveInlet::on_valueChange </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Port value -&gt; curve editor, so that presets and any other external write to the control actually show up in the editor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a90bfd7e88c5c6cf1d7bfd0847e59c299" name="a90bfd7e88c5c6cf1d7bfd0847e59c299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bfd7e88c5c6cf1d7bfd0847e59c299">&#9670;&#160;</a></span>m_syncing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dataflow::CurveInlet::m_syncing {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guards the two directions against each other: rebuilding the model emits changed(), which would otherwise immediately serialize it back. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_curve_inlet_8hpp_source.html">CurveInlet.hpp</a></li>
 <li><b>CurveInlet.cpp</b></li>

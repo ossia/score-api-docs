@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: oscr::con_unvalidated&lt; Node, Field, NPred, NField &gt; Struct Template Reference</title>
+        <title>score: score::RangeWidget Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('structoscr_1_1con__unvalidated.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classscore_1_1_range_widget.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,73 +103,56 @@ $(document).ready(function(){initNavTree('structoscr_1_1con__unvalidated.html','
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="structoscr_1_1con__unvalidated-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">oscr::con_unvalidated&lt; Node, Field, NPred, NField &gt; Struct Template Reference</div></div>
+<a href="classscore_1_1_range_widget-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">score::RangeWidget Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a74e039d9a3373e80701232db81668432" id="r_a74e039d9a3373e80701232db81668432"><td class="memItemLeft" align="right" valign="top"><a id="a74e039d9a3373e80701232db81668432" name="a74e039d9a3373e80701232db81668432"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ExecNode</b> = safe_node&lt; Node &gt;</td></tr>
-<tr class="separator:a74e039d9a3373e80701232db81668432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+
+<p>Editor for a pair (start, end), the QWidget counterpart of <a class="el" href="classscore_1_1_q_graphics_range_slider.html">score::QGraphicsRangeSlider</a>.  
+ <a href="classscore_1_1_range_widget.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for score::RangeWidget:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classscore_1_1_range_widget.png" alt=""/>
+ </div></div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Editor for a pair (start, end), the QWidget counterpart of <a class="el" href="classscore_1_1_q_graphics_range_slider.html">score::QGraphicsRangeSlider</a>. </p>
+<p>The API deliberately mirrors <a class="el" href="classscore_1_1_q_graphics_range_slider.html">QGraphicsRangeSlider</a> &ndash; setRange / setValue / value / moving / sliderMoved / sliderReleased &ndash; so that the two can be driven by the same code in WidgetFactory.</p>
+<p>The two bounds are kept ordered: pushing the start above the end drags the end along, and vice-versa, so the control can never be put in a state where start &gt; end. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a981f59fbd3b2f2c055d97e3b947a50ba" id="r_a981f59fbd3b2f2c055d97e3b947a50ba"><td class="memItemLeft" align="right" valign="top"><a id="a981f59fbd3b2f2c055d97e3b947a50ba" name="a981f59fbd3b2f2c055d97e3b947a50ba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const ossia::value &amp;val)</td></tr>
-<tr class="separator:a981f59fbd3b2f2c055d97e3b947a50ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf24e57a88da4d8f9902b085792d2d5" id="r_aadf24e57a88da4d8f9902b085792d2d5"><td class="memItemLeft" align="right" valign="top"><a id="aadf24e57a88da4d8f9902b085792d2d5" name="aadf24e57a88da4d8f9902b085792d2d5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RangeWidget</b> (bool integral, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:aadf24e57a88da4d8f9902b085792d2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad174b14d0ee65b88b9a4bea0e95d587c" id="r_ad174b14d0ee65b88b9a4bea0e95d587c"><td class="memItemLeft" align="right" valign="top"><a id="ad174b14d0ee65b88b9a4bea0e95d587c" name="ad174b14d0ee65b88b9a4bea0e95d587c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRange</b> (double min, double max, ossia::vec2f init)</td></tr>
+<tr class="separator:ad174b14d0ee65b88b9a4bea0e95d587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43a7c3f7056f09f2d47e63d43e27a4bc" id="r_a43a7c3f7056f09f2d47e63d43e27a4bc"><td class="memItemLeft" align="right" valign="top"><a id="a43a7c3f7056f09f2d47e63d43e27a4bc" name="a43a7c3f7056f09f2d47e63d43e27a4bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (ossia::vec2f value)</td></tr>
+<tr class="separator:a43a7c3f7056f09f2d47e63d43e27a4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71a53cb36bc0f024552179018276cb0" id="r_af71a53cb36bc0f024552179018276cb0"><td class="memItemLeft" align="right" valign="top"><a id="af71a53cb36bc0f024552179018276cb0" name="af71a53cb36bc0f024552179018276cb0"></a>
+ossia::vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const noexcept</td></tr>
+<tr class="separator:af71a53cb36bc0f024552179018276cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeff1d7278b3547873b1e8a8aaea4d74" id="r_afeff1d7278b3547873b1e8a8aaea4d74"><td class="memItemLeft" align="right" valign="top"><a id="afeff1d7278b3547873b1e8a8aaea4d74" name="afeff1d7278b3547873b1e8a8aaea4d74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderMoved</b> ()</td></tr>
+<tr class="separator:afeff1d7278b3547873b1e8a8aaea4d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590da03d3ab7c60b552c6bd4b847504d" id="r_a590da03d3ab7c60b552c6bd4b847504d"><td class="memItemLeft" align="right" valign="top"><a id="a590da03d3ab7c60b552c6bd4b847504d" name="a590da03d3ab7c60b552c6bd4b847504d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderReleased</b> ()</td></tr>
+<tr class="separator:a590da03d3ab7c60b552c6bd4b847504d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1fa774fd5b2a2e5e3eb7237ce36ff552" id="r_a1fa774fd5b2a2e5e3eb7237ce36ff552"><td class="memItemLeft" align="right" valign="top"><a id="a1fa774fd5b2a2e5e3eb7237ce36ff552" name="a1fa774fd5b2a2e5e3eb7237ce36ff552"></a>
-const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ctx</b></td></tr>
-<tr class="separator:a1fa774fd5b2a2e5e3eb7237ce36ff552"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70bf7bad21d3aef6bc800d12a191ec39" id="r_a70bf7bad21d3aef6bc800d12a191ec39"><td class="memItemLeft" align="right" valign="top"><a id="a70bf7bad21d3aef6bc800d12a191ec39" name="a70bf7bad21d3aef6bc800d12a191ec39"></a>
-std::weak_ptr&lt; ExecNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>weak_node</b></td></tr>
-<tr class="separator:a70bf7bad21d3aef6bc800d12a191ec39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1cb0bbe8cdf5281b35f4fcf42fefd1e" id="r_af1cb0bbe8cdf5281b35f4fcf42fefd1e"><td class="memItemLeft" align="right" valign="top"><a id="af1cb0bbe8cdf5281b35f4fcf42fefd1e" name="af1cb0bbe8cdf5281b35f4fcf42fefd1e"></a>
-Field &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>field</b></td></tr>
-<tr class="separator:af1cb0bbe8cdf5281b35f4fcf42fefd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a717f6adccb3587d682f123cbcdca1626" id="r_a717f6adccb3587d682f123cbcdca1626"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1con__unvalidated.html#a717f6adccb3587d682f123cbcdca1626">control_index</a></td></tr>
-<tr class="separator:a717f6adccb3587d682f123cbcdca1626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdd91d90043794a3ebedbba900b55f6" id="r_afcdd91d90043794a3ebedbba900b55f6"><td class="memItemLeft" align="right" valign="top"><a id="afcdd91d90043794a3ebedbba900b55f6" name="afcdd91d90043794a3ebedbba900b55f6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> = false</td></tr>
+<tr class="separator:afcdd91d90043794a3ebedbba900b55f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a717f6adccb3587d682f123cbcdca1626" name="a717f6adccb3587d682f123cbcdca1626"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a717f6adccb3587d682f123cbcdca1626">&#9670;&#160;</a></span>control_index</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Node , typename Field , std::size_t NPred, std::size_t NField&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr std::size_t <a class="el" href="structoscr_1_1con__unvalidated.html">oscr::con_unvalidated</a>&lt; Node, Field, NPred, NField &gt;::control_index</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= avnd::control_input_introspection&lt;Node&gt;::field_index_to_index(</div>
-<div class="line">          avnd::field_index&lt;NField&gt;{})</div>
-</div><!-- fragment -->
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_executor_port_setup_8hpp_source.html">ExecutorPortSetup.hpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="lib_2score_2widgets_2_control_widgets_8hpp_source.html">lib/score/widgets/ControlWidgets.hpp</a></li>
+<li><b>lib/score/widgets/ControlWidgets.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

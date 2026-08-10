@@ -123,6 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a54f64f6a48a4605c6cff2f1485cddb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f30bd98b0e9eddff730dec160d6edd" id="r_a60f30bd98b0e9eddff730dec160d6edd"><td class="memItemLeft" align="right" valign="top"><a id="a60f30bd98b0e9eddff730dec160d6edd" name="a60f30bd98b0e9eddff730dec160d6edd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setStart</b> (double start)</td></tr>
+<tr class="memdesc:a60f30bd98b0e9eddff730dec160d6edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalized positions, in [0; 1]. <br /></td></tr>
 <tr class="separator:a60f30bd98b0e9eddff730dec160d6edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9d576fe74bec534dfdc7a900abb4d3c" id="r_af9d576fe74bec534dfdc7a900abb4d3c"><td class="memItemLeft" align="right" valign="top"><a id="af9d576fe74bec534dfdc7a900abb4d3c" name="af9d576fe74bec534dfdc7a900abb4d3c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnd</b> (double end)</td></tr>
@@ -130,8 +131,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnd</b> (double en
 <tr class="memitem:a860d6d5b0b255ae1e5f4d7f737f203d6" id="r_a860d6d5b0b255ae1e5f4d7f737f203d6"><td class="memItemLeft" align="right" valign="top"><a id="a860d6d5b0b255ae1e5f4d7f737f203d6" name="a860d6d5b0b255ae1e5f4d7f737f203d6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRange</b> (double min, double max, ossia::vec2f init)</td></tr>
 <tr class="separator:a860d6d5b0b255ae1e5f4d7f737f203d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad733ed885ca439cd3c2a7480b84864e5" id="r_ad733ed885ca439cd3c2a7480b84864e5"><td class="memItemLeft" align="right" valign="top"><a id="ad733ed885ca439cd3c2a7480b84864e5" name="ad733ed885ca439cd3c2a7480b84864e5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (ossia::vec2f value)</td></tr>
+<tr class="memitem:ad733ed885ca439cd3c2a7480b84864e5" id="r_ad733ed885ca439cd3c2a7480b84864e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_q_graphics_range_slider.html#ad733ed885ca439cd3c2a7480b84864e5">setValue</a> (ossia::vec2f value)</td></tr>
 <tr class="separator:ad733ed885ca439cd3c2a7480b84864e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a5a2413dd32ac797578e7792c2c8d8" id="r_a89a5a2413dd32ac797578e7792c2c8d8"><td class="memItemLeft" align="right" valign="top"><a id="a89a5a2413dd32ac797578e7792c2c8d8" name="a89a5a2413dd32ac797578e7792c2c8d8"></a>
 ossia::vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const noexcept</td></tr>
@@ -164,6 +164,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> = false</t
 ossia::vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>m_execValue</b> {}</td></tr>
 <tr class="separator:a2e2bf218e5f7d3b0bc4b133d343e16d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad733ed885ca439cd3c2a7480b84864e5" name="ad733ed885ca439cd3c2a7480b84864e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad733ed885ca439cd3c2a7480b84864e5">&#9670;&#160;</a></span>setValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::QGraphicsRangeSlider::setValue </td>
+          <td>(</td>
+          <td class="paramtype">ossia::vec2f&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Absolute values, in [min; max] &ndash; the handles are stored normalized but the outside world speaks in the units of the control's domain. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_q_graphics_range_slider_8hpp_source.html">QGraphicsRangeSlider.hpp</a></li>
 <li><b>QGraphicsRangeSlider.cpp</b></li>

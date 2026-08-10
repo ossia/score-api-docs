@@ -1,5 +1,11 @@
 var NAVTREEINDEX21 =
 {
+"score-lib-process_2_remote_control_2_remote_control_provider_8hpp_source.html":[13,0,0,2,3,5,0],
+"score-lib-state_2_tests_2_utils_8hpp_source.html":[13,0,0,2,4,1,0],
+"score-plugin-analysis_2_analysis_2_envelope_8hpp_source.html":[13,0,0,2,5,0,4],
+"score-plugin-audio_2_audio_2_settings_2_factory_8hpp_source.html":[13,0,0,2,6,0,0,0],
+"score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html":[13,0,0,2,6,0,0,1],
+"score-plugin-audio_2_audio_2_settings_2_view_8hpp_source.html":[13,0,0,2,6,0,0,3],
 "score-plugin-automation_2_automation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,7,0,0,1],
 "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html":[13,0,0,2,7,0,9],
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,15],
@@ -235,19 +241,13 @@ var NAVTREEINDEX21 =
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,9,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,9,6,0],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
-"struct_curve_1_1_curve_domain.html":[12,0,10,9],
 "struct_curve_1_1_curve_domain.html":[11,0,1,7],
+"struct_curve_1_1_curve_domain.html":[12,0,10,9],
 "struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_event.html":[12,0,10,11],
-"struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
 "struct_curve_1_1_curve_segment_map.html":[12,0,10,15],
-"struct_curve_1_1_easing_data.html":[11,0,1,15],
+"struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
 "struct_curve_1_1_easing_data.html":[12,0,10,17],
-"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0],
-"struct_curve_1_1_element_1_1_point__tag.html":[12,0,10,0,1],
-"struct_curve_1_1_element_1_1_segment__tag.html":[12,0,10,0,2],
-"struct_curve_1_1_point_id.html":[11,0,1,28],
-"struct_curve_1_1_point_id.html":[12,0,10,30],
-"struct_curve_1_1_segment_data.html":[11,0,1,35],
-"struct_curve_1_1_segment_data.html":[12,0,10,37]
+"struct_curve_1_1_easing_data.html":[11,0,1,15],
+"struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0]
 };
