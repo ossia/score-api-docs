@@ -134,14 +134,14 @@ var NAVTREEINDEX =
 "score-lib-process_2_remote_control_2_remote_control_provider_8hpp_source.html",
 "struct_curve_1_1_element_1_1_point__tag.html",
 "struct_gfx_1_1_shmdata_output_node.html",
-"struct_nodes_1_1_metro_1_1_node.html",
-"struct_scenario_1_1_displayed_elements_container.html",
-"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01_t_01_4_01_4.html",
-"structis__shared__ptr.html",
-"structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9",
-"structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3",
-"structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html",
-"structspa__hook.html"
+"struct_nodes_1_1_math_generator_1_1_node_1_1_state.html",
+"struct_scenario_1_1_copied_cables.html",
+"struct_t_serializer_3_01_j_s_o_n_object_00_01boost_1_1container_1_1small__vector_3_01_t_01_5_00_01_n_01_4_01_4.html",
+"structhas__ui.html",
+"structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c",
+"structscore_1_1gfx_1_1_geometry_filter_node_renderer.html",
+"structscore_1_1gfx_1_1_rendered_i_s_f_node.html",
+"structserialization__tag.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

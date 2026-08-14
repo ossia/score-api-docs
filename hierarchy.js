@@ -1288,8 +1288,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1352,6 +1352,7 @@ var hierarchy =
     [ "Threedim::TextureToBuffer::ins", "struct_threedim_1_1_texture_to_buffer_1_1ins.html", null ],
     [ "Threedim::VoxelLoader::ins", "struct_threedim_1_1_voxel_loader_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
+    [ "LV2::InstanceHandle", "struct_l_v2_1_1_instance_handle.html", null ],
     [ "score::InterfaceBase", "classscore_1_1_interface_base.html", [
       [ "score::GenericComponentFactory< Process::ProcessModel, Execution::Context, Execution::ProcessComponentFactory >", "classscore_1_1_generic_component_factory.html", [
         [ "Execution::ProcessComponentFactory", "class_execution_1_1_process_component_factory.html", null ]
@@ -1907,7 +1908,6 @@ var hierarchy =
     [ "clang::ast_matchers::MatchFinder::MatchCallback", null, [
       [ "MethodPrinter", "class_method_printer.html", null ]
     ] ],
-    [ "LV2::lv2_node< OnExecStart, OnExecFinished >::MatchedPort", "struct_l_v2_1_1lv2__node_1_1_matched_port.html", null ],
     [ "matches< T >", "structmatches.html", null ],
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget.html", null ],
     [ "oscr::MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", null ],
@@ -2458,6 +2458,7 @@ var hierarchy =
     [ "score::PluginLoader::PluginDependencyGraph", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html", null ],
     [ "vst3::vst_node_base::PluginHandle", "structvst3_1_1vst__node__base_1_1_plugin_handle.html", null ],
     [ "Clap::PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
+    [ "LV2::PluginInfo", "struct_l_v2_1_1_plugin_info.html", null ],
     [ "Threedim::PlyNameAlias", "struct_threedim_1_1_ply_name_alias.html", null ],
     [ "Threedim::PlyPropertyGroup", "struct_threedim_1_1_ply_property_group.html", null ],
     [ "oscr::pmf_member_type< T >", "structoscr_1_1pmf__member__type.html", null ],
@@ -4372,6 +4373,7 @@ var hierarchy =
     [ "Scenario::TimenodeGraphComponents", "struct_scenario_1_1_timenode_graph_components.html", null ],
     [ "Scenario::TimenodeGraphConnectedComponent", "struct_scenario_1_1_timenode_graph_connected_component.html", null ],
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],
+    [ "LV2::voice::TimePort", "struct_l_v2_1_1voice_1_1_time_port.html", null ],
     [ "Jit::Timer", "struct_jit_1_1_timer.html", null ],
     [ "TimeSignatureFlatMap", null, [
       [ "Scenario::TimeSignatureMap::impl", "struct_scenario_1_1_time_signature_map_1_1impl.html", null ]
@@ -4610,6 +4612,8 @@ var hierarchy =
     [ "visitor_object_tag", "structvisitor__object__tag.html", null ],
     [ "visitor_template_tag", "structvisitor__template__tag.html", null ],
     [ "VisitorVariant", "struct_visitor_variant.html", null ],
+    [ "LV2::voice", "struct_l_v2_1_1voice.html", null ],
+    [ "LV2::voice_strategy", "struct_l_v2_1_1voice__strategy.html", null ],
     [ "Threedim::VoxelLoader", "class_threedim_1_1_voxel_loader.html", null ],
     [ "vst3::vst_node_base::vst_control", "structvst3_1_1vst__node__base_1_1vst__control.html", null ],
     [ "vst::vst_node_base::vst_control", "structvst_1_1vst__node__base_1_1vst__control.html", null ],
@@ -4637,6 +4641,7 @@ var hierarchy =
     [ "Gfx::WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "Gfx::WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
+    [ "LV2::lv2_node< OnExecStart, OnExecFinished >::worker_routing_scope", "struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],
     [ "gpp::qrhi::generate_shaders::write_binding", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__binding.html", null ],
     [ "gpp::qrhi::generate_shaders::write_bindings", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__bindings.html", null ],

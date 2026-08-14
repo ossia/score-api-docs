@@ -978,6 +978,7 @@ var annotated_dup =
       [ "EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
       [ "GlobalContext", "struct_l_v2_1_1_global_context.html", null ],
       [ "HostContext", "struct_l_v2_1_1_host_context.html", null ],
+      [ "InstanceHandle", "struct_l_v2_1_1_instance_handle.html", null ],
       [ "LibraryHandler", "class_l_v2_1_1_library_handler.html", null ],
       [ "lv2_node", "struct_l_v2_1_1lv2__node.html", "struct_l_v2_1_1lv2__node" ],
       [ "LV2Data", "struct_l_v2_1_1_l_v2_data.html", null ],
@@ -985,6 +986,9 @@ var annotated_dup =
       [ "Message", "struct_l_v2_1_1_message.html", null ],
       [ "on_finish", "struct_l_v2_1_1on__finish.html", null ],
       [ "on_start", "struct_l_v2_1_1on__start.html", null ],
+      [ "PluginInfo", "struct_l_v2_1_1_plugin_info.html", null ],
+      [ "voice", "struct_l_v2_1_1voice.html", "struct_l_v2_1_1voice" ],
+      [ "voice_strategy", "struct_l_v2_1_1voice__strategy.html", null ],
       [ "Window", "class_l_v2_1_1_window.html", null ]
     ] ],
     [ "magic_enum", null, [

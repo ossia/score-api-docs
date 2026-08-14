@@ -241,13 +241,13 @@ var NAVTREEINDEX21 =
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,9,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,9,6,0],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,9,2],
-"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_domain.html":[12,0,10,9],
-"struct_curve_1_1_curve_event.html":[11,0,1,9],
+"struct_curve_1_1_curve_domain.html":[11,0,1,7],
 "struct_curve_1_1_curve_event.html":[12,0,10,11],
+"struct_curve_1_1_curve_event.html":[11,0,1,9],
 "struct_curve_1_1_curve_segment_map.html":[12,0,10,15],
 "struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
-"struct_curve_1_1_easing_data.html":[12,0,10,17],
 "struct_curve_1_1_easing_data.html":[11,0,1,15],
+"struct_curve_1_1_easing_data.html":[12,0,10,17],
 "struct_curve_1_1_element_1_1_nothing__tag.html":[12,0,10,0,0]
 };

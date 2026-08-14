@@ -105,7 +105,9 @@ $(document).ready(function(){initNavTree('struct_l_v2_1_1lv2__node.html',''); in
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_l_v2_1_1lv2__node-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -119,47 +121,86 @@ Inheritance diagram for LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;:</div
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1_matched_port.html">MatchedPort</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7fb80dad708729089cad9a862b899068" id="r_a7fb80dad708729089cad9a862b899068"><td class="memItemLeft" align="right" valign="top"><a id="a7fb80dad708729089cad9a862b899068" name="a7fb80dad708729089cad9a862b899068"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>lv2_node</b> (<a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a> dat, int sampleRate, OnExecStart os, OnExecFinished of)</td></tr>
-<tr class="separator:a7fb80dad708729089cad9a862b899068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0bb78dc27102643a5e7fbacf7cada60" id="r_ac0bb78dc27102643a5e7fbacf7cada60"><td class="memItemLeft" align="right" valign="top"><a id="ac0bb78dc27102643a5e7fbacf7cada60" name="ac0bb78dc27102643a5e7fbacf7cada60"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>connect_all_ports</b> ()</td></tr>
-<tr class="separator:ac0bb78dc27102643a5e7fbacf7cada60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a85b08da78a63fcddf9333231585f4" id="r_a84a85b08da78a63fcddf9333231585f4"><td class="memItemLeft" align="right" valign="top"><a id="a84a85b08da78a63fcddf9333231585f4" name="a84a85b08da78a63fcddf9333231585f4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lv2_node</b> (const <a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a> &amp;dat, int sampleRate, <a class="el" href="struct_l_v2_1_1voice__strategy.html">voice_strategy</a> strat, OnExecStart os, OnExecFinished of)</td></tr>
+<tr class="separator:a84a85b08da78a63fcddf9333231585f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5720146df3cee5b6009960458a42ae50" id="r_a5720146df3cee5b6009960458a42ae50"><td class="memItemLeft" align="right" valign="top"><a id="a5720146df3cee5b6009960458a42ae50" name="a5720146df3cee5b6009960458a42ae50"></a>
+std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>build_voice</b> (SharedInstance handle)</td></tr>
+<tr class="separator:a5720146df3cee5b6009960458a42ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd757a905ce47097a20c4430957dda81" id="r_afd757a905ce47097a20c4430957dda81"><td class="memItemLeft" align="right" valign="top"><a id="afd757a905ce47097a20c4430957dda81" name="afd757a905ce47097a20c4430957dda81"></a>
+SharedInstance&#160;</td><td class="memItemRight" valign="bottom"><b>instantiate_handle</b> (int sampleRate)</td></tr>
+<tr class="separator:afd757a905ce47097a20c4430957dda81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2431291846840383bb3616be088bc30c" id="r_a2431291846840383bb3616be088bc30c"><td class="memItemLeft" align="right" valign="top"><a id="a2431291846840383bb3616be088bc30c" name="a2431291846840383bb3616be088bc30c"></a>
+std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_voice_for_pool</b> (int sampleRate, LilvState *state)</td></tr>
+<tr class="separator:a2431291846840383bb3616be088bc30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245be36dd1535adc1754980d38c6f03e" id="r_a245be36dd1535adc1754980d38c6f03e"><td class="memItemLeft" align="right" valign="top"><a id="a245be36dd1535adc1754980d38c6f03e" name="a245be36dd1535adc1754980d38c6f03e"></a>
+LilvState *&#160;</td><td class="memItemRight" valign="bottom"><b>snapshot_state_raw</b> () const noexcept</td></tr>
+<tr class="separator:a245be36dd1535adc1754980d38c6f03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3cbefb41431b84e4fc17bd4d428776" id="r_a3f3cbefb41431b84e4fc17bd4d428776"><td class="memItemLeft" align="right" valign="top"><a id="a3f3cbefb41431b84e4fc17bd4d428776" name="a3f3cbefb41431b84e4fc17bd4d428776"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>append_voice</b> (std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt; v) noexcept</td></tr>
+<tr class="separator:a3f3cbefb41431b84e4fc17bd4d428776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cd59c11a0303377d19f1794df6ee60" id="r_aa0cd59c11a0303377d19f1794df6ee60"><td class="memItemLeft" align="right" valign="top"><a id="aa0cd59c11a0303377d19f1794df6ee60" name="aa0cd59c11a0303377d19f1794df6ee60"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>request_voice_count</b> (std::size_t n) noexcept</td></tr>
+<tr class="separator:aa0cd59c11a0303377d19f1794df6ee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c9275f7e5f34b97bbbffe5f94238e" id="r_a8b7c9275f7e5f34b97bbbffe5f94238e"><td class="memItemLeft" align="right" valign="top"><a id="a8b7c9275f7e5f34b97bbbffe5f94238e" name="a8b7c9275f7e5f34b97bbbffe5f94238e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>allocate_voice_buffers</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v)</td></tr>
+<tr class="separator:a8b7c9275f7e5f34b97bbbffe5f94238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406e80a6b2691d504bab2a17e94c0b4f" id="r_a406e80a6b2691d504bab2a17e94c0b4f"><td class="memItemLeft" align="right" valign="top"><a id="a406e80a6b2691d504bab2a17e94c0b4f" name="a406e80a6b2691d504bab2a17e94c0b4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>connect_voice_ports</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
+<tr class="separator:a406e80a6b2691d504bab2a17e94c0b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f13bab570701f9de4b4914e969f11d" id="r_aa9f13bab570701f9de4b4914e969f11d"><td class="memItemLeft" align="right" valign="top"><a id="aa9f13bab570701f9de4b4914e969f11d" name="aa9f13bab570701f9de4b4914e969f11d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>activate_voice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
+<tr class="separator:aa9f13bab570701f9de4b4914e969f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f5f3cfdd495d05639ffe2e6473b077" id="r_a77f5f3cfdd495d05639ffe2e6473b077"><td class="memItemLeft" align="right" valign="top"><a id="a77f5f3cfdd495d05639ffe2e6473b077" name="a77f5f3cfdd495d05639ffe2e6473b077"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:a77f5f3cfdd495d05639ffe2e6473b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5000069c72e5c79ef43857519082f311" id="r_a5000069c72e5c79ef43857519082f311"><td class="memItemLeft" align="right" valign="top"><a id="a5000069c72e5c79ef43857519082f311" name="a5000069c72e5c79ef43857519082f311"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const noexcept override</td></tr>
 <tr class="separator:a5000069c72e5c79ef43857519082f311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad68fde91a972481cdadc9b2a05487130" id="r_ad68fde91a972481cdadc9b2a05487130"><td class="memItemLeft" align="right" valign="top"><a id="ad68fde91a972481cdadc9b2a05487130" name="ad68fde91a972481cdadc9b2a05487130"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preProcess</b> ()</td></tr>
-<tr class="separator:ad68fde91a972481cdadc9b2a05487130"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a566193105bccd1fd71ddcdfd6e29c6dd" id="r_a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memItemLeft" align="right" valign="top"><a id="a566193105bccd1fd71ddcdfd6e29c6dd" name="a566193105bccd1fd71ddcdfd6e29c6dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
 <tr class="separator:a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50fc6ae862cd1849834f549f028ace8c" id="r_a50fc6ae862cd1849834f549f028ace8c"><td class="memItemLeft" align="right" valign="top"><a id="a50fc6ae862cd1849834f549f028ace8c" name="a50fc6ae862cd1849834f549f028ace8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postProcess</b> (int64_t offset)</td></tr>
-<tr class="separator:a50fc6ae862cd1849834f549f028ace8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c6fedbccd61543ec8cf0498d7dba05" id="r_a10c6fedbccd61543ec8cf0498d7dba05"><td class="memItemLeft" align="right" valign="top"><a id="a10c6fedbccd61543ec8cf0498d7dba05" name="a10c6fedbccd61543ec8cf0498d7dba05"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preProcessVoice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v, std::size_t voice_idx)</td></tr>
+<tr class="separator:a10c6fedbccd61543ec8cf0498d7dba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ab24e41d6c00dbfec316539b0d1843" id="r_a43ab24e41d6c00dbfec316539b0d1843"><td class="memItemLeft" align="right" valign="top"><a id="a43ab24e41d6c00dbfec316539b0d1843" name="a43ab24e41d6c00dbfec316539b0d1843"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>postProcessVoice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
+<tr class="separator:a43ab24e41d6c00dbfec316539b0d1843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2a8574e20647d8f37f3620cf1094c6" id="r_adc2a8574e20647d8f37f3620cf1094c6"><td class="memItemLeft" align="right" valign="top"><a id="adc2a8574e20647d8f37f3620cf1094c6" name="adc2a8574e20647d8f37f3620cf1094c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>surfaceVoiceZeroOutputs</b> (int64_t offset)</td></tr>
+<tr class="separator:adc2a8574e20647d8f37f3620cf1094c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914f016ceee9633cd3588ee6dc249b17" id="r_a914f016ceee9633cd3588ee6dc249b17"><td class="memItemLeft" align="right" valign="top"><a id="a914f016ceee9633cd3588ee6dc249b17" name="a914f016ceee9633cd3588ee6dc249b17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a914f016ceee9633cd3588ee6dc249b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8875417fe5e24d569a7ddc26e843e4ae" id="r_a8875417fe5e24d569a7ddc26e843e4ae"><td class="memItemLeft" align="right" valign="top"><a id="a8875417fe5e24d569a7ddc26e843e4ae" name="a8875417fe5e24d569a7ddc26e843e4ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runSingle</b> (int samples) noexcept</td></tr>
+<tr class="separator:a8875417fe5e24d569a7ddc26e843e4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9885988a2c20c34f0759687ef59f7b03" id="r_a9885988a2c20c34f0759687ef59f7b03"><td class="memItemLeft" align="right" valign="top"><a id="a9885988a2c20c34f0759687ef59f7b03" name="a9885988a2c20c34f0759687ef59f7b03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runPerChannel</b> (int samples) noexcept</td></tr>
+<tr class="separator:a9885988a2c20c34f0759687ef59f7b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c61104501c06f07f2c944e3c57a2893" id="r_a4c61104501c06f07f2c944e3c57a2893"><td class="memItemLeft" align="right" valign="top"><a id="a4c61104501c06f07f2c944e3c57a2893" name="a4c61104501c06f07f2c944e3c57a2893"></a>
+static std::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>voice_control_value</b> (const ossia::value &amp;val, std::size_t voice_idx) noexcept</td></tr>
+<tr class="separator:a4c61104501c06f07f2c944e3c57a2893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a96105c3b58c6f32706369b5d685da62c" id="r_a96105c3b58c6f32706369b5d685da62c"><td class="memItemLeft" align="right" valign="top"><a id="a96105c3b58c6f32706369b5d685da62c" name="a96105c3b58c6f32706369b5d685da62c"></a>
 <a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a>&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
 <tr class="separator:a96105c3b58c6f32706369b5d685da62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9c9b61745b296630f231d9b035f4355" id="r_af9c9b61745b296630f231d9b035f4355"><td class="memItemLeft" align="right" valign="top"><a id="af9c9b61745b296630f231d9b035f4355" name="af9c9b61745b296630f231d9b035f4355"></a>
-ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fInControls</b></td></tr>
-<tr class="separator:af9c9b61745b296630f231d9b035f4355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86db4ac3e16fb84521d31d2d173f0296" id="r_a86db4ac3e16fb84521d31d2d173f0296"><td class="memItemLeft" align="right" valign="top"><a id="a86db4ac3e16fb84521d31d2d173f0296" name="a86db4ac3e16fb84521d31d2d173f0296"></a>
-ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fOutControls</b></td></tr>
-<tr class="separator:a86db4ac3e16fb84521d31d2d173f0296"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771e72bb21bb35c1319ceb9e9bc7a906" id="r_a771e72bb21bb35c1319ceb9e9bc7a906"><td class="memItemLeft" align="right" valign="top"><a id="a771e72bb21bb35c1319ceb9e9bc7a906" name="a771e72bb21bb35c1319ceb9e9bc7a906"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>voices</b></td></tr>
+<tr class="separator:a771e72bb21bb35c1319ceb9e9bc7a906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6131c20c4d661715b1aef3ec3a6155c3" id="r_a6131c20c4d661715b1aef3ec3a6155c3"><td class="memItemLeft" align="right" valign="top"><a id="a6131c20c4d661715b1aef3ec3a6155c3" name="a6131c20c4d661715b1aef3ec3a6155c3"></a>
+voice_routing&#160;</td><td class="memItemRight" valign="bottom"><b>routing</b> {voice_routing::single}</td></tr>
+<tr class="separator:a6131c20c4d661715b1aef3ec3a6155c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69429a150d30cf03bb55acc942e32001" id="r_a69429a150d30cf03bb55acc942e32001"><td class="memItemLeft" align="right" valign="top"><a id="a69429a150d30cf03bb55acc942e32001" name="a69429a150d30cf03bb55acc942e32001"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParamMin</b></td></tr>
 <tr class="separator:a69429a150d30cf03bb55acc942e32001"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,54 +210,27 @@ ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParam
 <tr class="memitem:ab4979b8f8f80dae30c7f4d5153bb4971" id="r_ab4979b8f8f80dae30c7f4d5153bb4971"><td class="memItemLeft" align="right" valign="top"><a id="ab4979b8f8f80dae30c7f4d5153bb4971" name="ab4979b8f8f80dae30c7f4d5153bb4971"></a>
 ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParamInit</b></td></tr>
 <tr class="separator:ab4979b8f8f80dae30c7f4d5153bb4971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2b821c19869415caa84e3f12f1c7ee" id="r_a8d2b821c19869415caa84e3f12f1c7ee"><td class="memItemLeft" align="right" valign="top"><a id="a8d2b821c19869415caa84e3f12f1c7ee" name="a8d2b821c19869415caa84e3f12f1c7ee"></a>
-ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fOtherControls</b></td></tr>
-<tr class="separator:a8d2b821c19869415caa84e3f12f1c7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9cdf39ac649eb0038bb2e642aaa9574" id="r_ae9cdf39ac649eb0038bb2e642aaa9574"><td class="memItemLeft" align="right" valign="top"><a id="ae9cdf39ac649eb0038bb2e642aaa9574" name="ae9cdf39ac649eb0038bb2e642aaa9574"></a>
-std::vector&lt; ossia::float_vector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fCVs</b></td></tr>
-<tr class="separator:ae9cdf39ac649eb0038bb2e642aaa9574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9725073a09fe348ec8f7656b0c1010d8" id="r_a9725073a09fe348ec8f7656b0c1010d8"><td class="memItemLeft" align="right" valign="top"><a id="a9725073a09fe348ec8f7656b0c1010d8" name="a9725073a09fe348ec8f7656b0c1010d8"></a>
-std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_atom_ins</b></td></tr>
-<tr class="separator:a9725073a09fe348ec8f7656b0c1010d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e946acf135c6d60c608b447354de4a" id="r_a18e946acf135c6d60c608b447354de4a"><td class="memItemLeft" align="right" valign="top"><a id="a18e946acf135c6d60c608b447354de4a" name="a18e946acf135c6d60c608b447354de4a"></a>
-std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_atom_outs</b></td></tr>
-<tr class="separator:a18e946acf135c6d60c608b447354de4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cacc50346e76506fd0f50c9263f0d95" id="r_a4cacc50346e76506fd0f50c9263f0d95"><td class="memItemLeft" align="right" valign="top"><a id="a4cacc50346e76506fd0f50c9263f0d95" name="a4cacc50346e76506fd0f50c9263f0d95"></a>
-std::vector&lt; libremidi::midi2_to_midi1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_2to1</b></td></tr>
-<tr class="separator:a4cacc50346e76506fd0f50c9263f0d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1ef79ef31946d967193f10656df3cd" id="r_a0b1ef79ef31946d967193f10656df3cd"><td class="memItemLeft" align="right" valign="top"><a id="a0b1ef79ef31946d967193f10656df3cd" name="a0b1ef79ef31946d967193f10656df3cd"></a>
-std::vector&lt; libremidi::midi1_to_midi2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_1to2</b></td></tr>
-<tr class="separator:a0b1ef79ef31946d967193f10656df3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23614ce859c74f48991288db166ad1ac" id="r_a23614ce859c74f48991288db166ad1ac"><td class="memItemLeft" align="right" valign="top"><a id="a23614ce859c74f48991288db166ad1ac" name="a23614ce859c74f48991288db166ad1ac"></a>
-std::vector&lt; ossia::small_vector&lt; <a class="el" href="struct_l_v2_1_1_message.html">Message</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_message_for_midi_atom_ins</b></td></tr>
-<tr class="separator:a23614ce859c74f48991288db166ad1ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad796f6a6a812560a0cacf6001945c0be" id="r_ad796f6a6a812560a0cacf6001945c0be"><td class="memItemLeft" align="right" valign="top"><a id="ad796f6a6a812560a0cacf6001945c0be" name="ad796f6a6a812560a0cacf6001945c0be"></a>
-std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_ins</b></td></tr>
-<tr class="separator:ad796f6a6a812560a0cacf6001945c0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60ea63685e9e61b79179fd172f0eda6" id="r_ae60ea63685e9e61b79179fd172f0eda6"><td class="memItemLeft" align="right" valign="top"><a id="ae60ea63685e9e61b79179fd172f0eda6" name="ae60ea63685e9e61b79179fd172f0eda6"></a>
-std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_outs</b></td></tr>
-<tr class="separator:ae60ea63685e9e61b79179fd172f0eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7719f76c530ff259cb99974e7e9d5c4f" id="r_a7719f76c530ff259cb99974e7e9d5c4f"><td class="memItemLeft" align="right" valign="top"><a id="a7719f76c530ff259cb99974e7e9d5c4f" name="a7719f76c530ff259cb99974e7e9d5c4f"></a>
-std::vector&lt; ossia::small_vector&lt; <a class="el" href="struct_l_v2_1_1_message.html">Message</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_message_for_atom_ins</b></td></tr>
-<tr class="separator:a7719f76c530ff259cb99974e7e9d5c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19627bc28039a9f75fd1fde3e1972c7" id="r_ae19627bc28039a9f75fd1fde3e1972c7"><td class="memItemLeft" align="right" valign="top"><a id="ae19627bc28039a9f75fd1fde3e1972c7" name="ae19627bc28039a9f75fd1fde3e1972c7"></a>
-LilvInstance *&#160;</td><td class="memItemRight" valign="bottom"><b>fInstance</b> {}</td></tr>
-<tr class="separator:ae19627bc28039a9f75fd1fde3e1972c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa31deb99c5a389014bfbb873512856fc" id="r_aa31deb99c5a389014bfbb873512856fc"><td class="memItemLeft" align="right" valign="top"><a id="aa31deb99c5a389014bfbb873512856fc" name="aa31deb99c5a389014bfbb873512856fc"></a>
 std::unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timePositionBuffer</b> {}</td></tr>
 <tr class="separator:aa31deb99c5a389014bfbb873512856fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8852b05b8106f3e0d774c50091431c84" id="r_a8852b05b8106f3e0d774c50091431c84"><td class="memItemLeft" align="right" valign="top"><a id="a8852b05b8106f3e0d774c50091431c84" name="a8852b05b8106f3e0d774c50091431c84"></a>
-std::vector&lt; <a class="el" href="struct_l_v2_1_1lv2__node_1_1_matched_port.html">MatchedPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_timePosition_midi</b></td></tr>
-<tr class="separator:a8852b05b8106f3e0d774c50091431c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9339cf8ce0accc320d84a73abcb3870a" id="r_a9339cf8ce0accc320d84a73abcb3870a"><td class="memItemLeft" align="right" valign="top"><a id="a9339cf8ce0accc320d84a73abcb3870a" name="a9339cf8ce0accc320d84a73abcb3870a"></a>
-std::vector&lt; <a class="el" href="struct_l_v2_1_1lv2__node_1_1_matched_port.html">MatchedPort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_atom_timePosition_owned</b></td></tr>
-<tr class="separator:a9339cf8ce0accc320d84a73abcb3870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7454ace4056772d63cdf3d2f553a1fb6" id="r_a7454ace4056772d63cdf3d2f553a1fb6"><td class="memItemLeft" align="right" valign="top"><a id="a7454ace4056772d63cdf3d2f553a1fb6" name="a7454ace4056772d63cdf3d2f553a1fb6"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_block_size</b> {4096}</td></tr>
+<tr class="separator:a7454ace4056772d63cdf3d2f553a1fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6740410ba9e9303675e4f3ecf65cd941" id="r_a6740410ba9e9303675e4f3ecf65cd941"><td class="memItemLeft" align="right" valign="top"><a id="a6740410ba9e9303675e4f3ecf65cd941" name="a6740410ba9e9303675e4f3ecf65cd941"></a>
+std::atomic&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>requested_voices</b> {0}</td></tr>
+<tr class="separator:a6740410ba9e9303675e4f3ecf65cd941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a641c57dcbb30fb650836026ab82fe" id="r_a62a641c57dcbb30fb650836026ab82fe"><td class="memItemLeft" align="right" valign="top"><a id="a62a641c57dcbb30fb650836026ab82fe" name="a62a641c57dcbb30fb650836026ab82fe"></a>
 OnExecStart&#160;</td><td class="memItemRight" valign="bottom"><b>on_start</b></td></tr>
 <tr class="separator:a62a641c57dcbb30fb650836026ab82fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafb93dcacf0a8d917d3946b7fc6bc97f" id="r_aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memItemLeft" align="right" valign="top"><a id="aafb93dcacf0a8d917d3946b7fc6bc97f" name="aafb93dcacf0a8d917d3946b7fc6bc97f"></a>
 OnExecFinished&#160;</td><td class="memItemRight" valign="bottom"><b>on_finished</b></td></tr>
 <tr class="separator:aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:abb7d6b8d6f28ccfe99e13f75f6965a39" id="r_abb7d6b8d6f28ccfe99e13f75f6965a39"><td class="memItemLeft" align="right" valign="top"><a id="abb7d6b8d6f28ccfe99e13f75f6965a39" name="abb7d6b8d6f28ccfe99e13f75f6965a39"></a>
+static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVoicePoolReserve</b> = 256</td></tr>
+<tr class="separator:abb7d6b8d6f28ccfe99e13f75f6965a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-lv2_2_l_v2_2_node_8hpp_source.html">score-plugin-lv2/LV2/Node.hpp</a></li>

@@ -127,6 +127,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adaee3a1731ed5e2cef5824e7a6158d35" id="r_adaee3a1731ed5e2cef5824e7a6158d35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_v2_1_1_application_plugin.html#adaee3a1731ed5e2cef5824e7a6158d35">initialize</a> () override</td></tr>
 <tr class="memdesc:adaee3a1731ed5e2cef5824e7a6158d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize  <br /></td></tr>
 <tr class="separator:adaee3a1731ed5e2cef5824e7a6158d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b919f2c0e9641b45a8bc3db37bc520" id="r_a71b919f2c0e9641b45a8bc3db37bc520"><td class="memItemLeft" align="right" valign="top"><a id="a71b919f2c0e9641b45a8bc3db37bc520" name="a71b919f2c0e9641b45a8bc3db37bc520"></a>
+const std::vector&lt; <a class="el" href="struct_l_v2_1_1_plugin_info.html">PluginInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cachedDescriptors</b> () const noexcept</td></tr>
+<tr class="separator:a71b919f2c0e9641b45a8bc3db37bc520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c1efafe0a5f4ae53bfc630e0844d65" id="r_a92c1efafe0a5f4ae53bfc630e0844d65"><td class="memItemLeft" align="right" valign="top"><a id="a92c1efafe0a5f4ae53bfc630e0844d65" name="a92c1efafe0a5f4ae53bfc630e0844d65"></a>
+const <a class="el" href="struct_l_v2_1_1_plugin_info.html">PluginInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findDescriptor</b> (const QString &amp;uri_or_bundle) const noexcept</td></tr>
+<tr class="separator:a92c1efafe0a5f4ae53bfc630e0844d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c5aa0a707728e8b8e3c7f4549b934d3" id="r_a5c5aa0a707728e8b8e3c7f4549b934d3"><td class="memItemLeft" align="right" valign="top"><a id="a5c5aa0a707728e8b8e3c7f4549b934d3" name="a5c5aa0a707728e8b8e3c7f4549b934d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ensureBundleLoaded</b> (const QString &amp;uri_or_bundle)</td></tr>
+<tr class="separator:a5c5aa0a707728e8b8e3c7f4549b934d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfee0a39eef7cba86fdb4f9ed927abe4" id="r_adfee0a39eef7cba86fdb4f9ed927abe4"><td class="memItemLeft" align="right" valign="top"><a id="adfee0a39eef7cba86fdb4f9ed927abe4" name="adfee0a39eef7cba86fdb4f9ed927abe4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCachedDescriptors</b> (std::vector&lt; <a class="el" href="struct_l_v2_1_1_plugin_info.html">PluginInfo</a> &gt; descriptors)</td></tr>
+<tr class="separator:adfee0a39eef7cba86fdb4f9ed927abe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a289503b23f9687b6c6d54b7f1944b3dd" id="r_a289503b23f9687b6c6d54b7f1944b3dd"><td class="memItemLeft" align="right" valign="top"><a id="a289503b23f9687b6c6d54b7f1944b3dd" name="a289503b23f9687b6c6d54b7f1944b3dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>descriptorsChanged</b> ()</td></tr>
+<tr class="separator:a289503b23f9687b6c6d54b7f1944b3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a></td></tr>
 <tr class="memitem:a71b39175c7f926536094afef77013fb9 inherit pub_methods_classscore_1_1_application_plugin" id="r_a71b39175c7f926536094afef77013fb9"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationPlugin</b> (const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx)</td></tr>
@@ -134,12 +149,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad4cf4c96cbca30d62ef66604d9351eb6" id="r_ad4cf4c96cbca30d62ef66604d9351eb6"><td class="memItemLeft" align="right" valign="top"><a id="ad4cf4c96cbca30d62ef66604d9351eb6" name="ad4cf4c96cbca30d62ef66604d9351eb6"></a>
-std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>abort_library_scan</b> {}</td></tr>
-<tr class="separator:ad4cf4c96cbca30d62ef66604d9351eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af686b59eb6a71fe888295409ff268456" id="r_af686b59eb6a71fe888295409ff268456"><td class="memItemLeft" align="right" valign="top"><a id="af686b59eb6a71fe888295409ff268456" name="af686b59eb6a71fe888295409ff268456"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>library_lock</b></td></tr>
-<tr class="separator:af686b59eb6a71fe888295409ff268456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5446a4ba4eac007fb677451134a21d9" id="r_ad5446a4ba4eac007fb677451134a21d9"><td class="memItemLeft" align="right" valign="top"><a id="ad5446a4ba4eac007fb677451134a21d9" name="ad5446a4ba4eac007fb677451134a21d9"></a>
 Lilv::World&#160;</td><td class="memItemRight" valign="bottom"><b>lilv</b></td></tr>
 <tr class="separator:ad5446a4ba4eac007fb677451134a21d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
