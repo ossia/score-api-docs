@@ -1390,6 +1390,7 @@ var annotated_dup =
       [ "ControlLayout", "struct_process_1_1_control_layout.html", null ],
       [ "ControlMessage", "struct_process_1_1_control_message.html", null ],
       [ "ControlOutlet", "class_process_1_1_control_outlet.html", null ],
+      [ "ControlPage", "struct_process_1_1_control_page.html", "struct_process_1_1_control_page" ],
       [ "ControlSetup", "struct_process_1_1_control_setup.html", null ],
       [ "DataflowManager", "class_process_1_1_dataflow_manager.html", null ],
       [ "default_t", "struct_process_1_1default__t.html", null ],

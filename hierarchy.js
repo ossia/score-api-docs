@@ -659,6 +659,7 @@ var hierarchy =
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
     [ "RemoteControl::Controller::DocumentPlugin::Controller::ControlMap", "struct_remote_control_1_1_controller_1_1_document_plugin_1_1_controller_1_1_control_map.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
+    [ "Process::ControlPage", "struct_process_1_1_control_page.html", null ],
     [ "Process::ControlSetup< CreatePort, CreateControl, GetControlSize, GetName, GetFactory >", "struct_process_1_1_control_setup.html", null ],
     [ "Protocols::convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", null ],
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
@@ -1288,8 +1289,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

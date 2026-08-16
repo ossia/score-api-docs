@@ -191,6 +191,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_control_outlet.html">ControlOutlet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_control_page.html">ControlPage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which slice of a node's controls is currently displayed.  <a href="struct_process_1_1_control_page.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_control_setup.html">ControlSetup</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_dataflow_manager.html">DataflowManager</a></td></tr>
@@ -670,6 +673,14 @@ const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;&#16
 <tr class="memitem:aacec3e4356f28879035d9c11d7a21e8b" id="r_aacec3e4356f28879035d9c11d7a21e8b"><td class="memItemLeft" align="right" valign="top"><a id="aacec3e4356f28879035d9c11d7a21e8b" name="aacec3e4356f28879035d9c11d7a21e8b"></a>
 const <a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>labelBrush</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;p)</td></tr>
 <tr class="separator:aacec3e4356f28879035d9c11d7a21e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb0c182535d6083788e992d66e12bd4" id="r_afeb0c182535d6083788e992d66e12bd4"><td class="memItemLeft" align="right" valign="top"><a id="afeb0c182535d6083788e992d66e12bd4" name="afeb0c182535d6083788e992d66e12bd4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isControlPort</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port) noexcept</td></tr>
+<tr class="memdesc:afeb0c182535d6083788e992d66e12bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">True for the ports whose value is edited through a widget in the node body. <br /></td></tr>
+<tr class="separator:afeb0c182535d6083788e992d66e12bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb0b96266a82507dd33e7675aa20c9ff" id="r_afb0b96266a82507dd33e7675aa20c9ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#afb0b96266a82507dd33e7675aa20c9ff">isVisibleWhenFolded</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port) noexcept</td></tr>
+<tr class="separator:afb0b96266a82507dd33e7675aa20c9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6351e99744b8679bb6f2da3921bc2c" id="r_a6b6351e99744b8679bb6f2da3921bc2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_control_page.html">ControlPage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a6b6351e99744b8679bb6f2da3921bc2c">nodeControlPage</a> (int controlCount, int requestedPage, int gridOffset) noexcept</td></tr>
+<tr class="separator:a6b6351e99744b8679bb6f2da3921bc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae01a4c533a7383d3c98200409d377f3a" id="r_ae01a4c533a7383d3c98200409d377f3a"><td class="memItemLeft" align="right" valign="top"><a id="ae01a4c533a7383d3c98200409d377f3a" name="ae01a4c533a7383d3c98200409d377f3a"></a>
 QPixmap&#160;</td><td class="memItemRight" valign="bottom"><b>makeGlyphs</b> (const QString &amp;glyph, const QPen &amp;pen)</td></tr>
 <tr class="separator:ae01a4c533a7383d3c98200409d377f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -852,6 +863,77 @@ template&lt;typename T &gt; </td></tr>
 
 <p>From a port, gives a name suitable for displaying in a process header. </p>
 <p>This is useful mainly for processes which are defined by their output, e.g. the automations. </p>
+
+</div>
+</div>
+<a id="afb0b96266a82507dd33e7675aa20c9ff" name="afb0b96266a82507dd33e7675aa20c9ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb0b96266a82507dd33e7675aa20c9ff">&#9670;&#160;</a></span>isVisibleWhenFolded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Process::isVisibleWhenFolded </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True for the ports a folded node still has to show. A folded node displays the routing only: everything that is not a control, plus the controls that take part in the patch - those with a cable or an exposed address. </p>
+
+</div>
+</div>
+<a id="a6b6351e99744b8679bb6f2da3921bc2c" name="a6b6351e99744b8679bb6f2da3921bc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6351e99744b8679bb6f2da3921bc2c">&#9670;&#160;</a></span>nodeControlPage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_process_1_1_control_page.html">ControlPage</a> Process::nodeControlPage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controlCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>requestedPage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gridOffset</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pagination for <code>controlCount</code> controls: everything on a single page below MaxUnpaginatedControls, up to ControlsPerPage per page above it.</p>
+<p><code>gridOffset</code> is the number of non-control items sharing the control grid - the leading audio/midi/message inlets when there are too few of them to get a column of their own. The page is shortened so that it ends on a full column instead of leaving one item alone in the last one. </p>
 
 </div>
 </div>

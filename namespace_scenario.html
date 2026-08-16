@@ -1212,9 +1212,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBus</b> (const <a c
 <tr class="memitem:a7ffd4cd0670598bd95f2a04c7d2e07bd" id="r_a7ffd4cd0670598bd95f2a04c7d2e07bd"><td class="memItemLeft" align="right" valign="top"><a id="a7ffd4cd0670598bd95f2a04c7d2e07bd" name="a7ffd4cd0670598bd95f2a04c7d2e07bd"></a>
 <a class="el" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>closestParentWithTempo</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> *self)</td></tr>
 <tr class="separator:a7ffd4cd0670598bd95f2a04c7d2e07bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b96dcb6a5cc6ab796024408a9487326" id="r_a8b96dcb6a5cc6ab796024408a9487326"><td class="memItemLeft" align="right" valign="top">QSizeF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#a8b96dcb6a5cc6ab796024408a9487326">nodeFootprint</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process) noexcept</td></tr>
+<tr class="separator:a8b96dcb6a5cc6ab796024408a9487326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fa1f016f920bf0791a9bb04f2610c3" id="r_ae5fa1f016f920bf0791a9bb04f2610c3"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#ae5fa1f016f920bf0791a9bb04f2610c3">freeProcessPosition</a> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;model, QPointF desired, QSizeF size, bool towardsRight, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *ignore) noexcept</td></tr>
+<tr class="separator:ae5fa1f016f920bf0791a9bb04f2610c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a855eadfd3de9d72f0ad6dafeaf01b0a6" id="r_a855eadfd3de9d72f0ad6dafeaf01b0a6"><td class="memItemLeft" align="right" valign="top"><a id="a855eadfd3de9d72f0ad6dafeaf01b0a6" name="a855eadfd3de9d72f0ad6dafeaf01b0a6"></a>
 QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>newProcessPosition</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;cst) noexcept</td></tr>
 <tr class="separator:a855eadfd3de9d72f0ad6dafeaf01b0a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2143946d1434c1332112fd93798592" id="r_a3a2143946d1434c1332112fd93798592"><td class="memItemLeft" align="right" valign="top"><a id="a3a2143946d1434c1332112fd93798592" name="a3a2143946d1434c1332112fd93798592"></a>
+QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>newProcessPositionAfter</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;model, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;previous) noexcept</td></tr>
+<tr class="memdesc:a3a2143946d1434c1332112fd93798592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position for a node created right after <code>previous</code> in the signal chain. <br /></td></tr>
+<tr class="separator:a3a2143946d1434c1332112fd93798592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb8c083cc8a66482ce6482bf7207df3a" id="r_acb8c083cc8a66482ce6482bf7207df3a"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#acb8c083cc8a66482ce6482bf7207df3a">newProcessPositionBefore</a> (const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;model, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;next, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *created) noexcept</td></tr>
+<tr class="separator:acb8c083cc8a66482ce6482bf7207df3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade9073620a89eb52c5ac4fcf1dc5918f" id="r_ade9073620a89eb52c5ac4fcf1dc5918f"><td class="memItemLeft" align="right" valign="top"><a id="ade9073620a89eb52c5ac4fcf1dc5918f" name="ade9073620a89eb52c5ac4fcf1dc5918f"></a>
 <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>closestParentInterval</b> (const QObject *parentObj) noexcept</td></tr>
 <tr class="separator:ade9073620a89eb52c5ac4fcf1dc5918f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1659,6 +1669,131 @@ constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>g_zoom_ba
 </div><div class="memdoc">
 <p>The parent should be in the object tree of the scenario. This is because the <a class="el" href="class_scenario_1_1_state_model.html">StateModel</a> needs access to the command stack of the document upon creation.</p>
 <p>TODO instead we should follow the second part of this article : <a href="https://doc.qt.io/archives/qq/qq25-undo.html">https://doc.qt.io/archives/qq/qq25-undo.html</a> which explains how to use a proxy model to perform the undo - redo operations. This proxy model should be owned by the presenters where there is an easy and sensical access to the command stack </p>
+
+</div>
+</div>
+<a id="ae5fa1f016f920bf0791a9bb04f2610c3" name="ae5fa1f016f920bf0791a9bb04f2610c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5fa1f016f920bf0791a9bb04f2610c3">&#9670;&#160;</a></span>freeProcessPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_PLUGIN_SCENARIO_EXPORT QPointF Scenario::freeProcessPosition </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>desired</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSizeF&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>towardsRight</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td>
+          <td class="paramname"><em>ignore</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slides <code>desired</code> horizontally until a node of that size does not overlap any process of <code>model</code>. <code>towardsRight</code> picks the direction, so that a chain of processes keeps reading left-to-right. </p>
+
+</div>
+</div>
+<a id="acb8c083cc8a66482ce6482bf7207df3a" name="acb8c083cc8a66482ce6482bf7207df3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb8c083cc8a66482ce6482bf7207df3a">&#9670;&#160;</a></span>newProcessPositionBefore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_PLUGIN_SCENARIO_EXPORT QPointF Scenario::newProcessPositionBefore </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>next</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td>
+          <td class="paramname"><em>created</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Position for a node created right before <code>next</code> in the signal chain. <code>created</code> is excluded from the overlap test as it already lives in the interval by the time its final position is known. </p>
+
+</div>
+</div>
+<a id="a8b96dcb6a5cc6ab796024408a9487326" name="a8b96dcb6a5cc6ab796024408a9487326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b96dcb6a5cc6ab796024408a9487326">&#9670;&#160;</a></span>nodeFootprint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_PLUGIN_SCENARIO_EXPORT QSizeF Scenario::nodeFootprint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>process</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Footprint used when placing nodes in the nodal view for a process whose on-screen size is not known yet (never displayed, or folded). </p>
 
 </div>
 </div>

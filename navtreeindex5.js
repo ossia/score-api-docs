@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_settings_command_8hpp_source.html":[13,0,0,1,1,2,9],
 "_settings_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,7],
 "_settings_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,5,0],
 "_settings_delegate_model_8hpp_source.html":[13,0,0,1,1,8,5,1],
@@ -129,7 +130,7 @@ var NAVTREEINDEX5 =
 "_time_mode_8hpp_source.html":[13,0,0,1,1,13,30],
 "_time_ruler_8hpp_source.html":[13,0,0,2,32,4,3,10,0],
 "_time_ruler_graphics_view_8hpp_source.html":[13,0,0,2,32,4,3,10,1],
-"_time_signature_8hpp_source.html":[13,0,0,2,3,4,3,19],
+"_time_signature_8hpp_source.html":[13,0,0,2,3,4,3,20],
 "_time_signature_item_8hpp_source.html":[13,0,0,2,32,4,3,5,0,7],
 "_time_signature_map_8hpp_source.html":[13,0,0,2,32,4,3,5,17],
 "_time_spin_box_8hpp_source.html":[13,0,0,1,1,13,31],
@@ -241,13 +242,12 @@ var NAVTREEINDEX5 =
 "_websocket_server_widget_8hpp_source.html":[13,0,0,2,29,0,13,8],
 "_widget_8hpp_source.html":[13,0,0,2,34,0,5],
 "_widget_inlet_factory_8hpp_source.html":[13,0,0,2,12,0,13],
-"_widget_inlets_8hpp_source.html":[13,0,0,2,3,4,3,20],
+"_widget_inlets_8hpp_source.html":[13,0,0,2,3,4,3,21],
 "_widget_wrapper_8hpp_source.html":[13,0,0,1,1,13,32],
 "_wiimote_device_8hpp_source.html":[13,0,0,2,29,0,20,0],
 "_wiimote_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,20,1],
 "_wiimote_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,20,2],
 "_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,20,3],
 "_win_main_to_main_8hpp_source.html":[13,0,0,1,1,12,33],
-"_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,16,7],
-"_window_capture_backend_8hpp_source.html":[13,0,0,2,17,1,17,0]
+"_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,16,7]
 };

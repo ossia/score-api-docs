@@ -23,6 +23,7 @@ var namespace_process =
     [ "ControlLayout", "struct_process_1_1_control_layout.html", null ],
     [ "ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "ControlOutlet", "class_process_1_1_control_outlet.html", null ],
+    [ "ControlPage", "struct_process_1_1_control_page.html", "struct_process_1_1_control_page" ],
     [ "ControlSetup", "struct_process_1_1_control_setup.html", null ],
     [ "DataflowManager", "class_process_1_1_dataflow_manager.html", null ],
     [ "default_t", "struct_process_1_1default__t.html", null ],
@@ -163,5 +164,8 @@ var namespace_process =
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]
     ] ],
-    [ "displayNameForPort", "namespace_process.html#a535ae95f6170e17fce20ef59f292c707", null ]
+    [ "displayNameForPort", "namespace_process.html#a535ae95f6170e17fce20ef59f292c707", null ],
+    [ "isControlPort", "namespace_process.html#afeb0c182535d6083788e992d66e12bd4", null ],
+    [ "isVisibleWhenFolded", "namespace_process.html#afb0b96266a82507dd33e7675aa20c9ff", null ],
+    [ "nodeControlPage", "namespace_process.html#a6b6351e99744b8679bb6f2da3921bc2c", null ]
 ];

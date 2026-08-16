@@ -1,8 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31],
 "_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
 "_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
-"_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,18],
+"_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,19],
 "_preview_node_8hpp_source.html":[13,0,0,2,17,1,4,21],
 "_primitive_8hpp_source.html":[13,0,0,2,35,0,21],
 "_process_2_execution_2_process_component_8hpp_source.html":[13,0,0,2,3,4,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_set_rigidity_8hpp_source.html":[13,0,0,2,32,4,1,3,14],
 "_set_segment_parameters_8hpp_source.html":[13,0,0,2,11,0,0,2],
 "_set_segment_parameters_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,5],
-"_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4],
-"_settings_command_8hpp_source.html":[13,0,0,1,1,2,9]
+"_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4]
 };

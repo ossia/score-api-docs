@@ -18,6 +18,7 @@ var dir_c1795678b349032337c770a7195025ac =
     [ "PortListWidget.hpp", "_port_list_widget_8hpp_source.html", null ],
     [ "PortSerialization.hpp", "_port_serialization_8hpp_source.html", null ],
     [ "PortType.hpp", "_port_type_8hpp_source.html", null ],
+    [ "PortVisibility.hpp", "_port_visibility_8hpp_source.html", null ],
     [ "PrettyPortName.hpp", "_pretty_port_name_8hpp_source.html", null ],
     [ "TimeSignature.hpp", "_time_signature_8hpp_source.html", null ],
     [ "WidgetInlets.hpp", "_widget_inlets_8hpp_source.html", null ]
