@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_c_s_f_2_libra
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">void</span> setup(<a class="code hl_class" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::function&lt;void()&gt; asyncAddPath(std::string_view path) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::optional&lt;Library::ProcessEntry&gt; scanPath(std::string_view path) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  QWidget* previewWidget(<span class="keyword">const</span> QString&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  QWidget*</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  previewWidget(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Process::Preset</a>&amp; path, QWidget* parent) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_struct" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_class" href="class_library_1_1_category_paths.html">Library::CategoryPaths</a> categories;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -156,10 +156,10 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_c_s_f_2_libra
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_c_s_f_1_1_drop_handler_html"><div class="ttname"><a href="class_gfx_1_1_c_s_f_1_1_drop_handler.html">Gfx::CSF::DropHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/CSF/Library.hpp:27</div></div>
 <div class="ttc" id="aclass_gfx_1_1_c_s_f_1_1_library_handler_html"><div class="ttname"><a href="class_gfx_1_1_c_s_f_1_1_library_handler.html">Gfx::CSF::LibraryHandler</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/CSF/Library.hpp:10</div></div>
-<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:24</div></div>
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:44</div></div>
+<div class="ttc" id="aclass_library_1_1_category_paths_html"><div class="ttname"><a href="class_library_1_1_category_paths.html">Library::CategoryPaths</a></div><div class="ttdef"><b>Definition</b> ProcessEntry.hpp:64</div></div>
+<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:26</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:38</div></div>
 <div class="ttc" id="aclass_process_1_1_process_drop_handler_html"><div class="ttname"><a href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></div><div class="ttdef"><b>Definition</b> ProcessDropHandler.hpp:25</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:89</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition</b> Preset.hpp:32</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_file_path_html"><div class="ttname"><a href="structscore_1_1_file_path.html">score::FilePath</a></div><div class="ttdef"><b>Definition</b> FilePath.hpp:25</div></div>

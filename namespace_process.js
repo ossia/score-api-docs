@@ -4,7 +4,7 @@ var namespace_process =
     [ "AddressAccessorLineEdit", "class_process_1_1_address_accessor_line_edit.html", null ],
     [ "AddressLineEdit", "class_process_1_1_address_line_edit.html", null ],
     [ "AddressLineEditBase", "class_process_1_1_address_line_edit_base.html", null ],
-    [ "ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
+    [ "ApplicationPlugin", "class_process_1_1_application_plugin.html", "class_process_1_1_application_plugin" ],
     [ "AudioFileChooser", "struct_process_1_1_audio_file_chooser.html", null ],
     [ "AudioInlet", "class_process_1_1_audio_inlet.html", null ],
     [ "AudioOutlet", "class_process_1_1_audio_outlet.html", null ],
@@ -138,6 +138,11 @@ var namespace_process =
     [ "XYSpinboxes", "struct_process_1_1_x_y_spinboxes.html", null ],
     [ "XYZSlider", "struct_process_1_1_x_y_z_slider.html", null ],
     [ "XYZSpinboxes", "struct_process_1_1_x_y_z_spinboxes.html", null ],
+    [ "FoldMode", "namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac", [
+      [ "Auto", "namespace_process.html#a89e8f71b95e3a20a26541eaefa50feaca06b9281e396db002010bde1de57262eb", null ],
+      [ "Folded", "namespace_process.html#a89e8f71b95e3a20a26541eaefa50feaca9693b677e1c2acf924b9d7bf3aca557b", null ],
+      [ "Unfolded", "namespace_process.html#a89e8f71b95e3a20a26541eaefa50feaca581d00d30495540d09a1f5b2430baaca", null ]
+    ] ],
     [ "ProcessFlags", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1", [
       [ "SupportsTemporal", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96", null ],
       [ "TimeIndependent", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ae0631948dc54ff47c847d8ab38627cc1", null ],

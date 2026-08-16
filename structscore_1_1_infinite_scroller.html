@@ -124,6 +124,8 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>move</b> (QG
 <tr class="memitem:a7a9af6235e06a14167fcfc93761aa5c4" id="r_a7a9af6235e06a14167fcfc93761aa5c4"><td class="memItemLeft" align="right" valign="top"><a id="a7a9af6235e06a14167fcfc93761aa5c4" name="a7a9af6235e06a14167fcfc93761aa5c4"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (QGraphicsItem &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a7a9af6235e06a14167fcfc93761aa5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7518caf25440dcf22cbf039aacfd2bac" id="r_a7518caf25440dcf22cbf039aacfd2bac"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_infinite_scroller.html#a7518caf25440dcf22cbf039aacfd2bac">abort</a> (QGraphicsItem &amp;self)</td></tr>
+<tr class="separator:a7518caf25440dcf22cbf039aacfd2bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada655f34a7b588c9cc55b6473346b4f4" id="r_ada655f34a7b588c9cc55b6473346b4f4"><td class="memItemLeft" align="right" valign="top">static QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_infinite_scroller.html#ada655f34a7b588c9cc55b6473346b4f4">relativeMotion</a> (QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:ada655f34a7b588c9cc55b6473346b4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9963b9c506ad5656811b35d04d6fc2a5" id="r_a9963b9c506ad5656811b35d04d6fc2a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5">holdsPointer</a> ()</td></tr>
@@ -149,6 +151,33 @@ static double&#160;</td><td class="memItemRight" valign="bottom"><b>currentDelta
 <tr class="separator:a4d1ed28aa84d18641cdda19560be7bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7518caf25440dcf22cbf039aacfd2bac" name="a7518caf25440dcf22cbf039aacfd2bac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7518caf25440dcf22cbf039aacfd2bac">&#9670;&#160;</a></span>abort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::InfiniteScroller::abort </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem &amp;&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>stop() for a drag that ends without a release event to end it on: undoes what start() did to the cursor, but cannot put it back where the press was, there being no press position to read. A no-op for an item that is not the one currently dragging, so a control cleaning up after itself cannot tear down someone else's session. </p>
+
+</div>
+</div>
 <a id="a9963b9c506ad5656811b35d04d6fc2a5" name="a9963b9c506ad5656811b35d04d6fc2a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9963b9c506ad5656811b35d04d6fc2a5">&#9670;&#160;</a></span>holdsPointer()</h2>
 

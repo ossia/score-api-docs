@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('class_library_1_1_processes_item_model
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_library_1_1_processes_item_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Library::ProcessesItemModel Class Reference</div></div>
@@ -130,6 +131,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rescan</b> ()</td></t
 <tr class="memitem:a24c36f09abff1600b8e8731a7ca842e2" id="r_a24c36f09abff1600b8e8731a7ca842e2"><td class="memItemLeft" align="right" valign="top"><a id="a24c36f09abff1600b8e8731a7ca842e2" name="a24c36f09abff1600b8e8731a7ca842e2"></a>
 QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const Process::ProcessModelFactory::ConcreteKey &amp;k)</td></tr>
 <tr class="separator:a24c36f09abff1600b8e8731a7ca842e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953d154e54f56c59a90253153221d7a8" id="r_a953d154e54f56c59a90253153221d7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a953d154e54f56c59a90253153221d7a8">publish</a> (<a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;entry)</td></tr>
+<tr class="separator:a953d154e54f56c59a90253153221d7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4442831bf9f6d3cfb65028b1e4b22302" id="r_a4442831bf9f6d3cfb65028b1e4b22302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a4442831bf9f6d3cfb65028b1e4b22302">publish</a> (<a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;entry, uint64_t <a class="el" href="class_library_1_1_processes_item_model.html#ab14db44c82dac14fcd3c9fefa30adb42">generation</a>)</td></tr>
+<tr class="separator:a4442831bf9f6d3cfb65028b1e4b22302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14db44c82dac14fcd3c9fefa30adb42" id="r_ab14db44c82dac14fcd3c9fefa30adb42"><td class="memItemLeft" align="right" valign="top"><a id="ab14db44c82dac14fcd3c9fefa30adb42" name="ab14db44c82dac14fcd3c9fefa30adb42"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>generation</b> () const noexcept</td></tr>
+<tr class="memdesc:ab14db44c82dac14fcd3c9fefa30adb42"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scan generation the model is currently accepting. Bumped by rescan(). <br /></td></tr>
+<tr class="separator:ab14db44c82dac14fcd3c9fefa30adb42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a27e6416da2abaa4735617d606bf60f" id="r_a4a27e6416da2abaa4735617d606bf60f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a4a27e6416da2abaa4735617d606bf60f">replaceChildren</a> (const Process::ProcessModelFactory::ConcreteKey &amp;key, std::vector&lt; <a class="el" href="struct_library_1_1_staged_node.html">StagedNode</a> &gt; children)</td></tr>
+<tr class="separator:a4a27e6416da2abaa4735617d606bf60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e8a1f0d85e757ebaf9edd47c5ebfeb" id="r_aa2e8a1f0d85e757ebaf9edd47c5ebfeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#aa2e8a1f0d85e757ebaf9edd47c5ebfeb">clearAnchorKey</a> (const Process::ProcessModelFactory::ConcreteKey &amp;key)</td></tr>
+<tr class="separator:aa2e8a1f0d85e757ebaf9edd47c5ebfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e0c636a10da368c64bcafdc9dc60dfe" id="r_a7e0c636a10da368c64bcafdc9dc60dfe"><td class="memItemLeft" align="right" valign="top"><a id="a7e0c636a10da368c64bcafdc9dc60dfe" name="a7e0c636a10da368c64bcafdc9dc60dfe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flushPending</b> ()</td></tr>
+<tr class="memdesc:a7e0c636a10da368c64bcafdc9dc60dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately publish everything still buffered. Mostly for tests. <br /></td></tr>
+<tr class="separator:a7e0c636a10da368c64bcafdc9dc60dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798b674c8701ba999531a767e80343b3" id="r_a798b674c8701ba999531a767e80343b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_tree_node.html">ProcessNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a798b674c8701ba999531a767e80343b3">rootNode</a> () override</td></tr>
 <tr class="separator:a798b674c8701ba999531a767e80343b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075f255c7011aa0e2c8f61001e9084ca" id="r_a075f255c7011aa0e2c8f61001e9084ca"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_tree_node.html">ProcessNode</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a075f255c7011aa0e2c8f61001e9084ca">rootNode</a> () const override</td></tr>
@@ -159,6 +176,9 @@ Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedD
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_newPlugin</b> (const <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a> &amp;fact)</td></tr>
 <tr class="separator:a591a6e292e0ae5525a80963f90dfd91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_tree_node_based_item_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_tree_node_based_item_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_tree_node_based_item_model.html">TreeNodeBasedItemModel&lt; ProcessNode &gt;</a></td></tr>
+<tr class="memitem:a0fca8e866411e0692444fb8991f33a8c inherit pub_methods_class_tree_node_based_item_model" id="r_a0fca8e866411e0692444fb8991f33a8c"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>TreeNodeBasedItemModel</b> (QObject *parent=nullptr)</td></tr>
+<tr class="separator:a0fca8e866411e0692444fb8991f33a8c inherit pub_methods_class_tree_node_based_item_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144aeeac17238d62a30b0fd2687ab407 inherit pub_methods_class_tree_node_based_item_model" id="r_a144aeeac17238d62a30b0fd2687ab407"><td class="memItemLeft" align="right" valign="top">
 ProcessNode &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nodeFromModelIndex</b> (const QModelIndex &amp;index) const</td></tr>
 <tr class="separator:a144aeeac17238d62a30b0fd2687ab407 inherit pub_methods_class_tree_node_based_item_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +212,102 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = Proc
 <tr class="separator:a582970ec35a6cec4fd58ca90af7e37d7 inherit pub_types_class_tree_node_based_item_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa2e8a1f0d85e757ebaf9edd47c5ebfeb" name="aa2e8a1f0d85e757ebaf9edd47c5ebfeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e8a1f0d85e757ebaf9edd47c5ebfeb">&#9670;&#160;</a></span>clearAnchorKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessesItemModel::clearAnchorKey </td>
+          <td>(</td>
+          <td class="paramtype">const Process::ProcessModelFactory::ConcreteKey &amp;&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marks a process node as a pure container: plugin databases clear the anchor's key so only their per-plugin children are user-creatable. </p>
+
+</div>
+</div>
+<a id="a953d154e54f56c59a90253153221d7a8" name="a953d154e54f56c59a90253153221d7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953d154e54f56c59a90253153221d7a8">&#9670;&#160;</a></span>publish() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessesItemModel::publish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Queue one scanned entry for publication into the tree. The only way the tree changes outside rescan()/replaceChildren(). Entries are buffered and flushed on a 0-timer; consecutive entries sharing the same anchor and category chain are inserted as one subtree / one ranged insert, so a folder scanned in one batch costs one rowsInserted. GUI thread only. </p>
+
+</div>
+</div>
+<a id="a4442831bf9f6d3cfb65028b1e4b22302" name="a4442831bf9f6d3cfb65028b1e4b22302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4442831bf9f6d3cfb65028b1e4b22302">&#9670;&#160;</a></span>publish() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessesItemModel::publish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>generation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same, from a scan whose generation was captured at rescan() time: entries from a scan that predates the current rescan are dropped. </p>
+
+</div>
+</div>
+<a id="a4a27e6416da2abaa4735617d606bf60f" name="a4a27e6416da2abaa4735617d606bf60f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a27e6416da2abaa4735617d606bf60f">&#9670;&#160;</a></span>replaceChildren()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessesItemModel::replaceChildren </td>
+          <td>(</td>
+          <td class="paramtype">const Process::ProcessModelFactory::ConcreteKey &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="struct_library_1_1_staged_node.html">StagedNode</a> &gt;&#160;</td>
+          <td class="paramname"><em>children</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Atomically replace the children of the process node identified by key with a staged forest, given in display order (each staged node's own children are name-sorted on insertion). For the plugin databases (LV2/CLAP/VST/VST3) whose content is recomputed wholesale. Emits exact remove/insert ranges — except during rescan()'s reset, where the whole model is already inside a reset envelope. GUI thread only. </p>
+
+</div>
+</div>
 <a id="a075f255c7011aa0e2c8f61001e9084ca" name="a075f255c7011aa0e2c8f61001e9084ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a075f255c7011aa0e2c8f61001e9084ca">&#9670;&#160;</a></span>rootNode() <span class="overload">[1/2]</span></h2>
 

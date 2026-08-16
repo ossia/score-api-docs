@@ -8,6 +8,7 @@ var dir_1e9b670fa093e1b478bfbdd29fef7f16 =
     [ "LibraryWidget.hpp", "_library_widget_8hpp_source.html", null ],
     [ "PresetItemModel.hpp", "_preset_item_model_8hpp_source.html", null ],
     [ "PresetListView.hpp", "_preset_list_view_8hpp_source.html", null ],
+    [ "ProcessEntry.hpp", "_process_entry_8hpp_source.html", null ],
     [ "ProcessesItemModel.hpp", "_processes_item_model_8hpp_source.html", null ],
     [ "ProcessTreeView.hpp", "_process_tree_view_8hpp_source.html", null ],
     [ "ProcessWidget.hpp", "_process_widget_8hpp_source.html", null ],

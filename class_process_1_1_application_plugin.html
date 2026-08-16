@@ -127,6 +127,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17b0d1461259d2ff8dbff19a3bb00dc3" id="r_a17b0d1461259d2ff8dbff19a3bb00dc3"><td class="memItemLeft" align="right" valign="top"><a id="a17b0d1461259d2ff8dbff19a3bb00dc3" name="a17b0d1461259d2ff8dbff19a3bb00dc3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *proc)</td></tr>
 <tr class="separator:a17b0d1461259d2ff8dbff19a3bb00dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016415bbb9a497697e8e3a2c5e45c6df" id="r_a016415bbb9a497697e8e3a2c5e45c6df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_application_plugin.html#a016415bbb9a497697e8e3a2c5e45c6df">presetAboutToBeAdded</a> (int index)</td></tr>
+<tr class="separator:a016415bbb9a497697e8e3a2c5e45c6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d2ddb34afe2d78c4c0d4f8f87c22d2" id="r_a31d2ddb34afe2d78c4c0d4f8f87c22d2"><td class="memItemLeft" align="right" valign="top"><a id="a31d2ddb34afe2d78c4c0d4f8f87c22d2" name="a31d2ddb34afe2d78c4c0d4f8f87c22d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>presetAdded</b> (int index)</td></tr>
+<tr class="separator:a31d2ddb34afe2d78c4c0d4f8f87c22d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff62c9731aaa711c1a2e0b3de8cd6b5e" id="r_aff62c9731aaa711c1a2e0b3de8cd6b5e"><td class="memItemLeft" align="right" valign="top"><a id="aff62c9731aaa711c1a2e0b3de8cd6b5e" name="aff62c9731aaa711c1a2e0b3de8cd6b5e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addPreset</b> (<a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;&amp;p)</td></tr>
 <tr class="separator:aff62c9731aaa711c1a2e0b3de8cd6b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +187,26 @@ const <a class="el" href="structscore_1_1_application_context.html">score::Appli
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_application_plugin.html">score::ApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a016415bbb9a497697e8e3a2c5e45c6df" name="a016415bbb9a497697e8e3a2c5e45c6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016415bbb9a497697e8e3a2c5e45c6df">&#9670;&#160;</a></span>presetAboutToBeAdded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::ApplicationPlugin::presetAboutToBeAdded </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Emitted around the sorted insertion done by addPreset, so item models over <code>presets</code> (<a class="el" href="class_library_1_1_preset_item_model.html">Library::PresetItemModel</a>) can emit exact insert ranges. </p>
 
 </div>
 </div>

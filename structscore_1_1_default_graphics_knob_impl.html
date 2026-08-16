@@ -127,6 +127,9 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0f57335d9e1f8d135e3705622b169b54"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mouseReleaseEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a0f57335d9e1f8d135e3705622b169b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c858022c24da44b3f4d580e7d4548c5" id="r_a8c858022c24da44b3f4d580e7d4548c5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8c858022c24da44b3f4d580e7d4548c5"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_graphics_knob_impl.html#a8c858022c24da44b3f4d580e7d4548c5">ungrabMouseEvent</a> (T &amp;self, QEvent *event)</td></tr>
+<tr class="separator:a8c858022c24da44b3f4d580e7d4548c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a51d0b44590ed2d856a5eaa1722c263" id="r_a5a51d0b44590ed2d856a5eaa1722c263"><td class="memTemplParams" colspan="2"><a id="a5a51d0b44590ed2d856a5eaa1722c263" name="a5a51d0b44590ed2d856a5eaa1722c263"></a>
 template&lt;typename T &gt; <br />
 requires std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</td></tr>
@@ -142,6 +145,46 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a75c88bc80f17f62a2a1433ecb2e96441"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a75c88bc80f17f62a2a1433ecb2e96441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8c858022c24da44b3f4d580e7d4548c5" name="a8c858022c24da44b3f4d580e7d4548c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c858022c24da44b3f4d580e7d4548c5">&#9670;&#160;</a></span>ungrabMouseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void score::DefaultGraphicsKnobImpl::ungrabMouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>QEvent::UngrabMouse: the scene took the implicit grab away and there will be no release to end the drag on. See <a class="el" href="structscore_1_1_default_graphics_slider_impl.html">DefaultGraphicsSliderImpl</a> for what goes wrong if the edit is left open. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_default_graphics_knob_impl_8hpp_source.html">DefaultGraphicsKnobImpl.hpp</a></li>
 </ul>

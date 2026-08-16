@@ -209,63 +209,62 @@ $(document).ready(function(){initNavTree('_library_handler_8hpp_source.html','')
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">const</span> QRegularExpression scoreImport{<span class="stringliteral">&quot;import Score&quot;</span>};</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_struct" href="struct_library_1_1_subcategories.html">Library::Subcategories</a> categories;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_class" href="class_library_1_1_category_paths.html">Library::CategoryPaths</a> categories;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> setup(<a class="code hl_class" href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a>&amp; ctx)<span class="keyword"></span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">      override</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// TODO relaunch whenever library path changes...</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, JS::ProcessModel&gt;::get</a>();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    QModelIndex node = model.find(key);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">if</span>(node == QModelIndex{})</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    categories.init(</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;PrettyName_k, JS::ProcessModel&gt;::get</a>().toStdString(), node, ctx);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  std::function&lt;void()&gt; asyncAddPath(std::string_view path)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span>(std::string_view{path}.ends_with(<span class="stringliteral">&quot;.ui.qml&quot;</span>))</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    categories.<a class="code hl_function" href="class_library_1_1_category_paths.html#a3182bcf027fa32c1db81193a01a0af06">init</a>(</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_class" href="struct_metadata.html">Metadata&lt;PrettyName_k, JS::ProcessModel&gt;::get</a>().toStdString(), ctx);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  std::optional&lt;Library::ProcessEntry&gt; scanPath(std::string_view path)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span>(std::string_view{path}.ends_with(<span class="stringliteral">&quot;.ui.qml&quot;</span>))</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_struct" href="structscore_1_1_path_info.html">score::PathInfo</a> pathinfo{path};</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    QFile file{QString::fromUtf8(</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        pathinfo.absoluteFilePath.data(), pathinfo.absoluteFilePath.size())};</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">if</span>(!file.open(QIODevice::ReadOnly))</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    QFileInfo fileinfo{QString::fromUtf8(path.data(), path.length())};</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    QFile file{fileinfo.absoluteFilePath()};</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">if</span>(!file.open(QIODevice::ReadOnly))</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">auto</span> data = file.readAll().trimmed();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structmatches.html">matches</a> = scoreImport.match(data);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordflow">if</span>(!<a class="code hl_struct" href="structmatches.html">matches</a>.hasMatch())</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">auto</span> data = file.readAll().trimmed();</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structmatches.html">matches</a> = scoreImport.match(data);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">if</span>(!<a class="code hl_struct" href="structmatches.html">matches</a>.hasMatch())</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_struct" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    pdata.prettyName = fileinfo.completeBaseName();</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    pdata.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, JS::ProcessModel&gt;::get</a>();</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    pdata.customData = fileinfo.absoluteFilePath();</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">return</span> [<span class="keyword">this</span>, fileinfo, pdata = std::move(pdata)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      categories.add(fileinfo, std::move(pdata));</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    };</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_struct" href="struct_library_1_1_process_data.html">Library::ProcessData</a> pdata;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    pdata.prettyName = QString::fromUtf8(</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        pathinfo.completeBaseName.data(), pathinfo.completeBaseName.size());</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    pdata.key = <a class="code hl_class" href="struct_metadata.html">Metadata&lt;ConcreteKey_k, JS::ProcessModel&gt;::get</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    pdata.customData = QString::fromUtf8(</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        pathinfo.absoluteFilePath.data(), pathinfo.absoluteFilePath.size());</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_library_1_1_process_entry.html">Library::ProcessEntry</a>{</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        pdata.key, categories(pathinfo), {std::move(pdata), {}}};</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>};</div>
 </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 <div class="ttc" id="aclass_j_s_1_1_console_library_handler_html"><div class="ttname"><a href="class_j_s_1_1_console_library_handler.html">JS::ConsoleLibraryHandler</a></div><div class="ttdef"><b>Definition</b> LibraryHandler.hpp:58</div></div>
 <div class="ttc" id="aclass_j_s_1_1_library_handler_html"><div class="ttname"><a href="class_j_s_1_1_library_handler.html">JS::LibraryHandler</a></div><div class="ttdef"><b>Definition</b> LibraryHandler.hpp:86</div></div>
 <div class="ttc" id="aclass_j_s_1_1_module_library_handler_html"><div class="ttname"><a href="class_j_s_1_1_module_library_handler.html">JS::ModuleLibraryHandler</a></div><div class="ttdef"><b>Definition</b> LibraryHandler.hpp:14</div></div>
 <div class="ttc" id="aclass_j_s_1_1_module_library_handler_html_a96199a3c2060db6d7d1b006649dc1530"><div class="ttname"><a href="class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530">JS::ModuleLibraryHandler::asyncAddPath</a></div><div class="ttdeci">std::function&lt; void()&gt; asyncAddPath(std::string_view path) override</div><div class="ttdef"><b>Definition</b> LibraryHandler.hpp:35</div></div>
 <div class="ttc" id="aclass_j_s_1_1_panel_delegate_html"><div class="ttname"><a href="class_j_s_1_1_panel_delegate.html">JS::PanelDelegate</a></div><div class="ttdef"><b>Definition</b> ConsolePanel.hpp:40</div></div>
-<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:24</div></div>
-<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:44</div></div>
-<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:33</div></div>
-<div class="ttc" id="astruct_library_1_1_subcategories_html"><div class="ttname"><a href="struct_library_1_1_subcategories.html">Library::Subcategories</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:89</div></div>
+<div class="ttc" id="aclass_library_1_1_category_paths_html"><div class="ttname"><a href="class_library_1_1_category_paths.html">Library::CategoryPaths</a></div><div class="ttdef"><b>Definition</b> ProcessEntry.hpp:64</div></div>
+<div class="ttc" id="aclass_library_1_1_category_paths_html_a3182bcf027fa32c1db81193a01a0af06"><div class="ttname"><a href="class_library_1_1_category_paths.html#a3182bcf027fa32c1db81193a01a0af06">Library::CategoryPaths::init</a></div><div class="ttdeci">void init(std::string processName, const score::ApplicationContext &amp;ctx)</div><div class="ttdoc">GUI thread (setup). processName is the process's pretty name.</div><div class="ttdef"><b>Definition</b> LibraryInterface.cpp:32</div></div>
+<div class="ttc" id="aclass_library_1_1_library_interface_html"><div class="ttname"><a href="class_library_1_1_library_interface.html">Library::LibraryInterface</a></div><div class="ttdef"><b>Definition</b> LibraryInterface.hpp:26</div></div>
+<div class="ttc" id="aclass_library_1_1_processes_item_model_html"><div class="ttname"><a href="class_library_1_1_processes_item_model.html">Library::ProcessesItemModel</a></div><div class="ttdef"><b>Definition</b> ProcessesItemModel.hpp:38</div></div>
+<div class="ttc" id="astruct_library_1_1_process_data_html"><div class="ttname"><a href="struct_library_1_1_process_data.html">Library::ProcessData</a></div><div class="ttdef"><b>Definition</b> ProcessEntry.hpp:25</div></div>
+<div class="ttc" id="astruct_library_1_1_process_entry_html"><div class="ttname"><a href="struct_library_1_1_process_entry.html">Library::ProcessEntry</a></div><div class="ttdef"><b>Definition</b> ProcessEntry.hpp:40</div></div>
 <div class="ttc" id="astruct_metadata_html"><div class="ttname"><a href="struct_metadata.html">Metadata</a></div><div class="ttdoc">Static metadata implementation.</div><div class="ttdef"><b>Definition</b> lib/score/tools/Metadata.hpp:36</div></div>
 <div class="ttc" id="astructmatches_html"><div class="ttname"><a href="structmatches.html">matches</a></div><div class="ttdef"><b>Definition</b> ObjectMatches.hpp:6</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a></div><div class="ttdoc">Specializes ApplicationContext with the QMainWindow.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:15</div></div>
 <div class="ttc" id="astructscore_1_1_g_u_i_application_context_html_a56e095a4a7ae4751638f5dc9afdb06b5"><div class="ttname"><a href="structscore_1_1_g_u_i_application_context.html#a56e095a4a7ae4751638f5dc9afdb06b5">score::GUIApplicationContext::panel</a></div><div class="ttdeci">T &amp; panel() const</div><div class="ttdoc">Access to a specific PanelDelegate.</div><div class="ttdef"><b>Definition</b> GUIApplicationContext.hpp:36</div></div>
+<div class="ttc" id="astructscore_1_1_path_info_html"><div class="ttname"><a href="structscore_1_1_path_info.html">score::PathInfo</a></div><div class="ttdef"><b>Definition</b> lib/score/tools/File.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -46,7 +46,7 @@ var searchData=
   ['openeditor_43',['openEditor',['../classscore_1_1_q_graphics_combo.html#a8d0e7d861d84dd5de3b53def76e5b25a',1,'score::QGraphicsCombo']]],
   ['opengl_44',['opengl',['../structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1',1,'score::ApplicationSettings']]],
   ['opennote_45',['OpenNote',['../struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_open_note.html',1,'Ui::MidiDisplay::Node::Layer']]],
-  ['operator_28_29_46',['operator()',['../classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6',1,'score::DocumentValidator']]],
+  ['operator_28_29_46',['operator()',['../class_library_1_1_category_paths.html#ae9ece28e7693f268bad3a7521105182f',1,'Library::CategoryPaths::operator()()'],['../classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6',1,'score::DocumentValidator::operator()()']]],
   ['optimize_47',['optimize',['../class_process_1_1_offline_action_list.html#a0b98c6da032f3f34f2d12580daab4abe',1,'Process::OfflineActionList::optimize()'],['../classscore_1_1_interface_list_main.html#afcabbbb7abae27076d5920b905aea234',1,'score::InterfaceListMain::optimize()'],['../classscore_1_1_interface_list_base.html#a465904f271fb88a998b4fd078188f8e4',1,'score::InterfaceListBase::optimize()']]],
   ['optionalsentinel_48',['OptionalSentinel',['../struct_optional_sentinel.html',1,'']]],
   ['orderingpolicies_49',['OrderingPolicies',['../struct_execution_1_1_settings_1_1_ordering_policies.html',1,'Execution::Settings']]],

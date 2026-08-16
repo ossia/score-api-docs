@@ -127,6 +127,9 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ae827e76de7d5474cbff2e5f09c003724"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mouseReleaseEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:ae827e76de7d5474cbff2e5f09c003724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436c428c0a51849f2c5a477466c15e08" id="r_a436c428c0a51849f2c5a477466c15e08"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a436c428c0a51849f2c5a477466c15e08"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_graphics_slider_impl.html#a436c428c0a51849f2c5a477466c15e08">ungrabMouseEvent</a> (T &amp;self, QEvent *event)</td></tr>
+<tr class="separator:a436c428c0a51849f2c5a477466c15e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a24b3f45c014f1381ba8dcef3c341d6" id="r_a1a24b3f45c014f1381ba8dcef3c341d6"><td class="memTemplParams" colspan="2"><a id="a1a24b3f45c014f1381ba8dcef3c341d6" name="a1a24b3f45c014f1381ba8dcef3c341d6"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1a24b3f45c014f1381ba8dcef3c341d6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contextMenuEvent</b> (T &amp;self, QPointF pos)</td></tr>
@@ -136,6 +139,46 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4b0f181bae0a06b7a2d124509a02b39a"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a4b0f181bae0a06b7a2d124509a02b39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a436c428c0a51849f2c5a477466c15e08" name="a436c428c0a51849f2c5a477466c15e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436c428c0a51849f2c5a477466c15e08">&#9670;&#160;</a></span>ungrabMouseEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void score::DefaultGraphicsSliderImpl::ungrabMouseEvent </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QEvent *&#160;</td>
+          <td class="paramname"><em>event</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>QEvent::UngrabMouse. The scene drops an item's implicit grab without ever delivering a release &ndash; most visibly when the button was let go outside the window and the pointer then comes back in, which QGraphicsScenePrivate::sendMouseEvent answers by clearing the grabber and discarding the event. The drag has to be closed here too: otherwise <code>moving</code> stays set and this control stops following its model, and the ongoing command it opened stays open, so the <em>next</em> control the user touches has its edits redirected onto this one. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_default_graphics_slider_impl_8hpp_source.html">DefaultGraphicsSliderImpl.hpp</a></li>
 </ul>

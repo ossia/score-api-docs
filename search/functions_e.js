@@ -21,12 +21,13 @@ var searchData=
   ['rendertargetchange_18',['renderTargetChange',['../classscore_1_1gfx_1_1_node.html#a5de8199d87e59e3e7cd0a8039c697f14',1,'score::gfx::Node']]],
   ['rendertargetforinputport_19',['renderTargetForInputPort',['../classscore_1_1gfx_1_1_render_list.html#ade6c9eec96117aa9ad415aeed9dad218',1,'score::gfx::RenderList']]],
   ['rendertargetforoutput_20',['renderTargetForOutput',['../classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f',1,'score::gfx::RenderList']]],
-  ['replacesampler_21',['replaceSampler',['../namespacescore_1_1gfx.html#a35ba9e4c253f3bcae70e1d36cf469be3',1,'score::gfx']]],
-  ['replacesamplerandtexture_22',['replaceSamplerAndTexture',['../namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf',1,'score::gfx']]],
-  ['replacetexture_23',['replacetexture',['../namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;, QRhiSampler *sampler, QRhiTexture *newTexture)'],['../namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;srb, QRhiTexture *old_tex, QRhiTexture *new_tex)']]],
-  ['requiresdepth_24',['requiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9',1,'score::gfx::RenderList']]],
-  ['resizetexture_25',['resizeTexture',['../namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8',1,'score::gfx']]],
-  ['resizetexturesize_26',['resizeTextureSize',['../namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e',1,'score::gfx']]],
-  ['retargetinputmethod_27',['retargetInputMethod',['../namespacescore.html#a0953a774cc82c9bbc6d93776c447e5d7',1,'score']]],
-  ['rollback_28',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
+  ['replacechildren_21',['replaceChildren',['../class_library_1_1_processes_item_model.html#a4a27e6416da2abaa4735617d606bf60f',1,'Library::ProcessesItemModel']]],
+  ['replacesampler_22',['replaceSampler',['../namespacescore_1_1gfx.html#a35ba9e4c253f3bcae70e1d36cf469be3',1,'score::gfx']]],
+  ['replacesamplerandtexture_23',['replaceSamplerAndTexture',['../namespacescore_1_1gfx.html#ab9422d6d02158084503b076c4a382cbf',1,'score::gfx']]],
+  ['replacetexture_24',['replacetexture',['../namespacescore_1_1gfx.html#af4a120e4b5553a7ffeaeb10c7208b2e9',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;, QRhiSampler *sampler, QRhiTexture *newTexture)'],['../namespacescore_1_1gfx.html#a78ab4e37b245596d7fbb9023414aa622',1,'score::gfx::replaceTexture(QRhiShaderResourceBindings &amp;srb, QRhiTexture *old_tex, QRhiTexture *new_tex)']]],
+  ['requiresdepth_25',['requiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9',1,'score::gfx::RenderList']]],
+  ['resizetexture_26',['resizeTexture',['../namespacescore_1_1gfx.html#aae9462b53d25a8fe2f2a7de730a261d8',1,'score::gfx']]],
+  ['resizetexturesize_27',['resizeTextureSize',['../namespacescore_1_1gfx.html#af3bc42141b98c6699c7e5aee3674c38e',1,'score::gfx']]],
+  ['retargetinputmethod_28',['retargetInputMethod',['../namespacescore.html#a0953a774cc82c9bbc6d93776c447e5d7',1,'score']]],
+  ['rollback_29',['rollback',['../class_ongoing_command_dispatcher.html#ac7d20a23177cc9acf50aabbbbf44b75f',1,'OngoingCommandDispatcher']]]
 ];

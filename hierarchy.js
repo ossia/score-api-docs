@@ -207,6 +207,7 @@ var hierarchy =
     [ "Scenario::CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
     [ "YSFX::CategorizedPreset", "struct_y_s_f_x_1_1_categorized_preset.html", null ],
     [ "Category_k", "class_category__k.html", null ],
+    [ "Library::CategoryPaths", "class_library_1_1_category_paths.html", null ],
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "Protocols::Artnet::Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
@@ -1240,8 +1241,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -2382,6 +2383,7 @@ var hierarchy =
     [ "Scenario::PathDetectorState", "struct_scenario_1_1_path_detector_state.html", null ],
     [ "WidgetFactory::PathGeneratorXY", "struct_widget_factory_1_1_path_generator_x_y.html", null ],
     [ "score::PathInfo", "structscore_1_1_path_info.html", null ],
+    [ "Library::CategoryPaths::Paths", "struct_library_1_1_category_paths_1_1_paths.html", null ],
     [ "Patternist::Pattern", "struct_patternist_1_1_pattern.html", null ],
     [ "avnd_tools::PatternObject", "structavnd__tools_1_1_pattern_object.html", [
       [ "avnd_tools::DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", null ],
@@ -2614,6 +2616,7 @@ var hierarchy =
     ] ],
     [ "Process::ProcessDropHandler::ProcessDrop", "struct_process_1_1_process_drop_handler_1_1_process_drop.html", null ],
     [ "Gfx::GeometryFilter::ProcessedGeometryProgram", "struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program.html", null ],
+    [ "Library::ProcessEntry", "struct_library_1_1_process_entry.html", null ],
     [ "Scenario::ProcessesBeingCopied", "struct_scenario_1_1_processes_being_copied.html", null ],
     [ "ProcessFlags_k", "class_process_flags__k.html", null ],
     [ "Process::ProcessIdentifier", "struct_process_1_1_process_identifier.html", null ],
@@ -4226,6 +4229,7 @@ var hierarchy =
       [ "score::MaxRangeSpinBox< SpinBox >", "classscore_1_1_max_range_spin_box.html", null ]
     ] ],
     [ "Threedim::SplatLoader", "class_threedim_1_1_splat_loader.html", null ],
+    [ "Library::StagedNode", "struct_library_1_1_staged_node.html", null ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
@@ -4265,7 +4269,6 @@ var hierarchy =
     [ "Curve::StyleInterface", "struct_curve_1_1_style_interface.html", [
       [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ]
     ] ],
-    [ "Library::Subcategories", "struct_library_1_1_subcategories.html", null ],
     [ "score::SubtypeVariant< Base, Args >", "classscore_1_1_subtype_variant.html", null ],
     [ "avnd_tools::PatternCombiner::sum", "structavnd__tools_1_1_pattern_combiner_1_1sum.html", null ],
     [ "SyncInfo", "struct_sync_info.html", null ],

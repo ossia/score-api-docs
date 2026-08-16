@@ -175,39 +175,40 @@ $(document).ready(function(){initNavTree('_2_vst3_2_widgets_8hpp_source.html',''
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">bool</span> sceneEvent(QEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structvst3_1_1_v_s_t_float_slider.html">   70</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">const</span> std::string_view name;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      : name{name}</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">static</span> QWidget* make_widget(</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      Steinberg::Vst::IEditController* fx, <span class="keyword">const</span> <a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent, QObject* context);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      Steinberg::Vst::IEditController* fx, <a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QGraphicsItem* parent, QObject* context);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structvst3_1_1_v_s_t_float_slider.html">   71</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">const</span> std::string_view name;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">explicit</span> <span class="keyword">constexpr</span> <a class="code hl_struct" href="structvst3_1_1_v_s_t_float_slider.html">VSTFloatSlider</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* name)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      : name{name}</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">static</span> QWidget* make_widget(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      Steinberg::Vst::IEditController* fx, <span class="keyword">const</span> <a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent, QObject* context);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">static</span> QGraphicsItem* make_item(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      Steinberg::Vst::IEditController* fx, <a class="code hl_class" href="classvst3_1_1_control_inlet.html">ControlInlet</a>&amp; inlet,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QGraphicsItem* parent, QObject* context);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
 </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="ttc" id="aclassvst3_1_1_control_inlet_html"><div class="ttname"><a href="classvst3_1_1_control_inlet.html">vst3::ControlInlet</a></div><div class="ttdef"><b>Definition</b> /Vst3/Control.hpp:19</div></div>
 <div class="ttc" id="aclassvst3_1_1_v_s_t_graphics_slider_html"><div class="ttname"><a href="classvst3_1_1_v_s_t_graphics_slider.html">vst3::VSTGraphicsSlider</a></div><div class="ttdef"><b>Definition</b> /Vst3/Widgets.hpp:21</div></div>
 <div class="ttc" id="astructscore_1_1_default_control_impl_html"><div class="ttname"><a href="structscore_1_1_default_control_impl.html">score::DefaultControlImpl</a></div><div class="ttdef"><b>Definition</b> DefaultControlImpl.hpp:10</div></div>
 <div class="ttc" id="astructscore_1_1_default_graphics_slider_impl_html"><div class="ttname"><a href="structscore_1_1_default_graphics_slider_impl.html">score::DefaultGraphicsSliderImpl</a></div><div class="ttdef"><b>Definition</b> DefaultGraphicsSliderImpl.hpp:31</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1_q_graphics_slider_base_html"><div class="ttname"><a href="structscore_1_1_q_graphics_slider_base.html">score::QGraphicsSliderBase</a></div><div class="ttdef"><b>Definition</b> QGraphicsSliderBase.hpp:17</div></div>
-<div class="ttc" id="astructvst3_1_1_v_s_t_float_slider_html"><div class="ttname"><a href="structvst3_1_1_v_s_t_float_slider.html">vst3::VSTFloatSlider</a></div><div class="ttdef"><b>Definition</b> /Vst3/Widgets.hpp:71</div></div>
+<div class="ttc" id="astructvst3_1_1_v_s_t_float_slider_html"><div class="ttname"><a href="structvst3_1_1_v_s_t_float_slider.html">vst3::VSTFloatSlider</a></div><div class="ttdef"><b>Definition</b> /Vst3/Widgets.hpp:72</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -138,6 +138,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>watch</b> (const QObj
 <tr class="memitem:a59eb404915104db0c7d8ef1df3d8fb7e" id="r_a59eb404915104db0c7d8ef1df3d8fb7e"><td class="memItemLeft" align="right" valign="top"><a id="a59eb404915104db0c7d8ef1df3d8fb7e" name="a59eb404915104db0c7d8ef1df3d8fb7e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unwatch</b> (const QObject *obj)</td></tr>
 <tr class="separator:a59eb404915104db0c7d8ef1df3d8fb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea9ce63d1d9e214d5208f877a20568c" id="r_abea9ce63d1d9e214d5208f877a20568c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ongoing_command_dispatcher.html#abea9ce63d1d9e214d5208f877a20568c">watching</a> (const QObject *obj) const noexcept</td></tr>
+<tr class="separator:abea9ce63d1d9e214d5208f877a20568c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aaea238af6367fa225a3b06dc496e77" id="r_a6aaea238af6367fa225a3b06dc496e77"><td class="memTemplParams" colspan="2">template&lt;typename TheCommand , typename Watched , typename... Args&gt; </td></tr>
 <tr class="memitem:a6aaea238af6367fa225a3b06dc496e77"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_ongoing_command_dispatcher.html#a6aaea238af6367fa225a3b06dc496e77">submit</a> (Watched &amp;&amp;watched, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a6aaea238af6367fa225a3b06dc496e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +218,33 @@ template&lt;typename TheCommand , typename Watched , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Call this repeatedly to make the command, for instance on click and when the mouse moves. </p>
+
+</div>
+</div>
+<a id="abea9ce63d1d9e214d5208f877a20568c" name="abea9ce63d1d9e214d5208f877a20568c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea9ce63d1d9e214d5208f877a20568c">&#9670;&#160;</a></span>watching()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool OngoingCommandDispatcher::watching </td>
+          <td>(</td>
+          <td class="paramtype">const QObject *&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether obj is the object of the current &ndash; or, if none is in progress, the most recent &ndash; interaction. Kept past <a class="el" href="class_ongoing_command_dispatcher.html#a98c51c70b84cb27505120b707bbe9b5e">commit()</a> so that re-editing the same object does not have to re-arm its watch. </p>
 
 </div>
 </div>

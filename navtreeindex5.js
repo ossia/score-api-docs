@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_set_segment_parameters_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,5],
 "_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4],
 "_settings_command_8hpp_source.html":[13,0,0,1,1,2,9],
 "_settings_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,7],
@@ -95,7 +96,7 @@ var NAVTREEINDEX5 =
 "_syphon_helpers_8hpp_source.html":[13,0,0,2,17,1,12,0],
 "_syphon_input_8hpp_source.html":[13,0,0,2,17,1,12,1],
 "_syphon_output_8hpp_source.html":[13,0,0,2,17,1,12,2],
-"_system_library_widget_8hpp_source.html":[13,0,0,2,21,0,13],
+"_system_library_widget_8hpp_source.html":[13,0,0,2,21,0,14],
 "_t_c_p_server_widget_8hpp_source.html":[13,0,0,2,29,0,13,2],
 "_t_c_p_widget_8hpp_source.html":[13,0,0,2,29,0,13,3],
 "_table1_d_8hpp_source.html":[13,0,0,2,8,2,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_widget_wrapper_8hpp_source.html":[13,0,0,1,1,13,32],
 "_wiimote_device_8hpp_source.html":[13,0,0,2,29,0,20,0],
 "_wiimote_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,20,1],
-"_wiimote_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,20,2],
-"_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,20,3]
+"_wiimote_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,20,2]
 };
