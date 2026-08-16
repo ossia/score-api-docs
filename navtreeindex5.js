@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4],
 "_settings_command_8hpp_source.html":[13,0,0,1,1,2,9],
 "_settings_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,7],
 "_settings_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,5,0],
@@ -195,6 +196,7 @@ var NAVTREEINDEX5 =
 "_value_8hpp_source.html":[13,0,0,2,4,0,13],
 "_value_conversion_8hpp_source.html":[13,0,0,2,4,0,14],
 "_value_display_8hpp_source.html":[13,0,0,2,37,0,3],
+"_value_editors_8hpp_source.html":[13,0,0,2,13,0,3,13],
 "_value_inlet_item_8hpp_source.html":[13,0,0,2,12,0,11],
 "_value_outlet_item_8hpp_source.html":[13,0,0,2,12,0,12],
 "_value_parser_8hpp_source.html":[13,0,0,2,4,0,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "_wiimote_device_8hpp_source.html":[13,0,0,2,29,0,20,0],
 "_wiimote_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,20,1],
 "_wiimote_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,20,2],
-"_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,20,3],
-"_win_main_to_main_8hpp_source.html":[13,0,0,1,1,12,33],
-"_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,16,7]
+"_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,20,3]
 };

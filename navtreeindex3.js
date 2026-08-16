@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2],
 "_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_port_type_8hpp_source.html":[13,0,0,2,3,4,3,17],
 "_port_visibility_8hpp_source.html":[13,0,0,2,3,4,3,18],
 "_power_segment_8hpp_source.html":[13,0,0,2,11,0,4,2,0],
-"_presenter_instantiations_8hpp_source.html":[13,0,0,2,32,4,14],
-"_preset_8hpp_source.html":[13,0,0,2,3,4,30]
+"_presenter_instantiations_8hpp_source.html":[13,0,0,2,32,4,14]
 };

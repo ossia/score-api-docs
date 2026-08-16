@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_g_p_s_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,4,1],
 "_g_p_s_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,4,2],
 "_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,4,3],
 "_g_p_u_buffer_scatter_8hpp_source.html":[13,0,0,2,17,1,4,9],
@@ -212,7 +213,7 @@ var NAVTREEINDEX2 =
 "_listening_handler_8hpp_source.html":[13,0,0,2,13,0,4,2],
 "_listening_handler_factory_8hpp_source.html":[13,0,0,2,13,0,4,3],
 "_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,13,0,4,4],
-"_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,11],
+"_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,12],
 "_load_cables_8hpp_source.html":[13,0,0,2,32,0,0,3],
 "_load_device_8hpp_source.html":[13,0,0,2,13,0,0,0,1],
 "_load_preset_8hpp_source.html":[13,0,0,2,3,4,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
 "_m_q_t_t_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,12,1],
 "_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,12,2],
-"_m_q_t_t_specific_settings_8hpp_source.html":[13,0,0,2,29,0,12,3],
-"_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2]
+"_m_q_t_t_specific_settings_8hpp_source.html":[13,0,0,2,29,0,12,3]
 };

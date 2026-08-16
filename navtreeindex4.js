@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_preset_8hpp_source.html":[13,0,0,2,3,4,30],
 "_preset_helpers_8hpp_source.html":[13,0,0,2,3,4,31],
 "_preset_item_model_8hpp_source.html":[13,0,0,2,21,0,6],
 "_preset_list_view_8hpp_source.html":[13,0,0,2,21,0,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_set_property_8hpp_source.html":[13,0,0,2,2,0,6],
 "_set_rigidity_8hpp_source.html":[13,0,0,2,32,4,1,3,14],
 "_set_segment_parameters_8hpp_source.html":[13,0,0,2,11,0,0,2],
-"_set_segment_parameters_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,5],
-"_set_trigger_8hpp_source.html":[13,0,0,2,32,4,1,8,4]
+"_set_segment_parameters_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,5]
 };

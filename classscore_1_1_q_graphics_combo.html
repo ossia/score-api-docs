@@ -141,12 +141,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (int v)<
 <tr class="memitem:a8a4240b977505775dd3e47aaf58b8142" id="r_a8a4240b977505775dd3e47aaf58b8142"><td class="memItemLeft" align="right" valign="top"><a id="a8a4240b977505775dd3e47aaf58b8142" name="a8a4240b977505775dd3e47aaf58b8142"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const</td></tr>
 <tr class="separator:a8a4240b977505775dd3e47aaf58b8142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fa1843db21c41ec76b8710ce88fc2f" id="r_a99fa1843db21c41ec76b8710ce88fc2f"><td class="memItemLeft" align="right" valign="top"><a id="a99fa1843db21c41ec76b8710ce88fc2f" name="a99fa1843db21c41ec76b8710ce88fc2f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEditable</b> (bool b)</td></tr>
+<tr class="memdesc:a99fa1843db21c41ec76b8710ce88fc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a value that is not in the list may be entered. <br /></td></tr>
+<tr class="separator:a99fa1843db21c41ec76b8710ce88fc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a197dda6e65cff80e6ddf38a759d0c" id="r_a51a197dda6e65cff80e6ddf38a759d0c"><td class="memItemLeft" align="right" valign="top"><a id="a51a197dda6e65cff80e6ddf38a759d0c" name="a51a197dda6e65cff80e6ddf38a759d0c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>editable</b> () const noexcept</td></tr>
+<tr class="separator:a51a197dda6e65cff80e6ddf38a759d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0e7d861d84dd5de3b53def76e5b25a" id="r_a8d0e7d861d84dd5de3b53def76e5b25a"><td class="memItemLeft" align="right" valign="top"><a id="a8d0e7d861d84dd5de3b53def76e5b25a" name="a8d0e7d861d84dd5de3b53def76e5b25a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>openEditor</b> (QPointF scenePos)</td></tr>
+<tr class="memdesc:a8d0e7d861d84dd5de3b53def76e5b25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the drop-down at that position in scene coordinates. <br /></td></tr>
+<tr class="separator:a8d0e7d861d84dd5de3b53def76e5b25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae943ed21a67e0adfc41b27052b5583fb" id="r_ae943ed21a67e0adfc41b27052b5583fb"><td class="memItemLeft" align="right" valign="top"><a id="ae943ed21a67e0adfc41b27052b5583fb" name="ae943ed21a67e0adfc41b27052b5583fb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderMoved</b> ()</td></tr>
 <tr class="separator:ae943ed21a67e0adfc41b27052b5583fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788a888a8e42f191bf592a04fffa2182" id="r_a788a888a8e42f191bf592a04fffa2182"><td class="memItemLeft" align="right" valign="top"><a id="a788a888a8e42f191bf592a04fffa2182" name="a788a888a8e42f191bf592a04fffa2182"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sliderReleased</b> ()</td></tr>
 <tr class="separator:a788a888a8e42f191bf592a04fffa2182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3adca6184d63232900b1f31a15473749" id="r_a3adca6184d63232900b1f31a15473749"><td class="memItemLeft" align="right" valign="top"><a id="a3adca6184d63232900b1f31a15473749" name="a3adca6184d63232900b1f31a15473749"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>valueEdited</b> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a3adca6184d63232900b1f31a15473749"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text matching none of the entries; only sent when editable(). <br /></td></tr>
+<tr class="separator:a3adca6184d63232900b1f31a15473749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a9b021d517b126543e8dc4487d2a72" id="r_ad3a9b021d517b126543e8dc4487d2a72"><td class="memItemLeft" align="right" valign="top"><a id="ad3a9b021d517b126543e8dc4487d2a72" name="ad3a9b021d517b126543e8dc4487d2a72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QGraphicsSceneContextMenuEvent *event) override</td></tr>
+<tr class="separator:ad3a9b021d517b126543e8dc4487d2a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3742f4017f535242c7ab8be89ebf0f" id="r_a1d3742f4017f535242c7ab8be89ebf0f"><td class="memItemLeft" align="right" valign="top"><a id="a1d3742f4017f535242c7ab8be89ebf0f" name="a1d3742f4017f535242c7ab8be89ebf0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:a1d3742f4017f535242c7ab8be89ebf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>

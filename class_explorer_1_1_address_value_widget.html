@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_address_value_widge
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_explorer_1_1_address_value_widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Explorer::AddressValueWidget Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -112,29 +113,95 @@ $(document).ready(function(){initNavTree('class_explorer_1_1_address_value_widge
 Inheritance diagram for Explorer::AddressValueWidget:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_explorer_1_1_address_value_widget.png" usemap="#Explorer::AddressValueWidget_map" alt=""/>
-  <map id="Explorer::AddressValueWidget_map" name="Explorer::AddressValueWidget_map">
-<area href="class_explorer_1_1_combo_value_widget.html" alt="Explorer::ComboValueWidget" shape="rect" coords="0,112,210,136"/>
-<area href="class_explorer_1_1_double_slider_value_widget.html" alt="Explorer::DoubleSliderValueWidget" shape="rect" coords="220,112,430,136"/>
-<area href="class_explorer_1_1_list_value_widget.html" alt="Explorer::ListValueWidget" shape="rect" coords="440,112,650,136"/>
-<area href="class_explorer_1_1_slider_value_widget.html" alt="Explorer::SliderValueWidget" shape="rect" coords="660,112,870,136"/>
-  </map>
-</div></div>
-<table class="memberdecls">
+  <img src="class_explorer_1_1_address_value_widget.png" alt=""/>
+ </div></div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An editor for one parameter value, shared by the tree, the address panel and the add / edit address dialog. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ace68cbece827df6704014b15c7297bed" id="r_ace68cbece827df6704014b15c7297bed"><td class="memItemLeft" align="right" valign="top"><a id="ace68cbece827df6704014b15c7297bed" name="ace68cbece827df6704014b15c7297bed"></a>
-virtual ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const =0</td></tr>
-<tr class="separator:ace68cbece827df6704014b15c7297bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3055f35ee692073af97ad8f5830cfe97" id="r_a3055f35ee692073af97ad8f5830cfe97"><td class="memItemLeft" align="right" valign="top"><a id="a3055f35ee692073af97ad8f5830cfe97" name="a3055f35ee692073af97ad8f5830cfe97"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (ossia::value t)=0</td></tr>
-<tr class="separator:a3055f35ee692073af97ad8f5830cfe97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aebade433578001bede06976c3dd487" id="r_a9aebade433578001bede06976c3dd487"><td class="memItemLeft" align="right" valign="top"><a id="a9aebade433578001bede06976c3dd487" name="a9aebade433578001bede06976c3dd487"></a>
+ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () const</td></tr>
+<tr class="separator:a9aebade433578001bede06976c3dd487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6abad83c4b10716d389f6b17dfb4a0" id="r_a6e6abad83c4b10716d389f6b17dfb4a0"><td class="memItemLeft" align="right" valign="top"><a id="a6e6abad83c4b10716d389f6b17dfb4a0" name="a6e6abad83c4b10716d389f6b17dfb4a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (ossia::value t)</td></tr>
+<tr class="memdesc:a6e6abad83c4b10716d389f6b17dfb4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a value without counting as an edit of it. <br /></td></tr>
+<tr class="separator:a6e6abad83c4b10716d389f6b17dfb4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac1a636c80045bd9bd131e5e1533484" id="r_a9ac1a636c80045bd9bd131e5e1533484"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#a9ac1a636c80045bd9bd131e5e1533484">edited</a> () const noexcept</td></tr>
+<tr class="separator:a9ac1a636c80045bd9bd131e5e1533484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aced3958e62a570bb64d7edaa9f44226d" id="r_aced3958e62a570bb64d7edaa9f44226d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#aced3958e62a570bb64d7edaa9f44226d">commitsImmediately</a> () const noexcept</td></tr>
+<tr class="separator:aced3958e62a570bb64d7edaa9f44226d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa36fd9c65bba23f54f74a138692c20" id="r_a1aa36fd9c65bba23f54f74a138692c20"><td class="memItemLeft" align="right" valign="top"><a id="a1aa36fd9c65bba23f54f74a138692c20" name="a1aa36fd9c65bba23f54f74a138692c20"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> (ossia::value arg_1)</td></tr>
 <tr class="separator:a1aa36fd9c65bba23f54f74a138692c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad09a88d1620de21c9c3eeeab2a17d43e" id="r_ad09a88d1620de21c9c3eeeab2a17d43e"><td class="memItemLeft" align="right" valign="top"><a id="ad09a88d1620de21c9c3eeeab2a17d43e" name="ad09a88d1620de21c9c3eeeab2a17d43e"></a>
+virtual ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>getImpl</b> () const =0</td></tr>
+<tr class="separator:ad09a88d1620de21c9c3eeeab2a17d43e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3f138333d2ea897639dac7259d1ff5" id="r_a2b3f138333d2ea897639dac7259d1ff5"><td class="memItemLeft" align="right" valign="top"><a id="a2b3f138333d2ea897639dac7259d1ff5" name="a2b3f138333d2ea897639dac7259d1ff5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setImpl</b> (ossia::value t)=0</td></tr>
+<tr class="separator:a2b3f138333d2ea897639dac7259d1ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0681c2807b82322214f9afbe1fa0d4f" id="r_ae0681c2807b82322214f9afbe1fa0d4f"><td class="memItemLeft" align="right" valign="top"><a id="ae0681c2807b82322214f9afbe1fa0d4f" name="ae0681c2807b82322214f9afbe1fa0d4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>markEdited</b> ()</td></tr>
+<tr class="separator:ae0681c2807b82322214f9afbe1fa0d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aced3958e62a570bb64d7edaa9f44226d" name="aced3958e62a570bb64d7edaa9f44226d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aced3958e62a570bb64d7edaa9f44226d">&#9670;&#160;</a></span>commitsImmediately()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Explorer::AddressValueWidget::commitsImmediately </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether the editor acts instead of holding a value, as an impulse button does, and so commits as it is used rather than when it closes. </p>
+
+</div>
+</div>
+<a id="a9ac1a636c80045bd9bd131e5e1533484" name="a9ac1a636c80045bd9bd131e5e1533484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac1a636c80045bd9bd131e5e1533484">&#9670;&#160;</a></span>edited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Explorer::AddressValueWidget::edited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether the user did anything: an editor that was only opened and closed must not write back what it was showing. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_address_item_model_8hpp_source.html">AddressItemModel.hpp</a></li>
+<li><a class="el" href="_value_editors_8hpp_source.html">ValueEditors.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

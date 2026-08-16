@@ -26,6 +26,7 @@ var namespace_device =
     [ "AccessModePrettyText", "namespace_device.html#ae65099905f3608fe0ceba75eee07de0a", null ],
     [ "AccessModeText", "namespace_device.html#a90b6372360427200d5581942af7a7426", null ],
     [ "dumpTree", "namespace_device.html#a8d0d2923bc93c55003d111113918c390", null ],
+    [ "hasEditableValue", "namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529", null ],
     [ "loadDeviceFromXML", "namespace_device.html#ae28e7db29ec71528be7138e7ff38e166", null ],
     [ "parametersList", "namespace_device.html#aa98fcd53aa1fbb8e0fc4f94a872c64ac", null ]
 ];

@@ -1240,8 +1240,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1289,8 +1289,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1895,9 +1895,7 @@ var hierarchy =
     [ "Process::MagneticInfo", "struct_process_1_1_magnetic_info.html", null ],
     [ "Scenario::MagneticStates", "struct_scenario_1_1_magnetic_states.html", null ],
     [ "mtk::MIDISyncOut::MainThreadState", "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html", null ],
-    [ "Explorer::make_dataspace", "struct_explorer_1_1make__dataspace.html", null ],
     [ "avnd_tools::detail::make_multi_array_variant< T, MaxDims >", "structavnd__tools_1_1detail_1_1make__multi__array__variant.html", null ],
-    [ "Explorer::make_unit", "struct_explorer_1_1make__unit.html", null ],
     [ "MapSerializer", "struct_map_serializer.html", [
       [ "TSerializer< DataStream, ankerl::unordered_dense::detail::table< Key, T, Hash, KeyEqual, AllocatorOrContainer, Bucket, BC, IsSegmented > >", "struct_t_serializer_3_01_data_stream_00_01ankerl_1_1unordered__dense_1_1detail_1_1table_3_01_key41104e411901c768d82ebf5dde8e463c.html", null ],
       [ "TSerializer< DataStream, boost::container::flat_map< T, U > >", "struct_t_serializer_3_01_data_stream_00_01boost_1_1container_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html", null ],
@@ -2764,6 +2762,7 @@ var hierarchy =
       [ "score::ComboBox", "classscore_1_1_combo_box.html", [
         [ "Scenario::SimpleComboBox", "class_scenario_1_1_simple_combo_box.html", null ]
       ] ],
+      [ "score::ComboBoxWithEnter", "classscore_1_1_combo_box_with_enter.html", null ],
       [ "score::QuantificationWidget", "classscore_1_1_quantification_widget.html", null ]
     ] ],
     [ "QCompleter", null, [
@@ -3826,7 +3825,8 @@ var hierarchy =
       [ "WordList", "struct_word_list.html", null ]
     ] ],
     [ "QStyledItemDelegate", null, [
-      [ "Explorer::AddressItemDelegate", "class_explorer_1_1_address_item_delegate.html", null ]
+      [ "Explorer::AddressItemDelegate", "class_explorer_1_1_address_item_delegate.html", null ],
+      [ "Explorer::DeviceExplorerDelegate", "class_explorer_1_1_device_explorer_delegate.html", null ]
     ] ],
     [ "ossia::qt_property_converter< ossia::value >", "structossia_1_1qt__property__converter_3_01ossia_1_1value_01_4.html", null ],
     [ "ossia::qt_property_converter< State::AddressAccessor >", "structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html", null ],
@@ -3945,19 +3945,14 @@ var hierarchy =
       [ "EditableTable", "class_editable_table.html", null ],
       [ "Explorer::AddressSettingsWidget", "class_explorer_1_1_address_settings_widget.html", [
         [ "Explorer::AddressBoolSettingsWidget", "class_explorer_1_1_address_bool_settings_widget.html", null ],
+        [ "Explorer::AddressCompositeSettingsWidget", "class_explorer_1_1_address_composite_settings_widget.html", null ],
         [ "Explorer::AddressImpulseSettingsWidget", "class_explorer_1_1_address_impulse_settings_widget.html", null ],
-        [ "Explorer::AddressListSettingsWidget", "class_explorer_1_1_address_list_settings_widget.html", null ],
         [ "Explorer::AddressNoneSettingsWidget", "class_explorer_1_1_address_none_settings_widget.html", null ],
         [ "Explorer::AddressNumericSettingsWidget< T >", "class_explorer_1_1_address_numeric_settings_widget.html", null ],
         [ "Explorer::AddressStringSettingsWidget", "class_explorer_1_1_address_string_settings_widget.html", null ],
         [ "Explorer::AddressVecSettingsWidget< N >", "class_explorer_1_1_address_vec_settings_widget.html", null ]
       ] ],
-      [ "Explorer::AddressValueWidget", "class_explorer_1_1_address_value_widget.html", [
-        [ "Explorer::ComboValueWidget", "class_explorer_1_1_combo_value_widget.html", null ],
-        [ "Explorer::DoubleSliderValueWidget", "class_explorer_1_1_double_slider_value_widget.html", null ],
-        [ "Explorer::ListValueWidget", "class_explorer_1_1_list_value_widget.html", null ],
-        [ "Explorer::SliderValueWidget", "class_explorer_1_1_slider_value_widget.html", null ]
-      ] ],
+      [ "Explorer::AddressValueWidget", "class_explorer_1_1_address_value_widget.html", null ],
       [ "Explorer::DeviceExplorerWidget", "class_explorer_1_1_device_explorer_widget.html", null ],
       [ "Gfx::CollapsibleSection", "class_gfx_1_1_collapsible_section.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],

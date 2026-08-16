@@ -14,10 +14,11 @@ var searchData=
   ['on_5fvaluechange_11',['on_valueChange',['../struct_dataflow_1_1_curve_inlet.html#ae1587139603ace7c919483fdc6f82c2f',1,'Dataflow::CurveInlet']]],
   ['ondelete_12',['onDelete',['../class_execution_1_1_state_component_base.html#a5e893dcec3666158222f14faf7653ede',1,'Execution::StateComponentBase']]],
   ['onsetup_13',['onsetup',['../class_execution_1_1_event_component.html#ac99265d0ad161e0180f9c87f28b67420',1,'Execution::EventComponent::onSetup()'],['../class_execution_1_1_interval_component.html#a1d65d2edfbee778c4ced384f820de83e',1,'Execution::IntervalComponent::onSetup()'],['../class_execution_1_1_time_sync_component.html#a104ed7db144645aa8259983543846b31',1,'Execution::TimeSyncComponent::onSetup()']]],
-  ['operator_28_29_14',['operator()',['../classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6',1,'score::DocumentValidator']]],
-  ['optimize_15',['optimize',['../classscore_1_1_interface_list_base.html#a465904f271fb88a998b4fd078188f8e4',1,'score::InterfaceListBase::optimize()'],['../classscore_1_1_interface_list_main.html#afcabbbb7abae27076d5920b905aea234',1,'score::InterfaceListMain::optimize()'],['../class_process_1_1_offline_action_list.html#a0b98c6da032f3f34f2d12580daab4abe',1,'Process::OfflineActionList::optimize()']]],
-  ['originalfile_16',['originalFile',['../struct_media_1_1_audio_file.html#adae010269e2cd4341a3c46af33e7a80a',1,'Media::AudioFile']]],
-  ['outputubo_17',['outputUBO',['../classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e',1,'score::gfx::RenderList']]],
-  ['overdub_18',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef',1,'Nodes::AudioLooper::Node']]],
-  ['overdub_5fnoecho_19',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863',1,'Nodes::AudioLooper::Node']]]
+  ['openeditor_14',['openEditor',['../classscore_1_1_q_graphics_combo.html#a8d0e7d861d84dd5de3b53def76e5b25a',1,'score::QGraphicsCombo']]],
+  ['operator_28_29_15',['operator()',['../classscore_1_1_document_validator.html#a7c9908c25b7f716066ad9faa9b1538e6',1,'score::DocumentValidator']]],
+  ['optimize_16',['optimize',['../classscore_1_1_interface_list_base.html#a465904f271fb88a998b4fd078188f8e4',1,'score::InterfaceListBase::optimize()'],['../classscore_1_1_interface_list_main.html#afcabbbb7abae27076d5920b905aea234',1,'score::InterfaceListMain::optimize()'],['../class_process_1_1_offline_action_list.html#a0b98c6da032f3f34f2d12580daab4abe',1,'Process::OfflineActionList::optimize()']]],
+  ['originalfile_17',['originalFile',['../struct_media_1_1_audio_file.html#adae010269e2cd4341a3c46af33e7a80a',1,'Media::AudioFile']]],
+  ['outputubo_18',['outputUBO',['../classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e',1,'score::gfx::RenderList']]],
+  ['overdub_19',['overdub',['../struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef',1,'Nodes::AudioLooper::Node']]],
+  ['overdub_5fnoecho_20',['overdub_noecho',['../struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863',1,'Nodes::AudioLooper::Node']]]
 ];

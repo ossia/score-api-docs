@@ -16,12 +16,13 @@ var searchData=
   ['addnode_13',['addnode',['../class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1',1,'Explorer::NodeUpdateProxy::addNode()'],['../structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993',1,'score::gfx::Graph::addNode()']]],
   ['addonarchitecture_14',['addonArchitecture',['../namespacescore.html#abe55a013aba51db7fae79be5eb285678',1,'score']]],
   ['addons_15',['addons',['../structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14',1,'score::ApplicationContext']]],
-  ['afterstartup_16',['afterstartup',['../classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41',1,'score::GUIApplicationPlugin::afterStartup()'],['../class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e',1,'JS::ApplicationPlugin::afterStartup()'],['../class_engine_1_1_application_plugin.html#a10e2608a84ffa6a7fc63113cab4b3dbd',1,'Engine::ApplicationPlugin::afterStartup()']]],
-  ['aggregatecommand_17',['AggregateCommand',['../classscore_1_1_aggregate_command.html#ad2190f6cee5b4e0bfceae6e36dbb6536',1,'score::AggregateCommand']]],
-  ['anyserializers_18',['anySerializers',['../namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981',1,'score']]],
-  ['applicationplugin_19',['applicationPlugin',['../structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1',1,'score::GUIApplicationContext']]],
-  ['applicationplugins_20',['applicationPlugins',['../structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45',1,'score::GUIApplicationContext']]],
-  ['asarray_21',['asArray',['../class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f',1,'JS::DeviceContext']]],
-  ['asyncaddpath_22',['asyncaddpath',['../class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530',1,'JS::ModuleLibraryHandler::asyncAddPath()'],['../class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39',1,'Library::LibraryInterface::asyncAddPath()']]],
-  ['availableprocesses_23',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd',1,'JS::EditJsContext']]]
+  ['addressat_16',['addressAt',['../class_explorer_1_1_device_explorer_delegate.html#afa23e36b47decc5aed19d5ff5d8a4b12',1,'Explorer::DeviceExplorerDelegate']]],
+  ['afterstartup_17',['afterstartup',['../class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e',1,'JS::ApplicationPlugin::afterStartup()'],['../class_engine_1_1_application_plugin.html#a10e2608a84ffa6a7fc63113cab4b3dbd',1,'Engine::ApplicationPlugin::afterStartup()'],['../classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41',1,'score::GUIApplicationPlugin::afterStartup()']]],
+  ['aggregatecommand_18',['AggregateCommand',['../classscore_1_1_aggregate_command.html#ad2190f6cee5b4e0bfceae6e36dbb6536',1,'score::AggregateCommand']]],
+  ['anyserializers_19',['anySerializers',['../namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981',1,'score']]],
+  ['applicationplugin_20',['applicationPlugin',['../structscore_1_1_g_u_i_application_context.html#ace1244b45a34e2327c980238e98819c1',1,'score::GUIApplicationContext']]],
+  ['applicationplugins_21',['applicationPlugins',['../structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45',1,'score::GUIApplicationContext']]],
+  ['asarray_22',['asArray',['../class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f',1,'JS::DeviceContext']]],
+  ['asyncaddpath_23',['asyncaddpath',['../class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530',1,'JS::ModuleLibraryHandler::asyncAddPath()'],['../class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39',1,'Library::LibraryInterface::asyncAddPath()']]],
+  ['availableprocesses_24',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd',1,'JS::EditJsContext']]]
 ];
