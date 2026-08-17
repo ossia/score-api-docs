@@ -32,7 +32,7 @@ var searchData=
   ['basictoolpaletteinputdispatcher_3c_20curve_3a_3atool_2c_20curve_3a_3atoolpalette_2c_20curve_3a_3aview_20_3e_29',['BasicToolPaletteInputDispatcher&lt; Curve::Tool, Curve::ToolPalette, Curve::View &gt;',['../class_dataflow_1_1_basic_tool_palette_input_dispatcher.html',1,'Dataflow']]],
   ['bgracomputeencoder_30',['BGRAComputeEncoder',['../structscore_1_1gfx_1_1_b_g_r_a_compute_encoder.html',1,'score::gfx']]],
   ['bgraencoder_31',['BGRAEncoder',['../structscore_1_1gfx_1_1_b_g_r_a_encoder.html',1,'score::gfx']]],
-  ['bindings_32',['bindings',['../structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html',1,'gpp::qrhi::DefaultPipeline::layout::bindings'],['../structhalp_1_1position__gpu__geometry_1_1bindings.html',1,'halp::position_gpu_geometry::bindings']]],
+  ['bindings_32',['bindings',['../structhalp_1_1position__gpu__geometry_1_1bindings.html',1,'halp::position_gpu_geometry::bindings'],['../structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html',1,'gpp::qrhi::DefaultPipeline::layout::bindings']]],
   ['bitdepth_33',['bitDepth',['../structscore_1_1gfx_1_1_pixel_format_info.html#a95e52f7f1de1613eb495cd1465a7f456',1,'score::gfx::PixelFormatInfo']]],
   ['bitfocus_5fprotocol_34',['bitfocus_protocol',['../classossia_1_1net_1_1bitfocus__protocol.html',1,'ossia::net']]],
   ['bitfocusdevice_35',['BitfocusDevice',['../class_protocols_1_1_bitfocus_device.html',1,'Protocols']]],
@@ -56,5 +56,7 @@ var searchData=
   ['button_53',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_process_1_1_button.html',1,'Process::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
   ['bytebeat_5fnode_54',['bytebeat_node',['../class_jit_1_1bytebeat__node.html',1,'Jit']]],
   ['bytebeatexecutor_55',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
-  ['bytebeatlanguagespec_56',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]]
+  ['bytebeatlanguagespec_56',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
+  ['bytessaved_57',['bytesSaved',['../struct_process_1_1_file_report.html#aeecd70c8ba4e9e24eef97e12df8ca92e',1,'Process::FileReport']]],
+  ['bytestocopy_58',['bytesToCopy',['../struct_process_1_1_file_report.html#a7ae9d993e9eb4d511a392fdce7763302',1,'Process::FileReport']]]
 ];

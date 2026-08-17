@@ -144,6 +144,8 @@ Public Types</h2></td></tr>
 <tr class="memitem:a3beacbc0a9fc610cd33a7ef77d1f645f" id="r_a3beacbc0a9fc610cd33a7ef77d1f645f"><td class="memItemLeft" align="right" valign="top"><a id="a3beacbc0a9fc610cd33a7ef77d1f645f" name="a3beacbc0a9fc610cd33a7ef77d1f645f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> { <b>EditingReloadsEverything</b> = (1 &lt;&lt; 0)
  }</td></tr>
 <tr class="separator:a3beacbc0a9fc610cd33a7ef77d1f645f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2035f492337eb8bf2e9193bec936a9" id="r_a2b2035f492337eb8bf2e9193bec936a9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_protocol_factory.html#a2b2035f492337eb8bf2e9193bec936a9">FileMapper</a> = std::function&lt; QString(const QString &amp;path, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">score::FileKind</a> kind, bool output)&gt;</td></tr>
+<tr class="separator:a2b2035f492337eb8bf2e9193bec936a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -193,6 +195,8 @@ virtual QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>makeProto
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a37b9fab38498d19b6693b90d734968bd"><td class="memTemplItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memTemplItemRight" valign="bottom"><b>makeProtocolSpecificSettings_T</b> (const <a class="el" href="struct_visitor_variant.html">VisitorVariant</a> &amp;vis) const</td></tr>
 <tr class="separator:a37b9fab38498d19b6693b90d734968bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436358c1d07d99827db08ec977148d40" id="r_a436358c1d07d99827db08ec977148d40"><td class="memItemLeft" align="right" valign="top">virtual QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_protocol_factory.html#a436358c1d07d99827db08ec977148d40">relocateExternalFiles</a> (const QVariant &amp;settings, const <a class="el" href="class_device_1_1_protocol_factory.html#a2b2035f492337eb8bf2e9193bec936a9">FileMapper</a> &amp;map) const</td></tr>
+<tr class="separator:a436358c1d07d99827db08ec977148d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2b8f9ccb4afb54eb1994843050f272" id="r_acc2b8f9ccb4afb54eb1994843050f272"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_protocol_factory.html#acc2b8f9ccb4afb54eb1994843050f272">checkResourcesAvailable</a> (const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;a, const DeviceResourceMap &amp;) const noexcept</td></tr>
 <tr class="separator:acc2b8f9ccb4afb54eb1994843050f272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a234efca8b12f98a16a040b5108940110" id="r_a234efca8b12f98a16a040b5108940110"><td class="memItemLeft" align="right" valign="top"><a id="a234efca8b12f98a16a040b5108940110" name="a234efca8b12f98a16a040b5108940110"></a>
@@ -204,6 +208,22 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 <tr class="memdesc:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifies an interface uniquely. <br /></td></tr>
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2b2035f492337eb8bf2e9193bec936a9" name="a2b2035f492337eb8bf2e9193bec936a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2035f492337eb8bf2e9193bec936a9">&#9670;&#160;</a></span>FileMapper</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="class_device_1_1_protocol_factory.html#a2b2035f492337eb8bf2e9193bec936a9">Device::ProtocolFactory::FileMapper</a> =  std::function&lt;QString(const QString&amp; path, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">score::FileKind</a> kind, bool output)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Callback handed to relocateExternalFiles: receives one path held in the settings and returns what it should become, or an empty string to leave it alone. <code>output</code> marks a file the device writes rather than reads. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc2b8f9ccb4afb54eb1994843050f272" name="acc2b8f9ccb4afb54eb1994843050f272"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc2b8f9ccb4afb54eb1994843050f272">&#9670;&#160;</a></span>checkResourcesAvailable()</h2>
@@ -239,6 +259,46 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 </table>
 </div><div class="memdoc">
 <p>Returns true if the device can be instantiated. e.g. are the necessary ports available at the system level. Second argument is a map of all the used resources by other devices in the score. </p>
+
+</div>
+</div>
+<a id="a436358c1d07d99827db08ec977148d40" name="a436358c1d07d99827db08ec977148d40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436358c1d07d99827db08ec977148d40">&#9670;&#160;</a></span>relocateExternalFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant Device::ProtocolFactory::relocateExternalFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>settings</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_device_1_1_protocol_factory.html#a2b2035f492337eb8bf2e9193bec936a9">FileMapper</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Report — and optionally rewrite — the files these protocol-specific settings reference, so that project consolidation can collect them.</p>
+<p>Returns updated settings, or an empty QVariant when nothing changed. The default implementation reports nothing, which is right for the many protocols that only ever talk to the network. </p>
+
+<p>Reimplemented in <a class="el" href="class_gfx_1_1_libav_protocol_factory.html#a5efdfb9ab8ac26ca7a7d2558e081a639">Gfx::LibavProtocolFactory</a>.</p>
 
 </div>
 </div>

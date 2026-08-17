@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['foldmode_0',['FoldMode',['../namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac',1,'Process']]]
+  ['copymode_0',['CopyMode',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75',1,'score']]]
 ];

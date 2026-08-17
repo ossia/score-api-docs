@@ -169,231 +169,235 @@ $(document).ready(function(){initNavTree('score-lib-process_2_process_2_process_
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">class </span>LayerFactory;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">class </span>ProcessModel;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">class </span>LayerFactory;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">struct </span>Inlets;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">struct </span>Outlets;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model.html">   71</a></span><span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_entity.html">score::Entity</a>&lt;ProcessModel&gt;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    , <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_serializable_interface.html">score::SerializableInterface</a>&lt;ProcessModel&gt;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  W_OBJECT(<a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>)</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="class_selectable.html">Selectable</a> selection{<span class="keyword">this</span>};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> duration, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, <span class="keyword">const</span> QString&amp; name,</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      QObject* parent);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_1_1_process_model.html">~ProcessModel</a>();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// If the process can have multiple distinct implementations</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// for which presets are incompatible, e.g. VST, Faust...</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// This allows to differentiate them</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">virtual</span> QString effect() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">// A user-friendly text to show to the users</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">virtual</span> QString prettyName() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">virtual</span> QString prettyShortName() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keyword">virtual</span> QString category() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> QStringList tags() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">virtual</span> <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> flags() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span> setParentDuration(ExpandMode mode, <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; t) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> contentDuration() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span> setDuration(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; other) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  QPointF position() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  QSizeF size() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordtype">void</span> setPosition(<span class="keyword">const</span> QPointF&amp; v);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">void</span> setSize(<span class="keyword">const</span> QSizeF&amp; v);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">void</span> positionChanged(QPointF p) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, positionChanged, p)</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordtype">void</span> sizeChanged(QSizeF p) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, sizeChanged, p)</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  PROPERTY(</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      QPointF, position W_READ position W_WRITE setPosition W_NOTIFY positionChanged)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  PROPERTY(QSizeF, size W_READ size W_WRITE setSize W_NOTIFY sizeChanged)</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> foldMode() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keywordtype">void</span> setFoldMode(<a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> v);</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">void</span> foldModeChanged(<a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> v) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, foldModeChanged, v)</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  PROPERTY(</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a>, foldMode W_READ foldMode W_WRITE setFoldMode W_NOTIFY foldModeChanged)</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">bool</span> folded() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>* startStateData() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>* endStateData() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_selection.html">Selection</a> selectableChildren() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_selection.html">Selection</a> selectedChildren() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setSelection(<span class="keyword">const</span> <a class="code hl_class" href="class_selection.html">Selection</a>&amp; s) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordtype">double</span> getSlotHeight() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">void</span> setSlotHeight(<span class="keywordtype">double</span>) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_inlets.html">Process::Inlets</a>&amp; inlets() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_inlets; }</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_outlets.html">Process::Outlets</a>&amp; outlets() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_outlets; }</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Preset</a>&amp; preset);</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Preset</a> savePreset() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">virtual</span> std::vector&lt;Process::Preset&gt; builtinPresets() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="comment">// Called when an ancestor was moved in the timeline</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ancestorStartDateChanged();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ancestorTempoChanged();</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> forEachControl(</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>      smallfun::function&lt;<span class="keywordtype">void</span>(<a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>&amp;, <span class="keyword">const</span> ossia::value&amp;)&gt;) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="comment">// Magnetism</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">virtual</span> std::optional&lt;Process::MagneticInfo&gt;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  magneticPosition(<span class="keyword">const</span> QObject* o, <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> t) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="comment">// Clip duration things</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordtype">bool</span> loops() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loops; }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordtype">void</span> setLoops(<span class="keywordtype">bool</span> b);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keywordtype">void</span> loopsChanged(<span class="keywordtype">bool</span> b) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, loopsChanged, b)</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  PROPERTY(<span class="keywordtype">bool</span>, loops W_READ loops W_WRITE setLoops W_NOTIFY loopsChanged)</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">class </span>ExternalFileMap;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">struct </span>Inlets;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">struct </span>Outlets;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model.html">   72</a></span><span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_entity.html">score::Entity</a>&lt;ProcessModel&gt;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    , <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_serializable_interface.html">score::SerializableInterface</a>&lt;ProcessModel&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  W_OBJECT(<a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="class_selectable.html">Selectable</a> selection{<span class="keyword">this</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> duration, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, <span class="keyword">const</span> QString&amp; name,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      QObject* parent);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">ProcessModel</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_1_1_process_model.html">~ProcessModel</a>();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// If the process can have multiple distinct implementations</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// for which presets are incompatible, e.g. VST, Faust...</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// This allows to differentiate them</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keyword">virtual</span> QString effect() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// A user-friendly text to show to the users</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">virtual</span> QString prettyName() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keyword">virtual</span> QString prettyShortName() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> QString category() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">virtual</span> QStringList tags() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">virtual</span> <a class="code hl_enumeration" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">ProcessFlags</a> flags() <span class="keyword">const</span> <span class="keyword">noexcept</span> = 0;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">void</span> setParentDuration(ExpandMode mode, <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; t) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> contentDuration() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> setDuration(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; other) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  QPointF position() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  QSizeF size() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">void</span> setPosition(<span class="keyword">const</span> QPointF&amp; v);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">void</span> setSize(<span class="keyword">const</span> QSizeF&amp; v);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keywordtype">void</span> positionChanged(QPointF p) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, positionChanged, p)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keywordtype">void</span> sizeChanged(QSizeF p) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, sizeChanged, p)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  PROPERTY(</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      QPointF, position W_READ position W_WRITE setPosition W_NOTIFY positionChanged)</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  PROPERTY(QSizeF, size W_READ size W_WRITE setSize W_NOTIFY sizeChanged)</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> foldMode() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keywordtype">void</span> setFoldMode(<a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> v);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">void</span> foldModeChanged(<a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> v) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, foldModeChanged, v)</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  PROPERTY(</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a>, foldMode W_READ foldMode W_WRITE setFoldMode W_NOTIFY foldModeChanged)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordtype">bool</span> folded() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>* startStateData() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_process_state_data_interface.html">ProcessStateDataInterface</a>* endStateData() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_selection.html">Selection</a> selectableChildren() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="class_selection.html">Selection</a> selectedChildren() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setSelection(<span class="keyword">const</span> <a class="code hl_class" href="class_selection.html">Selection</a>&amp; s) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">double</span> getSlotHeight() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordtype">void</span> setSlotHeight(<span class="keywordtype">double</span>) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_inlets.html">Process::Inlets</a>&amp; inlets() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_inlets; }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_outlets.html">Process::Outlets</a>&amp; outlets() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_outlets; }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> loadPreset(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Preset</a>&amp; preset);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_process_1_1_preset.html">Preset</a> savePreset() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">virtual</span> std::vector&lt;Process::Preset&gt; builtinPresets() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// Called when an ancestor was moved in the timeline</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ancestorStartDateChanged();</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ancestorTempoChanged();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> forEachControl(</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      smallfun::function&lt;<span class="keywordtype">void</span>(<a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>&amp;, <span class="keyword">const</span> ossia::value&amp;)&gt;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> mapExternalFiles(<a class="code hl_class" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a>&amp; map);</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> startOffset() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_startOffset; }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keywordtype">void</span> setStartOffset(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keywordtype">void</span> startOffsetChanged(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b)</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, startOffsetChanged, b)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  PROPERTY(</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>,</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      startOffset W_READ startOffset W_WRITE setStartOffset W_NOTIFY startOffsetChanged)</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> loopDuration() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loopDuration; }</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordtype">void</span> setLoopDuration(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b);</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="keywordtype">void</span> loopDurationChanged(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b)</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, loopDurationChanged, b)</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  PROPERTY(</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>, loopDuration W_READ loopDuration W_WRITE setLoopDuration W_NOTIFY</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                   loopDurationChanged)</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCreatingControls(<span class="keywordtype">bool</span> ok);</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="keywordtype">bool</span> creatingControls() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordtype">void</span> creatingControlsChanged(<span class="keywordtype">bool</span> b)</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, creatingControlsChanged, b)</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  PROPERTY(</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      <span class="keywordtype">bool</span>, creatingControls W_READ creatingControls W_WRITE setCreatingControls W_NOTIFY</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                creatingControlsChanged)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">// FIXME ugh</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  QWidget* scriptUI{};</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  QWidget* externalUI{};</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">  201</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">executing</a>() const noexcept { <span class="keywordflow">return</span> m_executing; }</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordtype">void</span> setExecuting(<span class="keywordtype">bool</span> v);</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordtype">void</span> startExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, startExecution)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordtype">void</span> stopExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, stopExecution)</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">void</span> resetExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, resetExecution)</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordtype">void</span> durationChanged(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, durationChanged, arg_1)</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">void</span> useParentDurationChanged(<span class="keywordtype">bool</span> arg_1)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, useParentDurationChanged, arg_1)</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">void</span> slotHeightChanged(<span class="keywordtype">double</span> arg_1)</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, slotHeightChanged, arg_1)</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">void</span> prettyNameChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, prettyNameChanged)</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordtype">void</span> inletsChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, inletsChanged)</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordtype">void</span> outletsChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, outletsChanged)</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordtype">void</span> controlAdded(const <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&gt;&amp; arg_1)</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlAdded, arg_1)</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="keywordtype">void</span> controlRemoved(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&amp; arg_1)</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlRemoved, arg_1)</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordtype">void</span> controlOutletAdded(const <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&gt;&amp; arg_1)</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlOutletAdded, arg_1)</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordtype">void</span> controlOutletRemoved(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&amp; arg_1)</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlOutletRemoved, arg_1)</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keywordtype">void</span> benchmark(<span class="keywordtype">double</span> arg_1) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, benchmark, arg_1)</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> externalUIVisible(<span class="keywordtype">bool</span> v) const</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, externalUIVisible, v)</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">void</span> scriptUIVisible(<span class="keywordtype">bool</span> v) const</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, scriptUIVisible, v)</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">void</span> flagsChanged() const</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, flagsChanged)</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>protected:</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="comment">// Used to scale the process.</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="comment">// This should be commutative :</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="comment">//   setDurationWithScale(2); setDurationWithScale(3);</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="comment">// yields the same result as :</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="comment">//   setDurationWithScale(3); setDurationWithScale(2);</span></div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  virtual <span class="keywordtype">void</span> setDurationAndScale(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="comment">// Does nothing if newDuration &lt; currentDuration</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  virtual <span class="keywordtype">void</span> setDurationAndGrow(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="comment">// Does nothing if newDuration &gt; currentDuration</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  virtual <span class="keywordtype">void</span> setDurationAndShrink(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_struct" href="struct_process_1_1_inlets.html">Inlets</a> m_inlets;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_struct" href="struct_process_1_1_outlets.html">Outlets</a> m_outlets;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>private:</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_duration{};</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordtype">double</span> m_slotHeight{}; </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_startOffset{};</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_loopDuration{};</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  QPointF m_position{};</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  QSizeF m_size{};</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="keywordtype">bool</span> m_loops{};</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keywordtype">bool</span> m_executing{};</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> m_foldMode{FoldMode::Auto};</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>};</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="comment">// Magnetism</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keyword">virtual</span> std::optional&lt;Process::MagneticInfo&gt;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  magneticPosition(<span class="keyword">const</span> QObject* o, <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> t) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="comment">// Clip duration things</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordtype">bool</span> loops() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loops; }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">void</span> setLoops(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordtype">void</span> loopsChanged(<span class="keywordtype">bool</span> b) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, loopsChanged, b)</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  PROPERTY(<span class="keywordtype">bool</span>, loops W_READ loops W_WRITE setLoops W_NOTIFY loopsChanged)</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> startOffset() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_startOffset; }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keywordtype">void</span> setStartOffset(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="keywordtype">void</span> startOffsetChanged(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, startOffsetChanged, b)</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  PROPERTY(</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>,</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      startOffset W_READ startOffset W_WRITE setStartOffset W_NOTIFY startOffsetChanged)</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> loopDuration() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loopDuration; }</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordtype">void</span> setLoopDuration(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">void</span> loopDurationChanged(<a class="code hl_struct" href="struct_time_val.html">TimeVal</a> b)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, loopDurationChanged, b)</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  PROPERTY(</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>, loopDuration W_READ loopDuration W_WRITE setLoopDuration W_NOTIFY</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                   loopDurationChanged)</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setCreatingControls(<span class="keywordtype">bool</span> ok);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordtype">bool</span> creatingControls() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordtype">void</span> creatingControlsChanged(<span class="keywordtype">bool</span> b)</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, creatingControlsChanged, b)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  PROPERTY(</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keywordtype">bool</span>, creatingControls W_READ creatingControls W_WRITE setCreatingControls W_NOTIFY</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                creatingControlsChanged)</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="comment">// FIXME ugh</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  QWidget* scriptUI{};</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  QWidget* externalUI{};</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">  211</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">executing</a>() const noexcept { <span class="keywordflow">return</span> m_executing; }</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">void</span> setExecuting(<span class="keywordtype">bool</span> v);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keywordtype">void</span> startExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, startExecution)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">void</span> stopExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, stopExecution)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keywordtype">void</span> resetExecution() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, resetExecution)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordtype">void</span> durationChanged(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, durationChanged, arg_1)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordtype">void</span> useParentDurationChanged(<span class="keywordtype">bool</span> arg_1)</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, useParentDurationChanged, arg_1)</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="keywordtype">void</span> slotHeightChanged(<span class="keywordtype">double</span> arg_1)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, slotHeightChanged, arg_1)</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">void</span> prettyNameChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, prettyNameChanged)</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keywordtype">void</span> inletsChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, inletsChanged)</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">void</span> outletsChanged() E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, outletsChanged)</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> controlAdded(const <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&gt;&amp; arg_1)</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlAdded, arg_1)</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordtype">void</span> controlRemoved(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&amp; arg_1)</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlRemoved, arg_1)</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">void</span> controlOutletAdded(const <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&gt;&amp; arg_1)</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlOutletAdded, arg_1)</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">void</span> controlOutletRemoved(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_process_1_1_port.html">Port</a>&amp; arg_1)</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, controlOutletRemoved, arg_1)</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="keywordtype">void</span> benchmark(<span class="keywordtype">double</span> arg_1) E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, benchmark, arg_1)</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">void</span> externalUIVisible(<span class="keywordtype">bool</span> v) const</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, externalUIVisible, v)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">void</span> scriptUIVisible(<span class="keywordtype">bool</span> v) const</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, scriptUIVisible, v)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordtype">void</span> flagsChanged() const</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>      E_SIGNAL(SCORE_LIB_PROCESS_EXPORT, flagsChanged)</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>protected:</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="comment">// Used to scale the process.</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="comment">// This should be commutative :</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="comment">//   setDurationWithScale(2); setDurationWithScale(3);</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="comment">// yields the same result as :</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="comment">//   setDurationWithScale(3); setDurationWithScale(2);</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  virtual <span class="keywordtype">void</span> setDurationAndScale(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="comment">// Does nothing if newDuration &lt; currentDuration</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  virtual <span class="keywordtype">void</span> setDurationAndGrow(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="comment">// Does nothing if newDuration &gt; currentDuration</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  virtual <span class="keywordtype">void</span> setDurationAndShrink(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_struct" href="struct_process_1_1_inlets.html">Inlets</a> m_inlets;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_struct" href="struct_process_1_1_outlets.html">Outlets</a> m_outlets;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>private:</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_duration{};</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">double</span> m_slotHeight{}; </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_startOffset{};</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_loopDuration{};</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  QPointF m_position{};</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  QSizeF m_size{};</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordtype">bool</span> m_loops{};</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keywordtype">bool</span> m_executing{};</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <a class="code hl_enumeration" href="namespace_process.html#a89e8f71b95e3a20a26541eaefa50feac">FoldMode</a> m_foldMode{FoldMode::Auto};</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>};</div>
 </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>ProcessModel* parentProcess(QObject* obj) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="keyword">const</span> ProcessModel* parentProcess(<span class="keyword">const</span> QObject* obj) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>SCORE_LIB_PROCESS_EXPORT</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>QString processLocalTreeAddress(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>}</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>, <span class="stringliteral">&quot;Process&quot;</span>)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>W_REGISTER_ARGTYPE(OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::FoldMode)</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>W_REGISTER_ARGTYPE(QPointer&lt;const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>ProcessModel* parentProcess(QObject* obj) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="keyword">const</span> ProcessModel* parentProcess(<span class="keyword">const</span> QObject* obj) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>SCORE_LIB_PROCESS_EXPORT</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>QString processLocalTreeAddress(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>, <span class="stringliteral">&quot;Process&quot;</span>)</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>W_REGISTER_ARGTYPE(OptionalId&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>Q_DECLARE_METATYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::FoldMode)</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>W_REGISTER_ARGTYPE(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel*)</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>W_REGISTER_ARGTYPE(QPointer&lt;const <a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>W_REGISTER_ARGTYPE(QPointer&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ProcessModel&gt;)</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>Q_DECLARE_METATYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>W_REGISTER_ARGTYPE(<a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&gt;)</div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:423</div></div>
 <div class="ttc" id="aclass_process_1_1_control_inlet_html"><div class="ttname"><a href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:206</div></div>
+<div class="ttc" id="aclass_process_1_1_external_file_map_html"><div class="ttname"><a href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a></div><div class="ttdoc">Collects — and in the same pass rewrites — the files a document references.</div><div class="ttdef"><b>Definition</b> ExternalFiles.hpp:80</div></div>
 <div class="ttc" id="aclass_process_1_1_inlet_html"><div class="ttname"><a href="class_process_1_1_inlet.html">Process::Inlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:180</div></div>
 <div class="ttc" id="aclass_process_1_1_outlet_html"><div class="ttname"><a href="class_process_1_1_outlet.html">Process::Outlet</a></div><div class="ttdef"><b>Definition</b> Port.hpp:275</div></div>
 <div class="ttc" id="aclass_process_1_1_port_html"><div class="ttname"><a href="class_process_1_1_port.html">Process::Port</a></div><div class="ttdef"><b>Definition</b> Port.hpp:103</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:74</div></div>
-<div class="ttc" id="aclass_process_1_1_process_model_html_afd358c3ac7b8106e2d3fb36ee748f734"><div class="ttname"><a href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">Process::ProcessModel::executing</a></div><div class="ttdeci">bool executing() const noexcept</div><div class="ttdoc">Execution.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:201</div></div>
+<div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:75</div></div>
+<div class="ttc" id="aclass_process_1_1_process_model_html_afd358c3ac7b8106e2d3fb36ee748f734"><div class="ttname"><a href="class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734">Process::ProcessModel::executing</a></div><div class="ttdeci">bool executing() const noexcept</div><div class="ttdoc">Execution.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:211</div></div>
 <div class="ttc" id="aclass_process_state_data_interface_html"><div class="ttname"><a href="class_process_state_data_interface.html">ProcessStateDataInterface</a></div><div class="ttdef"><b>Definition</b> ProcessStateDataInterface.hpp:24</div></div>
 <div class="ttc" id="aclass_selectable_html"><div class="ttname"><a href="class_selectable.html">Selectable</a></div><div class="ttdoc">The Selectable class.</div><div class="ttdef"><b>Definition</b> Selectable.hpp:14</div></div>
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition</b> Selection.hpp:12</div></div>

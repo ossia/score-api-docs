@@ -9,6 +9,7 @@ var classscore_1_1_g_u_i_application_plugin =
     [ "on_closeDocument", "classscore_1_1_g_u_i_application_plugin.html#acfa0583d5e4f3c1454ef24ef62eef57d", null ],
     [ "on_createdDocument", "classscore_1_1_g_u_i_application_plugin.html#aff4905cf17ebfa809a129c858736e44e", null ],
     [ "on_documentChanged", "classscore_1_1_g_u_i_application_plugin.html#a45e268c5b923805dc82b45af79fe1e96", null ],
+    [ "on_documentSaveAs", "classscore_1_1_g_u_i_application_plugin.html#afd307780e3d3bcfe5ac607a42bfee574", null ],
     [ "on_initDocument", "classscore_1_1_g_u_i_application_plugin.html#a8eaed2a17567ffc080b2911a0755ae86", null ],
     [ "on_keyPressEvent", "classscore_1_1_g_u_i_application_plugin.html#ace5d7a442a0474882ef0b1d8812c262a", null ],
     [ "on_keyReleaseEvent", "classscore_1_1_g_u_i_application_plugin.html#a05683f211b55c61f104b5a6004db9240", null ],

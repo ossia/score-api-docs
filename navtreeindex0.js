@@ -92,6 +92,7 @@ var NAVTREEINDEX0 =
 "_audio_preview_executor_8hpp_source.html":[13,0,0,2,6,0,8],
 "_audio_recorder_8hpp_source.html":[13,0,0,2,8,2,2],
 "_audio_tick_8hpp_source.html":[13,0,0,2,6,0,9],
+"_audio_trimmer_8hpp_source.html":[13,0,0,2,24,0,10],
 "_automatable_factory_8hpp_source.html":[13,0,0,2,3,4,1,0],
 "_automation_colors_8hpp_source.html":[13,0,0,2,7,0,3],
 "_automation_command_factory_8hpp_source.html":[13,0,0,2,7,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
 "_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11],
-"_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2],
-"_cpu_filter_node_8hpp_source.html":[13,0,0,2,8,3,3]
+"_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2]
 };

@@ -214,6 +214,8 @@ const <a class="el" href="struct_j_s_1_1_qml_source.html">QmlSource</a> &amp;&#1
 <tr class="memitem:a0b9f07f52e393b811fa67a13417d0f60" id="r_a0b9f07f52e393b811fa67a13417d0f60"><td class="memItemLeft" align="right" valign="top"><a id="a0b9f07f52e393b811fa67a13417d0f60" name="a0b9f07f52e393b811fa67a13417d0f60"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>programChanged</b> ()</td></tr>
 <tr class="separator:a0b9f07f52e393b811fa67a13417d0f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe7eba49661b2632237a6f58ac8ca74" id="r_a5fe7eba49661b2632237a6f58ac8ca74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#a5fe7eba49661b2632237a6f58ac8ca74">mapExternalFiles</a> (<a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;map) override</td></tr>
+<tr class="separator:a5fe7eba49661b2632237a6f58ac8ca74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3ffc548de0cebd34d2f9cae2adf9681" id="r_aa3ffc548de0cebd34d2f9cae2adf9681"><td class="memItemLeft" align="right" valign="top"><a id="aa3ffc548de0cebd34d2f9cae2adf9681" name="aa3ffc548de0cebd34d2f9cae2adf9681"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>uiToExecution</b> (const QVariant &amp;v)</td></tr>
 <tr class="separator:aa3ffc548de0cebd34d2f9cae2adf9681"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -603,6 +605,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
+<a id="a5fe7eba49661b2632237a6f58ac8ca74" name="a5fe7eba49661b2632237a6f58ac8ca74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fe7eba49661b2632237a6f58ac8ca74">&#9670;&#160;</a></span>mapExternalFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::ProcessModel::mapExternalFiles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Report — and let the caller relocate — every file this process references, for project consolidation. See <a class="el" href="_external_files_8hpp_source.html">Process/ExternalFiles.hpp</a>.</p>
+<p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">Process::ProcessModel</a>.</p>
 
 </div>
 </div>

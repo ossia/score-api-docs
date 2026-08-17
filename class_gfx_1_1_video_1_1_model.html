@@ -146,6 +146,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPath</b> (const QS
 <tr class="memitem:a41e1f2737145bdd5212d18ed0b4a5446" id="r_a41e1f2737145bdd5212d18ed0b4a5446"><td class="memItemLeft" align="right" valign="top"><a id="a41e1f2737145bdd5212d18ed0b4a5446" name="a41e1f2737145bdd5212d18ed0b4a5446"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>pathChanged</b> (const QString &amp;f)</td></tr>
 <tr class="separator:a41e1f2737145bdd5212d18ed0b4a5446"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda4ecf740ddf79ac04a99e3fde9ac1c" id="r_afda4ecf740ddf79ac04a99e3fde9ac1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_video_1_1_model.html#afda4ecf740ddf79ac04a99e3fde9ac1c">mapExternalFiles</a> (<a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;map) override</td></tr>
+<tr class="separator:afda4ecf740ddf79ac04a99e3fde9ac1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4031233ecadbea4bdad92d98ce84cbc7" id="r_a4031233ecadbea4bdad92d98ce84cbc7"><td class="memItemLeft" align="right" valign="top"><a id="a4031233ecadbea4bdad92d98ce84cbc7" name="a4031233ecadbea4bdad92d98ce84cbc7"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>nativeTempo</b> () const noexcept</td></tr>
 <tr class="separator:a4031233ecadbea4bdad92d98ce84cbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -542,6 +544,37 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_outlets</b></td></tr>
 <tr class="separator:a492e4ff09bb020871101ea4fbedb1f80 inherit pro_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afda4ecf740ddf79ac04a99e3fde9ac1c" name="afda4ecf740ddf79ac04a99e3fde9ac1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afda4ecf740ddf79ac04a99e3fde9ac1c">&#9670;&#160;</a></span>mapExternalFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Model::mapExternalFiles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Report — and let the caller relocate — every file this process references, for project consolidation. See <a class="el" href="_external_files_8hpp_source.html">Process/ExternalFiles.hpp</a>.</p>
+<p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_video_2_process_8hpp_source.html">score-plugin-gfx/Gfx/Video/Process.hpp</a></li>
 <li><b>score-plugin-gfx/Gfx/Video/Process.cpp</b></li>

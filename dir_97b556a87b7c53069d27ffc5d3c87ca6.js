@@ -24,6 +24,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "ObjectMatches.hpp", "_object_matches_8hpp_source.html", null ],
     [ "PointerLock.hpp", "_pointer_lock_8hpp_source.html", null ],
     [ "PointerLockX11.hpp", "_pointer_lock_x11_8hpp_source.html", null ],
+    [ "ProjectFiles.hpp", "_project_files_8hpp_source.html", null ],
     [ "QMapHelper.hpp", "_q_map_helper_8hpp.html", "_q_map_helper_8hpp" ],
     [ "RandomNameProvider.hpp", "_random_name_provider_8hpp_source.html", null ],
     [ "RecursiveWatch.hpp", "_recursive_watch_8hpp_source.html", null ],
@@ -33,5 +34,6 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "Timers.hpp", "_timers_8hpp_source.html", null ],
     [ "Unused.hpp", "_unused_8hpp_source.html", null ],
     [ "Version.hpp", "_version_8hpp_source.html", null ],
-    [ "WinMainToMain.hpp", "_win_main_to_main_8hpp_source.html", null ]
+    [ "WinMainToMain.hpp", "_win_main_to_main_8hpp_source.html", null ],
+    [ "Zip.hpp", "_zip_8hpp_source.html", null ]
 ];

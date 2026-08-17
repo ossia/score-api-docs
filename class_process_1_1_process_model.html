@@ -280,6 +280,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ancestorTempo
 <tr class="memitem:a0ee8238dd59cfbe7a8a569d636576d67" id="r_a0ee8238dd59cfbe7a8a569d636576d67"><td class="memItemLeft" align="right" valign="top"><a id="a0ee8238dd59cfbe7a8a569d636576d67" name="a0ee8238dd59cfbe7a8a569d636576d67"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forEachControl</b> (smallfun::function&lt; void(<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;, const ossia::value &amp;)&gt;) const</td></tr>
 <tr class="separator:a0ee8238dd59cfbe7a8a569d636576d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449468f1c8afa5aa82ef3b5e4aa20618" id="r_a449468f1c8afa5aa82ef3b5e4aa20618"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">mapExternalFiles</a> (<a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;map)</td></tr>
+<tr class="separator:a449468f1c8afa5aa82ef3b5e4aa20618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed1d6015e00065f9914edc79e13e9e3" id="r_afed1d6015e00065f9914edc79e13e9e3"><td class="memItemLeft" align="right" valign="top"><a id="afed1d6015e00065f9914edc79e13e9e3" name="afed1d6015e00065f9914edc79e13e9e3"></a>
 virtual std::optional&lt; <a class="el" href="struct_process_1_1_magnetic_info.html">Process::MagneticInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>magneticPosition</b> (const QObject *o, const <a class="el" href="struct_time_val.html">TimeVal</a> t) const noexcept</td></tr>
 <tr class="separator:afed1d6015e00065f9914edc79e13e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -534,6 +536,36 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 
 </div>
 </div>
+<a id="a449468f1c8afa5aa82ef3b5e4aa20618" name="a449468f1c8afa5aa82ef3b5e4aa20618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a449468f1c8afa5aa82ef3b5e4aa20618">&#9670;&#160;</a></span>mapExternalFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::ProcessModel::mapExternalFiles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Report — and let the caller relocate — every file this process references, for project consolidation. See <a class="el" href="_external_files_8hpp_source.html">Process/ExternalFiles.hpp</a>.</p>
+<p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
+
+<p>Reimplemented in <a class="el" href="class_gfx_1_1_video_1_1_model.html#afda4ecf740ddf79ac04a99e3fde9ac1c">Gfx::Video::Model</a>, <a class="el" href="class_j_s_1_1_process_model.html#a5fe7eba49661b2632237a6f58ac8ca74">JS::ProcessModel</a>, <a class="el" href="class_media_1_1_sound_1_1_process_model.html#a4e5952bec75c2a41cb865d1d785f37a7">Media::Sound::ProcessModel</a>, <a class="el" href="class_pd_1_1_process_model.html#ada52190ffcf2a86de51c265e3d25ea9a">Pd::ProcessModel</a>, and <a class="el" href="classvst3_1_1_model.html#afda4ecf740ddf79ac04a99e3fde9ac1c">vst3::Model</a>.</p>
+
+</div>
+</div>
 <a id="a5b2ed6f42effa546e738b6d991a6e3d5" name="a5b2ed6f42effa546e738b6d991a6e3d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b2ed6f42effa546e738b6d991a6e3d5">&#9670;&#160;</a></span>selectableChildren()</h2>
 
@@ -602,6 +634,7 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-lib-process_2_process_2_process_8hpp_source.html">score-lib-process/Process/Process.hpp</a></li>
+<li><b>ExternalFiles.cpp</b></li>
 <li><b>score-lib-process/Process/Process.cpp</b></li>
 </ul>
 </div><!-- contents -->

@@ -11,5 +11,7 @@ var searchData=
   ['displaynameforport_8',['displayNameForPort',['../namespace_process.html#a535ae95f6170e17fce20ef59f292c707',1,'Process']]],
   ['document_9',['document',['../classscore_1_1_panel_delegate.html#aece2f08d7c2418a7ad2db0a596d5bbcf',1,'score::PanelDelegate']]],
   ['documentbackupmanager_10',['documentbackupmanager',['../classscore_1_1_document_backup_manager.html#a73ec4b51126b8eceb6417abce6c0bdbd',1,'score::DocumentBackupManager::DocumentBackupManager(const QByteArray &amp;data, Document &amp;doc)'],['../classscore_1_1_document_backup_manager.html#a3ce83b417bd5675790184b16772a0b56',1,'score::DocumentBackupManager::DocumentBackupManager(const score::RestorableDocument &amp;prev, Document &amp;doc)']]],
-  ['dumptree_11',['dumpTree',['../namespace_device.html#a8d0d2923bc93c55003d111113918c390',1,'Device']]]
+  ['documentfolder_11',['documentFolder',['../structscore_1_1_path_roots.html#a6fa57a064fc6fd1a1182ddff5a6c1f37',1,'score::PathRoots']]],
+  ['dumptree_12',['dumpTree',['../namespace_device.html#a8d0d2923bc93c55003d111113918c390',1,'Device']]],
+  ['duration_13',['duration',['../class_process_1_1_media_trimmer.html#a6723f214199fcd4be2add2904947e02b',1,'Process::MediaTrimmer::duration()'],['../class_media_1_1_audio_trimmer.html#af3c54421a3468e61ed0471865495a359',1,'Media::AudioTrimmer::duration()']]]
 ];

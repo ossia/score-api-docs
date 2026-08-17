@@ -325,6 +325,7 @@ var hierarchy =
       [ "Media::ChangeAudioFile", "class_media_1_1_change_audio_file.html", null ],
       [ "Media::ChangeSteps", "class_media_1_1_change_steps.html", null ],
       [ "Media::LoadProcessedAudioFile", "class_media_1_1_load_processed_audio_file.html", null ],
+      [ "Media::RelocateAudioFile", "class_media_1_1_relocate_audio_file.html", null ],
       [ "Midi::AddNote", "class_midi_1_1_add_note.html", null ],
       [ "Midi::AddNotes", "class_midi_1_1_add_notes.html", null ],
       [ "Midi::ChangeNotesVelocity", "class_midi_1_1_change_notes_velocity.html", null ],
@@ -448,7 +449,11 @@ var hierarchy =
         [ "Midi::RescaleAllMidi", "class_midi_1_1_rescale_all_midi.html", null ],
         [ "Nodal::DropNodesMacro", "class_nodal_1_1_drop_nodes_macro.html", null ],
         [ "Nodal::RemoveNodes", "class_nodal_1_1_remove_nodes.html", null ],
+        [ "Process::ConsolidateProjectFiles", "class_process_1_1_consolidate_project_files.html", null ],
         [ "Process::MoveNodesMacro", "class_process_1_1_move_nodes_macro.html", null ],
+        [ "Process::ReanchorProjectFiles", "class_process_1_1_reanchor_project_files.html", null ],
+        [ "Process::RelinkProjectFiles", "class_process_1_1_relink_project_files.html", null ],
+        [ "Process::TrimProjectMedia", "class_process_1_1_trim_project_media.html", null ],
         [ "Recording::Record", "class_recording_1_1_record.html", null ],
         [ "Scenario::Command::AddMultipleProcessesToIntervalMacro", "class_scenario_1_1_command_1_1_add_multiple_processes_to_interval_macro.html", null ],
         [ "Scenario::Command::AddMultipleProcessesToMultipleIntervalsMacro", "class_scenario_1_1_command_1_1_add_multiple_processes_to_multiple_intervals_macro.html", null ],
@@ -494,6 +499,7 @@ var hierarchy =
         [ "Pd::SetAudioOuts", "class_pd_1_1_set_audio_outs.html", null ],
         [ "Pd::SetMidiIn", "class_pd_1_1_set_midi_in.html", null ],
         [ "Pd::SetMidiOut", "class_pd_1_1_set_midi_out.html", null ],
+        [ "Process::RelocateFilePath", "class_process_1_1_relocate_file_path.html", null ],
         [ "Scenario::Command::SetOffsetBehavior", "class_scenario_1_1_command_1_1_set_offset_behavior.html", null ]
       ] ],
       [ "score::PropertyCommand_T< T >", "classscore_1_1_property_command___t.html", null ],
@@ -646,6 +652,7 @@ var hierarchy =
     [ "Gfx::GPhoto2::gphoto2_camera::ConfigChange", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera_1_1_config_change.html", null ],
     [ "Gfx::GPhoto2::gphoto2_camera::ConfigEntry", "struct_gfx_1_1_g_photo2_1_1gphoto2__camera_1_1_config_entry.html", null ],
     [ "score::gfx::OutputNode::Configuration", "structscore_1_1gfx_1_1_output_node_1_1_configuration.html", null ],
+    [ "score::ConsolidateOptions", "structscore_1_1_consolidate_options.html", null ],
     [ "Scenario::ConstrainedDisplacementPolicy", "class_scenario_1_1_constrained_displacement_policy.html", null ],
     [ "Container< std::unique_ptr< T >, std::allocator< std::unique_ptr< T > > >", null, [
       [ "PtrContainer< Container, T, U >", "class_ptr_container.html", null ]
@@ -854,6 +861,8 @@ var hierarchy =
       [ "TreeNode< ExprData >", "class_tree_node.html", null ]
     ] ],
     [ "avnd_tools::detail::extent_generator< Dim >", "structavnd__tools_1_1detail_1_1extent__generator.html", null ],
+    [ "Process::ExternalFileMap", "class_process_1_1_external_file_map.html", null ],
+    [ "Process::ExternalFileRef", "struct_process_1_1_external_file_ref.html", null ],
     [ "Threedim::extra_attribute", "struct_threedim_1_1extra__attribute.html", null ],
     [ "Threedim::ExtractBuffer", "class_threedim_1_1_extract_buffer.html", null ],
     [ "Face", null, [
@@ -931,7 +940,11 @@ var hierarchy =
       [ "Threedim::VoxelLoader::ins::vox_t", "struct_threedim_1_1_voxel_loader_1_1ins_1_1vox__t.html", null ]
     ] ],
     [ "WidgetFactory::FileChooser", "struct_widget_factory_1_1_file_chooser.html", null ],
+    [ "Process::FileEntry", "struct_process_1_1_file_entry.html", null ],
+    [ "Process::FileIndex", "class_process_1_1_file_index.html", null ],
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
+    [ "score::FilePlacement", "classscore_1_1_file_placement.html", null ],
+    [ "Process::FileReport", "struct_process_1_1_file_report.html", null ],
     [ "WidgetFactory::FixedNormalizer< Norm_T >", "struct_widget_factory_1_1_fixed_normalizer.html", null ],
     [ "Protocols::Artnet::Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
     [ "FixtureData", null, [
@@ -1142,6 +1155,7 @@ var hierarchy =
       [ "Gfx::ApplicationPlugin", "class_gfx_1_1_application_plugin.html", null ],
       [ "JS::ApplicationPlugin", "class_j_s_1_1_application_plugin.html", null ],
       [ "Jit::ApplicationPlugin", "struct_jit_1_1_application_plugin.html", null ],
+      [ "Process::ProjectFilesApplicationPlugin", "class_process_1_1_project_files_application_plugin.html", null ],
       [ "Recording::ApplicationPlugin", "class_recording_1_1_application_plugin.html", null ],
       [ "RemoteControl::ApplicationPlugin", "class_remote_control_1_1_application_plugin.html", null ],
       [ "Scenario::ScenarioApplicationPlugin", "class_scenario_1_1_scenario_application_plugin.html", null ],
@@ -1241,8 +1255,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1511,6 +1525,9 @@ var hierarchy =
       [ "Process::LoadPresetCommandFactory", "class_process_1_1_load_preset_command_factory.html", [
         [ "Scenario::Command::LoadPresetCommandFactory", "class_scenario_1_1_command_1_1_load_preset_command_factory.html", null ]
       ] ],
+      [ "Process::MediaTrimmer", "class_process_1_1_media_trimmer.html", [
+        [ "Media::AudioTrimmer", "class_media_1_1_audio_trimmer.html", null ]
+      ] ],
       [ "Process::OfflineAction", "class_process_1_1_offline_action.html", null ],
       [ "Process::PortFactory", "class_process_1_1_port_factory.html", [
         [ "Dataflow::AutomatablePortFactory", "class_dataflow_1_1_automatable_port_factory.html", [
@@ -1700,6 +1717,9 @@ var hierarchy =
           [ "Process::LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ]
         ] ],
         [ "score::InterfaceList< LoadPresetCommandFactory >", "classscore_1_1_interface_list.html", null ],
+        [ "score::InterfaceList< MediaTrimmer >", "classscore_1_1_interface_list.html", [
+          [ "Process::MediaTrimmerList", "class_process_1_1_media_trimmer_list.html", null ]
+        ] ],
         [ "score::InterfaceList< PortFactory >", "classscore_1_1_interface_list.html", [
           [ "Process::PortFactoryList", "class_process_1_1_port_factory_list.html", null ]
         ] ],
@@ -1914,6 +1934,7 @@ var hierarchy =
     [ "avnd_tools::PatternCombiner::maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
     [ "Protocols::MCUSpecificSettings", "struct_protocols_1_1_m_c_u_specific_settings.html", null ],
     [ "score::libav::MediaInfo", "structscore_1_1libav_1_1_media_info.html", null ],
+    [ "Process::MediaRange", "struct_process_1_1_media_range.html", null ],
     [ "Gfx::ShaderSource::MemberSpec", "struct_gfx_1_1_shader_source_1_1_member_spec.html", null ],
     [ "JS::QmlSource::MemberSpec", "struct_j_s_1_1_qml_source_1_1_member_spec.html", null ],
     [ "score::Menu", "classscore_1_1_menu.html", null ],
@@ -2383,6 +2404,7 @@ var hierarchy =
     [ "Scenario::PathDetectorState", "struct_scenario_1_1_path_detector_state.html", null ],
     [ "WidgetFactory::PathGeneratorXY", "struct_widget_factory_1_1_path_generator_x_y.html", null ],
     [ "score::PathInfo", "structscore_1_1_path_info.html", null ],
+    [ "score::PathRoots", "structscore_1_1_path_roots.html", null ],
     [ "Library::CategoryPaths::Paths", "struct_library_1_1_category_paths_1_1_paths.html", null ],
     [ "Patternist::Pattern", "struct_patternist_1_1_pattern.html", null ],
     [ "avnd_tools::PatternObject", "structavnd__tools_1_1_pattern_object.html", [
@@ -2405,6 +2427,7 @@ var hierarchy =
     [ "Protocols::PixelGroup", "struct_protocols_1_1_pixel_group.html", null ],
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
+    [ "score::FilePlacement::Placement", "structscore_1_1_file_placement_1_1_placement.html", null ],
     [ "Threedim::Plane", "struct_threedim_1_1_plane.html", null ],
     [ "score::gfx::I420Encoder::PlaneResources", "structscore_1_1gfx_1_1_i420_encoder_1_1_plane_resources.html", null ],
     [ "avnd_tools::DeviceRecorder::playback_message", "structavnd__tools_1_1_device_recorder_1_1playback__message.html", null ],
@@ -2626,6 +2649,7 @@ var hierarchy =
     [ "Gfx::ProgramCache", "struct_gfx_1_1_program_cache.html", null ],
     [ "WidgetFactory::ProgramEdit", "struct_widget_factory_1_1_program_edit.html", null ],
     [ "score::ProjectSettings", "classscore_1_1_project_settings.html", null ],
+    [ "Process::ProjectTarget", "struct_process_1_1_project_target.html", null ],
     [ "ossia::net::protocol_base", null, [
       [ "Gfx::GPhoto2::gphoto2_protocol", "class_gfx_1_1_g_photo2_1_1gphoto2__protocol.html", null ],
       [ "Gfx::GStreamer::gstreamer_protocol", "class_gfx_1_1_g_streamer_1_1gstreamer__protocol.html", null ],
@@ -2781,15 +2805,19 @@ var hierarchy =
       [ "Explorer::DeviceEditDialog", "class_explorer_1_1_device_edit_dialog.html", null ],
       [ "Explorer::LearnDialog", "class_explorer_1_1_learn_dialog.html", null ],
       [ "LV2::LV2PluginChooserDialog", "struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html", null ],
+      [ "Process::MediaTrimDialog", "class_process_1_1_media_trim_dialog.html", null ],
+      [ "Process::MissingFilesDialog", "class_process_1_1_missing_files_dialog.html", null ],
       [ "Process::MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", [
         [ "Process::ProcessMultiScriptEditDialog< Process_T, Property_T >", "class_process_1_1_process_multi_script_edit_dialog.html", null ]
       ] ],
+      [ "Process::ProjectConsolidationDialog", "class_process_1_1_project_consolidation_dialog.html", null ],
       [ "Process::ScriptDialog", "class_process_1_1_script_dialog.html", [
         [ "Process::ProcessScriptEditDialog< Process_T, Property_T, Spec_T >", "class_process_1_1_process_script_edit_dialog.html", null ],
         [ "Spline3D::GeneratorDialog", "class_spline3_d_1_1_generator_dialog.html", null ],
         [ "Spline::GeneratorDialog", "class_spline_1_1_generator_dialog.html", null ],
         [ "WidgetFactory::ProgramPortScriptDialog", "struct_widget_factory_1_1_program_port_script_dialog.html", null ]
       ] ],
+      [ "Process::UnusedFilesDialog", "class_process_1_1_unused_files_dialog.html", null ],
       [ "Protocols::AddFixtureDialog", "class_protocols_1_1_add_fixture_dialog.html", null ],
       [ "Protocols::AddLEDStripDialog", "class_protocols_1_1_add_l_e_d_strip_dialog.html", null ],
       [ "Scenario::AddProcessDialog", "class_scenario_1_1_add_process_dialog.html", null ],
@@ -3500,6 +3528,7 @@ var hierarchy =
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "Process::ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
+      [ "Process::ProjectFilesApplicationPlugin", "class_process_1_1_project_files_application_plugin.html", null ],
       [ "Process::RemoteControlInterface", "class_process_1_1_remote_control_interface.html", [
         [ "RemoteControl::Controller::RemoteControlImpl", "class_remote_control_1_1_controller_1_1_remote_control_impl.html", null ]
       ] ],
@@ -3856,6 +3885,9 @@ var hierarchy =
       [ "Protocols::FixtureTreeView", "class_protocols_1_1_fixture_tree_view.html", null ],
       [ "Scenario::MessageTreeView", "class_scenario_1_1_message_tree_view.html", null ],
       [ "Scenario::ObjectWidget", "class_scenario_1_1_object_widget.html", null ]
+    ] ],
+    [ "QTreeWidget", null, [
+      [ "Process::FileReportView", "class_process_1_1_file_report_view.html", null ]
     ] ],
     [ "avnd_tools::Queue", "structavnd__tools_1_1_queue.html", null ],
     [ "Execution::Queues", "struct_execution_1_1_queues.html", null ],
@@ -4402,6 +4434,7 @@ var hierarchy =
     [ "vcg::tri::TriMesh", null, [
       [ "Threedim::TMesh", "class_threedim_1_1_t_mesh.html", null ]
     ] ],
+    [ "Process::TrimOptions", "struct_process_1_1_trim_options.html", null ],
     [ "mpl::true_", null, [
       [ "boost::spirit::traits::is_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__container_3_01_q_string_01_4.html", null ]
     ] ],
@@ -4528,6 +4561,7 @@ var hierarchy =
     [ "State::Unit", "struct_state_1_1_unit.html", null ],
     [ "Path< Object >::UnsafeDynamicCreation", "struct_path_1_1_unsafe_dynamic_creation.html", null ],
     [ "unused_t", "structunused__t.html", null ],
+    [ "Process::UnusedFilesOptions", "struct_process_1_1_unused_files_options.html", null ],
     [ "Threedim::Update", "struct_threedim_1_1_update.html", null ],
     [ "oscr::update_control_in_value_in_ui< Node >", "structoscr_1_1update__control__in__value__in__ui.html", null ],
     [ "oscr::update_control_out_value_in_ui< Node >", "structoscr_1_1update__control__out__value__in__ui.html", null ],
@@ -4661,5 +4695,6 @@ var hierarchy =
     [ "ysfx_midi_event_t", null, [
       [ "YSFX::Executor::ysfx_midi_event_impl", "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html", null ]
     ] ],
+    [ "score::ZipEntry", "structscore_1_1_zip_entry.html", null ],
     [ "Scenario::ZPos", "class_scenario_1_1_z_pos.html", null ]
 ];

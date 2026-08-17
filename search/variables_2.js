@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['defaultoscport_0',['defaultOscPort',['../class_protocols_1_1_local_protocol_factory.html#a9b03ec1ac359ffa029fc0c997268200b',1,'Protocols::LocalProtocolFactory']]]
+  ['collectlibraryfiles_0',['collectLibraryFiles',['../structscore_1_1_consolidate_options.html#ad94af748bbbbff43531ca597736eaaff',1,'score::ConsolidateOptions']]],
+  ['copyneeded_1',['copyNeeded',['../struct_process_1_1_file_entry.html#a7951277ce03f0dd1c0bbbf4bde0b3380',1,'Process::FileEntry']]]
 ];

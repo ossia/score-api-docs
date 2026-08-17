@@ -14,7 +14,7 @@ var searchData=
   ['websocketview_11',['WebSocketView',['../class_web_socket_view.html',1,'']]],
   ['wheel_12',['Wheel',['../struct_protocols_1_1_wheel.html',1,'Protocols']]],
   ['wheelslot_13',['WheelSlot',['../struct_protocols_1_1_wheel_slot.html',1,'Protocols']]],
-  ['widget_14',['widget',['../class_mixer_1_1_panel_delegate.html#acdd57aaa4a7bec2ffe656476c192db80',1,'Mixer::PanelDelegate::widget()'],['../class_explorer_1_1_panel_delegate.html#ab5f39ddecf99252e7e3ab77338a56efc',1,'Explorer::PanelDelegate::widget()'],['../classscore_1_1_panel_delegate.html#a09ba76692fb54bf01887107aa6fbea93',1,'score::PanelDelegate::widget()'],['../classscore_1_1_helper_panel_delegate.html#a4e9304df762625b6ebf465871c7a5886',1,'score::HelperPanelDelegate::widget()'],['../classscore_1_1_messages_panel_delegate.html#ab16dc8216d020331a03478b276c80576',1,'score::MessagesPanelDelegate::widget()']]],
+  ['widget_14',['widget',['../class_explorer_1_1_panel_delegate.html#ab5f39ddecf99252e7e3ab77338a56efc',1,'Explorer::PanelDelegate::widget()'],['../classscore_1_1_panel_delegate.html#a09ba76692fb54bf01887107aa6fbea93',1,'score::PanelDelegate::widget()'],['../classscore_1_1_helper_panel_delegate.html#a4e9304df762625b6ebf465871c7a5886',1,'score::HelperPanelDelegate::widget()'],['../classscore_1_1_messages_panel_delegate.html#ab16dc8216d020331a03478b276c80576',1,'score::MessagesPanelDelegate::widget()'],['../class_mixer_1_1_panel_delegate.html#acdd57aaa4a7bec2ffe656476c192db80',1,'Mixer::PanelDelegate::widget()']]],
   ['widgetinletfactory_15',['WidgetInletFactory',['../struct_dataflow_1_1_widget_inlet_factory.html',1,'Dataflow']]],
   ['widgetinletfactory_3c_20oscr_3a_3acustomfloatcontrol_3c_20node_2c_20avnd_3a_3afield_5findex_3c_20n_20_3e_20_3e_2c_20widgetfactory_3a_3afloatcontrol_3c_20matchingwidget_3c_20field_20_3e_3a_3atype_2c_20normalizerfrommapper_3c_20field_20_3e_2c_20true_20_3e_20_3e_16',['WidgetInletFactory&lt; oscr::CustomFloatControl&lt; Node, avnd::field_index&lt; N &gt; &gt;, WidgetFactory::FloatControl&lt; MatchingWidget&lt; Field &gt;::type, NormalizerFromMapper&lt; Field &gt;, true &gt; &gt;',['../struct_dataflow_1_1_widget_inlet_factory.html',1,'Dataflow']]],
   ['widgetoutletfactory_17',['WidgetOutletFactory',['../struct_dataflow_1_1_widget_outlet_factory.html',1,'Dataflow']]],
@@ -25,7 +25,7 @@ var searchData=
   ['wiimoteprotocolsettingswidget_22',['WiimoteProtocolSettingsWidget',['../class_protocols_1_1_wiimote_protocol_settings_widget.html',1,'Protocols']]],
   ['wiimotespecificsettings_23',['WiimoteSpecificSettings',['../struct_protocols_1_1_wiimote_specific_settings.html',1,'Protocols']]],
   ['win32_5fhandles_24',['win32_handles',['../structbitfocus_1_1win32__handles.html',1,'bitfocus']]],
-  ['window_25',['window',['../class_clap_1_1_window.html',1,'Clap::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window']]],
+  ['window_25',['window',['../class_clap_1_1_window.html',1,'Clap::Window'],['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window']]],
   ['window_5fdevice_26',['window_device',['../class_gfx_1_1window__device.html',1,'Gfx']]],
   ['windowcapturebackend_27',['WindowCaptureBackend',['../struct_gfx_1_1_window_capture_1_1_window_capture_backend.html',1,'Gfx::WindowCapture']]],
   ['windowcapturedevice_28',['WindowCaptureDevice',['../class_gfx_1_1_window_capture_1_1_window_capture_device.html',1,'Gfx::WindowCapture']]],
@@ -52,9 +52,10 @@ var searchData=
   ['write_5foutput_49',['write_output',['../structgpp_1_1qrhi_1_1generate__shaders_1_1write__output.html',1,'gpp::qrhi::generate_shaders']]],
   ['writegraphviz_50',['writeGraphviz',['../struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73',1,'Scenario::TimenodeGraph']]],
   ['writer_51',['Writer',['../class_writer.html',1,'']]],
-  ['wsclient_52',['WSClient',['../struct_remote_control_1_1_w_s_1_1_w_s_client.html',1,'RemoteControl::WS']]],
-  ['wsdevice_53',['WSDevice',['../class_protocols_1_1_w_s_device.html',1,'Protocols']]],
-  ['wsprotocolfactory_54',['WSProtocolFactory',['../class_protocols_1_1_w_s_protocol_factory.html',1,'Protocols']]],
-  ['wsprotocolsettingswidget_55',['WSProtocolSettingsWidget',['../class_protocols_1_1_w_s_protocol_settings_widget.html',1,'Protocols']]],
-  ['wsspecificsettings_56',['WSSpecificSettings',['../struct_protocols_1_1_w_s_specific_settings.html',1,'Protocols']]]
+  ['writeziparchive_52',['writeZipArchive',['../namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef',1,'score']]],
+  ['wsclient_53',['WSClient',['../struct_remote_control_1_1_w_s_1_1_w_s_client.html',1,'RemoteControl::WS']]],
+  ['wsdevice_54',['WSDevice',['../class_protocols_1_1_w_s_device.html',1,'Protocols']]],
+  ['wsprotocolfactory_55',['WSProtocolFactory',['../class_protocols_1_1_w_s_protocol_factory.html',1,'Protocols']]],
+  ['wsprotocolsettingswidget_56',['WSProtocolSettingsWidget',['../class_protocols_1_1_w_s_protocol_settings_widget.html',1,'Protocols']]],
+  ['wsspecificsettings_57',['WSSpecificSettings',['../struct_protocols_1_1_w_s_specific_settings.html',1,'Protocols']]]
 ];

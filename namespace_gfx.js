@@ -61,7 +61,7 @@ var namespace_gfx =
     [ "LibavEncoderNode", "struct_gfx_1_1_libav_encoder_node.html", "struct_gfx_1_1_libav_encoder_node" ],
     [ "LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", null ],
     [ "LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", null ],
-    [ "LibavProtocolFactory", "class_gfx_1_1_libav_protocol_factory.html", null ],
+    [ "LibavProtocolFactory", "class_gfx_1_1_libav_protocol_factory.html", "class_gfx_1_1_libav_protocol_factory" ],
     [ "LibavSettings", "struct_gfx_1_1_libav_settings.html", null ],
     [ "LibavSettingsWidget", "class_gfx_1_1_libav_settings_widget.html", null ],
     [ "multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],

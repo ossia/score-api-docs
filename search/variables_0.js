@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['applicationsettings_0',['applicationSettings',['../structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3',1,'score::ApplicationContext']]],
-  ['arguments_1',['arguments',['../structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8',1,'score::ApplicationSettings']]],
-  ['autoplay_2',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]]
+  ['alreadyinproject_0',['alreadyInProject',['../structscore_1_1_file_placement_1_1_placement.html#ad08b523ffba4c232a4c2cc72536763f6',1,'score::FilePlacement::Placement']]],
+  ['applicationsettings_1',['applicationSettings',['../structscore_1_1_application_context.html#a63ad78c9bf47c24bb16edecf48eac2b3',1,'score::ApplicationContext']]],
+  ['arguments_2',['arguments',['../structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8',1,'score::ApplicationSettings']]],
+  ['autoplay_3',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]]
 ];

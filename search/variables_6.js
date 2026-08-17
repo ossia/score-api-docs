@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hasalpha_0',['hasAlpha',['../structscore_1_1gfx_1_1_pixel_format_info.html#aba5f037aab1570c30a3d3a34d8163dad',1,'score::gfx::PixelFormatInfo']]],
-  ['hasframe_1',['hasFrame',['../classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a17ec177295eb2e8172032a9571bfc1ac',1,'score::gfx::GPUVideoDecoder']]]
+  ['geometry_0',['geometry',['../classscore_1_1gfx_1_1_node_renderer.html#a569e44aa1e4837f7edf5e47111bd9b47',1,'score::gfx::NodeRenderer']]],
+  ['gui_1',['gui',['../structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192',1,'score::ApplicationSettings']]]
 ];

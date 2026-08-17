@@ -180,6 +180,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setStretchMode</b> (o
 <tr class="memitem:a2322d5db912cda2331ce4a5e0d5c910f" id="r_a2322d5db912cda2331ce4a5e0d5c910f"><td class="memItemLeft" align="right" valign="top"><a id="a2322d5db912cda2331ce4a5e0d5c910f" name="a2322d5db912cda2331ce4a5e0d5c910f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_mediaChanged</b> ()</td></tr>
 <tr class="separator:a2322d5db912cda2331ce4a5e0d5c910f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5952bec75c2a41cb865d1d785f37a7" id="r_a4e5952bec75c2a41cb865d1d785f37a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_sound_1_1_process_model.html#a4e5952bec75c2a41cb865d1d785f37a7">mapExternalFiles</a> (<a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;map) override</td></tr>
+<tr class="separator:a4e5952bec75c2a41cb865d1d785f37a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f4a65eb0a6338787034b376203f816" id="r_ad1f4a65eb0a6338787034b376203f816"><td class="memItemLeft" align="right" valign="top"><a id="ad1f4a65eb0a6338787034b376203f816" name="ad1f4a65eb0a6338787034b376203f816"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>fileTempoRatio</b> () const noexcept</td></tr>
+<tr class="memdesc:ad1f4a65eb0a6338787034b376203f816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seconds of the file per second of score's timeline. <br /></td></tr>
+<tr class="separator:ad1f4a65eb0a6338787034b376203f816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3325ef220bc78b18f495d1cda426347a" id="r_a3325ef220bc78b18f495d1cda426347a"><td class="memItemLeft" align="right" valign="top"><a id="a3325ef220bc78b18f495d1cda426347a" name="a3325ef220bc78b18f495d1cda426347a"></a>
+std::optional&lt; <a class="el" href="struct_process_1_1_media_range.html">Process::MediaRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>usedFileRange</b> () const noexcept</td></tr>
+<tr class="memdesc:a3325ef220bc78b18f495d1cda426347a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The region of the file this process reads, in the file's own seconds. <br /></td></tr>
+<tr class="separator:a3325ef220bc78b18f495d1cda426347a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fc914b143cc0b7cea1e4809e18fa91" id="r_ab6fc914b143cc0b7cea1e4809e18fa91"><td class="memItemLeft" align="right" valign="top"><a id="ab6fc914b143cc0b7cea1e4809e18fa91" name="ab6fc914b143cc0b7cea1e4809e18fa91"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fileChanged</b> ()</td></tr>
 <tr class="separator:ab6fc914b143cc0b7cea1e4809e18fa91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -569,6 +579,36 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4e5952bec75c2a41cb865d1d785f37a7" name="a4e5952bec75c2a41cb865d1d785f37a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5952bec75c2a41cb865d1d785f37a7">&#9670;&#160;</a></span>mapExternalFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Sound::ProcessModel::mapExternalFiles </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Report — and let the caller relocate — every file this process references, for project consolidation. See <a class="el" href="_external_files_8hpp_source.html">Process/ExternalFiles.hpp</a>.</p>
+<p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
 <a id="aa65091c71420e4362a439318df3fe497" name="aa65091c71420e4362a439318df3fe497"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa65091c71420e4362a439318df3fe497">&#9670;&#160;</a></span>prettyName()</h2>
 

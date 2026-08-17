@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
+"_m_q_t_t_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,12,1],
+"_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,12,2],
+"_m_q_t_t_specific_settings_8hpp_source.html":[13,0,0,2,29,0,12,3],
 "_macro_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,2],
 "_magnetic_info_8hpp_source.html":[13,0,0,2,3,3,0],
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
@@ -26,7 +30,11 @@ var NAVTREEINDEX3 =
 "_math_mapping__generic_8hpp_source.html":[13,0,0,2,16,0,20],
 "_math_value_filter_8hpp_source.html":[13,0,0,2,16,0,21],
 "_media_command_factory_8hpp_source.html":[13,0,0,2,24,0,0,1],
-"_media_file_handle_8hpp_source.html":[13,0,0,2,24,0,13],
+"_media_file_handle_8hpp_source.html":[13,0,0,2,24,0,14],
+"_media_range_8hpp_source.html":[13,0,0,2,3,4,33],
+"_media_trim_8hpp_source.html":[13,0,0,2,3,4,34],
+"_media_trim_dialog_8hpp_source.html":[13,0,0,2,3,4,35],
+"_media_trimmer_8hpp_source.html":[13,0,0,2,3,4,36],
 "_menu_8hpp_source.html":[13,0,0,1,1,0,2],
 "_menu_manager_8hpp_source.html":[13,0,0,1,1,0,3],
 "_merge_events_8hpp_source.html":[13,0,0,2,32,4,1,5,3,0],
@@ -86,6 +94,8 @@ var NAVTREEINDEX3 =
 "_minuit_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,11,2],
 "_minuit_specific_settings_8hpp_source.html":[13,0,0,2,29,0,11,3],
 "_missing_command_8hpp_source.html":[13,0,0,1,1,12,0,0],
+"_missing_files_8hpp_source.html":[13,0,0,2,3,4,37],
+"_missing_files_dialog_8hpp_source.html":[13,0,0,2,3,4,38],
 "_mixer_panel_8hpp_source.html":[13,0,0,2,24,1,0],
 "_mock_application_8hpp_source.html":[13,0,0,1,0,0,5],
 "_model_consistency_8hpp_source.html":[13,0,0,2,32,4,3,14],
@@ -239,15 +249,5 @@ var NAVTREEINDEX3 =
 "_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,23],
 "_port_8hpp_source.html":[13,0,0,2,3,4,3,11],
 "_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,18],
-"_port_factory_8hpp_source.html":[13,0,0,2,3,4,3,12],
-"_port_forward_8hpp_source.html":[13,0,0,2,3,4,3,13],
-"_port_inspector_factory_8hpp_source.html":[13,0,0,2,12,0,9],
-"_port_list_widget_8hpp_source.html":[13,0,0,2,3,4,3,15],
-"_port_serialization_8hpp_source.html":[13,0,0,2,3,4,3,16],
-"_port_sink_8hpp_source.html":[13,0,0,2,20,0,2,5],
-"_port_source_8hpp_source.html":[13,0,0,2,20,0,2,6],
-"_port_type_8hpp_source.html":[13,0,0,2,3,4,3,17],
-"_port_visibility_8hpp_source.html":[13,0,0,2,3,4,3,18],
-"_power_segment_8hpp_source.html":[13,0,0,2,11,0,4,2,0],
-"_presenter_instantiations_8hpp_source.html":[13,0,0,2,32,4,14]
+"_port_factory_8hpp_source.html":[13,0,0,2,3,4,3,12]
 };

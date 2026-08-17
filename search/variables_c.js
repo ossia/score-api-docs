@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['page_0',['page',['../struct_process_1_1_control_page.html#a5d260de8ad913ea06b18d731caa2fabe',1,'Process::ControlPage']]],
-  ['pagecount_1',['pageCount',['../struct_process_1_1_control_page.html#aca8f6ea8aa9d8f04fed39ed651d16644',1,'Process::ControlPage']]],
-  ['parents_2',['parents',['../struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15',1,'Explorer::SelectedNodes::parents'],['../struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831',1,'Scenario::SelectedNodes::parents']]],
-  ['processes_3',['processes',['../class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030',1,'Scenario::IntervalModel']]]
+  ['nameinarchive_0',['nameInArchive',['../structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a',1,'score::ZipEntry']]],
+  ['newsize_1',['newSize',['../struct_process_1_1_file_entry.html#a4d6a4c1f566919bb3ad696d08320891e',1,'Process::FileEntry']]],
+  ['newstoredpath_2',['newStoredPath',['../struct_process_1_1_file_entry.html#a373a1c2e81adc6addc2e253642cb6e92',1,'Process::FileEntry']]],
+  ['node_3',['node',['../structscore_1_1gfx_1_1_port.html#a6be11bbdf8a6631a446c943d42562818',1,'score::gfx::Port']]],
+  ['nodes_4',['nodes',['../classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4',1,'score::gfx::RenderList']]],
+  ['note_5',['note',['../struct_process_1_1_file_entry.html#a228f5aee24ddb7c59e3248b233fc9d22',1,'Process::FileEntry']]],
+  ['numplanes_6',['numPlanes',['../structscore_1_1gfx_1_1_pixel_format_info.html#aca736a46d2b3ade23e6c70468fb2ba0c',1,'score::gfx::PixelFormatInfo']]]
 ];
