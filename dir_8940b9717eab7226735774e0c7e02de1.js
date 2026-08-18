@@ -10,11 +10,13 @@ var dir_8940b9717eab7226735774e0c7e02de1 =
     [ "AudioArray.hpp", "_audio_array_8hpp_source.html", null ],
     [ "AudioDecoder.hpp", "_audio_decoder_8hpp_source.html", null ],
     [ "AudioFileChooserWidget.hpp", "_audio_file_chooser_widget_8hpp_source.html", null ],
+    [ "AudioPluginCache.hpp", "_audio_plugin_cache_8hpp_source.html", null ],
     [ "AudioTrimmer.hpp", "_audio_trimmer_8hpp_source.html", null ],
     [ "Libav.hpp", "_libav_8hpp_source.html", null ],
     [ "LibavIntrospection.hpp", "_libav_introspection_8hpp_source.html", null ],
     [ "LibavMediaInfo.hpp", "_libav_media_info_8hpp_source.html", null ],
     [ "MediaFileHandle.hpp", "_media_file_handle_8hpp_source.html", null ],
+    [ "PluginScanner.hpp", "_plugin_scanner_8hpp_source.html", null ],
     [ "RMSData.hpp", "_r_m_s_data_8hpp_source.html", null ],
     [ "SndfileDecoder.hpp", "_sndfile_decoder_8hpp_source.html", null ],
     [ "Tempo.hpp", "_tempo_8hpp_source.html", null ]

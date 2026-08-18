@@ -103,12 +103,14 @@ $(document).ready(function(){initNavTree('classvst_1_1_settings_widget.html','')
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classvst_1_1_settings_widget-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">vst::SettingsWidget Class Reference</div></div>
+  <div class="headertitle"><div class="title">vst::SettingsWidget Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>"VST" tab of the Effects settings page: search paths + scanned plug-ins.  
+ <a href="classvst_1_1_settings_widget.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for vst::SettingsWidget:</div>
 <div class="dyncontent">
@@ -119,28 +121,15 @@ Inheritance diagram for vst::SettingsWidget:</div>
 <area href="classscore_1_1_interface_base.html" title="Base class for plug-in interfaces." alt="score::InterfaceBase" shape="rect" coords="213,0,416,24"/>
   </map>
 </div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ade186c7c7ea160c70d36c89fdffa7036" id="r_ade186c7c7ea160c70d36c89fdffa7036"><td class="memItemLeft" align="right" valign="top"><a id="ade186c7c7ea160c70d36c89fdffa7036" name="ade186c7c7ea160c70d36c89fdffa7036"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>View</b> = <a class="el" href="classvst_1_1_settings_widget.html">SettingsWidget</a></td></tr>
-<tr class="separator:ade186c7c7ea160c70d36c89fdffa7036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a680a2c3c6d9b9066190db6dd7ddad5fa" id="r_a680a2c3c6d9b9066190db6dd7ddad5fa"><td class="memItemLeft" align="right" valign="top"><a id="a680a2c3c6d9b9066190db6dd7ddad5fa" name="a680a2c3c6d9b9066190db6dd7ddad5fa"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> = <a class="el" href="class_media_1_1_settings_1_1_model.html">Media::Settings::Model</a></td></tr>
-<tr class="separator:a680a2c3c6d9b9066190db6dd7ddad5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>"VST" tab of the Effects settings page: search paths + scanned plug-ins. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa3014d16ba29216c28fbc003999c6673" id="r_aa3014d16ba29216c28fbc003999c6673"><td class="memItemLeft" align="right" valign="top"><a id="aa3014d16ba29216c28fbc003999c6673" name="aa3014d16ba29216c28fbc003999c6673"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setVstPaths</b> (QStringList val)</td></tr>
-<tr class="separator:aa3014d16ba29216c28fbc003999c6673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831cb3b7c72554be08d8a0ad97a40e61" id="r_a831cb3b7c72554be08d8a0ad97a40e61"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1_settings_widget.html#a831cb3b7c72554be08d8a0ad97a40e61">name</a> () const noexcept override</td></tr>
 <tr class="separator:a831cb3b7c72554be08d8a0ad97a40e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f66d8eed035b0b503325e9dcd51944" id="r_a86f66d8eed035b0b503325e9dcd51944"><td class="memItemLeft" align="right" valign="top">QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1_settings_widget.html#a86f66d8eed035b0b503325e9dcd51944">make</a> (const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx) override</td></tr>
 <tr class="separator:a86f66d8eed035b0b503325e9dcd51944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1972be9fc61d10c5364ecf006611018e" id="r_a1972be9fc61d10c5364ecf006611018e"><td class="memItemLeft" align="right" valign="top"><a id="a1972be9fc61d10c5364ecf006611018e" name="a1972be9fc61d10c5364ecf006611018e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VstPathsChanged</b> (QStringList arg_1)</td></tr>
-<tr class="separator:a1972be9fc61d10c5364ecf006611018e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
 <tr class="memitem:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base" id="r_a993744914ec2a9cdf05f07f6f1643d55"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><b>interfaceKey</b> () const noexcept=0</td></tr>

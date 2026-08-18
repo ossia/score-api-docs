@@ -134,6 +134,7 @@ var annotated_dup =
       [ "Executor", "class_clap_1_1_executor.html", null ],
       [ "LibraryHandler", "class_clap_1_1_library_handler.html", null ],
       [ "PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
+      [ "SettingsWidget", "class_clap_1_1_settings_widget.html", null ],
       [ "Window", "class_clap_1_1_window.html", null ]
     ] ],
     [ "ControlSurface", null, [
@@ -984,6 +985,7 @@ var annotated_dup =
       [ "on_finish", "struct_l_v2_1_1on__finish.html", null ],
       [ "on_start", "struct_l_v2_1_1on__start.html", null ],
       [ "PluginInfo", "struct_l_v2_1_1_plugin_info.html", null ],
+      [ "SettingsWidget", "class_l_v2_1_1_settings_widget.html", null ],
       [ "voice", "struct_l_v2_1_1voice.html", "struct_l_v2_1_1voice" ],
       [ "voice_strategy", "struct_l_v2_1_1voice__strategy.html", null ],
       [ "Window", "class_l_v2_1_1_window.html", null ]
@@ -1025,6 +1027,8 @@ var annotated_dup =
         [ "Model", "class_media_1_1_settings_1_1_model.html", null ],
         [ "PluginSettingsFactoryList", "class_media_1_1_settings_1_1_plugin_settings_factory_list.html", null ],
         [ "PluginSettingsTab", "class_media_1_1_settings_1_1_plugin_settings_tab.html", null ],
+        [ "PluginTabRow", "struct_media_1_1_settings_1_1_plugin_tab_row.html", null ],
+        [ "PluginTabSpec", "struct_media_1_1_settings_1_1_plugin_tab_spec.html", "struct_media_1_1_settings_1_1_plugin_tab_spec" ],
         [ "Presenter", "class_media_1_1_settings_1_1_presenter.html", null ],
         [ "View", "class_media_1_1_settings_1_1_view.html", null ]
       ] ],
@@ -2328,6 +2332,10 @@ var annotated_dup =
       [ "PluginLoader", null, [
         [ "PluginDependencyGraph", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph.html", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph" ]
       ] ],
+      [ "puppet", null, [
+        [ "client", "structscore_1_1puppet_1_1client.html", null ],
+        [ "puppet_arguments", "structscore_1_1puppet_1_1puppet__arguments.html", null ]
+      ] ],
       [ "testing", null, [
         [ "MockApplication", "structscore_1_1testing_1_1_mock_application.html", null ]
       ] ],
@@ -2883,6 +2891,7 @@ var annotated_dup =
       [ "PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
       [ "RemoveControl", "classvst3_1_1_remove_control.html", null ],
       [ "SetControl", "classvst3_1_1_set_control.html", null ],
+      [ "SettingsWidget", "classvst3_1_1_settings_widget.html", null ],
       [ "Vst3DataStream", "structvst3_1_1_vst3_data_stream.html", null ],
       [ "vst_node", "classvst3_1_1vst__node.html", "classvst3_1_1vst__node" ],
       [ "vst_node_base", "classvst3_1_1vst__node__base.html", "classvst3_1_1vst__node__base" ],

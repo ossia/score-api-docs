@@ -1,7 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_2_vst3_2_control_8hpp_source.html":[13,0,0,2,39,0,3],
-"_2_vst3_2_widgets_8hpp_source.html":[13,0,0,2,39,0,11],
+"_2_vst3_2_widgets_8hpp_source.html":[13,0,0,2,39,0,12],
 "_a_l_s_a_interface_8hpp_source.html":[13,0,0,2,6,0,1],
 "_a_l_s_a_mini_audio_interface_8hpp_source.html":[13,0,0,2,6,0,2],
 "_a_l_s_a_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,3],
@@ -88,11 +88,12 @@ var NAVTREEINDEX0 =
 "_audio_inspector_8hpp_source.html":[13,0,0,2,24,0,2,0],
 "_audio_interface_8hpp_source.html":[13,0,0,2,6,0,7],
 "_audio_outlet_item_8hpp_source.html":[13,0,0,2,12,0,1],
+"_audio_plugin_cache_8hpp_source.html":[13,0,0,2,24,0,10],
 "_audio_port_combo_box_8hpp_source.html":[13,0,0,2,3,4,3,2],
 "_audio_preview_executor_8hpp_source.html":[13,0,0,2,6,0,8],
 "_audio_recorder_8hpp_source.html":[13,0,0,2,8,2,2],
 "_audio_tick_8hpp_source.html":[13,0,0,2,6,0,9],
-"_audio_trimmer_8hpp_source.html":[13,0,0,2,24,0,10],
+"_audio_trimmer_8hpp_source.html":[13,0,0,2,24,0,11],
 "_automatable_factory_8hpp_source.html":[13,0,0,2,3,4,1,0],
 "_automation_colors_8hpp_source.html":[13,0,0,2,7,0,3],
 "_automation_command_factory_8hpp_source.html":[13,0,0,2,7,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,1],
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
-"_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11],
-"_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2]
+"_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11]
 };

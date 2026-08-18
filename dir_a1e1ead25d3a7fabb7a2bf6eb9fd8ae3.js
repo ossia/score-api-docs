@@ -11,5 +11,6 @@ var dir_a1e1ead25d3a7fabb7a2bf6eb9fd8ae3 =
     [ "score-plugin-vst3/Vst3/Library.hpp", "score-plugin-vst3_2_vst3_2_library_8hpp_source.html", null ],
     [ "score-plugin-vst3/Vst3/Node.hpp", "score-plugin-vst3_2_vst3_2_node_8hpp_source.html", null ],
     [ "Plugin.hpp", "_plugin_8hpp_source.html", null ],
+    [ "plugins/score-plugin-vst3/Vst3/Settings.hpp", "plugins_2score-plugin-vst3_2_vst3_2_settings_8hpp_source.html", null ],
     [ "/Vst3/Widgets.hpp", "_2_vst3_2_widgets_8hpp_source.html", null ]
 ];

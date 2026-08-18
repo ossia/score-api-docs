@@ -222,6 +222,7 @@ var hierarchy =
     [ "Nodes::Chord::Node::chord_type", "struct_nodes_1_1_chord_1_1_node_1_1chord__type.html", null ],
     [ "Jit::ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],
     [ "Gfx::clear_msg_visitor", "struct_gfx_1_1clear__msg__visitor.html", null ],
+    [ "score::puppet::client", "structscore_1_1puppet_1_1client.html", null ],
     [ "Execution::Clock", "class_execution_1_1_clock.html", [
       [ "Dataflow::Clock", "class_dataflow_1_1_clock.html", null ],
       [ "Execution::ManualClock::Clock", "class_execution_1_1_manual_clock_1_1_clock.html", null ]
@@ -1255,8 +1256,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1503,6 +1504,9 @@ var hierarchy =
         [ "vst::LibraryHandler", "classvst_1_1_library_handler.html", null ]
       ] ],
       [ "Media::Settings::PluginSettingsTab", "class_media_1_1_settings_1_1_plugin_settings_tab.html", [
+        [ "Clap::SettingsWidget", "class_clap_1_1_settings_widget.html", null ],
+        [ "LV2::SettingsWidget", "class_l_v2_1_1_settings_widget.html", null ],
+        [ "vst3::SettingsWidget", "classvst3_1_1_settings_widget.html", null ],
         [ "vst::SettingsWidget", "classvst_1_1_settings_widget.html", null ]
       ] ],
       [ "Process::AutomatableFactory", "class_process_1_1_automatable_factory.html", null ],
@@ -2483,6 +2487,8 @@ var hierarchy =
     [ "vst3::vst_node_base::PluginHandle", "structvst3_1_1vst__node__base_1_1_plugin_handle.html", null ],
     [ "Clap::PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
     [ "LV2::PluginInfo", "struct_l_v2_1_1_plugin_info.html", null ],
+    [ "Media::Settings::PluginTabRow", "struct_media_1_1_settings_1_1_plugin_tab_row.html", null ],
+    [ "Media::Settings::PluginTabSpec", "struct_media_1_1_settings_1_1_plugin_tab_spec.html", null ],
     [ "Threedim::PlyNameAlias", "struct_threedim_1_1_ply_name_alias.html", null ],
     [ "Threedim::PlyPropertyGroup", "struct_threedim_1_1_ply_property_group.html", null ],
     [ "oscr::pmf_member_type< T >", "structoscr_1_1pmf__member__type.html", null ],
@@ -2666,6 +2672,7 @@ var hierarchy =
       [ "ossia::net::bitfocus_protocol", "classossia_1_1net_1_1bitfocus__protocol.html", null ]
     ] ],
     [ "State::Pulse", "struct_state_1_1_pulse.html", null ],
+    [ "score::puppet::puppet_arguments", "structscore_1_1puppet_1_1puppet__arguments.html", null ],
     [ "boost::spirit::traits::push_back_container< QString, QChar >", "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html", null ],
     [ "Scenario::PutLayerModelToFront", "class_scenario_1_1_put_layer_model_to_front.html", null ],
     [ "pw_buffer", "structpw__buffer.html", null ],

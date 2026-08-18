@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,29,0,24],
+"_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,16],
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
 "_m_q_t_t_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,12,1],
 "_m_q_t_t_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,12,2],
@@ -9,7 +11,7 @@ var NAVTREEINDEX3 =
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
-"_map_copy_8hpp_source.html":[13,0,0,1,1,12,18],
+"_map_copy_8hpp_source.html":[13,0,0,1,1,12,19],
 "_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9],
 "_mapper_device_8hpp_source.html":[13,0,0,2,29,0,8,0],
 "_mapping_colors_8hpp_source.html":[13,0,0,2,23,0,3],
@@ -30,7 +32,7 @@ var NAVTREEINDEX3 =
 "_math_mapping__generic_8hpp_source.html":[13,0,0,2,16,0,20],
 "_math_value_filter_8hpp_source.html":[13,0,0,2,16,0,21],
 "_media_command_factory_8hpp_source.html":[13,0,0,2,24,0,0,1],
-"_media_file_handle_8hpp_source.html":[13,0,0,2,24,0,14],
+"_media_file_handle_8hpp_source.html":[13,0,0,2,24,0,15],
 "_media_range_8hpp_source.html":[13,0,0,2,3,4,33],
 "_media_trim_8hpp_source.html":[13,0,0,2,3,4,34],
 "_media_trim_dialog_8hpp_source.html":[13,0,0,2,3,4,35],
@@ -166,7 +168,7 @@ var NAVTREEINDEX3 =
 "_object_item_model_8hpp_source.html":[13,0,0,2,32,4,6,4,0],
 "_object_locker_8hpp_source.html":[13,0,0,1,1,6,0],
 "_object_mapper_8hpp_source.html":[13,0,0,2,32,4,8,0,2],
-"_object_matches_8hpp_source.html":[13,0,0,1,1,12,21],
+"_object_matches_8hpp_source.html":[13,0,0,1,1,12,22],
 "_object_menu_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,1],
 "_object_path_8hpp_source.html":[13,0,0,1,1,7,0,1],
 "_offline_action_8hpp_source.html":[13,0,0,2,3,4,9,0],
@@ -236,6 +238,8 @@ var NAVTREEINDEX3 =
 "_plugin_item_model_8hpp_source.html":[13,0,0,2,27,0,3],
 "_plugin_manager_8hpp_source.html":[13,0,0,1,0,5,1],
 "_plugin_requirements___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,4],
+"_plugin_scanner_8hpp_source.html":[13,0,0,2,24,0,16],
+"_plugin_tab_8hpp_source.html":[13,0,0,2,24,0,1,0,2],
 "_plugin_window_8hpp_source.html":[13,0,0,1,1,13,18],
 "_plugins_factories_and_interfaces.html":[6],
 "_plugins_factories_and_interfaces.html#AddonManager":[6,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "_ply_8hpp_source.html":[13,0,0,2,35,0,20],
 "_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0],
 "_pointer_8hpp_source.html":[13,0,0,1,1,12,2,8],
-"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,22],
-"_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,23],
-"_port_8hpp_source.html":[13,0,0,2,3,4,3,11],
-"_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,18],
-"_port_factory_8hpp_source.html":[13,0,0,2,3,4,3,12]
+"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,23]
 };
