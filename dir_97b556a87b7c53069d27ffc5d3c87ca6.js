@@ -9,6 +9,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "Cursor.hpp", "_cursor_8hpp_source.html", null ],
     [ "lib/score/tools/Debug.hpp", "lib_2score_2tools_2_debug_8hpp_source.html", null ],
     [ "DeleteAll.hpp", "_delete_all_8hpp_source.html", null ],
+    [ "DynamicLibrary.hpp", "_dynamic_library_8hpp_source.html", null ],
     [ "ElfInspector.hpp", "_elf_inspector_8hpp_source.html", null ],
     [ "Events.hpp", "_events_8hpp_source.html", null ],
     [ "lib/score/tools/File.hpp", "lib_2score_2tools_2_file_8hpp_source.html", null ],

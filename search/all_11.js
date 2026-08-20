@@ -54,8 +54,9 @@ var searchData=
   ['qt_5fproperty_5fconverter_3c_20state_3a_3aaddressaccessor_20_3e_51',['qt_property_converter&lt; State::AddressAccessor &gt;',['../structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html',1,'ossia']]],
   ['qt_5fproperty_5fconverter_3c_3a_3atimeval_20_3e_52',['qt_property_converter&lt;::TimeVal &gt;',['../structossia_1_1qt__property__converter_3_1_1_time_val_01_4.html',1,'ossia']]],
   ['qtdiagnosticconsumer_53',['QtDiagnosticConsumer',['../class_qt_diagnostic_consumer.html',1,'']]],
-  ['quantificationwidget_54',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
-  ['queue_55',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
-  ['queues_56',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
-  ['quiet_57',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
+  ['qtscalefactor_54',['qtScaleFactor',['../structvst3_1_1_window_container.html#a4cc2a8014b8a3728d5d34d17e61b76a8',1,'vst3::WindowContainer']]],
+  ['quantificationwidget_55',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
+  ['queue_56',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
+  ['queues_57',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
+  ['quiet_58',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
 ];

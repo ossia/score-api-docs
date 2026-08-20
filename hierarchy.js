@@ -1305,8 +1305,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1882,10 +1882,12 @@ var hierarchy =
       [ "Video::VideoDecoder", "class_video_1_1_video_decoder.html", null ]
     ] ],
     [ "Gfx::LibavEncoder", "struct_gfx_1_1_libav_encoder.html", null ],
+    [ "Video::LibavInterrupt", "class_video_1_1_libav_interrupt.html", null ],
     [ "Gfx::LibavIntrospection", "struct_gfx_1_1_libav_introspection.html", null ],
     [ "Gfx::LibavOutputSettings", "struct_gfx_1_1_libav_output_settings.html", null ],
     [ "Gfx::LibavSettings", "struct_gfx_1_1_libav_settings.html", null ],
     [ "Media::AudioFile::LibavStreamReader", "struct_media_1_1_audio_file_1_1_libav_stream_reader.html", null ],
+    [ "Video::LibavTimeout", "struct_video_1_1_libav_timeout.html", null ],
     [ "Gfx::GStreamer::libgstreamer", "struct_gfx_1_1_g_streamer_1_1libgstreamer.html", null ],
     [ "Protocols::LibmapperClientSpecificSettings", "struct_protocols_1_1_libmapper_client_specific_settings.html", null ],
     [ "Pd::libpd_list_wrapper", "struct_pd_1_1libpd__list__wrapper.html", null ],

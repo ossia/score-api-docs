@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_m_i_d_i_specific_settings_8hpp_source.html":[13,0,0,2,29,0,10,5],
+"_m_i_d_i_sync_8hpp_source.html":[13,0,0,2,8,2,7],
 "_m_i_d_i_utils_8hpp_source.html":[13,0,0,2,29,0,24],
 "_m_m_e_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,16],
 "_m_q_t_t_device_8hpp_source.html":[13,0,0,2,29,0,12,0],
@@ -11,7 +13,7 @@ var NAVTREEINDEX3 =
 "_magnetism_adjuster_8hpp_source.html":[13,0,0,2,3,3,1],
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
-"_map_copy_8hpp_source.html":[13,0,0,1,1,12,19],
+"_map_copy_8hpp_source.html":[13,0,0,1,1,12,20],
 "_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9],
 "_mapper_device_8hpp_source.html":[13,0,0,2,29,0,8,0],
 "_mapping_colors_8hpp_source.html":[13,0,0,2,23,0,3],
@@ -168,7 +170,7 @@ var NAVTREEINDEX3 =
 "_object_item_model_8hpp_source.html":[13,0,0,2,32,4,6,4,0],
 "_object_locker_8hpp_source.html":[13,0,0,1,1,6,0],
 "_object_mapper_8hpp_source.html":[13,0,0,2,32,4,8,0,2],
-"_object_matches_8hpp_source.html":[13,0,0,1,1,12,22],
+"_object_matches_8hpp_source.html":[13,0,0,1,1,12,23],
 "_object_menu_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,1],
 "_object_path_8hpp_source.html":[13,0,0,1,1,7,0,1],
 "_offline_action_8hpp_source.html":[13,0,0,2,3,4,9,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_plugins_factories_and_interfaces.html#NewClass":[6,1],
 "_plugins_factories_and_interfaces.html#NewInterface":[6,2],
 "_ply_8hpp_source.html":[13,0,0,2,35,0,20],
-"_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0],
-"_pointer_8hpp_source.html":[13,0,0,1,1,12,2,8],
-"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,23]
+"_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0]
 };

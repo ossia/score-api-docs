@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('structvst3_1_1_window_container.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structvst3_1_1_window_container-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vst3::WindowContainer Struct Reference</div></div>
@@ -122,10 +123,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeFromUser</b> (
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeFromVst</b> (Steinberg::IPlugView &amp;view, Steinberg::ViewRect &amp;r, QDialog &amp;parentWindow)</td></tr>
 <tr class="separator:a6e7395c9189c5acdd6ca8db915cb27c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cc2a8014b8a3728d5d34d17e61b76a8" id="r_a4cc2a8014b8a3728d5d34d17e61b76a8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a4cc2a8014b8a3728d5d34d17e61b76a8">qtScaleFactor</a> (const QWidget &amp;w) noexcept</td></tr>
+<tr class="separator:a4cc2a8014b8a3728d5d34d17e61b76a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:af345560a0a345022bb010f36b9597246" id="r_af345560a0a345022bb010f36b9597246"><td class="memItemLeft" align="right" valign="top"><a id="af345560a0a345022bb010f36b9597246" name="af345560a0a345022bb010f36b9597246"></a>
-WId&#160;</td><td class="memItemRight" valign="bottom"><b>nativeId</b></td></tr>
+WId&#160;</td><td class="memItemRight" valign="bottom"><b>nativeId</b> {}</td></tr>
 <tr class="separator:af345560a0a345022bb010f36b9597246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f31e8eaae0dcfa72a8abfabbed125e7" id="r_a1f31e8eaae0dcfa72a8abfabbed125e7"><td class="memItemLeft" align="right" valign="top"><a id="a1f31e8eaae0dcfa72a8abfabbed125e7" name="a1f31e8eaae0dcfa72a8abfabbed125e7"></a>
 QWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>qwindow</b> {}</td></tr>
@@ -136,10 +142,35 @@ QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>container</b> {}
 <tr class="memitem:a87121fef9315c3725bd504aa267daf91" id="r_a87121fef9315c3725bd504aa267daf91"><td class="memItemLeft" align="right" valign="top"><a id="a87121fef9315c3725bd504aa267daf91" name="a87121fef9315c3725bd504aa267daf91"></a>
 <a class="el" href="classvst3_1_1_plug_frame.html">vst3::PlugFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> {}</td></tr>
 <tr class="separator:a87121fef9315c3725bd504aa267daf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1688834e779b9a52473b3316bcd62f7d" id="r_a1688834e779b9a52473b3316bcd62f7d"><td class="memItemLeft" align="right" valign="top"><a id="a1688834e779b9a52473b3316bcd62f7d" name="a1688834e779b9a52473b3316bcd62f7d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>qtScaleFactor</b> {1.}</td></tr>
-<tr class="separator:a1688834e779b9a52473b3316bcd62f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cc2a8014b8a3728d5d34d17e61b76a8" name="a4cc2a8014b8a3728d5d34d17e61b76a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc2a8014b8a3728d5d34d17e61b76a8">&#9670;&#160;</a></span>qtScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double vst3::WindowContainer::qtScaleFactor </td>
+          <td>(</td>
+          <td class="paramtype">const QWidget &amp;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Factor to go from the coordinates the plug-in gives us to the logical pixels Qt lays out with </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_window_container_8hpp_source.html">WindowContainer.hpp</a></li>
 </ul>

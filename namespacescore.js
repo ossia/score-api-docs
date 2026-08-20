@@ -377,6 +377,8 @@ var namespacescore =
     [ "sanitizeFileName", "namespacescore.html#a6a32726edd1c4bc9d6dd5aaa1ee5df6f", null ],
     [ "setCursor", "namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f", null ],
     [ "setItemViewDragPixmap", "namespacescore.html#ab11dec7313a08388192b2259f2b50e62", null ],
+    [ "try_load_library", "namespacescore.html#a83bd5ef55fa68969e0bdd632d0658a81", null ],
+    [ "try_load_library", "namespacescore.html#a4247b45f78d77638135f0ebd36667b60", null ],
     [ "watchSceneInputMethod", "namespacescore.html#aef4d345fb028b5062609d81fb438e2ce", null ],
     [ "writeZipArchive", "namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef", null ]
 ];

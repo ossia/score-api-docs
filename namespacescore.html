@@ -1206,6 +1206,13 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:acb53af97b5a6913f84ba55cd0b600995"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>clearAndDeleteLater</b> (T &amp;container) noexcept</td></tr>
 <tr class="separator:acb53af97b5a6913f84ba55cd0b600995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bd5ef55fa68969e0bdd632d0658a81" id="r_a83bd5ef55fa68969e0bdd632d0658a81"><td class="memItemLeft" align="right" valign="top">std::optional&lt; ossia::dylib_loader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a83bd5ef55fa68969e0bdd632d0658a81">try_load_library</a> (const char *name) noexcept</td></tr>
+<tr class="memdesc:a83bd5ef55fa68969e0bdd632d0658a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">dlopen a library, reporting absence instead of throwing.  <br /></td></tr>
+<tr class="separator:a83bd5ef55fa68969e0bdd632d0658a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4247b45f78d77638135f0ebd36667b60" id="r_a4247b45f78d77638135f0ebd36667b60"><td class="memItemLeft" align="right" valign="top"><a id="a4247b45f78d77638135f0ebd36667b60" name="a4247b45f78d77638135f0ebd36667b60"></a>
+std::optional&lt; ossia::dylib_loader &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>try_load_library</b> (std::vector&lt; std::string_view &gt; names) noexcept</td></tr>
+<tr class="memdesc:a4247b45f78d77638135f0ebd36667b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the first of <code>names</code> that can be found. <br /></td></tr>
+<tr class="separator:a4247b45f78d77638135f0ebd36667b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae37270831bbfe90ec45e2eaf1929d5b0" id="r_ae37270831bbfe90ec45e2eaf1929d5b0"><td class="memItemLeft" align="right" valign="top"><a id="ae37270831bbfe90ec45e2eaf1929d5b0" name="ae37270831bbfe90ec45e2eaf1929d5b0"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>addUniqueSuffix</b> (const QString &amp;fileName)</td></tr>
 <tr class="separator:ae37270831bbfe90ec45e2eaf1929d5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1961,6 +1968,35 @@ template&lt;typename Type , typename Object &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="a83bd5ef55fa68969e0bdd632d0658a81" name="a83bd5ef55fa68969e0bdd632d0658a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83bd5ef55fa68969e0bdd632d0658a81">&#9670;&#160;</a></span>try_load_library()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; ossia::dylib_loader &gt; score::try_load_library </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dlopen a library, reporting absence instead of throwing. </p>
+<p>ossia::dylib_loader only signals failure by throwing from its constructor, which makes it unusable as a direct member of the optional-dependency loaders: a function-try-block around a constructor rethrows when it falls off the end of the handler, so the "unavailable" flag those loaders check is never reached and the exception escapes their instance() accessor instead. </p>
 
 </div>
 </div>
