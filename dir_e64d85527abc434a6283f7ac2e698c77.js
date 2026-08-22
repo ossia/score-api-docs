@@ -2,6 +2,7 @@ var dir_e64d85527abc434a6283f7ac2e698c77 =
 [
     [ "Artnet", "dir_d4a8d9b1bd7538626b72098c59c9f5a1.html", "dir_d4a8d9b1bd7538626b72098c59c9f5a1" ],
     [ "Bitfocus", "dir_050a913c5a4defd62b96abf9b593d881.html", "dir_050a913c5a4defd62b96abf9b593d881" ],
+    [ "CAN", "dir_31fe9639cbe5cde239e9fe0ea8b1c8e0.html", "dir_31fe9639cbe5cde239e9fe0ea8b1c8e0" ],
     [ "CoAP", "dir_f51c2e74be4e7b1f507975ce33e45187.html", "dir_f51c2e74be4e7b1f507975ce33e45187" ],
     [ "Evdev", "dir_7b88acaaf65572c1f6869262975b8f10.html", "dir_7b88acaaf65572c1f6869262975b8f10" ],
     [ "GPS", "dir_1188f01a60bb6e1e760e31802786c973.html", "dir_1188f01a60bb6e1e760e31802786c973" ],

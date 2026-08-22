@@ -121,15 +121,15 @@ $(document).ready(function(){initNavTree('_tree_node_serialization_8hpp_source.h
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code hl_class" href="class_data_stream_reader.html">DataStream::Serializer</a>&amp; s, <span class="keyword">const</span> <a class="code hl_class" href="class_tree_node.html">TreeNode&lt;T&gt;</a>&amp; n)</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    s.<a class="code hl_function" href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">readFrom</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T&amp;<span class="keyword">&gt;</span>(n));</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    s.readFrom(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T&amp;<span class="keyword">&gt;</span>(n));</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    s.stream() &lt;&lt; n.childCount();</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; child : n)</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      s.<a class="code hl_function" href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">readFrom</a>(child);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      s.readFrom(child);</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    s.<a class="code hl_function" href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">insertDelimiter</a>();</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    s.insertDelimiter();</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  }</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> writeTo(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; s, <a class="code hl_class" href="class_tree_node.html">TreeNode&lt;T&gt;</a>&amp; n)</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('_tree_node_serialization_8hpp_source.h
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    s.stream.StartObject();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T&amp;<span class="keyword">&gt;</span>(n));</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    s.readFrom(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>T&amp;<span class="keyword">&gt;</span>(n));</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span>(n.childCount() &gt; 0)</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      s.obj[s.strings.Children] = n.children();</div>
@@ -188,12 +188,9 @@ $(document).ready(function(){initNavTree('_tree_node_serialization_8hpp_source.h
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:27</div></div>
-<div class="ttc" id="aclass_data_stream_reader_html_a4f58ef6aec2af2d3eeb68da834177886"><div class="ttname"><a href="class_data_stream_reader.html#a4f58ef6aec2af2d3eeb68da834177886">DataStreamReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdoc">Called by code that wants to serialize.</div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:53</div></div>
-<div class="ttc" id="aclass_data_stream_reader_html_ac0eb5c043b33cc07de11c45edd22db1b"><div class="ttname"><a href="class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b">DataStreamReader::insertDelimiter</a></div><div class="ttdeci">void insertDelimiter()</div><div class="ttdoc">insertDelimiter</div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:156</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_j_s_o_n_reader_html"><div class="ttname"><a href="class_j_s_o_n_reader.html">JSONReader</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:52</div></div>
-<div class="ttc" id="aclass_j_s_o_n_reader_html_a97ad23366c9ed5dc863982deb9de199c"><div class="ttname"><a href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">JSONReader::readFrom</a></div><div class="ttdeci">void readFrom(const score::Entity&lt; T &gt; &amp;obj)</div><div class="ttdef"><b>Definition</b> EntitySerialization.hpp:7</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:423</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode</a></div><div class="ttdef"><b>Definition</b> TreeNode.hpp:52</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:13</div></div>

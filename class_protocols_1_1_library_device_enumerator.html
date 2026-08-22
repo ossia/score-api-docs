@@ -123,7 +123,12 @@ Inheritance diagram for Protocols::LibraryDeviceEnumerator:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af0e2063356274e716d383189367e414b" id="r_af0e2063356274e716d383189367e414b"><td class="memItemLeft" align="right" valign="top"><a id="af0e2063356274e716d383189367e414b" name="af0e2063356274e716d383189367e414b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LibraryDeviceEnumerator</b> (std::string pattern, QStringList extension, Device::ProtocolFactory::ConcreteKey k, std::function&lt; QVariant(QByteArray)&gt; createDev, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="memdesc:af0e2063356274e716d383189367e414b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For settings that embed the file's contents. <br /></td></tr>
 <tr class="separator:af0e2063356274e716d383189367e414b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4422098e41a9c38deb8caee63986f3f7" id="r_a4422098e41a9c38deb8caee63986f3f7"><td class="memItemLeft" align="right" valign="top"><a id="a4422098e41a9c38deb8caee63986f3f7" name="a4422098e41a9c38deb8caee63986f3f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LibraryDeviceEnumerator</b> (std::string pattern, QStringList extension, Device::ProtocolFactory::ConcreteKey k, std::function&lt; QVariant(QByteArray, const QString &amp;)&gt; createDev, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="memdesc:a4422098e41a9c38deb8caee63986f3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For settings that reference the file by path. <br /></td></tr>
+<tr class="separator:a4422098e41a9c38deb8caee63986f3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08faeb7f2f5fe064d3cfd254ce1df49f" id="r_a08faeb7f2f5fe064d3cfd254ce1df49f"><td class="memItemLeft" align="right" valign="top"><a id="a08faeb7f2f5fe064d3cfd254ce1df49f" name="a08faeb7f2f5fe064d3cfd254ce1df49f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>next</b> (std::string_view path)</td></tr>
 <tr class="separator:a08faeb7f2f5fe064d3cfd254ce1df49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,13 +160,31 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_pattern</b><
 <tr class="memitem:a0122ae8f415b51e34d6a6baf9eb62b47" id="r_a0122ae8f415b51e34d6a6baf9eb62b47"><td class="memItemLeft" align="right" valign="top"><a id="a0122ae8f415b51e34d6a6baf9eb62b47" name="a0122ae8f415b51e34d6a6baf9eb62b47"></a>
 Device::ProtocolFactory::ConcreteKey&#160;</td><td class="memItemRight" valign="bottom"><b>m_key</b></td></tr>
 <tr class="separator:a0122ae8f415b51e34d6a6baf9eb62b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4070fdbd0627dcc21d95f1867b611bbc" id="r_a4070fdbd0627dcc21d95f1867b611bbc"><td class="memItemLeft" align="right" valign="top"><a id="a4070fdbd0627dcc21d95f1867b611bbc" name="a4070fdbd0627dcc21d95f1867b611bbc"></a>
-std::function&lt; QVariant(QByteArray)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_createDeviceSettings</b></td></tr>
-<tr class="separator:a4070fdbd0627dcc21d95f1867b611bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb975c6e3825a545fcad70e56be8ab9" id="r_a6cb975c6e3825a545fcad70e56be8ab9"><td class="memItemLeft" align="right" valign="top">std::function&lt; QVariant(QByteArray, const QString &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_protocols_1_1_library_device_enumerator.html#a6cb975c6e3825a545fcad70e56be8ab9">m_createDeviceSettings</a></td></tr>
+<tr class="separator:a6cb975c6e3825a545fcad70e56be8ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74226cc7a150a7ccbe8410ba9bef0170" id="r_a74226cc7a150a7ccbe8410ba9bef0170"><td class="memItemLeft" align="right" valign="top"><a id="a74226cc7a150a7ccbe8410ba9bef0170" name="a74226cc7a150a7ccbe8410ba9bef0170"></a>
 <a class="el" href="classscore_1_1_recursive_watch.html">score::RecursiveWatch</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_watch</b></td></tr>
 <tr class="separator:a74226cc7a150a7ccbe8410ba9bef0170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6cb975c6e3825a545fcad70e56be8ab9" name="a6cb975c6e3825a545fcad70e56be8ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb975c6e3825a545fcad70e56be8ab9">&#9670;&#160;</a></span>m_createDeviceSettings</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;QVariant(QByteArray, const QString&amp;)&gt; Protocols::LibraryDeviceEnumerator::m_createDeviceSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called with the contents of a matching file and with its path.</p>
+<p>Both are needed: most protocols embed the file in their settings, but some</p><ul>
+<li><a class="el" href="namespace_protocols_1_1_c_a_n.html">CAN</a>, whose settings name a .dbc - only want to remember where it is. </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_library_device_enumerator_8hpp_source.html">LibraryDeviceEnumerator.hpp</a></li>
 <li><b>LibraryDeviceEnumerator.cpp</b></li>

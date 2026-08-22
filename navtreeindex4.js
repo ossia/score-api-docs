@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"_plugins_factories_and_interfaces.html#AddonManager":[6,3],
+"_plugins_factories_and_interfaces.html#Anatomy":[6,0],
+"_plugins_factories_and_interfaces.html#NewClass":[6,1],
+"_plugins_factories_and_interfaces.html#NewInterface":[6,2],
+"_ply_8hpp_source.html":[13,0,0,2,35,0,20],
+"_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0],
 "_pointer_8hpp_source.html":[13,0,0,1,1,12,2,8],
 "_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,24],
 "_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,25],
@@ -60,7 +66,7 @@ var NAVTREEINDEX4 =
 "_property_8hpp_source.html":[13,0,0,2,2,0,5],
 "_property_command_8hpp_source.html":[13,0,0,1,1,2,8],
 "_protocol_factory_interface_8hpp_source.html":[13,0,0,2,0,0,4,2],
-"_protocol_library_8hpp_source.html":[13,0,0,2,29,0,26],
+"_protocol_library_8hpp_source.html":[13,0,0,2,29,0,27],
 "_protocol_list_8hpp_source.html":[13,0,0,2,0,0,4,3],
 "_protocol_settings_widget_8hpp_source.html":[13,0,0,2,0,0,4,4],
 "_puppet_client_8hpp_source.html":[13,0,0,1,1,12,27],
@@ -110,7 +116,7 @@ var NAVTREEINDEX4 =
 "_r_m_s_data_8hpp_source.html":[13,0,0,2,24,0,17],
 "_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,30],
 "_rate_limiter_8hpp_source.html":[13,0,0,2,16,0,30],
-"_rate_widget_8hpp_source.html":[13,0,0,2,29,0,27],
+"_rate_widget_8hpp_source.html":[13,0,0,2,29,0,28],
 "_reactive_label_8hpp_source.html":[13,0,0,1,1,13,21],
 "_record_8hpp_source.html":[13,0,0,2,30,0,0,0],
 "_record_automation_creation_visitor_8hpp_source.html":[13,0,0,2,30,0,1,0,0],
@@ -242,12 +248,6 @@ var NAVTREEINDEX4 =
 "_selection_state_8hpp_source.html":[13,0,0,2,11,0,1,1,0],
 "_send_strategy_8hpp_source.html":[13,0,0,1,1,2,0,6],
 "_separator_8hpp_source.html":[13,0,0,1,1,13,24],
-"_serial_device_8hpp_source.html":[13,0,0,2,29,0,17,0],
-"_serial_info_8hpp_source.html":[13,0,0,2,29,0,17,1],
-"_serial_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,17,2],
-"_serial_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,17,3],
-"_serial_specific_settings_8hpp_source.html":[13,0,0,2,29,0,17,4],
-"_serial_widget_8hpp_source.html":[13,0,0,2,29,0,13,1],
-"_serializable_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,3],
-"_serializable_helpers_8hpp_source.html":[13,0,0,1,1,8,13]
+"_serial_device_8hpp_source.html":[13,0,0,2,29,0,18,0],
+"_serial_info_8hpp_source.html":[13,0,0,2,29,0,18,1]
 };

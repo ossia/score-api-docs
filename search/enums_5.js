@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unuseddisposal_0',['UnusedDisposal',['../namespace_process.html#a638dbd1936d3a77ce9c5a1714ec58772',1,'Process']]]
+  ['scalemode_0',['ScaleMode',['../namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58',1,'score::gfx']]]
 ];

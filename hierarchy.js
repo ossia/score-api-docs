@@ -117,8 +117,10 @@ var hierarchy =
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "score::RecursiveWatch::AsyncCallbacks", "structscore_1_1_recursive_watch_1_1_async_callbacks.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
+    [ "Protocols::CAN::Attribute", "struct_protocols_1_1_c_a_n_1_1_attribute.html", null ],
     [ "Threedim::attribute_lookup", "struct_threedim_1_1attribute__lookup.html", null ],
     [ "halp::position_gpu_geometry::attributes", "structhalp_1_1position__gpu__geometry_1_1attributes.html", null ],
+    [ "Protocols::CAN::AttributeSet", "struct_protocols_1_1_c_a_n_1_1_attribute_set.html", null ],
     [ "score::gfx::RenderedCSFNode::GeometryBinding::AttributeSSBO", "structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_attribute_s_s_b_o.html", null ],
     [ "Threedim::BuffersToGeometry2::AttributeState", "struct_threedim_1_1_buffers_to_geometry2_1_1_attribute_state.html", null ],
     [ "Threedim::BuffersToGeometry::AttributeState", "struct_threedim_1_1_buffers_to_geometry_1_1_attribute_state.html", null ],
@@ -686,6 +688,7 @@ var hierarchy =
     [ "oscr::CustomItem< Item, Control >::custom_mouse_event", "structoscr_1_1_custom_item_1_1custom__mouse__event.html", null ],
     [ "oscr::CustomControlFactory< Node, Refl >", "structoscr_1_1_custom_control_factory.html", null ],
     [ "Scenario::CycleDetector", "struct_scenario_1_1_cycle_detector.html", null ],
+    [ "Protocols::CAN::Database", "struct_protocols_1_1_c_a_n_1_1_database.html", null ],
     [ "DataStream", "class_data_stream.html", null ],
     [ "DataStreamInput", "struct_data_stream_input.html", null ],
     [ "DataStreamOutput", "struct_data_stream_output.html", null ],
@@ -1256,8 +1259,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1305,8 +1308,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1964,6 +1967,7 @@ var hierarchy =
     [ "score::gfx::MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", null ],
     [ "bitfocus::win32_handles::message", "structbitfocus_1_1win32__handles_1_1message.html", null ],
     [ "LV2::Message", "struct_l_v2_1_1_message.html", null ],
+    [ "Protocols::CAN::Message", "struct_protocols_1_1_c_a_n_1_1_message.html", null ],
     [ "score::gfx::Message", "structscore_1_1gfx_1_1_message.html", null ],
     [ "State::Message", "struct_state_1_1_message.html", null ],
     [ "oscr::MessageBusReader", "structoscr_1_1_message_bus_reader.html", null ],
@@ -4226,6 +4230,7 @@ var hierarchy =
     [ "LocalTree::PropertyWrapper< Property >::shared_state", "struct_local_tree_1_1_property_wrapper_1_1shared__state.html", null ],
     [ "Gfx::SharedInputSettings", "struct_gfx_1_1_shared_input_settings.html", null ],
     [ "Gfx::SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", null ],
+    [ "Protocols::CAN::Signal", "struct_protocols_1_1_c_a_n_1_1_signal.html", null ],
     [ "SignalUtils", "struct_signal_utils.html", null ],
     [ "RollbackStrategy::Simple", "struct_rollback_strategy_1_1_simple.html", null ],
     [ "SendStrategy::Simple", "struct_send_strategy_1_1_simple.html", null ],
@@ -4601,6 +4606,7 @@ var hierarchy =
     [ "score::ValueAssigner< float >", "structscore_1_1_value_assigner_3_01float_01_4.html", null ],
     [ "score::ValueAssigner< int >", "structscore_1_1_value_assigner_3_01int_01_4.html", null ],
     [ "score::ValueAssigner< ossia::value >", "structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html", null ],
+    [ "Protocols::CAN::ValueDescription", "struct_protocols_1_1_c_a_n_1_1_value_description.html", null ],
     [ "ValueVariantDatastreamSerializer", "struct_value_variant_datastream_serializer.html", null ],
     [ "bitfocus::module_data::variable_definition", "structbitfocus_1_1module__data_1_1variable__definition.html", null ],
     [ "ossia::variant", null, [

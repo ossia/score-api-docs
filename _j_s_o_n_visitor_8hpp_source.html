@@ -718,7 +718,7 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  {</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    s.stream.StartArray();</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : vec)</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(elt);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      s.readFrom(elt);</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    s.stream.EndArray();</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  }</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
@@ -764,7 +764,7 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        s.stream.String(b.data(), b.size());</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>      }</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(elt);</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        s.readFrom(elt);</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    }</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    s.stream.EndArray();</div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>  }</div>
@@ -878,7 +878,7 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  {</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    s.stream.StartArray();</div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : vec)</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(elt);</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>      s.readFrom(elt);</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    s.stream.EndArray();</div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>  }</div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
@@ -903,7 +903,7 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  {</div>
 <div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>    s.stream.StartArray();</div>
 <div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; elt : vec)</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(elt);</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      s.readFrom(elt);</div>
 <div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    s.stream.EndArray();</div>
 <div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>  }</div>
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
@@ -996,7 +996,7 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code hl_class" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> std::optional&lt;T&gt;&amp; obj)</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  {</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <span class="keywordflow">if</span>(obj)</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>      s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(*obj);</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>      s.readFrom(*obj);</div>
 <div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>      s.stream.Null();</div>
 <div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  }</div>
@@ -1025,8 +1025,8 @@ $(document).ready(function(){initNavTree('_j_s_o_n_visitor_8hpp_source.html','')
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readFrom(<a class="code hl_class" href="class_j_s_o_n_reader.html">JSONObject::Serializer</a>&amp; s, <span class="keyword">const</span> type&amp; obj)</div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>  {</div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>    s.stream.StartArray();</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(obj.first);</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    s.<a class="code hl_function" href="class_j_s_o_n_reader.html#a97ad23366c9ed5dc863982deb9de199c">readFrom</a>(obj.second);</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>    s.readFrom(obj.first);</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>    s.readFrom(obj.second);</div>
 <div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>    s.stream.EndArray();</div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>  }</div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>

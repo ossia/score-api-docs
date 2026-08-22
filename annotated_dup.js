@@ -1543,6 +1543,14 @@ var annotated_dup =
         [ "RangeCapability", "struct_protocols_1_1_artnet_1_1_range_capability.html", null ],
         [ "SingleCapability", "struct_protocols_1_1_artnet_1_1_single_capability.html", null ]
       ] ],
+      [ "CAN", "namespace_protocols_1_1_c_a_n.html", [
+        [ "Attribute", "struct_protocols_1_1_c_a_n_1_1_attribute.html", null ],
+        [ "AttributeSet", "struct_protocols_1_1_c_a_n_1_1_attribute_set.html", "struct_protocols_1_1_c_a_n_1_1_attribute_set" ],
+        [ "Database", "struct_protocols_1_1_c_a_n_1_1_database.html", "struct_protocols_1_1_c_a_n_1_1_database" ],
+        [ "Message", "struct_protocols_1_1_c_a_n_1_1_message.html", "struct_protocols_1_1_c_a_n_1_1_message" ],
+        [ "Signal", "struct_protocols_1_1_c_a_n_1_1_signal.html", "struct_protocols_1_1_c_a_n_1_1_signal" ],
+        [ "ValueDescription", "struct_protocols_1_1_c_a_n_1_1_value_description.html", null ]
+      ] ],
       [ "Settings", null, [
         [ "MidiAPI", "struct_protocols_1_1_settings_1_1_midi_a_p_i.html", null ],
         [ "Model", "class_protocols_1_1_settings_1_1_model.html", null ],
@@ -1592,7 +1600,7 @@ var annotated_dup =
       [ "LibmapperClientProtocolFactory", "class_protocols_1_1_libmapper_client_protocol_factory.html", null ],
       [ "LibmapperClientProtocolSettingsWidget", "class_protocols_1_1_libmapper_client_protocol_settings_widget.html", null ],
       [ "LibmapperClientSpecificSettings", "struct_protocols_1_1_libmapper_client_specific_settings.html", null ],
-      [ "LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", null ],
+      [ "LibraryDeviceEnumerator", "class_protocols_1_1_library_device_enumerator.html", "class_protocols_1_1_library_device_enumerator" ],
       [ "LocalDevice", "class_protocols_1_1_local_device.html", null ],
       [ "LocalProtocolFactory", "class_protocols_1_1_local_protocol_factory.html", null ],
       [ "LocalProtocolSettingsWidget", "class_protocols_1_1_local_protocol_settings_widget.html", null ],
