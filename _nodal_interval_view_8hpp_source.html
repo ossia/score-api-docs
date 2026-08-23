@@ -119,90 +119,89 @@ $(document).ready(function(){initNavTree('_nodal_interval_view_8hpp_source.html'
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QRectF&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QGraphicsRectItem;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;score_plugin_scenario_export.h&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;nano_observer.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QGraphicsRectItem;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_scenario.html">Scenario</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>IntervalModel;</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_scenario_1_1_nodal_interval_view.html">   17</a></span><span class="keyword">class </span><a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a> final</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    , <span class="keyword">public</span> Nano::Observer</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  W_OBJECT(<a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a>)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">enum</span> ItemsToShow</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    AllItems,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    OnlyEffects</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  };</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a>(</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      ItemsToShow sh, <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      QGraphicsItem* parent);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">~NodalIntervalView</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;nano_observer.hpp&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_scenario.html">Scenario</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>IntervalModel;</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_scenario_1_1_nodal_interval_view.html">   19</a></span><span class="keyword">class </span>SCORE_PLUGIN_SCENARIO_EXPORT <a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a> final</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    , <span class="keyword">public</span> Nano::Observer</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  W_OBJECT(<a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">enum</span> ItemsToShow</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    AllItems,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    OnlyEffects</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  };</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">NodalIntervalView</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      ItemsToShow sh, <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; model, <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a>&amp; ctx,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      QGraphicsItem* parent);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> on_drop(QPointF pos, <span class="keyword">const</span> QMimeData* data);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> on_playPercentageChanged(<span class="keywordtype">double</span> t, <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> parent_dur);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_scenario_1_1_nodal_interval_view.html#a7df8aa45c143f3426e8e88494f5c3e8c">recenter</a>();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_scenario_1_1_nodal_interval_view.html#a67e0803c6af33400d9166bc14ea3ff76">recenterRelativeToView</a>();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_scenario_1_1_nodal_interval_view.html#ada661f33950e655a4a7f72d3e4633ead">panBy</a>(QPointF delta);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> rescale();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> zoomPlus();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> zoomMinus();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> zoomTo(<span class="keywordtype">double</span> newZoomLevel);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  QRectF enclosingRect() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QGraphicsItem&amp; nodeContainer() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> *m_container; }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">int</span> type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> ItemType::Type::NodalIntervalView; }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> on_processAdded(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> on_processRemoving(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> on_zoomRatioChanged(ZoomRatio ratio);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> on_dropOnNode(<span class="keyword">const</span> QPointF&amp; pt, <span class="keyword">const</span> QMimeData&amp; mime);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  QPointF viewportCenter() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> pickInitialViewport();</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> placeContainer(QPointF center);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> storeCenterFromContainer();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">void</span> dragMoveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">void</span> dropEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> wheelEvent(QGraphicsSceneWheelEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; m_model;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a>&amp; m_context;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  ItemsToShow m_itemsToShow{};</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  std::vector&lt;Process::NodeItem*&gt; m_nodeItems;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  QGraphicsItem* m_container{};</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  QGraphicsRectItem* m_selectionRect{};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  QPointF m_pressedPos{};</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">double</span> m_zoomLevel = 0;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  QPointF m_rubberBandOrigin{};</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  QRectF m_rubberBandRect{};</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">bool</span> m_rubberBanding{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_class" href="class_scenario_1_1_nodal_interval_view.html">~NodalIntervalView</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> on_drop(QPointF pos, <span class="keyword">const</span> QMimeData* data);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> on_playPercentageChanged(<span class="keywordtype">double</span> t, <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> parent_dur);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">void</span> recenter();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> recenterRelativeToView();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> panBy(QPointF delta);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> rescale();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> zoomPlus();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> zoomMinus();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> zoomTo(<span class="keywordtype">double</span> newZoomLevel);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  QRectF enclosingRect() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QGraphicsItem&amp; nodeContainer() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> *m_container; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">int</span> type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> ItemType::Type::NodalIntervalView; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> on_processAdded(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; proc);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> on_processRemoving(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; model);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> on_zoomRatioChanged(ZoomRatio ratio);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> on_dropOnNode(<span class="keyword">const</span> QPointF&amp; pt, <span class="keyword">const</span> QMimeData&amp; mime);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  QPointF viewportCenter() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> pickInitialViewport();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> placeContainer(QPointF center);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> storeCenterFromContainer();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">void</span> dragEnterEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">void</span> dragLeaveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span> dragMoveEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> dropEvent(QGraphicsSceneDragDropEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> mousePressEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> mouseMoveEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> mouseReleaseEvent(QGraphicsSceneMouseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> contextMenuEvent(QGraphicsSceneContextMenuEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> wheelEvent(QGraphicsSceneWheelEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_interval_model.html">IntervalModel</a>&amp; m_model;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_context.html">Process::Context</a>&amp; m_context;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  ItemsToShow m_itemsToShow{};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  std::vector&lt;Process::NodeItem*&gt; m_nodeItems;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  QGraphicsItem* m_container{};</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  QGraphicsRectItem* m_selectionRect{};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  QPointF m_pressedPos{};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">double</span> m_zoomLevel = 0;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  QPointF m_rubberBandOrigin{};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  QRectF m_rubberBandRect{};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">bool</span> m_rubberBanding{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:75</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="aclass_scenario_1_1_nodal_interval_view_html"><div class="ttname"><a href="class_scenario_1_1_nodal_interval_view.html">Scenario::NodalIntervalView</a></div><div class="ttdef"><b>Definition</b> NodalIntervalView.hpp:20</div></div>
-<div class="ttc" id="aclass_scenario_1_1_nodal_interval_view_html_a67e0803c6af33400d9166bc14ea3ff76"><div class="ttname"><a href="class_scenario_1_1_nodal_interval_view.html#a67e0803c6af33400d9166bc14ea3ff76">Scenario::NodalIntervalView::recenterRelativeToView</a></div><div class="ttdeci">void recenterRelativeToView()</div><div class="ttdoc">Places the canvas so that the model's nodal center is at the center of the visible part of this item,...</div><div class="ttdef"><b>Definition</b> NodalIntervalView.cpp:199</div></div>
-<div class="ttc" id="aclass_scenario_1_1_nodal_interval_view_html_a7df8aa45c143f3426e8e88494f5c3e8c"><div class="ttname"><a href="class_scenario_1_1_nodal_interval_view.html#a7df8aa45c143f3426e8e88494f5c3e8c">Scenario::NodalIntervalView::recenter</a></div><div class="ttdeci">void recenter()</div><div class="ttdoc">Fits all the nodes in the view.</div><div class="ttdef"><b>Definition</b> NodalIntervalView.cpp:208</div></div>
-<div class="ttc" id="aclass_scenario_1_1_nodal_interval_view_html_ada661f33950e655a4a7f72d3e4633ead"><div class="ttname"><a href="class_scenario_1_1_nodal_interval_view.html#ada661f33950e655a4a7f72d3e4633ead">Scenario::NodalIntervalView::panBy</a></div><div class="ttdeci">void panBy(QPointF delta)</div><div class="ttdoc">Moves the canvas by delta (scene units), as dragging its background does.</div><div class="ttdef"><b>Definition</b> NodalIntervalView.cpp:404</div></div>
+<div class="ttc" id="aclass_scenario_1_1_nodal_interval_view_html"><div class="ttname"><a href="class_scenario_1_1_nodal_interval_view.html">Scenario::NodalIntervalView</a></div><div class="ttdef"><b>Definition</b> NodalIntervalView.hpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1_empty_rect_item_html"><div class="ttname"><a href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></div><div class="ttdef"><b>Definition</b> RectItem.hpp:78</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="astruct_process_1_1_context_html"><div class="ttname"><a href="struct_process_1_1_context.html">Process::Context</a></div><div class="ttdef"><b>Definition</b> ProcessContext.hpp:12</div></div>
