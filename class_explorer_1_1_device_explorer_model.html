@@ -151,6 +151,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>addDevice</b> (const <
 <tr class="memitem:a5e1feb57e4e59947ef527ce98525da74" id="r_a5e1feb57e4e59947ef527ce98525da74"><td class="memItemLeft" align="right" valign="top"><a id="a5e1feb57e4e59947ef527ce98525da74" name="a5e1feb57e4e59947ef527ce98525da74"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateDevice</b> (const QString &amp;name, const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;dev)</td></tr>
 <tr class="separator:a5e1feb57e4e59947ef527ce98525da74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c57742fdf0822e87a444317ca4660d" id="r_aa4c57742fdf0822e87a444317ca4660d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_device_explorer_model.html#aa4c57742fdf0822e87a444317ca4660d">replaceDevice</a> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;&amp;deviceNode)</td></tr>
+<tr class="memdesc:aa4c57742fdf0822e87a444317ca4660d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the whole tree of the device named like deviceNode, in place.  <br /></td></tr>
+<tr class="separator:aa4c57742fdf0822e87a444317ca4660d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a945dda9dd063c31674af2c5e3fd43062" id="r_a945dda9dd063c31674af2c5e3fd43062"><td class="memItemLeft" align="right" valign="top"><a id="a945dda9dd063c31674af2c5e3fd43062" name="a945dda9dd063c31674af2c5e3fd43062"></a>
 <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>addAddress</b> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *parentNode, const <a class="el" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a> &amp;addressSettings, int row)</td></tr>
 <tr class="separator:a945dda9dd063c31674af2c5e3fd43062"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,6 +254,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkAndLoadDevice</b
 <tr class="memitem:a31de3194cf349ffbda6d83f85d4059e3" id="r_a31de3194cf349ffbda6d83f85d4059e3"><td class="memItemLeft" align="right" valign="top"><a id="a31de3194cf349ffbda6d83f85d4059e3" name="a31de3194cf349ffbda6d83f85d4059e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>nodeChanged</b> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *n)</td></tr>
 <tr class="separator:a31de3194cf349ffbda6d83f85d4059e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79915a7b544470337526207ccdb47999" id="r_a79915a7b544470337526207ccdb47999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_device_explorer_model.html#a79915a7b544470337526207ccdb47999">deviceTreeAboutToChange</a> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *device)</td></tr>
+<tr class="separator:a79915a7b544470337526207ccdb47999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b7039fc272203e4aa625b0d52f730c9" id="r_a0b7039fc272203e4aa625b0d52f730c9"><td class="memItemLeft" align="right" valign="top"><a id="a0b7039fc272203e4aa625b0d52f730c9" name="a0b7039fc272203e4aa625b0d52f730c9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceTreeChanged</b> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *device)</td></tr>
+<tr class="separator:a0b7039fc272203e4aa625b0d52f730c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_device_1_1_node_based_item_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_device_1_1_node_based_item_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a></td></tr>
 <tr class="memitem:aad05bb46c7360d6351953501d7156353 inherit pub_methods_class_device_1_1_node_based_item_model" id="r_aad05bb46c7360d6351953501d7156353"><td class="memItemLeft" align="right" valign="top">
 QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>modelIndexFromNode</b> (<a class="el" href="class_tree_node.html">node_type</a> &amp;n, int column) const</td></tr>
@@ -304,6 +312,25 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = <a c
 <tr class="separator:a582970ec35a6cec4fd58ca90af7e37d7 inherit pub_types_class_tree_node_based_item_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a79915a7b544470337526207ccdb47999" name="a79915a7b544470337526207ccdb47999"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79915a7b544470337526207ccdb47999">&#9670;&#160;</a></span>deviceTreeAboutToChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::DeviceExplorerModel::deviceTreeAboutToChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="class_explorer_1_1_device_explorer_model.html#aa4c57742fdf0822e87a444317ca4660d" title="Replaces the whole tree of the device named like deviceNode, in place.">replaceDevice()</a>: the device node's children are about to be swapped (rows removed then re-inserted), and have been. </p>
+
+</div>
+</div>
 <a id="a4ef0c7b20d9e8b0ccdb8c6ed38a36596" name="a4ef0c7b20d9e8b0ccdb8c6ed38a36596"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ef0c7b20d9e8b0ccdb8c6ed38a36596">&#9670;&#160;</a></span>editData()</h2>
 
@@ -344,6 +371,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = <a c
 
 <p><a class="el" href="class_explorer_1_1_device_explorer_model.html#a4ef0c7b20d9e8b0ccdb8c6ed38a36596" title="DeviceExplorerModel::editData.">DeviceExplorerModel::editData</a>. </p>
 <p>This functions gets called by the command that edit the columns. </p>
+
+</div>
+</div>
+<a id="aa4c57742fdf0822e87a444317ca4660d" name="aa4c57742fdf0822e87a444317ca4660d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c57742fdf0822e87a444317ca4660d">&#9670;&#160;</a></span>replaceDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Explorer::DeviceExplorerModel::replaceDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>deviceNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces the whole tree of the device named like deviceNode, in place. </p>
+<p>The device keeps its row: only its settings and children change. Returns false if no such device is shown. </p>
 
 </div>
 </div>

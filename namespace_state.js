@@ -17,6 +17,7 @@ var namespace_state =
     [ "NumericDomainWidget", "class_state_1_1_numeric_domain_widget.html", null ],
     [ "NumericValueSetDialog", "class_state_1_1_numeric_value_set_dialog.html", null ],
     [ "NumericValueWidget", "class_state_1_1_numeric_value_widget.html", null ],
+    [ "PrettyPrintOptions", "struct_state_1_1_pretty_print_options.html", "struct_state_1_1_pretty_print_options" ],
     [ "Pulse", "struct_state_1_1_pulse.html", null ],
     [ "Relation", "struct_state_1_1_relation.html", null ],
     [ "StringValueSetDialog", "class_state_1_1_string_value_set_dialog.html", null ],
@@ -29,5 +30,7 @@ var namespace_state =
     [ "VecDomainWidget", "class_state_1_1_vec_domain_widget.html", null ],
     [ "VecEditBase", "struct_state_1_1_vec_edit_base.html", null ],
     [ "VecWidget", "class_state_1_1_vec_widget.html", null ],
-    [ "isTrueExpression", "namespace_state.html#a1580ad4d2787babcd9df7b897f9e9aa1", null ]
+    [ "isTrueExpression", "namespace_state.html#a1580ad4d2787babcd9df7b897f9e9aa1", null ],
+    [ "prettyPrintValue", "namespace_state.html#a7cc58c26d518c94a6c433fe61e51415e", null ],
+    [ "printValue", "namespace_state.html#a6f738dba6fda26380ce38161c33699b5", null ]
 ];

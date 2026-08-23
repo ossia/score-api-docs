@@ -175,15 +175,24 @@ std::optional&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="memitem:aaf6dbdebb5a189881f996010462672b2 inherit pub_methods_class_device_1_1_device_interface" id="r_aaf6dbdebb5a189881f996010462672b2"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;)</td></tr>
 <tr class="separator:aaf6dbdebb5a189881f996010462672b2 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2119e8eb55cbca9e8f404d202f3a5864 inherit pub_methods_class_device_1_1_device_interface" id="r_a2119e8eb55cbca9e8f404d202f3a5864"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setListening</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;, bool)</td></tr>
+<tr class="memitem:a2119e8eb55cbca9e8f404d202f3a5864 inherit pub_methods_class_device_1_1_device_interface" id="r_a2119e8eb55cbca9e8f404d202f3a5864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_device_interface.html#a2119e8eb55cbca9e8f404d202f3a5864">setListening</a> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;, bool)</td></tr>
+<tr class="memdesc:a2119e8eb55cbca9e8f404d202f3a5864 inherit pub_methods_class_device_1_1_device_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or stops listening to the value of an address.  <br /></td></tr>
 <tr class="separator:a2119e8eb55cbca9e8f404d202f3a5864 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7292f0875f766d1410386c67a530c3e4 inherit pub_methods_class_device_1_1_device_interface" id="r_a7292f0875f766d1410386c67a530c3e4"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addToListening</b> (const std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt; &amp;)</td></tr>
 <tr class="separator:a7292f0875f766d1410386c67a530c3e4 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d3df8fa5467bf9f3877e965c2bf45d inherit pub_methods_class_device_1_1_device_interface" id="r_a23d3df8fa5467bf9f3877e965c2bf45d"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listening</b> () const</td></tr>
+<tr class="memdesc:a23d3df8fa5467bf9f3877e965c2bf45d inherit pub_methods_class_device_1_1_device_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addresses actually being listened to right now. <br /></td></tr>
 <tr class="separator:a23d3df8fa5467bf9f3877e965c2bf45d inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447bf78392a1192c1e8334b174575b73 inherit pub_methods_class_device_1_1_device_interface" id="r_a447bf78392a1192c1e8334b174575b73"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listeningRequests</b> () const</td></tr>
+<tr class="memdesc:a447bf78392a1192c1e8334b174575b73 inherit pub_methods_class_device_1_1_device_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addresses listening was requested for, whether or not they exist yet. <br /></td></tr>
+<tr class="separator:a447bf78392a1192c1e8334b174575b73 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482dd61ff69d174fcda52b33b002b03a inherit pub_methods_class_device_1_1_device_interface" id="r_a482dd61ff69d174fcda52b33b002b03a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>restoreListening</b> ()</td></tr>
+<tr class="memdesc:a482dd61ff69d174fcda52b33b002b03a inherit pub_methods_class_device_1_1_device_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-installs the value callbacks for every requested address that exists. <br /></td></tr>
+<tr class="separator:a482dd61ff69d174fcda52b33b002b03a inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019de26a1a23b1d41406f04ddae6aff4 inherit pub_methods_class_device_1_1_device_interface" id="r_a019de26a1a23b1d41406f04ddae6aff4"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addAddress</b> (const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;)</td></tr>
 <tr class="separator:a019de26a1a23b1d41406f04ddae6aff4 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -154,6 +154,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighlight</b> (boo
 <tr class="memitem:ab1756b7be976552d61bbe7bfb8f3f7a8" id="r_ab1756b7be976552d61bbe7bfb8f3f7a8"><td class="memItemLeft" align="right" valign="top"><a id="ab1756b7be976552d61bbe7bfb8f3f7a8" name="ab1756b7be976552d61bbe7bfb8f3f7a8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const final override</td></tr>
 <tr class="separator:ab1756b7be976552d61bbe7bfb8f3f7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb0ec496e0ab8189c2963147f4756fc" id="r_a5fb0ec496e0ab8189c2963147f4756fc"><td class="memItemLeft" align="right" valign="top"><a id="a5fb0ec496e0ab8189c2963147f4756fc" name="a5fb0ec496e0ab8189c2963147f4756fc"></a>
+QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>sceneCenter</b> () const noexcept</td></tr>
+<tr class="memdesc:a5fb0ec496e0ab8189c2963147f4756fc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter()</a> in scene coordinates, taking the item's transform into account. <br /></td></tr>
+<tr class="separator:a5fb0ec496e0ab8189c2963147f4756fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd131599e8a43fa72cd1b9e539bb246" id="r_a9dd131599e8a43fa72cd1b9e539bb246"><td class="memItemLeft" align="right" valign="top"><a id="a9dd131599e8a43fa72cd1b9e539bb246" name="a9dd131599e8a43fa72cd1b9e539bb246"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
+<tr class="separator:a9dd131599e8a43fa72cd1b9e539bb246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b31eb8f11ba7bd2d4f5b2cdaf7f4f7" id="r_a66b31eb8f11ba7bd2d4f5b2cdaf7f4f7"><td class="memItemLeft" align="right" valign="top"><a id="a66b31eb8f11ba7bd2d4f5b2cdaf7f4f7" name="a66b31eb8f11ba7bd2d4f5b2cdaf7f4f7"></a>
+QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b> () const override</td></tr>
+<tr class="separator:a66b31eb8f11ba7bd2d4f5b2cdaf7f4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37a59274517686dd8c14d1f598fa803" id="r_ae37a59274517686dd8c14d1f598fa803"><td class="memItemLeft" align="right" valign="top"><a id="ae37a59274517686dd8c14d1f598fa803" name="ae37a59274517686dd8c14d1f598fa803"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (const QPointF &amp;point) const override</td></tr>
+<tr class="separator:ae37a59274517686dd8c14d1f598fa803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56270a74dab387649b8c5dfcf42c642f" id="r_a56270a74dab387649b8c5dfcf42c642f"><td class="memItemLeft" align="right" valign="top"><a id="a56270a74dab387649b8c5dfcf42c642f" name="a56270a74dab387649b8c5dfcf42c642f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createCable</b> (<a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *src, <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *snk)</td></tr>
 <tr class="separator:a56270a74dab387649b8c5dfcf42c642f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,6 +176,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuRequested<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acee25e2176b15efb097579d42fb05436" id="r_acee25e2176b15efb097579d42fb05436"><td class="memItemLeft" align="right" valign="top">static constexpr QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter</a> () noexcept</td></tr>
+<tr class="separator:acee25e2176b15efb097579d42fb05436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50b2952a0be37888fe5409bd3d743d2" id="r_ad50b2952a0be37888fe5409bd3d743d2"><td class="memItemLeft" align="right" valign="top"><a id="ad50b2952a0be37888fe5409bd3d743d2" name="ad50b2952a0be37888fe5409bd3d743d2"></a>
 static const QPixmap &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>portImage</b> (Process::PortType t, bool inlet, bool smol, bool light, bool addr) noexcept</td></tr>
 <tr class="separator:ad50b2952a0be37888fe5409bd3d743d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,12 +208,13 @@ static <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *&#16
 <tr class="memitem:a085ca5da319fb0d9dd909a0188fe15a1" id="r_a085ca5da319fb0d9dd909a0188fe15a1"><td class="memItemLeft" align="right" valign="top"><a id="a085ca5da319fb0d9dd909a0188fe15a1" name="a085ca5da319fb0d9dd909a0188fe15a1"></a>
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 700</td></tr>
 <tr class="separator:a085ca5da319fb0d9dd909a0188fe15a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e8b5c2e111e8cd14b8e99d86c27169a" id="r_a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memItemLeft" align="right" valign="top"><a id="a8e8b5c2e111e8cd14b8e99d86c27169a" name="a8e8b5c2e111e8cd14b8e99d86c27169a"></a>
+static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>hitRadius</b> = 5.5</td></tr>
+<tr class="memdesc:a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the clickable zone around <a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter()</a>. <br /></td></tr>
+<tr class="separator:a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9dd131599e8a43fa72cd1b9e539bb246" id="r_a9dd131599e8a43fa72cd1b9e539bb246"><td class="memItemLeft" align="right" valign="top"><a id="a9dd131599e8a43fa72cd1b9e539bb246" name="a9dd131599e8a43fa72cd1b9e539bb246"></a>
-QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
-<tr class="separator:a9dd131599e8a43fa72cd1b9e539bb246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7b310d6e468bbd62a4d469a39b210fd" id="r_ac7b310d6e468bbd62a4d469a39b210fd"><td class="memItemLeft" align="right" valign="top"><a id="ac7b310d6e468bbd62a4d469a39b210fd" name="ac7b310d6e468bbd62a4d469a39b210fd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:ac7b310d6e468bbd62a4d469a39b210fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,6 +273,33 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>Dataflow::CableItem</b></td></tr>
 <tr class="separator:a380607356dcc2ae2fedf67094017b3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acee25e2176b15efb097579d42fb05436" name="acee25e2176b15efb097579d42fb05436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee25e2176b15efb097579d42fb05436">&#9670;&#160;</a></span>portCenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr QPointF Dataflow::PortItem::portCenter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Center of the drawn port circle, in item coordinates. Cables, the drag line and magnetic snapping all anchor on this point. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html">score-lib-process/Process/Dataflow/PortItem.hpp</a></li>
 <li><b>score-lib-process/Process/Dataflow/PortItem.cpp</b></li>

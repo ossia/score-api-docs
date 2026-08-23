@@ -204,15 +204,24 @@ std::optional&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="memitem:aaf6dbdebb5a189881f996010462672b2" id="r_aaf6dbdebb5a189881f996010462672b2"><td class="memItemLeft" align="right" valign="top"><a id="aaf6dbdebb5a189881f996010462672b2" name="aaf6dbdebb5a189881f996010462672b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;)</td></tr>
 <tr class="separator:aaf6dbdebb5a189881f996010462672b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2119e8eb55cbca9e8f404d202f3a5864" id="r_a2119e8eb55cbca9e8f404d202f3a5864"><td class="memItemLeft" align="right" valign="top"><a id="a2119e8eb55cbca9e8f404d202f3a5864" name="a2119e8eb55cbca9e8f404d202f3a5864"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setListening</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;, bool)</td></tr>
+<tr class="memitem:a2119e8eb55cbca9e8f404d202f3a5864" id="r_a2119e8eb55cbca9e8f404d202f3a5864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_device_interface.html#a2119e8eb55cbca9e8f404d202f3a5864">setListening</a> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;, bool)</td></tr>
+<tr class="memdesc:a2119e8eb55cbca9e8f404d202f3a5864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts or stops listening to the value of an address.  <br /></td></tr>
 <tr class="separator:a2119e8eb55cbca9e8f404d202f3a5864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7292f0875f766d1410386c67a530c3e4" id="r_a7292f0875f766d1410386c67a530c3e4"><td class="memItemLeft" align="right" valign="top"><a id="a7292f0875f766d1410386c67a530c3e4" name="a7292f0875f766d1410386c67a530c3e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addToListening</b> (const std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt; &amp;)</td></tr>
 <tr class="separator:a7292f0875f766d1410386c67a530c3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d3df8fa5467bf9f3877e965c2bf45d" id="r_a23d3df8fa5467bf9f3877e965c2bf45d"><td class="memItemLeft" align="right" valign="top"><a id="a23d3df8fa5467bf9f3877e965c2bf45d" name="a23d3df8fa5467bf9f3877e965c2bf45d"></a>
 std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listening</b> () const</td></tr>
+<tr class="memdesc:a23d3df8fa5467bf9f3877e965c2bf45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addresses actually being listened to right now. <br /></td></tr>
 <tr class="separator:a23d3df8fa5467bf9f3877e965c2bf45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447bf78392a1192c1e8334b174575b73" id="r_a447bf78392a1192c1e8334b174575b73"><td class="memItemLeft" align="right" valign="top"><a id="a447bf78392a1192c1e8334b174575b73" name="a447bf78392a1192c1e8334b174575b73"></a>
+std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listeningRequests</b> () const</td></tr>
+<tr class="memdesc:a447bf78392a1192c1e8334b174575b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addresses listening was requested for, whether or not they exist yet. <br /></td></tr>
+<tr class="separator:a447bf78392a1192c1e8334b174575b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482dd61ff69d174fcda52b33b002b03a" id="r_a482dd61ff69d174fcda52b33b002b03a"><td class="memItemLeft" align="right" valign="top"><a id="a482dd61ff69d174fcda52b33b002b03a" name="a482dd61ff69d174fcda52b33b002b03a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>restoreListening</b> ()</td></tr>
+<tr class="memdesc:a482dd61ff69d174fcda52b33b002b03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-installs the value callbacks for every requested address that exists. <br /></td></tr>
+<tr class="separator:a482dd61ff69d174fcda52b33b002b03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019de26a1a23b1d41406f04ddae6aff4" id="r_a019de26a1a23b1d41406f04ddae6aff4"><td class="memItemLeft" align="right" valign="top"><a id="a019de26a1a23b1d41406f04ddae6aff4" name="a019de26a1a23b1d41406f04ddae6aff4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addAddress</b> (const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;)</td></tr>
 <tr class="separator:a019de26a1a23b1d41406f04ddae6aff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -355,6 +364,38 @@ Friends</h2></td></tr>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt; &gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::connected), w_internal::viewLiteral(&quot;connected&quot;), std::integral_constant&lt; decltype((&amp;W_ThisType::connected)), &amp;W_ThisType::connected &gt;(), w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;&quot;)&gt;(&quot;&quot; &quot;&quot;), w_internal::W_EmptyFlag)))</td></tr>
 <tr class="separator:a2b91473be2a79f5f63847fcf153c5aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2119e8eb55cbca9e8f404d202f3a5864" name="a2119e8eb55cbca9e8f404d202f3a5864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2119e8eb55cbca9e8f404d202f3a5864">&#9670;&#160;</a></span>setListening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::DeviceInterface::setListening </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts or stops listening to the value of an address. </p>
+<p>The request is remembered independently of the device's connection: the callbacks are re-installed by <a class="el" href="class_device_1_1_device_interface.html#a482dd61ff69d174fcda52b33b002b03a" title="Re-installs the value callbacks for every requested address that exists.">restoreListening()</a> whenever the device is rebuilt (reconnect, recreate, refresh...), so that an address the explorer shows keeps being listened to across those. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_device_interface_8hpp_source.html">DeviceInterface.hpp</a></li>
 <li><b>DeviceInterface.cpp</b></li>

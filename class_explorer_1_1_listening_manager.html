@@ -123,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa974443ce9a1f71d3088444f065ad4fc" id="r_aa974443ce9a1f71d3088444f065ad4fc"><td class="memItemLeft" align="right" valign="top"><a id="aa974443ce9a1f71d3088444f065ad4fc" name="aa974443ce9a1f71d3088444f065ad4fc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>enableListening</b> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node)</td></tr>
 <tr class="separator:aa974443ce9a1f71d3088444f065ad4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9647feceed37196d6e9e900ce915eabe" id="r_a9647feceed37196d6e9e900ce915eabe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_listening_manager.html#a9647feceed37196d6e9e900ce915eabe">disableListening</a> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node)</td></tr>
+<tr class="separator:a9647feceed37196d6e9e900ce915eabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad980190aed2187c0a8f965638702d79c" id="r_ad980190aed2187c0a8f965638702d79c"><td class="memItemLeft" align="right" valign="top"><a id="ad980190aed2187c0a8f965638702d79c" name="ad980190aed2187c0a8f965638702d79c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setListening</b> (const QModelIndex &amp;idx, bool b)</td></tr>
 <tr class="separator:ad980190aed2187c0a8f965638702d79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +138,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stopListening</b> ()<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDeviceWidgetListening</b> ()</td></tr>
 <tr class="separator:a84dde4ab8734361e6de09c7668cc34a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9647feceed37196d6e9e900ce915eabe" name="a9647feceed37196d6e9e900ce915eabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9647feceed37196d6e9e900ce915eabe">&#9670;&#160;</a></span>disableListening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::ListeningManager::disableListening </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stops listening to a node and everything below it: for nodes that leave the tree (their device keeps the request otherwise). </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_listening_manager_8hpp_source.html">ListeningManager.hpp</a></li>
 <li><b>ListeningManager.cpp</b></li>

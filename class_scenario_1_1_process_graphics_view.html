@@ -114,8 +114,11 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_process_graphics_vi
 Inheritance diagram for Scenario::ProcessGraphicsView:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_scenario_1_1_process_graphics_view.png" alt=""/>
- </div></div>
+  <img src="class_scenario_1_1_process_graphics_view.png" usemap="#Scenario::ProcessGraphicsView_map" alt=""/>
+  <map id="Scenario::ProcessGraphicsView_map" name="Scenario::ProcessGraphicsView_map">
+<area href="class_dataflow_1_1_auto_scrollable_view.html" title="A QGraphicsView that knows how to move its content for auto-scroll." alt="Dataflow::AutoScrollableView" shape="rect" coords="204,0,398,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -128,6 +131,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>scrollHorizontal</b> 
 <tr class="memitem:a9cf4e46b3e9ba90ece9e87800f4e6f7a" id="r_a9cf4e46b3e9ba90ece9e87800f4e6f7a"><td class="memItemLeft" align="right" valign="top"><a id="a9cf4e46b3e9ba90ece9e87800f4e6f7a" name="a9cf4e46b3e9ba90ece9e87800f4e6f7a"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>visibleRect</b> () const noexcept</td></tr>
 <tr class="separator:a9cf4e46b3e9ba90ece9e87800f4e6f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9622fd375bd03b1c05c8bf8eaf37963e" id="r_a9622fd375bd03b1c05c8bf8eaf37963e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_process_graphics_view.html#a9622fd375bd03b1c05c8bf8eaf37963e">autoScrollBy</a> (QPoint delta) override</td></tr>
+<tr class="memdesc:a9622fd375bd03b1c05c8bf8eaf37963e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reveals what lies <code>delta</code> pixels further (view coordinates).  <br /></td></tr>
+<tr class="separator:a9622fd375bd03b1c05c8bf8eaf37963e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd68062d90bf590cb25c3f75581e95c0" id="r_afd68062d90bf590cb25c3f75581e95c0"><td class="memItemLeft" align="right" valign="top"><a id="afd68062d90bf590cb25c3f75581e95c0" name="afd68062d90bf590cb25c3f75581e95c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawForeground</b> (QPainter *painter, const QRectF &amp;rect) override</td></tr>
 <tr class="separator:afd68062d90bf590cb25c3f75581e95c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +194,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>tabletMove</b> (QTabl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ad952d3fd6772a48eee4b77a73b431ba1" id="r_ad952d3fd6772a48eee4b77a73b431ba1"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(QPoint)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_process_graphics_view.html#ad952d3fd6772a48eee4b77a73b431ba1">autoScrollHandler</a></td></tr>
+<tr class="memdesc:ad952d3fd6772a48eee4b77a73b431ba1"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the content is moved when something (a cable being dragged against the edge) asks to reveal more of it.  <br /></td></tr>
+<tr class="separator:ad952d3fd6772a48eee4b77a73b431ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad97a0e9faf6af3cceaa57add06df2757" id="r_ad97a0e9faf6af3cceaa57add06df2757"><td class="memItemLeft" align="right" valign="top"><a id="ad97a0e9faf6af3cceaa57add06df2757" name="ad97a0e9faf6af3cceaa57add06df2757"></a>
 QPointer&lt; <a class="el" href="classscore_1_1_arrow_dialog.html">score::ArrowDialog</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>currentPopup</b> {}</td></tr>
 <tr class="separator:ad97a0e9faf6af3cceaa57add06df2757"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +222,56 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>ScenarioDocumentView</b></td></tr>
 <tr class="separator:a99558d0574bcbe601ec0af28d621316f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9622fd375bd03b1c05c8bf8eaf37963e" name="a9622fd375bd03b1c05c8bf8eaf37963e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9622fd375bd03b1c05c8bf8eaf37963e">&#9670;&#160;</a></span>autoScrollBy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Scenario::ProcessGraphicsView::autoScrollBy </td>
+          <td>(</td>
+          <td class="paramtype">QPoint&#160;</td>
+          <td class="paramname"><em>delta</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reveals what lies <code>delta</code> pixels further (view coordinates). </p>
+<p>A positive x reveals content to the right, a positive y content below. </p><dl class="section return"><dt>Returns</dt><dd>true if the content moved. </dd></dl>
+
+<p>Implements <a class="el" href="class_dataflow_1_1_auto_scrollable_view.html#a0834d73be5873c5620ffa901f01b2815">Dataflow::AutoScrollableView</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad952d3fd6772a48eee4b77a73b431ba1" name="ad952d3fd6772a48eee4b77a73b431ba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad952d3fd6772a48eee4b77a73b431ba1">&#9670;&#160;</a></span>autoScrollHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;bool(QPoint)&gt; Scenario::ProcessGraphicsView::autoScrollHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>How the content is moved when something (a cable being dragged against the edge) asks to reveal more of it. </p>
+<p>Set by the central display in charge: the nodal canvas pans its node container, the timeline grows past its end. Without one, the scroll bars move, which only goes as far as the current scene rect. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_scenario_document_view_8hpp_source.html">ScenarioDocumentView.hpp</a></li>
 <li><b>ScenarioDocumentView.cpp</b></li>

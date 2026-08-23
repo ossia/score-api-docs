@@ -78,7 +78,7 @@ var searchData=
   ['visitor_5fobject_5ftag_75',['visitor_object_tag',['../structvisitor__object__tag.html',1,'']]],
   ['visitor_5ftemplate_5ftag_76',['visitor_template_tag',['../structvisitor__template__tag.html',1,'']]],
   ['visitorvariant_77',['VisitorVariant',['../struct_visitor_variant.html',1,'']]],
-  ['voice_78',['voice',['../struct_l_v2_1_1voice.html',1,'LV2']]],
+  ['voice_78',['voice',['../structavnd__tools_1_1_entity_to_midi_1_1voice.html',1,'avnd_tools::EntityToMidi::voice'],['../struct_l_v2_1_1voice.html',1,'LV2::voice']]],
   ['voice_5fstrategy_79',['voice_strategy',['../struct_l_v2_1_1voice__strategy.html',1,'LV2']]],
   ['volumeslider_80',['VolumeSlider',['../structscore_1_1_volume_slider.html',1,'score']]],
   ['vox_5ft_81',['vox_t',['../struct_threedim_1_1_voxel_loader_1_1ins_1_1vox__t.html',1,'Threedim::VoxelLoader::ins']]],

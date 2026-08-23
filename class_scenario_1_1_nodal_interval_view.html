@@ -148,10 +148,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_playPercentageChan
 <tr class="separator:a6bccac8ac45aab13fa76cae1a7d43f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df8aa45c143f3426e8e88494f5c3e8c" id="r_a7df8aa45c143f3426e8e88494f5c3e8c"><td class="memItemLeft" align="right" valign="top"><a id="a7df8aa45c143f3426e8e88494f5c3e8c" name="a7df8aa45c143f3426e8e88494f5c3e8c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>recenter</b> ()</td></tr>
+<tr class="memdesc:a7df8aa45c143f3426e8e88494f5c3e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fits all the nodes in the view. <br /></td></tr>
 <tr class="separator:a7df8aa45c143f3426e8e88494f5c3e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e0803c6af33400d9166bc14ea3ff76" id="r_a67e0803c6af33400d9166bc14ea3ff76"><td class="memItemLeft" align="right" valign="top"><a id="a67e0803c6af33400d9166bc14ea3ff76" name="a67e0803c6af33400d9166bc14ea3ff76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>recenterRelativeToView</b> ()</td></tr>
+<tr class="memitem:a67e0803c6af33400d9166bc14ea3ff76" id="r_a67e0803c6af33400d9166bc14ea3ff76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a67e0803c6af33400d9166bc14ea3ff76">recenterRelativeToView</a> ()</td></tr>
+<tr class="memdesc:a67e0803c6af33400d9166bc14ea3ff76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places the canvas so that the model's nodal center is at the center of the visible part of this item, at the model's scale.  <br /></td></tr>
 <tr class="separator:a67e0803c6af33400d9166bc14ea3ff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada661f33950e655a4a7f72d3e4633ead" id="r_ada661f33950e655a4a7f72d3e4633ead"><td class="memItemLeft" align="right" valign="top"><a id="ada661f33950e655a4a7f72d3e4633ead" name="ada661f33950e655a4a7f72d3e4633ead"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>panBy</b> (QPointF delta)</td></tr>
+<tr class="memdesc:ada661f33950e655a4a7f72d3e4633ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the canvas by <code>delta</code> (scene units), as dragging its background does. <br /></td></tr>
+<tr class="separator:ada661f33950e655a4a7f72d3e4633ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a77737c15640b6ab4b2b045ddad111" id="r_a42a77737c15640b6ab4b2b045ddad111"><td class="memItemLeft" align="right" valign="top"><a id="a42a77737c15640b6ab4b2b045ddad111" name="a42a77737c15640b6ab4b2b045ddad111"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rescale</b> ()</td></tr>
 <tr class="separator:a42a77737c15640b6ab4b2b045ddad111"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +246,27 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumHeight</b>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumWidth</b> {}</td></tr>
 <tr class="separator:abff67af1b8dc1eac6003755e45381591 inherit pro_attribs_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a67e0803c6af33400d9166bc14ea3ff76" name="a67e0803c6af33400d9166bc14ea3ff76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e0803c6af33400d9166bc14ea3ff76">&#9670;&#160;</a></span>recenterRelativeToView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::NodalIntervalView::recenterRelativeToView </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Places the canvas so that the model's nodal center is at the center of the visible part of this item, at the model's scale. </p>
+<p>Called whenever the view's geometry changes; what is at the center stays there. The first time, when the model has no center yet (new or older document), the center of the nodes is taken and stored. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_nodal_interval_view_8hpp_source.html">NodalIntervalView.hpp</a></li>
 <li><b>NodalIntervalView.cpp</b></li>

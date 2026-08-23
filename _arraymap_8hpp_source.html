@@ -180,50 +180,53 @@ $(document).ready(function(){initNavTree('_arraymap_8hpp_source.html',''); initR
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordtype">double</span> px;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordtype">double</span> po;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      ossia::math_expression expr;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordtype">bool</span> initialized{};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      ossia::math_expression expr;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    };</div>
 </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    boost::container::static_vector&lt;Expr, 1024&gt; expressions;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">double</span> count{};</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">double</span> cur_time{};</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">double</span> cur_deltatime{};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">double</span> cur_pos{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    int64_t last_value_time{};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    std::string last_expression;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  } state;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    boost::container::static_vector&lt;Expr, 1024&gt; expressions;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">double</span> count{};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">double</span> cur_time{};</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">double</span> cur_deltatime{};</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordtype">double</span> cur_pos{};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    int64_t last_value_time{};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::string last_expression;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">bool</span> last_expression_ok{};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  } state;</div>
 </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">bool</span> trigger{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">using </span>tick = halp::tick_flicks;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> tick&amp; tk)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">if</span>(!std::exchange(trigger, <span class="keyword">false</span>))</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    GenericMathMapping&lt;State&gt;::run_polyphonic(</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        inputs.port.value, outputs.port.call, inputs.expr.value, tk, state);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">   90</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">ui</a></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    struct : halp::control&lt;&amp;ins::expr&gt;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      halp_flag(dynamic_size);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    } expr;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  };</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">bool</span> trigger{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">using </span>tick = halp::tick_flicks;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> tick&amp; tk)</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">if</span>(!std::exchange(trigger, <span class="keyword">false</span>))</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    GenericMathMapping&lt;State&gt;::run_polyphonic(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        inputs.port.value, outputs.port.call, inputs.expr.value, tk, state);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="};">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">   93</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">ui</a></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    struct : halp::control&lt;&amp;ins::expr&gt;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      halp_flag(dynamic_size);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    } expr;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  };</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>};</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
 </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
-<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:33</div></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:35</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_mapping_1_1_node_1_1_state_1_1_expr_html"><div class="ttname"><a href="struct_nodes_1_1_array_mapping_1_1_node_1_1_state_1_1_expr.html">Nodes::ArrayMapping::Node::State::Expr</a></div><div class="ttdef"><b>Definition</b> Arraymap.hpp:43</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_mapping_1_1_node_1_1ins_html"><div class="ttname"><a href="struct_nodes_1_1_array_mapping_1_1_node_1_1ins.html">Nodes::ArrayMapping::Node::ins</a></div><div class="ttdef"><b>Definition</b> Arraymap.hpp:25</div></div>
-<div class="ttc" id="astruct_nodes_1_1_array_mapping_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">Nodes::ArrayMapping::Node::ui</a></div><div class="ttdef"><b>Definition</b> Arraymap.hpp:91</div></div>
+<div class="ttc" id="astruct_nodes_1_1_array_mapping_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html">Nodes::ArrayMapping::Node::ui</a></div><div class="ttdef"><b>Definition</b> Arraymap.hpp:94</div></div>
 <div class="ttc" id="astruct_nodes_1_1_array_mapping_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_array_mapping_1_1_node.html">Nodes::ArrayMapping::Node</a></div><div class="ttdef"><b>Definition</b> Arraymap.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

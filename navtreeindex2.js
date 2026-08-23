@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"_file_watch_8hpp_source.html":[13,0,0,1,1,12,14],
+"_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,1,4],
+"_find_string_in_file_8hpp_source.html":[13,0,0,1,1,12,15],
+"_fixed_tab_widget_8hpp_source.html":[13,0,0,1,0,9,0],
 "_fixture_database_8hpp_source.html":[13,0,0,2,29,0,0,6],
 "_fixture_dialog_8hpp_source.html":[13,0,0,2,29,0,0,7],
 "_flatness_8hpp_source.html":[13,0,0,2,5,0,5],
@@ -150,7 +154,7 @@ var NAVTREEINDEX2 =
 "_interpolation_presenter_8hpp_source.html":[13,0,0,2,32,1,3],
 "_interpolation_process_8hpp_source.html":[13,0,0,2,32,1,4],
 "_interpolation_view_8hpp_source.html":[13,0,0,2,32,1,5],
-"_interpolator_8hpp_source.html":[13,0,0,2,8,2,6],
+"_interpolator_8hpp_source.html":[13,0,0,2,8,2,8],
 "_interval_8hpp_source.html":[13,0,0,2,31,1,3,0,1],
 "_interval_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,0,1],
 "_interval_brace_8hpp_source.html":[13,0,0,2,32,4,3,5,2,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "_local_tree_document_plugin_8hpp_source.html":[13,0,0,2,14,2,1],
 "_logger_8hpp_source.html":[13,0,0,2,8,0,1],
 "_looper_8hpp_source.html":[13,0,0,2,16,0,14],
-"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,10,0],
-"_m_c_u_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,10,1],
-"_m_c_u_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,10,2],
-"_m_c_u_specific_settings_8hpp_source.html":[13,0,0,2,29,0,10,3],
-"_m_d_m_enrollment_detection_8hpp_source.html":[13,0,0,1,1,12,21]
+"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,10,0]
 };

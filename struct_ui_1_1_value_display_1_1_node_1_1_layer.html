@@ -125,6 +125,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a99323d8937075e87a7a6c5dd85e1db4c" id="r_a99323d8937075e87a7a6c5dd85e1db4c"><td class="memItemLeft" align="right" valign="top"><a id="a99323d8937075e87a7a6c5dd85e1db4c" name="a99323d8937075e87a7a6c5dd85e1db4c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>logging</b> () const noexcept</td></tr>
 <tr class="separator:a99323d8937075e87a7a6c5dd85e1db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f31a9b88537d28a4ba5431dd5957bc" id="r_a98f31a9b88537d28a4ba5431dd5957bc"><td class="memItemLeft" align="right" valign="top"><a id="a98f31a9b88537d28a4ba5431dd5957bc" name="a98f31a9b88537d28a4ba5431dd5957bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pretty</b> () const noexcept</td></tr>
+<tr class="separator:a98f31a9b88537d28a4ba5431dd5957bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f55054799280ef6f39e2762dfc3fbe" id="r_ad2f55054799280ef6f39e2762dfc3fbe"><td class="memItemLeft" align="right" valign="top"><a id="ad2f55054799280ef6f39e2762dfc3fbe" name="ad2f55054799280ef6f39e2762dfc3fbe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuildText</b> ()</td></tr>
+<tr class="separator:ad2f55054799280ef6f39e2762dfc3fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa126c6916912bc7564a2bf67ea757f47" id="r_aa126c6916912bc7564a2bf67ea757f47"><td class="memItemLeft" align="right" valign="top"><a id="aa126c6916912bc7564a2bf67ea757f47" name="aa126c6916912bc7564a2bf67ea757f47"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parent)</td></tr>
 <tr class="separator:aa126c6916912bc7564a2bf67ea757f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,9 +237,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_next_seq</b> = 0</td
 <tr class="memitem:a00e9b357f4ddfbef814aeb4ef1440cc9" id="r_a00e9b357f4ddfbef814aeb4ef1440cc9"><td class="memItemLeft" align="right" valign="top"><a id="a00e9b357f4ddfbef814aeb4ef1440cc9" name="a00e9b357f4ddfbef814aeb4ef1440cc9"></a>
 <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>log_inlet</b> {}</td></tr>
 <tr class="separator:a00e9b357f4ddfbef814aeb4ef1440cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045ae8acc1fc4477aa6612c40548f718" id="r_a045ae8acc1fc4477aa6612c40548f718"><td class="memItemLeft" align="right" valign="top"><a id="a045ae8acc1fc4477aa6612c40548f718" name="a045ae8acc1fc4477aa6612c40548f718"></a>
+<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pretty_inlet</b> {}</td></tr>
+<tr class="separator:a045ae8acc1fc4477aa6612c40548f718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbde257bcabddf2977504894b852eb78" id="r_acbde257bcabddf2977504894b852eb78"><td class="memItemLeft" align="right" valign="top"><a id="acbde257bcabddf2977504894b852eb78" name="acbde257bcabddf2977504894b852eb78"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>txt_cache</b></td></tr>
 <tr class="separator:acbde257bcabddf2977504894b852eb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2036e07190fad54230f03ccf4e20f2f6" id="r_a2036e07190fad54230f03ccf4e20f2f6"><td class="memItemLeft" align="right" valign="top"><a id="a2036e07190fad54230f03ccf4e20f2f6" name="a2036e07190fad54230f03ccf4e20f2f6"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_buf</b></td></tr>
+<tr class="separator:a2036e07190fad54230f03ccf4e20f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

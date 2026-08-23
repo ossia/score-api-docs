@@ -1,6 +1,9 @@
 var NAVTREEINDEX1 =
 {
-"_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,7],
+"_control_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,0],
+"_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
+"_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
+"_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,9],
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,1],
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
@@ -114,7 +117,7 @@ var NAVTREEINDEX1 =
 "_device_logging_8hpp_source.html":[13,0,0,2,13,0,11],
 "_device_model_provider_8hpp_source.html":[13,0,0,2,0,0,5,1],
 "_device_node_8hpp_source.html":[13,0,0,2,0,0,3,0],
-"_device_recorder_8hpp_source.html":[13,0,0,2,8,2,4],
+"_device_recorder_8hpp_source.html":[13,0,0,2,8,2,5],
 "_device_settings_8hpp_source.html":[13,0,0,2,0,0,4,1],
 "_direct_video_node_renderer_8hpp_source.html":[13,0,0,2,17,1,4,6],
 "_displayed_elements_container_8hpp_source.html":[13,0,0,2,32,4,3,3,2],
@@ -162,7 +165,7 @@ var NAVTREEINDEX1 =
 "_duplicate_interval_8hpp_source.html":[13,0,0,2,32,4,1,5,4],
 "_duration_section_widget_8hpp_source.html":[13,0,0,2,32,4,6,3,0,0],
 "_dynamic_library_8hpp_source.html":[13,0,0,1,1,12,9],
-"_easetanbul_8hpp_source.html":[13,0,0,2,8,2,5],
+"_easetanbul_8hpp_source.html":[13,0,0,2,8,2,6],
 "_easing_segment_8hpp_source.html":[13,0,0,2,11,0,4,9],
 "_edit_connection_8hpp_source.html":[13,0,0,2,32,0,0,2],
 "_edit_context_8hpp_source.html":[13,0,0,2,20,0,2,3],
@@ -184,6 +187,7 @@ var NAVTREEINDEX1 =
 "_entity_map_8hpp_source.html":[13,0,0,1,1,7,13],
 "_entity_map_serialization_8hpp_source.html":[13,0,0,1,1,7,14],
 "_entity_serialization_8hpp_source.html":[13,0,0,1,1,7,15],
+"_entity_to_midi_8hpp_source.html":[13,0,0,2,8,2,7],
 "_evdev_device_8hpp_source.html":[13,0,0,2,29,0,4,0],
 "_evdev_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,4,1],
 "_evdev_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,4,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "_file_operation_8hpp_source.html":[13,0,0,2,3,4,26],
 "_file_path_8hpp_source.html":[13,0,0,1,1,12,13],
 "_file_report_view_8hpp_source.html":[13,0,0,2,3,4,27],
-"_file_system_model_8hpp_source.html":[13,0,0,2,21,0,1],
-"_file_watch_8hpp_source.html":[13,0,0,1,1,12,14],
-"_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,1,4],
-"_find_string_in_file_8hpp_source.html":[13,0,0,1,1,12,15],
-"_fixed_tab_widget_8hpp_source.html":[13,0,0,1,0,9,0]
+"_file_system_model_8hpp_source.html":[13,0,0,2,21,0,1]
 };

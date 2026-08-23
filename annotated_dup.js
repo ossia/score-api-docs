@@ -70,6 +70,15 @@ var annotated_dup =
       [ "StateInspectorWidget", "class_automation_1_1_state_inspector_widget.html", null ]
     ] ],
     [ "avnd_tools", null, [
+      [ "btrk", null, [
+        [ "beat_dll", "structavnd__tools_1_1btrk_1_1beat__dll.html", null ],
+        [ "confidence_monitor", "structavnd__tools_1_1btrk_1_1confidence__monitor.html", null ],
+        [ "cumulative_tracker", "structavnd__tools_1_1btrk_1_1cumulative__tracker.html", null ],
+        [ "event_estimator", "structavnd__tools_1_1btrk_1_1event__estimator.html", "structavnd__tools_1_1btrk_1_1event__estimator" ],
+        [ "spectral_flux_odf", "structavnd__tools_1_1btrk_1_1spectral__flux__odf.html", "structavnd__tools_1_1btrk_1_1spectral__flux__odf" ],
+        [ "tap_tempo", "structavnd__tools_1_1btrk_1_1tap__tempo.html", null ],
+        [ "tempo_estimator", "structavnd__tools_1_1btrk_1_1tempo__estimator.html", null ]
+      ] ],
       [ "detail", null, [
         [ "bounds_checker", "structavnd__tools_1_1detail_1_1bounds__checker.html", null ],
         [ "dimension_changer", "structavnd__tools_1_1detail_1_1dimension__changer.html", null ],
@@ -80,7 +89,10 @@ var annotated_dup =
         [ "table_operations", "structavnd__tools_1_1detail_1_1table__operations.html", null ]
       ] ],
       [ "AudioRecorder", "structavnd__tools_1_1_audio_recorder.html", "structavnd__tools_1_1_audio_recorder" ],
+      [ "BeatTracker", "structavnd__tools_1_1_beat_tracker.html", "structavnd__tools_1_1_beat_tracker" ],
       [ "DeviceRecorder", "structavnd__tools_1_1_device_recorder.html", "structavnd__tools_1_1_device_recorder" ],
+      [ "entity_descriptors", "structavnd__tools_1_1entity__descriptors.html", null ],
+      [ "EntityToMidi", "structavnd__tools_1_1_entity_to_midi.html", "structavnd__tools_1_1_entity_to_midi" ],
       [ "fmt_csv_writer", "structavnd__tools_1_1fmt__csv__writer.html", null ],
       [ "Interpolator", "structavnd__tools_1_1_interpolator.html", null ],
       [ "PatternCombiner", "structavnd__tools_1_1_pattern_combiner.html", "structavnd__tools_1_1_pattern_combiner" ],
@@ -88,6 +100,9 @@ var annotated_dup =
       [ "PatternSelector", "structavnd__tools_1_1_pattern_selector.html", null ],
       [ "PatternSweeper", "structavnd__tools_1_1_pattern_sweeper.html", null ],
       [ "PatternUnfolder", "structavnd__tools_1_1_pattern_unfolder.html", null ],
+      [ "PointTracker2D", "structavnd__tools_1_1_point_tracker2_d.html", null ],
+      [ "PointTracker3D", "structavnd__tools_1_1_point_tracker3_d.html", null ],
+      [ "PointTrackerBase", "structavnd__tools_1_1_point_tracker_base.html", "structavnd__tools_1_1_point_tracker_base" ],
       [ "Queue", "structavnd__tools_1_1_queue.html", null ],
       [ "Spammer", "structavnd__tools_1_1_spammer.html", "structavnd__tools_1_1_spammer" ],
       [ "Table", "structavnd__tools_1_1_table.html", null ],
@@ -117,6 +132,11 @@ var annotated_dup =
           [ "push_back_container< QString, QChar >", "structboost_1_1spirit_1_1traits_1_1push__back__container_3_01_q_string_00_01_q_char_01_4.html", null ]
         ] ]
       ] ]
+    ] ],
+    [ "bug_named_vecf", null, [
+      [ "named_point2", "structbug__named__vecf_1_1named__point2.html", null ],
+      [ "named_point3", "structbug__named__vecf_1_1named__point3.html", null ],
+      [ "named_rect4", "structbug__named__vecf_1_1named__rect4.html", null ]
     ] ],
     [ "Clap", null, [
       [ "ApplicationPlugin", "class_clap_1_1_application_plugin.html", "class_clap_1_1_application_plugin" ],
@@ -227,7 +247,9 @@ var annotated_dup =
       [ "AutomatablePortFactory", "class_dataflow_1_1_automatable_port_factory.html", null ],
       [ "AutomatablePortFactory_T", "class_dataflow_1_1_automatable_port_factory___t.html", null ],
       [ "AutomatablePortItem", "class_dataflow_1_1_automatable_port_item.html", null ],
+      [ "AutoScrollableView", "class_dataflow_1_1_auto_scrollable_view.html", "class_dataflow_1_1_auto_scrollable_view" ],
       [ "BasicToolPaletteInputDispatcher", "class_dataflow_1_1_basic_tool_palette_input_dispatcher.html", null ],
+      [ "CableDragAutoScroller", "class_dataflow_1_1_cable_drag_auto_scroller.html", "class_dataflow_1_1_cable_drag_auto_scroller" ],
       [ "CableInspectorFactory", "class_dataflow_1_1_cable_inspector_factory.html", "class_dataflow_1_1_cable_inspector_factory" ],
       [ "CableItem", "class_dataflow_1_1_cable_item.html", null ],
       [ "CableWidget", "class_dataflow_1_1_cable_widget.html", null ],
@@ -253,7 +275,7 @@ var annotated_dup =
       [ "MinMaxFloatOutletItem", "class_dataflow_1_1_min_max_float_outlet_item.html", null ],
       [ "MinMaxFloatOutletMiniPanel", "class_dataflow_1_1_min_max_float_outlet_mini_panel.html", null ],
       [ "OutletInspectorFactory", "class_dataflow_1_1_outlet_inspector_factory.html", "class_dataflow_1_1_outlet_inspector_factory" ],
-      [ "PortItem", "class_dataflow_1_1_port_item.html", null ],
+      [ "PortItem", "class_dataflow_1_1_port_item.html", "class_dataflow_1_1_port_item" ],
       [ "PortTooltip", "class_dataflow_1_1_port_tooltip.html", null ],
       [ "RemoveCable", "class_dataflow_1_1_remove_cable.html", null ],
       [ "ReplaceCable", "class_dataflow_1_1_replace_cable.html", null ],
@@ -272,7 +294,7 @@ var annotated_dup =
       [ "DeviceCompleter", "class_device_1_1_device_completer.html", null ],
       [ "DeviceEnumerator", "class_device_1_1_device_enumerator.html", null ],
       [ "DeviceExplorerNode", "class_device_1_1_device_explorer_node.html", null ],
-      [ "DeviceInterface", "class_device_1_1_device_interface.html", null ],
+      [ "DeviceInterface", "class_device_1_1_device_interface.html", "class_device_1_1_device_interface" ],
       [ "DeviceList", "class_device_1_1_device_list.html", null ],
       [ "DeviceModelProvider", "class_device_1_1_device_model_provider.html", null ],
       [ "DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", null ],
@@ -409,7 +431,7 @@ var annotated_dup =
       [ "DefaultBounds< int >", "struct_explorer_1_1_default_bounds_3_01int_01_4.html", null ],
       [ "DefaultListeningHandler", "class_explorer_1_1_default_listening_handler.html", null ],
       [ "DefaultListeningHandlerFactory", "class_explorer_1_1_default_listening_handler_factory.html", null ],
-      [ "DeviceEditDialog", "class_explorer_1_1_device_edit_dialog.html", null ],
+      [ "DeviceEditDialog", "class_explorer_1_1_device_edit_dialog.html", "class_explorer_1_1_device_edit_dialog" ],
       [ "DeviceExplorerDelegate", "class_explorer_1_1_device_explorer_delegate.html", null ],
       [ "DeviceExplorerFilterProxyModel", "class_explorer_1_1_device_explorer_filter_proxy_model.html", null ],
       [ "DeviceExplorerModel", "class_explorer_1_1_device_explorer_model.html", "class_explorer_1_1_device_explorer_model" ],
@@ -422,7 +444,7 @@ var annotated_dup =
       [ "ListeningHandler", "class_explorer_1_1_listening_handler.html", null ],
       [ "ListeningHandlerFactory", "class_explorer_1_1_listening_handler_factory.html", null ],
       [ "ListeningHandlerFactoryList", "class_explorer_1_1_listening_handler_factory_list.html", null ],
-      [ "ListeningManager", "class_explorer_1_1_listening_manager.html", null ],
+      [ "ListeningManager", "class_explorer_1_1_listening_manager.html", "class_explorer_1_1_listening_manager" ],
       [ "ModelProvider", "class_explorer_1_1_model_provider.html", null ],
       [ "NodeUpdateProxy", "class_explorer_1_1_node_update_proxy.html", "class_explorer_1_1_node_update_proxy" ],
       [ "PanelDelegate", "class_explorer_1_1_panel_delegate.html", "class_explorer_1_1_panel_delegate" ],
@@ -2042,7 +2064,7 @@ var annotated_dup =
       [ "MusicalRuler", "class_scenario_1_1_musical_ruler.html", null ],
       [ "NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
       [ "NodalContainer", "struct_scenario_1_1_nodal_container.html", null ],
-      [ "NodalIntervalView", "class_scenario_1_1_nodal_interval_view.html", null ],
+      [ "NodalIntervalView", "class_scenario_1_1_nodal_interval_view.html", "class_scenario_1_1_nodal_interval_view" ],
       [ "NodalSlotPresenter", "struct_scenario_1_1_nodal_slot_presenter.html", null ],
       [ "ObjectItemModel", "class_scenario_1_1_object_item_model.html", null ],
       [ "ObjectMapper", "struct_scenario_1_1_object_mapper.html", null ],
@@ -2059,7 +2081,7 @@ var annotated_dup =
       [ "PositionedWithId_ScenarioEvent", "struct_scenario_1_1_positioned_with_id___scenario_event.html", null ],
       [ "ProcessDataDropHandler", "class_scenario_1_1_process_data_drop_handler.html", null ],
       [ "ProcessesBeingCopied", "struct_scenario_1_1_processes_being_copied.html", null ],
-      [ "ProcessGraphicsView", "class_scenario_1_1_process_graphics_view.html", null ],
+      [ "ProcessGraphicsView", "class_scenario_1_1_process_graphics_view.html", "class_scenario_1_1_process_graphics_view" ],
       [ "ProcessItem", "class_scenario_1_1_process_item.html", null ],
       [ "ProcessModel", "class_scenario_1_1_process_model.html", "class_scenario_1_1_process_model" ],
       [ "ProcessStateWrapper", "class_scenario_1_1_process_state_wrapper.html", null ],
@@ -2735,6 +2757,7 @@ var annotated_dup =
       [ "NumericDomainWidget", "class_state_1_1_numeric_domain_widget.html", null ],
       [ "NumericValueSetDialog", "class_state_1_1_numeric_value_set_dialog.html", null ],
       [ "NumericValueWidget", "class_state_1_1_numeric_value_widget.html", null ],
+      [ "PrettyPrintOptions", "struct_state_1_1_pretty_print_options.html", "struct_state_1_1_pretty_print_options" ],
       [ "Pulse", "struct_state_1_1_pulse.html", null ],
       [ "Relation", "struct_state_1_1_relation.html", null ],
       [ "StringValueSetDialog", "class_state_1_1_string_value_set_dialog.html", null ],

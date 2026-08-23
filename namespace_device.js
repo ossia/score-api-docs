@@ -7,7 +7,7 @@ var namespace_device =
     [ "DeviceCompleter", "class_device_1_1_device_completer.html", null ],
     [ "DeviceEnumerator", "class_device_1_1_device_enumerator.html", null ],
     [ "DeviceExplorerNode", "class_device_1_1_device_explorer_node.html", null ],
-    [ "DeviceInterface", "class_device_1_1_device_interface.html", null ],
+    [ "DeviceInterface", "class_device_1_1_device_interface.html", "class_device_1_1_device_interface" ],
     [ "DeviceList", "class_device_1_1_device_list.html", null ],
     [ "DeviceModelProvider", "class_device_1_1_device_model_provider.html", null ],
     [ "DeviceModelProviderList", "class_device_1_1_device_model_provider_list.html", null ],

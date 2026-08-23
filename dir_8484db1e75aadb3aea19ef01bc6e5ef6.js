@@ -16,6 +16,7 @@ var dir_8484db1e75aadb3aea19ef01bc6e5ef6 =
     [ "Value.hpp", "_value_8hpp_source.html", null ],
     [ "ValueConversion.hpp", "_value_conversion_8hpp_source.html", null ],
     [ "ValueParser.hpp", "_value_parser_8hpp_source.html", null ],
+    [ "ValuePrettyPrint.hpp", "_value_pretty_print_8hpp_source.html", null ],
     [ "ValueSerialization.hpp", "_value_serialization_8hpp_source.html", null ],
     [ "ValueSerializationImpl.hpp", "_value_serialization_impl_8hpp_source.html", null ]
 ];

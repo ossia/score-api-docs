@@ -122,33 +122,54 @@ $(document).ready(function(){initNavTree('_math_helpers_8hpp_source.html',''); i
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;halp/midi.hpp&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Nodes</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, int64_t input_time, int64_t prev_time, std::integral <span class="keyword">auto</span> parent_dur)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, int64_t input_time, int64_t prev_time,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::floating_point <span class="keyword">auto</span> parent_pos)</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  self.cur_time = input_time;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  self.cur_deltatime = (input_time - prev_time);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  self.cur_pos = parent_pos;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(<a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, <span class="keyword">const</span> halp::tick_flicks&amp; tk)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  self.cur_time = tk.end_in_flicks;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  self.cur_deltatime = tk.end_in_flicks - tk.start_in_flicks;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  self.cur_pos = tk.parent_duration &gt; 0 ? tk.relative_position : 0.;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:33</div></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>Nodes</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> uses_identifier(std::string_view expr, std::string_view <span class="keywordtype">id</span>) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> is_ident_char = [](<span class="keywordtype">char</span> c) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">return</span> (c &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;z&#39;</span>) || (c &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;Z&#39;</span>) || (c &gt;= <span class="charliteral">&#39;0&#39;</span> &amp;&amp; c &lt;= <span class="charliteral">&#39;9&#39;</span>)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>           || c == <span class="charliteral">&#39;_&#39;</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">for</span>(<span class="keyword">auto</span> pos = expr.find(<span class="keywordtype">id</span>); pos != std::string_view::npos;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      pos = expr.find(<span class="keywordtype">id</span>, pos + 1))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">const</span> <span class="keyword">auto</span> end = pos + <span class="keywordtype">id</span>.size();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> left_ok = (pos == 0) || !is_ident_char(expr[pos - 1]);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> right_ok = (end &gt;= expr.size()) || !is_ident_char(expr[end]);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span>(left_ok &amp;&amp; right_ok)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, int64_t input_time, int64_t prev_time, std::integral <span class="keyword">auto</span> parent_dur)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, int64_t input_time, int64_t prev_time,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::floating_point <span class="keyword">auto</span> parent_pos)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  self.cur_time = input_time;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  self.cur_deltatime = (input_time - prev_time);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  self.cur_pos = parent_pos;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> State&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">static</span> <span class="keywordtype">void</span> setMathExpressionTiming(<a class="code hl_namespace" href="namespace_state.html">State</a>&amp; self, <span class="keyword">const</span> halp::tick_flicks&amp; tk)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  self.cur_time = tk.end_in_flicks;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  self.cur_deltatime = tk.end_in_flicks - tk.start_in_flicks;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  self.cur_pos = tk.parent_duration &gt; 0 ? tk.relative_position : 0.;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

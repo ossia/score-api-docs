@@ -163,6 +163,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_1_1_numeric_value_widget.html">NumericValueWidget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_state_1_1_pretty_print_options.html">PrettyPrintOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Layout knobs for prettyPrintValue.  <a href="struct_state_1_1_pretty_print_options.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_state_1_1_pulse.html">Pulse</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_state_1_1_relation.html">Relation</a></td></tr>
@@ -346,7 +349,70 @@ QDebug &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&
 <tr class="memitem:af985045816edccfc22e48b46600313ae" id="r_af985045816edccfc22e48b46600313ae"><td class="memItemLeft" align="right" valign="top"><a id="af985045816edccfc22e48b46600313ae" name="af985045816edccfc22e48b46600313ae"></a>
 std::optional&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseValue</b> (std::string_view input)</td></tr>
 <tr class="separator:af985045816edccfc22e48b46600313ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc58c26d518c94a6c433fe61e51415e" id="r_a7cc58c26d518c94a6c433fe61e51415e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_state.html#a7cc58c26d518c94a6c433fe61e51415e">prettyPrintValue</a> (std::string &amp;out, const ossia::value &amp;v, int depth=0, const <a class="el" href="struct_state_1_1_pretty_print_options.html">PrettyPrintOptions</a> &amp;opts={})</td></tr>
+<tr class="memdesc:a7cc58c26d518c94a6c433fe61e51415e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a multi-line, indented rendering of v to out.  <br /></td></tr>
+<tr class="separator:a7cc58c26d518c94a6c433fe61e51415e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f738dba6fda26380ce38161c33699b5" id="r_a6f738dba6fda26380ce38161c33699b5"><td class="memItemLeft" align="right" valign="top"><a id="a6f738dba6fda26380ce38161c33699b5" name="a6f738dba6fda26380ce38161c33699b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>printValue</b> (std::string &amp;out, const ossia::value &amp;v)</td></tr>
+<tr class="memdesc:a6f738dba6fda26380ce38161c33699b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Single-line rendering of v, identical to fmt::format("{}", v), appended to out. <br /></td></tr>
+<tr class="separator:a6f738dba6fda26380ce38161c33699b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7cc58c26d518c94a6c433fe61e51415e" name="a7cc58c26d518c94a6c433fe61e51415e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc58c26d518c94a6c433fe61e51415e">&#9670;&#160;</a></span>prettyPrintValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void State::prettyPrintValue </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_state_1_1_pretty_print_options.html">PrettyPrintOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>opts</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Appends a multi-line, indented rendering of v to out. </p>
+<p>The scalar tokens are those of fmt::format("{}", ossia::value) so that the output only differs from the single-line form by its layout. The rules:</p>
+<ul>
+<li>a scalar is written as-is;</li>
+<li>a list or map whose elements are all scalars stays on one line: list: [int: 0, int: 1, int: 2] unless it is long, in which case it is wrapped, a few elements per line;</li>
+<li>a list or map with at least one nested container puts each element on its own line, indented one level deeper: list: [ list: [int: 0, int: 1, int: 2], list: [int: 3, int: 4, int: 5] ] so that a matrix reads row by row rather than one number per line.</li>
+</ul>
+<p>Nesting depth is unbounded. Appends to <code>out</code> without clearing it and does not allocate beyond <code>out</code>'s own growth; reuse the same string across calls to amortize it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">depth</td><td>Nesting level of v itself; continuation lines are indented relative to it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
