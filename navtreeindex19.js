@@ -1,6 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"classscore_1_1gfx_1_1_video_node_renderer.html":[11,0,12,0,117],
 "classscore_1_1gfx_1_1_window.html":[11,0,12,0,119],
+"classscore_1_1gfx_1_1_window.html":[12,0,56,2,119],
 "classscore__lib__process.html":[12,0,236],
 "classscore__plugin__analysis.html":[12,0,237],
 "classscore__plugin__audio.html":[12,0,238],
@@ -39,8 +41,8 @@ var NAVTREEINDEX19 =
 "classscore__plugin__vst.html":[12,0,270],
 "classscore__plugin__vst3.html":[12,0,271],
 "classscore__plugin__ysfx.html":[12,0,272],
-"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,62,8],
 "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[11,0,14,8],
+"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,62,8],
 "classvst3_1_1_application_plugin.html":[12,0,68,0],
 "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21":[12,0,68,0,0],
 "classvst3_1_1_component_handler.html":[12,0,68,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "dir_6faf9e86e19050fdbcdd44d6c9446b2e.html":[13,0,0,2,32,4,6,0,0],
 "dir_7020b8b7abcceffa3f9f7a2d24718f16.html":[13,0,0,2],
 "dir_71f2db9d82f9b28ab1d354a7f61b9ae7.html":[13,0,0,2,17,0,0],
-"dir_72590f0b9ce1b0f1ffbe04f9b4faec7e.html":[13,0,0,2,24,0,1],
-"dir_72ab4b44fa971c64fe6f5381cc8b0846.html":[13,0,0,2,13,0,0,0],
-"dir_72d2cf69910bbd6c54c277766780965a.html":[13,0,0,2,13,0,4]
+"dir_72590f0b9ce1b0f1ffbe04f9b4faec7e.html":[13,0,0,2,24,0,1]
 };

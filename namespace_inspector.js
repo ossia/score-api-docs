@@ -6,5 +6,6 @@ var namespace_inspector =
     [ "InspectorWidgetList", "class_inspector_1_1_inspector_widget_list.html", null ],
     [ "Layout", "class_inspector_1_1_layout.html", null ],
     [ "MenuButton", "class_inspector_1_1_menu_button.html", null ],
-    [ "VBoxLayout", "class_inspector_1_1_v_box_layout.html", null ]
+    [ "VBoxLayout", "class_inspector_1_1_v_box_layout.html", null ],
+    [ "fitInInspector", "namespace_inspector.html#ada5555bb41b0b8d27149626b146adc66", null ]
 ];

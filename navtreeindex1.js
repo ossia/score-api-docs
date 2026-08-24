@@ -1,9 +1,8 @@
 var NAVTREEINDEX1 =
 {
-"_control_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,0],
 "_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
 "_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
-"_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,9],
+"_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,8],
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,1],
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "_file_operation_8hpp_source.html":[13,0,0,2,3,4,26],
 "_file_path_8hpp_source.html":[13,0,0,1,1,12,13],
 "_file_report_view_8hpp_source.html":[13,0,0,2,3,4,27],
-"_file_system_model_8hpp_source.html":[13,0,0,2,21,0,1]
+"_file_system_model_8hpp_source.html":[13,0,0,2,21,0,1],
+"_file_watch_8hpp_source.html":[13,0,0,1,1,12,14]
 };

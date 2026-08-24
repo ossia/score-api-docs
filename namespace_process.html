@@ -160,8 +160,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_outlet.html">AudioOutlet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_port_combo_box.html">AudioPortComboBox</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_automatable_factory.html">AutomatableFactory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory for processes that work like automations.  <a href="class_process_1_1_automatable_factory.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,6 +371,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_pixmaps.html">Pixmaps</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port.html">Port</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_address_combo_box.html">PortAddressComboBox</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address picker for the audio / midi / texture / geometry ports.  <a href="class_process_1_1_port_address_combo_box.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_factory.html">PortFactory</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -661,12 +662,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyProcess</b> (<a c
 <tr class="memitem:aca9caf5b23b73ab96c7ccdd34bad0878" id="r_aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memItemLeft" align="right" valign="top"><a id="aca9caf5b23b73ab96c7ccdd34bad0878" name="aca9caf5b23b73ab96c7ccdd34bad0878"></a>
 const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandFactoryName</b> ()</td></tr>
 <tr class="separator:aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a032caee5dd5326954a1234cadef2da91" id="r_a032caee5dd5326954a1234cadef2da91"><td class="memItemLeft" align="right" valign="top"><a id="a032caee5dd5326954a1234cadef2da91" name="a032caee5dd5326954a1234cadef2da91"></a>
-QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeAddressCombo</b> (<a class="el" href="struct_state_1_1_address.html">State::Address</a> root, const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;out_node, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
-<tr class="separator:a032caee5dd5326954a1234cadef2da91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f1ade7ee98746f889338b599c7b3e9" id="r_ad0f1ade7ee98746f889338b599c7b3e9"><td class="memItemLeft" align="right" valign="top"><a id="ad0f1ade7ee98746f889338b599c7b3e9" name="ad0f1ade7ee98746f889338b599c7b3e9"></a>
-QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makeDeviceCombo</b> (std::function&lt; bool(<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;)&gt; condition, <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;list, const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
-<tr class="separator:ad0f1ade7ee98746f889338b599c7b3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0534a72677a078aefad73eecc64e22" id="r_a6e0534a72677a078aefad73eecc64e22"><td class="memItemLeft" align="right" valign="top"><a id="a6e0534a72677a078aefad73eecc64e22" name="a6e0534a72677a078aefad73eecc64e22"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;lhs, const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;rhs)</td></tr>
 <tr class="separator:a6e0534a72677a078aefad73eecc64e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -752,6 +747,19 @@ std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">Midi
 <tr class="memitem:a535ae95f6170e17fce20ef59f292c707" id="r_a535ae95f6170e17fce20ef59f292c707"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a535ae95f6170e17fce20ef59f292c707">displayNameForPort</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;outlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc)</td></tr>
 <tr class="memdesc:a535ae95f6170e17fce20ef59f292c707"><td class="mdescLeft">&#160;</td><td class="mdescRight">From a port, gives a name suitable for displaying in a process header.  <br /></td></tr>
 <tr class="separator:a535ae95f6170e17fce20ef59f292c707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af523bfd4ba2e7d329eeda0153f3db154" id="r_af523bfd4ba2e7d329eeda0153f3db154"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">Device::NodeKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#af523bfd4ba2e7d329eeda0153f3db154">nodeKindOf</a> (PortType type, bool inlet) noexcept</td></tr>
+<tr class="memdesc:af523bfd4ba2e7d329eeda0153f3db154"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind of device node a port of that type binds to.  <br /></td></tr>
+<tr class="separator:af523bfd4ba2e7d329eeda0153f3db154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b5901704d27c73c4952b9e25c88291" id="r_a03b5901704d27c73c4952b9e25c88291"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a03b5901704d27c73c4952b9e25c88291">listPortAddresses</a> (<a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;device, PortType type, bool inlet)</td></tr>
+<tr class="memdesc:a03b5901704d27c73c4952b9e25c88291"><td class="mdescLeft">&#160;</td><td class="mdescRight">The addresses of a device that a port of that type can bind to.  <br /></td></tr>
+<tr class="separator:a03b5901704d27c73c4952b9e25c88291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56312088ddda32e3107a742859df40c5" id="r_a56312088ddda32e3107a742859df40c5"><td class="memItemLeft" align="right" valign="top"><a id="a56312088ddda32e3107a742859df40c5" name="a56312088ddda32e3107a742859df40c5"></a>
+std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listPortAddresses</b> (<a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;devices, PortType type, bool inlet)</td></tr>
+<tr class="separator:a56312088ddda32e3107a742859df40c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab88451f7503a5ccc6e2784ccf5c342e3" id="r_ab88451f7503a5ccc6e2784ccf5c342e3"><td class="memItemLeft" align="right" valign="top"><a id="ab88451f7503a5ccc6e2784ccf5c342e3" name="ab88451f7503a5ccc6e2784ccf5c342e3"></a>
+QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><b>makePortAddressCombo</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
+<tr class="memdesc:ab88451f7503a5ccc6e2784ccf5c342e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="class_process_1_1_port_address_combo_box.html" title="Address picker for the audio / midi / texture / geometry ports.">PortAddressComboBox</a> bound to a port: follows the port's address and submits a ChangePortAddress command when the user picks another one. <br /></td></tr>
+<tr class="separator:ab88451f7503a5ccc6e2784ccf5c342e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a600ddde472c61ae519a0814382c3780b" id="r_a600ddde472c61ae519a0814382c3780b"><td class="memItemLeft" align="right" valign="top"><a id="a600ddde472c61ae519a0814382c3780b" name="a600ddde472c61ae519a0814382c3780b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>readPorts</b> (<a class="el" href="class_data_stream_reader.html">DataStreamReader</a> &amp;wr, const <a class="el" href="struct_process_1_1_inlets.html">Process::Inlets</a> &amp;ins, const <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> &amp;outs)</td></tr>
 <tr class="separator:a600ddde472c61ae519a0814382c3780b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1402,6 +1410,43 @@ template&lt;typename T &gt; </td></tr>
 
 </div>
 </div>
+<a id="a03b5901704d27c73c4952b9e25c88291" name="a03b5901704d27c73c4952b9e25c88291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03b5901704d27c73c4952b9e25c88291">&#9670;&#160;</a></span>listPortAddresses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt; Process::listPortAddresses </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PortType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inlet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The addresses of a device that a port of that type can bind to. </p>
+<p>The device is only walked when its capabilities say it carries nodes of that kind (<a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9" title="The kinds of nodes a device can carry.">Device::NodeKind</a>), so an OSC tree is never visited for textures. Audio, texture and geometry nodes are recognized by their parameter type; the audio device's mapped ports by their direction. A MIDI stream is the device or one of its channel nodes: the note / CC leaves are values. </p>
+
+</div>
+</div>
 <a id="ab16c8f0c80f7b97c59067b22c399b76f" name="ab16c8f0c80f7b97c59067b22c399b76f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab16c8f0c80f7b97c59067b22c399b76f">&#9670;&#160;</a></span>looksLikeExistingFile()</h2>
 
@@ -1480,6 +1525,45 @@ template&lt;typename T &gt; </td></tr>
 </div><div class="memdoc">
 <p>Pagination for <code>controlCount</code> controls: everything on a single page below MaxUnpaginatedControls, up to ControlsPerPage per page above it.</p>
 <p><code>gridOffset</code> is the number of non-control items sharing the control grid - the leading audio/midi/message inlets when there are too few of them to get a column of their own. The page is shortened so that it ends on a full column instead of leaving one item alone in the last one. </p>
+
+</div>
+</div>
+<a id="af523bfd4ba2e7d329eeda0153f3db154" name="af523bfd4ba2e7d329eeda0153f3db154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af523bfd4ba2e7d329eeda0153f3db154">&#9670;&#160;</a></span>nodeKindOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">Device::NodeKind</a> Process::nodeKindOf </td>
+          <td>(</td>
+          <td class="paramtype">PortType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inlet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The kind of device node a port of that type binds to. </p>
+<p>An inlet reads what a device produces, an outlet feeds what it consumes. </p>
 
 </div>
 </div>

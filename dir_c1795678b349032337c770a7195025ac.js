@@ -2,7 +2,6 @@ var dir_c1795678b349032337c770a7195025ac =
 [
     [ "AddressAccessorEditWidget.hpp", "_address_accessor_edit_widget_8hpp_source.html", null ],
     [ "AddressLineEdit.hpp", "_address_line_edit_8hpp_source.html", null ],
-    [ "AudioPortComboBox.hpp", "_audio_port_combo_box_8hpp_source.html", null ],
     [ "AutoScrollableView.hpp", "_auto_scrollable_view_8hpp_source.html", null ],
     [ "Cable.hpp", "_cable_8hpp_source.html", null ],
     [ "CableCopy.hpp", "_cable_copy_8hpp_source.html", null ],
@@ -14,6 +13,7 @@ var dir_c1795678b349032337c770a7195025ac =
     [ "MinMaxFloatPort.hpp", "_min_max_float_port_8hpp_source.html", null ],
     [ "NodeItem.hpp", "_node_item_8hpp_source.html", null ],
     [ "Port.hpp", "_port_8hpp_source.html", null ],
+    [ "PortAddressComboBox.hpp", "_port_address_combo_box_8hpp_source.html", null ],
     [ "PortFactory.hpp", "_port_factory_8hpp_source.html", null ],
     [ "PortForward.hpp", "_port_forward_8hpp_source.html", null ],
     [ "score-lib-process/Process/Dataflow/PortItem.hpp", "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html", null ],

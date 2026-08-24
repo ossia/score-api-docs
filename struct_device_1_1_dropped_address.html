@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Process::AudioPortComboBox Class Reference</title>
+        <title>score: Device::DroppedAddress Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_process_1_1_audio_port_combo_box.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_device_1_1_dropped_address.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,36 +103,29 @@ $(document).ready(function(){initNavTree('class_process_1_1_audio_port_combo_box
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="class_process_1_1_audio_port_combo_box-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Process::AudioPortComboBox Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_device_1_1_dropped_address-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Device::DroppedAddress Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Process::AudioPortComboBox:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_process_1_1_audio_port_combo_box.png" alt=""/>
- </div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aefb3132f5cb7bb541c909b6c343e604a" id="r_aefb3132f5cb7bb541c909b6c343e604a"><td class="memItemLeft" align="right" valign="top"><a id="aefb3132f5cb7bb541c909b6c343e604a" name="aefb3132f5cb7bb541c909b6c343e604a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AudioPortComboBox</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;rootAddress, const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node, QWidget *parent)</td></tr>
-<tr class="separator:aefb3132f5cb7bb541c909b6c343e604a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d7f0abfbceb06589456b2197c5fa1d1" id="r_a8d7f0abfbceb06589456b2197c5fa1d1"><td class="memItemLeft" align="right" valign="top"><a id="a8d7f0abfbceb06589456b2197c5fa1d1" name="a8d7f0abfbceb06589456b2197c5fa1d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;addr)</td></tr>
-<tr class="separator:a8d7f0abfbceb06589456b2197c5fa1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2042f0c72c10a0dee386b91ea12e3e9a" id="r_a2042f0c72c10a0dee386b91ea12e3e9a"><td class="memItemLeft" align="right" valign="top"><a id="a2042f0c72c10a0dee386b91ea12e3e9a" name="a2042f0c72c10a0dee386b91ea12e3e9a"></a>
-const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>address</b> () const</td></tr>
-<tr class="separator:a2042f0c72c10a0dee386b91ea12e3e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f2a7880c41d44f30ba3e27a49d9a9a" id="r_a82f2a7880c41d44f30ba3e27a49d9a9a"><td class="memItemLeft" align="right" valign="top"><a id="a82f2a7880c41d44f30ba3e27a49d9a9a" name="a82f2a7880c41d44f30ba3e27a49d9a9a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addressChanged</b> (const <a class="el" href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a> &amp;arg_1)</td></tr>
-<tr class="separator:a82f2a7880c41d44f30ba3e27a49d9a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p>What a drop of device explorer nodes (a FreeNodeList) resolves to.  
+ <a href="struct_device_1_1_dropped_address.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>What a drop of device explorer nodes (a FreeNodeList) resolves to. </p>
+<p>Only the first dropped node counts. A device root (e.g. a whole OSC tree, which a value inlet receives as a map) resolves to the bare device address with no settings; a parameter resolves to its address and its settings. Returns nothing when the drop would not change <code>current</code>. </p>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a547f04d2900d262b05e24deed1683b50" id="r_a547f04d2900d262b05e24deed1683b50"><td class="memItemLeft" align="right" valign="top"><a id="a547f04d2900d262b05e24deed1683b50" name="a547f04d2900d262b05e24deed1683b50"></a>
+<a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>address</b></td></tr>
+<tr class="separator:a547f04d2900d262b05e24deed1683b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a013b9e335c4c23598249875f1b99ccb6" id="r_a013b9e335c4c23598249875f1b99ccb6"><td class="memItemLeft" align="right" valign="top"><a id="a013b9e335c4c23598249875f1b99ccb6" name="a013b9e335c4c23598249875f1b99ccb6"></a>
+std::optional&lt; <a class="el" href="struct_device_1_1_address_settings.html">Device::AddressSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b></td></tr>
+<tr class="separator:a013b9e335c4c23598249875f1b99ccb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="_audio_port_combo_box_8hpp_source.html">AudioPortComboBox.hpp</a></li>
-<li><b>AudioPortComboBox.cpp</b></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="_device_node_8hpp_source.html">DeviceNode.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -159,6 +159,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_device_settings.html">DeviceSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_dropped_address.html">DroppedAddress</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a drop of device explorer nodes (a FreeNodeList) resolves to.  <a href="struct_device_1_1_dropped_address.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_full_address_accessor_settings.html">FullAddressAccessorSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_device_1_1_full_address_settings.html">FullAddressSettings</a></td></tr>
@@ -217,6 +220,23 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceEnumerators</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a894eb8afb112a7d3667fd1ac16cee5d9" id="r_a894eb8afb112a7d3667fd1ac16cee5d9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> : uint16_t { <br />
+&#160;&#160;<b>None</b> = 0
+, <b>Value</b> = 1 &lt;&lt; 0
+, <b>AudioIn</b> = 1 &lt;&lt; 1
+, <b>AudioOut</b> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<b>MidiIn</b> = 1 &lt;&lt; 3
+, <b>MidiOut</b> = 1 &lt;&lt; 4
+, <b>TextureIn</b> = 1 &lt;&lt; 5
+, <b>TextureOut</b> = 1 &lt;&lt; 6
+, <br />
+&#160;&#160;<b>GeometryIn</b> = 1 &lt;&lt; 7
+, <b>GeometryOut</b> = 1 &lt;&lt; 8
+<br />
+ }</td></tr>
+<tr class="memdesc:a894eb8afb112a7d3667fd1ac16cee5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kinds of nodes a device can carry.  <a href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">More...</a><br /></td></tr>
+<tr class="separator:a894eb8afb112a7d3667fd1ac16cee5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c58719852c71b7326578eb6dc538df" id="r_a95c58719852c71b7326578eb6dc538df"><td class="memItemLeft" align="right" valign="top"><a id="a95c58719852c71b7326578eb6dc538df" name="a95c58719852c71b7326578eb6dc538df"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DeviceLogging</b> : int8_t { <b>LogNothing</b>
 , <b>LogUnfolded</b>
 , <b>LogEverything</b>
@@ -325,6 +345,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>address_rec</b> (QStr
 <tr class="memitem:a44bab9125af68944159c412490054c11" id="r_a44bab9125af68944159c412490054c11"><td class="memItemLeft" align="right" valign="top"><a id="a44bab9125af68944159c412490054c11" name="a44bab9125af68944159c412490054c11"></a>
 <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>address</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Node</a> &amp;treeNode)</td></tr>
 <tr class="separator:a44bab9125af68944159c412490054c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f3c032cfb5069c88015988bedfd515" id="r_a05f3c032cfb5069c88015988bedfd515"><td class="memItemLeft" align="right" valign="top"><a id="a05f3c032cfb5069c88015988bedfd515" name="a05f3c032cfb5069c88015988bedfd515"></a>
+std::optional&lt; <a class="el" href="struct_device_1_1_dropped_address.html">DroppedAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>addressOfDroppedNodes</b> (const Device::FreeNodeList &amp;nodes, const <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &amp;current)</td></tr>
+<tr class="separator:a05f3c032cfb5069c88015988bedfd515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa98fcd53aa1fbb8e0fc4f94a872c64ac" id="r_aa98fcd53aa1fbb8e0fc4f94a872c64ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_device.html#aa98fcd53aa1fbb8e0fc4f94a872c64ac">parametersList</a> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Node</a> &amp;treeNode, State::MessageList &amp;ml)</td></tr>
 <tr class="memdesc:aa98fcd53aa1fbb8e0fc4f94a872c64ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">parametersList Recursive list of parameters in this node  <br /></td></tr>
 <tr class="separator:aa98fcd53aa1fbb8e0fc4f94a872c64ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,6 +406,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseDevice</b> (os
 <tr class="memitem:a489c8d8f1b5e4d7b601c0fe7cce903d8" id="r_a489c8d8f1b5e4d7b601c0fe7cce903d8"><td class="memItemLeft" align="right" valign="top"><a id="a489c8d8f1b5e4d7b601c0fe7cce903d8" name="a489c8d8f1b5e4d7b601c0fe7cce903d8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseDevice</b> (ossia::net::network_context &amp;ctx, std::shared_ptr&lt; ossia::net::device_base &gt; shared_dd)</td></tr>
 <tr class="separator:a489c8d8f1b5e4d7b601c0fe7cce903d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bb793c63b50782a93869cb09cf9fb9" id="r_a82bb793c63b50782a93869cb09cf9fb9"><td class="memItemLeft" align="right" valign="top"><a id="a82bb793c63b50782a93869cb09cf9fb9" name="a82bb793c63b50782a93869cb09cf9fb9"></a>
+constexpr <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator|</b> (<a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> a, <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> b) noexcept</td></tr>
+<tr class="separator:a82bb793c63b50782a93869cb09cf9fb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22602750a5859e554115bf21bf9b360b" id="r_a22602750a5859e554115bf21bf9b360b"><td class="memItemLeft" align="right" valign="top"><a id="a22602750a5859e554115bf21bf9b360b" name="a22602750a5859e554115bf21bf9b360b"></a>
+constexpr <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator|=</b> (<a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> &amp;a, <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> b) noexcept</td></tr>
+<tr class="separator:a22602750a5859e554115bf21bf9b360b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875f36aa64bc4a597def54be38ed4d44" id="r_a875f36aa64bc4a597def54be38ed4d44"><td class="memItemLeft" align="right" valign="top"><a id="a875f36aa64bc4a597def54be38ed4d44" name="a875f36aa64bc4a597def54be38ed4d44"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>carries</b> (<a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> set, <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">NodeKind</a> wanted) noexcept</td></tr>
+<tr class="memdesc:a875f36aa64bc4a597def54be38ed4d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether every kind in <code>wanted</code> is in <code>set</code>. <br /></td></tr>
+<tr class="separator:a875f36aa64bc4a597def54be38ed4d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5792bb56036b866ac98027295ee8c5" id="r_a0c5792bb56036b866ac98027295ee8c5"><td class="memItemLeft" align="right" valign="top"><a id="a0c5792bb56036b866ac98027295ee8c5" name="a0c5792bb56036b866ac98027295ee8c5"></a>
 ossia::net::node_base *&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeFromPath</b> (const QStringList &amp;path, ossia::net::device_base &amp;dev)</td></tr>
 <tr class="separator:a0c5792bb56036b866ac98027295ee8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -418,6 +451,32 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <p>A data-only tree of nodes.</p>
 <p>By opposition to ossia::net::node_base, these nodes contain pure data, no callbacks or complicated data structures. They can be serialized very easily and are used as the data model of <a class="el" href="class_explorer_1_1_device_explorer_model.html">Explorer::DeviceExplorerModel</a>, as well as for serialization of devices. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a894eb8afb112a7d3667fd1ac16cee5d9" name="a894eb8afb112a7d3667fd1ac16cee5d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a894eb8afb112a7d3667fd1ac16cee5d9">&#9670;&#160;</a></span>NodeKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">Device::NodeKind</a> : uint16_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The kinds of nodes a device can carry. </p>
+<p>"In" is what the device produces and score reads (usable by an inlet), "Out" what the device consumes (usable by an outlet). A device declares them in its capabilities so that the widgets listing e.g. the texture addresses only walk the devices worth walking: an OSC device will never hold a texture, and a libav device holds both video and audio. </p>
 
 </div>
 </div>

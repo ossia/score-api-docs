@@ -129,22 +129,30 @@ $(document).ready(function(){initNavTree('_file_path_8hpp_source.html',''); init
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>SCORE_LIB_BASE_EXPORT</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>QString addUniqueSuffix(<span class="keyword">const</span> QString&amp; fileName);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structscore_1_1_file_path.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_file_path.html">FilePath</a></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  QString absolute;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  QString relative; <span class="comment">// Relative to the document root or same than absolute otherwise</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  QString filename;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  QString basename;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>QString</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><a class="code hl_function" href="namespacescore.html#a7c89e8e10343cacadd857d41d8279a0c">pickerStartFolder</a>(<span class="keyword">const</span> QString&amp; current, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>QString <a class="code hl_function" href="namespacescore.html#a7c89e8e10343cacadd857d41d8279a0c">pickerStartFolder</a>(<span class="keyword">const</span> QString&amp; current) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structscore_1_1_file_path.html">   35</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_file_path.html">FilePath</a></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  QString absolute;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  QString relative; <span class="comment">// Relative to the document root or same than absolute otherwise</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  QString filename;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  QString basename;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
-<div class="ttc" id="anamespacescore_html_aa5dc206faf740132f1dbb03714aa6070"><div class="ttname"><a href="namespacescore.html#aa5dc206faf740132f1dbb03714aa6070">score::locateFilePath</a></div><div class="ttdeci">QString locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept</div><div class="ttdef"><b>Definition</b> File.cpp:84</div></div>
-<div class="ttc" id="anamespacescore_html_aed5a0183b4501783c177e506781cec28"><div class="ttname"><a href="namespacescore.html#aed5a0183b4501783c177e506781cec28">score::relativizeFilePath</a></div><div class="ttdeci">QString relativizeFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept</div><div class="ttdef"><b>Definition</b> File.cpp:90</div></div>
+<div class="ttc" id="anamespacescore_html_a7c89e8e10343cacadd857d41d8279a0c"><div class="ttname"><a href="namespacescore.html#a7c89e8e10343cacadd857d41d8279a0c">score::pickerStartFolder</a></div><div class="ttdeci">QString pickerStartFolder(const QString &amp;current, const score::DocumentContext &amp;ctx) noexcept</div><div class="ttdef"><b>Definition</b> File.cpp:257</div></div>
+<div class="ttc" id="anamespacescore_html_aa5dc206faf740132f1dbb03714aa6070"><div class="ttname"><a href="namespacescore.html#aa5dc206faf740132f1dbb03714aa6070">score::locateFilePath</a></div><div class="ttdeci">QString locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept</div><div class="ttdef"><b>Definition</b> File.cpp:85</div></div>
+<div class="ttc" id="anamespacescore_html_aed5a0183b4501783c177e506781cec28"><div class="ttname"><a href="namespacescore.html#aed5a0183b4501783c177e506781cec28">score::relativizeFilePath</a></div><div class="ttdeci">QString relativizeFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept</div><div class="ttdef"><b>Definition</b> File.cpp:91</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1_file_path_html"><div class="ttname"><a href="structscore_1_1_file_path.html">score::FilePath</a></div><div class="ttdef"><b>Definition</b> FilePath.hpp:25</div></div>
+<div class="ttc" id="astructscore_1_1_file_path_html"><div class="ttname"><a href="structscore_1_1_file_path.html">score::FilePath</a></div><div class="ttdef"><b>Definition</b> FilePath.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

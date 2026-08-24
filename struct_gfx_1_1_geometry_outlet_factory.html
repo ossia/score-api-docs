@@ -132,6 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa896328db24d82a29a0e0c70b112c746" id="r_aa896328db24d82a29a0e0c70b112c746"><td class="memItemLeft" align="right" valign="top"><a id="aa896328db24d82a29a0e0c70b112c746" name="aa896328db24d82a29a0e0c70b112c746"></a>
 <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>concreteKey</b> () const noexcept override</td></tr>
 <tr class="separator:aa896328db24d82a29a0e0c70b112c746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2841ec78f2a186a1da3700f2aaeb6ea2" id="r_a2841ec78f2a186a1da3700f2aaeb6ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_geometry_outlet_factory.html#a2841ec78f2a186a1da3700f2aaeb6ea2">setupOutletInspector</a> (const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QObject *context) override</td></tr>
+<tr class="separator:a2841ec78f2a186a1da3700f2aaeb6ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8521e30c9897e58983ac4f7d56904e03" id="r_a8521e30c9897e58983ac4f7d56904e03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gfx_1_1_geometry_outlet.html">Model_T</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_geometry_outlet_factory.html#a8521e30c9897e58983ac4f7d56904e03">load</a> (const <a class="el" href="struct_visitor_variant.html">VisitorVariant</a> &amp;vis, QObject *parent) override</td></tr>
 <tr class="separator:a8521e30c9897e58983ac4f7d56904e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_port_factory"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_port_factory')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_port_factory.html">Process::PortFactory</a></td></tr>
@@ -156,9 +158,6 @@ virtual QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>ma
 <tr class="memitem:ae0898a34688c09a62e0f4d2092f27f73 inherit pub_methods_class_process_1_1_port_factory" id="r_ae0898a34688c09a62e0f4d2092f27f73"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setupInletInspector</b> (const <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QObject *context)</td></tr>
 <tr class="separator:ae0898a34688c09a62e0f4d2092f27f73 inherit pub_methods_class_process_1_1_port_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b48fcc671793eb6937ec4a8676c6671 inherit pub_methods_class_process_1_1_port_factory" id="r_a8b48fcc671793eb6937ec4a8676c6671"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setupOutletInspector</b> (const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QObject *context)</td></tr>
-<tr class="separator:a8b48fcc671793eb6937ec4a8676c6671 inherit pub_methods_class_process_1_1_port_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c441668078472c531a6b4de3ce41151 inherit pub_methods_class_process_1_1_port_factory" id="r_a1c441668078472c531a6b4de3ce41151"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="struct_process_1_1_port_item_layout.html">PortItemLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>defaultLayout</b> () const noexcept</td></tr>
 <tr class="separator:a1c441668078472c531a6b4de3ce41151 inherit pub_methods_class_process_1_1_port_factory"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,8 +206,65 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a id="a2841ec78f2a186a1da3700f2aaeb6ea2" name="a2841ec78f2a186a1da3700f2aaeb6ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2841ec78f2a186a1da3700f2aaeb6ea2">&#9670;&#160;</a></span>setupOutletInspector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::GeometryOutletFactory::setupOutletInspector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;&#160;</td>
+          <td class="paramname"><em>lay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_port_factory.html">Process::PortFactory</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_texture_port_8hpp_source.html">TexturePort.hpp</a></li>
+<li><b>TexturePort.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

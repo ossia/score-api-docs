@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"_file_watch_8hpp_source.html":[13,0,0,1,1,12,14],
 "_filter_2_preview_widget_8hpp_source.html":[13,0,0,2,17,1,1,4],
 "_find_string_in_file_8hpp_source.html":[13,0,0,1,1,12,15],
 "_fixed_tab_widget_8hpp_source.html":[13,0,0,1,0,9,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "_local_tree_document_plugin_8hpp_source.html":[13,0,0,2,14,2,1],
 "_logger_8hpp_source.html":[13,0,0,2,8,0,1],
 "_looper_8hpp_source.html":[13,0,0,2,16,0,14],
-"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,10,0]
+"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,10,0],
+"_m_c_u_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,10,1]
 };

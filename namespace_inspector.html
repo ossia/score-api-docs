@@ -103,7 +103,8 @@ $(document).ready(function(){initNavTree('namespace_inspector.html',''); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Inspector Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -137,7 +138,43 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inspector_1_1_v_box_layout.html">VBoxLayout</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ada5555bb41b0b8d27149626b146adc66" id="r_ada5555bb41b0b8d27149626b146adc66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_inspector.html#ada5555bb41b0b8d27149626b146adc66">fitInInspector</a> (QWidget *w)</td></tr>
+<tr class="memdesc:ada5555bb41b0b8d27149626b146adc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps a widget from forcing the inspector wider than its panel.  <br /></td></tr>
+<tr class="separator:ada5555bb41b0b8d27149626b146adc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ada5555bb41b0b8d27149626b146adc66" name="ada5555bb41b0b8d27149626b146adc66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5555bb41b0b8d27149626b146adc66">&#9670;&#160;</a></span>fitInInspector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inspector::fitInInspector </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Keeps a widget from forcing the inspector wider than its panel. </p>
+<p>A combo box sizes its minimum to its widest entry by default: one long device address in a port's combo and every row of the inspector gets pushed past the panel's edge. Sizing it to a few characters instead lets the form give it whatever width the panel has. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

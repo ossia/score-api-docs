@@ -783,6 +783,7 @@ var hierarchy =
     [ "State::Domain", "struct_state_1_1_domain.html", null ],
     [ "Scenario::DoNotMoveInterval_StateWrapper", "class_scenario_1_1_do_not_move_interval___state_wrapper.html", null ],
     [ "Jit::Driver", "struct_jit_1_1_driver.html", null ],
+    [ "Device::DroppedAddress", "struct_device_1_1_dropped_address.html", null ],
     [ "Media::Sound::DroppedAudioFiles", "struct_media_1_1_sound_1_1_dropped_audio_files.html", null ],
     [ "Process::ProcessDropHandler::DroppedFile", "struct_process_1_1_process_drop_handler_1_1_dropped_file.html", null ],
     [ "Scenario::DropProcessInIntervalHelper", "class_scenario_1_1_drop_process_in_interval_helper.html", null ],
@@ -2825,7 +2826,7 @@ var hierarchy =
     [ "QComboBox", null, [
       [ "Explorer::AccessModeComboBox", "class_explorer_1_1_access_mode_combo_box.html", null ],
       [ "Explorer::BoundingModeComboBox", "class_explorer_1_1_bounding_mode_combo_box.html", null ],
-      [ "Process::AudioPortComboBox", "class_process_1_1_audio_port_combo_box.html", null ],
+      [ "Process::PortAddressComboBox", "class_process_1_1_port_address_combo_box.html", null ],
       [ "State::TypeComboBox", "class_state_1_1_type_combo_box.html", null ],
       [ "score::ComboBox", "classscore_1_1_combo_box.html", [
         [ "Scenario::SimpleComboBox", "class_scenario_1_1_simple_combo_box.html", null ]

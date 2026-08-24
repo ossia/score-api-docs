@@ -1226,6 +1226,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>fast_contains</b> (st
 <tr class="memitem:af153200dede92419d40de535d9f8d048" id="r_af153200dede92419d40de535d9f8d048"><td class="memItemLeft" align="right" valign="top"><a id="af153200dede92419d40de535d9f8d048" name="af153200dede92419d40de535d9f8d048"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>fileContains</b> (QFile &amp;f, std::string_view pattern)</td></tr>
 <tr class="separator:af153200dede92419d40de535d9f8d048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c89e8e10343cacadd857d41d8279a0c" id="r_a7c89e8e10343cacadd857d41d8279a0c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a7c89e8e10343cacadd857d41d8279a0c">pickerStartFolder</a> (const QString &amp;current, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) noexcept</td></tr>
+<tr class="separator:a7c89e8e10343cacadd857d41d8279a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04693a895f484cec2898fc4330b7dc85" id="r_a04693a895f484cec2898fc4330b7dc85"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a04693a895f484cec2898fc4330b7dc85">pickerStartFolder</a> (const QString &amp;current) noexcept</td></tr>
+<tr class="separator:a04693a895f484cec2898fc4330b7dc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0078b6534d04fcd16f5945df5bd52fe9" id="r_a0078b6534d04fcd16f5945df5bd52fe9"><td class="memItemLeft" align="right" valign="top"><a id="a0078b6534d04fcd16f5945df5bd52fe9" name="a0078b6534d04fcd16f5945df5bd52fe9"></a>
 QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>mapAsByteArray</b> (QFile &amp;f) noexcept</td></tr>
 <tr class="separator:a0078b6534d04fcd16f5945df5bd52fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1276,6 +1280,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>mediaSubfolder</b>
 <tr class="separator:a86e04d9e0c606163881260edfbc5019e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a467612b37ae4654419b8dc0b01453937" id="r_a467612b37ae4654419b8dc0b01453937"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a467612b37ae4654419b8dc0b01453937">materializeFile</a> (const QString &amp;source, const QString &amp;destination, <a class="el" href="namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75">CopyMode</a> mode, QString &amp;error)</td></tr>
 <tr class="separator:a467612b37ae4654419b8dc0b01453937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2e918141bd72dc5af732f9c78098af0" id="r_ad2e918141bd72dc5af732f9c78098af0"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ad2e918141bd72dc5af732f9c78098af0">pickerStartFolder</a> (const QString &amp;current, const <a class="el" href="structscore_1_1_path_roots.html">PathRoots</a> &amp;roots, const QString &amp;userDocuments, const QString &amp;workingDir) noexcept</td></tr>
+<tr class="separator:ad2e918141bd72dc5af732f9c78098af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e4344403ea19654e21b5fd0a1599cf" id="r_aa0e4344403ea19654e21b5fd0a1599cf"><td class="memItemLeft" align="right" valign="top"><a id="aa0e4344403ea19654e21b5fd0a1599cf" name="aa0e4344403ea19654e21b5fd0a1599cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>for_all_files</b> (std::string_view root, std::function&lt; void(std::string_view)&gt; f)</td></tr>
 <tr class="separator:aa0e4344403ea19654e21b5fd0a1599cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1757,6 +1763,119 @@ template&lt;typename Type , typename Object &gt; </div>
 <p>Obtains a new file name in the project folder to save a processed file. </p>
 <p>e.g. if the source file is /tmp/foo.wav, the output may be</p>
 <p>/home/myself/Documents/My score project/Processed/foo-0003.wav </p>
+
+</div>
+</div>
+<a id="a04693a895f484cec2898fc4330b7dc85" name="a04693a895f484cec2898fc4330b7dc85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04693a895f484cec2898fc4330b7dc85">&#9670;&#160;</a></span>pickerStartFolder() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_BASE_EXPORT QString score::pickerStartFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>current</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same, outside of any document (application settings): the library, the user's documents folder, or the working directory. </p>
+
+</div>
+</div>
+<a id="ad2e918141bd72dc5af732f9c78098af0" name="ad2e918141bd72dc5af732f9c78098af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e918141bd72dc5af732f9c78098af0">&#9670;&#160;</a></span>pickerStartFolder() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::pickerStartFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_path_roots.html">PathRoots</a> &amp;&#160;</td>
+          <td class="paramname"><em>roots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>userDocuments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>workingDir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where a file / folder picker should open for a control whose current value is <code>current</code> (absolute, document-relative, &lt;PROJECT&gt;: or &lt;LIBRARY&gt;:-prefixed, or empty). In order: the folder of the current file (or the current folder itself) if it exists, the document's folder, the library, the user's documents folder, the working directory - the first one that exists. Never empty. </p>
+
+</div>
+</div>
+<a id="a7c89e8e10343cacadd857d41d8279a0c" name="a7c89e8e10343cacadd857d41d8279a0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c89e8e10343cacadd857d41d8279a0c">&#9670;&#160;</a></span>pickerStartFolder() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_BASE_EXPORT QString score::pickerStartFolder </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where a file / folder picker should open for a control of this document whose current value is <code>current:</code> see the <a class="el" href="structscore_1_1_path_roots.html">PathRoots</a> overload. </p>
 
 </div>
 </div>
