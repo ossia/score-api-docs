@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('_c_p_u_node_8hpp_source.html',''); ini
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> setControl(std::size_t index, <span class="keyword">const</span> QVariant&amp; val)</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span>(index &gt;= m_jsInlets.size())</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;ValueInlet*&gt;(m_jsInlets[index]))</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      v-&gt;setValue(val);</div>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('_c_p_u_node_8hpp_source.html',''); ini
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> impulse(std::size_t index)</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span>(index &gt; m_jsInlets.size())</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span>(index &gt;= m_jsInlets.size())</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> v = qobject_cast&lt;Impulse*&gt;(m_jsInlets[index]))</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      v-&gt;impulse();</div>
