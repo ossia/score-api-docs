@@ -147,6 +147,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>unregister_node</b> (
 <tr class="memitem:adc129ec9abaf149bb15ccc590eacc57c" id="r_adc129ec9abaf149bb15ccc590eacc57c"><td class="memItemLeft" align="right" valign="top"><a id="adc129ec9abaf149bb15ccc590eacc57c" name="adc129ec9abaf149bb15ccc590eacc57c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>unregister_preview_node</b> (int32_t idx)</td></tr>
 <tr class="separator:adc129ec9abaf149bb15ccc590eacc57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f58eca6ef850dc21de42e9171efa15a" id="r_a8f58eca6ef850dc21de42e9171efa15a"><td class="memItemLeft" align="right" valign="top"><a id="a8f58eca6ef850dc21de42e9171efa15a" name="a8f58eca6ef850dc21de42e9171efa15a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyOutput</b> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> *node)</td></tr>
+<tr class="separator:a8f58eca6ef850dc21de42e9171efa15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fa73685b9410bcf6cfbbeb9e204bcb5" id="r_a4fa73685b9410bcf6cfbbeb9e204bcb5"><td class="memItemLeft" align="right" valign="top"><a id="a4fa73685b9410bcf6cfbbeb9e204bcb5" name="a4fa73685b9410bcf6cfbbeb9e204bcb5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>recompute_edges</b> ()</td></tr>
 <tr class="separator:a4fa73685b9410bcf6cfbbeb9e204bcb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update_inputs</b> ()<
 <tr class="memitem:a01e1fef0587a47d60f8d0dcbfb9e1e98" id="r_a01e1fef0587a47d60f8d0dcbfb9e1e98"><td class="memItemLeft" align="right" valign="top"><a id="a01e1fef0587a47d60f8d0dcbfb9e1e98" name="a01e1fef0587a47d60f8d0dcbfb9e1e98"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraph</b> ()</td></tr>
 <tr class="separator:a01e1fef0587a47d60f8d0dcbfb9e1e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0612cd2012de29ef69b2fce1e16d4f68" id="r_a0612cd2012de29ef69b2fce1e16d4f68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68">renderFrames</a> (int frames)</td></tr>
+<tr class="memdesc:a0612cd2012de29ef69b2fce1e16d4f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render exactly <code>frames</code> times, synchronously, and return.  <br /></td></tr>
+<tr class="separator:a0612cd2012de29ef69b2fce1e16d4f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039a10098697f94897360e84ad60b04c" id="r_a039a10098697f94897360e84ad60b04c"><td class="memItemLeft" align="right" valign="top"><a id="a039a10098697f94897360e84ad60b04c" name="a039a10098697f94897360e84ad60b04c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>stepRate</b> () const noexcept</td></tr>
+<tr class="memdesc:a039a10098697f94897360e84ad60b04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step used by <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">renderFrames()</a>, in frames per second. <br /></td></tr>
+<tr class="separator:a039a10098697f94897360e84ad60b04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc2545948eea70e629cfffd70323467" id="r_acfc2545948eea70e629cfffd70323467"><td class="memItemLeft" align="right" valign="top"><a id="acfc2545948eea70e629cfffd70323467" name="acfc2545948eea70e629cfffd70323467"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepRate</b> (double fps) noexcept</td></tr>
+<tr class="separator:acfc2545948eea70e629cfffd70323467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec5f9e78bca768ca34cbf115f5728ce" id="r_a6ec5f9e78bca768ca34cbf115f5728ce"><td class="memItemLeft" align="right" valign="top"><a id="a6ec5f9e78bca768ca34cbf115f5728ce" name="a6ec5f9e78bca768ca34cbf115f5728ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send_message</b> (<a class="el" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> &amp;&amp;msg) noexcept</td></tr>
 <tr class="separator:a6ec5f9e78bca768ca34cbf115f5728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +185,32 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>GfxExecutionAction</b></td></tr>
 <tr class="separator:a27273530c8430156fa3fd63565226a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0612cd2012de29ef69b2fce1e16d4f68" name="a0612cd2012de29ef69b2fce1e16d4f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0612cd2012de29ef69b2fce1e16d4f68">&#9670;&#160;</a></span>renderFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::GfxContext::renderFrames </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frames</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render exactly <code>frames</code> times, synchronously, and return. </p>
+<p>The normal path renders off wall-clock timers, so "how many frames have I
+drawn" depends on how long the caller happened to wait and how fast the machine is &ndash; a harness that sleeps and then grabs gets a different frame on a Raspberry Pi than on a workstation, and an animated shader gives a different image every run.</p>
+<p>Stepping instead makes frame N mean the same thing everywhere, which is what lets a rendered frame be compared against a stored reference at all.</p>
+<p>Each step also hands every process node a synthetic token of <code>frame / <a class="el" href="class_gfx_1_1_gfx_context.html#a039a10098697f94897360e84ad60b04c" title="Step used by renderFrames(), in frames per second.">stepRate()</a></code>, so TIME, TIMEDELTA, FRAMEINDEX and PROGRESS follow the counter rather than whatever the transport last delivered. Without it an animated shader keeps reading the execution clock and frame N is a different picture every run.</p>
+<p>Still on the execution clock: whatever a node takes from the transport itself rather than from its process UBO &ndash; video decode position, automation &ndash; so a graph built on those is only as reproducible as that clock is. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_gfx_context_8hpp_source.html">GfxContext.hpp</a></li>
 <li><b>GfxContext.cpp</b></li>

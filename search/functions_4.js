@@ -15,5 +15,6 @@ var searchData=
   ['exec_5fpolyphonic_12',['exec_polyphonic',['../struct_nodes_1_1_generic_math_mapping.html#a6622ef1ab769dd05d824409c1cfbca01',1,'Nodes::GenericMathMapping']]],
   ['executing_13',['executing',['../class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734',1,'Process::ProcessModel']]],
   ['extend_14',['extend',['../class_path.html#ab241fb45dd1062d7081f3c9a23be8682',1,'Path::extend(const QString &amp;name, const Id&lt; U &gt; &amp;id) const &amp;noexcept'],['../class_path.html#a29cc8284f912f06110ee8a9d09a84e9d',1,'Path::extend(const QString &amp;name, const Id&lt; U &gt; &amp;id) &amp;&amp;noexcept'],['../class_path.html#aeef1841f39deb54f8778c319e86943f7',1,'Path::extend(const Id&lt; U &gt; &amp;id) const &amp;noexcept'],['../class_path.html#a7b072fe8477cdeec63eb2772d91438c4',1,'Path::extend(const Id&lt; U &gt; &amp;id) &amp;&amp;noexcept']]],
-  ['extractrawbits_15',['extractRawBits',['../namespace_protocols_1_1_c_a_n.html#a8d12772c3753bbfe2aa8a1d1799b0f3d',1,'Protocols::CAN']]]
+  ['externalgenlockclock_15',['ExternalGenlockClock',['../classscore_1_1gfx_1_1_external_genlock_clock.html#a2edabb5431c55b3d2c320d95abad8dcb',1,'score::gfx::ExternalGenlockClock']]],
+  ['extractrawbits_16',['extractRawBits',['../namespace_protocols_1_1_c_a_n.html#a8d12772c3753bbfe2aa8a1d1799b0f3d',1,'Protocols::CAN']]]
 ];

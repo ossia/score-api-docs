@@ -1,22 +1,9 @@
 var searchData=
 [
-  ['y210decoder_0',['Y210Decoder',['../structscore_1_1gfx_1_1_y210_decoder.html',1,'score::gfx']]],
-  ['y_5fflip_5fglsl_1',['y_flip_glsl',['../structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a0fb94d5d094c16795f37d8c21ffdd20b',1,'score::gfx::GPUVideoEncoder']]],
-  ['ysfx_5fmidi_5fevent_5fimpl_2',['ysfx_midi_event_impl',['../struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html',1,'YSFX::Executor']]],
-  ['ysfx_5fnode_3',['ysfx_node',['../class_y_s_f_x_1_1_executor_1_1ysfx__node.html',1,'YSFX::Executor']]],
-  ['yuv420decoder_4',['YUV420Decoder',['../structscore_1_1gfx_1_1_y_u_v420_decoder.html',1,'score::gfx']]],
-  ['yuv420p10decoder_5',['YUV420P10Decoder',['../structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html',1,'score::gfx']]],
-  ['yuv420p12decoder_6',['YUV420P12Decoder',['../structscore_1_1gfx_1_1_y_u_v420_p12_decoder.html',1,'score::gfx']]],
-  ['yuv422decoder_7',['YUV422Decoder',['../structscore_1_1gfx_1_1_y_u_v422_decoder.html',1,'score::gfx']]],
-  ['yuv422p10decoder_8',['YUV422P10Decoder',['../structscore_1_1gfx_1_1_y_u_v422_p10_decoder.html',1,'score::gfx']]],
-  ['yuv422p12decoder_9',['YUV422P12Decoder',['../structscore_1_1gfx_1_1_y_u_v422_p12_decoder.html',1,'score::gfx']]],
-  ['yuv440decoder_10',['YUV440Decoder',['../structscore_1_1gfx_1_1_y_u_v440_decoder.html',1,'score::gfx']]],
-  ['yuv444decoder_11',['YUV444Decoder',['../structscore_1_1gfx_1_1_y_u_v444_decoder.html',1,'score::gfx']]],
-  ['yuv444p10decoder_12',['YUV444P10Decoder',['../structscore_1_1gfx_1_1_y_u_v444_p10_decoder.html',1,'score::gfx']]],
-  ['yuv444p12decoder_13',['YUV444P12Decoder',['../structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html',1,'score::gfx']]],
-  ['yuva420decoder_14',['YUVA420Decoder',['../structscore_1_1gfx_1_1_y_u_v_a420_decoder.html',1,'score::gfx']]],
-  ['yuva444decoder_15',['YUVA444Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_decoder.html',1,'score::gfx']]],
-  ['yuva444p10decoder_16',['YUVA444P10Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_p10_decoder.html',1,'score::gfx']]],
-  ['yuva444p12decoder_17',['YUVA444P12Decoder',['../structscore_1_1gfx_1_1_y_u_v_a444_p12_decoder.html',1,'score::gfx']]],
-  ['yuyv422decoder_18',['YUYV422Decoder',['../structscore_1_1gfx_1_1_y_u_y_v422_decoder.html',1,'score::gfx']]]
+  ['x11windowcapturebackend_0',['X11WindowCaptureBackend',['../class_gfx_1_1_window_capture_1_1_x11_window_capture_backend.html',1,'Gfx::WindowCapture']]],
+  ['xv30decoder_1',['XV30Decoder',['../structscore_1_1gfx_1_1_x_v30_decoder.html',1,'score::gfx']]],
+  ['xyslider_2',['xyslider',['../struct_process_1_1_x_y_slider.html',1,'Process::XYSlider'],['../struct_widget_factory_1_1_x_y_slider.html',1,'WidgetFactory::XYSlider']]],
+  ['xyspinboxes_3',['xyspinboxes',['../struct_process_1_1_x_y_spinboxes.html',1,'Process::XYSpinboxes'],['../struct_widget_factory_1_1_x_y_spinboxes.html',1,'WidgetFactory::XYSpinboxes']]],
+  ['xyzslider_4',['xyzslider',['../struct_process_1_1_x_y_z_slider.html',1,'Process::XYZSlider'],['../struct_widget_factory_1_1_x_y_z_slider.html',1,'WidgetFactory::XYZSlider']]],
+  ['xyzspinboxes_5',['xyzspinboxes',['../struct_process_1_1_x_y_z_spinboxes.html',1,'Process::XYZSpinboxes'],['../struct_widget_factory_1_1_x_y_z_spinboxes.html',1,'WidgetFactory::XYZSpinboxes']]]
 ];

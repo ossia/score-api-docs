@@ -16,11 +16,12 @@ var searchData=
   ['matchingaddresses_13',['matchingaddresses',['../class_automation_1_1_process_state.html#ad20a53e5113aa683d5f42b1be9e31a17',1,'Automation::ProcessState::matchingAddresses()'],['../class_process_state_data_interface.html#a8e11412306c832a9c19f9c50e794adc8',1,'ProcessStateDataInterface::matchingAddresses()']]],
   ['materialchange_14',['materialChange',['../classscore_1_1gfx_1_1_node.html#a8508b6bdb512aa868529f61d8c28a21b',1,'score::gfx::Node']]],
   ['materializefile_15',['materializeFile',['../namespacescore.html#a467612b37ae4654419b8dc0b01453937',1,'score']]],
-  ['mayberebuild_16',['maybeRebuild',['../classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f',1,'score::gfx::RenderList']]],
-  ['mediasubfolder_17',['mediaSubfolder',['../namespacescore.html#a3931d6c83f2257066ee55f7768dee24f',1,'score']]],
-  ['messages_18',['messages',['../class_automation_1_1_process_state.html#a8f13807af62d46f60b400caf2f1a94c9',1,'Automation::ProcessState::messages()'],['../class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2',1,'ProcessStateDataInterface::messages() const']]],
-  ['messageschanged_19',['messagesChanged',['../class_process_state_data_interface.html#a70a9ce621a887c94096f610eaf8baa19',1,'ProcessStateDataInterface']]],
-  ['module_5fhandler_20',['module_handler',['../structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0',1,'bitfocus::module_handler']]],
-  ['moveevent_21',['MoveEvent',['../class_scenario_1_1_command_1_1_move_event.html#ab518ae676ab20f39df78f71767adc61f',1,'Scenario::Command::MoveEvent']]],
-  ['moveintervalstate_22',['MoveIntervalState',['../class_scenario_1_1_move_interval_state.html#a869b50a983cdb341162fc5cd74274d4c',1,'Scenario::MoveIntervalState']]]
+  ['maybeautotrim_16',['maybeAutoTrim',['../class_gfx_1_1_asset_table.html#a4c8fe55fdc25d803922da413c00e9433',1,'Gfx::AssetTable']]],
+  ['mayberebuild_17',['maybeRebuild',['../classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f',1,'score::gfx::RenderList']]],
+  ['mediasubfolder_18',['mediaSubfolder',['../namespacescore.html#a3931d6c83f2257066ee55f7768dee24f',1,'score']]],
+  ['messages_19',['messages',['../class_automation_1_1_process_state.html#a8f13807af62d46f60b400caf2f1a94c9',1,'Automation::ProcessState::messages()'],['../class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2',1,'ProcessStateDataInterface::messages() const']]],
+  ['messageschanged_20',['messagesChanged',['../class_process_state_data_interface.html#a70a9ce621a887c94096f610eaf8baa19',1,'ProcessStateDataInterface']]],
+  ['module_5fhandler_21',['module_handler',['../structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0',1,'bitfocus::module_handler']]],
+  ['moveevent_22',['MoveEvent',['../class_scenario_1_1_command_1_1_move_event.html#ab518ae676ab20f39df78f71767adc61f',1,'Scenario::Command::MoveEvent']]],
+  ['moveintervalstate_23',['MoveIntervalState',['../class_scenario_1_1_move_interval_state.html#a869b50a983cdb341162fc5cd74274d4c',1,'Scenario::MoveIntervalState']]]
 ];

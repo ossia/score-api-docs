@@ -363,6 +363,7 @@ var namespacescore =
     [ "installDragImageWorkaround", "namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4", null ],
     [ "isProjectRelativePath", "namespacescore.html#abcc58d77c019cc023052928d8fa07f02", null ],
     [ "isUnderFolder", "namespacescore.html#a85a3e80989e972145ea8d2b5c2692838", null ],
+    [ "locateFilePath", "namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a", null ],
     [ "locateFilePath", "namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5", null ],
     [ "locateFilePath", "namespacescore.html#aa5dc206faf740132f1dbb03714aa6070", null ],
     [ "marshall", "namespacescore.html#aba88450f2e8b9397ef16609ee1d5952f", null ],

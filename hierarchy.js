@@ -114,6 +114,7 @@ var hierarchy =
     [ "Threedim::ArrayToMesh", "class_threedim_1_1_array_to_mesh.html", null ],
     [ "Threedim::ArrayToTexture", "class_threedim_1_1_array_to_texture.html", null ],
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
+    [ "Gfx::AssetTable", "class_gfx_1_1_asset_table.html", null ],
     [ "JSONReader::assigner", "struct_j_s_o_n_reader_1_1assigner.html", null ],
     [ "score::RecursiveWatch::AsyncCallbacks", "structscore_1_1_recursive_watch_1_1_async_callbacks.html", null ],
     [ "AtomBuffer", "struct_atom_buffer.html", null ],
@@ -703,6 +704,8 @@ var hierarchy =
     [ "DataType", null, [
       [ "TreeNode< DataType >", "class_tree_node.html", null ]
     ] ],
+    [ "Gfx::AssetTable::DecodedAsset", "struct_gfx_1_1_asset_table_1_1_decoded_asset.html", null ],
+    [ "score::gfx::DecodedImage", "structscore_1_1gfx_1_1_decoded_image.html", null ],
     [ "Video::DecoderConfiguration", "struct_video_1_1_decoder_configuration.html", null ],
     [ "Media::DecodingSetup", "struct_media_1_1_decoding_setup.html", null ],
     [ "boost::default_dfs_visitor", null, [
@@ -741,6 +744,7 @@ var hierarchy =
       [ "Gfx::libav_input_device", "class_gfx_1_1libav__input__device.html", null ],
       [ "Gfx::libav_output_device", "class_gfx_1_1libav__output__device.html", null ],
       [ "Gfx::multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
+      [ "Gfx::offscreen_device", "class_gfx_1_1offscreen__device.html", null ],
       [ "Gfx::sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", null ],
       [ "Gfx::shmdata_output_device", "class_gfx_1_1shmdata__output__device.html", null ],
       [ "Gfx::simple_texture_input_device", "class_gfx_1_1simple__texture__input__device.html", null ],
@@ -761,6 +765,7 @@ var hierarchy =
     [ "Threedim::DirectBufferReferenceStrategy", "class_threedim_1_1_direct_buffer_reference_strategy.html", null ],
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
     [ "Threedim::DirectReferenceStrategy", "class_threedim_1_1_direct_reference_strategy.html", null ],
+    [ "score::gfx::interop::DirectShowGuid", "structscore_1_1gfx_1_1interop_1_1_direct_show_guid.html", null ],
     [ "oscr::dispatch_control_setup< Node >", "structoscr_1_1dispatch__control__setup.html", null ],
     [ "score::Dispatcher", "structscore_1_1_dispatcher.html", [
       [ "score::Dispatcher_T< T >", "structscore_1_1_dispatcher___t.html", null ]
@@ -1272,8 +1277,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1321,8 +1326,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -4035,6 +4040,7 @@ var hierarchy =
       [ "Gfx::CollapsibleSection", "class_gfx_1_1_collapsible_section.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
       [ "Gfx::PreviewWidget", "class_gfx_1_1_preview_widget.html", null ],
+      [ "Gfx::RhiPreviewWidget", "class_gfx_1_1_rhi_preview_widget.html", null ],
       [ "Gfx::ShaderPreviewWidget", "class_gfx_1_1_shader_preview_widget.html", null ],
       [ "Gfx::TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
       [ "Inspector::InspectorSectionWidget", "class_inspector_1_1_inspector_section_widget.html", null ],
@@ -4170,6 +4176,11 @@ var hierarchy =
     [ "Execution::SetupContext::RegisteredPorts", "struct_execution_1_1_setup_context_1_1_registered_ports.html", null ],
     [ "State::Relation", "struct_state_1_1_relation.html", null ],
     [ "RemoteControl::WS::RemoteMessages", "struct_remote_control_1_1_w_s_1_1_remote_messages.html", null ],
+    [ "score::gfx::RenderClock", "classscore_1_1gfx_1_1_render_clock.html", [
+      [ "score::gfx::DisplayVSyncClock", "classscore_1_1gfx_1_1_display_v_sync_clock.html", null ],
+      [ "score::gfx::ExternalGenlockClock", "classscore_1_1gfx_1_1_external_genlock_clock.html", null ],
+      [ "score::gfx::TimerClock", "classscore_1_1gfx_1_1_timer_clock.html", null ]
+    ] ],
     [ "score::gfx::RenderList", "classscore_1_1gfx_1_1_render_list.html", null ],
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "score::gfx::RenderTargetSpecs", "structscore_1_1gfx_1_1_render_target_specs.html", null ],
@@ -4437,6 +4448,7 @@ var hierarchy =
       [ "Gfx::simple_texture_input_parameter", "class_gfx_1_1simple__texture__input__parameter.html", null ],
       [ "Gfx::video_texture_input_parameter", "class_gfx_1_1video__texture__input__parameter.html", null ]
     ] ],
+    [ "score::gfx::TextureCache", "classscore_1_1gfx_1_1_texture_cache.html", null ],
     [ "score::gfx::TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
     [ "Threedim::TextureToBuffer", "class_threedim_1_1_texture_to_buffer.html", null ],
     [ "score::ThreadPool", "classscore_1_1_thread_pool.html", null ],
@@ -4687,6 +4699,7 @@ var hierarchy =
       [ "score::gfx::VideoFrameReader", "structscore_1_1gfx_1_1_video_frame_reader.html", null ]
     ] ],
     [ "score::gfx::VideoMaterialUBO", "structscore_1_1gfx_1_1_video_material_u_b_o.html", null ],
+    [ "score::gfx::interop::VideoPixelFormatInfo", "structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html", null ],
     [ "Gfx::Video::VideoProps", "struct_gfx_1_1_video_1_1_video_props.html", null ],
     [ "view_impl_t", null, [
       [ "Media::AudioFile::ViewHandle", "struct_media_1_1_audio_file_1_1_view_handle.html", null ]

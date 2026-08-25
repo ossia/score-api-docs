@@ -144,6 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a00655aa4737305da2087253200d93064"><td class="memTemplItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064">settings</a> () const</td></tr>
 <tr class="memdesc:a00655aa4737305da2087253200d93064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a specific <a class="el" href="classscore_1_1_settings.html" title="Application-wide user settings registering and handling.">Settings</a> model instance.  <br /></td></tr>
 <tr class="separator:a00655aa4737305da2087253200d93064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c19d919e7330e34b9fcb498d4432a83" id="r_a4c19d919e7330e34b9fcb498d4432a83"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4c19d919e7330e34b9fcb498d4432a83"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structscore_1_1_application_context.html#a4c19d919e7330e34b9fcb498d4432a83">findSettings</a> () const noexcept</td></tr>
+<tr class="memdesc:a4c19d919e7330e34b9fcb498d4432a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a <a class="el" href="classscore_1_1_settings.html" title="Application-wide user settings registering and handling.">Settings</a> model instance, or null when its plug-in did not register one.  <br /></td></tr>
+<tr class="separator:a4c19d919e7330e34b9fcb498d4432a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2ea87fcb1e6fe753f6cf8b13b25ed9" id="r_a4a2ea87fcb1e6fe753f6cf8b13b25ed9"><td class="memItemLeft" align="right" valign="top"><a id="a4a2ea87fcb1e6fe753f6cf8b13b25ed9" name="a4a2ea87fcb1e6fe753f6cf8b13b25ed9"></a>
 const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>allSettings</b> () const noexcept</td></tr>
 <tr class="separator:a4a2ea87fcb1e6fe753f6cf8b13b25ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +204,36 @@ const <a class="el" href="classscore_1_1_application_components.html">score::App
 
 <p>List of all the registered addons. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structscore_1_1_addon.html" title="The Addon struct.">score::Addon</a> </dd></dl>
+
+</div>
+</div>
+<a id="a4c19d919e7330e34b9fcb498d4432a83" name="a4c19d919e7330e34b9fcb498d4432a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c19d919e7330e34b9fcb498d4432a83">&#9670;&#160;</a></span>findSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * score::ApplicationContext::findSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Access a <a class="el" href="classscore_1_1_settings.html" title="Application-wide user settings registering and handling.">Settings</a> model instance, or null when its plug-in did not register one. </p>
+<p><a class="el" href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064" title="Access a specific Settings model instance.">settings()</a> aborts the process in that case, which is the right answer for application code (a missing settings model means the plug-in it belongs to is not loaded, and nothing downstream can work). Callers that can report the situation themselves want the null instead. </p>
 
 </div>
 </div>

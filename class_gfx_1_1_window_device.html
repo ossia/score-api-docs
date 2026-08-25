@@ -134,6 +134,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a866ba935bc806cc6bd4470f92a0c3551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4962274143a3ed0e036127b309024d4a" id="r_a4962274143a3ed0e036127b309024d4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a4962274143a3ed0e036127b309024d4a">reconnect</a> () override</td></tr>
 <tr class="separator:a4962274143a3ed0e036127b309024d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2827241ab7ebf6e4efc957366b58aa" id="r_aee2827241ab7ebf6e4efc957366b58aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#aee2827241ab7ebf6e4efc957366b58aa">grabTo</a> (const QString &amp;path) const</td></tr>
+<tr class="separator:aee2827241ab7ebf6e4efc957366b58aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4944762a2a0a679681e82fbf31bdd6e0" id="r_a4944762a2a0a679681e82fbf31bdd6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a4944762a2a0a679681e82fbf31bdd6e0">renderFrames</a> (int frames) const</td></tr>
+<tr class="separator:a4944762a2a0a679681e82fbf31bdd6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e342fd79af430c53b4d43e4c4a06d1" id="r_ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memItemLeft" align="right" valign="top"><a id="ac6e342fd79af430c53b4d43e4c4a06d1" name="ac6e342fd79af430c53b4d43e4c4a06d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepRate</b> (double fps) const</td></tr>
+<tr class="memdesc:ac6e342fd79af430c53b4d43e4c4a06d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames per second the step clock advances by. 60 unless set. <br /></td></tr>
+<tr class="separator:ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fcc2563e3cbb89d0265be7e4bfc740" id="r_ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#ab4fcc2563e3cbb89d0265be7e4bfc740">grabFrame</a> (int frames, const QString &amp;path) const</td></tr>
+<tr class="separator:ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3509b9db476a3919f2ff22e3c9ad9a3" id="r_ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memItemLeft" align="right" valign="top"><a id="ab3509b9db476a3919f2ff22e3c9ad9a3" name="ab3509b9db476a3919f2ff22e3c9ad9a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GfxOutputDevice</b> (const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;settings, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,6 +414,54 @@ score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Ad
 
 </div>
 </div>
+<a id="ab4fcc2563e3cbb89d0265be7e4bfc740" name="ab4fcc2563e3cbb89d0265be7e4bfc740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4fcc2563e3cbb89d0265be7e4bfc740">&#9670;&#160;</a></span>grabFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::grabFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frames</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Render <code>frames</code> times, then write that frame. The point of naming the frame rather than sleeping is that frame N is the same picture on every machine, which is what a stored reference can be compared against. </p>
+
+</div>
+</div>
+<a id="aee2827241ab7ebf6e4efc957366b58aa" name="aee2827241ab7ebf6e4efc957366b58aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2827241ab7ebf6e4efc957366b58aa">&#9670;&#160;</a></span>grabTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::grabTo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Write the current frame to <code>path</code>. On an offscreen device this reads the render target back directly, which is what makes headless pixel testing possible; on a real window it grabs the window. </p>
+
+</div>
+</div>
 <a id="a4962274143a3ed0e036127b309024d4a" name="a4962274143a3ed0e036127b309024d4a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4962274143a3ed0e036127b309024d4a">&#9670;&#160;</a></span>reconnect()</h2>
 
@@ -428,6 +486,25 @@ score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Ad
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a>.</p>
+
+</div>
+</div>
+<a id="a4944762a2a0a679681e82fbf31bdd6e0" name="a4944762a2a0a679681e82fbf31bdd6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4944762a2a0a679681e82fbf31bdd6e0">&#9670;&#160;</a></span>renderFrames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::renderFrames </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frames</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Render exactly <code>frames</code> times and return. See <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">GfxContext::renderFrames</a>. Call it repeatedly to step frame by frame: the clock keeps counting across calls, so renderFrames(1) sixty times is the timeline renderFrames(60) is. </p>
 
 </div>
 </div>

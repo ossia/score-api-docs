@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['handleslooping_0',['HandlesLooping',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a28864adccb3f9149d5c1800509b4ef53',1,'Process']]],
-  ['hardlink_1',['Hardlink',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75a047e594a98d3cb5bf74ddfecab2932f3',1,'score']]]
+  ['grey_0',['Grey',['../_video_pixel_format_8hpp.html#a0a876d46d0293010bdc79e6fbcf1d134acaf3a042a037c064b7513ed640c22f77',1,'score::gfx::interop']]]
 ];

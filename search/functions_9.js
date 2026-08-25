@@ -12,6 +12,6 @@ var searchData=
   ['localcommand_9',['localCommand',['../classscore_1_1_command_stack.html#af4c3f99f095feeec42d60635b91df1dc',1,'score::CommandStack']]],
   ['localredo_10',['localRedo',['../classscore_1_1_command_stack.html#a4e71c0e7fa4acca66ba7d95d9c0a3124',1,'score::CommandStack']]],
   ['localundo_11',['localUndo',['../classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c',1,'score::CommandStack']]],
-  ['locatefilepath_12',['locatefilepath',['../namespacescore.html#aa5dc206faf740132f1dbb03714aa6070',1,'score::locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept'],['../namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5',1,'score::locateFilePath(const QString &amp;filename, const PathRoots &amp;roots) noexcept']]],
+  ['locatefilepath_12',['locatefilepath',['../namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a',1,'score::locateFilePath(const QString &amp;filename) noexcept'],['../namespacescore.html#aa5dc206faf740132f1dbb03714aa6070',1,'score::locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept'],['../namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5',1,'score::locateFilePath(const QString &amp;filename, const PathRoots &amp;roots) noexcept']]],
   ['lookslikeexistingfile_13',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]]
 ];
