@@ -186,42 +186,44 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  QSize renderSize(<span class="keyword">const</span> Edge* e) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  int64_t frame = 0;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordtype">void</span> createAllInputRenderTargets();</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  OutputUBO m_outputUBOData;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  QRhiResourceUpdateBatch* m_initialBatch{};</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordtype">float</span> currentDate[4]{};</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordtype">void</span> createAllInputRenderTargets();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  OutputUBO m_outputUBOData;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="comment">// Material</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  QRhiBuffer* m_outputUBO{};</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  QRhiTexture* m_emptyTexture{};</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  ossia::flat_map&lt;Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  ossia::flat_map&lt;ossia::geometry_spec, Mesh*&gt; m_customMeshCache;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  QRhiResourceUpdateBatch* m_initialBatch{};</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="comment">// Material</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  QRhiBuffer* m_outputUBO{};</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  QRhiTexture* m_emptyTexture{};</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  ossia::flat_map&lt;Mesh*, MeshBuffers&gt; m_vertexBuffers;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  ossia::small_flat_map&lt;const Port*, TextureRenderTarget, 8&gt; m_inputRenderTargets;</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  QSize m_lastSize{};</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordtype">int</span> m_samples{1};</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <span class="keywordtype">bool</span> m_ready{};</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keywordtype">bool</span> m_built{};</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>};</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  ossia::flat_map&lt;ossia::geometry_spec, Mesh*&gt; m_customMeshCache;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  ossia::small_flat_map&lt;const Port*, TextureRenderTarget, 8&gt; m_inputRenderTargets;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  QSize m_lastSize{};</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordtype">int</span> m_samples{1};</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordtype">bool</span> m_ready{};</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keywordtype">bool</span> m_built{};</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>};</div>
 </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>QRhiTexture::Format <a class="code hl_function" href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">imageTextureFormat</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">adaptImageFormat</a>(QImage img, QRhiTexture::Format fmt);</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>}</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>QRhiTexture::Format <a class="code hl_function" href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">imageTextureFormat</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">adaptImageFormat</a>(QImage img, QRhiTexture::Format fmt);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:31</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a44cb2a527d818e954a9af25642cd5b6e"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e">score::gfx::RenderList::outputUBO</a></div><div class="ttdeci">QRhiBuffer &amp; outputUBO() const noexcept</div><div class="ttdoc">UBO corresponding to the output parameters:</div><div class="ttdef"><b>Definition</b> RenderList.hpp:133</div></div>
