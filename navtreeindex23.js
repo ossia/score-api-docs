@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,10,0,6],
+"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,10,0,1],
+"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,14,1,6],
+"plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,0,2,15,0,0],
+"plugins_2score-plugin-gfx_2_gfx_2_c_s_f_2_metadata_8hpp_source.html":[13,0,0,2,17,1,0,3],
+"plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,1,3],
 "plugins_2score-plugin-gfx_2_gfx_2_geometry_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,2,3],
 "plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,0,2,17,1,4,46],
 "plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,0,2,17,1,6,2],
@@ -243,11 +249,5 @@ var NAVTREEINDEX23 =
 "score__plugin__vst_8hpp_source.html":[13,0,0,2,38,1],
 "score__plugin__ysfx_8hpp_source.html":[13,0,0,2,40,1],
 "scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
-"statemachines_8hpp_source.html":[13,0,0,1,0,3,10],
-"struct___camera_file_handler.html":[12,0,71],
-"struct___g_error.html":[12,0,72],
-"struct___g_param_spec.html":[12,0,73],
-"struct___g_value.html":[12,0,75],
-"struct___gst_map_info.html":[12,0,74],
-"struct_analysis_1_1_c_s_d.html":[12,0,0,4]
+"statemachines_8hpp_source.html":[13,0,0,1,0,3,10]
 };

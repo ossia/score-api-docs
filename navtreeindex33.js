@@ -1,5 +1,11 @@
 var NAVTREEINDEX33 =
 {
+"structscore_1_1gfx_1_1_r_g_b_a64_decoder.html#a48b261ccf369fb69d77d6c15e733684a":[11,0,12,0,97,0],
+"structscore_1_1gfx_1_1_r_g_b_a64_decoder.html#a48b261ccf369fb69d77d6c15e733684a":[12,0,56,2,98,0],
+"structscore_1_1gfx_1_1_r_g_b_a64_decoder.html#ad923ae6d2bf53ed8f06e678f6965e20f":[11,0,12,0,97,1],
+"structscore_1_1gfx_1_1_r_g_b_a64_decoder.html#ad923ae6d2bf53ed8f06e678f6965e20f":[12,0,56,2,98,1],
+"structscore_1_1gfx_1_1_refcounted_frame.html":[12,0,56,2,87],
+"structscore_1_1gfx_1_1_refcounted_frame.html":[11,0,12,0,86],
 "structscore_1_1gfx_1_1_render_state.html":[12,0,56,2,94],
 "structscore_1_1gfx_1_1_render_state.html":[11,0,12,0,93],
 "structscore_1_1gfx_1_1_render_target_specs.html":[12,0,56,2,95],
@@ -243,11 +249,5 @@ var NAVTREEINDEX33 =
 "structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#ae0ce1fba092ef3fb038ef56b362b3756":[12,0,56,2,0,1,2],
 "structscore_1_1gfx_1_1is__output.html":[11,0,12,0,41],
 "structscore_1_1gfx_1_1is__output.html":[12,0,56,2,42],
-"structscore_1_1gfx_1_1isf__input__port__vis.html":[12,0,56,2,43],
-"structscore_1_1gfx_1_1isf__input__port__vis.html":[11,0,12,0,42],
-"structscore_1_1gfx_1_1isf__input__size__vis.html":[11,0,12,0,43],
-"structscore_1_1gfx_1_1isf__input__size__vis.html":[12,0,56,2,44],
-"structscore_1_1gfx_1_1no__delay__edges.html":[11,0,12,0,53],
-"structscore_1_1gfx_1_1no__delay__edges.html":[12,0,56,2,54],
-"structscore_1_1gfx_1_1port__indices.html":[12,0,56,2,81]
+"structscore_1_1gfx_1_1isf__input__port__vis.html":[12,0,56,2,43]
 };

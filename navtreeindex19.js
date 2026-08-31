@@ -1,13 +1,19 @@
 var NAVTREEINDEX19 =
 {
+"classscore_1_1_undo_panel_delegate_factory.html":[12,0,56,325],
+"classscore_1_1_undo_panel_delegate_factory.html":[11,0,12,318],
+"classscore_1_1_v_separator.html":[11,0,12,333],
+"classscore_1_1_v_separator.html":[12,0,56,340],
+"classscore_1_1_validity_checker.html":[12,0,56,326],
+"classscore_1_1_validity_checker.html":[11,0,12,319],
 "classscore_1_1_validity_checker_list.html":[11,0,12,320],
 "classscore_1_1_validity_checker_list.html":[12,0,56,327],
 "classscore_1_1_variant_based_node.html":[12,0,56,335],
 "classscore_1_1_variant_based_node.html":[11,0,12,328],
 "classscore_1_1_variant_based_node.html#a34342ffeb8eb27b29fa1998448de4544":[12,0,56,335,0],
 "classscore_1_1_variant_based_node.html#a34342ffeb8eb27b29fa1998448de4544":[11,0,12,328,0],
-"classscore_1_1_version.html":[11,0,12,329],
 "classscore_1_1_version.html":[12,0,56,336],
+"classscore_1_1_version.html":[11,0,12,329],
 "classscore_1_1_view.html":[11,0,12,330],
 "classscore_1_1_view.html":[12,0,56,337],
 "classscore_1_1_visibility_notifying.html":[11,0,12,331],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "classscore__plugin__scenario.html":[12,0,264],
 "classscore__plugin__spline.html":[12,0,265],
 "classscore__plugin__spline3d.html":[12,0,266],
-"classscore__plugin__threedim.html":[12,0,267],
-"classscore__plugin__threedim.html#a3fc7dd3144b170b6422d2879a943dda6":[12,0,267,0],
-"classscore__plugin__transport.html":[12,0,268],
-"classscore__plugin__ui.html":[12,0,269],
-"classscore__plugin__vst.html":[12,0,270],
-"classscore__plugin__vst3.html":[12,0,271],
-"classscore__plugin__ysfx.html":[12,0,272]
+"classscore__plugin__threedim.html":[12,0,267]
 };

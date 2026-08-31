@@ -1,5 +1,11 @@
 var NAVTREEINDEX26 =
 {
+"struct_metadata_3_01_pretty_name__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,174],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,175],
+"struct_metadata_3_01_process_1_1_descriptor__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,176],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,177],
+"struct_metadata_3_01_process_1_1_process_flags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,178],
+"struct_metadata_3_01_tags__k_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,179],
 "struct_metadata_3_01_tags__k_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html":[12,0,180],
 "struct_midi_1_1_midi_style.html":[12,0,39,7],
 "struct_midi_1_1_midi_track.html":[12,0,39,8],
@@ -243,11 +249,5 @@ var NAVTREEINDEX26 =
 "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html":[12,0,49,97,0],
 "struct_process_1_1_multi_slider.html":[12,0,49,98],
 "struct_process_1_1_multi_slider.html":[11,0,10,98],
-"struct_process_1_1_multi_slider_x_y.html":[12,0,49,99],
-"struct_process_1_1_multi_slider_x_y.html":[11,0,10,99],
-"struct_process_1_1_outlets.html":[11,0,10,104],
-"struct_process_1_1_outlets.html":[12,0,49,104],
-"struct_process_1_1_path_generator_x_y.html":[11,0,10,106],
-"struct_process_1_1_path_generator_x_y.html":[12,0,49,106],
-"struct_process_1_1_pixmaps.html":[12,0,49,107]
+"struct_process_1_1_multi_slider_x_y.html":[12,0,49,99]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX27 =
 {
+"struct_process_1_1_multi_slider_x_y.html":[11,0,10,99],
+"struct_process_1_1_outlets.html":[11,0,10,104],
+"struct_process_1_1_outlets.html":[12,0,49,104],
+"struct_process_1_1_path_generator_x_y.html":[11,0,10,106],
+"struct_process_1_1_path_generator_x_y.html":[12,0,49,106],
+"struct_process_1_1_pixmaps.html":[12,0,49,107],
 "struct_process_1_1_pixmaps.html":[11,0,10,107],
 "struct_process_1_1_port_item_layout.html":[11,0,10,113],
 "struct_process_1_1_port_item_layout.html":[12,0,49,113],
@@ -243,11 +249,5 @@ var NAVTREEINDEX27 =
 "struct_scenario_1_1_scenario_record_init_data.html":[12,0,55,230],
 "struct_scenario_1_1_scenario_record_init_data.html":[11,0,11,228],
 "struct_scenario_1_1_selected_nodes.html":[12,0,55,240],
-"struct_scenario_1_1_selected_nodes.html":[11,0,11,238],
-"struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33":[11,0,11,238,0],
-"struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33":[12,0,55,240,0],
-"struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831":[11,0,11,238,1],
-"struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831":[12,0,55,240,1],
-"struct_scenario_1_1_slot.html":[12,0,55,247],
-"struct_scenario_1_1_slot.html":[11,0,11,245]
+"struct_scenario_1_1_selected_nodes.html":[11,0,11,238]
 };

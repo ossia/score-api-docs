@@ -1,5 +1,11 @@
 var NAVTREEINDEX22 =
 {
+"layouts_2_constants_8hpp_source.html":[13,0,0,1,1,5,0,0],
+"lib_2core_2documentation_2commands_8hpp_source.html":[13,0,0,1,0,3,1],
+"lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,0,1,0,3,9],
+"lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,0,1,0,6,4],
+"lib_2core_2settings_2_settings_8hpp_source.html":[13,0,0,1,0,7,0],
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2],
 "lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
 "lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
 "lib_2score_2tools_2_debug_8hpp_source.html":[13,0,0,1,1,12,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX22 =
 "plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,17],
 "plugins_2score-plugin-clap_2_clap_2_settings_8hpp_source.html":[13,0,0,2,9,0,4],
 "plugins_2score-plugin-clap_2_clap_2_window_8hpp_source.html":[13,0,0,2,9,0,6],
-"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,10,0,5],
-"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,10,0,6],
-"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,10,0,1],
-"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,14,1,6],
-"plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,0,2,15,0,0],
-"plugins_2score-plugin-gfx_2_gfx_2_c_s_f_2_metadata_8hpp_source.html":[13,0,0,2,17,1,0,3],
-"plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,1,3]
+"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,10,0,5]
 };

@@ -743,6 +743,7 @@ var hierarchy =
       [ "Gfx::background_device", "class_gfx_1_1background__device.html", null ],
       [ "Gfx::libav_input_device", "class_gfx_1_1libav__input__device.html", null ],
       [ "Gfx::libav_output_device", "class_gfx_1_1libav__output__device.html", null ],
+      [ "Gfx::multi_texture_input_device", "class_gfx_1_1multi__texture__input__device.html", null ],
       [ "Gfx::multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
       [ "Gfx::offscreen_device", "class_gfx_1_1offscreen__device.html", null ],
       [ "Gfx::sh4lt_output_device", "class_gfx_1_1sh4lt__output__device.html", null ],
@@ -2135,7 +2136,9 @@ var hierarchy =
       [ "Gfx::GPhoto2::gphoto2_root_node", "class_gfx_1_1_g_photo2_1_1gphoto2__root__node.html", null ],
       [ "Gfx::Kinect2::kinect2_node", "class_gfx_1_1_kinect2_1_1kinect2__node.html", null ],
       [ "Gfx::gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
+      [ "Gfx::multi_texture_input_node", "class_gfx_1_1multi__texture__input__node.html", null ],
       [ "Gfx::simple_texture_input_node", "class_gfx_1_1simple__texture__input__node.html", null ],
+      [ "Gfx::texture_input_stream_node", "class_gfx_1_1texture__input__stream__node.html", null ],
       [ "Gfx::video_texture_input_node", "class_gfx_1_1video__texture__input__node.html", null ]
     ] ],
     [ "ossia::node_process", null, [
@@ -2400,8 +2403,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX34 =
 {
+"structscore_1_1gfx_1_1isf__input__port__vis.html":[11,0,12,0,42],
+"structscore_1_1gfx_1_1isf__input__size__vis.html":[11,0,12,0,43],
+"structscore_1_1gfx_1_1isf__input__size__vis.html":[12,0,56,2,44],
+"structscore_1_1gfx_1_1no__delay__edges.html":[11,0,12,0,53],
+"structscore_1_1gfx_1_1no__delay__edges.html":[12,0,56,2,54],
+"structscore_1_1gfx_1_1port__indices.html":[12,0,56,2,81],
 "structscore_1_1gfx_1_1port__indices.html":[11,0,12,0,80],
 "structscore_1_1indirect__cast__map__iterator.html":[12,0,56,153],
 "structscore_1_1indirect__cast__map__iterator.html":[11,0,12,146],

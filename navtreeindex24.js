@@ -1,5 +1,11 @@
 var NAVTREEINDEX24 =
 {
+"struct___camera_file_handler.html":[12,0,71],
+"struct___g_error.html":[12,0,72],
+"struct___g_param_spec.html":[12,0,73],
+"struct___g_value.html":[12,0,75],
+"struct___gst_map_info.html":[12,0,74],
+"struct_analysis_1_1_c_s_d.html":[12,0,0,4],
 "struct_analysis_1_1_centroid.html":[12,0,0,2],
 "struct_analysis_1_1_crest.html":[12,0,0,3],
 "struct_analysis_1_1_energy_difference.html":[12,0,0,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX24 =
 "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline.html":[12,0,22,4,5],
 "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline_1_1_appsink_info.html":[12,0,22,4,5,0],
 "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline_1_1_audio_buffer.html":[12,0,22,4,5,1],
-"struct_gfx_1_1_g_streamer_1_1libgstreamer.html":[12,0,22,4,12],
-"struct_gfx_1_1_geometry_filter_1_1_language_spec.html":[12,0,22,2,2],
-"struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program.html":[12,0,22,2,5],
-"struct_gfx_1_1_geometry_inlet_factory.html":[11,0,5,35],
-"struct_gfx_1_1_geometry_inlet_factory.html":[12,0,22,54],
-"struct_gfx_1_1_geometry_outlet_factory.html":[11,0,5,37],
-"struct_gfx_1_1_geometry_outlet_factory.html":[12,0,22,56]
+"struct_gfx_1_1_g_streamer_1_1libgstreamer.html":[12,0,22,4,12]
 };

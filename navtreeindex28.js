@@ -1,5 +1,11 @@
 var NAVTREEINDEX28 =
 {
+"struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33":[11,0,11,238,0],
+"struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33":[12,0,55,240,0],
+"struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831":[11,0,11,238,1],
+"struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831":[12,0,55,240,1],
+"struct_scenario_1_1_slot.html":[12,0,55,247],
+"struct_scenario_1_1_slot.html":[11,0,11,245],
 "struct_scenario_1_1_slot_id.html":[12,0,55,251],
 "struct_scenario_1_1_slot_id.html":[11,0,11,249],
 "struct_scenario_1_1_slot_path.html":[12,0,55,253],
@@ -243,11 +249,5 @@ var NAVTREEINDEX28 =
 "struct_threedim_1_1_t_used_types.html":[12,0,63,48],
 "struct_threedim_1_1_texture_to_buffer_1_1ins.html":[12,0,63,43,0],
 "struct_threedim_1_1_torus.html":[12,0,63,46],
-"struct_threedim_1_1_tri_mesh.html":[12,0,63,47],
-"struct_threedim_1_1_update.html":[12,0,63,50],
-"struct_threedim_1_1_vox_parse_error.html":[12,0,63,52],
-"struct_threedim_1_1_voxel_loader_1_1ins.html":[12,0,63,51,0],
-"struct_threedim_1_1_voxel_loader_1_1ins_1_1vox__t.html":[12,0,63,51,0,0],
-"struct_threedim_1_1attribute__lookup.html":[12,0,63,2],
-"struct_threedim_1_1extra__attribute.html":[12,0,63,14]
+"struct_threedim_1_1_tri_mesh.html":[12,0,63,47]
 };
