@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_load_preset_command_8hpp_source.html":[13,0,0,2,32,4,1,11],
 "_load_preset_command_factory_8hpp_source.html":[13,0,0,2,3,4,2,2],
 "_loader_8hpp_source.html":[13,0,0,2,38,0,6],
 "_local_device_8hpp_source.html":[13,0,0,2,14,2,0,0],
@@ -38,7 +39,7 @@ var NAVTREEINDEX3 =
 "_make_bus_8hpp_source.html":[13,0,0,2,32,4,1,3,7],
 "_manual_clock_8hpp_source.html":[13,0,0,2,14,1,1,3],
 "_map_copy_8hpp_source.html":[13,0,0,1,1,12,20],
-"_map_serialization_8hpp_source.html":[13,0,0,1,1,10,9],
+"_map_serialization_8hpp_source.html":[13,0,0,1,1,10,10],
 "_mapper_device_8hpp_source.html":[13,0,0,2,29,0,9,0],
 "_mapping_colors_8hpp_source.html":[13,0,0,2,23,0,3],
 "_mapping_command_factory_8hpp_source.html":[13,0,0,2,23,0,0,1],
@@ -110,7 +111,7 @@ var NAVTREEINDEX3 =
 "_midi_util_8hpp_source.html":[13,0,0,2,16,0,26],
 "_midi_view_8hpp_source.html":[13,0,0,2,25,0,12],
 "_mime_data_8hpp_source.html":[13,0,0,1,1,13,16],
-"_mime_visitor_8hpp_source.html":[13,0,0,1,1,10,10],
+"_mime_visitor_8hpp_source.html":[13,0,0,1,1,10,11],
 "_min_g_w_c_o_f_f_platform_8hpp_source.html":[13,0,0,2,19,2,0,2],
 "_min_max_commands_8hpp_source.html":[13,0,0,2,23,0,0,2],
 "_min_max_float_port_8hpp_source.html":[13,0,0,2,3,4,3,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_phidgets_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,17,2],
 "_phidgets_specific_settings_8hpp_source.html":[13,0,0,2,29,0,17,3],
 "_phong_node_8hpp_source.html":[13,0,0,2,17,1,4,21],
-"_pipe_wire_interface_8hpp_source.html":[13,0,0,2,6,0,17],
-"_pitch_8hpp_source.html":[13,0,0,2,5,0,11]
+"_pipe_wire_interface_8hpp_source.html":[13,0,0,2,6,0,17]
 };

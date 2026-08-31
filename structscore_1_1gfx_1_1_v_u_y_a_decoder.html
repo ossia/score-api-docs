@@ -129,9 +129,8 @@ Inheritance diagram for score::gfx::VUYADecoder:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4182ded672d2388dafb090a4e91a8f7e" id="r_a4182ded672d2388dafb090a4e91a8f7e"><td class="memItemLeft" align="right" valign="top"><a id="a4182ded672d2388dafb090a4e91a8f7e" name="a4182ded672d2388dafb090a4e91a8f7e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VUYADecoder</b> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, bool opaque_)</td></tr>
-<tr class="separator:a4182ded672d2388dafb090a4e91a8f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3abc657deaa44863534f51321d273c32" id="r_a3abc657deaa44863534f51321d273c32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_v_u_y_a_decoder.html#a3abc657deaa44863534f51321d273c32">VUYADecoder</a> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, bool opaque_, QString swz=&quot;bgr&quot;, QChar aComp='a')</td></tr>
+<tr class="separator:a3abc657deaa44863534f51321d273c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6238fd2b5e34127b0282e041dce53810" id="r_a6238fd2b5e34127b0282e041dce53810"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_v_u_y_a_decoder.html#a6238fd2b5e34127b0282e041dce53810">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) override</td></tr>
 <tr class="memdesc:a6238fd2b5e34127b0282e041dce53810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html" title="Processes and renders a video frame on the GPU.">GPUVideoDecoder</a>.  <br /></td></tr>
 <tr class="separator:a6238fd2b5e34127b0282e041dce53810"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +151,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a2f93837ab9d42604a834bff06bd9b3fd" id="r_a2f93837ab9d42604a834bff06bd9b3fd"><td class="memItemLeft" align="right" valign="top"><a id="a2f93837ab9d42604a834bff06bd9b3fd" name="a2f93837ab9d42604a834bff06bd9b3fd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>opaque</b> {}</td></tr>
 <tr class="separator:a2f93837ab9d42604a834bff06bd9b3fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe281a1a722559ce63b409f6ddae859" id="r_a1fe281a1a722559ce63b409f6ddae859"><td class="memItemLeft" align="right" valign="top"><a id="a1fe281a1a722559ce63b409f6ddae859" name="a1fe281a1a722559ce63b409f6ddae859"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>swizzle</b> {&quot;bgr&quot;}</td></tr>
+<tr class="separator:a1fe281a1a722559ce63b409f6ddae859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fd182689ba72a0a88438460ae1ee1f" id="r_aa6fd182689ba72a0a88438460ae1ee1f"><td class="memItemLeft" align="right" valign="top"><a id="aa6fd182689ba72a0a88438460ae1ee1f" name="aa6fd182689ba72a0a88438460ae1ee1f"></a>
+QChar&#160;</td><td class="memItemRight" valign="bottom"><b>alphaComp</b> {'a'}</td></tr>
+<tr class="separator:aa6fd182689ba72a0a88438460ae1ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:ac798b702a346427f64cbe627bc71dd59 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_ac798b702a346427f64cbe627bc71dd59"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>samplers</b></td></tr>
@@ -176,6 +181,56 @@ Additional Inherited Members</h2></td></tr>
 static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShader</b> (bool invertY=false) noexcept</td></tr>
 <tr class="separator:a51811ebc0bb933576910b2cc8b524a35 inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3abc657deaa44863534f51321d273c32" name="a3abc657deaa44863534f51321d273c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3abc657deaa44863534f51321d273c32">&#9670;&#160;</a></span>VUYADecoder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">score::gfx::VUYADecoder::VUYADecoder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>opaque_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>swz</em> = <code>&quot;bgr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QChar&#160;</td>
+          <td class="paramname"><em>aComp</em> = <code>'a'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><code>swz</code> maps texture components to Y, U and V in that order. The 32-bit 4:4:4 formats differ only in that order: VUYA is "bgr" (memory V,U,Y,A), AYUV is "gba", YUVA is "rgb". </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a26fb2fe3d09cae8952f0f0cf94390455" name="a26fb2fe3d09cae8952f0f0cf94390455"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a26fb2fe3d09cae8952f0f0cf94390455">&#9670;&#160;</a></span>exec()</h2>
@@ -298,12 +353,12 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral">void main()</span></div>
 <div class="line"><span class="stringliteral">{</span></div>
 <div class="line"><span class="stringliteral">  vec4 vuya = texture(u_tex, v_texcoord);</span></div>
-<div class="line"><span class="stringliteral">  float y = vuya.b;</span></div>
-<div class="line"><span class="stringliteral">  float u = vuya.g;</span></div>
-<div class="line"><span class="stringliteral">  float v = vuya.r;</span></div>
+<div class="line"><span class="stringliteral">  float y = vuya.%3;</span></div>
+<div class="line"><span class="stringliteral">  float u = vuya.%4;</span></div>
+<div class="line"><span class="stringliteral">  float v = vuya.%5;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  vec4 rgb = processTexture(vec4(y, u, v, 1.));</span></div>
-<div class="line"><span class="stringliteral">  fragColor = vec4(rgb.rgb, %3);</span></div>
+<div class="line"><span class="stringliteral">  fragColor = vec4(rgb.rgb, %6);</span></div>
 <div class="line"><span class="stringliteral">})_&quot;</span></div>
 </div><!-- fragment -->
 </div>

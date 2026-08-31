@@ -150,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4d413086a4714d9cd7948db980fc2ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbf355a03f4aa5713269763da18eefff" id="r_afbf355a03f4aa5713269763da18eefff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_sh4lt_output_node.html#afbf355a03f4aa5713269763da18eefff">configuration</a> () const noexcept override</td></tr>
 <tr class="separator:afbf355a03f4aa5713269763da18eefff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf159d7581e2c76f6ee8b4a86ed955a" id="r_aebf159d7581e2c76f6ee8b4a86ed955a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_sh4lt_output_node.html#aebf159d7581e2c76f6ee8b4a86ed955a">rate</a> () const noexcept</td></tr>
+<tr class="separator:aebf159d7581e2c76f6ee8b4a86ed955a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_output_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_output_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></td></tr>
 <tr class="memitem:ae5b2ad56c1db4ac9c82dabe2a58d61b2 inherit pub_methods_classscore_1_1gfx_1_1_output_node" id="r_ae5b2ad56c1db4ac9c82dabe2a58d61b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html#ae5b2ad56c1db4ac9c82dabe2a58d61b2">setVSyncCallback</a> (std::function&lt; void()&gt;)</td></tr>
 <tr class="memdesc:ae5b2ad56c1db4ac9c82dabe2a58d61b2 inherit pub_methods_classscore_1_1gfx_1_1_output_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a callback to drive rendering when there is a single output.  <br /></td></tr>
@@ -433,6 +435,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="aebf159d7581e2c76f6ee8b4a86ed955a" name="aebf159d7581e2c76f6ee8b4a86ed955a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf159d7581e2c76f6ee8b4a86ed955a">&#9670;&#160;</a></span>rate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Gfx::Sh4ltOutputNode::rate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Settings default to 0 when the key is absent, and every use of the rate here divides by it. </p>
 
 </div>
 </div>

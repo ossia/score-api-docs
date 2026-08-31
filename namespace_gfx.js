@@ -43,7 +43,7 @@ var namespace_gfx =
     [ "gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ],
     [ "gfx_protocol_base", "class_gfx_1_1gfx__protocol__base.html", null ],
     [ "GfxContext", "class_gfx_1_1_gfx_context.html", "class_gfx_1_1_gfx_context" ],
-    [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", null ],
+    [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", "class_gfx_1_1_gfx_execution_action" ],
     [ "GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", null ],
     [ "GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", null ],
     [ "GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],

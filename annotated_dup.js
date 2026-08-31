@@ -686,7 +686,7 @@ var annotated_dup =
       [ "gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ],
       [ "gfx_protocol_base", "class_gfx_1_1gfx__protocol__base.html", null ],
       [ "GfxContext", "class_gfx_1_1_gfx_context.html", "class_gfx_1_1_gfx_context" ],
-      [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", null ],
+      [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", "class_gfx_1_1_gfx_execution_action" ],
       [ "GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", null ],
       [ "GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", null ],
       [ "GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
@@ -2264,8 +2264,8 @@ var annotated_dup =
         [ "HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", "structscore_1_1gfx_1_1_h_a_p_m_decoder" ],
         [ "HWTransferDecoder", "structscore_1_1gfx_1_1_h_w_transfer_decoder.html", "structscore_1_1gfx_1_1_h_w_transfer_decoder" ],
         [ "I420Encoder", "structscore_1_1gfx_1_1_i420_encoder.html", "structscore_1_1gfx_1_1_i420_encoder" ],
-        [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
         [ "image", "structscore_1_1gfx_1_1image.html", null ],
+        [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
         [ "ImagesNode", "structscore_1_1gfx_1_1_images_node.html", "structscore_1_1gfx_1_1_images_node" ],
         [ "is_output", "structscore_1_1gfx_1_1is__output.html", null ],
         [ "isf_input_port_vis", "structscore_1_1gfx_1_1isf__input__port__vis.html", null ],
@@ -2323,6 +2323,7 @@ var annotated_dup =
         [ "RenderTargetSpecs", "structscore_1_1gfx_1_1_render_target_specs.html", null ],
         [ "RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", "structscore_1_1gfx_1_1_r_g_b24_decoder" ],
         [ "RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", "structscore_1_1gfx_1_1_r_g_b48_decoder" ],
+        [ "RGBA64Decoder", "structscore_1_1gfx_1_1_r_g_b_a64_decoder.html", "structscore_1_1gfx_1_1_r_g_b_a64_decoder" ],
         [ "Sampler", "structscore_1_1gfx_1_1_sampler.html", null ],
         [ "ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", "structscore_1_1gfx_1_1_screen_node" ],
         [ "ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
@@ -2854,7 +2855,8 @@ var annotated_dup =
       [ "TUsedTypes", "struct_threedim_1_1_t_used_types.html", null ],
       [ "TVertex", "class_threedim_1_1_t_vertex.html", null ],
       [ "Update", "struct_threedim_1_1_update.html", null ],
-      [ "VoxelLoader", "class_threedim_1_1_voxel_loader.html", "class_threedim_1_1_voxel_loader" ]
+      [ "VoxelLoader", "class_threedim_1_1_voxel_loader.html", "class_threedim_1_1_voxel_loader" ],
+      [ "VoxParseError", "struct_threedim_1_1_vox_parse_error.html", null ]
     ] ],
     [ "Transport", null, [
       [ "ApplicationPlugin", "class_transport_1_1_application_plugin.html", "class_transport_1_1_application_plugin" ],

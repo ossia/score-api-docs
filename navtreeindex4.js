@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_pitch_8hpp_source.html":[13,0,0,2,5,0,11],
 "_pitch_to_value_8hpp_source.html":[13,0,0,2,16,0,28],
 "_pixmap_8hpp_source.html":[13,0,0,1,1,13,17],
 "_pixmaps_8hpp_source.html":[13,0,0,2,3,4,12,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_scenario_style_8hpp_source.html":[13,0,0,2,3,4,12,1],
 "_scenario_tool_state_8hpp_source.html":[13,0,0,2,32,4,8,0,5],
 "_scenario_trigger_command_factory_8hpp_source.html":[13,0,0,2,32,4,1,8,0,1],
-"_scenario_validity_8hpp_source.html":[13,0,0,2,32,4,0,6],
-"_scenario_view_8hpp_source.html":[13,0,0,2,32,4,9,10]
+"_scenario_validity_8hpp_source.html":[13,0,0,2,32,4,0,6]
 };

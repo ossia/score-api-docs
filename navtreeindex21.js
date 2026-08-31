@@ -1,5 +1,8 @@
 var NAVTREEINDEX21 =
 {
+"dir_8c54626366688ab76b573678aecbbb8a.html":[13,0,0,2,32,4,1,5,1],
+"dir_8deb4d6903baf6da043b436ca15a3aa4.html":[13,0,0,1,1,8,5],
+"dir_8dfcbef686e51a4a19cbd8034939bcd1.html":[13,0,0,1,1,0],
 "dir_9013f114fbcc2e7a0f1bded7d9304834.html":[13,0,0,2,29,0,8],
 "dir_9082cf01bb1ee724e13a8a4d7fb20d5a.html":[13,0,0,2,6],
 "dir_91a13fc7e1ec70843674617ab67dcd29.html":[13,0,0,2,32,4,6,2],
@@ -190,8 +193,8 @@ var NAVTREEINDEX21 =
 "functions_e.html":[12,3,0,4],
 "functions_enum.html":[12,3,4],
 "functions_f.html":[12,3,0,5],
-"functions_func.html":[12,3,1,0],
 "functions_func.html":[12,3,1],
+"functions_func.html":[12,3,1,0],
 "functions_func_b.html":[12,3,1,1],
 "functions_func_c.html":[12,3,1,2],
 "functions_func_d.html":[12,3,1,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX21 =
 "lib_2core_2documentation_2serialization_8hpp_source.html":[13,0,0,1,0,3,9],
 "lib_2core_2presenter_2_presenter_8hpp_source.html":[13,0,0,1,0,6,4],
 "lib_2core_2settings_2_settings_8hpp_source.html":[13,0,0,1,0,7,0],
-"lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2],
-"lib_2score_2model_2_component_8hpp_source.html":[13,0,0,1,1,7,4],
-"lib_2score_2plugins_2documentdelegate_2plugin_2_document_plugin_8hpp_source.html":[13,0,0,1,1,8,1,0,0],
-"lib_2score_2tools_2_debug_8hpp_source.html":[13,0,0,1,1,12,7]
+"lib_2core_2view_2_window_8hpp_source.html":[13,0,0,1,0,9,2]
 };

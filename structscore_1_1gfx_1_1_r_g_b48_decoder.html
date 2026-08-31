@@ -292,9 +292,10 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral">      float h = mat.texSz.y;</span></div>
 <div class="line"><span class="stringliteral">      int x = int(floor(v_texcoord.x * w) * 3.);</span></div>
 <div class="line"><span class="stringliteral">      int y = int(v_texcoord.y * h);</span></div>
-<div class="line"><span class="stringliteral">      float r = texelFetch(y_tex, ivec2(x + 0, y), 0).r;</span></div>
-<div class="line"><span class="stringliteral">      float g = texelFetch(y_tex, ivec2(x + 1, y), 0).r;</span></div>
-<div class="line"><span class="stringliteral">      float b = texelFetch(y_tex, ivec2(x + 2, y), 0).r;</span></div>
+<div class="line"><span class="stringliteral">      const float s = )_&quot; SCORE_GFX_MSB_ALIGNED_SCALE R</span><span class="stringliteral">&quot;_(;</span></div>
+<div class="line"><span class="stringliteral">      float r = texelFetch(y_tex, ivec2(x + 0, y), 0).r * s;</span></div>
+<div class="line"><span class="stringliteral">      float g = texelFetch(y_tex, ivec2(x + 1, y), 0).r * s;</span></div>
+<div class="line"><span class="stringliteral">      float b = texelFetch(y_tex, ivec2(x + 2, y), 0).r * s;</span></div>
 <div class="line"><span class="stringliteral">      fragColor = processTexture(vec4(r, g, b, 1.));</span></div>
 <div class="line"><span class="stringliteral">    })_&quot;</span></div>
 </div><!-- fragment -->

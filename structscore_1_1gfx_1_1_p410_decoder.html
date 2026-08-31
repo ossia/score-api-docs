@@ -298,9 +298,10 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">void main()</span></div>
 <div class="line"><span class="stringliteral">{</span></div>
-<div class="line"><span class="stringliteral">  float y = texture(y_tex, v_texcoord).r;</span></div>
-<div class="line"><span class="stringliteral">  float u = texture(uv_tex, v_texcoord).r;</span></div>
-<div class="line"><span class="stringliteral">  float v = texture(uv_tex, v_texcoord).g;</span></div>
+<div class="line"><span class="stringliteral">  const float s = )_&quot; SCORE_GFX_MSB_ALIGNED_SCALE R</span><span class="stringliteral">&quot;_(;</span></div>
+<div class="line"><span class="stringliteral">  float y = s * texture(y_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">  float u = s * texture(uv_tex, v_texcoord).r;</span></div>
+<div class="line"><span class="stringliteral">  float v = s * texture(uv_tex, v_texcoord).g;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  fragColor = processTexture(vec4(y, u, v, 1.));</span></div>
 <div class="line"><span class="stringliteral">})_&quot;</span></div>

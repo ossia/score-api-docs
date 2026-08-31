@@ -370,6 +370,8 @@ var namespacescore =
     [ "materializeFile", "namespacescore.html#a467612b37ae4654419b8dc0b01453937", null ],
     [ "mediaSubfolder", "namespacescore.html#a3931d6c83f2257066ee55f7768dee24f", null ],
     [ "newProcessedFilePath", "namespacescore.html#a32796149f51ff5e6483f20895442a6b3", null ],
+    [ "parseJsonField", "namespacescore.html#af5b703cc8728ecd74cdeebfc9148b8cc", null ],
+    [ "parseJsonNumber", "namespacescore.html#a2a536512cd929ef2bc2e9ae50785afbb", null ],
     [ "pathRoots", "namespacescore.html#ab02ac84d002321d16f16794eb21d5430", null ],
     [ "pickerStartFolder", "namespacescore.html#a04693a895f484cec2898fc4330b7dc85", null ],
     [ "pickerStartFolder", "namespacescore.html#ad2e918141bd72dc5af732f9c78098af0", null ],

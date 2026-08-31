@@ -144,93 +144,92 @@ $(document).ready(function(){initNavTree('_p010_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="stringliteral"></span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="stringliteral">void main()</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="stringliteral">{</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">  // P010 stores 10-bit data in the high bits of 16-bit words,</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">  // so R16 unorm already returns values normalized to [0, 1].</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">  float y = texture(y_tex, v_texcoord).r;</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">  float u = texture(uv_tex, v_texcoord).r;</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral">  float v = texture(uv_tex, v_texcoord).g;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="stringliteral">  fragColor = processTexture(vec4(y, u, v, 1.));</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="stringliteral">})_&quot;;</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="stringliteral">  <a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="stringliteral">  </span><span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_p010_decoder.html">P010Decoder</a>(<a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      : decoder{d}</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">   60</a></span>  std::pair&lt;QShader, QShader&gt; <a class="code hl_function" href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">init</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span>&amp; rhi = *r.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">// Y plane: R16 at full resolution</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::R16, {w, h}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      tex-&gt;create();</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          QRhiSampler::Linear, QRhiSampler::Linear, QRhiSampler::None,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          QRhiSampler::ClampToEdge, QRhiSampler::ClampToEdge);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      sampler-&gt;create();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      samplers.push_back({sampler, tex});</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// UV plane: RG16 (two 16-bit channels interleaved) at half resolution</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="keyword">auto</span> tex</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>          = rhi.newTexture(QRhiTexture::RG16, {w / 2, h / 2}, 1, QRhiTexture::Flag{});</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      tex-&gt;create();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>          QRhiSampler::Linear, QRhiSampler::Linear, QRhiSampler::None,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          QRhiSampler::ClampToEdge, QRhiSampler::ClampToEdge);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      sampler-&gt;create();</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      samplers.push_back({sampler, tex});</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        r.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), QString(frag).arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="stringliteral">  const float s = )_&quot; SCORE_GFX_MSB_ALIGNED_SCALE R</span><span class="stringliteral">&quot;_(;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="stringliteral">  float y = s * texture(y_tex, v_texcoord).r;</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="stringliteral">  float u = s * texture(uv_tex, v_texcoord).r;</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="stringliteral">  float v = s * texture(uv_tex, v_texcoord).g;</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="stringliteral">  fragColor = processTexture(vec4(y, u, v, 1.));</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="stringliteral">})_&quot;;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="stringliteral">  <a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; decoder;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="stringliteral">  </span><span class="keyword">explicit</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_p010_decoder.html">P010Decoder</a>(<a class="code hl_struct" href="struct_video_1_1_image_format.html">Video::ImageFormat</a>&amp; d)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      : decoder{d}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">   59</a></span>  std::pair&lt;QShader, QShader&gt; <a class="code hl_function" href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">init</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">auto</span>&amp; rhi = *r.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">// Y plane: R16 at full resolution</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">auto</span> tex = rhi.newTexture(QRhiTexture::R16, {w, h}, 1, QRhiTexture::Flag{});</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      tex-&gt;create();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          QRhiSampler::Linear, QRhiSampler::Linear, QRhiSampler::None,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          QRhiSampler::ClampToEdge, QRhiSampler::ClampToEdge);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      sampler-&gt;create();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      samplers.push_back({sampler, tex});</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// UV plane: RG16 (two 16-bit channels interleaved) at half resolution</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keyword">auto</span> tex</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>          = rhi.newTexture(QRhiTexture::RG16, {w / 2, h / 2}, 1, QRhiTexture::Flag{});</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      tex-&gt;create();</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keyword">auto</span> sampler = rhi.newSampler(</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          QRhiSampler::Linear, QRhiSampler::Linear, QRhiSampler::None,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>          QRhiSampler::ClampToEdge, QRhiSampler::ClampToEdge);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      sampler-&gt;create();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      samplers.push_back({sampler, tex});</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a>(</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        r.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>, vertexShader(), QString(frag).arg(<span class="stringliteral">&quot;&quot;</span>).arg(colorMatrix(decoder)));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">   94</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">exec</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    setYPixels(res, frame.data[0], frame.linesize[0]);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    setUVPixels(res, frame.data[1], frame.linesize[1]);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">   93</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">exec</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiResourceUpdateBatch&amp; res, AVFrame&amp; frame)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    setYPixels(res, frame.data[0], frame.linesize[0]);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    setUVPixels(res, frame.data[1], frame.linesize[1]);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  setYPixels(QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">auto</span> y_tex = samplers[0].texture;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 2, stride)};</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    QRhiTextureUploadDescription desc{entry};</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    res.uploadTexture(y_tex, desc);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  setUVPixels(QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width / 2, h = decoder.height / 2;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">auto</span> uv_tex = samplers[1].texture;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 4, stride)};</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    QRhiTextureUploadDescription desc{entry};</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    res.uploadTexture(uv_tex, desc);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  setYPixels(QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width, h = decoder.height;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">auto</span> y_tex = samplers[0].texture;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 2, stride)};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QRhiTextureUploadDescription desc{entry};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    res.uploadTexture(y_tex, desc);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  setUVPixels(QRhiResourceUpdateBatch&amp; res, uint8_t* pixels, <span class="keywordtype">int</span> stride) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  {</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">const</span> <span class="keyword">auto</span> w = decoder.width / 2, h = decoder.height / 2;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">auto</span> uv_tex = samplers[1].texture;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    QRhiTextureUploadEntry entry{0, 0, <a class="code hl_function" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a>(pixels, w, h, 4, stride)};</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    QRhiTextureUploadDescription desc{entry};</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    res.uploadTexture(uv_tex, desc);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
 </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></div><div class="ttdoc">Processes and renders a video frame on the GPU.</div><div class="ttdef"><b>Definition</b> GPUVideoDecoder.hpp:90</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_g_p_u_video_decoder_html_a70bc09ac7a5e91b4b26530851893ec7f"><div class="ttname"><a href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">score::gfx::GPUVideoDecoder::createTextureUpload</a></div><div class="ttdeci">static QRhiTextureSubresourceUploadDescription createTextureUpload(uint8_t *pixels, int w, int h, int bytesPerPixel, int stride)</div><div class="ttdoc">Utility method to create a QRhiTextureSubresourceUploadDescription.</div><div class="ttdef"><b>Definition</b> GPUVideoDecoder.cpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
@@ -239,8 +238,8 @@ $(document).ready(function(){initNavTree('_p010_8hpp_source.html',''); initResiz
 <div class="ttc" id="anamespacescore_1_1gfx_html_ada75ef58fe373211a06093b50051b6e0"><div class="ttname"><a href="namespacescore_1_1gfx.html#ada75ef58fe373211a06093b50051b6e0">score::gfx::makeShaders</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; makeShaders(const RenderState &amp;v, QString vert, QString frag)</div><div class="ttdoc">Get a pair of compiled vertex / fragment shaders from GLSL 4.5 sources.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:652</div></div>
 <div class="ttc" id="astruct_video_1_1_image_format_html"><div class="ttname"><a href="struct_video_1_1_image_format.html">Video::ImageFormat</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:26</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_p010_decoder_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_p010_decoder.html">score::gfx::P010Decoder</a></div><div class="ttdoc">Decodes P010 videos.</div><div class="ttdef"><b>Definition</b> P010.hpp:23</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_p010_decoder_html_a9e36fb5852aa861561f24f599c89c241"><div class="ttname"><a href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">score::gfx::P010Decoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition</b> P010.hpp:60</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_p010_decoder_html_acad4d1c496c356aec3c1868a7a0fd93c"><div class="ttname"><a href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">score::gfx::P010Decoder::exec</a></div><div class="ttdeci">void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div><div class="ttdef"><b>Definition</b> P010.hpp:94</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_p010_decoder_html_a9e36fb5852aa861561f24f599c89c241"><div class="ttname"><a href="structscore_1_1gfx_1_1_p010_decoder.html#a9e36fb5852aa861561f24f599c89c241">score::gfx::P010Decoder::init</a></div><div class="ttdeci">std::pair&lt; QShader, QShader &gt; init(RenderList &amp;r) override</div><div class="ttdoc">Initialize a GPUVideoDecoder.</div><div class="ttdef"><b>Definition</b> P010.hpp:59</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_p010_decoder_html_acad4d1c496c356aec3c1868a7a0fd93c"><div class="ttname"><a href="structscore_1_1gfx_1_1_p010_decoder.html#acad4d1c496c356aec3c1868a7a0fd93c">score::gfx::P010Decoder::exec</a></div><div class="ttdeci">void exec(RenderList &amp;, QRhiResourceUpdateBatch &amp;res, AVFrame &amp;frame) override</div><div class="ttdoc">Decode and upload a video frame to the GPU.</div><div class="ttdef"><b>Definition</b> P010.hpp:93</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -870,6 +870,7 @@ var hierarchy =
         [ "Execution::InvalidProcessException< T >", "class_execution_1_1_invalid_process_exception.html", null ],
         [ "Jit::Exception", "struct_jit_1_1_exception.html", null ],
         [ "NodeNotFoundException", "class_node_not_found_exception.html", null ],
+        [ "Threedim::VoxParseError", "struct_threedim_1_1_vox_parse_error.html", null ],
         [ "score::MissingCommandException", "classscore_1_1_missing_command_exception.html", null ]
       ] ]
     ] ],
@@ -1065,6 +1066,7 @@ var hierarchy =
       [ "score::gfx::PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", null ],
       [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
       [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
+      [ "score::gfx::RGBA64Decoder", "structscore_1_1gfx_1_1_r_g_b_a64_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
       [ "score::gfx::V210Decoder", "structscore_1_1gfx_1_1_v210_decoder.html", null ],
       [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
@@ -1326,8 +1328,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [

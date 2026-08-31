@@ -1,5 +1,10 @@
 var NAVTREEINDEX23 =
 {
+"plugins_2score-plugin-gfx_2_gfx_2_geometry_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,2,3],
+"plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,0,2,17,1,4,46],
+"plugins_2score-plugin-gfx_2_gfx_2_images_2_metadata_8hpp_source.html":[13,0,0,2,17,1,6,2],
+"plugins_2score-plugin-gfx_2_gfx_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,17,1,8,2],
+"plugins_2score-plugin-gfx_2_gfx_2_text_2_metadata_8hpp_source.html":[13,0,0,2,17,1,13,2],
 "plugins_2score-plugin-gfx_2_gfx_2_v_s_a_2_metadata_8hpp_source.html":[13,0,0,2,17,1,15,3],
 "plugins_2score-plugin-gfx_2_gfx_2_video_2_metadata_8hpp_source.html":[13,0,0,2,17,1,14,3],
 "plugins_2score-plugin-gfx_2_gfx_2_video_2_presenter_8hpp_source.html":[13,0,0,2,17,1,14,4],
@@ -244,10 +249,5 @@ var NAVTREEINDEX23 =
 "struct___g_param_spec.html":[12,0,73],
 "struct___g_value.html":[12,0,75],
 "struct___gst_map_info.html":[12,0,74],
-"struct_analysis_1_1_c_s_d.html":[12,0,0,4],
-"struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3],
-"struct_analysis_1_1_energy_difference.html":[12,0,0,5],
-"struct_analysis_1_1_envelope_follower.html":[12,0,0,6],
-"struct_analysis_1_1_flatness.html":[12,0,0,7]
+"struct_analysis_1_1_c_s_d.html":[12,0,0,4]
 };

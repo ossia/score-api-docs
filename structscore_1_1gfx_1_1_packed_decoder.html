@@ -122,9 +122,9 @@ Inheritance diagram for score::gfx::PackedDecoder:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8048ce82cb0b4adb093855ac10198e61" id="r_a8048ce82cb0b4adb093855ac10198e61"><td class="memItemLeft" align="right" valign="top"><a id="a8048ce82cb0b4adb093855ac10198e61" name="a8048ce82cb0b4adb093855ac10198e61"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PackedDecoder</b> (QRhiTexture::Format fmt, int bytes_per_pixel, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, QString f=&quot;&quot;, bool invertY=false)</td></tr>
-<tr class="separator:a8048ce82cb0b4adb093855ac10198e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae595e12481bf0790c580951258dee696" id="r_ae595e12481bf0790c580951258dee696"><td class="memItemLeft" align="right" valign="top"><a id="ae595e12481bf0790c580951258dee696" name="ae595e12481bf0790c580951258dee696"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PackedDecoder</b> (QRhiTexture::Format fmt, int bytes_per_pixel, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, QString f=&quot;&quot;, bool invertY=false, bool nearest=false)</td></tr>
+<tr class="separator:ae595e12481bf0790c580951258dee696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78cb747d182ec6d7993e4e2ca424586a" id="r_a78cb747d182ec6d7993e4e2ca424586a"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_packed_decoder.html#a78cb747d182ec6d7993e4e2ca424586a">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) override</td></tr>
 <tr class="memdesc:a78cb747d182ec6d7993e4e2ca424586a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html" title="Processes and renders a video frame on the GPU.">GPUVideoDecoder</a>.  <br /></td></tr>
 <tr class="separator:a78cb747d182ec6d7993e4e2ca424586a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +151,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bytes_per_pixel</b> {}
 <tr class="memitem:aaf53d4ab2190564c99b30d05b9a7ce0f" id="r_aaf53d4ab2190564c99b30d05b9a7ce0f"><td class="memItemLeft" align="right" valign="top"><a id="aaf53d4ab2190564c99b30d05b9a7ce0f" name="aaf53d4ab2190564c99b30d05b9a7ce0f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>invertY</b> {}</td></tr>
 <tr class="separator:aaf53d4ab2190564c99b30d05b9a7ce0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a0ed1a60190ac251e7a49a4164b61e" id="r_a56a0ed1a60190ac251e7a49a4164b61e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_packed_decoder.html#a56a0ed1a60190ac251e7a49a4164b61e">nearestSampling</a> {}</td></tr>
+<tr class="separator:a56a0ed1a60190ac251e7a49a4164b61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d1542578d75c9e485809cdbd09d049" id="r_a44d1542578d75c9e485809cdbd09d049"><td class="memItemLeft" align="right" valign="top"><a id="a44d1542578d75c9e485809cdbd09d049" name="a44d1542578d75c9e485809cdbd09d049"></a>
 <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
 <tr class="separator:a44d1542578d75c9e485809cdbd09d049"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +266,21 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a56a0ed1a60190ac251e7a49a4164b61e" name="a56a0ed1a60190ac251e7a49a4164b61e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a0ed1a60190ac251e7a49a4164b61e">&#9670;&#160;</a></span>nearestSampling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::PackedDecoder::nearestSampling {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set for texels reassembled from several bytes: interpolation would blend the bytes of adjacent texels before the filter can recombine them. </p>
+
+</div>
+</div>
 <a id="a6d93f39b69a305fca42cd43a950859c2" name="a6d93f39b69a305fca42cd43a950859c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d93f39b69a305fca42cd43a950859c2">&#9670;&#160;</a></span>rgb_filter</h2>
 

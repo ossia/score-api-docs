@@ -153,6 +153,8 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a8588d886e1407ece4adfcd34e0cb4ef2" id="r_a8588d886e1407ece4adfcd34e0cb4ef2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_execution_action.html#a8588d886e1407ece4adfcd34e0cb4ef2">alive</a> {std::make_shared&lt;bool&gt;(true)}</td></tr>
+<tr class="separator:a8588d886e1407ece4adfcd34e0cb4ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d493b637b092309db06f0c39f562b5f" id="r_a9d493b637b092309db06f0c39f562b5f"><td class="memItemLeft" align="right" valign="top"><a id="a9d493b637b092309db06f0c39f562b5f" name="a9d493b637b092309db06f0c39f562b5f"></a>
 <a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ui</b> {}</td></tr>
 <tr class="separator:a9d493b637b092309db06f0c39f562b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +222,22 @@ edge_queue&#160;</td><td class="memItemRight" valign="bottom"><b>incoming_edges<
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_execution_1_1_execution_action.html">Execution::ExecutionAction</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8588d886e1407ece4adfcd34e0cb4ef2" name="a8588d886e1407ece4adfcd34e0cb4ef2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8588d886e1407ece4adfcd34e0cb4ef2">&#9670;&#160;</a></span>alive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;bool&gt; Gfx::GfxExecutionAction::alive {std::make_shared&lt;bool&gt;(true)}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cleared in ~GfxExecutionAction. A device parameter copies it and checks it before dereferencing this object, which it can outlive. </p>
 
 </div>
 </div>
