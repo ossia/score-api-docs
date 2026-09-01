@@ -1,5 +1,14 @@
 var NAVTREEINDEX25 =
 {
+"struct_gfx_1_1_edge_blend.html":[11,0,5,27],
+"struct_gfx_1_1_edge_blend.html":[12,0,22,46],
+"struct_gfx_1_1_edge_spec.html":[11,0,5,28],
+"struct_gfx_1_1_edge_spec.html":[12,0,22,47],
+"struct_gfx_1_1_filter_1_1_process_factory.html":[12,0,22,1,4],
+"struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html":[12,0,22,1,6],
+"struct_gfx_1_1_flt_i_audio_frame_encoder.html":[11,0,5,32],
+"struct_gfx_1_1_flt_i_audio_frame_encoder.html":[12,0,22,51],
+"struct_gfx_1_1_flt_p_audio_frame_encoder.html":[12,0,22,52],
 "struct_gfx_1_1_flt_p_audio_frame_encoder.html":[11,0,5,33],
 "struct_gfx_1_1_g_photo2_1_1_g_photo2_settings.html":[12,0,22,3,8],
 "struct_gfx_1_1_g_photo2_1_1gphoto2__camera.html":[12,0,22,3,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX25 =
 "struct_media_1_1_float_pair.html":[12,0,38,16],
 "struct_media_1_1_r_m_s_data.html":[12,0,38,19],
 "struct_media_1_1_r_m_s_data_1_1_header.html":[12,0,38,19,0],
-"struct_media_1_1_settings_1_1_plugin_tab_row.html":[12,0,38,2,3],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html":[12,0,38,2,4],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a1d66ce6de7e5b50753e3f1dd222328f7":[12,0,38,2,4,3],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a2ee80025d91e1457b738f1760892b694":[12,0,38,2,4,1],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a30079c6c9015368da01ee1a936ee1747":[12,0,38,2,4,6],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a6075a646f92142b64eca60e36375b523":[12,0,38,2,4,5],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a75164b69c1e749b41a351853dd0623ee":[12,0,38,2,4,2],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#a7a02d46c225e05209032d540efd99306":[12,0,38,2,4,4],
-"struct_media_1_1_settings_1_1_plugin_tab_spec.html#aa4acf0d055349a8fe0e1accce3be1b0e":[12,0,38,2,4,0],
-"struct_media_1_1_sound_1_1_computed_waveform.html":[12,0,38,3,1]
+"struct_media_1_1_settings_1_1_plugin_tab_row.html":[12,0,38,2,3]
 };

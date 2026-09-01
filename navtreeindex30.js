@@ -1,5 +1,14 @@
 var NAVTREEINDEX30 =
 {
+"structhas__base.html":[12,0,132],
+"structhas__no__base.html":[12,0,133],
+"structhas__ui.html":[12,0,134],
+"structhas__ui_3_01_t_01_4.html":[12,0,135],
+"structin__relationship.html":[12,0,146],
+"structincrease__timer__precision.html":[12,0,147],
+"structinvisible__window.html":[12,0,150],
+"structis__shared__ptr.html":[12,0,152],
+"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,153],
 "structjk_1_1value.html":[12,0,31,0],
 "structmagic__enum_1_1customize_1_1enum__range_3_01_nodes_1_1_midi_util_1_1scale__type_01_4.html":[12,0,36,0,0],
 "structmatches.html":[12,0,164],
@@ -240,14 +249,5 @@ var NAVTREEINDEX30 =
 "structscore_1_1_file_path.html":[12,0,56,111],
 "structscore_1_1_file_placement_1_1_placement.html":[11,0,12,105,0],
 "structscore_1_1_file_placement_1_1_placement.html":[12,0,56,112,0],
-"structscore_1_1_file_placement_1_1_placement.html#a64a56b1da47d7b366e0e321697b04af4":[12,0,56,112,0,2],
-"structscore_1_1_file_placement_1_1_placement.html#a64a56b1da47d7b366e0e321697b04af4":[11,0,12,105,0,2],
-"structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105":[11,0,12,105,0,1],
-"structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105":[12,0,56,112,0,1],
-"structscore_1_1_file_placement_1_1_placement.html#ad08b523ffba4c232a4c2cc72536763f6":[11,0,12,105,0,0],
-"structscore_1_1_file_placement_1_1_placement.html#ad08b523ffba4c232a4c2cc72536763f6":[12,0,56,112,0,0],
-"structscore_1_1_flicks_spin_box.html":[11,0,12,108],
-"structscore_1_1_flicks_spin_box.html":[12,0,56,115],
-"structscore_1_1_focus_action_condition.html":[12,0,56,116],
-"structscore_1_1_focus_action_condition.html":[11,0,12,109]
+"structscore_1_1_file_placement_1_1_placement.html#a64a56b1da47d7b366e0e321697b04af4":[12,0,56,112,0,2]
 };

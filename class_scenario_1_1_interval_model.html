@@ -184,6 +184,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setStartDate</b> (con
 <tr class="memitem:a6fa34ac91ac01e1bda71fb7dc61188aa" id="r_a6fa34ac91ac01e1bda71fb7dc61188aa"><td class="memItemLeft" align="right" valign="top"><a id="a6fa34ac91ac01e1bda71fb7dc61188aa" name="a6fa34ac91ac01e1bda71fb7dc61188aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>translate</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;deltaTime)</td></tr>
 <tr class="separator:a6fa34ac91ac01e1bda71fb7dc61188aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a032708d16dc1b15c111ae143dbfc8187" id="r_a032708d16dc1b15c111ae143dbfc8187"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_interval_model.html#a032708d16dc1b15c111ae143dbfc8187">dateInFlicks</a> () const noexcept</td></tr>
+<tr class="separator:a032708d16dc1b15c111ae143dbfc8187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97452aa4937a368ee22faaf885bf78d3" id="r_a97452aa4937a368ee22faaf885bf78d3"><td class="memItemLeft" align="right" valign="top"><a id="a97452aa4937a368ee22faaf885bf78d3" name="a97452aa4937a368ee22faaf885bf78d3"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>heightPercentage</b> () const noexcept</td></tr>
 <tr class="separator:a97452aa4937a368ee22faaf885bf78d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -378,6 +380,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setStartMarker</b> (<
 <tr class="memitem:a8d285f8891d6b499950570e3992e71ef" id="r_a8d285f8891d6b499950570e3992e71ef"><td class="memItemLeft" align="right" valign="top"><a id="a8d285f8891d6b499950570e3992e71ef" name="a8d285f8891d6b499950570e3992e71ef"></a>
 <a class="el" href="struct_time_val.html">TimeVal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>startMarker</b> () const noexcept</td></tr>
 <tr class="separator:a8d285f8891d6b499950570e3992e71ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09c71f8d56284055df91e6a3329b14a" id="r_ad09c71f8d56284055df91e6a3329b14a"><td class="memItemLeft" align="right" valign="top"><a id="ad09c71f8d56284055df91e6a3329b14a" name="ad09c71f8d56284055df91e6a3329b14a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>startMarkerInFlicks</b> () const noexcept</td></tr>
+<tr class="separator:ad09c71f8d56284055df91e6a3329b14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938d198cc1f78b3a07f50dd8add6b941" id="r_a938d198cc1f78b3a07f50dd8add6b941"><td class="memItemLeft" align="right" valign="top"><a id="a938d198cc1f78b3a07f50dd8add6b941" name="a938d198cc1f78b3a07f50dd8add6b941"></a>
 <a class="el" href="class_scenario_1_1_interval_durations.html">IntervalDurations</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getDurations</b> () noexcept</td></tr>
 <tr class="separator:a938d198cc1f78b3a07f50dd8add6b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -603,6 +608,33 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a032708d16dc1b15c111ae143dbfc8187" name="a032708d16dc1b15c111ae143dbfc8187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a032708d16dc1b15c111ae143dbfc8187">&#9670;&#160;</a></span>dateInFlicks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Scenario::IntervalModel::dateInFlicks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The interval's start, in flicks, relative to its parent scenario.</p>
+<p>Read-only and in flicks: that is how time is already spelled on the Javascript side (TokenRequestValueType::date and friends return a raw .impl), and leaving it read-only keeps every position change going through a command, so undo still works. </p>
+
+</div>
+</div>
 <a id="a7a2b95edd76d006965c94d93bbfdfb3d" name="a7a2b95edd76d006965c94d93bbfdfb3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a2b95edd76d006965c94d93bbfdfb3d">&#9670;&#160;</a></span>legacyNodalOffset()</h2>
 

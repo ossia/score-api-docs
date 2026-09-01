@@ -1,5 +1,14 @@
 var NAVTREEINDEX27 =
 {
+"struct_process_1_1_inlets.html":[11,0,10,62],
+"struct_process_1_1_inlets.html":[12,0,49,62],
+"struct_process_1_1_int_range_slider.html":[11,0,10,66],
+"struct_process_1_1_int_range_slider.html":[12,0,49,66],
+"struct_process_1_1_int_range_spin_box.html":[11,0,10,67],
+"struct_process_1_1_int_range_spin_box.html":[12,0,49,67],
+"struct_process_1_1_int_slider.html":[11,0,10,68],
+"struct_process_1_1_int_slider.html":[12,0,49,68],
+"struct_process_1_1_int_spin_box.html":[11,0,10,69],
 "struct_process_1_1_int_spin_box.html":[12,0,49,69],
 "struct_process_1_1_layer_context.html":[11,0,10,70],
 "struct_process_1_1_layer_context.html":[12,0,49,70],
@@ -240,14 +249,5 @@ var NAVTREEINDEX27 =
 "struct_scenario_1_1_musical_grid_1_1timings.html":[11,0,11,172,0],
 "struct_scenario_1_1_nodal_container.html":[12,0,55,177],
 "struct_scenario_1_1_nodal_container.html":[11,0,11,175],
-"struct_scenario_1_1_nodal_slot_presenter.html":[11,0,11,177],
-"struct_scenario_1_1_nodal_slot_presenter.html":[12,0,55,179],
-"struct_scenario_1_1_object_mapper.html":[11,0,11,179],
-"struct_scenario_1_1_object_mapper.html":[12,0,55,181],
-"struct_scenario_1_1_parent_time_info.html":[11,0,11,184],
-"struct_scenario_1_1_parent_time_info.html":[12,0,55,186],
-"struct_scenario_1_1_path_detector.html":[11,0,11,185],
-"struct_scenario_1_1_path_detector.html":[12,0,55,187],
-"struct_scenario_1_1_path_detector_state.html":[11,0,11,186],
-"struct_scenario_1_1_path_detector_state.html":[12,0,55,188]
+"struct_scenario_1_1_nodal_slot_presenter.html":[11,0,11,177]
 };

@@ -179,6 +179,8 @@ QTime&#160;</td><td class="memItemRight" valign="bottom"><b>toTime</b> (<a class
 <tr class="memitem:af897d1840ede0c7553c3d17488c7c6c1" id="r_af897d1840ede0c7553c3d17488c7c6c1"><td class="memItemLeft" align="right" valign="top"><a id="af897d1840ede0c7553c3d17488c7c6c1" name="af897d1840ede0c7553c3d17488c7c6c1"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>toMilliseconds</b> (<a class="el" href="struct_time_val.html">TimeVal</a> v)</td></tr>
 <tr class="separator:af897d1840ede0c7553c3d17488c7c6c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdef9494b6540c6170db1e2b65189469" id="r_acdef9494b6540c6170db1e2b65189469"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_js_utils.html#acdef9494b6540c6170db1e2b65189469">toSeconds</a> (<a class="el" href="struct_time_val.html">TimeVal</a> v)</td></tr>
+<tr class="separator:acdef9494b6540c6170db1e2b65189469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d700dca2fd47858f90215aa4f48333c" id="r_a3d700dca2fd47858f90215aa4f48333c"><td class="memItemLeft" align="right" valign="top"><a id="a3d700dca2fd47858f90215aa4f48333c" name="a3d700dca2fd47858f90215aa4f48333c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInfinite</b> (<a class="el" href="struct_time_val.html">TimeVal</a> v)</td></tr>
 <tr class="separator:a3d700dca2fd47858f90215aa4f48333c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +212,26 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt; &gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::timestamp), w_internal::viewLiteral(&quot;timestamp&quot;), std::integral_constant&lt; decltype((&amp;W_ThisType::timestamp)), &amp;W_ThisType::timestamp &gt;(), w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;&quot;)&gt;(&quot;&quot; &quot;&quot;), w_internal::W_EmptyFlag)))</td></tr>
 <tr class="separator:a544b61b10441849d6072ef806d779187"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acdef9494b6540c6170db1e2b65189469" name="acdef9494b6540c6170db1e2b65189469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdef9494b6540c6170db1e2b65189469">&#9670;&#160;</a></span>toSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double JS::JsUtils::toSeconds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_time_val.html">TimeVal</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Seconds, for the common case. Accepts anything that converts to a <a class="el" href="struct_time_val.html">TimeVal</a>, including the raw flicks that itv.date and proc.duration give. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html">score-plugin-js/JS/Qml/Utils.hpp</a></li>
 <li><b>score-plugin-js/JS/Qml/Utils.cpp</b></li>

@@ -1,5 +1,14 @@
 var NAVTREEINDEX28 =
 {
+"struct_scenario_1_1_nodal_slot_presenter.html":[12,0,55,179],
+"struct_scenario_1_1_object_mapper.html":[11,0,11,179],
+"struct_scenario_1_1_object_mapper.html":[12,0,55,181],
+"struct_scenario_1_1_parent_time_info.html":[11,0,11,184],
+"struct_scenario_1_1_parent_time_info.html":[12,0,55,186],
+"struct_scenario_1_1_path_detector.html":[11,0,11,185],
+"struct_scenario_1_1_path_detector.html":[12,0,55,187],
+"struct_scenario_1_1_path_detector_state.html":[11,0,11,186],
+"struct_scenario_1_1_path_detector_state.html":[12,0,55,188],
 "struct_scenario_1_1_point.html":[11,0,11,188],
 "struct_scenario_1_1_point.html":[12,0,55,190],
 "struct_scenario_1_1_positioned_scenario_event.html":[11,0,11,189],
@@ -240,14 +249,5 @@ var NAVTREEINDEX28 =
 "struct_threedim_1_1_cubemap_loader_1_1ins.html":[12,0,63,9,1],
 "struct_threedim_1_1_cylinder.html":[12,0,63,10],
 "struct_threedim_1_1_deformation_control.html":[12,0,63,11],
-"struct_threedim_1_1_deformation_control_1_1range.html":[12,0,63,11,0],
-"struct_threedim_1_1_extract_buffer_1_1ins.html":[12,0,63,15,0],
-"struct_threedim_1_1_gaussian_splat_data.html":[12,0,63,16],
-"struct_threedim_1_1_geometry_packer_1_1ins.html":[12,0,63,18,0],
-"struct_threedim_1_1_geometry_packer_1_1outs.html":[12,0,63,18,1],
-"struct_threedim_1_1_geometry_port.html":[12,0,63,19],
-"struct_threedim_1_1_icosahedron.html":[12,0,63,21],
-"struct_threedim_1_1_mikk_t_space_user_data.html":[12,0,63,24],
-"struct_threedim_1_1_noise.html":[12,0,63,25],
-"struct_threedim_1_1_obj_loader_1_1ins.html":[12,0,63,26,0]
+"struct_threedim_1_1_deformation_control_1_1range.html":[12,0,63,11,0]
 };

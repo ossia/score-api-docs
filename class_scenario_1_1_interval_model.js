@@ -1,6 +1,7 @@
 var class_scenario_1_1_interval_model =
 [
     [ "IntervalModel", "class_scenario_1_1_interval_model.html#aa35e314909ea55c0775d012bec7e0521", null ],
+    [ "dateInFlicks", "class_scenario_1_1_interval_model.html#a032708d16dc1b15c111ae143dbfc8187", null ],
     [ "getSlotHeightForProcess", "class_scenario_1_1_interval_model.html#a056b3b5b3ef883a6e4000e46546a5045", null ],
     [ "legacyNodalOffset", "class_scenario_1_1_interval_model.html#a7a2b95edd76d006965c94d93bbfdfb3d", null ],
     [ "nodalCenter", "class_scenario_1_1_interval_model.html#ac26237d3ef3e4709374263232918d63a", null ],

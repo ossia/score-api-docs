@@ -907,7 +907,7 @@ var annotated_dup =
       [ "js_process", "struct_j_s_1_1js__process.html", null ],
       [ "JsLibrary", "class_j_s_1_1_js_library.html", null ],
       [ "JsSystem", "class_j_s_1_1_js_system.html", null ],
-      [ "JsUtils", "class_j_s_1_1_js_utils.html", null ],
+      [ "JsUtils", "class_j_s_1_1_js_utils.html", "class_j_s_1_1_js_utils" ],
       [ "JsViewContext", "class_j_s_1_1_js_view_context.html", null ],
       [ "LanguageSpec", "struct_j_s_1_1_language_spec.html", null ],
       [ "LayerFactory", "struct_j_s_1_1_layer_factory.html", null ],

@@ -1,5 +1,14 @@
 var NAVTREEINDEX29 =
 {
+"struct_threedim_1_1_extract_buffer_1_1ins.html":[12,0,63,15,0],
+"struct_threedim_1_1_gaussian_splat_data.html":[12,0,63,16],
+"struct_threedim_1_1_geometry_packer_1_1ins.html":[12,0,63,18,0],
+"struct_threedim_1_1_geometry_packer_1_1outs.html":[12,0,63,18,1],
+"struct_threedim_1_1_geometry_port.html":[12,0,63,19],
+"struct_threedim_1_1_icosahedron.html":[12,0,63,21],
+"struct_threedim_1_1_mikk_t_space_user_data.html":[12,0,63,24],
+"struct_threedim_1_1_noise.html":[12,0,63,25],
+"struct_threedim_1_1_obj_loader_1_1ins.html":[12,0,63,26,0],
 "struct_threedim_1_1_obj_loader_1_1ins_1_1obj__t.html":[12,0,63,26,0,0],
 "struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html":[12,0,63,31,0],
 "struct_threedim_1_1_p_c_l_to_mesh_1_1ins.html":[12,0,63,30,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX29 =
 "structhalp_1_1position__gpu__geometry.html":[12,0,25,0],
 "structhalp_1_1position__gpu__geometry_1_1attributes.html":[12,0,25,0,0],
 "structhalp_1_1position__gpu__geometry_1_1bindings.html":[12,0,25,0,1],
-"structhalp_1_1position__gpu__geometry_1_1buffers.html":[12,0,25,0,2],
-"structhas__base.html":[12,0,132],
-"structhas__no__base.html":[12,0,133],
-"structhas__ui.html":[12,0,134],
-"structhas__ui_3_01_t_01_4.html":[12,0,135],
-"structin__relationship.html":[12,0,146],
-"structincrease__timer__precision.html":[12,0,147],
-"structinvisible__window.html":[12,0,150],
-"structis__shared__ptr.html":[12,0,152],
-"structis__shared__ptr_3_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,153]
+"structhalp_1_1position__gpu__geometry_1_1buffers.html":[12,0,25,0,2]
 };

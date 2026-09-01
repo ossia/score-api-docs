@@ -1,5 +1,14 @@
 var NAVTREEINDEX31 =
 {
+"structscore_1_1_file_placement_1_1_placement.html#a64a56b1da47d7b366e0e321697b04af4":[11,0,12,105,0,2],
+"structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105":[11,0,12,105,0,1],
+"structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105":[12,0,56,112,0,1],
+"structscore_1_1_file_placement_1_1_placement.html#ad08b523ffba4c232a4c2cc72536763f6":[11,0,12,105,0,0],
+"structscore_1_1_file_placement_1_1_placement.html#ad08b523ffba4c232a4c2cc72536763f6":[12,0,56,112,0,0],
+"structscore_1_1_flicks_spin_box.html":[11,0,12,108],
+"structscore_1_1_flicks_spin_box.html":[12,0,56,115],
+"structscore_1_1_focus_action_condition.html":[12,0,56,116],
+"structscore_1_1_focus_action_condition.html":[11,0,12,109],
 "structscore_1_1_focus_facade.html":[11,0,12,110],
 "structscore_1_1_focus_facade.html":[12,0,56,117],
 "structscore_1_1_focus_manager.html":[11,0,12,111],
@@ -240,14 +249,5 @@ var NAVTREEINDEX31 =
 "structscore_1_1gfx_1_1_depth_node.html#a9e6884f55624ab97cc7eb8b5d62866ae":[11,0,12,0,12,0],
 "structscore_1_1gfx_1_1_dummy_mesh.html":[11,0,12,0,15],
 "structscore_1_1gfx_1_1_dummy_mesh.html":[12,0,56,2,16],
-"structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30":[11,0,12,0,15,0],
-"structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30":[12,0,56,2,16,0],
-"structscore_1_1gfx_1_1_edge.html":[11,0,12,0,18],
-"structscore_1_1gfx_1_1_edge.html":[12,0,56,2,19],
-"structscore_1_1gfx_1_1_empty_decoder.html":[12,0,56,2,20],
-"structscore_1_1gfx_1_1_empty_decoder.html":[11,0,12,0,19],
-"structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5":[11,0,12,0,19,0],
-"structscore_1_1gfx_1_1_empty_decoder.html#a4f5315f335d7c856b4c31805aee95fa5":[12,0,56,2,20,0],
-"structscore_1_1gfx_1_1_empty_decoder.html#aeef2263c72b451ca44a946ad823069e6":[11,0,12,0,19,1],
-"structscore_1_1gfx_1_1_empty_decoder.html#aeef2263c72b451ca44a946ad823069e6":[12,0,56,2,20,1]
+"structscore_1_1gfx_1_1_dummy_mesh.html#a881e7dbad87f249cfb83ee5b1b6bdc30":[11,0,12,0,15,0]
 };

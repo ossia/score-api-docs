@@ -1,5 +1,6 @@
 var class_process_1_1_process_model =
 [
+    [ "durationInFlicks", "class_process_1_1_process_model.html#a1aa22747711ce408a8636f595c985922", null ],
     [ "executing", "class_process_1_1_process_model.html#afd358c3ac7b8106e2d3fb36ee748f734", null ],
     [ "folded", "class_process_1_1_process_model.html#a63ae15dc8002c6aaa5f4be9c8cf2b712", null ],
     [ "mapExternalFiles", "class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618", null ],

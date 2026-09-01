@@ -1,5 +1,14 @@
 var NAVTREEINDEX24 =
 {
+"score__plugin__lv2_8hpp_source.html":[13,0,0,2,22,1],
+"score__plugin__mapping_8hpp_source.html":[13,0,0,2,23,1],
+"score__plugin__media_8hpp_source.html":[13,0,0,2,24,3],
+"score__plugin__midi_8hpp_source.html":[13,0,0,2,25,2],
+"score__plugin__nodal_8hpp_source.html":[13,0,0,2,26,1],
+"score__plugin__packagemanager_8hpp_source.html":[13,0,0,2,27,1],
+"score__plugin__pd_8hpp_source.html":[13,0,0,2,28,1],
+"score__plugin__protocols_8hpp_source.html":[13,0,0,2,29,1],
+"score__plugin__recording_8hpp_source.html":[13,0,0,2,30,1],
 "score__plugin__remotecontrol_8hpp_source.html":[13,0,0,2,31,2],
 "score__plugin__scenario_8hpp_source.html":[13,0,0,2,32,6],
 "score__plugin__spline3d_8hpp_source.html":[13,0,0,2,34,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX24 =
 "struct_gfx_1_1_dbl_p_audio_frame_encoder.html":[12,0,22,38],
 "struct_gfx_1_1_dbl_p_audio_frame_encoder.html":[11,0,5,19],
 "struct_gfx_1_1_demuxer_info.html":[11,0,5,20],
-"struct_gfx_1_1_demuxer_info.html":[12,0,22,39],
-"struct_gfx_1_1_edge_blend.html":[11,0,5,27],
-"struct_gfx_1_1_edge_blend.html":[12,0,22,46],
-"struct_gfx_1_1_edge_spec.html":[11,0,5,28],
-"struct_gfx_1_1_edge_spec.html":[12,0,22,47],
-"struct_gfx_1_1_filter_1_1_process_factory.html":[12,0,22,1,4],
-"struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html":[12,0,22,1,6],
-"struct_gfx_1_1_flt_i_audio_frame_encoder.html":[11,0,5,32],
-"struct_gfx_1_1_flt_i_audio_frame_encoder.html":[12,0,22,51],
-"struct_gfx_1_1_flt_p_audio_frame_encoder.html":[12,0,22,52]
+"struct_gfx_1_1_demuxer_info.html":[12,0,22,39]
 };
