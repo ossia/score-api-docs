@@ -15,11 +15,11 @@ var searchData=
   ['addcontent_12',['addContent',['../class_inspector_1_1_inspector_section_widget.html#ab9967d21fb05cdd444eed1e7a29bbcca',1,'Inspector::InspectorSectionWidget']]],
   ['addedge_13',['addEdge',['../structscore_1_1gfx_1_1_graph.html#a5fc6d53ad6b3643a2d41f2fadab5543a',1,'score::gfx::Graph']]],
   ['addletter_14',['addletter',['../class_factor_1_1_factor_oracle.html#a846c834eefa2f11c10c17533dd486dfb',1,'Factor::FactorOracle::AddLetter()'],['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#ab21613a45cec414505e2789bcbd6abdf',1,'FactorOracle2MIDI::FactorOracle2MIDI::AddLetter()']]],
-  ['addnode_15',['addnode',['../structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993',1,'score::gfx::Graph::addNode()'],['../class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1',1,'Explorer::NodeUpdateProxy::addNode()']]],
+  ['addnode_15',['addnode',['../class_explorer_1_1_node_update_proxy.html#acc225eeaeb1e34adc55755a6bc79cba1',1,'Explorer::NodeUpdateProxy::addNode()'],['../structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993',1,'score::gfx::Graph::addNode()']]],
   ['addonarchitecture_16',['addonArchitecture',['../namespacescore.html#abe55a013aba51db7fae79be5eb285678',1,'score']]],
   ['addons_17',['addons',['../structscore_1_1_application_context.html#a5ab7160ce378a711b3f5b9f28d9ead14',1,'score::ApplicationContext']]],
   ['addressat_18',['addressAt',['../class_explorer_1_1_device_explorer_delegate.html#afa23e36b47decc5aed19d5ff5d8a4b12',1,'Explorer::DeviceExplorerDelegate']]],
-  ['afterstartup_19',['afterstartup',['../class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e',1,'JS::ApplicationPlugin::afterStartup()'],['../class_engine_1_1_application_plugin.html#a10e2608a84ffa6a7fc63113cab4b3dbd',1,'Engine::ApplicationPlugin::afterStartup()'],['../classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41',1,'score::GUIApplicationPlugin::afterStartup()']]],
+  ['afterstartup_19',['afterstartup',['../classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41',1,'score::GUIApplicationPlugin::afterStartup()'],['../class_engine_1_1_application_plugin.html#a10e2608a84ffa6a7fc63113cab4b3dbd',1,'Engine::ApplicationPlugin::afterStartup()'],['../class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e',1,'JS::ApplicationPlugin::afterStartup()']]],
   ['aggregatecommand_20',['AggregateCommand',['../classscore_1_1_aggregate_command.html#ad2190f6cee5b4e0bfceae6e36dbb6536',1,'score::AggregateCommand']]],
   ['alignup_21',['alignUp',['../_video_pixel_format_8hpp.html#aec5a1f447f0a2a22ceeb54dab0de8fdf',1,'score::gfx::interop']]],
   ['analyzemediatrim_22',['analyzeMediaTrim',['../namespace_process.html#adc8f4f4c22b731009c4282f5a72d5808',1,'Process']]],
@@ -32,7 +32,8 @@ var searchData=
   ['applynodeidoffset_29',['applyNodeIdOffset',['../namespace_protocols_1_1_c_a_n.html#a413b9b7ad04cec248b5f6d1d04b02e14',1,'Protocols::CAN']]],
   ['archivecontentssize_30',['archiveContentsSize',['../namespace_process.html#a40aa4bde1c255419d45a977bed229423',1,'Process']]],
   ['asarray_31',['asArray',['../class_j_s_1_1_device_context.html#a08f3e84d096ddf2b88e2c478fba9fb7f',1,'JS::DeviceContext']]],
-  ['asyncaddpath_32',['asyncaddpath',['../class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39',1,'Library::LibraryInterface::asyncAddPath()'],['../class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530',1,'JS::ModuleLibraryHandler::asyncAddPath()']]],
-  ['autoscrollby_33',['autoscrollby',['../class_scenario_1_1_process_graphics_view.html#a9622fd375bd03b1c05c8bf8eaf37963e',1,'Scenario::ProcessGraphicsView::autoScrollBy()'],['../class_dataflow_1_1_auto_scrollable_view.html#a0834d73be5873c5620ffa901f01b2815',1,'Dataflow::AutoScrollableView::autoScrollBy()']]],
-  ['availableprocesses_34',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd',1,'JS::EditJsContext']]]
+  ['asyncaddpath_32',['asyncaddpath',['../class_j_s_1_1_module_library_handler.html#a96199a3c2060db6d7d1b006649dc1530',1,'JS::ModuleLibraryHandler::asyncAddPath()'],['../class_library_1_1_library_interface.html#a9280369e4acd88ad958422d1300f8b39',1,'Library::LibraryInterface::asyncAddPath()']]],
+  ['automate_33',['automate',['../class_j_s_1_1_edit_js_context.html#ae240ea0c3d93a675f6a9c1da78d8cad5',1,'JS::EditJsContext::automate(QObject *interval, QObject *port)'],['../class_j_s_1_1_edit_js_context.html#a1ec214dd852860a1a4688d98b7c40e8b',1,'JS::EditJsContext::automate(QObject *interval, QString addr)']]],
+  ['autoscrollby_34',['autoscrollby',['../class_scenario_1_1_process_graphics_view.html#a9622fd375bd03b1c05c8bf8eaf37963e',1,'Scenario::ProcessGraphicsView::autoScrollBy()'],['../class_dataflow_1_1_auto_scrollable_view.html#a0834d73be5873c5620ffa901f01b2815',1,'Dataflow::AutoScrollableView::autoScrollBy()']]],
+  ['availableprocesses_35',['availableProcesses',['../class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd',1,'JS::EditJsContext']]]
 ];

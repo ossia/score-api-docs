@@ -103,7 +103,9 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_application_plugin.html'
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_j_s_1_1_application_plugin-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">JS::ApplicationPlugin Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -119,6 +121,12 @@ Inheritance diagram for JS::ApplicationPlugin:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_s_1_1_application_plugin_1_1_start_script.html">StartScript</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One &ndash;script argument.  <a href="struct_j_s_1_1_application_plugin_1_1_start_script.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a1ef0b698623236e537fc9d6cfa1457" id="r_a2a1ef0b698623236e537fc9d6cfa1457"><td class="memItemLeft" align="right" valign="top"><a id="a2a1ef0b698623236e537fc9d6cfa1457" name="a2a1ef0b698623236e537fc9d6cfa1457"></a>
@@ -180,6 +188,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_activeWind
 <tr class="memdesc:a05683f211b55c61f104b5a6004db9240 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_keyPressEvent Called with key events in the main document view.  <br /></td></tr>
 <tr class="separator:a05683f211b55c61f104b5a6004db9240 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab8626a7da8866e1d24153c6afd878963" id="r_ab8626a7da8866e1d24153c6afd878963"><td class="memItemLeft" align="right" valign="top">static QJSValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#ab8626a7da8866e1d24153c6afd878963">importModule</a> (QQmlEngine &amp;engine, const QString &amp;path)</td></tr>
+<tr class="separator:ab8626a7da8866e1d24153c6afd878963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:acddd3ff079cbb31c7873a04261b85b4e" id="r_acddd3ff079cbb31c7873a04261b85b4e"><td class="memItemLeft" align="right" valign="top"><a id="acddd3ff079cbb31c7873a04261b85b4e" name="acddd3ff079cbb31c7873a04261b85b4e"></a>
@@ -203,17 +216,8 @@ std::thread&#160;</td><td class="memItemRight" valign="bottom"><b>m_asioThread</
 <tr class="memitem:a0496f6000c3cb66f5ca191fc31359771" id="r_a0496f6000c3cb66f5ca191fc31359771"><td class="memItemLeft" align="right" valign="top"><a id="a0496f6000c3cb66f5ca191fc31359771" name="a0496f6000c3cb66f5ca191fc31359771"></a>
 ossia::net::network_context_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>m_asioContext</b></td></tr>
 <tr class="separator:a0496f6000c3cb66f5ca191fc31359771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2540969bf43b955190d1e4fee17a92" id="r_a0c2540969bf43b955190d1e4fee17a92"><td class="memItemLeft" align="right" valign="top"><a id="a0c2540969bf43b955190d1e4fee17a92" name="a0c2540969bf43b955190d1e4fee17a92"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_script</b></td></tr>
-<tr class="separator:a0c2540969bf43b955190d1e4fee17a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03aba1dfcdb425d71eaab135f812607b" id="r_a03aba1dfcdb425d71eaab135f812607b"><td class="memItemLeft" align="right" valign="top"><a id="a03aba1dfcdb425d71eaab135f812607b" name="a03aba1dfcdb425d71eaab135f812607b"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_script_name</b></td></tr>
-<tr class="memdesc:a03aba1dfcdb425d71eaab135f812607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">path as given, for error messages <br /></td></tr>
-<tr class="separator:a03aba1dfcdb425d71eaab135f812607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5625779a64334ec27073ad28bd8b9d" id="r_a2a5625779a64334ec27073ad28bd8b9d"><td class="memItemLeft" align="right" valign="top"><a id="a2a5625779a64334ec27073ad28bd8b9d" name="a2a5625779a64334ec27073ad28bd8b9d"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_script_path</b></td></tr>
-<tr class="memdesc:a2a5625779a64334ec27073ad28bd8b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">directory, added as a QML import path <br /></td></tr>
-<tr class="separator:a2a5625779a64334ec27073ad28bd8b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba85de850800a38059fea53dbba4c60" id="r_a7ba85de850800a38059fea53dbba4c60"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_j_s_1_1_application_plugin_1_1_start_script.html">StartScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#a7ba85de850800a38059fea53dbba4c60">m_start_scripts</a></td></tr>
+<tr class="separator:a7ba85de850800a38059fea53dbba4c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22e2f9b3de5245a32b2d175dd4f3bef6" id="r_a22e2f9b3de5245a32b2d175dd4f3bef6"><td class="memItemLeft" align="right" valign="top"><a id="a22e2f9b3de5245a32b2d175dd4f3bef6" name="a22e2f9b3de5245a32b2d175dd4f3bef6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_script_failed</b> {}</td></tr>
 <tr class="separator:a22e2f9b3de5245a32b2d175dd4f3bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +260,46 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <p>afterStartup Called after all the documents have been created / loaded </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#ad90d1cf2a9a177224bac1aa476c57e41">score::GUIApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<a id="ab8626a7da8866e1d24153c6afd878963" name="ab8626a7da8866e1d24153c6afd878963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8626a7da8866e1d24153c6afd878963">&#9670;&#160;</a></span>importModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJSValue JS::ApplicationPlugin::importModule </td>
+          <td>(</td>
+          <td class="paramtype">QQmlEngine &amp;&#160;</td>
+          <td class="paramname"><em>engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Load an ES module and give it a chance to set itself up.</p>
+<p>ES modules cannot go through QJSEngine::evaluate, which parses its input as a script: a top-level <code>export</code> is a syntax error there. They must be imported, which is why loading one is a function of its own.</p>
+<p>The module's <code><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39" title="initialize">initialize()</a></code> is called if it has one, and the module is left on the global object under its base name so that whatever runs next &ndash; another &ndash;script, the console, a menu action &ndash; can call into it.</p>
+<p>Returns the module, or the error value the caller should report: either the import failing, or <code><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39" title="initialize">initialize()</a></code> throwing. </p>
 
 </div>
 </div>
@@ -316,6 +360,22 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <p>on_newDocument Will be called only when a new, empty document is created; classes inheriting from SerializableDocumentPlugin should be instantiated and added to the document at this point. </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a6eb40d143abe1b1232d9ba277cdbae26">score::GUIApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7ba85de850800a38059fea53dbba4c60" name="a7ba85de850800a38059fea53dbba4c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba85de850800a38059fea53dbba4c60">&#9670;&#160;</a></span>m_start_scripts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="struct_j_s_1_1_application_plugin_1_1_start_script.html">StartScript</a>&gt; JS::ApplicationPlugin::m_start_scripts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&ndash;script may be repeated; entries run in order. That is what lets a run load a module and then drive it: <code>--script mod.mjs --script "mod.go()"</code>. </p>
 
 </div>
 </div>

@@ -1,5 +1,17 @@
 var NAVTREEINDEX20 =
 {
+"classscore__plugin__media.html":[12,0,256],
+"classscore__plugin__midi.html":[12,0,257],
+"classscore__plugin__nodal.html":[12,0,258],
+"classscore__plugin__packagemanager.html":[12,0,259],
+"classscore__plugin__pd.html":[12,0,260],
+"classscore__plugin__protocols.html":[12,0,261],
+"classscore__plugin__recording.html":[12,0,262],
+"classscore__plugin__remotecontrol.html":[12,0,263],
+"classscore__plugin__scenario.html":[12,0,264],
+"classscore__plugin__spline.html":[12,0,265],
+"classscore__plugin__spline3d.html":[12,0,266],
+"classscore__plugin__threedim.html":[12,0,267],
 "classscore__plugin__threedim.html#a3fc7dd3144b170b6422d2879a943dda6":[12,0,267,0],
 "classscore__plugin__transport.html":[12,0,268],
 "classscore__plugin__ui.html":[12,0,269],
@@ -237,17 +249,5 @@ var NAVTREEINDEX20 =
 "dir_80f2c998adf161153d85f71f291f2c69.html":[13,0,0,1,0,9],
 "dir_81a520b9894df5028f081e0105315e83.html":[13,0,0,2,32,4,1,3,0],
 "dir_82678ffe80b02869594926d591098c5b.html":[13,0,0,2,19,3],
-"dir_827389e204051fd7ad483a49f1387904.html":[13,0,0,2,14,2],
-"dir_82ae454cc1248246feb839974cce6759.html":[13,0,0,2,3,4,6],
-"dir_82f889bf1dac2aa3fe45f70e8d191950.html":[13,0,0,1,1,7,1],
-"dir_8309497446cb32c28db140c650e448f6.html":[13,0,0,2,29,0,18],
-"dir_835cf42a86498cf9221abdcc14014e00.html":[13,0,0,2,14],
-"dir_838c2889668b9130b0466feb67cd91a9.html":[13,0,0,2,32,4,3,7,0],
-"dir_83e4b18280e67abf8e48a592967cd2cf.html":[13,0,0,2,32,4,3,8,0],
-"dir_8484db1e75aadb3aea19ef01bc6e5ef6.html":[13,0,0,2,4,0],
-"dir_86583ab4e4f10d5ef756dafa4be9fbc8.html":[13,0,0,2,32,4,5],
-"dir_872cc9259b8551f1de6c095c6547ec3e.html":[13,0,0,2,8,0],
-"dir_87db0560704d691046d100ef0190663f.html":[13,0,0,2,36,0],
-"dir_87ed57ff3e9a2a16143afabcb70477f4.html":[13,0,0,1,1,12,0],
-"dir_883d772ecaec989c44076c6abb3001ab.html":[13,0,0,2,17,1,4,1]
+"dir_827389e204051fd7ad483a49f1387904.html":[13,0,0,2,14,2]
 };

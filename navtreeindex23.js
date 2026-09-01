@@ -1,5 +1,17 @@
 var NAVTREEINDEX23 =
 {
+"namespacestd.html":[11,0,14],
+"pages.html":[],
+"pluginfactories_8hpp_source.html":[13,0,0,1,0,3,7],
+"plugins_2score-lib-process_2_control_2_layout_8hpp_source.html":[13,0,0,2,3,0,1],
+"plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html":[13,0,0,2,3,4,3,9],
+"plugins_2score-lib-process_2_process_2_document_plugin_8hpp_source.html":[13,0,0,2,3,4,16],
+"plugins_2score-plugin-audio_2_audio_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,6,0,0,2],
+"plugins_2score-plugin-avnd_2_crousti_2_file_8hpp_source.html":[13,0,0,2,8,3,7],
+"plugins_2score-plugin-avnd_2_crousti_2_metadata_8hpp_source.html":[13,0,0,2,8,3,17],
+"plugins_2score-plugin-clap_2_clap_2_settings_8hpp_source.html":[13,0,0,2,9,0,4],
+"plugins_2score-plugin-clap_2_clap_2_window_8hpp_source.html":[13,0,0,2,9,0,6],
+"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,10,0,5],
 "plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,10,0,6],
 "plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,10,0,1],
 "plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,14,1,6],
@@ -237,17 +249,5 @@ var NAVTREEINDEX23 =
 "score__plugin__packagemanager_8hpp_source.html":[13,0,0,2,27,1],
 "score__plugin__pd_8hpp_source.html":[13,0,0,2,28,1],
 "score__plugin__protocols_8hpp_source.html":[13,0,0,2,29,1],
-"score__plugin__recording_8hpp_source.html":[13,0,0,2,30,1],
-"score__plugin__remotecontrol_8hpp_source.html":[13,0,0,2,31,2],
-"score__plugin__scenario_8hpp_source.html":[13,0,0,2,32,6],
-"score__plugin__spline3d_8hpp_source.html":[13,0,0,2,34,1],
-"score__plugin__spline_8hpp_source.html":[13,0,0,2,33,1],
-"score__plugin__threedim_8hpp_source.html":[13,0,0,2,35,1],
-"score__plugin__transport_8hpp_source.html":[13,0,0,2,36,1],
-"score__plugin__ui_8hpp_source.html":[13,0,0,2,37,1],
-"score__plugin__vst3_8hpp_source.html":[13,0,0,2,39,1],
-"score__plugin__vst_8hpp_source.html":[13,0,0,2,38,1],
-"score__plugin__ysfx_8hpp_source.html":[13,0,0,2,40,1],
-"scoreinterfaces_8hpp_source.html":[13,0,0,1,0,3,8],
-"statemachines_8hpp_source.html":[13,0,0,1,0,3,10]
+"score__plugin__recording_8hpp_source.html":[13,0,0,2,30,1]
 };

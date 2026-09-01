@@ -4327,6 +4327,7 @@ var hierarchy =
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
     [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
+    [ "JS::ApplicationPlugin::StartScript", "struct_j_s_1_1_application_plugin_1_1_start_script.html", null ],
     [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
     [ "Nodes::ArrayGenerator::Node::State", "struct_nodes_1_1_array_generator_1_1_node_1_1_state.html", null ],

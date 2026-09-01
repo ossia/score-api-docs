@@ -6,13 +6,13 @@ var searchData=
   ['m_5fdesc_3',['m_desc',['../structavnd__tools_1_1_entity_to_midi.html#a87c1fe659d7a378eb070931d61e83533',1,'avnd_tools::EntityToMidi']]],
   ['m_5fmidi_5fonly_5fqueues_4',['m_midi_only_queues',['../classvst3_1_1vst__node__base.html#a8f03e7ff550d30ab27e27533654da23b',1,'vst3::vst_node_base']]],
   ['m_5fportgeometries_5',['m_portGeometries',['../classscore_1_1gfx_1_1_node_renderer.html#a4903f873277548af456aabba270f9a1f',1,'score::gfx::NodeRenderer']]],
-  ['m_5fstart_5fscript_5fname_6',['m_start_script_name',['../class_j_s_1_1_application_plugin.html#a03aba1dfcdb425d71eaab135f812607b',1,'JS::ApplicationPlugin']]],
-  ['m_5fstart_5fscript_5fpath_7',['m_start_script_path',['../class_j_s_1_1_application_plugin.html#a2a5625779a64334ec27073ad28bd8b9d',1,'JS::ApplicationPlugin']]],
-  ['m_5fsyncing_8',['m_syncing',['../struct_dataflow_1_1_curve_inlet.html#a90bfd7e88c5c6cf1d7bfd0847e59c299',1,'Dataflow::CurveInlet']]],
-  ['margin_9',['margin',['../class_dataflow_1_1_cable_drag_auto_scroller.html#aeaede619cfb7c4f75f6cab46efba0315',1,'Dataflow::CableDragAutoScroller']]],
-  ['maximumusedfraction_10',['maximumUsedFraction',['../struct_process_1_1_trim_options.html#a41a01e9b4098dc56e009752d9ad77172',1,'Process::TrimOptions']]],
-  ['maxinlineelements_11',['maxInlineElements',['../struct_state_1_1_pretty_print_options.html#a19ad57d0565b5af60ef6c573b8543c1f',1,'State::PrettyPrintOptions']]],
-  ['maxstep_12',['maxStep',['../class_dataflow_1_1_cable_drag_auto_scroller.html#afabd71eedb131706c46f6d6aa4e24dac',1,'Dataflow::CableDragAutoScroller']]],
-  ['messages_13',['messages',['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages'],['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages']]],
-  ['minimumgain_14',['minimumGain',['../struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0',1,'Process::TrimOptions']]]
+  ['m_5fstart_5fscripts_6',['m_start_scripts',['../class_j_s_1_1_application_plugin.html#a7ba85de850800a38059fea53dbba4c60',1,'JS::ApplicationPlugin']]],
+  ['m_5fsyncing_7',['m_syncing',['../struct_dataflow_1_1_curve_inlet.html#a90bfd7e88c5c6cf1d7bfd0847e59c299',1,'Dataflow::CurveInlet']]],
+  ['margin_8',['margin',['../class_dataflow_1_1_cable_drag_auto_scroller.html#aeaede619cfb7c4f75f6cab46efba0315',1,'Dataflow::CableDragAutoScroller']]],
+  ['maximumusedfraction_9',['maximumUsedFraction',['../struct_process_1_1_trim_options.html#a41a01e9b4098dc56e009752d9ad77172',1,'Process::TrimOptions']]],
+  ['maxinlineelements_10',['maxInlineElements',['../struct_state_1_1_pretty_print_options.html#a19ad57d0565b5af60ef6c573b8543c1f',1,'State::PrettyPrintOptions']]],
+  ['maxstep_11',['maxStep',['../class_dataflow_1_1_cable_drag_auto_scroller.html#afabd71eedb131706c46f6d6aa4e24dac',1,'Dataflow::CableDragAutoScroller']]],
+  ['messages_12',['messages',['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages'],['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages']]],
+  ['minimumgain_13',['minimumGain',['../struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0',1,'Process::TrimOptions']]],
+  ['module_14',['module',['../struct_j_s_1_1_application_plugin_1_1_start_script.html#a5f5549b0aa3c5298fb26bf9c6e8e32b8',1,'JS::ApplicationPlugin::StartScript']]]
 ];

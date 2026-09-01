@@ -1,13 +1,26 @@
 var class_j_s_1_1_edit_js_context =
 [
+    [ "automate", "class_j_s_1_1_edit_js_context.html#ae240ea0c3d93a675f6a9c1da78d8cad5", null ],
+    [ "automate", "class_j_s_1_1_edit_js_context.html#a1ec214dd852860a1a4688d98b7c40e8b", null ],
     [ "availableProcesses", "class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd", null ],
+    [ "cable", "class_j_s_1_1_edit_js_context.html#a30fcdcebbb57e281159ac427c5d2709a", null ],
+    [ "cables", "class_j_s_1_1_edit_js_context.html#ad7f8002ba7796bbf1a1d4ae0a9f7806a", null ],
     [ "createAddress", "class_j_s_1_1_edit_js_context.html#add27329d3c9aa1b3fa4d782a0b10b201", null ],
     [ "ctx", "class_j_s_1_1_edit_js_context.html#a36fb0ef6013c686caef397ce62d86d08", null ],
     [ "device", "class_j_s_1_1_edit_js_context.html#a471aa0a93d0ea36d477b519bdd4b8c9e", null ],
     [ "find", "class_j_s_1_1_edit_js_context.html#acb23e62f7f92854d8c41f3f4e2748efe", null ],
+    [ "inlet", "class_j_s_1_1_edit_js_context.html#a83cd87f5f8678b183a8ededf5c13ef74", null ],
+    [ "outlet", "class_j_s_1_1_edit_js_context.html#a4184d39a9508e8853a70a25db2d5b434", null ],
+    [ "parentInterval", "class_j_s_1_1_edit_js_context.html#adff38ba21b849f3da8d26224a0fcb774", null ],
+    [ "parentProcess", "class_j_s_1_1_edit_js_context.html#a74071c38885b3bb47df9a0fcc93ef1b9", null ],
     [ "play", "class_j_s_1_1_edit_js_context.html#a0d0ca780246fc2507dd3421f2da7324a", null ],
+    [ "port", "class_j_s_1_1_edit_js_context.html#af7e2271f1dccd1f5b0ebebbfeecec6c9", null ],
+    [ "process", "class_j_s_1_1_edit_js_context.html#ad0cb4d37d5910786bf52ae1854b29b59", null ],
+    [ "processes", "class_j_s_1_1_edit_js_context.html#a6a76f2b6129eb113f6d1a85b53d37bbc", null ],
     [ "prompt", "class_j_s_1_1_edit_js_context.html#aa36504099a7be6061a29c4ef7798cce9", null ],
     [ "readFile", "class_j_s_1_1_edit_js_context.html#a7b334117851665666423d7fb848bc338", null ],
     [ "selectedObject", "class_j_s_1_1_edit_js_context.html#adc4c51aec152f3728c43a0d4b1b4d014", null ],
+    [ "sink", "class_j_s_1_1_edit_js_context.html#aee654314645230eb6b400d3ba651792c", null ],
+    [ "source", "class_j_s_1_1_edit_js_context.html#afca92c4a9e7b28441403d0485ea1edef", null ],
     [ "startMacro", "class_j_s_1_1_edit_js_context.html#a10eeda0f3ff76d82592b488c0eeb7270", null ]
 ];
