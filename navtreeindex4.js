@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_phong_node_8hpp_source.html":[13,0,0,2,17,1,4,21],
+"_pipe_wire_interface_8hpp_source.html":[13,0,0,2,6,0,17],
 "_pitch_8hpp_source.html":[13,0,0,2,5,0,11],
 "_pitch_to_value_8hpp_source.html":[13,0,0,2,16,0,28],
 "_pixmap_8hpp_source.html":[13,0,0,1,1,13,17],
@@ -150,7 +152,7 @@ var NAVTREEINDEX4 =
 "_record_provider_factory_8hpp_source.html":[13,0,0,2,30,0,1,4],
 "_record_tools_8hpp_source.html":[13,0,0,2,30,0,1,5],
 "_recording_command_factory_8hpp_source.html":[13,0,0,2,30,0,0,1],
-"_rect_item_8hpp_source.html":[13,0,0,1,1,5,16],
+"_rect_item_8hpp_source.html":[13,0,0,1,1,5,17],
 "_recursive_filter_proxy_8hpp_source.html":[13,0,0,2,21,0,13],
 "_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,31],
 "_refresh_states_8hpp_source.html":[13,0,0,2,32,4,1,0,6],
@@ -187,6 +189,7 @@ var NAVTREEINDEX4 =
 "_resize_slot_vertically_8hpp_source.html":[13,0,0,2,32,4,1,3,0,0,1],
 "_rhi_compute_barrier_8hpp_source.html":[13,0,0,2,17,1,4,32],
 "_rhi_preview_widget_8hpp_source.html":[13,0,0,2,17,1,16,0],
+"_right_click_widget_8hpp_source.html":[13,0,0,1,1,5,18],
 "_rolloff_8hpp_source.html":[13,0,0,2,5,0,12],
 "_runtime_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,5],
 "_s_d_l_interface_8hpp_source.html":[13,0,0,2,6,0,19],
@@ -246,8 +249,5 @@ var NAVTREEINDEX4 =
 "_scenario_settings_model_8hpp_source.html":[13,0,0,2,32,4,10,1],
 "_scenario_settings_presenter_8hpp_source.html":[13,0,0,2,32,4,10,2],
 "_scenario_settings_view_8hpp_source.html":[13,0,0,2,32,4,10,3],
-"_scenario_style_8hpp_source.html":[13,0,0,2,3,4,12,1],
-"_scenario_tool_state_8hpp_source.html":[13,0,0,2,32,4,8,0,5],
-"_scenario_trigger_command_factory_8hpp_source.html":[13,0,0,2,32,4,1,8,0,1],
-"_scenario_validity_8hpp_source.html":[13,0,0,2,32,4,0,6]
+"_scenario_style_8hpp_source.html":[13,0,0,2,3,4,12,1]
 };

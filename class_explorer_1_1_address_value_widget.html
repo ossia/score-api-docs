@@ -127,13 +127,46 @@ ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> () co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set</b> (ossia::value t)</td></tr>
 <tr class="memdesc:a6e6abad83c4b10716d389f6b17dfb4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show a value without counting as an edit of it. <br /></td></tr>
 <tr class="separator:a6e6abad83c4b10716d389f6b17dfb4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ac1a636c80045bd9bd131e5e1533484" id="r_a9ac1a636c80045bd9bd131e5e1533484"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#a9ac1a636c80045bd9bd131e5e1533484">edited</a> () const noexcept</td></tr>
+<tr class="memitem:a9ac1a636c80045bd9bd131e5e1533484" id="r_a9ac1a636c80045bd9bd131e5e1533484"><td class="memItemLeft" align="right" valign="top"><a id="a9ac1a636c80045bd9bd131e5e1533484" name="a9ac1a636c80045bd9bd131e5e1533484"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>edited</b> () const noexcept</td></tr>
+<tr class="memdesc:a9ac1a636c80045bd9bd131e5e1533484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the user did anything; an untouched editor writes nothing back. <br /></td></tr>
 <tr class="separator:a9ac1a636c80045bd9bd131e5e1533484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced3958e62a570bb64d7edaa9f44226d" id="r_aced3958e62a570bb64d7edaa9f44226d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#aced3958e62a570bb64d7edaa9f44226d">commitsImmediately</a> () const noexcept</td></tr>
 <tr class="separator:aced3958e62a570bb64d7edaa9f44226d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b684cdd93c245757fa2810650b37e96" id="r_a6b684cdd93c245757fa2810650b37e96"><td class="memItemLeft" align="right" valign="top"><a id="a6b684cdd93c245757fa2810650b37e96" name="a6b684cdd93c245757fa2810650b37e96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDefaultValue</b> (ossia::value v)</td></tr>
+<tr class="memdesc:a6b684cdd93c245757fa2810650b37e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter's declared default, for the "Reset to default" action. <br /></td></tr>
+<tr class="separator:a6b684cdd93c245757fa2810650b37e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3010cb904efdfe84824a834fbe0c904" id="r_ab3010cb904efdfe84824a834fbe0c904"><td class="memItemLeft" align="right" valign="top"><a id="ab3010cb904efdfe84824a834fbe0c904" name="ab3010cb904efdfe84824a834fbe0c904"></a>
+const ossia::value &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>defaultValue</b> () const noexcept</td></tr>
+<tr class="separator:ab3010cb904efdfe84824a834fbe0c904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0d2d496fd5c1c8ff481e65963beb85" id="r_a9d0d2d496fd5c1c8ff481e65963beb85"><td class="memItemLeft" align="right" valign="top"><a id="a9d0d2d496fd5c1c8ff481e65963beb85" name="a9d0d2d496fd5c1c8ff481e65963beb85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetToDefault</b> ()</td></tr>
+<tr class="memdesc:a9d0d2d496fd5c1c8ff481e65963beb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the declared default back as the user's own edit; nothing if none. <br /></td></tr>
+<tr class="separator:a9d0d2d496fd5c1c8ff481e65963beb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7ee6e88be118a54c047b856fe9f4e9" id="r_adc7ee6e88be118a54c047b856fe9f4e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#adc7ee6e88be118a54c047b856fe9f4e9">installValueMenu</a> ()</td></tr>
+<tr class="memdesc:adc7ee6e88be118a54c047b856fe9f4e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the editor and every field in it the shared value actions.  <br /></td></tr>
+<tr class="separator:adc7ee6e88be118a54c047b856fe9f4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb3201cb8eb214db7bf3e0a1f2da57d" id="r_a2cb3201cb8eb214db7bf3e0a1f2da57d"><td class="memItemLeft" align="right" valign="top"><a id="a2cb3201cb8eb214db7bf3e0a1f2da57d" name="a2cb3201cb8eb214db7bf3e0a1f2da57d"></a>
+virtual QString&#160;</td><td class="memItemRight" valign="bottom"><b>toText</b> () const</td></tr>
+<tr class="memdesc:a2cb3201cb8eb214db7bf3e0a1f2da57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value as text, for Copy and the text form. <br /></td></tr>
+<tr class="separator:a2cb3201cb8eb214db7bf3e0a1f2da57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b26aa9b5b1d8a562a75d51e8854ab7" id="r_a44b26aa9b5b1d8a562a75d51e8854ab7"><td class="memItemLeft" align="right" valign="top">virtual std::optional&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#a44b26aa9b5b1d8a562a75d51e8854ab7">fromText</a> (const QString &amp;text) const</td></tr>
+<tr class="separator:a44b26aa9b5b1d8a562a75d51e8854ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac27d4ac733c175f15a6583f55f0e60b7" id="r_ac27d4ac733c175f15a6583f55f0e60b7"><td class="memItemLeft" align="right" valign="top"><a id="ac27d4ac733c175f15a6583f55f0e60b7" name="ac27d4ac733c175f15a6583f55f0e60b7"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasTextForm</b> () const noexcept</td></tr>
+<tr class="memdesc:ac27d4ac733c175f15a6583f55f0e60b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the value travels as text at all; an impulse does not. <br /></td></tr>
+<tr class="separator:ac27d4ac733c175f15a6583f55f0e60b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6a8610b43e6a5af3ff6b72b5a70c97" id="r_a4c6a8610b43e6a5af3ff6b72b5a70c97"><td class="memItemLeft" align="right" valign="top"><a id="a4c6a8610b43e6a5af3ff6b72b5a70c97" name="a4c6a8610b43e6a5af3ff6b72b5a70c97"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTextual</b> () const noexcept</td></tr>
+<tr class="memdesc:a4c6a8610b43e6a5af3ff6b72b5a70c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the editor is already a text field, so "Edit as text" is moot. <br /></td></tr>
+<tr class="separator:a4c6a8610b43e6a5af3ff6b72b5a70c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa36fd9c65bba23f54f74a138692c20" id="r_a1aa36fd9c65bba23f54f74a138692c20"><td class="memItemLeft" align="right" valign="top"><a id="a1aa36fd9c65bba23f54f74a138692c20" name="a1aa36fd9c65bba23f54f74a138692c20"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> (ossia::value arg_1)</td></tr>
 <tr class="separator:a1aa36fd9c65bba23f54f74a138692c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cfda1051f6c7abb5d0b17ebabe409d" id="r_a17cfda1051f6c7abb5d0b17ebabe409d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#a17cfda1051f6c7abb5d0b17ebabe409d">editingFinished</a> ()</td></tr>
+<tr class="memdesc:a17cfda1051f6c7abb5d0b17ebabe409d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Focus left the editor entirely.  <br /></td></tr>
+<tr class="separator:a17cfda1051f6c7abb5d0b17ebabe409d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -146,8 +179,37 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setImpl</b> (
 <tr class="memitem:ae0681c2807b82322214f9afbe1fa0d4f" id="r_ae0681c2807b82322214f9afbe1fa0d4f"><td class="memItemLeft" align="right" valign="top"><a id="ae0681c2807b82322214f9afbe1fa0d4f" name="ae0681c2807b82322214f9afbe1fa0d4f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>markEdited</b> ()</td></tr>
 <tr class="separator:ae0681c2807b82322214f9afbe1fa0d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9fd8c04cd1dfa466360e6ab5474477" id="r_a4d9fd8c04cd1dfa466360e6ab5474477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_address_value_widget.html#a4d9fd8c04cd1dfa466360e6ab5474477">applyExternal</a> (const ossia::value &amp;v)</td></tr>
+<tr class="separator:a4d9fd8c04cd1dfa466360e6ab5474477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d9fd8c04cd1dfa466360e6ab5474477" name="a4d9fd8c04cd1dfa466360e6ab5474477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9fd8c04cd1dfa466360e6ab5474477">&#9670;&#160;</a></span>applyExternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::AddressValueWidget::applyExternal </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A value from outside the fields (paste, text form, default), reported as the user's own edit. </p>
+
+</div>
+</div>
 <a id="aced3958e62a570bb64d7edaa9f44226d" name="aced3958e62a570bb64d7edaa9f44226d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced3958e62a570bb64d7edaa9f44226d">&#9670;&#160;</a></span>commitsImmediately()</h2>
 
@@ -170,12 +232,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>markEdited</b> ()</td
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether the editor acts instead of holding a value, as an impulse button does, and so commits as it is used rather than when it closes. </p>
+<p>The editor acts rather than holds a value (an impulse button), so it commits as it is used and not when it closes. </p>
 
 </div>
 </div>
-<a id="a9ac1a636c80045bd9bd131e5e1533484" name="a9ac1a636c80045bd9bd131e5e1533484"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ac1a636c80045bd9bd131e5e1533484">&#9670;&#160;</a></span>edited()</h2>
+<a id="a17cfda1051f6c7abb5d0b17ebabe409d" name="a17cfda1051f6c7abb5d0b17ebabe409d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cfda1051f6c7abb5d0b17ebabe409d">&#9670;&#160;</a></span>editingFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::AddressValueWidget::editingFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Focus left the editor entirely. </p>
+<p>Not what makes a cell editor commit &ndash; eventFilter() hands Qt a FocusOut for that, so that the commit and the close stay Qt's. This is for anything else that wants to know, and it is emitted after the commit. </p>
+
+</div>
+</div>
+<a id="a44b26aa9b5b1d8a562a75d51e8854ab7" name="a44b26aa9b5b1d8a562a75d51e8854ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b26aa9b5b1d8a562a75d51e8854ab7">&#9670;&#160;</a></span>fromText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,24 +266,47 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>markEdited</b> ()</td
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Explorer::AddressValueWidget::edited </td>
+          <td class="memname">std::optional&lt; ossia::value &gt; Explorer::AddressValueWidget::fromText </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>text</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Whether the user did anything: an editor that was only opened and closed must not write back what it was showing. </p>
+<p>That text read back; empty when it names no value of this editor type, in which case nothing is committed. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="adc7ee6e88be118a54c047b856fe9f4e9" name="adc7ee6e88be118a54c047b856fe9f4e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc7ee6e88be118a54c047b856fe9f4e9">&#9670;&#160;</a></span>installValueMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::AddressValueWidget::installValueMenu </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gives the editor and every field in it the shared value actions. </p>
+<p>Copy, paste, "Edit as text" and "Reset to default", on the right-click that already types a value into a graphics slider elsewhere in score. They act on the value as a whole, which is what a multi-widget editor cannot otherwise offer: a vec4 has four fields and no way to paste four numbers.</p>
+<p>Called by the factories below; a widget built by hand calls it itself, once its fields exist. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_value_editors_8hpp_source.html">ValueEditors.hpp</a></li>
+<li><b>ValueEditors.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

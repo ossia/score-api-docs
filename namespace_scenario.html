@@ -793,6 +793,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1value__size.html">value_size</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_value_item_delegate.html">ValueItemDelegate</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives a value column the <a class="el" href="namespace_device.html" title="Manipulation of Devices from Qt.">Device</a> Explorer's editors.  <a href="class_scenario_1_1_value_item_delegate.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_vertical_extent.html">VerticalExtent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="struct_scenario_1_1_vertical_extent.html" title="The VerticalExtent struct.">VerticalExtent</a> struct.  <a href="struct_scenario_1_1_vertical_extent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1652,6 +1655,9 @@ const double&#160;</td><td class="memItemRight" valign="bottom"><b>deltaY</b> = 
 <tr class="memitem:a6b8671765eb8f4f0f2c70322b2e89afd" id="r_a6b8671765eb8f4f0f2c70322b2e89afd"><td class="memItemLeft" align="right" valign="top"><a id="a6b8671765eb8f4f0f2c70322b2e89afd" name="a6b8671765eb8f4f0f2c70322b2e89afd"></a>
 constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>g_zoom_base</b> = 1.2</td></tr>
 <tr class="separator:a6b8671765eb8f4f0f2c70322b2e89afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9898d19376399bc499a123b2105c93f7" id="r_a9898d19376399bc499a123b2105c93f7"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#a9898d19376399bc499a123b2105c93f7">OssiaValueRole</a> = Qt::UserRole + 41</td></tr>
+<tr class="memdesc:a9898d19376399bc499a123b2105c93f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The row's value as an ossia::value.  <br /></td></tr>
+<tr class="separator:a9898d19376399bc499a123b2105c93f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ac2a33c327c975cfaf7090fc11d323b9a" name="ac2a33c327c975cfaf7090fc11d323b9a"></a>
@@ -1812,6 +1818,32 @@ constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>g_zoom_ba
 </table>
 </div><div class="memdoc">
 <p>Footprint used when placing nodes in the nodal view for a process whose on-screen size is not known yet (never displayed, or folded). </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a9898d19376399bc499a123b2105c93f7" name="a9898d19376399bc499a123b2105c93f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9898d19376399bc499a123b2105c93f7">&#9670;&#160;</a></span>OssiaValueRole</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Scenario::OssiaValueRole = Qt::UserRole + 41</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The row's value as an ossia::value. </p>
+<p>The display and edit roles carry the value's <em>text</em>, which cannot tell a vec2f from a two-element list. A model whose value column offers this role gets typed editors from <a class="el" href="class_scenario_1_1_value_item_delegate.html" title="Gives a value column the Device Explorer&#39;s editors.">ValueItemDelegate</a>. </p>
 
 </div>
 </div>

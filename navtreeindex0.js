@@ -117,6 +117,7 @@ var NAVTREEINDEX0 =
 "_background_device_8hpp_source.html":[13,0,0,2,17,1,17,0],
 "_background_node_8hpp_source.html":[13,0,0,2,17,1,4,3],
 "_background_renderer_8hpp_source.html":[13,0,0,1,1,5,3],
+"_bang_painting_8hpp_source.html":[13,0,0,1,1,5,4],
 "_base_callback_wrapper_8hpp_source.html":[13,0,0,2,2,0,0],
 "_base_element_context_8hpp_source.html":[13,0,0,2,32,4,3,0,0],
 "_base_property_8hpp_source.html":[13,0,0,2,2,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_constrained_displacement_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,1],
 "_containers_accessors_8hpp_source.html":[13,0,0,2,32,4,9,0,2],
 "_context_8hpp_source.html":[13,0,0,2,22,0,1],
-"_contexts.html":[2],
-"_control_inlet_item_8hpp_source.html":[13,0,0,2,12,0,3]
+"_contexts.html":[2]
 };

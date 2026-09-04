@@ -11,10 +11,11 @@ var searchData=
   ['toshortstring_8',['toShortString',['../struct_state_1_1_address.html#a7fc7b2d73196e97febd244b2a78c497b',1,'State::Address']]],
   ['tostring_9',['toString',['../struct_state_1_1_address.html#a5f10846b824b1f55851ebc7ed49a96b9',1,'State::Address']]],
   ['totalbytes_10',['totalBytes',['../class_gfx_1_1_asset_table.html#adefcf33296c1001a736445ed5e03412e',1,'Gfx::AssetTable']]],
-  ['tov4l2pixelformat_11',['toV4L2PixelFormat',['../_v4_l2_pixel_format_8hpp.html#ad84e15c504302143f14e8a6987c6f85b',1,'score::gfx::interop']]],
-  ['track_12',['track',['../class_dataflow_1_1_cable_drag_auto_scroller.html#ae908339022e8c7b0f6b96b7a3310bfff',1,'Dataflow::CableDragAutoScroller::track()'],['../struct_ui_1_1_midi_display_1_1_node.html#ad1141079d1f73d2a8d68764b6807a68c',1,'Ui::MidiDisplay::Node::track()']]],
-  ['trim_13',['trim',['../class_process_1_1_media_trimmer.html#ad0a6a1cb469b742a3e7af54846af5b0f',1,'Process::MediaTrimmer::trim()'],['../class_gfx_1_1_asset_table.html#af5ec71b803dc1bd017a9dd14bb0cb2a3',1,'Gfx::AssetTable::trim()'],['../class_media_1_1_audio_trimmer.html#af4a07d46fc9631180e4ac16e255845fa',1,'Media::AudioTrimmer::trim()']]],
-  ['trimprojectmedia_14',['trimProjectMedia',['../namespace_process.html#abfa9e518cb1ed3805f64f2778b36303f',1,'Process']]],
-  ['try_5ffind_15',['try_find',['../class_object_path.html#a5234dd3917e33fa8f990dff32cd8b598',1,'ObjectPath']]],
-  ['try_5fload_5flibrary_16',['try_load_library',['../namespacescore.html#a83bd5ef55fa68969e0bdd632d0658a81',1,'score::try_load_library(const char *name) noexcept'],['../namespacescore.html#a4247b45f78d77638135f0ebd36667b60',1,'score::try_load_library(std::vector&lt; std::string_view &gt; names) noexcept']]]
+  ['totext_11',['toText',['../class_explorer_1_1_address_value_widget.html#a2cb3201cb8eb214db7bf3e0a1f2da57d',1,'Explorer::AddressValueWidget']]],
+  ['tov4l2pixelformat_12',['toV4L2PixelFormat',['../_v4_l2_pixel_format_8hpp.html#ad84e15c504302143f14e8a6987c6f85b',1,'score::gfx::interop']]],
+  ['track_13',['track',['../class_dataflow_1_1_cable_drag_auto_scroller.html#ae908339022e8c7b0f6b96b7a3310bfff',1,'Dataflow::CableDragAutoScroller::track()'],['../struct_ui_1_1_midi_display_1_1_node.html#ad1141079d1f73d2a8d68764b6807a68c',1,'Ui::MidiDisplay::Node::track()']]],
+  ['trim_14',['trim',['../class_process_1_1_media_trimmer.html#ad0a6a1cb469b742a3e7af54846af5b0f',1,'Process::MediaTrimmer::trim()'],['../class_gfx_1_1_asset_table.html#af5ec71b803dc1bd017a9dd14bb0cb2a3',1,'Gfx::AssetTable::trim()'],['../class_media_1_1_audio_trimmer.html#af4a07d46fc9631180e4ac16e255845fa',1,'Media::AudioTrimmer::trim()']]],
+  ['trimprojectmedia_15',['trimProjectMedia',['../namespace_process.html#abfa9e518cb1ed3805f64f2778b36303f',1,'Process']]],
+  ['try_5ffind_16',['try_find',['../class_object_path.html#a5234dd3917e33fa8f990dff32cd8b598',1,'ObjectPath']]],
+  ['try_5fload_5flibrary_17',['try_load_library',['../namespacescore.html#a83bd5ef55fa68969e0bdd632d0658a81',1,'score::try_load_library(const char *name) noexcept'],['../namespacescore.html#a4247b45f78d77638135f0ebd36667b60',1,'score::try_load_library(std::vector&lt; std::string_view &gt; names) noexcept']]]
 ];

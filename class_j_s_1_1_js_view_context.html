@@ -129,6 +129,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>grabMainWindow</b> (Q
 <tr class="memitem:a0a267ea6fe2fe5d02c87ad1c23350b1b" id="r_a0a267ea6fe2fe5d02c87ad1c23350b1b"><td class="memItemLeft" align="right" valign="top"><a id="a0a267ea6fe2fe5d02c87ad1c23350b1b" name="a0a267ea6fe2fe5d02c87ad1c23350b1b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>grabScreen</b> (QString path)</td></tr>
 <tr class="separator:a0a267ea6fe2fe5d02c87ad1c23350b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad918b305cdfc3bcdf4db9a093195e9f7" id="r_ad918b305cdfc3bcdf4db9a093195e9f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_js_view_context.html#ad918b305cdfc3bcdf4db9a093195e9f7">grabWidget</a> (QObject *widget, QString path)</td></tr>
+<tr class="separator:ad918b305cdfc3bcdf4db9a093195e9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3701882b4c9eb4360d62744286fd7f48" id="r_a3701882b4c9eb4360d62744286fd7f48"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_js_view_context.html#a3701882b4c9eb4360d62744286fd7f48">panel</a> (QString name)</td></tr>
+<tr class="separator:a3701882b4c9eb4360d62744286fd7f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0febab741328ccbf397b531d22b2b6f4" id="r_a0febab741328ccbf397b531d22b2b6f4"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_js_view_context.html#a0febab741328ccbf397b531d22b2b6f4">child</a> (QObject *parent, QString className)</td></tr>
+<tr class="separator:a0febab741328ccbf397b531d22b2b6f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95059bb112f06f47983d6c76e65dddd0" id="r_a95059bb112f06f47983d6c76e65dddd0"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_js_view_context.html#a95059bb112f06f47983d6c76e65dddd0">panels</a> ()</td></tr>
+<tr class="separator:a95059bb112f06f47983d6c76e65dddd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5ce6585e66b01fb3849ca7762f0113" id="r_a6e5ce6585e66b01fb3849ca7762f0113"><td class="memItemLeft" align="right" valign="top"><a id="a6e5ce6585e66b01fb3849ca7762f0113" name="a6e5ce6585e66b01fb3849ca7762f0113"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>zoom</b> (double zx, double zy)</td></tr>
 <tr class="separator:a6e5ce6585e66b01fb3849ca7762f0113"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +165,102 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setNodal</b> (bool no
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNodal</b> ()</td></tr>
 <tr class="separator:aeedb7fb2678ca653568e47551662c440"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0febab741328ccbf397b531d22b2b6f4" name="a0febab741328ccbf397b531d22b2b6f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0febab741328ccbf397b531d22b2b6f4">&#9670;&#160;</a></span>child()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * JS::JsViewContext::child </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>className</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The first descendant of the given class, e.g. child(p, "QTreeView"). Null when <code>parent</code> is null or nothing matches. </p>
+
+</div>
+</div>
+<a id="ad918b305cdfc3bcdf4db9a093195e9f7" name="ad918b305cdfc3bcdf4db9a093195e9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad918b305cdfc3bcdf4db9a093195e9f7">&#9670;&#160;</a></span>grabWidget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JS::JsViewContext::grabWidget </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Any widget, not just the main window. QWidget::grab() is not invokable, so it cannot be called from JS on a widget from <a class="el" href="class_j_s_1_1_js_view_context.html#a3701882b4c9eb4360d62744286fd7f48">panel()</a> / <a class="el" href="class_j_s_1_1_js_view_context.html#a0febab741328ccbf397b531d22b2b6f4">child()</a>. </p>
+
+</div>
+</div>
+<a id="a3701882b4c9eb4360d62744286fd7f48" name="a3701882b4c9eb4360d62744286fd7f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3701882b4c9eb4360d62744286fd7f48">&#9670;&#160;</a></span>panel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * JS::JsViewContext::panel </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A dock panel's widget by the name it shows, e.g. "Device Explorer". Case-insensitive; null when there is no such panel. </p>
+
+</div>
+</div>
+<a id="a95059bb112f06f47983d6c76e65dddd0" name="a95059bb112f06f47983d6c76e65dddd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95059bb112f06f47983d6c76e65dddd0">&#9670;&#160;</a></span>panels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList JS::JsViewContext::panels </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The names of the panels that exist: the translated one the header shows, and the widget class name, which <a class="el" href="class_j_s_1_1_js_view_context.html#a3701882b4c9eb4360d62744286fd7f48">panel()</a> also accepts and which does not move with the language. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_view_context_8hpp_source.html">ViewContext.hpp</a></li>
 <li><b>ViewContext.cpp</b></li>

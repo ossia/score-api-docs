@@ -114,12 +114,12 @@ $(document).ready(function(){initNavTree('_string_value_widget_8hpp_source.html'
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;ValueWidget.hpp&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;State/Value.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;ossia/network/domain/domain.hpp&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QLineEdit;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;State/Widgets/Values/ExpandableTextEdit.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;ossia/network/domain/domain.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QWidget;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_state.html">State</a></div>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('_string_value_widget_8hpp_source.html'
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  ossia::value value() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  QLineEdit* m_value{};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_class" href="class_state_1_1_expandable_text_edit.html">ExpandableTextEdit</a>* m_value{};</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
 </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -159,6 +159,7 @@ $(document).ready(function(){initNavTree('_string_value_widget_8hpp_source.html'
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclass_state_1_1_expandable_text_edit_html"><div class="ttname"><a href="class_state_1_1_expandable_text_edit.html">State::ExpandableTextEdit</a></div><div class="ttdoc">A one-line field with a way out to a full editor.</div><div class="ttdef"><b>Definition</b> ExpandableTextEdit.hpp:31</div></div>
 <div class="ttc" id="aclass_state_1_1_string_value_set_dialog_html"><div class="ttname"><a href="class_state_1_1_string_value_set_dialog.html">State::StringValueSetDialog</a></div><div class="ttdef"><b>Definition</b> StringValueWidget.hpp:27</div></div>
 <div class="ttc" id="aclass_state_1_1_string_value_widget_html"><div class="ttname"><a href="class_state_1_1_string_value_widget.html">State::StringValueWidget</a></div><div class="ttdef"><b>Definition</b> StringValueWidget.hpp:16</div></div>
 <div class="ttc" id="aclass_state_1_1_value_widget_html"><div class="ttname"><a href="class_state_1_1_value_widget.html">State::ValueWidget</a></div><div class="ttdoc">The ValueWidget class.</div><div class="ttdef"><b>Definition</b> ValueWidget.hpp:25</div></div>

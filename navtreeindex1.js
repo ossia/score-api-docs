@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_control_inlet_item_8hpp_source.html":[13,0,0,2,12,0,3],
 "_control_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,0],
 "_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
 "_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
@@ -83,11 +84,11 @@ var NAVTREEINDEX1 =
 "_dataflow_clock_8hpp_source.html":[13,0,0,2,14,1,1,1],
 "_debug_fx_8hpp_source.html":[13,0,0,2,16,0,6],
 "_default_clock_8hpp_source.html":[13,0,0,2,14,1,1,2],
-"_default_control_impl_8hpp_source.html":[13,0,0,1,1,5,4],
+"_default_control_impl_8hpp_source.html":[13,0,0,1,1,5,5],
 "_default_effect_item_8hpp_source.html":[13,0,0,2,3,0,0],
-"_default_graphics_knob_impl_8hpp_source.html":[13,0,0,1,1,5,5],
-"_default_graphics_slider_impl_8hpp_source.html":[13,0,0,1,1,5,6],
-"_default_graphics_spinbox_impl_8hpp_source.html":[13,0,0,1,1,5,7],
+"_default_graphics_knob_impl_8hpp_source.html":[13,0,0,1,1,5,6],
+"_default_graphics_slider_impl_8hpp_source.html":[13,0,0,1,1,5,7],
+"_default_graphics_spinbox_impl_8hpp_source.html":[13,0,0,1,1,5,8],
 "_default_header_delegate_8hpp_source.html":[13,0,0,2,32,4,3,5,3],
 "_default_listening_handler_8hpp_source.html":[13,0,0,2,13,0,4,0],
 "_default_listening_handler_factory_8hpp_source.html":[13,0,0,2,13,0,4,1],
@@ -236,6 +237,7 @@ var NAVTREEINDEX1 =
 "_executor_update_control_value_in_ui_8hpp_source.html":[13,0,0,2,8,3,6],
 "_executor_view_8hpp_source.html":[13,0,0,2,14,1,3,3],
 "_expand_mode_8hpp_source.html":[13,0,0,2,3,4,24],
+"_expandable_text_edit_8hpp_source.html":[13,0,0,2,4,0,0,0,1],
 "_exploration_worker_8hpp_source.html":[13,0,0,2,13,0,3,9],
 "_exploration_worker_wrapper_8hpp_source.html":[13,0,0,2,13,0,3,10],
 "_explorer_factory_8hpp_source.html":[13,0,0,2,13,0,6,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_expression_editor_widget_8hpp_source.html":[13,0,0,2,32,4,6,1,0],
 "_expression_menu_8hpp_source.html":[13,0,0,2,32,4,6,1,1],
 "_expression_parser_8hpp_source.html":[13,0,0,2,4,0,6],
-"_expression_validator_8hpp_source.html":[13,0,0,2,32,4,6,9],
-"_external_files_8hpp_source.html":[13,0,0,2,3,4,25],
-"_external_input_8hpp_source.html":[13,0,0,2,24,2,1]
+"_expression_validator_8hpp_source.html":[13,0,0,2,32,4,6,9]
 };

@@ -9,8 +9,9 @@ var searchData=
   ['globaldeviceenumerator_6',['GlobalDeviceEnumerator',['../class_j_s_1_1_global_device_enumerator.html#a6830681261e58bb07c1f2e8788a6ebdd',1,'JS::GlobalDeviceEnumerator']]],
   ['grabframe_7',['grabFrame',['../class_gfx_1_1_window_device.html#ab4fcc2563e3cbb89d0265be7e4bfc740',1,'Gfx::WindowDevice']]],
   ['grabto_8',['grabTo',['../class_gfx_1_1_window_device.html#aee2827241ab7ebf6e4efc957366b58aa',1,'Gfx::WindowDevice']]],
-  ['graph_9',['Graph',['../structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c',1,'score::gfx::Graph']]],
-  ['guessfilekind_10',['guessFileKind',['../namespacescore.html#a218bef612dc74026bb86beab035f7fb2',1,'score']]],
-  ['guiapplicationplugin_11',['guiApplicationPlugin',['../structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9',1,'score::GUIApplicationContext']]],
-  ['guiapplicationplugins_12',['guiApplicationPlugins',['../structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c',1,'score::GUIApplicationContext']]]
+  ['grabwidget_9',['grabWidget',['../class_j_s_1_1_js_view_context.html#ad918b305cdfc3bcdf4db9a093195e9f7',1,'JS::JsViewContext']]],
+  ['graph_10',['Graph',['../structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c',1,'score::gfx::Graph']]],
+  ['guessfilekind_11',['guessFileKind',['../namespacescore.html#a218bef612dc74026bb86beab035f7fb2',1,'score']]],
+  ['guiapplicationplugin_12',['guiApplicationPlugin',['../structscore_1_1_g_u_i_application_context.html#aa9b4590be68367bf4a2c20ed241aa3e9',1,'score::GUIApplicationContext']]],
+  ['guiapplicationplugins_13',['guiApplicationPlugins',['../structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c',1,'score::GUIApplicationContext']]]
 ];

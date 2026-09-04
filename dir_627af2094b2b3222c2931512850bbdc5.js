@@ -4,6 +4,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "widgets", "dir_aa638cb09df48c01e6deabc296ba21ac.html", "dir_aa638cb09df48c01e6deabc296ba21ac" ],
     [ "ArrowDialog.hpp", "_arrow_dialog_8hpp_source.html", null ],
     [ "BackgroundRenderer.hpp", "_background_renderer_8hpp_source.html", null ],
+    [ "BangPainting.hpp", "_bang_painting_8hpp_source.html", null ],
     [ "DefaultControlImpl.hpp", "_default_control_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsKnobImpl.hpp", "_default_graphics_knob_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsSliderImpl.hpp", "_default_graphics_slider_impl_8hpp_source.html", null ],
@@ -17,6 +18,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "ItemBounder.hpp", "_item_bounder_8hpp_source.html", null ],
     [ "PainterPath.hpp", "_painter_path_8hpp_source.html", null ],
     [ "RectItem.hpp", "_rect_item_8hpp_source.html", null ],
+    [ "RightClickWidget.hpp", "_right_click_widget_8hpp_source.html", null ],
     [ "TextItem.hpp", "_text_item_8hpp_source.html", null ],
     [ "YPos.hpp", "_y_pos_8hpp_source.html", null ],
     [ "ZoomItem.hpp", "_zoom_item_8hpp_source.html", null ]

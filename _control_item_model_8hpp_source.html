@@ -146,17 +146,18 @@ $(document).ready(function(){initNavTree('_control_item_model_8hpp_source.html',
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">int</span> rowCount(<span class="keyword">const</span> QModelIndex&amp; parent) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">int</span> columnCount(<span class="keyword">const</span> QModelIndex&amp; parent) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  QVariant data(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keywordtype">int</span> role) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  Qt::DropActions supportedDragActions() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  Qt::DropActions supportedDropActions() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  Qt::ItemFlags flags(<span class="keyword">const</span> QModelIndex&amp; index) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; m_state;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  std::vector&lt;Process::ControlMessage&gt; m_msgs;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">bool</span> setData(<span class="keyword">const</span> QModelIndex&amp; index, <span class="keyword">const</span> QVariant&amp; value, <span class="keywordtype">int</span> role) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  Qt::DropActions supportedDragActions() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  Qt::DropActions supportedDropActions() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  Qt::ItemFlags flags(<span class="keyword">const</span> QModelIndex&amp; index) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="class_scenario_1_1_state_model.html">Scenario::StateModel</a>&amp; m_state;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::vector&lt;Process::ControlMessage&gt; m_msgs;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="ttc" id="aclass_scenario_1_1_control_item_model_html"><div class="ttname"><a href="class_scenario_1_1_control_item_model.html">Scenario::ControlItemModel</a></div><div class="ttdef"><b>Definition</b> ControlItemModel.hpp:14</div></div>
 <div class="ttc" id="aclass_scenario_1_1_state_model_html"><div class="ttname"><a href="class_scenario_1_1_state_model.html">Scenario::StateModel</a></div><div class="ttdef"><b>Definition</b> StateModel.hpp:63</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>

@@ -1329,8 +1329,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -3169,6 +3169,7 @@ var hierarchy =
         [ "Process::AddressAccessorLineEdit< Process::AddressAccessorEditWidget >", "class_process_1_1_address_accessor_line_edit.html", null ]
       ] ],
       [ "State::AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
+      [ "State::ExpandableTextEdit", "class_state_1_1_expandable_text_edit.html", null ],
       [ "score::PromptLineEdit", "classscore_1_1_prompt_line_edit.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
         [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],
@@ -3911,7 +3912,8 @@ var hierarchy =
     ] ],
     [ "QStyledItemDelegate", null, [
       [ "Explorer::AddressItemDelegate", "class_explorer_1_1_address_item_delegate.html", null ],
-      [ "Explorer::DeviceExplorerDelegate", "class_explorer_1_1_device_explorer_delegate.html", null ]
+      [ "Explorer::DeviceExplorerDelegate", "class_explorer_1_1_device_explorer_delegate.html", null ],
+      [ "Scenario::ValueItemDelegate", "class_scenario_1_1_value_item_delegate.html", null ]
     ] ],
     [ "ossia::qt_property_converter< ossia::value >", "structossia_1_1qt__property__converter_3_01ossia_1_1value_01_4.html", null ],
     [ "ossia::qt_property_converter< State::AddressAccessor >", "structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html", null ],
@@ -4280,6 +4282,7 @@ var hierarchy =
     [ "SignalUtils", "struct_signal_utils.html", null ],
     [ "RollbackStrategy::Simple", "struct_rollback_strategy_1_1_simple.html", null ],
     [ "SendStrategy::Simple", "struct_send_strategy_1_1_simple.html", null ],
+    [ "State::convert::SingleLine", "struct_state_1_1convert_1_1_single_line.html", null ],
     [ "Factor::SingleTransition< T >", "class_factor_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< T >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< int >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],

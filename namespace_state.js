@@ -12,6 +12,7 @@ var namespace_state =
     [ "DestinationQualifierWidget", "class_state_1_1_destination_qualifier_widget.html", null ],
     [ "Domain", "struct_state_1_1_domain.html", null ],
     [ "EmptyModel", "class_state_1_1_empty_model.html", null ],
+    [ "ExpandableTextEdit", "class_state_1_1_expandable_text_edit.html", "class_state_1_1_expandable_text_edit" ],
     [ "ExprData", "struct_state_1_1_expr_data.html", null ],
     [ "Message", "struct_state_1_1_message.html", null ],
     [ "NumericDomainWidget", "class_state_1_1_numeric_domain_widget.html", null ],

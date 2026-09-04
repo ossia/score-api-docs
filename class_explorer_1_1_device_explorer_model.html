@@ -254,6 +254,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkAndLoadDevice</b
 <tr class="memitem:a31de3194cf349ffbda6d83f85d4059e3" id="r_a31de3194cf349ffbda6d83f85d4059e3"><td class="memItemLeft" align="right" valign="top"><a id="a31de3194cf349ffbda6d83f85d4059e3" name="a31de3194cf349ffbda6d83f85d4059e3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>nodeChanged</b> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *n)</td></tr>
 <tr class="separator:a31de3194cf349ffbda6d83f85d4059e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b353b13ca8bfc353031a275323fd23" id="r_ae6b353b13ca8bfc353031a275323fd23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_device_explorer_model.html#ae6b353b13ca8bfc353031a275323fd23">valueUpdated</a> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *n)</td></tr>
+<tr class="memdesc:ae6b353b13ca8bfc353031a275323fd23"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value arrived for this node.  <br /></td></tr>
+<tr class="separator:ae6b353b13ca8bfc353031a275323fd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79915a7b544470337526207ccdb47999" id="r_a79915a7b544470337526207ccdb47999"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_device_explorer_model.html#a79915a7b544470337526207ccdb47999">deviceTreeAboutToChange</a> (<a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *device)</td></tr>
 <tr class="separator:a79915a7b544470337526207ccdb47999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b7039fc272203e4aa625b0d52f730c9" id="r_a0b7039fc272203e4aa625b0d52f730c9"><td class="memItemLeft" align="right" valign="top"><a id="a0b7039fc272203e4aa625b0d52f730c9" name="a0b7039fc272203e4aa625b0d52f730c9"></a>
@@ -446,6 +449,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = <a c
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="class_tree_node_based_item_model.html">TreeNodeBasedItemModel&lt; Device::Node &gt;</a>.</p>
+
+</div>
+</div>
+<a id="ae6b353b13ca8bfc353031a275323fd23" name="ae6b353b13ca8bfc353031a275323fd23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b353b13ca8bfc353031a275323fd23">&#9670;&#160;</a></span>valueUpdated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Explorer::DeviceExplorerModel::valueUpdated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A value arrived for this node. </p>
+<p>Not the same thing as dataChanged on the value column, which also fires when an address's <em>settings</em> are replaced &ndash; opening a document does that for every address at once. Anything that reacts to traffic rather than to a repaint wants this instead. </p>
 
 </div>
 </div>
