@@ -20,6 +20,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "RectItem.hpp", "_rect_item_8hpp_source.html", null ],
     [ "RightClickWidget.hpp", "_right_click_widget_8hpp_source.html", null ],
     [ "TextItem.hpp", "_text_item_8hpp_source.html", null ],
+    [ "TypeInWidget.hpp", "_type_in_widget_8hpp_source.html", null ],
     [ "YPos.hpp", "_y_pos_8hpp_source.html", null ],
     [ "ZoomItem.hpp", "_zoom_item_8hpp_source.html", null ]
 ];

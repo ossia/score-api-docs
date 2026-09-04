@@ -287,5 +287,6 @@ var searchData=
   ['type_284',['type',['../structscore_1_1gfx_1_1_port.html#acbb433c506834c3e711d745b4abeb288',1,'score::gfx::Port']]],
   ['typecombobox_285',['TypeComboBox',['../class_state_1_1_type_combo_box.html',1,'State']]],
   ['typeholder_286',['typeholder',['../structtypeholder.html',1,'']]],
-  ['types_287',['Serialization of polymorphic types',['../_serialization.html#PolySer',1,'']]]
+  ['typeinfield_287',['TypeInField',['../structscore_1_1_type_in_field.html',1,'score']]],
+  ['types_288',['Serialization of polymorphic types',['../_serialization.html#PolySer',1,'']]]
 ];

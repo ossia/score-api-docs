@@ -2706,6 +2706,7 @@ var annotated_dup =
       [ "Toolbar", "classscore_1_1_toolbar.html", null ],
       [ "ToolbarManager", "classscore_1_1_toolbar_manager.html", null ],
       [ "TreeViewExpandState", "structscore_1_1_tree_view_expand_state.html", null ],
+      [ "TypeInField", "structscore_1_1_type_in_field.html", null ],
       [ "UndoApplicationPlugin", "classscore_1_1_undo_application_plugin.html", null ],
       [ "UndoListWidget", "classscore_1_1_undo_list_widget.html", null ],
       [ "UndoPanelDelegate", "classscore_1_1_undo_panel_delegate.html", null ],

@@ -260,5 +260,6 @@ var searchData=
   ['tusedtypes_257',['TUsedTypes',['../struct_threedim_1_1_t_used_types.html',1,'Threedim']]],
   ['tvertex_258',['TVertex',['../class_threedim_1_1_t_vertex.html',1,'Threedim']]],
   ['typecombobox_259',['TypeComboBox',['../class_state_1_1_type_combo_box.html',1,'State']]],
-  ['typeholder_260',['typeholder',['../structtypeholder.html',1,'']]]
+  ['typeholder_260',['typeholder',['../structtypeholder.html',1,'']]],
+  ['typeinfield_261',['TypeInField',['../structscore_1_1_type_in_field.html',1,'score']]]
 ];

@@ -1,8 +1,10 @@
 var NAVTREEINDEX23 =
 {
-"namespacescore.html#af5b703cc8728ecd74cdeebfc9148b8cc":[11,0,12,357],
-"namespacescore.html#af7a698bc64ebdf6edc567a10906b1550":[11,0,12,336],
-"namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4":[11,0,12,347],
+"namespacescore.html#aed5a0183b4501783c177e506781cec28":[11,0,12,365],
+"namespacescore.html#aef4d345fb028b5062609d81fb438e2ce":[11,0,12,374],
+"namespacescore.html#af5b703cc8728ecd74cdeebfc9148b8cc":[11,0,12,358],
+"namespacescore.html#af7a698bc64ebdf6edc567a10906b1550":[11,0,12,337],
+"namespacescore.html#afbf073827b8d422b3c7a0accb964dfd4":[11,0,12,348],
 "namespacescore_1_1gfx.html":[11,0,12,0],
 "namespacescore_1_1gfx.html#a01d504b5f64cee4bb5a97773ba34166d":[11,0,12,0,151],
 "namespacescore_1_1gfx.html#a07882c10d6e8879ef1f333db58cfbb26":[11,0,12,0,171],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "score-plugin-threedim_2_threedim_2_splat_2_process_8hpp_source.html":[13,0,0,2,35,0,2,3],
 "score-plugin-transport_2_transport_2_application_plugin_8hpp_source.html":[13,0,0,2,36,0,0],
 "score-plugin-vst3_2_vst3_2_application_plugin_8hpp_source.html":[13,0,0,2,39,0,1],
-"score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,0,2,39,0,6],
-"score-plugin-vst3_2_vst3_2_executor_8hpp_source.html":[13,0,0,2,39,0,7],
-"score-plugin-vst3_2_vst3_2_library_8hpp_source.html":[13,0,0,2,39,0,8]
+"score-plugin-vst3_2_vst3_2_effect_model_8hpp_source.html":[13,0,0,2,39,0,6]
 };

@@ -17,7 +17,7 @@ var searchData=
   ['id_5fbase_5ft_3c_20eventmodel_20_3e_14',['id_base_t&lt; EventModel &gt;',['../classid__base__t.html',1,'']]],
   ['id_5fbase_5ft_3c_20intervalmodel_20_3e_15',['id_base_t&lt; IntervalModel &gt;',['../classid__base__t.html',1,'']]],
   ['id_5fbase_5ft_3c_20midi_3a_3anote_20_3e_16',['id_base_t&lt; Midi::Note &gt;',['../classid__base__t.html',1,'']]],
-  ['id_5fbase_5ft_3c_20model_20_3e_17',['id_base_t&lt; model &gt;',['../classid__base__t.html',1,'id_base_t&lt; model &gt;'],['../classid__base__t.html',1,'id_base_t&lt; Model &gt;']]],
+  ['id_5fbase_5ft_3c_20model_20_3e_17',['id_base_t&lt; model &gt;',['../classid__base__t.html',1,'id_base_t&lt; Model &gt;'],['../classid__base__t.html',1,'id_base_t&lt; model &gt;']]],
   ['id_5fbase_5ft_3c_20note_20_3e_18',['id_base_t&lt; Note &gt;',['../classid__base__t.html',1,'']]],
   ['id_5fbase_5ft_3c_20pointmodel_20_3e_19',['id_base_t&lt; PointModel &gt;',['../classid__base__t.html',1,'']]],
   ['id_5fbase_5ft_3c_20port_20_3e_20',['id_base_t&lt; Port &gt;',['../classid__base__t.html',1,'']]],

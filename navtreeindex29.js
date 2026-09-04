@@ -1,5 +1,7 @@
 var NAVTREEINDEX29 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,374],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,376],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,377],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,378],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1monostate_01_4.html":[12,0,379],
@@ -247,7 +249,5 @@ var NAVTREEINDEX29 =
 "structbase__kind_3_01_t_00_01std_1_1enable__if__t_3_9std_1_1is__same__v_3_01_t_00_01typename_01_97048677e56782543c9f1d394cf20849.html":[12,0,89],
 "structbitfocus_1_1module__data.html":[12,0,6,0],
 "structbitfocus_1_1module__data_1_1action__definition.html":[12,0,6,0,0],
-"structbitfocus_1_1module__data_1_1config__field.html":[12,0,6,0,1],
-"structbitfocus_1_1module__data_1_1config__field_1_1choice.html":[12,0,6,0,1,0],
-"structbitfocus_1_1module__data_1_1feedback__definition.html":[12,0,6,0,2]
+"structbitfocus_1_1module__data_1_1config__field.html":[12,0,6,0,1]
 };

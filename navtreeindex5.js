@@ -228,6 +228,7 @@ var NAVTREEINDEX5 =
 "_trigger_view_8hpp_source.html":[13,0,0,2,32,4,3,11,4],
 "_type_combo_box_8hpp_source.html":[13,0,0,2,4,0,0,0,4],
 "_type_conversion_8hpp_source.html":[13,0,0,2,3,4,55],
+"_type_in_widget_8hpp_source.html":[13,0,0,1,1,5,20],
 "_types_8hpp_source.html":[13,0,0,2,16,0,34],
 "_u_d_p_widget_8hpp_source.html":[13,0,0,2,29,0,14,4],
 "_u_y_v_y_8hpp_source.html":[13,0,0,2,17,1,4,1,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_update_address_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,0],
 "_update_curve_8hpp_source.html":[13,0,0,2,11,0,0,3],
 "_update_device_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,1],
-"_uuid_key_8hpp_source.html":[13,0,0,1,1,8,17],
-"_uuid_key_serialization_8hpp_source.html":[13,0,0,1,1,8,18]
+"_uuid_key_8hpp_source.html":[13,0,0,1,1,8,17]
 };

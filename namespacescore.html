@@ -851,6 +851,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_tree_view_expand_state.html">TreeViewExpandState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_type_in_field.html">TypeInField</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One field of a type-in box: "x", "min", "hue"...  <a href="structscore_1_1_type_in_field.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_undo_application_plugin.html">UndoApplicationPlugin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classscore_1_1_undo_application_plugin.html" title="The UndoApplicationPlugin class.">UndoApplicationPlugin</a> class.  <a href="classscore_1_1_undo_application_plugin.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1094,6 +1097,9 @@ template&lt;typename RedoFun &gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeRightClickWidget</b> ()</td></tr>
 <tr class="memdesc:acaf49f94ce372b8ebddfe347b42bc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes down whatever right-click box is open, if any. <br /></td></tr>
 <tr class="separator:acaf49f94ce372b8ebddfe347b42bc5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa035328c34d69d642498dd0c41fb2e99" id="r_aa035328c34d69d642498dd0c41fb2e99"><td class="memItemLeft" align="right" valign="top">QGraphicsProxyWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aa035328c34d69d642498dd0c41fb2e99">showTypeInBox</a> (QGraphicsScene &amp;scene, QPointF scenePos, const std::vector&lt; <a class="el" href="structscore_1_1_type_in_field.html">TypeInField</a> &gt; &amp;fields, std::function&lt; void(int, double)&gt; onChanged, std::function&lt; void()&gt; onFinished)</td></tr>
+<tr class="memdesc:aa035328c34d69d642498dd0c41fb2e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type-in box a right-click raises over a control with more than one number in it.  <br /></td></tr>
+<tr class="separator:aa035328c34d69d642498dd0c41fb2e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a4453bf03ffeefafbb31d5aa8d0c40" id="r_a05a4453bf03ffeefafbb31d5aa8d0c40"><td class="memItemLeft" align="right" valign="top"><a id="a05a4453bf03ffeefafbb31d5aa8d0c40" name="a05a4453bf03ffeefafbb31d5aa8d0c40"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>toNumber</b> (double v) noexcept</td></tr>
 <tr class="separator:a05a4453bf03ffeefafbb31d5aa8d0c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2283,6 +2289,64 @@ template&lt;typename T &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="aa035328c34d69d642498dd0c41fb2e99" name="aa035328c34d69d642498dd0c41fb2e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa035328c34d69d642498dd0c41fb2e99">&#9670;&#160;</a></span>showTypeInBox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsProxyWidget * score::showTypeInBox </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsScene &amp;&#160;</td>
+          <td class="paramname"><em>scene</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>scenePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structscore_1_1_type_in_field.html">TypeInField</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(int, double)&gt;&#160;</td>
+          <td class="paramname"><em>onChanged</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>onFinished</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type-in box a right-click raises over a control with more than one number in it. </p>
+<p>A single spin box can be closed on QAbstractSpinBox::editingFinished, which is what <a class="el" href="structscore_1_1_default_graphics_slider_impl.html">DefaultGraphicsSliderImpl</a> does. Several of them cannot: that signal is also emitted when the focus merely leaves a box, and moving from x to y is such a focus-out. Closing on it made every field but the first unreachable &ndash; clicking y took the whole box down.</p>
+<p>The box goes away when the focus leaves it as a whole, which is the proxy item losing the scene focus. QApplication::focusWidget() cannot answer that question: a widget embedded in a QGraphicsProxyWidget never becomes the application's focus widget, the view stays it whatever is typed into.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">onChanged</td><td>(field index, value), as a field is typed into. </td></tr>
+    <tr><td class="paramname">onFinished</td><td>once per field actually edited, when that edit is done: the release that turns the ongoing command into one undo step.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The box registers itself as the one <a class="el" href="namespacescore.html#a52c09d16d1344a85f85513ee7d2a8c2d" title="The one type-in box a right-click may have open.">currentRightClickWidget()</a>, so raising any other takes it down. </p>
 
 </div>
 </div>
