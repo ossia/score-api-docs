@@ -103,42 +103,92 @@ $(document).ready(function(){initNavTree('classscore_1_1_start_screen.html','');
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classscore_1_1_start_screen-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::StartScreen Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The window shown when score starts without a document.  
+ <a href="classscore_1_1_start_screen.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::StartScreen:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classscore_1_1_start_screen.png" alt=""/>
  </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The window shown when score starts without a document. </p>
+<p>Layout:</p>
+<p>+------------------------------------------------------------&mdash;+ | splash artwork: logo, tagline, version [update notice] × | +--------&mdash;+------------------------------------------------&mdash;+ | Home | | | Examples | page (home / examples / learn / community) | | Learn | | | Community | | | Exit | | +--------&mdash;+------------------------------------------------&mdash;+</p>
+<p>Every way of leaving the screen without choosing anything (Escape, the × button, a close request) opens a new empty score, so the user always ends up in a usable editor.</p>
+<p>Templates, examples and recent files are plain .score files; their project information (name, author, thumbnail) is read in the background with ProjectInfo::peek() and shown on hover or on the example cards. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac2d43cb6cb20fae748d412743df5f6ab" id="r_ac2d43cb6cb20fae748d412743df5f6ab"><td class="memItemLeft" align="right" valign="top"><a id="ac2d43cb6cb20fae748d412743df5f6ab" name="ac2d43cb6cb20fae748d412743df5f6ab"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StartScreen</b> (const QPointer&lt; QRecentFilesMenu &gt; &amp;recentFiles, QWidget *parent=0)</td></tr>
-<tr class="separator:ac2d43cb6cb20fae748d412743df5f6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71ce56d3cceffd79355dabbd3c9937f" id="r_ac71ce56d3cceffd79355dabbd3c9937f"><td class="memItemLeft" align="right" valign="top"><a id="ac71ce56d3cceffd79355dabbd3c9937f" name="ac71ce56d3cceffd79355dabbd3c9937f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StartScreen</b> (const QPointer&lt; QRecentFilesMenu &gt; &amp;recentFiles, QWidget *parent=nullptr)</td></tr>
+<tr class="separator:ac71ce56d3cceffd79355dabbd3c9937f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2971fa4f22e07fdc436ffc2c1161bed2" id="r_a2971fa4f22e07fdc436ffc2c1161bed2"><td class="memItemLeft" align="right" valign="top"><a id="a2971fa4f22e07fdc436ffc2c1161bed2" name="a2971fa4f22e07fdc436ffc2c1161bed2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>openNewDocument</b> ()</td></tr>
 <tr class="separator:a2971fa4f22e07fdc436ffc2c1161bed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a959560a7689d0008a4a7c8a76165158c" id="r_a959560a7689d0008a4a7c8a76165158c"><td class="memItemLeft" align="right" valign="top"><a id="a959560a7689d0008a4a7c8a76165158c" name="a959560a7689d0008a4a7c8a76165158c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>openFile</b> (const QString &amp;file)</td></tr>
 <tr class="separator:a959560a7689d0008a4a7c8a76165158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa39a98bb1dd537dbfa890475265ba2d" id="r_afa39a98bb1dd537dbfa890475265ba2d"><td class="memItemLeft" align="right" valign="top"><a id="afa39a98bb1dd537dbfa890475265ba2d" name="afa39a98bb1dd537dbfa890475265ba2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>openTemplate</b> (const QString &amp;file)</td></tr>
+<tr class="memdesc:afa39a98bb1dd537dbfa890475265ba2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the file as a new untitled document (templates, examples). <br /></td></tr>
+<tr class="separator:afa39a98bb1dd537dbfa890475265ba2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afca3dc8bcfb212df08fad3f0c00d0ed9" id="r_afca3dc8bcfb212df08fad3f0c00d0ed9"><td class="memItemLeft" align="right" valign="top"><a id="afca3dc8bcfb212df08fad3f0c00d0ed9" name="afca3dc8bcfb212df08fad3f0c00d0ed9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>openFileDialog</b> ()</td></tr>
 <tr class="separator:afca3dc8bcfb212df08fad3f0c00d0ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7088a6655c14ee885324d6192f299b40" id="r_a7088a6655c14ee885324d6192f299b40"><td class="memItemLeft" align="right" valign="top"><a id="a7088a6655c14ee885324d6192f299b40" name="a7088a6655c14ee885324d6192f299b40"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadCrashedSession</b> ()</td></tr>
 <tr class="separator:a7088a6655c14ee885324d6192f299b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706cd6b2f8ca3c486e0f14666d45d2eb" id="r_a706cd6b2f8ca3c486e0f14666d45d2eb"><td class="memItemLeft" align="right" valign="top"><a id="a706cd6b2f8ca3c486e0f14666d45d2eb" name="a706cd6b2f8ca3c486e0f14666d45d2eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>joinSession</b> ()</td></tr>
+<tr class="memdesc:a706cd6b2f8ca3c486e0f14666d45d2eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join a collaborative session hosted by another instance of score. <br /></td></tr>
+<tr class="separator:a706cd6b2f8ca3c486e0f14666d45d2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf761be022d6b28b9880df9c14c6b230" id="r_acf761be022d6b28b9880df9c14c6b230"><td class="memItemLeft" align="right" valign="top"><a id="acf761be022d6b28b9880df9c14c6b230" name="acf761be022d6b28b9880df9c14c6b230"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>exitApp</b> ()</td></tr>
 <tr class="separator:acf761be022d6b28b9880df9c14c6b230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc2e0395f5723951ea3b1af24c2e6b0" id="r_a7bc2e0395f5723951ea3b1af24c2e6b0"><td class="memItemLeft" align="right" valign="top"><a id="a7bc2e0395f5723951ea3b1af24c2e6b0" name="a7bc2e0395f5723951ea3b1af24c2e6b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addLoadCrashedSession</b> ()</td></tr>
+<tr class="memdesc:a7bc2e0395f5723951ea3b1af24c2e6b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the "Restore last session" entry. <br /></td></tr>
 <tr class="separator:a7bc2e0395f5723951ea3b1af24c2e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3329e050f98f430dddca5fcd39528f8" id="r_ae3329e050f98f430dddca5fcd39528f8"><td class="memItemLeft" align="right" valign="top"><a id="ae3329e050f98f430dddca5fcd39528f8" name="ae3329e050f98f430dddca5fcd39528f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addJoinSession</b> ()</td></tr>
+<tr class="memdesc:ae3329e050f98f430dddca5fcd39528f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the "Join a collaborative session" entry. <br /></td></tr>
+<tr class="separator:ae3329e050f98f430dddca5fcd39528f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad168c5fbd289e587e788af0e7361c5d6" id="r_ad168c5fbd289e587e788af0e7361c5d6"><td class="memItemLeft" align="right" valign="top"><a id="ad168c5fbd289e587e788af0e7361c5d6" name="ad168c5fbd289e587e788af0e7361c5d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dismiss</b> ()</td></tr>
+<tr class="memdesc:ad168c5fbd289e587e788af0e7361c5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the start screen without opening anything (something else took over). <br /></td></tr>
+<tr class="separator:ad168c5fbd289e587e788af0e7361c5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb4bad5a03b97acf10359749943637da" id="r_aeb4bad5a03b97acf10359749943637da"><td class="memItemLeft" align="right" valign="top"><a id="aeb4bad5a03b97acf10359749943637da" name="aeb4bad5a03b97acf10359749943637da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> ()</td></tr>
+<tr class="memdesc:aeb4bad5a03b97acf10359749943637da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the start screen again after an action that led nowhere (cancelled dialog...) <br /></td></tr>
+<tr class="separator:aeb4bad5a03b97acf10359749943637da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:af08a8af4e762d564159b1f52e82f4de7" id="r_af08a8af4e762d564159b1f52e82f4de7"><td class="memItemLeft" align="right" valign="top"><a id="af08a8af4e762d564159b1f52e82f4de7" name="af08a8af4e762d564159b1f52e82f4de7"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Width</b> = 880</td></tr>
+<tr class="separator:af08a8af4e762d564159b1f52e82f4de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6418c26e44418dfd5d8ed72f4da719f" id="r_af6418c26e44418dfd5d8ed72f4da719f"><td class="memItemLeft" align="right" valign="top"><a id="af6418c26e44418dfd5d8ed72f4da719f" name="af6418c26e44418dfd5d8ed72f4da719f"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Height</b> = 640</td></tr>
+<tr class="separator:af6418c26e44418dfd5d8ed72f4da719f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51db018b4d0c5f1a2e133be5dcd686d3" id="r_a51db018b4d0c5f1a2e133be5dcd686d3"><td class="memItemLeft" align="right" valign="top"><a id="a51db018b4d0c5f1a2e133be5dcd686d3" name="a51db018b4d0c5f1a2e133be5dcd686d3"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>HeaderHeight</b> = 220</td></tr>
+<tr class="separator:a51db018b4d0c5f1a2e133be5dcd686d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a891d5295d41b91ac22f502d783645e" id="r_a4a891d5295d41b91ac22f502d783645e"><td class="memItemLeft" align="right" valign="top"><a id="a4a891d5295d41b91ac22f502d783645e" name="a4a891d5295d41b91ac22f502d783645e"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>NavWidth</b> = 190</td></tr>
+<tr class="separator:a4a891d5295d41b91ac22f502d783645e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaea70e0a0bbc1b82edc34c9a7324887" id="r_aeaea70e0a0bbc1b82edc34c9a7324887"><td class="memItemLeft" align="right" valign="top"><a id="aeaea70e0a0bbc1b82edc34c9a7324887" name="aeaea70e0a0bbc1b82edc34c9a7324887"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxRecentFiles</b> = 8</td></tr>
+<tr class="separator:aeaea70e0a0bbc1b82edc34c9a7324887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -148,6 +198,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPain
 <tr class="memitem:a78772cc00a3818110e09ab7c630c6b58" id="r_a78772cc00a3818110e09ab7c630c6b58"><td class="memItemLeft" align="right" valign="top"><a id="a78772cc00a3818110e09ab7c630c6b58" name="a78772cc00a3818110e09ab7c630c6b58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
 <tr class="separator:a78772cc00a3818110e09ab7c630c6b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9580dac0c698fb48e04b68ac80d63df5" id="r_a9580dac0c698fb48e04b68ac80d63df5"><td class="memItemLeft" align="right" valign="top"><a id="a9580dac0c698fb48e04b68ac80d63df5" name="a9580dac0c698fb48e04b68ac80d63df5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>closeEvent</b> (QCloseEvent *event) override</td></tr>
+<tr class="separator:a9580dac0c698fb48e04b68ac80d63df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_start_screen_8hpp_source.html">StartScreen.hpp</a></li>

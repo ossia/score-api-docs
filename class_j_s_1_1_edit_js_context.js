@@ -20,6 +20,7 @@ var class_j_s_1_1_edit_js_context =
     [ "prompt", "class_j_s_1_1_edit_js_context.html#aa36504099a7be6061a29c4ef7798cce9", null ],
     [ "readFile", "class_j_s_1_1_edit_js_context.html#a7b334117851665666423d7fb848bc338", null ],
     [ "selectedObject", "class_j_s_1_1_edit_js_context.html#adc4c51aec152f3728c43a0d4b1b4d014", null ],
+    [ "setExpression", "class_j_s_1_1_edit_js_context.html#ab4f06dcb6ee406a82e985612df101023", null ],
     [ "setUnit", "class_j_s_1_1_edit_js_context.html#af38091341d5e2e921caceb24246a267c", null ],
     [ "sink", "class_j_s_1_1_edit_js_context.html#aee654314645230eb6b400d3ba651792c", null ],
     [ "source", "class_j_s_1_1_edit_js_context.html#afca92c4a9e7b28441403d0485ea1edef", null ],

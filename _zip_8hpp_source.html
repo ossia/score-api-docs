@@ -111,37 +111,70 @@ $(document).ready(function(){initNavTree('_zip_8hpp_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_zip_entry.html">ZipEntry</a></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">   16</a></span>  QString <a class="code hl_variable" href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">sourceFile</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">   18</a></span>  QString <a class="code hl_variable" href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">nameInArchive</a>;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QByteArray&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_zip_entry.html">ZipEntry</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">   18</a></span>  QString <a class="code hl_variable" href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">sourceFile</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">   20</a></span>  QString <a class="code hl_variable" href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">nameInArchive</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">   22</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a> = std::function&lt;bool(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>)&gt;;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>SCORE_LIB_BASE_EXPORT</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef">writeZipArchive</a>(</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">const</span> QString&amp; destination, <span class="keyword">const</span> std::vector&lt;ZipEntry&gt;&amp; entries, <span class="keywordtype">int</span> level,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    QString&amp; error, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a>&amp; progress = {});</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
-<div class="ttc" id="anamespacescore_html_ad32ad6cfb1279d37a4f0eeff73d4c3ef"><div class="ttname"><a href="namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef">score::writeZipArchive</a></div><div class="ttdeci">bool writeZipArchive(const QString &amp;destination, const std::vector&lt; ZipEntry &gt; &amp;entries, int level, QString &amp;error, const ZipProgress &amp;progress)</div><div class="ttdoc">Write entries into a zip archive at destination.</div><div class="ttdef"><b>Definition</b> Zip.cpp:13</div></div>
-<div class="ttc" id="anamespacescore_html_af7a698bc64ebdf6edc567a10906b1550"><div class="ttname"><a href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">score::ZipProgress</a></div><div class="ttdeci">std::function&lt; bool(int, int)&gt; ZipProgress</div><div class="ttdoc">Called with (files written, total). Return false to abort the archive.</div><div class="ttdef"><b>Definition</b> Zip.hpp:22</div></div>
-<div class="ttc" id="astructscore_1_1_zip_entry_html"><div class="ttname"><a href="structscore_1_1_zip_entry.html">score::ZipEntry</a></div><div class="ttdoc">One file to put in an archive.</div><div class="ttdef"><b>Definition</b> Zip.hpp:14</div></div>
-<div class="ttc" id="astructscore_1_1_zip_entry_html_a148d3e86fc684535a179293a97b3919a"><div class="ttname"><a href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">score::ZipEntry::nameInArchive</a></div><div class="ttdeci">QString nameInArchive</div><div class="ttdoc">Path it takes inside the archive, always with forward slashes.</div><div class="ttdef"><b>Definition</b> Zip.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1_zip_entry_html_adc31e83a9ffd9e83bb653dffabce11fb"><div class="ttname"><a href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">score::ZipEntry::sourceFile</a></div><div class="ttdeci">QString sourceFile</div><div class="ttdoc">Absolute path of the file to read.</div><div class="ttdef"><b>Definition</b> Zip.hpp:16</div></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">   24</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a> = std::function&lt;bool(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>)&gt;;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef">writeZipArchive</a>(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> QString&amp; destination, <span class="keyword">const</span> std::vector&lt;ZipEntry&gt;&amp; entries, <span class="keywordtype">int</span> level,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    QString&amp; error, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a>&amp; progress = {});</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_archive_summary.html">   42</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_zip_archive_summary.html">ZipArchiveSummary</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structscore_1_1_zip_archive_summary.html#a93fb9933198726c18f881803d041f1f0">   45</a></span>  QString <a class="code hl_variable" href="structscore_1_1_zip_archive_summary.html#a93fb9933198726c18f881803d041f1f0">scoreFile</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">int</span> files{};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  quint64 uncompressedSize{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>std::optional&lt;ZipArchiveSummary&gt; <a class="code hl_function" href="namespacescore.html#afc351c3fc4494a184220b18c43190f37">summarizeZipArchive</a>(<span class="keyword">const</span> QString&amp; archive);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore.html#af66957ac5e91a56c4431b46d7f0c592a">isSafeZipMemberName</a>(<span class="keyword">const</span> QString&amp; name);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>QByteArray <a class="code hl_function" href="namespacescore.html#a6ea4b133d6f599b023dbeb5f40560be6">readZipMember</a>(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> QString&amp; archive, <span class="keyword">const</span> QString&amp; member, QString&amp; error,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    quint64 maxSize = 256 * 1024 * 1024);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore.html#a0a1e58080aefcaad433afaa559674971">extractZipArchive</a>(</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> QString&amp; archive, <span class="keyword">const</span> QString&amp; destination, QString&amp; error,</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a>&amp; progress = {});</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:116</div></div>
+<div class="ttc" id="anamespacescore_html_a0a1e58080aefcaad433afaa559674971"><div class="ttname"><a href="namespacescore.html#a0a1e58080aefcaad433afaa559674971">score::extractZipArchive</a></div><div class="ttdeci">bool extractZipArchive(const QString &amp;archive, const QString &amp;destination, QString &amp;error, const ZipProgress &amp;progress)</div><div class="ttdoc">Extract every member of archive under destination.</div><div class="ttdef"><b>Definition</b> Zip.cpp:221</div></div>
+<div class="ttc" id="anamespacescore_html_a6ea4b133d6f599b023dbeb5f40560be6"><div class="ttname"><a href="namespacescore.html#a6ea4b133d6f599b023dbeb5f40560be6">score::readZipMember</a></div><div class="ttdeci">QByteArray readZipMember(const QString &amp;archive, const QString &amp;member, QString &amp;error, quint64 maxSize)</div><div class="ttdef"><b>Definition</b> Zip.cpp:181</div></div>
+<div class="ttc" id="anamespacescore_html_ad32ad6cfb1279d37a4f0eeff73d4c3ef"><div class="ttname"><a href="namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef">score::writeZipArchive</a></div><div class="ttdeci">bool writeZipArchive(const QString &amp;destination, const std::vector&lt; ZipEntry &gt; &amp;entries, int level, QString &amp;error, const ZipProgress &amp;progress)</div><div class="ttdoc">Write entries into a zip archive at destination.</div><div class="ttdef"><b>Definition</b> Zip.cpp:19</div></div>
+<div class="ttc" id="anamespacescore_html_af66957ac5e91a56c4431b46d7f0c592a"><div class="ttname"><a href="namespacescore.html#af66957ac5e91a56c4431b46d7f0c592a">score::isSafeZipMemberName</a></div><div class="ttdeci">bool isSafeZipMemberName(const QString &amp;name)</div><div class="ttdef"><b>Definition</b> Zip.cpp:125</div></div>
+<div class="ttc" id="anamespacescore_html_af7a698bc64ebdf6edc567a10906b1550"><div class="ttname"><a href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">score::ZipProgress</a></div><div class="ttdeci">std::function&lt; bool(int, int)&gt; ZipProgress</div><div class="ttdoc">Called with (files written, total). Return false to abort the archive.</div><div class="ttdef"><b>Definition</b> Zip.hpp:24</div></div>
+<div class="ttc" id="anamespacescore_html_afc351c3fc4494a184220b18c43190f37"><div class="ttname"><a href="namespacescore.html#afc351c3fc4494a184220b18c43190f37">score::summarizeZipArchive</a></div><div class="ttdeci">std::optional&lt; ZipArchiveSummary &gt; summarizeZipArchive(const QString &amp;archive)</div><div class="ttdoc">Look at a zip's table of contents without inflating anything.</div><div class="ttdef"><b>Definition</b> Zip.cpp:137</div></div>
+<div class="ttc" id="astructscore_1_1_zip_archive_summary_html"><div class="ttname"><a href="structscore_1_1_zip_archive_summary.html">score::ZipArchiveSummary</a></div><div class="ttdoc">What a project archive holds, read from the archive's directory only.</div><div class="ttdef"><b>Definition</b> Zip.hpp:43</div></div>
+<div class="ttc" id="astructscore_1_1_zip_archive_summary_html_a93fb9933198726c18f881803d041f1f0"><div class="ttname"><a href="structscore_1_1_zip_archive_summary.html#a93fb9933198726c18f881803d041f1f0">score::ZipArchiveSummary::scoreFile</a></div><div class="ttdeci">QString scoreFile</div><div class="ttdoc">Path of the .score inside the archive, e.g. &quot;foo.score&quot; or &quot;foo/foo.score&quot;.</div><div class="ttdef"><b>Definition</b> Zip.hpp:45</div></div>
+<div class="ttc" id="astructscore_1_1_zip_entry_html"><div class="ttname"><a href="structscore_1_1_zip_entry.html">score::ZipEntry</a></div><div class="ttdoc">One file to put in an archive.</div><div class="ttdef"><b>Definition</b> Zip.hpp:16</div></div>
+<div class="ttc" id="astructscore_1_1_zip_entry_html_a148d3e86fc684535a179293a97b3919a"><div class="ttname"><a href="structscore_1_1_zip_entry.html#a148d3e86fc684535a179293a97b3919a">score::ZipEntry::nameInArchive</a></div><div class="ttdeci">QString nameInArchive</div><div class="ttdoc">Path it takes inside the archive, always with forward slashes.</div><div class="ttdef"><b>Definition</b> Zip.hpp:20</div></div>
+<div class="ttc" id="astructscore_1_1_zip_entry_html_adc31e83a9ffd9e83bb653dffabce11fb"><div class="ttname"><a href="structscore_1_1_zip_entry.html#adc31e83a9ffd9e83bb653dffabce11fb">score::ZipEntry::sourceFile</a></div><div class="ttdeci">QString sourceFile</div><div class="ttdoc">Absolute path of the file to read.</div><div class="ttdef"><b>Definition</b> Zip.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

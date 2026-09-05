@@ -1,5 +1,10 @@
 var NAVTREEINDEX6 =
 {
+"_update_address_8hpp_source.html":[13,0,0,2,4,0,12],
+"_update_address_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,0],
+"_update_curve_8hpp_source.html":[13,0,0,2,11,0,0,3],
+"_update_device_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,1],
+"_uuid_key_8hpp_source.html":[13,0,0,1,1,8,17],
 "_uuid_key_serialization_8hpp_source.html":[13,0,0,1,1,8,18],
 "_v210_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,10],
 "_v4_l2_pixel_format_8hpp.html":[13,0,0,2,17,1,4,2,4],
@@ -231,23 +236,18 @@ var NAVTREEINDEX6 =
 "class_audio_1_1_settings_1_1_model.html":[12,0,2,0,0],
 "class_audio_1_1_settings_1_1_presenter.html":[12,0,2,0,1],
 "class_audio_1_1_settings_1_1_view.html":[12,0,2,0,2],
-"class_automation_1_1_change_address.html":[11,0,0,0],
 "class_automation_1_1_change_address.html":[12,0,3,1],
+"class_automation_1_1_change_address.html":[11,0,0,0],
 "class_automation_1_1_colors.html":[11,0,0,1],
 "class_automation_1_1_colors.html":[12,0,3,2],
-"class_automation_1_1_init_automation.html":[12,0,3,3],
 "class_automation_1_1_init_automation.html":[11,0,0,2],
+"class_automation_1_1_init_automation.html":[12,0,3,3],
 "class_automation_1_1_inspector_factory.html":[12,0,3,4],
 "class_automation_1_1_inspector_factory.html":[11,0,0,3],
 "class_automation_1_1_inspector_widget.html":[12,0,3,5],
 "class_automation_1_1_inspector_widget.html":[11,0,0,4],
 "class_automation_1_1_layer_presenter.html":[12,0,3,6],
 "class_automation_1_1_layer_presenter.html":[11,0,0,5],
-"class_automation_1_1_layer_view.html":[11,0,0,6],
 "class_automation_1_1_layer_view.html":[12,0,3,7],
-"class_automation_1_1_min_max_header_delegate.html":[12,0,3,8],
-"class_automation_1_1_min_max_header_delegate.html":[11,0,0,7],
-"class_automation_1_1_point_inspector_factory.html":[11,0,0,8],
-"class_automation_1_1_point_inspector_factory.html":[12,0,3,9],
-"class_automation_1_1_point_inspector_factory.html#af4c765b264cc6cdf63f98009286efd06":[12,0,3,9,0]
+"class_automation_1_1_layer_view.html":[11,0,0,6]
 };

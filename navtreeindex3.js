@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,13,0,4,4],
+"_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,12],
+"_load_cables_8hpp_source.html":[13,0,0,2,32,0,0,3],
 "_load_device_8hpp_source.html":[13,0,0,2,13,0,0,0,1],
 "_load_preset_8hpp_source.html":[13,0,0,2,3,4,2,1],
 "_load_preset_command_8hpp_source.html":[13,0,0,2,32,4,1,11],
@@ -170,6 +173,7 @@ var NAVTREEINDEX3 =
 "_n_v16_8hpp_source.html":[13,0,0,2,17,1,4,0,16],
 "_n_v24_8hpp_source.html":[13,0,0,2,17,1,4,0,17],
 "_name_property_8hpp_source.html":[13,0,0,2,2,0,4],
+"_network_session_interface_8hpp_source.html":[13,0,0,1,1,8,0,1],
 "_nodal_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,0,5],
 "_node_based_item_model_8hpp_source.html":[13,0,0,2,0,0,1,0],
 "_node_display_methods_8hpp_source.html":[13,0,0,2,0,0,1,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "_pd_library_8hpp_source.html":[13,0,0,2,28,0,7],
 "_pd_metadata_8hpp_source.html":[13,0,0,2,28,0,8],
 "_pd_process_8hpp_source.html":[13,0,0,2,28,0,9],
-"_pen_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,4],
-"_phidgets_device_8hpp_source.html":[13,0,0,2,29,0,17,0],
-"_phidgets_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,17,1],
-"_phidgets_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,17,2],
-"_phidgets_specific_settings_8hpp_source.html":[13,0,0,2,29,0,17,3]
+"_pen_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,4]
 };

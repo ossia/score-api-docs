@@ -1,12 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"_contexts.html":[2],
 "_control_inlet_item_8hpp_source.html":[13,0,0,2,12,0,3],
 "_control_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,0],
 "_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
 "_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
 "_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,8],
-"_core_actions_8hpp_source.html":[13,0,0,1,0,6,1],
-"_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,2],
+"_core_actions_8hpp_source.html":[13,0,0,1,0,6,2],
+"_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,3],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
 "_core_audio_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,11],
 "_cpu_analysis_node_8hpp_source.html":[13,0,0,2,8,3,2],
@@ -148,13 +149,14 @@ var NAVTREEINDEX1 =
 "_document_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,1,3],
 "_document_delegate_view_8hpp_source.html":[13,0,0,1,1,8,1,4],
 "_document_interface_8hpp_source.html":[13,0,0,1,1,3,2],
-"_document_manager_8hpp_source.html":[13,0,0,1,0,6,3],
+"_document_manager_8hpp_source.html":[13,0,0,1,0,6,4],
 "_document_metadata_8hpp_source.html":[13,0,0,1,0,2,4],
 "_document_model_8hpp_source.html":[13,0,0,1,0,2,5],
 "_document_plugin_base_8hpp_source.html":[13,0,0,1,1,8,1,0,1],
 "_document_plugin_creator_8hpp_source.html":[13,0,0,1,1,8,1,0,2],
 "_document_presenter_8hpp_source.html":[13,0,0,1,0,2,6],
-"_document_view_8hpp_source.html":[13,0,0,1,0,2,7],
+"_document_templates_8hpp_source.html":[13,0,0,1,0,2,7],
+"_document_view_8hpp_source.html":[13,0,0,1,0,2,8],
 "_domain_8hpp_source.html":[13,0,0,2,4,0,3],
 "_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4],
 "_double_slider_8hpp_source.html":[13,0,0,1,1,13,6],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_explorer_view_8hpp_source.html":[13,0,0,2,13,0,6,3],
 "_expression_8hpp_source.html":[13,0,0,2,4,0,5],
 "_expression_editor_widget_8hpp_source.html":[13,0,0,2,32,4,6,1,0],
-"_expression_menu_8hpp_source.html":[13,0,0,2,32,4,6,1,1],
-"_expression_parser_8hpp_source.html":[13,0,0,2,4,0,6],
-"_expression_validator_8hpp_source.html":[13,0,0,2,32,4,6,9]
+"_expression_menu_8hpp_source.html":[13,0,0,2,32,4,6,1,1]
 };

@@ -7,6 +7,7 @@ var NAVTREEINDEX0 =
 "_a_l_s_a_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,3],
 "_a_s_i_o_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,4],
 "_about_dialog_8hpp_source.html":[13,0,0,1,0,6,0],
+"_about_widget_8hpp_source.html":[13,0,0,1,0,6,1],
 "_accessors_8hpp_source.html":[13,0,0,2,32,4,9,0,0],
 "_action_8hpp.html":[13,0,0,1,1,0,0],
 "_action_8hpp.html#a3545013abd611231a3fd12761826e3c9":[13,0,0,1,1,0,0,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_console_panel_8hpp_source.html":[13,0,0,2,20,0,4],
 "_constrained_displacement_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,1],
 "_containers_accessors_8hpp_source.html":[13,0,0,2,32,4,9,0,2],
-"_context_8hpp_source.html":[13,0,0,2,22,0,1],
-"_contexts.html":[2]
+"_context_8hpp_source.html":[13,0,0,2,22,0,1]
 };

@@ -183,15 +183,15 @@ $(document).ready(function(){initNavTree('score-plugin-gfx_2_gfx_2_graph_2_utils
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      , sink{sink}</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      , type{t}</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    source-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    source-&gt;edges.push_back(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    sink-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.push_back(<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">~Edge</a>()</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> it = std::find(source-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.begin(), source-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.end(), <span class="keyword">this</span>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>       it != source-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.end())</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      source-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.erase(it);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> it = std::find(source-&gt;edges.begin(), source-&gt;edges.end(), <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>       it != source-&gt;edges.end())</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      source-&gt;edges.erase(it);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> it = std::find(sink-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.begin(), sink-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.end(), <span class="keyword">this</span>);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>       it != sink-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.end())</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      sink-&gt;<a class="code hl_variable" href="structscore_1_1gfx_1_1_port.html#adb11d4fb6715db432193ab623d3e679c">edges</a>.erase(it);</div>

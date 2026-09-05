@@ -1,5 +1,9 @@
 var NAVTREEINDEX4 =
 {
+"_phidgets_device_8hpp_source.html":[13,0,0,2,29,0,17,0],
+"_phidgets_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,17,1],
+"_phidgets_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,17,2],
+"_phidgets_specific_settings_8hpp_source.html":[13,0,0,2,29,0,17,3],
 "_phong_node_8hpp_source.html":[13,0,0,2,17,1,4,21],
 "_pipe_wire_interface_8hpp_source.html":[13,0,0,2,6,0,17],
 "_pitch_8hpp_source.html":[13,0,0,2,5,0,11],
@@ -81,6 +85,7 @@ var NAVTREEINDEX4 =
 "_project_consolidation_dialog_8hpp_source.html":[13,0,0,2,3,4,51],
 "_project_files_8hpp_source.html":[13,0,0,1,1,12,26],
 "_project_files_application_plugin_8hpp_source.html":[13,0,0,2,3,4,52],
+"_project_info_8hpp_source.html":[13,0,0,1,0,2,9],
 "_project_library_widget_8hpp_source.html":[13,0,0,2,21,0,12],
 "_project_settings_factory_8hpp_source.html":[13,0,0,1,1,8,3,0],
 "_project_settings_model_8hpp_source.html":[13,0,0,1,1,8,3,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX4 =
 "_scenario_rollback_strategy_8hpp_source.html":[13,0,0,2,32,4,8,0,4],
 "_scenario_scene_8hpp_source.html":[13,0,0,2,32,4,3,7,11],
 "_scenario_selection_8hpp_source.html":[13,0,0,2,32,4,9,9],
-"_scenario_selection_state_8hpp_source.html":[13,0,0,2,32,4,8,0,0,10],
-"_scenario_settings_factory_8hpp_source.html":[13,0,0,2,32,4,10,0],
-"_scenario_settings_model_8hpp_source.html":[13,0,0,2,32,4,10,1],
-"_scenario_settings_presenter_8hpp_source.html":[13,0,0,2,32,4,10,2],
-"_scenario_settings_view_8hpp_source.html":[13,0,0,2,32,4,10,3],
-"_scenario_style_8hpp_source.html":[13,0,0,2,3,4,12,1]
+"_scenario_selection_state_8hpp_source.html":[13,0,0,2,32,4,8,0,0,10]
 };

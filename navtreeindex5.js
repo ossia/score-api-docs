@@ -1,5 +1,10 @@
 var NAVTREEINDEX5 =
 {
+"_scenario_settings_factory_8hpp_source.html":[13,0,0,2,32,4,10,0],
+"_scenario_settings_model_8hpp_source.html":[13,0,0,2,32,4,10,1],
+"_scenario_settings_presenter_8hpp_source.html":[13,0,0,2,32,4,10,2],
+"_scenario_settings_view_8hpp_source.html":[13,0,0,2,32,4,10,3],
+"_scenario_style_8hpp_source.html":[13,0,0,2,3,4,12,1],
 "_scenario_tool_state_8hpp_source.html":[13,0,0,2,32,4,8,0,5],
 "_scenario_trigger_command_factory_8hpp_source.html":[13,0,0,2,32,4,1,8,0,1],
 "_scenario_validity_8hpp_source.html":[13,0,0,2,32,4,0,6],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "_unix_stream_widget_8hpp_source.html":[13,0,0,2,29,0,14,6],
 "_unused_8hpp_source.html":[13,0,0,1,1,12,36],
 "_unused_files_8hpp_source.html":[13,0,0,2,3,4,56],
-"_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,57],
-"_update_address_8hpp_source.html":[13,0,0,2,4,0,12],
-"_update_address_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,0],
-"_update_curve_8hpp_source.html":[13,0,0,2,11,0,0,3],
-"_update_device_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,1],
-"_uuid_key_8hpp_source.html":[13,0,0,1,1,8,17]
+"_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,57]
 };

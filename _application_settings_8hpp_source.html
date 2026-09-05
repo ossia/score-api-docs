@@ -113,51 +113,55 @@ $(document).ready(function(){initNavTree('_application_settings_8hpp_source.html
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;score/tools/Version.hpp&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html">   16</a></span><span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code hl_struct" href="structscore_1_1_application_settings.html">ApplicationSettings</a></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714">   19</a></span>  <span class="keywordtype">bool</span> tryToRestore = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a08323067fe38eea2dab5a6815e0735e1">   22</a></span>  <span class="keywordtype">bool</span> forceRestore = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192">   25</a></span>  <span class="keywordtype">bool</span> gui = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1">   28</a></span>  <span class="keywordtype">bool</span> opengl = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>SCORE_LIB_BASE_EXPORT QString <a class="code hl_function" href="namespacescore.html#afb13d1368d74ea8146c71a2b4f47b5b0">displayedVersion</a>();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html">   25</a></span><span class="keyword">struct </span>SCORE_LIB_BASE_EXPORT <a class="code hl_struct" href="structscore_1_1_application_settings.html">ApplicationSettings</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714">   28</a></span>  <span class="keywordtype">bool</span> tryToRestore = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d">   31</a></span>  <span class="keywordtype">bool</span> autoplay = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a08323067fe38eea2dab5a6815e0735e1">   31</a></span>  <span class="keywordtype">bool</span> forceRestore = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33">   34</a></span>  <span class="keywordtype">bool</span> vector_gui = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192">   34</a></span>  <span class="keywordtype">bool</span> gui = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba">   37</a></span>  <a class="code hl_class" href="classscore_1_1_version.html">score::Version</a> saveFormatVersion{4};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1">   37</a></span>  <span class="keywordtype">bool</span> opengl = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">   40</a></span>  QStringList <a class="code hl_variable" href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">loadList</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d">   40</a></span>  <span class="keywordtype">bool</span> autoplay = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">   43</a></span>  QString <a class="code hl_variable" href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">ui</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33">   43</a></span>  <span class="keywordtype">bool</span> vector_gui = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011">   46</a></span>  <span class="keywordtype">int</span> waitAfterLoad = 0;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba">   46</a></span>  <a class="code hl_class" href="classscore_1_1_version.html">score::Version</a> saveFormatVersion{4};</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">   49</a></span>  QStringList <a class="code hl_variable" href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">arguments</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">   49</a></span>  QStringList <a class="code hl_variable" href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">loadList</a>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a">   52</a></span>  <span class="keywordtype">int</span> uiEventRate = 64;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">   52</a></span>  QString <a class="code hl_variable" href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">ui</a>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> parse(QStringList args, <span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>** argv);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011">   55</a></span>  <span class="keywordtype">int</span> waitAfterLoad = 0;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">   58</a></span>  QStringList <a class="code hl_variable" href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">arguments</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a">   61</a></span>  <span class="keywordtype">int</span> uiEventRate = 64;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> parse(QStringList args, <span class="keywordtype">int</span>&amp; argc, <span class="keywordtype">char</span>** argv);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>SCORE_LIB_BASE_EXPORT</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> setQApplicationMetadata();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> setQApplicationMetadata();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="ttc" id="aclassscore_1_1_version_html"><div class="ttname"><a href="classscore_1_1_version.html">score::Version</a></div><div class="ttdoc">Represents the version of a plug-in.</div><div class="ttdef"><b>Definition</b> Version.hpp:13</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
-<div class="ttc" id="astructscore_1_1_application_settings_html"><div class="ttname"><a href="structscore_1_1_application_settings.html">score::ApplicationSettings</a></div><div class="ttdoc">Load-time settings.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:17</div></div>
-<div class="ttc" id="astructscore_1_1_application_settings_html_a00d81c4a424618b1f79e81e00c64932b"><div class="ttname"><a href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">score::ApplicationSettings::ui</a></div><div class="ttdeci">QString ui</div><div class="ttdoc">UI file to be loaded.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:43</div></div>
-<div class="ttc" id="astructscore_1_1_application_settings_html_a50b4c9cd2201282fc335bc4ca5f4a6c8"><div class="ttname"><a href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">score::ApplicationSettings::arguments</a></div><div class="ttdeci">QStringList arguments</div><div class="ttdoc">Complete list of arguments passed to parse.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:49</div></div>
-<div class="ttc" id="astructscore_1_1_application_settings_html_ac4485606b08677be4115260f2e30b241"><div class="ttname"><a href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">score::ApplicationSettings::loadList</a></div><div class="ttdeci">QStringList loadList</div><div class="ttdoc">List of scenarios that should be loaded.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:40</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:116</div></div>
+<div class="ttc" id="anamespacescore_html_afb13d1368d74ea8146c71a2b4f47b5b0"><div class="ttname"><a href="namespacescore.html#afb13d1368d74ea8146c71a2b4f47b5b0">score::displayedVersion</a></div><div class="ttdeci">QString displayedVersion()</div><div class="ttdoc">The version as shown to users.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.cpp:19</div></div>
+<div class="ttc" id="astructscore_1_1_application_settings_html"><div class="ttname"><a href="structscore_1_1_application_settings.html">score::ApplicationSettings</a></div><div class="ttdoc">Load-time settings.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:26</div></div>
+<div class="ttc" id="astructscore_1_1_application_settings_html_a00d81c4a424618b1f79e81e00c64932b"><div class="ttname"><a href="structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b">score::ApplicationSettings::ui</a></div><div class="ttdeci">QString ui</div><div class="ttdoc">UI file to be loaded.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:52</div></div>
+<div class="ttc" id="astructscore_1_1_application_settings_html_a50b4c9cd2201282fc335bc4ca5f4a6c8"><div class="ttname"><a href="structscore_1_1_application_settings.html#a50b4c9cd2201282fc335bc4ca5f4a6c8">score::ApplicationSettings::arguments</a></div><div class="ttdeci">QStringList arguments</div><div class="ttdoc">Complete list of arguments passed to parse.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:58</div></div>
+<div class="ttc" id="astructscore_1_1_application_settings_html_ac4485606b08677be4115260f2e30b241"><div class="ttname"><a href="structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241">score::ApplicationSettings::loadList</a></div><div class="ttdeci">QStringList loadList</div><div class="ttdoc">List of scenarios that should be loaded.</div><div class="ttdef"><b>Definition</b> ApplicationSettings.hpp:49</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

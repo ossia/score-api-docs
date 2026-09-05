@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: score::StartScreenLink Struct Reference</title>
+        <title>score: score::DocumentTemplate Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('structscore_1_1_start_screen_link.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structscore_1_1_document_template.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,36 +103,65 @@ $(document).ready(function(){initNavTree('structscore_1_1_start_screen_link.html
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structscore_1_1_start_screen_link-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">score::StartScreenLink Struct Reference</div></div>
+<a href="structscore_1_1_document_template-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">score::DocumentTemplate Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a59505def6f9583ead25a547e8987bb23" id="r_a59505def6f9583ead25a547e8987bb23"><td class="memItemLeft" align="right" valign="top"><a id="a59505def6f9583ead25a547e8987bb23" name="a59505def6f9583ead25a547e8987bb23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StartScreenLink</b> (const QString &amp;n, const QString &amp;u, const QString &amp;p, const QString &amp;pOn)</td></tr>
-<tr class="separator:a59505def6f9583ead25a547e8987bb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+
+<p>A .score file that can be opened as a new, untitled document.  
+ <a href="structscore_1_1_document_template.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A .score file that can be opened as a new, untitled document. </p>
+<p>Templates and examples are .score files, or project archives (a .zip holding a .score and its media, as written by Project &gt; Archive), found in well-known folders:</p>
+<ul>
+<li>Templates: <code>:/templates</code>, <code>&lt;library&gt;/Templates</code>, <code>&lt;library&gt;/packages/&lt;pkg&gt;/Templates</code></li>
+<li>Examples: <code>&lt;library&gt;/Examples</code>, <code>&lt;library&gt;/packages/&lt;pkg&gt;/Examples</code> (recursive), and the whole tree of a package that is itself an examples package: its folder is named <code>examples</code> or its package.json has <code>"kind": "examples"</code>.</li>
+</ul>
+<p>where <code>&lt;library&gt;</code> is the user library root (Library/RootPath setting). Two files have a special role and are not listed:</p>
+<ul>
+<li><code>&lt;library&gt;/default.score</code> is used as the template of every new document.</li>
+<li><code>first-run.score</code> in any template folder is the guided score proposed to first-time users by the start screen. </li>
+</ul>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a578ab78d445fdcea5b261c82029fe6b6" id="r_a578ab78d445fdcea5b261c82029fe6b6"><td class="memItemLeft" align="right" valign="top"><a id="a578ab78d445fdcea5b261c82029fe6b6" name="a578ab78d445fdcea5b261c82029fe6b6"></a>
+<tr class="memitem:a178bf5a8d5a42fd3662dcd78483d60ef" id="r_a178bf5a8d5a42fd3662dcd78483d60ef"><td class="memItemLeft" align="right" valign="top"><a id="a178bf5a8d5a42fd3662dcd78483d60ef" name="a178bf5a8d5a42fd3662dcd78483d60ef"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:a578ab78d445fdcea5b261c82029fe6b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070d794ddbd335668b4d2906230dd7cb" id="r_a070d794ddbd335668b4d2906230dd7cb"><td class="memItemLeft" align="right" valign="top"><a id="a070d794ddbd335668b4d2906230dd7cb" name="a070d794ddbd335668b4d2906230dd7cb"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>url</b></td></tr>
-<tr class="separator:a070d794ddbd335668b4d2906230dd7cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c125be54bb8a2845d5775c31e5a8bd" id="r_a40c125be54bb8a2845d5775c31e5a8bd"><td class="memItemLeft" align="right" valign="top"><a id="a40c125be54bb8a2845d5775c31e5a8bd" name="a40c125be54bb8a2845d5775c31e5a8bd"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>pixmap</b></td></tr>
-<tr class="separator:a40c125be54bb8a2845d5775c31e5a8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0b8ee9b144cd4733573e1cb83971f6" id="r_a4b0b8ee9b144cd4733573e1cb83971f6"><td class="memItemLeft" align="right" valign="top"><a id="a4b0b8ee9b144cd4733573e1cb83971f6" name="a4b0b8ee9b144cd4733573e1cb83971f6"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>pixmapOn</b></td></tr>
-<tr class="separator:a4b0b8ee9b144cd4733573e1cb83971f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a178bf5a8d5a42fd3662dcd78483d60ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name without extension. <br /></td></tr>
+<tr class="separator:a178bf5a8d5a42fd3662dcd78483d60ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0c9d3c39042c83c6f2199552ebf515" id="r_a4f0c9d3c39042c83c6f2199552ebf515"><td class="memItemLeft" align="right" valign="top"><a id="a4f0c9d3c39042c83c6f2199552ebf515" name="a4f0c9d3c39042c83c6f2199552ebf515"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+<tr class="memdesc:a4f0c9d3c39042c83c6f2199552ebf515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute path or resource path. <br /></td></tr>
+<tr class="separator:a4f0c9d3c39042c83c6f2199552ebf515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdad96e958dc7fc5433eb1899bbd12b" id="r_adfdad96e958dc7fc5433eb1899bbd12b"><td class="memItemLeft" align="right" valign="top"><a id="adfdad96e958dc7fc5433eb1899bbd12b" name="adfdad96e958dc7fc5433eb1899bbd12b"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>source</b></td></tr>
+<tr class="memdesc:adfdad96e958dc7fc5433eb1899bbd12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">"bundled", "library" or the package name <br /></td></tr>
+<tr class="separator:adfdad96e958dc7fc5433eb1899bbd12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0c98e77fb47e8bfe4dc92a075c1bb0" id="r_acf0c98e77fb47e8bfe4dc92a075c1bb0"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_document_template.html#acf0c98e77fb47e8bfe4dc92a075c1bb0">category</a></td></tr>
+<tr class="memdesc:acf0c98e77fb47e8bfe4dc92a075c1bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Folder path relative to the search root, e.g.  <br /></td></tr>
+<tr class="separator:acf0c98e77fb47e8bfe4dc92a075c1bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="acf0c98e77fb47e8bfe4dc92a075c1bb0" name="acf0c98e77fb47e8bfe4dc92a075c1bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0c98e77fb47e8bfe4dc92a075c1bb0">&#9670;&#160;</a></span>category</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::DocumentTemplate::category</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Folder path relative to the search root, e.g. </p>
+<p>"reference / processes" </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_start_screen_8hpp_source.html">StartScreen.hpp</a></li>
+<li><a class="el" href="_document_templates_8hpp_source.html">DocumentTemplates.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

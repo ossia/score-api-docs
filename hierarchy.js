@@ -785,6 +785,7 @@ var hierarchy =
     [ "score::DocumentList", "structscore_1_1_document_list.html", [
       [ "score::DocumentManager", "classscore_1_1_document_manager.html", null ]
     ] ],
+    [ "score::DocumentTemplate", "structscore_1_1_document_template.html", null ],
     [ "score::DocumentValidator", "classscore_1_1_document_validator.html", null ],
     [ "State::Domain", "struct_state_1_1_domain.html", null ],
     [ "Scenario::DoNotMoveInterval_StateWrapper", "class_scenario_1_1_do_not_move_interval___state_wrapper.html", null ],
@@ -1922,6 +1923,7 @@ var hierarchy =
     [ "Gfx::WindowCapture::libsdbus", "struct_gfx_1_1_window_capture_1_1libsdbus.html", null ],
     [ "libsuil", "classlibsuil.html", null ],
     [ "Gfx::WindowCapture::libx11", "struct_gfx_1_1_window_capture_1_1libx11.html", null ],
+    [ "score::LicenseInfo", "structscore_1_1_license_info.html", null ],
     [ "score::linear_id_generator", "structscore_1_1linear__id__generator.html", null ],
     [ "WidgetFactory::LinearNormalizer", "struct_widget_factory_1_1_linear_normalizer.html", null ],
     [ "halp::lineedit", null, [
@@ -2095,6 +2097,7 @@ var hierarchy =
     [ "bug_named_vecf::named_rect4", "structbug__named__vecf_1_1named__rect4.html", null ],
     [ "avnd_tools::detail::needs_resize_check< Dim >", "structavnd__tools_1_1detail_1_1needs__resize__check.html", null ],
     [ "Scenario::NeighbourSelector", "class_scenario_1_1_neighbour_selector.html", null ],
+    [ "score::NetworkSessionInterface", "classscore_1_1_network_session_interface.html", null ],
     [ "score::gfx::no_delay_edges", "structscore_1_1gfx_1_1no__delay__edges.html", null ],
     [ "Scenario::BaseScenarioContainer::no_init", "struct_scenario_1_1_base_scenario_container_1_1no__init.html", null ],
     [ "Explorer::AddressSettingsWidget::no_widgets_t", "struct_explorer_1_1_address_settings_widget_1_1no__widgets__t.html", null ],
@@ -2403,8 +2406,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -4115,6 +4118,7 @@ var hierarchy =
         [ "State::VecWidget< N >", "class_state_1_1_vec_widget.html", null ]
       ] ],
       [ "WidgetWrapper< Widget >", "class_widget_wrapper.html", null ],
+      [ "score::AboutWidget", "classscore_1_1_about_widget.html", null ],
       [ "score::BottomToolbarWidget", "classscore_1_1_bottom_toolbar_widget.html", null ],
       [ "score::DoubleSlider", "classscore_1_1_double_slider.html", [
         [ "Mixer::AudioSliderWidget", "class_mixer_1_1_audio_slider_widget.html", null ],
@@ -4124,6 +4128,7 @@ var hierarchy =
         [ "score::ValueLogDoubleSlider", "structscore_1_1_value_log_double_slider.html", null ],
         [ "score::VolumeSlider", "structscore_1_1_volume_slider.html", null ]
       ] ],
+      [ "score::ExampleCard", "classscore_1_1_example_card.html", null ],
       [ "score::FixedTabWidget", "classscore_1_1_fixed_tab_widget.html", null ],
       [ "score::FormWidget", "classscore_1_1_form_widget.html", null ],
       [ "score::HSeparator", "classscore_1_1_h_separator.html", null ],
@@ -4135,6 +4140,7 @@ var hierarchy =
       [ "score::RangeWidget", "classscore_1_1_range_widget.html", null ],
       [ "score::RectWidget", "classscore_1_1_rect_widget.html", null ],
       [ "score::StartScreen", "classscore_1_1_start_screen.html", null ],
+      [ "score::ThumbnailPopup", "classscore_1_1_thumbnail_popup.html", null ],
       [ "score::TimeSpinBox", "classscore_1_1_time_spin_box.html", null ],
       [ "score::TitleBar", "classscore_1_1_title_bar.html", null ],
       [ "score::VSeparator", "classscore_1_1_v_separator.html", null ]
@@ -4329,7 +4335,6 @@ var hierarchy =
     [ "Library::StagedNode", "struct_library_1_1_staged_node.html", null ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],
-    [ "score::StartScreenLink", "structscore_1_1_start_screen_link.html", null ],
     [ "JS::ApplicationPlugin::StartScript", "struct_j_s_1_1_application_plugin_1_1_start_script.html", null ],
     [ "Factor::State< T >", "class_factor_1_1_state.html", null ],
     [ "FactorOracle2MIDI::State< T >", "class_factor_oracle2_m_i_d_i_1_1_state.html", null ],
@@ -4364,6 +4369,7 @@ var hierarchy =
     [ "Threedim::StrucSynth", "class_threedim_1_1_struc_synth.html", null ],
     [ "Curve::Style", "struct_curve_1_1_style.html", null ],
     [ "Process::Style", "struct_process_1_1_style.html", null ],
+    [ "score::AboutWidget::Style", "structscore_1_1_about_widget_1_1_style.html", null ],
     [ "Curve::StyleInterface", "struct_curve_1_1_style_interface.html", [
       [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ]
     ] ],
@@ -4774,6 +4780,7 @@ var hierarchy =
     [ "ysfx_midi_event_t", null, [
       [ "YSFX::Executor::ysfx_midi_event_impl", "struct_y_s_f_x_1_1_executor_1_1ysfx__midi__event__impl.html", null ]
     ] ],
+    [ "score::ZipArchiveSummary", "structscore_1_1_zip_archive_summary.html", null ],
     [ "score::ZipEntry", "structscore_1_1_zip_entry.html", null ],
     [ "Scenario::ZPos", "class_scenario_1_1_z_pos.html", null ]
 ];

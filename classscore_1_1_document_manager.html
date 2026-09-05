@@ -142,6 +142,10 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>recentFiles</b> () co
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:aa4c40cfd6747c496534bc5fa9b04b7b5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>newDocument</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:aa4c40cfd6747c496534bc5fa9b04b7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af621bde9fc57898697f32496fccd5b33" id="r_af621bde9fc57898697f32496fccd5b33"><td class="memItemLeft" align="right" valign="top"><a id="af621bde9fc57898697f32496fccd5b33" name="af621bde9fc57898697f32496fccd5b33"></a>
+<a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>newDocumentFromTemplate</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const QString &amp;templatePath)</td></tr>
+<tr class="memdesc:af621bde9fc57898697f32496fccd5b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">New untitled document initialized from a template or example .score file. <br /></td></tr>
+<tr class="separator:af621bde9fc57898697f32496fccd5b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab365c4e6e75450551834e814ed6f2e14" id="r_ab365c4e6e75450551834e814ed6f2e14"><td class="memTemplParams" colspan="2"><a id="ab365c4e6e75450551834e814ed6f2e14" name="ab365c4e6e75450551834e814ed6f2e14"></a>
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:ab365c4e6e75450551834e814ed6f2e14"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>loadDocument</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, Args &amp;&amp;... args)</td></tr>
@@ -186,6 +190,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveStack</b> ()</td>
 <tr class="memitem:a443c110005ab551e300a310c75150a74" id="r_a443c110005ab551e300a310c75150a74"><td class="memItemLeft" align="right" valign="top"><a id="a443c110005ab551e300a310c75150a74" name="a443c110005ab551e300a310c75150a74"></a>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadFile</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const QString &amp;filename)</td></tr>
 <tr class="separator:a443c110005ab551e300a310c75150a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791a79e588d742fe0a57119eb9b8f186" id="r_a791a79e588d742fe0a57119eb9b8f186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_manager.html#a791a79e588d742fe0a57119eb9b8f186">openArchive</a> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const QString &amp;archive)</td></tr>
+<tr class="memdesc:a791a79e588d742fe0a57119eb9b8f186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a project archive: a zip holding a .score and its media.  <br /></td></tr>
+<tr class="separator:a791a79e588d742fe0a57119eb9b8f186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b6356281904a36fc898d320c49cae7f" id="r_a0b6356281904a36fc898d320c49cae7f"><td class="memItemLeft" align="right" valign="top"><a id="a0b6356281904a36fc898d320c49cae7f" name="a0b6356281904a36fc898d320c49cae7f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>closeAllDocuments</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a0b6356281904a36fc898d320c49cae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +269,37 @@ std::vector&lt; <a class="el" href="classscore_1_1_document.html">Document</a> *
 
 <p>checkAndUpdateJson </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean indicating if the document is loadable </dd></dl>
+
+</div>
+</div>
+<a id="a791a79e588d742fe0a57119eb9b8f186" name="a791a79e588d742fe0a57119eb9b8f186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791a79e588d742fe0a57119eb9b8f186">&#9670;&#160;</a></span>openArchive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_document.html">Document</a> * score::DocumentManager::openArchive </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>archive</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a project archive: a zip holding a .score and its media. </p>
+<p>Asks where the project folder should be created, extracts the archive there and opens the extracted score. </p>
 
 </div>
 </div>

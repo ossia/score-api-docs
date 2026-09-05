@@ -7,5 +7,7 @@ var dir_26f2b690be4c2829001b63a17b6977c8 =
     [ "DocumentMetadata.hpp", "_document_metadata_8hpp_source.html", null ],
     [ "DocumentModel.hpp", "_document_model_8hpp_source.html", null ],
     [ "DocumentPresenter.hpp", "_document_presenter_8hpp_source.html", null ],
-    [ "DocumentView.hpp", "_document_view_8hpp_source.html", null ]
+    [ "DocumentTemplates.hpp", "_document_templates_8hpp_source.html", null ],
+    [ "DocumentView.hpp", "_document_view_8hpp_source.html", null ],
+    [ "ProjectInfo.hpp", "_project_info_8hpp_source.html", null ]
 ];

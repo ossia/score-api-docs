@@ -113,36 +113,20 @@ $(document).ready(function(){initNavTree('_about_dialog_8hpp_source.html',''); i
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QDialog&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classscore_1_1_about_dialog.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classscore_1_1_about_dialog.html">AboutDialog</a> final : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;score_lib_base_export.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <a class="code hl_class" href="classscore_1_1_about_dialog.html">AboutDialog</a>(QWidget* parent = 0);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordtype">void</span> mousePressEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordtype">void</span> mouseMoveEvent(QMouseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">void</span> paintEvent(QPaintEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  QSize m_windowSize;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  QImage m_backgroundImage;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  QFont m_catamaranFont;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  QFont m_montserratFont;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  QFont m_montserratLightFont;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  QRectF m_mouseAreaOssiaScore;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  QRectF m_mouseAreaLabri;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  QRectF m_mouseAreaScrime;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  QRectF m_mouseAreaBlueYeti;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="classscore_1_1_about_dialog.html">    9</a></span><span class="keyword">class </span>SCORE_LIB_BASE_EXPORT <a class="code hl_class" href="classscore_1_1_about_dialog.html">AboutDialog</a> final : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_class" href="classscore_1_1_about_dialog.html">AboutDialog</a>(QWidget* parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
-<div class="ttc" id="aclassscore_1_1_about_dialog_html"><div class="ttname"><a href="classscore_1_1_about_dialog.html">score::AboutDialog</a></div><div class="ttdef"><b>Definition</b> AboutDialog.hpp:7</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:113</div></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="ttc" id="aclassscore_1_1_about_dialog_html"><div class="ttname"><a href="classscore_1_1_about_dialog.html">score::AboutDialog</a></div><div class="ttdoc">Help &gt; About: the same content as the start screen's About page.</div><div class="ttdef"><b>Definition</b> AboutDialog.hpp:10</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:116</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

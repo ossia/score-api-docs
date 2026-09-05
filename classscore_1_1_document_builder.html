@@ -127,6 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae523a78b5411f0c8ebd4dc76d838de1e" id="r_ae523a78b5411f0c8ebd4dc76d838de1e"><td class="memItemLeft" align="right" valign="top"><a id="ae523a78b5411f0c8ebd4dc76d838de1e" name="ae523a78b5411f0c8ebd4dc76d838de1e"></a>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>newDocument</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_document_model.html">DocumentModel</a> &gt; &amp;id, <a class="el" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a> &amp;doctype)</td></tr>
 <tr class="separator:ae523a78b5411f0c8ebd4dc76d838de1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c252d6be20ee9c2cbff7dcca0c8580" id="r_a37c252d6be20ee9c2cbff7dcca0c8580"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_builder.html#a37c252d6be20ee9c2cbff7dcca0c8580">newDocumentFromTemplate</a> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_document_model.html">DocumentModel</a> &gt; &amp;id, const QString &amp;templatePath, <a class="el" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a> &amp;doctype)</td></tr>
+<tr class="memdesc:a37c252d6be20ee9c2cbff7dcca0c8580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new, untitled document from an existing .score file.  <br /></td></tr>
+<tr class="separator:a37c252d6be20ee9c2cbff7dcca0c8580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac451ffb17dd4d33fbdcdede341ddb0da" id="r_ac451ffb17dd4d33fbdcdede341ddb0da"><td class="memItemLeft" align="right" valign="top"><a id="ac451ffb17dd4d33fbdcdede341ddb0da" name="ac451ffb17dd4d33fbdcdede341ddb0da"></a>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadDocument</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, QString filename, <a class="el" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a> &amp;doctype)</td></tr>
 <tr class="separator:ac451ffb17dd4d33fbdcdede341ddb0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +140,50 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>restoreDocument</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const <a class="el" href="structscore_1_1_restorable_document.html">score::RestorableDocument</a> &amp;doc, <a class="el" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a> &amp;doctype)</td></tr>
 <tr class="separator:ac96db24db593a83e0eacd18e1466d9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a37c252d6be20ee9c2cbff7dcca0c8580" name="a37c252d6be20ee9c2cbff7dcca0c8580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c252d6be20ee9c2cbff7dcca0c8580">&#9670;&#160;</a></span>newDocumentFromTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_document.html">Document</a> * score::DocumentBuilder::newDocumentFromTemplate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="classscore_1_1_document_model.html">DocumentModel</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>templatePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document_delegate_factory.html">score::DocumentDelegateFactory</a> &amp;&#160;</td>
+          <td class="paramname"><em>doctype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new, untitled document from an existing .score file. </p>
+<p>The file is loaded like any document, then detached from its path so that saving never overwrites the template. Returns nullptr on failure. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_document_builder_8hpp_source.html">DocumentBuilder.hpp</a></li>
 <li><b>DocumentBuilder.cpp</b></li>
