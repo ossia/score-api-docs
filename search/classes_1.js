@@ -49,7 +49,7 @@ var searchData=
   ['addressaccessorlineedit_46',['AddressAccessorLineEdit',['../class_process_1_1_address_accessor_line_edit.html',1,'Process']]],
   ['addressaccessorlineedit_3c_20process_3a_3aaddressaccessoreditwidget_20_3e_47',['AddressAccessorLineEdit&lt; Process::AddressAccessorEditWidget &gt;',['../class_process_1_1_address_accessor_line_edit.html',1,'Process']]],
   ['addressaccessorvalidator_48',['AddressAccessorValidator',['../class_state_1_1_address_accessor_validator.html',1,'State']]],
-  ['addressbaritem_49',['AddressBarItem',['../class_scenario_1_1_address_bar_item.html',1,'Scenario']]],
+  ['addressbarwidget_49',['AddressBarWidget',['../class_scenario_1_1_address_bar_widget.html',1,'Scenario']]],
   ['addressboolsettingswidget_50',['AddressBoolSettingsWidget',['../class_explorer_1_1_address_bool_settings_widget.html',1,'Explorer']]],
   ['addressbraceexpressionvalidator_51',['AddressBraceExpressionValidator',['../class_explorer_1_1_address_brace_expression_validator.html',1,'Explorer']]],
   ['addresscompositesettingswidget_52',['AddressCompositeSettingsWidget',['../class_explorer_1_1_address_composite_settings_widget.html',1,'Explorer']]],

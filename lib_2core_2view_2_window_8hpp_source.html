@@ -166,50 +166,59 @@ $(document).ready(function(){initNavTree('lib_2core_2view_2_window_8hpp_source.h
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">void</span> addTopToolbar(QToolBar* b);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keywordtype">void</span> activeDocumentChanged(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; arg_1)</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      E_SIGNAL(SCORE_LIB_BASE_EXPORT, activeDocumentChanged, arg_1)</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> closeRequested(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; arg_1)</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      E_SIGNAL(SCORE_LIB_BASE_EXPORT, closeRequested, arg_1)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  QAction* addRightPanel(QWidget* w, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_panel_status.html">PanelStatus</a>&amp; status);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> removeRightPanel(QWidget* w);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> showRightPanel(QWidget* w);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> ready() E_SIGNAL(SCORE_LIB_BASE_EXPORT, ready)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> sizeChanged(QSize arg_1) E_SIGNAL(SCORE_LIB_BASE_EXPORT, sizeChanged, arg_1)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> on_fileNameChanged(<a class="code hl_class" href="classscore_1_1_document_view.html">DocumentView</a>* d, <span class="keyword">const</span> QString&amp; newName);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  W_SLOT(on_fileNameChanged);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  QWidget* centralDocumentWidget{};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  QSplitter* rightSplitter{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  QWidget* topleftToolbar{};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_class" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* leftTabs{};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// QTabWidget* rightTabs{};</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_class" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* bottomTabs{};</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  QTabWidget* centralTabs{};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  QWidget* transportBar{};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">bool</span> event(QEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> changeEvent(QEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> resizeEvent(QResizeEvent*) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  ossia::hash_map&lt;QWidget*, DocumentView*&gt; m_documents;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_leftPanels;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_rightPanels;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_class" href="classscore_1_1_presenter.html">Presenter</a>* m_presenter{};</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  QLabel* m_status{};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> activeDocumentChanged(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; arg_1)</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      E_SIGNAL(SCORE_LIB_BASE_EXPORT, activeDocumentChanged, arg_1)</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">void</span> closeRequested(<span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;DocumentModel&gt;</a>&amp; arg_1)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      E_SIGNAL(SCORE_LIB_BASE_EXPORT, closeRequested, arg_1)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> ready() E_SIGNAL(SCORE_LIB_BASE_EXPORT, ready)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> sizeChanged(QSize arg_1) E_SIGNAL(SCORE_LIB_BASE_EXPORT, sizeChanged, arg_1)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> on_fileNameChanged(<a class="code hl_class" href="classscore_1_1_document_view.html">DocumentView</a>* d, <span class="keyword">const</span> QString&amp; newName);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  W_SLOT(on_fileNameChanged);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  QWidget* centralDocumentWidget{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  QSplitter* rightSplitter{};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  QWidget* topleftToolbar{};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_class" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* leftTabs{};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_class" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* rightTabs{};</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_class" href="classscore_1_1_fixed_tab_widget.html">FixedTabWidget</a>* bottomTabs{};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  QTabWidget* centralTabs{};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  QWidget* transportBar{};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_class" href="classscore_1_1_panel_delegate.html">PanelDelegate</a>* objectPanel{};</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_class" href="classscore_1_1_panel_delegate.html">PanelDelegate</a>* inspectorPanel{};</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_class" href="classscore_1_1_panel_delegate.html">PanelDelegate</a>* infoPanel{};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">bool</span> event(QEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> changeEvent(QEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> resizeEvent(QResizeEvent*) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  ossia::hash_map&lt;QWidget*, DocumentView*&gt; m_documents;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_leftPanels;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  std::vector&lt;QPair&lt;PanelDelegate*, QWidget*&gt;&gt; m_rightPanels;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <a class="code hl_class" href="classscore_1_1_presenter.html">Presenter</a>* m_presenter{};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  QLabel* m_status{};</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
 </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}</div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:59</div></div>
-<div class="ttc" id="aclassscore_1_1_document_view_html"><div class="ttname"><a href="classscore_1_1_document_view.html">score::DocumentView</a></div><div class="ttdoc">The DocumentView class shows a document.</div><div class="ttdef"><b>Definition</b> DocumentView.hpp:19</div></div>
-<div class="ttc" id="aclassscore_1_1_fixed_tab_widget_html"><div class="ttname"><a href="classscore_1_1_fixed_tab_widget.html">score::FixedTabWidget</a></div><div class="ttdef"><b>Definition</b> FixedTabWidget.hpp:18</div></div>
+<div class="ttc" id="aclassscore_1_1_document_view_html"><div class="ttname"><a href="classscore_1_1_document_view.html">score::DocumentView</a></div><div class="ttdoc">The DocumentView class shows a document.</div><div class="ttdef"><b>Definition</b> DocumentView.hpp:22</div></div>
+<div class="ttc" id="aclassscore_1_1_fixed_tab_widget_html"><div class="ttname"><a href="classscore_1_1_fixed_tab_widget.html">score::FixedTabWidget</a></div><div class="ttdef"><b>Definition</b> FixedTabWidget.hpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1_panel_delegate_html"><div class="ttname"><a href="classscore_1_1_panel_delegate.html">score::PanelDelegate</a></div><div class="ttdoc">The PanelDelegate class.</div><div class="ttdef"><b>Definition</b> PanelDelegate.hpp:50</div></div>
 <div class="ttc" id="aclassscore_1_1_presenter_html"><div class="ttname"><a href="classscore_1_1_presenter.html">score::Presenter</a></div><div class="ttdoc">The Presenter class.</div><div class="ttdef"><b>Definition</b> lib/core/presenter/Presenter.hpp:36</div></div>
 <div class="ttc" id="aclassscore_1_1_view_html"><div class="ttname"><a href="classscore_1_1_view.html">score::View</a></div><div class="ttdoc">The main display of the application.</div><div class="ttdef"><b>Definition</b> lib/core/view/Window.hpp:41</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:116</div></div>
+<div class="ttc" id="astructscore_1_1_panel_status_html"><div class="ttname"><a href="structscore_1_1_panel_status.html">score::PanelStatus</a></div><div class="ttdoc">The PanelStatus struct.</div><div class="ttdef"><b>Definition</b> PanelDelegate.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

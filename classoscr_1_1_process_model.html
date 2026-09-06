@@ -323,6 +323,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControls</b> 
 <tr class="memitem:a76f4da6b547d61e88da4165ced7c8095 inherit pub_methods_class_process_1_1_process_model" id="r_a76f4da6b547d61e88da4165ced7c8095"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControlsChanged</b> (bool b)</td></tr>
 <tr class="separator:a76f4da6b547d61e88da4165ced7c8095 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756a2f1b878de0bfba7fd10834e5f098 inherit pub_methods_class_process_1_1_process_model" id="r_a756a2f1b878de0bfba7fd10834e5f098"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a756a2f1b878de0bfba7fd10834e5f098">scriptEditorPlacement</a> () const noexcept</td></tr>
+<tr class="separator:a756a2f1b878de0bfba7fd10834e5f098 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f13c6046423bdb6ad3619ad4f282be inherit pub_methods_class_process_1_1_process_model" id="r_a12f13c6046423bdb6ad3619ad4f282be"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScriptEditorPlacement</b> (const QString &amp;p) noexcept</td></tr>
+<tr class="separator:a12f13c6046423bdb6ad3619ad4f282be inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4e72250565b4569a610e915ca727cf inherit pub_methods_class_process_1_1_process_model" id="r_abd4e72250565b4569a610e915ca727cf"><td class="memItemLeft" align="right" valign="top">
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processUIPlacement</b> () const noexcept</td></tr>
+<tr class="separator:abd4e72250565b4569a610e915ca727cf inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949f16c30cf9a11fe68011b4859ba8d2 inherit pub_methods_class_process_1_1_process_model" id="r_a949f16c30cf9a11fe68011b4859ba8d2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProcessUIPlacement</b> (const QString &amp;p) noexcept</td></tr>
+<tr class="separator:a949f16c30cf9a11fe68011b4859ba8d2 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd358c3ac7b8106e2d3fb36ee748f734 inherit pub_methods_class_process_1_1_process_model" id="r_afd358c3ac7b8106e2d3fb36ee748f734"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>executing</b> () const noexcept</td></tr>
 <tr class="memdesc:afd358c3ac7b8106e2d3fb36ee748f734 inherit pub_methods_class_process_1_1_process_model"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_execution.html" title="Components used for the execution of a score.">Execution</a>. <br /></td></tr>
@@ -443,9 +454,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:aa86fa52accf0e24710770233d157b20d" id="r_aa86fa52accf0e24710770233d157b20d"><td class="memItemLeft" align="right" valign="top"><a id="aa86fa52accf0e24710770233d157b20d" name="aa86fa52accf0e24710770233d157b20d"></a>
 oscr::dynamic_ports_storage&lt; Info &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dynamic_ports</b></td></tr>
 <tr class="separator:aa86fa52accf0e24710770233d157b20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b107d996ca9fd2b65a52b0e58f38347" id="r_a2b107d996ca9fd2b65a52b0e58f38347"><td class="memItemLeft" align="right" valign="top"><a id="a2b107d996ca9fd2b65a52b0e58f38347" name="a2b107d996ca9fd2b65a52b0e58f38347"></a>
-ossia::type_if&lt; Info, oscr::has_dynamic_ports&lt; Info &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>object_storage_for_ports_callbacks</b></td></tr>
-<tr class="separator:a2b107d996ca9fd2b65a52b0e58f38347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4d801614b70ce2298993086acd2918" id="r_a7e4d801614b70ce2298993086acd2918"><td class="memItemLeft" align="right" valign="top"><a id="a7e4d801614b70ce2298993086acd2918" name="a7e4d801614b70ce2298993086acd2918"></a>
+ossia::type_if&lt; Info, <a class="el" href="conceptoscr_1_1has__ports__callbacks.html">oscr::has_ports_callbacks</a>&lt; Info &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>object_storage_for_ports_callbacks</b></td></tr>
+<tr class="separator:a7e4d801614b70ce2298993086acd2918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_process_1_1_process_model"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_process_1_1_process_model')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a></td></tr>
 <tr class="memitem:a348bd912133334cb0f4019efec96461c inherit pub_attribs_class_process_1_1_process_model" id="r_a348bd912133334cb0f4019efec96461c"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_selectable.html">Selectable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>selection</b> {this}</td></tr>

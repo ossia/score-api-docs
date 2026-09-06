@@ -130,21 +130,43 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>sizeHint</b> () cons
 <tr class="memitem:afe28a19b0317e3e095e466f2702fe999" id="r_afe28a19b0317e3e095e466f2702fe999"><td class="memItemLeft" align="right" valign="top"><a id="afe28a19b0317e3e095e466f2702fe999" name="afe28a19b0317e3e095e466f2702fe999"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setTab</b> (int index)</td></tr>
 <tr class="separator:afe28a19b0317e3e095e466f2702fe999"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad694035f234b0b41a17ff94e6f15c5b4" id="r_ad694035f234b0b41a17ff94e6f15c5b4"><td class="memItemLeft" align="right" valign="top"><a id="ad694035f234b0b41a17ff94e6f15c5b4" name="ad694035f234b0b41a17ff94e6f15c5b4"></a>
-std::pair&lt; int, QAction * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>addTab</b> (QWidget *widg, const <a class="el" href="structscore_1_1_panel_status.html">score::PanelStatus</a> &amp;v)</td></tr>
-<tr class="separator:ad694035f234b0b41a17ff94e6f15c5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7b48a900add32f9cc8f1fbc72f8137" id="r_a3c7b48a900add32f9cc8f1fbc72f8137"><td class="memItemLeft" align="right" valign="top"><a id="a3c7b48a900add32f9cc8f1fbc72f8137" name="a3c7b48a900add32f9cc8f1fbc72f8137"></a>
+std::pair&lt; int, QAction * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>addTab</b> (QWidget *widg, const <a class="el" href="structscore_1_1_panel_status.html">score::PanelStatus</a> &amp;v, int index=-1)</td></tr>
+<tr class="separator:a3c7b48a900add32f9cc8f1fbc72f8137"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a67b46964df21a80f63d5511677242a" id="r_a9a67b46964df21a80f63d5511677242a"><td class="memItemLeft" align="right" valign="top"><a id="a9a67b46964df21a80f63d5511677242a" name="a9a67b46964df21a80f63d5511677242a"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>addAction</b> (QWidget *widg, const <a class="el" href="structscore_1_1_panel_status.html">PanelStatus</a> &amp;v)</td></tr>
 <tr class="separator:a9a67b46964df21a80f63d5511677242a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51163652ea9076b99f451b40237ca81f" id="r_a51163652ea9076b99f451b40237ca81f"><td class="memItemLeft" align="right" valign="top"><a id="a51163652ea9076b99f451b40237ca81f" name="a51163652ea9076b99f451b40237ca81f"></a>
 QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>addAction</b> (QAction *act)</td></tr>
 <tr class="separator:a51163652ea9076b99f451b40237ca81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ab07cf74d8677f468cb014aca9d254" id="r_a22ab07cf74d8677f468cb014aca9d254"><td class="memItemLeft" align="right" valign="top"><a id="a22ab07cf74d8677f468cb014aca9d254" name="a22ab07cf74d8677f468cb014aca9d254"></a>
+QAction *&#160;</td><td class="memItemRight" valign="bottom"><b>actionFor</b> (QWidget *widg) const noexcept</td></tr>
+<tr class="memdesc:a22ab07cf74d8677f468cb014aca9d254"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action driving the tab that shows this widget, if any. <br /></td></tr>
+<tr class="separator:a22ab07cf74d8677f468cb014aca9d254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a12362cf53b8d2a46929f07223a7abc" id="r_a2a12362cf53b8d2a46929f07223a7abc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_fixed_tab_widget.html#a2a12362cf53b8d2a46929f07223a7abc">showTab</a> (QWidget *widg)</td></tr>
+<tr class="separator:a2a12362cf53b8d2a46929f07223a7abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6061a2ef6d81791efdc940fcf9846edc" id="r_a6061a2ef6d81791efdc940fcf9846edc"><td class="memItemLeft" align="right" valign="top"><a id="a6061a2ef6d81791efdc940fcf9846edc" name="a6061a2ef6d81791efdc940fcf9846edc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeTab</b> (QWidget *widg)</td></tr>
+<tr class="memdesc:a6061a2ef6d81791efdc940fcf9846edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a tab added with addTab. Does not delete the widget. <br /></td></tr>
+<tr class="separator:a6061a2ef6d81791efdc940fcf9846edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b9f975635481eb37553acb9fe499ba" id="r_a12b9f975635481eb37553acb9fe499ba"><td class="memItemLeft" align="right" valign="top"><a id="a12b9f975635481eb37553acb9fe499ba" name="a12b9f975635481eb37553acb9fe499ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forgetTab</b> (QWidget *widg)</td></tr>
+<tr class="memdesc:a12b9f975635481eb37553acb9fe499ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drops the tab without touching the widget (it is being destroyed). <br /></td></tr>
+<tr class="separator:a12b9f975635481eb37553acb9fe499ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09631bd120252deb48c99503388bb3b5" id="r_a09631bd120252deb48c99503388bb3b5"><td class="memItemLeft" align="right" valign="top"><a id="a09631bd120252deb48c99503388bb3b5" name="a09631bd120252deb48c99503388bb3b5"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>currentWidget</b> () const noexcept</td></tr>
+<tr class="memdesc:a09631bd120252deb48c99503388bb3b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The widget currently shown, or nullptr. <br /></td></tr>
+<tr class="separator:a09631bd120252deb48c99503388bb3b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1948bde059fa5b65c2d84150217be2b5" id="r_a1948bde059fa5b65c2d84150217be2b5"><td class="memItemLeft" align="right" valign="top"><a id="a1948bde059fa5b65c2d84150217be2b5" name="a1948bde059fa5b65c2d84150217be2b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *ev) override</td></tr>
 <tr class="separator:a1948bde059fa5b65c2d84150217be2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab27d036504962007958553cf3252e560" id="r_ab27d036504962007958553cf3252e560"><td class="memItemLeft" align="right" valign="top"><a id="ab27d036504962007958553cf3252e560" name="ab27d036504962007958553cf3252e560"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>actionTriggered</b> (QAction *act, bool b)</td></tr>
 <tr class="separator:ab27d036504962007958553cf3252e560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c14ea37c96deb3e222f79d15e5f0cda" id="r_a3c14ea37c96deb3e222f79d15e5f0cda"><td class="memItemLeft" align="right" valign="top"><a id="a3c14ea37c96deb3e222f79d15e5f0cda" name="a3c14ea37c96deb3e222f79d15e5f0cda"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tabContextMenuRequested</b> (QWidget *tab, QPoint globalPos)</td></tr>
+<tr class="memdesc:a3c14ea37c96deb3e222f79d15e5f0cda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-click on the button of a tab added with addTab. <br /></td></tr>
+<tr class="separator:a3c14ea37c96deb3e222f79d15e5f0cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -152,6 +174,26 @@ Public Attributes</h2></td></tr>
 QBrush&#160;</td><td class="memItemRight" valign="bottom"><b>brush</b></td></tr>
 <tr class="separator:a5302807766ac7adcee52f137bca28b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a12362cf53b8d2a46929f07223a7abc" name="a2a12362cf53b8d2a46929f07223a7abc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a12362cf53b8d2a46929f07223a7abc">&#9670;&#160;</a></span>showTab()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::FixedTabWidget::showTab </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>widg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Bring a tab to the front, and check its button. Unlike QAction::trigger(), works whether the button is already checked or not. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_fixed_tab_widget_8hpp_source.html">FixedTabWidget.hpp</a></li>
 <li><b>FixedTabWidget.cpp</b></li>

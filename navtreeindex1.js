@@ -6,6 +6,7 @@ var NAVTREEINDEX1 =
 "_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
 "_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
 "_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,8],
+"_controls_8hpp_source.html":[13,0,0,2,8,0,0],
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,2],
 "_core_application_plugin_8hpp_source.html":[13,0,0,1,0,6,3],
 "_core_audio_interface_8hpp_source.html":[13,0,0,2,6,0,10],
@@ -187,6 +188,7 @@ var NAVTREEINDEX1 =
 "_edit_handler_8hpp_source.html":[13,0,0,2,39,0,5],
 "_edit_pd_8hpp_source.html":[13,0,0,2,28,0,0,0],
 "_edit_port_8hpp_source.html":[13,0,0,2,3,4,2,0],
+"_editor_overlay_8hpp_source.html":[13,0,0,2,3,4,10,0],
 "_effect_factory_8hpp_source.html":[13,0,0,2,3,1,0],
 "_effect_layer_8hpp_source.html":[13,0,0,2,3,1,1],
 "_effect_layout_8hpp_source.html":[13,0,0,2,3,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX1 =
 "_explorer_model_provider_8hpp_source.html":[13,0,0,2,13,0,3,11],
 "_explorer_presenter_8hpp_source.html":[13,0,0,2,13,0,6,2],
 "_explorer_view_8hpp_source.html":[13,0,0,2,13,0,6,3],
-"_expression_8hpp_source.html":[13,0,0,2,4,0,5],
-"_expression_editor_widget_8hpp_source.html":[13,0,0,2,32,4,6,1,0],
-"_expression_menu_8hpp_source.html":[13,0,0,2,32,4,6,1,1]
+"_expression_8hpp_source.html":[13,0,0,2,4,0,5]
 };

@@ -2,7 +2,7 @@ var namespace_scenario =
 [
     [ "AddProcessDialog", "class_scenario_1_1_add_process_dialog.html", null ],
     [ "AddressAccessorCurveCreator", "struct_scenario_1_1_address_accessor_curve_creator.html", null ],
-    [ "AddressBarItem", "class_scenario_1_1_address_bar_item.html", null ],
+    [ "AddressBarWidget", "class_scenario_1_1_address_bar_widget.html", null ],
     [ "AmovibleSlotFooter", "class_scenario_1_1_amovible_slot_footer.html", null ],
     [ "AutomationDropHandler", "class_scenario_1_1_automation_drop_handler.html", null ],
     [ "BaseElementContext", "class_scenario_1_1_base_element_context.html", null ],
@@ -17,7 +17,6 @@ var namespace_scenario =
     [ "CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
     [ "CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
-    [ "ClickableLabelItem", "class_scenario_1_1_clickable_label_item.html", null ],
     [ "ClickOnEndEvent_Transition", "class_scenario_1_1_click_on_end_event___transition.html", null ],
     [ "ClickOnEndState_Transition", "class_scenario_1_1_click_on_end_state___transition.html", null ],
     [ "ClickOnEndTimeSync_Transition", "class_scenario_1_1_click_on_end_time_sync___transition.html", null ],
@@ -241,7 +240,7 @@ var namespace_scenario =
     [ "SelectedNodes", "struct_scenario_1_1_selected_nodes.html", "struct_scenario_1_1_selected_nodes" ],
     [ "SelectionStackWidget", "class_scenario_1_1_selection_stack_widget.html", null ],
     [ "SelectionState", "class_scenario_1_1_selection_state.html", null ],
-    [ "SeparatorItem", "class_scenario_1_1_separator_item.html", null ],
+    [ "SetControllerControlValue", "class_scenario_1_1_set_controller_control_value.html", null ],
     [ "SimpleComboBox", "class_scenario_1_1_simple_combo_box.html", null ],
     [ "SimpleExpressionEditorWidget", "class_scenario_1_1_simple_expression_editor_widget.html", "class_scenario_1_1_simple_expression_editor_widget" ],
     [ "SizePolicyWidget", "class_scenario_1_1_size_policy_widget.html", null ],
@@ -327,5 +326,6 @@ var namespace_scenario =
     [ "newProcessPositionAfter", "namespace_scenario.html#a3a2143946d1434c1332112fd93798592", null ],
     [ "newProcessPositionBefore", "namespace_scenario.html#acb8c083cc8a66482ce6482bf7207df3a", null ],
     [ "nodeFootprint", "namespace_scenario.html#a8b96dcb6a5cc6ab796024408a9487326", null ],
+    [ "FullViewTopMargin", "namespace_scenario.html#a56f47ea94117a992f3adb333f2f2e00c", null ],
     [ "OssiaValueRole", "namespace_scenario.html#a9898d19376399bc499a123b2105c93f7", null ]
 ];

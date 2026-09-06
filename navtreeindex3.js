@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_listening_handler_8hpp_source.html":[13,0,0,2,13,0,4,2],
+"_listening_handler_factory_8hpp_source.html":[13,0,0,2,13,0,4,3],
 "_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,13,0,4,4],
 "_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,12],
 "_load_cables_8hpp_source.html":[13,0,0,2,32,0,0,3],
@@ -17,7 +19,7 @@ var NAVTREEINDEX3 =
 "_local_tree_2_scenario_component_8hpp_source.html":[13,0,0,2,32,3,2],
 "_local_tree_component_8hpp_source.html":[13,0,0,2,2,0,3],
 "_local_tree_document_plugin_8hpp_source.html":[13,0,0,2,14,2,1],
-"_logger_8hpp_source.html":[13,0,0,2,8,0,1],
+"_logger_8hpp_source.html":[13,0,0,2,8,0,2],
 "_looper_8hpp_source.html":[13,0,0,2,16,0,14],
 "_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,10,0],
 "_m_c_u_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,10,1],
@@ -166,15 +168,15 @@ var NAVTREEINDEX3 =
 "_move_states_8hpp_source.html":[13,0,0,2,32,4,8,0,0,2],
 "_move_tool_8hpp_source.html":[13,0,0,2,11,0,1,2,1],
 "_multi_ongoing_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,3],
-"_multi_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,0],
+"_multi_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,1],
 "_multi_window_device_8hpp_source.html":[13,0,0,2,17,1,17,3],
 "_multi_window_node_8hpp_source.html":[13,0,0,2,17,1,4,17],
-"_musical_grid_8hpp_source.html":[13,0,0,2,32,4,3,7,3],
+"_musical_grid_8hpp_source.html":[13,0,0,2,32,4,3,7,4],
 "_n_v16_8hpp_source.html":[13,0,0,2,17,1,4,0,16],
 "_n_v24_8hpp_source.html":[13,0,0,2,17,1,4,0,17],
 "_name_property_8hpp_source.html":[13,0,0,2,2,0,4],
 "_network_session_interface_8hpp_source.html":[13,0,0,1,1,8,0,1],
-"_nodal_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,0,5],
+"_nodal_interval_view_8hpp_source.html":[13,0,0,2,32,4,3,5,0,3],
 "_node_based_item_model_8hpp_source.html":[13,0,0,2,0,0,1,0],
 "_node_display_methods_8hpp_source.html":[13,0,0,2,0,0,1,1],
 "_node_item_8hpp_source.html":[13,0,0,2,3,4,3,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_pd_instance_8hpp_source.html":[13,0,0,2,28,0,5],
 "_pd_layer_8hpp_source.html":[13,0,0,2,28,0,6],
 "_pd_library_8hpp_source.html":[13,0,0,2,28,0,7],
-"_pd_metadata_8hpp_source.html":[13,0,0,2,28,0,8],
-"_pd_process_8hpp_source.html":[13,0,0,2,28,0,9],
-"_pen_command_object_8hpp_source.html":[13,0,0,2,11,0,1,0,4]
+"_pd_metadata_8hpp_source.html":[13,0,0,2,28,0,8]
 };

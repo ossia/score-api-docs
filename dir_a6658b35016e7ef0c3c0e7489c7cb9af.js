@@ -15,5 +15,6 @@ var dir_a6658b35016e7ef0c3c0e7489c7cb9af =
     [ "MoveBaseEvent.hpp", "_move_base_event_8hpp_source.html", null ],
     [ "ReplaceAddresses.hpp", "_replace_addresses_8hpp_source.html", null ],
     [ "ScenarioCommandFactory.hpp", "_scenario_command_factory_8hpp_source.html", null ],
-    [ "ScriptEditCommand.hpp", "_script_edit_command_8hpp_source.html", null ]
+    [ "ScriptEditCommand.hpp", "_script_edit_command_8hpp_source.html", null ],
+    [ "SetControllerControlValue.hpp", "_set_controller_control_value_8hpp_source.html", null ]
 ];

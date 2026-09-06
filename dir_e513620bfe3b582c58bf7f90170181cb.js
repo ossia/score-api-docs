@@ -56,6 +56,7 @@ var dir_e513620bfe3b582c58bf7f90170181cb =
     [ "TimeValue.hpp", "_time_value_8hpp_source.html", null ],
     [ "TimeValueSerialization.hpp", "_time_value_serialization_8hpp_source.html", null ],
     [ "TypeConversion.hpp", "_type_conversion_8hpp_source.html", null ],
+    [ "UIPlacement.hpp", "_u_i_placement_8hpp_source.html", null ],
     [ "UnusedFiles.hpp", "_unused_files_8hpp_source.html", null ],
     [ "UnusedFilesDialog.hpp", "_unused_files_dialog_8hpp_source.html", null ],
     [ "ZoomHelper.hpp", "_zoom_helper_8hpp_source.html", null ]

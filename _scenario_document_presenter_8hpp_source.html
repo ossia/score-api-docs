@@ -296,15 +296,16 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  <span class="keywordtype">bool</span> m_zooming{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  <span class="keywordtype">bool</span> m_updatingMinimap{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  <span class="keywordtype">bool</span> m_reloadingMinimap{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">bool</span> m_updatingView{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">bool</span> m_autoScroll{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>};</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">bool</span> m_zoomPending{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordtype">bool</span> m_updatingView{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keywordtype">bool</span> m_autoScroll{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
 </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* closestParentProcessBeforeInterval(<span class="keyword">const</span> QObject* obj);</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* closestParentProcessBeforeInterval(<span class="keyword">const</span> QObject* obj);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}</div>
 <div class="ttc" id="aclass_dataflow_1_1_cable_item_html"><div class="ttname"><a href="class_dataflow_1_1_cable_item.html">Dataflow::CableItem</a></div><div class="ttdef"><b>Definition</b> CableItem.hpp:37</div></div>
 <div class="ttc" id="aclass_focus_dispatcher_html"><div class="ttname"><a href="class_focus_dispatcher.html">FocusDispatcher</a></div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:17</div></div>
 <div class="ttc" id="aclass_object_path_html"><div class="ttname"><a href="class_object_path.html">ObjectPath</a></div><div class="ttdoc">The ObjectPath class.</div><div class="ttdef"><b>Definition</b> ObjectPath.hpp:37</div></div>
@@ -321,12 +322,12 @@ $(document).ready(function(){initNavTree('_scenario_document_presenter_8hpp_sour
 <div class="ttc" id="aclass_scenario_1_1_interval_presenter_html"><div class="ttname"><a href="class_scenario_1_1_interval_presenter.html">Scenario::IntervalPresenter</a></div><div class="ttdef"><b>Definition</b> IntervalPresenter.hpp:30</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_document_model_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentModel.hpp:29</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_document_presenter_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a></div><div class="ttdoc">The ScenarioDocumentPresenter class.</div><div class="ttdef"><b>Definition</b> ScenarioDocumentPresenter.hpp:59</div></div>
-<div class="ttc" id="aclass_scenario_1_1_scenario_document_view_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_view.html">Scenario::ScenarioDocumentView</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentView.hpp:156</div></div>
+<div class="ttc" id="aclass_scenario_1_1_scenario_document_view_html"><div class="ttname"><a href="class_scenario_1_1_scenario_document_view.html">Scenario::ScenarioDocumentView</a></div><div class="ttdef"><b>Definition</b> ScenarioDocumentView.hpp:157</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scrub_handler_html"><div class="ttname"><a href="class_scenario_1_1_scrub_handler.html">Scenario::ScrubHandler</a></div><div class="ttdef"><b>Definition</b> PlayToolState.hpp:18</div></div>
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition</b> Selection.hpp:12</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_model_html"><div class="ttname"><a href="classscore_1_1_document_delegate_model.html">score::DocumentDelegateModel</a></div><div class="ttdef"><b>Definition</b> DocumentDelegateModel.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_document_delegate_presenter_html"><div class="ttname"><a href="classscore_1_1_document_delegate_presenter.html">score::DocumentDelegatePresenter</a></div><div class="ttdef"><b>Definition</b> DocumentDelegatePresenter.hpp:16</div></div>
-<div class="ttc" id="aclassscore_1_1_document_delegate_view_html"><div class="ttname"><a href="classscore_1_1_document_delegate_view.html">score::DocumentDelegateView</a></div><div class="ttdef"><b>Definition</b> DocumentDelegateView.hpp:10</div></div>
+<div class="ttc" id="aclassscore_1_1_document_delegate_view_html"><div class="ttname"><a href="classscore_1_1_document_delegate_view.html">score::DocumentDelegateView</a></div><div class="ttdef"><b>Definition</b> DocumentDelegateView.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1_document_presenter_html"><div class="ttname"><a href="classscore_1_1_document_presenter.html">score::DocumentPresenter</a></div><div class="ttdoc">Interface between the DocumentModel and the DocumentView.</div><div class="ttdef"><b>Definition</b> DocumentPresenter.hpp:20</div></div>
 <div class="ttc" id="aclassscore_1_1_selection_dispatcher_html"><div class="ttname"><a href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a></div><div class="ttdoc">The SelectionDispatcher class.</div><div class="ttdef"><b>Definition</b> SelectionDispatcher.hpp:15</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>

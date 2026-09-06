@@ -5,6 +5,7 @@ var class_process_1_1_process_model =
     [ "folded", "class_process_1_1_process_model.html#a63ae15dc8002c6aaa5f4be9c8cf2b712", null ],
     [ "mapExternalFiles", "class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618", null ],
     [ "position", "class_process_1_1_process_model.html#a41b20d7a3edfc3f5969a3cf177c9fd5c", null ],
+    [ "scriptEditorPlacement", "class_process_1_1_process_model.html#a756a2f1b878de0bfba7fd10834e5f098", null ],
     [ "selectableChildren", "class_process_1_1_process_model.html#a5b2ed6f42effa546e738b6d991a6e3d5", null ],
     [ "setParentDuration", "class_process_1_1_process_model.html#aca261d66704364d06318dce734933b71", null ],
     [ "startStateData", "class_process_1_1_process_model.html#a3429fdf0a147b5a2c1a200acabeab1a7", null ]

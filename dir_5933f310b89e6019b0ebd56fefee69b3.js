@@ -1,6 +1,7 @@
 var dir_5933f310b89e6019b0ebd56fefee69b3 =
 [
     [ "Widgets", "dir_838c2889668b9130b0466feb67cd91a9.html", "dir_838c2889668b9130b0466feb67cd91a9" ],
+    [ "AddressBarWidget.hpp", "_address_bar_widget_8hpp_source.html", null ],
     [ "CentralIntervalDisplay.hpp", "_central_interval_display_8hpp_source.html", null ],
     [ "CentralNodalDisplay.hpp", "_central_nodal_display_8hpp_source.html", null ],
     [ "MusicalGrid.hpp", "_musical_grid_8hpp_source.html", null ],

@@ -323,6 +323,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControls</b> 
 <tr class="memitem:a76f4da6b547d61e88da4165ced7c8095" id="r_a76f4da6b547d61e88da4165ced7c8095"><td class="memItemLeft" align="right" valign="top"><a id="a76f4da6b547d61e88da4165ced7c8095" name="a76f4da6b547d61e88da4165ced7c8095"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>creatingControlsChanged</b> (bool b)</td></tr>
 <tr class="separator:a76f4da6b547d61e88da4165ced7c8095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756a2f1b878de0bfba7fd10834e5f098" id="r_a756a2f1b878de0bfba7fd10834e5f098"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a756a2f1b878de0bfba7fd10834e5f098">scriptEditorPlacement</a> () const noexcept</td></tr>
+<tr class="separator:a756a2f1b878de0bfba7fd10834e5f098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f13c6046423bdb6ad3619ad4f282be" id="r_a12f13c6046423bdb6ad3619ad4f282be"><td class="memItemLeft" align="right" valign="top"><a id="a12f13c6046423bdb6ad3619ad4f282be" name="a12f13c6046423bdb6ad3619ad4f282be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScriptEditorPlacement</b> (const QString &amp;p) noexcept</td></tr>
+<tr class="separator:a12f13c6046423bdb6ad3619ad4f282be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4e72250565b4569a610e915ca727cf" id="r_abd4e72250565b4569a610e915ca727cf"><td class="memItemLeft" align="right" valign="top"><a id="abd4e72250565b4569a610e915ca727cf" name="abd4e72250565b4569a610e915ca727cf"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processUIPlacement</b> () const noexcept</td></tr>
+<tr class="separator:abd4e72250565b4569a610e915ca727cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949f16c30cf9a11fe68011b4859ba8d2" id="r_a949f16c30cf9a11fe68011b4859ba8d2"><td class="memItemLeft" align="right" valign="top"><a id="a949f16c30cf9a11fe68011b4859ba8d2" name="a949f16c30cf9a11fe68011b4859ba8d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProcessUIPlacement</b> (const QString &amp;p) noexcept</td></tr>
+<tr class="separator:a949f16c30cf9a11fe68011b4859ba8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd358c3ac7b8106e2d3fb36ee748f734" id="r_afd358c3ac7b8106e2d3fb36ee748f734"><td class="memItemLeft" align="right" valign="top"><a id="afd358c3ac7b8106e2d3fb36ee748f734" name="afd358c3ac7b8106e2d3fb36ee748f734"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>executing</b> () const noexcept</td></tr>
 <tr class="memdesc:afd358c3ac7b8106e2d3fb36ee748f734"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_execution.html" title="Components used for the execution of a score.">Execution</a>. <br /></td></tr>
@@ -591,6 +602,32 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 <p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
 
 <p>Reimplemented in <a class="el" href="class_gfx_1_1_video_1_1_model.html#afda4ecf740ddf79ac04a99e3fde9ac1c">Gfx::Video::Model</a>, <a class="el" href="class_j_s_1_1_process_model.html#a5fe7eba49661b2632237a6f58ac8ca74">JS::ProcessModel</a>, <a class="el" href="class_media_1_1_sound_1_1_process_model.html#a4e5952bec75c2a41cb865d1d785f37a7">Media::Sound::ProcessModel</a>, <a class="el" href="class_pd_1_1_process_model.html#ada52190ffcf2a86de51c265e3d25ea9a">Pd::ProcessModel</a>, and <a class="el" href="classvst3_1_1_model.html#afda4ecf740ddf79ac04a99e3fde9ac1c">vst3::Model</a>.</p>
+
+</div>
+</div>
+<a id="a756a2f1b878de0bfba7fd10834e5f098" name="a756a2f1b878de0bfba7fd10834e5f098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756a2f1b878de0bfba7fd10834e5f098">&#9670;&#160;</a></span>scriptEditorPlacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; Process::ProcessModel::scriptEditorPlacement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where this process's script editor / custom UI open, overriding the user's default when set (see <a class="el" href="struct_process_1_1_u_i_placement_settings.html">Process::UIPlacementSettings</a>). Kept in the document; empty means "use the default". </p>
 
 </div>
 </div>

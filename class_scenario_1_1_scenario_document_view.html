@@ -145,6 +145,10 @@ QGraphicsView &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rulerV
 <tr class="memitem:a540f4317f0dbeb7deffbc778044411c3" id="r_a540f4317f0dbeb7deffbc778044411c3"><td class="memItemLeft" align="right" valign="top"><a id="a540f4317f0dbeb7deffbc778044411c3" name="a540f4317f0dbeb7deffbc778044411c3"></a>
 <a class="el" href="class_scenario_1_1_minimap.html">Minimap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>minimap</b> ()</td></tr>
 <tr class="separator:a540f4317f0dbeb7deffbc778044411c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57c16101d39e2474b7daf6dcf28399c" id="r_af57c16101d39e2474b7daf6dcf28399c"><td class="memItemLeft" align="right" valign="top"><a id="af57c16101d39e2474b7daf6dcf28399c" name="af57c16101d39e2474b7daf6dcf28399c"></a>
+<a class="el" href="class_scenario_1_1_address_bar_widget.html">AddressBarWidget</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>addressBar</b> ()</td></tr>
+<tr class="memdesc:af57c16101d39e2474b7daf6dcf28399c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> of the displayed interval, shown in the document's navigation bar. <br /></td></tr>
+<tr class="separator:af57c16101d39e2474b7daf6dcf28399c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbb74c5cb9cc38116eee6ffabe7f6d48" id="r_abbb74c5cb9cc38116eee6ffabe7f6d48"><td class="memItemLeft" align="right" valign="top"><a id="abbb74c5cb9cc38116eee6ffabe7f6d48" name="abbb74c5cb9cc38116eee6ffabe7f6d48"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>viewportRect</b> () const</td></tr>
 <tr class="separator:abbb74c5cb9cc38116eee6ffabe7f6d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +172,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addBackgroundRenderer
 <tr class="memitem:ac2c5fe9ffa9f1e13d0c8f54435762afa" id="r_ac2c5fe9ffa9f1e13d0c8f54435762afa"><td class="memItemLeft" align="right" valign="top"><a id="ac2c5fe9ffa9f1e13d0c8f54435762afa" name="ac2c5fe9ffa9f1e13d0c8f54435762afa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeBackgroundRenderer</b> (<a class="el" href="classscore_1_1_background_renderer.html">score::BackgroundRenderer</a> *)</td></tr>
 <tr class="separator:ac2c5fe9ffa9f1e13d0c8f54435762afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc9bd237e8a7541e8dfa46f23c391071" id="r_afc9bd237e8a7541e8dfa46f23c391071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_background_renderer.html">score::BackgroundRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_scenario_document_view.html#afc9bd237e8a7541e8dfa46f23c391071">activeBackgroundRenderer</a> () const noexcept override</td></tr>
+<tr class="separator:afc9bd237e8a7541e8dfa46f23c391071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53395a1ed1c9abbc0aa6d6f863c158c7" id="r_a53395a1ed1c9abbc0aa6d6f863c158c7"><td class="memItemLeft" align="right" valign="top"><a id="a53395a1ed1c9abbc0aa6d6f863c158c7" name="a53395a1ed1c9abbc0aa6d6f863c158c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateBackgroundMode</b> ()</td></tr>
 <tr class="separator:a53395a1ed1c9abbc0aa6d6f863c158c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +221,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestTransport</b> 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afc9bd237e8a7541e8dfa46f23c391071" name="afc9bd237e8a7541e8dfa46f23c391071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc9bd237e8a7541e8dfa46f23c391071">&#9670;&#160;</a></span>activeBackgroundRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_background_renderer.html">score::BackgroundRenderer</a> * Scenario::ScenarioDocumentView::activeBackgroundRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What currently paints behind the document (a Background device, a texture port being watched...), for other views to show the same thing. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1_document_delegate_view.html#af94f81ce82eef960331b85dc24fa80f9">score::DocumentDelegateView</a>.</p>
+
+</div>
+</div>
 <a id="a62a37b358e72b40f906188c7eba6439c" name="a62a37b358e72b40f906188c7eba6439c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a62a37b358e72b40f906188c7eba6439c">&#9670;&#160;</a></span>getWidget()</h2>
 

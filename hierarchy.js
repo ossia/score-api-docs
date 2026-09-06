@@ -169,6 +169,9 @@ var hierarchy =
       [ "Protocols::Artnet::SingleCapability", "struct_protocols_1_1_artnet_1_1_single_capability.html", null ]
     ] ],
     [ "Scenario::BaseElementContext", "class_scenario_1_1_base_element_context.html", null ],
+    [ "BaseInletType", null, [
+      [ "oscr::CustomGenericControl< BaseInletType, Node, T, FieldIndex >", "structoscr_1_1_custom_generic_control.html", null ]
+    ] ],
     [ "LocalTree::BaseProperty", "struct_local_tree_1_1_base_property.html", [
       [ "LocalTree::BaseCallbackWrapper", "class_local_tree_1_1_base_callback_wrapper.html", [
         [ "LocalTree::PropertyWrapper< Property >", "struct_local_tree_1_1_property_wrapper.html", null ],
@@ -186,6 +189,9 @@ var hierarchy =
     [ "gpp::qrhi::DefaultPipeline::layout::bindings", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html", null ],
     [ "halp::position_gpu_geometry::bindings", "structhalp_1_1position__gpu__geometry_1_1bindings.html", null ],
     [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
+    [ "std::bool_constant", null, [
+      [ "oscr::controller_needs_factory< avnd::field_reflection< N, Field > >", "structoscr_1_1controller__needs__factory_3_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
+    ] ],
     [ "avnd_tools::detail::bounds_checker< Dim >", "structavnd__tools_1_1detail_1_1bounds__checker.html", null ],
     [ "Recording::Box", "struct_recording_1_1_box.html", null ],
     [ "score::Brush", "structscore_1_1_brush.html", null ],
@@ -219,6 +225,7 @@ var hierarchy =
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "avnd_tools::EntityToMidi::chan_info", "structavnd__tools_1_1_entity_to_midi_1_1chan__info.html", null ],
+    [ "Process::ChangeListener", "struct_process_1_1_change_listener.html", null ],
     [ "Protocols::Artnet::Channel", "struct_protocols_1_1_artnet_1_1_channel.html", null ],
     [ "Ui::VUMeter::Node::Layer::ChannelDisplay", "struct_ui_1_1_v_u_meter_1_1_node_1_1_layer_1_1_channel_display.html", null ],
     [ "Ui::VUMeter::Node::ChannelState", "struct_ui_1_1_v_u_meter_1_1_node_1_1_channel_state.html", null ],
@@ -445,6 +452,7 @@ var hierarchy =
       [ "Scenario::Command::SplitWholeEvent", "class_scenario_1_1_command_1_1_split_whole_event.html", null ],
       [ "Scenario::Command::SplitWholeSync", "class_scenario_1_1_command_1_1_split_whole_sync.html", null ],
       [ "Scenario::EditScript< Process_T, Property_T >", "class_scenario_1_1_edit_script.html", null ],
+      [ "Scenario::SetControllerControlValue", "class_scenario_1_1_set_controller_control_value.html", null ],
       [ "Spline3D::ChangeSpline", "class_spline3_d_1_1_change_spline.html", null ],
       [ "Spline::ChangeSpline", "class_spline_1_1_change_spline.html", null ],
       [ "score::AggregateCommand", "classscore_1_1_aggregate_command.html", [
@@ -676,6 +684,8 @@ var hierarchy =
     [ "ossia::control_surface_node::control_updater", "structossia_1_1control__surface__node_1_1control__updater.html", null ],
     [ "Dataflow::control_visitor", "struct_dataflow_1_1control__visitor.html", null ],
     [ "Process::ControlLayout", "struct_process_1_1_control_layout.html", null ],
+    [ "oscr::ControllerIntSpinBox", "structoscr_1_1_controller_int_spin_box.html", null ],
+    [ "oscr::ControllerLineEdit", "structoscr_1_1_controller_line_edit.html", null ],
     [ "RemoteControl::Controller::DocumentPlugin::Controller::ControlMap", "struct_remote_control_1_1_controller_1_1_document_plugin_1_1_controller_1_1_control_map.html", null ],
     [ "Process::ControlMessage", "struct_process_1_1_control_message.html", null ],
     [ "Process::ControlPage", "struct_process_1_1_control_page.html", null ],
@@ -767,6 +777,7 @@ var hierarchy =
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
     [ "Threedim::DirectReferenceStrategy", "class_threedim_1_1_direct_reference_strategy.html", null ],
     [ "score::gfx::interop::DirectShowGuid", "structscore_1_1gfx_1_1interop_1_1_direct_show_guid.html", null ],
+    [ "oscr::dispatch_control_reconnect< Node >", "structoscr_1_1dispatch__control__reconnect.html", null ],
     [ "oscr::dispatch_control_setup< Node >", "structoscr_1_1dispatch__control__setup.html", null ],
     [ "score::Dispatcher", "structscore_1_1_dispatcher.html", [
       [ "score::Dispatcher_T< T >", "structscore_1_1_dispatcher___t.html", null ]
@@ -803,6 +814,11 @@ var hierarchy =
       [ "Analysis::audio_in", "struct_analysis_1_1audio__in.html", null ],
       [ "Analysis::audio_out", "struct_analysis_1_1audio__out.html", null ]
     ] ],
+    [ "oscr::dynamic_ports_component_data< T >", "structoscr_1_1dynamic__ports__component__data.html", null ],
+    [ "oscr::dynamic_ports_component_data< Node >", "structoscr_1_1dynamic__ports__component__data.html", [
+      [ "oscr::Executor< Node >", "classoscr_1_1_executor.html", null ]
+    ] ],
+    [ "oscr::dynamic_ports_component_data< T >", "structoscr_1_1dynamic__ports__component__data_3_01_t_01_4.html", null ],
     [ "score::dynarray_impl< T >", "classscore_1_1dynarray__impl.html", null ],
     [ "score::dynvector_impl< T >", "classscore_1_1dynvector__impl.html", null ],
     [ "ao::Easetanbul", "structao_1_1_easetanbul.html", null ],
@@ -955,7 +971,8 @@ var hierarchy =
     [ "JSONReader::fake_obj", "struct_j_s_o_n_reader_1_1fake__obj.html", null ],
     [ "std::false_type", null, [
       [ "has_ui< T >", "structhas__ui.html", null ],
-      [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ]
+      [ "is_shared_ptr< T >", "structis__shared__ptr.html", null ],
+      [ "oscr::controller_needs_factory< Refl >", "structoscr_1_1controller__needs__factory.html", null ]
     ] ],
     [ "bitfocus::module_data::feedback_definition", "structbitfocus_1_1module__data_1_1feedback__definition.html", null ],
     [ "bitfocus::module_data::feedback_instance", "structbitfocus_1_1module__data_1_1feedback__instance.html", null ],
@@ -1195,6 +1212,7 @@ var hierarchy =
     [ "gpp::qrhi::handle_release", "structgpp_1_1qrhi_1_1handle__release.html", null ],
     [ "gpp::qrhi::handle_update< Self, Ret >", "structgpp_1_1qrhi_1_1handle__update.html", null ],
     [ "Execution::HandleNodeChange", "struct_execution_1_1_handle_node_change.html", null ],
+    [ "Execution::HandlePortsReplaced", "struct_execution_1_1_handle_ports_replaced.html", null ],
     [ "RemoteControl::WS::Handler", "struct_remote_control_1_1_w_s_1_1_handler.html", null ],
     [ "score::gfx::HAPDecoder::HAPSection", "structscore_1_1gfx_1_1_h_a_p_decoder_1_1_h_a_p_section.html", null ],
     [ "Device::HardwarePortDeviceResource", "struct_device_1_1_hardware_port_device_resource.html", null ],
@@ -1568,6 +1586,12 @@ var hierarchy =
           [ "Dataflow::AutomatablePortFactory_T< Model_T >", "class_dataflow_1_1_automatable_port_factory___t.html", null ],
           [ "Dataflow::ControlInletFactory", "struct_dataflow_1_1_control_inlet_factory.html", [
             [ "Dataflow::WidgetInletFactory< oscr::CustomFloatControl< Node, avnd::field_index< N > >, WidgetFactory::FloatControl< MatchingWidget< Field >::type, NormalizerFromMapper< Field >, true > >", "struct_dataflow_1_1_widget_inlet_factory.html", [
+              [ "oscr::CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
+            ] ],
+            [ "Dataflow::WidgetInletFactory< CustomGenericControl< Process::IntSpinBox, Node, Field, avnd::field_index< N > >, ControllerIntSpinBox >", "struct_dataflow_1_1_widget_inlet_factory.html", [
+              [ "oscr::CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
+            ] ],
+            [ "Dataflow::WidgetInletFactory< CustomGenericControl< Process::LineEdit, Node, Field, avnd::field_index< N > >, ControllerLineEdit >", "struct_dataflow_1_1_widget_inlet_factory.html", [
               [ "oscr::CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
             ] ],
             [ "Dataflow::WidgetInletFactory< T, Widget >", "struct_dataflow_1_1_widget_inlet_factory.html", null ]
@@ -2083,8 +2107,6 @@ var hierarchy =
     [ "Scenario::MoveTimeSyncInScenario_StateWrapper", "class_scenario_1_1_move_time_sync_in_scenario___state_wrapper.html", null ],
     [ "Scenario::MoveTimeSyncInTopScenario_StateWrapper", "class_scenario_1_1_move_time_sync_in_top_scenario___state_wrapper.html", null ],
     [ "Protocols::MQTTSpecificSettings", "struct_protocols_1_1_m_q_t_t_specific_settings.html", null ],
-    [ "oscr::multichannel_audio", "structoscr_1_1multichannel__audio.html", null ],
-    [ "oscr::multichannel_audio_view", "structoscr_1_1multichannel__audio__view.html", null ],
     [ "WidgetFactory::MultiSlider", "struct_widget_factory_1_1_multi_slider.html", null ],
     [ "WidgetFactory::MultiSliderXY", "struct_widget_factory_1_1_multi_slider_x_y.html", null ],
     [ "Gfx::MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
@@ -2406,8 +2428,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3003,7 +3025,6 @@ var hierarchy =
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
       [ "ProcessPanelGraphicsProxy", "class_process_panel_graphics_proxy.html", null ],
       [ "ProgressBar", "class_progress_bar.html", null ],
-      [ "Scenario::AddressBarItem", "class_scenario_1_1_address_bar_item.html", null ],
       [ "Scenario::CommentBlockView", "class_scenario_1_1_comment_block_view.html", null ],
       [ "Scenario::ConditionView", "class_scenario_1_1_condition_view.html", null ],
       [ "Scenario::CrossOverlay", "class_scenario_1_1_cross_overlay.html", [
@@ -3028,7 +3049,6 @@ var hierarchy =
       [ "Scenario::LightBars", "class_scenario_1_1_light_bars.html", null ],
       [ "Scenario::LighterBars", "class_scenario_1_1_lighter_bars.html", null ],
       [ "Scenario::Minimap", "class_scenario_1_1_minimap.html", null ],
-      [ "Scenario::SeparatorItem", "class_scenario_1_1_separator_item.html", null ],
       [ "Scenario::SlotDragOverlay", "class_scenario_1_1_slot_drag_overlay.html", null ],
       [ "Scenario::SlotFooter", "class_scenario_1_1_slot_footer.html", [
         [ "Scenario::AmovibleSlotFooter", "class_scenario_1_1_amovible_slot_footer.html", null ],
@@ -3112,7 +3132,6 @@ var hierarchy =
         [ "score::RectItem", "classscore_1_1_rect_item.html", null ]
       ] ],
       [ "score::SimpleTextItem", "classscore_1_1_simple_text_item.html", [
-        [ "Scenario::ClickableLabelItem", "class_scenario_1_1_clickable_label_item.html", null ],
         [ "score::ClickableTextItem", "classscore_1_1_clickable_text_item.html", null ]
       ] ],
       [ "score::ZoomItem", "classscore_1_1_zoom_item.html", null ]
@@ -3548,6 +3567,7 @@ var hierarchy =
       [ "Patternist::LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
       [ "Pd::LibraryHandler", "class_pd_1_1_library_handler.html", null ],
       [ "Process::ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
+      [ "Process::CompileKeyFilter", "class_process_1_1_compile_key_filter.html", null ],
       [ "Process::DataflowManager", "class_process_1_1_dataflow_manager.html", null ],
       [ "Process::FooterDelegate", "class_process_1_1_footer_delegate.html", null ],
       [ "Process::HeaderDelegate", "class_process_1_1_header_delegate.html", null ],
@@ -3606,7 +3626,6 @@ var hierarchy =
       [ "RemoveRackFromIntervalTest", "class_remove_rack_from_interval_test.html", null ],
       [ "RemoveSlotFromRackTest", "class_remove_slot_from_rack_test.html", null ],
       [ "ResizeSlotVerticallyTest", "class_resize_slot_vertically_test.html", null ],
-      [ "Scenario::AddressBarItem", "class_scenario_1_1_address_bar_item.html", null ],
       [ "Scenario::CommentBlockPresenter", "class_scenario_1_1_comment_block_presenter.html", null ],
       [ "Scenario::CommentBlockView", "class_scenario_1_1_comment_block_view.html", null ],
       [ "Scenario::ConditionView", "class_scenario_1_1_condition_view.html", null ],
@@ -4077,6 +4096,8 @@ var hierarchy =
       [ "Mixer::AudioDeviceSlider", "class_mixer_1_1_audio_device_slider.html", null ],
       [ "Pd::UiWrapper", "struct_pd_1_1_ui_wrapper.html", null ],
       [ "Process::AddressAccessorEditWidget", "class_process_1_1_address_accessor_edit_widget.html", null ],
+      [ "Process::DocumentBackgroundPreview", "class_process_1_1_document_background_preview.html", null ],
+      [ "Process::EditorOverlayHost", "class_process_1_1_editor_overlay_host.html", null ],
       [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
       [ "Protocols::BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
@@ -4092,6 +4113,7 @@ var hierarchy =
       [ "Protocols::UnixStreamWidget", "class_protocols_1_1_unix_stream_widget.html", null ],
       [ "Protocols::WebsocketClientWidget", "class_protocols_1_1_websocket_client_widget.html", null ],
       [ "Protocols::WebsocketServerWidget", "class_protocols_1_1_websocket_server_widget.html", null ],
+      [ "Scenario::AddressBarWidget", "class_scenario_1_1_address_bar_widget.html", null ],
       [ "Scenario::DurationWidget", "class_scenario_1_1_duration_widget.html", null ],
       [ "Scenario::EditionGrid", "class_scenario_1_1_edition_grid.html", null ],
       [ "Scenario::EventShortCut", "class_scenario_1_1_event_short_cut.html", null ],
@@ -4120,6 +4142,7 @@ var hierarchy =
       [ "WidgetWrapper< Widget >", "class_widget_wrapper.html", null ],
       [ "score::AboutWidget", "classscore_1_1_about_widget.html", null ],
       [ "score::BottomToolbarWidget", "classscore_1_1_bottom_toolbar_widget.html", null ],
+      [ "score::CentralViewStack", "classscore_1_1_central_view_stack.html", null ],
       [ "score::DoubleSlider", "classscore_1_1_double_slider.html", [
         [ "Mixer::AudioSliderWidget", "class_mixer_1_1_audio_slider_widget.html", null ],
         [ "Mixer::PanSliderWidget", "class_mixer_1_1_pan_slider_widget.html", null ],
@@ -4527,6 +4550,7 @@ var hierarchy =
     [ "TSerializer< DataStream, Id< U > >", "struct_t_serializer_3_01_data_stream_00_01_id_3_01_u_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, IdentifiedObject< T > >", "struct_t_serializer_3_01_data_stream_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, oscr::CustomFloatControl< Node, FieldIndex > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html", null ],
+    [ "TSerializer< DataStream, oscr::CustomGenericControl< BaseInletType, Node, T, FieldIndex > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_custom_generic_control_3_01_base_inlet_type_0e3e239426006604ec0f067aaf5e8adde.html", null ],
     [ "TSerializer< DataStream, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_data_stream_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, ossia::domain_base< bool > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", null ],
     [ "TSerializer< DataStream, ossia::domain_base< ossia::impulse > >", "struct_t_serializer_3_01_data_stream_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html", null ],
@@ -4574,6 +4598,7 @@ var hierarchy =
     [ "TSerializer< JSONObject, Id< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, IdentifiedObject< T > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, oscr::CustomFloatControl< Node, FieldIndex > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_float_control_3_01_node_00_01_field_index_01_4_01_4.html", null ],
+    [ "TSerializer< JSONObject, oscr::CustomGenericControl< BaseInletType, Node, T, FieldIndex > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_custom_generic_control_3_01_base_inlet_typcc65bae03f78f3131a33a8e6253813db.html", null ],
     [ "TSerializer< JSONObject, oscr::ProcessModel< Info > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01oscr_1_1_process_model_3_01_info_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, ossia::domain_base< bool > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01bool_01_4_01_4.html", null ],
     [ "TSerializer< JSONObject, ossia::domain_base< ossia::impulse > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html", null ],
@@ -4638,6 +4663,7 @@ var hierarchy =
       [ "Faust::UI< Proc, Synth >", "struct_faust_1_1_u_i.html", null ],
       [ "FaustDSP::Wrap< T >", "struct_faust_d_s_p_1_1_wrap.html", null ]
     ] ],
+    [ "Process::UIPlacementSettings", "struct_process_1_1_u_i_placement_settings.html", null ],
     [ "UndoName_k", "class_undo_name__k.html", null ],
     [ "SendStrategy::UndoRedo", "struct_send_strategy_1_1_undo_redo.html", null ],
     [ "State::Unit", "struct_state_1_1_unit.html", null ],
