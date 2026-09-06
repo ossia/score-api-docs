@@ -167,6 +167,11 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>expose
 <tr class="memitem:a794f2150ef421250854858872c39e096" id="r_a794f2150ef421250854858872c39e096"><td class="memItemLeft" align="right" valign="top"><a id="a794f2150ef421250854858872c39e096" name="a794f2150ef421250854858872c39e096"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const noexcept</td></tr>
 <tr class="separator:a794f2150ef421250854858872c39e096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9740fc254ea9b07079c6d370b84171" id="r_aff9740fc254ea9b07079c6d370b84171"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="struct_state_1_1_unit.html">State::Unit</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port.html#aff9740fc254ea9b07079c6d370b84171">unit</a> () const noexcept</td></tr>
+<tr class="separator:aff9740fc254ea9b07079c6d370b84171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9338d59d3c4f9fdfe54c097bebb03dda" id="r_a9338d59d3c4f9fdfe54c097bebb03dda"><td class="memItemLeft" align="right" valign="top"><a id="a9338d59d3c4f9fdfe54c097bebb03dda" name="a9338d59d3c4f9fdfe54c097bebb03dda"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnit</b> (<a class="el" href="struct_state_1_1_unit.html">State::Unit</a> u) noexcept</td></tr>
+<tr class="separator:a9338d59d3c4f9fdfe54c097bebb03dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4a0fb08aee0311b119f76a78916fe1c" id="r_af4a0fb08aee0311b119f76a78916fe1c"><td class="memItemLeft" align="right" valign="top"><a id="af4a0fb08aee0311b119f76a78916fe1c" name="af4a0fb08aee0311b119f76a78916fe1c"></a>
 virtual PortType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const noexcept=0</td></tr>
 <tr class="separator:af4a0fb08aee0311b119f76a78916fe1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -307,6 +312,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 <tr class="memitem:a67ef36d6deb81f7dc6a574d95113a466" id="r_a67ef36d6deb81f7dc6a574d95113a466"><td class="memItemLeft" align="right" valign="top"><a id="a67ef36d6deb81f7dc6a574d95113a466" name="a67ef36d6deb81f7dc6a574d95113a466"></a>
 <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_address</b></td></tr>
 <tr class="separator:a67ef36d6deb81f7dc6a574d95113a466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76690c936af3f44b0f810b7851ba38c4" id="r_a76690c936af3f44b0f810b7851ba38c4"><td class="memItemLeft" align="right" valign="top"><a id="a76690c936af3f44b0f810b7851ba38c4" name="a76690c936af3f44b0f810b7851ba38c4"></a>
+<a class="el" href="struct_state_1_1_unit.html">State::Unit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_unit</b></td></tr>
+<tr class="separator:a76690c936af3f44b0f810b7851ba38c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -332,6 +340,35 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>is_abstract_base_tag
 static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>identified_object_tag</b></td></tr>
 <tr class="separator:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aff9740fc254ea9b07079c6d370b84171" name="aff9740fc254ea9b07079c6d370b84171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9740fc254ea9b07079c6d370b84171">&#9670;&#160;</a></span>unit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_state_1_1_unit.html">State::Unit</a> &amp; Process::Port::unit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The unit the process expects on this port, overridden by the @[unit] of its address. Not serialized: the process declares it again when its ports are built, which is why a port with a fixed unit overrides this rather than calling setUnit(). </p>
+
+<p>Reimplemented in <a class="el" href="struct_process_1_1_h_s_v_slider.html#a55d05b3d2828c0ae42ad5f18c467664c">Process::HSVSlider</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_port_8hpp_source.html">Port.hpp</a></li>
 <li><b>Port.cpp</b></li>

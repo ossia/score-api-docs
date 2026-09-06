@@ -408,6 +408,8 @@ var namespacescore =
     [ "thirdPartyLicenses", "namespacescore.html#a7d1d782096712932a98d701de7ec7b1e", null ],
     [ "try_load_library", "namespacescore.html#a83bd5ef55fa68969e0bdd632d0658a81", null ],
     [ "try_load_library", "namespacescore.html#a4247b45f78d77638135f0ebd36667b60", null ],
+    [ "uiFontSize", "namespacescore.html#a105b47a5fe17baab1eebf106e3e563bf", null ],
+    [ "uiFontStyleStrategy", "namespacescore.html#aec10fb86394f656254e28ac880444119", null ],
     [ "watchSceneInputMethod", "namespacescore.html#aef4d345fb028b5062609d81fb438e2ce", null ],
     [ "writeZipArchive", "namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef", null ]
 ];

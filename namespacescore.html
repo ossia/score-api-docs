@@ -1174,6 +1174,13 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a829743c1df26e0355fa020600dad8893"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>id</b> (const <a class="el" href="class_path.html">Path</a>&lt; T &gt; &amp;path)</td></tr>
 <tr class="separator:a829743c1df26e0355fa020600dad8893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105b47a5fe17baab1eebf106e3e563bf" id="r_a105b47a5fe17baab1eebf106e3e563bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a105b47a5fe17baab1eebf106e3e563bf">uiFontSize</a> () noexcept</td></tr>
+<tr class="separator:a105b47a5fe17baab1eebf106e3e563bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618d6eed4dc56dafa8a5ea3bed2cd5bd" id="r_a618d6eed4dc56dafa8a5ea3bed2cd5bd"><td class="memItemLeft" align="right" valign="top"><a id="a618d6eed4dc56dafa8a5ea3bed2cd5bd" name="a618d6eed4dc56dafa8a5ea3bed2cd5bd"></a>
+QFont::HintingPreference&#160;</td><td class="memItemRight" valign="bottom"><b>uiFontHinting</b> () noexcept</td></tr>
+<tr class="separator:a618d6eed4dc56dafa8a5ea3bed2cd5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec10fb86394f656254e28ac880444119" id="r_aec10fb86394f656254e28ac880444119"><td class="memItemLeft" align="right" valign="top">QFont::StyleStrategy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aec10fb86394f656254e28ac880444119">uiFontStyleStrategy</a> () noexcept</td></tr>
+<tr class="separator:aec10fb86394f656254e28ac880444119"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe55a013aba51db7fae79be5eb285678" id="r_abe55a013aba51db7fae79be5eb285678"><td class="memItemLeft" align="right" valign="top">SCORE_LIB_BASE_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#abe55a013aba51db7fae79be5eb285678">addonArchitecture</a> ()</td></tr>
 <tr class="memdesc:abe55a013aba51db7fae79be5eb285678"><td class="mdescLeft">&#160;</td><td class="mdescRight">addonArchitecture  <br /></td></tr>
 <tr class="separator:abe55a013aba51db7fae79be5eb285678"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2586,6 +2593,58 @@ template&lt;typename T &gt; </div>
 
 <p>dlopen a library, reporting absence instead of throwing. </p>
 <p>ossia::dylib_loader only signals failure by throwing from its constructor, which makes it unusable as a direct member of the optional-dependency loaders: a function-try-block around a constructor rethrows when it falls off the end of the handler, so the "unavailable" flag those loaders check is never reached and the exception escapes their instance() accessor instead. </p>
+
+</div>
+</div>
+<a id="a105b47a5fe17baab1eebf106e3e563bf" name="a105b47a5fe17baab1eebf106e3e563bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a105b47a5fe17baab1eebf106e3e563bf">&#9670;&#160;</a></span>uiFontSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::uiFontSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Base UI font settings. Read from QSettings directly as the font is needed before the settings plug-in is loaded; changing them requires a restart. </p>
+
+</div>
+</div>
+<a id="aec10fb86394f656254e28ac880444119" name="aec10fb86394f656254e28ac880444119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec10fb86394f656254e28ac880444119">&#9670;&#160;</a></span>uiFontStyleStrategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont::StyleStrategy score::uiFontStyleStrategy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>NoSubpixelAntialias on macOS: QCocoaScreen rewrites Subpixel_None to Subpixel_RGB, so the style strategy is the only way to get grayscale AA. </p>
 
 </div>
 </div>

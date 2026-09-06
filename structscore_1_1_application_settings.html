@@ -133,6 +133,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>tryToRestore</b> = tr
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>forceRestore</b> = false</td></tr>
 <tr class="memdesc:a08323067fe38eea2dab5a6815e0735e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force restoring last session, mainly useful for debugging. <br /></td></tr>
 <tr class="separator:a08323067fe38eea2dab5a6815e0735e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295ee44962abb2cc64fd0672671f1743" id="r_a295ee44962abb2cc64fd0672671f1743"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_application_settings.html#a295ee44962abb2cc64fd0672671f1743">hasScript</a> = false</td></tr>
+<tr class="separator:a295ee44962abb2cc64fd0672671f1743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a48ca49dc5cfd09a2534d2f3168c192" id="r_a0a48ca49dc5cfd09a2534d2f3168c192"><td class="memItemLeft" align="right" valign="top"><a id="a0a48ca49dc5cfd09a2534d2f3168c192" name="a0a48ca49dc5cfd09a2534d2f3168c192"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gui</b> = true</td></tr>
 <tr class="memdesc:a0a48ca49dc5cfd09a2534d2f3168c192"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, will show the GUI upon loading. <br /></td></tr>
@@ -174,6 +176,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>uiEventRate</b> = 64</
 <tr class="memdesc:a6ccaa699bec50370335dd173c0d8c55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UI event processing rate in ms (used for plug-in gui updates, etc) <br /></td></tr>
 <tr class="separator:a6ccaa699bec50370335dd173c0d8c55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a295ee44962abb2cc64fd0672671f1743" name="a295ee44962abb2cc64fd0672671f1743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295ee44962abb2cc64fd0672671f1743">&#9670;&#160;</a></span>hasScript</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::ApplicationSettings::hasScript = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A &ndash;script was given. Parsed by the JS plug-in, but needed here as the start screen is decided before plug-ins load. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_application_settings_8hpp_source.html">ApplicationSettings.hpp</a></li>
 <li><b>ApplicationSettings.cpp</b></li>

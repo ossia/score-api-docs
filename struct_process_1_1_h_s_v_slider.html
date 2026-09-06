@@ -128,8 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac951dc0a7f3d209acc666e8f0bd5ca29" id="r_ac951dc0a7f3d209acc666e8f0bd5ca29"><td class="memItemLeft" align="right" valign="top"><a id="ac951dc0a7f3d209acc666e8f0bd5ca29" name="ac951dc0a7f3d209acc666e8f0bd5ca29"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>HSVSlider</b> (ossia::vec4f init, const QString &amp;name, <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; id, QObject *parent)</td></tr>
 <tr class="separator:ac951dc0a7f3d209acc666e8f0bd5ca29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c783b5884482bee0755d9d31f2d5ad0" id="r_a6c783b5884482bee0755d9d31f2d5ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_h_s_v_slider.html#a6c783b5884482bee0755d9d31f2d5ad0">setupExecution</a> (ossia::inlet &amp;inl, QObject *exec_context) const noexcept override</td></tr>
-<tr class="separator:a6c783b5884482bee0755d9d31f2d5ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d05b3d2828c0ae42ad5f18c467664c" id="r_a55d05b3d2828c0ae42ad5f18c467664c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_state_1_1_unit.html">State::Unit</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_h_s_v_slider.html#a55d05b3d2828c0ae42ad5f18c467664c">unit</a> () const noexcept override</td></tr>
+<tr class="memdesc:a55d05b3d2828c0ae42ad5f18c467664c"><td class="mdescLeft">&#160;</td><td class="mdescRight">rgba, however the port was constructed.  <br /></td></tr>
+<tr class="separator:a55d05b3d2828c0ae42ad5f18c467664c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850fbc2e8042aca42db8a32f786ceac1" id="r_a850fbc2e8042aca42db8a32f786ceac1"><td class="memItemLeft" align="right" valign="top"><a id="a850fbc2e8042aca42db8a32f786ceac1" name="a850fbc2e8042aca42db8a32f786ceac1"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>getMin</b> () const noexcept</td></tr>
 <tr class="separator:a850fbc2e8042aca42db8a32f786ceac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +200,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDomain</b> (const 
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Inlet</b> () override</td></tr>
 <tr class="memdesc:a315587176925d348673adf5af2db73e7 inherit pub_methods_class_process_1_1_inlet"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_process_1_1_inlet.html">Inlet</a>. <br /></td></tr>
 <tr class="separator:a315587176925d348673adf5af2db73e7 inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee4f1d024e2974034ab4fb6907ba17d inherit pub_methods_class_process_1_1_inlet" id="r_a7ee4f1d024e2974034ab4fb6907ba17d"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setupExecution</b> (ossia::inlet &amp;, QObject *exec_context) const noexcept</td></tr>
+<tr class="separator:a7ee4f1d024e2974034ab4fb6907ba17d inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39be5d2b8d7e7feb9e8d2af3b52ee138 inherit pub_methods_class_process_1_1_inlet" id="r_a39be5d2b8d7e7feb9e8d2af3b52ee138"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forChildInlets</b> (const smallfun::function&lt; void(<a class="el" href="class_process_1_1_inlet.html">Inlet</a> &amp;)&gt; &amp;) const noexcept</td></tr>
 <tr class="separator:a39be5d2b8d7e7feb9e8d2af3b52ee138 inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,6 +240,9 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>expose
 <tr class="memitem:a794f2150ef421250854858872c39e096 inherit pub_methods_class_process_1_1_port" id="r_a794f2150ef421250854858872c39e096"><td class="memItemLeft" align="right" valign="top">
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const noexcept</td></tr>
 <tr class="separator:a794f2150ef421250854858872c39e096 inherit pub_methods_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9338d59d3c4f9fdfe54c097bebb03dda inherit pub_methods_class_process_1_1_port" id="r_a9338d59d3c4f9fdfe54c097bebb03dda"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setUnit</b> (<a class="el" href="struct_state_1_1_unit.html">State::Unit</a> u) noexcept</td></tr>
+<tr class="separator:a9338d59d3c4f9fdfe54c097bebb03dda inherit pub_methods_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2036e74f859fd43ab0da8a9c06d454b5 inherit pub_methods_class_process_1_1_port" id="r_a2036e74f859fd43ab0da8a9c06d454b5"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>settings</b> () const noexcept</td></tr>
 <tr class="separator:a2036e74f859fd43ab0da8a9c06d454b5 inherit pub_methods_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,10 +415,13 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 <tr class="memitem:a67ef36d6deb81f7dc6a574d95113a466 inherit pro_attribs_class_process_1_1_port" id="r_a67ef36d6deb81f7dc6a574d95113a466"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_address</b></td></tr>
 <tr class="separator:a67ef36d6deb81f7dc6a574d95113a466 inherit pro_attribs_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76690c936af3f44b0f810b7851ba38c4 inherit pro_attribs_class_process_1_1_port" id="r_a76690c936af3f44b0f810b7851ba38c4"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_state_1_1_unit.html">State::Unit</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_unit</b></td></tr>
+<tr class="separator:a76690c936af3f44b0f810b7851ba38c4 inherit pro_attribs_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6c783b5884482bee0755d9d31f2d5ad0" name="a6c783b5884482bee0755d9d31f2d5ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c783b5884482bee0755d9d31f2d5ad0">&#9670;&#160;</a></span>setupExecution()</h2>
+<a id="a55d05b3d2828c0ae42ad5f18c467664c" name="a55d05b3d2828c0ae42ad5f18c467664c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55d05b3d2828c0ae42ad5f18c467664c">&#9670;&#160;</a></span>unit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,21 +430,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Process::HSVSlider::setupExecution </td>
+          <td class="memname">const <a class="el" href="struct_state_1_1_unit.html">State::Unit</a> &amp; Process::HSVSlider::unit </td>
           <td>(</td>
-          <td class="paramtype">ossia::inlet &amp;&#160;</td>
-          <td class="paramname"><em>inl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>exec_context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -444,7 +443,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a>.</p>
+<p>rgba, however the port was constructed. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_port.html#aff9740fc254ea9b07079c6d370b84171">Process::Port</a>.</p>
 
 </div>
 </div>

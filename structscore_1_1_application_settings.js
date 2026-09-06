@@ -5,6 +5,7 @@ var structscore_1_1_application_settings =
     [ "autoplay", "structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d", null ],
     [ "forceRestore", "structscore_1_1_application_settings.html#a08323067fe38eea2dab5a6815e0735e1", null ],
     [ "gui", "structscore_1_1_application_settings.html#a0a48ca49dc5cfd09a2534d2f3168c192", null ],
+    [ "hasScript", "structscore_1_1_application_settings.html#a295ee44962abb2cc64fd0672671f1743", null ],
     [ "loadList", "structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241", null ],
     [ "opengl", "structscore_1_1_application_settings.html#a4624f2eed8f8e9bacc8533cedff743c1", null ],
     [ "saveFormatVersion", "structscore_1_1_application_settings.html#a2ca3a0746bc5d3dd143ff71943607eba", null ],

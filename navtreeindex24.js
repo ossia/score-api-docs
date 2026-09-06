@@ -1,5 +1,9 @@
 var NAVTREEINDEX24 =
 {
+"score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
+"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,16],
+"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,30],
+"score-lib-process_2_process_2_process_8hpp_source.html":[13,0,0,2,3,4,41],
 "score-lib-process_2_process_2_process_factory_8hpp_source.html":[13,0,0,2,3,4,44],
 "score-lib-process_2_process_2_process_metadata_8hpp_source.html":[13,0,0,2,3,4,47],
 "score-lib-process_2_remote_control_2_remote_control_provider_8hpp_source.html":[13,0,0,2,3,5,0],
@@ -243,11 +247,7 @@ var NAVTREEINDEX24 =
 "struct_control_surface_1_1_node_observer_1_1_available_node.html":[12,0,10,5,0],
 "struct_control_surface_1_1_presenter_1_1_port.html":[12,0,10,6,0],
 "struct_control_surface_1_1con__unvalidated.html":[12,0,10,2],
-"struct_curve_1_1_curve_domain.html":[12,0,11,9],
 "struct_curve_1_1_curve_domain.html":[11,0,1,7],
-"struct_curve_1_1_curve_event.html":[11,0,1,9],
-"struct_curve_1_1_curve_event.html":[12,0,11,11],
-"struct_curve_1_1_curve_segment_map.html":[11,0,1,13],
-"struct_curve_1_1_curve_segment_map.html":[12,0,11,15],
-"struct_curve_1_1_easing_data.html":[11,0,1,15]
+"struct_curve_1_1_curve_domain.html":[12,0,11,9],
+"struct_curve_1_1_curve_event.html":[12,0,11,11]
 };

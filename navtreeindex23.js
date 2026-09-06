@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a7fcd7392ee5bf4d95598ea56d587561b":[11,0,10,174,8],
+"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a8c4b302dda329470aa905fd75a9d9c85":[11,0,10,174,13],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a904817600939b14aaf314f5184b4a7d5":[11,0,10,174,16],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa76f0cafad2868e7b714583dad50cc02":[11,0,10,174,4],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1aa9c81d4f02379ef379045345e2c35c1e":[11,0,10,174,7],
@@ -77,6 +79,7 @@ var NAVTREEINDEX23 =
 "namespacescore.html#a0953a774cc82c9bbc6d93776c447e5d7":[11,0,12,382],
 "namespacescore.html#a0a1e58080aefcaad433afaa559674971":[11,0,12,356],
 "namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981":[11,0,12,349],
+"namespacescore.html#a105b47a5fe17baab1eebf106e3e563bf":[11,0,12,392],
 "namespacescore.html#a218bef612dc74026bb86beab035f7fb2":[11,0,12,360],
 "namespacescore.html#a2a536512cd929ef2bc2e9ae50785afbb":[11,0,12,374],
 "namespacescore.html#a2db95db3609ef6e6cf28787c3a944391":[11,0,12,365],
@@ -124,10 +127,11 @@ var NAVTREEINDEX23 =
 "namespacescore.html#abe55a013aba51db7fae79be5eb285678":[11,0,12,348],
 "namespacescore.html#acaf49f94ce372b8ebddfe347b42bc5a8":[11,0,12,351],
 "namespacescore.html#ad2e918141bd72dc5af732f9c78098af0":[11,0,12,377],
-"namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef":[11,0,12,393],
+"namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef":[11,0,12,395],
 "namespacescore.html#adb7b1132a5013c8ee6f959bee4436405":[11,0,12,352],
+"namespacescore.html#aec10fb86394f656254e28ac880444119":[11,0,12,393],
 "namespacescore.html#aed5a0183b4501783c177e506781cec28":[11,0,12,381],
-"namespacescore.html#aef4d345fb028b5062609d81fb438e2ce":[11,0,12,392],
+"namespacescore.html#aef4d345fb028b5062609d81fb438e2ce":[11,0,12,394],
 "namespacescore.html#af5b703cc8728ecd74cdeebfc9148b8cc":[11,0,12,373],
 "namespacescore.html#af65496ac898dd7e7e8736b77d5c03f96":[11,0,12,354],
 "namespacescore.html#af66957ac5e91a56c4431b46d7f0c592a":[11,0,12,363],
@@ -245,9 +249,5 @@ var NAVTREEINDEX23 =
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
 "score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
-"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14],
-"score-lib-process_2_process_2_commands_2_properties_8hpp_source.html":[13,0,0,2,3,4,2,4],
-"score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html":[13,0,0,2,3,4,3,16],
-"score-lib-process_2_process_2_instantiations_8hpp_source.html":[13,0,0,2,3,4,30],
-"score-lib-process_2_process_2_process_8hpp_source.html":[13,0,0,2,3,4,41]
+"score-lib-process_2_process_2_application_plugin_8hpp_source.html":[13,0,0,2,3,4,14]
 };
