@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,14,5],
 "_unix_stream_widget_8hpp_source.html":[13,0,0,2,29,0,14,6],
 "_unused_8hpp_source.html":[13,0,0,1,1,12,36],
 "_unused_files_8hpp_source.html":[13,0,0,2,3,4,57],
@@ -243,11 +244,10 @@ var NAVTREEINDEX6 =
 "class_audio_1_1_settings_1_1_view.html":[12,0,2,0,2],
 "class_automation_1_1_change_address.html":[12,0,3,1],
 "class_automation_1_1_change_address.html":[11,0,0,0],
-"class_automation_1_1_colors.html":[12,0,3,2],
 "class_automation_1_1_colors.html":[11,0,0,1],
+"class_automation_1_1_colors.html":[12,0,3,2],
 "class_automation_1_1_init_automation.html":[11,0,0,2],
 "class_automation_1_1_init_automation.html":[12,0,3,3],
 "class_automation_1_1_inspector_factory.html":[11,0,0,3],
-"class_automation_1_1_inspector_factory.html":[12,0,3,4],
-"class_automation_1_1_inspector_widget.html":[11,0,0,4]
+"class_automation_1_1_inspector_factory.html":[12,0,3,4]
 };

@@ -3940,8 +3940,12 @@ var hierarchy =
     [ "ossia::qt_property_converter< ossia::value >", "structossia_1_1qt__property__converter_3_01ossia_1_1value_01_4.html", null ],
     [ "ossia::qt_property_converter< State::AddressAccessor >", "structossia_1_1qt__property__converter_3_01_state_1_1_address_accessor_01_4.html", null ],
     [ "ossia::qt_property_converter<::TimeVal >", "structossia_1_1qt__property__converter_3_1_1_time_val_01_4.html", null ],
+    [ "QTabBar", null, [
+      [ "Process::ScriptTabBar", "class_process_1_1_script_tab_bar.html", null ]
+    ] ],
     [ "QTabWidget", null, [
-      [ "Mixer::MixerPanel", "class_mixer_1_1_mixer_panel.html", null ]
+      [ "Mixer::MixerPanel", "class_mixer_1_1_mixer_panel.html", null ],
+      [ "Process::ScriptTabWidget", "class_process_1_1_script_tab_widget.html", null ]
     ] ],
     [ "QTextEdit", null, [
       [ "Scenario::CommentEdit", "class_scenario_1_1_comment_edit.html", null ]

@@ -19,7 +19,8 @@ var NAVTREEINDEX5 =
 "_script_edit_command_8hpp_source.html":[13,0,0,2,32,4,1,15],
 "_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,2],
 "_script_process_8hpp_source.html":[13,0,0,2,3,4,10,3],
-"_script_widget_8hpp_source.html":[13,0,0,2,3,4,10,4],
+"_script_tab_bar_8hpp_source.html":[13,0,0,2,3,4,10,4],
+"_script_widget_8hpp_source.html":[13,0,0,2,3,4,10,5],
 "_search_line_edit_8hpp_source.html":[13,0,0,1,1,13,22],
 "_search_replace_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,1],
 "_search_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_undo_panel_factory_8hpp_source.html":[13,0,0,1,0,8,0,2],
 "_uniforms_8hpp_source.html":[13,0,0,2,17,1,4,41],
 "_unit_8hpp_source.html":[13,0,0,2,4,0,11],
-"_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3],
-"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,14,5]
+"_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3]
 };

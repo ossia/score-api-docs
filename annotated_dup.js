@@ -1552,6 +1552,8 @@ var annotated_dup =
       [ "RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ],
       [ "ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
       [ "ScriptDialog", "class_process_1_1_script_dialog.html", null ],
+      [ "ScriptTabBar", "class_process_1_1_script_tab_bar.html", null ],
+      [ "ScriptTabWidget", "class_process_1_1_script_tab_widget.html", null ],
       [ "SetControlOutletValue", "class_process_1_1_set_control_outlet_value.html", null ],
       [ "SetControlValue", "class_process_1_1_set_control_value.html", null ],
       [ "StateNodeData", "struct_process_1_1_state_node_data.html", null ],
