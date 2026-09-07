@@ -4,6 +4,7 @@ var dir_b6529b88cbf2db17432854d1a0d067de =
     [ "DeviceContext.hpp", "_device_context_8hpp_source.html", null ],
     [ "DeviceEnumerator.hpp", "_device_enumerator_8hpp_source.html", null ],
     [ "EditContext.hpp", "_edit_context_8hpp_source.html", null ],
+    [ "ImportedUi.hpp", "_imported_ui_8hpp_source.html", null ],
     [ "score-plugin-js/JS/Qml/Metatypes.hpp", "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html", null ],
     [ "PortSink.hpp", "_port_sink_8hpp_source.html", null ],
     [ "PortSource.hpp", "_port_source_8hpp_source.html", null ],

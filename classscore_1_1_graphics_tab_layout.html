@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_graphics_tab_layout.htm
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classscore_1_1_graphics_tab_layout-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::GraphicsTabLayout Class Reference</div></div>
 </div><!--header-->
@@ -125,6 +126,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4534517819dccffd7861f9af4d0570bd" id="r_a4534517819dccffd7861f9af4d0570bd"><td class="memItemLeft" align="right" valign="top"><a id="a4534517819dccffd7861f9af4d0570bd" name="a4534517819dccffd7861f9af4d0570bd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addTab</b> (QString tab)</td></tr>
 <tr class="separator:a4534517819dccffd7861f9af4d0570bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac69bd80c78fb23c0ce45633e563570a4" id="r_ac69bd80c78fb23c0ce45633e563570a4"><td class="memItemLeft" align="right" valign="top"><a id="ac69bd80c78fb23c0ce45633e563570a4" name="ac69bd80c78fb23c0ce45633e563570a4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentIndex</b> () const noexcept</td></tr>
+<tr class="separator:ac69bd80c78fb23c0ce45633e563570a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2d68f85180047abdb38fc7bef0191a" id="r_a2b2d68f85180047abdb38fc7bef0191a"><td class="memItemLeft" align="right" valign="top"><a id="a2b2d68f85180047abdb38fc7bef0191a" name="a2b2d68f85180047abdb38fc7bef0191a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentIndex</b> (int index)</td></tr>
+<tr class="separator:a2b2d68f85180047abdb38fc7bef0191a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41727a296296875008d9c7fc56a7a11" id="r_ac41727a296296875008d9c7fc56a7a11"><td class="memItemLeft" align="right" valign="top"><a id="ac41727a296296875008d9c7fc56a7a11" name="ac41727a296296875008d9c7fc56a7a11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTabBarVisible</b> (bool visible) noexcept</td></tr>
+<tr class="separator:ac41727a296296875008d9c7fc56a7a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae289e0575a72622834ed7bfb0f5e2d43" id="r_ae289e0575a72622834ed7bfb0f5e2d43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_graphics_tab_layout.html#ae289e0575a72622834ed7bfb0f5e2d43">layout</a> () override</td></tr>
 <tr class="separator:ae289e0575a72622834ed7bfb0f5e2d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50c922cd4c15f94dfc4c4d021a6cfc07" id="r_a50c922cd4c15f94dfc4c4d021a6cfc07"><td class="memItemLeft" align="right" valign="top"><a id="a50c922cd4c15f94dfc4c4d021a6cfc07" name="a50c922cd4c15f94dfc4c4d021a6cfc07"></a>
@@ -208,6 +218,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>minimumWidthChanged</
 <tr class="memitem:adbae571957b56fe74c2c3b0242a9b78c inherit pub_methods_classscore_1_1_resizeable_item" id="r_adbae571957b56fe74c2c3b0242a9b78c"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
 <tr class="separator:adbae571957b56fe74c2c3b0242a9b78c inherit pub_methods_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a72c8fd8096b90957711d454aaa4151df" id="r_a72c8fd8096b90957711d454aaa4151df"><td class="memItemLeft" align="right" valign="top"><a id="a72c8fd8096b90957711d454aaa4151df" name="a72c8fd8096b90957711d454aaa4151df"></a>
+std::function&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onCurrentIndexChanged</b></td></tr>
+<tr class="separator:a72c8fd8096b90957711d454aaa4151df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

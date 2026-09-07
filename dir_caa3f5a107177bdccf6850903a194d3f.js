@@ -12,11 +12,15 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
     [ "PointTracker.hpp", "_point_tracker_8hpp_source.html", null ],
     [ "Queue.hpp", "_queue_8hpp_source.html", null ],
+    [ "Rendezvous.hpp", "_rendezvous_8hpp_source.html", null ],
     [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
+    [ "StringBytes.hpp", "_string_bytes_8hpp_source.html", null ],
     [ "Sweeper.hpp", "_sweeper_8hpp_source.html", null ],
+    [ "Switch.hpp", "_switch_8hpp_source.html", null ],
     [ "Table.hpp", "_table_8hpp_source.html", null ],
     [ "Table1D.hpp", "_table1_d_8hpp_source.html", null ],
     [ "Table2D.hpp", "_table2_d_8hpp_source.html", null ],
     [ "Teleplot.hpp", "_teleplot_8hpp_source.html", null ],
-    [ "score-plugin-avnd/AvndProcesses/Utils.hpp", "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html", null ]
+    [ "score-plugin-avnd/AvndProcesses/Utils.hpp", "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html", null ],
+    [ "score-plugin-avnd/AvndProcesses/ValueSerialization.hpp", "score-plugin-avnd_2_avnd_processes_2_value_serialization_8hpp_source.html", null ]
 ];

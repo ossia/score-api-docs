@@ -122,9 +122,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae16d9090c880bcc0cf1c79e9f899b92f" id="r_ae16d9090c880bcc0cf1c79e9f899b92f"><td class="memItemLeft" align="right" valign="top"><a id="ae16d9090c880bcc0cf1c79e9f899b92f" name="ae16d9090c880bcc0cf1c79e9f899b92f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_flicks</td></tr>
-<tr class="separator:ae16d9090c880bcc0cf1c79e9f899b92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4849fe2e496b08994944dee19b0111ba" id="r_a4849fe2e496b08994944dee19b0111ba"><td class="memItemLeft" align="right" valign="top"><a id="a4849fe2e496b08994944dee19b0111ba" name="a4849fe2e496b08994944dee19b0111ba"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Mode</b> { <b>Limit</b>
+, <b>Debounce</b>
+ }</td></tr>
+<tr class="separator:a4849fe2e496b08994944dee19b0111ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51baa539b7f0d9e2fbe476ce2b3c475" id="r_ae51baa539b7f0d9e2fbe476ce2b3c475"><td class="memItemLeft" align="right" valign="top"><a id="ae51baa539b7f0d9e2fbe476ce2b3c475" name="ae51baa539b7f0d9e2fbe476ce2b3c475"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = ossia::token_request</td></tr>
+<tr class="separator:ae51baa539b7f0d9e2fbe476ce2b3c475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -134,41 +138,77 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b1e3d301501e8a36382bdd05c3725af" id="r_a0b1e3d301501e8a36382bdd05c3725af"><td class="memItemLeft" align="right" valign="top"><a id="a0b1e3d301501e8a36382bdd05c3725af" name="a0b1e3d301501e8a36382bdd05c3725af"></a>
 RateLimiter&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Control/Mappings&quot;) halp_meta(manual_url</td></tr>
 <tr class="separator:a0b1e3d301501e8a36382bdd05c3725af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75a165b072d9ed4d00937a6dc66d105a" id="r_a75a165b072d9ed4d00937a6dc66d105a"><td class="memItemLeft" align="right" valign="top"><a id="a75a165b072d9ed4d00937a6dc66d105a" name="a75a165b072d9ed4d00937a6dc66d105a"></a>
-RateLimiter ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (description, &quot;Limit and quantize the rate of a value stream&quot;) halp_meta(uuid</td></tr>
-<tr class="separator:a75a165b072d9ed4d00937a6dc66d105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14aa5d724470b09a4aed416ad6d22c6c" id="r_a14aa5d724470b09a4aed416ad6d22c6c"><td class="memItemLeft" align="right" valign="top"><a id="a14aa5d724470b09a4aed416ad6d22c6c" name="a14aa5d724470b09a4aed416ad6d22c6c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>should_output</b> (float quantif, int64_t ms, tick t)</td></tr>
-<tr class="separator:a14aa5d724470b09a4aed416ad6d22c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21f025935c9442bad73b99b480c941d" id="r_ad21f025935c9442bad73b99b480c941d"><td class="memItemLeft" align="right" valign="top"><a id="ad21f025935c9442bad73b99b480c941d" name="ad21f025935c9442bad73b99b480c941d"></a>
+RateLimiter ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (description, &quot;Limit and quantize a value stream, or debounce after quiet milliseconds &quot; &quot;(debounce ignores quantization)&quot;) halp_meta(uuid</td></tr>
+<tr class="separator:ad21f025935c9442bad73b99b480c941d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae894441bb253fb8c4ba121e63d83e5fe" id="r_ae894441bb253fb8c4ba121e63d83e5fe"><td class="memItemLeft" align="right" valign="top"><a id="ae894441bb253fb8c4ba121e63d83e5fe" name="ae894441bb253fb8c4ba121e63d83e5fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () noexcept</td></tr>
+<tr class="separator:ae894441bb253fb8c4ba121e63d83e5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631e62bdf57825097bc85a05a61cfa55" id="r_a631e62bdf57825097bc85a05a61cfa55"><td class="memItemLeft" align="right" valign="top"><a id="a631e62bdf57825097bc85a05a61cfa55" name="a631e62bdf57825097bc85a05a61cfa55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup) noexcept</td></tr>
+<tr class="separator:a631e62bdf57825097bc85a05a61cfa55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0f62976116b2f958224f32488d7cc9" id="r_a8f0f62976116b2f958224f32488d7cc9"><td class="memItemLeft" align="right" valign="top"><a id="a8f0f62976116b2f958224f32488d7cc9" name="a8f0f62976116b2f958224f32488d7cc9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> () noexcept</td></tr>
+<tr class="separator:a8f0f62976116b2f958224f32488d7cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088ac9a70ce6b9105f26d23b7ec28ffd" id="r_a088ac9a70ce6b9105f26d23b7ec28ffd"><td class="memItemLeft" align="right" valign="top"><a id="a088ac9a70ce6b9105f26d23b7ec28ffd" name="a088ac9a70ce6b9105f26d23b7ec28ffd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> () noexcept</td></tr>
+<tr class="separator:a088ac9a70ce6b9105f26d23b7ec28ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55956a9a16b78025966b37786a833347" id="r_a55956a9a16b78025966b37786a833347"><td class="memItemLeft" align="right" valign="top"><a id="a55956a9a16b78025966b37786a833347" name="a55956a9a16b78025966b37786a833347"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transport</b> (auto) noexcept</td></tr>
+<tr class="separator:a55956a9a16b78025966b37786a833347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae548d680f20d8db09033bef35fe295b6" id="r_ae548d680f20d8db09033bef35fe295b6"><td class="memItemLeft" align="right" valign="top"><a id="ae548d680f20d8db09033bef35fe295b6" name="ae548d680f20d8db09033bef35fe295b6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>should_output</b> (float quantif, int64_t ms, const tick &amp;t)</td></tr>
+<tr class="separator:ae548d680f20d8db09033bef35fe295b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb85e092d78edf44d74579cc4192d93" id="r_aecb85e092d78edf44d74579cc4192d93"><td class="memItemLeft" align="right" valign="top"><a id="aecb85e092d78edf44d74579cc4192d93" name="aecb85e092d78edf44d74579cc4192d93"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;t)</td></tr>
 <tr class="separator:aecb85e092d78edf44d74579cc4192d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64db9b25c67fd81854a976d439678472" id="r_a64db9b25c67fd81854a976d439678472"><td class="memItemLeft" align="right" valign="top"><a id="a64db9b25c67fd81854a976d439678472" name="a64db9b25c67fd81854a976d439678472"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>debounce</b> (const tick &amp;t, int64_t start, int64_t frames)</td></tr>
+<tr class="separator:a64db9b25c67fd81854a976d439678472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9deb47c04fa2a02e4c283560e2fcbaf6" id="r_a9deb47c04fa2a02e4c283560e2fcbaf6"><td class="memItemLeft" align="right" valign="top"><a id="a9deb47c04fa2a02e4c283560e2fcbaf6" name="a9deb47c04fa2a02e4c283560e2fcbaf6"></a>
 RateLimiter&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(author</td></tr>
 <tr class="separator:a9deb47c04fa2a02e4c283560e2fcbaf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a804cc0c02efcb39b43a6d9d5ab728af3" id="r_a804cc0c02efcb39b43a6d9d5ab728af3"><td class="memItemLeft" align="right" valign="top"><a id="a804cc0c02efcb39b43a6d9d5ab728af3" name="a804cc0c02efcb39b43a6d9d5ab728af3"></a>
-RateLimiter ossia score a1b4 fbe449cc06f0 struct <a class="el" href="struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html">Nodes::RateLimiter::Node::ins</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="separator:a804cc0c02efcb39b43a6d9d5ab728af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40a00a4bcb26e619793c6b7e909e67d" id="r_ad40a00a4bcb26e619793c6b7e909e67d"><td class="memItemLeft" ><a id="ad40a00a4bcb26e619793c6b7e909e67d" name="ad40a00a4bcb26e619793c6b7e909e67d"></a>
+<tr class="memitem:aa2c2a071a573923006c4fde593ce4283" id="r_aa2c2a071a573923006c4fde593ce4283"><td class="memItemLeft" align="right" valign="top"><a id="aa2c2a071a573923006c4fde593ce4283" name="aa2c2a071a573923006c4fde593ce4283"></a>
+struct <a class="el" href="struct_nodes_1_1_rate_limiter_1_1_node_1_1ins.html">Nodes::RateLimiter::Node::ins</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:aa2c2a071a573923006c4fde593ce4283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e97fcdf753a70911e571a687a4e681" id="r_aa2e97fcdf753a70911e571a687a4e681"><td class="memItemLeft" ><a id="aa2e97fcdf753a70911e571a687a4e681" name="aa2e97fcdf753a70911e571a687a4e681"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716e96372944455c8b028f6d0a832594" id="r_a716e96372944455c8b028f6d0a832594"><td class="memItemLeft" >
+<tr class="memitem:a6a8380f239d80750d3fc42b84a79f014" id="r_a6a8380f239d80750d3fc42b84a79f014"><td class="memItemLeft" >
 &#160;&#160;&#160;halp::timed_callback&lt;&quot;out&quot;, ossia::value &gt;&#160;&#160;&#160;<b>out</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a716e96372944455c8b028f6d0a832594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad40a00a4bcb26e619793c6b7e909e67d" id="r_ad40a00a4bcb26e619793c6b7e909e67d"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ad40a00a4bcb26e619793c6b7e909e67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a6a8380f239d80750d3fc42b84a79f014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e97fcdf753a70911e571a687a4e681" id="r_aa2e97fcdf753a70911e571a687a4e681"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aa2e97fcdf753a70911e571a687a4e681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d44186e6bb67edc0b5e8ba2b1967c3" id="r_ab3d44186e6bb67edc0b5e8ba2b1967c3"><td class="memItemLeft" align="right" valign="top"><a id="ab3d44186e6bb67edc0b5e8ba2b1967c3" name="ab3d44186e6bb67edc0b5e8ba2b1967c3"></a>
+ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_state</b></td></tr>
+<tr class="separator:ab3d44186e6bb67edc0b5e8ba2b1967c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69113c3d78a03df07148ff520b173ea" id="r_af69113c3d78a03df07148ff520b173ea"><td class="memItemLeft" align="right" valign="top"><a id="af69113c3d78a03df07148ff520b173ea" name="af69113c3d78a03df07148ff520b173ea"></a>
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_time</b> {}</td></tr>
 <tr class="separator:af69113c3d78a03df07148ff520b173ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5369fe8fca9aeb8bb94ab16d7f7d3a15" id="r_a5369fe8fca9aeb8bb94ab16d7f7d3a15"><td class="memItemLeft" align="right" valign="top"><a id="a5369fe8fca9aeb8bb94ab16d7f7d3a15" name="a5369fe8fca9aeb8bb94ab16d7f7d3a15"></a>
+std::optional&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pending</b></td></tr>
+<tr class="separator:a5369fe8fca9aeb8bb94ab16d7f7d3a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da66bd084b4611be1348bf694d1acd4" id="r_a6da66bd084b4611be1348bf694d1acd4"><td class="memItemLeft" align="right" valign="top"><a id="a6da66bd084b4611be1348bf694d1acd4" name="a6da66bd084b4611be1348bf694d1acd4"></a>
+long double&#160;</td><td class="memItemRight" valign="bottom"><b>deadline</b> {}</td></tr>
+<tr class="separator:a6da66bd084b4611be1348bf694d1acd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7602ca318652ffce34cf6b79daa9e28" id="r_ad7602ca318652ffce34cf6b79daa9e28"><td class="memItemLeft" align="right" valign="top"><a id="ad7602ca318652ffce34cf6b79daa9e28" name="ad7602ca318652ffce34cf6b79daa9e28"></a>
+std::optional&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>previous_end</b></td></tr>
+<tr class="separator:ad7602ca318652ffce34cf6b79daa9e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e084ba562b5e015289de7e812c5f2a" id="r_aa8e084ba562b5e015289de7e812c5f2a"><td class="memItemLeft" align="right" valign="top"><a id="aa8e084ba562b5e015289de7e812c5f2a" name="aa8e084ba562b5e015289de7e812c5f2a"></a>
+Mode&#160;</td><td class="memItemRight" valign="bottom"><b>previous_mode</b> {Mode::Limit}</td></tr>
+<tr class="separator:aa8e084ba562b5e015289de7e812c5f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869af47f2ae9b3d9f10b0de729be9ce3" id="r_a869af47f2ae9b3d9f10b0de729be9ce3"><td class="memItemLeft" align="right" valign="top"><a id="a869af47f2ae9b3d9f10b0de729be9ce3" name="a869af47f2ae9b3d9f10b0de729be9ce3"></a>
+ossia::small_vector&lt; const ossia::timed_value *, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ordered_events</b></td></tr>
+<tr class="separator:a869af47f2ae9b3d9f10b0de729be9ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a78ed60c6796e7550407a0ed1d3fce1d9" id="r_a78ed60c6796e7550407a0ed1d3fce1d9"><td class="memItemLeft" align="right" valign="top"><a id="a78ed60c6796e7550407a0ed1d3fce1d9" name="a78ed60c6796e7550407a0ed1d3fce1d9"></a>
-static const constexpr int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>flicks_per_ms</b> = 705'600</td></tr>
-<tr class="separator:a78ed60c6796e7550407a0ed1d3fce1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718f3eea08a5415aa18e1dff4b0a9147" id="r_a718f3eea08a5415aa18e1dff4b0a9147"><td class="memItemLeft" align="right" valign="top"><a id="a718f3eea08a5415aa18e1dff4b0a9147" name="a718f3eea08a5415aa18e1dff4b0a9147"></a>
+static constexpr int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>flicks_per_ms</b> = 705'600</td></tr>
+<tr class="separator:a718f3eea08a5415aa18e1dff4b0a9147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_rate_limiter_8hpp_source.html">RateLimiter.hpp</a></li>

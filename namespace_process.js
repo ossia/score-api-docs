@@ -152,6 +152,7 @@ var namespace_process =
     [ "SetControlValue", "class_process_1_1_set_control_value.html", null ],
     [ "StateNodeData", "struct_process_1_1_state_node_data.html", null ],
     [ "StateNodeValues", "struct_process_1_1_state_node_values.html", null ],
+    [ "StringListEditor", "class_process_1_1_string_list_editor.html", null ],
     [ "Style", "struct_process_1_1_style.html", null ],
     [ "TimeChooser", "struct_process_1_1_time_chooser.html", null ],
     [ "Toggle", "struct_process_1_1_toggle.html", null ],

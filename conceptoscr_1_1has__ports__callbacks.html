@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('conceptoscr_1_1has__ports__callbacks.h
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1has__ports__callbacks.html">oscr::has_ports_callbacks</a> =  oscr::has_controller_ports&lt;T&gt; || oscr::has_dynamic_ports&lt;T&gt;</div>
 <div class="line">      || (avnd::controller_setup_port_input_introspection&lt;T&gt;::size &gt; 0)</div>
-<div class="ttc" id="aconceptoscr_1_1has__ports__callbacks_html"><div class="ttname"><a href="conceptoscr_1_1has__ports__callbacks.html">oscr::has_ports_callbacks</a></div><div class="ttdef"><b>Definition</b> Concepts.hpp:47</div></div>
+<div class="ttc" id="aconceptoscr_1_1has__ports__callbacks_html"><div class="ttname"><a href="conceptoscr_1_1has__ports__callbacks.html">oscr::has_ports_callbacks</a></div><div class="ttdef"><b>Definition</b> Concepts.hpp:49</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Whether the process model has to keep an instance of the object around, to run the callbacks that are declared on its ports: the controllers that resize the dynamic ports, and the on_controller_setup / on_controller_interaction hooks, which are also used by objects without dynamic ports. </p>
 </div></div><!-- contents -->

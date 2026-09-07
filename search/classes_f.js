@@ -57,7 +57,7 @@ var searchData=
   ['ossiavariantjsonserializer_54',['OssiaVariantJSONSerializer',['../struct_ossia_variant_j_s_o_n_serializer.html',1,'']]],
   ['out_5fmsg_55',['out_msg',['../structavnd__tools_1_1_entity_to_midi_1_1out__msg.html',1,'avnd_tools::EntityToMidi']]],
   ['outlet_56',['outlet',['../class_j_s_1_1_outlet.html',1,'JS::Outlet'],['../class_process_1_1_outlet.html',1,'Process::Outlet']]],
-  ['outlet_5fvis_57',['outlet_vis',['../struct_jit_1_1outlet__vis.html',1,'Jit::outlet_vis'],['../struct_avnd_jit_1_1outlet__vis.html',1,'AvndJit::outlet_vis']]],
+  ['outlet_5fvis_57',['outlet_vis',['../struct_avnd_jit_1_1outlet__vis.html',1,'AvndJit::outlet_vis'],['../struct_jit_1_1outlet__vis.html',1,'Jit::outlet_vis']]],
   ['outletinitfunc_58',['OutletInitFunc',['../structoscr_1_1_outlet_init_func.html',1,'oscr']]],
   ['outletinspectorfactory_59',['OutletInspectorFactory',['../class_dataflow_1_1_outlet_inspector_factory.html',1,'Dataflow']]],
   ['outlets_60',['Outlets',['../struct_process_1_1_outlets.html',1,'Process']]],
@@ -72,7 +72,7 @@ var searchData=
   ['outputpreviewwindows_69',['OutputPreviewWindows',['../class_gfx_1_1_output_preview_windows.html',1,'Gfx']]],
   ['outputstream_70',['OutputStream',['../struct_gfx_1_1_output_stream.html',1,'Gfx']]],
   ['outputubo_71',['OutputUBO',['../structscore_1_1gfx_1_1_output_u_b_o.html',1,'score::gfx']]],
-  ['outs_72',['outs',['../structavnd__tools_1_1_entity_to_midi_1_1outs.html',1,'avnd_tools::EntityToMidi::outs'],['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker::outs']]],
+  ['outs_72',['outs',['../structavnd__tools_1_1_bytes_to_string_1_1outs.html',1,'avnd_tools::BytesToString::outs'],['../structavnd__tools_1_1_entity_to_midi_1_1outs.html',1,'avnd_tools::EntityToMidi::outs'],['../structavnd__tools_1_1_string_to_bytes_1_1outs.html',1,'avnd_tools::StringToBytes::outs'],['../struct_threedim_1_1_geometry_packer_1_1outs.html',1,'Threedim::GeometryPacker::outs']]],
   ['outvaluemessage_73',['OutValueMessage',['../struct_j_s_1_1_out_value_message.html',1,'JS']]],
   ['owningdeviceinterface_74',['OwningDeviceInterface',['../class_device_1_1_owning_device_interface.html',1,'Device']]]
 ];

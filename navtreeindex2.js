@@ -143,6 +143,7 @@ var NAVTREEINDEX2 =
 "_identifier_generation_8hpp_source.html":[13,0,0,1,1,12,17],
 "_image_list_chooser_8hpp_source.html":[13,0,0,2,17,1,6,1],
 "_image_node_8hpp_source.html":[13,0,0,2,17,1,4,13],
+"_imported_ui_8hpp_source.html":[13,0,0,2,20,0,2,4],
 "_include_libpd_8hpp_source.html":[13,0,0,2,28,0,3],
 "_indirect_container_8hpp_source.html":[13,0,0,1,1,12,2,4],
 "_infinite_scroller_8hpp_source.html":[13,0,0,1,1,5,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_library_widget_8hpp_source.html":[13,0,0,2,21,0,5],
 "_licenses_8hpp_source.html":[13,0,0,1,0,6,5],
 "_linear_segment_8hpp_source.html":[13,0,0,2,11,0,4,0,0],
-"_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,39,0,0,0,0],
-"_list_network_addresses_8hpp_source.html":[13,0,0,1,1,12,19]
+"_linux_2_plug_frame_8hpp_source.html":[13,0,0,2,39,0,0,0,0]
 };

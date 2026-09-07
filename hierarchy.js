@@ -179,13 +179,19 @@ var hierarchy =
       ] ],
       [ "LocalTree::GetPropertyWrapper< Property >", "struct_local_tree_1_1_get_property_wrapper.html", null ]
     ] ],
+    [ "rapidjson::BaseReaderHandler", null, [
+      [ "avnd_tools::value_serialization::json_reader", "structavnd__tools_1_1value__serialization_1_1json__reader.html", null ]
+    ] ],
     [ "BaseScenarioPresenter< Model_T, IntervalPresenter_T >", "class_base_scenario_presenter.html", null ],
     [ "BaseScenarioPresenter< DisplayedElementsModel, FullViewIntervalPresenter >", "class_base_scenario_presenter.html", [
       [ "Scenario::DisplayedElementsPresenter", "class_scenario_1_1_displayed_elements_presenter.html", null ]
     ] ],
     [ "BaseScenarioRefContainer", "class_base_scenario_ref_container.html", null ],
+    [ "avnd_tools::value_serialization::basic_json_writer< Writer >", "structavnd__tools_1_1value__serialization_1_1basic__json__writer.html", null ],
     [ "avnd_tools::btrk::beat_dll", "structavnd__tools_1_1btrk_1_1beat__dll.html", null ],
     [ "avnd_tools::BeatTracker", "structavnd__tools_1_1_beat_tracker.html", null ],
+    [ "avnd_tools::value_serialization::binary_field", "structavnd__tools_1_1value__serialization_1_1binary__field.html", null ],
+    [ "avnd_tools::value_serialization::binary_layout", "structavnd__tools_1_1value__serialization_1_1binary__layout.html", null ],
     [ "gpp::qrhi::DefaultPipeline::layout::bindings", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html", null ],
     [ "halp::position_gpu_geometry::bindings", "structhalp_1_1position__gpu__geometry_1_1bindings.html", null ],
     [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
@@ -203,6 +209,7 @@ var hierarchy =
     [ "vst3::BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
+    [ "avnd_tools::BytesToString", "structavnd__tools_1_1_bytes_to_string.html", null ],
     [ "Process::CableData", "struct_process_1_1_cable_data.html", null ],
     [ "JS::ComponentCache::Cache", "struct_j_s_1_1_component_cache_1_1_cache.html", null ],
     [ "halp::callback", null, [
@@ -216,12 +223,14 @@ var hierarchy =
     [ "Gfx::WindowCapture::CapturableWindow", "struct_gfx_1_1_window_capture_1_1_capturable_window.html", null ],
     [ "Gfx::WindowCapture::CapturedFrame", "struct_gfx_1_1_window_capture_1_1_captured_frame.html", null ],
     [ "Gfx::WindowCapture::CaptureTarget", "struct_gfx_1_1_window_capture_1_1_capture_target.html", null ],
+    [ "ao::Switch::case_port", "structao_1_1_switch_1_1case__port.html", null ],
     [ "Scenario::CategorisedScenario", "struct_scenario_1_1_categorised_scenario.html", null ],
     [ "Scenario::CategorizedAddress", "struct_scenario_1_1_categorized_address.html", null ],
     [ "Scenario::CategorizedAddresses", "struct_scenario_1_1_categorized_addresses.html", null ],
     [ "YSFX::CategorizedPreset", "struct_y_s_f_x_1_1_categorized_preset.html", null ],
     [ "Category_k", "class_category__k.html", null ],
     [ "Library::CategoryPaths", "class_library_1_1_category_paths.html", null ],
+    [ "avnd_tools::value_serialization::cbor_writer", "structavnd__tools_1_1value__serialization_1_1cbor__writer.html", null ],
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "avnd_tools::EntityToMidi::chan_info", "structavnd__tools_1_1_entity_to_midi_1_1chan__info.html", null ],
@@ -744,6 +753,7 @@ var hierarchy =
     [ "score::detail::dereference_visitor< T >", "structscore_1_1detail_1_1dereference__visitor.html", null ],
     [ "Description_k", "class_description__k.html", null ],
     [ "Process::Descriptor", "struct_process_1_1_descriptor.html", null ],
+    [ "avnd_tools::Deserialize", "structavnd__tools_1_1_deserialize.html", null ],
     [ "oscr::Deserializer", "structoscr_1_1_deserializer.html", null ],
     [ "State::DestinationQualifiers", "struct_state_1_1_destination_qualifiers.html", null ],
     [ "ossia::net::device_base", null, [
@@ -772,6 +782,7 @@ var hierarchy =
     [ "DiagnosticConsumer", null, [
       [ "QtDiagnosticConsumer", "class_qt_diagnostic_consumer.html", null ]
     ] ],
+    [ "JS::DialogOwner", "struct_j_s_1_1_dialog_owner.html", null ],
     [ "avnd_tools::detail::dimension_changer< T >", "structavnd__tools_1_1detail_1_1dimension__changer.html", null ],
     [ "Threedim::DirectBufferReferenceStrategy", "class_threedim_1_1_direct_buffer_reference_strategy.html", null ],
     [ "Nodes::Direction", "struct_nodes_1_1_direction.html", null ],
@@ -889,6 +900,7 @@ var hierarchy =
         [ "Jit::Exception", "struct_jit_1_1_exception.html", null ],
         [ "NodeNotFoundException", "class_node_not_found_exception.html", null ],
         [ "Threedim::VoxParseError", "struct_threedim_1_1_vox_parse_error.html", null ],
+        [ "avnd_tools::value_serialization::codec_error", "structavnd__tools_1_1value__serialization_1_1codec__error.html", null ],
         [ "score::MissingCommandException", "classscore_1_1_missing_command_exception.html", null ]
       ] ]
     ] ],
@@ -1007,10 +1019,12 @@ var hierarchy =
     [ "score::libav::MediaInfo::FormatContextDeleter", "structscore_1_1libav_1_1_media_info_1_1_format_context_deleter.html", null ],
     [ "Faust::FoundKeys", "struct_faust_1_1_found_keys.html", null ],
     [ "gpp::qrhi::DefaultPipeline::layout::fragment_input", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input.html", null ],
+    [ "avnd_tools::value_serialization::json_reader::frame", "structavnd__tools_1_1value__serialization_1_1json__reader_1_1frame.html", null ],
     [ "libfreenect2::FrameListener", null, [
       [ "Gfx::Kinect2::Listener", "struct_gfx_1_1_kinect2_1_1_listener.html", null ]
     ] ],
     [ "Video::FrameQueue", "struct_video_1_1_frame_queue.html", null ],
+    [ "avnd_tools::value_serialization::free_binary_writer", "structavnd__tools_1_1value__serialization_1_1free__binary__writer.html", null ],
     [ "Video::FreeAVFrame", "struct_video_1_1_free_a_v_frame.html", null ],
     [ "Device::FullAddressAccessorSettings", "struct_device_1_1_full_address_accessor_settings.html", null ],
     [ "Scenario::FullSlot", "struct_scenario_1_1_full_slot.html", null ],
@@ -1029,6 +1043,8 @@ var hierarchy =
     [ "Threedim::GeometryPort", "struct_threedim_1_1_geometry_port.html", null ],
     [ "Scenario::get_curve_domain", "struct_scenario_1_1get__curve__domain.html", null ],
     [ "Scenario::get_start_end", "struct_scenario_1_1get__start__end.html", null ],
+    [ "oscr::GetGUIValue< T >", "structoscr_1_1_get_g_u_i_value.html", null ],
+    [ "oscr::GetGUIValue< T >", "structoscr_1_1_get_g_u_i_value_3_01_t_01_4.html", null ],
     [ "Analysis::GistState", "struct_analysis_1_1_gist_state.html", [
       [ "Analysis::CSD", "struct_analysis_1_1_c_s_d.html", null ],
       [ "Analysis::Centroid", "struct_analysis_1_1_centroid.html", null ],
@@ -1387,14 +1403,19 @@ var hierarchy =
     [ "AvndJit::inlet_vis", "struct_avnd_jit_1_1inlet__vis.html", null ],
     [ "Jit::inlet_vis", "struct_jit_1_1inlet__vis.html", null ],
     [ "oscr::InletInitFunc< Node >", "structoscr_1_1_inlet_init_func.html", null ],
+    [ "avnd_tools::Rendezvous::Input", "structavnd__tools_1_1_rendezvous_1_1_input.html", null ],
     [ "Nodes::MidiHiRes::Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
     [ "Nodes::LFO::v1::Node::Inputs", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_inputs.html", null ],
     [ "avnd_tools::DeviceRecorder::inputs_t", "structavnd__tools_1_1_device_recorder_1_1inputs__t.html", null ],
     [ "avnd_tools::Teleplot::inputs_t", "structavnd__tools_1_1_teleplot_1_1inputs__t.html", null ],
     [ "avnd_tools::BeatTracker::ins", "structavnd__tools_1_1_beat_tracker_1_1ins.html", null ],
+    [ "avnd_tools::BytesToString::ins", "structavnd__tools_1_1_bytes_to_string_1_1ins.html", null ],
+    [ "avnd_tools::Deserialize::ins", "structavnd__tools_1_1_deserialize_1_1ins.html", null ],
     [ "avnd_tools::EntityToMidi::ins", "structavnd__tools_1_1_entity_to_midi_1_1ins.html", null ],
     [ "avnd_tools::PointTrackerBase< N >::ins", "structavnd__tools_1_1_point_tracker_base_1_1ins.html", null ],
+    [ "avnd_tools::Serialize::ins", "structavnd__tools_1_1_serialize_1_1ins.html", null ],
+    [ "avnd_tools::StringToBytes::ins", "structavnd__tools_1_1_string_to_bytes_1_1ins.html", null ],
     [ "Nodes::ArrayGenerator::Node::ins", "struct_nodes_1_1_array_generator_1_1_node_1_1ins.html", null ],
     [ "Nodes::ArrayMapping::Node::ins", "struct_nodes_1_1_array_mapping_1_1_node_1_1ins.html", null ],
     [ "Nodes::AudioLooper::Node::ins", "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html", null ],
@@ -1586,6 +1607,9 @@ var hierarchy =
           [ "Dataflow::AutomatablePortFactory_T< Model_T >", "class_dataflow_1_1_automatable_port_factory___t.html", null ],
           [ "Dataflow::ControlInletFactory", "struct_dataflow_1_1_control_inlet_factory.html", [
             [ "Dataflow::WidgetInletFactory< oscr::CustomFloatControl< Node, avnd::field_index< N > >, WidgetFactory::FloatControl< MatchingWidget< Field >::type, NormalizerFromMapper< Field >, true > >", "struct_dataflow_1_1_widget_inlet_factory.html", [
+              [ "oscr::CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
+            ] ],
+            [ "Dataflow::WidgetInletFactory< CustomGenericControl< Process::MultiSlider, Node, Field, avnd::field_index< N > >, StringListControl >", "struct_dataflow_1_1_widget_inlet_factory.html", [
               [ "oscr::CustomControlFactory< Node, avnd::field_reflection< N, Field > >", "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
             ] ],
             [ "Dataflow::WidgetInletFactory< CustomGenericControl< Process::IntSpinBox, Node, Field, avnd::field_index< N > >, ControllerIntSpinBox >", "struct_dataflow_1_1_widget_inlet_factory.html", [
@@ -1897,6 +1921,7 @@ var hierarchy =
     [ "Jit::JitCompiler", "class_jit_1_1_jit_compiler.html", null ],
     [ "Protocols::JoystickSpecificSettings", "struct_protocols_1_1_joystick_specific_settings.html", null ],
     [ "Json_k", "class_json__k.html", null ],
+    [ "avnd_tools::value_serialization::json_output", "structavnd__tools_1_1value__serialization_1_1json__output.html", null ],
     [ "JSONObject", "class_j_s_o_n_object.html", null ],
     [ "JsonValue", "struct_json_value.html", null ],
     [ "Gfx::Kinect2::kinect2_camera", "struct_gfx_1_1_kinect2_1_1kinect2__camera.html", null ],
@@ -1920,6 +1945,7 @@ var hierarchy =
     [ "Layout", null, [
       [ "score::MarginLess< Layout >", "classscore_1_1_margin_less.html", null ]
     ] ],
+    [ "avnd_tools::value_serialization::layout_cache", "structavnd__tools_1_1value__serialization_1_1layout__cache.html", null ],
     [ "Process::LayoutBuilderBase", "struct_process_1_1_layout_builder_base.html", [
       [ "oscr::LayoutBuilder< Info >", "structoscr_1_1_layout_builder.html", null ]
     ] ],
@@ -1948,6 +1974,7 @@ var hierarchy =
     [ "libsuil", "classlibsuil.html", null ],
     [ "Gfx::WindowCapture::libx11", "struct_gfx_1_1_window_capture_1_1libx11.html", null ],
     [ "score::LicenseInfo", "structscore_1_1_license_info.html", null ],
+    [ "avnd_tools::value_serialization::limits", "structavnd__tools_1_1value__serialization_1_1limits.html", null ],
     [ "score::linear_id_generator", "structscore_1_1linear__id__generator.html", null ],
     [ "WidgetFactory::LinearNormalizer", "struct_widget_factory_1_1_linear_normalizer.html", null ],
     [ "halp::lineedit", null, [
@@ -1957,6 +1984,7 @@ var hierarchy =
     [ "servus::Listener", null, [
       [ "Protocols::DNSSDWorker", "class_protocols_1_1_d_n_s_s_d_worker.html", null ]
     ] ],
+    [ "ao::Switch::Literal", "structao_1_1_switch_1_1_literal.html", null ],
     [ "score::LoadedPluginVersions", "structscore_1_1_loaded_plugin_versions.html", null ],
     [ "Protocols::LocalSpecificSettings", "struct_protocols_1_1_local_specific_settings.html", null ],
     [ "Jit::located_sdk", "struct_jit_1_1located__sdk.html", null ],
@@ -2371,7 +2399,9 @@ var hierarchy =
     [ "Gfx::OutputMapping", "struct_gfx_1_1_output_mapping.html", null ],
     [ "Gfx::OutputStream", "struct_gfx_1_1_output_stream.html", null ],
     [ "score::gfx::OutputUBO", "structscore_1_1gfx_1_1_output_u_b_o.html", null ],
+    [ "avnd_tools::BytesToString::outs", "structavnd__tools_1_1_bytes_to_string_1_1outs.html", null ],
     [ "avnd_tools::EntityToMidi::outs", "structavnd__tools_1_1_entity_to_midi_1_1outs.html", null ],
+    [ "avnd_tools::StringToBytes::outs", "structavnd__tools_1_1_string_to_bytes_1_1outs.html", null ],
     [ "Threedim::GeometryPacker::outs", "struct_threedim_1_1_geometry_packer_1_1outs.html", null ],
     [ "JS::OutValueMessage", "struct_j_s_1_1_out_value_message.html", null ],
     [ "PM::Package", "struct_p_m_1_1_package.html", null ],
@@ -2428,8 +2458,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2582,6 +2612,7 @@ var hierarchy =
     [ "score::gfx::GPUBufferScatter::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_prepared_op.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
+    [ "avnd_tools::value_serialization::pretty_output_iterator", "structavnd__tools_1_1value__serialization_1_1pretty__output__iterator.html", null ],
     [ "PrettyName_k", "class_pretty_name__k.html", null ],
     [ "State::PrettyPrintOptions", "struct_state_1_1_pretty_print_options.html", null ],
     [ "Threedim::Primitive", "struct_threedim_1_1_primitive.html", [
@@ -3174,6 +3205,9 @@ var hierarchy =
       [ "score::MarginLess< QHBoxLayout >", "classscore_1_1_margin_less.html", null ]
     ] ],
     [ "Media::Sound::QImagePool", "struct_media_1_1_sound_1_1_q_image_pool.html", null ],
+    [ "QIODevice", null, [
+      [ "avnd_tools::value_serialization::cbor_output", "structavnd__tools_1_1value__serialization_1_1cbor__output.html", null ]
+    ] ],
     [ "QLabel", null, [
       [ "TextLabel", "class_text_label.html", null ],
       [ "score::HelperPanelDelegate::FasterLabel", "structscore_1_1_helper_panel_delegate_1_1_faster_label.html", null ],
@@ -3871,6 +3905,7 @@ var hierarchy =
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ]
     ] ],
     [ "QQuickItem", null, [
+      [ "JS::ImportedUi", "class_j_s_1_1_imported_ui.html", null ],
       [ "JS::ScriptUI", "class_j_s_1_1_script_u_i.html", null ]
     ] ],
     [ "QScrollArea", null, [
@@ -4104,6 +4139,7 @@ var hierarchy =
       [ "Process::EditorOverlayHost", "class_process_1_1_editor_overlay_host.html", null ],
       [ "Process::InspectorWidgetDelegate_T< Process_T >", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "Process::PortListWidget", "class_process_1_1_port_list_widget.html", null ],
+      [ "Process::StringListEditor", "class_process_1_1_string_list_editor.html", null ],
       [ "Protocols::BasicTCPWidget", "class_protocols_1_1_basic_t_c_p_widget.html", null ],
       [ "Protocols::CoAPTransportWidget", "class_protocols_1_1_co_a_p_transport_widget.html", null ],
       [ "Protocols::MQTTTransportWidget", "class_protocols_1_1_m_q_t_t_transport_widget.html", null ],
@@ -4189,7 +4225,6 @@ var hierarchy =
     [ "Threedim::DeformationControl::range", "struct_threedim_1_1_deformation_control_1_1range.html", null ],
     [ "Automation::RecreateOnPlay::range_position", "struct_automation_1_1_recreate_on_play_1_1range__position.html", null ],
     [ "Ui::ValueDisplay::raw_port< lit, T >", "struct_ui_1_1_value_display_1_1raw__port.html", null ],
-    [ "Ui::ValueDisplay::raw_port<\"in\", ossia::value_port >", "struct_ui_1_1_value_display_1_1raw__port.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "moodycamel::ReaderWriterQueue", null, [
       [ "Execution::ExecutionCommandQueue", "struct_execution_1_1_execution_command_queue.html", null ]
@@ -4224,6 +4259,7 @@ var hierarchy =
     [ "score::gfx::RenderList", "classscore_1_1gfx_1_1_render_list.html", null ],
     [ "score::gfx::RenderState", "structscore_1_1gfx_1_1_render_state.html", null ],
     [ "score::gfx::RenderTargetSpecs", "structscore_1_1gfx_1_1_render_target_specs.html", null ],
+    [ "avnd_tools::Rendezvous", "structavnd__tools_1_1_rendezvous.html", null ],
     [ "Scenario::RequestOverlayMenuCallback", "struct_scenario_1_1_request_overlay_menu_callback.html", null ],
     [ "Video::Rescale", "class_video_1_1_rescale.html", null ],
     [ "avnd_tools::AudioRecorder::reset_message", "structavnd__tools_1_1_audio_recorder_1_1reset__message.html", null ],
@@ -4288,9 +4324,14 @@ var hierarchy =
     ] ],
     [ "serialization_tag< T >", "structserialization__tag.html", null ],
     [ "serialization_tag< T >", "structserialization__tag_3_01_t_01_4.html", null ],
+    [ "avnd_tools::Serialize", "structavnd__tools_1_1_serialize.html", null ],
     [ "oscr::Serializer", "structoscr_1_1_serializer.html", null ],
     [ "Protocols::SerialSpecificSettings", "struct_protocols_1_1_serial_specific_settings.html", null ],
+    [ "oscr::SetGUIValue< T >", "structoscr_1_1_set_g_u_i_value.html", null ],
+    [ "oscr::SetGUIValue< T >", "structoscr_1_1_set_g_u_i_value_3_01_t_01_4.html", null ],
     [ "Curve::SetSegmentParametersCommandObject", "class_curve_1_1_set_segment_parameters_command_object.html", null ],
+    [ "avnd_tools::Deserialize::ui::Settings", "structavnd__tools_1_1_deserialize_1_1ui_1_1_settings.html", null ],
+    [ "avnd_tools::Serialize::ui::Settings", "structavnd__tools_1_1_serialize_1_1ui_1_1_settings.html", null ],
     [ "score::Settings", "classscore_1_1_settings.html", null ],
     [ "score::SettingsCommandBase", "classscore_1_1_settings_command_base.html", [
       [ "score::SettingsCommand< T >", "classscore_1_1_settings_command.html", null ]
@@ -4393,6 +4434,8 @@ var hierarchy =
     [ "Media::AudioFile::StreamView", "struct_media_1_1_audio_file_1_1_stream_view.html", null ],
     [ "score::uuids::string_generator", "structscore_1_1uuids_1_1string__generator.html", null ],
     [ "score::StringConstants", "structscore_1_1_string_constants.html", null ],
+    [ "oscr::StringListControl", "structoscr_1_1_string_list_control.html", null ],
+    [ "avnd_tools::StringToBytes", "structavnd__tools_1_1_string_to_bytes.html", null ],
     [ "Threedim::StrucSynth", "class_threedim_1_1_struc_synth.html", null ],
     [ "Curve::Style", "struct_curve_1_1_style.html", null ],
     [ "Process::Style", "struct_process_1_1_style.html", null ],
@@ -4402,6 +4445,7 @@ var hierarchy =
     ] ],
     [ "score::SubtypeVariant< Base, Args >", "classscore_1_1_subtype_variant.html", null ],
     [ "avnd_tools::PatternCombiner::sum", "structavnd__tools_1_1_pattern_combiner_1_1sum.html", null ],
+    [ "ao::Switch", "structao_1_1_switch.html", null ],
     [ "SyncInfo", "struct_sync_info.html", null ],
     [ "avnd_tools::EntityToMidi::synth_state", "structavnd__tools_1_1_entity_to_midi_1_1synth__state.html", null ],
     [ "T", null, [
@@ -4649,8 +4693,10 @@ var hierarchy =
     [ "score::gfx::TextNode::UBO", "structscore_1_1gfx_1_1_text_node_1_1_u_b_o.html", null ],
     [ "Device::UDPPortDeviceResource", "struct_device_1_1_u_d_p_port_device_resource.html", null ],
     [ "avnd_tools::BeatTracker::ui", "structavnd__tools_1_1_beat_tracker_1_1ui.html", null ],
+    [ "avnd_tools::Deserialize::ui", "structavnd__tools_1_1_deserialize_1_1ui.html", null ],
     [ "avnd_tools::EntityToMidi::ui", "structavnd__tools_1_1_entity_to_midi_1_1ui.html", null ],
     [ "avnd_tools::PointTrackerBase< N >::ui", "structavnd__tools_1_1_point_tracker_base_1_1ui.html", null ],
+    [ "avnd_tools::Serialize::ui", "structavnd__tools_1_1_serialize_1_1ui.html", null ],
     [ "Nodes::ArrayGenerator::Node::ui", "struct_nodes_1_1_array_generator_1_1_node_1_1ui.html", null ],
     [ "Nodes::ArrayMapping::Node::ui", "struct_nodes_1_1_array_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::AudioLooper::Node::ui", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html", null ],
@@ -4695,11 +4741,13 @@ var hierarchy =
       [ "Analysis::value_out", "struct_analysis_1_1value__out.html", null ]
     ] ],
     [ "Nodes::PulseToNote::Node::val_visitor", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html", null ],
+    [ "avnd_tools::value_serialization::validation_writer", "structavnd__tools_1_1value__serialization_1_1validation__writer.html", null ],
     [ "jk::value", "structjk_1_1value.html", null ],
     [ "avnd_tools::PatternCombiner::value_size", "structavnd__tools_1_1_pattern_combiner_1_1value__size.html", null ],
     [ "Scenario::value_size", "struct_scenario_1_1value__size.html", null ],
     [ "Pd::libpd_list_wrapper::value_visitor", "struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html", null ],
     [ "Ui::SignalDisplay::Node::value_visitor", "struct_ui_1_1_signal_display_1_1_node_1_1value__visitor.html", null ],
+    [ "avnd_tools::value_serialization::value_writer< Writer >", "structavnd__tools_1_1value__serialization_1_1value__writer.html", null ],
     [ "score::ValueAssigner< T >", "structscore_1_1_value_assigner.html", null ],
     [ "score::ValueAssigner< float >", "structscore_1_1_value_assigner_3_01float_01_4.html", null ],
     [ "score::ValueAssigner< int >", "structscore_1_1_value_assigner_3_01int_01_4.html", null ],
@@ -4796,6 +4844,7 @@ var hierarchy =
     [ "gpp::qrhi::generate_shaders::write_input", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__input.html", null ],
     [ "gpp::qrhi::generate_shaders::write_output", "structgpp_1_1qrhi_1_1generate__shaders_1_1write__output.html", null ],
     [ "Writer< T >", "class_writer.html", null ],
+    [ "Writer< avnd_tools::value_serialization::json_output, rapidjson::UTF8<>, rapidjson::UTF8<>, rapidjson::CrtAllocator, rapidjson::kWriteValidateEncodingFlag >", "class_writer.html", null ],
     [ "RemoteControl::WS::WSClient", "struct_remote_control_1_1_w_s_1_1_w_s_client.html", null ],
     [ "Protocols::WSSpecificSettings", "struct_protocols_1_1_w_s_specific_settings.html", null ],
     [ "WidgetFactory::XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
