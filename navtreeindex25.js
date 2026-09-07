@@ -1,5 +1,7 @@
 var NAVTREEINDEX25 =
 {
+"struct_clap_1_1clap__mono__process.html":[12,0,9,1],
+"struct_clap_1_1clap__node__mono_1_1poly__plugin.html":[12,0,9,6,0],
 "struct_clap_1_1clap__process.html":[12,0,9,9],
 "struct_clap_1_1context__menu__builder__impl.html":[12,0,9,10],
 "struct_clap_1_1event__storage.html":[12,0,9,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX25 =
 "struct_gfx_1_1_program_cache.html":[11,0,5,77],
 "struct_gfx_1_1_program_cache.html":[12,0,22,96],
 "struct_gfx_1_1_render_pipeline_1_1_process_factory.html":[12,0,22,8,2],
-"struct_gfx_1_1_s16_i_audio_frame_encoder.html":[11,0,5,80],
-"struct_gfx_1_1_s16_i_audio_frame_encoder.html":[12,0,22,99],
-"struct_gfx_1_1_s16_p_audio_frame_encoder.html":[11,0,5,81]
+"struct_gfx_1_1_s16_i_audio_frame_encoder.html":[11,0,5,80]
 };

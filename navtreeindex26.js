@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"struct_gfx_1_1_s16_i_audio_frame_encoder.html":[12,0,22,99],
+"struct_gfx_1_1_s16_p_audio_frame_encoder.html":[11,0,5,81],
 "struct_gfx_1_1_s16_p_audio_frame_encoder.html":[12,0,22,100],
 "struct_gfx_1_1_s24_i_audio_frame_encoder.html":[11,0,5,82],
 "struct_gfx_1_1_s24_i_audio_frame_encoder.html":[12,0,22,101],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "struct_nodes_1_1_arpeggiator_1_1_octave_mode.html":[12,0,43,0,2],
 "struct_nodes_1_1_arpeggiator_1_1_octave_mode_1_1range.html":[12,0,43,0,2,0],
 "struct_nodes_1_1_array_generator_1_1_node.html":[12,0,43,1,0],
-"struct_nodes_1_1_array_generator_1_1_node_1_1_state.html":[12,0,43,1,0,1],
-"struct_nodes_1_1_array_generator_1_1_node_1_1_state_1_1_expr.html":[12,0,43,1,0,1,0],
-"struct_nodes_1_1_array_generator_1_1_node_1_1ins.html":[12,0,43,1,0,0]
+"struct_nodes_1_1_array_generator_1_1_node_1_1_state.html":[12,0,43,1,0,1]
 };

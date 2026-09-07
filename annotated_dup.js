@@ -1456,7 +1456,7 @@ var annotated_dup =
       [ "CompileKeyFilter", "class_process_1_1_compile_key_filter.html", null ],
       [ "ConsolidateProjectFiles", "class_process_1_1_consolidate_project_files.html", null ],
       [ "Context", "struct_process_1_1_context.html", null ],
-      [ "ControlInlet", "class_process_1_1_control_inlet.html", null ],
+      [ "ControlInlet", "class_process_1_1_control_inlet.html", "class_process_1_1_control_inlet" ],
       [ "ControlLayout", "struct_process_1_1_control_layout.html", null ],
       [ "ControlMessage", "struct_process_1_1_control_message.html", null ],
       [ "ControlOutlet", "class_process_1_1_control_outlet.html", null ],

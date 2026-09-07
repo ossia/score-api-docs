@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"plugins_2score-plugin-vst3_2_vst3_2_settings_8hpp_source.html":[13,0,0,2,39,0,11],
+"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,0,2,39,0,0,2],
 "plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,0,2,39,0,2],
 "plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,0,2,38,0,8],
 "plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,0,2,38,0,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "struct_avnd_jit_1_1inlet__vis.html":[12,0,5,2],
 "struct_avnd_jit_1_1outlet__vis.html":[12,0,5,3],
 "struct_camera_abilities.html":[12,0,93],
-"struct_clap_1_1_plugin_info.html":[12,0,9,14],
-"struct_clap_1_1clap__mono__process.html":[12,0,9,1],
-"struct_clap_1_1clap__node__mono_1_1poly__plugin.html":[12,0,9,6,0]
+"struct_clap_1_1_plugin_info.html":[12,0,9,14]
 };

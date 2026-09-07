@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57":[11,0,10,175,10],
+"namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d":[11,0,10,175,9],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a3a7d8a0abd1c49424fb28e959aa54438":[11,0,10,175,21],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96":[11,0,10,175,0],
 "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af":[11,0,10,175,19],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "plugins_2score-plugin-threedim_2_threedim_2_model_display_2_metadata_8hpp_source.html":[13,0,0,2,35,0,0,2],
 "plugins_2score-plugin-threedim_2_threedim_2_render_pipeline_2_metadata_8hpp_source.html":[13,0,0,2,35,0,1,2],
 "plugins_2score-plugin-threedim_2_threedim_2_splat_2_metadata_8hpp_source.html":[13,0,0,2,35,0,2,2],
-"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,0,2,36,0,1],
-"plugins_2score-plugin-vst3_2_vst3_2_settings_8hpp_source.html":[13,0,0,2,39,0,11],
-"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,0,2,39,0,0,2]
+"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,0,2,36,0,1]
 };

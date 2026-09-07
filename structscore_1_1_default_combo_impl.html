@@ -117,6 +117,8 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>draggable</b> 
 <tr class="memitem:a7a9089068ba896e3cbda690fd74ee366" id="r_a7a9089068ba896e3cbda690fd74ee366"><td class="memItemLeft" align="right" valign="top"><a id="a7a9089068ba896e3cbda690fd74ee366" name="a7a9089068ba896e3cbda690fd74ee366"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>positionToIndex</b> (const <a class="el" href="classscore_1_1_q_graphics_combo.html">QGraphicsCombo</a> &amp;self, double v) noexcept</td></tr>
 <tr class="separator:a7a9089068ba896e3cbda690fd74ee366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae477b3b9c501ed947008a3617a7cfb4b" id="r_ae477b3b9c501ed947008a3617a7cfb4b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_combo_impl.html#ae477b3b9c501ed947008a3617a7cfb4b">passedDragThreshold</a> (QGraphicsSceneMouseEvent *event) noexcept</td></tr>
+<tr class="separator:ae477b3b9c501ed947008a3617a7cfb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a0954e868a4c7fe134fbb44dee4281b" id="r_a9a0954e868a4c7fe134fbb44dee4281b"><td class="memItemLeft" align="right" valign="top"><a id="a9a0954e868a4c7fe134fbb44dee4281b" name="a9a0954e868a4c7fe134fbb44dee4281b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (<a class="el" href="classscore_1_1_q_graphics_combo.html">QGraphicsCombo</a> &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a9a0954e868a4c7fe134fbb44dee4281b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +132,33 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEv
 <tr class="separator:afc75d326c758ada5b4567c86f5b0ebc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae477b3b9c501ed947008a3617a7cfb4b" name="ae477b3b9c501ed947008a3617a7cfb4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae477b3b9c501ed947008a3617a7cfb4b">&#9670;&#160;</a></span>passedDragThreshold()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool score::DefaultComboImpl::passedDragThreshold </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Has the pointer travelled far enough since the press to mean "scrub" rather than "click"? Below the platform's drag threshold a wobble of a pixel or two is a click, and must not nudge the value. </p>
+
+</div>
+</div>
 <a id="afc75d326c758ada5b4567c86f5b0ebc4" name="afc75d326c758ada5b4567c86f5b0ebc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc75d326c758ada5b4567c86f5b0ebc4">&#9670;&#160;</a></span>ungrabMouseEvent()</h2>
 
