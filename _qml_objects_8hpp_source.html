@@ -1057,127 +1057,132 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span> </div>
 <div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>  <span class="keywordtype">void</span> uiSend(<span class="keyword">const</span> QJSValue&amp; v) W_SIGNAL(uiSend, v);</div>
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>  <span class="keyword">const</span> QJSValue&amp; loadState() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loadState; }</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>  <span class="keywordtype">void</span> setLoadState(<span class="keyword">const</span> QJSValue&amp; v) { m_loadState = v; }</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>  W_PROPERTY(QJSValue, loadState READ loadState WRITE setLoadState CONSTANT)</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span> </div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>  <span class="keyword">const</span> QJSValue&amp; stateUpdated() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_stateUpdated; }</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>  <span class="keywordtype">void</span> setStateUpdated(<span class="keyword">const</span> QJSValue&amp; v) { m_stateUpdated = v; }</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>  W_PROPERTY(QJSValue, stateUpdated READ stateUpdated WRITE setStateUpdated CONSTANT)</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span> </div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>  QList&lt;QObject*&gt; m_data;</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>  QJSValue m_tick;</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>  QJSValue m_start;</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>  QJSValue m_stop;</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>  QJSValue m_pause;</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  QJSValue m_resume;</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>  QJSValue m_uiEvent;</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>  QJSValue m_loadState;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>  QJSValue m_stateUpdated;</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>};</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>  <span class="comment">// Persist execution-originated edits through the document command stack,</span></div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>  <span class="comment">// including when no ScriptUI is open. The value is queued to the GUI thread.</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>  <span class="keywordtype">void</span> commitState(<span class="keyword">const</span> QString&amp; key, <span class="keyword">const</span> QJSValue&amp; value)</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>      W_SIGNAL(commitState, key, value);</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span> </div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>  <span class="keyword">const</span> QJSValue&amp; loadState() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loadState; }</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>  <span class="keywordtype">void</span> setLoadState(<span class="keyword">const</span> QJSValue&amp; v) { m_loadState = v; }</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>  W_PROPERTY(QJSValue, loadState READ loadState WRITE setLoadState CONSTANT)</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span> </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>  <span class="keyword">const</span> QJSValue&amp; stateUpdated() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_stateUpdated; }</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>  <span class="keywordtype">void</span> setStateUpdated(<span class="keyword">const</span> QJSValue&amp; v) { m_stateUpdated = v; }</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>  W_PROPERTY(QJSValue, stateUpdated READ stateUpdated WRITE setStateUpdated CONSTANT)</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span> </div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  QList&lt;QObject*&gt; m_data;</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>  QJSValue m_tick;</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>  QJSValue m_start;</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>  QJSValue m_stop;</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>  QJSValue m_pause;</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>  QJSValue m_resume;</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>  QJSValue m_uiEvent;</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>  QJSValue m_loadState;</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>  QJSValue m_stateUpdated;</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>};</div>
 </div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span> </div>
-<div class="foldopen" id="foldopen00903" data-start="{" data-end="};">
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno"><a class="line" href="class_j_s_1_1_script_u_i.html">  903</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1_script_u_i.html">ScriptUI</a> : <span class="keyword">public</span> QQuickItem</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>{</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>  W_OBJECT(<a class="code hl_class" href="class_j_s_1_1_script_u_i.html">ScriptUI</a>)</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span> </div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>  <span class="keyword">const</span> QJSValue&amp; executionEvent() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_executionEvent; }</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>  <span class="keywordtype">void</span> setExecutionEvent(<span class="keyword">const</span> QJSValue&amp; v) { m_executionEvent = v; }</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>  W_PROPERTY(QJSValue, executionEvent READ executionEvent WRITE setExecutionEvent CONSTANT)</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span> </div>
+<div class="foldopen" id="foldopen00908" data-start="{" data-end="};">
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno"><a class="line" href="class_j_s_1_1_script_u_i.html">  908</a></span><span class="keyword">class </span><a class="code hl_class" href="class_j_s_1_1_script_u_i.html">ScriptUI</a> : <span class="keyword">public</span> QQuickItem</div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>{</div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>  W_OBJECT(<a class="code hl_class" href="class_j_s_1_1_script_u_i.html">ScriptUI</a>)</div>
 <div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>  <span class="keyword">const</span> QJSValue&amp; loadState() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loadState; }</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>  <span class="keywordtype">void</span> setLoadState(<span class="keyword">const</span> QJSValue&amp; v) { m_loadState = v; }</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  W_PROPERTY(QJSValue, loadState READ loadState WRITE setLoadState CONSTANT)</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>  <span class="keyword">const</span> QJSValue&amp; stateUpdated() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_stateUpdated; }</div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>  <span class="keywordtype">void</span> setStateUpdated(<span class="keyword">const</span> QJSValue&amp; v) { m_stateUpdated = v; }</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>  W_PROPERTY(QJSValue, stateUpdated READ stateUpdated WRITE setStateUpdated CONSTANT)</div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>  <span class="keywordtype">void</span> executionSend(<span class="keyword">const</span> QJSValue&amp; v)</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>  W_SIGNAL(executionSend, v);</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span> </div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>  <span class="keywordtype">void</span> beginUpdateState(<span class="keyword">const</span> QString&amp; name)</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>  W_SIGNAL(beginUpdateState, name);</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>  <span class="keywordtype">void</span> updateState(<span class="keyword">const</span> QString&amp; k, <span class="keyword">const</span> QJSValue&amp; v)</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>  W_SIGNAL(updateState, k, v);</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>  <span class="keywordtype">void</span> endUpdateState()</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>  W_SIGNAL(endUpdateState);</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  <span class="keywordtype">void</span> cancelUpdateState()</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  W_SIGNAL(cancelUpdateState);</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  <span class="keywordtype">void</span> clearState()</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  W_SIGNAL(clearState);</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  <span class="keywordtype">void</span> replaceState(<span class="keyword">const</span> QJSValue&amp; v)</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  W_SIGNAL(replaceState, v);</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span> </div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keywordtype">int</span> i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>  W_INVOKABLE(inlet, (<span class="keywordtype">int</span>));</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keywordtype">int</span> i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>  W_INVOKABLE(outlet, (<span class="keywordtype">int</span>));</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keyword">const</span> QString&amp; i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>  W_INVOKABLE(inlet, (<span class="keyword">const</span> QString&amp;));</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keyword">const</span> QString&amp; i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>  W_INVOKABLE(outlet, (<span class="keyword">const</span> QString&amp;));</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span> </div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* process() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_process; }</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  <span class="keywordtype">void</span> setProcess(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* v) { m_process = v; }</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span> </div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>  QJSValue m_executionEvent;</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  QJSValue m_loadState;</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  QJSValue m_stateUpdated;</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* m_process{};</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>};</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>  <span class="keyword">const</span> QJSValue&amp; executionEvent() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_executionEvent; }</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  <span class="keywordtype">void</span> setExecutionEvent(<span class="keyword">const</span> QJSValue&amp; v) { m_executionEvent = v; }</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>  W_PROPERTY(QJSValue, executionEvent READ executionEvent WRITE setExecutionEvent CONSTANT)</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span> </div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>  <span class="keyword">const</span> QJSValue&amp; loadState() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_loadState; }</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>  <span class="keywordtype">void</span> setLoadState(<span class="keyword">const</span> QJSValue&amp; v) { m_loadState = v; }</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>  W_PROPERTY(QJSValue, loadState READ loadState WRITE setLoadState CONSTANT)</div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span> </div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>  <span class="keyword">const</span> QJSValue&amp; stateUpdated() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_stateUpdated; }</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>  <span class="keywordtype">void</span> setStateUpdated(<span class="keyword">const</span> QJSValue&amp; v) { m_stateUpdated = v; }</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>  W_PROPERTY(QJSValue, stateUpdated READ stateUpdated WRITE setStateUpdated CONSTANT)</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span> </div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>  <span class="keywordtype">void</span> executionSend(<span class="keyword">const</span> QJSValue&amp; v)</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>  W_SIGNAL(executionSend, v);</div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span> </div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>  <span class="keywordtype">void</span> beginUpdateState(<span class="keyword">const</span> QString&amp; name)</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>  W_SIGNAL(beginUpdateState, name);</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <span class="keywordtype">void</span> updateState(<span class="keyword">const</span> QString&amp; k, <span class="keyword">const</span> QJSValue&amp; v)</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  W_SIGNAL(updateState, k, v);</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  <span class="keywordtype">void</span> endUpdateState()</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>  W_SIGNAL(endUpdateState);</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  <span class="keywordtype">void</span> cancelUpdateState()</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>  W_SIGNAL(cancelUpdateState);</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  <span class="keywordtype">void</span> clearState()</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>  W_SIGNAL(clearState);</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>  <span class="keywordtype">void</span> replaceState(<span class="keyword">const</span> QJSValue&amp; v)</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>  W_SIGNAL(replaceState, v);</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span> </div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keywordtype">int</span> i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>  W_INVOKABLE(inlet, (<span class="keywordtype">int</span>));</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keywordtype">int</span> i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>  W_INVOKABLE(outlet, (<span class="keywordtype">int</span>));</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>  <a class="code hl_class" href="class_process_1_1_inlet.html">Process::Inlet</a>* inlet(<span class="keyword">const</span> QString&amp; i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  W_INVOKABLE(inlet, (<span class="keyword">const</span> QString&amp;));</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>  <a class="code hl_class" href="class_process_1_1_outlet.html">Process::Outlet</a>* outlet(<span class="keyword">const</span> QString&amp; i) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>  W_INVOKABLE(outlet, (<span class="keyword">const</span> QString&amp;));</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span> </div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* process() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> m_process; }</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  <span class="keywordtype">void</span> setProcess(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* v) { m_process = v; }</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span> </div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>  QJSValue m_executionEvent;</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>  QJSValue m_loadState;</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>  QJSValue m_stateUpdated;</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>  <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>* m_process{};</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>};</div>
 </div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>}</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span> </div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>&amp; sel)</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>{</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>  SCORE_ABORT;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>  <span class="keywordflow">return</span> i;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>}</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>}</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span> </div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>&amp; sel)</div>
 <div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>{</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>  SCORE_ABORT;</div>
 <div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>  <span class="keywordflow">return</span> i;</div>
 <div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>}</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_in_value_message.html">JS::InValueMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>&amp; sel)</div>
 <div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>{</div>
 <div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  SCORE_ABORT;</div>
 <div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>  <span class="keywordflow">return</span> i;</div>
 <div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>}</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_struct" href="struct_j_s_1_1_in_value_message.html">JS::InValueMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_in_value_message.html">JS::InValueMessage</a>&amp; sel)</div>
 <div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>{</div>
 <div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>  SCORE_ABORT;</div>
 <div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>  <span class="keywordflow">return</span> i;</div>
 <div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>}</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_out_value_message.html">JS::OutValueMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_struct" href="struct_j_s_1_1_in_value_message.html">JS::InValueMessage</a>&amp; sel)</div>
 <div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>{</div>
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>  SCORE_ABORT;</div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>  <span class="keywordflow">return</span> i;</div>
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>}</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_struct" href="struct_j_s_1_1_out_value_message.html">JS::OutValueMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span><span class="keyword">inline</span> QDataStream&amp; operator&lt;&lt;(QDataStream&amp; i, <span class="keyword">const</span> <a class="code hl_struct" href="struct_j_s_1_1_out_value_message.html">JS::OutValueMessage</a>&amp; sel)</div>
 <div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>{</div>
 <div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  SCORE_ABORT;</div>
 <div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>  <span class="keywordflow">return</span> i;</div>
 <div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>}</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_value_inlet.html">JS::ValueInlet</a>*)</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_value_outlet.html">JS::ValueOutlet</a>*)</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_audio_inlet.html">JS::AudioInlet</a>*)</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_audio_outlet.html">JS::AudioOutlet</a>*)</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>)</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_inlet.html">JS::MidiInlet</a>*)</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_outlet.html">JS::MidiOutlet</a>*)</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span> </div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_value_inlet.html">JS::ValueInlet</a>*)</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_value_outlet.html">JS::ValueOutlet</a>*)</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_audio_inlet.html">JS::AudioInlet</a>*)</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_audio_outlet.html">JS::AudioOutlet</a>*)</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>)</div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_inlet.html">JS::MidiInlet</a>*)</div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_outlet.html">JS::MidiOutlet</a>*)</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span><span class="keyword">inline</span> QDataStream&amp; operator&gt;&gt;(QDataStream&amp; i, <a class="code hl_struct" href="struct_j_s_1_1_out_value_message.html">JS::OutValueMessage</a>&amp; sel)</div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>{</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>  SCORE_ABORT;</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>  <span class="keywordflow">return</span> i;</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>}</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_value_inlet.html">JS::ValueInlet</a>*)</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_value_outlet.html">JS::ValueOutlet</a>*)</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_audio_inlet.html">JS::AudioInlet</a>*)</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_audio_outlet.html">JS::AudioOutlet</a>*)</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>)</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_inlet.html">JS::MidiInlet</a>*)</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="class_j_s_1_1_midi_outlet.html">JS::MidiOutlet</a>*)</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_value_inlet.html">JS::ValueInlet</a>*)</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_value_outlet.html">JS::ValueOutlet</a>*)</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_audio_inlet.html">JS::AudioInlet</a>*)</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_audio_outlet.html">JS::AudioOutlet</a>*)</div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_message.html">JS::MidiMessage</a>)</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_inlet.html">JS::MidiInlet</a>*)</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>W_REGISTER_ARGTYPE(<a class="code hl_class" href="class_j_s_1_1_midi_outlet.html">JS::MidiOutlet</a>*)</div>
 <div class="ttc" id="aclass_j_s_1_1_audio_inlet_html"><div class="ttname"><a href="class_j_s_1_1_audio_inlet.html">JS::AudioInlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:670</div></div>
 <div class="ttc" id="aclass_j_s_1_1_audio_outlet_html"><div class="ttname"><a href="class_j_s_1_1_audio_outlet.html">JS::AudioOutlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:699</div></div>
 <div class="ttc" id="aclass_j_s_1_1_button_html"><div class="ttname"><a href="class_j_s_1_1_button.html">JS::Button</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:561</div></div>
@@ -1202,7 +1207,7 @@ $(document).ready(function(){initNavTree('_qml_objects_8hpp_source.html',''); in
 <div class="ttc" id="aclass_j_s_1_1_midi_outlet_html"><div class="ttname"><a href="class_j_s_1_1_midi_outlet.html">JS::MidiOutlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:773</div></div>
 <div class="ttc" id="aclass_j_s_1_1_outlet_html"><div class="ttname"><a href="class_j_s_1_1_outlet.html">JS::Outlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:56</div></div>
 <div class="ttc" id="aclass_j_s_1_1_script_html"><div class="ttname"><a href="class_j_s_1_1_script.html">JS::Script</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:849</div></div>
-<div class="ttc" id="aclass_j_s_1_1_script_u_i_html"><div class="ttname"><a href="class_j_s_1_1_script_u_i.html">JS::ScriptUI</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:904</div></div>
+<div class="ttc" id="aclass_j_s_1_1_script_u_i_html"><div class="ttname"><a href="class_j_s_1_1_script_u_i.html">JS::ScriptUI</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:909</div></div>
 <div class="ttc" id="aclass_j_s_1_1_toggle_html"><div class="ttname"><a href="class_j_s_1_1_toggle.html">JS::Toggle</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:545</div></div>
 <div class="ttc" id="aclass_j_s_1_1_value_inlet_html"><div class="ttname"><a href="class_j_s_1_1_value_inlet.html">JS::ValueInlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:90</div></div>
 <div class="ttc" id="aclass_j_s_1_1_value_outlet_html"><div class="ttname"><a href="class_j_s_1_1_value_outlet.html">JS::ValueOutlet</a></div><div class="ttdef"><b>Definition</b> QmlObjects.hpp:639</div></div>
