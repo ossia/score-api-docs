@@ -145,6 +145,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d2544e03d30d211fa90f271ea3f61c4" id="r_a4d2544e03d30d211fa90f271ea3f61c4"><td class="memItemLeft" align="right" valign="top"><a id="a4d2544e03d30d211fa90f271ea3f61c4" name="a4d2544e03d30d211fa90f271ea3f61c4"></a>
 static <a class="el" href="classscore_1_1_application_interface.html">ApplicationInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
 <tr class="separator:a4d2544e03d30d211fa90f271ea3f61c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07be552cd885c9c76a5e1933250c27ca" id="r_a07be552cd885c9c76a5e1933250c27ca"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_application_interface.html#a07be552cd885c9c76a5e1933250c27ca">hasInstance</a> () noexcept</td></tr>
+<tr class="memdesc:a07be552cd885c9c76a5e1933250c27ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether instance() has anything to return.  <br /></td></tr>
+<tr class="separator:a07be552cd885c9c76a5e1933250c27ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -152,6 +155,35 @@ Static Protected Attributes</h2></td></tr>
 static <a class="el" href="classscore_1_1_application_interface.html">ApplicationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instance</b></td></tr>
 <tr class="separator:a5a5ab1052be80232fc7ebd67686d298e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a07be552cd885c9c76a5e1933250c27ca" name="a07be552cd885c9c76a5e1933250c27ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07be552cd885c9c76a5e1933250c27ca">&#9670;&#160;</a></span>hasInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool score::ApplicationInterface::hasInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether instance() has anything to return. </p>
+<p>instance() dereferences m_instance unconditionally, so calling it with no application built binds a reference to null. Code that can legitimately run outside an application &ndash; the gfx graph is driven standalone by the PipeWire round-trip harness and by the corpus renderer &ndash; must ask first. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_application_interface_8hpp_source.html">ApplicationInterface.hpp</a></li>
 <li><b>ApplicationInterface.cpp</b></li>

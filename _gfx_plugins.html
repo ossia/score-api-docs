@@ -148,13 +148,13 @@ Creating a custom node</h1>
 <h1><a class="anchor" id="ShaderConventions"></a>
 Shader conventions</h1>
 <p>If one inherits from the base classes <a class="el" href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes.">score::gfx::Node</a> and <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html" title="Renderer for a given node.">score::gfx::NodeRenderer</a>, there is no restriction: shaders can have whatever UBOs, samplers, attributes, ... that the node author wishes. Of course the mesh used must be compatible with the shader attributes.</p>
-<p>On the other hand, one may opt-in to the conventions of score, which allows to use the simplified score::gfx::buildPipeline and <a class="el" href="structscore_1_1gfx_1_1_default_shader_material.html" title="Utility to represent a shader material following score conventions.">score::gfx::DefaultShaderMaterial</a> utilities.</p>
+<p>On the other hand, one may opt-in to the conventions of score, which allows to use the simplified <a class="el" href="namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77" title="Lower-level buildPipeline variant: bring your own SRB.">score::gfx::buildPipeline</a> and <a class="el" href="structscore_1_1gfx_1_1_default_shader_material.html" title="Utility to represent a shader material following score conventions.">score::gfx::DefaultShaderMaterial</a> utilities.</p>
 <p>In that case, vertex shaders shall follow this template:</p>
 <div class="fragment"><div class="line">#version 450</div>
 <div class="line"> </div>
 <div class="line">// Mesh input. Most common case is a full-screen quad / triangle which is</div>
 <div class="line">// reflected by the 2d positions used.</div>
-<div class="line">// See PhongNode for a real 3D example.</div>
+<div class="line">// See ModelDisplayNode (score-plugin-threedim) for a real 3D example.</div>
 <div class="line">layout(location = 0) in vec2 position;</div>
 <div class="line">layout(location = 1) in vec2 texcoord;</div>
 <div class="line"> </div>

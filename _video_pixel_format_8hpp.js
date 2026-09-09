@@ -105,6 +105,10 @@ var _video_pixel_format_8hpp =
       [ "BayerRGGB8", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7aef6662e394fa6712ef730374859f152c", null ],
       [ "BayerBGGR16", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7a468ff3dce430c1fa222c1ad8f673d1de", null ],
       [ "BayerRGGB16", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7a8168ca1f751a45d9b78aed9ecb6db492", null ],
+      [ "BayerBGGR10", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7ac06e2e4e3187ae7b87dc930f28d22f66", null ],
+      [ "BayerGBRG10", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7aa1d0f833eaf9f0170d0a3810fbaddcf8", null ],
+      [ "BayerGRBG10", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7a2a9289a38267843a8e5de8f831e3564b", null ],
+      [ "BayerRGGB10", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7ae81e0fe52bbde04ff704a9cabf58df86", null ],
       [ "Mono16BE", "_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7ab4606db50ff8e8311e2457639b7bd0a3", null ]
     ] ],
     [ "alignUp", "_video_pixel_format_8hpp.html#aec5a1f447f0a2a22ceeb54dab0de8fdf", null ],

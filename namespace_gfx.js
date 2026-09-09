@@ -10,6 +10,7 @@ var namespace_gfx =
     [ "CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", null ],
     [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
     [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
+    [ "CaptureControlTree", "class_gfx_1_1_capture_control_tree.html", null ],
     [ "ChangeCSF", "class_gfx_1_1_change_c_s_f.html", null ],
     [ "ChangeRenderPipelineShader", "class_gfx_1_1_change_render_pipeline_shader.html", null ],
     [ "ChangeShader", "class_gfx_1_1_change_shader.html", null ],
@@ -78,6 +79,7 @@ var namespace_gfx =
     [ "PreviewWidget", "class_gfx_1_1_preview_widget.html", null ],
     [ "ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ],
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", null ],
+    [ "ProgramCacheKey", "struct_gfx_1_1_program_cache_key.html", null ],
     [ "RawRasterLibraryHandler", "class_gfx_1_1_raw_raster_library_handler.html", null ],
     [ "RhiPreviewWidget", "class_gfx_1_1_rhi_preview_widget.html", "class_gfx_1_1_rhi_preview_widget" ],
     [ "S16IAudioFrameEncoder", "struct_gfx_1_1_s16_i_audio_frame_encoder.html", null ],
@@ -121,6 +123,7 @@ var namespace_gfx =
     [ "TextureOutletBackgroundRenderer", "class_gfx_1_1_texture_outlet_background_renderer.html", null ],
     [ "TextureOutletBackgroundRendererFactory", "class_gfx_1_1_texture_outlet_background_renderer_factory.html", null ],
     [ "TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
+    [ "TreeControl", "struct_gfx_1_1_tree_control.html", "struct_gfx_1_1_tree_control" ],
     [ "V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ],
     [ "V4L2CameraEnumerator", "struct_gfx_1_1_v4_l2_camera_enumerator.html", null ],
     [ "VCodecInfo", "struct_gfx_1_1_v_codec_info.html", null ],
@@ -133,5 +136,6 @@ var namespace_gfx =
     [ "WindowOutputSettings", "struct_gfx_1_1_window_output_settings.html", null ],
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
     [ "WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
-    [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ]
+    [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
+    [ "addControlGroup", "namespace_gfx.html#a74373eb8764903bca22079d5e5fb4797", null ]
 ];

@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_b_g_r_a_encoder
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -127,8 +128,20 @@ Inheritance diagram for score::gfx::BGRAEncoder:</div>
 <p>The shader samples the input RGBA texture and writes (b, g, r, a) to a full-resolution RGBA8 output texture. Because the texture format is RGBA8, the output bytes in memory are in B, G, R, A order — directly matching NTV2_FBF_ARGB or any other API that expects "BGRA byte-order" pixels (DXGI_FORMAT_B8G8R8A8_UNORM, QImage::Format_RGB32, etc.).</p>
 <p>Single render pass, single readback. Uses the same Y-flip convention as the other encoders so the readback is top-to-bottom on every backend. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aab2680e50c2a0a8f9f2314973ec8934c" id="r_aab2680e50c2a0a8f9f2314973ec8934c"><td class="memItemLeft" align="right" valign="top"><a id="aab2680e50c2a0a8f9f2314973ec8934c" name="aab2680e50c2a0a8f9f2314973ec8934c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Swizzle</b> { <b>BGRA</b>
+, <b>RGBA</b>
+, <b>ABGR</b>
+, <b>ARGB</b>
+ }</td></tr>
+<tr class="separator:aab2680e50c2a0a8f9f2314973ec8934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7c81913729480781493a80ad0e485a73" id="r_a7c81913729480781493a80ad0e485a73"><td class="memItemLeft" align="right" valign="top"><a id="a7c81913729480781493a80ad0e485a73" name="a7c81913729480781493a80ad0e485a73"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BGRAEncoder</b> (Swizzle s=Swizzle::BGRA)</td></tr>
+<tr class="separator:a7c81913729480781493a80ad0e485a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a2b043fdb73af6e5109eedf1f51c0a" id="r_ad5a2b043fdb73af6e5109eedf1f51c0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#ad5a2b043fdb73af6e5109eedf1f51c0a">init</a> (QRhi &amp;rhi, const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *inputRGBA, int width, int height, const QString &amp;=colorMatrixOut()) override</td></tr>
 <tr class="separator:ad5a2b043fdb73af6e5109eedf1f51c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52ea0740993c516298403db15d0a72a5" id="r_a52ea0740993c516298403db15d0a72a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a52ea0740993c516298403db15d0a72a5">exec</a> (QRhi &amp;rhi, QRhiCommandBuffer &amp;cb) override</td></tr>
@@ -139,12 +152,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a189ef271771d67589dd1f6822af21760" id="r_a189ef271771d67589dd1f6822af21760"><td class="memItemLeft" align="right" valign="top">const QRhiReadbackResult &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a189ef271771d67589dd1f6822af21760">readback</a> (int) const override</td></tr>
 <tr class="memdesc:a189ef271771d67589dd1f6822af21760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the readback result for a given plane. Valid after endOffscreenFrame.  <br /></td></tr>
 <tr class="separator:a189ef271771d67589dd1f6822af21760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaea24859dc9b830b7b6f09321cb72c8f" id="r_aaea24859dc9b830b7b6f09321cb72c8f"><td class="memItemLeft" align="right" valign="top">QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#aaea24859dc9b830b7b6f09321cb72c8f">outputTexture</a> () const noexcept override</td></tr>
+<tr class="separator:aaea24859dc9b830b7b6f09321cb72c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6be4a81802de802bc078bb393876a83" id="r_ae6be4a81802de802bc078bb393876a83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#ae6be4a81802de802bc078bb393876a83">setReadbackEnabled</a> (bool e) noexcept override</td></tr>
+<tr class="separator:ae6be4a81802de802bc078bb393876a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ffdaf9206262a0dea00ec44b77a491b" id="r_a7ffdaf9206262a0dea00ec44b77a491b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a7ffdaf9206262a0dea00ec44b77a491b">release</a> () override</td></tr>
 <tr class="memdesc:a7ffdaf9206262a0dea00ec44b77a491b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all GPU resources.  <br /></td></tr>
 <tr class="separator:a7ffdaf9206262a0dea00ec44b77a491b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a3a2654e844775709068663a07108c894" id="r_a3a2654e844775709068663a07108c894"><td class="memItemLeft" align="right" valign="top"><a id="a3a2654e844775709068663a07108c894" name="a3a2654e844775709068663a07108c894"></a>
+Swizzle&#160;</td><td class="memItemRight" valign="bottom"><b>m_swizzle</b> {Swizzle::BGRA}</td></tr>
+<tr class="separator:a3a2654e844775709068663a07108c894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2437d7d08d714b217ef833cefd388d8" id="r_ab2437d7d08d714b217ef833cefd388d8"><td class="memItemLeft" align="right" valign="top"><a id="ab2437d7d08d714b217ef833cefd388d8" name="ab2437d7d08d714b217ef833cefd388d8"></a>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>m_outTexture</b> {}</td></tr>
 <tr class="separator:ab2437d7d08d714b217ef833cefd388d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +192,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_width</b> {}</td></t
 <tr class="memitem:a58e00f508cdb84e6dc86be821204a728" id="r_a58e00f508cdb84e6dc86be821204a728"><td class="memItemLeft" align="right" valign="top"><a id="a58e00f508cdb84e6dc86be821204a728" name="a58e00f508cdb84e6dc86be821204a728"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_height</b> {}</td></tr>
 <tr class="separator:a58e00f508cdb84e6dc86be821204a728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf04c9de2115d15840bbf76b52d2ac5" id="r_acdf04c9de2115d15840bbf76b52d2ac5"><td class="memItemLeft" align="right" valign="top"><a id="acdf04c9de2115d15840bbf76b52d2ac5" name="acdf04c9de2115d15840bbf76b52d2ac5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_readbackEnabled</b> {true}</td></tr>
+<tr class="separator:acdf04c9de2115d15840bbf76b52d2ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -299,6 +322,34 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aaea24859dc9b830b7b6f09321cb72c8f" name="aaea24859dc9b830b7b6f09321cb72c8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea24859dc9b830b7b6f09321cb72c8f">&#9670;&#160;</a></span>outputTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiTexture * score::gfx::BGRAEncoder::outputTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The single output texture (RGBA8, format-dependent dimensions) for single-plane encoders, so vendor-neutral code (CpuStagedVideoOutput's DVP download) can copy it straight to sysmem instead of using <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a189ef271771d67589dd1f6822af21760" title="Get the readback result for a given plane. Valid after endOffscreenFrame.">readback()</a>. Default nullptr (multi-plane encoders) =&gt; callers must use <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a189ef271771d67589dd1f6822af21760" title="Get the readback result for a given plane. Valid after endOffscreenFrame.">readback()</a>. </p>
+
+<p>Reimplemented from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#aec8e823da2391ca68dec3ce0b5b55f24">score::gfx::GPUVideoEncoder</a>.</p>
+
+</div>
+</div>
 <a id="a348446515a1022f2c759bdf4a1de5575" name="a348446515a1022f2c759bdf4a1de5575"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a348446515a1022f2c759bdf4a1de5575">&#9670;&#160;</a></span>planeCount()</h2>
 
@@ -387,6 +438,35 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ae6be4a81802de802bc078bb393876a83" name="ae6be4a81802de802bc078bb393876a83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6be4a81802de802bc078bb393876a83">&#9670;&#160;</a></span>setReadbackEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::BGRAEncoder::setReadbackEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable/disable the GPU-&gt;CPU readback scheduled in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a52ea0740993c516298403db15d0a72a5">exec()</a>. Default enabled (readback runs). Disable when a GPU-direct download reads <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#aaea24859dc9b830b7b6f09321cb72c8f">outputTexture()</a> directly, so <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#a52ea0740993c516298403db15d0a72a5">exec()</a> doesn't also pay the readback (no double transfer). </p>
+
+<p>Reimplemented from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a47f234c11bd2787716ca85b7d8992b43">score::gfx::GPUVideoEncoder</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ad540a72680df546b395908b6a7d8486a" name="ad540a72680df546b395908b6a7d8486a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad540a72680df546b395908b6a7d8486a">&#9670;&#160;</a></span>frag</h2>
@@ -419,7 +499,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">    void main() {</span></div>
 <div class="line"><span class="stringliteral">      vec4 c = texture(src_tex, flip_y(v_texcoord));</span></div>
-<div class="line"><span class="stringliteral">      fragColor = vec4(c.b, c.g, c.r, c.a);</span></div>
+<div class="line"><span class="stringliteral">      fragColor = %1;</span></div>
 <div class="line"><span class="stringliteral">    }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->

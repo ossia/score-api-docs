@@ -270,19 +270,19 @@ $(document).ready(function(){initNavTree('_scenario_document_view_8hpp_source.ht
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  QWidget* getWidget() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a>&amp; baseItem() { <span class="keywordflow">return</span> m_baseObject; }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a>&amp; baseItem() { <span class="keywordflow">return</span> *m_baseObject; }</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <a class="code hl_class" href="class_scenario_1_1_scenario_scene.html">ScenarioScene</a>&amp; scene() { <span class="keywordflow">return</span> m_scene; }</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <a class="code hl_class" href="class_scenario_1_1_process_graphics_view.html">ProcessGraphicsView</a>&amp; view() { <span class="keywordflow">return</span> m_view; }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <a class="code hl_class" href="class_scenario_1_1_process_graphics_view.html">ProcessGraphicsView</a>&amp; view() { <span class="keywordflow">return</span> *m_view; }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  qreal viewWidth() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  QGraphicsView&amp; rulerView() { <span class="keywordflow">return</span> m_timeRulerView; }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  QGraphicsView&amp; rulerView() { <span class="keywordflow">return</span> *m_timeRulerView; }</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <a class="code hl_class" href="class_scenario_1_1_time_ruler_base.html">TimeRulerBase</a>&amp; timeRuler() { <span class="keywordflow">return</span> *m_timeRuler; }</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_class" href="class_scenario_1_1_minimap.html">Minimap</a>&amp; minimap() { <span class="keywordflow">return</span> m_minimap; }</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_class" href="class_scenario_1_1_minimap.html">Minimap</a>&amp; minimap() { <span class="keywordflow">return</span> *m_minimap; }</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="class_scenario_1_1_scenario_document_view.html#af57c16101d39e2474b7daf6dcf28399c">  181</a></span>  <a class="code hl_class" href="class_scenario_1_1_address_bar_widget.html">AddressBarWidget</a>&amp; <a class="code hl_function" href="class_scenario_1_1_scenario_document_view.html#af57c16101d39e2474b7daf6dcf28399c">addressBar</a>() { <span class="keywordflow">return</span> *m_addressBar; }</div>
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
@@ -310,23 +310,43 @@ $(document).ready(function(){initNavTree('_scenario_document_view_8hpp_source.ht
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  QWidget* m_widget{};</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  ScenarioScene m_scene;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  ProcessGraphicsView m_view;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a> m_baseObject;</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  QGraphicsScene m_timeRulerScene;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  TimeRulerGraphicsView m_timeRulerView;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  TimeRulerBase* m_timeRuler{};</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  QGraphicsScene m_minimapScene;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  MinimapGraphicsView m_minimapView;</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  Minimap m_minimap;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  AddressBarWidget* m_addressBar{};</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordtype">int</span> m_timer{-1};</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="keywordtype">bool</span> m_transport{};</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>};</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="comment">// The three views below are put into m_widget&#39;s layout, which REPARENTS</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="comment">// them: Qt then deletes them through ~QWidget&#39;s deleteChildren(). As</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="comment">// by-value members that would be `delete` on an address inside this object,</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// which is not a heap allocation -- the same defect the scenes and the base</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="comment">// item have to avoid.</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// Heap-allocated, they are Qt&#39;s to delete, and QPointer means we can also</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="comment">// delete them ourselves in ~ScenarioDocumentView for the OTHER teardown</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="comment">// order (a document closed with removeTab orphans the widget, so nothing</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// Qt-side ever deletes it) without risking a double free. Deleting them in</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="comment">// the destructor BODY also keeps the original ordering guarantee: a view</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// dies before the by-value scene it renders.</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  QPointer&lt;ProcessGraphicsView&gt; m_view;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// Owned by the scene, not by value. m_scene is a QObject child of m_widget,</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// so ~QWidget destroys it -- and QGraphicsScene::clear() deletes its</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="comment">// top-level items -- before ScenarioDocumentView&#39;s own members are destroyed.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="comment">// As a by-value member that would be `delete` on a non-heap address.</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a>* m_baseObject{};</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  QGraphicsScene m_timeRulerScene;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  QPointer&lt;TimeRulerGraphicsView&gt; m_timeRulerView;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  TimeRulerBase* m_timeRuler{};</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  QGraphicsScene m_minimapScene;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  QPointer&lt;MinimapGraphicsView&gt; m_minimapView;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="comment">// Same treatment as m_baseObject: a QGraphicsItem added to a scene that</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="comment">// deletes its top-level items, so it must be heap-allocated and left to</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="comment">// that scene. Never deleted here.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  Minimap* m_minimap{};</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  AddressBarWidget* m_addressBar{};</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">int</span> m_timer{-1};</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordtype">bool</span> m_transport{};</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>};</div>
 </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>}</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
 <div class="ttc" id="aclass_base_graphics_object_html"><div class="ttname"><a href="class_base_graphics_object.html">BaseGraphicsObject</a></div><div class="ttdef"><b>Definition</b> GraphicsProxyObject.hpp:8</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_auto_scrollable_view_html"><div class="ttname"><a href="class_dataflow_1_1_auto_scrollable_view.html">Dataflow::AutoScrollableView</a></div><div class="ttdoc">A QGraphicsView that knows how to move its content for auto-scroll.</div><div class="ttdef"><b>Definition</b> AutoScrollableView.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_address_bar_widget_html"><div class="ttname"><a href="class_scenario_1_1_address_bar_widget.html">Scenario::AddressBarWidget</a></div><div class="ttdoc">Clickable path of the interval shown in the central view.</div><div class="ttdef"><b>Definition</b> AddressBarWidget.hpp:27</div></div>

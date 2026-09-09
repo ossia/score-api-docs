@@ -134,6 +134,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c056d2073248c1a24258c3f7b85725a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e3e0204021c05269e2639dd45f4a002" id="r_a7e3e0204021c05269e2639dd45f4a002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_g_streamer_1_1gstreamer__video__decoder.html#a7e3e0204021c05269e2639dd45f4a002">release_frame</a> (AVFrame *frame) noexcept override</td></tr>
 <tr class="separator:a7e3e0204021c05269e2639dd45f4a002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0913b137b5773fb5da2047a90a25eb56" id="r_a0913b137b5773fb5da2047a90a25eb56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_g_streamer_1_1gstreamer__video__decoder.html#a0913b137b5773fb5da2047a90a25eb56">notifyFormatChange</a> (int new_w, int new_h, AVPixelFormat new_pixfmt) noexcept override</td></tr>
+<tr class="separator:a0913b137b5773fb5da2047a90a25eb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -166,6 +168,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> {}</td></tr
 <tr class="memitem:a3a127bf29fdb576486e044ef247ab205 inherit pub_attribs_struct_video_1_1_image_format" id="r_a3a127bf29fdb576486e044ef247ab205"><td class="memItemLeft" align="right" valign="top">
 AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>pixel_format</b> = AVPixelFormat(-1)</td></tr>
 <tr class="separator:a3a127bf29fdb576486e044ef247ab205 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb6772fc3400fb8fffd28d372546c78 inherit pub_attribs_struct_video_1_1_image_format" id="r_a7bb6772fc3400fb8fffd28d372546c78"><td class="memItemLeft" align="right" valign="top">
+AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>hwaccel_sw_format</b> = AVPixelFormat(-1)</td></tr>
+<tr class="separator:a7bb6772fc3400fb8fffd28d372546c78 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237713244da17c01480e508a4ec4a055 inherit pub_attribs_struct_video_1_1_image_format" id="r_a237713244da17c01480e508a4ec4a055"><td class="memItemLeft" align="right" valign="top">
 AVColorRange&#160;</td><td class="memItemRight" valign="bottom"><b>color_range</b> = AVColorRange(-1)</td></tr>
 <tr class="separator:a237713244da17c01480e508a4ec4a055 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +224,50 @@ Tonemap&#160;</td><td class="memItemRight" valign="bottom"><b>tonemap</b> = ::Vi
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a>.</p>
+
+</div>
+</div>
+<a id="a0913b137b5773fb5da2047a90a25eb56" name="a0913b137b5773fb5da2047a90a25eb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0913b137b5773fb5da2047a90a25eb56">&#9670;&#160;</a></span>notifyFormatChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gfx::GStreamer::gstreamer_video_decoder::notifyFormatChange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVPixelFormat&#160;</td>
+          <td class="paramname"><em>new_pixfmt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_video_1_1_external_input.html">Video::ExternalInput</a>.</p>
 
 </div>
 </div>

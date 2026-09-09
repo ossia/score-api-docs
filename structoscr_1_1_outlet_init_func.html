@@ -150,9 +150,18 @@ template&lt;avnd::texture_port T&gt; </td></tr>
 <tr class="memitem:a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, auto idx)</td></tr>
 <tr class="separator:a49cd40e7113d7f26ad417b691f24da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cd40e7113d7f26ad417b691f24da67" id="r_a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplParams" colspan="2"><a id="a49cd40e7113d7f26ad417b691f24da67" name="a49cd40e7113d7f26ad417b691f24da67"></a>
+template&lt;avnd::gpu_render_target_output_port T&gt; </td></tr>
+<tr class="memitem:a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, auto idx)</td></tr>
+<tr class="separator:a49cd40e7113d7f26ad417b691f24da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cd40e7113d7f26ad417b691f24da67" id="r_a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplParams" colspan="2"><a id="a49cd40e7113d7f26ad417b691f24da67" name="a49cd40e7113d7f26ad417b691f24da67"></a>
 template&lt;avnd::geometry_port T&gt; </td></tr>
 <tr class="memitem:a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, auto idx)</td></tr>
 <tr class="separator:a49cd40e7113d7f26ad417b691f24da67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75e3109da26206c14fd22ff1473a467" id="r_ad75e3109da26206c14fd22ff1473a467"><td class="memTemplParams" colspan="2"><a id="ad75e3109da26206c14fd22ff1473a467" name="ad75e3109da26206c14fd22ff1473a467"></a>
+template&lt;scene_port T&gt; <br />
+requires (!avnd::geometry_port&lt;T&gt;)</td></tr>
+<tr class="memitem:ad75e3109da26206c14fd22ff1473a467"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, auto idx)</td></tr>
+<tr class="separator:ad75e3109da26206c14fd22ff1473a467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49cd40e7113d7f26ad417b691f24da67" id="r_a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplParams" colspan="2"><a id="a49cd40e7113d7f26ad417b691f24da67" name="a49cd40e7113d7f26ad417b691f24da67"></a>
 template&lt;avnd::curve_port T&gt; </td></tr>
 <tr class="memitem:a49cd40e7113d7f26ad417b691f24da67"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;out, auto idx)</td></tr>

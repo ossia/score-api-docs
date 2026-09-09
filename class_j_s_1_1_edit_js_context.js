@@ -3,6 +3,7 @@ var class_j_s_1_1_edit_js_context =
     [ "automate", "class_j_s_1_1_edit_js_context.html#ae240ea0c3d93a675f6a9c1da78d8cad5", null ],
     [ "automate", "class_j_s_1_1_edit_js_context.html#a1ec214dd852860a1a4688d98b7c40e8b", null ],
     [ "availableProcesses", "class_j_s_1_1_edit_js_context.html#ad5ef4e904d7e120247326dd89d3274bd", null ],
+    [ "cable", "class_j_s_1_1_edit_js_context.html#a00d9b5b5553de4caf380c9d0ecd0991b", null ],
     [ "cable", "class_j_s_1_1_edit_js_context.html#a30fcdcebbb57e281159ac427c5d2709a", null ],
     [ "cables", "class_j_s_1_1_edit_js_context.html#ad7f8002ba7796bbf1a1d4ae0a9f7806a", null ],
     [ "createAddress", "class_j_s_1_1_edit_js_context.html#add27329d3c9aa1b3fa4d782a0b10b201", null ],

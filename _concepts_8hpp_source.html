@@ -696,69 +696,97 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>      <span class="keyword">auto</span> [Mx, My, Mz] = c.max;</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>      <span class="keyword">auto</span> [ix, iy, iz] = c.init;</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a>{{mx, my, mz}, {Mx, My, Mz}, {ix, iy, iz},</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                                       qname,        id,           parent};</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>                                       <span class="keyword">false</span>,        qname,        id,           parent};</div>
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    }</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  }</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::color)</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::xyzw_spinbox)</div>
 <div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  {</div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> i = c.init;</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_h_s_v_slider.html">Process::HSVSlider</a>{{i.r, i.g, i.b, i.a}, qname, id, parent};</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  }</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::control)</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  {</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>{qname, id, parent};</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  }</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::no_control)</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>  {</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_value_inlet.html">Process::ValueInlet</a>{qname, id, parent};</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  }</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>  {</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    <span class="keyword">static_assert</span>(T::is_not_a_valid_control);</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  }</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>}</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">auto</span></div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>make_control_out(avnd::field_index&lt;N&gt;, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>{</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  <span class="keyword">constexpr</span> <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>  <span class="keyword">constexpr</span> <span class="keyword">auto</span> widg = avnd::get_widget&lt;T&gt;();</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>  QString qname = QString::fromUtf8(name.data(), name.size());</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  <span class="comment">// FIXME log normalization &amp; friends</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::bargraph)</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  {</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>{c.min, c.max, c.init, qname, id, parent};</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  }</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::control)</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  {</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>{qname, id, parent};</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  }</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::no_control)</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  {</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>{qname, id, parent};</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  }</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::fp_ish&lt;<span class="keyword">decltype</span>(T::value)&gt;)</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  {</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>{c.min, c.max, c.init, qname, id, parent};</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  }</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  {</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>{qname, id, parent};</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>  }</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>}</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> make_control_out(<span class="keyword">const</span> T&amp; t)</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>{</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  <span class="keywordflow">return</span> make_control_out&lt;T&gt;();</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>}</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>}</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> {</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                   c.min == 0.f;</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>                   c.max == 0.f;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                   c.init == 0.f;</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>                 })</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    {</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a>{</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>          {c.min, c.min, c.min},</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>          {c.max, c.max, c.max},</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>          {c.init, c.init, c.init},</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>          <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>          qname,</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>          id,</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>          parent};</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    }</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    {</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>      <span class="keyword">auto</span> [mx, my, mz, mw] = c.min;</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>      <span class="keyword">auto</span> [Mx, My, Mz, Mw] = c.max;</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>      <span class="keyword">auto</span> [ix, iy, iz, iw] = c.init;</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      <span class="comment">// FIXME we don&#39;t have a good 4-way widget</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a>{{mx, my, mz}, {Mx, My, Mz}, {ix, iy, iz},</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>                                       <span class="keyword">false</span>,        qname,        id,           parent};</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    }</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  }</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::color)</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  {</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> i = c.init;</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_h_s_v_slider.html">Process::HSVSlider</a>{{i.r, i.g, i.b, i.a}, qname, id, parent};</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::control)</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  {</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a>{qname, id, parent};</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  }</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::no_control)</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  {</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_value_inlet.html">Process::ValueInlet</a>{qname, id, parent};</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  }</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  {</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">static_assert</span>(T::is_not_a_valid_control);</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  }</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>}</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, std::<span class="keywordtype">size_t</span> N&gt;</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">auto</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>make_control_out(avnd::field_index&lt;N&gt;, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a>&amp;&amp; <span class="keywordtype">id</span>, QObject* parent)</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>{</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>  <span class="keyword">constexpr</span> <span class="keyword">auto</span> name = avnd::get_name&lt;T&gt;();</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  <span class="keyword">constexpr</span> <span class="keyword">auto</span> widg = avnd::get_widget&lt;T&gt;();</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  QString qname = QString::fromUtf8(name.data(), name.size());</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  <span class="comment">// FIXME log normalization &amp; friends</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::bargraph)</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  {</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>{c.min, c.max, c.init, qname, id, parent};</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  }</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::control)</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  {</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>{qname, id, parent};</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  }</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(widg.widget == avnd::widget_type::no_control)</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  {</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_value_outlet.html">Process::ValueOutlet</a>{qname, id, parent};</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>  }</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::fp_ish&lt;<span class="keyword">decltype</span>(T::value)&gt;)</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  {</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> c = avnd::get_range&lt;T&gt;();</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Process::Bargraph</a>{c.min, c.max, c.init, qname, id, parent};</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  }</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  {</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>{qname, id, parent};</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  }</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>}</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="keyword">static</span> <span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> make_control_out(<span class="keyword">const</span> T&amp; t)</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>{</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  <span class="keywordflow">return</span> make_control_out&lt;T&gt;();</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>}</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>}</div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_data_stream_reader_html"><div class="ttname"><a href="class_data_stream_reader.html">DataStreamReader</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:27</div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
@@ -774,33 +802,33 @@ $(document).ready(function(){initNavTree('_concepts_8hpp_source.html',''); initR
 <div class="ttc" id="aconceptoscr_1_1has__ports__callbacks_html"><div class="ttname"><a href="conceptoscr_1_1has__ports__callbacks.html">oscr::has_ports_callbacks</a></div><div class="ttdef"><b>Definition</b> Concepts.hpp:49</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
 <div class="ttc" id="astruct_dataflow_1_1_curve_inlet_html"><div class="ttname"><a href="struct_dataflow_1_1_curve_inlet.html">Dataflow::CurveInlet</a></div><div class="ttdef"><b>Definition</b> CurveInlet.hpp:47</div></div>
-<div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:674</div></div>
-<div class="ttc" id="astruct_process_1_1_button_html"><div class="ttname"><a href="struct_process_1_1_button.html">Process::Button</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:515</div></div>
+<div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:695</div></div>
+<div class="ttc" id="astruct_process_1_1_button_html"><div class="ttname"><a href="struct_process_1_1_button.html">Process::Button</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:536</div></div>
 <div class="ttc" id="astruct_process_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_process_1_1_chooser_toggle.html">Process::ChooserToggle</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:337</div></div>
-<div class="ttc" id="astruct_process_1_1_combo_box_html"><div class="ttname"><a href="struct_process_1_1_combo_box.html">Process::ComboBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:446</div></div>
-<div class="ttc" id="astruct_process_1_1_enum_html"><div class="ttname"><a href="struct_process_1_1_enum.html">Process::Enum</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:491</div></div>
+<div class="ttc" id="astruct_process_1_1_combo_box_html"><div class="ttname"><a href="struct_process_1_1_combo_box.html">Process::ComboBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:467</div></div>
+<div class="ttc" id="astruct_process_1_1_enum_html"><div class="ttname"><a href="struct_process_1_1_enum.html">Process::Enum</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:512</div></div>
 <div class="ttc" id="astruct_process_1_1_float_knob_html"><div class="ttname"><a href="struct_process_1_1_float_knob.html">Process::FloatKnob</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:174</div></div>
 <div class="ttc" id="astruct_process_1_1_float_range_slider_html"><div class="ttname"><a href="struct_process_1_1_float_range_slider.html">Process::FloatRangeSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:235</div></div>
 <div class="ttc" id="astruct_process_1_1_float_range_spin_box_html"><div class="ttname"><a href="struct_process_1_1_float_range_spin_box.html">Process::FloatRangeSpinBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:267</div></div>
 <div class="ttc" id="astruct_process_1_1_float_slider_html"><div class="ttname"><a href="struct_process_1_1_float_slider.html">Process::FloatSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:160</div></div>
 <div class="ttc" id="astruct_process_1_1_float_spin_box_html"><div class="ttname"><a href="struct_process_1_1_float_spin_box.html">Process::FloatSpinBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:298</div></div>
-<div class="ttc" id="astruct_process_1_1_folder_chooser_html"><div class="ttname"><a href="struct_process_1_1_folder_chooser.html">Process::FolderChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:395</div></div>
-<div class="ttc" id="astruct_process_1_1_h_s_v_slider_html"><div class="ttname"><a href="struct_process_1_1_h_s_v_slider.html">Process::HSVSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:539</div></div>
-<div class="ttc" id="astruct_process_1_1_impulse_button_html"><div class="ttname"><a href="struct_process_1_1_impulse_button.html">Process::ImpulseButton</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:526</div></div>
+<div class="ttc" id="astruct_process_1_1_folder_chooser_html"><div class="ttname"><a href="struct_process_1_1_folder_chooser.html">Process::FolderChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:404</div></div>
+<div class="ttc" id="astruct_process_1_1_h_s_v_slider_html"><div class="ttname"><a href="struct_process_1_1_h_s_v_slider.html">Process::HSVSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:560</div></div>
+<div class="ttc" id="astruct_process_1_1_impulse_button_html"><div class="ttname"><a href="struct_process_1_1_impulse_button.html">Process::ImpulseButton</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:547</div></div>
 <div class="ttc" id="astruct_process_1_1_int_range_slider_html"><div class="ttname"><a href="struct_process_1_1_int_range_slider.html">Process::IntRangeSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:219</div></div>
 <div class="ttc" id="astruct_process_1_1_int_range_spin_box_html"><div class="ttname"><a href="struct_process_1_1_int_range_spin_box.html">Process::IntRangeSpinBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:251</div></div>
 <div class="ttc" id="astruct_process_1_1_int_slider_html"><div class="ttname"><a href="struct_process_1_1_int_slider.html">Process::IntSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:204</div></div>
 <div class="ttc" id="astruct_process_1_1_log_float_slider_html"><div class="ttname"><a href="struct_process_1_1_log_float_slider.html">Process::LogFloatSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:189</div></div>
-<div class="ttc" id="astruct_process_1_1_multi_slider_html"><div class="ttname"><a href="struct_process_1_1_multi_slider.html">Process::MultiSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:629</div></div>
-<div class="ttc" id="astruct_process_1_1_multi_slider_x_y_html"><div class="ttname"><a href="struct_process_1_1_multi_slider_x_y.html">Process::MultiSliderXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:644</div></div>
-<div class="ttc" id="astruct_process_1_1_path_generator_x_y_html"><div class="ttname"><a href="struct_process_1_1_path_generator_x_y.html">Process::PathGeneratorXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:658</div></div>
-<div class="ttc" id="astruct_process_1_1_program_edit_html"><div class="ttname"><a href="struct_process_1_1_program_edit.html">Process::ProgramEdit</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:433</div></div>
+<div class="ttc" id="astruct_process_1_1_multi_slider_html"><div class="ttname"><a href="struct_process_1_1_multi_slider.html">Process::MultiSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:650</div></div>
+<div class="ttc" id="astruct_process_1_1_multi_slider_x_y_html"><div class="ttname"><a href="struct_process_1_1_multi_slider_x_y.html">Process::MultiSliderXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:665</div></div>
+<div class="ttc" id="astruct_process_1_1_path_generator_x_y_html"><div class="ttname"><a href="struct_process_1_1_path_generator_x_y.html">Process::PathGeneratorXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:679</div></div>
+<div class="ttc" id="astruct_process_1_1_program_edit_html"><div class="ttname"><a href="struct_process_1_1_program_edit.html">Process::ProgramEdit</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:454</div></div>
 <div class="ttc" id="astruct_process_1_1_time_chooser_html"><div class="ttname"><a href="struct_process_1_1_time_chooser.html">Process::TimeChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:312</div></div>
 <div class="ttc" id="astruct_process_1_1_toggle_html"><div class="ttname"><a href="struct_process_1_1_toggle.html">Process::Toggle</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:326</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_slider.html">Process::XYSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:553</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_spinboxes.html">Process::XYSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:587</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_z_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_slider.html">Process::XYZSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:570</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:611</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_slider.html">Process::XYSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:574</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_spinboxes.html">Process::XYSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:608</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_z_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_slider.html">Process::XYZSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:591</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:632</div></div>
 <div class="ttc" id="astruct_state_1_1_domain_html"><div class="ttname"><a href="struct_state_1_1_domain.html">State::Domain</a></div><div class="ttdef"><b>Definition</b> Domain.hpp:17</div></div>
 <div class="ttc" id="astruct_t_serializer_html"><div class="ttname"><a href="struct_t_serializer.html">TSerializer</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:13</div></div>
 <div class="ttc" id="astruct_visitor_variant_html"><div class="ttname"><a href="struct_visitor_variant.html">VisitorVariant</a></div><div class="ttdoc">The VisitorVariant struct.</div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:26</div></div>

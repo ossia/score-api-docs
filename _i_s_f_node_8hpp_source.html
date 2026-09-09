@@ -155,16 +155,47 @@ $(document).ready(function(){initNavTree('_i_s_f_node_8hpp_source.html',''); ini
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  std::vector&lt;int*&gt; m_event_ports;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">int</span> m_materialSize{};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="comment">// Bytes of m_material_data the shader&#39;s material UBO actually covers. USER</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// dispatch ports are appended past this: their values are read on the CPU to</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// size the dispatch, and no generated shader declares them.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">int</span> m_materialUBOSize{};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// Reset all `event` input ports to 0 so they pulse true for exactly one</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// frame after the upstream producer writes 1. Called at the end of each</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// frame&#39;s update() — AFTER the material UBO has been staged via</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// updateDynamicBuffer (which captures the value at call time), so</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// resetting the CPU memory here doesn&#39;t affect what the shader reads</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// this frame, only what would leak into the next frame if we didn&#39;t</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// reset.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// Returns true if any port was actually firing. Callers should then set</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// their NodeRenderer::materialChanged flag so the next frame re-uploads</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="comment">// the now-zero event value — otherwise the gate-on-materialChanged</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// upload path would skip the re-upload and leave the stale 1 in the GPU</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="comment">// UBO indefinitely.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  [[nodiscard]] <span class="keywordtype">bool</span> resetEventPortsAfterFrame() <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">bool</span> any_fired = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span>* p : m_event_ports)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keywordflow">if</span>(p &amp;&amp; *p != 0)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        *p = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        any_fired = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> any_fired;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition</b> ISFNode.hpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:176</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:188</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:30</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:49</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">score::gfx::RenderedISFNode</a></div><div class="ttdef"><b>Definition</b> RenderedISFNode.hpp:9</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">score::gfx::RenderedISFNode</a></div><div class="ttdef"><b>Definition</b> RenderedISFNode.hpp:10</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1isf__input__port__vis_html"><div class="ttname"><a href="structscore_1_1gfx_1_1isf__input__port__vis.html">score::gfx::isf_input_port_vis</a></div><div class="ttdef"><b>Definition</b> ISFNode.cpp:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

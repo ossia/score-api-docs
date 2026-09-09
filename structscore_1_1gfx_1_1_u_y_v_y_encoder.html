@@ -139,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab74f36f267e0edcb0b0dfa114d47d283" id="r_ab74f36f267e0edcb0b0dfa114d47d283"><td class="memItemLeft" align="right" valign="top">const QRhiReadbackResult &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ab74f36f267e0edcb0b0dfa114d47d283">readback</a> (int) const override</td></tr>
 <tr class="memdesc:ab74f36f267e0edcb0b0dfa114d47d283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the readback result for a given plane. Valid after endOffscreenFrame.  <br /></td></tr>
 <tr class="separator:ab74f36f267e0edcb0b0dfa114d47d283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68f6c0b137c51362c7cfc23df0174e1a" id="r_a68f6c0b137c51362c7cfc23df0174e1a"><td class="memItemLeft" align="right" valign="top">QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a68f6c0b137c51362c7cfc23df0174e1a">outputTexture</a> () const noexcept override</td></tr>
+<tr class="separator:a68f6c0b137c51362c7cfc23df0174e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9f5266887d6b72e09f5af51ff869e9" id="r_a9c9f5266887d6b72e09f5af51ff869e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a9c9f5266887d6b72e09f5af51ff869e9">setReadbackEnabled</a> (bool e) noexcept override</td></tr>
+<tr class="separator:a9c9f5266887d6b72e09f5af51ff869e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4e66209a72c3e3012056fe351859b7" id="r_a5b4e66209a72c3e3012056fe351859b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a5b4e66209a72c3e3012056fe351859b7">release</a> () override</td></tr>
 <tr class="memdesc:a5b4e66209a72c3e3012056fe351859b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all GPU resources.  <br /></td></tr>
 <tr class="separator:a5b4e66209a72c3e3012056fe351859b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +176,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_width</b> {}</td></t
 <tr class="memitem:ae0405fb682450353048cf4fe41f23b49" id="r_ae0405fb682450353048cf4fe41f23b49"><td class="memItemLeft" align="right" valign="top"><a id="ae0405fb682450353048cf4fe41f23b49" name="ae0405fb682450353048cf4fe41f23b49"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_height</b> {}</td></tr>
 <tr class="separator:ae0405fb682450353048cf4fe41f23b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd5802a28fae9fadcc96ad84ca35b46" id="r_a2bd5802a28fae9fadcc96ad84ca35b46"><td class="memItemLeft" align="right" valign="top"><a id="a2bd5802a28fae9fadcc96ad84ca35b46" name="a2bd5802a28fae9fadcc96ad84ca35b46"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_readbackEnabled</b> {true}</td></tr>
+<tr class="separator:a2bd5802a28fae9fadcc96ad84ca35b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -300,6 +307,34 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
+<a id="a68f6c0b137c51362c7cfc23df0174e1a" name="a68f6c0b137c51362c7cfc23df0174e1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68f6c0b137c51362c7cfc23df0174e1a">&#9670;&#160;</a></span>outputTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiTexture * score::gfx::UYVYEncoder::outputTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The single output texture (RGBA8, format-dependent dimensions) for single-plane encoders, so vendor-neutral code (CpuStagedVideoOutput's DVP download) can copy it straight to sysmem instead of using <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ab74f36f267e0edcb0b0dfa114d47d283" title="Get the readback result for a given plane. Valid after endOffscreenFrame.">readback()</a>. Default nullptr (multi-plane encoders) =&gt; callers must use <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ab74f36f267e0edcb0b0dfa114d47d283" title="Get the readback result for a given plane. Valid after endOffscreenFrame.">readback()</a>. </p>
+
+<p>Reimplemented from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#aec8e823da2391ca68dec3ce0b5b55f24">score::gfx::GPUVideoEncoder</a>.</p>
+
+</div>
+</div>
 <a id="a8672fd3bd904673fcaa7a508dfbd7de4" name="a8672fd3bd904673fcaa7a508dfbd7de4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8672fd3bd904673fcaa7a508dfbd7de4">&#9670;&#160;</a></span>planeCount()</h2>
 
@@ -385,6 +420,35 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 <p>Release all GPU resources. </p>
 
 <p>Implements <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#afbcf1fa53b70a82e1bd3562990dfabee">score::gfx::GPUVideoEncoder</a>.</p>
+
+</div>
+</div>
+<a id="a9c9f5266887d6b72e09f5af51ff869e9" name="a9c9f5266887d6b72e09f5af51ff869e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c9f5266887d6b72e09f5af51ff869e9">&#9670;&#160;</a></span>setReadbackEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::UYVYEncoder::setReadbackEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enable/disable the GPU-&gt;CPU readback scheduled in <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a96cd7e435a17fa970db9bfd736073469">exec()</a>. Default enabled (readback runs). Disable when a GPU-direct download reads <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a68f6c0b137c51362c7cfc23df0174e1a">outputTexture()</a> directly, so <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a96cd7e435a17fa970db9bfd736073469">exec()</a> doesn't also pay the readback (no double transfer). </p>
+
+<p>Reimplemented from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a47f234c11bd2787716ca85b7d8992b43">score::gfx::GPUVideoEncoder</a>.</p>
 
 </div>
 </div>

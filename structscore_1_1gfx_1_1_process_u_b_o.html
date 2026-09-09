@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_process_u_b_o.h
  <a href="structscore_1_1gfx_1_1_process_u_b_o.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UBO specific to individual processes / nodes. </p>
+<p><code>alignas(4)</code> because the enclosing <code>#pragma pack(1)</code> drops the struct's alignment to 1 while every member is a 4-byte type sitting at a naturally 4-aligned offset (time 0, ... renderSize 24, date 32, numWorkgroups 48). The packing changes no byte of the layout &ndash; it only removes the alignment guarantee, which lets <code>Node::standardUBO</code> land on an odd address; UBSan then flags the <code>std::copy_n(renderer.currentDate, 4, n.standardUBO.date)</code> store in <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html">RenderedRawRasterPipelineNode</a>'s update path as a misaligned store to a <code>float *</code>. Keeping the alignment at 4 leaves both sizeof and every member offset untouched, so the GPU-side std140 image is unchanged. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -140,6 +141,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>renderSize</b> [2] {
 <tr class="memitem:adddaf9d7720ab042577b6b00366ac1a6" id="r_adddaf9d7720ab042577b6b00366ac1a6"><td class="memItemLeft" align="right" valign="top"><a id="adddaf9d7720ab042577b6b00366ac1a6" name="adddaf9d7720ab042577b6b00366ac1a6"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>date</b> [4] {0.f, 0.f, 0.f, 0.f}</td></tr>
 <tr class="separator:adddaf9d7720ab042577b6b00366ac1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5566651c5d425bfe78454657ed9b502a" id="r_a5566651c5d425bfe78454657ed9b502a"><td class="memItemLeft" align="right" valign="top"><a id="a5566651c5d425bfe78454657ed9b502a" name="a5566651c5d425bfe78454657ed9b502a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>numWorkgroups</b> [3] {}</td></tr>
+<tr class="separator:a5566651c5d425bfe78454657ed9b502a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989039f53e99fc15a6f3838f80656649" id="r_a989039f53e99fc15a6f3838f80656649"><td class="memItemLeft" align="right" valign="top"><a id="a989039f53e99fc15a6f3838f80656649" name="a989039f53e99fc15a6f3838f80656649"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>_numWorkgroups_pad</b> {}</td></tr>
+<tr class="separator:a989039f53e99fc15a6f3838f80656649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_common_u_b_os_8hpp_source.html">CommonUBOs.hpp</a></li>

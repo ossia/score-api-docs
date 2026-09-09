@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_sampler.html','
  <a href="structscore_1_1gfx_1_1_sampler.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stores a sampler and the texture currently associated with it. </p>
+<p><code>fallback</code> is the view-type-matched empty texture to bind when <code>texture</code> becomes null (no upstream, feedback-loop short, disconnect race). It MUST be one of <code><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aba4c2c67428caf9f0a0bc409e948cf61" title="Texture to use when a texture is missing (2D)">RenderList::emptyTexture()</a> / emptyTexture3D() / emptyTextureCube() / emptyTextureArray()</code> so the bound view type matches the shader's sampler declaration. Leaving this null is only safe for plain sampler2D slots — a samplerCube / sampler3D / sampler2DArray slot with a null <code>fallback</code> will trip Vulkan viewType validation or, if the fallback path upstream also produced null, crash with a VK_NULL_HANDLE descriptor write. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -122,6 +123,9 @@ QRhiSampler *&#160;</td><td class="memItemRight" valign="bottom"><b>sampler</b> 
 <tr class="memitem:ad4d2595df54f6132f95d404f26033339" id="r_ad4d2595df54f6132f95d404f26033339"><td class="memItemLeft" align="right" valign="top"><a id="ad4d2595df54f6132f95d404f26033339" name="ad4d2595df54f6132f95d404f26033339"></a>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b> {}</td></tr>
 <tr class="separator:ad4d2595df54f6132f95d404f26033339"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a2a31a3b876d4eb1a31148f67ec727" id="r_a82a2a31a3b876d4eb1a31148f67ec727"><td class="memItemLeft" align="right" valign="top"><a id="a82a2a31a3b876d4eb1a31148f67ec727" name="a82a2a31a3b876d4eb1a31148f67ec727"></a>
+QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>fallback</b> {}</td></tr>
+<tr class="separator:a82a2a31a3b876d4eb1a31148f67ec727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Utils.hpp</a></li>

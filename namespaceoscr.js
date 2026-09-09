@@ -80,6 +80,7 @@ var namespaceoscr =
     [ "GpuComputeNode2", "conceptoscr_1_1_gpu_compute_node2.html", null ],
     [ "is_gpu", "conceptoscr_1_1is__gpu.html", null ],
     [ "has_ossia_layer", "conceptoscr_1_1has__ossia__layer.html", null ],
+    [ "scene_port", "conceptoscr_1_1scene__port.html", null ],
     [ "reflect_controller_controls", "namespaceoscr.html#aff603550764466eab1394f6a8fb7795d", null ],
     [ "field_has_ui_controls", "namespaceoscr.html#af07783ba70da8727ed32a7406a8acb69", null ]
 ];

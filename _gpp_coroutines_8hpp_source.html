@@ -395,91 +395,93 @@ $(document).ready(function(){initNavTree('_gpp_coroutines_8hpp_source.html','');
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>          <span class="keyword">requires</span> { C::vertex; } || <span class="keyword">requires</span> { C::index; })</div>
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>      {</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <span class="keyword">auto</span> buf = rhi.newBuffer(buffer_type&lt;C&gt;(), usage&lt;C&gt;(), command.size);</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        buf-&gt;create();</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>      }</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::sampler; })</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      {</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keyword">auto</span> buf = rhi.newSampler({}, {}, {}, {}, {});</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        buf-&gt;create();</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>      }</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>          <span class="keyword">requires</span> { C::ubo; } || <span class="keyword">requires</span> { C::storage; })</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>      {</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        <span class="keyword">auto</span> buf = rhi.newBuffer(buffer_type&lt;C&gt;(), usage&lt;C&gt;(), command.size);</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        buf-&gt;create();</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <span class="comment">// Replace it in our bindings</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        score::gfx::replaceBuffer(srb, command.binding, buf);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        srb_touched = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>      }</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::texture; })</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      {</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        <span class="comment">// FIXME format</span></div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>        <span class="keyword">auto</span> tex = rhi.newTexture(</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            QRhiTexture::RGBA8, QSize{command.width, command.height}, samples(command));</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        tex-&gt;create();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        score::gfx::replaceTexture(srb, command.binding, tex);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        srb_touched = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(tex);</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>      }</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      {</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        <span class="keyword">static_assert</span>(C::unhandled);</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>      }</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    }</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::upload; })</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    {</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::texture; })</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>      {</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>        QRhiTextureSubresourceUploadDescription sub(command.data, command.size);</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>        res.uploadTexture(</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            <span class="keyword">reinterpret_cast&lt;</span>QRhiTexture*<span class="keyword">&gt;</span>(command.handle),</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            QRhiTextureUploadDescription{{0, 0, sub}});</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>      }</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      {</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>        <span class="keyword">auto</span> buf = <span class="keyword">reinterpret_cast&lt;</span>QRhiBuffer*<span class="keyword">&gt;</span>(command.handle);</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::dynamic; })</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>          res.updateDynamicBuffer(buf, command.offset, command.size, command.data);</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>            <span class="keyword">requires</span> { C::static_; } || <span class="keyword">requires</span> { C::immutable; })</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>          res.uploadStaticBuffer(buf, command.offset, command.size, command.data);</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        {</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>          <span class="keyword">static_assert</span>(C::unhandled);</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>          <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        }</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>      }</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    }</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::getter; })</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::ubo; })</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>        <span class="keyword">auto</span> buf = self.createdUbos.at(command.binding);</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>      }</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>      {</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>        <span class="keyword">static_assert</span>(C::unhandled);</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>        <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>      }</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>    }</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    {</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>      <a class="code hl_struct" href="structgpp_1_1qrhi_1_1handle__release.html">handle_release</a>{rhi}(command);</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>      <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>    }</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>    <span class="keywordflow">return</span> {};</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  }</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>};</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        buf-&gt;setName(<span class="stringliteral">&quot;GppCoroutines::vbuf_or_ibuf&quot;</span>);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        buf-&gt;create();</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      }</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::sampler; })</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>      {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>        <span class="keyword">auto</span> buf = rhi.newSampler({}, {}, {}, {}, {});</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>        buf-&gt;create();</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>      }</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>          <span class="keyword">requires</span> { C::ubo; } || <span class="keyword">requires</span> { C::storage; })</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>      {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        <span class="keyword">auto</span> buf = rhi.newBuffer(buffer_type&lt;C&gt;(), usage&lt;C&gt;(), command.size);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>        buf-&gt;setName(<span class="stringliteral">&quot;GppCoroutines::ubo_or_ssbo&quot;</span>);</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        buf-&gt;create();</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>        <span class="comment">// Replace it in our bindings</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>        score::gfx::replaceBuffer(srb, command.binding, buf);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>        srb_touched = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      }</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::texture; })</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>      {</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>        <span class="comment">// FIXME format</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>        <span class="keyword">auto</span> tex = rhi.newTexture(</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>            QRhiTexture::RGBA8, QSize{command.width, command.height}, samples(command));</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        tex-&gt;create();</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        score::gfx::replaceTexture(srb, command.binding, tex);</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>        srb_touched = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(tex);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>      }</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>      {</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>        <span class="keyword">static_assert</span>(C::unhandled);</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>      }</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    }</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::upload; })</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>    {</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::texture; })</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      {</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>        QRhiTextureSubresourceUploadDescription sub(command.data, command.size);</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        res.uploadTexture(</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>            <span class="keyword">reinterpret_cast&lt;</span>QRhiTexture*<span class="keyword">&gt;</span>(command.handle),</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>            QRhiTextureUploadDescription{{0, 0, sub}});</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>      }</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>      {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>        <span class="keyword">auto</span> buf = <span class="keyword">reinterpret_cast&lt;</span>QRhiBuffer*<span class="keyword">&gt;</span>(command.handle);</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::dynamic; })</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>          res.updateDynamicBuffer(buf, command.offset, command.size, command.data);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>            <span class="keyword">requires</span> { C::static_; } || <span class="keyword">requires</span> { C::immutable; })</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>          res.uploadStaticBuffer(buf, command.offset, command.size, command.data);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        {</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>          <span class="keyword">static_assert</span>(C::unhandled);</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>          <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        }</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>      }</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    }</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::getter; })</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    {</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { C::ubo; })</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      {</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>        <span class="keyword">auto</span> buf = self.createdUbos.at(command.binding);</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>        <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>typename C::return_type<span class="keyword">&gt;</span>(buf);</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>      }</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      {</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>        <span class="keyword">static_assert</span>(C::unhandled);</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>      }</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    }</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>    {</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>      <a class="code hl_struct" href="structgpp_1_1qrhi_1_1handle__release.html">handle_release</a>{rhi}(command);</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    }</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  }</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>};</div>
 </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>}</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>}</div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html">gpp::qrhi::DefaultPipeline::layout::bindings</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:32</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input.html">gpp::qrhi::DefaultPipeline::layout::fragment_input</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:29</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1vertex__input_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1vertex__input.html">gpp::qrhi::DefaultPipeline::layout::vertex_input</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:17</div></div>

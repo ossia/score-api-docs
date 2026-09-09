@@ -4,5 +4,6 @@ var classscore_1_1gfx_1_1_g_p_u_video_decoder =
     [ "init", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a2006599f62b8b95fdc6bc2e0224ef56e", null ],
     [ "release", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html#aa1e4ab512b307a792032e762aff3a572", null ],
     [ "failed", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a6bb3a97ecdf3be60279c93e70281c6e7", null ],
+    [ "formatChanged", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html#afd47b0ec90ededca937b607dd19ee37c", null ],
     [ "hasFrame", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a17ec177295eb2e8172032a9571bfc1ac", null ]
 ];

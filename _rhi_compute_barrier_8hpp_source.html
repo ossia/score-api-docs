@@ -115,27 +115,80 @@ $(document).ready(function(){initNavTree('_rhi_compute_barrier_8hpp_source.html'
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">class </span>QRhi;</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span>QRhiBuffer;</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span>QRhiCommandBuffer;</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a58beeaecc2ea67c13d7e7fceee9bc7fa">insertComputeBarrier</a>(QRhi&amp; rhi, QRhiCommandBuffer&amp; cb);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a16995b3843fbc212033c24c7ed8e59ee">copyBuffer</a>(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    QRhiBuffer* src, QRhiBuffer* dst, <span class="keywordtype">int</span> size,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span> srcOffset = 0, <span class="keywordtype">int</span> dstOffset = 0);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Metal-specific implementation (defined in RhiBufferCopyMetal.mm)</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keywordtype">void</span> copyBufferMetal(</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    QRhiBuffer* src, QRhiBuffer* dst, <span class="keywordtype">int</span> size,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> srcOffset = 0, <span class="keywordtype">int</span> dstOffset = 0);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a16995b3843fbc212033c24c7ed8e59ee"><div class="ttname"><a href="namespacescore_1_1gfx.html#a16995b3843fbc212033c24c7ed8e59ee">score::gfx::copyBuffer</a></div><div class="ttdeci">void copyBuffer(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb, QRhiBuffer *src, QRhiBuffer *dst, int size, int srcOffset, int dstOffset)</div><div class="ttdoc">Copy the contents of one GPU buffer to another.</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:145</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a58beeaecc2ea67c13d7e7fceee9bc7fa"><div class="ttname"><a href="namespacescore_1_1gfx.html#a58beeaecc2ea67c13d7e7fceee9bc7fa">score::gfx::insertComputeBarrier</a></div><div class="ttdeci">void insertComputeBarrier(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb)</div><div class="ttdoc">Insert a compute-to-compute memory barrier.</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:68</div></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span>QRhiShaderResourceBindings;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#ab36b394f72f1ce6bec8dab60dd5d1924">dispatchComputeLayeredImages</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb, QRhiShaderResourceBindings&amp; srb,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> z);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a58beeaecc2ea67c13d7e7fceee9bc7fa">insertComputeBarrier</a>(QRhi&amp; rhi, QRhiCommandBuffer&amp; cb);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// Controls whether the copy helpers emit their own pre/post pipeline</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// barriers. Default: Auto (each call emits a {compute,transfer}→transfer +</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// transfer→compute pair). Use `None` when you are batching N calls</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// inside explicit beginBufferCopyBarrier / endBufferCopyBarrier brackets</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// to avoid N−1 redundant pipeline stalls. `None` with no surrounding</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// bracket emits NO synchronisation at all — correct only when the caller</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// knows nothing else in the frame touches the range.</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a3d064dc8eca386161682a719625d0d5a">   86</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a3d064dc8eca386161682a719625d0d5a">BufferCopyBarrier</a></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  Auto,</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  None</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
+</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a3c5297503d582dce749b21e4d560d3dc">beginBufferCopyBarrier</a>(QRhi&amp; rhi, QRhiCommandBuffer&amp; cb);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a5dd8fd533b819fa61762cb15e0ed41d6">endBufferCopyBarrier</a>(QRhi&amp; rhi, QRhiCommandBuffer&amp; cb);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keywordtype">void</span> copyBuffer(</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    QRhiBuffer* src, QRhiBuffer* dst, <span class="keywordtype">int</span> size,</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">int</span> srcOffset = 0, <span class="keywordtype">int</span> dstOffset = 0,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a3d064dc8eca386161682a719625d0d5a">BufferCopyBarrier</a> barrier = BufferCopyBarrier::Auto);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// Metal-specific implementation (defined in RhiBufferCopyMetal.mm)</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keywordtype">void</span> copyBufferMetal(</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    QRhiBuffer* src, QRhiBuffer* dst, <span class="keywordtype">int</span> size,</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">int</span> srcOffset = 0, <span class="keywordtype">int</span> dstOffset = 0);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="foldopen" id="foldopen00140" data-start="{" data-end="};">
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_buffer_copy_region.html">  140</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_buffer_copy_region.html">BufferCopyRegion</a></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>{</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keywordtype">int</span> src_offset{};</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">int</span> dst_offset{};</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keywordtype">int</span> size{};</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
+</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keywordtype">void</span> copyBufferRegions(</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    QRhiBuffer* src, QRhiBuffer* dst,</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_buffer_copy_region.html">BufferCopyRegion</a>* regions, <span class="keywordtype">int</span> count,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a3d064dc8eca386161682a719625d0d5a">BufferCopyBarrier</a> barrier = BufferCopyBarrier::Auto);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">// Metal-specific implementation</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keywordtype">void</span> copyBufferRegionsMetal(</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    QRhi&amp; rhi, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    QRhiBuffer* src, QRhiBuffer* dst,</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_buffer_copy_region.html">BufferCopyRegion</a>* regions, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}</div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a3c5297503d582dce749b21e4d560d3dc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a3c5297503d582dce749b21e4d560d3dc">score::gfx::beginBufferCopyBarrier</a></div><div class="ttdeci">void beginBufferCopyBarrier(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb)</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:302</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a3d064dc8eca386161682a719625d0d5a"><div class="ttname"><a href="namespacescore_1_1gfx.html#a3d064dc8eca386161682a719625d0d5a">score::gfx::BufferCopyBarrier</a></div><div class="ttdeci">BufferCopyBarrier</div><div class="ttdoc">Copy the contents of one GPU buffer to another.</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.hpp:87</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a58beeaecc2ea67c13d7e7fceee9bc7fa"><div class="ttname"><a href="namespacescore_1_1gfx.html#a58beeaecc2ea67c13d7e7fceee9bc7fa">score::gfx::insertComputeBarrier</a></div><div class="ttdeci">void insertComputeBarrier(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb)</div><div class="ttdoc">Insert a compute-to-compute memory barrier.</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:127</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a5dd8fd533b819fa61762cb15e0ed41d6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5dd8fd533b819fa61762cb15e0ed41d6">score::gfx::endBufferCopyBarrier</a></div><div class="ttdeci">void endBufferCopyBarrier(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb)</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:336</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ab36b394f72f1ce6bec8dab60dd5d1924"><div class="ttname"><a href="namespacescore_1_1gfx.html#ab36b394f72f1ce6bec8dab60dd5d1924">score::gfx::dispatchComputeLayeredImages</a></div><div class="ttdeci">bool dispatchComputeLayeredImages(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb, QRhiShaderResourceBindings &amp;srb, int x, int y, int z)</div><div class="ttdoc">Dispatch a compute pass, working around Qt's non-layered bind of layered (3D / cube / array) storage ...</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.cpp:208</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_buffer_copy_region_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_buffer_copy_region.html">score::gfx::BufferCopyRegion</a></div><div class="ttdoc">Region-based GPU buffer copy for strided / gather patterns.</div><div class="ttdef"><b>Definition</b> RhiComputeBarrier.hpp:141</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -133,11 +133,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7e307b7e1108bd49afcbc09a4e956d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae42c0518c5fba14f1e2dc2852a3e8b6" id="r_aae42c0518c5fba14f1e2dc2852a3e8b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html#aae42c0518c5fba14f1e2dc2852a3e8b6">useGraph</a> (<a class="el" href="structscore_1_1gfx_1_1_graph.html">score::gfx::Graph</a> *graph, std::function&lt; void(<a class="el" href="structscore_1_1gfx_1_1_background_node.html">score::gfx::BackgroundNode</a> &amp;)&gt; onAttached, std::function&lt; void(<a class="el" href="structscore_1_1gfx_1_1_background_node.html">score::gfx::BackgroundNode</a> &amp;)&gt; onAboutToDetach)</td></tr>
 <tr class="separator:aae42c0518c5fba14f1e2dc2852a3e8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc7834c2d7e94dafa197b5f37a74df6e" id="r_adc7834c2d7e94dafa197b5f37a74df6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html#adc7834c2d7e94dafa197b5f37a74df6e">useContext</a> (<a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a> *ctx, int32_t producerNodeId)</td></tr>
-<tr class="separator:adc7834c2d7e94dafa197b5f37a74df6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51cb79fe038ba0ad0eb07937883e10b2" id="r_a51cb79fe038ba0ad0eb07937883e10b2"><td class="memItemLeft" align="right" valign="top"><a id="a51cb79fe038ba0ad0eb07937883e10b2" name="a51cb79fe038ba0ad0eb07937883e10b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setProducerNodeId</b> (int32_t id)</td></tr>
-<tr class="separator:a51cb79fe038ba0ad0eb07937883e10b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e23126b9e6ccedf2665c2f9f3e541b" id="r_a20e23126b9e6ccedf2665c2f9f3e541b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html#a20e23126b9e6ccedf2665c2f9f3e541b">useContext</a> (<a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a> *ctx, port_index producer)</td></tr>
+<tr class="separator:a20e23126b9e6ccedf2665c2f9f3e541b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc320c7ede12889428c20f27f2f94cb2" id="r_afc320c7ede12889428c20f27f2f94cb2"><td class="memItemLeft" align="right" valign="top"><a id="afc320c7ede12889428c20f27f2f94cb2" name="afc320c7ede12889428c20f27f2f94cb2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProducer</b> (port_index producer)</td></tr>
+<tr class="separator:afc320c7ede12889428c20f27f2f94cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -152,8 +152,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTime
 <tr class="separator:a2a5195318c559a2fc22391ae4525c28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="adc7834c2d7e94dafa197b5f37a74df6e" name="adc7834c2d7e94dafa197b5f37a74df6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc7834c2d7e94dafa197b5f37a74df6e">&#9670;&#160;</a></span>useContext()</h2>
+<a id="a20e23126b9e6ccedf2665c2f9f3e541b" name="a20e23126b9e6ccedf2665c2f9f3e541b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e23126b9e6ccedf2665c2f9f3e541b">&#9670;&#160;</a></span>useContext()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,8 +167,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTime
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int32_t&#160;</td>
-          <td class="paramname"><em>producerNodeId</em>&#160;</td>
+          <td class="paramtype">port_index&#160;</td>
+          <td class="paramname"><em>producer</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,7 +177,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTime
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Context backend. The producer node id can be updated at any time; the widget rewires the preview edge accordingly. </p>
+<p>Context backend. The producer endpoint can be updated at any time; the widget rewires the preview edge accordingly. It is a (node, port) pair, not just a node: a process whose texture outlet is not its first outlet registers under that outlet's own index. </p>
 
 </div>
 </div>

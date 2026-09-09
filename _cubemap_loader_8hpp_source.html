@@ -113,122 +113,215 @@ $(document).ready(function(){initNavTree('_cubemap_loader_8hpp_source.html','');
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;halp/controls.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;halp/texture.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Gfx/Graph/RenderList.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QtGui/private/qrhi_p.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;QImage&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Threedim</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">enum class</span> CubemapLayout</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  Equirectangular,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  HorizontalCross,</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  VerticalCross,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  HorizontalStrip,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  VerticalStrip,</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_threedim_1_1_cubemap_loader.html">   25</a></span><span class="keyword">class </span><a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  halp_meta(name, <span class="stringliteral">&quot;Cubemap Loader&quot;</span>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/3D&quot;</span>)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  halp_meta(c_name, <span class="stringliteral">&quot;cubemap_loader&quot;</span>)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  halp_meta(</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      manual_url,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/cubemap-loader.html&quot;</span>)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  halp_meta(uuid, <span class="stringliteral">&quot;b8d4f9e2-6c3a-4b0f-9e4d-2a7f0c5b3d6e&quot;</span>)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_cubemap_loader_1_1ins.html">   36</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    struct : halp::lineedit&lt;<span class="stringliteral">&quot;Image&quot;</span>, <span class="stringliteral">&quot;&quot;</span>&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp; self) { self.m_imageChanged = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    } image;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    struct : halp::enum_t&lt;CubemapLayout, <span class="stringliteral">&quot;Layout&quot;</span>&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp; self) { self.m_imageChanged = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    } layout;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    struct : halp::spinbox_i32&lt;<span class="stringliteral">&quot;Resolution&quot;</span>, halp::range{16, 8192, 512}&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp; self) { self.m_imageChanged = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    } resolution;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  } inputs;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;halp/file_port.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;halp/meta.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;halp/texture.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Gfx/Graph/RenderList.hpp&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;ossia/dataflow/geometry_port.hpp&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;QtGui/private/qrhi_p.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>Threedim</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">enum class</span> CubemapLayout</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  Equirectangular,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  HorizontalCross,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  VerticalCross,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  HorizontalStrip,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  VerticalStrip,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_threedim_1_1_cubemap_loader.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  halp_meta(name, <span class="stringliteral">&quot;Cubemap Loader&quot;</span>)</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/3D&quot;</span>)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  halp_meta(c_name, <span class="stringliteral">&quot;cubemap_loader&quot;</span>)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  halp_meta(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      manual_url,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/cubemap-loader.html&quot;</span>)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  halp_meta(uuid, <span class="stringliteral">&quot;b8d4f9e2-6c3a-4b0f-9e4d-2a7f0c5b3d6e&quot;</span>)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="};">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_cubemap_loader_1_1ins.html">   44</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// File-port boilerplate — same pattern as ImageLoader. process()</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// runs on the file-load worker thread, decodes the image off the</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// render thread, returns a lambda that stages the decoded QImage</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// onto the node from the execution thread.</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html">   50</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html">image_t</a> : halp::file_port&lt;&quot;Image&quot;, halp::mmap_file_view&gt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// Only LDR formats are advertised: decode goes through QImage, which has</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// no stock Radiance-HDR / OpenEXR handler, and both the equirect source</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="comment">// and the cube textures are RGBA8. Listing .hdr/.exr would decode to null</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="comment">// or truncate to 8 bits, since no float decoder is vendored here.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      halp_meta(extensions,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <span class="stringliteral">&quot;Images (*.png *.jpg *.jpeg *.bmp *.tga *.webp *.tif *.tiff)&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">static</span> std::function&lt;void(<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp;)&gt; process(file_type data)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        QImage img;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span>(!data.bytes.empty())</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          img.loadFromData(</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>              <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>uchar*<span class="keyword">&gt;</span>(data.bytes.data()),</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>              (<span class="keywordtype">int</span>)data.bytes.size());</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">if</span>(img.isNull() &amp;&amp; !data.filename.empty())</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          img = QImage(data.filename.data());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span>(img.isNull())</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          <span class="comment">// Never fail silently — surface unsupported/corrupt inputs</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>          <span class="comment">// (e.g. an HDR/EXR file QImage cannot decode).</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          qWarning() &lt;&lt; <span class="stringliteral">&quot;CubemapLoader: failed to decode environment image&quot;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                     &lt;&lt; data.filename.data()</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                     &lt;&lt; <span class="stringliteral">&quot;- unsupported or corrupt format (HDR/EXR float&quot;</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        <span class="stringliteral">&quot; formats are not supported)&quot;</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(img.format() != QImage::Format_RGBA8888)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>          img = img.convertToFormat(QImage::Format_RGBA8888);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> [img = std::move(img)](<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp; self) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          self.m_loadedImage = std::move(img);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>          self.m_imageChanged = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        };</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    } image;</div>
 </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">struct</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    halp::gpu_texture_output&lt;<span class="stringliteral">&quot;Cubemap&quot;</span>&gt; cubemap;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  } outputs;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">// GPU resources</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  QRhiTexture* m_cubemapTex{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  QRhiTexture* m_equirectTex{};</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  QRhiSampler* m_equirectSampler{};</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// Per-face render targets for equirectangular conversion</span></div>
-<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">   65</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">FaceRT</a></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    QRhiTextureRenderTarget* renderTarget{};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    QRhiRenderPassDescriptor* renderPass{};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  };</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    struct : halp::enum_t&lt;CubemapLayout, <span class="stringliteral">&quot;Layout&quot;</span>&gt;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_cubemap_loader.html">CubemapLoader</a>&amp; self) { self.m_imageChanged = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    } layout;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    struct : halp::spinbox_i32&lt;<span class="stringliteral">&quot;Resolution&quot;</span>, halp::range{16, 8192, 512}&gt;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keywordtype">void</span> update(CubemapLoader&amp; self) { self.m_imageChanged = <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    } resolution;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">FaceRT</a> m_faceRTs[6]{};</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  QRhiGraphicsPipeline* m_equirectPipeline{};</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  QRhiShaderResourceBindings* m_equirectSrb{};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  QRhiBuffer* m_equirectUbo{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  QRhiBuffer* m_quadVbuf{};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">int</span> m_faceSize{0};</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">bool</span> m_imageChanged{<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  QImage m_loadedImage;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> operator()() { }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> update(</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res,</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">void</span> loadImage();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> createCubemapTexture(QRhi&amp; rhi, <span class="keywordtype">int</span> faceSize);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> releaseCubemapTexture();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> releaseEquirectResources();</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">void</span> uploadCrossOrStrip(QRhiResourceUpdateBatch* res);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> renderEquirectangular(</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      QRhiResourceUpdateBatch*&amp; res);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span> setupEquirectPipeline(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="comment">// Extract face from cross/strip layout</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  QImage extractFace(<span class="keywordtype">int</span> faceIndex) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>};</div>
-</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">// Raw cube texture — kept for consumers that want the handle</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// directly (e.g. a bare-skybox rendering shader). Tagged via</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// halp::gpu_cubemap_output so sinks know to grab-from-source</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">// rather than allocate a 2D render target.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    halp::gpu_cubemap_output&lt;<span class="stringliteral">&quot;Cubemap&quot;</span>&gt; cubemap;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclass_threedim_1_1_cubemap_loader_html"><div class="ttname"><a href="class_threedim_1_1_cubemap_loader.html">Threedim::CubemapLoader</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:26</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:19</div></div>
-<div class="ttc" id="astruct_threedim_1_1_cubemap_loader_1_1_face_r_t_html"><div class="ttname"><a href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">Threedim::CubemapLoader::FaceRT</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:66</div></div>
-<div class="ttc" id="astruct_threedim_1_1_cubemap_loader_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_cubemap_loader_1_1ins.html">Threedim::CubemapLoader::ins</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:37</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:78</div></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="comment">// Scene-graph output: a scene_spec whose scene_environment has only</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="comment">// skybox_texture.native_handle populated (no ambient / fog / etc.,</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// no roots). Lets users wire the cubemap into a scene without a</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="comment">// side-channel cable: merge_scenes&#39;s per-field env overlay folds</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// it together with an EnvironmentLoader&#39;s params independent of</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// wiring order.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      halp_meta(name, <span class="stringliteral">&quot;Scene&quot;</span>);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      ossia::scene_spec scene;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      uint8_t dirty{0};</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    } scene_out;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  } outputs;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="comment">// Stable scene_state identity so downstream scene-identity caches</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="comment">// (ScenePreprocessor, merge_scenes passthrough) stay hot across frames.</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  std::shared_ptr&lt;ossia::scene_state&gt; m_sceneState;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  int64_t m_sceneVersion{0};</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keywordtype">void</span>* m_lastPublishedHandle{};</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="comment">// GPU resources</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  QRhiTexture* m_cubemapTex{};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  QRhiTexture* m_equirectTex{};</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  QRhiSampler* m_equirectSampler{};</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="comment">// Per-face render targets for equirectangular conversion</span></div>
+<div class="foldopen" id="foldopen00134" data-start="{" data-end="};">
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">  134</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">FaceRT</a></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    QRhiTextureRenderTarget* renderTarget{};</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    QRhiRenderPassDescriptor* renderPass{};</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  };</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <a class="code hl_struct" href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">FaceRT</a> m_faceRTs[6]{};</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  QRhiGraphicsPipeline* m_equirectPipeline{};</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  QRhiShaderResourceBindings* m_equirectSrb{};</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  QRhiBuffer* m_equirectUbo{};</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  QRhiBuffer* m_quadVbuf{};</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="comment">// Per-face stride into m_equirectUbo. The 6 equirect-&gt;cube face passes</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="comment">// each need their own FaceInfo slot bound via a dynamic offset, so the</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="comment">// UBO holds 6 blocks spaced by aligned(UniformBufferOffsetAlignment).</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  quint32 m_equirectUboStride{0};</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordtype">int</span> m_faceSize{0};</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keywordtype">bool</span> m_imageChanged{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  QImage m_loadedImage;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keywordtype">void</span> operator()() { }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="comment">// Dtor safety net: if the renderer framework&#39;s release(RenderList&amp;)</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  <span class="comment">// path was skipped (e.g. a reconcile path that deletes the renderer</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="comment">// without first calling release — or any future code that drops the</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  <span class="comment">// GfxRenderer&#39;s shared_ptr&lt;CubemapLoader&gt; without going through</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="comment">// CpuFilterNode::releaseState), any still-live textures and GPU</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="comment">// resources go to deleteLater here so QRhi&#39;s destructor can collect</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="comment">// them before vkDestroyDevice. Without this the Vulkan validation</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="comment">// layer flags &quot;VkImage has not been destroyed&quot; on app exit.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  ~CubemapLoader();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="keywordtype">void</span> update(</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res,</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordtype">bool</span> createCubemapTexture(QRhi&amp; rhi, <span class="keywordtype">int</span> faceSize);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <span class="keywordtype">void</span> releaseCubemapTexture();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="comment">// `renderer` is optional: when non-null, QRhiBuffers go through</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="comment">// RenderList::releaseBuffer (the project-wide lifetime invariant);</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="comment">// when null (dtor fallback, after the RenderList itself may have</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="comment">// already been destroyed), they go straight to deleteLater.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  <span class="comment">// Textures always deleteLater directly — they&#39;re not tracked in</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="comment">// RenderList::m_vertexBuffers, so the double-free risk only applies</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  <span class="comment">// to buffers.</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordtype">void</span> releaseEquirectResources(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>* renderer = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordtype">void</span> uploadCrossOrStrip(QRhiResourceUpdateBatch* res);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <span class="keywordtype">void</span> renderEquirectangular(</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      QRhiResourceUpdateBatch*&amp; res);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>  <span class="keywordtype">bool</span> setupEquirectPipeline(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer);</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="comment">// Extract face from cross/strip layout</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  QImage extractFace(<span class="keywordtype">int</span> faceIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
+<div class="ttc" id="aclass_threedim_1_1_cubemap_loader_html"><div class="ttname"><a href="class_threedim_1_1_cubemap_loader.html">Threedim::CubemapLoader</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:34</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:30</div></div>
+<div class="ttc" id="astruct_threedim_1_1_cubemap_loader_1_1_face_r_t_html"><div class="ttname"><a href="struct_threedim_1_1_cubemap_loader_1_1_face_r_t.html">Threedim::CubemapLoader::FaceRT</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:135</div></div>
+<div class="ttc" id="astruct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t_html"><div class="ttname"><a href="struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html">Threedim::CubemapLoader::ins::image_t</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:51</div></div>
+<div class="ttc" id="astruct_threedim_1_1_cubemap_loader_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_cubemap_loader_1_1ins.html">Threedim::CubemapLoader::ins</a></div><div class="ttdef"><b>Definition</b> CubemapLoader.hpp:45</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:103</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

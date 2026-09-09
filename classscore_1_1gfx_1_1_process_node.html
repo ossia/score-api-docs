@@ -118,22 +118,18 @@ Inheritance diagram for score::gfx::ProcessNode:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_process_node.png" usemap="#score::gfx::ProcessNode_map" alt=""/>
   <map id="score::gfx::ProcessNode_map" name="score::gfx::ProcessNode_map">
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="783,56,1034,80"/>
-<area href="struct_gfx_1_1_spout_1_1_spout_input_node.html" alt="Gfx::Spout::SpoutInputNode" shape="rect" coords="0,168,251,192"/>
-<area href="struct_gfx_1_1_window_capture_1_1_window_capture_node.html" alt="Gfx::WindowCapture::WindowCaptureNode" shape="rect" coords="261,168,512,192"/>
-<area href="structscore_1_1gfx_1_1_depth_node.html" alt="score::gfx::DepthNode" shape="rect" coords="522,168,773,192"/>
-<area href="classscore_1_1gfx_1_1_geometry_filter_node.html" title="Data model for geometry filters." alt="score::gfx::GeometryFilterNode" shape="rect" coords="783,168,1034,192"/>
-<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="1044,168,1295,192"/>
-<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="1305,168,1556,192"/>
-<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="1827,168,2078,192"/>
-<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="1566,224,1817,248"/>
-<area href="structscore_1_1gfx_1_1_gaussian_splat_node.html" title="Gaussian Splat rendering node." alt="score::gfx::GaussianSplatNode" shape="rect" coords="1566,280,1817,304"/>
-<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="1566,336,1817,360"/>
-<area href="structscore_1_1gfx_1_1_model_display_node.html" title="A node that renders a model to screen." alt="score::gfx::ModelDisplayNode" shape="rect" coords="1566,392,1817,416"/>
-<area href="structscore_1_1gfx_1_1_phong_node.html" alt="score::gfx::PhongNode" shape="rect" coords="1566,448,1817,472"/>
-<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="1566,504,1817,528"/>
-<area href="structscore_1_1gfx_1_1_text_node.html" title="A node that renders text to screen." alt="score::gfx::TextNode" shape="rect" coords="1566,560,1817,584"/>
-<area href="classscore_1_1gfx_1_1_video_node.html" title="Model for rendering a video." alt="score::gfx::VideoNode" shape="rect" coords="1827,224,2078,248"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,56,251,80"/>
+<area href="struct_gfx_1_1_spout_1_1_spout_input_node.html" alt="Gfx::Spout::SpoutInputNode" shape="rect" coords="261,168,512,192"/>
+<area href="struct_gfx_1_1_window_capture_1_1_window_capture_node.html" alt="Gfx::WindowCapture::WindowCaptureNode" shape="rect" coords="261,224,512,248"/>
+<area href="structscore_1_1gfx_1_1_d_m_a_capture_input_node.html" title="ProcessNode base for DMA capture-card inputs. One Image output port; its renderer is the generic DMAC..." alt="score::gfx::DMACaptureInputNode" shape="rect" coords="261,280,512,304"/>
+<area href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html" title="Per-pass filter on a flattened scene: geometry_spec → geometry_spec." alt="score::gfx::FlattenedSceneFilterNode" shape="rect" coords="261,336,512,360"/>
+<area href="classscore_1_1gfx_1_1_geometry_filter_node.html" title="Data model for geometry filters." alt="score::gfx::GeometryFilterNode" shape="rect" coords="261,392,512,416"/>
+<area href="classscore_1_1gfx_1_1_i_s_f_node.html" title="Data model for Interactive Shader Format filters." alt="score::gfx::ISFNode" shape="rect" coords="261,448,512,472"/>
+<area href="classscore_1_1gfx_1_1_merge_geometries_node.html" title="Concatenates up to N upstream geometry_specs into one." alt="score::gfx::MergeGeometriesNode" shape="rect" coords="261,504,512,528"/>
+<area href="classscore_1_1gfx_1_1_node_model.html" title="Common base class for most single-pass, simple nodes." alt="score::gfx::NodeModel" shape="rect" coords="261,560,512,584"/>
+<area href="classscore_1_1gfx_1_1_scene_filter_node.html" title="Tree-level filter on a scene_spec." alt="score::gfx::SceneFilterNode" shape="rect" coords="261,616,512,640"/>
+<area href="classscore_1_1gfx_1_1_scene_preprocessor_node.html" title="Bridge from scene_spec (hierarchical, CPU) to geometry_spec (flat, GPU-resident)." alt="score::gfx::ScenePreprocessorNode" shape="rect" coords="261,672,512,696"/>
+<area href="classscore_1_1gfx_1_1_video_node_base.html" alt="score::gfx::VideoNodeBase" shape="rect" coords="261,728,512,752"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -217,6 +213,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetChange</b
 <tr class="memitem:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_acb786dd39ba199b5f3e9c9bc66d9893a"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasRenderTargetChanged</b> (int64_t &amp;renderer) const noexcept</td></tr>
 <tr class="separator:acb786dd39ba199b5f3e9c9bc66d9893a inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a086b847bb5817aa81399a77d84815ac6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a086b847bb5817aa81399a77d84815ac6">hasExplicitRenderTargetSize</a> (int32_t port) const noexcept</td></tr>
+<tr class="memdesc:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a given port has a user-specified render target size.  <br /></td></tr>
+<tr class="separator:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a787a9e931cc9a74eec85ca6b436b03e6"><td class="memItemLeft" align="right" valign="top">
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSize</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
 <tr class="separator:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,9 +258,6 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeId</b> = score
 <tr class="memitem:a83182f75a9d0d9745e241df697965549 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a83182f75a9d0d9745e241df697965549"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresDepth</b> {}</td></tr>
 <tr class="separator:a83182f75a9d0d9745e241df697965549 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a2c822b931b169c3225586c6c90150855"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>addedToGraph</b> {}</td></tr>
-<tr class="separator:a2c822b931b169c3225586c6c90150855 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acac03f2e76d8ab63548bab3fac5968a3" name="acac03f2e76d8ab63548bab3fac5968a3"></a>

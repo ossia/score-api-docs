@@ -114,11 +114,11 @@ $(document).ready(function(){initNavTree('class_gfx_1_1_asset_table.html',''); i
  <a href="class_gfx_1_1_asset_table.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cross-RenderList content-hash dedup for decoded asset bytes. </p>
-<p>Lives on <a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a>, shared across all RenderLists in the session. Keyed by <code>content_hash</code> (64-bit stable hash of the source bytes — XXH3 / XXH64 / SHA-256 truncated all work; parsers and the preprocessor use FNV-1a-64 below by default).</p>
-<p>Purpose: one decode per asset across the whole session. When two glTF files reference the same <code>baseColor.jpg</code>, we decode it once and reuse. Per-RenderList GpuResourceRegistries upload from the cached QImage independently (Plan 09 §4.2: one decode, N uploads).</p>
+<p>Lives on <a class="el" href="class_gfx_1_1_gfx_context.html">GfxContext</a>, shared across all RenderLists in the session. Keyed by <code>content_hash</code> (64-bit stable hash of the source bytes — the canonical primitive is <code>ossia::hash_bytes</code> from <code>ossia/detail/hash.hpp</code>, which dispatches to rapidhash; parsers and the preprocessor produce content_hash values through that helper).</p>
+<p>Purpose: one decode per asset across the whole session. When two glTF files reference the same <code>baseColor.jpg</code>, we decode it once and reuse. Per-RenderList GpuResourceRegistries upload from the cached QImage independently: one decode, N uploads.</p>
 <p>Not the GPU-resource owner — GpuResourceRegistry does that per QRhi. <a class="el" href="class_gfx_1_1_asset_table.html" title="Cross-RenderList content-hash dedup for decoded asset bytes.">AssetTable</a> only holds CPU-side bytes + format metadata during the window between decode and eviction.</p>
 <h1><a class="anchor" id="autotoc_md0"></a>
-Lifecycle (Plan 09 S1)</h1>
+Lifecycle</h1>
 <p>Three states per entry:</p>
 <ul>
 <li><b>hot</b> (refcount &gt; 0): actively held by at least one consumer. Never evicted.</li>

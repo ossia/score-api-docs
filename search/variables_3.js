@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['dbcextendedflag_0',['dbcExtendedFlag',['../namespace_protocols_1_1_c_a_n.html#a0887a5ba661caa537a88232c47b7f297',1,'Protocols::CAN']]],
-  ['defaultoscport_1',['defaultOscPort',['../class_protocols_1_1_local_protocol_factory.html#a9b03ec1ac359ffa029fc0c997268200b',1,'Protocols::LocalProtocolFactory']]],
-  ['destination_2',['destination',['../structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105',1,'score::FilePlacement::Placement']]],
-  ['destinationpath_3',['destinationPath',['../struct_process_1_1_file_entry.html#a8e15b06cb167180d8c4d42c848a424e5',1,'Process::FileEntry']]],
-  ['destinationroots_4',['destinationRoots',['../struct_process_1_1_project_target.html#af61ff588faef64ac7efd92713c664771',1,'Process::ProjectTarget']]],
-  ['dir_5',['dir',['../struct_j_s_1_1_application_plugin_1_1_start_script.html#ab36dcfa3e5f5dc7e79fb5bdff695dfdd',1,'JS::ApplicationPlugin::StartScript']]],
-  ['directory_6',['directory',['../struct_process_1_1_external_file_ref.html#ad2bbc54324b75c6c75a9ecd52a6b381e',1,'Process::ExternalFileRef']]],
-  ['documentfile_7',['documentFile',['../structscore_1_1_path_roots.html#a75fce028dcfbd3c0224ffc45d4046564',1,'score::PathRoots']]]
+  ['d3d12device_0',['d3d12Device',['../structscore_1_1gfx_1_1interop_1_1_rdma_gpu_buffer_config.html#a95b1772f19f8956663616c42fe0c015e',1,'score::gfx::interop::RdmaGpuBufferConfig']]],
+  ['dbcextendedflag_1',['dbcExtendedFlag',['../namespace_protocols_1_1_c_a_n.html#a0887a5ba661caa537a88232c47b7f297',1,'Protocols::CAN']]],
+  ['debugname_2',['debugName',['../structscore_1_1gfx_1_1interop_1_1_rdma_video_output_config.html#a45ca1a956e1c8ce6555e1972ef872681',1,'score::gfx::interop::RdmaVideoOutputConfig']]],
+  ['declared_5fsize_3',['declared_size',['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a956f15051e66ad77a743bcd08a5b38d5',1,'score::gfx::GraphicsUBO']]],
+  ['defaultoscport_4',['defaultOscPort',['../class_protocols_1_1_local_protocol_factory.html#a9b03ec1ac359ffa029fc0c997268200b',1,'Protocols::LocalProtocolFactory']]],
+  ['depth_5',['depth',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a06f55a70ccc58aee9737c985063efdb9',1,'score::gfx::GraphicsStorageImage']]],
+  ['description_6',['description',['../struct_gfx_1_1_tree_control.html#acbc9f0f14f71856381cdb320ac15369e',1,'Gfx::TreeControl']]],
+  ['destination_7',['destination',['../structscore_1_1_file_placement_1_1_placement.html#a970b019c79d6a0cf10b591550e5ba105',1,'score::FilePlacement::Placement']]],
+  ['destinationpath_8',['destinationPath',['../struct_process_1_1_file_entry.html#a8e15b06cb167180d8c4d42c848a424e5',1,'Process::FileEntry']]],
+  ['destinationroots_9',['destinationRoots',['../struct_process_1_1_project_target.html#af61ff588faef64ac7efd92713c664771',1,'Process::ProjectTarget']]],
+  ['device_10',['device',['../structscore_1_1gfx_1_1_kms_output_settings.html#af034abe67a2ea1a2860928fc827052aa',1,'score::gfx::KmsOutputSettings']]],
+  ['dir_11',['dir',['../struct_j_s_1_1_application_plugin_1_1_start_script.html#ab36dcfa3e5f5dc7e79fb5bdff695dfdd',1,'JS::ApplicationPlugin::StartScript']]],
+  ['directory_12',['directory',['../struct_process_1_1_external_file_ref.html#ad2bbc54324b75c6c75a9ecd52a6b381e',1,'Process::ExternalFileRef']]],
+  ['discard_13',['discard',['../structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html#a04b3cd17bbcf90be248ad6865f133543',1,'score::gfx::interop::PacedFramePump::Hooks']]],
+  ['documentfile_14',['documentFile',['../structscore_1_1_path_roots.html#a75fce028dcfbd3c0224ffc45d4046564',1,'score::PathRoots']]],
+  ['driverversion_15',['driverVersion',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a72ed837da6f5617c81d49bbb98437e86',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvphavecuda_16',['dvpHaveCuda',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#add9e0bb3799dcc052238db77d3844c01',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvphaved3d11_17',['dvpHaveD3D11',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a64bc07ca20183027a353f0822e0cc67c',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvphavegl_18',['dvpHaveGl',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a46197460eec496f53b16df3a589609b6',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvploaded_19',['dvpLoaded',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#aac2460949f2e5ba79c2f0440ffb1195b',1,'score::gfx::interop::GpuCapabilities']]]
 ];

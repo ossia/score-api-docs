@@ -162,6 +162,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (Q
 <tr class="memitem:ae6e8d1d92a37bc98af5bf7c748865d2b" id="r_ae6e8d1d92a37bc98af5bf7c748865d2b"><td class="memItemLeft" align="right" valign="top"><a id="ae6e8d1d92a37bc98af5bf7c748865d2b" name="ae6e8d1d92a37bc98af5bf7c748865d2b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>preparePipeline</b> (QRhiGraphicsPipeline &amp;pip) const noexcept=0</td></tr>
 <tr class="separator:ae6e8d1d92a37bc98af5bf7c748865d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7560c0b4d2d4f57cee066c8a5b1c7b06" id="r_a7560c0b4d2d4f57cee066c8a5b1c7b06"><td class="memItemLeft" align="right" valign="top"><a id="a7560c0b4d2d4f57cee066c8a5b1c7b06" name="a7560c0b4d2d4f57cee066c8a5b1c7b06"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometry</b> () const noexcept</td></tr>
+<tr class="separator:a7560c0b4d2d4f57cee066c8a5b1c7b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ba2dc165b5361ef2ffce12f77f018be" id="r_a8ba2dc165b5361ef2ffce12f77f018be"><td class="memItemLeft" align="right" valign="top"><a id="a8ba2dc165b5361ef2ffce12f77f018be" name="a8ba2dc165b5361ef2ffce12f77f018be"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>draw</b> (const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb) const noexcept=0</td></tr>
 <tr class="separator:a8ba2dc165b5361ef2ffce12f77f018be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,7 +241,7 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 </div><div class="memdoc">
 
 <p>Return the underlying semantic geometry if available. </p>
-<p>Used by buildPipeline() to remap vertex input layouts by matching shader input variable names to geometry attribute semantics. Meshes that carry semantic information (e.g. <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a>) should override this. </p>
+<p>Used by <a class="el" href="namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77" title="Lower-level buildPipeline variant: bring your own SRB.">buildPipeline()</a> to remap vertex input layouts by matching shader input variable names to geometry attribute semantics. Meshes that carry semantic information (e.g. <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html">CustomMesh</a>) should override this. </p>
 
 <p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a65cb7ecb425bdfb3a3a8cde7973c8f32">score::gfx::CustomMesh</a>.</p>
 

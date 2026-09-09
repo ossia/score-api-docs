@@ -163,6 +163,11 @@ template&lt;avnd::texture_port T&gt; </td></tr>
 template&lt;avnd::geometry_port T&gt; </td></tr>
 <tr class="memitem:a0ff4debc5f861f23489460856df2727e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, auto idx)</td></tr>
 <tr class="separator:a0ff4debc5f861f23489460856df2727e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084338e000c6d5b967e1a3813468f40f" id="r_a084338e000c6d5b967e1a3813468f40f"><td class="memTemplParams" colspan="2"><a id="a084338e000c6d5b967e1a3813468f40f" name="a084338e000c6d5b967e1a3813468f40f"></a>
+template&lt;scene_port T&gt; <br />
+requires (!avnd::geometry_port&lt;T&gt;)</td></tr>
+<tr class="memitem:a084338e000c6d5b967e1a3813468f40f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const T &amp;in, auto idx)</td></tr>
+<tr class="separator:a084338e000c6d5b967e1a3813468f40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af612c7474c3ee21491155ce56f6e9155" id="r_af612c7474c3ee21491155ce56f6e9155"><td class="memTemplParams" colspan="2"><a id="af612c7474c3ee21491155ce56f6e9155" name="af612c7474c3ee21491155ce56f6e9155"></a>
 template&lt;std::size_t Idx, avnd::message T&gt; </td></tr>
 <tr class="memitem:af612c7474c3ee21491155ce56f6e9155"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (const avnd::field_reflection&lt; Idx, T &gt; &amp;in, auto dummy)</td></tr>

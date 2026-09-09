@@ -128,9 +128,10 @@ Inheritance diagram for score::gfx::UYVY422Decoder:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f332bfaaaab2077421482eb4c983df2" id="r_a6f332bfaaaab2077421482eb4c983df2"><td class="memItemLeft" align="right" valign="top"><a id="a6f332bfaaaab2077421482eb4c983df2" name="a6f332bfaaaab2077421482eb4c983df2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UYVY422Decoder</b> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d)</td></tr>
-<tr class="separator:a6f332bfaaaab2077421482eb4c983df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd4e77097e1a3336dde1fd18fafb8b4" id="r_acdd4e77097e1a3336dde1fd18fafb8b4"><td class="memItemLeft" align="right" valign="top"><a id="acdd4e77097e1a3336dde1fd18fafb8b4" name="acdd4e77097e1a3336dde1fd18fafb8b4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UYVY422Decoder</b> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, bool swapChroma=false)</td></tr>
+<tr class="memdesc:acdd4e77097e1a3336dde1fd18fafb8b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">VYUY is UYVY with the two chroma taps exchanged. <br /></td></tr>
+<tr class="separator:acdd4e77097e1a3336dde1fd18fafb8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad98bf288634f499fefe326dbe83185ba" id="r_ad98bf288634f499fefe326dbe83185ba"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_u_y_v_y422_decoder.html#ad98bf288634f499fefe326dbe83185ba">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) override</td></tr>
 <tr class="memdesc:ad98bf288634f499fefe326dbe83185ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html" title="Processes and renders a video frame on the GPU.">GPUVideoDecoder</a>.  <br /></td></tr>
 <tr class="separator:ad98bf288634f499fefe326dbe83185ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1f322cad2851262994e700c7ec930614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_aa1e4ab512b307a792032e762aff3a572"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)</td></tr>
 <tr class="memdesc:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will release all the created samplers and textures. <br /></td></tr>
 <tr class="separator:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -148,6 +149,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a86d3b19c5b25ffea06d3fb80b3cecad8" id="r_a86d3b19c5b25ffea06d3fb80b3cecad8"><td class="memItemLeft" align="right" valign="top"><a id="a86d3b19c5b25ffea06d3fb80b3cecad8" name="a86d3b19c5b25ffea06d3fb80b3cecad8"></a>
 <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
 <tr class="separator:a86d3b19c5b25ffea06d3fb80b3cecad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06204faf5ff45ff1ddad2e864563b876" id="r_a06204faf5ff45ff1ddad2e864563b876"><td class="memItemLeft" align="right" valign="top"><a id="a06204faf5ff45ff1ddad2e864563b876" name="a06204faf5ff45ff1ddad2e864563b876"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>vyuy</b> {}</td></tr>
+<tr class="separator:a06204faf5ff45ff1ddad2e864563b876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:ac798b702a346427f64cbe627bc71dd59 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_ac798b702a346427f64cbe627bc71dd59"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>samplers</b></td></tr>
@@ -156,6 +160,8 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 <tr class="separator:a17ec177295eb2e8172032a9571bfc1ac inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb3a97ecdf3be60279c93e70281c6e7 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a6bb3a97ecdf3be60279c93e70281c6e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a6bb3a97ecdf3be60279c93e70281c6e7">failed</a> {}</td></tr>
 <tr class="separator:a6bb3a97ecdf3be60279c93e70281c6e7 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd47b0ec90ededca937b607dd19ee37c inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_afd47b0ec90ededca937b607dd19ee37c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#afd47b0ec90ededca937b607dd19ee37c">formatChanged</a> {}</td></tr>
+<tr class="separator:afd47b0ec90ededca937b607dd19ee37c inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>

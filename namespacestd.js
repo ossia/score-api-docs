@@ -1,6 +1,7 @@
 var namespacestd =
 [
     [ "hash< Device::FullAddressSettings >", "structstd_1_1hash_3_01_device_1_1_full_address_settings_01_4.html", null ],
+    [ "hash< Gfx::ProgramCacheKey >", "structstd_1_1hash_3_01_gfx_1_1_program_cache_key_01_4.html", null ],
     [ "hash< Gfx::ShaderSource >", "structstd_1_1hash_3_01_gfx_1_1_shader_source_01_4.html", null ],
     [ "hash< ossia::unit_variant >", "structstd_1_1hash_3_01ossia_1_1unit__variant_01_4.html", null ],
     [ "hash< Path< tag > >", "structstd_1_1hash_3_01_path_3_01tag_01_4_01_4.html", null ],

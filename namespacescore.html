@@ -1133,6 +1133,8 @@ std::vector&lt; <a class="el" href="structscore_1_1_license_info.html">LicenseIn
 <tr class="memitem:ad2dc1ed1d0b86cfb952557cb83ac0a58" id="r_ad2dc1ed1d0b86cfb952557cb83ac0a58"><td class="memItemLeft" align="right" valign="top"><a id="ad2dc1ed1d0b86cfb952557cb83ac0a58" name="ad2dc1ed1d0b86cfb952557cb83ac0a58"></a>
 <a class="el" href="structscore_1_1_application_services.html">ApplicationServices</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AppServices</b> () noexcept</td></tr>
 <tr class="separator:ad2dc1ed1d0b86cfb952557cb83ac0a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a6d8d6e96eda1c09013deb90ea06a3" id="r_ad7a6d8d6e96eda1c09013deb90ea06a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ad7a6d8d6e96eda1c09013deb90ea06a3">setupDefaultOpenGLFormat</a> () noexcept</td></tr>
+<tr class="separator:ad7a6d8d6e96eda1c09013deb90ea06a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad8e51c55fe3a5107a7361e84a6d1521" id="r_aad8e51c55fe3a5107a7361e84a6d1521"><td class="memItemLeft" align="right" valign="top">QBrush&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aad8e51c55fe3a5107a7361e84a6d1521">bangFill</a> (const QPalette &amp;fallback, bool lit)</td></tr>
 <tr class="memdesc:aad8e51c55fe3a5107a7361e84a6d1521"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fill of a bang: the circle an impulse gets.  <br /></td></tr>
 <tr class="separator:aad8e51c55fe3a5107a7361e84a6d1521"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2485,6 +2487,34 @@ template&lt;typename T &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="ad7a6d8d6e96eda1c09013deb90ea06a3" name="ad7a6d8d6e96eda1c09013deb90ea06a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a6d8d6e96eda1c09013deb90ea06a3">&#9670;&#160;</a></span>setupDefaultOpenGLFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::setupDefaultOpenGLFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Install the default QSurfaceFormat score's RHI needs, where that can be decided without probing (Apple, embedded GLES). No-op elsewhere: desktop GL is probed in the application.</p>
+<p>MUST run before the first QOpenGLContext or QWindow exists &ndash; it is the DEFAULT format that decides which profile Apple hands out, and <a class="el" href="classscore_1_1gfx_1_1_window.html" title="A platform window in which the content is going to be rendered.">score::gfx::Window</a> builds its own format from QSurfaceFormat::defaultFormat().</p>
+<p>Lives here rather than in main.cpp because the TESTS need it too: the app sets its profile in setup_opengl(), which no test bootstrap reaches, so without this every test touching the OpenGL backend on macOS runs on Apple's legacy profile &ndash; GL 2.1 / GLSL 1.20 &ndash; instead of the 4.1 core the app itself uses. On that context QRhi has no texture arrays and no 3D textures, so RenderList creation throws and no window ever presents a frame. </p>
 
 </div>
 </div>

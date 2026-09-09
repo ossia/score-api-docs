@@ -1,16 +1,25 @@
 var structscore_1_1gfx_1_1_graph =
 [
     [ "Graph", "structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c", null ],
-    [ "addAndLinkEdge", "structscore_1_1gfx_1_1_graph.html#a6af1baed64b20b83f6a59d7b09b672f2", null ],
     [ "addEdge", "structscore_1_1gfx_1_1_graph.html#a5fc6d53ad6b3643a2d41f2fadab5543a", null ],
     [ "addNode", "structscore_1_1gfx_1_1_graph.html#ac01ddf31f96f7f24e070fba6635f9993", null ],
     [ "canDoVSync", "structscore_1_1gfx_1_1_graph.html#a956b5fda40333edffaa3655bbf18f4c6", null ],
     [ "clearEdges", "structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975", null ],
+    [ "createAllMissingPasses", "structscore_1_1gfx_1_1_graph.html#acb6914de87e090a83ecb0c54ff0d244b", null ],
     [ "createAllRenderLists", "structscore_1_1gfx_1_1_graph.html#a40ef061c5ac78aaa6243723c1cd95154", null ],
+    [ "createMissingRenderLists", "structscore_1_1gfx_1_1_graph.html#aea998e7a34df57c02042b8d243f78cc2", null ],
+    [ "createPassForEdgeIfMissing", "structscore_1_1gfx_1_1_graph.html#a95812f7219407b7fa107380b35b6dfcc", null ],
     [ "createSingleRenderList", "structscore_1_1gfx_1_1_graph.html#a3603dc4ae5e632c8348d11b42916f6bb", null ],
     [ "destroyOutputRenderList", "structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3", null ],
+    [ "findEdge", "structscore_1_1gfx_1_1_graph.html#a44eaccc445e7167fc4ca8dbc8b66c824", null ],
+    [ "onEdgeRemoved", "structscore_1_1gfx_1_1_graph.html#a508b62ab93ea0dd33684034c1ed09089", null ],
+    [ "reconcileAllRenderLists", "structscore_1_1gfx_1_1_graph.html#a7752fb1a19e605efa25d6f01be740a80", null ],
+    [ "releaseOutputRenderList", "structscore_1_1gfx_1_1_graph.html#af23448e0294640a87e6d3a1e6f5185ea", null ],
     [ "relinkGraph", "structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5", null ],
     [ "removeEdge", "structscore_1_1gfx_1_1_graph.html#a502b4abc23e8335948bec9e052ddef1c", null ],
     [ "removeNode", "structscore_1_1gfx_1_1_graph.html#a1693837e0d684408bb84af3f619cfc8a", null ],
-    [ "unlinkAndRemoveEdge", "structscore_1_1gfx_1_1_graph.html#abe3ddb004ee53340f68c7eb87fd8ec5e", null ]
+    [ "removeNodeAndEdges", "structscore_1_1gfx_1_1_graph.html#a998f37e1136799966e41407172bc89e9", null ],
+    [ "removeNodeFromRenderLists", "structscore_1_1gfx_1_1_graph.html#aad9c6afdc49236ec84ca4df59543ea8e", null ],
+    [ "setAssetTable", "structscore_1_1gfx_1_1_graph.html#a2034f430b7902ec179bd2d83c32f6815", null ],
+    [ "updateSinkSampler", "structscore_1_1gfx_1_1_graph.html#a07d457cf09ddc6b003677c3138ff1354", null ]
 ];

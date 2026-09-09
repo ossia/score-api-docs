@@ -148,69 +148,71 @@ $(document).ready(function(){initNavTree('_window_capture_backend_8hpp_source.ht
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// GPU path: D3D11 ID3D11Texture2D*, or IOSurfaceRef</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span>* nativeHandle{};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="comment">// PipeWire DMA-BUF path</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> dmabufFd{-1};</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  uint32_t drmFormat{};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  uint64_t drmModifier{};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">int</span> dmabufStride{};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">int</span> dmabufOffset{};</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">int</span> width{};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">int</span> height{};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="comment">// PipeWire DMA-BUF path. When ownsDmabufFd is set, dmabufFd is a dup</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="comment">// handed to the consumer, which must close it after import.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">int</span> dmabufFd{-1};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">bool</span> ownsDmabufFd{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  uint32_t drmFormat{};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  uint64_t drmModifier{};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">int</span> dmabufStride{};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">int</span> dmabufOffset{};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">int</span> width{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">int</span> height{};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="};">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">   49</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">CapturableWindow</a></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  std::string title;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  uint64_t <span class="keywordtype">id</span>{};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="};">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">   51</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">CapturableWindow</a></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::string title;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  uint64_t <span class="keywordtype">id</span>{};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">   55</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">CapturableScreen</a></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::string name;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  uint64_t <span class="keywordtype">id</span>{};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">int</span> x{}, y{}, width{}, height{};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="};">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">   57</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">CapturableScreen</a></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::string name;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  uint64_t <span class="keywordtype">id</span>{};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">int</span> x{}, y{}, width{}, height{};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">   62</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">CaptureTarget</a></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  CaptureMode mode{CaptureMode::Window};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  uint64_t windowId{};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  uint64_t screenId{};</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">int</span> regionX{}, regionY{}, regionW{}, regionH{};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="};">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">   64</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">CaptureTarget</a></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  CaptureMode mode{CaptureMode::Window};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  uint64_t windowId{};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  uint64_t screenId{};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">int</span> regionX{}, regionY{}, regionW{}, regionH{};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="foldopen" id="foldopen00070" data-start="{" data-end="};">
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">   70</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">WindowCaptureBackend</a></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">~WindowCaptureBackend</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> available() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supportsMode(CaptureMode mode) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">virtual</span> std::vector&lt;CapturableWindow&gt; enumerate() = 0;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">virtual</span> std::vector&lt;CapturableScreen&gt; enumerateScreens() = 0;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> start(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">CaptureTarget</a>&amp; target) = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stop() = 0;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_captured_frame.html">CapturedFrame</a> grab() = 0;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="};">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">   72</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">WindowCaptureBackend</a></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">~WindowCaptureBackend</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> available() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> supportsMode(CaptureMode mode) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">virtual</span> std::vector&lt;CapturableWindow&gt; enumerate() = 0;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">virtual</span> std::vector&lt;CapturableScreen&gt; enumerateScreens() = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> start(<span class="keyword">const</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_capture_target.html">CaptureTarget</a>&amp; target) = 0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stop() = 0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="struct_gfx_1_1_window_capture_1_1_captured_frame.html">CapturedFrame</a> grab() = 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">// Returns the appropriate backend for the current platform and session type.</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>std::unique_ptr&lt;WindowCaptureBackend&gt; createWindowCaptureBackend();</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// Returns the appropriate backend for the current platform and session type.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>std::unique_ptr&lt;WindowCaptureBackend&gt; createWindowCaptureBackend();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 <div class="ttc" id="anamespace_process_html_aacc0e0627a66b66fa3ea8bf30a30460bac89686a387d2b12b3c729ce35a0bcb5b"><div class="ttname"><a href="namespace_process.html#aacc0e0627a66b66fa3ea8bf30a30460bac89686a387d2b12b3c729ce35a0bcb5b">Process::UIPlacement::Window</a></div><div class="ttdeci">@ Window</div><div class="ttdoc">A separate top-level window.</div></div>
-<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capturable_screen_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">Gfx::WindowCapture::CapturableScreen</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:56</div></div>
-<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capturable_window_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">Gfx::WindowCapture::CapturableWindow</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:50</div></div>
-<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capture_target_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capture_target.html">Gfx::WindowCapture::CaptureTarget</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:63</div></div>
+<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capturable_screen_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capturable_screen.html">Gfx::WindowCapture::CapturableScreen</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:58</div></div>
+<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capturable_window_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capturable_window.html">Gfx::WindowCapture::CapturableWindow</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:52</div></div>
+<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_capture_target_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_capture_target.html">Gfx::WindowCapture::CaptureTarget</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:65</div></div>
 <div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_captured_frame_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_captured_frame.html">Gfx::WindowCapture::CapturedFrame</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:19</div></div>
-<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_window_capture_backend_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">Gfx::WindowCapture::WindowCaptureBackend</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:71</div></div>
+<div class="ttc" id="astruct_gfx_1_1_window_capture_1_1_window_capture_backend_html"><div class="ttname"><a href="struct_gfx_1_1_window_capture_1_1_window_capture_backend.html">Gfx::WindowCapture::WindowCaptureBackend</a></div><div class="ttdef"><b>Definition</b> WindowCaptureBackend.hpp:73</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

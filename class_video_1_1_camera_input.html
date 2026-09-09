@@ -135,6 +135,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const std::
 <tr class="separator:a7162a9dd77051db57d6aee6a2a1c2ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137f74d218dfd2bec0ef219412df15af" id="r_a137f74d218dfd2bec0ef219412df15af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_1_1_camera_input.html#a137f74d218dfd2bec0ef219412df15af">release_frame</a> (AVFrame *frame) noexcept override</td></tr>
 <tr class="separator:a137f74d218dfd2bec0ef219412df15af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b846f98df212dbefa640003c99e4dbc" id="r_a3b846f98df212dbefa640003c99e4dbc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_1_1_camera_input.html#a3b846f98df212dbefa640003c99e4dbc">notifyFormatChange</a> (int new_w, int new_h, AVPixelFormat new_pixfmt) noexcept override</td></tr>
+<tr class="separator:a3b846f98df212dbefa640003c99e4dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_video_1_1_lib_a_v_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_video_1_1_lib_a_v_decoder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_video_1_1_lib_a_v_decoder.html">Video::LibAVDecoder</a></td></tr>
 <tr class="memitem:aaee71055b4bfb7a2ca7fde01859d46ac inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_aaee71055b4bfb7a2ca7fde01859d46ac"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue_frame</b> (const AVPacket *pkt) noexcept</td></tr>
@@ -195,6 +197,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> {}</td></tr
 <tr class="memitem:a3a127bf29fdb576486e044ef247ab205 inherit pub_attribs_struct_video_1_1_image_format" id="r_a3a127bf29fdb576486e044ef247ab205"><td class="memItemLeft" align="right" valign="top">
 AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>pixel_format</b> = AVPixelFormat(-1)</td></tr>
 <tr class="separator:a3a127bf29fdb576486e044ef247ab205 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb6772fc3400fb8fffd28d372546c78 inherit pub_attribs_struct_video_1_1_image_format" id="r_a7bb6772fc3400fb8fffd28d372546c78"><td class="memItemLeft" align="right" valign="top">
+AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>hwaccel_sw_format</b> = AVPixelFormat(-1)</td></tr>
+<tr class="separator:a7bb6772fc3400fb8fffd28d372546c78 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237713244da17c01480e508a4ec4a055 inherit pub_attribs_struct_video_1_1_image_format" id="r_a237713244da17c01480e508a4ec4a055"><td class="memItemLeft" align="right" valign="top">
 AVColorRange&#160;</td><td class="memItemRight" valign="bottom"><b>color_range</b> = AVColorRange(-1)</td></tr>
 <tr class="separator:a237713244da17c01480e508a4ec4a055 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -273,6 +278,50 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a>.</p>
+
+</div>
+</div>
+<a id="a3b846f98df212dbefa640003c99e4dbc" name="a3b846f98df212dbefa640003c99e4dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b846f98df212dbefa640003c99e4dbc">&#9670;&#160;</a></span>notifyFormatChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Video::CameraInput::notifyFormatChange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>new_h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVPixelFormat&#160;</td>
+          <td class="paramname"><em>new_pixfmt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_video_1_1_external_input.html">Video::ExternalInput</a>.</p>
 
 </div>
 </div>

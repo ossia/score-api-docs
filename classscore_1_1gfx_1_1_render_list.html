@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_render_list.html
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1gfx_1_1_render_list-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::RenderList Class Reference</div></div>
 </div><!--header-->
@@ -136,6 +137,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="memitem:a21fe54e7bcbf8dd961d3c3da8c6b9fee" id="r_a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="memItemLeft" align="right" valign="top">QRhiResourceUpdateBatch *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a21fe54e7bcbf8dd961d3c3da8c6b9fee">initialBatch</a> () const noexcept</td></tr>
 <tr class="memdesc:a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial resource update batch.  <br /></td></tr>
 <tr class="separator:a21fe54e7bcbf8dd961d3c3da8c6b9fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc50059329ca473a14a41d94577aca2" id="r_a2dc50059329ca473a14a41d94577aca2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a2dc50059329ca473a14a41d94577aca2">setInitialBatch</a> (QRhiResourceUpdateBatch *batch) noexcept</td></tr>
+<tr class="memdesc:a2dc50059329ca473a14a41d94577aca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a resource update batch to be submitted on the next render frame.  <br /></td></tr>
+<tr class="separator:a2dc50059329ca473a14a41d94577aca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a61952d09937a94b0353150981043bd" id="r_a5a61952d09937a94b0353150981043bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a5a61952d09937a94b0353150981043bd">flushInitialBatch</a> ()</td></tr>
+<tr class="memdesc:a5a61952d09937a94b0353150981043bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Submit the pending initial batch before destroying resources it may name.  <br /></td></tr>
+<tr class="separator:a5a61952d09937a94b0353150981043bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3daff52bd2d2231609696d5a3c7cd5" id="r_a1c3daff52bd2d2231609696d5a3c7cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1c3daff52bd2d2231609696d5a3c7cd5">initMeshBuffer</a> (const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiResourceUpdateBatch &amp;res)</td></tr>
 <tr class="memdesc:a1c3daff52bd2d2231609696d5a3c7cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create buffers for a mesh and mark them for upload.  <br /></td></tr>
 <tr class="separator:a1c3daff52bd2d2231609696d5a3c7cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +154,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (QRhiResou
 void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (QRhiCommandBuffer &amp;commands, bool force=false)</td></tr>
 <tr class="memdesc:a7ecfae9ee34b0cd147831df9d8769d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render every node in order. <br /></td></tr>
 <tr class="separator:a7ecfae9ee34b0cd147831df9d8769d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4565b446ad3521c0912545783cdc886" id="r_aa4565b446ad3521c0912545783cdc886"><td class="memItemLeft" align="right" valign="top">QRhiCommandBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aa4565b446ad3521c0912545783cdc886">currentCommandBuffer</a> () const noexcept</td></tr>
+<tr class="separator:aa4565b446ad3521c0912545783cdc886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cde7b19c5eee5009f717644af96ffd" id="r_a37cde7b19c5eee5009f717644af96ffd"><td class="memItemLeft" align="right" valign="top"><a id="a37cde7b19c5eee5009f717644af96ffd" name="a37cde7b19c5eee5009f717644af96ffd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="memdesc:a37cde7b19c5eee5009f717644af96ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release GPU resources owned by this render list. <br /></td></tr>
@@ -158,6 +167,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseBuffer</b> (QR
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (bool force=false)</td></tr>
 <tr class="memdesc:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
 <tr class="separator:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f165d9a215783ed86193219e384d41" id="r_a58f165d9a215783ed86193219e384d41"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a58f165d9a215783ed86193219e384d41">resizeSwapchainSizedTargets</a> (QSize newOutputSize, QSize newRenderSize)</td></tr>
+<tr class="memdesc:a58f165d9a215783ed86193219e384d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast-path for pure viewport resize.  <br /></td></tr>
+<tr class="separator:a58f165d9a215783ed86193219e384d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98d894ff589d1fa80d36a99e59801e8f" id="r_a98d894ff589d1fa80d36a99e59801e8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f">renderTargetForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
 <tr class="memdesc:a98d894ff589d1fa80d36a99e59801e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the texture corresponding to an output port.  <br /></td></tr>
 <tr class="separator:a98d894ff589d1fa80d36a99e59801e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,11 +194,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clearRenderers</b> ()
 <tr class="separator:a576933e500bd9d6f77102ed2d3dd8153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba4c2c67428caf9f0a0bc409e948cf61" id="r_aba4c2c67428caf9f0a0bc409e948cf61"><td class="memItemLeft" align="right" valign="top"><a id="aba4c2c67428caf9f0a0bc409e948cf61" name="aba4c2c67428caf9f0a0bc409e948cf61"></a>
 QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTexture</b> () const noexcept</td></tr>
-<tr class="memdesc:aba4c2c67428caf9f0a0bc409e948cf61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a texture is missing. <br /></td></tr>
+<tr class="memdesc:aba4c2c67428caf9f0a0bc409e948cf61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a texture is missing (2D) <br /></td></tr>
 <tr class="separator:aba4c2c67428caf9f0a0bc409e948cf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680699633cad165e8b1ae8004d745e2f" id="r_a680699633cad165e8b1ae8004d745e2f"><td class="memItemLeft" align="right" valign="top"><a id="a680699633cad165e8b1ae8004d745e2f" name="a680699633cad165e8b1ae8004d745e2f"></a>
+QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTexture3D</b> () const noexcept</td></tr>
+<tr class="memdesc:a680699633cad165e8b1ae8004d745e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a 3D (sampler3D) texture is missing. <br /></td></tr>
+<tr class="separator:a680699633cad165e8b1ae8004d745e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8804a6f9d7d8767a3f0a6582483a0d" id="r_a6a8804a6f9d7d8767a3f0a6582483a0d"><td class="memItemLeft" align="right" valign="top"><a id="a6a8804a6f9d7d8767a3f0a6582483a0d" name="a6a8804a6f9d7d8767a3f0a6582483a0d"></a>
+QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTextureCube</b> () const noexcept</td></tr>
+<tr class="memdesc:a6a8804a6f9d7d8767a3f0a6582483a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a cubemap (samplerCube) is missing. <br /></td></tr>
+<tr class="separator:a6a8804a6f9d7d8767a3f0a6582483a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f38182c12bda04690c3f183ecf76d3" id="r_a90f38182c12bda04690c3f183ecf76d3"><td class="memItemLeft" align="right" valign="top"><a id="a90f38182c12bda04690c3f183ecf76d3" name="a90f38182c12bda04690c3f183ecf76d3"></a>
+QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTextureArray</b> () const noexcept</td></tr>
+<tr class="memdesc:a90f38182c12bda04690c3f183ecf76d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a 2D array (sampler2DArray) is missing. <br /></td></tr>
+<tr class="separator:a90f38182c12bda04690c3f183ecf76d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cb2a527d818e954a9af25642cd5b6e" id="r_a44cb2a527d818e954a9af25642cd5b6e"><td class="memItemLeft" align="right" valign="top">QRhiBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e">outputUBO</a> () const noexcept</td></tr>
 <tr class="memdesc:a44cb2a527d818e954a9af25642cd5b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO corresponding to the output parameters:  <br /></td></tr>
 <tr class="separator:a44cb2a527d818e954a9af25642cd5b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f136076fe4e851e70384962462100fd" id="r_a0f136076fe4e851e70384962462100fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a0f136076fe4e851e70384962462100fd">registry</a> () noexcept</td></tr>
+<tr class="memdesc:a0f136076fe4e851e70384962462100fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-output GPU arena store for scene-graph source nodes.  <br /></td></tr>
+<tr class="separator:a0f136076fe4e851e70384962462100fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a650f0bbf3887ce5e1064d33260191" id="r_aa8a650f0bbf3887ce5e1064d33260191"><td class="memItemLeft" align="right" valign="top"><a id="aa8a650f0bbf3887ce5e1064d33260191" name="aa8a650f0bbf3887ce5e1064d33260191"></a>
+const <a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>registry</b> () const noexcept</td></tr>
+<tr class="separator:aa8a650f0bbf3887ce5e1064d33260191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad7079c58bcc381970fa048ee7e48d4" id="r_a2ad7079c58bcc381970fa048ee7e48d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_vertex_fallback_pool.html">VertexFallbackPool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a2ad7079c58bcc381970fa048ee7e48d4">vertexFallbackPool</a> () noexcept</td></tr>
+<tr class="memdesc:a2ad7079c58bcc381970fa048ee7e48d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-RenderList pool of neutral fallback vertex buffers for "REQUIRED: false" VERTEX_INPUTS whose upstream geometry does not provide a matching attribute.  <br /></td></tr>
+<tr class="separator:a2ad7079c58bcc381970fa048ee7e48d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e9500a61f3e3d63aeac4983b0ada37" id="r_af1e9500a61f3e3d63aeac4983b0ada37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_gpu_timings.html">GpuTimings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af1e9500a61f3e3d63aeac4983b0ada37">gpuTimings</a> () noexcept</td></tr>
+<tr class="memdesc:af1e9500a61f3e3d63aeac4983b0ada37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-RenderList GPU-timing collector.  <br /></td></tr>
+<tr class="separator:af1e9500a61f3e3d63aeac4983b0ada37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e16ad36c412445a4e854eaeebe5013" id="r_a22e16ad36c412445a4e854eaeebe5013"><td class="memItemLeft" align="right" valign="top"><a id="a22e16ad36c412445a4e854eaeebe5013" name="a22e16ad36c412445a4e854eaeebe5013"></a>
+const <a class="el" href="classscore_1_1gfx_1_1_gpu_timings.html">GpuTimings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>gpuTimings</b> () const noexcept</td></tr>
+<tr class="separator:a22e16ad36c412445a4e854eaeebe5013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bec4f2145a1d59efb535ea65437a68" id="r_a96bec4f2145a1d59efb535ea65437a68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a96bec4f2145a1d59efb535ea65437a68">assetTable</a> () const noexcept</td></tr>
+<tr class="memdesc:a96bec4f2145a1d59efb535ea65437a68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session-wide asset decode cache.  <br /></td></tr>
+<tr class="separator:a96bec4f2145a1d59efb535ea65437a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cfb07b0b7571dae45196a3e95818587" id="r_a3cfb07b0b7571dae45196a3e95818587"><td class="memItemLeft" align="right" valign="top"><a id="a3cfb07b0b7571dae45196a3e95818587" name="a3cfb07b0b7571dae45196a3e95818587"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAssetTable</b> (<a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *t) noexcept</td></tr>
+<tr class="separator:a3cfb07b0b7571dae45196a3e95818587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6b0114789dc5aa29351866fb724fa95" id="r_af6b0114789dc5aa29351866fb724fa95"><td class="memItemLeft" align="right" valign="top"><a id="af6b0114789dc5aa29351866fb724fa95" name="af6b0114789dc5aa29351866fb724fa95"></a>
 const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>defaultQuad</b> () const noexcept</td></tr>
 <tr class="memdesc:af6b0114789dc5aa29351866fb724fa95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A quad mesh correct for this API. <br /></td></tr>
@@ -195,9 +240,9 @@ const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>
 const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>defaultTriangle</b> () const noexcept</td></tr>
 <tr class="memdesc:a907a2553f670adbc76fe64bb4ac7f37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A triangle mesh correct for this API. <br /></td></tr>
 <tr class="separator:a907a2553f670adbc76fe64bb4ac7f37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08bd67af91a5d2d74362be1e7ee4d8a9" id="r_a08bd67af91a5d2d74362be1e7ee4d8a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a08bd67af91a5d2d74362be1e7ee4d8a9">requiresDepth</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> &amp;p) const noexcept</td></tr>
-<tr class="memdesc:a08bd67af91a5d2d74362be1e7ee4d8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this list of rendering actions requires depth testing at all.  <br /></td></tr>
-<tr class="separator:a08bd67af91a5d2d74362be1e7ee4d8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a4fcc961c38477c0a912e16d8f3a7f1" id="r_a3a4fcc961c38477c0a912e16d8f3a7f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a3a4fcc961c38477c0a912e16d8f3a7f1">requiresDepth</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> &amp;p) const noexcept</td></tr>
+<tr class="memdesc:a3a4fcc961c38477c0a912e16d8f3a7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this list of rendering actions requires depth testing at all.  <br /></td></tr>
+<tr class="separator:a3a4fcc961c38477c0a912e16d8f3a7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b72aa90b07aac321ae7e70343167168" id="r_a6b72aa90b07aac321ae7e70343167168"><td class="memItemLeft" align="right" valign="top"><a id="a6b72aa90b07aac321ae7e70343167168" name="a6b72aa90b07aac321ae7e70343167168"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>anyNodeRequiresDepth</b> () const noexcept</td></tr>
 <tr class="separator:a6b72aa90b07aac321ae7e70343167168"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +258,23 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>renderSize</b> (cons
 <tr class="memitem:ab34ef31a499d3a47789819f5e61c5350" id="r_ab34ef31a499d3a47789819f5e61c5350"><td class="memItemLeft" align="right" valign="top"><a id="ab34ef31a499d3a47789819f5e61c5350" name="ab34ef31a499d3a47789819f5e61c5350"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createAllInputRenderTargets</b> ()</td></tr>
 <tr class="separator:ab34ef31a499d3a47789819f5e61c5350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a06c57b0931de15e4183b9a6459162" id="r_a22a06c57b0931de15e4183b9a6459162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a22a06c57b0931de15e4183b9a6459162">markBuilt</a> () noexcept</td></tr>
+<tr class="memdesc:a22a06c57b0931de15e4183b9a6459162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark this render list as fully built.  <br /></td></tr>
+<tr class="separator:a22a06c57b0931de15e4183b9a6459162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b8db5c800dea571f44995d0fb77dd10" id="r_a3b8db5c800dea571f44995d0fb77dd10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a3b8db5c800dea571f44995d0fb77dd10">isBuilt</a> () const noexcept</td></tr>
+<tr class="memdesc:a3b8db5c800dea571f44995d0fb77dd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this render list currently coherent with its output's GPU objects?  <br /></td></tr>
+<tr class="separator:a3b8db5c800dea571f44995d0fb77dd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557b2669cfd48a1ff136aed0413bb55a" id="r_a557b2669cfd48a1ff136aed0413bb55a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a557b2669cfd48a1ff136aed0413bb55a">markRequiresDepth</a> (bool value) noexcept</td></tr>
+<tr class="separator:a557b2669cfd48a1ff136aed0413bb55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffbc940f2ab658778bd8fe4d97d36b4" id="r_a5ffbc940f2ab658778bd8fe4d97d36b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a5ffbc940f2ab658778bd8fe4d97d36b4">onEdgeRemoved</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, const ossia::hash_set&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt; *preserveSinks=nullptr)</td></tr>
+<tr class="separator:a5ffbc940f2ab658778bd8fe4d97d36b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2548f21b54618374345eac0777b941" id="r_adc2548f21b54618374345eac0777b941"><td class="memItemLeft" align="right" valign="top"><a id="adc2548f21b54618374345eac0777b941" name="adc2548f21b54618374345eac0777b941"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeInputRenderTarget</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *port)</td></tr>
+<tr class="memdesc:adc2548f21b54618374345eac0777b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the render target for a specific input port. <br /></td></tr>
+<tr class="separator:adc2548f21b54618374345eac0777b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea6065b85db7c80c28e2a4c7df967a58" id="r_aea6065b85db7c80c28e2a4c7df967a58"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aea6065b85db7c80c28e2a4c7df967a58">resolveDownstreamSize</a> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *node, const ossia::small_flat_map&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>, 16 &gt; &amp;resolvedSpecs) const noexcept</td></tr>
+<tr class="memdesc:aea6065b85db7c80c28e2a4c7df967a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the downstream render target size for a node.  <br /></td></tr>
+<tr class="separator:aea6065b85db7c80c28e2a4c7df967a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -238,6 +300,12 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> = 0</td>
 <tr class="memitem:ae8c34b638b49e97cc524225d6c1e09d5" id="r_ae8c34b638b49e97cc524225d6c1e09d5"><td class="memItemLeft" align="right" valign="top"><a id="ae8c34b638b49e97cc524225d6c1e09d5" name="ae8c34b638b49e97cc524225d6c1e09d5"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] {}</td></tr>
 <tr class="separator:ae8c34b638b49e97cc524225d6c1e09d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a99c3ea9de2d22ea3ca9cd339b8dca9f9" id="r_a99c3ea9de2d22ea3ca9cd339b8dca9f9"><td class="memItemLeft" align="right" valign="top"><a id="a99c3ea9de2d22ea3ca9cd339b8dca9f9" name="a99c3ea9de2d22ea3ca9cd339b8dca9f9"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
+<tr class="separator:a99c3ea9de2d22ea3ca9cd339b8dca9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4c05c20017599d13e6c64415ab6f5cb4" name="a4c05c20017599d13e6c64415ab6f5cb4"></a>
@@ -258,6 +326,108 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
 
 <p>Adapts an image to the GPU limits / format. </p>
 <p>e.g. Y direction, texture size limits... </p>
+
+</div>
+</div>
+<a id="a96bec4f2145a1d59efb535ea65437a68" name="a96bec4f2145a1d59efb535ea65437a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bec4f2145a1d59efb535ea65437a68">&#9670;&#160;</a></span>assetTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> * score::gfx::RenderList::assetTable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Session-wide asset decode cache. </p>
+<p>Set by Graph::createRenderList from GfxContext's AssetTable. May be null on test RenderLists or after teardown. Consumers must guard. </p>
+
+</div>
+</div>
+<a id="aa4565b446ad3521c0912545783cdc886" name="aa4565b446ad3521c0912545783cdc886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4565b446ad3521c0912545783cdc886">&#9670;&#160;</a></span>currentCommandBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiCommandBuffer * score::gfx::RenderList::currentCommandBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The command buffer <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11" title="Render every node in order.">render()</a> is currently recording into, or null outside a frame. Strategies that must record raw-API commands (the Vulkan host-import upload) need it at <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a> time, where only the resource batch is passed. </p>
+
+</div>
+</div>
+<a id="a5a61952d09937a94b0353150981043bd" name="a5a61952d09937a94b0353150981043bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a61952d09937a94b0353150981043bd">&#9670;&#160;</a></span>flushInitialBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::flushInitialBatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Submit the pending initial batch before destroying resources it may name. </p>
+<p>A QRhiResourceUpdateBatch stores raw QRhiBuffer / QRhiTexture pointers until it is committed, and QRhiResource::deleteLater() outside a frame deletes immediately. <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> mutations run between frames, so any path that tears down renderer resources while this batch is outstanding must call this first; otherwise the next <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11" title="Render every node in order.">render()</a> submits updates naming freed resources. </p>
+
+</div>
+</div>
+<a id="af1e9500a61f3e3d63aeac4983b0ada37" name="af1e9500a61f3e3d63aeac4983b0ada37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e9500a61f3e3d63aeac4983b0ada37">&#9670;&#160;</a></span>gpuTimings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_gpu_timings.html">GpuTimings</a> &amp; score::gfx::RenderList::gpuTimings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per-RenderList GPU-timing collector. </p>
+<p>Renderers wrap their begin/endPass regions in <code><a class="el" href="classscore_1_1gfx_1_1_scoped_gpu_timer.html" title="RAII helper that brackets a named pass region for GPU frame-debug.">ScopedGpuTimer</a></code> to attribute the CB-wide lastCompletedGpuTime to the named pass. The result is one frame stale — see <a class="el" href="_gpu_timing_8hpp_source.html">GpuTiming.hpp</a> for details. </p>
 
 </div>
 </div>
@@ -320,6 +490,124 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
 
 </div>
 </div>
+<a id="a3b8db5c800dea571f44995d0fb77dd10" name="a3b8db5c800dea571f44995d0fb77dd10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b8db5c800dea571f44995d0fb77dd10">&#9670;&#160;</a></span>isBuilt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::isBuilt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this render list currently coherent with its output's GPU objects? </p>
+<p>False between the moment something invalidates the list (a fast-path viewport resize: resizeSwapchainSizedTargets) and the <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> that runs on the next render frame. In that window the output node has ALREADY destroyed and replaced its QRhiTextureRenderTarget / QRhiRenderPassDescriptor while the renderers still hold the pre-resize snapshot, so nothing outside the rebuild may ask a renderer for a render target. </p>
+
+</div>
+</div>
+<a id="a22a06c57b0931de15e4183b9a6459162" name="a22a06c57b0931de15e4183b9a6459162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a06c57b0931de15e4183b9a6459162">&#9670;&#160;</a></span>markBuilt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::markBuilt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Mark this render list as fully built. </p>
+<p>Prevents <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> from unnecessarily tearing down and recreating all resources on the first render frame after createRenderList() has already fully initialized everything. </p>
+
+</div>
+</div>
+<a id="a557b2669cfd48a1ff136aed0413bb55a" name="a557b2669cfd48a1ff136aed0413bb55a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557b2669cfd48a1ff136aed0413bb55a">&#9670;&#160;</a></span>markRequiresDepth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::markRequiresDepth </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the "any node requires depth" flag computed from the node graph. Mirrors what <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> recomputes; called from Graph::createRenderList so the freshly-built RL doesn't need a first-frame maybeRebuild to populate it. </p>
+
+</div>
+</div>
+<a id="a5ffbc940f2ab658778bd8fe4d97d36b4" name="a5ffbc940f2ab658778bd8fe4d97d36b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ffbc940f2ab658778bd8fe4d97d36b4">&#9670;&#160;</a></span>onEdgeRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::onEdgeRemoved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::hash_set&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>preserveSinks</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Notify that an edge was removed. Notifies renderers, releases RT if unused.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">preserveSinks</td><td>Optional set of sink Ports that should keep their input render target even if this edge was their only feed. Used by batched edge updates (see GfxContext::incrementalEdgeUpdate) so that inserting a filter between two nodes doesn't destroy and immediately re-allocate the same RT when the old and new edges share a sink port. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a44cb2a527d818e954a9af25642cd5b6e" name="a44cb2a527d818e954a9af25642cd5b6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44cb2a527d818e954a9af25642cd5b6e">&#9670;&#160;</a></span>outputUBO()</h2>
 
@@ -348,6 +636,36 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
 <li>Render size</li>
 <li>Per-API adjustments and globals </li>
 </ul>
+
+</div>
+</div>
+<a id="a0f136076fe4e851e70384962462100fd" name="a0f136076fe4e851e70384962462100fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f136076fe4e851e70384962462100fd">&#9670;&#160;</a></span>registry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp; score::gfx::RenderList::registry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per-output GPU arena store for scene-graph source nodes. </p>
+<p>Returns a reference to the registry that owns the Camera / Light / Material / PerDraw arena buffers. Source nodes (Camera, Light, PBRMesh, …) allocate a slot from this registry at construction and write their packed bytes into it at their own <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a>.</p>
+<p>Persist-across-rebuild contract: the registry is owned by the <a class="el" href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a> (OutputNode::m_registry) and survives <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> rebuilds — the same registry pointer is observed by both the pre- and post-rebuild <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> for a given <a class="el" href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a>. Consumers that cache the registry pointer (e.g. ScenePreprocessor's m_registry) can compare it against the new RL's registry on <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> and skip the cache wipe when it is unchanged.</p>
+<p>Valid between <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> and <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">release()</a>. </p>
 
 </div>
 </div>
@@ -409,8 +727,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
 
 </div>
 </div>
-<a id="a08bd67af91a5d2d74362be1e7ee4d8a9" name="a08bd67af91a5d2d74362be1e7ee4d8a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08bd67af91a5d2d74362be1e7ee4d8a9">&#9670;&#160;</a></span>requiresDepth()</h2>
+<a id="a3a4fcc961c38477c0a912e16d8f3a7f1" name="a3a4fcc961c38477c0a912e16d8f3a7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a4fcc961c38477c0a912e16d8f3a7f1">&#9670;&#160;</a></span>requiresDepth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +739,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
         <tr>
           <td class="memname">bool score::gfx::RenderList::requiresDepth </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> &amp;&#160;</td>
           <td class="paramname"><em>p</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -435,6 +753,139 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] 
 
 <p>Whether this list of rendering actions requires depth testing at all. </p>
 <p>e.g. it's not needed if we're just doing some generative shaders. </p>
+
+</div>
+</div>
+<a id="a58f165d9a215783ed86193219e384d41" name="a58f165d9a215783ed86193219e384d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f165d9a215783ed86193219e384d41">&#9670;&#160;</a></span>resizeSwapchainSizedTargets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::resizeSwapchainSizedTargets </td>
+          <td>(</td>
+          <td class="paramtype">QSize&#160;</td>
+          <td class="paramname"><em>newOutputSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSize&#160;</td>
+          <td class="paramname"><em>newRenderSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fast-path for pure viewport resize. </p>
+<p>Update state.outputSize to <code>newOutputSize</code> and state.renderSize to <code>newRenderSize</code>, and mark every renderer's renderTargetSpecsChanged so the <code>rt_changed</code> block in renderInternal does the RT recreation and sampler rebinding on the next render frame.</p>
+<p>The two sizes are distinct: the output node owns the render size (the <code>/rendersize</code> override, ScreenNode::setRenderSize), the platform owns the output size (the swapchain). Callers pass both from the <a class="el" href="structscore_1_1gfx_1_1_render_state.html" title="Global state associated to a rendering context.">RenderState</a> the output node has already updated.</p>
+<p>Skips the full <code>recreateOutputRenderList</code> teardown + rebuild (pipeline compiles, ScenePreprocessor rebuild, mesh slab uploads, texture array reallocation): the persistent registry and ScenePreprocessor caches make that work unnecessary for a pure size change. Cost is O(N renderers), with no GPU drain and no allocation until the next frame's rt_changed block recreates the RTs.</p>
+<p>Returns true on success. Returns false, and the caller must fall back to recreateOutputRenderList, when:</p><ul>
+<li>either size is invalid</li>
+<li>renderers vector is empty (RL not yet initialised) </li>
+</ul>
+
+</div>
+</div>
+<a id="aea6065b85db7c80c28e2a4c7df967a58" name="aea6065b85db7c80c28e2a4c7df967a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea6065b85db7c80c28e2a4c7df967a58">&#9670;&#160;</a></span>resolveDownstreamSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize score::gfx::RenderList::resolveDownstreamSize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::small_flat_map&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>, 16 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>resolvedSpecs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolve the downstream render target size for a node. </p>
+<p>Returns the maximum size across all downstream render targets that this node renders to. Used as fallback when a node's input port has no explicit render target size. </p>
+
+</div>
+</div>
+<a id="a2dc50059329ca473a14a41d94577aca2" name="a2dc50059329ca473a14a41d94577aca2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc50059329ca473a14a41d94577aca2">&#9670;&#160;</a></span>setInitialBatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::setInitialBatch </td>
+          <td>(</td>
+          <td class="paramtype">QRhiResourceUpdateBatch *&#160;</td>
+          <td class="paramname"><em>batch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a resource update batch to be submitted on the next render frame. </p>
+<p>Used by incremental edge additions that happen after the first render frame (when the original m_initialBatch has already been consumed). </p>
+
+</div>
+</div>
+<a id="a2ad7079c58bcc381970fa048ee7e48d4" name="a2ad7079c58bcc381970fa048ee7e48d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad7079c58bcc381970fa048ee7e48d4">&#9670;&#160;</a></span>vertexFallbackPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_vertex_fallback_pool.html">VertexFallbackPool</a> &amp; score::gfx::RenderList::vertexFallbackPool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per-RenderList pool of neutral fallback vertex buffers for "REQUIRED: false" VERTEX_INPUTS whose upstream geometry does not provide a matching attribute. </p>
+<p>Valid between <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> and <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">release()</a>. See <a class="el" href="_vertex_fallback_pool_8hpp_source.html">VertexFallbackPool.hpp</a>. </p>
 
 </div>
 </div>

@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_node_renderer.ht
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classscore_1_1gfx_1_1_node_renderer-members.html">List of all members</a>  </div>
@@ -120,22 +121,33 @@ Inheritance diagram for score::gfx::NodeRenderer:</div>
   <map id="score::gfx::NodeRenderer_map" name="score::gfx::NodeRenderer_map">
 <area href="class_gfx_1_1_spout_1_1_spout_input_node_1_1_renderer.html" alt="Gfx::Spout::SpoutInputNode::Renderer" shape="rect" coords="320,56,630,80"/>
 <area href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html" alt="Gfx::WindowCapture::WindowCaptureNode::Renderer" shape="rect" coords="320,112,630,136"/>
-<area href="struct_rendered_depth_node.html" alt="RenderedDepthNode" shape="rect" coords="320,168,630,192"/>
+<area href="classscore_1_1gfx_1_1_d_m_a_capture_input_node_1_1_renderer.html" title="Generic renderer for DMA capture-card inputs." alt="score::gfx::DMACaptureInputNode::Renderer" shape="rect" coords="320,168,630,192"/>
 <area href="classscore_1_1gfx_1_1_direct_video_node_renderer.html" title="Renderer for intra-only video codecs with instant seeking." alt="score::gfx::DirectVideoNodeRenderer" shape="rect" coords="320,224,630,248"/>
 <area href="classscore_1_1gfx_1_1_generic_node_renderer.html" title="Generic renderer." alt="score::gfx::GenericNodeRenderer" shape="rect" coords="320,280,630,304"/>
 <area href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html" alt="score::gfx::GeometryFilterNodeRenderer" shape="rect" coords="320,336,630,360"/>
 <area href="classscore_1_1gfx_1_1_output_node_renderer.html" alt="score::gfx::OutputNodeRenderer" shape="rect" coords="320,392,630,416"/>
 <area href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html" alt="score::gfx::RenderedCSFNode" shape="rect" coords="320,448,630,472"/>
-<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="320,504,630,528"/>
-<area href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html" alt="score::gfx::RenderedRawRasterPipelineNode" shape="rect" coords="320,560,630,584"/>
-<area href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html" alt="score::gfx::SimpleRenderedISFNode" shape="rect" coords="320,616,630,640"/>
-<area href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html" alt="score::gfx::SimpleRenderedVSANode" shape="rect" coords="320,672,630,696"/>
-<area href="classscore_1_1gfx_1_1_video_node_renderer.html" alt="score::gfx::VideoNodeRenderer" shape="rect" coords="320,728,630,752"/>
+<area href="structscore_1_1gfx_1_1_rendered_flattened_scene_filter_node.html" alt="score::gfx::RenderedFlattenedSceneFilterNode" shape="rect" coords="320,504,630,528"/>
+<area href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html" alt="score::gfx::RenderedISFNode" shape="rect" coords="320,560,630,584"/>
+<area href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html" alt="score::gfx::RenderedMergeGeometriesNode" shape="rect" coords="320,616,630,640"/>
+<area href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html" alt="score::gfx::RenderedRawRasterPipelineNode" shape="rect" coords="320,672,630,696"/>
+<area href="structscore_1_1gfx_1_1_rendered_scene_filter_node.html" alt="score::gfx::RenderedSceneFilterNode" shape="rect" coords="320,728,630,752"/>
+<area href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html" alt="score::gfx::RenderedScenePreprocessorNode" shape="rect" coords="320,784,630,808"/>
+<area href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html" alt="score::gfx::SimpleRenderedISFNode" shape="rect" coords="320,840,630,864"/>
+<area href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html" alt="score::gfx::SimpleRenderedVSANode" shape="rect" coords="320,896,630,920"/>
+<area href="classscore_1_1gfx_1_1_video_node_renderer.html" alt="score::gfx::VideoNodeRenderer" shape="rect" coords="320,952,630,976"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Renderer for a given node. </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a672157579c8f03046ba835c2dcfa453a" id="r_a672157579c8f03046ba835c2dcfa453a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a> = std::pair&lt; int32_t, const void * &gt;</td></tr>
+<tr class="separator:a672157579c8f03046ba835c2dcfa453a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ae9d23cc7c0deb7af0902fb7b3e1db" id="r_a30ae9d23cc7c0deb7af0902fb7b3e1db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a30ae9d23cc7c0deb7af0902fb7b3e1db">MergeCacheKey</a> = std::pair&lt; const ossia::scene_state *, int64_t &gt;</td></tr>
+<tr class="separator:a30ae9d23cc7c0deb7af0902fb7b3e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8403de351fee4cf2990283c63cc8e1c0" id="r_a8403de351fee4cf2990283c63cc8e1c0"><td class="memItemLeft" align="right" valign="top"><a id="a8403de351fee4cf2990283c63cc8e1c0" name="a8403de351fee4cf2990283c63cc8e1c0"></a>
@@ -152,8 +164,10 @@ virtual <a class="el" href="structscore_1_1gfx_1_1_buffer_view.html">BufferView<
 <tr class="separator:a8c79c917b2fe655d96bb0669711a1d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae350342d608a9f725d0a5be082421987" id="r_ae350342d608a9f725d0a5be082421987"><td class="memItemLeft" align="right" valign="top">virtual QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae350342d608a9f725d0a5be082421987">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;output)</td></tr>
 <tr class="separator:ae350342d608a9f725d0a5be082421987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbba3751aca99e0978ddc2af667dd1d8" id="r_adbba3751aca99e0978ddc2af667dd1d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#adbba3751aca99e0978ddc2af667dd1d8">updateInputTexture</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, QRhiTexture *tex)</td></tr>
-<tr class="separator:adbba3751aca99e0978ddc2af667dd1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e94506ec3678b93c1b16914a30b8f9" id="r_ad4e94506ec3678b93c1b16914a30b8f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ad4e94506ec3678b93c1b16914a30b8f9">updateInputTexture</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, QRhiTexture *tex, QRhiTexture *depthTex=nullptr)</td></tr>
+<tr class="separator:ad4e94506ec3678b93c1b16914a30b8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c6ea83cbc43afd7fc9c056fa1ff7909" id="r_a7c6ea83cbc43afd7fc9c056fa1ff7909"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a7c6ea83cbc43afd7fc9c056fa1ff7909">updateInputSamplerFilter</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;input, const <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;spec)</td></tr>
+<tr class="separator:a7c6ea83cbc43afd7fc9c056fa1ff7909"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a2730bcef91168ca755cb5e8c6b6dc7" id="r_a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a0a2730bcef91168ca755cb5e8c6b6dc7">inputAboutToFinish</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;p, QRhiResourceUpdateBatch *&amp;)</td></tr>
 <tr class="separator:a0a2730bcef91168ca755cb5e8c6b6dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1641e676462687fe1f46de74da1b8d66" id="r_a1641e676462687fe1f46de74da1b8d66"><td class="memItemLeft" align="right" valign="top"><a id="a1641e676462687fe1f46de74da1b8d66" name="a1641e676462687fe1f46de74da1b8d66"></a>
@@ -174,12 +188,51 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (
 <tr class="memitem:ada4ba7581605702479a1e2b9899a83f6" id="r_ada4ba7581605702479a1e2b9899a83f6"><td class="memItemLeft" align="right" valign="top"><a id="ada4ba7581605702479a1e2b9899a83f6" name="ada4ba7581605702479a1e2b9899a83f6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkForChanges</b> ()</td></tr>
 <tr class="separator:ada4ba7581605702479a1e2b9899a83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7885b7cc21b1e7f0e224a195db4f9034" id="r_a7885b7cc21b1e7f0e224a195db4f9034"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a7885b7cc21b1e7f0e224a195db4f9034">syncRenderTargetIndex</a> ()</td></tr>
+<tr class="separator:a7885b7cc21b1e7f0e224a195db4f9034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9ffb02c70572368df209691557b34f5" id="r_ae9ffb02c70572368df209691557b34f5"><td class="memItemLeft" align="right" valign="top"><a id="ae9ffb02c70572368df209691557b34f5" name="ae9ffb02c70572368df209691557b34f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::geometry_spec &amp;v)</td></tr>
 <tr class="separator:ae9ffb02c70572368df209691557b34f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2539585b175bd7a5fac20046ea120b9" id="r_ae2539585b175bd7a5fac20046ea120b9"><td class="memItemLeft" align="right" valign="top"><a id="ae2539585b175bd7a5fac20046ea120b9" name="ae2539585b175bd7a5fac20046ea120b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::scene_spec &amp;v)</td></tr>
+<tr class="separator:ae2539585b175bd7a5fac20046ea120b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ca3ed3b66d9fc3032b1c98836a75299" id="r_a4ca3ed3b66d9fc3032b1c98836a75299"><td class="memItemLeft" align="right" valign="top"><a id="a4ca3ed3b66d9fc3032b1c98836a75299" name="a4ca3ed3b66d9fc3032b1c98836a75299"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::transform3d &amp;v)</td></tr>
 <tr class="separator:a4ca3ed3b66d9fc3032b1c98836a75299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fbcccc2c6b77bd8c2d5fb9ec4326476" id="r_a4fbcccc2c6b77bd8c2d5fb9ec4326476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a4fbcccc2c6b77bd8c2d5fb9ec4326476">process</a> (int32_t port, const ossia::geometry_spec &amp;v, const void *source_key)</td></tr>
+<tr class="separator:a4fbcccc2c6b77bd8c2d5fb9ec4326476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f79f4b716f7b128d4c677ebfd7433b1" id="r_a0f79f4b716f7b128d4c677ebfd7433b1"><td class="memItemLeft" align="right" valign="top"><a id="a0f79f4b716f7b128d4c677ebfd7433b1" name="a0f79f4b716f7b128d4c677ebfd7433b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::scene_spec &amp;v, const void *source_key)</td></tr>
+<tr class="separator:a0f79f4b716f7b128d4c677ebfd7433b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0478272e7a65732be5dc390110af0c9" id="r_ac0478272e7a65732be5dc390110af0c9"><td class="memItemLeft" align="right" valign="top">const ossia::geometry_spec *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ac0478272e7a65732be5dc390110af0c9">findGeometryByPort</a> (int32_t port) const</td></tr>
+<tr class="separator:ac0478272e7a65732be5dc390110af0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab20b73db66693b34e16039529290ee33" id="r_ab20b73db66693b34e16039529290ee33"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ab20b73db66693b34e16039529290ee33"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ab20b73db66693b34e16039529290ee33">forEachSceneOnPort</a> (int32_t port, F &amp;&amp;fn) const</td></tr>
+<tr class="separator:ab20b73db66693b34e16039529290ee33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Incremental lifecycle API</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>These methods enable dynamic graph editing by splitting the init/release lifecycle into edge-independent state and per-edge passes.</p>
+<p>Renderers that override these are incrementally updateable: adding or removing an output edge only creates/destroys one pass, without touching the rest of the renderer's GPU resources.</p>
+<p>Default implementations are no-ops. </p>
+</div></td></tr>
+<tr class="memitem:a6ef16f5b3d202ef2ef1b3de15bf9a4c1" id="r_a6ef16f5b3d202ef2ef1b3de15bf9a4c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a6ef16f5b3d202ef2ef1b3de15bf9a4c1">initState</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res)</td></tr>
+<tr class="separator:a6ef16f5b3d202ef2ef1b3de15bf9a4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b60f4724aafdb04e1dd53f5379c61f" id="r_af7b60f4724aafdb04e1dd53f5379c61f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#af7b60f4724aafdb04e1dd53f5379c61f">releaseState</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
+<tr class="separator:af7b60f4724aafdb04e1dd53f5379c61f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab678f4a4872b8b7a40de3917bca9f91f" id="r_ab678f4a4872b8b7a40de3917bca9f91f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ab678f4a4872b8b7a40de3917bca9f91f">addOutputPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, QRhiResourceUpdateBatch &amp;res)</td></tr>
+<tr class="memdesc:ab678f4a4872b8b7a40de3917bca9f91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pass for a new output edge (pipeline, SRB, processUBO).  <br /></td></tr>
+<tr class="separator:ab678f4a4872b8b7a40de3917bca9f91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112486fa2b7fc58e1187de6a537d2746" id="r_a112486fa2b7fc58e1187de6a537d2746"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a112486fa2b7fc58e1187de6a537d2746">removeOutputPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)=0</td></tr>
+<tr class="separator:a112486fa2b7fc58e1187de6a537d2746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12598f9e0194cad7c417587d24d3d293" id="r_a12598f9e0194cad7c417587d24d3d293"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a12598f9e0194cad7c417587d24d3d293">addInputEdge</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, QRhiResourceUpdateBatch &amp;res)</td></tr>
+<tr class="separator:a12598f9e0194cad7c417587d24d3d293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ec2efa172271644eedd01c573469cc" id="r_ac1ec2efa172271644eedd01c573469cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ac1ec2efa172271644eedd01c573469cc">removeInputEdge</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
+<tr class="memdesc:ac1ec2efa172271644eedd01c573469cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify the renderer that an input edge was disconnected.  <br /></td></tr>
+<tr class="separator:ac1ec2efa172271644eedd01c573469cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72e1187f02ba173f3dcf04982daa18d" id="r_ae72e1187f02ba173f3dcf04982daa18d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae72e1187f02ba173f3dcf04982daa18d">hasOutputPassForEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const</td></tr>
+<tr class="memdesc:ae72e1187f02ba173f3dcf04982daa18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this renderer already has an output pass for the given edge.  <br /></td></tr>
+<tr class="separator:ae72e1187f02ba173f3dcf04982daa18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b414c533c91f5b07a807440cbf74281" id="r_a3b414c533c91f5b07a807440cbf74281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a3b414c533c91f5b07a807440cbf74281">seedInitialOutputs</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
+<tr class="separator:a3b414c533c91f5b07a807440cbf74281"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -189,8 +242,24 @@ const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;<
 <tr class="memitem:a569e44aa1e4837f7edf5e47111bd9b47" id="r_a569e44aa1e4837f7edf5e47111bd9b47"><td class="memItemLeft" align="right" valign="top">ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a569e44aa1e4837f7edf5e47111bd9b47">geometry</a></td></tr>
 <tr class="memdesc:a569e44aa1e4837f7edf5e47111bd9b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">The geometry to use.  <br /></td></tr>
 <tr class="separator:a569e44aa1e4837f7edf5e47111bd9b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4903f873277548af456aabba270f9a1f" id="r_a4903f873277548af456aabba270f9a1f"><td class="memItemLeft" align="right" valign="top">ossia::small_flat_map&lt; int32_t, ossia::geometry_spec, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a4903f873277548af456aabba270f9a1f">m_portGeometries</a></td></tr>
-<tr class="separator:a4903f873277548af456aabba270f9a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f03c54d17a5da1f95b8f8e26cafb5a" id="r_ae4f03c54d17a5da1f95b8f8e26cafb5a"><td class="memItemLeft" align="right" valign="top"><a id="ae4f03c54d17a5da1f95b8f8e26cafb5a" name="ae4f03c54d17a5da1f95b8f8e26cafb5a"></a>
+ossia::small_flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a>, ossia::geometry_spec, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_portGeometries</b></td></tr>
+<tr class="separator:ae4f03c54d17a5da1f95b8f8e26cafb5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549ece68b03a0b3ee7c73ff7d1c37ab7" id="r_a549ece68b03a0b3ee7c73ff7d1c37ab7"><td class="memItemLeft" align="right" valign="top">ossia::scene_spec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a549ece68b03a0b3ee7c73ff7d1c37ab7">scene</a></td></tr>
+<tr class="memdesc:a549ece68b03a0b3ee7c73ff7d1c37ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scene to use (when receiving scene_spec data).  <br /></td></tr>
+<tr class="separator:a549ece68b03a0b3ee7c73ff7d1c37ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb0d5384dd88c926e446bbaa8e8350c" id="r_a4cb0d5384dd88c926e446bbaa8e8350c"><td class="memItemLeft" align="right" valign="top"><a id="a4cb0d5384dd88c926e446bbaa8e8350c" name="a4cb0d5384dd88c926e446bbaa8e8350c"></a>
+ossia::small_flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a>, ossia::scene_spec, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_portScenes</b></td></tr>
+<tr class="memdesc:a4cb0d5384dd88c926e446bbaa8e8350c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-(port, source) scene storage. See m_portGeometries comment. <br /></td></tr>
+<tr class="separator:a4cb0d5384dd88c926e446bbaa8e8350c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48193b7a5429b72e49435303814bedf" id="r_ac48193b7a5429b72e49435303814bedf"><td class="memItemLeft" align="right" valign="top"><a id="ac48193b7a5429b72e49435303814bedf" name="ac48193b7a5429b72e49435303814bedf"></a>
+ossia::small_vector&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a30ae9d23cc7c0deb7af0902fb7b3e1db">MergeCacheKey</a>, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_mergeCacheInputs</b></td></tr>
+<tr class="separator:ac48193b7a5429b72e49435303814bedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affcc02e6eb88e72d911153c33d49814a" id="r_affcc02e6eb88e72d911153c33d49814a"><td class="memItemLeft" align="right" valign="top"><a id="affcc02e6eb88e72d911153c33d49814a" name="affcc02e6eb88e72d911153c33d49814a"></a>
+ossia::scene_spec&#160;</td><td class="memItemRight" valign="bottom"><b>m_mergeCacheOutput</b></td></tr>
+<tr class="separator:affcc02e6eb88e72d911153c33d49814a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6afb0a9380b9f227ba66e167c059a92e" id="r_a6afb0a9380b9f227ba66e167c059a92e"><td class="memItemLeft" align="right" valign="top">ossia::small_flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a>, std::pair&lt; ossia::geometry_spec, ossia::scene_spec &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a6afb0a9380b9f227ba66e167c059a92e">m_wrapCache</a></td></tr>
+<tr class="separator:a6afb0a9380b9f227ba66e167c059a92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a30302a09783bc9ad3ea54582a0427" id="r_aa8a30302a09783bc9ad3ea54582a0427"><td class="memItemLeft" align="right" valign="top"><a id="aa8a30302a09783bc9ad3ea54582a0427" name="aa8a30302a09783bc9ad3ea54582a0427"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeId</b> {-1}</td></tr>
 <tr class="separator:aa8a30302a09783bc9ad3ea54582a0427"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,11 +269,273 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>materialChanged</b> {
 <tr class="memitem:a0888dfdadd9921b82308a6060939f75a" id="r_a0888dfdadd9921b82308a6060939f75a"><td class="memItemLeft" align="right" valign="top"><a id="a0888dfdadd9921b82308a6060939f75a" name="a0888dfdadd9921b82308a6060939f75a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>geometryChanged</b> {false}</td></tr>
 <tr class="separator:a0888dfdadd9921b82308a6060939f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85478c5e0823713af90874ff54679162" id="r_a85478c5e0823713af90874ff54679162"><td class="memItemLeft" align="right" valign="top"><a id="a85478c5e0823713af90874ff54679162" name="a85478c5e0823713af90874ff54679162"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sceneChanged</b> {false}</td></tr>
+<tr class="separator:a85478c5e0823713af90874ff54679162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bf803e848c1e11d0ab0ca54e02cc80" id="r_ab1bf803e848c1e11d0ab0ca54e02cc80"><td class="memItemLeft" align="right" valign="top"><a id="ab1bf803e848c1e11d0ab0ca54e02cc80" name="ab1bf803e848c1e11d0ab0ca54e02cc80"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChanged</b> {false}</td></tr>
 <tr class="separator:ab1bf803e848c1e11d0ab0ca54e02cc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af05e71e0110ada3cc6597e8e1092c25a" id="r_af05e71e0110ada3cc6597e8e1092c25a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#af05e71e0110ada3cc6597e8e1092c25a">m_initialized</a> {false}</td></tr>
+<tr class="separator:af05e71e0110ada3cc6597e8e1092c25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a30ae9d23cc7c0deb7af0902fb7b3e1db" name="a30ae9d23cc7c0deb7af0902fb7b3e1db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ae9d23cc7c0deb7af0902fb7b3e1db">&#9670;&#160;</a></span>MergeCacheKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a30ae9d23cc7c0deb7af0902fb7b3e1db">score::gfx::NodeRenderer::MergeCacheKey</a> =  std::pair&lt;const ossia::scene_state*, int64_t&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Merge cache: the set of (scene_state pointer, version) pairs we last merged, and the resulting merged scene_spec. Keyed on BOTH pointer and version because halp-style producers (Camera, Environment, Light, …) keep a stable <code>m_state</code> shared_ptr and mutate its contents in place — keying on pointer alone would return a stale cached merge even after a slider moved. The version monotonically bumps on each producer update, so (ptr, version) changes whenever content changes. </p>
+
+</div>
+</div>
+<a id="a672157579c8f03046ba835c2dcfa453a" name="a672157579c8f03046ba835c2dcfa453a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672157579c8f03046ba835c2dcfa453a">&#9670;&#160;</a></span>PortSourceKey</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">score::gfx::NodeRenderer::PortSourceKey</a> =  std::pair&lt;int32_t, const void*&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Per-(port, source) geometry storage. Multi-keyed so multiple upstream producers converging on the same sink port each get their own slot (additive merge rather than overwrite). The source_key is the upstream output <a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> pointer (opaque void*); nullptr is a valid single-slot key for legacy callers. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12598f9e0194cad7c417587d24d3d293" name="a12598f9e0194cad7c417587d24d3d293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12598f9e0194cad7c417587d24d3d293">&#9670;&#160;</a></span>addInputEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::addInputEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Notify the renderer that a new input edge was connected. Typically updates sampler textures or geometry bindings. </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#aab40992c349ce00b74e9933b7adb864e">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a8f39b9be16c2c01e6dfbe32c1f2cd885">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a75bdb85ff5620c69f75f48c86ecde118">score::gfx::RenderedRawRasterPipelineNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ad4fc386d45b28aa2abb211ed65948392">score::gfx::SimpleRenderedISFNode</a>.</p>
+
+</div>
+</div>
+<a id="ab678f4a4872b8b7a40de3917bca9f91f" name="ab678f4a4872b8b7a40de3917bca9f91f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab678f4a4872b8b7a40de3917bca9f91f">&#9670;&#160;</a></span>addOutputPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::addOutputPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a pass for a new output edge (pipeline, SRB, processUBO). </p>
+
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#ab65c6f9e546d32d06678dbd0889c408a">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a2d39eaafbb5a4860c6ce2d8842ec3db1">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#afac510c710c859e1bf19e1f805963e9b">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a58625afe20681b272b57a1e2db6e2b1f">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#ae3039c0b47186449974ab2a44b14b627">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#ab64a57a270bd58f6fc7b87bf270a60cd">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ab1579121167c57dbae6de8425ee3ab5b">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#af23f0212ad42f26a692f305422795e9c">score::gfx::VideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_d_m_a_capture_input_node_1_1_renderer.html#a54d48d61615f6565567d951c3606c4ec">score::gfx::DMACaptureInputNode::Renderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#aeaa31d525b5d5e89bb1a0b72a2c467fd">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
+<a id="ac0478272e7a65732be5dc390110af0c9" name="ac0478272e7a65732be5dc390110af0c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0478272e7a65732be5dc390110af0c9">&#9670;&#160;</a></span>findGeometryByPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const ossia::geometry_spec * score::gfx::NodeRenderer::findGeometryByPort </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Find the first geometry stored on the given sink port (across all sources). For single-producer-per-port consumers, which do not care which source produced it. </p>
+
+</div>
+</div>
+<a id="ab20b73db66693b34e16039529290ee33" name="ab20b73db66693b34e16039529290ee33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab20b73db66693b34e16039529290ee33">&#9670;&#160;</a></span>forEachSceneOnPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::forEachSceneOnPort </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enumerate every scene_spec published on <code>port</code> (across all sources). Populated for ALL geometry/scene edges — raw geometry_spec deliveries are auto-wrapped into scene_specs and cached (see m_wrapCache), so the scene_state_ptr returned here is stable across frames when the input doesn't actually change. Callers doing scene-broadcast iterate this and check scene_state::dirty_index + state pointer for invalidation. </p>
+
+</div>
+</div>
+<a id="ae72e1187f02ba173f3dcf04982daa18d" name="ae72e1187f02ba173f3dcf04982daa18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae72e1187f02ba173f3dcf04982daa18d">&#9670;&#160;</a></span>hasOutputPassForEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::NodeRenderer::hasOutputPassForEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if this renderer already has an output pass for the given edge. </p>
+
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#a04f3ba08e4edd3714b5667e124566348">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a98f281004934d19cd5f8c58f65556ecc">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a264c52d468b3d6c4ad93960e6c050045">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae542161d38f5a69d761cc283482d4f56">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a0ef2c350cf1592166fb62a7b8a041249">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a2141935e98c17ab68d3499a30eaeb268">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#aeaa95e78f4ad172f029231b8941d38c8">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#a5975e2e4ebbfca17924eedb64e898e4d">score::gfx::VideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_d_m_a_capture_input_node_1_1_renderer.html#aa1594c3f84c779dcad7a43c4fe6fe737">score::gfx::DMACaptureInputNode::Renderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#aa40efebb51667ef3e514c4c5e2ae927a">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
+<a id="a6ef16f5b3d202ef2ef1b3de15bf9a4c1" name="a6ef16f5b3d202ef2ef1b3de15bf9a4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef16f5b3d202ef2ef1b3de15bf9a4c1">&#9670;&#160;</a></span>initState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::initState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize edge-independent state: material UBO, samplers, mesh, shaders. Called once when the renderer enters a <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
+
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#a37250217cdd9a5b3a71240ce57a14b64">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html#a2a55836465f20653e959fce10e702dfb">score::gfx::GeometryFilterNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a8770e052a6419ba89544ca7e3eabf5e1">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a1a96de33e2a76e48a9a562b84e465cd9">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#aba842f4e73f830a5836bfd0459337e06">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a857a2543ddfee77de79c1f1ac2e0297c">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a32aa73b1a9ff49ccf2c80919c1e53bb9">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#a088a10ca915a489ada4f1c74bf428a56">score::gfx::RenderedScenePreprocessorNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ac8e9e69e03ce55b5249531eaacad7153">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#a18a3b81ed0741bc3a15a543adbe007cf">score::gfx::TexgenNode::Rendered</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#aff3c6d0073d3adc6bcbb22cacb4e1339">score::gfx::VideoNodeRenderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#ada27a32e2d5096f8ce9b7291ebdc7969">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
 <a id="a0a2730bcef91168ca755cb5e8c6b6dc7" name="a0a2730bcef91168ca755cb5e8c6b6dc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0a2730bcef91168ca755cb5e8c6b6dc7">&#9670;&#160;</a></span>inputAboutToFinish()</h2>
 
@@ -248,6 +579,202 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 
 </div>
 </div>
+<a id="a4fbcccc2c6b77bd8c2d5fb9ec4326476" name="a4fbcccc2c6b77bd8c2d5fb9ec4326476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbcccc2c6b77bd8c2d5fb9ec4326476">&#9670;&#160;</a></span>process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::process </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::geometry_spec &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>source_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Source-aware overloads. <code>source_key</code> is an opaque identity of the upstream output port that produced this data (typically <code>edge.source</code>). Multiple producers converging on the same sink port each get their own storage slot, so their scenes accumulate additively instead of overwriting each other. Callers that don't care pass nullptr — all such callers then share a single per-port slot. </p>
+
+</div>
+</div>
+<a id="af7b60f4724aafdb04e1dd53f5379c61f" name="af7b60f4724aafdb04e1dd53f5379c61f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b60f4724aafdb04e1dd53f5379c61f">&#9670;&#160;</a></span>releaseState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::releaseState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release edge-independent state. Called once when the renderer leaves a <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html#a069a24829717e93594b7eb0e626f30a1">score::gfx::GeometryFilterNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#acc003df5f72587fdd101d46b651a91fc">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#aa4ee3458ad97e25da156e33b71c4d004">score::gfx::TexgenNode::Rendered</a>, <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#affa28bab7d9a1e782a04b92511a86869">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#ae3de9d52e9333a3d855c628db45c5737">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#ab0520dc9ba5e182c53bd2a87952c2fe5">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a4f4d2adc82903a4a851949779b0b137d">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#ab0115831e66e68f3cf4dcf8fa5539516">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#afdabcc2a6e602804df8f82bb29b9c5b0">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#aa26ec6fc563d1c0d135abfc48b1b7c99">score::gfx::RenderedScenePreprocessorNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#ae24efccfd168632ead246efb52600f1d">score::gfx::VideoNodeRenderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#a558862667f485596cff1e31e0d94f9a6">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
+<a id="ac1ec2efa172271644eedd01c573469cc" name="ac1ec2efa172271644eedd01c573469cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1ec2efa172271644eedd01c573469cc">&#9670;&#160;</a></span>removeInputEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::removeInputEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify the renderer that an input edge was disconnected. </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a34a2e9b47ab8f94256865c6ecba06f56">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a44a08280ae1704ba1c1ddcc4ed11f247">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a2d6e93bd44aca6e119513f90a9874fc7">score::gfx::RenderedRawRasterPipelineNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a3604677742e372ee19a293de17d7c3ed">score::gfx::SimpleRenderedISFNode</a>.</p>
+
+</div>
+</div>
+<a id="a112486fa2b7fc58e1187de6a537d2746" name="a112486fa2b7fc58e1187de6a537d2746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112486fa2b7fc58e1187de6a537d2746">&#9670;&#160;</a></span>removeOutputPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void score::gfx::NodeRenderer::removeOutputPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove the pass for a removed output edge. Pure-virtual: every concrete renderer must explicitly handle edge removal. Sinks (<a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>) and data-only renderers that store no per-edge GPU state can override with an empty body. </p>
+
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_flattened_scene_filter_node.html#a2f110c86b4306844268fc4411c6b5440">score::gfx::RenderedFlattenedSceneFilterNode</a>, <a class="el" href="structscore_1_1gfx_1_1_geometry_filter_node_renderer.html#a7fc5a659da5682674fedddc82b2671f8">score::gfx::GeometryFilterNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#aa93a1a77bde48945a64a97d378fcb37a">score::gfx::RenderedMergeGeometriesNode</a>, <a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">score::gfx::OutputNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_filter_node.html#a7281f0a857766583c25926f00672636a">score::gfx::RenderedSceneFilterNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#abd9f7833ddfb161890416347adec0175">score::gfx::RenderedScenePreprocessorNode</a>, <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#a48949f3a1f403e806a82b08b92a0c255">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#afcc80c2b7d560a506d81545ca9872ad4">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#ac4b1eea1a88d97a8f9addcb21333393c">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad80ea7b614d6e9413b83eea2bc077917">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a931c177e0c05874a90a0969383036fba">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a244cd1105436da5fa5e8b1c2b8102ce0">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a1ca5f65c95163e4c154dedb1cc13c2a7">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#ad50576eaeb9a6395634b75364863fcdf">score::gfx::VideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_d_m_a_capture_input_node_1_1_renderer.html#af1903c9c867c6710624ea872966e39d3">score::gfx::DMACaptureInputNode::Renderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#a386b30b360457a5dd53a8bb463b55095">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
+<a id="a3b414c533c91f5b07a807440cbf74281" name="a3b414c533c91f5b07a807440cbf74281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b414c533c91f5b07a807440cbf74281">&#9670;&#160;</a></span>seedInitialOutputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::seedInitialOutputs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Seed downstream consumers once at init-time with this renderer's current outputs. Default no-op. Halp scene/geometry producers (Camera, EnvironmentLoader, Light, …) override this to run their operator()() once during reconciliation and immediately push the result into each downstream sink's per-port scene cache. Otherwise a live-inserted producer's output only reaches <code>m_portScenes</code> when the next render frame's upstream scan fires its runInitialPasses, which can arrive after the sink's own frame-start cache snapshot. </p>
+
+</div>
+</div>
+<a id="a7885b7cc21b1e7f0e224a195db4f9034" name="a7885b7cc21b1e7f0e224a195db4f9034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7885b7cc21b1e7f0e224a195db4f9034">&#9670;&#160;</a></span>syncRenderTargetIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::syncRenderTargetIndex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sync only the render target spec index without touching materialChanged. Used after <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a6ef16f5b3d202ef2ef1b3de15bf9a4c1">initState()</a> so the first render's checkForChanges() sees a material mismatch (triggering initial upload) but not a spurious rt_changed. </p>
+
+</div>
+</div>
 <a id="ae350342d608a9f725d0a5be082421987" name="ae350342d608a9f725d0a5be082421987"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae350342d608a9f725d0a5be082421987">&#9670;&#160;</a></span>textureForOutput()</h2>
 
@@ -273,12 +800,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 <p>Returns a texture owned by this renderer for a given output port. Used for GrabsFromSource ports (e.g. cubemaps) where the upstream node produces a texture directly rather than rendering into a downstream-provided render target. </p>
 
-<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#aa2c452a433931ec520b0789949bc1613">score::gfx::RenderedCSFNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#afa9597e36cb4ed688f51dd83fed15fc4">score::gfx::SimpleRenderedISFNode</a>.</p>
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#aea5433d0422a2eb0516540023925996d">score::gfx::RenderedScenePreprocessorNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#aa2c452a433931ec520b0789949bc1613">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a062595f4f4256075162c39193977ce51">score::gfx::RenderedRawRasterPipelineNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#afa9597e36cb4ed688f51dd83fed15fc4">score::gfx::SimpleRenderedISFNode</a>.</p>
 
 </div>
 </div>
-<a id="adbba3751aca99e0978ddc2af667dd1d8" name="adbba3751aca99e0978ddc2af667dd1d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbba3751aca99e0978ddc2af667dd1d8">&#9670;&#160;</a></span>updateInputTexture()</h2>
+<a id="a7c6ea83cbc43afd7fc9c056fa1ff7909" name="a7c6ea83cbc43afd7fc9c056fa1ff7909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c6ea83cbc43afd7fc9c056fa1ff7909">&#9670;&#160;</a></span>updateInputSamplerFilter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::NodeRenderer::updateInputSamplerFilter </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;&#160;</td>
+          <td class="paramname"><em>spec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the sampler filter/address settings for an input port. Called when the render target spec changes (e.g. linear → nearest). </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#acdba4b3d9502028a6b39aaf759a960a8">score::gfx::RenderedISFNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#aa97f1a4373c940d3e2ba67096711464c">score::gfx::SimpleRenderedISFNode</a>.</p>
+
+</div>
+</div>
+<a id="ad4e94506ec3678b93c1b16914a30b8f9" name="ad4e94506ec3678b93c1b16914a30b8f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e94506ec3678b93c1b16914a30b8f9">&#9670;&#160;</a></span>updateInputTexture()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +862,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">QRhiTexture *&#160;</td>
-          <td class="paramname"><em>tex</em>&#160;</td>
+          <td class="paramname"><em>tex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture *&#160;</td>
+          <td class="paramname"><em>depthTex</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -310,9 +882,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Updates the sampler texture for a GrabsFromSource input port. Called from the render loop when the upstream texture may have changed. </p>
+<p>Updates the sampler texture for an input port. Called when the upstream texture may have changed (edge add, RT recreation). If the port has SamplableDepth and depthTex is non-null, the depth sampler (immediately after the color sampler) is also updated. </p>
 
-<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a9cd8e682d71d84e2f33d4dd19f6347b1">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a180cadc5b5aeddbcf06b96e000a38507">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a1d7e4c6da68cc89cf455f506654f43d6">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#af7c3a99d42166a004dbe70bc3969ca7b">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a8e2d152f046d62bcd3f450264a7c3c02">score::gfx::SimpleRenderedVSANode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a9262a234d9fa85d2c4e788e6a52b615c">score::gfx::SimpleRenderedISFNode</a>.</p>
+<p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#aeb9978d9a95e9ff4da0d70e8368f924b">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#ae37008c4d3eafc9d2c072bab6f8c96da">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ac40008a71522f86bc5ec0fd5f3900ec9">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#ac1bee61516a96eedb7c3871f0c381d74">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#a013f6d3071f5c56916693aea62101094">score::gfx::SimpleRenderedVSANode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#a84a66872aad271f401ef276b5e86cd56">score::gfx::SimpleRenderedISFNode</a>.</p>
 
 </div>
 </div>
@@ -335,18 +907,50 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 
 </div>
 </div>
-<a id="a4903f873277548af456aabba270f9a1f" name="a4903f873277548af456aabba270f9a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4903f873277548af456aabba270f9a1f">&#9670;&#160;</a></span>m_portGeometries</h2>
+<a id="af05e71e0110ada3cc6597e8e1092c25a" name="af05e71e0110ada3cc6597e8e1092c25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af05e71e0110ada3cc6597e8e1092c25a">&#9670;&#160;</a></span>m_initialized</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ossia::small_flat_map&lt;int32_t, ossia::geometry_spec, 4&gt; score::gfx::NodeRenderer::m_portGeometries</td>
+          <td class="memname">bool score::gfx::NodeRenderer::m_initialized {false}</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Per-port geometry storage for nodes with multiple geometry inputs. Key is the input port index. </p>
+<p>Guard for idempotent release — prevents double-release of GPU resources. Set to true at end of init(), cleared at start of release(). </p>
+
+</div>
+</div>
+<a id="a6afb0a9380b9f227ba66e167c059a92e" name="a6afb0a9380b9f227ba66e167c059a92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6afb0a9380b9f227ba66e167c059a92e">&#9670;&#160;</a></span>m_wrapCache</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::small_flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a>, std::pair&lt;ossia::geometry_spec, ossia::scene_spec&gt;, 4&gt; score::gfx::NodeRenderer::m_wrapCache</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cache the wrap_geometry_as_scene result per geometry_spec so a geometry source re-pushing the same geometry_spec every frame produces a stable wrapped-scene shared_ptr (otherwise every frame produces a new wrapper → merge cache miss → full re-upload). </p>
+
+</div>
+</div>
+<a id="a549ece68b03a0b3ee7c73ff7d1c37ab7" name="a549ece68b03a0b3ee7c73ff7d1c37ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a549ece68b03a0b3ee7c73ff7d1c37ab7">&#9670;&#160;</a></span>scene</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::scene_spec score::gfx::NodeRenderer::scene</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The scene to use (when receiving scene_spec data). </p>
+<p>When a geometry_spec is received, it is auto-wrapped into a scene_spec so that downstream scene-aware renderers can always work with scenes. Renderers that only handle geometry read the <code>geometry</code> field instead. </p>
 
 </div>
 </div>

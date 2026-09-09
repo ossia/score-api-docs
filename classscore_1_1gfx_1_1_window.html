@@ -190,6 +190,8 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:adddf837fcd179b3383d7b869d548bdd3" id="r_adddf837fcd179b3383d7b869d548bdd3"><td class="memItemLeft" align="right" valign="top"><a id="adddf837fcd179b3383d7b869d548bdd3" name="adddf837fcd179b3383d7b869d548bdd3"></a>
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onUpdate</b></td></tr>
 <tr class="separator:adddf837fcd179b3383d7b869d548bdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8583732542b1d5d1527353296a9ba91b" id="r_a8583732542b1d5d1527353296a9ba91b"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_window.html#a8583732542b1d5d1527353296a9ba91b">onAboutToRender</a></td></tr>
+<tr class="separator:a8583732542b1d5d1527353296a9ba91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08ff883b7ffe38447a4371307db178a" id="r_ae08ff883b7ffe38447a4371307db178a"><td class="memItemLeft" align="right" valign="top"><a id="ae08ff883b7ffe38447a4371307db178a" name="ae08ff883b7ffe38447a4371307db178a"></a>
 std::function&lt; void(QRhiCommandBuffer &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onRender</b></td></tr>
 <tr class="separator:ae08ff883b7ffe38447a4371307db178a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +205,22 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onDeviceLost</b></td></tr>
 <tr class="separator:a55bd7a069053cbb55fbb13c67a95b661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8583732542b1d5d1527353296a9ba91b" name="a8583732542b1d5d1527353296a9ba91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8583732542b1d5d1527353296a9ba91b">&#9670;&#160;</a></span>onAboutToRender</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; score::gfx::Window::onAboutToRender</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Refreshes whatever gates a frame, before m_canRender is read. The vsync loop re-enters render() on its own, without ever passing through the node's own render(), so a node that recomputes state per tick needs a hook here or it only ever runs on the timer-driven path. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html">plugins/score-plugin-gfx/Gfx/Graph/Window.hpp</a></li>
 <li><b>plugins/score-plugin-gfx/Gfx/Graph/Window.cpp</b></li>

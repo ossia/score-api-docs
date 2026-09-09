@@ -115,23 +115,23 @@ $(document).ready(function(){initNavTree('_filter_2_preview_widget_8hpp_source.h
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Gfx/Graph/ImageNode.hpp&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Gfx/Graph/Node.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Gfx/Graph/ShaderCache.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Gfx/Graph/Window.hpp&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Gfx/ShaderProgram.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Gfx/ShaderProgram.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;QHBoxLayout&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;QWidget&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;QHBoxLayout&gt;</span></div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>}</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span><a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_process.html">Process</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>Preset;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_gfx.html">Gfx</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_process.html">Process</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct </span>Preset;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_gfx.html">Gfx</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>RhiPreviewWidget;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span>ShaderPreviewManager;</div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_gfx_1_1_shader_preview_widget.html">   22</a></span><span class="keyword">class </span><a class="code hl_class" href="class_gfx_1_1_shader_preview_widget.html">ShaderPreviewWidget</a> : <span class="keyword">public</span> QWidget</div>
@@ -145,16 +145,17 @@ $(document).ready(function(){initNavTree('_filter_2_preview_widget_8hpp_source.h
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> setup();</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  std::shared_ptr&lt;QWindow&gt; m_window;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="class_gfx_1_1_rhi_preview_widget.html">RhiPreviewWidget</a>* m_rhi{};</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
+<div class="ttc" id="aclass_gfx_1_1_rhi_preview_widget_html"><div class="ttname"><a href="class_gfx_1_1_rhi_preview_widget.html">Gfx::RhiPreviewWidget</a></div><div class="ttdoc">A QWidget that paints a score::gfx render-graph output without using QWidget::createWindowContainer (...</div><div class="ttdef"><b>Definition</b> RhiPreviewWidget.hpp:46</div></div>
 <div class="ttc" id="aclass_gfx_1_1_shader_preview_widget_html"><div class="ttname"><a href="class_gfx_1_1_shader_preview_widget.html">Gfx::ShaderPreviewWidget</a></div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:23</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition</b> ISFNode.hpp:22</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> AssetTable.cpp:7</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:12</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astruct_process_1_1_preset_html"><div class="ttname"><a href="struct_process_1_1_preset.html">Process::Preset</a></div><div class="ttdef"><b>Definition</b> Preset.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

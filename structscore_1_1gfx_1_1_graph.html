@@ -136,14 +136,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addEdge</b> (<a class
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeEdge</b> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
 <tr class="memdesc:a502b4abc23e8335948bec9e052ddef1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an edge between two nodes. <br /></td></tr>
 <tr class="separator:a502b4abc23e8335948bec9e052ddef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af1baed64b20b83f6a59d7b09b672f2" id="r_a6af1baed64b20b83f6a59d7b09b672f2"><td class="memItemLeft" align="right" valign="top"><a id="a6af1baed64b20b83f6a59d7b09b672f2" name="a6af1baed64b20b83f6a59d7b09b672f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addAndLinkEdge</b> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink, Process::CableType t)</td></tr>
-<tr class="memdesc:a6af1baed64b20b83f6a59d7b09b672f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an edge between two nodes and creates relevant pipelines. <br /></td></tr>
-<tr class="separator:a6af1baed64b20b83f6a59d7b09b672f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe3ddb004ee53340f68c7eb87fd8ec5e" id="r_abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="memItemLeft" align="right" valign="top"><a id="abe3ddb004ee53340f68c7eb87fd8ec5e" name="abe3ddb004ee53340f68c7eb87fd8ec5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>unlinkAndRemoveEdge</b> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
-<tr class="memdesc:abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an edge between two nodes and free the pipelines. <br /></td></tr>
-<tr class="separator:abe3ddb004ee53340f68c7eb87fd8ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44eaccc445e7167fc4ca8dbc8b66c824" id="r_a44eaccc445e7167fc4ca8dbc8b66c824"><td class="memItemLeft" align="right" valign="top"><a id="a44eaccc445e7167fc4ca8dbc8b66c824" name="a44eaccc445e7167fc4ca8dbc8b66c824"></a>
+<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findEdge</b> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink)</td></tr>
+<tr class="memdesc:a44eaccc445e7167fc4ca8dbc8b66c824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Live edge for a port pair, or null. <br /></td></tr>
+<tr class="separator:a44eaccc445e7167fc4ca8dbc8b66c824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9c6afdc49236ec84ca4df59543ea8e" id="r_aad9c6afdc49236ec84ca4df59543ea8e"><td class="memItemLeft" align="right" valign="top"><a id="aad9c6afdc49236ec84ca4df59543ea8e" name="aad9c6afdc49236ec84ca4df59543ea8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>removeNodeFromRenderLists</b> (<a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="memdesc:aad9c6afdc49236ec84ca4df59543ea8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a node's renderers from all render lists. <br /></td></tr>
+<tr class="separator:aad9c6afdc49236ec84ca4df59543ea8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a998f37e1136799966e41407172bc89e9" id="r_a998f37e1136799966e41407172bc89e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a998f37e1136799966e41407172bc89e9">removeNodeAndEdges</a> (<a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="separator:a998f37e1136799966e41407172bc89e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508b62ab93ea0dd33684034c1ed09089" id="r_a508b62ab93ea0dd33684034c1ed09089"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a508b62ab93ea0dd33684034c1ed09089">onEdgeRemoved</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, const ossia::hash_set&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt; *preserveSinks=nullptr)</td></tr>
+<tr class="separator:a508b62ab93ea0dd33684034c1ed09089"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d457cf09ddc6b003677c3138ff1354" id="r_a07d457cf09ddc6b003677c3138ff1354"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a07d457cf09ddc6b003677c3138ff1354">updateSinkSampler</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
+<tr class="separator:a07d457cf09ddc6b003677c3138ff1354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6914de87e090a83ecb0c54ff0d244b" id="r_acb6914de87e090a83ecb0c54ff0d244b"><td class="memItemLeft" align="right" valign="top"><a id="acb6914de87e090a83ecb0c54ff0d244b" name="acb6914de87e090a83ecb0c54ff0d244b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createAllMissingPasses</b> ()</td></tr>
+<tr class="memdesc:acb6914de87e090a83ecb0c54ff0d244b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create missing passes and update samplers for ALL edges in ALL render lists. <br /></td></tr>
+<tr class="separator:acb6914de87e090a83ecb0c54ff0d244b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a46089d3951b086e451322ba3fdda8" id="r_a62a46089d3951b086e451322ba3fdda8"><td class="memItemLeft" align="right" valign="top"><a id="a62a46089d3951b086e451322ba3fdda8" name="a62a46089d3951b086e451322ba3fdda8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateAllSinkSamplers</b> ()</td></tr>
+<tr class="separator:a62a46089d3951b086e451322ba3fdda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95812f7219407b7fa107380b35b6dfcc" id="r_a95812f7219407b7fa107380b35b6dfcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a95812f7219407b7fa107380b35b6dfcc">createPassForEdgeIfMissing</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
+<tr class="separator:a95812f7219407b7fa107380b35b6dfcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7752fb1a19e605efa25d6f01be740a80" id="r_a7752fb1a19e605efa25d6f01be740a80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a7752fb1a19e605efa25d6f01be740a80">reconcileAllRenderLists</a> ()</td></tr>
+<tr class="separator:a7752fb1a19e605efa25d6f01be740a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c3b40f6e90a21e4fb0636257f7bc975" id="r_a1c3b40f6e90a21e4fb0636257f7bc975"><td class="memItemLeft" align="right" valign="top"><a id="a1c3b40f6e90a21e4fb0636257f7bc975" name="a1c3b40f6e90a21e4fb0636257f7bc975"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearEdges</b> ()</td></tr>
 <tr class="memdesc:a1c3b40f6e90a21e4fb0636257f7bc975"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all edges. <br /></td></tr>
@@ -160,6 +177,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>createSingleRenderLis
 void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyOutputRenderList</b> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> &amp;node)</td></tr>
 <tr class="memdesc:a17a55c3427949d59d752108e3da2f0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the render list of an output node if any. <br /></td></tr>
 <tr class="separator:a17a55c3427949d59d752108e3da2f0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af23448e0294640a87e6d3a1e6f5185ea" id="r_af23448e0294640a87e6d3a1e6f5185ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#af23448e0294640a87e6d3a1e6f5185ea">releaseOutputRenderList</a> (<a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> &amp;node)</td></tr>
+<tr class="memdesc:af23448e0294640a87e6d3a1e6f5185ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release + deregister the render list built against <code>node's</code> QRhi, leaving the output itself alone.  <br /></td></tr>
+<tr class="separator:af23448e0294640a87e6d3a1e6f5185ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2053b9d1b4c0466c9cc5fe87be8cb5a5" id="r_a2053b9d1b4c0466c9cc5fe87be8cb5a5"><td class="memItemLeft" align="right" valign="top"><a id="a2053b9d1b4c0466c9cc5fe87be8cb5a5" name="a2053b9d1b4c0466c9cc5fe87be8cb5a5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>relinkGraph</b> ()</td></tr>
 <tr class="memdesc:a2053b9d1b4c0466c9cc5fe87be8cb5a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate the connections between renderers when edges changed. <br /></td></tr>
@@ -168,13 +188,204 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>relinkGraph</b> ()</t
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDoVSync</b> () const noexcept</td></tr>
 <tr class="memdesc:a956b5fda40333edffaa3655bbf18f4c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the graph supports being driven by the screen vertical synchronization. <br /></td></tr>
 <tr class="separator:a956b5fda40333edffaa3655bbf18f4c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea998e7a34df57c02042b8d243f78cc2" id="r_aea998e7a34df57c02042b8d243f78cc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#aea998e7a34df57c02042b8d243f78cc2">createMissingRenderLists</a> ()</td></tr>
+<tr class="memdesc:aea998e7a34df57c02042b8d243f78cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build render lists for outputs that lost or never got one.  <br /></td></tr>
+<tr class="separator:aea998e7a34df57c02042b8d243f78cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8715e3b08c76dfb30794ddc77a117471" id="r_a8715e3b08c76dfb30794ddc77a117471"><td class="memItemLeft" align="right" valign="top"><a id="a8715e3b08c76dfb30794ddc77a117471" name="a8715e3b08c76dfb30794ddc77a117471"></a>
 const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>renderLists</b> () const noexcept</td></tr>
 <tr class="separator:a8715e3b08c76dfb30794ddc77a117471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51bf4778351c32f221195aa42998b2af" id="r_a51bf4778351c32f221195aa42998b2af"><td class="memItemLeft" align="right" valign="top"><a id="a51bf4778351c32f221195aa42998b2af" name="a51bf4778351c32f221195aa42998b2af"></a>
 std::span&lt; <a class="el" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> *const &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b> () const noexcept</td></tr>
 <tr class="separator:a51bf4778351c32f221195aa42998b2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2034f430b7902ec179bd2d83c32f6815" id="r_a2034f430b7902ec179bd2d83c32f6815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graph.html#a2034f430b7902ec179bd2d83c32f6815">setAssetTable</a> (<a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *a) noexcept</td></tr>
+<tr class="memdesc:a2034f430b7902ec179bd2d83c32f6815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject the session-wide AssetTable.  <br /></td></tr>
+<tr class="separator:a2034f430b7902ec179bd2d83c32f6815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba48e0763982c5b9edb7c8c07f38ee0e" id="r_aba48e0763982c5b9edb7c8c07f38ee0e"><td class="memItemLeft" align="right" valign="top"><a id="aba48e0763982c5b9edb7c8c07f38ee0e" name="aba48e0763982c5b9edb7c8c07f38ee0e"></a>
+<a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>assetTable</b> () const noexcept</td></tr>
+<tr class="separator:aba48e0763982c5b9edb7c8c07f38ee0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aea998e7a34df57c02042b8d243f78cc2" name="aea998e7a34df57c02042b8d243f78cc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea998e7a34df57c02042b8d243f78cc2">&#9670;&#160;</a></span>createMissingRenderLists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::createMissingRenderLists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build render lists for outputs that lost or never got one. </p>
+<p>An output whose swapchain was not ready when the graph was built gets no <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> (initializeOutput does nothing when renderState() exists but canRender() is false), and a createOutputRenderList that threw leaves it renderer-less too. Both are invisible to every incremental path until the next full rebuild. Called once per graph tick as a recovery. </p>
+
+</div>
+</div>
+<a id="a95812f7219407b7fa107380b35b6dfcc" name="a95812f7219407b7fa107380b35b6dfcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95812f7219407b7fa107380b35b6dfcc">&#9670;&#160;</a></span>createPassForEdgeIfMissing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::createPassForEdgeIfMissing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For an added edge, create the output pass on the source renderer if it exists but doesn't already have a pass for this edge. </p>
+
+</div>
+</div>
+<a id="a508b62ab93ea0dd33684034c1ed09089" name="a508b62ab93ea0dd33684034c1ed09089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a508b62ab93ea0dd33684034c1ed09089">&#9670;&#160;</a></span>onEdgeRemoved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::onEdgeRemoved </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::hash_set&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt; *&#160;</td>
+          <td class="paramname"><em>preserveSinks</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called when an edge is removed from the graph.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">preserveSinks</td><td>Optional set of sink Ports whose input render target should be kept alive even if this edge was their only feed. GfxContext::incrementalEdgeUpdate uses this to bridge the brief "sink has 0 edges" window that appears during a mid-batch filter insertion (A→B removed, A→F and F→B added in the same batch). Without this, B's input RT would be destroyed and immediately re-allocated with the same spec. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7752fb1a19e605efa25d6f01be740a80" name="a7752fb1a19e605efa25d6f01be740a80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7752fb1a19e605efa25d6f01be740a80">&#9670;&#160;</a></span>reconcileAllRenderLists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::reconcileAllRenderLists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>After all edges have been added/removed, reconcile all render lists: retopological sort, create renderers for newly-reachable nodes, create render targets and passes, remove unreachable nodes. </p>
+
+</div>
+</div>
+<a id="af23448e0294640a87e6d3a1e6f5185ea" name="af23448e0294640a87e6d3a1e6f5185ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af23448e0294640a87e6d3a1e6f5185ea">&#9670;&#160;</a></span>releaseOutputRenderList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::releaseOutputRenderList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release + deregister the render list built against <code>node's</code> QRhi, leaving the output itself alone. </p>
+<p>This is the half of <a class="el" href="structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3" title="Free the render list of an output node if any.">destroyOutputRenderList()</a> that must run before an output destroys its own device (live swapchain-flag / -format toggles). Handed to outputs as <a class="el" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88" title="Ask the owning Graph to release + deregister the RenderList that was built against this output&#39;s QRhi...">OutputConfiguration::onReleaseRenderList</a>. </p>
+
+</div>
+</div>
+<a id="a998f37e1136799966e41407172bc89e9" name="a998f37e1136799966e41407172bc89e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998f37e1136799966e41407172bc89e9">&#9670;&#160;</a></span>removeNodeAndEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::removeNodeAndEdges </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Incrementally remove a non-output node: notify renderers of each edge being removed, delete edges from m_edges, release the node's renderers, retopological sort affected render lists, remove from m_nodes. </p>
+
+</div>
+</div>
+<a id="a2034f430b7902ec179bd2d83c32f6815" name="a2034f430b7902ec179bd2d83c32f6815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2034f430b7902ec179bd2d83c32f6815">&#9670;&#160;</a></span>setAssetTable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::setAssetTable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inject the session-wide AssetTable. </p>
+<p>GfxContext owns the AssetTable and calls this once at graph construction. All RenderLists subsequently created by this <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> receive the pointer via their constructor, so the preprocessor can hit the content-hash cache when decoding texture_source / buffer_resource payloads.</p>
+<p>Null is allowed (tests, early teardown) — consumers guard. </p>
+
+</div>
+</div>
+<a id="a07d457cf09ddc6b003677c3138ff1354" name="a07d457cf09ddc6b003677c3138ff1354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07d457cf09ddc6b003677c3138ff1354">&#9670;&#160;</a></span>updateSinkSampler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::Graph::updateSinkSampler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For an added edge, update the sink renderer's input sampler to point to the (possibly new) render target texture. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Graph.hpp</a></li>
 <li><b>score-plugin-gfx/Gfx/Graph/Graph.cpp</b></li>

@@ -124,8 +124,14 @@ Inheritance diagram for score::gfx::NV12Encoder:</div>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>GPU RGBA-&gt;NV12 encoder (semi-planar 4:2:0). </p>
-<p>Two render passes: <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 1: Y plane -&gt; R8 texture at full resolution <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 2: UV plane -&gt; RG8 texture at half resolution (width/2 × height/2)</p>
-<p>Two readbacks. The caller concatenates Y + UV data for GStreamer <code>video/x-raw,format=NV12</code>. </p>
+<p>Two render passes: <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 1: Y plane -&gt; R8 texture at full resolution <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 2: UV plane -&gt; interleaved chroma at half vertical resolution</p>
+<p>Two readbacks. The caller concatenates Y + UV data for GStreamer <code>video/x-raw,format=NV12</code>.</p>
+<p>Two UV implementations selected at compile time (see <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html" title="GPU RGBA -&gt; yuv422p10le encoder (planar 4:2:2, 10-bit).">YUV422P10Encoder</a> for the full rationale and the qtbase commit reference):</p>
+<ul>
+<li>Qt &gt;= 6.10: RG8 target at width/2 × height/2; QRhi reads it back tightly (2 bytes per chroma site). Bilinear sampling averages the 2x2 source block.</li>
+<li>Qt &lt; 6.10: the GL backend reads RG8 render targets back RGBA-expanded (4 bytes per site, U,V,0,255) — the pre-6.10 readback special-cases only R8 and float formats. So we render the interleaved U,V bytes into an R8 target of width × height/2 instead: one byte per texel, U in even columns, V in odd ones, each averaged over the same 2x2 block.</li>
+</ul>
+<p>Both paths expose the same readback byte layout (w bytes per row over h/2 rows, U then V per site), so consumers are agnostic. The Y plane is R8 and reads back tightly everywhere. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -142,6 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a02bd2248ceff9299df616f469df1119f" id="r_a02bd2248ceff9299df616f469df1119f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a02bd2248ceff9299df616f469df1119f">release</a> () override</td></tr>
 <tr class="memdesc:a02bd2248ceff9299df616f469df1119f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all GPU resources.  <br /></td></tr>
 <tr class="separator:a02bd2248ceff9299df616f469df1119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">score::gfx::GPUVideoEncoder</a></td></tr>
+<tr class="memitem:aec8e823da2391ca68dec3ce0b5b55f24 inherit pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder" id="r_aec8e823da2391ca68dec3ce0b5b55f24"><td class="memItemLeft" align="right" valign="top">virtual QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#aec8e823da2391ca68dec3ce0b5b55f24">outputTexture</a> () const noexcept</td></tr>
+<tr class="separator:aec8e823da2391ca68dec3ce0b5b55f24 inherit pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f234c11bd2787716ca85b7d8992b43 inherit pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder" id="r_a47f234c11bd2787716ca85b7d8992b43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a47f234c11bd2787716ca85b7d8992b43">setReadbackEnabled</a> (bool) noexcept</td></tr>
+<tr class="separator:a47f234c11bd2787716ca85b7d8992b43 inherit pub_methods_structscore_1_1gfx_1_1_g_p_u_video_encoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

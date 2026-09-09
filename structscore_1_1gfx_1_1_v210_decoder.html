@@ -126,7 +126,7 @@ Inheritance diagram for score::gfx::V210Decoder:</div>
 <div class="textblock"><p>Decodes 10-bit 4:2:2 YCbCr packed in v210 (SMPTE ST 2110-20 / SDI native). </p>
 <p>v210 packs 6 source pixels into 4 little-endian 32-bit words (16 bytes): word 0: Cb01 (10b) | Y0 (10b) | Cr01 (10b) | 2b pad word 1: Y1 (10b) | Cb23 (10b) | Y2 (10b) | 2b pad word 2: Cr23 (10b) | Y3 (10b) | Cb45 (10b) | 2b pad word 3: Y4 (10b) | Cr45 (10b) | Y5 (10b) | 2b pad</p>
 <p>Inverse of <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html" title="Cross-backend RGBA -&gt; v210 encoder.">V210Encoder</a>. The input texture is RGBA8 at ((width/6)*4) × height — each RGBA8 texel is one v210 ULWord, byte-for-byte. For the AJA capture path, that's exactly what DVP DMAs from sysmem to GPU.</p>
-<p>Width must be a multiple of 6 (and is in practice always a multiple of 48 for SDI: 1920, 3840, 7680). Non-aligned widths would need row padding, which we don't bother with — SDI doesn't produce them.</p>
+<p>The wire pads each row to a 128-byte multiple (((width + 47) / 48) * 128 bytes — SMPTE/DeckLink/AJA all agree), so the input texture is sized on that padded stride. At widths not divisible by 6 (1280, 2048-DCI) the tail group carries the remaining 2/4 pixels; group-indexed reads stay in-bounds because the padding guarantees the full 4-word group exists.</p>
 <p>Output: full-width RGB. The fragment shader extracts the 10-bit Y/Cb/Cr fields, normalizes to [0, 1] (10-bit limited range maps to roughly the same [16/255, 235/255] window as 8-bit limited), then runs the standard score colorMatrix() convert_to_rgb. SDR/BT.709 by default; HDR (BT.2020 PQ/HLG) routes through bt2020shader() the same way as any other 10-bit YUV input. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6f3f91addbb17b8ddc83231cfcc314bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_aa1e4ab512b307a792032e762aff3a572"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)</td></tr>
 <tr class="memdesc:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will release all the created samplers and textures. <br /></td></tr>
 <tr class="separator:aa1e4ab512b307a792032e762aff3a572 inherit pub_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -159,6 +159,8 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 <tr class="separator:a17ec177295eb2e8172032a9571bfc1ac inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bb3a97ecdf3be60279c93e70281c6e7 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a6bb3a97ecdf3be60279c93e70281c6e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a6bb3a97ecdf3be60279c93e70281c6e7">failed</a> {}</td></tr>
 <tr class="separator:a6bb3a97ecdf3be60279c93e70281c6e7 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd47b0ec90ededca937b607dd19ee37c inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_afd47b0ec90ededca937b607dd19ee37c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#afd47b0ec90ededca937b607dd19ee37c">formatChanged</a> {}</td></tr>
+<tr class="separator:afd47b0ec90ededca937b607dd19ee37c inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>

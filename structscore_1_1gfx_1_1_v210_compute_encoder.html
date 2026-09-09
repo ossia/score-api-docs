@@ -124,7 +124,7 @@ Inheritance diagram for score::gfx::V210ComputeEncoder:</div>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute-shader RGBA -&gt; v210 encoder targeting an external SSBO. </p>
-<p>Unlike the fragment <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html" title="Cross-backend RGBA -&gt; v210 encoder.">V210Encoder</a>, this writes directly to a caller-owned QRhiBuffer (Storage). Designed for the AJA tier-3 path: the buffer is backed by a SHARED, CUDA-importable, AJA-DMA-locked GPU allocation, so the encoder's writes ARE the bytes AJA P2P-DMAs to the card. Zero intermediate copies, zero CUDA-side conversion.</p>
+<p>Unlike the fragment <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html" title="Cross-backend RGBA -&gt; v210 encoder.">V210Encoder</a>, this writes directly to a caller-owned QRhiBuffer (Storage). Designed for the AJA zero-copy output path: the buffer is backed by a SHARED, CUDA-importable, AJA-DMA-locked GPU allocation, so the encoder's writes ARE the bytes AJA P2P-DMAs to the card. Zero intermediate copies, zero CUDA-side conversion.</p>
 <p>Each compute thread handles one 6-pixel v210 group: reads 6 RGBA pixels, applies the colour matrix from %1, averages chroma pairs, packs the four 32-bit v210 words, writes 4 ULWords to the SSBO.</p>
 <p>Constraints:</p><ul>
 <li>Source width must be a multiple of 6 (1920, 3840, 7680).</li>

@@ -120,7 +120,29 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a8e9b06342887e1bcbdb0238521bf7ee0" id="r_a8e9b06342887e1bcbdb0238521bf7ee0"><td class="memItemLeft" align="right" valign="top"><a id="a8e9b06342887e1bcbdb0238521bf7ee0" name="a8e9b06342887e1bcbdb0238521bf7ee0"></a>
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onResize</b></td></tr>
 <tr class="separator:a8e9b06342887e1bcbdb0238521bf7ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17da6d8db375c5d9aa51d8d95479f88" id="r_aa17da6d8db375c5d9aa51d8d95479f88"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">onReleaseRenderList</a></td></tr>
+<tr class="memdesc:aa17da6d8db375c5d9aa51d8d95479f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask the owning <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> to release + deregister the <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> that was built against this output's QRhi.  <br /></td></tr>
+<tr class="separator:aa17da6d8db375c5d9aa51d8d95479f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa17da6d8db375c5d9aa51d8d95479f88" name="aa17da6d8db375c5d9aa51d8d95479f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa17da6d8db375c5d9aa51d8d95479f88">&#9670;&#160;</a></span>onReleaseRenderList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; score::gfx::OutputConfiguration::onReleaseRenderList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ask the owning <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> to release + deregister the <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> that was built against this output's QRhi. </p>
+<p>An output that tears its own device down outside of <a class="el" href="structscore_1_1gfx_1_1_graph.html#a17a55c3427949d59d752108e3da2f0f3" title="Free the render list of an output node if any.">Graph::destroyOutputRenderList</a> / ~Graph (a live swapchain-flag or -format toggle) MUST call this first, otherwise the <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> keeps a std::shared_ptr&lt;RenderList&gt; full of QRhiResources whose QRhi has been <code>delete</code>d — and the next <code>renderer-&gt;release()</code> dereferences it.</p>
+<p>Null when the output was created outside a <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_output_node_8hpp_source.html">OutputNode.hpp</a></li>
 </ul>

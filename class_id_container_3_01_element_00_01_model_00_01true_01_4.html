@@ -191,8 +191,7 @@ std::vector&lt; Element * &gt;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a5edbc569fbc479daf17f95f013018233" id="r_a5edbc569fbc479daf17f95f013018233"><td class="memItemLeft" align="right" valign="top"><a id="a5edbc569fbc479daf17f95f013018233" name="a5edbc569fbc479daf17f95f013018233"></a>
 <a class="el" href="classscore_1_1_indirect_container.html">score::IndirectContainer</a>&lt; Element &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>as_indirect_vec</b> () const INLINE_EXPORT</td></tr>
 <tr class="separator:a5edbc569fbc479daf17f95f013018233"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9a17af19fd958413a2f45d05da52af9" id="r_aa9a17af19fd958413a2f45d05da52af9"><td class="memItemLeft" align="right" valign="top"><a id="aa9a17af19fd958413a2f45d05da52af9" name="aa9a17af19fd958413a2f45d05da52af9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (value_type *t) INLINE_EXPORT</td></tr>
+<tr class="memitem:aa9a17af19fd958413a2f45d05da52af9" id="r_aa9a17af19fd958413a2f45d05da52af9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_id_container_3_01_element_00_01_model_00_01true_01_4.html#aa9a17af19fd958413a2f45d05da52af9">insert</a> (value_type *t) INLINE_EXPORT</td></tr>
 <tr class="separator:aa9a17af19fd958413a2f45d05da52af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c79b57b07a051b3789b53092dce4db" id="r_a10c79b57b07a051b3789b53092dce4db"><td class="memItemLeft" align="right" valign="top"><a id="a10c79b57b07a051b3789b53092dce4db" name="a10c79b57b07a051b3789b53092dce4db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (typename map_t::iterator it) INLINE_EXPORT</td></tr>
@@ -222,6 +221,36 @@ map_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_map</b></td></tr>
 order_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_order</b></td></tr>
 <tr class="separator:a3a2497bf4812bbb050609c1482af47c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa9a17af19fd958413a2f45d05da52af9" name="aa9a17af19fd958413a2f45d05da52af9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a17af19fd958413a2f45d05da52af9">&#9670;&#160;</a></span>insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Element , typename Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_id_container.html">IdContainer</a>&lt; Element, Model, true &gt;::insert </td>
+          <td>(</td>
+          <td class="paramtype">value_type *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Appends. This container's whole purpose is that iteration order is stable and meaningful, and every serializer writes it front-to-back and reads it back with <a class="el" href="class_id_container_3_01_element_00_01_model_00_01true_01_4.html#aa9a17af19fd958413a2f45d05da52af9">insert()</a> in the order it read. Inserting at the FRONT instead would reverse that order on every load, so save -&gt; load -&gt; save would oscillate and never reach a byte fixed point. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_identified_object_map_8hpp_source.html">IdentifiedObjectMap.hpp</a></li>
 </ul>

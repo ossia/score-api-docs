@@ -2,9 +2,20 @@ var searchData=
 [
   ['page_0',['page',['../struct_process_1_1_control_page.html#a5d260de8ad913ea06b18d731caa2fabe',1,'Process::ControlPage']]],
   ['pagecount_1',['pageCount',['../struct_process_1_1_control_page.html#aca8f6ea8aa9d8f04fed39ed651d16644',1,'Process::ControlPage']]],
-  ['parents_2',['parents',['../struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15',1,'Explorer::SelectedNodes::parents'],['../struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831',1,'Scenario::SelectedNodes::parents']]],
-  ['path_3',['path',['../structscore_1_1_document_template.html#a4f0c9d3c39042c83c6f2199552ebf515',1,'score::DocumentTemplate::path'],['../struct_process_1_1_external_file_ref.html#af01eedaa60dae41d7b3dd3c417ae5209',1,'Process::ExternalFileRef::path']]],
-  ['pathslabel_4',['pathsLabel',['../struct_media_1_1_settings_1_1_plugin_tab_spec.html#a7a02d46c225e05209032d540efd99306',1,'Media::Settings::PluginTabSpec']]],
-  ['preferredstridealignment_5',['preferredStrideAlignment',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a0db3f5172fd709bd12754491b892b524',1,'score::gfx::interop::VideoPixelFormatInfo']]],
-  ['processes_6',['processes',['../class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030',1,'Scenario::IntervalModel']]]
+  ['params_2',['params',['../structscore_1_1gfx_1_1_capture_material_u_b_o.html#a15d369e841464aa3a0c3ef2bd0a1d15b',1,'score::gfx::CaptureMaterialUBO']]],
+  ['parents_3',['parents',['../struct_explorer_1_1_selected_nodes.html#a0015ee94bbf39be77cee2942759bcc15',1,'Explorer::SelectedNodes::parents'],['../struct_scenario_1_1_selected_nodes.html#a619183b1416115fdeda3b645ab7b8831',1,'Scenario::SelectedNodes::parents']]],
+  ['path_4',['path',['../structscore_1_1_document_template.html#a4f0c9d3c39042c83c6f2199552ebf515',1,'score::DocumentTemplate::path'],['../struct_process_1_1_external_file_ref.html#af01eedaa60dae41d7b3dd3c417ae5209',1,'Process::ExternalFileRef::path']]],
+  ['pathslabel_5',['pathsLabel',['../struct_media_1_1_settings_1_1_plugin_tab_spec.html#a7a02d46c225e05209032d540efd99306',1,'Media::Settings::PluginTabSpec']]],
+  ['pendingfinish_6',['pendingFinish',['../structscore_1_1gfx_1_1_readback_target.html#afddbae244065513ee2e8123d506c5e32',1,'score::gfx::ReadbackTarget']]],
+  ['pendingoffset_7',['pendingOffset',['../structscore_1_1gfx_1_1_readback_target.html#a01ba0977ee82c59ebc5f76de7d3da5a9',1,'score::gfx::ReadbackTarget']]],
+  ['persistent_8',['persistent',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a16f437bcd4dbe1f050c57145dae185c5',1,'score::gfx::GraphicsStorageImage::persistent'],['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a565c16df69518d35acd88ff697f291d8',1,'score::gfx::GraphicsSSBO::persistent']]],
+  ['pinnedmemory_9',['pinnedMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#aa7efb83bceb60ab57685ccc0c69004f8',1,'score::gfx::interop::AmdGlExtensions']]],
+  ['planecount_10',['planeCount',['../structscore_1_1gfx_1_1interop_1_1_borrowed_host_buffer.html#aa76088d7540e17297d963b0a21cc12d3',1,'score::gfx::interop::BorrowedHostBuffer']]],
+  ['planes_11',['planes',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#a307707575ee2f4b97414aa62f5691a81',1,'score::gfx::interop::CpuStagedVideoOutputConfig::planes'],['../structscore_1_1gfx_1_1interop_1_1_video_capture_strategy_config.html#a65d480848e8d06404fc69b1162882e75',1,'score::gfx::interop::VideoCaptureStrategyConfig::planes']]],
+  ['possiblecrtcs_12',['possibleCrtcs',['../structscore_1_1gfx_1_1drm_1_1_plane_info.html#a0effdda8a55b27bef1a302d71051110f',1,'score::gfx::drm::PlaneInfo']]],
+  ['prefergpudownload_13',['preferGpuDownload',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#a6faca905363d128a7ccf7fbfc746b47a',1,'score::gfx::interop::CpuStagedVideoOutputConfig']]],
+  ['preferredstridealignment_14',['preferredStrideAlignment',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a0db3f5172fd709bd12754491b892b524',1,'score::gfx::interop::VideoPixelFormatInfo']]],
+  ['prev_15',['prev',['../structscore_1_1gfx_1_1_graphics_storage_image.html#afbf11a73a3bdd9b80f00df69bc3b0998',1,'score::gfx::GraphicsStorageImage']]],
+  ['prev_5fbinding_16',['prev_binding',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a7f7fcebebf499e39b3cc756a7442629c',1,'score::gfx::GraphicsSSBO::prev_binding'],['../structscore_1_1gfx_1_1_graphics_storage_image.html#aa0045a5e3ee381a14cad166bbafcd401',1,'score::gfx::GraphicsStorageImage::prev_binding']]],
+  ['processes_17',['processes',['../class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030',1,'Scenario::IntervalModel']]]
 ];

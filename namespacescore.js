@@ -403,6 +403,7 @@ var namespacescore =
     [ "sanitizeFileName", "namespacescore.html#a6a32726edd1c4bc9d6dd5aaa1ee5df6f", null ],
     [ "setCursor", "namespacescore.html#a46a7481be6eff1dfcfe2f4472bbf2e3f", null ],
     [ "setItemViewDragPixmap", "namespacescore.html#ab11dec7313a08388192b2259f2b50e62", null ],
+    [ "setupDefaultOpenGLFormat", "namespacescore.html#ad7a6d8d6e96eda1c09013deb90ea06a3", null ],
     [ "showTypeInBox", "namespacescore.html#aa035328c34d69d642498dd0c41fb2e99", null ],
     [ "summarizeZipArchive", "namespacescore.html#afc351c3fc4494a184220b18c43190f37", null ],
     [ "thirdPartyLicenses", "namespacescore.html#a7d1d782096712932a98d701de7ec7b1e", null ],

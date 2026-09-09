@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['value_0',['value',['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port']]],
-  ['vector_5fgui_1',['vector_gui',['../structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33',1,'score::ApplicationSettings']]],
-  ['vel_2',['vel',['../structavnd__tools_1_1_entity_to_midi_1_1synth__state.html#ada7d7986dc30c7873e8ef0e65ddbb8ed',1,'avnd_tools::EntityToMidi::synth_state']]],
-  ['version_3',['version',['../struct_protocols_1_1_c_a_n_1_1_database.html#acdbc456adcfb8ede49ea77c3646c308d',1,'Protocols::CAN::Database']]],
-  ['vertex_5fshader_4',['vertex_shader',['../structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a11a2d1f81e65910fcbf612b5e87c1e97',1,'score::gfx::GPUVideoEncoder']]],
-  ['verticalsubsampling_5',['verticalSubsampling',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a1d52eeedce8611e6327a56c639c86765',1,'score::gfx::interop::VideoPixelFormatInfo']]]
+  ['ui_0',['ui',['../structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b',1,'score::ApplicationSettings']]],
+  ['uieventrate_1',['uiEventRate',['../structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a',1,'score::ApplicationSettings']]],
+  ['universalplanes_2',['universalPlanes',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#acd5d5094e6aac76534dd84cc422cd82a',1,'score::gfx::drm::DeviceInfo']]],
+  ['usedrange_3',['usedRange',['../struct_process_1_1_external_file_ref.html#a0b8a82354d3bd272b811093f7539e026',1,'Process::ExternalFileRef']]],
+  ['usekindsubfolders_4',['useKindSubfolders',['../structscore_1_1_consolidate_options.html#a405da0ee41befe58ac354cd491e74539',1,'score::ConsolidateOptions']]]
 ];
