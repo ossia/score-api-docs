@@ -143,8 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcc144c193f749c6adfff73a185a0ef6" id="r_afcc144c193f749c6adfff73a185a0ef6"><td class="memItemLeft" align="right" valign="top"><a id="afcc144c193f749c6adfff73a185a0ef6" name="afcc144c193f749c6adfff73a185a0ef6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (<a class="el" href="structscore_1_1gfx_1_1_timings.html">Timings</a> tk)</td></tr>
 <tr class="separator:afcc144c193f749c6adfff73a185a0ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb04418b3cfa2ba79d9789c4d8e913e1" id="r_acb04418b3cfa2ba79d9789c4d8e913e1"><td class="memItemLeft" align="right" valign="top"><a id="acb04418b3cfa2ba79d9789c4d8e913e1" name="acb04418b3cfa2ba79d9789c4d8e913e1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::value &amp;v)</td></tr>
+<tr class="memitem:acb04418b3cfa2ba79d9789c4d8e913e1" id="r_acb04418b3cfa2ba79d9789c4d8e913e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#acb04418b3cfa2ba79d9789c4d8e913e1">process</a> (int32_t port, const ossia::value &amp;v)</td></tr>
 <tr class="separator:acb04418b3cfa2ba79d9789c4d8e913e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4461f30294e2664993ae76b47caf0ac9" id="r_a4461f30294e2664993ae76b47caf0ac9"><td class="memItemLeft" align="right" valign="top"><a id="a4461f30294e2664993ae76b47caf0ac9" name="a4461f30294e2664993ae76b47caf0ac9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::audio_vector &amp;v)</td></tr>
@@ -260,8 +259,47 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresDepth</b> {}<
 <tr class="separator:a83182f75a9d0d9745e241df697965549 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acb04418b3cfa2ba79d9789c4d8e913e1" name="acb04418b3cfa2ba79d9789c4d8e913e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb04418b3cfa2ba79d9789c4d8e913e1">&#9670;&#160;</a></span>process() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::ProcessNode::process </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Take what the list supplies and leave the rest of the uniform alone.</p>
+<p>ossia::convert&lt;vec4f&gt;(list) starts from a zeroed vector and fills the components the list has, so three floats arriving at a four-component uniform wrote a zero into the fourth. On a colour that is alpha, and the shape went black: an OSC address carrying rgb, or anything else that sends a colour without its alpha. A cable did not show it because it carries all four.</p>
+<p>Leaving the missing components untouched is also the right answer for a non-colour uniform: a partial update should not silently zero what it did not mention.</p>
+
+</div>
+</div>
 <a id="acac03f2e76d8ab63548bab3fac5968a3" name="acac03f2e76d8ab63548bab3fac5968a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac03f2e76d8ab63548bab3fac5968a3">&#9670;&#160;</a></span>process() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acac03f2e76d8ab63548bab3fac5968a3">&#9670;&#160;</a></span>process() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +331,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresDepth</b> {}<
 </div>
 </div>
 <a id="a7c97ba4a1eb26e9ca18df2e4cb45453b" name="a7c97ba4a1eb26e9ca18df2e4cb45453b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c97ba4a1eb26e9ca18df2e4cb45453b">&#9670;&#160;</a></span>process() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c97ba4a1eb26e9ca18df2e4cb45453b">&#9670;&#160;</a></span>process() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

@@ -5,13 +5,14 @@ var searchData=
   ['watching_2',['watching',['../class_ongoing_command_dispatcher.html#abea9ce63d1d9e214d5208f877a20568c',1,'OngoingCommandDispatcher']]],
   ['watchsceneinputmethod_3',['watchSceneInputMethod',['../namespacescore.html#aef4d345fb028b5062609d81fb438e2ce',1,'score']]],
   ['widget_4',['widget',['../classscore_1_1_document_view.html#a1246e6f580d3c6cf06b95a2c356255c3',1,'score::DocumentView::widget()'],['../classscore_1_1_messages_panel_delegate.html#ab16dc8216d020331a03478b276c80576',1,'score::MessagesPanelDelegate::widget()'],['../classscore_1_1_helper_panel_delegate.html#a4e9304df762625b6ebf465871c7a5886',1,'score::HelperPanelDelegate::widget()'],['../classscore_1_1_panel_delegate.html#a09ba76692fb54bf01887107aa6fbea93',1,'score::PanelDelegate::widget()'],['../class_explorer_1_1_panel_delegate.html#ab5f39ddecf99252e7e3ab77338a56efc',1,'Explorer::PanelDelegate::widget()'],['../class_mixer_1_1_panel_delegate.html#acdd57aaa4a7bec2ffe656476c192db80',1,'Mixer::PanelDelegate::widget()']]],
-  ['width_5',['width',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a6d6b372a57a66f7e097a586c3c835cfc',1,'score::gfx::DirectVideoOutputBackend::width()'],['../structscore_1_1gfx_1_1_d_m_a_capture_backend.html#a4996808748d44501dc724a9866762f52',1,'score::gfx::DMACaptureBackend::width()']]],
-  ['wirecomputesupports_6',['wireComputeSupports',['../namespacescore_1_1gfx.html#ad82cadd1e21eb91cda266bb29fc9392b',1,'score::gfx']]],
-  ['wireformat_7',['wireFormat',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55',1,'score::gfx::DirectVideoOutputBackend']]],
-  ['wrapnativetexture_8',['wrapNativeTexture',['../_a_v_h_w_frame_to_q_rhi_8hpp.html#af88e15fb3cb37c4215bbbc02d8487dad',1,'score::gfx::interop']]],
-  ['write_9',['write',['../class_data_stream_writer.html#a0b10a4e412ae08395c87b5f63a4f02d6',1,'DataStreamWriter']]],
-  ['writebackcapture_10',['writebackCapture',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html#a7e3948af3604d3a2c3f22ae76939bc97',1,'score::gfx::drm::KmsDevice']]],
-  ['writegraphviz_11',['writeGraphviz',['../struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73',1,'Scenario::TimenodeGraph']]],
-  ['writeindex_12',['writeIndex',['../classscore_1_1gfx_1_1interop_1_1_host_pinned_ring.html#abdaf2b1cb0078c58f9e22797de44e9bd',1,'score::gfx::interop::HostPinnedRing']]],
-  ['writeziparchive_13',['writeZipArchive',['../namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef',1,'score']]]
+  ['width_5',['width',['../structscore_1_1gfx_1_1_d_m_a_capture_backend.html#a4996808748d44501dc724a9866762f52',1,'score::gfx::DMACaptureBackend::width()'],['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a6d6b372a57a66f7e097a586c3c835cfc',1,'score::gfx::DirectVideoOutputBackend::width()']]],
+  ['windowpositionforsource_6',['windowPositionForSource',['../namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9',1,'Gfx']]],
+  ['wirecomputesupports_7',['wireComputeSupports',['../namespacescore_1_1gfx.html#ad82cadd1e21eb91cda266bb29fc9392b',1,'score::gfx']]],
+  ['wireformat_8',['wireFormat',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55',1,'score::gfx::DirectVideoOutputBackend']]],
+  ['wrapnativetexture_9',['wrapNativeTexture',['../_a_v_h_w_frame_to_q_rhi_8hpp.html#af88e15fb3cb37c4215bbbc02d8487dad',1,'score::gfx::interop']]],
+  ['write_10',['write',['../class_data_stream_writer.html#a0b10a4e412ae08395c87b5f63a4f02d6',1,'DataStreamWriter']]],
+  ['writebackcapture_11',['writebackCapture',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html#a7e3948af3604d3a2c3f22ae76939bc97',1,'score::gfx::drm::KmsDevice']]],
+  ['writegraphviz_12',['writeGraphviz',['../struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73',1,'Scenario::TimenodeGraph']]],
+  ['writeindex_13',['writeIndex',['../classscore_1_1gfx_1_1interop_1_1_host_pinned_ring.html#abdaf2b1cb0078c58f9e22797de44e9bd',1,'score::gfx::interop::HostPinnedRing']]],
+  ['writeziparchive_14',['writeZipArchive',['../namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef',1,'score']]]
 ];

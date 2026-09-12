@@ -35,5 +35,6 @@ var dir_f8299ef4164e854b5e2248e47e6641c2 =
     [ "Smooth_v2.hpp", "_smooth__v2_8hpp_source.html", null ],
     [ "TestNode.hpp", "_test_node_8hpp_source.html", null ],
     [ "Types.hpp", "_types_8hpp_source.html", null ],
-    [ "VelToNote.hpp", "_vel_to_note_8hpp_source.html", null ]
+    [ "VelToNote.hpp", "_vel_to_note_8hpp_source.html", null ],
+    [ "VelToNoteCore.hpp", "_vel_to_note_core_8hpp_source.html", null ]
 ];

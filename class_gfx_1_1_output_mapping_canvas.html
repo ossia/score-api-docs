@@ -149,6 +149,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>snapEnabled</b> () co
 <tr class="memitem:a585a25876645d3fa72941a030b81891e" id="r_a585a25876645d3fa72941a030b81891e"><td class="memItemLeft" align="right" valign="top"><a id="a585a25876645d3fa72941a030b81891e" name="a585a25876645d3fa72941a030b81891e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSnapEnabled</b> (bool enabled)</td></tr>
 <tr class="separator:a585a25876645d3fa72941a030b81891e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f3c93be6f34d3c234881aa1e528fe14" id="r_a3f3c93be6f34d3c234881aa1e528fe14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_output_mapping_canvas.html#a3f3c93be6f34d3c234881aa1e528fe14">lockToBorderEnabled</a> () const noexcept</td></tr>
+<tr class="separator:a3f3c93be6f34d3c234881aa1e528fe14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce4e7fdfb27e9b3cb44e09038e4030f" id="r_a6ce4e7fdfb27e9b3cb44e09038e4030f"><td class="memItemLeft" align="right" valign="top"><a id="a6ce4e7fdfb27e9b3cb44e09038e4030f" name="a6ce4e7fdfb27e9b3cb44e09038e4030f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLockToBorderEnabled</b> (bool enabled)</td></tr>
+<tr class="separator:a6ce4e7fdfb27e9b3cb44e09038e4030f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0742b013fe3fc2f9a9472010c67e450" id="r_ab0742b013fe3fc2f9a9472010c67e450"><td class="memItemLeft" align="right" valign="top"><a id="ab0742b013fe3fc2f9a9472010c67e450" name="ab0742b013fe3fc2f9a9472010c67e450"></a>
 QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>snapPosition</b> (const <a class="el" href="class_gfx_1_1_output_mapping_item.html">OutputMappingItem</a> *item, QPointF proposedPos) const</td></tr>
 <tr class="separator:ab0742b013fe3fc2f9a9472010c67e450"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +203,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
 <tr class="separator:a7775207d604e94faeda5e6fc87588f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3f3c93be6f34d3c234881aa1e528fe14" name="a3f3c93be6f34d3c234881aa1e528fe14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3c93be6f34d3c234881aa1e528fe14">&#9670;&#160;</a></span>lockToBorderEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gfx::OutputMappingCanvas::lockToBorderEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether an output quad is kept inside the canvas. Off, it may be dragged before (0,0) and past (1,1) &ndash; a projector aimed outside the source image, or a window that overhangs the desktop. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_output_mapping_8hpp_source.html">OutputMapping.hpp</a></li>
 <li><b>OutputMapping.cpp</b></li>

@@ -131,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55d05b3d2828c0ae42ad5f18c467664c" id="r_a55d05b3d2828c0ae42ad5f18c467664c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_state_1_1_unit.html">State::Unit</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_h_s_v_slider.html#a55d05b3d2828c0ae42ad5f18c467664c">unit</a> () const noexcept override</td></tr>
 <tr class="memdesc:a55d05b3d2828c0ae42ad5f18c467664c"><td class="mdescLeft">&#160;</td><td class="mdescRight">rgba, however the port was constructed.  <br /></td></tr>
 <tr class="separator:a55d05b3d2828c0ae42ad5f18c467664c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c783b5884482bee0755d9d31f2d5ad0" id="r_a6c783b5884482bee0755d9d31f2d5ad0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_h_s_v_slider.html#a6c783b5884482bee0755d9d31f2d5ad0">setupExecution</a> (ossia::inlet &amp;inl, QObject *exec_context) const noexcept override</td></tr>
+<tr class="separator:a6c783b5884482bee0755d9d31f2d5ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850fbc2e8042aca42db8a32f786ceac1" id="r_a850fbc2e8042aca42db8a32f786ceac1"><td class="memItemLeft" align="right" valign="top"><a id="a850fbc2e8042aca42db8a32f786ceac1" name="a850fbc2e8042aca42db8a32f786ceac1"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>getMin</b> () const noexcept</td></tr>
 <tr class="separator:a850fbc2e8042aca42db8a32f786ceac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +202,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setDomain</b> (const 
 &#160;</td><td class="memItemRight" valign="bottom"><b>~Inlet</b> () override</td></tr>
 <tr class="memdesc:a315587176925d348673adf5af2db73e7 inherit pub_methods_class_process_1_1_inlet"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_process_1_1_inlet.html">Inlet</a>. <br /></td></tr>
 <tr class="separator:a315587176925d348673adf5af2db73e7 inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee4f1d024e2974034ab4fb6907ba17d inherit pub_methods_class_process_1_1_inlet" id="r_a7ee4f1d024e2974034ab4fb6907ba17d"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setupExecution</b> (ossia::inlet &amp;, QObject *exec_context) const noexcept</td></tr>
-<tr class="separator:a7ee4f1d024e2974034ab4fb6907ba17d inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39be5d2b8d7e7feb9e8d2af3b52ee138 inherit pub_methods_class_process_1_1_inlet" id="r_a39be5d2b8d7e7feb9e8d2af3b52ee138"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forChildInlets</b> (const smallfun::function&lt; void(<a class="el" href="class_process_1_1_inlet.html">Inlet</a> &amp;)&gt; &amp;) const noexcept</td></tr>
 <tr class="separator:a39be5d2b8d7e7feb9e8d2af3b52ee138 inherit pub_methods_class_process_1_1_inlet"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,6 +425,44 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 <tr class="separator:a76690c936af3f44b0f810b7851ba38c4 inherit pro_attribs_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6c783b5884482bee0755d9d31f2d5ad0" name="a6c783b5884482bee0755d9d31f2d5ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c783b5884482bee0755d9d31f2d5ad0">&#9670;&#160;</a></span>setupExecution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::HSVSlider::setupExecution </td>
+          <td>(</td>
+          <td class="paramtype">ossia::inlet &amp;&#160;</td>
+          <td class="paramname"><em>inl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>exec_context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a>.</p>
+
+</div>
+</div>
 <a id="a55d05b3d2828c0ae42ad5f18c467664c" name="a55d05b3d2828c0ae42ad5f18c467664c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55d05b3d2828c0ae42ad5f18c467664c">&#9670;&#160;</a></span>unit()</h2>
 

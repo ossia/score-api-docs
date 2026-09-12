@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_metro_8hpp_source.html":[13,0,0,2,16,0,22],
 "_metro_commands_8hpp_source.html":[13,0,0,2,24,0,4,0],
 "_metro_executor_8hpp_source.html":[13,0,0,2,24,0,4,1],
 "_metro_factory_8hpp_source.html":[13,0,0,2,24,0,4,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_process_focus_manager_8hpp_source.html":[13,0,0,2,32,4,3,7,6],
 "_process_inspector_widget_delegate_8hpp_source.html":[13,0,0,2,3,4,7,0],
 "_process_inspector_widget_delegate_factory_8hpp_source.html":[13,0,0,2,3,4,7,1],
-"_process_list_8hpp_source.html":[13,0,0,2,3,4,46],
-"_process_mime_serialization_8hpp_source.html":[13,0,0,2,3,4,48]
+"_process_list_8hpp_source.html":[13,0,0,2,3,4,46]
 };

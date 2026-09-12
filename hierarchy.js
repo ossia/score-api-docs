@@ -206,11 +206,13 @@ var hierarchy =
     [ "gpp::qrhi::DefaultPipeline::layout::bindings", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1bindings.html", null ],
     [ "score::gfx::BitField", "structscore_1_1gfx_1_1_bit_field.html", null ],
     [ "Protocols::BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
+    [ "Nodes::PulseToNote::detail::Block", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_block.html", null ],
     [ "std::bool_constant", null, [
       [ "oscr::controller_needs_factory< avnd::field_reflection< N, Field > >", "structoscr_1_1controller__needs__factory_3_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html", null ]
     ] ],
     [ "score::gfx::interop::BorrowedHostBuffer", "structscore_1_1gfx_1_1interop_1_1_borrowed_host_buffer.html", null ],
     [ "score::gfx::interop::BorrowedSlotTracker", "structscore_1_1gfx_1_1interop_1_1_borrowed_slot_tracker.html", null ],
+    [ "Nodes::PulseToNote::detail::Bound", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_bound.html", null ],
     [ "avnd_tools::detail::bounds_checker< Dim >", "structavnd__tools_1_1detail_1_1bounds__checker.html", null ],
     [ "Recording::Box", "struct_recording_1_1_box.html", null ],
     [ "score::Brush", "structscore_1_1_brush.html", null ],
@@ -786,6 +788,7 @@ var hierarchy =
     ] ],
     [ "Gfx::AssetTable::DecodedAsset", "struct_gfx_1_1_asset_table_1_1_decoded_asset.html", null ],
     [ "score::gfx::DecodedImage", "structscore_1_1gfx_1_1_decoded_image.html", null ],
+    [ "Nodes::PulseToNote::detail::DecodedNote", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_decoded_note.html", null ],
     [ "Video::DecoderConfiguration", "struct_video_1_1_decoder_configuration.html", null ],
     [ "Media::DecodingSetup", "struct_media_1_1_decoding_setup.html", null ],
     [ "boost::default_dfs_visitor", null, [
@@ -934,6 +937,7 @@ var hierarchy =
     [ "score::EnableWhenSelectionContains< T >", "classscore_1_1_enable_when_selection_contains.html", null ],
     [ "Scenario::EncapsData", "struct_scenario_1_1_encaps_data.html", null ],
     [ "Scenario::EndDateComparator", "struct_scenario_1_1_end_date_comparator.html", null ],
+    [ "Nodes::PulseToNote::detail::Engine< MaxVoices, MaxInputs >", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_engine.html", null ],
     [ "avnd_tools::entity_descriptors", "structavnd__tools_1_1entity__descriptors.html", null ],
     [ "score::EntityList< T >", "classscore_1_1_entity_list.html", null ],
     [ "score::EntityMap< T, Ordered >", "classscore_1_1_entity_map.html", null ],
@@ -1321,6 +1325,7 @@ var hierarchy =
     [ "score::gfx::GraphicsStorageResources", "structscore_1_1gfx_1_1_graphics_storage_resources.html", null ],
     [ "score::gfx::GraphicsUBO", "structscore_1_1gfx_1_1_graphics_u_b_o.html", null ],
     [ "score::PluginLoader::PluginDependencyGraph::GraphVertex", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html", null ],
+    [ "Nodes::PulseToNote::detail::Grid", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_grid.html", null ],
     [ "score::GridWidget< T >", "structscore_1_1_grid_widget.html", null ],
     [ "Gfx::GStreamer::gstreamer_pipeline", "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline.html", null ],
     [ "Gfx::GStreamer::GStreamerSettings", "struct_gfx_1_1_g_streamer_1_1_g_streamer_settings.html", null ],
@@ -1446,8 +1451,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1495,8 +1500,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2284,6 +2289,7 @@ var hierarchy =
     ] ],
     [ "Execution::MetronomeSounds", "struct_execution_1_1_metronome_sounds.html", null ],
     [ "Protocols::Settings::MidiAPI", "struct_protocols_1_1_settings_1_1_midi_a_p_i.html", null ],
+    [ "Nodes::PulseToNote::detail::MidiEvent", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_midi_event.html", null ],
     [ "oscr::MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", null ],
     [ "JS::MidiMessage", "class_j_s_1_1_midi_message.html", null ],
     [ "Midi::MidiTrack::MidiSong", "struct_midi_1_1_midi_track_1_1_midi_song.html", null ],
@@ -2442,15 +2448,14 @@ var hierarchy =
     ] ],
     [ "oscr::NormalizerFromMapper< Field >", "structoscr_1_1_normalizer_from_mapper.html", null ],
     [ "Nodes::MidiUtil::Node::Note", "struct_nodes_1_1_midi_util_1_1_node_1_1_note.html", null ],
-    [ "Nodes::PulseToNote::Node::Note", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note.html", null ],
     [ "Nodes::Quantifier::Node::Note", "struct_nodes_1_1_quantifier_1_1_node_1_1_note.html", null ],
     [ "Ui::MidiDisplay::Node::Layer::Note", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_note.html", null ],
     [ "Midi::NoteComparator", "struct_midi_1_1_note_comparator.html", null ],
     [ "Midi::NoteData", "struct_midi_1_1_note_data.html", null ],
-    [ "Nodes::PulseToNote::Node::NoteIn", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_note_in.html", null ],
     [ "Nodes::Quantifier::Node::NoteIn", "struct_nodes_1_1_quantifier_1_1_node_1_1_note_in.html", null ],
     [ "FactorOracle2MIDI::Notes", "class_factor_oracle2_m_i_d_i_1_1_notes.html", null ],
     [ "Curve::Element::Nothing_tag", "struct_curve_1_1_element_1_1_nothing__tag.html", null ],
+    [ "Nodes::PulseToNote::detail::NumericValue", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_numeric_value.html", null ],
     [ "NvDvpContext_t", "struct_nv_dvp_context__t.html", null ],
     [ "ObjectIdentifier", "class_object_identifier.html", null ],
     [ "ObjectKey_k", "class_object_key__k.html", null ],
@@ -4464,6 +4469,7 @@ var hierarchy =
       [ "Media::AudioFile::SndfileReader", "struct_media_1_1_audio_file_1_1_sndfile_reader.html", null ]
     ] ],
     [ "Media::AudioFile::RAMView", "struct_media_1_1_audio_file_1_1_r_a_m_view.html", null ],
+    [ "Nodes::PulseToNote::detail::Random", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_random.html", null ],
     [ "score::random_id_generator", "structscore_1_1random__id__generator.html", null ],
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
     [ "Nodes::Arpeggiator::Arpeggios::range", "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html", null ],
@@ -4612,12 +4618,14 @@ var hierarchy =
     [ "Curve::SetSegmentParametersCommandObject", "class_curve_1_1_set_segment_parameters_command_object.html", null ],
     [ "avnd_tools::Deserialize::ui::Settings", "structavnd__tools_1_1_deserialize_1_1ui_1_1_settings.html", null ],
     [ "avnd_tools::Serialize::ui::Settings", "structavnd__tools_1_1_serialize_1_1ui_1_1_settings.html", null ],
+    [ "Nodes::PulseToNote::detail::Settings", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_settings.html", null ],
     [ "score::Settings", "classscore_1_1_settings.html", null ],
     [ "score::SettingsCommandBase", "classscore_1_1_settings_command_base.html", [
       [ "score::SettingsCommand< T >", "classscore_1_1_settings_command.html", null ]
     ] ],
     [ "score::SettingsCommandDispatcher", "classscore_1_1_settings_command_dispatcher.html", null ],
     [ "score::SettingsParameterMetadata< Parameter >", "structscore_1_1_settings_parameter_metadata.html", null ],
+    [ "Nodes::PulseToNote::Node::Setup", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1_setup.html", null ],
     [ "oscr::setup_control_for_exec_base< Node, Field >", "structoscr_1_1setup__control__for__exec__base.html", [
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec.html", null ],
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ],
@@ -4709,6 +4717,7 @@ var hierarchy =
     [ "Scenario::StateOverlays", "struct_scenario_1_1_state_overlays.html", null ],
     [ "HierarchicalBaseScenario< Component_T, BaseScenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T >::StatePair", "struct_hierarchical_base_scenario_1_1_state_pair.html", null ],
     [ "HierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, EventComponent_T, TimeSyncComponent_T, StateComponent_T, HasOwnership >::StatePair", "struct_hierarchical_scenario_component_1_1_state_pair.html", null ],
+    [ "Nodes::PulseToNote::detail::Statistics", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_statistics.html", null ],
     [ "score::gfx::Std430TypeInfo", "structscore_1_1gfx_1_1_std430_type_info.html", null ],
     [ "mtk::MIDISyncOut::storage", "unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html", null ],
     [ "Gfx::Video::VideoProps::Stream", "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html", null ],
@@ -5044,7 +5053,6 @@ var hierarchy =
     [ "halp::val_port", null, [
       [ "Analysis::value_out", "struct_analysis_1_1value__out.html", null ]
     ] ],
-    [ "Nodes::PulseToNote::Node::val_visitor", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1val__visitor.html", null ],
     [ "avnd_tools::value_serialization::validation_writer", "structavnd__tools_1_1value__serialization_1_1validation__writer.html", null ],
     [ "jk::value", "structjk_1_1value.html", null ],
     [ "avnd_tools::PatternCombiner::value_size", "structavnd__tools_1_1_pattern_combiner_1_1value__size.html", null ],
@@ -5056,6 +5064,7 @@ var hierarchy =
     [ "score::ValueAssigner< float >", "structscore_1_1_value_assigner_3_01float_01_4.html", null ],
     [ "score::ValueAssigner< int >", "structscore_1_1_value_assigner_3_01int_01_4.html", null ],
     [ "score::ValueAssigner< ossia::value >", "structscore_1_1_value_assigner_3_01ossia_1_1value_01_4.html", null ],
+    [ "Nodes::PulseToNote::detail::ValueDecoder", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_value_decoder.html", null ],
     [ "Protocols::CAN::ValueDescription", "struct_protocols_1_1_c_a_n_1_1_value_description.html", null ],
     [ "ValueVariantDatastreamSerializer", "struct_value_variant_datastream_serializer.html", null ],
     [ "bitfocus::module_data::variable_definition", "structbitfocus_1_1module__data_1_1variable__definition.html", null ],

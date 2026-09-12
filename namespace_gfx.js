@@ -71,8 +71,8 @@ var namespace_gfx =
     [ "multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
     [ "MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
     [ "offscreen_device", "class_gfx_1_1offscreen__device.html", null ],
-    [ "OutputMapping", "struct_gfx_1_1_output_mapping.html", null ],
-    [ "OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", null ],
+    [ "OutputMapping", "struct_gfx_1_1_output_mapping.html", "struct_gfx_1_1_output_mapping" ],
+    [ "OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", "class_gfx_1_1_output_mapping_canvas" ],
     [ "OutputMappingItem", "class_gfx_1_1_output_mapping_item.html", null ],
     [ "OutputPreviewWindows", "class_gfx_1_1_output_preview_windows.html", null ],
     [ "OutputStream", "struct_gfx_1_1_output_stream.html", null ],
@@ -137,5 +137,7 @@ var namespace_gfx =
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
     [ "WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
-    [ "addControlGroup", "namespace_gfx.html#a74373eb8764903bca22079d5e5fb4797", null ]
+    [ "addControlGroup", "namespace_gfx.html#a74373eb8764903bca22079d5e5fb4797", null ],
+    [ "makeSyphonOutput", "namespace_gfx.html#a295b675353308693113a6e495af73f86", null ],
+    [ "windowPositionForSource", "namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9", null ]
 ];

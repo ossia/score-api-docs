@@ -132,13 +132,70 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>bang</b> ()</td></tr>
 <tr class="memitem:a3894bd1b733b2a3837f80effb01cdbd3" id="r_a3894bd1b733b2a3837f80effb01cdbd3"><td class="memItemLeft" align="right" valign="top"><a id="a3894bd1b733b2a3837f80effb01cdbd3" name="a3894bd1b733b2a3837f80effb01cdbd3"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>text</b> () const noexcept</td></tr>
 <tr class="separator:a3894bd1b733b2a3837f80effb01cdbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50605f69ed90a7d183fb41358fdbfa8b" id="r_a50605f69ed90a7d183fb41358fdbfa8b"><td class="memItemLeft" align="right" valign="top"><a id="a50605f69ed90a7d183fb41358fdbfa8b" name="a50605f69ed90a7d183fb41358fdbfa8b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFile</b> (const QString &amp;s)</td></tr>
-<tr class="separator:a50605f69ed90a7d183fb41358fdbfa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e400fa1dd74de1c0607d483ff32c1c" id="r_ab3e400fa1dd74de1c0607d483ff32c1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_q_graphics_waveform_button.html#ab3e400fa1dd74de1c0607d483ff32c1c">hasWaveform</a> () const noexcept</td></tr>
+<tr class="separator:ab3e400fa1dd74de1c0607d483ff32c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5391bdc2dabb25fdd152f80f654978d5" id="r_a5391bdc2dabb25fdd152f80f654978d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_q_graphics_waveform_button.html#a5391bdc2dabb25fdd152f80f654978d5">setFile</a> (const QString &amp;s, const QString &amp;absolute)</td></tr>
+<tr class="separator:a5391bdc2dabb25fdd152f80f654978d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21a5d3275b2e5cf12131c2f9e68fa789" id="r_a21a5d3275b2e5cf12131c2f9e68fa789"><td class="memItemLeft" align="right" valign="top"><a id="a21a5d3275b2e5cf12131c2f9e68fa789" name="a21a5d3275b2e5cf12131c2f9e68fa789"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
 <tr class="separator:a21a5d3275b2e5cf12131c2f9e68fa789"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3e400fa1dd74de1c0607d483ff32c1c" name="ab3e400fa1dd74de1c0607d483ff32c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e400fa1dd74de1c0607d483ff32c1c">&#9670;&#160;</a></span>hasWaveform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::QGraphicsWaveformButton::hasWaveform </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether there is a waveform to draw, as opposed to the "drop a file here" placeholder. </p>
+
+</div>
+</div>
+<a id="a5391bdc2dabb25fdd152f80f654978d5" name="a5391bdc2dabb25fdd152f80f654978d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5391bdc2dabb25fdd152f80f654978d5">&#9670;&#160;</a></span>setFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::QGraphicsWaveformButton::setFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>absolute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><code>s</code> is what the document stores and what text() returns &ndash; it may be a "&lt;PROJECT&gt;:" or document-relative path. <code>absolute</code> is the same file resolved against the document, which is the only form the audio file manager can open: its two-argument get() takes the path as it stands. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_audio_file_chooser_widget_8hpp_source.html">AudioFileChooserWidget.hpp</a></li>
 <li><b>AudioFileChooserWidget.cpp</b></li>

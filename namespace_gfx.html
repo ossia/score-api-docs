@@ -491,6 +491,8 @@ std::pair&lt; QByteArray, QString &gt;&#160;</td><td class="memItemRight" valign
 <tr class="memitem:af30637ccc8e310e740f1732b2251e38b" id="r_af30637ccc8e310e740f1732b2251e38b"><td class="memItemLeft" align="right" valign="top"><a id="af30637ccc8e310e740f1732b2251e38b" name="af30637ccc8e310e740f1732b2251e38b"></a>
 CGLContextObj&#160;</td><td class="memItemRight" valign="bottom"><b>nativeContext</b> (QRhi &amp;rhi)</td></tr>
 <tr class="separator:af30637ccc8e310e740f1732b2251e38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295b675353308693113a6e495af73f86" id="r_a295b675353308693113a6e495af73f86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#a295b675353308693113a6e495af73f86">makeSyphonOutput</a> (const <a class="el" href="struct_gfx_1_1_shared_output_settings.html">SharedOutputSettings</a> &amp;s)</td></tr>
+<tr class="separator:a295b675353308693113a6e495af73f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464b3d0798aa613ecf925921abb8dec5" id="r_a464b3d0798aa613ecf925921abb8dec5"><td class="memItemLeft" align="right" valign="top"><a id="a464b3d0798aa613ecf925921abb8dec5" name="a464b3d0798aa613ecf925921abb8dec5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MODEL_METADATA_IMPL_CPP</b> (TextureInlet)</td></tr>
 <tr class="separator:a464b3d0798aa613ecf925921abb8dec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -500,6 +502,9 @@ CGLContextObj&#160;</td><td class="memItemRight" valign="bottom"><b>nativeContex
 <tr class="memitem:aa090fc1f846dd1c99981a87ee6004b7a" id="r_aa090fc1f846dd1c99981a87ee6004b7a"><td class="memItemLeft" align="right" valign="top"><a id="aa090fc1f846dd1c99981a87ee6004b7a" name="aa090fc1f846dd1c99981a87ee6004b7a"></a>
 QImage&#160;</td><td class="memItemRight" valign="bottom"><b>renderTestCard</b> (int w, int h)</td></tr>
 <tr class="separator:aa090fc1f846dd1c99981a87ee6004b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98149f75cde599f05ee7c75a4d52cb9" id="r_ae98149f75cde599f05ee7c75a4d52cb9"><td class="memItemLeft" align="right" valign="top">QPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9">windowPositionForSource</a> (QPoint p) noexcept</td></tr>
+<tr class="memdesc:ae98149f75cde599f05ee7c75a4d52cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where to put the window of an output whose source starts at <code>p</code>.  <br /></td></tr>
+<tr class="separator:ae98149f75cde599f05ee7c75a4d52cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -559,6 +564,54 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewSchedu
 
 <p>Creates <code>&lt;parent&gt;/&lt;group&gt;/&lt;name&gt;</code> for each control. </p>
 <dl class="section return"><dt>Returns</dt><dd>the created parameters, in the order of <code>controls</code>, so the caller can push values back into them later. An entry is null when its node could not be created &ndash; a name collision, in practice. </dd></dl>
+
+</div>
+</div>
+<a id="a295b675353308693113a6e495af73f86" name="a295b675353308693113a6e495af73f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295b675353308693113a6e495af73f86">&#9670;&#160;</a></span>makeSyphonOutput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a> * Gfx::makeSyphonOutput </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_gfx_1_1_shared_output_settings.html">SharedOutputSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Headless factory for the Syphon publishing node, so a test harness can drive the real output without the <a class="el" href="namespace_device.html" title="Manipulation of Devices from Qt.">Device</a> / Document machinery &ndash; the same hook Gfx::PipeWire::makePipewireOutput provides. </p>
+
+</div>
+</div>
+<a id="ae98149f75cde599f05ee7c75a4d52cb9" name="ae98149f75cde599f05ee7c75a4d52cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98149f75cde599f05ee7c75a4d52cb9">&#9670;&#160;</a></span>windowPositionForSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPoint Gfx::windowPositionForSource </td>
+          <td>(</td>
+          <td class="paramtype">QPoint&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Where to put the window of an output whose source starts at <code>p</code>. </p>
+<p>The desktop origin is a bad place for a window: it is hard to grab by its title bar on Windows, and a tiling window manager may not map it at all &ndash; on i3 the first output window stayed invisible until it was moved by one pixel. Only that exact spot is moved; anywhere else is left alone. </p>
 
 </div>
 </div>

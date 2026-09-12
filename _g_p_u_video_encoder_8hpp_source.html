@@ -167,17 +167,22 @@ $(document).ready(function(){initNavTree('_g_p_u_video_encoder_8hpp_source.html'
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="stringliteral"></span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a0fb94d5d094c16795f37d8c21ffdd20b">  103</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a0fb94d5d094c16795f37d8c21ffdd20b">y_flip_glsl</a> = R<span class="stringliteral">&quot;_(</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="stringliteral">    vec2 flip_y(vec2 tc) {</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="stringliteral">    #if defined(QSHADER_MSL) || defined(QSHADER_HLSL)</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="stringliteral">      return tc;</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="stringliteral">    #else</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="stringliteral">      return vec2(tc.x, 1.0 - tc.y);</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="stringliteral">    #endif</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="stringliteral">    // Only OpenGL. The rest of the engine puts its geometry through</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="stringliteral">    // renderer.clipSpaceCorrMatrix, which negates Y on Vulkan; this pass draws</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="stringliteral">    // a hardcoded triangle in raw NDC and does not, so the correction it needs</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="stringliteral">    // is not the same one. Flipping on Vulkan as well handed libav, GStreamer,</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="stringliteral">    // NDI and every other consumer an upside-down picture.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="stringliteral">    #if defined(QSHADER_SPIRV) || defined(QSHADER_MSL) || defined(QSHADER_HLSL)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="stringliteral">      return tc;</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="stringliteral">    #else</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="stringliteral">      return vec2(tc.x, 1.0 - tc.y);</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="stringliteral">    #endif</span></div>
 </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="stringliteral">    }</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="stringliteral">  )_&quot;;</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="stringliteral">};</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="stringliteral">} </span><span class="comment">// namespace score::gfx</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="stringliteral">    }</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="stringliteral">  )_&quot;;</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="stringliteral">};</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="stringliteral">} </span><span class="comment">// namespace score::gfx</span></div>
 <div class="ttc" id="a_color_space_out_8hpp_html"><div class="ttname"><a href="_color_space_out_8hpp.html">ColorSpaceOut.hpp</a></div><div class="ttdoc">GPU shader generation for RGB-&gt;YUV color space conversion (output/encoding).</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_g_p_u_video_encoder_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">score::gfx::GPUVideoEncoder</a></div><div class="ttdoc">Base class for GPU-side video format conversion (RGBA to YUV).</div><div class="ttdef"><b>Definition</b> GPUVideoEncoder.hpp:30</div></div>

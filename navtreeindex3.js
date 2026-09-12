@@ -132,6 +132,7 @@ var NAVTREEINDEX3 =
 "_layer_data_8hpp_source.html":[13,0,0,2,32,4,3,5,13],
 "_layer_presenter_8hpp_source.html":[13,0,0,2,3,4,31],
 "_layer_view_8hpp_source.html":[13,0,0,2,3,4,32],
+"_learn_rollback_8hpp_source.html":[13,0,0,2,13,0,3,12],
 "_left_brace_8hpp_source.html":[13,0,0,2,32,4,3,5,2,0,1],
 "_libav_8hpp_source.html":[13,0,0,2,24,0,12],
 "_libav_device_8hpp_source.html":[13,0,0,2,17,1,7,1],
@@ -160,7 +161,7 @@ var NAVTREEINDEX3 =
 "_listening_handler_8hpp_source.html":[13,0,0,2,13,0,4,2],
 "_listening_handler_factory_8hpp_source.html":[13,0,0,2,13,0,4,3],
 "_listening_handler_factory_list_8hpp_source.html":[13,0,0,2,13,0,4,4],
-"_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,12],
+"_listening_manager_8hpp_source.html":[13,0,0,2,13,0,3,13],
 "_load_cables_8hpp_source.html":[13,0,0,2,32,0,0,3],
 "_load_device_8hpp_source.html":[13,0,0,2,13,0,0,0,1],
 "_load_preset_8hpp_source.html":[13,0,0,2,3,4,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
 "_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
 "_metadata_widget_8hpp_source.html":[13,0,0,2,32,4,6,10],
-"_metadatas_8hpp_source.html":[13,0,0,2,8,3,18],
-"_metro_8hpp_source.html":[13,0,0,2,16,0,22]
+"_metadatas_8hpp_source.html":[13,0,0,2,8,3,18]
 };

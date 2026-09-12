@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"_send_strategy_8hpp_source.html":[13,0,0,1,1,2,0,6],
 "_separator_8hpp_source.html":[13,0,0,1,1,13,24],
 "_serial_device_8hpp_source.html":[13,0,0,2,29,0,18,0],
 "_serial_info_8hpp_source.html":[13,0,0,2,29,0,18,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "_update_device_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,1],
 "_uuid_key_8hpp_source.html":[13,0,0,1,1,8,17],
 "_uuid_key_serialization_8hpp_source.html":[13,0,0,1,1,8,18],
-"_v210_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,12],
-"_v4_l2_loader_8hpp.html":[13,0,0,2,17,1,4,2,44]
+"_v210_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,12]
 };

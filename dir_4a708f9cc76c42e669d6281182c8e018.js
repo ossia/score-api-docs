@@ -12,6 +12,7 @@ var dir_4a708f9cc76c42e669d6281182c8e018 =
     [ "ExplorationWorker.hpp", "_exploration_worker_8hpp_source.html", null ],
     [ "ExplorationWorkerWrapper.hpp", "_exploration_worker_wrapper_8hpp_source.html", null ],
     [ "ExplorerModelProvider.hpp", "_explorer_model_provider_8hpp_source.html", null ],
+    [ "LearnRollback.hpp", "_learn_rollback_8hpp_source.html", null ],
     [ "ListeningManager.hpp", "_listening_manager_8hpp_source.html", null ],
     [ "ValueEditors.hpp", "_value_editors_8hpp_source.html", null ]
 ];

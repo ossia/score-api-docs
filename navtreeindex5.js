@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_process_mime_serialization_8hpp_source.html":[13,0,0,2,3,4,48],
 "_process_model_port_init_8hpp_source.html":[13,0,0,2,8,3,21],
 "_process_panel_graphics_proxy_8hpp_source.html":[13,0,0,2,3,4,13,0],
 "_process_policy_8hpp_source.html":[13,0,0,2,32,4,9,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_selection_button_8hpp_source.html":[13,0,0,1,1,13,23],
 "_selection_dispatcher_8hpp_source.html":[13,0,0,1,1,9,3],
 "_selection_stack_8hpp_source.html":[13,0,0,1,1,9,4],
-"_selection_state_8hpp_source.html":[13,0,0,2,11,0,1,1,0],
-"_send_strategy_8hpp_source.html":[13,0,0,1,1,2,0,6]
+"_selection_state_8hpp_source.html":[13,0,0,2,11,0,1,1,0]
 };

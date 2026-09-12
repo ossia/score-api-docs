@@ -725,164 +725,165 @@ $(document).ready(function(){initNavTree('_widget_inlets_8hpp_source.html',''); 
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>  <a class="code hl_struct" href="struct_process_1_1_h_s_v_slider.html">~HSVSlider</a>();</div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span> </div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  <span class="keyword">const</span> <a class="code hl_struct" href="struct_state_1_1_unit.html">State::Unit</a>&amp; <a class="code hl_function" href="class_process_1_1_port.html#aff9740fc254ea9b07079c6d370b84171">unit</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> ossia::vec4f{0., 0., 0., 0.}; }</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> ossia::vec4f{1., 1., 1., 1.}; }</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>};</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> ossia::vec4f{0., 0., 0., 0.}; }</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> ossia::vec4f{1., 1., 1., 1.}; }</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>};</div>
 </div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
-<div class="foldopen" id="foldopen00573" data-start="{" data-end="};">
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_slider.html">  573</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>{</div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>)</div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>(</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>      ossia::vec2f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>(</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>      ossia::vec2f min, ossia::vec2f max, ossia::vec2f init, <span class="keyword">const</span> QString&amp; name,</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>      <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">~XYSlider</a>();</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span> </div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec2f&gt;(); }</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec2f&gt;(); }</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>};</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span> </div>
+<div class="foldopen" id="foldopen00574" data-start="{" data-end="};">
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_slider.html">  574</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>{</div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>)</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>(</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>      ossia::vec2f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">XYSlider</a>(</div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>      ossia::vec2f min, ossia::vec2f max, ossia::vec2f init, <span class="keyword">const</span> QString&amp; name,</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>      <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_slider.html">~XYSlider</a>();</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec2f&gt;(); }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec2f&gt;(); }</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>};</div>
 </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
-<div class="foldopen" id="foldopen00590" data-start="{" data-end="};">
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_z_slider.html">  590</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>{</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>)</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>(</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>      ossia::vec3f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>(</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>      ossia::vec3f min, ossia::vec3f max, ossia::vec3f init, <span class="keyword">const</span> QString&amp; name,</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>      <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">~XYZSlider</a>();</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec3f&gt;(); }</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec3f&gt;(); }</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>};</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
+<div class="foldopen" id="foldopen00591" data-start="{" data-end="};">
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_z_slider.html">  591</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>{</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>)</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>(</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>      ossia::vec3f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">XYZSlider</a>(</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>      ossia::vec3f min, ossia::vec3f max, ossia::vec3f init, <span class="keyword">const</span> QString&amp; name,</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>      <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_slider.html">~XYZSlider</a>();</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec3f&gt;(); }</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec3f&gt;(); }</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span> </div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>};</div>
 </div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
-<div class="foldopen" id="foldopen00607" data-start="{" data-end="};">
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_spinboxes.html">  607</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>{</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>)</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      ossia::vec2f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>      ossia::vec2f min, ossia::vec2f max, ossia::vec2f init, <span class="keywordtype">bool</span> integral,</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>      <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">~XYSpinboxes</a>();</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span> </div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec2f&gt;(); }</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec2f&gt;(); }</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span> </div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>  <span class="keywordtype">bool</span> integral{};</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>};</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="foldopen" id="foldopen00608" data-start="{" data-end="};">
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_spinboxes.html">  608</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>{</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>)</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>      ossia::vec2f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>      ossia::vec2f min, ossia::vec2f max, ossia::vec2f init, <span class="keywordtype">bool</span> integral,</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>      <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_data_stream_writer.html">DataStream::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">XYSpinboxes</a>(<a class="code hl_class" href="class_j_s_o_n_writer.html">JSONObject::Deserializer</a>&amp;&amp; vis, QObject* parent);</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_spinboxes.html">~XYSpinboxes</a>();</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span> </div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec2f&gt;(); }</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec2f&gt;(); }</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span> </div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>  <span class="keywordtype">bool</span> integral{};</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>};</div>
 </div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
-<div class="foldopen" id="foldopen00631" data-start="{" data-end="};">
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_z_spinboxes.html">  631</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>{</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>)</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>(</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>      ossia::vec3f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>(</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>      ossia::vec3f min, ossia::vec3f max, ossia::vec3f init, <span class="keywordtype">bool</span> integral,</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">~XYZSpinboxes</a>();</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span> </div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec3f&gt;(); }</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec3f&gt;(); }</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span> </div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  <span class="keywordtype">bool</span> integral{};</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>};</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
+<div class="foldopen" id="foldopen00632" data-start="{" data-end="};">
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno"><a class="line" href="struct_process_1_1_x_y_z_spinboxes.html">  632</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>{</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>)</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>(</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>      ossia::vec3f init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">XYZSpinboxes</a>(</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      ossia::vec3f min, ossia::vec3f max, ossia::vec3f init, <span class="keywordtype">bool</span> integral,</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  <a class="code hl_struct" href="struct_process_1_1_x_y_z_spinboxes.html">~XYZSpinboxes</a>();</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;ossia::vec3f&gt;(); }</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;ossia::vec3f&gt;(); }</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <span class="keywordtype">bool</span> integral{};</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>};</div>
 </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
-<div class="foldopen" id="foldopen00649" data-start="{" data-end="};">
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno"><a class="line" href="struct_process_1_1_multi_slider.html">  649</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>{</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a>)</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a>(</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">~MultiSlider</a>();</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>};</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span> </div>
+<div class="foldopen" id="foldopen00650" data-start="{" data-end="};">
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno"><a class="line" href="struct_process_1_1_multi_slider.html">  650</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>{</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a>)</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">MultiSlider</a>(</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider.html">~MultiSlider</a>();</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>};</div>
 </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
-<div class="foldopen" id="foldopen00664" data-start="{" data-end="};">
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno"><a class="line" href="struct_process_1_1_multi_slider_x_y.html">  664</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>{</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a>)</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a>(</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">~MultiSliderXY</a>();</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span> </div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>};</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="foldopen" id="foldopen00665" data-start="{" data-end="};">
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno"><a class="line" href="struct_process_1_1_multi_slider_x_y.html">  665</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>{</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a>)</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">MultiSliderXY</a>(</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>  <a class="code hl_struct" href="struct_process_1_1_multi_slider_x_y.html">~MultiSliderXY</a>();</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span> </div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>};</div>
 </div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
-<div class="foldopen" id="foldopen00678" data-start="{" data-end="};">
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno"><a class="line" href="struct_process_1_1_path_generator_x_y.html">  678</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>{</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a>)</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a>(</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">~PathGeneratorXY</a>();</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>};</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span> </div>
+<div class="foldopen" id="foldopen00679" data-start="{" data-end="};">
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno"><a class="line" href="struct_process_1_1_path_generator_x_y.html">  679</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>{</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a>)</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>  <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">PathGeneratorXY</a>(</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>      ossia::value init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  <a class="code hl_struct" href="struct_process_1_1_path_generator_x_y.html">~PathGeneratorXY</a>();</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span> </div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>  ossia::value getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>  ossia::value getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>  <span class="keywordtype">void</span> setupExecution(ossia::inlet&amp; inl, QObject* exec_context) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>  <span class="keyword">using </span>Process::ControlInlet::ControlInlet;</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>};</div>
 </div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="comment">// Outlets</span></div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
-<div class="foldopen" id="foldopen00694" data-start="{" data-end="};">
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno"><a class="line" href="struct_process_1_1_bargraph.html">  694</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>{</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a>)</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a>(</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      <span class="keywordtype">float</span> min, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>,</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>      QObject* parent);</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>  <a class="code hl_struct" href="struct_process_1_1_bargraph.html">~Bargraph</a>();</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;<span class="keywordtype">float</span>&gt;(); }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;<span class="keywordtype">float</span>&gt;(); }</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span> </div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>  <span class="keyword">using </span>Process::ControlOutlet::ControlOutlet;</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>};</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="comment">// Outlets</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="foldopen" id="foldopen00695" data-start="{" data-end="};">
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno"><a class="line" href="struct_process_1_1_bargraph.html">  695</a></span><span class="keyword">struct </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a></div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>{</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>  MODEL_METADATA_IMPL(<a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a>)</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>  <a class="code hl_struct" href="struct_process_1_1_bargraph.html">Bargraph</a>(</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>      <span class="keywordtype">float</span> min, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> init, <span class="keyword">const</span> QString&amp; name, <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::Port&gt;</a> <span class="keywordtype">id</span>,</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      QObject* parent);</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>  <a class="code hl_struct" href="struct_process_1_1_bargraph.html">~Bargraph</a>();</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  <span class="keyword">auto</span> getMin() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_min&lt;<span class="keywordtype">float</span>&gt;(); }</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  <span class="keyword">auto</span> getMax() <span class="keyword">const</span> <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> domain().get().convert_max&lt;<span class="keywordtype">float</span>&gt;(); }</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span> </div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>  <span class="keyword">using </span>Process::ControlOutlet::ControlOutlet;</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>};</div>
 </div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span> </div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>} <span class="comment">// namespace Process</span></div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span> </div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>} <span class="comment">// namespace Process</span></div>
 <div class="ttc" id="a_visitor_common_8hpp_html"><div class="ttname"><a href="_visitor_common_8hpp.html">VisitorCommon.hpp</a></div></div>
 <div class="ttc" id="aclass_data_stream_writer_html"><div class="ttname"><a href="class_data_stream_writer.html">DataStreamWriter</a></div><div class="ttdef"><b>Definition</b> DataStreamVisitor.hpp:202</div></div>
 <div class="ttc" id="aclass_j_s_o_n_writer_html"><div class="ttname"><a href="class_j_s_o_n_writer.html">JSONWriter</a></div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:423</div></div>
@@ -893,7 +894,7 @@ $(document).ready(function(){initNavTree('_widget_inlets_8hpp_source.html',''); 
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:59</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>
 <div class="ttc" id="astruct_process_1_1_audio_file_chooser_html"><div class="ttname"><a href="struct_process_1_1_audio_file_chooser.html">Process::AudioFileChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:418</div></div>
-<div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:695</div></div>
+<div class="ttc" id="astruct_process_1_1_bargraph_html"><div class="ttname"><a href="struct_process_1_1_bargraph.html">Process::Bargraph</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:696</div></div>
 <div class="ttc" id="astruct_process_1_1_button_html"><div class="ttname"><a href="struct_process_1_1_button.html">Process::Button</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:536</div></div>
 <div class="ttc" id="astruct_process_1_1_chooser_toggle_html"><div class="ttname"><a href="struct_process_1_1_chooser_toggle.html">Process::ChooserToggle</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:337</div></div>
 <div class="ttc" id="astruct_process_1_1_combo_box_html"><div class="ttname"><a href="struct_process_1_1_combo_box.html">Process::ComboBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:467</div></div>
@@ -914,17 +915,17 @@ $(document).ready(function(){initNavTree('_widget_inlets_8hpp_source.html',''); 
 <div class="ttc" id="astruct_process_1_1_int_spin_box_html"><div class="ttname"><a href="struct_process_1_1_int_spin_box.html">Process::IntSpinBox</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:283</div></div>
 <div class="ttc" id="astruct_process_1_1_line_edit_html"><div class="ttname"><a href="struct_process_1_1_line_edit.html">Process::LineEdit</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:351</div></div>
 <div class="ttc" id="astruct_process_1_1_log_float_slider_html"><div class="ttname"><a href="struct_process_1_1_log_float_slider.html">Process::LogFloatSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:189</div></div>
-<div class="ttc" id="astruct_process_1_1_multi_slider_html"><div class="ttname"><a href="struct_process_1_1_multi_slider.html">Process::MultiSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:650</div></div>
-<div class="ttc" id="astruct_process_1_1_multi_slider_x_y_html"><div class="ttname"><a href="struct_process_1_1_multi_slider_x_y.html">Process::MultiSliderXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:665</div></div>
-<div class="ttc" id="astruct_process_1_1_path_generator_x_y_html"><div class="ttname"><a href="struct_process_1_1_path_generator_x_y.html">Process::PathGeneratorXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:679</div></div>
+<div class="ttc" id="astruct_process_1_1_multi_slider_html"><div class="ttname"><a href="struct_process_1_1_multi_slider.html">Process::MultiSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:651</div></div>
+<div class="ttc" id="astruct_process_1_1_multi_slider_x_y_html"><div class="ttname"><a href="struct_process_1_1_multi_slider_x_y.html">Process::MultiSliderXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:666</div></div>
+<div class="ttc" id="astruct_process_1_1_path_generator_x_y_html"><div class="ttname"><a href="struct_process_1_1_path_generator_x_y.html">Process::PathGeneratorXY</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:680</div></div>
 <div class="ttc" id="astruct_process_1_1_program_edit_html"><div class="ttname"><a href="struct_process_1_1_program_edit.html">Process::ProgramEdit</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:454</div></div>
 <div class="ttc" id="astruct_process_1_1_time_chooser_html"><div class="ttname"><a href="struct_process_1_1_time_chooser.html">Process::TimeChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:312</div></div>
 <div class="ttc" id="astruct_process_1_1_toggle_html"><div class="ttname"><a href="struct_process_1_1_toggle.html">Process::Toggle</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:326</div></div>
 <div class="ttc" id="astruct_process_1_1_video_file_chooser_html"><div class="ttname"><a href="struct_process_1_1_video_file_chooser.html">Process::VideoFileChooser</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:436</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_slider.html">Process::XYSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:574</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_spinboxes.html">Process::XYSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:608</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_z_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_slider.html">Process::XYZSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:591</div></div>
-<div class="ttc" id="astruct_process_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:632</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_slider.html">Process::XYSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:575</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_spinboxes.html">Process::XYSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:609</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_z_slider_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_slider.html">Process::XYZSlider</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:592</div></div>
+<div class="ttc" id="astruct_process_1_1_x_y_z_spinboxes_html"><div class="ttname"><a href="struct_process_1_1_x_y_z_spinboxes.html">Process::XYZSpinboxes</a></div><div class="ttdef"><b>Definition</b> WidgetInlets.hpp:633</div></div>
 <div class="ttc" id="astruct_state_1_1_unit_html"><div class="ttname"><a href="struct_state_1_1_unit.html">State::Unit</a></div><div class="ttdef"><b>Definition</b> Unit.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

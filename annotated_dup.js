@@ -767,8 +767,8 @@ var annotated_dup =
       [ "multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
       [ "MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
       [ "offscreen_device", "class_gfx_1_1offscreen__device.html", null ],
-      [ "OutputMapping", "struct_gfx_1_1_output_mapping.html", null ],
-      [ "OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", null ],
+      [ "OutputMapping", "struct_gfx_1_1_output_mapping.html", "struct_gfx_1_1_output_mapping" ],
+      [ "OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", "class_gfx_1_1_output_mapping_canvas" ],
       [ "OutputMappingItem", "class_gfx_1_1_output_mapping_item.html", null ],
       [ "OutputPreviewWindows", "class_gfx_1_1_output_preview_windows.html", null ],
       [ "OutputStream", "struct_gfx_1_1_output_stream.html", null ],
@@ -1310,6 +1310,19 @@ var annotated_dup =
         [ "Node", "struct_nodes_1_1_pitch_to_value_1_1_node.html", null ]
       ] ],
       [ "PulseToNote", null, [
+        [ "detail", null, [
+          [ "Block", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_block.html", null ],
+          [ "Bound", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_bound.html", null ],
+          [ "DecodedNote", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_decoded_note.html", null ],
+          [ "Engine", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_engine.html", null ],
+          [ "Grid", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_grid.html", null ],
+          [ "MidiEvent", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_midi_event.html", null ],
+          [ "NumericValue", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_numeric_value.html", null ],
+          [ "Random", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_random.html", null ],
+          [ "Settings", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_settings.html", null ],
+          [ "Statistics", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_statistics.html", null ],
+          [ "ValueDecoder", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_value_decoder.html", null ]
+        ] ],
         [ "Node", "struct_nodes_1_1_pulse_to_note_1_1_node.html", "struct_nodes_1_1_pulse_to_note_1_1_node" ]
       ] ],
       [ "Quantifier", null, [
@@ -2733,7 +2746,7 @@ var annotated_dup =
       [ "GLCapabilities", "structscore_1_1_g_l_capabilities.html", null ],
       [ "GraphicsDefaultInletLayout", "classscore_1_1_graphics_default_inlet_layout.html", null ],
       [ "GraphicsDefaultLayout", "classscore_1_1_graphics_default_layout.html", null ],
-      [ "GraphicsDefaultOutletLayout", "classscore_1_1_graphics_default_outlet_layout.html", null ],
+      [ "GraphicsDefaultOutletLayout", "classscore_1_1_graphics_default_outlet_layout.html", "classscore_1_1_graphics_default_outlet_layout" ],
       [ "GraphicsGridColumnsLayout", "classscore_1_1_graphics_grid_columns_layout.html", null ],
       [ "GraphicsGridRowsLayout", "classscore_1_1_graphics_grid_rows_layout.html", null ],
       [ "GraphicsHBoxLayout", "classscore_1_1_graphics_h_box_layout.html", null ],
@@ -2853,7 +2866,7 @@ var annotated_dup =
       [ "QGraphicsTextButton", "classscore_1_1_q_graphics_text_button.html", null ],
       [ "QGraphicsTimeChooser", "classscore_1_1_q_graphics_time_chooser.html", null ],
       [ "QGraphicsToggle", "classscore_1_1_q_graphics_toggle.html", null ],
-      [ "QGraphicsWaveformButton", "classscore_1_1_q_graphics_waveform_button.html", null ],
+      [ "QGraphicsWaveformButton", "classscore_1_1_q_graphics_waveform_button.html", "classscore_1_1_q_graphics_waveform_button" ],
       [ "QGraphicsXYChooser", "classscore_1_1_q_graphics_x_y_chooser.html", null ],
       [ "QGraphicsXYSpinboxChooser", "classscore_1_1_q_graphics_x_y_spinbox_chooser.html", null ],
       [ "QGraphicsXYZChooser", "classscore_1_1_q_graphics_x_y_z_chooser.html", null ],

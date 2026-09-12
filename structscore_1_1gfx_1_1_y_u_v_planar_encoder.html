@@ -447,6 +447,11 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral">    layout(binding = 3) uniform sampler2D src_tex;</span></div>
 <div class="line"><span class="stringliteral">    )_&quot; </span><span class="stringliteral">&quot;%1&quot;</span> R<span class="stringliteral">&quot;_(</span></div>
 <div class="line"><span class="stringliteral">    vec2 flip_y(vec2 tc) {</span></div>
+<div class="line"><span class="stringliteral">    // Only OpenGL. The rest of the engine puts its geometry through</span></div>
+<div class="line"><span class="stringliteral">    // renderer.clipSpaceCorrMatrix, which negates Y on Vulkan; this pass draws</span></div>
+<div class="line"><span class="stringliteral">    // a hardcoded triangle in raw NDC and does not, so the correction it needs</span></div>
+<div class="line"><span class="stringliteral">    // is not the same one. Flipping on Vulkan as well handed libav, GStreamer,</span></div>
+<div class="line"><span class="stringliteral">    // NDI and every other consumer an upside-down picture.</span></div>
 <div class="line"><span class="stringliteral">      return tc;</span></div>
 <div class="line"><span class="stringliteral">      return vec2(tc.x, 1.0 - tc.y);</span></div>
 <div class="line"><span class="stringliteral">    }</span></div>
