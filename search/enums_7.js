@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qrhibackendkind_0',['QRhiBackendKind',['../_gpu_capabilities_8hpp.html#aa453effef4e8a7b85bf0d0a5cbd8c3d5',1,'score::gfx::interop']]]
+  ['nodekind_0',['NodeKind',['../namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9',1,'Device']]]
 ];

@@ -176,9 +176,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent
 <tr class="memitem:abf1c9fb0025ed222393351f8102fe481" id="r_abf1c9fb0025ed222393351f8102fe481"><td class="memItemLeft" align="right" valign="top"><a id="abf1c9fb0025ed222393351f8102fe481" name="abf1c9fb0025ed222393351f8102fe481"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createPopup</b> (QPoint pos)</td></tr>
 <tr class="separator:abf1c9fb0025ed222393351f8102fe481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db5945c4040f6e5a918fe6ee02e6b2d" id="r_a3db5945c4040f6e5a918fe6ee02e6b2d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_int_slider.html#a3db5945c4040f6e5a918fe6ee02e6b2d">skinExtent</a> () const noexcept</td></tr>
+<tr class="separator:a3db5945c4040f6e5a918fe6ee02e6b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a830e95faee7d56070c12a41d6f889d8c" id="r_a830e95faee7d56070c12a41d6f889d8c"><td class="memItemLeft" align="right" valign="top"><a id="a830e95faee7d56070c12a41d6f889d8c" name="a830e95faee7d56070c12a41d6f889d8c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSkinMetrics</b> ()</td></tr>
+<tr class="memdesc:a830e95faee7d56070c12a41d6f889d8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sizes the control from one line of the slider font. <br /></td></tr>
+<tr class="separator:a830e95faee7d56070c12a41d6f889d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22fd2ecbd37156e8d558789b4f8f86dc" id="r_a22fd2ecbd37156e8d558789b4f8f86dc"><td class="memItemLeft" align="right" valign="top"><a id="a22fd2ecbd37156e8d558789b4f8f86dc" name="a22fd2ecbd37156e8d558789b4f8f86dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *) override</td></tr>
 <tr class="separator:a22fd2ecbd37156e8d558789b4f8f86dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +195,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter &
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintWithText</b> (const QString &amp;s)</td></tr>
 <tr class="separator:af075d02ed0efca07d178cb658d410a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3db5945c4040f6e5a918fe6ee02e6b2d" name="a3db5945c4040f6e5a918fe6ee02e6b2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3db5945c4040f6e5a918fe6ee02e6b2d">&#9670;&#160;</a></span>skinExtent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::IntSlider::skinExtent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Thickness of one line of the slider font: the height of a horizontal slider, the width of a vertical one. A caller pinning the control with setFixedSize should size it from here. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_int_slider_8hpp_source.html">IntSlider.hpp</a></li>
 <li><b>IntSlider.cpp</b></li>

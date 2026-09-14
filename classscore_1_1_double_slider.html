@@ -189,6 +189,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>createPopup</
 <tr class="memitem:ae3315b3a6f8941158200603cd76c4dd5" id="r_ae3315b3a6f8941158200603cd76c4dd5"><td class="memItemLeft" align="right" valign="top"><a id="ae3315b3a6f8941158200603cd76c4dd5" name="ae3315b3a6f8941158200603cd76c4dd5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRange</b> (double min, double max, double init) noexcept</td></tr>
 <tr class="separator:ae3315b3a6f8941158200603cd76c4dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88aaa68513ed07a154aa44e40b2bfa2" id="r_aa88aaa68513ed07a154aa44e40b2bfa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_double_slider.html#aa88aaa68513ed07a154aa44e40b2bfa2">skinExtent</a> () const noexcept</td></tr>
+<tr class="separator:aa88aaa68513ed07a154aa44e40b2bfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -207,6 +209,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {}</td></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac3855001da79bbdfcaf37534a026a701" id="r_ac3855001da79bbdfcaf37534a026a701"><td class="memItemLeft" align="right" valign="top"><a id="ac3855001da79bbdfcaf37534a026a701" name="ac3855001da79bbdfcaf37534a026a701"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateSkinMetrics</b> ()</td></tr>
+<tr class="memdesc:ac3855001da79bbdfcaf37534a026a701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sizes the control from one line of the slider font. <br /></td></tr>
+<tr class="separator:ac3855001da79bbdfcaf37534a026a701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60784973b6c5bac6fc1d08cb62b3d8a9" id="r_a60784973b6c5bac6fc1d08cb62b3d8a9"><td class="memItemLeft" align="right" valign="top"><a id="a60784973b6c5bac6fc1d08cb62b3d8a9" name="a60784973b6c5bac6fc1d08cb62b3d8a9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *) override</td></tr>
 <tr class="separator:a60784973b6c5bac6fc1d08cb62b3d8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +223,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter &
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintWithText</b> (const QString &amp;s)</td></tr>
 <tr class="separator:a49028030fd386fc2a82c2117c540b22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa88aaa68513ed07a154aa44e40b2bfa2" name="aa88aaa68513ed07a154aa44e40b2bfa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88aaa68513ed07a154aa44e40b2bfa2">&#9670;&#160;</a></span>skinExtent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::DoubleSlider::skinExtent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Thickness of one line of the slider font: the height of a horizontal slider, the width of a vertical one. A caller pinning the control with setFixedSize should size it from here. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_double_slider_8hpp_source.html">DoubleSlider.hpp</a></li>
 <li><b>DoubleSlider.cpp</b></li>

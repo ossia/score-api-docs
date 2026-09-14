@@ -314,7 +314,7 @@ var namespace_scenario =
     [ "Transition_T< Scenario_T, ReleaseOnNothing >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_nothing_01_4.html", null ],
     [ "Transition_T< Scenario_T, ReleaseOnState >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_state_01_4.html", null ],
     [ "Transition_T< Scenario_T, ReleaseOnTimeSync >", "class_scenario_1_1_transition___t_3_01_scenario___t_00_01_release_on_time_sync_01_4.html", null ],
-    [ "TransportActions", "class_scenario_1_1_transport_actions.html", null ],
+    [ "TransportActions", "class_scenario_1_1_transport_actions.html", "class_scenario_1_1_transport_actions" ],
     [ "TriggerInspectorWidget", "class_scenario_1_1_trigger_inspector_widget.html", null ],
     [ "TriggerView", "class_scenario_1_1_trigger_view.html", null ],
     [ "value_size", "struct_scenario_1_1value__size.html", null ],

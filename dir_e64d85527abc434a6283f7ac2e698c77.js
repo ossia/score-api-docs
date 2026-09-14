@@ -12,6 +12,7 @@ var dir_e64d85527abc434a6283f7ac2e698c77 =
     [ "Mapper", "dir_2a3deb0caaf63769739952f9837ae818.html", "dir_2a3deb0caaf63769739952f9837ae818" ],
     [ "MCU", "dir_cb8b74d039659fd2b20872bf24cc0878.html", "dir_cb8b74d039659fd2b20872bf24cc0878" ],
     [ "MIDI", "dir_e569faa673b93f5ab4c4ca9af5de0330.html", "dir_e569faa673b93f5ab4c4ca9af5de0330" ],
+    [ "MIDIDevices", "dir_dcd2af44847c7c59f5f57c1fd9506ea1.html", "dir_dcd2af44847c7c59f5f57c1fd9506ea1" ],
     [ "Minuit", "dir_edc90bc704e584e3d423d67cd707b2b9.html", "dir_edc90bc704e584e3d423d67cd707b2b9" ],
     [ "MQTT", "dir_59d2dc0d9d105023b6539f45097002c3.html", "dir_59d2dc0d9d105023b6539f45097002c3" ],
     [ "NetworkWidgets", "dir_44402f6af0508220dfb6712e90596265.html", "dir_44402f6af0508220dfb6712e90596265" ],

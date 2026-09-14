@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('struct_media_1_1_sound_1_1_waveform_co
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_media_1_1_sound_1_1_waveform_computer_impl-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Media::Sound::WaveformComputerImpl Struct Reference</div></div>
 </div><!--header-->
@@ -145,6 +145,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>compute_sample</b> (c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> ()</td></tr>
 <tr class="separator:ab57285745f49c59fbe8aabb62ce24031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a00e597a8b6fde10dabe01a304b389108" id="r_a00e597a8b6fde10dabe01a304b389108"><td class="memItemLeft" align="right" valign="top"><a id="a00e597a8b6fde10dabe01a304b389108" name="a00e597a8b6fde10dabe01a304b389108"></a>
+static QPen&#160;</td><td class="memItemRight" valign="bottom"><b>skin_pen</b> (const <a class="el" href="structscore_1_1_brush.html">score::Brush</a> &amp;b)</td></tr>
+<tr class="separator:a00e597a8b6fde10dabe01a304b389108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a37e2f149793996b10ce9f144a47a9dc4" id="r_a37e2f149793996b10ce9f144a47a9dc4"><td class="memItemLeft" align="right" valign="top"><a id="a37e2f149793996b10ce9f144a47a9dc4" name="a37e2f149793996b10ce9f144a47a9dc4"></a>
@@ -162,67 +168,19 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>redraw_number</b><
 <tr class="memitem:a15ecef6e14460ba11ad2e6975c9f2d8b" id="r_a15ecef6e14460ba11ad2e6975c9f2d8b"><td class="memItemLeft" align="right" valign="top"><a id="a15ecef6e14460ba11ad2e6975c9f2d8b" name="a15ecef6e14460ba11ad2e6975c9f2d8b"></a>
 <a class="el" href="struct_media_1_1_sound_1_1_q_image_pool.html">QImagePool</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pool</b> = QImagePool::instance()</td></tr>
 <tr class="separator:a15ecef6e14460ba11ad2e6975c9f2d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19939614e102947eab4648d5bc8ccb6b" id="r_a19939614e102947eab4648d5bc8ccb6b"><td class="memItemLeft" align="right" valign="top">const QPen&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_sound_1_1_waveform_computer_impl.html#a19939614e102947eab4648d5bc8ccb6b">orange_pen</a></td></tr>
+<tr class="memitem:a19939614e102947eab4648d5bc8ccb6b" id="r_a19939614e102947eab4648d5bc8ccb6b"><td class="memItemLeft" align="right" valign="top"><a id="a19939614e102947eab4648d5bc8ccb6b" name="a19939614e102947eab4648d5bc8ccb6b"></a>
+const QPen&#160;</td><td class="memItemRight" valign="bottom"><b>orange_pen</b> = skin_pen(score::Skin::instance().Waveform1)</td></tr>
 <tr class="separator:a19939614e102947eab4648d5bc8ccb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0fe3a8b5b2e6254ee6a229c9d4ff27b" id="r_ab0fe3a8b5b2e6254ee6a229c9d4ff27b"><td class="memItemLeft" align="right" valign="top">const QPen&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_sound_1_1_waveform_computer_impl.html#ab0fe3a8b5b2e6254ee6a229c9d4ff27b">gray_pen</a></td></tr>
+<tr class="memitem:ab0fe3a8b5b2e6254ee6a229c9d4ff27b" id="r_ab0fe3a8b5b2e6254ee6a229c9d4ff27b"><td class="memItemLeft" align="right" valign="top"><a id="ab0fe3a8b5b2e6254ee6a229c9d4ff27b" name="ab0fe3a8b5b2e6254ee6a229c9d4ff27b"></a>
+const QPen&#160;</td><td class="memItemRight" valign="bottom"><b>gray_pen</b> = skin_pen(score::Skin::instance().Waveform2)</td></tr>
 <tr class="separator:ab0fe3a8b5b2e6254ee6a229c9d4ff27b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a773e85bd25945d6447fb5f0dcbdc113a" id="r_a773e85bd25945d6447fb5f0dcbdc113a"><td class="memItemLeft" align="right" valign="top"><a id="a773e85bd25945d6447fb5f0dcbdc113a" name="a773e85bd25945d6447fb5f0dcbdc113a"></a>
-const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>main_color</b> = request.colors ? orange : gray</td></tr>
-<tr class="separator:a773e85bd25945d6447fb5f0dcbdc113a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52654a48b3b8df1a791393e1439946ea" id="r_a52654a48b3b8df1a791393e1439946ea"><td class="memItemLeft" align="right" valign="top"><a id="a52654a48b3b8df1a791393e1439946ea" name="a52654a48b3b8df1a791393e1439946ea"></a>
 const QPen &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>main_pen</b> = request.colors ? orange_pen : gray_pen</td></tr>
 <tr class="separator:a52654a48b3b8df1a791393e1439946ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a62af6709f6bec1bba1e8922eb6b89adb" id="r_a62af6709f6bec1bba1e8922eb6b89adb"><td class="memItemLeft" align="right" valign="top"><a id="a62af6709f6bec1bba1e8922eb6b89adb" name="a62af6709f6bec1bba1e8922eb6b89adb"></a>
-static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>orange</b> = qRgba(250, 180, 15, 255)</td></tr>
-<tr class="separator:a62af6709f6bec1bba1e8922eb6b89adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac59d65cc43d630cb346cdbd4c21e38f0" id="r_ac59d65cc43d630cb346cdbd4c21e38f0"><td class="memItemLeft" align="right" valign="top"><a id="ac59d65cc43d630cb346cdbd4c21e38f0" name="ac59d65cc43d630cb346cdbd4c21e38f0"></a>
-static constexpr const auto&#160;</td><td class="memItemRight" valign="bottom"><b>gray</b> = qRgba(20, 81, 120, 255)</td></tr>
-<tr class="separator:ac59d65cc43d630cb346cdbd4c21e38f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773e85bd25945d6447fb5f0dcbdc113a" id="r_a773e85bd25945d6447fb5f0dcbdc113a"><td class="memItemLeft" align="right" valign="top"><a id="a773e85bd25945d6447fb5f0dcbdc113a" name="a773e85bd25945d6447fb5f0dcbdc113a"></a>
+const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>main_color</b> = main_pen.color().rgba()</td></tr>
+<tr class="separator:a773e85bd25945d6447fb5f0dcbdc113a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab0fe3a8b5b2e6254ee6a229c9d4ff27b" name="ab0fe3a8b5b2e6254ee6a229c9d4ff27b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0fe3a8b5b2e6254ee6a229c9d4ff27b">&#9670;&#160;</a></span>gray_pen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const QPen Media::Sound::WaveformComputerImpl::gray_pen</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= [] {</div>
-<div class="line">    QPen p;</div>
-<div class="line">    p.setColor(gray);</div>
-<div class="line">    p.setWidth(1);</div>
-<div class="line">    <span class="keywordflow">return</span> p;</div>
-<div class="line">  }()</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a19939614e102947eab4648d5bc8ccb6b" name="a19939614e102947eab4648d5bc8ccb6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19939614e102947eab4648d5bc8ccb6b">&#9670;&#160;</a></span>orange_pen</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const QPen Media::Sound::WaveformComputerImpl::orange_pen</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= [] {</div>
-<div class="line">    QPen p;</div>
-<div class="line">    p.setColor(orange);</div>
-<div class="line">    p.setWidth(1);</div>
-<div class="line">    <span class="keywordflow">return</span> p;</div>
-<div class="line">  }()</div>
-</div><!-- fragment -->
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><b>WaveformComputer.cpp</b></li>
 </ul>

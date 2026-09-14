@@ -1,6 +1,7 @@
 var class_data_stream_reader =
 [
     [ "insertDelimiter", "class_data_stream_reader.html#ac0eb5c043b33cc07de11c45edd22db1b", null ],
+    [ "read", "class_data_stream_reader.html#a67b96924e41c454a08f04fa5ab5e57e9", null ],
     [ "read", "class_data_stream_reader.html#a8cd4b6a03202efcc697c85aafeb5199b", null ],
     [ "read", "class_data_stream_reader.html#a57cba6231d3dfb60036ab4a8a7a5f6d6", null ],
     [ "read", "class_data_stream_reader.html#a4a7a33e56944d91049256badde09eecd", null ],

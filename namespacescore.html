@@ -193,6 +193,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_application_settings.html">ApplicationSettings</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load-time settings.  <a href="structscore_1_1_application_settings.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_application_style.html">ApplicationStyle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corrections over the base style for skins that ask for small text.  <a href="classscore_1_1_application_style.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_arrow_button.html">ArrowButton</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_arrow_dialog.html">ArrowDialog</a></td></tr>
@@ -1080,6 +1083,11 @@ Enumerations</h2></td></tr>
 , <b>Flicks</b>
  }</td></tr>
 <tr class="separator:ad3834cbcd77e334a4ab6ebfd20d4e61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d584dc2ada3da7ca1d79230b104bcf" id="r_a41d584dc2ada3da7ca1d79230b104bcf"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcf">InputValidity</a> { <a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa3ac705f2acd51a4613f9188c05c91d0d">Valid</a>
+, <a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+, <b>Invalid</b>
+ }</td></tr>
+<tr class="separator:a41d584dc2ada3da7ca1d79230b104bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -1178,11 +1186,48 @@ template&lt;typename T &gt; </td></tr>
 <tr class="separator:a829743c1df26e0355fa020600dad8893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a105b47a5fe17baab1eebf106e3e563bf" id="r_a105b47a5fe17baab1eebf106e3e563bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a105b47a5fe17baab1eebf106e3e563bf">uiFontSize</a> () noexcept</td></tr>
 <tr class="separator:a105b47a5fe17baab1eebf106e3e563bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a618d6eed4dc56dafa8a5ea3bed2cd5bd" id="r_a618d6eed4dc56dafa8a5ea3bed2cd5bd"><td class="memItemLeft" align="right" valign="top"><a id="a618d6eed4dc56dafa8a5ea3bed2cd5bd" name="a618d6eed4dc56dafa8a5ea3bed2cd5bd"></a>
-QFont::HintingPreference&#160;</td><td class="memItemRight" valign="bottom"><b>uiFontHinting</b> () noexcept</td></tr>
+<tr class="memitem:a5d5c1b955ea17d5f3b269733225d0b14" id="r_a5d5c1b955ea17d5f3b269733225d0b14"><td class="memItemLeft" align="right" valign="top"><a id="a5d5c1b955ea17d5f3b269733225d0b14" name="a5d5c1b955ea17d5f3b269733225d0b14"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>fontScale</b> () noexcept</td></tr>
+<tr class="memdesc:a5d5c1b955ea17d5f3b269733225d0b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current application font size over referenceFontSize. <br /></td></tr>
+<tr class="separator:a5d5c1b955ea17d5f3b269733225d0b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af986f4a812fccf5fee07ae2adb4b650b" id="r_af986f4a812fccf5fee07ae2adb4b650b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#af986f4a812fccf5fee07ae2adb4b650b">scaledPixels</a> (int px) noexcept</td></tr>
+<tr class="separator:af986f4a812fccf5fee07ae2adb4b650b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e34aefaa0f1f35e50a0ad9ffc8985d" id="r_ab6e34aefaa0f1f35e50a0ad9ffc8985d"><td class="memItemLeft" align="right" valign="top"><a id="ab6e34aefaa0f1f35e50a0ad9ffc8985d" name="ab6e34aefaa0f1f35e50a0ad9ffc8985d"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>scaledIcon</b> (int px) noexcept</td></tr>
+<tr class="memdesc:ab6e34aefaa0f1f35e50a0ad9ffc8985d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespacescore.html#af986f4a812fccf5fee07ae2adb4b650b">scaledPixels()</a> as a square. <br /></td></tr>
+<tr class="separator:ab6e34aefaa0f1f35e50a0ad9ffc8985d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e862b6a68d279cee3719b1bbb118421" id="r_a9e862b6a68d279cee3719b1bbb118421"><td class="memItemLeft" align="right" valign="top"><a id="a9e862b6a68d279cee3719b1bbb118421" name="a9e862b6a68d279cee3719b1bbb118421"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onSkinChange</b> (QObject *owner, std::function&lt; void()&gt; f)</td></tr>
+<tr class="separator:a9e862b6a68d279cee3719b1bbb118421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618d6eed4dc56dafa8a5ea3bed2cd5bd" id="r_a618d6eed4dc56dafa8a5ea3bed2cd5bd"><td class="memItemLeft" align="right" valign="top">QFont::HintingPreference&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a618d6eed4dc56dafa8a5ea3bed2cd5bd">uiFontHinting</a> () noexcept</td></tr>
 <tr class="separator:a618d6eed4dc56dafa8a5ea3bed2cd5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec10fb86394f656254e28ac880444119" id="r_aec10fb86394f656254e28ac880444119"><td class="memItemLeft" align="right" valign="top">QFont::StyleStrategy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aec10fb86394f656254e28ac880444119">uiFontStyleStrategy</a> () noexcept</td></tr>
 <tr class="separator:aec10fb86394f656254e28ac880444119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d332f8b4b5679533c6846e87a5c4cca" id="r_a0d332f8b4b5679533c6846e87a5c4cca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a0d332f8b4b5679533c6846e87a5c4cca">pixelFontGrid</a> (const QString &amp;family) noexcept</td></tr>
+<tr class="separator:a0d332f8b4b5679533c6846e87a5c4cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab094961987fd648e8142d6877e32d6" id="r_aeab094961987fd648e8142d6877e32d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aeab094961987fd648e8142d6877e32d6">snapToFontGrid</a> (const QFont &amp;f, int px) noexcept</td></tr>
+<tr class="separator:aeab094961987fd648e8142d6877e32d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841522fe196021135eb98ac62222b5c1" id="r_a841522fe196021135eb98ac62222b5c1"><td class="memItemLeft" align="right" valign="top"><a id="a841522fe196021135eb98ac62222b5c1" name="a841522fe196021135eb98ac62222b5c1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSnappedPixelSize</b> (QFont &amp;f, int px) noexcept</td></tr>
+<tr class="memdesc:a841522fe196021135eb98ac62222b5c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">setPixelSize through snapToFontGrid. <br /></td></tr>
+<tr class="separator:a841522fe196021135eb98ac62222b5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf2f4b17fd5b57aa5ae627a34ce1bf7" id="r_a8bf2f4b17fd5b57aa5ae627a34ce1bf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a8bf2f4b17fd5b57aa5ae627a34ce1bf7">registerApplicationFonts</a> ()</td></tr>
+<tr class="separator:a8bf2f4b17fd5b57aa5ae627a34ce1bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa233ef7c3be68cc45f824f6ec4e8ca6d" id="r_aa233ef7c3be68cc45f824f6ec4e8ca6d"><td class="memItemLeft" align="right" valign="top">QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aa233ef7c3be68cc45f824f6ec4e8ca6d">defaultApplicationFont</a> () noexcept</td></tr>
+<tr class="separator:aa233ef7c3be68cc45f824f6ec4e8ca6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dfe5e7c281bac8d274b55e963519a1b" id="r_a0dfe5e7c281bac8d274b55e963519a1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a0dfe5e7c281bac8d274b55e963519a1b">canSetGlobalScaleFactorLive</a> () noexcept</td></tr>
+<tr class="separator:a0dfe5e7c281bac8d274b55e963519a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d9f78314f24a83d6b4906cce145132" id="r_a36d9f78314f24a83d6b4906cce145132"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a36d9f78314f24a83d6b4906cce145132">setGlobalScaleFactor</a> (double factor)</td></tr>
+<tr class="separator:a36d9f78314f24a83d6b4906cce145132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075985eb195ac17ec732f8ea2b7b07b7" id="r_a075985eb195ac17ec732f8ea2b7b07b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a075985eb195ac17ec732f8ea2b7b07b7">setupApplicationFont</a> (const QFont &amp;f)</td></tr>
+<tr class="separator:a075985eb195ac17ec732f8ea2b7b07b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecb3f3ed13189ae832d432b96ef89249" id="r_aecb3f3ed13189ae832d432b96ef89249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aecb3f3ed13189ae832d432b96ef89249">applyDefaultPalette</a> (QPalette &amp;p)</td></tr>
+<tr class="separator:aecb3f3ed13189ae832d432b96ef89249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4372514d556da9c9a43745e92540190d" id="r_a4372514d556da9c9a43745e92540190d"><td class="memTemplParams" colspan="2"><a id="a4372514d556da9c9a43745e92540190d" name="a4372514d556da9c9a43745e92540190d"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4372514d556da9c9a43745e92540190d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setSkinIconSize</b> (T *widget, int px)</td></tr>
+<tr class="memdesc:a4372514d556da9c9a43745e92540190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">onSkinChange(widget, setIconSize(scaledIcon(px))). <br /></td></tr>
+<tr class="separator:a4372514d556da9c9a43745e92540190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe55a013aba51db7fae79be5eb285678" id="r_abe55a013aba51db7fae79be5eb285678"><td class="memItemLeft" align="right" valign="top">SCORE_LIB_BASE_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#abe55a013aba51db7fae79be5eb285678">addonArchitecture</a> ()</td></tr>
 <tr class="memdesc:abe55a013aba51db7fae79be5eb285678"><td class="mdescLeft">&#160;</td><td class="mdescRight">addonArchitecture  <br /></td></tr>
 <tr class="separator:abe55a013aba51db7fae79be5eb285678"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1471,9 +1516,14 @@ QCursor&#160;</td><td class="memItemRight" valign="bottom"><b>get_cursor</b> (QS
 <tr class="memitem:a5220a830e93bdcf6aba57b0c090501fc" id="r_a5220a830e93bdcf6aba57b0c090501fc"><td class="memItemLeft" align="right" valign="top"><a id="a5220a830e93bdcf6aba57b0c090501fc" name="a5220a830e93bdcf6aba57b0c090501fc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setGlobalTimeMode</b> (TimeMode mode)</td></tr>
 <tr class="separator:a5220a830e93bdcf6aba57b0c090501fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa5d4efcf31c883b9271f58f5947875" id="r_a2fa5d4efcf31c883b9271f58f5947875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a2fa5d4efcf31c883b9271f58f5947875">setInputValidity</a> (QWidget &amp;w, <a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcf">InputValidity</a> v)</td></tr>
+<tr class="memdesc:a2fa5d4efcf31c883b9271f58f5947875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tint a widget to flag what it holds, and keep the tint skin-aware.  <br /></td></tr>
+<tr class="separator:a2fa5d4efcf31c883b9271f58f5947875"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a213725d41d100671c0e68e2a83ef6923" id="r_a213725d41d100671c0e68e2a83ef6923"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a213725d41d100671c0e68e2a83ef6923">referenceFontSize</a> = 13</td></tr>
+<tr class="separator:a213725d41d100671c0e68e2a83ef6923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89811fd7b6d1b98c7a046f02c45674bd" id="r_a89811fd7b6d1b98c7a046f02c45674bd"><td class="memItemLeft" align="right" valign="top"><a id="a89811fd7b6d1b98c7a046f02c45674bd" name="a89811fd7b6d1b98c7a046f02c45674bd"></a>
 thread_local char&#160;</td><td class="memItemRight" valign="bottom"><b>g_file_search_buffer</b> [16384]</td></tr>
 <tr class="separator:a89811fd7b6d1b98c7a046f02c45674bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1542,6 +1592,34 @@ TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b
 
 </div>
 </div>
+<a id="a41d584dc2ada3da7ca1d79230b104bcf" name="a41d584dc2ada3da7ca1d79230b104bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41d584dc2ada3da7ca1d79230b104bcf">&#9670;&#160;</a></span>InputValidity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcf">score::InputValidity</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a41d584dc2ada3da7ca1d79230b104bcfa3ac705f2acd51a4613f9188c05c91d0d" name="a41d584dc2ada3da7ca1d79230b104bcfa3ac705f2acd51a4613f9188c05c91d0d"></a>Valid&#160;</td><td class="fielddoc"><p>No tint: the widget inherits the application palette. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a41d584dc2ada3da7ca1d79230b104bcfa88183b946cc5f0e8c96b2e66e1c74a7e" name="a41d584dc2ada3da7ca1d79230b104bcfa88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p>Well-formed but does not resolve to anything. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="abe55a013aba51db7fae79be5eb285678" name="abe55a013aba51db7fae79be5eb285678"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe55a013aba51db7fae79be5eb285678">&#9670;&#160;</a></span>addonArchitecture()</h2>
@@ -1560,6 +1638,26 @@ TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b
 
 <p>addonArchitecture </p>
 <dl class="section return"><dt>Returns</dt><dd>Architecture for the system score is compiled for. </dd></dl>
+
+</div>
+</div>
+<a id="aecb3f3ed13189ae832d432b96ef89249" name="aecb3f3ed13189ae832d432b96ef89249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecb3f3ed13189ae832d432b96ef89249">&#9670;&#160;</a></span>applyDefaultPalette()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::applyDefaultPalette </td>
+          <td>(</td>
+          <td class="paramtype">QPalette &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs <code>f</code> now and on every skin change. Needed for any size derived from a font: the window and the toolbars are built before the first skin loads.</p>
+<p>Callable during that construction &ndash; Skin::instance() needs the application context, so the subscription is deferred by one event loop turn. The built-in widget colours, applied over whatever the style gave us. Shared with the startup path, which runs before the <a class="el" href="classscore_1_1_skin.html">Skin</a> can be built. </p>
 
 </div>
 </div>
@@ -1598,6 +1696,32 @@ TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0dfe5e7c281bac8d274b55e963519a1b" name="a0dfe5e7c281bac8d274b55e963519a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dfe5e7c281bac8d274b55e963519a1b">&#9670;&#160;</a></span>canSetGlobalScaleFactorLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::canSetGlobalScaleFactorLive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>False below Qt 6.6, or without QT_CONFIG(highdpiscaling): QHighDpiScaling exists from 5.6 but only updates the screens from 6.5 and only emits the QScreen signals from 6.6. </p>
 
 </div>
 </div>
@@ -1644,6 +1768,32 @@ template&lt;typename T &gt; </div>
 <p>The one type-in box a right-click may have open. </p>
 <p>Right-clicking a second control &ndash; or the same one twice &ndash; used to leave the first box floating over the scene with nobody owning it: it is parented to the scene, not to the control, so nothing took it down.</p>
 <p>A QPointer, so that a box torn down by its own control leaves nothing dangling here. </p>
+
+</div>
+</div>
+<a id="aa233ef7c3be68cc45f824f6ec4e8ca6d" name="aa233ef7c3be68cc45f824f6ec4e8ca6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa233ef7c3be68cc45f824f6ec4e8ca6d">&#9670;&#160;</a></span>defaultApplicationFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont score::defaultApplicationFont </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Does not touch Skin::instance(), so it is callable before the application context exists. </p>
 
 </div>
 </div>
@@ -2238,6 +2388,33 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a0d332f8b4b5679533c6846e87a5c4cca" name="a0d332f8b4b5679533c6846e87a5c4cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d332f8b4b5679533c6846e87a5c4cca">&#9670;&#160;</a></span>pixelFontGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::pixelFontGrid </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>family</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Design grid of a pixel font score ships, 0 for anything else. These only render sharply at whole multiples of it. </p>
+
+</div>
+</div>
 <a id="a6ea4b133d6f599b023dbeb5f40560be6" name="a6ea4b133d6f599b023dbeb5f40560be6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ea4b133d6f599b023dbeb5f40560be6">&#9670;&#160;</a></span>readZipMember()</h2>
 
@@ -2276,6 +2453,24 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Inflate a single member of the archive. Empty (and <code>error</code> set) on failure, including members larger than <code>maxSize</code> bytes (a score file is small). </p>
+
+</div>
+</div>
+<a id="a8bf2f4b17fd5b57aa5ae627a34ce1bf7" name="a8bf2f4b17fd5b57aa5ae627a34ce1bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bf2f4b17fd5b57aa5ae627a34ce1bf7">&#9670;&#160;</a></span>registerApplicationFonts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::registerApplicationFonts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Idempotent, and called by the <a class="el" href="classscore_1_1_skin.html">Skin</a> itself, so tests and alternate hosts get the fonts without the application bootstrap. </p>
 
 </div>
 </div>
@@ -2447,6 +2642,83 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af986f4a812fccf5fee07ae2adb4b650b" name="af986f4a812fccf5fee07ae2adb4b650b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af986f4a812fccf5fee07ae2adb4b650b">&#9670;&#160;</a></span>scaledPixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::scaledPixels </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A referenceFontSize-relative length in the current skin's terms, floored at one pixel. </p>
+
+</div>
+</div>
+<a id="a36d9f78314f24a83d6b4906cce145132" name="a36d9f78314f24a83d6b4906cce145132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d9f78314f24a83d6b4906cce145132">&#9670;&#160;</a></span>setGlobalScaleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::setGlobalScaleFactor </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>factor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>QT_SCALE_FACTOR, live, through Qt private API. Qt warns on the console when windows are open; the factor still applies. Bumps the <a class="el" href="classscore_1_1_skin.html">Skin</a> and emits changed() so the caches keyed on the device pixel ratio drop. False if the factor is out of range or scaling is unavailable. </p>
+
+</div>
+</div>
+<a id="a2fa5d4efcf31c883b9271f58f5947875" name="a2fa5d4efcf31c883b9271f58f5947875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa5d4efcf31c883b9271f58f5947875">&#9670;&#160;</a></span>setInputValidity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::setInputValidity </td>
+          <td>(</td>
+          <td class="paramtype">QWidget &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcf">InputValidity</a>&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tint a widget to flag what it holds, and keep the tint skin-aware. </p>
+<p>Sets only the roles the tint needs, so the widget keeps inheriting the rest. </p>
+
+</div>
+</div>
 <a id="ab11dec7313a08388192b2259f2b50e62" name="ab11dec7313a08388192b2259f2b50e62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab11dec7313a08388192b2259f2b50e62">&#9670;&#160;</a></span>setItemViewDragPixmap()</h2>
 
@@ -2487,6 +2759,25 @@ template&lt;typename T &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="a075985eb195ac17ec732f8ea2b7b07b7" name="a075985eb195ac17ec732f8ea2b7b07b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075985eb195ac17ec732f8ea2b7b07b7">&#9670;&#160;</a></span>setupApplicationFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::setupApplicationFont </td>
+          <td>(</td>
+          <td class="paramtype">const QFont &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Also reseeds the per-widget-class fonts the platform theme installs, which would otherwise win. Must run after QApplication::setStyle(), which resets that hash. </p>
 
 </div>
 </div>
@@ -2576,6 +2867,43 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aeab094961987fd648e8142d6877e32d6" name="aeab094961987fd648e8142d6877e32d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab094961987fd648e8142d6877e32d6">&#9670;&#160;</a></span>snapToFontGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::snapToFontGrid </td>
+          <td>(</td>
+          <td class="paramtype">const QFont &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>px</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><code>px</code> rounded down to a multiple of <code>f's</code> grid, or up to one step when smaller than that; unchanged for an outline font. Any computed font size has to go through this. </p>
+
+</div>
+</div>
 <a id="afc351c3fc4494a184220b18c43190f37" name="afc351c3fc4494a184220b18c43190f37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc351c3fc4494a184220b18c43190f37">&#9670;&#160;</a></span>summarizeZipArchive()</h2>
 
@@ -2626,6 +2954,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a618d6eed4dc56dafa8a5ea3bed2cd5bd" name="a618d6eed4dc56dafa8a5ea3bed2cd5bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a618d6eed4dc56dafa8a5ea3bed2cd5bd">&#9670;&#160;</a></span>uiFontHinting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont::HintingPreference score::uiFontHinting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hinting for the fonts built before any skin has loaded. A skin sets it per role, which wins over this. </p>
+
+</div>
+</div>
 <a id="a105b47a5fe17baab1eebf106e3e563bf" name="a105b47a5fe17baab1eebf106e3e563bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a105b47a5fe17baab1eebf106e3e563bf">&#9670;&#160;</a></span>uiFontSize()</h2>
 
@@ -2648,7 +3002,7 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Base UI font settings. Read from QSettings directly as the font is needed before the settings plug-in is loaded; changing them requires a restart. </p>
+<p><a class="el" href="class_application.html" title="Application.">Application</a> font size before any skin has loaded; the "application" role replaces it. </p>
 
 </div>
 </div>
@@ -2769,6 +3123,29 @@ template&lt;typename T &gt; </div>
 <div class="line">    <span class="stringliteral">&quot;right&quot;</span> </div>
 <div class="line">}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a213725d41d100671c0e68e2a83ef6923" name="a213725d41d100671c0e68e2a83ef6923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213725d41d100671c0e68e2a83ef6923">&#9670;&#160;</a></span>referenceFontSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int score::referenceFontSize = 13</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The font size every hardcoded pixel length in the widget UI was drawn against. </p>
+
 </div>
 </div>
 </div><!-- contents -->

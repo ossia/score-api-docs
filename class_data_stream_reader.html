@@ -860,9 +860,8 @@ template&lt;&gt; </td></tr>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a1e33dda05e9a4ca658f3a5d7aa946330"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const <a class="el" href="struct_protocols_1_1_libmapper_client_specific_settings.html">Protocols::LibmapperClientSpecificSettings</a> &amp;n)</td></tr>
 <tr class="separator:a1e33dda05e9a4ca658f3a5d7aa946330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b96924e41c454a08f04fa5ab5e57e9" id="r_a67b96924e41c454a08f04fa5ab5e57e9"><td class="memItemLeft" align="right" valign="top"><a id="a67b96924e41c454a08f04fa5ab5e57e9" name="a67b96924e41c454a08f04fa5ab5e57e9"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:a67b96924e41c454a08f04fa5ab5e57e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>read</b> (const libremidi::port_information &amp;n)</td></tr>
+<tr class="memitem:a67b96924e41c454a08f04fa5ab5e57e9" id="r_a67b96924e41c454a08f04fa5ab5e57e9"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a67b96924e41c454a08f04fa5ab5e57e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_data_stream_reader.html#a67b96924e41c454a08f04fa5ab5e57e9">read</a> (const libremidi::port_information &amp;n)</td></tr>
 <tr class="separator:a67b96924e41c454a08f04fa5ab5e57e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadcde7dd49a3c16d6eff4fae6b83c359" id="r_aadcde7dd49a3c16d6eff4fae6b83c359"><td class="memItemLeft" align="right" valign="top"><a id="aadcde7dd49a3c16d6eff4fae6b83c359" name="aadcde7dd49a3c16d6eff4fae6b83c359"></a>
 template&lt;&gt; </td></tr>
@@ -1206,8 +1205,30 @@ const <a class="el" href="classscore_1_1_application_components.html">score::App
 
 </div>
 </div>
+<a id="a67b96924e41c454a08f04fa5ab5e57e9" name="a67b96924e41c454a08f04fa5ab5e57e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67b96924e41c454a08f04fa5ab5e57e9">&#9670;&#160;</a></span>read() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataStreamReader::read </td>
+          <td>(</td>
+          <td class="paramtype">const libremidi::port_information &amp;&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The backend and the identifying strings, alongside the port handle, which does not survive a save: it is an ALSA sequencer client number or a CoreMIDI unique id and changes when the interface is replugged. optimistic_serialized_port_lookup() re-finds a port from the rest, but every one of its heuristics requires the target to name an API.</p>
+<p><code>container</code> and <code>device</code> are left out: they are variants whose serializers live in the MIDI device's translation unit, and the lookup only uses them to break a tie between candidates already found by name. </p>
+
+</div>
+</div>
 <a id="affa5e8a40516bba2850bedca7a065536" name="affa5e8a40516bba2850bedca7a065536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa5e8a40516bba2850bedca7a065536">&#9670;&#160;</a></span>read()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affa5e8a40516bba2850bedca7a065536">&#9670;&#160;</a></span>read() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

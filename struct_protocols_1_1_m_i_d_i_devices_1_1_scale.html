@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Scenario::Settings::ThemeDialog Class Reference</title>
+        <title>score: Protocols::MIDIDevices::Scale Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('class_scenario_1_1_settings_1_1_theme_dialog.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -105,52 +105,70 @@ $(document).ready(function(){initNavTree('class_scenario_1_1_settings_1_1_theme_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="class_scenario_1_1_settings_1_1_theme_dialog-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Scenario::Settings::ThemeDialog Class Reference</div></div>
+<a href="struct_protocols_1_1_m_i_d_i_devices_1_1_scale-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Protocols::MIDIDevices::Scale Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Scenario::Settings::ThemeDialog:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_scenario_1_1_settings_1_1_theme_dialog.png" alt=""/>
- </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>What the numbers mean in the parameter's own terms, when that differs from what is sent: a knob sends 0-127 while the parameter reads -64..+63, or 0 to 100 %, or simply Left to Right.</p>
+<p>Never changes what goes on the wire &ndash; <a class="el" href="struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a04ae6f786f04b056ba341d85c1c5ca72" title="Absent means the message type&#39;s natural range.">Value::min</a> and Value::max stay the only values a host may send. This is for what it shows. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7040c99a16afce913c336798dc776c64" id="r_a7040c99a16afce913c336798dc776c64"><td class="memItemLeft" align="right" valign="top"><a id="a7040c99a16afce913c336798dc776c64" name="a7040c99a16afce913c336798dc776c64"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>skinSaved</b> (const QString &amp;arg_1)</td></tr>
-<tr class="separator:a7040c99a16afce913c336798dc776c64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19058743ddf36eddae287221818bfac9" id="r_a19058743ddf36eddae287221818bfac9"><td class="memItemLeft" align="right" valign="top"><a id="a19058743ddf36eddae287221818bfac9" name="a19058743ddf36eddae287221818bfac9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ThemeDialog</b> (const QString &amp;skinFile, QWidget *p)</td></tr>
-<tr class="separator:a19058743ddf36eddae287221818bfac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18a01c1c51c9113231f28147d7a8239" id="r_ab18a01c1c51c9113231f28147d7a8239"><td class="memItemLeft" align="right" valign="top"><a id="ab18a01c1c51c9113231f28147d7a8239" name="ab18a01c1c51c9113231f28147d7a8239"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
+<tr class="separator:ab18a01c1c51c9113231f28147d7a8239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3739db970265ecc3a8e5e42b40279f96" id="r_a3739db970265ecc3a8e5e42b40279f96"><td class="memItemLeft" align="right" valign="top"><a id="a3739db970265ecc3a8e5e42b40279f96" name="a3739db970265ecc3a8e5e42b40279f96"></a>
-QHBoxLayout&#160;</td><td class="memItemRight" valign="bottom"><b>layout</b></td></tr>
-<tr class="separator:a3739db970265ecc3a8e5e42b40279f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c427cf1587c36da62a4dbaca705b202" id="r_a4c427cf1587c36da62a4dbaca705b202"><td class="memItemLeft" align="right" valign="top"><a id="a4c427cf1587c36da62a4dbaca705b202" name="a4c427cf1587c36da62a4dbaca705b202"></a>
-QFormLayout&#160;</td><td class="memItemRight" valign="bottom"><b>sublay</b></td></tr>
-<tr class="separator:a4c427cf1587c36da62a4dbaca705b202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ee19dcde409a06e27ce22b4b1ff61d" id="r_ae5ee19dcde409a06e27ce22b4b1ff61d"><td class="memItemLeft" align="right" valign="top"><a id="ae5ee19dcde409a06e27ce22b4b1ff61d" name="ae5ee19dcde409a06e27ce22b4b1ff61d"></a>
-QListWidget&#160;</td><td class="memItemRight" valign="bottom"><b>list</b></td></tr>
-<tr class="separator:ae5ee19dcde409a06e27ce22b4b1ff61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9208a2b29ed87cbc1c4d1b1abc17fd56" id="r_a9208a2b29ed87cbc1c4d1b1abc17fd56"><td class="memItemLeft" align="right" valign="top"><a id="a9208a2b29ed87cbc1c4d1b1abc17fd56" name="a9208a2b29ed87cbc1c4d1b1abc17fd56"></a>
-QLineEdit&#160;</td><td class="memItemRight" valign="bottom"><b>hexa</b></td></tr>
-<tr class="separator:a9208a2b29ed87cbc1c4d1b1abc17fd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab19c636c54a7e4dc6aca8e4feba58efb" id="r_ab19c636c54a7e4dc6aca8e4feba58efb"><td class="memItemLeft" align="right" valign="top"><a id="ab19c636c54a7e4dc6aca8e4feba58efb" name="ab19c636c54a7e4dc6aca8e4feba58efb"></a>
-QLineEdit&#160;</td><td class="memItemRight" valign="bottom"><b>rgb</b></td></tr>
-<tr class="separator:ab19c636c54a7e4dc6aca8e4feba58efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add11e9419c3180c763b97d61e9d172e6" id="r_add11e9419c3180c763b97d61e9d172e6"><td class="memItemLeft" align="right" valign="top"><a id="add11e9419c3180c763b97d61e9d172e6" name="add11e9419c3180c763b97d61e9d172e6"></a>
-QPushButton&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> {tr(&quot;Save&quot;)}</td></tr>
-<tr class="separator:add11e9419c3180c763b97d61e9d172e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb66383c04ec93d0ceacb984f6e1048" id="r_a4eb66383c04ec93d0ceacb984f6e1048"><td class="memItemLeft" align="right" valign="top"><a id="a4eb66383c04ec93d0ceacb984f6e1048" name="a4eb66383c04ec93d0ceacb984f6e1048"></a>
-color_widgets::ColorWheel&#160;</td><td class="memItemRight" valign="bottom"><b>wheel</b></td></tr>
-<tr class="separator:a4eb66383c04ec93d0ceacb984f6e1048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a226c450107c04ff185a8ddba63e71b09" id="r_a226c450107c04ff185a8ddba63e71b09"><td class="memItemLeft" align="right" valign="top">std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#a226c450107c04ff185a8ddba63e71b09">min</a></td></tr>
+<tr class="separator:a226c450107c04ff185a8ddba63e71b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021dba038c13008ffc302dfa0c726785" id="r_a021dba038c13008ffc302dfa0c726785"><td class="memItemLeft" align="right" valign="top"><a id="a021dba038c13008ffc302dfa0c726785" name="a021dba038c13008ffc302dfa0c726785"></a>
+std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>max</b></td></tr>
+<tr class="separator:a021dba038c13008ffc302dfa0c726785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee88c11c92e3240c3fd78a086138f27e" id="r_aee88c11c92e3240c3fd78a086138f27e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#aee88c11c92e3240c3fd78a086138f27e">from</a></td></tr>
+<tr class="separator:aee88c11c92e3240c3fd78a086138f27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e425c9b161920e478a58e06e25f57a8" id="r_a2e425c9b161920e478a58e06e25f57a8"><td class="memItemLeft" align="right" valign="top"><a id="a2e425c9b161920e478a58e06e25f57a8" name="a2e425c9b161920e478a58e06e25f57a8"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to</b></td></tr>
+<tr class="separator:a2e425c9b161920e478a58e06e25f57a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a928cf5450f4d0ecc73de1856b3b7f763" id="r_a928cf5450f4d0ecc73de1856b3b7f763"><td class="memItemLeft" align="right" valign="top"><a id="a928cf5450f4d0ecc73de1856b3b7f763" name="a928cf5450f4d0ecc73de1856b3b7f763"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>unit</b></td></tr>
+<tr class="memdesc:a928cf5450f4d0ecc73de1856b3b7f763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verbatim as the source wrote it: "%", "dB", "Hz", "semitones". <br /></td></tr>
+<tr class="separator:a928cf5450f4d0ecc73de1856b3b7f763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>ScenarioSettingsView.cpp</b></li>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aee88c11c92e3240c3fd78a086138f27e" name="aee88c11c92e3240c3fd78a086138f27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee88c11c92e3240c3fd78a086138f27e">&#9670;&#160;</a></span>from</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Protocols::MIDIDevices::Scale::from</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The names of the two ends, for a scale the source names rather than numbers. </p>
+
+</div>
+</div>
+<a id="a226c450107c04ff185a8ddba63e71b09" name="a226c450107c04ff185a8ddba63e71b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a226c450107c04ff185a8ddba63e71b09">&#9670;&#160;</a></span>min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;double&gt; Protocols::MIDIDevices::Scale::min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The logical range the wire range maps onto, linearly and in order, so <code>min</code> may exceed <code>max</code> for a parameter that counts backwards. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="_midi_device_map_8hpp_source.html">MidiDeviceMap.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

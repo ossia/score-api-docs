@@ -129,8 +129,7 @@ QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> ()
 <tr class="memitem:a15bf1dd732f1a2b51ffbfbb19854707a" id="r_a15bf1dd732f1a2b51ffbfbb19854707a"><td class="memItemLeft" align="right" valign="top"><a id="a15bf1dd732f1a2b51ffbfbb19854707a" name="a15bf1dd732f1a2b51ffbfbb19854707a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) final override</td></tr>
 <tr class="separator:a15bf1dd732f1a2b51ffbfbb19854707a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609b657702873c3d42f1d1318f819842" id="r_a609b657702873c3d42f1d1318f819842"><td class="memItemLeft" align="right" valign="top"><a id="a609b657702873c3d42f1d1318f819842" name="a609b657702873c3d42f1d1318f819842"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setFont</b> (const QFont &amp;f)</td></tr>
+<tr class="memitem:a609b657702873c3d42f1d1318f819842" id="r_a609b657702873c3d42f1d1318f819842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_simple_text_item.html#a609b657702873c3d42f1d1318f819842">setFont</a> (const QFont &amp;f)</td></tr>
 <tr class="separator:a609b657702873c3d42f1d1318f819842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d80aa0a5e2cae92806822d6483f523b" id="r_a5d80aa0a5e2cae92806822d6483f523b"><td class="memItemLeft" align="right" valign="top"><a id="a5d80aa0a5e2cae92806822d6483f523b" name="a5d80aa0a5e2cae92806822d6483f523b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setText</b> (const QString &amp;s)</td></tr>
@@ -145,6 +144,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (const <
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>text</b> () const noexcept</td></tr>
 <tr class="separator:a491f2b7a7305a59999a6bf03d4fd9a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a609b657702873c3d42f1d1318f819842" name="a609b657702873c3d42f1d1318f819842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609b657702873c3d42f1d1318f819842">&#9670;&#160;</a></span>setFont()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::SimpleTextItem::setFont </td>
+          <td>(</td>
+          <td class="paramtype">const QFont &amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><code>f</code> must outlive the item, which keeps a reference so it can re-render on a skin change. Always a <a class="el" href="classscore_1_1_skin.html">score::Skin</a> member in practice. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_text_item_8hpp_source.html">TextItem.hpp</a></li>
 <li><b>TextItem.cpp</b></li>

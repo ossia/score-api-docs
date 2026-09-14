@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_skin.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -123,11 +124,24 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_skin_1_1color__map.html">color_map</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac9e9a7eb2eda5ba4dfe18fff3483ce49" id="r_ac9e9a7eb2eda5ba4dfe18fff3483ce49"><td class="memItemLeft" align="right" valign="top"><a id="ac9e9a7eb2eda5ba4dfe18fff3483ce49" name="ac9e9a7eb2eda5ba4dfe18fff3483ce49"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#ac9e9a7eb2eda5ba4dfe18fff3483ce49">Part</a> { <b>Colours</b> = 1
+, <b>Fonts</b> = 2
+, <b>Everything</b> = Colours | Fonts
+ }</td></tr>
+<tr class="memdesc:ac9e9a7eb2eda5ba4dfe18fff3483ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which halves of a skin file to apply. <br /></td></tr>
+<tr class="separator:ac9e9a7eb2eda5ba4dfe18fff3483ce49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11833a2eb040856145a3d33e20eea53f" id="r_a11833a2eb040856145a3d33e20eea53f"><td class="memItemLeft" align="right" valign="top"><a id="a11833a2eb040856145a3d33e20eea53f" name="a11833a2eb040856145a3d33e20eea53f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const QJsonObject &amp;style)</td></tr>
-<tr class="separator:a11833a2eb040856145a3d33e20eea53f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b09f47a7745596d25eb6a34a5b07bdf" id="r_a8b09f47a7745596d25eb6a34a5b07bdf"><td class="memItemLeft" align="right" valign="top"><a id="a8b09f47a7745596d25eb6a34a5b07bdf" name="a8b09f47a7745596d25eb6a34a5b07bdf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (const QJsonObject &amp;style, int parts=Everything)</td></tr>
+<tr class="separator:a8b09f47a7745596d25eb6a34a5b07bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170ec65734e65e5b53235e1313011052" id="r_a170ec65734e65e5b53235e1313011052"><td class="memItemLeft" align="right" valign="top">QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a170ec65734e65e5b53235e1313011052">toJson</a> () const</td></tr>
+<tr class="separator:a170ec65734e65e5b53235e1313011052"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528db68c4967caec0f69718716d12e24" id="r_a528db68c4967caec0f69718716d12e24"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; const char *, QFont * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a528db68c4967caec0f69718716d12e24">fonts</a> () noexcept</td></tr>
+<tr class="separator:a528db68c4967caec0f69718716d12e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8721b70fec05c843027b970ac968f90e" id="r_a8721b70fec05c843027b970ac968f90e"><td class="memItemLeft" align="right" valign="top"><a id="a8721b70fec05c843027b970ac968f90e" name="a8721b70fec05c843027b970ac968f90e"></a>
 const <a class="el" href="structscore_1_1_brush.html">Brush</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fromString</b> (const QString &amp;s) const</td></tr>
 <tr class="separator:a8721b70fec05c843027b970ac968f90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +166,17 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acecaaf887b4edd53c5f96e5bbb285c24" id="r_acecaaf887b4edd53c5f96e5bbb285c24"><td class="memItemLeft" align="right" valign="top"><a id="acecaaf887b4edd53c5f96e5bbb285c24" name="acecaaf887b4edd53c5f96e5bbb285c24"></a>
 static <a class="el" href="classscore_1_1_skin.html">Skin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> () noexcept</td></tr>
 <tr class="separator:acecaaf887b4edd53c5f96e5bbb285c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51c02c4d8f16ba5389b3e6da39061b1" id="r_af51c02c4d8f16ba5389b3e6da39061b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#af51c02c4d8f16ba5389b3e6da39061b1">exists</a> () noexcept</td></tr>
+<tr class="separator:af51c02c4d8f16ba5389b3e6da39061b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83f67359a6f4efe0a2a0f7cad980d0f2" id="r_a83f67359a6f4efe0a2a0f7cad980d0f2"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::pair&lt; const char *, QPalette::ColorRole &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a83f67359a6f4efe0a2a0f7cad980d0f2">paletteRoles</a> () noexcept</td></tr>
+<tr class="separator:a83f67359a6f4efe0a2a0f7cad980d0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a5bbcbf48822e9c2096b93514f0bec105" id="r_a5bbcbf48822e9c2096b93514f0bec105"><td class="memItemLeft" align="right" valign="top"><a id="a5bbcbf48822e9c2096b93514f0bec105" name="a5bbcbf48822e9c2096b93514f0bec105"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationFont</b></td></tr>
+<tr class="memdesc:a5bbcbf48822e9c2096b93514f0bec105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying this to the QApplication is setupApplicationFont()'s job. <br /></td></tr>
+<tr class="separator:a5bbcbf48822e9c2096b93514f0bec105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa99dbfe6ce35ba75b3e23d8575d7c964" id="r_aa99dbfe6ce35ba75b3e23d8575d7c964"><td class="memItemLeft" align="right" valign="top"><a id="aa99dbfe6ce35ba75b3e23d8575d7c964" name="aa99dbfe6ce35ba75b3e23d8575d7c964"></a>
 QFont&#160;</td><td class="memItemRight" valign="bottom"><b>SansFont</b></td></tr>
 <tr class="separator:aa99dbfe6ce35ba75b3e23d8575d7c964"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +210,16 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>Medium12Pt</b></td><
 <tr class="memitem:ab9fae08618c6803d10326bf85cab04bf" id="r_ab9fae08618c6803d10326bf85cab04bf"><td class="memItemLeft" align="right" valign="top"><a id="ab9fae08618c6803d10326bf85cab04bf" name="ab9fae08618c6803d10326bf85cab04bf"></a>
 QFont&#160;</td><td class="memItemRight" valign="bottom"><b>TitleFont</b></td></tr>
 <tr class="separator:ab9fae08618c6803d10326bf85cab04bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ac4694ae3395d5eda08e71367b59e9" id="r_af8ac4694ae3395d5eda08e71367b59e9"><td class="memItemLeft" align="right" valign="top">QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#af8ac4694ae3395d5eda08e71367b59e9">SectionTitleFont</a></td></tr>
+<tr class="separator:af8ac4694ae3395d5eda08e71367b59e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7ed4b883a65461b84fbdfbf5188c0a" id="r_a1e7ed4b883a65461b84fbdfbf5188c0a"><td class="memItemLeft" align="right" valign="top">QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a1e7ed4b883a65461b84fbdfbf5188c0a">TimecodeFont</a></td></tr>
+<tr class="separator:a1e7ed4b883a65461b84fbdfbf5188c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2173492bbba40f241646a9c7a8505df" id="r_af2173492bbba40f241646a9c7a8505df"><td class="memItemLeft" align="right" valign="top">QFont&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#af2173492bbba40f241646a9c7a8505df">RulerFont</a></td></tr>
+<tr class="separator:af2173492bbba40f241646a9c7a8505df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7939cd3a9d5ece9a16275f03efd9a0fe" id="r_a7939cd3a9d5ece9a16275f03efd9a0fe"><td class="memItemLeft" align="right" valign="top"><a id="a7939cd3a9d5ece9a16275f03efd9a0fe" name="a7939cd3a9d5ece9a16275f03efd9a0fe"></a>
+QFont&#160;</td><td class="memItemRight" valign="bottom"><b>CodeFont</b></td></tr>
+<tr class="memdesc:a7939cd3a9d5ece9a16275f03efd9a0fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Script and shader editors. <br /></td></tr>
+<tr class="separator:a7939cd3a9d5ece9a16275f03efd9a0fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fd03cae33274327e250e4549623ee24" id="r_a5fd03cae33274327e250e4549623ee24"><td class="memItemLeft" align="right" valign="top"><a id="a5fd03cae33274327e250e4549623ee24" name="a5fd03cae33274327e250e4549623ee24"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Dark</b></td></tr>
 <tr class="separator:a5fd03cae33274327e250e4549623ee24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -290,6 +322,12 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>TitleFont</b></td></
 <tr class="memitem:ad6b4325329e7b2ccb580c5096498ea0a" id="r_ad6b4325329e7b2ccb580c5096498ea0a"><td class="memItemLeft" align="right" valign="top"><a id="ad6b4325329e7b2ccb580c5096498ea0a" name="ad6b4325329e7b2ccb580c5096498ea0a"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cable3</b></td></tr>
 <tr class="separator:ad6b4325329e7b2ccb580c5096498ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90a6d3a0105339737d8c3ffd3a0de7c" id="r_ad90a6d3a0105339737d8c3ffd3a0de7c"><td class="memItemLeft" align="right" valign="top"><a id="ad90a6d3a0105339737d8c3ffd3a0de7c" name="ad90a6d3a0105339737d8c3ffd3a0de7c"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cable4</b></td></tr>
+<tr class="separator:ad90a6d3a0105339737d8c3ffd3a0de7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d5ca48629eca621b66a728b0d7748f" id="r_aa5d5ca48629eca621b66a728b0d7748f"><td class="memItemLeft" align="right" valign="top"><a id="aa5d5ca48629eca621b66a728b0d7748f" name="aa5d5ca48629eca621b66a728b0d7748f"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cable5</b></td></tr>
+<tr class="separator:aa5d5ca48629eca621b66a728b0d7748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad57d66c9c62e3180b0c5a68a87b086e9" id="r_ad57d66c9c62e3180b0c5a68a87b086e9"><td class="memItemLeft" align="right" valign="top"><a id="ad57d66c9c62e3180b0c5a68a87b086e9" name="ad57d66c9c62e3180b0c5a68a87b086e9"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelectedCable1</b></td></tr>
 <tr class="separator:ad57d66c9c62e3180b0c5a68a87b086e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,8 +337,13 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>TitleFont</b></td></
 <tr class="memitem:a921c369676fc41841238bffbddc376bf" id="r_a921c369676fc41841238bffbddc376bf"><td class="memItemLeft" align="right" valign="top"><a id="a921c369676fc41841238bffbddc376bf" name="a921c369676fc41841238bffbddc376bf"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelectedCable3</b></td></tr>
 <tr class="separator:a921c369676fc41841238bffbddc376bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ae9ff42e3fc0db1195d3541435a384" id="r_a07ae9ff42e3fc0db1195d3541435a384"><td class="memItemLeft" align="right" valign="top"><a id="a07ae9ff42e3fc0db1195d3541435a384" name="a07ae9ff42e3fc0db1195d3541435a384"></a>
-<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Port1</b></td></tr>
+<tr class="memitem:a75cb55a1b0cea3d5efcbff673685dcc5" id="r_a75cb55a1b0cea3d5efcbff673685dcc5"><td class="memItemLeft" align="right" valign="top"><a id="a75cb55a1b0cea3d5efcbff673685dcc5" name="a75cb55a1b0cea3d5efcbff673685dcc5"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelectedCable4</b></td></tr>
+<tr class="separator:a75cb55a1b0cea3d5efcbff673685dcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6c65cf99977be5a0169dd05e2f3164" id="r_a6a6c65cf99977be5a0169dd05e2f3164"><td class="memItemLeft" align="right" valign="top"><a id="a6a6c65cf99977be5a0169dd05e2f3164" name="a6a6c65cf99977be5a0169dd05e2f3164"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SelectedCable5</b></td></tr>
+<tr class="separator:a6a6c65cf99977be5a0169dd05e2f3164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ae9ff42e3fc0db1195d3541435a384" id="r_a07ae9ff42e3fc0db1195d3541435a384"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a07ae9ff42e3fc0db1195d3541435a384">Port1</a></td></tr>
 <tr class="separator:a07ae9ff42e3fc0db1195d3541435a384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac541da8ee711043d9de73d81a8acfa37" id="r_ac541da8ee711043d9de73d81a8acfa37"><td class="memItemLeft" align="right" valign="top"><a id="ac541da8ee711043d9de73d81a8acfa37" name="ac541da8ee711043d9de73d81a8acfa37"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Port2</b></td></tr>
@@ -308,12 +351,27 @@ QFont&#160;</td><td class="memItemRight" valign="bottom"><b>TitleFont</b></td></
 <tr class="memitem:a7034e39993dd3f897beb85db80549aa7" id="r_a7034e39993dd3f897beb85db80549aa7"><td class="memItemLeft" align="right" valign="top"><a id="a7034e39993dd3f897beb85db80549aa7" name="a7034e39993dd3f897beb85db80549aa7"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Port3</b></td></tr>
 <tr class="separator:a7034e39993dd3f897beb85db80549aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab61ea7c19d776daffbc3e518ee56e23e" id="r_ab61ea7c19d776daffbc3e518ee56e23e"><td class="memItemLeft" align="right" valign="top"><a id="ab61ea7c19d776daffbc3e518ee56e23e" name="ab61ea7c19d776daffbc3e518ee56e23e"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Port4</b></td></tr>
+<tr class="separator:ab61ea7c19d776daffbc3e518ee56e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c6cea85104bb73f9f3b5485ef5852bd" id="r_a4c6cea85104bb73f9f3b5485ef5852bd"><td class="memItemLeft" align="right" valign="top"><a id="a4c6cea85104bb73f9f3b5485ef5852bd" name="a4c6cea85104bb73f9f3b5485ef5852bd"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Port5</b></td></tr>
+<tr class="separator:a4c6cea85104bb73f9f3b5485ef5852bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d459ce7383e6f7a0bb848f9e4e6626" id="r_a74d459ce7383e6f7a0bb848f9e4e6626"><td class="memItemLeft" align="right" valign="top"><a id="a74d459ce7383e6f7a0bb848f9e4e6626" name="a74d459ce7383e6f7a0bb848f9e4e6626"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Pulse1</b></td></tr>
 <tr class="separator:a74d459ce7383e6f7a0bb848f9e4e6626"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6487e4d33ee10e3f2832238440c57e28" id="r_a6487e4d33ee10e3f2832238440c57e28"><td class="memItemLeft" align="right" valign="top"><a id="a6487e4d33ee10e3f2832238440c57e28" name="a6487e4d33ee10e3f2832238440c57e28"></a>
 <a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Pulse2</b></td></tr>
 <tr class="separator:a6487e4d33ee10e3f2832238440c57e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48beb304443355e6b169ff71f870ee6d" id="r_a48beb304443355e6b169ff71f870ee6d"><td class="memItemLeft" align="right" valign="top"><a id="a48beb304443355e6b169ff71f870ee6d" name="a48beb304443355e6b169ff71f870ee6d"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Waveform1</b></td></tr>
+<tr class="memdesc:a48beb304443355e6b169ff71f870ee6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sound waveform: the peak envelope and the RMS body inside it. <br /></td></tr>
+<tr class="separator:a48beb304443355e6b169ff71f870ee6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03b5a73a5d022e39a380664f0f1353ab" id="r_a03b5a73a5d022e39a380664f0f1353ab"><td class="memItemLeft" align="right" valign="top"><a id="a03b5a73a5d022e39a380664f0f1353ab" name="a03b5a73a5d022e39a380664f0f1353ab"></a>
+<a class="el" href="structscore_1_1_brush.html">Brush</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Waveform2</b></td></tr>
+<tr class="separator:a03b5a73a5d022e39a380664f0f1353ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad122962d74c1d5fcfde6719aa8bdab88" id="r_ad122962d74c1d5fcfde6719aa8bdab88"><td class="memItemLeft" align="right" valign="top">QPalette&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#ad122962d74c1d5fcfde6719aa8bdab88">WidgetPalette</a></td></tr>
+<tr class="separator:ad122962d74c1d5fcfde6719aa8bdab88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e22ed90ff7994a8f08706a223314e0" id="r_a80e22ed90ff7994a8f08706a223314e0"><td class="memItemLeft" align="right" valign="top"><a id="a80e22ed90ff7994a8f08706a223314e0" name="a80e22ed90ff7994a8f08706a223314e0"></a>
 const QPen&#160;</td><td class="memItemRight" valign="bottom"><b>TransparentPen</b></td></tr>
 <tr class="separator:a80e22ed90ff7994a8f08706a223314e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,6 +451,180 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>PulseIndex</b> {}</td>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>LoadIndex</b> {}</td></tr>
 <tr class="separator:abdc411a47f47fe17208e86ed1e91e664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af51c02c4d8f16ba5389b3e6da39061b1" name="af51c02c4d8f16ba5389b3e6da39061b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51c02c4d8f16ba5389b3e6da39061b1">&#9670;&#160;</a></span>exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::Skin::exists </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether instance() has already been built, and so is safe to call. It needs the application context, which does not exist while the main window is being constructed. </p>
+
+</div>
+</div>
+<a id="a528db68c4967caec0f69718716d12e24" name="a528db68c4967caec0f69718716d12e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528db68c4967caec0f69718716d12e24">&#9670;&#160;</a></span>fonts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; const char *, QFont * &gt; &gt; score::Skin::fonts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every font a skin may name, keyed as in the file. Single list so load, save, the defaults and the editor cannot drift apart; the editor writes through these pointers and emits changed(). </p>
+
+</div>
+</div>
+<a id="a83f67359a6f4efe0a2a0f7cad980d0f2" name="a83f67359a6f4efe0a2a0f7cad980d0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83f67359a6f4efe0a2a0f7cad980d0f2">&#9670;&#160;</a></span>paletteRoles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; std::pair&lt; const char *, QPalette::ColorRole &gt; &gt; &amp; score::Skin::paletteRoles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every QPalette role a skin may name, keyed as in the file. Same shape as <a class="el" href="classscore_1_1_skin.html#a528db68c4967caec0f69718716d12e24">fonts()</a>: one list for load, save and the editor. </p>
+
+</div>
+</div>
+<a id="a170ec65734e65e5b53235e1313011052" name="a170ec65734e65e5b53235e1313011052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a170ec65734e65e5b53235e1313011052">&#9670;&#160;</a></span>toJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject score::Skin::toJson </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>In the form load() reads back: anything added here needs a load() counterpart. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a07ae9ff42e3fc0db1195d3541435a384" name="a07ae9ff42e3fc0db1195d3541435a384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ae9ff42e3fc0db1195d3541435a384">&#9670;&#160;</a></span>Port1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1_brush.html">Brush</a> score::Skin::Port1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Port and cable types: audio, data, midi, texture, geometry. One set, so a skin names them together and the distinctness check covers all five. </p>
+
+</div>
+</div>
+<a id="af2173492bbba40f241646a9c7a8505df" name="af2173492bbba40f241646a9c7a8505df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2173492bbba40f241646a9c7a8505df">&#9670;&#160;</a></span>RulerFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont score::Skin::RulerFont</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Timeline ruler numbers. Separate role: the smallest text score draws, so a pixel font has to land on its grid to stay legible. </p>
+
+</div>
+</div>
+<a id="af8ac4694ae3395d5eda08e71367b59e9" name="af8ac4694ae3395d5eda08e71367b59e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ac4694ae3395d5eda08e71367b59e9">&#9670;&#160;</a></span>SectionTitleFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont score::Skin::SectionTitleFont</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="namespace_inspector.html" title="Classes used for making and extending the inspector (default right panel).">Inspector</a> page heading. Separate role: a pixel font can be neither emboldened nor resized freely without Qt faking it. </p>
+
+</div>
+</div>
+<a id="a1e7ed4b883a65461b84fbdfbf5188c0a" name="a1e7ed4b883a65461b84fbdfbf5188c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e7ed4b883a65461b84fbdfbf5188c0a">&#9670;&#160;</a></span>TimecodeFont</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFont score::Skin::TimecodeFont</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transport time readout. Separate role: the one large piece of text, so a pixel-font skin needs it on its own grid. </p>
+
+</div>
+</div>
+<a id="ad122962d74c1d5fcfde6719aa8bdab88" name="ad122962d74c1d5fcfde6719aa8bdab88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad122962d74c1d5fcfde6719aa8bdab88">&#9670;&#160;</a></span>WidgetPalette</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPalette score::Skin::WidgetPalette</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The widget palette. Separate from the <a class="el" href="structscore_1_1_brush.html">Brush</a> roles above, which only reach the graphics scene: this is what the Qt widgets are drawn from, and without it a skin can only restyle half the application.</p>
+<p>Only the roles a skin names are set; the rest keep whatever the style computed, which is how Qt derives a sane Disabled group. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_skin_8hpp_source.html">Skin.hpp</a></li>
 <li><b>Skin.cpp</b></li>

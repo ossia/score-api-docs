@@ -1,6 +1,7 @@
 var dir_e0f0a2e5702e7fb434434342fa318f9f =
 [
     [ "AddRemoveList.hpp", "_add_remove_list_8hpp_source.html", null ],
+    [ "ApplicationStyle.hpp", "_application_style_8hpp_source.html", null ],
     [ "ArrowButton.hpp", "_arrow_button_8hpp_source.html", null ],
     [ "ClearLayout.hpp", "_clear_layout_8hpp_source.html", null ],
     [ "ComboBox.hpp", "_combo_box_8hpp_source.html", null ],
@@ -32,5 +33,6 @@ var dir_e0f0a2e5702e7fb434434342fa318f9f =
     [ "TextLabel.hpp", "_text_label_8hpp_source.html", null ],
     [ "TimeMode.hpp", "_time_mode_8hpp_source.html", null ],
     [ "TimeSpinBox.hpp", "_time_spin_box_8hpp_source.html", null ],
+    [ "ValidationPalette.hpp", "_validation_palette_8hpp_source.html", null ],
     [ "WidgetWrapper.hpp", "_widget_wrapper_8hpp_source.html", null ]
 ];

@@ -8,7 +8,7 @@ var searchData=
   ['validation_5fwriter_5',['validation_writer',['../structavnd__tools_1_1value__serialization_1_1validation__writer.html',1,'avnd_tools::value_serialization']]],
   ['validitychecker_6',['ValidityChecker',['../classscore_1_1_validity_checker.html',1,'score']]],
   ['validitycheckerlist_7',['ValidityCheckerList',['../classscore_1_1_validity_checker_list.html',1,'score']]],
-  ['value_8',['value',['../structjk_1_1value.html',1,'jk']]],
+  ['value_8',['value',['../structjk_1_1value.html',1,'jk::value'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html',1,'Protocols::MIDIDevices::Value']]],
   ['value_5fout_9',['value_out',['../struct_analysis_1_1value__out.html',1,'Analysis']]],
   ['value_5fsize_10',['value_size',['../structavnd__tools_1_1_pattern_combiner_1_1value__size.html',1,'avnd_tools::PatternCombiner::value_size'],['../struct_scenario_1_1value__size.html',1,'Scenario::value_size']]],
   ['value_5fvisitor_11',['value_visitor',['../struct_pd_1_1libpd__list__wrapper_1_1value__visitor.html',1,'Pd::libpd_list_wrapper::value_visitor'],['../struct_ui_1_1_signal_display_1_1_node_1_1value__visitor.html',1,'Ui::SignalDisplay::Node::value_visitor']]],

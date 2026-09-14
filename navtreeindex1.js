@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_command_backup_file_8hpp_source.html":[13,0,0,1,0,0,3],
 "_command_data_8hpp_source.html":[13,0,0,1,1,2,4],
 "_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,0],
 "_command_factory___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,0],
@@ -8,7 +9,7 @@ var NAVTREEINDEX1 =
 "_command_generator_map_8hpp.html#a992cdd2d9f7cc029812d4bc71ce87096":[13,0,0,1,1,2,6,2],
 "_command_generator_map_8hpp.html#ab8206af91c216c74ee90ce7aa6ba2331":[13,0,0,1,1,2,6,1],
 "_command_generator_map_8hpp_source.html":[13,0,0,1,1,2,6],
-"_command_spin_box_8hpp_source.html":[13,0,0,1,1,13,4],
+"_command_spin_box_8hpp_source.html":[13,0,0,1,1,13,5],
 "_command_stack_8hpp_source.html":[13,0,0,1,0,1,0],
 "_command_stack_facade_8hpp_source.html":[13,0,0,1,1,2,7],
 "_command_stack_serialization_8hpp_source.html":[13,0,0,1,0,1,1],
@@ -134,7 +135,7 @@ var NAVTREEINDEX1 =
 "_d_m_a_capture_input_node_8hpp_source.html":[13,0,0,2,17,1,4,11],
 "_d_m_x_fixture_instantiation_8hpp_source.html":[13,0,0,2,29,0,0,4],
 "_d_m_x_protocol_creation_8hpp_source.html":[13,0,0,2,29,0,0,5],
-"_d_n_s_s_d_device_enumerator_8hpp_source.html":[13,0,0,2,29,0,23],
+"_d_n_s_s_d_device_enumerator_8hpp_source.html":[13,0,0,2,29,0,24],
 "_d_r_m_prime_8hpp_source.html":[13,0,0,2,17,1,4,0,4],
 "_d_s_p_wrapper_8hpp_source.html":[13,0,0,2,15,0,2],
 "_d_x_v_8hpp_source.html":[13,0,0,2,17,1,4,0,5],
@@ -227,8 +228,8 @@ var NAVTREEINDEX1 =
 "_document_view_8hpp_source.html":[13,0,0,1,0,2,8],
 "_domain_8hpp_source.html":[13,0,0,2,4,0,3],
 "_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4],
-"_double_slider_8hpp_source.html":[13,0,0,1,1,13,6],
-"_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,7],
+"_double_slider_8hpp_source.html":[13,0,0,1,1,13,7],
+"_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,8],
 "_driver_8hpp_source.html":[13,0,0,2,19,2,0,1],
 "_drm_fourcc_8hpp_source.html":[13,0,0,2,17,1,4,2,18],
 "_drm_functions_8hpp.html":[13,0,0,2,17,1,4,2,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_drop_on_node_8hpp_source.html":[13,0,0,2,32,4,0,0,5],
 "_drop_port_in_scenario_8hpp_source.html":[13,0,0,2,12,0,6],
 "_drop_preset_in_interval_8hpp_source.html":[13,0,0,2,32,4,0,0,6],
-"_drop_preset_in_scenario_8hpp_source.html":[13,0,0,2,32,4,0,0,7],
-"_drop_process_in_interval_8hpp_source.html":[13,0,0,2,32,4,0,0,8]
+"_drop_preset_in_scenario_8hpp_source.html":[13,0,0,2,32,4,0,0,7]
 };
