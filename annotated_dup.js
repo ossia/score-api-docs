@@ -517,7 +517,7 @@ var annotated_dup =
         [ "ProcessExecutorComponent", "class_gfx_1_1_filter_1_1_process_executor_component.html", "class_gfx_1_1_filter_1_1_process_executor_component" ],
         [ "ProcessFactory", "struct_gfx_1_1_filter_1_1_process_factory.html", null ],
         [ "ShadertoyDownloader", "class_gfx_1_1_filter_1_1_shadertoy_downloader.html", null ],
-        [ "VideoTextureDropHandler", "struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html", null ]
+        [ "VideoTextureDropHandler", "struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html", "struct_gfx_1_1_filter_1_1_video_texture_drop_handler" ]
       ] ],
       [ "FlattenedSceneFilter", null, [
         [ "flattened_scene_filter_exec_node", "class_gfx_1_1_flattened_scene_filter_1_1flattened__scene__filter__exec__node.html", null ],
@@ -794,10 +794,10 @@ var annotated_dup =
       [ "ShaderSource", "struct_gfx_1_1_shader_source.html", "struct_gfx_1_1_shader_source" ],
       [ "SharedInputProtocolFactory", "class_gfx_1_1_shared_input_protocol_factory.html", null ],
       [ "SharedInputSettings", "struct_gfx_1_1_shared_input_settings.html", null ],
-      [ "SharedInputSettingsWidget", "class_gfx_1_1_shared_input_settings_widget.html", null ],
+      [ "SharedInputSettingsWidget", "class_gfx_1_1_shared_input_settings_widget.html", "class_gfx_1_1_shared_input_settings_widget" ],
       [ "SharedOutputProtocolFactory", "class_gfx_1_1_shared_output_protocol_factory.html", null ],
       [ "SharedOutputSettings", "struct_gfx_1_1_shared_output_settings.html", null ],
-      [ "SharedOutputSettingsWidget", "class_gfx_1_1_shared_output_settings_widget.html", null ],
+      [ "SharedOutputSettingsWidget", "class_gfx_1_1_shared_output_settings_widget.html", "class_gfx_1_1_shared_output_settings_widget" ],
       [ "shmdata_output_device", "class_gfx_1_1shmdata__output__device.html", null ],
       [ "ShmdataOutputDevice", "class_gfx_1_1_shmdata_output_device.html", null ],
       [ "ShmdataOutputNode", "struct_gfx_1_1_shmdata_output_node.html", "struct_gfx_1_1_shmdata_output_node" ],
@@ -910,6 +910,10 @@ var annotated_dup =
       [ "value", "structjk_1_1value.html", null ]
     ] ],
     [ "JS", null, [
+      [ "detail", null, [
+        [ "RedirectHolder", "struct_j_s_1_1detail_1_1_redirect_holder.html", null ],
+        [ "StagedScripts", "struct_j_s_1_1detail_1_1_staged_scripts.html", "struct_j_s_1_1detail_1_1_staged_scripts" ]
+      ] ],
       [ "Executor", null, [
         [ "Component", "class_j_s_1_1_executor_1_1_component.html", null ]
       ] ],
@@ -938,6 +942,7 @@ var annotated_dup =
       [ "DeviceListener", "class_j_s_1_1_device_listener.html", null ],
       [ "DialogOwner", "struct_j_s_1_1_dialog_owner.html", null ],
       [ "DropHandler", "class_j_s_1_1_drop_handler.html", null ],
+      [ "EditedScriptRedirect", "class_j_s_1_1_edited_script_redirect.html", null ],
       [ "EditJsContext", "class_j_s_1_1_edit_js_context.html", "class_j_s_1_1_edit_js_context" ],
       [ "EditScript", "class_j_s_1_1_edit_script.html", null ],
       [ "Enum", "class_j_s_1_1_enum.html", null ],
@@ -1022,7 +1027,7 @@ var annotated_dup =
       [ "ProcessPanel", "class_library_1_1_process_panel.html", null ],
       [ "ProcessPanelFactory", "class_library_1_1_process_panel_factory.html", null ],
       [ "ProcessTreeView", "class_library_1_1_process_tree_view.html", null ],
-      [ "ProcessWidget", "class_library_1_1_process_widget.html", null ],
+      [ "ProcessWidget", "class_library_1_1_process_widget.html", "class_library_1_1_process_widget" ],
       [ "ProjectLibraryWidget", "class_library_1_1_project_library_widget.html", null ],
       [ "ProjectPanel", "class_library_1_1_project_panel.html", null ],
       [ "ProjectPanelFactory", "class_library_1_1_project_panel_factory.html", null ],
@@ -1390,6 +1395,7 @@ var annotated_dup =
       [ "MessageBusWrapperToUi", "structoscr_1_1_message_bus_wrapper_to_ui.html", null ],
       [ "MessageBusWrapperToUi< Info >", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html", null ],
       [ "MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", null ],
+      [ "node_with_worker", "structoscr_1_1node__with__worker.html", "structoscr_1_1node__with__worker" ],
       [ "NodeItem", "structoscr_1_1_node_item.html", null ],
       [ "NormalizerFromMapper", "structoscr_1_1_normalizer_from_mapper.html", null ],
       [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", null ],
@@ -1582,7 +1588,7 @@ var annotated_dup =
       [ "MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", "class_process_1_1_multi_script_dialog" ],
       [ "MultiSlider", "struct_process_1_1_multi_slider.html", null ],
       [ "MultiSliderXY", "struct_process_1_1_multi_slider_x_y.html", null ],
-      [ "NodeItem", "class_process_1_1_node_item.html", null ],
+      [ "NodeItem", "class_process_1_1_node_item.html", "class_process_1_1_node_item" ],
       [ "OfflineAction", "class_process_1_1_offline_action.html", null ],
       [ "OfflineActionList", "class_process_1_1_offline_action_list.html", "class_process_1_1_offline_action_list" ],
       [ "Outlet", "class_process_1_1_outlet.html", null ],
@@ -2694,7 +2700,7 @@ var annotated_dup =
       [ "ComponentHierarchyManager", "classscore_1_1_component_hierarchy_manager.html", "classscore_1_1_component_hierarchy_manager" ],
       [ "Components", "structscore_1_1_components.html", null ],
       [ "ConsolidateOptions", "structscore_1_1_consolidate_options.html", "structscore_1_1_consolidate_options" ],
-      [ "CoreApplicationPlugin", "classscore_1_1_core_application_plugin.html", null ],
+      [ "CoreApplicationPlugin", "classscore_1_1_core_application_plugin.html", "classscore_1_1_core_application_plugin" ],
       [ "CustomActionCondition", "structscore_1_1_custom_action_condition.html", null ],
       [ "DefaultComboImpl", "structscore_1_1_default_combo_impl.html", null ],
       [ "DefaultControlImpl", "structscore_1_1_default_control_impl.html", null ],
@@ -2828,7 +2834,7 @@ var annotated_dup =
       [ "MinimalApplication", "classscore_1_1_minimal_application.html", "classscore_1_1_minimal_application" ],
       [ "MinimalGUIApplication", "classscore_1_1_minimal_g_u_i_application.html", null ],
       [ "MissingCommandException", "classscore_1_1_missing_command_exception.html", null ],
-      [ "ModelMetadata", "classscore_1_1_model_metadata.html", null ],
+      [ "ModelMetadata", "classscore_1_1_model_metadata.html", "classscore_1_1_model_metadata" ],
       [ "NetworkSessionInterface", "classscore_1_1_network_session_interface.html", "classscore_1_1_network_session_interface" ],
       [ "NumberedEvent", "structscore_1_1_numbered_event.html", null ],
       [ "NumberedWithPath_Event", "structscore_1_1_numbered_with_path___event.html", null ],
@@ -2920,7 +2926,7 @@ var annotated_dup =
       [ "SettingsDelegateView", "classscore_1_1_settings_delegate_view.html", null ],
       [ "SettingsParameterMetadata", "structscore_1_1_settings_parameter_metadata.html", null ],
       [ "SettingsPresenter", "classscore_1_1_settings_presenter.html", null ],
-      [ "SettingsView", "classscore_1_1_settings_view.html", null ],
+      [ "SettingsView", "classscore_1_1_settings_view.html", "classscore_1_1_settings_view" ],
       [ "SimpleTextItem", "classscore_1_1_simple_text_item.html", "classscore_1_1_simple_text_item" ],
       [ "SizeVisitor", "structscore_1_1_size_visitor.html", null ],
       [ "Skin", "classscore_1_1_skin.html", "classscore_1_1_skin" ],

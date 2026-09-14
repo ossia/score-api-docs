@@ -43,6 +43,7 @@ var namespaceoscr =
     [ "MessageBusWrapperToUi", "structoscr_1_1_message_bus_wrapper_to_ui.html", null ],
     [ "MessageBusWrapperToUi< Info >", "structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html", null ],
     [ "MidiFileOctaver", "structoscr_1_1_midi_file_octaver.html", null ],
+    [ "node_with_worker", "structoscr_1_1node__with__worker.html", "structoscr_1_1node__with__worker" ],
     [ "NodeItem", "structoscr_1_1_node_item.html", null ],
     [ "NormalizerFromMapper", "structoscr_1_1_normalizer_from_mapper.html", null ],
     [ "OutletInitFunc", "structoscr_1_1_outlet_init_func.html", null ],
@@ -79,8 +80,11 @@ var namespaceoscr =
     [ "GpuGraphicsNode2", "conceptoscr_1_1_gpu_graphics_node2.html", null ],
     [ "GpuComputeNode2", "conceptoscr_1_1_gpu_compute_node2.html", null ],
     [ "is_gpu", "conceptoscr_1_1is__gpu.html", null ],
+    [ "has_renderer_state", "conceptoscr_1_1has__renderer__state.html", null ],
+    [ "CpuOnlyBufferNode", "conceptoscr_1_1_cpu_only_buffer_node.html", null ],
     [ "has_ossia_layer", "conceptoscr_1_1has__ossia__layer.html", null ],
     [ "scene_port", "conceptoscr_1_1scene__port.html", null ],
+    [ "exec_node_t", "namespaceoscr.html#a27d0b244f721ea014c27b82df239f63b", null ],
     [ "reflect_controller_controls", "namespaceoscr.html#aff603550764466eab1394f6a8fb7795d", null ],
     [ "field_has_ui_controls", "namespaceoscr.html#af07783ba70da8727ed32a7406a8acb69", null ]
 ];

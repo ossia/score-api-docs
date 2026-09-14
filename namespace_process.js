@@ -104,7 +104,7 @@ var namespace_process =
     [ "MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", "class_process_1_1_multi_script_dialog" ],
     [ "MultiSlider", "struct_process_1_1_multi_slider.html", null ],
     [ "MultiSliderXY", "struct_process_1_1_multi_slider_x_y.html", null ],
-    [ "NodeItem", "class_process_1_1_node_item.html", null ],
+    [ "NodeItem", "class_process_1_1_node_item.html", "class_process_1_1_node_item" ],
     [ "OfflineAction", "class_process_1_1_offline_action.html", null ],
     [ "OfflineActionList", "class_process_1_1_offline_action_list.html", "class_process_1_1_offline_action_list" ],
     [ "Outlet", "class_process_1_1_outlet.html", null ],

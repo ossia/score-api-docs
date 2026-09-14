@@ -4,10 +4,11 @@ var searchData=
   ['elementsperline_1',['elementsPerLine',['../struct_state_1_1_pretty_print_options.html#a904414f676a1bbc27e52acc328f4c0d8',1,'State::PrettyPrintOptions']]],
   ['encoderfactory_2',['encoderfactory',['../structscore_1_1gfx_1_1interop_1_1_compute_ring_dispatcher_config.html#afaa3fa0f6e6592a8e5360b2f9e12ff5b',1,'score::gfx::interop::ComputeRingDispatcherConfig::encoderFactory'],['../structscore_1_1gfx_1_1interop_1_1_rdma_video_output_config.html#a45e00e98fc88c7a9ba0db387ad662a7c',1,'score::gfx::interop::RdmaVideoOutputConfig::encoderFactory']]],
   ['encoding_3',['encoding',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#af3d45ed63aee0e8b82fdd771b0f2e9dd',1,'Protocols::MIDIDevices::Value']]],
-  ['executionqueue_4',['executionQueue',['../struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36',1,'Execution::Context']]],
-  ['expanded_5',['expanded',['../struct_protocols_1_1_m_i_d_i_devices_1_1_generic_channel.html#a5a3862892bf3eda310879512ad33e629',1,'Protocols::MIDIDevices::GenericChannel']]],
-  ['exposure_6',['exposure',['../structscore_1_1gfx_1_1_capture_adjust.html#ad3121e6ce60dc5c09505b35061e220d1',1,'score::gfx::CaptureAdjust']]],
-  ['extended_7',['extended',['../struct_protocols_1_1_c_a_n_1_1_message.html#a5d52f2624bf46e02d1e8eeb71bac1a7b',1,'Protocols::CAN::Message']]],
-  ['externalphysicalmemory_8',['externalPhysicalMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a8165bd326220c89f7df2fe234dcde5fb',1,'score::gfx::interop::AmdGlExtensions']]],
-  ['externalvirtualmemory_9',['externalVirtualMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a30bf0c827d4c05b576427298222495b8',1,'score::gfx::interop::AmdGlExtensions']]]
+  ['endedbypostaction_4',['endedByPostaction',['../struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html#a0ef14070e1b422711fc44dfe4cb5dc24',1,'Nodes::AudioLooper::Node::State']]],
+  ['executionqueue_5',['executionQueue',['../struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36',1,'Execution::Context']]],
+  ['expanded_6',['expanded',['../struct_protocols_1_1_m_i_d_i_devices_1_1_generic_channel.html#a5a3862892bf3eda310879512ad33e629',1,'Protocols::MIDIDevices::GenericChannel']]],
+  ['exposure_7',['exposure',['../structscore_1_1gfx_1_1_capture_adjust.html#ad3121e6ce60dc5c09505b35061e220d1',1,'score::gfx::CaptureAdjust']]],
+  ['extended_8',['extended',['../struct_protocols_1_1_c_a_n_1_1_message.html#a5d52f2624bf46e02d1e8eeb71bac1a7b',1,'Protocols::CAN::Message']]],
+  ['externalphysicalmemory_9',['externalPhysicalMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a8165bd326220c89f7df2fe234dcde5fb',1,'score::gfx::interop::AmdGlExtensions']]],
+  ['externalvirtualmemory_10',['externalVirtualMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a30bf0c827d4c05b576427298222495b8',1,'score::gfx::interop::AmdGlExtensions']]]
 ];

@@ -131,8 +131,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b> {}</td></tr
 <tr class="separator:a196a6a2502469d0c4319cc6a8744f4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0582660e0abe2e241e3eb1685688c80c" id="r_a0582660e0abe2e241e3eb1685688c80c"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html#a0582660e0abe2e241e3eb1685688c80c">frameByteSize</a> {}</td></tr>
 <tr class="separator:a0582660e0abe2e241e3eb1685688c80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab012643539ea3d470f39d5f01a9935e3" id="r_ab012643539ea3d470f39d5f01a9935e3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html#ab012643539ea3d470f39d5f01a9935e3">colorConversion</a></td></tr>
+<tr class="separator:ab012643539ea3d470f39d5f01a9935e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab012643539ea3d470f39d5f01a9935e3" name="ab012643539ea3d470f39d5f01a9935e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab012643539ea3d470f39d5f01a9935e3">&#9670;&#160;</a></span>colorConversion</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::gfx::interop::VideoOutputStrategyConfig::colorConversion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The RGB-&gt;wire colour conversion the encoder must use, from <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#aff94d447ef0ec91a4e004ed4fc008e03">DirectVideoOutputBackend::colorConversion()</a>. A GPU-direct strategy builds its own encoder, so without this it has no way to learn the backend's colour decision and has to invent one &ndash; which is how AJA ended up emitting SDR BT.709 on the RDMA path while the host-staged path honoured HDR10, on the same device and the same setting. Empty means "not
+supplied"; a strategy may then fall back, but should not have to. </p>
+
+</div>
+</div>
 <a id="a0582660e0abe2e241e3eb1685688c80c" name="a0582660e0abe2e241e3eb1685688c80c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0582660e0abe2e241e3eb1685688c80c">&#9670;&#160;</a></span>frameByteSize</h2>
 

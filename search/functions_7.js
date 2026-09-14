@@ -10,10 +10,11 @@ var searchData=
   ['hastier0_7',['hasTier0',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#aba8598fed1d9e06d1d198d2bde9ff433',1,'score::gfx::interop::GpuCapabilities']]],
   ['hastier1dvp_8',['hasTier1Dvp',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a3aec38e1d3d6b23d34c731e5348824cb',1,'score::gfx::interop::GpuCapabilities']]],
   ['hastier2amdpinned_9',['hasTier2AmdPinned',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#abf9876d7a20073b037d1fde8c0782424',1,'score::gfx::interop::GpuCapabilities']]],
-  ['haswaveform_10',['hasWaveform',['../classscore_1_1_q_graphics_waveform_button.html#ab3e400fa1dd74de1c0607d483ff32c1c',1,'score::QGraphicsWaveformButton']]],
-  ['healthy_11',['healthy',['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_d3_d11.html#aabcaa78798606bc69b61940a61b2d038',1,'score::gfx::interop::DvpCaptureD3D11::healthy()'],['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_gl.html#a8595ea409ac29cf1970cb7300e1cf393',1,'score::gfx::interop::DvpCaptureGl::healthy()']]],
-  ['hierarchicalscenariocomponent_12',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)']]],
-  ['hlslintrinsiccollision_13',['hlslIntrinsicCollision',['../namespacescore_1_1gfx.html#aa56cffc3102860d529b2610a72761ce5',1,'score::gfx']]],
-  ['holdspointer_14',['holdsPointer',['../structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5',1,'score::InfiniteScroller']]],
-  ['hwcodecname_15',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]]
+  ['hasview_10',['hasView',['../classscore_1_1_settings.html#a0c1d076610dcc4c7cd3573b33282908a',1,'score::Settings']]],
+  ['haswaveform_11',['hasWaveform',['../classscore_1_1_q_graphics_waveform_button.html#ab3e400fa1dd74de1c0607d483ff32c1c',1,'score::QGraphicsWaveformButton']]],
+  ['healthy_12',['healthy',['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_d3_d11.html#aabcaa78798606bc69b61940a61b2d038',1,'score::gfx::interop::DvpCaptureD3D11::healthy()'],['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_gl.html#a8595ea409ac29cf1970cb7300e1cf393',1,'score::gfx::interop::DvpCaptureGl::healthy()']]],
+  ['hierarchicalscenariocomponent_13',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)']]],
+  ['hlslintrinsiccollision_14',['hlslIntrinsicCollision',['../namespacescore_1_1gfx.html#aa56cffc3102860d529b2610a72761ce5',1,'score::gfx']]],
+  ['holdspointer_15',['holdsPointer',['../structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5',1,'score::InfiniteScroller']]],
+  ['hwcodecname_16',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]]
 ];

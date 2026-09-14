@@ -1,18 +1,15 @@
 var searchData=
 [
-  ['waitflip_0',['waitFlip',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html#a33b39f435dabeb9dd37cd017e96bb358',1,'score::gfx::drm::KmsDevice']]],
-  ['waitoncuda_1',['waitoncuda',['../classscore_1_1gfx_1_1interop_1_1_compute_ring_dispatcher.html#af2f494f1d100a8e46f7c993a3ae357e9',1,'score::gfx::interop::ComputeRingDispatcher::waitOnCuda()'],['../structscore_1_1gfx_1_1interop_1_1_interop_fence.html#a84c14de4596ecacf46a78f381c905500',1,'score::gfx::interop::InteropFence::waitOnCuda()']]],
-  ['watching_2',['watching',['../class_ongoing_command_dispatcher.html#abea9ce63d1d9e214d5208f877a20568c',1,'OngoingCommandDispatcher']]],
-  ['watchsceneinputmethod_3',['watchSceneInputMethod',['../namespacescore.html#aef4d345fb028b5062609d81fb438e2ce',1,'score']]],
-  ['widget_4',['widget',['../classscore_1_1_document_view.html#a1246e6f580d3c6cf06b95a2c356255c3',1,'score::DocumentView::widget()'],['../classscore_1_1_messages_panel_delegate.html#ab16dc8216d020331a03478b276c80576',1,'score::MessagesPanelDelegate::widget()'],['../classscore_1_1_helper_panel_delegate.html#a4e9304df762625b6ebf465871c7a5886',1,'score::HelperPanelDelegate::widget()'],['../classscore_1_1_panel_delegate.html#a09ba76692fb54bf01887107aa6fbea93',1,'score::PanelDelegate::widget()'],['../class_explorer_1_1_panel_delegate.html#ab5f39ddecf99252e7e3ab77338a56efc',1,'Explorer::PanelDelegate::widget()'],['../class_mixer_1_1_panel_delegate.html#acdd57aaa4a7bec2ffe656476c192db80',1,'Mixer::PanelDelegate::widget()']]],
-  ['width_5',['width',['../structscore_1_1gfx_1_1_d_m_a_capture_backend.html#a4996808748d44501dc724a9866762f52',1,'score::gfx::DMACaptureBackend::width()'],['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a6d6b372a57a66f7e097a586c3c835cfc',1,'score::gfx::DirectVideoOutputBackend::width()']]],
-  ['windowpositionforsource_6',['windowPositionForSource',['../namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9',1,'Gfx']]],
-  ['wirecomputesupports_7',['wireComputeSupports',['../namespacescore_1_1gfx.html#ad82cadd1e21eb91cda266bb29fc9392b',1,'score::gfx']]],
-  ['wireformat_8',['wireFormat',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55',1,'score::gfx::DirectVideoOutputBackend']]],
-  ['wrapnativetexture_9',['wrapNativeTexture',['../_a_v_h_w_frame_to_q_rhi_8hpp.html#af88e15fb3cb37c4215bbbc02d8487dad',1,'score::gfx::interop']]],
-  ['write_10',['write',['../class_data_stream_writer.html#a0b10a4e412ae08395c87b5f63a4f02d6',1,'DataStreamWriter']]],
-  ['writebackcapture_11',['writebackCapture',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html#a7e3948af3604d3a2c3f22ae76939bc97',1,'score::gfx::drm::KmsDevice']]],
-  ['writegraphviz_12',['writeGraphviz',['../struct_scenario_1_1_timenode_graph.html#aee020c59323db73ea945be51d2215a73',1,'Scenario::TimenodeGraph']]],
-  ['writeindex_13',['writeIndex',['../classscore_1_1gfx_1_1interop_1_1_host_pinned_ring.html#abdaf2b1cb0078c58f9e22797de44e9bd',1,'score::gfx::interop::HostPinnedRing']]],
-  ['writeziparchive_14',['writeZipArchive',['../namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef',1,'score']]]
+  ['valid_0',['valid',['../classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocation.html#a83859586c25bb9031b52f0d3bdecce24',1,'score::gfx::interop::CudaVmmAllocation::valid()'],['../structscore_1_1gfx_1_1interop_1_1_interop_fence.html#aa481bedd44557de89550ebe18941ee1a',1,'score::gfx::interop::InteropFence::valid()'],['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#ae0ce1fba092ef3fb038ef56b362b3756',1,'score::gfx::interop::VideoPixelFormatInfo::valid()']]],
+  ['validatecapturetexturebytes_1',['validateCaptureTextureBytes',['../_capture_strategy_common_8hpp.html#a9f00fbbb00109c4b81ac9ac4011e9b23',1,'score::gfx::interop']]],
+  ['valueedited_2',['valueEdited',['../classscore_1_1_q_graphics_combo.html#a3adca6184d63232900b1f31a15473749',1,'score::QGraphicsCombo']]],
+  ['valueupdated_3',['valueUpdated',['../class_explorer_1_1_device_explorer_model.html#ae6b353b13ca8bfc353031a275323fd23',1,'Explorer::DeviceExplorerModel']]],
+  ['vertexfallbackpool_4',['vertexFallbackPool',['../classscore_1_1gfx_1_1_render_list.html#a2ad7079c58bcc381970fa048ee7e48d4',1,'score::gfx::RenderList']]],
+  ['viewcontaining_5',['viewContaining',['../classscore_1_1_central_view_stack.html#ac4d63a04931c01e2e685dfadc47483e8',1,'score::CentralViewStack']]],
+  ['viewcontextmenurequested_6',['viewContextMenuRequested',['../classscore_1_1_central_view_stack.html#acaf8eafafeda941dc4c5b6e48b803989',1,'score::CentralViewStack']]],
+  ['viewindexneedspassindexfallback_7',['viewIndexNeedsPassIndexFallback',['../namespacescore_1_1gfx.html#ab01aa7e56a74f71fb64d7c5f2c2003d5',1,'score::gfx']]],
+  ['virgin_8',['virgin',['../classscore_1_1_document.html#ab468cdc0d9a73e9cb666770f410e0b5e',1,'score::Document']]],
+  ['visibilitytostages_9',['visibilityToStages',['../namespacescore_1_1gfx.html#ac4775f63eca86f0538da16087959d86d',1,'score::gfx']]],
+  ['visualpriority_10',['visualPriority',['../class_device_1_1_protocol_factory.html#ad5810a19e266a8ab9804f127cfebd0f3',1,'Device::ProtocolFactory']]],
+  ['vuyadecoder_11',['VUYADecoder',['../structscore_1_1gfx_1_1_v_u_y_a_decoder.html#a3abc657deaa44863534f51321d273c32',1,'score::gfx::VUYADecoder']]]
 ];

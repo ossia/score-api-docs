@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_j_s_1_1_process_model.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_j_s_1_1_process_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">JS::ProcessModel Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -199,6 +200,12 @@ QQuickItem *&#160;</td><td class="memItemRight" valign="bottom"><b>createItemFor
 <tr class="memitem:a5a286af080dd019a225c490a7f74ff52" id="r_a5a286af080dd019a225c490a7f74ff52"><td class="memItemLeft" align="right" valign="top"><a id="a5a286af080dd019a225c490a7f74ff52" name="a5a286af080dd019a225c490a7f74ff52"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>rootPath</b> () const noexcept</td></tr>
 <tr class="separator:a5a286af080dd019a225c490a7f74ff52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39ebfb98a66badbaeb079d697aa90963" id="r_a39ebfb98a66badbaeb079d697aa90963"><td class="memItemLeft" align="right" valign="top"><a id="a39ebfb98a66badbaeb079d697aa90963" name="a39ebfb98a66badbaeb079d697aa90963"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rootFile</b> () const noexcept</td></tr>
+<tr class="memdesc:a39ebfb98a66badbaeb079d697aa90963"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> of the .qml this script was taken from; empty if it was written here. <br /></td></tr>
+<tr class="separator:a39ebfb98a66badbaeb079d697aa90963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365a14d8cc46b8485fc6da0ac57926e0" id="r_a365a14d8cc46b8485fc6da0ac57926e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#a365a14d8cc46b8485fc6da0ac57926e0">followsRootFile</a> () const noexcept</td></tr>
+<tr class="separator:a365a14d8cc46b8485fc6da0ac57926e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22d422f6ff2c6e8cdce7dc61ed16e9a" id="r_ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memItemLeft" align="right" valign="top"><a id="ac22d422f6ff2c6e8cdce7dc61ed16e9a" name="ac22d422f6ff2c6e8cdce7dc61ed16e9a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (const std::vector&lt; QString &gt; &amp;str) const noexcept</td></tr>
 <tr class="separator:ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -498,6 +505,15 @@ virtual <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; ProcessModel &g
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize_impl</b> (const <a class="el" href="struct_visitor_variant.html">VisitorVariant</a> &amp;vis) const</td></tr>
 <tr class="separator:aafa05e605f693e319e066767bd657abd inherit pub_methods_classscore_1_1_serializable_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1f9fb73951b0fc2b85592737850f998e" id="r_a1f9fb73951b0fc2b85592737850f998e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_j_s_1_1_qml_source.html">QmlSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#a1f9fb73951b0fc2b85592737850f998e">readProgramFromFile</a> (const QString &amp;qmlPath) noexcept</td></tr>
+<tr class="separator:a1f9fb73951b0fc2b85592737850f998e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e893c90dd0c45c7c86c597e1165b18a" id="r_a4e893c90dd0c45c7c86c597e1165b18a"><td class="memItemLeft" align="right" valign="top"><a id="a4e893c90dd0c45c7c86c597e1165b18a" name="a4e893c90dd0c45c7c86c597e1165b18a"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>uiPathFor</b> (const QString &amp;qmlPath) noexcept</td></tr>
+<tr class="memdesc:a4e893c90dd0c45c7c86c597e1165b18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">"foo.qml" -&gt; "foo.ui.qml". Empty if the name is not a .qml at all. <br /></td></tr>
+<tr class="separator:a4e893c90dd0c45c7c86c597e1165b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classscore_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1_entity.html">score::Entity&lt; ProcessModel &gt;</a></td></tr>
@@ -621,6 +637,32 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 
 </div>
 </div>
+<a id="a365a14d8cc46b8485fc6da0ac57926e0" name="a365a14d8cc46b8485fc6da0ac57926e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a365a14d8cc46b8485fc6da0ac57926e0">&#9670;&#160;</a></span>followsRootFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JS::ProcessModel::followsRootFile </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True while the program is still exactly what <a class="el" href="class_j_s_1_1_process_model.html#a39ebfb98a66badbaeb079d697aa90963" title="Path of the .qml this script was taken from; empty if it was written here.">rootFile()</a> holds. The document then saves the path alone, so that a later version of that file &ndash; a library update &ndash; is what the user gets when reopening. </p>
+
+</div>
+</div>
 <a id="a5fe7eba49661b2632237a6f58ac8ca74" name="a5fe7eba49661b2632237a6f58ac8ca74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fe7eba49661b2632237a6f58ac8ca74">&#9670;&#160;</a></span>mapExternalFiles()</h2>
 
@@ -648,6 +690,33 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 <p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
 
 <p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
+<a id="a1f9fb73951b0fc2b85592737850f998e" name="a1f9fb73951b0fc2b85592737850f998e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9fb73951b0fc2b85592737850f998e">&#9670;&#160;</a></span>readProgramFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_j_s_1_1_qml_source.html">QmlSource</a> JS::ProcessModel::readProgramFromFile </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>qmlPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The sources a .qml holds, together with those of its .ui.qml sibling. Members the disk has nothing for come back empty. </p>
 
 </div>
 </div>

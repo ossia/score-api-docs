@@ -116,6 +116,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_audio_looper_1_1_node
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html">ins</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector.html">passthrough_selector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html">ui</a></td></tr>
@@ -133,6 +135,15 @@ Public Types</h2></td></tr>
 , <b>Overdub</b>
  }</td></tr>
 <tr class="separator:ae159b1f9bc4b749a8689e268117ffb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae972d07b32b4e005d3122e1ca5711cc4" id="r_ae972d07b32b4e005d3122e1ca5711cc4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> { <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c">Always</a>
+, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166">Recording</a>
+ }</td></tr>
+<tr class="separator:ae972d07b32b4e005d3122e1ca5711cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef63d8cef5ef1373ba303bb2e656c338" id="r_aef63d8cef5ef1373ba303bb2e656c338"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> { <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754">None</a>
+, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36">Record</a>
+, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75">Full</a>
+ }</td></tr>
+<tr class="separator:aef63d8cef5ef1373ba303bb2e656c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2d8a43ca213149a140607b1dd5adc7" id="r_aef2d8a43ca213149a140607b1dd5adc7"><td class="memItemLeft" align="right" valign="top"><a id="aef2d8a43ca213149a140607b1dd5adc7" name="aef2d8a43ca213149a140607b1dd5adc7"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = ossia::token_request</td></tr>
 <tr class="separator:aef2d8a43ca213149a140607b1dd5adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +165,8 @@ Audio Utilities Loop audio&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a610bf1303b7e57e0f532b27e40c0c401" id="r_a610bf1303b7e57e0f532b27e40c0c401"><td class="memItemLeft" align="right" valign="top"><a id="a610bf1303b7e57e0f532b27e40c0c401" name="a610bf1303b7e57e0f532b27e40c0c401"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (recommended_height, 65)</td></tr>
 <tr class="separator:a610bf1303b7e57e0f532b27e40c0c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7572bd1f2dccb4aef88444e153ad9244" id="r_a7572bd1f2dccb4aef88444e153ad9244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a7572bd1f2dccb4aef88444e153ad9244">enterMode</a> (LoopMode m, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> restart)</td></tr>
+<tr class="separator:a7572bd1f2dccb4aef88444e153ad9244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa275fc81b65de0954b6c2d9efa2a8a19" id="r_aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memItemLeft" align="right" valign="top"><a id="aa275fc81b65de0954b6c2d9efa2a8a19" name="aa275fc81b65de0954b6c2d9efa2a8a19"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>fade</b> (const ossia::token_request &amp;tk)</td></tr>
 <tr class="separator:aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,18 +179,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>checkPostAction</b> (
 <tr class="memitem:a1b29defa9f7b2d4023348db00e732e54" id="r_a1b29defa9f7b2d4023348db00e732e54"><td class="memItemLeft" align="right" valign="top"><a id="a1b29defa9f7b2d4023348db00e732e54" name="a1b29defa9f7b2d4023348db00e732e54"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
 <tr class="separator:a1b29defa9f7b2d4023348db00e732e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f3ce7a188c2534443c1a13b3876f7b" id="r_a95f3ce7a188c2534443c1a13b3876f7b"><td class="memItemLeft" align="right" valign="top"><a id="a95f3ce7a188c2534443c1a13b3876f7b" name="a95f3ce7a188c2534443c1a13b3876f7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preAction</b> (ossia::token_request tk, Postaction postaction, int postaction_bars, bool passthrough)</td></tr>
-<tr class="separator:a95f3ce7a188c2534443c1a13b3876f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b781bc54e5ee99c7be1435f32175f0a" id="r_a5b781bc54e5ee99c7be1435f32175f0a"><td class="memItemLeft" align="right" valign="top"><a id="a5b781bc54e5ee99c7be1435f32175f0a" name="a5b781bc54e5ee99c7be1435f32175f0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::token_request &amp;tk, bool echoRecord)</td></tr>
-<tr class="separator:a5b781bc54e5ee99c7be1435f32175f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad61d36d86cd2bf5fd3184305fe6529e" id="r_aad61d36d86cd2bf5fd3184305fe6529e"><td class="memItemLeft" align="right" valign="top"><a id="aad61d36d86cd2bf5fd3184305fe6529e" name="aad61d36d86cd2bf5fd3184305fe6529e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (int64_t start, int64_t length, bool echoRecord)</td></tr>
-<tr class="separator:aad61d36d86cd2bf5fd3184305fe6529e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46bd730213ff55a15ebb254860583d5" id="r_af46bd730213ff55a15ebb254860583d5"><td class="memItemLeft" align="right" valign="top"><a id="af46bd730213ff55a15ebb254860583d5" name="af46bd730213ff55a15ebb254860583d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>preAction</b> (ossia::token_request tk, Postaction postaction, int postaction_bars, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> passthrough, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> restart)</td></tr>
+<tr class="separator:af46bd730213ff55a15ebb254860583d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562dd83b9cbb6439f1b25d7d71849c63" id="r_a562dd83b9cbb6439f1b25d7d71849c63"><td class="memItemLeft" align="right" valign="top"><a id="a562dd83b9cbb6439f1b25d7d71849c63" name="a562dd83b9cbb6439f1b25d7d71849c63"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> pt)</td></tr>
+<tr class="separator:a562dd83b9cbb6439f1b25d7d71849c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae08bc4bcbf2b27f5f9881d04fb279336" id="r_ae08bc4bcbf2b27f5f9881d04fb279336"><td class="memItemLeft" align="right" valign="top"><a id="ae08bc4bcbf2b27f5f9881d04fb279336" name="ae08bc4bcbf2b27f5f9881d04fb279336"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (int64_t start, int64_t length, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> pt)</td></tr>
+<tr class="separator:ae08bc4bcbf2b27f5f9881d04fb279336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9545a5ed8a81857a89aea7582850090" id="r_ad9545a5ed8a81857a89aea7582850090"><td class="memItemLeft" align="right" valign="top"><a id="ad9545a5ed8a81857a89aea7582850090" name="ad9545a5ed8a81857a89aea7582850090"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (int64_t first_pos, int64_t samples)</td></tr>
 <tr class="separator:ad9545a5ed8a81857a89aea7582850090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3177ecacf5ac8b0e8b905b26b69e5f" id="r_a1f3177ecacf5ac8b0e8b905b26b69e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a1f3177ecacf5ac8b0e8b905b26b69e5f">silence</a> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:a1f3177ecacf5ac8b0e8b905b26b69e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392169a298ebe67db0df578893e84aa0" id="r_a392169a298ebe67db0df578893e84aa0"><td class="memItemLeft" align="right" valign="top"><a id="a392169a298ebe67db0df578893e84aa0" name="a392169a298ebe67db0df578893e84aa0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mix_input</b> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="separator:a392169a298ebe67db0df578893e84aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa28064132dd4dd61bbf40255248e7fa" id="r_afa28064132dd4dd61bbf40255248e7fa"><td class="memItemLeft" align="right" valign="top"><a id="afa28064132dd4dd61bbf40255248e7fa" name="afa28064132dd4dd61bbf40255248e7fa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (int64_t first_pos, int64_t samples)</td></tr>
 <tr class="separator:afa28064132dd4dd61bbf40255248e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,9 +205,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>record</b> (int64_t f
 <tr class="memitem:a66cd38410c964e5a3adbbd07521d35dc" id="r_a66cd38410c964e5a3adbbd07521d35dc"><td class="memItemLeft" align="right" valign="top"><a id="a66cd38410c964e5a3adbbd07521d35dc" name="a66cd38410c964e5a3adbbd07521d35dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>record_noecho</b> (int64_t first_pos, int64_t samples)</td></tr>
 <tr class="separator:a66cd38410c964e5a3adbbd07521d35dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0b9b4df43473f75a1038306f4f93ef" id="r_abf0b9b4df43473f75a1038306f4f93ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#abf0b9b4df43473f75a1038306f4f93ef">overdub</a> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="memitem:abf0b9b4df43473f75a1038306f4f93ef" id="r_abf0b9b4df43473f75a1038306f4f93ef"><td class="memItemLeft" align="right" valign="top"><a id="abf0b9b4df43473f75a1038306f4f93ef" name="abf0b9b4df43473f75a1038306f4f93ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>overdub</b> (int64_t first_pos, int64_t samples)</td></tr>
 <tr class="separator:abf0b9b4df43473f75a1038306f4f93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc91392d3d873690852745050363863" id="r_aadc91392d3d873690852745050363863"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aadc91392d3d873690852745050363863">overdub_noecho</a> (int64_t first_pos, int64_t samples)</td></tr>
+<tr class="memitem:aadc91392d3d873690852745050363863" id="r_aadc91392d3d873690852745050363863"><td class="memItemLeft" align="right" valign="top"><a id="aadc91392d3d873690852745050363863" name="aadc91392d3d873690852745050363863"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>overdub_noecho</b> (int64_t first_pos, int64_t samples)</td></tr>
 <tr class="separator:aadc91392d3d873690852745050363863"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -215,9 +235,70 @@ struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html
 ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_state</b></td></tr>
 <tr class="separator:a0e07bdad07701ca80c2a14c83ab41bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aef63d8cef5ef1373ba303bb2e656c338" name="aef63d8cef5ef1373ba303bb2e656c338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef63d8cef5ef1373ba303bb2e656c338">&#9670;&#160;</a></span>Passthrough</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Nodes::AudioLooper::Node::Passthrough</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754" name="aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>The input is never heard, in any mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36" name="aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36"></a>Record&#160;</td><td class="fielddoc"><p>Heard while recording and overdubbing; playback is the loop alone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75" name="aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75"></a>Full&#160;</td><td class="fielddoc"><p>Always heard, mixed over the loop during playback. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ae972d07b32b4e005d3122e1ca5711cc4" name="ae972d07b32b4e005d3122e1ca5711cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae972d07b32b4e005d3122e1ca5711cc4">&#9670;&#160;</a></span>Restart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Nodes::AudioLooper::Node::Restart</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where the loop is read from when the mode changes.</p>
+<p>Order matters: the first is what the object did before there was a choice. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c" name="ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c"></a>Always&#160;</td><td class="fielddoc"><p>Every change of mode reads the loop from its beginning again. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166" name="ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166"></a>Recording&#160;</td><td class="fielddoc"><p>Only a recording does; playing and overdubbing carry straight on. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf0b9b4df43473f75a1038306f4f93ef" name="abf0b9b4df43473f75a1038306f4f93ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf0b9b4df43473f75a1038306f4f93ef">&#9670;&#160;</a></span>overdub()</h2>
+<a id="a7572bd1f2dccb4aef88444e153ad9244" name="a7572bd1f2dccb4aef88444e153ad9244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7572bd1f2dccb4aef88444e153ad9244">&#9670;&#160;</a></span>enterMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +307,44 @@ ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>o
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Nodes::AudioLooper::Node::overdub </td>
+          <td class="memname">void Nodes::AudioLooper::Node::enterMode </td>
+          <td>(</td>
+          <td class="paramtype">LoopMode&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a>&#160;</td>
+          <td class="paramname"><em>restart</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Taking up a mode. A recording always starts its buffer again &ndash; there is nothing yet to carry on from. Whether playing and overdubbing do is what the Restart setting is for: reading the loop from the top on every change jumps, which is heard when overdubbing hands over to playing. </p>
+
+</div>
+</div>
+<a id="a1f3177ecacf5ac8b0e8b905b26b69e5f" name="a1f3177ecacf5ac8b0e8b905b26b69e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3177ecacf5ac8b0e8b905b26b69e5f">&#9670;&#160;</a></span>silence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nodes::AudioLooper::Node::silence </td>
           <td>(</td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>first_pos</em>, </td>
@@ -249,44 +367,7 @@ ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>o
   </tr>
 </table>
 </div><div class="memdoc">
-<p>if we go past the end we have to start from the beginning ? or we keep extending ?</p>
-
-</div>
-</div>
-<a id="aadc91392d3d873690852745050363863" name="aadc91392d3d873690852745050363863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadc91392d3d873690852745050363863">&#9670;&#160;</a></span>overdub_noecho()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Nodes::AudioLooper::Node::overdub_noecho </td>
-          <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>first_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>samples</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>if we go past the end we have to start from the beginning ? or we keep extending ?</p>
+<p>Outlet buffers come from a pool and are resized, not cleared: writing nothing leaves the previous tick's audio in them. </p>
 
 </div>
 </div>

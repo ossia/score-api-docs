@@ -350,6 +350,14 @@ QVector&lt; QVariant &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memitem:a1533058b83923266cc938d1b6d8a987a" id="r_a1533058b83923266cc938d1b6d8a987a"><td class="memItemLeft" align="right" valign="top"><a id="a1533058b83923266cc938d1b6d8a987a" name="a1533058b83923266cc938d1b6d8a987a"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>metadata</b> (QObject *obj) const noexcept</td></tr>
 <tr class="separator:a1533058b83923266cc938d1b6d8a987a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4bd2a0074c3a849ef9dd99aedf7ece9" id="r_ae4bd2a0074c3a849ef9dd99aedf7ece9"><td class="memItemLeft" align="right" valign="top">QObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#ae4bd2a0074c3a849ef9dd99aedf7ece9">documentMetadata</a> () const noexcept</td></tr>
+<tr class="separator:ae4bd2a0074c3a849ef9dd99aedf7ece9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a778a6d3055e2dc8419b75501800ac992" id="r_a778a6d3055e2dc8419b75501800ac992"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a778a6d3055e2dc8419b75501800ac992">documentName</a> () const noexcept</td></tr>
+<tr class="separator:a778a6d3055e2dc8419b75501800ac992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d3d5fd66f2d5aa4a08c51b194b1a07" id="r_a59d3d5fd66f2d5aa4a08c51b194b1a07"><td class="memItemLeft" align="right" valign="top"><a id="a59d3d5fd66f2d5aa4a08c51b194b1a07" name="a59d3d5fd66f2d5aa4a08c51b194b1a07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDocumentName</b> (QString name)</td></tr>
+<tr class="memdesc:a59d3d5fd66f2d5aa4a08c51b194b1a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renames the document. Not a save: it sets the name the next save uses. <br /></td></tr>
+<tr class="separator:a59d3d5fd66f2d5aa4a08c51b194b1a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3990e2032c37952bc35cb7754f3c216c" id="r_a3990e2032c37952bc35cb7754f3c216c"><td class="memItemLeft" align="right" valign="top"><a id="a3990e2032c37952bc35cb7754f3c216c" name="a3990e2032c37952bc35cb7754f3c216c"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>startState</b> (QObject *obj)</td></tr>
 <tr class="separator:a3990e2032c37952bc35cb7754f3c216c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -602,6 +610,58 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
       </table>
 </div><div class="memdoc">
 <p>Create automations for every parameter matching <code>addr</code> in <code>interval</code>. Returns the created processes: an address may expand to several curves. </p>
+
+</div>
+</div>
+<a id="ae4bd2a0074c3a849ef9dd99aedf7ece9" name="ae4bd2a0074c3a849ef9dd99aedf7ece9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bd2a0074c3a849ef9dd99aedf7ece9">&#9670;&#160;</a></span>documentMetadata()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QObject * JS::EditJsContext::documentMetadata </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The document's own metadata, which is not a child of anything the other accessors reach. Its fileName, author, creation and lastEdition are properties, so they read and write from QML directly. </p>
+
+</div>
+</div>
+<a id="a778a6d3055e2dc8419b75501800ac992" name="a778a6d3055e2dc8419b75501800ac992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a778a6d3055e2dc8419b75501800ac992">&#9670;&#160;</a></span>documentName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString JS::EditJsContext::documentName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What the title bar shows: the file's base name, or "Untitled..." before it has been saved anywhere. </p>
 
 </div>
 </div>

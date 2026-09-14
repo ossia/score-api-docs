@@ -136,7 +136,7 @@ Inheritance diagram for score::gfx::GPUVideoEncoder:</div>
 <p>The encoder includes Y-flip (GL Y-up -&gt; video Y-down) in its fragment shader, so InvertYRenderer is not needed in the output pipeline.</p>
 <p>Readback is also included because there's not going to be a case anytime soon where we can do something useful GPU-side with the Yuv tex.</p>
 <p>Usage:</p><ol type="1">
-<li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a9b16439d881feadd3d7085b75a003abf">init()</a> — create textures, samplers, pipeline</li>
+<li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#aa8959ae023688dbe60840fcd1ac955c5">init()</a> — create textures, samplers, pipeline</li>
 <li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a5f218cd270dc57019c03323bd40454bb">exec()</a> — render the conversion pass + schedule readback</li>
 <li>After QRhi::endOffscreenFrame(), call readbackData() to get results</li>
 <li><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#afbcf1fa53b70a82e1bd3562990dfabee" title="Release all GPU resources.">release()</a> — free GPU resources </li>
@@ -144,8 +144,8 @@ Inheritance diagram for score::gfx::GPUVideoEncoder:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9b16439d881feadd3d7085b75a003abf" id="r_a9b16439d881feadd3d7085b75a003abf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a9b16439d881feadd3d7085b75a003abf">init</a> (QRhi &amp;rhi, const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *inputRGBA, int width, int height, const QString &amp;colorConversion=colorMatrixOut())=0</td></tr>
-<tr class="separator:a9b16439d881feadd3d7085b75a003abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8959ae023688dbe60840fcd1ac955c5" id="r_aa8959ae023688dbe60840fcd1ac955c5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#aa8959ae023688dbe60840fcd1ac955c5">init</a> (QRhi &amp;rhi, const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *inputRGBA, int width, int height, const QString &amp;colorConversion)=0</td></tr>
+<tr class="separator:aa8959ae023688dbe60840fcd1ac955c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f218cd270dc57019c03323bd40454bb" id="r_a5f218cd270dc57019c03323bd40454bb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a5f218cd270dc57019c03323bd40454bb">exec</a> (QRhi &amp;rhi, QRhiCommandBuffer &amp;cb)=0</td></tr>
 <tr class="separator:a5f218cd270dc57019c03323bd40454bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741d49c9cd03b678b3a8f59e6b68b821" id="r_a741d49c9cd03b678b3a8f59e6b68b821"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a741d49c9cd03b678b3a8f59e6b68b821">planeCount</a> () const =0</td></tr>
@@ -212,8 +212,8 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b16439d881feadd3d7085b75a003abf" name="a9b16439d881feadd3d7085b75a003abf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b16439d881feadd3d7085b75a003abf">&#9670;&#160;</a></span>init()</h2>
+<a id="aa8959ae023688dbe60840fcd1ac955c5" name="aa8959ae023688dbe60840fcd1ac955c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8959ae023688dbe60840fcd1ac955c5">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +255,7 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>colorConversion</em> = <code>colorMatrixOut()</code>&#160;</td>
+          <td class="paramname"><em>colorConversion</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,7 +281,7 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#ad5a2b043fdb73af6e5109eedf1f51c0a">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_packed_r_g_b_encoder.html#a42ed88b114e1868463f8bf98a886b9cb">score::gfx::PackedRGBEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a66037319954a50b958b405d18ae77c4b">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#a06b8430821fcda9767d73e12405a77e0">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_p010_encoder.html#abb4b75dbcc01f2609ba4c4e9641b7661">score::gfx::P010Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ad21082673314dbc1b86fd7e007589bf7">score::gfx::UYVYEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a905d5f7198bb0c985d8a256c93a0544d">score::gfx::V210Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html#a1ed9099dff19c19b82050bbc8c8e4761">score::gfx::YUV422P10Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v_planar_encoder.html#a7375daf080cf86cf80cd7c4b7b1e8b8d">score::gfx::YUVPlanarEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_y_u_y2_encoder.html#a03aa1300d1fd2c257d8844bec2bf869a">score::gfx::YUY2Encoder</a>.</p>
+<p>Implemented in <a class="el" href="structscore_1_1gfx_1_1_b_g_r_a_encoder.html#ad5a2b043fdb73af6e5109eedf1f51c0a">score::gfx::BGRAEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_packed_r_g_b_encoder.html#a42ed88b114e1868463f8bf98a886b9cb">score::gfx::PackedRGBEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_i420_encoder.html#a1826302dfafc2293c8e0b1a3ba704455">score::gfx::I420Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_n_v12_encoder.html#ac0dc3e5048b4ec37941c32de76ea82ef">score::gfx::NV12Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_p010_encoder.html#a62480b2831a80b19c26ef53897459947">score::gfx::P010Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ad52e06c4e35a2b48cdf649220e8aba3e">score::gfx::UYVYEncoder</a>, <a class="el" href="structscore_1_1gfx_1_1_v210_encoder.html#a2f7fa042150b0d55564302b4abb24306">score::gfx::V210Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html#a78146908838807d98f5987436350f249">score::gfx::YUV422P10Encoder</a>, <a class="el" href="structscore_1_1gfx_1_1_y_u_v_planar_encoder.html#aa22dbd0ae8138ca4fa0264617a2b285d">score::gfx::YUVPlanarEncoder</a>, and <a class="el" href="structscore_1_1gfx_1_1_y_u_y2_encoder.html#a6f3111340225a47c7c1faea7f12bbded">score::gfx::YUY2Encoder</a>.</p>
 
 </div>
 </div>

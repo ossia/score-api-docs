@@ -201,6 +201,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_midi_file_octaver.html">MidiFileOctaver</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1node__with__worker.html">node_with_worker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_node_item.html">NodeItem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_normalizer_from_mapper.html">NormalizerFromMapper</a></td></tr>
@@ -269,6 +271,9 @@ template&lt;typename N &gt; </td></tr>
 template&lt;typename BaseInletType , typename Node , typename T , typename FieldIndex &gt; </td></tr>
 <tr class="memitem:a6995ff43e42bcc1030cb89f6b4594270"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ControlTypeToUse</b> = std::conditional_t&lt; avnd::controller_interaction_port&lt; T &gt;, <a class="el" href="structoscr_1_1_custom_generic_control.html">CustomGenericControl</a>&lt; BaseInletType, Node, T, FieldIndex &gt;, BaseInletType &gt;</td></tr>
 <tr class="separator:a6995ff43e42bcc1030cb89f6b4594270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d0b244f721ea014c27b82df239f63b" id="r_a27d0b244f721ea014c27b82df239f63b"><td class="memTemplParams" colspan="2">template&lt;typename Node &gt; </td></tr>
+<tr class="memitem:a27d0b244f721ea014c27b82df239f63b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoscr.html#a27d0b244f721ea014c27b82df239f63b">exec_node_t</a> = std::conditional_t&lt; avnd::has_worker&lt; Node &gt;, <a class="el" href="structoscr_1_1node__with__worker.html">node_with_worker</a>&lt; Node &gt;, safe_node&lt; Node &gt; &gt;</td></tr>
+<tr class="separator:a27d0b244f721ea014c27b82df239f63b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a974d052c02e7f9beabdd63c0a1c4cb51" id="r_a974d052c02e7f9beabdd63c0a1c4cb51"><td class="memTemplParams" colspan="2"><a id="a974d052c02e7f9beabdd63c0a1c4cb51" name="a974d052c02e7f9beabdd63c0a1c4cb51"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a974d052c02e7f9beabdd63c0a1c4cb51"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pmf_member_type_t</b> = typename <a class="el" href="structoscr_1_1pmf__member__type.html">pmf_member_type</a>&lt; T &gt;::type</td></tr>
@@ -332,6 +337,24 @@ Variables</h2></td></tr>
 <tr class="memitem:af07783ba70da8727ed32a7406a8acb69"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceoscr.html#af07783ba70da8727ed32a7406a8acb69">field_has_ui_controls</a></td></tr>
 <tr class="separator:af07783ba70da8727ed32a7406a8acb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a27d0b244f721ea014c27b82df239f63b" name="a27d0b244f721ea014c27b82df239f63b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d0b244f721ea014c27b82df239f63b">&#9670;&#160;</a></span>exec_node_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Node &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceoscr.html#a27d0b244f721ea014c27b82df239f63b">oscr::exec_node_t</a> = typedef std::conditional_t&lt;avnd::has_worker&lt;Node&gt;, <a class="el" href="structoscr_1_1node__with__worker.html">node_with_worker</a>&lt;Node&gt;, safe_node&lt;Node&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The exec node score gives an avnd object: with worker-result delivery if the object has a worker, the plain avendish node otherwise. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="af07783ba70da8727ed32a7406a8acb69" name="af07783ba70da8727ed32a7406a8acb69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af07783ba70da8727ed32a7406a8acb69">&#9670;&#160;</a></span>field_has_ui_controls</h2>

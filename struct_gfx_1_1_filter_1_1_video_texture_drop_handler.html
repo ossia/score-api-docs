@@ -123,12 +123,14 @@ Inheritance diagram for Gfx::Filter::VideoTextureDropHandler:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a30d2ad5abbf30f064c028986bf9ee6c6" id="r_a30d2ad5abbf30f064c028986bf9ee6c6"><td class="memItemLeft" align="right" valign="top">QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html#a30d2ad5abbf30f064c028986bf9ee6c6">mimeTypes</a> () const noexcept override</td></tr>
 <tr class="separator:a30d2ad5abbf30f064c028986bf9ee6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d8f4389f3f1d4ff1542581a8757b618" id="r_a7d8f4389f3f1d4ff1542581a8757b618"><td class="memItemLeft" align="right" valign="top"><a id="a7d8f4389f3f1d4ff1542581a8757b618" name="a7d8f4389f3f1d4ff1542581a8757b618"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt; &amp;drops, const std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt; &amp;addresses) const</td></tr>
-<tr class="separator:a7d8f4389f3f1d4ff1542581a8757b618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a4bd92d7657d4fe569f45c3ff733ea4" id="r_a0a4bd92d7657d4fe569f45c3ff733ea4"><td class="memItemLeft" align="right" valign="top"><a id="a0a4bd92d7657d4fe569f45c3ff733ea4" name="a0a4bd92d7657d4fe569f45c3ff733ea4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt; &amp;drops, const std::vector&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt; &amp;addresses, const <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;devicelist) const</td></tr>
+<tr class="separator:a0a4bd92d7657d4fe569f45c3ff733ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f59e514b9cc8fc40fcb156cc25b5b4" id="r_ad3f59e514b9cc8fc40fcb156cc25b5b4"><td class="memItemLeft" align="right" valign="top"><a id="ad3f59e514b9cc8fc40fcb156cc25b5b4" name="ad3f59e514b9cc8fc40fcb156cc25b5b4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isTexture</b> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;addr, const <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;devicelist) const noexcept</td></tr>
 <tr class="separator:ad3f59e514b9cc8fc40fcb156cc25b5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1932aded08334cc569e580702c6d8b" id="r_aac1932aded08334cc569e580702c6d8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html#aac1932aded08334cc569e580702c6d8b">isTextureSink</a> (const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;addr, const <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;devicelist) const noexcept</td></tr>
+<tr class="separator:aac1932aded08334cc569e580702c6d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eaff80009992cdf5a8011d6438f9cdb" id="r_a8eaff80009992cdf5a8011d6438f9cdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html#a8eaff80009992cdf5a8011d6438f9cdb">dropCustom</a> (std::vector&lt; <a class="el" href="struct_process_1_1_process_drop_handler_1_1_process_drop.html">ProcessDrop</a> &gt; &amp;drops, const QMimeData &amp;mime, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept final override</td></tr>
 <tr class="separator:a8eaff80009992cdf5a8011d6438f9cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_process_drop_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_process_drop_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a></td></tr>
@@ -202,6 +204,43 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>dropData</b> 
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_process_1_1_process_drop_handler.html">Process::ProcessDropHandler</a>.</p>
+
+</div>
+</div>
+<a id="aac1932aded08334cc569e580702c6d8b" name="aac1932aded08334cc569e580702c6d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1932aded08334cc569e580702c6d8b">&#9670;&#160;</a></span>isTextureSink()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gfx::Filter::VideoTextureDropHandler::isTextureSink </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_device_1_1_device_list.html">Device::DeviceList</a> &amp;&#160;</td>
+          <td class="paramname"><em>devicelist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether the address names something that a texture is sent <em>to</em> &ndash; a window, a pipewire video out &ndash; rather than one it is read from. </p>
 
 </div>
 </div>

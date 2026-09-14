@@ -138,7 +138,39 @@ const <a class="el" href="class_library_1_1_preset_list_view.html">PresetListVie
 <tr class="memitem:af3b2983966a0d798375acd6ef7ea050a" id="r_af3b2983966a0d798375acd6ef7ea050a"><td class="memItemLeft" align="right" valign="top"><a id="af3b2983966a0d798375acd6ef7ea050a" name="af3b2983966a0d798375acd6ef7ea050a"></a>
 <a class="el" href="class_library_1_1_preset_list_view.html">PresetListView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presetView</b> () noexcept</td></tr>
 <tr class="separator:af3b2983966a0d798375acd6ef7ea050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d18168fa4c8674cb1f9aa0eaa7d792" id="r_ad5d18168fa4c8674cb1f9aa0eaa7d792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_process_widget.html#ad5d18168fa4c8674cb1f9aa0eaa7d792">setNotice</a> (const QString &amp;html, std::function&lt; void()&gt; onActivated={})</td></tr>
+<tr class="separator:ad5d18168fa4c8674cb1f9aa0eaa7d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad5d18168fa4c8674cb1f9aa0eaa7d792" name="ad5d18168fa4c8674cb1f9aa0eaa7d792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d18168fa4c8674cb1f9aa0eaa7d792">&#9670;&#160;</a></span>setNotice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessWidget::setNotice </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>html</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>onActivated</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Put a line of rich text above the process list, or take it away when the text is empty. Anything the user has to be told about the library itself belongs here rather than in a dialog: it is what they are looking at. A link in the text calls <code>onActivated</code> instead of opening a browser. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_process_widget_8hpp_source.html">ProcessWidget.hpp</a></li>
 <li><b>ProcessWidget.cpp</b></li>

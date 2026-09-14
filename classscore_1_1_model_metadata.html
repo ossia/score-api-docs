@@ -131,6 +131,8 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getCom
 <tr class="memitem:ae4bdf36b96811d972b497a1ff4966f13" id="r_ae4bdf36b96811d972b497a1ff4966f13"><td class="memItemLeft" align="right" valign="top"><a id="ae4bdf36b96811d972b497a1ff4966f13" name="ae4bdf36b96811d972b497a1ff4966f13"></a>
 <a class="el" href="structscore_1_1_color_ref.html">ColorRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getColor</b> () const noexcept</td></tr>
 <tr class="separator:ae4bdf36b96811d972b497a1ff4966f13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdcbede9b97ae1241e73ef090b66e4f4" id="r_acdcbede9b97ae1241e73ef090b66e4f4"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_model_metadata.html#acdcbede9b97ae1241e73ef090b66e4f4">getColorName</a> () const noexcept</td></tr>
+<tr class="separator:acdcbede9b97ae1241e73ef090b66e4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3336236b81bbb2c5bda8f0751c73c25" id="r_af3336236b81bbb2c5bda8f0751c73c25"><td class="memItemLeft" align="right" valign="top"><a id="af3336236b81bbb2c5bda8f0751c73c25" name="af3336236b81bbb2c5bda8f0751c73c25"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getLabel</b> () const noexcept</td></tr>
 <tr class="separator:af3336236b81bbb2c5bda8f0751c73c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +152,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setComment</b> (const
 <tr class="memitem:a5b08908eb242d61c903f2feefdb30f95" id="r_a5b08908eb242d61c903f2feefdb30f95"><td class="memItemLeft" align="right" valign="top"><a id="a5b08908eb242d61c903f2feefdb30f95" name="a5b08908eb242d61c903f2feefdb30f95"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setColor</b> (<a class="el" href="structscore_1_1_color_ref.html">ColorRef</a>) noexcept</td></tr>
 <tr class="separator:a5b08908eb242d61c903f2feefdb30f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85ecf9b9f37daac7b9e51ce0cf9e5006" id="r_a85ecf9b9f37daac7b9e51ce0cf9e5006"><td class="memItemLeft" align="right" valign="top"><a id="a85ecf9b9f37daac7b9e51ce0cf9e5006" name="a85ecf9b9f37daac7b9e51ce0cf9e5006"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setColorName</b> (const QString &amp;) noexcept</td></tr>
+<tr class="memdesc:a85ecf9b9f37daac7b9e51ce0cf9e5006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignores a name the skin does not know, rather than clearing the colour. <br /></td></tr>
+<tr class="separator:a85ecf9b9f37daac7b9e51ce0cf9e5006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594ce8ecd25ddae07c9dd3a9efa09c04" id="r_a594ce8ecd25ddae07c9dd3a9efa09c04"><td class="memItemLeft" align="right" valign="top"><a id="a594ce8ecd25ddae07c9dd3a9efa09c04" name="a594ce8ecd25ddae07c9dd3a9efa09c04"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLabel</b> (const QString &amp;) noexcept</td></tr>
 <tr class="separator:a594ce8ecd25ddae07c9dd3a9efa09c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +175,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LabelChanged</b> (con
 void&#160;</td><td class="memItemRight" valign="bottom"><b>metadataChanged</b> ()</td></tr>
 <tr class="separator:a2f5dc70a972612b69e80f2f389936a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acdcbede9b97ae1241e73ef090b66e4f4" name="acdcbede9b97ae1241e73ef090b66e4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdcbede9b97ae1241e73ef090b66e4f4">&#9670;&#160;</a></span>getColorName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::ModelMetadata::getColorName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The colour as a skin entry name. <a class="el" href="structscore_1_1_color_ref.html" title="A reference to a color. Used for skinning.">ColorRef</a> is a pointer into the skin and means nothing to a script; the name is what can be read and written. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_model_metadata_8hpp_source.html">ModelMetadata.hpp</a></li>
 <li><b>ModelMetadata.cpp</b></li>

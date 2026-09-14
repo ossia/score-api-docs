@@ -166,13 +166,38 @@ $(document).ready(function(){initNavTree('_metadatas_8hpp_source.html',''); init
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="conceptoscr_1_1is__gpu.html">   51</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1is__gpu.html">is_gpu</a> = <a class="code hl_concept" href="conceptoscr_1_1_gpu_node.html">GpuNode&lt;T&gt;</a> || <a class="code hl_concept" href="conceptoscr_1_1_gpu_graphics_node2.html">GpuGraphicsNode2&lt;T&gt;</a> || <a class="code hl_concept" href="conceptoscr_1_1_gpu_compute_node2.html">GpuComputeNode2&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="conceptoscr_1_1has__ossia__layer.html">   54</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1has__ossia__layer.html">has_ossia_layer</a> = <span class="keyword">requires</span> { <span class="keyword">sizeof</span>(<span class="keyword">typename</span> T::Layer); };</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="conceptoscr_1_1has__renderer__state.html">   60</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1has__renderer__state.html">has_renderer_state</a></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    = <span class="keyword">requires</span>(T&amp; t) { t.renderlist; } || <span class="keyword">requires</span> { &amp;T::init; }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      || <span class="keyword">requires</span> { &amp;T::update; } || <span class="keyword">requires</span> { &amp;T::release; }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      || <span class="keyword">requires</span> { &amp;T::runInitialPasses; } || <span class="keyword">requires</span> { &amp;T::runRenderPass; }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      || <span class="keyword">requires</span> { &amp;T::inputAboutToFinish; };</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="conceptoscr_1_1_cpu_only_buffer_node.html">   79</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1_cpu_only_buffer_node.html">CpuOnlyBufferNode</a></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    = avnd::cpu_buffer_output_introspection&lt;T&gt;::size &gt; 0</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      &amp;&amp; avnd::gpu_buffer_output_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      &amp;&amp; avnd::buffer_input_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      &amp;&amp; avnd::texture_input_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      &amp;&amp; avnd::texture_output_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      &amp;&amp; avnd::geometry_input_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      &amp;&amp; avnd::geometry_output_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      &amp;&amp; scene_input_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      &amp;&amp; scene_output_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      &amp;&amp; avnd::gpu_render_target_output_port_output_introspection&lt;T&gt;::size == 0</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      &amp;&amp; !<a class="code hl_concept" href="conceptoscr_1_1_gpu_graphics_node2.html">GpuGraphicsNode2&lt;T&gt;</a> &amp;&amp; !<a class="code hl_concept" href="conceptoscr_1_1_gpu_compute_node2.html">GpuComputeNode2&lt;T&gt;</a> &amp;&amp; !<a class="code hl_concept" href="conceptoscr_1_1has__renderer__state.html">has_renderer_state&lt;T&gt;</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="conceptoscr_1_1has__ossia__layer.html">   93</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptoscr_1_1has__ossia__layer.html">has_ossia_layer</a> = <span class="keyword">requires</span> { <span class="keyword">sizeof</span>(<span class="keyword">typename</span> T::Layer); };</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+<div class="ttc" id="aconceptoscr_1_1_cpu_only_buffer_node_html"><div class="ttname"><a href="conceptoscr_1_1_cpu_only_buffer_node.html">oscr::CpuOnlyBufferNode</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:80</div></div>
 <div class="ttc" id="aconceptoscr_1_1_gpu_compute_node2_html"><div class="ttname"><a href="conceptoscr_1_1_gpu_compute_node2.html">oscr::GpuComputeNode2</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:44</div></div>
 <div class="ttc" id="aconceptoscr_1_1_gpu_graphics_node2_html"><div class="ttname"><a href="conceptoscr_1_1_gpu_graphics_node2.html">oscr::GpuGraphicsNode2</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:36</div></div>
 <div class="ttc" id="aconceptoscr_1_1_gpu_node_html"><div class="ttname"><a href="conceptoscr_1_1_gpu_node.html">oscr::GpuNode</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:16</div></div>
-<div class="ttc" id="aconceptoscr_1_1has__ossia__layer_html"><div class="ttname"><a href="conceptoscr_1_1has__ossia__layer.html">oscr::has_ossia_layer</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:54</div></div>
+<div class="ttc" id="aconceptoscr_1_1has__ossia__layer_html"><div class="ttname"><a href="conceptoscr_1_1has__ossia__layer.html">oscr::has_ossia_layer</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:93</div></div>
+<div class="ttc" id="aconceptoscr_1_1has__renderer__state_html"><div class="ttname"><a href="conceptoscr_1_1has__renderer__state.html">oscr::has_renderer_state</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:61</div></div>
 <div class="ttc" id="aconceptoscr_1_1is__gpu_html"><div class="ttname"><a href="conceptoscr_1_1is__gpu.html">oscr::is_gpu</a></div><div class="ttdef"><b>Definition</b> Metadatas.hpp:51</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->

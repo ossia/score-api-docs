@@ -301,7 +301,6 @@ var hierarchy =
     [ "WidgetFactory::ComboBox", "struct_widget_factory_1_1_combo_box.html", null ],
     [ "Nodes::combobox_from_array< lit, array, init_idx >", "struct_nodes_1_1combobox__from__array.html", null ],
     [ "Nodes::combobox_from_array<\"Duration\">", "struct_nodes_1_1combobox__from__array.html", null ],
-    [ "Nodes::combobox_from_array<\"Quantif\">", "struct_nodes_1_1combobox__from__array.html", null ],
     [ "Nodes::combobox_from_array<\"Quantification\">", "struct_nodes_1_1combobox__from__array.html", null ],
     [ "Nodes::combobox_from_array<\"Quantization\">", "struct_nodes_1_1combobox__from__array.html", null ],
     [ "score::Command", "classscore_1_1_command.html", [
@@ -966,6 +965,7 @@ var hierarchy =
       [ "TSerializer< JSONObject, score::EntityMap< T, O > >", "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_map_3_01_t_00_01_o_01_4_01_4.html", null ]
     ] ],
     [ "avnd_tools::EntityToMidi", "structavnd__tools_1_1_entity_to_midi.html", null ],
+    [ "JS::detail::StagedScripts::Entry", "struct_j_s_1_1detail_1_1_staged_scripts_1_1_entry.html", null ],
     [ "score::gfx::GpuTimings::Entry", "structscore_1_1gfx_1_1_gpu_timings_1_1_entry.html", null ],
     [ "score::gfx::VertexFallbackPool::Entry", "structscore_1_1gfx_1_1_vertex_fallback_pool_1_1_entry.html", null ],
     [ "WidgetFactory::Enum", "struct_widget_factory_1_1_enum.html", null ],
@@ -1459,8 +1459,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -2680,6 +2680,7 @@ var hierarchy =
     ] ],
     [ "Scenario::ParentTimeInfo", "struct_scenario_1_1_parent_time_info.html", null ],
     [ "score::gfx::Pass", "structscore_1_1gfx_1_1_pass.html", null ],
+    [ "Nodes::AudioLooper::Node::passthrough_selector", "struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector.html", null ],
     [ "Pd::PatchSpec", "struct_pd_1_1_patch_spec.html", null ],
     [ "Path< Object >", "class_path.html", null ],
     [ "Path< Automation::ProcessModel >", "class_path.html", null ],
@@ -2704,8 +2705,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3843,6 +3844,7 @@ var hierarchy =
       [ "JS::PortSink", "struct_j_s_1_1_port_sink.html", null ],
       [ "JS::PortSource", "struct_j_s_1_1_port_source.html", null ],
       [ "JS::Script", "class_j_s_1_1_script.html", null ],
+      [ "JS::detail::RedirectHolder", "struct_j_s_1_1detail_1_1_redirect_holder.html", null ],
       [ "Jit::AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
       [ "Jit::ApplicationPlugin", "struct_jit_1_1_application_plugin.html", null ],
       [ "LV2::ApplicationPlugin", "class_l_v2_1_1_application_plugin.html", null ],
@@ -4166,6 +4168,9 @@ var hierarchy =
     ] ],
     [ "QPushButton", null, [
       [ "score::ToggleButton", "structscore_1_1_toggle_button.html", null ]
+    ] ],
+    [ "QQmlAbstractUrlInterceptor", null, [
+      [ "JS::EditedScriptRedirect", "class_j_s_1_1_edited_script_redirect.html", null ]
     ] ],
     [ "QQmlPropertyValueSource", null, [
       [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],
@@ -4492,6 +4497,7 @@ var hierarchy =
     [ "RandomNameProvider", "class_random_name_provider.html", null ],
     [ "Nodes::Arpeggiator::Arpeggios::range", "struct_nodes_1_1_arpeggiator_1_1_arpeggios_1_1range.html", null ],
     [ "Nodes::Arpeggiator::OctaveMode::range", "struct_nodes_1_1_arpeggiator_1_1_octave_mode_1_1range.html", null ],
+    [ "Nodes::AudioLooper::Node::passthrough_selector::range", "struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector_1_1range.html", null ],
     [ "Nodes::combobox_from_array< lit, array, init_idx >::range", "struct_nodes_1_1combobox__from__array_1_1range.html", null ],
     [ "range", "structrange.html", null ],
     [ "Threedim::CameraSwitch::ins::Mode::range", "struct_threedim_1_1_camera_switch_1_1ins_1_1_mode_1_1range.html", null ],
@@ -4559,6 +4565,9 @@ var hierarchy =
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "RootLayout", null, [
       [ "oscr::RootItem< Info, RootLayout >", "structoscr_1_1_root_item.html", null ]
+    ] ],
+    [ "safe_node", null, [
+      [ "oscr::node_with_worker< Node >", "structoscr_1_1node__with__worker.html", null ]
     ] ],
     [ "Nodes::FactorOracle::safe_vector< T, default_value >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
     [ "Nodes::FactorOracle::safe_vector< int, 0 >", "struct_nodes_1_1_factor_oracle_1_1safe__vector.html", null ],
@@ -4710,6 +4719,7 @@ var hierarchy =
     ] ],
     [ "Threedim::SplatLoader", "class_threedim_1_1_splat_loader.html", null ],
     [ "Library::StagedNode", "struct_library_1_1_staged_node.html", null ],
+    [ "JS::detail::StagedScripts", "struct_j_s_1_1detail_1_1_staged_scripts.html", null ],
     [ "score::gfx::interop::StageProfiler", "structscore_1_1gfx_1_1interop_1_1_stage_profiler.html", null ],
     [ "Device::ProtocolFactory::StandardCategories", "struct_device_1_1_protocol_factory_1_1_standard_categories.html", null ],
     [ "Scenario::StartDateComparator< T >", "struct_scenario_1_1_start_date_comparator.html", null ],

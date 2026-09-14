@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('struct_j_s_1_1_component_cache.html','
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="struct_j_s_1_1_component_cache-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">JS::ComponentCache Struct Reference</div></div>
 </div><!--header-->
@@ -126,7 +127,50 @@ QQmlComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>getUi</b> 
 <tr class="memitem:a29d5df637e898e5ad545218ffc110ac6" id="r_a29d5df637e898e5ad545218ffc110ac6"><td class="memItemLeft" align="right" valign="top"><a id="a29d5df637e898e5ad545218ffc110ac6" name="a29d5df637e898e5ad545218ffc110ac6"></a>
 const <a class="el" href="struct_j_s_1_1_component_cache_1_1_cache.html">Cache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>tryGet</b> (const QByteArray &amp;str, bool isFile) const noexcept</td></tr>
 <tr class="separator:a29d5df637e898e5ad545218ffc110ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9eadf9b2560af1cc107e373e58547ef7" id="r_a9eadf9b2560af1cc107e373e58547ef7"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_s_1_1_component_cache.html#a9eadf9b2560af1cc107e373e58547ef7">key</a> (const QByteArray &amp;str, bool isFile) noexcept</td></tr>
+<tr class="separator:a9eadf9b2560af1cc107e373e58547ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9eadf9b2560af1cc107e373e58547ef7" name="a9eadf9b2560af1cc107e373e58547ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9eadf9b2560af1cc107e373e58547ef7">&#9670;&#160;</a></span>key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray JS::ComponentCache::key </td>
+          <td>(</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isFile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What identifies a compiled script: the text it came from, read out of the file when <code>str</code> names one. Empty if that file cannot be read. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_j_s_process_model_8hpp_source.html">JSProcessModel.hpp</a></li>
 <li><b>JSProcessModel.cpp</b></li>
