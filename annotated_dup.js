@@ -886,7 +886,7 @@ var annotated_dup =
     ] ],
     [ "Jit", null, [
       [ "AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
-      [ "AddonData", "struct_jit_1_1_addon_data.html", null ],
+      [ "AddonData", "struct_jit_1_1_addon_data.html", "struct_jit_1_1_addon_data" ],
       [ "ApplicationPlugin", "struct_jit_1_1_application_plugin.html", "struct_jit_1_1_application_plugin" ],
       [ "bytebeat_node", "class_jit_1_1bytebeat__node.html", null ],
       [ "BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ],

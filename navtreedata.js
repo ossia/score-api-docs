@@ -145,19 +145,19 @@ var NAVTREEINDEX =
 "score-plugin-controlsurface_2_control_surface_2_executor_8hpp_source.html",
 "struct_curve_1_1_curve_segment_map.html",
 "struct_gfx_1_1_s24_i_audio_frame_encoder.html",
-"struct_nodes_1_1_array_generator_1_1_node.html",
+"struct_nodes_1_1_arpeggiator_1_1_octave_mode_1_1range.html",
 "struct_process_1_1_process_state_data.html",
-"struct_scenario_1_1_full_slot.html",
-"struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html",
-"structavnd__tools_1_1_device_recorder.html",
-"structoscr_1_1pmf__member__type.html",
+"struct_scenario_1_1_execution_status_property.html",
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1uuid__t_01_4.html",
+"structavnd__tools_1_1_deserialize_1_1ui_1_1_settings.html",
+"structoscr_1_1dynamic__ports__component__data_3_01_t_01_4.html",
 "structscore_1_1_numbered_with_path___event.html",
 "structscore_1_1gfx_1_1_d_m_a_capture_backend.html#a794519d7ce205d1e7d0cbffaea67cfa9",
 "structscore_1_1gfx_1_1_graphics_storage_image.html#ab4dadc37c8f98f3de01dea2f4396d8a0",
 "structscore_1_1gfx_1_1_packed_rect_decoder.html#a9a7a7510a84bcb7d2fcb0b171827d1d5",
 "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html#aa4ee3458ad97e25da156e33b71c4d004",
-"structscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect_3_01_c_b_00_01std_1_1void__t_3_01defebc5544332a71904533ecbd4ede49cf.html",
-"structscore_1_1gfx_1_1isf__input__port__count__vis.html"
+"structscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect.html",
+"structscore_1_1gfx_1_1is__output.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

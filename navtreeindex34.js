@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1uuid__t_01_4.html":[12,0,406],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[12,0,408],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1array_3_01float_00_01_n_01_4_01_4.html":[12,0,407],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01std_1_1list_3_01_args_8_8_8_01_4_01_4.html":[12,0,409],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "structavnd__tools_1_1_bytes_to_string_1_1outs.html":[12,0,4,5,1],
 "structavnd__tools_1_1_deserialize.html":[12,0,4,6],
 "structavnd__tools_1_1_deserialize_1_1ins.html":[12,0,4,6,0],
-"structavnd__tools_1_1_deserialize_1_1ui.html":[12,0,4,6,1],
-"structavnd__tools_1_1_deserialize_1_1ui_1_1_settings.html":[12,0,4,6,1,0]
+"structavnd__tools_1_1_deserialize_1_1ui.html":[12,0,4,6,1]
 };

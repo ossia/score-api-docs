@@ -1,5 +1,6 @@
 var NAVTREEINDEX42 =
 {
+"structscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect.html":[12,0,55,2,0,4],
 "structscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect_3_01_c_b_00_01std_1_1void__t_3_01defebc5544332a71904533ecbd4ede49cf.html":[12,0,55,2,0,5],
 "structscore_1_1gfx_1_1detail_1_1rhi__has__indirect__count.html":[12,0,55,2,0,6],
 "structscore_1_1gfx_1_1detail_1_1rhi__has__indirect__count_3_01_c_b_00_01std_1_1void__t_3_01declt277a69d711181dc7fbe478f04f34a8a9.html":[12,0,55,2,0,7],
@@ -22,8 +23,8 @@ var NAVTREEINDEX42 =
 "structscore_1_1gfx_1_1drm_1_1_plane_format.html":[12,0,55,2,1,8],
 "structscore_1_1gfx_1_1drm_1_1_plane_info.html":[12,0,55,2,1,9],
 "structscore_1_1gfx_1_1drm_1_1_plane_info.html#a0effdda8a55b27bef1a302d71051110f":[12,0,55,2,1,9,0],
-"structscore_1_1gfx_1_1geometry.html":[11,0,12,0,44],
 "structscore_1_1gfx_1_1geometry.html":[12,0,55,2,47],
+"structscore_1_1gfx_1_1geometry.html":[11,0,12,0,44],
 "structscore_1_1gfx_1_1geometry__input__port__vis.html":[11,0,12,0,45],
 "structscore_1_1gfx_1_1geometry__input__port__vis.html":[12,0,55,2,48],
 "structscore_1_1gfx_1_1image.html":[11,0,12,0,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX42 =
 "structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#ae0ce1fba092ef3fb038ef56b362b3756":[12,0,55,2,2,53,2],
 "structscore_1_1gfx_1_1interop_1_1_vk_host_import_upload_1_1_impl.html":[12,0,55,2,2,55,0],
 "structscore_1_1gfx_1_1interop_1_1_vk_host_imported_buffer.html":[12,0,55,2,2,54],
-"structscore_1_1gfx_1_1is__output.html":[11,0,12,0,68],
-"structscore_1_1gfx_1_1is__output.html":[12,0,55,2,71]
+"structscore_1_1gfx_1_1is__output.html":[11,0,12,0,68]
 };
