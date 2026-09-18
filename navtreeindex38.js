@@ -1,5 +1,8 @@
 var NAVTREEINDEX38 =
 {
+"structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3":[11,0,12,0,10,0],
+"structscore_1_1gfx_1_1_buffer_copy_region.html":[11,0,12,0,11],
+"structscore_1_1gfx_1_1_buffer_copy_region.html":[12,0,55,2,14],
 "structscore_1_1gfx_1_1_buffer_view.html":[12,0,55,2,15],
 "structscore_1_1gfx_1_1_buffer_view.html":[11,0,12,0,12],
 "structscore_1_1gfx_1_1_camera_u_b_o_data.html":[12,0,55,2,16],
@@ -246,8 +249,5 @@ var NAVTREEINDEX38 =
 "structscore_1_1gfx_1_1_graph.html#a508b62ab93ea0dd33684034c1ed09089":[12,0,55,2,56,12],
 "structscore_1_1gfx_1_1_graph.html#a5fc6d53ad6b3643a2d41f2fadab5543a":[11,0,12,0,53,1],
 "structscore_1_1gfx_1_1_graph.html#a5fc6d53ad6b3643a2d41f2fadab5543a":[12,0,55,2,56,1],
-"structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c":[12,0,55,2,56,0],
-"structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c":[11,0,12,0,53,0],
-"structscore_1_1gfx_1_1_graph.html#a7752fb1a19e605efa25d6f01be740a80":[11,0,12,0,53,13],
-"structscore_1_1gfx_1_1_graph.html#a7752fb1a19e605efa25d6f01be740a80":[12,0,55,2,56,13]
+"structscore_1_1gfx_1_1_graph.html#a657e52f4fed5ca3becc4d019b775e34c":[12,0,55,2,56,0]
 };

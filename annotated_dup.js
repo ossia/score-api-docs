@@ -1709,7 +1709,7 @@ var annotated_dup =
       [ "BitfocusEnumerator", "class_protocols_1_1_bitfocus_enumerator.html", null ],
       [ "BitfocusProtocolFactory", "class_protocols_1_1_bitfocus_protocol_factory.html", null ],
       [ "BitfocusProtocolSettingsWidget", "class_protocols_1_1_bitfocus_protocol_settings_widget.html", null ],
-      [ "BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", null ],
+      [ "BitfocusSpecificSettings", "struct_protocols_1_1_bitfocus_specific_settings.html", "struct_protocols_1_1_bitfocus_specific_settings" ],
       [ "CoAPDevice", "class_protocols_1_1_co_a_p_device.html", null ],
       [ "CoAPProtocolFactory", "class_protocols_1_1_co_a_p_protocol_factory.html", null ],
       [ "CoAPProtocolSettingsWidget", "class_protocols_1_1_co_a_p_protocol_settings_widget.html", null ],

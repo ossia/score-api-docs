@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,356],
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,355],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,370],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_3_01_t_01_4_01_4.html":[12,0,371],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_id_container_3_01_t_00_01_u_00_01_o_01_4_01_4.html":[12,0,372],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01_identified_object_3_01_t_01_4_01_4.html":[12,0,373],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "struct_widget_factory_1_1_h_s_v_slider.html":[12,0,68,11],
 "struct_widget_factory_1_1_impulse_button.html":[12,0,68,12],
 "struct_widget_factory_1_1_int_range_slider.html":[12,0,68,13],
-"struct_widget_factory_1_1_int_slider.html":[12,0,68,14],
-"struct_widget_factory_1_1_int_spin_box.html":[12,0,68,15],
-"struct_widget_factory_1_1_line_edit.html":[12,0,68,17],
-"struct_widget_factory_1_1_linear_normalizer.html":[12,0,68,16]
+"struct_widget_factory_1_1_int_slider.html":[12,0,68,14]
 };

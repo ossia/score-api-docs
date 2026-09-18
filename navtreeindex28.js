@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,0,2,38,0,10],
+"plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,0,2,38,0,1],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
 "prefix_8hpp_source.html":[13,0,0,1,1,15],
 "score-lib-device_2_tests_2_utils_8hpp_source.html":[13,0,0,2,0,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,2,4,0],
 "struct_audio_1_1_port_audio_card.html":[12,0,2,7],
 "struct_audio_1_1_port_audio_scope.html":[12,0,2,9],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,3,0,1],
-"struct_automation_1_1_recreate_on_play_1_1range__position.html":[12,0,3,0,2],
-"struct_avnd_jit_1_1inlet__vis.html":[12,0,5,2]
+"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,3,0,1]
 };

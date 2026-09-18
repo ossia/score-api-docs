@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"struct_scenario_1_1_base_scenario_container_1_1no__init.html":[11,0,11,7,0],
+"struct_scenario_1_1_base_scenario_container_1_1no__init.html":[12,0,54,9,0],
+"struct_scenario_1_1_categorised_scenario.html":[11,0,11,12],
 "struct_scenario_1_1_categorised_scenario.html":[12,0,54,14],
 "struct_scenario_1_1_categorized_address.html":[11,0,11,13],
 "struct_scenario_1_1_categorized_address.html":[12,0,54,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX33 =
 "struct_t_serializer_3_01_data_stream_00_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html":[12,0,352],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1shared__ptr_3_01_t_01_4_01_4.html":[12,0,353],
 "struct_t_serializer_3_01_data_stream_00_01std_1_1unordered__map_3_01_t_00_01_u_00_01_h_00_01_e_00_01_a_01_4_01_4.html":[12,0,354],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html":[12,0,357],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_01_5_00_01_alloc_01_4_01_4.html":[12,0,356],
-"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01bool_01_4_01_4.html":[12,0,355],
-"struct_t_serializer_3_01_j_s_o_n_object_00_01_faust_d_s_p_1_1_fx_3_01_d_s_p_01_4_01_4.html":[12,0,370]
+"struct_t_serializer_3_01_data_stream_00_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html":[12,0,357]
 };

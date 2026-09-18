@@ -1,5 +1,8 @@
 var NAVTREEINDEX36 =
 {
+"structoscr_1_1_message_bus_wrapper_from_ui.html":[11,0,8,38],
+"structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,43,38],
+"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[11,0,8,39],
 "structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[12,0,43,39],
 "structoscr_1_1_message_bus_wrapper_to_ui.html":[11,0,8,40],
 "structoscr_1_1_message_bus_wrapper_to_ui.html":[12,0,43,40],
@@ -246,8 +249,5 @@ var NAVTREEINDEX36 =
 "structscore_1_1_focus_facade.html":[12,0,55,122],
 "structscore_1_1_focus_manager.html":[11,0,12,117],
 "structscore_1_1_focus_manager.html":[12,0,55,123],
-"structscore_1_1_g_l_capabilities.html":[11,0,12,124],
-"structscore_1_1_g_l_capabilities.html":[12,0,55,130],
-"structscore_1_1_g_u_i_application_context.html":[11,0,12,137],
-"structscore_1_1_g_u_i_application_context.html":[12,0,55,143]
+"structscore_1_1_g_l_capabilities.html":[11,0,12,124]
 };

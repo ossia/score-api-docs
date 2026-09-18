@@ -1,5 +1,8 @@
 var NAVTREEINDEX35 =
 {
+"struct_widget_factory_1_1_int_spin_box.html":[12,0,68,15],
+"struct_widget_factory_1_1_line_edit.html":[12,0,68,17],
+"struct_widget_factory_1_1_linear_normalizer.html":[12,0,68,16],
 "struct_widget_factory_1_1_log_normalizer.html":[12,0,68,18],
 "struct_widget_factory_1_1_multi_slider.html":[12,0,68,19],
 "struct_widget_factory_1_1_multi_slider_x_y.html":[12,0,68,20],
@@ -246,8 +249,5 @@ var NAVTREEINDEX35 =
 "structoscr_1_1_message_bus_ui.html":[11,0,8,36],
 "structoscr_1_1_message_bus_ui.html":[12,0,43,36],
 "structoscr_1_1_message_bus_ui_3_01_info_01_4.html":[11,0,8,37],
-"structoscr_1_1_message_bus_ui_3_01_info_01_4.html":[12,0,43,37],
-"structoscr_1_1_message_bus_wrapper_from_ui.html":[11,0,8,38],
-"structoscr_1_1_message_bus_wrapper_from_ui.html":[12,0,43,38],
-"structoscr_1_1_message_bus_wrapper_from_ui_3_01_info_01_4.html":[11,0,8,39]
+"structoscr_1_1_message_bus_ui_3_01_info_01_4.html":[12,0,43,37]
 };

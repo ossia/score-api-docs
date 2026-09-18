@@ -1,5 +1,8 @@
 var NAVTREEINDEX37 =
 {
+"structscore_1_1_g_l_capabilities.html":[12,0,55,130],
+"structscore_1_1_g_u_i_application_context.html":[11,0,12,137],
+"structscore_1_1_g_u_i_application_context.html":[12,0,55,143],
 "structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45":[11,0,12,137,1],
 "structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45":[12,0,55,143,1],
 "structscore_1_1_g_u_i_application_context.html#a269e8cc6fb130c74fc7224220a69ad2c":[11,0,12,137,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX37 =
 "structscore_1_1gfx_1_1_bit_field.html":[12,0,55,2,13],
 "structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4":[12,0,55,2,13,1],
 "structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4":[11,0,12,0,10,1],
-"structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3":[12,0,55,2,13,0],
-"structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3":[11,0,12,0,10,0],
-"structscore_1_1gfx_1_1_buffer_copy_region.html":[11,0,12,0,11],
-"structscore_1_1gfx_1_1_buffer_copy_region.html":[12,0,55,2,14]
+"structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3":[12,0,55,2,13,0]
 };
