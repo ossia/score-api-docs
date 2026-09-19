@@ -19,5 +19,6 @@ var dir_8940b9717eab7226735774e0c7e02de1 =
     [ "PluginScanner.hpp", "_plugin_scanner_8hpp_source.html", null ],
     [ "RMSData.hpp", "_r_m_s_data_8hpp_source.html", null ],
     [ "SndfileDecoder.hpp", "_sndfile_decoder_8hpp_source.html", null ],
-    [ "Tempo.hpp", "_tempo_8hpp_source.html", null ]
+    [ "Tempo.hpp", "_tempo_8hpp_source.html", null ],
+    [ "WaveformSummary.hpp", "_waveform_summary_8hpp_source.html", null ]
 ];

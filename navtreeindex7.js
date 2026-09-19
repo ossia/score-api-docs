@@ -204,6 +204,7 @@ var NAVTREEINDEX7 =
 "_w_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,23,3],
 "_wasm_logging_8hpp_source.html":[13,0,0,1,0,0,8],
 "_waveform_computer_8hpp_source.html":[13,0,0,2,24,0,5,9],
+"_waveform_summary_8hpp_source.html":[13,0,0,2,24,0,20],
 "_web_camera_input_8hpp_source.html":[13,0,0,2,24,2,12],
 "_web_socket_view_8hpp_source.html":[13,0,0,2,32,4,3,7,14],
 "_websocket_client_widget_8hpp_source.html":[13,0,0,2,29,0,15,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "_y_u_v_a444_8hpp_source.html":[13,0,0,2,17,1,4,0,46],
 "_y_u_v_planar_8hpp_source.html":[13,0,0,2,17,1,4,1,15],
 "_y_u_y2_8hpp_source.html":[13,0,0,2,17,1,4,1,16],
-"_y_u_y_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,47],
-"_zero_crossing_8hpp_source.html":[13,0,0,2,5,0,15]
+"_y_u_y_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,47]
 };

@@ -119,6 +119,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>positionToIndex
 <tr class="separator:a7a9089068ba896e3cbda690fd74ee366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae477b3b9c501ed947008a3617a7cfb4b" id="r_ae477b3b9c501ed947008a3617a7cfb4b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_combo_impl.html#ae477b3b9c501ed947008a3617a7cfb4b">passedDragThreshold</a> (QGraphicsSceneMouseEvent *event) noexcept</td></tr>
 <tr class="separator:ae477b3b9c501ed947008a3617a7cfb4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae88c9cb4b6ff9300247c1d47fba9c6a" id="r_aae88c9cb4b6ff9300247c1d47fba9c6a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_combo_impl.html#aae88c9cb4b6ff9300247c1d47fba9c6a">stepAt</a> (const <a class="el" href="classscore_1_1_q_graphics_combo.html">QGraphicsCombo</a> &amp;self, QPointF pos) noexcept</td></tr>
+<tr class="separator:aae88c9cb4b6ff9300247c1d47fba9c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a0954e868a4c7fe134fbb44dee4281b" id="r_a9a0954e868a4c7fe134fbb44dee4281b"><td class="memItemLeft" align="right" valign="top"><a id="a9a0954e868a4c7fe134fbb44dee4281b" name="a9a0954e868a4c7fe134fbb44dee4281b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (<a class="el" href="classscore_1_1_q_graphics_combo.html">QGraphicsCombo</a> &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a9a0954e868a4c7fe134fbb44dee4281b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +158,43 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEv
 </table>
 </div><div class="memdoc">
 <p>Has the pointer travelled far enough since the press to mean "scrub" rather than "click"? Below the platform's drag threshold a wobble of a pixel or two is a click, and must not nudge the value. </p>
+
+</div>
+</div>
+<a id="aae88c9cb4b6ff9300247c1d47fba9c6a" name="aae88c9cb4b6ff9300247c1d47fba9c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae88c9cb4b6ff9300247c1d47fba9c6a">&#9670;&#160;</a></span>stepAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int score::DefaultComboImpl::stepAt </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscore_1_1_q_graphics_combo.html">QGraphicsCombo</a> &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>+1 for the upper half of the stepper strip, -1 for the lower half, 0 if the point is not on the strip at all. </p>
 
 </div>
 </div>

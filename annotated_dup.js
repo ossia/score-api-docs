@@ -1129,13 +1129,13 @@ var annotated_dup =
         [ "InspectorFactory", "class_media_1_1_sound_1_1_inspector_factory.html", null ],
         [ "InspectorWidget", "class_media_1_1_sound_1_1_inspector_widget.html", null ],
         [ "LayerPresenter", "class_media_1_1_sound_1_1_layer_presenter.html", null ],
-        [ "LayerView", "class_media_1_1_sound_1_1_layer_view.html", null ],
+        [ "LayerView", "class_media_1_1_sound_1_1_layer_view.html", "class_media_1_1_sound_1_1_layer_view" ],
         [ "LibraryHandler", "class_media_1_1_sound_1_1_library_handler.html", null ],
         [ "ProcessModel", "class_media_1_1_sound_1_1_process_model.html", "class_media_1_1_sound_1_1_process_model" ],
         [ "QImagePool", "struct_media_1_1_sound_1_1_q_image_pool.html", "struct_media_1_1_sound_1_1_q_image_pool" ],
         [ "WaveformComputer", "struct_media_1_1_sound_1_1_waveform_computer.html", null ],
         [ "WaveformComputerImpl", "struct_media_1_1_sound_1_1_waveform_computer_impl.html", "struct_media_1_1_sound_1_1_waveform_computer_impl" ],
-        [ "WaveformRequest", "struct_media_1_1_sound_1_1_waveform_request.html", null ]
+        [ "WaveformRequest", "struct_media_1_1_sound_1_1_waveform_request.html", "struct_media_1_1_sound_1_1_waveform_request" ]
       ] ],
       [ "Step", null, [
         [ "InspectorFactory", "class_media_1_1_step_1_1_inspector_factory.html", null ],
@@ -1168,7 +1168,8 @@ var annotated_dup =
       [ "SetStepCount", "class_media_1_1_set_step_count.html", null ],
       [ "SetStepDuration", "class_media_1_1_set_step_duration.html", null ],
       [ "SndfileDecoder", "class_media_1_1_sndfile_decoder.html", null ],
-      [ "SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ]
+      [ "SoundComponentSetup", "class_media_1_1_sound_component_setup.html", null ],
+      [ "WaveformSummary", "struct_media_1_1_waveform_summary.html", "struct_media_1_1_waveform_summary" ]
     ] ],
     [ "Midi", null, [
       [ "Executor", null, [
@@ -1501,7 +1502,7 @@ var annotated_dup =
       [ "ChangeListener", "struct_process_1_1_change_listener.html", null ],
       [ "ChangePortSettings", "class_process_1_1_change_port_settings.html", null ],
       [ "ChooserToggle", "struct_process_1_1_chooser_toggle.html", null ],
-      [ "ComboBox", "struct_process_1_1_combo_box.html", null ],
+      [ "ComboBox", "struct_process_1_1_combo_box.html", "struct_process_1_1_combo_box" ],
       [ "CompileKeyFilter", "class_process_1_1_compile_key_filter.html", null ],
       [ "ConsolidateProjectFiles", "class_process_1_1_consolidate_project_files.html", null ],
       [ "Context", "struct_process_1_1_context.html", null ],
@@ -1528,7 +1529,7 @@ var annotated_dup =
       [ "EffectLayerView", "class_process_1_1_effect_layer_view.html", null ],
       [ "EffectProcessFactory_T", "class_process_1_1_effect_process_factory___t.html", null ],
       [ "EnableWhenFocusedProcessIs", "struct_process_1_1_enable_when_focused_process_is.html", null ],
-      [ "Enum", "struct_process_1_1_enum.html", null ],
+      [ "Enum", "struct_process_1_1_enum.html", "struct_process_1_1_enum" ],
       [ "ExternalFileMap", "class_process_1_1_external_file_map.html", "class_process_1_1_external_file_map" ],
       [ "ExternalFileRef", "struct_process_1_1_external_file_ref.html", "struct_process_1_1_external_file_ref" ],
       [ "FileChooser", "struct_process_1_1_file_chooser.html", null ],

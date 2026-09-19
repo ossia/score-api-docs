@@ -838,6 +838,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isControlPort</b> (co
 <tr class="separator:afb0b96266a82507dd33e7675aa20c9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6351e99744b8679bb6f2da3921bc2c" id="r_a6b6351e99744b8679bb6f2da3921bc2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_control_page.html">ControlPage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a6b6351e99744b8679bb6f2da3921bc2c">nodeControlPage</a> (int controlCount, int requestedPage, int gridOffset) noexcept</td></tr>
 <tr class="separator:a6b6351e99744b8679bb6f2da3921bc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18dcfda5fe9d385646c044eb52532486" id="r_a18dcfda5fe9d385646c044eb52532486"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a18dcfda5fe9d385646c044eb52532486">readEntryIndex</a> (const ossia::value &amp;v, int n) noexcept</td></tr>
+<tr class="separator:a18dcfda5fe9d385646c044eb52532486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab16c8f0c80f7b97c59067b22c399b76f" id="r_ab16c8f0c80f7b97c59067b22c399b76f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f">looksLikeExistingFile</a> (const QString &amp;value, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) noexcept</td></tr>
 <tr class="separator:ab16c8f0c80f7b97c59067b22c399b76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a062b3bddf21c8d5c2076098bc832bba5" id="r_a062b3bddf21c8d5c2076098bc832bba5"><td class="memItemLeft" align="right" valign="top"><a id="a062b3bddf21c8d5c2076098bc832bba5" name="a062b3bddf21c8d5c2076098bc832bba5"></a>
@@ -1781,6 +1783,44 @@ template&lt;typename T &gt; </td></tr>
 <p>The files that make up a project, ready to be archived. </p>
 <p>Built from a consolidation report rather than by listing the project folder: the report knows exactly which files this document uses, so an archive does not sweep up the neighbouring project, last week's backups, or the render someone left in there. It also means trimming shrinks the archive without anything else being aware of it &ndash; the untrimmed originals simply stop being referenced.</p>
 <p>Everything is placed under one top-level folder named after the document, so that unpacking never scatters files into whatever directory the archive was opened in. </p>
+
+</div>
+</div>
+<a id="a18dcfda5fe9d385646c044eb52532486" name="a18dcfda5fe9d385646c044eb52532486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18dcfda5fe9d385646c044eb52532486">&#9670;&#160;</a></span>readEntryIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_PROCESS_EXPORT std::optional&lt; int &gt; Process::readEntryIndex </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Read a value as a 0-based position in a list of n entries, or nothing.</p>
+<p>Only for lists whose entries are names. Several lists in score hold numbers that are not positions, and reading one as a position selects the wrong entry. </p>
 
 </div>
 </div>

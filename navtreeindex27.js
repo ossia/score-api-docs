@@ -1,5 +1,15 @@
 var NAVTREEINDEX27 =
 {
+"namespacescore.html#a105b47a5fe17baab1eebf106e3e563bf":[11,0,12,412],
+"namespacescore.html#a213725d41d100671c0e68e2a83ef6923":[11,0,12,416],
+"namespacescore.html#a218bef612dc74026bb86beab035f7fb2":[11,0,12,366],
+"namespacescore.html#a2a536512cd929ef2bc2e9ae50785afbb":[11,0,12,380],
+"namespacescore.html#a2db95db3609ef6e6cf28787c3a944391":[11,0,12,371],
+"namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a":[11,0,12,372],
+"namespacescore.html#a2fa5d4efcf31c883b9271f58f5947875":[11,0,12,399],
+"namespacescore.html#a32796149f51ff5e6483f20895442a6b3":[11,0,12,378],
+"namespacescore.html#a36d9f78314f24a83d6b4906cce145132":[11,0,12,398],
+"namespacescore.html#a3931d6c83f2257066ee55f7768dee24f":[11,0,12,377],
 "namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcf":[11,0,12,349],
 "namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa3ac705f2acd51a4613f9188c05c91d0d":[11,0,12,349,0],
 "namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa4bbb8f967da6d1a610596d7257179c2b":[11,0,12,349,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX27 =
 "plugins_2score-plugin-spline_2_spline_2commands_8hpp_source.html":[13,0,0,2,33,0,0],
 "plugins_2score-plugin-threedim_2_threedim_2_debug_8hpp_source.html":[13,0,0,2,35,0,24],
 "plugins_2score-plugin-threedim_2_threedim_2_flattened_scene_filter_2_metadata_8hpp_source.html":[13,0,0,2,35,0,0,1],
-"plugins_2score-plugin-threedim_2_threedim_2_merge_geometries_2_metadata_8hpp_source.html":[13,0,0,2,35,0,1,1],
-"plugins_2score-plugin-threedim_2_threedim_2_model_display_2_metadata_8hpp_source.html":[13,0,0,2,35,0,2,2],
-"plugins_2score-plugin-threedim_2_threedim_2_render_pipeline_2_metadata_8hpp_source.html":[13,0,0,2,35,0,4,2],
-"plugins_2score-plugin-threedim_2_threedim_2_scene_filter_2_metadata_8hpp_source.html":[13,0,0,2,35,0,5,1],
-"plugins_2score-plugin-threedim_2_threedim_2_scene_preprocessor_2_metadata_8hpp_source.html":[13,0,0,2,35,0,6,1],
-"plugins_2score-plugin-threedim_2_threedim_2_splat_2_metadata_8hpp_source.html":[13,0,0,2,35,0,7,2],
-"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,0,2,36,0,1],
-"plugins_2score-plugin-vst3_2_vst3_2_settings_8hpp_source.html":[13,0,0,2,39,0,11],
-"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,0,2,39,0,0,2],
-"plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,0,2,39,0,2],
-"plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,0,2,38,0,8]
+"plugins_2score-plugin-threedim_2_threedim_2_merge_geometries_2_metadata_8hpp_source.html":[13,0,0,2,35,0,1,1]
 };

@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_q_graphics_combo.html',
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1_q_graphics_combo-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::QGraphicsCombo Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -141,6 +142,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (int v)<
 <tr class="memitem:a8a4240b977505775dd3e47aaf58b8142" id="r_a8a4240b977505775dd3e47aaf58b8142"><td class="memItemLeft" align="right" valign="top"><a id="a8a4240b977505775dd3e47aaf58b8142" name="a8a4240b977505775dd3e47aaf58b8142"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> () const</td></tr>
 <tr class="separator:a8a4240b977505775dd3e47aaf58b8142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff8abf478e451d40aed0b0031a6a536" id="r_aeff8abf478e451d40aed0b0031a6a536"><td class="memItemLeft" align="right" valign="top"><a id="aeff8abf478e451d40aed0b0031a6a536" name="aeff8abf478e451d40aed0b0031a6a536"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>stepperRect</b> () const noexcept</td></tr>
+<tr class="memdesc:aeff8abf478e451d40aed0b0031a6a536"><td class="mdescLeft">&#160;</td><td class="mdescRight">The strip holding the two stepper buttons, in item coordinates. <br /></td></tr>
+<tr class="separator:aeff8abf478e451d40aed0b0031a6a536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cd2b448b6997a1a61b7dcbd6d684dd" id="r_ab1cd2b448b6997a1a61b7dcbd6d684dd"><td class="memItemLeft" align="right" valign="top"><a id="ab1cd2b448b6997a1a61b7dcbd6d684dd" name="ab1cd2b448b6997a1a61b7dcbd6d684dd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>stepperVisible</b> () const noexcept</td></tr>
+<tr class="memdesc:ab1cd2b448b6997a1a61b7dcbd6d684dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there is more than one entry and room to draw the strip. <br /></td></tr>
+<tr class="separator:ab1cd2b448b6997a1a61b7dcbd6d684dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7b72203f2b817bc7affdf0c0b4f649" id="r_aec7b72203f2b817bc7affdf0c0b4f649"><td class="memItemLeft" align="right" valign="top"><a id="aec7b72203f2b817bc7affdf0c0b4f649" name="aec7b72203f2b817bc7affdf0c0b4f649"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>step</b> (int n)</td></tr>
+<tr class="memdesc:aec7b72203f2b817bc7affdf0c0b4f649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move the selection by n entries, wrapping, and report it as an edit. <br /></td></tr>
+<tr class="separator:aec7b72203f2b817bc7affdf0c0b4f649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99fa1843db21c41ec76b8710ce88fc2f" id="r_a99fa1843db21c41ec76b8710ce88fc2f"><td class="memItemLeft" align="right" valign="top"><a id="a99fa1843db21c41ec76b8710ce88fc2f" name="a99fa1843db21c41ec76b8710ce88fc2f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setEditable</b> (bool b)</td></tr>
 <tr class="memdesc:a99fa1843db21c41ec76b8710ce88fc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a value that is not in the list may be entered. <br /></td></tr>
@@ -165,6 +178,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>valueEdited</b> (cons
 <tr class="memitem:ad3a9b021d517b126543e8dc4487d2a72" id="r_ad3a9b021d517b126543e8dc4487d2a72"><td class="memItemLeft" align="right" valign="top"><a id="ad3a9b021d517b126543e8dc4487d2a72" name="ad3a9b021d517b126543e8dc4487d2a72"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QGraphicsSceneContextMenuEvent *event) override</td></tr>
 <tr class="separator:ad3a9b021d517b126543e8dc4487d2a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a631b1b13babf9524899094d7015aa" id="r_a01a631b1b13babf9524899094d7015aa"><td class="memItemLeft" align="right" valign="top"><a id="a01a631b1b13babf9524899094d7015aa" name="a01a631b1b13babf9524899094d7015aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>hoverMoveEvent</b> (QGraphicsSceneHoverEvent *event) override</td></tr>
+<tr class="separator:a01a631b1b13babf9524899094d7015aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3742f4017f535242c7ab8be89ebf0f" id="r_a1d3742f4017f535242c7ab8be89ebf0f"><td class="memItemLeft" align="right" valign="top"><a id="a1d3742f4017f535242c7ab8be89ebf0f" name="a1d3742f4017f535242c7ab8be89ebf0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:a1d3742f4017f535242c7ab8be89ebf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +208,13 @@ QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>array</b></td>
 <tr class="memitem:a963ae3fab038b06780ecae0e2dece8dc" id="r_a963ae3fab038b06780ecae0e2dece8dc"><td class="memItemLeft" align="right" valign="top"><a id="a963ae3fab038b06780ecae0e2dece8dc" name="a963ae3fab038b06780ecae0e2dece8dc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> = false</td></tr>
 <tr class="separator:a963ae3fab038b06780ecae0e2dece8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:adcb5a109759bc05d7fa760ae93d33922" id="r_adcb5a109759bc05d7fa760ae93d33922"><td class="memItemLeft" align="right" valign="top"><a id="adcb5a109759bc05d7fa760ae93d33922" name="adcb5a109759bc05d7fa760ae93d33922"></a>
+static const constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>stepperWidth</b> = 12.</td></tr>
+<tr class="memdesc:adcb5a109759bc05d7fa760ae93d33922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the +/- stepper strip kept free at the right of the box. <br /></td></tr>
+<tr class="separator:adcb5a109759bc05d7fa760ae93d33922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>

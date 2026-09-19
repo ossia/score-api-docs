@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('struct_media_1_1_audio_file_1_1_view_h
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_media_1_1_audio_file_1_1_view_handle-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Media::AudioFile::ViewHandle Struct Reference</div></div>
 </div><!--header-->
@@ -129,7 +130,36 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>absmax_frame</b> (int
 <tr class="memitem:ad9d112b1f9c22daf850920ad7fb479ee" id="r_ad9d112b1f9c22daf850920ad7fb479ee"><td class="memItemLeft" align="right" valign="top"><a id="ad9d112b1f9c22daf850920ad7fb479ee" name="ad9d112b1f9c22daf850920ad7fb479ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>minmax_frame</b> (int64_t start_frame, int64_t end_frame, ossia::small_vector&lt; <a class="el" href="struct_media_1_1_float_pair.html">FloatPair</a>, 8 &gt; &amp;out) noexcept</td></tr>
 <tr class="separator:ad9d112b1f9c22daf850920ad7fb479ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6e4d02752cc8e9af582c028b6c432f" id="r_aee6e4d02752cc8e9af582c028b6c432f"><td class="memItemLeft" align="right" valign="top"><a id="aee6e4d02752cc8e9af582c028b6c432f" name="aee6e4d02752cc8e9af582c028b6c432f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>supports_summary</b> () const noexcept</td></tr>
+<tr class="memdesc:aee6e4d02752cc8e9af582c028b6c432f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asked before the table is sized, so an unsupported source costs nothing. <br /></td></tr>
+<tr class="separator:aee6e4d02752cc8e9af582c028b6c432f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817c17225c1a009c6f7215eafd67833f" id="r_a817c17225c1a009c6f7215eafd67833f"><td class="memItemLeft" align="right" valign="top"><a id="a817c17225c1a009c6f7215eafd67833f" name="a817c17225c1a009c6f7215eafd67833f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>build_summary</b> (<a class="el" href="struct_media_1_1_waveform_summary.html">WaveformSummary</a> &amp;s) noexcept</td></tr>
+<tr class="memdesc:a817c17225c1a009c6f7215eafd67833f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reduces the whole source into <code>s</code>. False if it could not be read. <br /></td></tr>
+<tr class="separator:a817c17225c1a009c6f7215eafd67833f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:aaf5d46e675b066148e5f1d39f4e9ced7" id="r_aaf5d46e675b066148e5f1d39f4e9ced7"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="struct_media_1_1_waveform_summary.html">WaveformSummary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file_1_1_view_handle.html#aaf5d46e675b066148e5f1d39f4e9ced7">summary</a></td></tr>
+<tr class="separator:aaf5d46e675b066148e5f1d39f4e9ced7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaf5d46e675b066148e5f1d39f4e9ced7" name="aaf5d46e675b066148e5f1d39f4e9ced7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf5d46e675b066148e5f1d39f4e9ced7">&#9670;&#160;</a></span>summary</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;const <a class="el" href="struct_media_1_1_waveform_summary.html">WaveformSummary</a>&gt; Media::AudioFile::ViewHandle::summary</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Takes the fast path in minmax_frame. Not filled in by AudioFile::handle(): the shared_ptr copy would be on the audio thread. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_media_file_handle_8hpp_source.html">MediaFileHandle.hpp</a></li>
 <li><b>MediaFileHandle.cpp</b></li>

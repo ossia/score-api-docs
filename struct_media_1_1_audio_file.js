@@ -9,9 +9,11 @@ var struct_media_1_1_audio_file =
     [ "RAMView", "struct_media_1_1_audio_file_1_1_r_a_m_view.html", null ],
     [ "SndfileReader", "struct_media_1_1_audio_file_1_1_sndfile_reader.html", null ],
     [ "StreamView", "struct_media_1_1_audio_file_1_1_stream_view.html", null ],
-    [ "ViewHandle", "struct_media_1_1_audio_file_1_1_view_handle.html", null ],
+    [ "ViewHandle", "struct_media_1_1_audio_file_1_1_view_handle.html", "struct_media_1_1_audio_file_1_1_view_handle" ],
     [ "absoluteFileName", "struct_media_1_1_audio_file.html#afee09a4f5355f79b900e1b244704591e", null ],
     [ "fileName", "struct_media_1_1_audio_file.html#a1f58220dac64de80772f2ae3c1721748", null ],
+    [ "finishedDecoding", "struct_media_1_1_audio_file.html#a5aad30278bdc8b9f2641ad44b042c38d", null ],
     [ "getAudioArray", "struct_media_1_1_audio_file.html#a38c1c58d26bcc7b997fb3993394b0a49", null ],
-    [ "originalFile", "struct_media_1_1_audio_file.html#adae010269e2cd4341a3c46af33e7a80a", null ]
+    [ "originalFile", "struct_media_1_1_audio_file.html#adae010269e2cd4341a3c46af33e7a80a", null ],
+    [ "waveformSummary", "struct_media_1_1_audio_file.html#a2a8992f15be3ec64c2bfa51ac1484a79", null ]
 ];

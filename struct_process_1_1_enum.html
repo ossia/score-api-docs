@@ -135,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c091f017527773adf531dbdc86de044" id="r_a2c091f017527773adf531dbdc86de044"><td class="memItemLeft" align="right" valign="top"><a id="a2c091f017527773adf531dbdc86de044" name="a2c091f017527773adf531dbdc86de044"></a>
 const std::vector&lt; QString &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getValues</b> () const</td></tr>
 <tr class="separator:a2c091f017527773adf531dbdc86de044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb308d3c681d09885593c40a7543b41" id="r_adeb308d3c681d09885593c40a7543b41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_enum.html#adeb308d3c681d09885593c40a7543b41">indexOfValue</a> (const ossia::value &amp;v) const noexcept</td></tr>
+<tr class="separator:adeb308d3c681d09885593c40a7543b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a91211ee1201a532059074534d5276b" id="r_a5a91211ee1201a532059074534d5276b"><td class="memItemLeft" align="right" valign="top"><a id="a5a91211ee1201a532059074534d5276b" name="a5a91211ee1201a532059074534d5276b"></a>
+ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>valueAtIndex</b> (int i) const noexcept</td></tr>
+<tr class="memdesc:a5a91211ee1201a532059074534d5276b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value that selects entry i; invalid if there is no such entry. <br /></td></tr>
+<tr class="separator:a5a91211ee1201a532059074534d5276b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99f0687b293d96953a91c5723f930a82" id="r_a99f0687b293d96953a91c5723f930a82"><td class="memItemLeft" align="right" valign="top"><a id="a99f0687b293d96953a91c5723f930a82" name="a99f0687b293d96953a91c5723f930a82"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> (<a class="el" href="class_data_stream_writer.html">DataStream::Deserializer</a> &amp;vis, QObject *parent)</td></tr>
 <tr class="separator:a99f0687b293d96953a91c5723f930a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,6 +452,34 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_description</b><
 <tr class="separator:a76690c936af3f44b0f810b7851ba38c4 inherit pro_attribs_class_process_1_1_port"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adeb308d3c681d09885593c40a7543b41" name="adeb308d3c681d09885593c40a7543b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb308d3c681d09885593c40a7543b41">&#9670;&#160;</a></span>indexOfValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Process::Enum::indexOfValue </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the entry an incoming value selects, or -1 for none.</p>
+<p>The exec port is typed STRING, so an integer arrives as its digits: a string of digits matching no name is read as a position too. </p>
+
+</div>
+</div>
 <a id="ac06b5d2924b554eb6a85e1fb370bb63e" name="ac06b5d2924b554eb6a85e1fb370bb63e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac06b5d2924b554eb6a85e1fb370bb63e">&#9670;&#160;</a></span>setupExecution()</h2>
 

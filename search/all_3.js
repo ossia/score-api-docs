@@ -440,7 +440,7 @@ var searchData=
   ['customitem_437',['CustomItem',['../classoscr_1_1_custom_item.html',1,'oscr']]],
   ['custommesh_438',['CustomMesh',['../classscore_1_1gfx_1_1_custom_mesh.html',1,'score::gfx']]],
   ['customnodeprocess_439',['CustomNodeProcess',['../classoscr_1_1_custom_node_process.html',1,'oscr']]],
-  ['customstage_440',['customstage',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#aac8967889dae6eaaf6ef255d26f48192',1,'score::gfx::DirectVideoOutputBackend::CustomStage'],['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#a79076e6b13a77e170e756485a1afa295',1,'score::gfx::interop::CpuStagedVideoOutputConfig::customStage'],['../structscore_1_1gfx_1_1_direct_video_output_backend.html#ae8e2bbd0c2c776b3bb05c80b6b60de9f',1,'score::gfx::DirectVideoOutputBackend::customStage()']]],
+  ['customstage_440',['customstage',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#a79076e6b13a77e170e756485a1afa295',1,'score::gfx::interop::CpuStagedVideoOutputConfig::customStage'],['../structscore_1_1gfx_1_1_direct_video_output_backend.html#ae8e2bbd0c2c776b3bb05c80b6b60de9f',1,'score::gfx::DirectVideoOutputBackend::customStage()'],['../structscore_1_1gfx_1_1_direct_video_output_backend.html#aac8967889dae6eaaf6ef255d26f48192',1,'score::gfx::DirectVideoOutputBackend::CustomStage']]],
   ['customtextgraphicsknob_441',['CustomTextGraphicsKnob',['../classoscr_1_1_custom_text_graphics_knob.html',1,'oscr']]],
   ['customtextgraphicsslider_442',['CustomTextGraphicsSlider',['../classoscr_1_1_custom_text_graphics_slider.html',1,'oscr']]],
   ['cycledetector_443',['CycleDetector',['../struct_scenario_1_1_cycle_detector.html',1,'Scenario']]],

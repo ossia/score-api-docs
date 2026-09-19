@@ -198,10 +198,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</t
 <tr class="separator:a4ee4e1ac653d90ad68c4e01f2f8c573a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aad30278bdc8b9f2641ad44b042c38d" id="r_a5aad30278bdc8b9f2641ad44b042c38d"><td class="memItemLeft" align="right" valign="top"><a id="a5aad30278bdc8b9f2641ad44b042c38d" name="a5aad30278bdc8b9f2641ad44b042c38d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>finishedDecoding</b> () const noexcept</td></tr>
+<tr class="memdesc:a5aad30278bdc8b9f2641ad44b042c38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomic: the waveform threads ask while the decoder is still running. <br /></td></tr>
 <tr class="separator:a5aad30278bdc8b9f2641ad44b042c38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48a43020ddf1c1a248dc1c566cbb8fd" id="r_ab48a43020ddf1c1a248dc1c566cbb8fd"><td class="memItemLeft" align="right" valign="top"><a id="ab48a43020ddf1c1a248dc1c566cbb8fd" name="ab48a43020ddf1c1a248dc1c566cbb8fd"></a>
 const <a class="el" href="struct_media_1_1_r_m_s_data.html">RMSData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rms</b> () const</td></tr>
 <tr class="separator:ab48a43020ddf1c1a248dc1c566cbb8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8992f15be3ec64c2bfa51ac1484a79" id="r_a2a8992f15be3ec64c2bfa51ac1484a79"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; const <a class="el" href="struct_media_1_1_waveform_summary.html">WaveformSummary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_audio_file.html#a2a8992f15be3ec64c2bfa51ac1484a79">waveformSummary</a> () const noexcept</td></tr>
+<tr class="separator:a2a8992f15be3ec64c2bfa51ac1484a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c1c58d26bcc7b997fb3993394b0a49" id="r_a38c1c58d26bcc7b997fb3993394b0a49"><td class="memItemLeft" align="right" valign="top"><a id="a38c1c58d26bcc7b997fb3993394b0a49" name="a38c1c58d26bcc7b997fb3993394b0a49"></a>
 ossia::audio_array&#160;</td><td class="memItemRight" valign="bottom"><b>getAudioArray</b> () const</td></tr>
 <tr class="memdesc:a38c1c58d26bcc7b997fb3993394b0a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the audio array, as 32 bit floats, whatever the input format is. <br /></td></tr>
@@ -243,6 +246,34 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>SoundComponentSetup</b></td></tr>
 <tr class="separator:a6bfa5df17a99adc9106b2376def1d1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a8992f15be3ec64c2bfa51ac1484a79" name="a2a8992f15be3ec64c2bfa51ac1484a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8992f15be3ec64c2bfa51ac1484a79">&#9670;&#160;</a></span>waveformSummary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; const <a class="el" href="struct_media_1_1_waveform_summary.html">WaveformSummary</a> &gt; Media::AudioFile::waveformSummary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Min/max summary used to draw the waveform when zoomed out, built on the first call. Null until the file has finished decoding, and for streamed sources, which would have to be decoded whole to summarise.</p>
+<p>Costs about one un-summarised redraw: call it off the GUI and audio threads. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_media_file_handle_8hpp_source.html">MediaFileHandle.hpp</a></li>
 <li><b>MediaFileHandle.cpp</b></li>

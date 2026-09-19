@@ -16,7 +16,8 @@ var searchData=
   ['formatchanged_13',['formatChanged',['../classscore_1_1gfx_1_1_g_p_u_video_decoder.html#afd47b0ec90ededca937b607dd19ee37c',1,'score::gfx::GPUVideoDecoder']]],
   ['framebytesize_14',['framebytesize',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#a2f49d7390b83c019f2b80868888e34a1',1,'score::gfx::interop::CpuStagedVideoOutputConfig::frameByteSize'],['../structscore_1_1gfx_1_1interop_1_1_video_capture_strategy_config.html#ade58583cf32a3d8598d83e345135adfb',1,'score::gfx::interop::VideoCaptureStrategyConfig::frameByteSize'],['../structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html#a0582660e0abe2e241e3eb1685688c80c',1,'score::gfx::interop::VideoOutputStrategyConfig::frameByteSize']]],
   ['framememory_15',['frameMemory',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#aa538a1c114fdea0e922907561f33d332',1,'score::gfx::interop::CpuStagedVideoOutputConfig']]],
-  ['fresh_16',['fresh',['../structscore_1_1gfx_1_1interop_1_1_capture_sync_group_1_1_latched.html#a028577ae9050bdaa3abfed2035dd67db',1,'score::gfx::interop::CaptureSyncGroup::Latched']]],
-  ['from_17',['from',['../struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#aee88c11c92e3240c3fd78a086138f27e',1,'Protocols::MIDIDevices::Scale']]],
-  ['fullviewtopmargin_18',['FullViewTopMargin',['../namespace_scenario.html#a56f47ea94117a992f3adb333f2f2e00c',1,'Scenario']]]
+  ['frames_16',['frames',['../struct_media_1_1_waveform_summary.html#a89f1dd0d2f4a580cf7c5999d1fb563e7',1,'Media::WaveformSummary']]],
+  ['fresh_17',['fresh',['../structscore_1_1gfx_1_1interop_1_1_capture_sync_group_1_1_latched.html#a028577ae9050bdaa3abfed2035dd67db',1,'score::gfx::interop::CaptureSyncGroup::Latched']]],
+  ['from_18',['from',['../struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#aee88c11c92e3240c3fd78a086138f27e',1,'Protocols::MIDIDevices::Scale']]],
+  ['fullviewtopmargin_19',['FullViewTopMargin',['../namespace_scenario.html#a56f47ea94117a992f3adb333f2f2e00c',1,'Scenario']]]
 ];

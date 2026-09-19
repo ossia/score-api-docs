@@ -1,5 +1,15 @@
 var NAVTREEINDEX28 =
 {
+"plugins_2score-plugin-threedim_2_threedim_2_model_display_2_metadata_8hpp_source.html":[13,0,0,2,35,0,2,2],
+"plugins_2score-plugin-threedim_2_threedim_2_render_pipeline_2_metadata_8hpp_source.html":[13,0,0,2,35,0,4,2],
+"plugins_2score-plugin-threedim_2_threedim_2_scene_filter_2_metadata_8hpp_source.html":[13,0,0,2,35,0,5,1],
+"plugins_2score-plugin-threedim_2_threedim_2_scene_preprocessor_2_metadata_8hpp_source.html":[13,0,0,2,35,0,6,1],
+"plugins_2score-plugin-threedim_2_threedim_2_splat_2_metadata_8hpp_source.html":[13,0,0,2,35,0,7,2],
+"plugins_2score-plugin-transport_2_transport_2_document_plugin_8hpp_source.html":[13,0,0,2,36,0,1],
+"plugins_2score-plugin-vst3_2_vst3_2_settings_8hpp_source.html":[13,0,0,2,39,0,11],
+"plugins_2score-plugin-vst3_2_vst3_2_u_i_2_window_8hpp_source.html":[13,0,0,2,39,0,0,2],
+"plugins_2score-plugin-vst3_2_vst3_2commands_8hpp_source.html":[13,0,0,2,39,0,2],
+"plugins_2score-plugin-vst_2_vst_2_settings_8hpp_source.html":[13,0,0,2,38,0,8],
 "plugins_2score-plugin-vst_2_vst_2_window_8hpp_source.html":[13,0,0,2,38,0,10],
 "plugins_2score-plugin-vst_2_vst_2commands_8hpp_source.html":[13,0,0,2,38,0,1],
 "plugins_2score-plugin-ysfx_2_y_s_f_x_2_executor_2_component_8hpp_source.html":[13,0,0,2,40,0,1,0],
@@ -239,15 +249,5 @@ var NAVTREEINDEX28 =
 "struct_analysis_1_1_zero_crossing.html":[12,0,0,24],
 "struct_analysis_1_1audio__in.html":[12,0,0,0],
 "struct_analysis_1_1audio__out.html":[12,0,0,1],
-"struct_analysis_1_1gain__slider.html":[12,0,0,8],
-"struct_analysis_1_1gate__slider.html":[12,0,0,9],
-"struct_analysis_1_1pulse__out.html":[12,0,0,17],
-"struct_analysis_1_1value__out.html":[12,0,0,23],
-"struct_array_entity_serializer.html":[12,0,82],
-"struct_array_serializer.html":[12,0,83],
-"struct_atom_buffer.html":[12,0,84],
-"struct_audio_1_1_audio_preview_executor_1_1sound.html":[12,0,2,4,0],
-"struct_audio_1_1_port_audio_card.html":[12,0,2,7],
-"struct_audio_1_1_port_audio_scope.html":[12,0,2,9],
-"struct_automation_1_1_recreate_on_play_1_1modvalue.html":[12,0,3,0,1]
+"struct_analysis_1_1gain__slider.html":[12,0,0,8]
 };
