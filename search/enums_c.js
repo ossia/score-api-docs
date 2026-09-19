@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uiplacement_0',['UIPlacement',['../namespace_process.html#aacc0e0627a66b66fa3ea8bf30a30460b',1,'Process']]],
-  ['unuseddisposal_1',['UnusedDisposal',['../namespace_process.html#a638dbd1936d3a77ce9c5a1714ec58772',1,'Process']]]
+  ['scalemode_0',['ScaleMode',['../namespacescore_1_1gfx.html#ac7b0a6847f2f616b12a8fe08a1229b58',1,'score::gfx']]],
+  ['shareddevicemode_1',['SharedDeviceMode',['../namespacescore_1_1gfx.html#aa2eb0e55dd6a208a978fef7bc88983ec',1,'score::gfx']]],
+  ['siting_2',['Siting',['../structscore_1_1gfx_1_1_yuv420_packed_encoder.html#a968052ceec306e5c3bfbffbbacb49c71',1,'score::gfx::Yuv420PackedEncoder']]],
+  ['source_5fmode_3',['source_mode',['../structavnd__tools_1_1_beat_tracker.html#a90612aa8a3c7782b078aadc74cc51fd1',1,'avnd_tools::BeatTracker']]]
 ];

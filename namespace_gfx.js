@@ -8,6 +8,7 @@ var namespace_gfx =
     [ "BasicRenderer", "class_gfx_1_1_basic_renderer.html", null ],
     [ "CameraDevice", "class_gfx_1_1_camera_device.html", null ],
     [ "CameraDeviceEnumerator", "struct_gfx_1_1_camera_device_enumerator.html", null ],
+    [ "CameraPreviewWidget", "class_gfx_1_1_camera_preview_widget.html", "class_gfx_1_1_camera_preview_widget" ],
     [ "CameraProtocolFactory", "class_gfx_1_1_camera_protocol_factory.html", null ],
     [ "CameraSettings", "struct_gfx_1_1_camera_settings.html", null ],
     [ "CaptureControlTree", "class_gfx_1_1_capture_control_tree.html", null ],

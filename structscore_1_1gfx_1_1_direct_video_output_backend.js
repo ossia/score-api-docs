@@ -4,7 +4,7 @@ var structscore_1_1gfx_1_1_direct_video_output_backend =
     [ "close", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a83dea71b5456bc9888a8d501ef68f9fd", null ],
     [ "colorConversion", "structscore_1_1gfx_1_1_direct_video_output_backend.html#aff94d447ef0ec91a4e004ed4fc008e03", null ],
     [ "customStage", "structscore_1_1gfx_1_1_direct_video_output_backend.html#ae8e2bbd0c2c776b3bb05c80b6b60de9f", null ],
-    [ "encoderFormat", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a9aa369e9e18b6bf6fcc17dbfd633084c", null ],
+    [ "encoderFormat", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a1b058fc3e60fa849e0fbca61892005f8", null ],
     [ "frameByteSize", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a762153263a894f7292913b377322c165", null ],
     [ "frameMemoryProvider", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a6069d9849b599f5241ae3442671e5cc0", null ],
     [ "frameRate", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a7183effc705a9be551724c4484af34ae", null ],
@@ -18,5 +18,5 @@ var structscore_1_1gfx_1_1_direct_video_output_backend =
     [ "quiesce", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a865601899e118eef07d34f76c7235692", null ],
     [ "registrar", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a9e8f2e59be296c1792072dfad326be89", null ],
     [ "width", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a6d6b372a57a66f7e097a586c3c835cfc", null ],
-    [ "wireFormat", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55", null ]
+    [ "wireFormat", "structscore_1_1gfx_1_1_direct_video_output_backend.html#a66833f13173168fe09a47b47f8737b22", null ]
 ];

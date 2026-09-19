@@ -109,12 +109,12 @@ $(document).ready(function(){initNavTree('_v4_l2_pixel_format_8hpp.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>The one V4L2 fourcc &lt;-&gt; VideoPixelFormat table.  
+<p>The one V4L2 fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> table.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The one V4L2 fourcc &lt;-&gt; VideoPixelFormat table. </p>
+<div class="textblock"><p>The one V4L2 fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> table. </p>
 <p>Raw buffer layouts only. Compressed fourccs (MJPEG, JPEG, H.264, MPEG-4, CPIA) belong to the codec axis, not to a pixel-format vocabulary, and are resolved where the camera is enumerated.</p>
-<p>There used to be two independent V4L2 tables &ndash; one to AVPixelFormat for camera enumeration, one to VideoPixelFormat for the DMA capture path &ndash; and they disagreed. Anything needing an AVPixelFormat now goes through VideoPixelFormatAV rather than maintaining a second table. </p>
+<p>There used to be two independent V4L2 tables &ndash; one to AVPixelFormat for camera enumeration, one to <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> for the DMA capture path &ndash; and they disagreed. Anything needing an AVPixelFormat now goes through VideoPixelFormatAV rather than maintaining a second table. </p>
 </div>
 <p><a href="_v4_l2_pixel_format_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -129,14 +129,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5563df69789b47013cd775dc270d2a6" id="r_ac5563df69789b47013cd775dc270d2a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v4_l2_pixel_format_8hpp.html#ac5563df69789b47013cd775dc270d2a6">score::gfx::interop::fromV4L2PixelFormat</a> (uint32_t fourcc) noexcept</td></tr>
-<tr class="separator:ac5563df69789b47013cd775dc270d2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84e15c504302143f14e8a6987c6f85b" id="r_ad84e15c504302143f14e8a6987c6f85b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v4_l2_pixel_format_8hpp.html#ad84e15c504302143f14e8a6987c6f85b">score::gfx::interop::toV4L2PixelFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:ad84e15c504302143f14e8a6987c6f85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7974416993eef6bf902e8432700152" id="r_a5e7974416993eef6bf902e8432700152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v4_l2_pixel_format_8hpp.html#a5e7974416993eef6bf902e8432700152">score::gfx::interop::fromV4L2PixelFormat</a> (uint32_t fourcc) noexcept</td></tr>
+<tr class="separator:a5e7974416993eef6bf902e8432700152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b305d31e49d654ed10d2ce14c475a74" id="r_a2b305d31e49d654ed10d2ce14c475a74"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_v4_l2_pixel_format_8hpp.html#a2b305d31e49d654ed10d2ce14c475a74">score::gfx::interop::toV4L2PixelFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:a2b305d31e49d654ed10d2ce14c475a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac5563df69789b47013cd775dc270d2a6" name="ac5563df69789b47013cd775dc270d2a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5563df69789b47013cd775dc270d2a6">&#9670;&#160;</a></span>fromV4L2PixelFormat()</h2>
+<a id="a5e7974416993eef6bf902e8432700152" name="a5e7974416993eef6bf902e8432700152"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e7974416993eef6bf902e8432700152">&#9670;&#160;</a></span>fromV4L2PixelFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VideoPixelFormat score::gfx::interop::fromV4L2PixelFormat </td>
+          <td class="memname"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> score::gfx::interop::fromV4L2PixelFormat </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>fourcc</em></td><td>)</td>
@@ -162,8 +162,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad84e15c504302143f14e8a6987c6f85b" name="ad84e15c504302143f14e8a6987c6f85b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad84e15c504302143f14e8a6987c6f85b">&#9670;&#160;</a></span>toV4L2PixelFormat()</h2>
+<a id="a2b305d31e49d654ed10d2ce14c475a74" name="a2b305d31e49d654ed10d2ce14c475a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b305d31e49d654ed10d2ce14c475a74">&#9670;&#160;</a></span>toV4L2PixelFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint32_t score::gfx::interop::toV4L2PixelFormat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>

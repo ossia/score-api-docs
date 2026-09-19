@@ -1,5 +1,5 @@
 var _v4_l2_pixel_format_8hpp =
 [
-    [ "fromV4L2PixelFormat", "_v4_l2_pixel_format_8hpp.html#ac5563df69789b47013cd775dc270d2a6", null ],
-    [ "toV4L2PixelFormat", "_v4_l2_pixel_format_8hpp.html#ad84e15c504302143f14e8a6987c6f85b", null ]
+    [ "fromV4L2PixelFormat", "_v4_l2_pixel_format_8hpp.html#a5e7974416993eef6bf902e8432700152", null ],
+    [ "toV4L2PixelFormat", "_v4_l2_pixel_format_8hpp.html#a2b305d31e49d654ed10d2ce14c475a74", null ]
 ];

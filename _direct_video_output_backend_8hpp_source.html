@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('_direct_video_output_backend_8hpp_sour
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;<a class="code" href="_cpu_staged_video_output_8hpp.html">Gfx/Graph/interop/CpuStagedVideoOutput.hpp</a>&gt;</span> <span class="comment">// HostStagedPlane</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;<a class="code" href="_paced_frame_pump_8hpp.html">Gfx/Graph/interop/PacedFramePump.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &lt;<a class="code" href="_vendor_dma_registrar_8hpp.html">Gfx/Graph/interop/VendorDmaRegistrar.hpp</a>&gt;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Gfx/Graph/interop/VideoPixelFormat.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Video/VideoPixelFormat.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -152,10 +152,10 @@ $(document).ready(function(){initNavTree('_direct_video_output_backend_8hpp_sour
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a86d45841a5a8c2b8b7ba1bedc90e3439">   77</a></span>  virtual <span class="keywordtype">bool</span> isOpen() const noexcept = 0;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55">   80</a></span>  virtual interop::VideoPixelFormat wireFormat() const noexcept = 0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a66833f13173168fe09a47b47f8737b22">   80</a></span>  virtual Video::VideoPixelFormat wireFormat() const noexcept = 0;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
 <div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a9aa369e9e18b6bf6fcc17dbfd633084c">   85</a></span>  virtual interop::VideoPixelFormat encoderFormat() const noexcept</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a1b058fc3e60fa849e0fbca61892005f8">   85</a></span>  virtual Video::VideoPixelFormat encoderFormat() const noexcept</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  {</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> wireFormat();</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>

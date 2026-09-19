@@ -109,19 +109,19 @@ $(document).ready(function(){initNavTree('_wire_encoder_factory_8hpp.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>Vendor-neutral GPU-encoder selection keyed on VideoPixelFormat.  
+<p>Vendor-neutral GPU-encoder selection keyed on <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Vendor-neutral GPU-encoder selection keyed on VideoPixelFormat. </p>
+<div class="textblock"><p>Vendor-neutral GPU-encoder selection keyed on <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>. </p>
 <p>Every capture-card addon needs to turn "the on-wire pixel format the card
 wants" into "the GPU encoder that produces those exact bytes". AJA, DeckLink, Bluefish and Deltacast all carry the same handful of SDI/HDMI wire formats; without this factory each addon re-writes the same 60-line switch over its own vendor enum.</p>
-<p>The addon's job shrinks to a one-line translation table (<code>vendorFmt -&gt; VideoPixelFormat</code>); the actual encoder choice + the byte-layout knowledge lives here, once.</p>
+<p>The addon's job shrinks to a one-line translation table (<code>vendorFmt -&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></code>); the actual encoder choice + the byte-layout knowledge lives here, once.</p>
 <ul>
-<li><code>makeWireEncoder(VideoPixelFormat)</code> -&gt; render (fragment) encoder. Default output path (works on every QRhi backend).</li>
-<li><code>makeWireComputeEncoder(VideoPixelFormat)</code> -&gt; compute encoder for the GPU-direct path that writes straight into an imported buffer.</li>
-<li><code>wireComputeSupports(VideoPixelFormat, width)</code> -&gt; whether the compute encoder can handle that (format, width) (v210 needs width % 6 == 0, etc).</li>
+<li><code>makeWireEncoder(Video::VideoPixelFormat)</code> -&gt; render (fragment) encoder. Default output path (works on every QRhi backend).</li>
+<li><code>makeWireComputeEncoder(Video::VideoPixelFormat)</code> -&gt; compute encoder for the GPU-direct path that writes straight into an imported buffer.</li>
+<li><code>wireComputeSupports(Video::VideoPixelFormat, width)</code> -&gt; whether the compute encoder can handle that (format, width) (v210 needs width % 6 == 0, etc).</li>
 </ul>
-<p>Both return nullptr for formats with no GPU encoder yet (e.g. P210, Mono, Bayer); callers fall back / report unsupported. The mapping reproduces exactly the encoders the AJA path validated on hardware, so an addon that maps its vendor enum to the matching VideoPixelFormat gets byte-identical output. </p>
+<p>Both return nullptr for formats with no GPU encoder yet (e.g. P210, Mono, Bayer); callers fall back / report unsupported. The mapping reproduces exactly the encoders the AJA path validated on hardware, so an addon that maps its vendor enum to the matching <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> gets byte-identical output. </p>
 </div>
 <p><a href="_wire_encoder_factory_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -136,12 +136,13 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a34973904a6130109c305317416ad66cc" id="r_a34973904a6130109c305317416ad66cc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">GPUVideoEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a34973904a6130109c305317416ad66cc">score::gfx::makeWireEncoder</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> fmt)</td></tr>
-<tr class="separator:a34973904a6130109c305317416ad66cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0408c0db14251b42f8d60eb285671aa0" id="r_a0408c0db14251b42f8d60eb285671aa0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_compute_encoder.html">ComputeEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a0408c0db14251b42f8d60eb285671aa0">score::gfx::makeWireComputeEncoder</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> fmt)</td></tr>
-<tr class="separator:a0408c0db14251b42f8d60eb285671aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad82cadd1e21eb91cda266bb29fc9392b" id="r_ad82cadd1e21eb91cda266bb29fc9392b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ad82cadd1e21eb91cda266bb29fc9392b">score::gfx::wireComputeSupports</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> fmt, int width)</td></tr>
-<tr class="separator:ad82cadd1e21eb91cda266bb29fc9392b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf1d90e58e677d4938092d9b993e2d7" id="r_a3cf1d90e58e677d4938092d9b993e2d7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">GPUVideoEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a3cf1d90e58e677d4938092d9b993e2d7">score::gfx::makeWireEncoder</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fmt, bool contiguousFramestore=false)</td></tr>
+<tr class="memdesc:a3cf1d90e58e677d4938092d9b993e2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render (fragment-shader) encoder producing <code>fmt</code>'s exact on-wire bytes.  <br /></td></tr>
+<tr class="separator:a3cf1d90e58e677d4938092d9b993e2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bbc0ddff2a0ede77eaa961c9b3aa64" id="r_a88bbc0ddff2a0ede77eaa961c9b3aa64"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_compute_encoder.html">ComputeEncoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a88bbc0ddff2a0ede77eaa961c9b3aa64">score::gfx::makeWireComputeEncoder</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fmt)</td></tr>
+<tr class="separator:a88bbc0ddff2a0ede77eaa961c9b3aa64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a843aa4372e6afa53def5b752bfd8b08b" id="r_a843aa4372e6afa53def5b752bfd8b08b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a843aa4372e6afa53def5b752bfd8b08b">score::gfx::wireComputeSupports</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fmt, int width)</td></tr>
+<tr class="separator:a843aa4372e6afa53def5b752bfd8b08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

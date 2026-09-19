@@ -109,11 +109,11 @@ $(document).ready(function(){initNavTree('_wire_decoder_factory_8hpp.html',''); 
 </div><!--header-->
 <div class="contents">
 
-<p>Vendor-neutral GPU-decoder selection keyed on VideoPixelFormat.  
+<p>Vendor-neutral GPU-decoder selection keyed on <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Vendor-neutral GPU-decoder selection keyed on VideoPixelFormat. </p>
-<p>The capture-side symmetric counterpart to <a class="el" href="_wire_encoder_factory_8hpp.html" title="Vendor-neutral GPU-encoder selection keyed on VideoPixelFormat.">encoders/WireEncoderFactory.hpp</a>: turns "the on-wire pixel format a card delivers" into the GPUVideoDecoder that unpacks those bytes into RGBA at sample time. The switch lives here so that a capture-card addon (AJA, and future DeckLink/Bluefish/Magewell/Deltacast) only has to map its vendor enum -&gt; VideoPixelFormat.</p>
+<div class="textblock"><p>Vendor-neutral GPU-decoder selection keyed on <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>. </p>
+<p>The capture-side symmetric counterpart to <a class="el" href="_wire_encoder_factory_8hpp.html" title="Vendor-neutral GPU-encoder selection keyed on Video::VideoPixelFormat.">encoders/WireEncoderFactory.hpp</a>: turns "the on-wire pixel format a card delivers" into the GPUVideoDecoder that unpacks those bytes into RGBA at sample time. The switch lives here so that a capture-card addon (AJA, and future DeckLink/Bluefish/Magewell/Deltacast) only has to map its vendor enum -&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>.</p>
 <p>Returns nullptr for formats with no capture decoder yet. The decoder allocates an input texture sized to the wire byte layout (the strategy DMAs into it); <code>meta</code> carries the VPID/InfoFrame-derived colour metadata. </p>
 </div>
 <p><a href="_wire_decoder_factory_8hpp_source.html">Go to the source code of this file.</a></p>
@@ -129,9 +129,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8fd24eab55220f1e294a3b33a3304ce3" id="r_a8fd24eab55220f1e294a3b33a3304ce3"><td class="memItemLeft" align="right" valign="top"><a id="a8fd24eab55220f1e294a3b33a3304ce3" name="a8fd24eab55220f1e294a3b33a3304ce3"></a>
-std::unique_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::makeWireDecoder</b> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> fmt, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d)</td></tr>
-<tr class="separator:a8fd24eab55220f1e294a3b33a3304ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d67e0bd76bb03ff03cc08c08f7d8677" id="r_a3d67e0bd76bb03ff03cc08c08f7d8677"><td class="memItemLeft" align="right" valign="top"><a id="a3d67e0bd76bb03ff03cc08c08f7d8677" name="a3d67e0bd76bb03ff03cc08c08f7d8677"></a>
+std::unique_ptr&lt; <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">GPUVideoDecoder</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::makeWireDecoder</b> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fmt, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d)</td></tr>
+<tr class="separator:a3d67e0bd76bb03ff03cc08c08f7d8677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -140,6 +140,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setProducer</b> (port
 <tr class="separator:afc320c7ede12889428c20f27f2f94cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fbfe40e88b0b1ab82dd57940bf51ac8" id="r_a1fbfe40e88b0b1ab82dd57940bf51ac8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_background_node.html">score::gfx::BackgroundNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html#a1fbfe40e88b0b1ab82dd57940bf51ac8">liveNode</a> () const noexcept</td></tr>
 <tr class="separator:a1fbfe40e88b0b1ab82dd57940bf51ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a369437f1d43a1b28a6313fccece7c2a4" id="r_a369437f1d43a1b28a6313fccece7c2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html#a369437f1d43a1b28a6313fccece7c2a4">detach</a> ()</td></tr>
+<tr class="separator:a369437f1d43a1b28a6313fccece7c2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -154,6 +156,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>timerEvent</b> (QTime
 <tr class="separator:a2a5195318c559a2fc22391ae4525c28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a369437f1d43a1b28a6313fccece7c2a4" name="a369437f1d43a1b28a6313fccece7c2a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369437f1d43a1b28a6313fccece7c2a4">&#9670;&#160;</a></span>detach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::RhiPreviewWidget::detach </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stop rendering and hand the BackgroundNode back. Idempotent, and leaves the widget reusable through <a class="el" href="class_gfx_1_1_rhi_preview_widget.html#aae42c0518c5fba14f1e2dc2852a3e8b6">useGraph()</a>/useContext(). Callers that own the graph must detach before destroying it: this widget is a child of something that may outlive it. </p>
+
+</div>
+</div>
 <a id="a1fbfe40e88b0b1ab82dd57940bf51ac8" name="a1fbfe40e88b0b1ab82dd57940bf51ac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1fbfe40e88b0b1ab82dd57940bf51ac8">&#9670;&#160;</a></span>liveNode()</h2>
 

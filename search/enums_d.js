@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valuetype_0',['ValueType',['../namespace_protocols_1_1_c_a_n.html#aaa0f7ca0d6a021782b341b707d5d30b8',1,'Protocols::CAN']]],
-  ['videopixelformat_1',['VideoPixelFormat',['../_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7',1,'score::gfx::interop']]]
+  ['uiplacement_0',['UIPlacement',['../namespace_process.html#aacc0e0627a66b66fa3ea8bf30a30460b',1,'Process']]],
+  ['unuseddisposal_1',['UnusedDisposal',['../namespace_process.html#a638dbd1936d3a77ce9c5a1714ec58772',1,'Process']]]
 ];

@@ -197,14 +197,14 @@ $(document).ready(function(){initNavTree('_drm_fourcc_8hpp_source.html',''); ini
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      score::gfx::interop::fromAVPixelFormat(fmt));</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>drmFourccToVideoPixelFormat(uint32_t fourcc) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordflow">return</span> score::gfx::interop::fromDrmFourcc(fourcc);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#if defined(SCORE_GFX_HAS_SPA_RAW)</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>spaToVideoPixelFormat(uint32_t spaFmt) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">inline</span> uint32_t spaToDrmFourcc(uint32_t spaFmt) <span class="keyword">noexcept</span></div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('_drm_fourcc_8hpp_source.html',''); ini
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  }</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">inline</span> <a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>spaToVideoPixelFormat(uint32_t spaFmt) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>{</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keywordflow">return</span> score::gfx::interop::fromDrmFourcc(spaToDrmFourcc(spaFmt));</div>
@@ -237,9 +237,9 @@ $(document).ready(function(){initNavTree('_drm_fourcc_8hpp_source.html',''); ini
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>} <span class="comment">// namespace score::gfx::interop</span></div>
-<div class="ttc" id="a_drm_pixel_format_8hpp_html"><div class="ttname"><a href="_drm_pixel_format_8hpp.html">DrmPixelFormat.hpp</a></div><div class="ttdoc">DRM fourcc &lt;-&gt; VideoPixelFormat, and the PipeWire SPA formats.</div></div>
-<div class="ttc" id="a_video_pixel_format_8hpp_html_a2a2a147d631e170b7f242f7a212eeeb7"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:229</div></div>
-<div class="ttc" id="a_video_pixel_format_a_v_8hpp_html"><div class="ttname"><a href="_video_pixel_format_a_v_8hpp.html">VideoPixelFormatAV.hpp</a></div><div class="ttdoc">Bridge between the wire-format enum VideoPixelFormat and libav's AVPixelFormat.</div></div>
+<div class="ttc" id="a_drm_pixel_format_8hpp_html"><div class="ttname"><a href="_drm_pixel_format_8hpp.html">DrmPixelFormat.hpp</a></div><div class="ttdoc">DRM fourcc &lt;-&gt; Video::VideoPixelFormat, and the PipeWire SPA formats.</div></div>
+<div class="ttc" id="a_video_pixel_format_8hpp_html_a8aedb3a75f7488e58e53c47c0b5e3ccb"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:235</div></div>
+<div class="ttc" id="a_video_pixel_format_a_v_8hpp_html"><div class="ttname"><a href="_video_pixel_format_a_v_8hpp.html">VideoPixelFormatAV.hpp</a></div><div class="ttdoc">Bridge between the wire-format enum Video::VideoPixelFormat and libav's AVPixelFormat.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

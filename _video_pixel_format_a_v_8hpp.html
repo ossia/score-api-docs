@@ -109,17 +109,17 @@ $(document).ready(function(){initNavTree('_video_pixel_format_a_v_8hpp.html','')
 </div><!--header-->
 <div class="contents">
 
-<p>Bridge between the wire-format enum <code>VideoPixelFormat</code> and libav's <code>AVPixelFormat</code>.  
+<p>Bridge between the wire-format enum <code><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></code> and libav's <code>AVPixelFormat</code>.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Bridge between the wire-format enum <code>VideoPixelFormat</code> and libav's <code>AVPixelFormat</code>. </p>
+<div class="textblock"><p>Bridge between the wire-format enum <code><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></code> and libav's <code>AVPixelFormat</code>. </p>
 <p>Why two enums exist (and why we can't just use AVPixelFormat everywhere): the SDI/HDMI capture cards carry several <em>packed wire formats</em> that FFmpeg does NOT model as pixel formats — it models them as <b>codecs</b> that decode into a planar AVPixelFormat:</p>
 <p>v210 -&gt; AV_CODEC_ID_V210 (decodes to yuv422p10le) — no AV_PIX_FMT_V210 v216 -&gt; AV_CODEC_ID_V210X (yuv422p16) — no AV_PIX_FMT r210/RGB10-&gt; AV_CODEC_ID_R210/R10K (gbrp10/rgb48) — no exact AV_PIX_FMT DPX 10/12 -&gt; AV_CODEC_ID_DPX — no AV_PIX_FMT 12-bit packed RGB, A2-ARGB10 — no AV_PIX_FMT</p>
 <p>Those are exactly the formats capture cards put on the wire, so a wire-format enum is unavoidable. But the <em>buffer</em> formats (planar/semi-planar YUV, packed 8-bit RGB, 16-bit RGB, grey) all have AVPixelFormat twins; this bridge maps them so:</p><ul>
-<li>the capture path can derive a <code>VideoPixelFormat</code> from the <code>Video::ImageFormat::pixel_format</code> (an AVPixelFormat) it already carries;</li>
+<li>the capture path can derive a <code><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></code> from the <code>Video::ImageFormat::pixel_format</code> (an AVPixelFormat) it already carries;</li>
 <li>vendor format tables can interop with the libav-based decoder/encoder paths for the representable subset, with a single source of truth for the overlap instead of each site re-deriving it.</li>
 </ul>
-<p><code>toAVPixelFormat</code> returns <code>AV_PIX_FMT_NONE</code> for the wire-only formats (the caller keeps using <code>VideoPixelFormat</code> for those). <code>fromAVPixelFormat</code> returns <code>VideoPixelFormat::Unknown</code> for AVPixelFormats with no wire-format equivalent. </p>
+<p><code>toAVPixelFormat</code> returns <code>AV_PIX_FMT_NONE</code> for the wire-only formats (the caller keeps using <code><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></code> for those). <code>fromAVPixelFormat</code> returns <code>Video::VideoPixelFormat::Unknown</code> for AVPixelFormats with no wire-format equivalent. </p>
 </div>
 <p><a href="_video_pixel_format_a_v_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -134,14 +134,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a02e4c37532a0fc40aa6348a2fc93ed49" id="r_a02e4c37532a0fc40aa6348a2fc93ed49"><td class="memItemLeft" align="right" valign="top">AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_a_v_8cpp.html#a02e4c37532a0fc40aa6348a2fc93ed49">score::gfx::interop::toAVPixelFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:a02e4c37532a0fc40aa6348a2fc93ed49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aac2318f73bdeffabb669d4cb4208d0" id="r_a9aac2318f73bdeffabb669d4cb4208d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_a_v_8cpp.html#a9aac2318f73bdeffabb669d4cb4208d0">score::gfx::interop::fromAVPixelFormat</a> (AVPixelFormat f) noexcept</td></tr>
-<tr class="separator:a9aac2318f73bdeffabb669d4cb4208d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b0ae0590fd0816fe9ed9de053ccedb5" id="r_a0b0ae0590fd0816fe9ed9de053ccedb5"><td class="memItemLeft" align="right" valign="top">AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_a_v_8cpp.html#a0b0ae0590fd0816fe9ed9de053ccedb5">score::gfx::interop::toAVPixelFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:a0b0ae0590fd0816fe9ed9de053ccedb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41376436f4e0caa3ad470d5cb6a5682" id="r_af41376436f4e0caa3ad470d5cb6a5682"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_a_v_8cpp.html#af41376436f4e0caa3ad470d5cb6a5682">score::gfx::interop::fromAVPixelFormat</a> (AVPixelFormat f) noexcept</td></tr>
+<tr class="separator:af41376436f4e0caa3ad470d5cb6a5682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9aac2318f73bdeffabb669d4cb4208d0" name="a9aac2318f73bdeffabb669d4cb4208d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aac2318f73bdeffabb669d4cb4208d0">&#9670;&#160;</a></span>fromAVPixelFormat()</h2>
+<a id="af41376436f4e0caa3ad470d5cb6a5682" name="af41376436f4e0caa3ad470d5cb6a5682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af41376436f4e0caa3ad470d5cb6a5682">&#9670;&#160;</a></span>fromAVPixelFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VideoPixelFormat score::gfx::interop::fromAVPixelFormat </td>
+          <td class="memname"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> score::gfx::interop::fromAVPixelFormat </td>
           <td>(</td>
           <td class="paramtype">AVPixelFormat&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
@@ -163,12 +163,12 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Map an AVPixelFormat back to a wire format, or VideoPixelFormat::Unknown if it isn't one of the capture-card wire formats. </p>
+<p>Map an AVPixelFormat back to a wire format, or Video::VideoPixelFormat::Unknown if it isn't one of the capture-card wire formats. </p>
 
 </div>
 </div>
-<a id="a02e4c37532a0fc40aa6348a2fc93ed49" name="a02e4c37532a0fc40aa6348a2fc93ed49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02e4c37532a0fc40aa6348a2fc93ed49">&#9670;&#160;</a></span>toAVPixelFormat()</h2>
+<a id="a0b0ae0590fd0816fe9ed9de053ccedb5" name="a0b0ae0590fd0816fe9ed9de053ccedb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b0ae0590fd0816fe9ed9de053ccedb5">&#9670;&#160;</a></span>toAVPixelFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">AVPixelFormat score::gfx::interop::toAVPixelFormat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>

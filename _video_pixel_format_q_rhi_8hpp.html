@@ -114,10 +114,10 @@ $(document).ready(function(){initNavTree('_video_pixel_format_q_rhi_8hpp.html','
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Bridge between a CPU/DMA buffer layout and a GPU texture format. </p>
 <p>These are two different axes, and conflating them is a category error:</p>
-<p>VideoPixelFormat what a buffer physically holds (a card's DMA target, a dma-buf, a shared-memory frame) QRhiTexture::Format what a GPU texture holds</p>
+<p><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> what a buffer physically holds (a card's DMA target, a dma-buf, a shared-memory frame) QRhiTexture::Format what a GPU texture holds</p>
 <p>They are not in bijection. A planar layout needs several textures, one per plane, so it has no single texture format &ndash; <code>planeTextureFormat()</code> answers per plane. A packed YUV layout like UYVY422 is uploaded as a wider RGBA8 texture and unpacked in a shader, so its texture format says nothing about its colour model. And the wire-only formats (v210, r210, 12-bit packed) have no texture format at all: they must be decoded first.</p>
 <p>This is the axis shared texture transports work in &ndash; Spout hands over a D3D11 texture, Syphon an IOSurface, dma-buf import an EGLImage &ndash; so they belong here rather than being forced through the buffer vocabulary.</p>
-<p>Kept separate from <a class="el" href="_video_pixel_format_8hpp.html" title="Vendor-neutral pixel format vocabulary + descriptive metadata.">VideoPixelFormat.hpp</a> so the vocabulary itself stays free of Qt and RHI dependencies, exactly as the libav bridge is kept separate. </p>
+<p>Kept separate from Video::VideoPixelFormat.hpp so the vocabulary itself stays free of Qt and RHI dependencies, exactly as the libav bridge is kept separate. </p>
 </div>
 <p><a href="_video_pixel_format_q_rhi_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -132,20 +132,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a343ec3f16389bda0012e405e60dcfaa4" id="r_a343ec3f16389bda0012e405e60dcfaa4"><td class="memItemLeft" align="right" valign="top">QRhiTexture::Format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#a343ec3f16389bda0012e405e60dcfaa4">score::gfx::interop::planeTextureFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, int plane) noexcept</td></tr>
-<tr class="separator:a343ec3f16389bda0012e405e60dcfaa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fbca6a106753960782b3fc40d5baf57" id="r_a0fbca6a106753960782b3fc40d5baf57"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#a0fbca6a106753960782b3fc40d5baf57">score::gfx::interop::planeTextureWidth</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, int plane, uint32_t width) noexcept</td></tr>
-<tr class="separator:a0fbca6a106753960782b3fc40d5baf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dd00e7b916b3c81a43fa30ca47ce846" id="r_a2dd00e7b916b3c81a43fa30ca47ce846"><td class="memItemLeft" align="right" valign="top"><a id="a2dd00e7b916b3c81a43fa30ca47ce846" name="a2dd00e7b916b3c81a43fa30ca47ce846"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::planeTextureHeight</b> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, int plane, uint32_t height) noexcept</td></tr>
-<tr class="memdesc:a2dd00e7b916b3c81a43fa30ca47ce846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height in texels of plane <code>plane</code> for a frame <code>height</code> pixels tall. <br /></td></tr>
-<tr class="separator:a2dd00e7b916b3c81a43fa30ca47ce846"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bad749dbc06b356913c24c784ff293d" id="r_a0bad749dbc06b356913c24c784ff293d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#a0bad749dbc06b356913c24c784ff293d">score::gfx::interop::fromTextureFormat</a> (QRhiTexture::Format f) noexcept</td></tr>
-<tr class="separator:a0bad749dbc06b356913c24c784ff293d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ca86097b9f08275184919e7f76be38" id="r_ac8ca86097b9f08275184919e7f76be38"><td class="memItemLeft" align="right" valign="top">QRhiTexture::Format&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#ac8ca86097b9f08275184919e7f76be38">score::gfx::interop::planeTextureFormat</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, int plane) noexcept</td></tr>
+<tr class="separator:ac8ca86097b9f08275184919e7f76be38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f6942e4d95cde3fe1b7664f5e44ded" id="r_af6f6942e4d95cde3fe1b7664f5e44ded"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#af6f6942e4d95cde3fe1b7664f5e44ded">score::gfx::interop::planeTextureWidth</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, int plane, uint32_t width) noexcept</td></tr>
+<tr class="separator:af6f6942e4d95cde3fe1b7664f5e44ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdaf8fb3b3e285955eacfb01aa2549ec" id="r_abdaf8fb3b3e285955eacfb01aa2549ec"><td class="memItemLeft" align="right" valign="top"><a id="abdaf8fb3b3e285955eacfb01aa2549ec" name="abdaf8fb3b3e285955eacfb01aa2549ec"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::planeTextureHeight</b> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, int plane, uint32_t height) noexcept</td></tr>
+<tr class="memdesc:abdaf8fb3b3e285955eacfb01aa2549ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height in texels of plane <code>plane</code> for a frame <code>height</code> pixels tall. <br /></td></tr>
+<tr class="separator:abdaf8fb3b3e285955eacfb01aa2549ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7279a88a7d271e2256f0ab53e549082" id="r_af7279a88a7d271e2256f0ab53e549082"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_q_rhi_8cpp.html#af7279a88a7d271e2256f0ab53e549082">score::gfx::interop::fromTextureFormat</a> (QRhiTexture::Format f) noexcept</td></tr>
+<tr class="separator:af7279a88a7d271e2256f0ab53e549082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a0bad749dbc06b356913c24c784ff293d" name="a0bad749dbc06b356913c24c784ff293d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bad749dbc06b356913c24c784ff293d">&#9670;&#160;</a></span>fromTextureFormat()</h2>
+<a id="af7279a88a7d271e2256f0ab53e549082" name="af7279a88a7d271e2256f0ab53e549082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7279a88a7d271e2256f0ab53e549082">&#9670;&#160;</a></span>fromTextureFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +154,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::inter
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VideoPixelFormat score::gfx::interop::fromTextureFormat </td>
+          <td class="memname"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> score::gfx::interop::fromTextureFormat </td>
           <td>(</td>
           <td class="paramtype">QRhiTexture::Format&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
@@ -171,8 +171,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::inter
 
 </div>
 </div>
-<a id="a343ec3f16389bda0012e405e60dcfaa4" name="a343ec3f16389bda0012e405e60dcfaa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343ec3f16389bda0012e405e60dcfaa4">&#9670;&#160;</a></span>planeTextureFormat()</h2>
+<a id="ac8ca86097b9f08275184919e7f76be38" name="ac8ca86097b9f08275184919e7f76be38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ca86097b9f08275184919e7f76be38">&#9670;&#160;</a></span>planeTextureFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -183,7 +183,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::inter
         <tr>
           <td class="memname">QRhiTexture::Format score::gfx::interop::planeTextureFormat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -209,8 +209,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::inter
 
 </div>
 </div>
-<a id="a0fbca6a106753960782b3fc40d5baf57" name="a0fbca6a106753960782b3fc40d5baf57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fbca6a106753960782b3fc40d5baf57">&#9670;&#160;</a></span>planeTextureWidth()</h2>
+<a id="af6f6942e4d95cde3fe1b7664f5e44ded" name="af6f6942e4d95cde3fe1b7664f5e44ded"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f6942e4d95cde3fe1b7664f5e44ded">&#9670;&#160;</a></span>planeTextureWidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +221,7 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::inter
         <tr>
           <td class="memname">uint32_t score::gfx::interop::planeTextureWidth </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>

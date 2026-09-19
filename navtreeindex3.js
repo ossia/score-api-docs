@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_hierarchical_model_8hpp_source.html":[13,0,0,1,1,7,16],
 "_high_frequency_content_8hpp_source.html":[13,0,0,2,5,0,8],
 "_host_frame_pool_8hpp.html":[13,0,0,2,17,1,4,2,32],
 "_host_frame_pool_8hpp_source.html":[13,0,0,2,17,1,4,2,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0],
 "_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1],
 "_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
-"_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
-"_metadata_widget_8hpp_source.html":[13,0,0,2,32,4,6,10]
+"_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11]
 };

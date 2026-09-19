@@ -1212,6 +1212,7 @@ var hierarchy =
       [ "score::gfx::P016Decoder", "structscore_1_1gfx_1_1_p016_decoder.html", null ],
       [ "score::gfx::P210Decoder", "structscore_1_1gfx_1_1_p210_decoder.html", null ],
       [ "score::gfx::P410Decoder", "structscore_1_1gfx_1_1_p410_decoder.html", null ],
+      [ "score::gfx::PA16Decoder", "structscore_1_1gfx_1_1_p_a16_decoder.html", null ],
       [ "score::gfx::PackedBitfieldYUVDecoder", "structscore_1_1gfx_1_1_packed_bitfield_y_u_v_decoder.html", null ],
       [ "score::gfx::PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", null ],
       [ "score::gfx::PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", null ],
@@ -1220,6 +1221,7 @@ var hierarchy =
       [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
       [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
       [ "score::gfx::RGBA64Decoder", "structscore_1_1gfx_1_1_r_g_b_a64_decoder.html", null ],
+      [ "score::gfx::UYVADecoder", "structscore_1_1gfx_1_1_u_y_v_a_decoder.html", null ],
       [ "score::gfx::UYVY422Decoder", "structscore_1_1gfx_1_1_u_y_v_y422_decoder.html", null ],
       [ "score::gfx::V210Decoder", "structscore_1_1gfx_1_1_v210_decoder.html", null ],
       [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
@@ -1246,12 +1248,15 @@ var hierarchy =
       [ "score::gfx::I420Encoder", "structscore_1_1gfx_1_1_i420_encoder.html", null ],
       [ "score::gfx::NV12Encoder", "structscore_1_1gfx_1_1_n_v12_encoder.html", null ],
       [ "score::gfx::P010Encoder", "structscore_1_1gfx_1_1_p010_encoder.html", null ],
+      [ "score::gfx::P216Encoder", "structscore_1_1gfx_1_1_p216_encoder.html", null ],
+      [ "score::gfx::P216PackedEncoder", "structscore_1_1gfx_1_1_p216_packed_encoder.html", null ],
       [ "score::gfx::PackedRGBEncoder", "structscore_1_1gfx_1_1_packed_r_g_b_encoder.html", null ],
       [ "score::gfx::UYVYEncoder", "structscore_1_1gfx_1_1_u_y_v_y_encoder.html", null ],
       [ "score::gfx::V210Encoder", "structscore_1_1gfx_1_1_v210_encoder.html", null ],
       [ "score::gfx::YUV422P10Encoder", "structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html", null ],
       [ "score::gfx::YUVPlanarEncoder", "structscore_1_1gfx_1_1_y_u_v_planar_encoder.html", null ],
-      [ "score::gfx::YUY2Encoder", "structscore_1_1gfx_1_1_y_u_y2_encoder.html", null ]
+      [ "score::gfx::YUY2Encoder", "structscore_1_1gfx_1_1_y_u_y2_encoder.html", null ],
+      [ "score::gfx::Yuv420PackedEncoder", "structscore_1_1gfx_1_1_yuv420_packed_encoder.html", null ]
     ] ],
     [ "score::gfx::Graph", "structscore_1_1gfx_1_1_graph.html", null ],
     [ "ossia::graph_node", null, [
@@ -1508,8 +1513,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2779,6 +2784,7 @@ var hierarchy =
     [ "score::gfx::I420Encoder::PlaneResources", "structscore_1_1gfx_1_1_i420_encoder_1_1_plane_resources.html", null ],
     [ "score::gfx::YUV422P10Encoder::PlaneResources", "structscore_1_1gfx_1_1_y_u_v422_p10_encoder_1_1_plane_resources.html", null ],
     [ "score::gfx::YUVPlanarEncoder::PlaneResources", "structscore_1_1gfx_1_1_y_u_v_planar_encoder_1_1_plane_resources.html", null ],
+    [ "score::gfx::GPUVideoDecoder::PlaneRows", "structscore_1_1gfx_1_1_g_p_u_video_decoder_1_1_plane_rows.html", null ],
     [ "avnd_tools::DeviceRecorder::playback_message", "structavnd__tools_1_1_device_recorder_1_1playback__message.html", null ],
     [ "ossia::nodes::audio_metronome::played_sound", "structossia_1_1nodes_1_1audio__metronome_1_1played__sound.html", null ],
     [ "avnd_tools::DeviceRecorder::player_thread", "structavnd__tools_1_1_device_recorder_1_1player__thread.html", null ],
@@ -4380,6 +4386,7 @@ var hierarchy =
       ] ],
       [ "Explorer::AddressValueWidget", "class_explorer_1_1_address_value_widget.html", null ],
       [ "Explorer::DeviceExplorerWidget", "class_explorer_1_1_device_explorer_widget.html", null ],
+      [ "Gfx::CameraPreviewWidget", "class_gfx_1_1_camera_preview_widget.html", null ],
       [ "Gfx::CollapsibleSection", "class_gfx_1_1_collapsible_section.html", null ],
       [ "Gfx::GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
       [ "Gfx::PreviewWidget", "class_gfx_1_1_preview_widget.html", null ],
@@ -5154,7 +5161,7 @@ var hierarchy =
       [ "score::gfx::interop::DvpOutputGl< Lock >", "structscore_1_1gfx_1_1interop_1_1_dvp_output_gl.html", null ]
     ] ],
     [ "score::gfx::interop::VideoOutputStrategyConfig", "structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html", null ],
-    [ "score::gfx::interop::VideoPixelFormatInfo", "structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html", null ],
+    [ "Video::VideoPixelFormatInfo", "struct_video_1_1_video_pixel_format_info.html", null ],
     [ "Gfx::Video::VideoProps", "struct_gfx_1_1_video_1_1_video_props.html", null ],
     [ "view_impl_t", null, [
       [ "Media::AudioFile::ViewHandle", "struct_media_1_1_audio_file_1_1_view_handle.html", null ]

@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('_video_pixel_format_8hpp.html',''); in
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -117,7 +116,7 @@ $(document).ready(function(){initNavTree('_video_pixel_format_8hpp.html',''); in
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vendor-neutral pixel format vocabulary + descriptive metadata. </p>
 <p>Capture/output cards each have their own pixel-format enums: AJA <code>NTV2FrameBufferFormat</code>, DeckLink <code>BMDPixelFormat</code>, Magewell <code>MWFOURCC</code>, V4L2 fourccs, DRM fourccs, PipeWire SPA formats, GStreamer format strings, Ximea <code>XI_IMG_FORMAT</code>. Strategies translate between those and score's internal representation; without a central vocabulary every strategy reinvents the mapping table, and they drift apart.</p>
-<p><code>AVPixelFormat</code> cannot serve as that vocabulary on its own: FFmpeg models several formats the SDI cards put on the wire as <em>codecs</em> rather than pixel formats (v210, v216, r210, DPX 10/12-bit, 12-bit packed RGB, 10-bit ARGB), so they have no <code>AV_PIX_FMT_*</code> at all. <code><a class="el" href="_video_pixel_format_a_v_8hpp.html" title="Bridge between the wire-format enum VideoPixelFormat and libav&#39;s AVPixelFormat.">VideoPixelFormatAV.hpp</a></code> bridges the representable subset in both directions.</p>
+<p><code>AVPixelFormat</code> cannot serve as that vocabulary on its own: FFmpeg models several formats the SDI cards put on the wire as <em>codecs</em> rather than pixel formats (v210, v216, r210, DPX 10/12-bit, 12-bit packed RGB, 10-bit ARGB), so they have no <code>AV_PIX_FMT_*</code> at all. <code><a class="el" href="_video_pixel_format_a_v_8hpp.html" title="Bridge between the wire-format enum Video::VideoPixelFormat and libav&#39;s AVPixelFormat.">VideoPixelFormatAV.hpp</a></code> bridges the representable subset in both directions.</p>
 <p>This vocabulary describes <b>sample layout only</b>. Colorimetry &ndash; range, primaries, transfer characteristic, chroma siting, HDR metadata &ndash; is a separate orthogonal axis, owned by <code><a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a></code>. Do not add colour fields here: a format says how bytes are arranged, not how to interpret the values in them.</p>
 <p>Everything is generated from one declarative table, <code>SCORE_VIDEO_PIXEL_FORMATS</code>: the enum, the descriptor array, the name lookup, and the list the unit test sweeps. A format therefore cannot be declared without being described &ndash; which is how 28 formats previously ended up declared with a zero-byte descriptor, so that <code>bytesPerFrame</code> silently returned 0 for them.</p>
 <p>Vendor-specific translation tables (e.g. <code>bmdFormatTo(...)</code>, <code>ntv2FormatTo(...)</code>) live in each vendor's addon to avoid pulling vendor headers into score-plugin-gfx. </p>
@@ -126,16 +125,7 @@ $(document).ready(function(){initNavTree('_video_pixel_format_8hpp.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html">score::gfx::interop::VideoPixelFormatInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacescore" id="r_namespacescore"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html">score</a></td></tr>
-<tr class="memdesc:namespacescore"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base toolkit upon which the software is built. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacescore_1_1gfx" id="r_namespacescore_1_1gfx"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html">score::gfx</a></td></tr>
-<tr class="memdesc:namespacescore_1_1gfx"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics rendering pipeline for ossia score. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_pixel_format_info.html">Video::VideoPixelFormatInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -152,22 +142,22 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0a876d46d0293010bdc79e6fbcf1d134" id="r_a0a876d46d0293010bdc79e6fbcf1d134"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a0a876d46d0293010bdc79e6fbcf1d134">score::gfx::interop::ColorModel</a> : uint8_t { <br />
+<tr class="memitem:a21034b1612600049886fbf82a0034f79" id="r_a21034b1612600049886fbf82a0034f79"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a21034b1612600049886fbf82a0034f79">Video::ColorModel</a> : uint8_t { <br />
 &#160;&#160;<b>Unknown</b> = 0
 , <b>RGB</b>
 , <b>YUV</b>
-, <a class="el" href="_video_pixel_format_8hpp.html#a0a876d46d0293010bdc79e6fbcf1d134acaf3a042a037c064b7513ed640c22f77">Grey</a>
+, <a class="el" href="_video_pixel_format_8hpp.html#a21034b1612600049886fbf82a0034f79acaf3a042a037c064b7513ed640c22f77">Grey</a>
 , <br />
-&#160;&#160;<a class="el" href="_video_pixel_format_8hpp.html#a0a876d46d0293010bdc79e6fbcf1d134ad4ff4823ac2f6adeccc0e9df435e2e20">Bayer</a>
+&#160;&#160;<a class="el" href="_video_pixel_format_8hpp.html#a21034b1612600049886fbf82a0034f79ad4ff4823ac2f6adeccc0e9df435e2e20">Bayer</a>
 <br />
  }</td></tr>
-<tr class="separator:a0a876d46d0293010bdc79e6fbcf1d134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae807870d0905c2833800281d70f316b1" id="r_ae807870d0905c2833800281d70f316b1"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#ae807870d0905c2833800281d70f316b1">score::gfx::interop::ByteOrder</a> : uint8_t { <b>NA</b> = 0
+<tr class="separator:a21034b1612600049886fbf82a0034f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a942373ff1e7e99d69b92586ca42629c9" id="r_a942373ff1e7e99d69b92586ca42629c9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a942373ff1e7e99d69b92586ca42629c9">Video::ByteOrder</a> : uint8_t { <b>NA</b> = 0
 , <b>Little</b>
 , <b>Big</b>
  }</td></tr>
-<tr class="separator:ae807870d0905c2833800281d70f316b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a2a147d631e170b7f242f7a212eeeb7" id="r_a2a2a147d631e170b7f242f7a212eeeb7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> : uint16_t { <br />
+<tr class="separator:a942373ff1e7e99d69b92586ca42629c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aedb3a75f7488e58e53c47c0b5e3ccb" id="r_a8aedb3a75f7488e58e53c47c0b5e3ccb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> : uint16_t { <br />
 &#160;&#160;<b>Unknown</b> = 0
 , <b>SCORE_VPF_ENUM_ROW</b>
 , <b>BGRA8</b> = 1
@@ -239,84 +229,87 @@ Enumerations</h2></td></tr>
 , <b>YVU422P</b> = 104
 , <br />
 &#160;&#160;<b>P216</b> = 108
+, <b>UYVA422A</b> = 127
+, <b>PA16</b> = 128
 , <b>YUV411P</b> = 101
-, <b>YUV410P</b> = 102
+, <br />
+&#160;&#160;<b>YUV410P</b> = 102
 , <b>YVU410P</b> = 103
-, <br />
-&#160;&#160;<b>UYYVYY411</b> = 105
+, <b>UYYVYY411</b> = 105
 , <b>YUV444P</b> = 60
-, <b>YUV444P10</b> = 61
+, <br />
+&#160;&#160;<b>YUV444P10</b> = 61
 , <b>YUV444P12</b> = 62
-, <br />
-&#160;&#160;<b>NV24</b> = 63
+, <b>NV24</b> = 63
 , <b>NV42</b> = 64
-, <b>VUYA</b> = 65
+, <br />
+&#160;&#160;<b>VUYA</b> = 65
 , <b>VUYX</b> = 66
-, <br />
-&#160;&#160;<b>AYUV</b> = 67
+, <b>AYUV</b> = 67
 , <b>XYUV</b> = 68
-, <b>YUVA</b> = 69
+, <br />
+&#160;&#160;<b>YUVA</b> = 69
 , <b>YUVX</b> = 73
-, <br />
-&#160;&#160;<b>YUVA444P</b> = 111
+, <b>YUVA444P</b> = 111
 , <b>P416</b> = 109
-, <b>XV30</b> = 112
+, <br />
+&#160;&#160;<b>XV30</b> = 112
 , <b>AYUV64</b> = 113
-, <br />
-&#160;&#160;<b>RGBA16</b> = 70
+, <b>RGBA16</b> = 70
 , <b>RGBA16F</b> = 71
-, <b>RGBA32F</b> = 72
+, <br />
+&#160;&#160;<b>RGBA32F</b> = 72
 , <b>Mono8</b> = 80
-, <br />
-&#160;&#160;<b>Mono10</b> = 81
+, <b>Mono10</b> = 81
 , <b>Mono12</b> = 82
-, <b>Mono16</b> = 83
+, <br />
+&#160;&#160;<b>Mono16</b> = 83
 , <b>BayerRG8</b> = 84
-, <br />
-&#160;&#160;<b>BayerRG12</b> = 85
+, <b>BayerRG12</b> = 85
 , <b>BayerBGGR8</b> = 114
-, <b>BayerGBRG8</b> = 115
+, <br />
+&#160;&#160;<b>BayerGBRG8</b> = 115
 , <b>BayerGRBG8</b> = 116
-, <br />
-&#160;&#160;<b>BayerRGGB8</b> = 117
+, <b>BayerRGGB8</b> = 117
 , <b>BayerBGGR16</b> = 118
-, <b>BayerRGGB16</b> = 119
-, <b>BayerBGGR10</b> = 123
 , <br />
-&#160;&#160;<b>BayerGBRG10</b> = 124
+&#160;&#160;<b>BayerRGGB16</b> = 119
+, <b>BayerBGGR10</b> = 123
+, <b>BayerGBRG10</b> = 124
 , <b>BayerGRBG10</b> = 125
-, <b>BayerRGGB10</b> = 126
+, <br />
+&#160;&#160;<b>BayerRGGB10</b> = 126
 , <b>Mono16BE</b> = 86
 <br />
  }</td></tr>
-<tr class="separator:a2a2a147d631e170b7f242f7a212eeeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8aedb3a75f7488e58e53c47c0b5e3ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8975e60b11545b437c01744d61f64738" id="r_a8975e60b11545b437c01744d61f64738"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a8975e60b11545b437c01744d61f64738">score::gfx::interop::formatCount</a> () noexcept</td></tr>
-<tr class="separator:a8975e60b11545b437c01744d61f64738"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5a1f447f0a2a22ceeb54dab0de8fdf" id="r_aec5a1f447f0a2a22ceeb54dab0de8fdf"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#aec5a1f447f0a2a22ceeb54dab0de8fdf">score::gfx::interop::alignUp</a> (std::size_t v, std::size_t a) noexcept</td></tr>
-<tr class="separator:aec5a1f447f0a2a22ceeb54dab0de8fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a355b28c832ccff03712af2b8597cebd1" id="r_a355b28c832ccff03712af2b8597cebd1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html">VideoPixelFormatInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a355b28c832ccff03712af2b8597cebd1">score::gfx::interop::formatInfo</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:a355b28c832ccff03712af2b8597cebd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2080f6f961ca08e729d3f29f0b83503c" id="r_a2080f6f961ca08e729d3f29f0b83503c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a2080f6f961ca08e729d3f29f0b83503c">score::gfx::interop::formatName</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:a2080f6f961ca08e729d3f29f0b83503c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2137ff06bc6f068efde06f8d775a79" id="r_ade2137ff06bc6f068efde06f8d775a79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#ade2137ff06bc6f068efde06f8d775a79">score::gfx::interop::chromaSwappedTwin</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:ade2137ff06bc6f068efde06f8d775a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868942a3cf3be65fbf0305c18608478a" id="r_a868942a3cf3be65fbf0305c18608478a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html">VideoPixelFormatInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a868942a3cf3be65fbf0305c18608478a">score::gfx::interop::allFormats</a> (std::size_t &amp;count) noexcept</td></tr>
-<tr class="separator:a868942a3cf3be65fbf0305c18608478a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a778da2965850136868d3edd7b5a2059a" id="r_a778da2965850136868d3edd7b5a2059a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a778da2965850136868d3edd7b5a2059a">score::gfx::interop::rowBytes</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, uint32_t width) noexcept</td></tr>
-<tr class="separator:a778da2965850136868d3edd7b5a2059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe1e7d825321a827312f4a2e7ca0472f" id="r_abe1e7d825321a827312f4a2e7ca0472f"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#abe1e7d825321a827312f4a2e7ca0472f">score::gfx::interop::alignedRowBytes</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, uint32_t width, std::size_t alignment) noexcept</td></tr>
-<tr class="separator:abe1e7d825321a827312f4a2e7ca0472f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97022aaa7231582d0cc234033e927bdb" id="r_a97022aaa7231582d0cc234033e927bdb"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a97022aaa7231582d0cc234033e927bdb">score::gfx::interop::defaultStride</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, uint32_t width) noexcept</td></tr>
-<tr class="separator:a97022aaa7231582d0cc234033e927bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a96699173826399c8a05f2c66719a9" id="r_ad4a96699173826399c8a05f2c66719a9"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#ad4a96699173826399c8a05f2c66719a9">score::gfx::interop::bytesPerFrame</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f, uint32_t width, uint32_t height) noexcept</td></tr>
-<tr class="separator:ad4a96699173826399c8a05f2c66719a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11723d0e671e113ee83cbd7ec5fc0ef" id="r_ab11723d0e671e113ee83cbd7ec5fc0ef"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#ab11723d0e671e113ee83cbd7ec5fc0ef">Video::formatCount</a> () noexcept</td></tr>
+<tr class="separator:ab11723d0e671e113ee83cbd7ec5fc0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b9fa869177a117dd49910482f63017" id="r_a63b9fa869177a117dd49910482f63017"><td class="memItemLeft" align="right" valign="top">constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8hpp.html#a63b9fa869177a117dd49910482f63017">Video::alignUp</a> (std::size_t v, std::size_t a) noexcept</td></tr>
+<tr class="separator:a63b9fa869177a117dd49910482f63017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf12eb39a069e68e74b65e6589e60a9" id="r_a6bf12eb39a069e68e74b65e6589e60a9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_video_1_1_video_pixel_format_info.html">VideoPixelFormatInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a6bf12eb39a069e68e74b65e6589e60a9">Video::formatInfo</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:a6bf12eb39a069e68e74b65e6589e60a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c96be3b3dfe283f9eef7f84472624f" id="r_ab2c96be3b3dfe283f9eef7f84472624f"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#ab2c96be3b3dfe283f9eef7f84472624f">Video::formatName</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:ab2c96be3b3dfe283f9eef7f84472624f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4871d903a8a28010fdcf129b624eeb" id="r_a5b4871d903a8a28010fdcf129b624eeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a5b4871d903a8a28010fdcf129b624eeb">Video::chromaSwappedTwin</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:a5b4871d903a8a28010fdcf129b624eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d92aa87ffa1b93fe575e3f210fa2c00" id="r_a1d92aa87ffa1b93fe575e3f210fa2c00"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_video_1_1_video_pixel_format_info.html">VideoPixelFormatInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a1d92aa87ffa1b93fe575e3f210fa2c00">Video::allFormats</a> (std::size_t &amp;count) noexcept</td></tr>
+<tr class="separator:a1d92aa87ffa1b93fe575e3f210fa2c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b12683137c1383bb6b3c75a2d08082b" id="r_a0b12683137c1383bb6b3c75a2d08082b"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a0b12683137c1383bb6b3c75a2d08082b">Video::rowBytes</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f, uint32_t width) noexcept</td></tr>
+<tr class="separator:a0b12683137c1383bb6b3c75a2d08082b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef5184202ddb1d6875a417a8214a0e4" id="r_aeef5184202ddb1d6875a417a8214a0e4"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#aeef5184202ddb1d6875a417a8214a0e4">Video::alignedRowBytes</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f, uint32_t width, std::size_t alignment) noexcept</td></tr>
+<tr class="separator:aeef5184202ddb1d6875a417a8214a0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a231fcff17c2a35c0a38bd7496248759d" id="r_a231fcff17c2a35c0a38bd7496248759d"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a231fcff17c2a35c0a38bd7496248759d">Video::defaultStride</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f, uint32_t width) noexcept</td></tr>
+<tr class="separator:a231fcff17c2a35c0a38bd7496248759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d340f1693377e7a8fd3a2dc9fdafe2a" id="r_a0d340f1693377e7a8fd3a2dc9fdafe2a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_video_pixel_format_8cpp.html#a0d340f1693377e7a8fd3a2dc9fdafe2a">Video::bytesPerFrame</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> f, uint32_t width, uint32_t height) noexcept</td></tr>
+<tr class="separator:a0d340f1693377e7a8fd3a2dc9fdafe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ae807870d0905c2833800281d70f316b1" name="ae807870d0905c2833800281d70f316b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae807870d0905c2833800281d70f316b1">&#9670;&#160;</a></span>ByteOrder</h2>
+<a id="a942373ff1e7e99d69b92586ca42629c9" name="a942373ff1e7e99d69b92586ca42629c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a942373ff1e7e99d69b92586ca42629c9">&#9670;&#160;</a></span>ByteOrder</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +318,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#ae807870d0905c2833800281d70f316b1">score::gfx::interop::ByteOrder</a> : uint8_t</td>
+          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#a942373ff1e7e99d69b92586ca42629c9">Video::ByteOrder</a> : uint8_t</td>
         </tr>
       </table>
   </td>
@@ -338,8 +331,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0a876d46d0293010bdc79e6fbcf1d134" name="a0a876d46d0293010bdc79e6fbcf1d134"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a876d46d0293010bdc79e6fbcf1d134">&#9670;&#160;</a></span>ColorModel</h2>
+<a id="a21034b1612600049886fbf82a0034f79" name="a21034b1612600049886fbf82a0034f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21034b1612600049886fbf82a0034f79">&#9670;&#160;</a></span>ColorModel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +341,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#a0a876d46d0293010bdc79e6fbcf1d134">score::gfx::interop::ColorModel</a> : uint8_t</td>
+          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#a21034b1612600049886fbf82a0034f79">Video::ColorModel</a> : uint8_t</td>
         </tr>
       </table>
   </td>
@@ -359,16 +352,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Which colour model the samples carry. A boolean "is YUV" cannot express greyscale or Bayer, both of which the industrial-camera paths produce. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a876d46d0293010bdc79e6fbcf1d134acaf3a042a037c064b7513ed640c22f77" name="a0a876d46d0293010bdc79e6fbcf1d134acaf3a042a037c064b7513ed640c22f77"></a>Grey&#160;</td><td class="fielddoc"><p>Single achromatic channel (Mono*). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a21034b1612600049886fbf82a0034f79acaf3a042a037c064b7513ed640c22f77" name="a21034b1612600049886fbf82a0034f79acaf3a042a037c064b7513ed640c22f77"></a>Grey&#160;</td><td class="fielddoc"><p>Single achromatic channel (Mono*). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a0a876d46d0293010bdc79e6fbcf1d134ad4ff4823ac2f6adeccc0e9df435e2e20" name="a0a876d46d0293010bdc79e6fbcf1d134ad4ff4823ac2f6adeccc0e9df435e2e20"></a>Bayer&#160;</td><td class="fielddoc"><p>Undemosaiced colour-filter-array data (BayerRG*). </p>
+<tr><td class="fieldname"><a id="a21034b1612600049886fbf82a0034f79ad4ff4823ac2f6adeccc0e9df435e2e20" name="a21034b1612600049886fbf82a0034f79ad4ff4823ac2f6adeccc0e9df435e2e20"></a>Bayer&#160;</td><td class="fielddoc"><p>Undemosaiced colour-filter-array data (BayerRG*). </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a2a2a147d631e170b7f242f7a212eeeb7" name="a2a2a147d631e170b7f242f7a212eeeb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a2a147d631e170b7f242f7a212eeeb7">&#9670;&#160;</a></span>VideoPixelFormat</h2>
+<a id="a8aedb3a75f7488e58e53c47c0b5e3ccb" name="a8aedb3a75f7488e58e53c47c0b5e3ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aedb3a75f7488e58e53c47c0b5e3ccb">&#9670;&#160;</a></span>VideoPixelFormat</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +370,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a> : uint16_t</td>
+          <td class="memname">enum class <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> : uint16_t</td>
         </tr>
       </table>
   </td>
@@ -391,8 +384,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="abe1e7d825321a827312f4a2e7ca0472f" name="abe1e7d825321a827312f4a2e7ca0472f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe1e7d825321a827312f4a2e7ca0472f">&#9670;&#160;</a></span>alignedRowBytes()</h2>
+<a id="aeef5184202ddb1d6875a417a8214a0e4" name="aeef5184202ddb1d6875a417a8214a0e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef5184202ddb1d6875a417a8214a0e4">&#9670;&#160;</a></span>alignedRowBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,9 +394,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t score::gfx::interop::alignedRowBytes </td>
+          <td class="memname">std::size_t Video::alignedRowBytes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -434,8 +427,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aec5a1f447f0a2a22ceeb54dab0de8fdf" name="aec5a1f447f0a2a22ceeb54dab0de8fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec5a1f447f0a2a22ceeb54dab0de8fdf">&#9670;&#160;</a></span>alignUp()</h2>
+<a id="a63b9fa869177a117dd49910482f63017" name="a63b9fa869177a117dd49910482f63017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b9fa869177a117dd49910482f63017">&#9670;&#160;</a></span>alignUp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -444,7 +437,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t score::gfx::interop::alignUp </td>
+          <td class="memname">constexpr std::size_t Video::alignUp </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
           <td class="paramname"><em>v</em>, </td>
@@ -471,8 +464,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a868942a3cf3be65fbf0305c18608478a" name="a868942a3cf3be65fbf0305c18608478a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a868942a3cf3be65fbf0305c18608478a">&#9670;&#160;</a></span>allFormats()</h2>
+<a id="a1d92aa87ffa1b93fe575e3f210fa2c00" name="a1d92aa87ffa1b93fe575e3f210fa2c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d92aa87ffa1b93fe575e3f210fa2c00">&#9670;&#160;</a></span>allFormats()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +474,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const VideoPixelFormatInfo * score::gfx::interop::allFormats </td>
+          <td class="memname">const VideoPixelFormatInfo * Video::allFormats </td>
           <td>(</td>
           <td class="paramtype">std::size_t &amp;&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
@@ -498,8 +491,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4a96699173826399c8a05f2c66719a9" name="ad4a96699173826399c8a05f2c66719a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4a96699173826399c8a05f2c66719a9">&#9670;&#160;</a></span>bytesPerFrame()</h2>
+<a id="a0d340f1693377e7a8fd3a2dc9fdafe2a" name="a0d340f1693377e7a8fd3a2dc9fdafe2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d340f1693377e7a8fd3a2dc9fdafe2a">&#9670;&#160;</a></span>bytesPerFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -508,9 +501,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t score::gfx::interop::bytesPerFrame </td>
+          <td class="memname">std::size_t Video::bytesPerFrame </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -541,8 +534,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ade2137ff06bc6f068efde06f8d775a79" name="ade2137ff06bc6f068efde06f8d775a79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2137ff06bc6f068efde06f8d775a79">&#9670;&#160;</a></span>chromaSwappedTwin()</h2>
+<a id="a5b4871d903a8a28010fdcf129b624eeb" name="a5b4871d903a8a28010fdcf129b624eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b4871d903a8a28010fdcf129b624eeb">&#9670;&#160;</a></span>chromaSwappedTwin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -551,9 +544,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VideoPixelFormat score::gfx::interop::chromaSwappedTwin </td>
+          <td class="memname">VideoPixelFormat Video::chromaSwappedTwin </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -569,8 +562,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a97022aaa7231582d0cc234033e927bdb" name="a97022aaa7231582d0cc234033e927bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97022aaa7231582d0cc234033e927bdb">&#9670;&#160;</a></span>defaultStride()</h2>
+<a id="a231fcff17c2a35c0a38bd7496248759d" name="a231fcff17c2a35c0a38bd7496248759d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231fcff17c2a35c0a38bd7496248759d">&#9670;&#160;</a></span>defaultStride()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -579,9 +572,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t score::gfx::interop::defaultStride </td>
+          <td class="memname">std::size_t Video::defaultStride </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -606,8 +599,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8975e60b11545b437c01744d61f64738" name="a8975e60b11545b437c01744d61f64738"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8975e60b11545b437c01744d61f64738">&#9670;&#160;</a></span>formatCount()</h2>
+<a id="ab11723d0e671e113ee83cbd7ec5fc0ef" name="ab11723d0e671e113ee83cbd7ec5fc0ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11723d0e671e113ee83cbd7ec5fc0ef">&#9670;&#160;</a></span>formatCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -616,7 +609,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::size_t score::gfx::interop::formatCount </td>
+          <td class="memname">constexpr std::size_t Video::formatCount </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -632,8 +625,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a355b28c832ccff03712af2b8597cebd1" name="a355b28c832ccff03712af2b8597cebd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a355b28c832ccff03712af2b8597cebd1">&#9670;&#160;</a></span>formatInfo()</h2>
+<a id="a6bf12eb39a069e68e74b65e6589e60a9" name="a6bf12eb39a069e68e74b65e6589e60a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bf12eb39a069e68e74b65e6589e60a9">&#9670;&#160;</a></span>formatInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -642,9 +635,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const VideoPixelFormatInfo &amp; score::gfx::interop::formatInfo </td>
+          <td class="memname">const VideoPixelFormatInfo &amp; Video::formatInfo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -659,8 +652,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2080f6f961ca08e729d3f29f0b83503c" name="a2080f6f961ca08e729d3f29f0b83503c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2080f6f961ca08e729d3f29f0b83503c">&#9670;&#160;</a></span>formatName()</h2>
+<a id="ab2c96be3b3dfe283f9eef7f84472624f" name="ab2c96be3b3dfe283f9eef7f84472624f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c96be3b3dfe283f9eef7f84472624f">&#9670;&#160;</a></span>formatName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -669,9 +662,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const char * score::gfx::interop::formatName </td>
+          <td class="memname">const char * Video::formatName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>
@@ -686,8 +679,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a778da2965850136868d3edd7b5a2059a" name="a778da2965850136868d3edd7b5a2059a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a778da2965850136868d3edd7b5a2059a">&#9670;&#160;</a></span>rowBytes()</h2>
+<a id="a0b12683137c1383bb6b3c75a2d08082b" name="a0b12683137c1383bb6b3c75a2d08082b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b12683137c1383bb6b3c75a2d08082b">&#9670;&#160;</a></span>rowBytes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,9 +689,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t score::gfx::interop::rowBytes </td>
+          <td class="memname">std::size_t Video::rowBytes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>

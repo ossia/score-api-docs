@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_drm_pixel_format_8hpp_source.html',''
 <div class="contents">
 <a href="_drm_pixel_format_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Gfx/Graph/interop/VideoPixelFormat.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Video/VideoPixelFormat.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -130,14 +130,15 @@ $(document).ready(function(){initNavTree('_drm_pixel_format_8hpp_source.html',''
 </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>VideoPixelFormat fromDrmFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fromDrmFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>uint32_t toDrmFourcc(VideoPixelFormat f) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>uint32_t toDrmFourcc(<a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace score::gfx::interop</span></div>
 <div class="ttc" id="a_drm_pixel_format_8hpp_html_a5ab0082f7b4f5b739270c1bed24fca56"><div class="ttname"><a href="_drm_pixel_format_8hpp.html#a5ab0082f7b4f5b739270c1bed24fca56">score::gfx::interop::drmPixelFourcc</a></div><div class="ttdeci">constexpr uint32_t drmPixelFourcc(char a, char b, char c, char d) noexcept</div><div class="ttdoc">Build a DRM fourcc from its characters, least-significant byte first.</div><div class="ttdef"><b>Definition</b> DrmPixelFormat.hpp:34</div></div>
 <div class="ttc" id="a_video_pixel_format_8hpp_html"><div class="ttname"><a href="_video_pixel_format_8hpp.html">VideoPixelFormat.hpp</a></div><div class="ttdoc">Vendor-neutral pixel format vocabulary + descriptive metadata.</div></div>
+<div class="ttc" id="a_video_pixel_format_8hpp_html_a8aedb3a75f7488e58e53c47c0b5e3ccb"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:235</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

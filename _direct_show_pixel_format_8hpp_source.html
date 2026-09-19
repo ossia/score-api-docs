@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_direct_show_pixel_format_8hpp_source.
 <div class="contents">
 <a href="_direct_show_pixel_format_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Gfx/Graph/interop/VideoPixelFormat.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Video/VideoPixelFormat.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_direct_show_pixel_format_8hpp_source.
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>VideoPixelFormat fromDirectShowFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fromDirectShowFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>SCORE_PLUGIN_GFX_EXPORT</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">bool</span> isDirectShowCompressedFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
@@ -138,6 +138,7 @@ $(document).ready(function(){initNavTree('_direct_show_pixel_format_8hpp_source.
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <span class="comment">// namespace score::gfx::interop</span></div>
 <div class="ttc" id="a_direct_show_pixel_format_8hpp_html_abfb8360514cc522aea0d1629da5ff580"><div class="ttname"><a href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">score::gfx::interop::directShowFourcc</a></div><div class="ttdeci">constexpr uint32_t directShowFourcc(char a, char b, char c, char d) noexcept</div><div class="ttdoc">Build a fourcc the way DirectShow spells it, least-significant byte first.</div><div class="ttdef"><b>Definition</b> DirectShowPixelFormat.hpp:28</div></div>
 <div class="ttc" id="a_video_pixel_format_8hpp_html"><div class="ttname"><a href="_video_pixel_format_8hpp.html">VideoPixelFormat.hpp</a></div><div class="ttdoc">Vendor-neutral pixel format vocabulary + descriptive metadata.</div></div>
+<div class="ttc" id="a_video_pixel_format_8hpp_html_a8aedb3a75f7488e58e53c47c0b5e3ccb"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:235</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

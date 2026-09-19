@@ -126,12 +126,9 @@ Inheritance diagram for score::gfx::NV12Encoder:</div>
 <div class="textblock"><p>GPU RGBA-&gt;NV12 encoder (semi-planar 4:2:0). </p>
 <p>Two render passes: <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 1: Y plane -&gt; R8 texture at full resolution <a class="el" href="structscore_1_1gfx_1_1_pass.html">Pass</a> 2: UV plane -&gt; interleaved chroma at half vertical resolution</p>
 <p>Two readbacks. The caller concatenates Y + UV data for GStreamer <code>video/x-raw,format=NV12</code>.</p>
-<p>Two UV implementations selected at compile time (see <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html" title="GPU RGBA -&gt; yuv422p10le encoder (planar 4:2:2, 10-bit).">YUV422P10Encoder</a> for the full rationale and the qtbase commit reference):</p>
-<ul>
-<li>Qt &gt;= 6.10: RG8 target at width/2 × height/2; QRhi reads it back tightly (2 bytes per chroma site). Bilinear sampling averages the 2x2 source block.</li>
-<li>Qt &lt; 6.10: the GL backend reads RG8 render targets back RGBA-expanded (4 bytes per site, U,V,0,255) — the pre-6.10 readback special-cases only R8 and float formats. So we render the interleaved U,V bytes into an R8 target of width × height/2 instead: one byte per texel, U in even columns, V in odd ones, each averaged over the same 2x2 block.</li>
-</ul>
-<p>Both paths expose the same readback byte layout (w bytes per row over h/2 rows, U then V per site), so consumers are agnostic. The Y plane is R8 and reads back tightly everywhere. </p>
+<p>The UV plane renders into an R8 target of width x height/2, one byte per texel: U in even columns, V in odd ones &ndash; the same byte layout an RG8 target at width/2 x height/2 produces.</p>
+<p>It must not be RG8. An RG8 row here is (w/2) * 2 = w bytes, and where that is not 4-byte aligned the readback comes back the right total SIZE with its rows progressively shifted: row 0 correct, the rest drifting. 722 and 1922 are even, so 4:2:0 can express them, and both are real NDI sizes. Measured against a source varying only vertically, where every chroma row must be one repeated value, 287 of 288 rows came back non-constant on OpenGL and on Vulkan; against ffmpeg's own nv12 at 722x576, 30% of bytes differed.</p>
+<p>Sampling is unchanged &ndash; one bilinear tap at the centre of the 2x2 block &ndash; so the values match the RG8 path wherever it was readable at all. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -453,9 +450,17 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral">      return vec2(tc.x, 1.0 - tc.y);</span></div>
 <div class="line"><span class="stringliteral">    }</span></div>
 <div class="line"><span class="stringliteral">    void main() {</span></div>
-<div class="line"><span class="stringliteral">      vec3 rgb = texture(src_tex, flip_y(v_texcoord)).rgb;</span></div>
-<div class="line"><span class="stringliteral">      vec3 yuv = convert_from_rgb(rgb);</span></div>
-<div class="line"><span class="stringliteral">      fragColor = vec4(yuv.y, yuv.z, 0.0, 1.0);</span></div>
+<div class="line"><span class="stringliteral">      ivec2 sz = textureSize(src_tex, 0);</span></div>
+<div class="line"><span class="stringliteral">      // floor() the product, not the product minus half a texel: at output</span></div>
+<div class="line"><span class="stringliteral">      // texel i the interpolated value is exactly i + 0.5, so flooring it has</span></div>
+<div class="line"><span class="stringliteral">      // half a texel of slack either way where flooring i itself has none.</span></div>
+<div class="line"><span class="stringliteral">      int b  = int(floor(v_texcoord.x * float(sz.x)));</span></div>
+<div class="line"><span class="stringliteral">      int cy = int(floor(v_texcoord.y * float(sz.y &gt;&gt; 1)));</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">      vec2 csz = vec2(float(sz.x &gt;&gt; 1), float(sz.y &gt;&gt; 1));</span></div>
+<div class="line"><span class="stringliteral">      vec2 tc = (vec2(float(b &gt;&gt; 1), float(cy)) + 0.5) / csz;</span></div>
+<div class="line"><span class="stringliteral">      vec3 yuv = convert_from_rgb(texture(src_tex, flip_y(tc)).rgb);</span></div>
+<div class="line"><span class="stringliteral">      fragColor = vec4(((b &amp; 1) == 0) ? yuv.y : yuv.z, 0.0, 0.0, 1.0);</span></div>
 <div class="line"><span class="stringliteral">    }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->

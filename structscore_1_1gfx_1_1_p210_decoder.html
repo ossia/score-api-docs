@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_p210_decoder.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Decodes P210 semi-planar 4:2:2 10-bit videos.  
+<p>Decodes P210 and P216 semi-planar 4:2:2 videos.  
  <a href="structscore_1_1gfx_1_1_p210_decoder.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::gfx::P210Decoder:</div>
@@ -123,18 +123,19 @@ Inheritance diagram for score::gfx::P210Decoder:</div>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Decodes P210 semi-planar 4:2:2 10-bit videos. </p>
-<p>Data is in the high bits of 16-bit words, so R16 unorm already returns correctly normalized values.</p>
-<p>Layout:</p><ul>
-<li>Plane 0: Y (16-bit, 10 bits used), full resolution</li>
-<li>Plane 1: UV interleaved (16-bit per component), half width, full height </li>
+<div class="textblock"><p>Decodes P210 and P216 semi-planar 4:2:2 videos. </p>
+<p>One layout, two bit depths:</p><ul>
+<li>Plane 0: Y (16-bit words), full resolution</li>
+<li>Plane 1: UV interleaved (16-bit per component), half width, full height</li>
 </ul>
+<p>P210 puts 10 bits in the HIGH bits of each word, so R16 unorm returns a value that is short of 1.0 at full scale and has to be renormalized &ndash; that is what the scale is for. P216 uses all 16 bits and wants no scaling at all, which is the only difference between the two and why they share this decoder.</p>
+<p>P216 is what NDI delivers for a 16-bit source, and NDI delivers it as individual FIELDS: half-height frames at twice the rate. Those are uploaded into the two halves of one full-height texture (see planeRows) and resolved by score_tc, so nothing here weaves anything on the CPU. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae97cab7fef41058c195fa5750291ce66" id="r_ae97cab7fef41058c195fa5750291ce66"><td class="memItemLeft" align="right" valign="top"><a id="ae97cab7fef41058c195fa5750291ce66" name="ae97cab7fef41058c195fa5750291ce66"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>P210Decoder</b> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d)</td></tr>
-<tr class="separator:ae97cab7fef41058c195fa5750291ce66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5fedbfd1854304bc5e466adf8d5af9c" id="r_af5fedbfd1854304bc5e466adf8d5af9c"><td class="memItemLeft" align="right" valign="top"><a id="af5fedbfd1854304bc5e466adf8d5af9c" name="af5fedbfd1854304bc5e466adf8d5af9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>P210Decoder</b> (<a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, const char *sampleScale=SCORE_GFX_MSB_ALIGNED_SCALE)</td></tr>
+<tr class="separator:af5fedbfd1854304bc5e466adf8d5af9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67f0b1784071ee20205509edf7d3246f" id="r_a67f0b1784071ee20205509edf7d3246f"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p210_decoder.html#a67f0b1784071ee20205509edf7d3246f">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) override</td></tr>
 <tr class="memdesc:a67f0b1784071ee20205509edf7d3246f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html" title="Processes and renders a video frame on the GPU.">GPUVideoDecoder</a>.  <br /></td></tr>
 <tr class="separator:a67f0b1784071ee20205509edf7d3246f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,6 +153,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a77a1ca70b0d016c84995a5aec3c22e94" id="r_a77a1ca70b0d016c84995a5aec3c22e94"><td class="memItemLeft" align="right" valign="top"><a id="a77a1ca70b0d016c84995a5aec3c22e94" name="a77a1ca70b0d016c84995a5aec3c22e94"></a>
 <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
 <tr class="separator:a77a1ca70b0d016c84995a5aec3c22e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693b455bf046cf98c0036f0263ec2e65" id="r_a693b455bf046cf98c0036f0263ec2e65"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p210_decoder.html#a693b455bf046cf98c0036f0263ec2e65">scale</a> {SCORE_GFX_MSB_ALIGNED_SCALE}</td></tr>
+<tr class="separator:a693b455bf046cf98c0036f0263ec2e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:ac798b702a346427f64cbe627bc71dd59 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_ac798b702a346427f64cbe627bc71dd59"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>samplers</b></td></tr>
@@ -174,6 +177,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a70bc09ac7a5e91b4b26530851893ec7f"><td class="memItemLeft" align="right" valign="top">static QRhiTextureSubresourceUploadDescription&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a70bc09ac7a5e91b4b26530851893ec7f">createTextureUpload</a> (uint8_t *pixels, int w, int h, int bytesPerPixel, int stride)</td></tr>
 <tr class="memdesc:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility method to create a QRhiTextureSubresourceUploadDescription.  <br /></td></tr>
 <tr class="separator:a70bc09ac7a5e91b4b26530851893ec7f inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424dd871529d157bc7b0e003f080d1be inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a424dd871529d157bc7b0e003f080d1be"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a424dd871529d157bc7b0e003f080d1be">isTopField</a> (const AVFrame &amp;frame) noexcept</td></tr>
+<tr class="memdesc:a424dd871529d157bc7b0e003f080d1be inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this frame carries the EVEN lines of its picture.  <br /></td></tr>
+<tr class="separator:a424dd871529d157bc7b0e003f080d1be inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56395df02904c7d64441de3c6102b72c inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a56395df02904c7d64441de3c6102b72c"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_decoder_1_1_plane_rows.html">PlaneRows</a>&#160;</td><td class="memItemRight" valign="bottom"><b>planeRows</b> (const <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;fmt, const AVFrame &amp;frame, int textureRows) noexcept</td></tr>
+<tr class="separator:a56395df02904c7d64441de3c6102b72c inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51811ebc0bb933576910b2cc8b524a35 inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_a51811ebc0bb933576910b2cc8b524a35"><td class="memItemLeft" align="right" valign="top">
 static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShader</b> (bool invertY=false) noexcept</td></tr>
 <tr class="separator:a51811ebc0bb933576910b2cc8b524a35 inherit pub_static_methods_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,14 +309,29 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">void main()</span></div>
 <div class="line"><span class="stringliteral">{</span></div>
-<div class="line"><span class="stringliteral">  const float s = )_&quot; SCORE_GFX_MSB_ALIGNED_SCALE R</span><span class="stringliteral">&quot;_(;</span></div>
-<div class="line"><span class="stringliteral">  float y = s * texture(y_tex, v_texcoord).r;</span></div>
-<div class="line"><span class="stringliteral">  float u = s * texture(uv_tex, v_texcoord).r;</span></div>
-<div class="line"><span class="stringliteral">  float v = s * texture(uv_tex, v_texcoord).g;</span></div>
+<div class="line"><span class="stringliteral">  const float s = %3;</span></div>
+<div class="line"><span class="stringliteral">  float y = s * texture(y_tex, score_tc(v_texcoord)).r;</span></div>
+<div class="line"><span class="stringliteral">  float u = s * texture(uv_tex, score_tc(v_texcoord)).r;</span></div>
+<div class="line"><span class="stringliteral">  float v = s * texture(uv_tex, score_tc(v_texcoord)).g;</span></div>
 <div class="line"><span class="stringliteral"></span> </div>
 <div class="line"><span class="stringliteral">  fragColor = processTexture(vec4(y, u, v, 1.));</span></div>
 <div class="line"><span class="stringliteral">})_&quot;</span></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a693b455bf046cf98c0036f0263ec2e65" name="a693b455bf046cf98c0036f0263ec2e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693b455bf046cf98c0036f0263ec2e65">&#9670;&#160;</a></span>scale</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* score::gfx::P210Decoder::scale {SCORE_GFX_MSB_ALIGNED_SCALE}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"1.0" for P216, which uses every bit; the MSB-aligned renormalization for P210, whose ten bits sit at the top of a 16-bit word. </p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

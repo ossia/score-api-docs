@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('_direct_show_pixel_format_8hpp.html','
 </div><!--header-->
 <div class="contents">
 
-<p>DirectShow / Video-for-Windows fourcc &lt;-&gt; VideoPixelFormat.  
+<p>DirectShow / Video-for-Windows fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>DirectShow / Video-for-Windows fourcc &lt;-&gt; VideoPixelFormat. </p>
+<div class="textblock"><p>DirectShow / Video-for-Windows fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>. </p>
 <p>The YUV <code>MEDIASUBTYPE_*</code> GUIDs are all of the form <code>{fourcc, 0x0000, 0x0010, {0x80,0x00,0x00,0xaa,0x00,0x38,0x9b,0x71}}</code>, so the subtype reduces to the fourcc in <code>Data1</code>. Keeping the table in those terms makes it portable and unit-testable on any host, instead of hiding a mapping nobody can exercise inside Windows-only code. The RGB subtypes are genuine SDK GUIDs rather than fourccs and stay with the DirectShow enumeration.</p>
 <p>Deliberately not platform-guarded: the point is that it builds and is tested everywhere. </p>
 </div>
@@ -133,14 +133,14 @@ Functions</h2></td></tr>
 constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::directShowFourcc</b> (char a, char b, char c, char d) noexcept</td></tr>
 <tr class="memdesc:abfb8360514cc522aea0d1629da5ff580"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a fourcc the way DirectShow spells it, least-significant byte first. <br /></td></tr>
 <tr class="separator:abfb8360514cc522aea0d1629da5ff580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b86368a48d227797dd67929095273c0" id="r_a1b86368a48d227797dd67929095273c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#a1b86368a48d227797dd67929095273c0">score::gfx::interop::fromDirectShowFourcc</a> (uint32_t fourcc) noexcept</td></tr>
-<tr class="separator:a1b86368a48d227797dd67929095273c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c6681045a0f136bf5a62f5f99421d9b" id="r_a8c6681045a0f136bf5a62f5f99421d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#a8c6681045a0f136bf5a62f5f99421d9b">score::gfx::interop::fromDirectShowFourcc</a> (uint32_t fourcc) noexcept</td></tr>
+<tr class="separator:a8c6681045a0f136bf5a62f5f99421d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb938dfa6bf184ec46495d4dd0b96f4" id="r_adeb938dfa6bf184ec46495d4dd0b96f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#adeb938dfa6bf184ec46495d4dd0b96f4">score::gfx::interop::isDirectShowCompressedFourcc</a> (uint32_t fourcc) noexcept</td></tr>
 <tr class="separator:adeb938dfa6bf184ec46495d4dd0b96f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1b86368a48d227797dd67929095273c0" name="a1b86368a48d227797dd67929095273c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b86368a48d227797dd67929095273c0">&#9670;&#160;</a></span>fromDirectShowFourcc()</h2>
+<a id="a8c6681045a0f136bf5a62f5f99421d9b" name="a8c6681045a0f136bf5a62f5f99421d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c6681045a0f136bf5a62f5f99421d9b">&#9670;&#160;</a></span>fromDirectShowFourcc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +149,7 @@ constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VideoPixelFormat score::gfx::interop::fromDirectShowFourcc </td>
+          <td class="memname"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> score::gfx::interop::fromDirectShowFourcc </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
           <td class="paramname"><em>fourcc</em></td><td>)</td>

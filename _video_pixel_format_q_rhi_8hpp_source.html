@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_video_pixel_format_q_rhi_8hpp_source.
 <div class="contents">
 <a href="_video_pixel_format_q_rhi_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Gfx/Graph/interop/VideoPixelFormat.hpp</a>&gt;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;<a class="code" href="_video_pixel_format_8hpp.html">Video/VideoPixelFormat.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;score_plugin_gfx_export.h&gt;</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('_video_pixel_format_q_rhi_8hpp_source.
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>SCORE_PLUGIN_GFX_EXPORT</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>QRhiTexture::Format</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>planeTextureFormat(VideoPixelFormat f, <span class="keywordtype">int</span> plane) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>planeTextureFormat(<a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, <span class="keywordtype">int</span> plane) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>uint32_t planeTextureWidth(VideoPixelFormat f, <span class="keywordtype">int</span> plane, uint32_t width) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>uint32_t planeTextureWidth(<a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, <span class="keywordtype">int</span> plane, uint32_t width) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>uint32_t planeTextureHeight(VideoPixelFormat f, <span class="keywordtype">int</span> plane, uint32_t height) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>uint32_t planeTextureHeight(<a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f, <span class="keywordtype">int</span> plane, uint32_t height) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> fromTextureFormat(QRhiTexture::Format f) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fromTextureFormat(QRhiTexture::Format f) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace score::gfx::interop</span></div>
 <div class="ttc" id="a_video_pixel_format_8hpp_html"><div class="ttname"><a href="_video_pixel_format_8hpp.html">VideoPixelFormat.hpp</a></div><div class="ttdoc">Vendor-neutral pixel format vocabulary + descriptive metadata.</div></div>
-<div class="ttc" id="a_video_pixel_format_8hpp_html_a2a2a147d631e170b7f242f7a212eeeb7"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">score::gfx::interop::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:229</div></div>
+<div class="ttc" id="a_video_pixel_format_8hpp_html_a8aedb3a75f7488e58e53c47c0b5e3ccb"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:235</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

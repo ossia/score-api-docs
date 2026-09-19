@@ -13,6 +13,6 @@ var searchData=
   ['header_10',['header',['../structscore_1_1_license_info.html#a9c7f75c57d69b67b3e0a4daef9714f87',1,'score::LicenseInfo']]],
   ['heading_11',['heading',['../structavnd__tools_1_1_entity_to_midi_1_1synth__state.html#a9d94ec1e9914127ed1c08143babdf9dd',1,'avnd_tools::EntityToMidi::synth_state']]],
   ['hitradius_12',['hitRadius',['../class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a',1,'Dataflow::PortItem']]],
-  ['horizontalsubsampling_13',['horizontalSubsampling',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a36f633cdda0ab268f607cb3089c8129a',1,'score::gfx::interop::VideoPixelFormatInfo']]],
+  ['horizontalsubsampling_13',['horizontalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#adc4bfe0c931d56bbcfcbae72bcf3a305',1,'Video::VideoPixelFormatInfo']]],
   ['host_14',['host',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#a0bd6e5a37dfc2195b54ab5f49007626d',1,'score::gfx::interop::HostPinnedSlot']]]
 ];

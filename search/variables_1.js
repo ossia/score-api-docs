@@ -7,7 +7,7 @@ var searchData=
   ['bipolar_4',['bipolar',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a8ac0c0467d652475c447d862f48d7442',1,'Protocols::MIDIDevices::Value']]],
   ['bitdepth_5',['bitDepth',['../structscore_1_1gfx_1_1_pixel_format_info.html#a95e52f7f1de1613eb495cd1465a7f456',1,'score::gfx::PixelFormatInfo']]],
   ['blacklevel_6',['blackLevel',['../structscore_1_1gfx_1_1_capture_adjust.html#aff2ade2bad4da84e5ed309e16db8d112',1,'score::gfx::CaptureAdjust']]],
-  ['blockpixels_7',['blockPixels',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a53a4182f142e33661ce6f7adb8827261',1,'score::gfx::interop::VideoPixelFormatInfo']]],
+  ['blockpixels_7',['blockPixels',['../struct_video_1_1_video_pixel_format_info.html#a0d4070f7971901817634f6805a38c073',1,'Video::VideoPixelFormatInfo']]],
   ['bucket_8',['bucket',['../struct_media_1_1_waveform_summary.html#abf3dc7ea9acefdc68c54ce2ebc37dfeb',1,'Media::WaveformSummary']]],
   ['bucketcount_9',['bucketCount',['../struct_media_1_1_waveform_summary.html#a38b38ed0a4cdd41b44cf818b91e3bf80',1,'Media::WaveformSummary']]],
   ['buffer_5fusage_10',['buffer_usage',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a468d66d44ca15abf685306f104ee91af',1,'score::gfx::GraphicsSSBO']]],

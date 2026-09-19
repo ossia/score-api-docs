@@ -74,7 +74,7 @@ var searchData=
   ['videonoderenderer_71',['VideoNodeRenderer',['../classscore_1_1gfx_1_1_video_node_renderer.html',1,'score::gfx']]],
   ['videooutputstrategy_72',['VideoOutputStrategy',['../structscore_1_1gfx_1_1interop_1_1_video_output_strategy.html',1,'score::gfx::interop']]],
   ['videooutputstrategyconfig_73',['VideoOutputStrategyConfig',['../structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html',1,'score::gfx::interop']]],
-  ['videopixelformatinfo_74',['VideoPixelFormatInfo',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html',1,'score::gfx::interop']]],
+  ['videopixelformatinfo_74',['VideoPixelFormatInfo',['../struct_video_1_1_video_pixel_format_info.html',1,'Video']]],
   ['videoprops_75',['VideoProps',['../struct_gfx_1_1_video_1_1_video_props.html',1,'Gfx::Video']]],
   ['videotexturedrophandler_76',['VideoTextureDropHandler',['../struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html',1,'Gfx::Filter']]],
   ['videothumbnailer_77',['VideoThumbnailer',['../class_video_1_1_video_thumbnailer.html',1,'Video']]],

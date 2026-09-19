@@ -109,10 +109,10 @@ $(document).ready(function(){initNavTree('_drm_pixel_format_8hpp.html',''); init
 </div><!--header-->
 <div class="contents">
 
-<p>DRM fourcc &lt;-&gt; VideoPixelFormat, and the PipeWire SPA formats.  
+<p>DRM fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>, and the PipeWire SPA formats.  
 <a href="#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>DRM fourcc &lt;-&gt; VideoPixelFormat, and the PipeWire SPA formats. </p>
+<div class="textblock"><p>DRM fourcc &lt;-&gt; <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>, and the PipeWire SPA formats. </p>
 <p>A DRM fourcc names the component order of a little-endian machine word, so DRM_ARGB8888 is B,G,R,A in memory &ndash; the reverse of how the name reads. That inversion is the single most common source of red/blue swaps on the dma-buf path, so the mapping states the memory order in each comment.</p>
 <p>A DRM <em>format modifier</em> (tiling, compression) is deliberately absent. It is not part of a pixel format: the same fourcc can arrive linear or tiled, and folding one into the other would be the same category error as baking a stride alignment into a format descriptor. Callers pass modifiers alongside.</p>
 <p>PipeWire's SPA video formats live here too, since they are defined in DRM terms and reached the rest of score through DRM already.</p>
@@ -135,16 +135,16 @@ Functions</h2></td></tr>
 constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::drmPixelFourcc</b> (char a, char b, char c, char d) noexcept</td></tr>
 <tr class="memdesc:a5ab0082f7b4f5b739270c1bed24fca56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a DRM fourcc from its characters, least-significant byte first. <br /></td></tr>
 <tr class="separator:a5ab0082f7b4f5b739270c1bed24fca56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9e23b82dd1a497515ae493835120652" id="r_ac9e23b82dd1a497515ae493835120652"><td class="memItemLeft" align="right" valign="top"><a id="ac9e23b82dd1a497515ae493835120652" name="ac9e23b82dd1a497515ae493835120652"></a>
-<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::fromDrmFourcc</b> (uint32_t fourcc) noexcept</td></tr>
-<tr class="memdesc:ac9e23b82dd1a497515ae493835120652"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layout behind a DRM fourcc, or Unknown when score has no row for it. <br /></td></tr>
-<tr class="separator:ac9e23b82dd1a497515ae493835120652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0cc0f272f4c44aea65c5efb4d726045" id="r_af0cc0f272f4c44aea65c5efb4d726045"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drm_pixel_format_8cpp.html#af0cc0f272f4c44aea65c5efb4d726045">score::gfx::interop::toDrmFourcc</a> (<a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a> f) noexcept</td></tr>
-<tr class="separator:af0cc0f272f4c44aea65c5efb4d726045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047c09aa6bf9a925d2a4db0d205e688b" id="r_a047c09aa6bf9a925d2a4db0d205e688b"><td class="memItemLeft" align="right" valign="top"><a id="a047c09aa6bf9a925d2a4db0d205e688b" name="a047c09aa6bf9a925d2a4db0d205e688b"></a>
+<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>score::gfx::interop::fromDrmFourcc</b> (uint32_t fourcc) noexcept</td></tr>
+<tr class="memdesc:a047c09aa6bf9a925d2a4db0d205e688b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The layout behind a DRM fourcc, or Unknown when score has no row for it. <br /></td></tr>
+<tr class="separator:a047c09aa6bf9a925d2a4db0d205e688b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc068c1857770b95ec03c95d29d3461" id="r_a5dc068c1857770b95ec03c95d29d3461"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_drm_pixel_format_8cpp.html#a5dc068c1857770b95ec03c95d29d3461">score::gfx::interop::toDrmFourcc</a> (<a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> f) noexcept</td></tr>
+<tr class="separator:a5dc068c1857770b95ec03c95d29d3461"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af0cc0f272f4c44aea65c5efb4d726045" name="af0cc0f272f4c44aea65c5efb4d726045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0cc0f272f4c44aea65c5efb4d726045">&#9670;&#160;</a></span>toDrmFourcc()</h2>
+<a id="a5dc068c1857770b95ec03c95d29d3461" name="a5dc068c1857770b95ec03c95d29d3461"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc068c1857770b95ec03c95d29d3461">&#9670;&#160;</a></span>toDrmFourcc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -155,7 +155,7 @@ constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::
         <tr>
           <td class="memname">uint32_t score::gfx::interop::toDrmFourcc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">VideoPixelFormat</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td>
           <td class="paramname"><em>f</em></td><td>)</td>
           <td></td>
         </tr>

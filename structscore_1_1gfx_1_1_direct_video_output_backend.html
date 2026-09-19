@@ -139,12 +139,12 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>frameRate</
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOpen</b> () const noexcept=0</td></tr>
 <tr class="memdesc:a86d45841a5a8c2b8b7ba1bedc90e3439"><td class="mdescLeft">&#160;</td><td class="mdescRight">True once <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a11472d9916f0c19019f08b879d3e628b">open()</a> has succeeded (drives canRender()). <br /></td></tr>
 <tr class="separator:a86d45841a5a8c2b8b7ba1bedc90e3439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9415cfd9c400d2f9401ebde90ac66e55" id="r_a9415cfd9c400d2f9401ebde90ac66e55"><td class="memItemLeft" align="right" valign="top"><a id="a9415cfd9c400d2f9401ebde90ac66e55" name="a9415cfd9c400d2f9401ebde90ac66e55"></a>
-virtual <a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">interop::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wireFormat</b> () const noexcept=0</td></tr>
-<tr class="memdesc:a9415cfd9c400d2f9401ebde90ac66e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder). <br /></td></tr>
-<tr class="separator:a9415cfd9c400d2f9401ebde90ac66e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa369e9e18b6bf6fcc17dbfd633084c" id="r_a9aa369e9e18b6bf6fcc17dbfd633084c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">interop::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a9aa369e9e18b6bf6fcc17dbfd633084c">encoderFormat</a> () const noexcept</td></tr>
-<tr class="separator:a9aa369e9e18b6bf6fcc17dbfd633084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66833f13173168fe09a47b47f8737b22" id="r_a66833f13173168fe09a47b47f8737b22"><td class="memItemLeft" align="right" valign="top"><a id="a66833f13173168fe09a47b47f8737b22" name="a66833f13173168fe09a47b47f8737b22"></a>
+virtual <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>wireFormat</b> () const noexcept=0</td></tr>
+<tr class="memdesc:a66833f13173168fe09a47b47f8737b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder). <br /></td></tr>
+<tr class="separator:a66833f13173168fe09a47b47f8737b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b058fc3e60fa849e0fbca61892005f8" id="r_a1b058fc3e60fa849e0fbca61892005f8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a1b058fc3e60fa849e0fbca61892005f8">encoderFormat</a> () const noexcept</td></tr>
+<tr class="separator:a1b058fc3e60fa849e0fbca61892005f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c64d8e75196c1d73e696643952edb9" id="r_ad4c64d8e75196c1d73e696643952edb9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#ad4c64d8e75196c1d73e696643952edb9">prefersFloatRender</a> () const noexcept</td></tr>
 <tr class="separator:ad4c64d8e75196c1d73e696643952edb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff94d447ef0ec91a4e004ed4fc008e03" id="r_aff94d447ef0ec91a4e004ed4fc008e03"><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#aff94d447ef0ec91a4e004ed4fc008e03">colorConversion</a> () const =0</td></tr>
@@ -247,8 +247,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()=
 
 </div>
 </div>
-<a id="a9aa369e9e18b6bf6fcc17dbfd633084c" name="a9aa369e9e18b6bf6fcc17dbfd633084c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa369e9e18b6bf6fcc17dbfd633084c">&#9670;&#160;</a></span>encoderFormat()</h2>
+<a id="a1b058fc3e60fa849e0fbca61892005f8" name="a1b058fc3e60fa849e0fbca61892005f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b058fc3e60fa849e0fbca61892005f8">&#9670;&#160;</a></span>encoderFormat()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +257,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()=
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="_video_pixel_format_8hpp.html#a2a2a147d631e170b7f242f7a212eeeb7">interop::VideoPixelFormat</a> score::gfx::DirectVideoOutputBackend::encoderFormat </td>
+          <td class="memname">virtual <a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> score::gfx::DirectVideoOutputBackend::encoderFormat </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -269,7 +269,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()=
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The pixel format the GPU encoder should <em>produce</em>. Equals <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55" title="The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder).">wireFormat()</a> unless a CPU repack bridges them (e.g. AJA v210 at non-mod-6 widths emits UYVY on the GPU and packs to v210 in customStage). Default: <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a9415cfd9c400d2f9401ebde90ac66e55" title="The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder).">wireFormat()</a>. </p>
+<p>The pixel format the GPU encoder should <em>produce</em>. Equals <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a66833f13173168fe09a47b47f8737b22" title="The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder).">wireFormat()</a> unless a CPU repack bridges them (e.g. AJA v210 at non-mod-6 widths emits UYVY on the GPU and packs to v210 in customStage). Default: <a class="el" href="structscore_1_1gfx_1_1_direct_video_output_backend.html#a66833f13173168fe09a47b47f8737b22" title="The on-wire pixel format the card framestore expects (-&gt; makeWireEncoder).">wireFormat()</a>. </p>
 
 </div>
 </div>

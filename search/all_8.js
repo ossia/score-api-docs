@@ -83,7 +83,7 @@ var searchData=
   ['holdspointer_80',['holdsPointer',['../structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5',1,'score::InfiniteScroller']]],
   ['honour_81',['BORROWED-BUFFER LIFETIME (the contract the producer must honour)',['../_dma_buf_import_capture_8hpp.html#autotoc_md3',1,'']]],
   ['hooks_82',['Hooks',['../structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html',1,'score::gfx::interop::PacedFramePump']]],
-  ['horizontalsubsampling_83',['horizontalSubsampling',['../structscore_1_1gfx_1_1interop_1_1_video_pixel_format_info.html#a36f633cdda0ab268f607cb3089c8129a',1,'score::gfx::interop::VideoPixelFormatInfo']]],
+  ['horizontalsubsampling_83',['horizontalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#adc4bfe0c931d56bbcfcbae72bcf3a305',1,'Video::VideoPixelFormatInfo']]],
   ['host_84',['host',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#a0bd6e5a37dfc2195b54ab5f49007626d',1,'score::gfx::interop::HostPinnedSlot']]],
   ['hostapp_85',['HostApp',['../structvst3_1_1_host_app.html',1,'vst3']]],
   ['hostcontext_86',['HostContext',['../struct_l_v2_1_1_host_context.html',1,'LV2']]],

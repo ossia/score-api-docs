@@ -50,7 +50,6 @@ var dir_ba25a167e1bc5bc4e9c17302553f029d =
     [ "VideoCaptureStrategy.hpp", "_video_capture_strategy_8hpp.html", "_video_capture_strategy_8hpp" ],
     [ "VideoOutputStrategy.hpp", "_video_output_strategy_8hpp.html", "_video_output_strategy_8hpp" ],
     [ "VideoOutputStrategySelect.hpp", "_video_output_strategy_select_8hpp.html", "_video_output_strategy_select_8hpp" ],
-    [ "VideoPixelFormat.hpp", "_video_pixel_format_8hpp.html", "_video_pixel_format_8hpp" ],
     [ "VideoPixelFormatAV.hpp", "_video_pixel_format_a_v_8hpp.html", null ],
     [ "VideoPixelFormatQRhi.hpp", "_video_pixel_format_q_rhi_8hpp.html", null ],
     [ "VkCudaSemaphore.hpp", "_vk_cuda_semaphore_8hpp.html", null ],

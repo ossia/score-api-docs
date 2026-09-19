@@ -185,6 +185,7 @@ var NAVTREEINDEX0 =
 "_camera_device_enumerator_8hpp_source.html":[13,0,0,2,17,1,22],
 "_camera_input_8hpp_source.html":[13,0,0,2,24,2,0],
 "_camera_math_8hpp_source.html":[13,0,0,2,17,1,4,4],
+"_camera_preview_widget_8hpp_source.html":[13,0,0,2,17,1,17,0],
 "_camera_settings_8hpp_source.html":[13,0,0,2,17,1,23],
 "_camera_switch_8hpp_source.html":[13,0,0,2,35,0,19],
 "_capture_adjust_8hpp.html":[13,0,0,2,17,1,4,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_column_8hpp_source.html":[13,0,0,2,13,0,3,2],
 "_combiner_8hpp_source.html":[13,0,0,2,8,2,4],
 "_combo_box_8hpp_source.html":[13,0,0,1,1,13,4],
-"_command_8hpp_source.html":[13,0,0,1,1,2,3],
-"_command_a_p_i_8hpp_source.html":[13,0,0,2,32,4,1,10]
+"_command_8hpp_source.html":[13,0,0,1,1,2,3]
 };

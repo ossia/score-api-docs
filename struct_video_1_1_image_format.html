@@ -142,6 +142,8 @@ AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>pixel_format
 <tr class="memitem:a7bb6772fc3400fb8fffd28d372546c78" id="r_a7bb6772fc3400fb8fffd28d372546c78"><td class="memItemLeft" align="right" valign="top"><a id="a7bb6772fc3400fb8fffd28d372546c78" name="a7bb6772fc3400fb8fffd28d372546c78"></a>
 AVPixelFormat&#160;</td><td class="memItemRight" valign="bottom"><b>hwaccel_sw_format</b> = AVPixelFormat(-1)</td></tr>
 <tr class="separator:a7bb6772fc3400fb8fffd28d372546c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaadf623fa997f9bbe1e1d2e10a45164c" id="r_aaadf623fa997f9bbe1e1d2e10a45164c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_image_format.html#aaadf623fa997f9bbe1e1d2e10a45164c">native_format</a> = VideoPixelFormat::Unknown</td></tr>
+<tr class="separator:aaadf623fa997f9bbe1e1d2e10a45164c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237713244da17c01480e508a4ec4a055" id="r_a237713244da17c01480e508a4ec4a055"><td class="memItemLeft" align="right" valign="top"><a id="a237713244da17c01480e508a4ec4a055" name="a237713244da17c01480e508a4ec4a055"></a>
 AVColorRange&#160;</td><td class="memItemRight" valign="bottom"><b>color_range</b> = AVColorRange(-1)</td></tr>
 <tr class="separator:a237713244da17c01480e508a4ec4a055"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,13 +165,49 @@ AVMasteringDisplayMetadata&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a55970c48c025c4083963aaaf2ea38f49" id="r_a55970c48c025c4083963aaaf2ea38f49"><td class="memItemLeft" align="right" valign="top"><a id="a55970c48c025c4083963aaaf2ea38f49" name="a55970c48c025c4083963aaaf2ea38f49"></a>
 std::optional&lt; AVContentLightMetadata &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>content_light</b> {}</td></tr>
 <tr class="separator:a55970c48c025c4083963aaaf2ea38f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77225782c6887a30b33d35e3f0f087e" id="r_aa77225782c6887a30b33d35e3f0f087e"><td class="memItemLeft" align="right" valign="top">Interlacing&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_image_format.html#aa77225782c6887a30b33d35e3f0f087e">interlacing</a> = ::Video::Interlacing::None</td></tr>
+<tr class="separator:aa77225782c6887a30b33d35e3f0f087e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af029b91fea467ef3bb2d098ec6fb3029" id="r_af029b91fea467ef3bb2d098ec6fb3029"><td class="memItemLeft" align="right" valign="top"><a id="af029b91fea467ef3bb2d098ec6fb3029" name="af029b91fea467ef3bb2d098ec6fb3029"></a>
 OutputFormat&#160;</td><td class="memItemRight" valign="bottom"><b>output_format</b> = ::Video::OutputFormat::SDR</td></tr>
 <tr class="separator:af029b91fea467ef3bb2d098ec6fb3029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a207110057a211ca6ae1b19e63ec02ed0" id="r_a207110057a211ca6ae1b19e63ec02ed0"><td class="memItemLeft" align="right" valign="top"><a id="a207110057a211ca6ae1b19e63ec02ed0" name="a207110057a211ca6ae1b19e63ec02ed0"></a>
 Tonemap&#160;</td><td class="memItemRight" valign="bottom"><b>tonemap</b> = ::Video::Tonemap::Auto</td></tr>
 <tr class="separator:a207110057a211ca6ae1b19e63ec02ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37329af17ab10e93587b6aa83dd2e606" id="r_a37329af17ab10e93587b6aa83dd2e606"><td class="memItemLeft" align="right" valign="top"><a id="a37329af17ab10e93587b6aa83dd2e606" name="a37329af17ab10e93587b6aa83dd2e606"></a>
+Deinterlace&#160;</td><td class="memItemRight" valign="bottom"><b>deinterlace</b> = ::Video::Deinterlace::Weave</td></tr>
+<tr class="separator:a37329af17ab10e93587b6aa83dd2e606"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa77225782c6887a30b33d35e3f0f087e" name="aa77225782c6887a30b33d35e3f0f087e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa77225782c6887a30b33d35e3f0f087e">&#9670;&#160;</a></span>interlacing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Interlacing Video::ImageFormat::interlacing = ::Video::Interlacing::None</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How the source delivers fields, if it does. Set by whoever produces the frames; <code>Fields</code> means <code>height</code> is the PICTURE height while each AVFrame is half of it, which VideoNodeRenderer::needsRebuild knows about. </p>
+
+</div>
+</div>
+<a id="aaadf623fa997f9bbe1e1d2e10a45164c" name="aaadf623fa997f9bbe1e1d2e10a45164c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaadf623fa997f9bbe1e1d2e10a45164c">&#9670;&#160;</a></span>native_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">VideoPixelFormat</a> Video::ImageFormat::native_format = VideoPixelFormat::Unknown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For a wire layout no AVPixelFormat describes, the format that does. NDI's UYVA and PA16 are the cases: both carry a separate alpha plane after a packed or semi-planar picture, and ffmpeg has no format for either shape. When this is set it decides the decoder; <code>pixel_format</code> still carries the closest AVPixelFormat for everything that reads one. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_video_interface_8hpp_source.html">VideoInterface.hpp</a></li>
 </ul>

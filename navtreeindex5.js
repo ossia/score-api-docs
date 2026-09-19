@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"_process_context_8hpp_source.html":[13,0,0,2,3,4,43],
+"_process_creation_8hpp_source.html":[13,0,0,2,32,4,3,7,5],
+"_process_drop_handler_8hpp_source.html":[13,0,0,2,3,4,4,0],
+"_process_entry_8hpp_source.html":[13,0,0,2,21,0,8],
 "_process_flags_8hpp_source.html":[13,0,0,2,3,4,45],
 "_process_focus_manager_8hpp_source.html":[13,0,0,2,32,4,3,7,6],
 "_process_inspector_widget_delegate_8hpp_source.html":[13,0,0,2,3,4,7,0],
@@ -75,8 +79,8 @@ var NAVTREEINDEX5 =
 "_quantification_widget_8hpp_source.html":[13,0,0,1,1,13,21],
 "_quantifier_8hpp_source.html":[13,0,0,2,16,0,29],
 "_queue_8hpp_source.html":[13,0,0,2,8,2,11],
-"_r210_8hpp_source.html":[13,0,0,2,17,1,4,0,28],
-"_r_g_b_a_8hpp_source.html":[13,0,0,2,17,1,4,0,29],
+"_r210_8hpp_source.html":[13,0,0,2,17,1,4,0,29],
+"_r_g_b_a_8hpp_source.html":[13,0,0,2,17,1,4,0,30],
 "_r_m_s_data_8hpp_source.html":[13,0,0,2,24,0,17],
 "_random_name_provider_8hpp_source.html":[13,0,0,1,1,12,30],
 "_rate_limiter_8hpp_source.html":[13,0,0,2,16,0,30],
@@ -155,7 +159,7 @@ var NAVTREEINDEX5 =
 "_rhi_clear_buffer_8hpp_source.html":[13,0,0,2,17,1,4,42],
 "_rhi_compute_barrier_8hpp_source.html":[13,0,0,2,17,1,4,43],
 "_rhi_indirect_compat_8hpp_source.html":[13,0,0,2,17,1,4,44],
-"_rhi_preview_widget_8hpp_source.html":[13,0,0,2,17,1,17,0],
+"_rhi_preview_widget_8hpp_source.html":[13,0,0,2,17,1,17,1],
 "_rhi_texture_readback_8hpp_source.html":[13,0,0,2,17,1,4,45],
 "_right_click_widget_8hpp_source.html":[13,0,0,1,1,5,18],
 "_rolloff_8hpp_source.html":[13,0,0,2,5,0,12],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "_script_process_8hpp_source.html":[13,0,0,2,3,4,10,3],
 "_script_tab_bar_8hpp_source.html":[13,0,0,2,3,4,10,4],
 "_script_widget_8hpp_source.html":[13,0,0,2,3,4,10,5],
-"_search_line_edit_8hpp_source.html":[13,0,0,1,1,13,23],
-"_search_replace_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,1],
-"_search_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,2],
-"_section_memory_manager_8hpp_source.html":[13,0,0,2,19,2,0,3],
-"_selectable_8hpp_source.html":[13,0,0,1,1,9,1]
+"_search_line_edit_8hpp_source.html":[13,0,0,1,1,13,23]
 };

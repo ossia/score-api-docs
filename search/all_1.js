@@ -133,7 +133,7 @@ var searchData=
   ['aggregatecommand_130',['aggregatecommand',['../classscore_1_1_aggregate_command.html',1,'score::AggregateCommand'],['../classscore_1_1_aggregate_command.html#ad2190f6cee5b4e0bfceae6e36dbb6536',1,'score::AggregateCommand::AggregateCommand()']]],
   ['algorithms_131',['Algorithms',['../class_scenario_1_1_interval_durations_1_1_algorithms.html',1,'Scenario::IntervalDurations']]],
   ['alignedsize_132',['alignedSize',['../classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocator.html#a80441e7e95f06320e483b154a6db3aff',1,'score::gfx::interop::CudaVmmAllocator']]],
-  ['alignup_133',['alignUp',['../_video_pixel_format_8hpp.html#aec5a1f447f0a2a22ceeb54dab0de8fdf',1,'score::gfx::interop']]],
+  ['alignup_133',['alignUp',['../_video_pixel_format_8hpp.html#a63b9fa869177a117dd49910482f63017',1,'Video']]],
   ['alive_134',['alive',['../class_gfx_1_1_gfx_execution_action.html#a8588d886e1407ece4adfcd34e0cb4ef2',1,'Gfx::GfxExecutionAction']]],
   ['allocate_135',['allocate',['../classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocator.html#af774359f73907edd68b200446d5d1c3f',1,'score::gfx::interop::CudaVmmAllocator::allocate()'],['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a4e1ab5b7bc0b87a4cd8f853f039e675e',1,'score::gfx::GpuResourceRegistry::allocate()'],['../classscore_1_1gfx_1_1interop_1_1_host_frame_pool.html#aa709ebacc23bc75d12bd733b8ef6bc2e',1,'score::gfx::interop::HostFramePool::allocate()']]],
   ['alphanum_5fcompare_136',['alphanum_compare',['../structdoj_1_1alphanum__compare.html',1,'doj']]],

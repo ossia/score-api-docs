@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"_search_replace_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,1],
+"_search_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,2],
+"_section_memory_manager_8hpp_source.html":[13,0,0,2,19,2,0,3],
+"_selectable_8hpp_source.html":[13,0,0,1,1,9,1],
 "_selection_8hpp_source.html":[13,0,0,1,1,9,2],
 "_selection_button_8hpp_source.html":[13,0,0,1,1,13,24],
 "_selection_dispatcher_8hpp_source.html":[13,0,0,1,1,9,3],
@@ -206,7 +210,7 @@ var NAVTREEINDEX6 =
 "_timebar_8hpp_source.html":[13,0,0,2,32,4,3,5,0,4],
 "_timers_8hpp_source.html":[13,0,0,1,1,12,35],
 "_tiny_obj_8hpp_source.html":[13,0,0,2,35,0,70],
-"_tonemap_8hpp_source.html":[13,0,0,2,17,1,4,0,30],
+"_tonemap_8hpp_source.html":[13,0,0,2,17,1,4,0,31],
 "_tool_8hpp_source.html":[13,0,0,2,32,4,8,7],
 "_tool_menu_actions_8hpp_source.html":[13,0,0,2,32,4,0,1,5],
 "_tool_palette_8hpp_source.html":[13,0,0,2,3,4,13,1],
@@ -235,8 +239,9 @@ var NAVTREEINDEX6 =
 "_types_8hpp_source.html":[13,0,0,2,16,0,34],
 "_u_d_p_widget_8hpp_source.html":[13,0,0,2,29,0,15,4],
 "_u_i_placement_8hpp_source.html":[13,0,0,2,3,4,56],
-"_u_y_v_y_8hpp_source.html":[13,0,0,2,17,1,4,1,9],
-"_u_y_v_y_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,10],
+"_u_y_v_a_8hpp_source.html":[13,0,0,2,17,1,4,0,32],
+"_u_y_v_y_8hpp_source.html":[13,0,0,2,17,1,4,1,11],
+"_u_y_v_y_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,12],
 "_undo_application_plugin_8hpp_source.html":[13,0,0,1,0,8,1],
 "_undo_list_widget_8hpp_source.html":[13,0,0,1,0,8,0,0,0],
 "_undo_panel_delegate_8hpp_source.html":[13,0,0,1,0,8,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX6 =
 "_uniforms_8hpp_source.html":[13,0,0,2,17,1,4,57],
 "_unit_8hpp_source.html":[13,0,0,2,4,0,11],
 "_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3],
-"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,15,5],
-"_unix_stream_widget_8hpp_source.html":[13,0,0,2,29,0,15,6],
-"_unused_8hpp_source.html":[13,0,0,1,1,12,36],
-"_unused_files_8hpp_source.html":[13,0,0,2,3,4,57],
-"_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,58],
-"_update_address_8hpp_source.html":[13,0,0,2,4,0,12]
+"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,15,5]
 };
