@@ -48,7 +48,7 @@ var namespace_gfx =
     [ "GfxExecutionAction", "class_gfx_1_1_gfx_execution_action.html", "class_gfx_1_1_gfx_execution_action" ],
     [ "GfxInputDevice", "class_gfx_1_1_gfx_input_device.html", null ],
     [ "GfxOutputDevice", "class_gfx_1_1_gfx_output_device.html", null ],
-    [ "GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", null ],
+    [ "GraphPreviewWidget", "class_gfx_1_1_graph_preview_widget.html", "class_gfx_1_1_graph_preview_widget" ],
     [ "ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "InvertYRenderer", "class_gfx_1_1_invert_y_renderer.html", null ],
     [ "ISFExecutorComponent", "class_gfx_1_1_i_s_f_executor_component.html", "class_gfx_1_1_i_s_f_executor_component" ],
@@ -81,6 +81,7 @@ var namespace_gfx =
     [ "ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ],
     [ "ProgramCache", "struct_gfx_1_1_program_cache.html", null ],
     [ "ProgramCacheKey", "struct_gfx_1_1_program_cache_key.html", null ],
+    [ "RawRasterDropHandler", "class_gfx_1_1_raw_raster_drop_handler.html", null ],
     [ "RawRasterLibraryHandler", "class_gfx_1_1_raw_raster_library_handler.html", null ],
     [ "RhiPreviewWidget", "class_gfx_1_1_rhi_preview_widget.html", "class_gfx_1_1_rhi_preview_widget" ],
     [ "S16IAudioFrameEncoder", "struct_gfx_1_1_s16_i_audio_frame_encoder.html", null ],
@@ -138,7 +139,17 @@ var namespace_gfx =
     [ "WindowProtocolFactory", "class_gfx_1_1_window_protocol_factory.html", null ],
     [ "WindowSettings", "struct_gfx_1_1_window_settings.html", null ],
     [ "WindowSettingsWidget", "class_gfx_1_1_window_settings_widget.html", null ],
+    [ "ShaderFamily", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88ef", [
+      [ "Unknown", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
+      [ "RawRaster", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efa8b07d617fe2f1a4a5333a0548c00706e", null ],
+      [ "GeometryFilter", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efa2f241f1c098d49c6839693db09cfda48", null ],
+      [ "Compute", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efaa623a8d0366bf079411aa30be45b2d10", null ],
+      [ "VertexShaderArt", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efa24863e133b7e9449050367605b0d8b87", null ]
+    ] ],
     [ "addControlGroup", "namespace_gfx.html#a74373eb8764903bca22079d5e5fb4797", null ],
+    [ "fragmentShaderSibling", "namespace_gfx.html#ae5f2af02688b05b86bca317b423e004d", null ],
+    [ "locateShaderPath", "namespace_gfx.html#adf1c9584823b572537548d5577fa3031", null ],
     [ "makeSyphonOutput", "namespace_gfx.html#a295b675353308693113a6e495af73f86", null ],
+    [ "vertexShaderSibling", "namespace_gfx.html#aaee3421fd5c107475410341638ec6ec8", null ],
     [ "windowPositionForSource", "namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9", null ]
 ];

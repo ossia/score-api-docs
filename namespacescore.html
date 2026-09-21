@@ -1425,6 +1425,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>platformName</b> (
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>runsOnThisPlatform</b> (const QString &amp;platforms) noexcept</td></tr>
 <tr class="memdesc:a8d6fdc0954d590221a6d401c0191d7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>platforms</code> is a space-separated whitelist; empty means everywhere. <br /></td></tr>
 <tr class="separator:a8d6fdc0954d590221a6d401c0191d7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae3f245d0717fd407126847ac4aa973" id="r_afae3f245d0717fd407126847ac4aa973"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#afae3f245d0717fd407126847ac4aa973">isRemoteUrl</a> (const QString &amp;path) noexcept</td></tr>
+<tr class="separator:afae3f245d0717fd407126847ac4aa973"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc58d77c019cc023052928d8fa07f02" id="r_abcc58d77c019cc023052928d8fa07f02"><td class="memItemLeft" align="right" valign="top"><a id="abcc58d77c019cc023052928d8fa07f02" name="abcc58d77c019cc023052928d8fa07f02"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isProjectRelativePath</b> (const QString &amp;path) noexcept</td></tr>
 <tr class="memdesc:abcc58d77c019cc023052928d8fa07f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">True if the path is one of the tokens score understands as a root. <br /></td></tr>
@@ -1965,6 +1967,33 @@ template&lt;typename T &gt; </div>
 
 <p>Keep Qt's temporary drag-image element out of sight. </p>
 <p>No-op outside of WebAssembly. Idempotent, and safe to call before the platform plugin has built its shadow root. </p>
+
+</div>
+</div>
+<a id="afae3f245d0717fd407126847ac4aa973" name="afae3f245d0717fd407126847ac4aa973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae3f245d0717fd407126847ac4aa973">&#9670;&#160;</a></span>isRemoteUrl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::isRemoteUrl </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True if the reference is a remote stream rather than anything on disk: rtsp://, udp://, srt://, <a href="http://..">http://..</a>. Such a reference cannot be located, collected or relinked, and must not be reported as a missing file. <a href="file://">file://</a> is deliberately not remote &ndash; it still names a local path. </p>
 
 </div>
 </div>

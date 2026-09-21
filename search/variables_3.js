@@ -18,8 +18,9 @@ var searchData=
   ['discard_15',['discard',['../structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html#a04b3cd17bbcf90be248ad6865f133543',1,'score::gfx::interop::PacedFramePump::Hooks']]],
   ['documentfile_16',['documentFile',['../structscore_1_1_path_roots.html#a75fce028dcfbd3c0224ffc45d4046564',1,'score::PathRoots']]],
   ['driverversion_17',['driverVersion',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a72ed837da6f5617c81d49bbb98437e86',1,'score::gfx::interop::GpuCapabilities']]],
-  ['dvphavecuda_18',['dvpHaveCuda',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#add9e0bb3799dcc052238db77d3844c01',1,'score::gfx::interop::GpuCapabilities']]],
-  ['dvphaved3d11_19',['dvpHaveD3D11',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a64bc07ca20183027a353f0822e0cc67c',1,'score::gfx::interop::GpuCapabilities']]],
-  ['dvphavegl_20',['dvpHaveGl',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a46197460eec496f53b16df3a589609b6',1,'score::gfx::interop::GpuCapabilities']]],
-  ['dvploaded_21',['dvpLoaded',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#aac2460949f2e5ba79c2f0440ffb1195b',1,'score::gfx::interop::GpuCapabilities']]]
+  ['droponcablehandler_18',['dropOnCableHandler',['../class_process_1_1_node_item.html#a326ab2ad997a7cea3b0d77b2c0b5e974',1,'Process::NodeItem']]],
+  ['dvphavecuda_19',['dvpHaveCuda',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#add9e0bb3799dcc052238db77d3844c01',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvphaved3d11_20',['dvpHaveD3D11',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a64bc07ca20183027a353f0822e0cc67c',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvphavegl_21',['dvpHaveGl',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a46197460eec496f53b16df3a589609b6',1,'score::gfx::interop::GpuCapabilities']]],
+  ['dvploaded_22',['dvpLoaded',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#aac2460949f2e5ba79c2f0440ffb1195b',1,'score::gfx::interop::GpuCapabilities']]]
 ];

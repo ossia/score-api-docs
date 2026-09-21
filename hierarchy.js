@@ -406,6 +406,7 @@ var hierarchy =
       [ "Process::MoveNodes", "class_process_1_1_move_nodes.html", null ],
       [ "Process::SetControlOutletValue", "class_process_1_1_set_control_outlet_value.html", null ],
       [ "Process::SetControlValue", "class_process_1_1_set_control_value.html", null ],
+      [ "Process::SetDuration", "class_process_1_1_set_duration.html", null ],
       [ "Scenario::Command::AddControlMessagesToState", "class_scenario_1_1_command_1_1_add_control_messages_to_state.html", null ],
       [ "Scenario::Command::AddLayerInNewSlot", "class_scenario_1_1_command_1_1_add_layer_in_new_slot.html", null ],
       [ "Scenario::Command::AddLayerModelToSlot", "class_scenario_1_1_command_1_1_add_layer_model_to_slot.html", null ],
@@ -1098,6 +1099,7 @@ var hierarchy =
     [ "score::FilePath", "structscore_1_1_file_path.html", null ],
     [ "score::FilePlacement", "classscore_1_1_file_placement.html", null ],
     [ "Process::FileReport", "struct_process_1_1_file_report.html", null ],
+    [ "Process::FileScan", "class_process_1_1_file_scan.html", null ],
     [ "avnd_tools::btrk::spectral_flux_odf::filter_band", "structavnd__tools_1_1btrk_1_1spectral__flux__odf_1_1filter__band.html", null ],
     [ "WidgetFactory::FixedNormalizer< Norm_T >", "struct_widget_factory_1_1_fixed_normalizer.html", null ],
     [ "Protocols::Artnet::Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
@@ -1464,8 +1466,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1837,6 +1839,7 @@ var hierarchy =
         [ "Gfx::Filter::DropHandler", "class_gfx_1_1_filter_1_1_drop_handler.html", null ],
         [ "Gfx::Filter::VideoTextureDropHandler", "struct_gfx_1_1_filter_1_1_video_texture_drop_handler.html", null ],
         [ "Gfx::GeometryFilter::DropHandler", "class_gfx_1_1_geometry_filter_1_1_drop_handler.html", null ],
+        [ "Gfx::RawRasterDropHandler", "class_gfx_1_1_raw_raster_drop_handler.html", null ],
         [ "Gfx::VSA::DropHandler", "class_gfx_1_1_v_s_a_1_1_drop_handler.html", null ],
         [ "Gfx::Video::DropHandler", "class_gfx_1_1_video_1_1_drop_handler.html", null ],
         [ "JS::DropHandler", "class_j_s_1_1_drop_handler.html", null ],
@@ -2712,8 +2715,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3493,6 +3496,7 @@ var hierarchy =
       [ "score::PromptLineEdit", "classscore_1_1_prompt_line_edit.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
         [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],
+        [ "Explorer::TreeSearchLineEdit", "class_explorer_1_1_tree_search_line_edit.html", null ],
         [ "Library::ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", null ],
         [ "Scenario::SearchWidget", "class_scenario_1_1_search_widget.html", null ]
       ] ],
@@ -3907,6 +3911,7 @@ var hierarchy =
       [ "Process::LayerView", "class_process_1_1_layer_view.html", null ],
       [ "Process::MagnetismAdjuster", "class_process_1_1_magnetism_adjuster.html", null ],
       [ "Process::NodeItem", "class_process_1_1_node_item.html", null ],
+      [ "Process::PreviewSettings", "class_process_1_1_preview_settings.html", null ],
       [ "Process::ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
       [ "Process::ProjectFilesApplicationPlugin", "class_process_1_1_project_files_application_plugin.html", null ],
       [ "Process::RemoteControlInterface", "class_process_1_1_remote_control_interface.html", [
@@ -4286,6 +4291,9 @@ var hierarchy =
     ] ],
     [ "QTreeWidget", null, [
       [ "Process::FileReportView", "class_process_1_1_file_report_view.html", null ]
+    ] ],
+    [ "QTreeWidgetItem", null, [
+      [ "Explorer::SearchableItem", "class_explorer_1_1_searchable_item.html", null ]
     ] ],
     [ "avnd_tools::Queue", "structavnd__tools_1_1_queue.html", null ],
     [ "Execution::Queues", "struct_execution_1_1_queues.html", null ],

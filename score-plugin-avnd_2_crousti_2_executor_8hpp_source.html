@@ -769,303 +769,311 @@ $(document).ready(function(){initNavTree('score-plugin-avnd_2_crousti_2_executor
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(control_inputs_type::size &gt; 0 || control_outputs_type::size &gt; 0)</div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    {</div>
 <div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>      <span class="keyword">auto</span>&amp; settings = score::AppContext().<a class="code hl_function" href="structscore_1_1_application_context.html#a00655aa4737305da2087253200d93064">settings</a>&lt;<a class="code hl_class" href="class_scenario_1_1_settings_1_1_model.html">Scenario::Settings::Model</a>&gt;();</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>      <span class="keywordflow">if</span>(settings.getExecutionUpdate())</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>      {</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        <span class="comment">// Update the value in the UI</span></div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>        std::weak_ptr&lt;safe_node&lt;Node&gt;&gt; weak_node = ptr;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        update_control_value_in_ui&lt;Node&gt; timer_action{weak_node, &amp;element};</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        timer_action();</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span> </div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        con(ctx.doc.coarseUpdateTimer, &amp;QTimer::timeout, <span class="keyword">this</span>,</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            [timer_action = std::move(timer_action)] { timer_action(); },</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            Qt::QueuedConnection);</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>      }</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    }</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  }</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span> </div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>  <span class="keywordtype">void</span> setup_soundfile_task_pool(</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>      ProcessModel&lt;Node&gt;&amp; element, const ::Execution::Context&amp; ctx,</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>  {</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    safe_node&lt;Node&gt;&amp; node = *ptr;</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    <span class="keyword">using </span>soundfile_inputs_type = avnd::soundfile_input_introspection&lt;Node&gt;;</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span> </div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>      <span class="comment">// The node enqueues its control outputs for the UI every tick; with no</span></div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>      <span class="comment">// reader installed below, that queue grows without bound and allocates in</span></div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>      <span class="comment">// the audio callback. Tell it not to bother.</span></div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(control_outputs_type::size &gt; 0)</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>        ptr-&gt;control.notify_ui.store(</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>            settings.getExecutionUpdate(), std::memory_order_relaxed);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>      <span class="keywordflow">if</span>(settings.getExecutionUpdate())</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>      {</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="comment">// Update the value in the UI</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        std::weak_ptr&lt;safe_node&lt;Node&gt;&gt; weak_node = ptr;</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        update_control_value_in_ui&lt;Node&gt; timer_action{weak_node, &amp;element};</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        timer_action();</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        con(ctx.doc.coarseUpdateTimer, &amp;QTimer::timeout, <span class="keyword">this</span>,</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>            [timer_action = std::move(timer_action)] { timer_action(); },</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>            Qt::QueuedConnection);</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>      }</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    }</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>  }</div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    node.soundfiles.load_request</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>        = [&amp;tq, p = std::weak_ptr{ptr}, &amp;ctx](std::string&amp; str, <span class="keywordtype">int</span> idx) {</div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>      <span class="keyword">auto</span> eff_ptr = p.lock();</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>      <span class="keywordflow">if</span>(!eff_ptr)</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>      tq.post([eff_ptr = std::move(eff_ptr), filename = str, &amp;ctx, idx]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadSoundfile(filename, ctx.doc, ctx.execState))</div>
-<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>        {</div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>          <span class="comment">// Sadly we have to go back to the main thread as execution queue is SPSC</span></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>          QMetaObject::invokeMethod(</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>              QCoreApplication::instance(),</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>              [&amp;ctx, file = std::move(file), eff_ptr = std::move(eff_ptr), idx = idx] {</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>            ctx.executionQueue.enqueue(</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>                [sf = std::move(file), p = std::weak_ptr{eff_ptr}, idx]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>              <span class="keyword">auto</span> eff_ptr = p.lock();</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>              <span class="keywordflow">if</span>(!eff_ptr)</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span> </div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>              avnd::effect_container&lt;Node&gt;&amp; eff = eff_ptr-&gt;impl;</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>              soundfile_inputs_type::for_nth_mapped_n2(</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>                  avnd::get_inputs&lt;Node&gt;(eff), idx,</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                  [&amp;]&lt;std::size_t NField, std::size_t N&gt;(</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>                      <span class="keyword">auto</span>&amp; field, avnd::predicate_index&lt;N&gt; p,</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>                      avnd::field_index&lt;NField&gt; f) {</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                sf = eff_ptr-&gt;soundfile_loaded(sf, p, f);</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>              });</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>            });</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>          });</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>        }</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>      });</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    };</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>  }</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <span class="keywordtype">void</span> connect_dynamic_items(ProcessModel&lt;Node&gt;&amp; element, Node&amp; eff)</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>  {</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="comment">// type-only inputs: get_inputs would hard-error</span></div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        avnd::inputs_is_type&lt;Node&gt;</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        || avnd::control_input_introspection&lt;Node&gt;::size == 0)</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    avnd::control_input_introspection&lt;Node&gt;::for_all_n2(</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        avnd::get_inputs&lt;Node&gt;(eff),</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        [&amp;element]&lt;std::size_t Idx, <span class="keyword">typename</span> F&gt;(</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>            F&amp; field, <span class="keyword">auto</span> pred_index, avnd::field_index&lt;Idx&gt;) {</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_items_parameter&lt;F&gt;)</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>      {</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>        <span class="keyword">auto</span> ports = element.avnd_input_idx_to_model_ports(Idx);</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        <span class="keywordflow">if</span>(ports.size() != 1)</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>          <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        <span class="keywordflow">if</span>(<span class="keyword">auto</span> combo = qobject_cast&lt;Process::ComboBox*&gt;(ports[0]))</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        {</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>          field.update_items = [p = QPointer&lt;Process::ComboBox&gt;{combo}](</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                                   std::vector&lt;std::string&gt; items) {</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>            std::vector&lt;std::pair&lt;QString, ossia::value&gt;&gt; alts;</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>            alts.reserve(items.size());</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>            <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; items.size(); i++)</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>              alts.emplace_back(QString::fromStdString(items[i]), (int)i);</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>            QMetaObject::invokeMethod(</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>                qApp,</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>                [p, alts = std::move(alts)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>              <span class="keywordflow">if</span>(p)</div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>                p-&gt;setAlternatives(std::move(alts));</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>            },</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>                Qt::QueuedConnection);</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>          };</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        }</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>      }</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>    });</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>  }</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span> </div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>  <span class="keywordtype">void</span> connect_message_bus(</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>      ProcessModel&lt;Node&gt;&amp; element, const ::Execution::Context&amp; ctx, Node&amp; eff)</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>  {</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    <span class="comment">// Custom UI messages to engine</span></div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_gui_to_processor_bus&lt;Node&gt;)</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    {</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>      element.from_ui = [qex_ptr = weak_exec, &amp;eff](QByteArray b) {</div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>        <span class="keyword">auto</span> qex = qex_ptr.lock();</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>        <span class="keywordflow">if</span>(!qex)</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>          <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>        qex-&gt;enqueue([mess = std::move(b), &amp;eff]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>          <span class="keyword">using </span>refl = avnd::function_reflection&lt;&amp;Node::process_message&gt;;</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>          <span class="keyword">static_assert</span>(refl::count &lt;= 1);</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(refl::count == 0)</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>          {</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>            <span class="comment">// no arguments, just call it</span></div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>            eff.process_message();</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>          }</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(refl::count == 1)</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>          {</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>            <span class="keyword">using </span>arg_type = avnd::first_argument&lt;&amp;Node::process_message&gt;;</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>            std::decay_t&lt;arg_type&gt; arg;</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>            MessageBusReader reader{mess};</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            reader(arg);</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            eff.process_message(std::move(arg));</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  <span class="keywordtype">void</span> setup_soundfile_task_pool(</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>      ProcessModel&lt;Node&gt;&amp; element, const ::Execution::Context&amp; ctx,</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>      std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>  {</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>    safe_node&lt;Node&gt;&amp; node = *ptr;</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>    <span class="keyword">using </span>soundfile_inputs_type = avnd::soundfile_input_introspection&lt;Node&gt;;</div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span> </div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>    <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    node.soundfiles.load_request</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>        = [&amp;tq, p = std::weak_ptr{ptr}, &amp;ctx](std::string&amp; str, <span class="keywordtype">int</span> idx) {</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>      <span class="keyword">auto</span> eff_ptr = p.lock();</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>      <span class="keywordflow">if</span>(!eff_ptr)</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>      tq.post([eff_ptr = std::move(eff_ptr), filename = str, &amp;ctx, idx]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        <span class="keywordflow">if</span>(<span class="keyword">auto</span> file = loadSoundfile(filename, ctx.doc, ctx.execState))</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        {</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>          <span class="comment">// Sadly we have to go back to the main thread as execution queue is SPSC</span></div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>          QMetaObject::invokeMethod(</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>              QCoreApplication::instance(),</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>              [&amp;ctx, file = std::move(file), eff_ptr = std::move(eff_ptr), idx = idx] {</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>            ctx.executionQueue.enqueue(</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>                [sf = std::move(file), p = std::weak_ptr{eff_ptr}, idx]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>              <span class="keyword">auto</span> eff_ptr = p.lock();</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>              <span class="keywordflow">if</span>(!eff_ptr)</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>              avnd::effect_container&lt;Node&gt;&amp; eff = eff_ptr-&gt;impl;</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>              soundfile_inputs_type::for_nth_mapped_n2(</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>                  avnd::get_inputs&lt;Node&gt;(eff), idx,</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                  [&amp;]&lt;std::size_t NField, std::size_t N&gt;(</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>                      <span class="keyword">auto</span>&amp; field, avnd::predicate_index&lt;N&gt; p,</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>                      avnd::field_index&lt;NField&gt; f) {</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>                sf = eff_ptr-&gt;soundfile_loaded(sf, p, f);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>              });</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>            });</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>          });</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        }</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>      });</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    };</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>  }</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>  <span class="keywordtype">void</span> connect_dynamic_items(ProcessModel&lt;Node&gt;&amp; element, Node&amp; eff)</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>  {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    <span class="comment">// type-only inputs: get_inputs would hard-error</span></div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>        avnd::inputs_is_type&lt;Node&gt;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        || avnd::control_input_introspection&lt;Node&gt;::size == 0)</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    avnd::control_input_introspection&lt;Node&gt;::for_all_n2(</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>        avnd::get_inputs&lt;Node&gt;(eff),</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        [&amp;element]&lt;std::size_t Idx, <span class="keyword">typename</span> F&gt;(</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>            F&amp; field, <span class="keyword">auto</span> pred_index, avnd::field_index&lt;Idx&gt;) {</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::dynamic_items_parameter&lt;F&gt;)</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>      {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>        <span class="keyword">auto</span> ports = element.avnd_input_idx_to_model_ports(Idx);</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>        <span class="keywordflow">if</span>(ports.size() != 1)</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>          <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <span class="keywordflow">if</span>(<span class="keyword">auto</span> combo = qobject_cast&lt;Process::ComboBox*&gt;(ports[0]))</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        {</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>          field.update_items = [p = QPointer&lt;Process::ComboBox&gt;{combo}](</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>                                   std::vector&lt;std::string&gt; items) {</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>            std::vector&lt;std::pair&lt;QString, ossia::value&gt;&gt; alts;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>            alts.reserve(items.size());</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>            <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; items.size(); i++)</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>              alts.emplace_back(QString::fromStdString(items[i]), (int)i);</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>            QMetaObject::invokeMethod(</div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>                qApp,</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>                [p, alts = std::move(alts)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>              <span class="keywordflow">if</span>(p)</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>                p-&gt;setAlternatives(std::move(alts));</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>            },</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>                Qt::QueuedConnection);</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>          };</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>        }</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>      }</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>    });</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  }</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span> </div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  <span class="keywordtype">void</span> connect_message_bus(</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      ProcessModel&lt;Node&gt;&amp; element, const ::Execution::Context&amp; ctx, Node&amp; eff)</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  {</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    <span class="comment">// Custom UI messages to engine</span></div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_gui_to_processor_bus&lt;Node&gt;)</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>    {</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>      element.from_ui = [qex_ptr = weak_exec, &amp;eff](QByteArray b) {</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        <span class="keyword">auto</span> qex = qex_ptr.lock();</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>        <span class="keywordflow">if</span>(!qex)</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>          <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>        qex-&gt;enqueue([mess = std::move(b), &amp;eff]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>          <span class="keyword">using </span>refl = avnd::function_reflection&lt;&amp;Node::process_message&gt;;</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>          <span class="keyword">static_assert</span>(refl::count &lt;= 1);</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(refl::count == 0)</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>          {</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>            <span class="comment">// no arguments, just call it</span></div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>            eff.process_message();</div>
 <div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>          }</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>        });</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>      };</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>    }</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_processor_to_gui_bus&lt;Node&gt;)</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    {</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { eff.send_message = [](<span class="keyword">auto</span>&amp;&amp;) { }; })</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>      {</div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        eff.send_message = [proc = QPointer{&amp;this-&gt;process()},</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>                            qed_ptr = weak_edit]&lt;<span class="keyword">typename</span> T&gt;(T&amp;&amp; b) <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>          <span class="keyword">auto</span> qed = qed_ptr.lock();</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>          <span class="keywordflow">if</span>(!qed)</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>              <span class="keyword">sizeof</span>(QPointer&lt;QObject&gt;) + <span class="keyword">sizeof</span>(b)</div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>              &lt; Execution::ExecutionCommand::max_storage)</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>          {</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>            qed-&gt;enqueue([proc, bb = std::move(b)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>              <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>                MessageBusSender{proc-&gt;to_ui}(std::move(bb));</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            });</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>          }</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>          <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>          {</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>            qed-&gt;enqueue(</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>                [proc, bb = std::make_unique&lt;std::decay_t&lt;T&gt;&gt;(std::move(b))]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>          <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(refl::count == 1)</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>          {</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>            <span class="keyword">using </span>arg_type = avnd::first_argument&lt;&amp;Node::process_message&gt;;</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>            std::decay_t&lt;arg_type&gt; arg;</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>            MessageBusReader reader{mess};</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>            reader(arg);</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>            eff.process_message(std::move(arg));</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>          }</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>        });</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>      };</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    }</div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_processor_to_gui_bus&lt;Node&gt;)</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    {</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { eff.send_message = [](<span class="keyword">auto</span>&amp;&amp;) { }; })</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>      {</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>        eff.send_message = [proc = QPointer{&amp;this-&gt;process()},</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>                            qed_ptr = weak_edit]&lt;<span class="keyword">typename</span> T&gt;(T&amp;&amp; b) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>          <span class="keyword">auto</span> qed = qed_ptr.lock();</div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>          <span class="keywordflow">if</span>(!qed)</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>              <span class="keyword">sizeof</span>(QPointer&lt;QObject&gt;) + <span class="keyword">sizeof</span>(b)</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>              &lt; Execution::ExecutionCommand::max_storage)</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>          {</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>            qed-&gt;enqueue([proc, bb = std::move(b)]() <span class="keyword">mutable</span> {</div>
 <div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>              <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                MessageBusSender{proc-&gt;to_ui}(*std::move(bb));</div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>                MessageBusSender{proc-&gt;to_ui}(std::move(bb));</div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>            });</div>
 <div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>          }</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>        };</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>      }</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { eff.send_message = []() { }; })</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>      {</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>        eff.send_message</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>            = [proc = QPointer{&amp;this-&gt;process()}, qed_ptr = weak_edit]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>          <span class="keywordflow">if</span>(!proc)</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>          <span class="keyword">auto</span> qed = qed_ptr.lock();</div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>          <span class="keywordflow">if</span>(!qed)</div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>          qed-&gt;enqueue([proc]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>            <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>              MessageBusSender{proc-&gt;to_ui}();</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>          });</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>        };</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>      }</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>    }</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>  }</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span> </div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  <span class="keywordtype">void</span> connect_worker(<span class="keyword">const</span> std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; node_ptr)</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  {</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_worker&lt;Node&gt;)</div>
-<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    {</div>
-<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      avnd::effect_container&lt;Node&gt;&amp; eff = node_ptr-&gt;impl;</div>
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>      <span class="comment">// Initialize the thread pool beforehand</span></div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>      <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>      <span class="keyword">using </span>worker_type = <span class="keyword">decltype</span>(eff.effect.worker);</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span> </div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>      <span class="comment">// An object with a worker is always given the node which delivers the</span></div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>      <span class="comment">// results at the beginning of its tick (exec_node_t).</span></div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>      <span class="keyword">const</span> std::shared_ptr&lt;node_with_worker&lt;Node&gt;&gt; self{</div>
-<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>          node_ptr, <span class="keyword">static_cast&lt;</span>node_with_worker&lt;Node&gt;*<span class="keyword">&gt;</span>(node_ptr.get())};</div>
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span> </div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : eff.effects())</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>      {</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>        std::weak_ptr eff_ptr = std::shared_ptr&lt;Node&gt;(node_ptr, &amp;e);</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>        std::weak_ptr node_wp = self;</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span> </div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>        e.worker.request</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>            = [&amp;tq, node_wp = std::move(node_wp),</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>               eff_ptr = std::move(eff_ptr)]&lt;<span class="keyword">typename</span>... Args&gt;(Args&amp;&amp;... f) <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>          <span class="comment">// request() is invoked in the DSP / processor thread</span></div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>          <span class="comment">// and just posts the task to the thread pool</span></div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>          tq.post([eff_ptr, node_wp, ... ff = std::forward&lt;Args&gt;(f)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>            <span class="comment">// This happens in the worker thread</span></div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>            <span class="comment">// If for some reason the object has already been removed, not much</span></div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>            <span class="comment">// reason to perform the work</span></div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>            <span class="keywordflow">if</span>(!eff_ptr.lock())</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>              <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span> </div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>            <span class="keyword">using </span>type_of_result</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>                = <span class="keyword">decltype</span>(worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...));</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_void_v&lt;type_of_result&gt;)</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>            {</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>              worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...);</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>            }</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>            <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>            {</div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>              <span class="comment">// If the worker returns a std::function, it</span></div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>              <span class="comment">// is to be invoked back in the processor DSP thread</span></div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>              <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...);</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>              <span class="keywordflow">if</span>(!res)</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>                <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>              <span class="comment">// The node&#39;s result queue is spsc from the main thread to the</span></div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>              <span class="comment">// exec thread, we cannot just yeet the result back from the</span></div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>              <span class="comment">// thread-pool</span></div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>              ossia::qt::run_async(</div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>                  qApp, [eff_ptr = std::move(eff_ptr), node_wp = std::move(node_wp),</div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>                         res = std::move(res)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>                    <span class="comment">// Main thread</span></div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>                    std::shared_ptr n = node_wp.lock();</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>                    <span class="keywordflow">if</span>(!n)</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>                      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span> </div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>                    n-&gt;worker_results.enqueue(</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                        [eff_ptr = std::move(eff_ptr), res = std::move(res)]() <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                  <span class="comment">// DSP / processor thread, at the beginning of the node&#39;s own</span></div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                  <span class="comment">// tick: the outlets are cleared and the tick&#39;s frame indices</span></div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                  <span class="comment">// are set, so the result may write to them.</span></div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                  <span class="comment">// We need res to be mutable so that the worker can use it to e.g. store</span></div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>                  <span class="comment">// old data which will be freed back in the main thread</span></div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>                  <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = eff_ptr.lock())</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                    res(*p);</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>                    });</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                  });</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>            }</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>          });</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>        };</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>      }</div>
-<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>    }</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>  }</div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span> </div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>  <span class="comment">// Update everything</span></div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>  <span class="keywordtype">void</span> update_controls(std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>  {</div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    avnd::effect_container&lt;Node&gt;&amp; eff = ptr-&gt;impl;</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    {</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span> state : eff.full_state())</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>      {</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>        avnd::input_introspection&lt;Node&gt;::for_all(</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>            state.inputs, [&amp;](<span class="keyword">auto</span>&amp; field) { if_possible(field.update(state.effect)); });</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>      }</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    }</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>  }</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>  <span class="keywordtype">void</span> cleanup()<span class="keyword"> override</span></div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { this-&gt;process().from_ui; })</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    {</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>      this-&gt;process().from_ui = [](QByteArray arr) {};</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>          <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>          {</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>            qed-&gt;enqueue(</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>                [proc, bb = std::make_unique&lt;std::decay_t&lt;T&gt;&gt;(std::move(b))]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>              <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>                MessageBusSender{proc-&gt;to_ui}(*std::move(bb));</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>            });</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>          }</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        };</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>      }</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { eff.send_message = []() { }; })</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>      {</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        eff.send_message</div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>            = [proc = QPointer{&amp;this-&gt;process()}, qed_ptr = weak_edit]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>          <span class="keywordflow">if</span>(!proc)</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>          <span class="keyword">auto</span> qed = qed_ptr.lock();</div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>          <span class="keywordflow">if</span>(!qed)</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span> </div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>          qed-&gt;enqueue([proc]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>            <span class="keywordflow">if</span>(proc &amp;&amp; proc-&gt;to_ui)</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>              MessageBusSender{proc-&gt;to_ui}();</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>          });</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>        };</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>      }</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>    }</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  }</div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span> </div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>  <span class="keywordtype">void</span> connect_worker(<span class="keyword">const</span> std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; node_ptr)</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>  {</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::has_worker&lt;Node&gt;)</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>    {</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>      avnd::effect_container&lt;Node&gt;&amp; eff = node_ptr-&gt;impl;</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span> </div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span>      <span class="comment">// Initialize the thread pool beforehand</span></div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>      <span class="keyword">auto</span>&amp; tq = score::TaskPool::instance();</div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>      <span class="keyword">using </span>worker_type = <span class="keyword">decltype</span>(eff.effect.worker);</div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span> </div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>      <span class="comment">// An object with a worker is always given the node which delivers the</span></div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>      <span class="comment">// results at the beginning of its tick (exec_node_t).</span></div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>      <span class="keyword">const</span> std::shared_ptr&lt;node_with_worker&lt;Node&gt;&gt; self{</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>          node_ptr, <span class="keyword">static_cast&lt;</span>node_with_worker&lt;Node&gt;*<span class="keyword">&gt;</span>(node_ptr.get())};</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span> </div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; e : eff.effects())</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>      {</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>        std::weak_ptr eff_ptr = std::shared_ptr&lt;Node&gt;(node_ptr, &amp;e);</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>        std::weak_ptr node_wp = self;</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span> </div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>        e.worker.request</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>            = [&amp;tq, node_wp = std::move(node_wp),</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>               eff_ptr = std::move(eff_ptr)]&lt;<span class="keyword">typename</span>... Args&gt;(Args&amp;&amp;... f) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>          <span class="comment">// request() is invoked in the DSP / processor thread</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>          <span class="comment">// and just posts the task to the thread pool</span></div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>          tq.post([eff_ptr, node_wp, ... ff = std::forward&lt;Args&gt;(f)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>            <span class="comment">// This happens in the worker thread</span></div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>            <span class="comment">// If for some reason the object has already been removed, not much</span></div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>            <span class="comment">// reason to perform the work</span></div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>            <span class="keywordflow">if</span>(!eff_ptr.lock())</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>              <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>            <span class="keyword">using </span>type_of_result</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>                = <span class="keyword">decltype</span>(worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...));</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>            <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_void_v&lt;type_of_result&gt;)</div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>            {</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>              worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...);</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>            }</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>            {</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>              <span class="comment">// If the worker returns a std::function, it</span></div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>              <span class="comment">// is to be invoked back in the processor DSP thread</span></div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>              <span class="keyword">auto</span> res = worker_type::work(std::forward&lt;<span class="keyword">decltype</span>(ff)&gt;(ff)...);</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>              <span class="keywordflow">if</span>(!res)</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>                <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span> </div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>              <span class="comment">// The node&#39;s result queue is spsc from the main thread to the</span></div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>              <span class="comment">// exec thread, we cannot just yeet the result back from the</span></div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>              <span class="comment">// thread-pool</span></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>              ossia::qt::run_async(</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>                  qApp, [eff_ptr = std::move(eff_ptr), node_wp = std::move(node_wp),</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>                         res = std::move(res)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>                    <span class="comment">// Main thread</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>                    std::shared_ptr n = node_wp.lock();</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>                    <span class="keywordflow">if</span>(!n)</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>                      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span> </div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>                    n-&gt;worker_results.enqueue(</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>                        [eff_ptr = std::move(eff_ptr), res = std::move(res)]() <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>                  <span class="comment">// DSP / processor thread, at the beginning of the node&#39;s own</span></div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>                  <span class="comment">// tick: the outlets are cleared and the tick&#39;s frame indices</span></div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>                  <span class="comment">// are set, so the result may write to them.</span></div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>                  <span class="comment">// We need res to be mutable so that the worker can use it to e.g. store</span></div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>                  <span class="comment">// old data which will be freed back in the main thread</span></div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>                  <span class="keywordflow">if</span>(<span class="keyword">auto</span> p = eff_ptr.lock())</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>                    res(*p);</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>                    });</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>                  });</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>            }</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>          });</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>        };</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>      }</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    }</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  }</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span> </div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>  <span class="comment">// Update everything</span></div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>  <span class="keywordtype">void</span> update_controls(std::shared_ptr&lt;safe_node&lt;Node&gt;&gt;&amp; ptr)</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>  {</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    avnd::effect_container&lt;Node&gt;&amp; eff = ptr-&gt;impl;</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>    {</div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span> state : eff.full_state())</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>      {</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>        avnd::input_introspection&lt;Node&gt;::for_all(</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>            state.inputs, [&amp;](<span class="keyword">auto</span>&amp; field) { if_possible(field.update(state.effect)); });</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>      }</div>
 <div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    }</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>    <span class="comment">// FIXME cleanup eff.effect.send_message too ?</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>  }</div>
 <div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span> </div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(is_gpu&lt;Node&gt;)</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    {</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>      <span class="comment">// FIXME this must move in the Node dtor. See video_node</span></div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>      <span class="keyword">auto</span>&amp; gfx_exec = this-&gt;system().doc.template plugin&lt;Gfx::DocumentPlugin&gt;().exec;</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>      <span class="keywordflow">if</span>(node_id &gt;= 0)</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>      {</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>        gfx_exec.ui-&gt;unregister_node(node_id);</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>        node_id = score::gfx::invalid_node_index;</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>      }</div>
-<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    }</div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span> </div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    {</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>      {</div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>        out-&gt;nodeId = -1;</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>      }</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    }</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    ::Execution::ProcessComponent::cleanup();</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>  }</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>  ~Executor() { }</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>};</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>  <span class="keywordtype">void</span> cleanup()<span class="keyword"> override</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { this-&gt;process().from_ui; })</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>    {</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>      this-&gt;process().from_ui = [](QByteArray arr) {};</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>    }</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    <span class="comment">// FIXME cleanup eff.effect.send_message too ?</span></div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="preprocessor">#if SCORE_PLUGIN_GFX</span></div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(is_gpu&lt;Node&gt;)</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>    {</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>      <span class="comment">// FIXME this must move in the Node dtor. See video_node</span></div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>      <span class="keyword">auto</span>&amp; gfx_exec = this-&gt;system().doc.template plugin&lt;Gfx::DocumentPlugin&gt;().exec;</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>      <span class="keywordflow">if</span>(node_id &gt;= 0)</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>      {</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>        gfx_exec.ui-&gt;unregister_node(node_id);</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>        node_id = score::gfx::invalid_node_index;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>      }</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    }</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>    <span class="comment">// FIXME refactor this with other GFX processes</span></div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>* outlet : this-&gt;process().outlets())</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>    {</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> out = qobject_cast&lt;Gfx::TextureOutlet*&gt;(outlet))</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>      {</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>        out-&gt;nodeId = -1;</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>      }</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    }</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    ::Execution::ProcessComponent::cleanup();</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>  }</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>  ~Executor() { }</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>};</div>
 </div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>}</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_document_plugin_html"><div class="ttname"><a href="class_gfx_1_1_document_plugin.html">Gfx::DocumentPlugin</a></div><div class="ttdef"><b>Definition</b> GfxApplicationPlugin.hpp:13</div></div>
 <div class="ttc" id="aclass_gfx_1_1gfx__exec__node_html"><div class="ttname"><a href="class_gfx_1_1gfx__exec__node.html">Gfx::gfx_exec_node</a></div><div class="ttdef"><b>Definition</b> GfxExecNode.hpp:40</div></div>
 <div class="ttc" id="aclass_path_html"><div class="ttname"><a href="class_path.html">Path</a></div><div class="ttdoc">The Path class is a typesafe wrapper around ObjectPath.</div><div class="ttdef"><b>Definition</b> Path.hpp:52</div></div>

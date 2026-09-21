@@ -298,6 +298,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1_program_cache_key.html">ProgramCacheKey</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_raw_raster_drop_handler.html">RawRasterDropHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_raw_raster_library_handler.html">RawRasterLibraryHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_rhi_preview_widget.html">RhiPreviewWidget</a></td></tr>
@@ -430,6 +432,16 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>exec_controls</b> = 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:aed7034d7fdd5f95a3ffc3a9ec63e88ef" id="r_aed7034d7fdd5f95a3ffc3a9ec63e88ef"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88ef">ShaderFamily</a> { <br />
+&#160;&#160;<b>Unknown</b>
+, <b>RawRaster</b>
+, <b>GeometryFilter</b>
+, <b>Compute</b>
+, <br />
+&#160;&#160;<b>VertexShaderArt</b>
+<br />
+ }</td></tr>
+<tr class="separator:aed7034d7fdd5f95a3ffc3a9ec63e88ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a850d0d9c16b728673edde12e5f9964" id="r_a9a850d0d9c16b728673edde12e5f9964"><td class="memItemLeft" align="right" valign="top"><a id="a9a850d0d9c16b728673edde12e5f9964" name="a9a850d0d9c16b728673edde12e5f9964"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>PreviewContent</b> { <b>Black</b>
 , <b>PerOutputTestCard</b>
 , <b>GlobalTestCard</b>
@@ -482,6 +494,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseImages</b> (st
 <tr class="memitem:abf3ddd38c4ac7bc56a3379f4e529bdbc" id="r_abf3ddd38c4ac7bc56a3379f4e529bdbc"><td class="memItemLeft" align="right" valign="top"><a id="abf3ddd38c4ac7bc56a3379f4e529bdbc" name="abf3ddd38c4ac7bc56a3379f4e529bdbc"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gfx::Image</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getImages</b> (const ossia::value &amp;val, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:abf3ddd38c4ac7bc56a3379f4e529bdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3839082a4bf1ef9a0edec356869f7e" id="r_a0d3839082a4bf1ef9a0edec356869f7e"><td class="memItemLeft" align="right" valign="top"><a id="a0d3839082a4bf1ef9a0edec356869f7e" name="a0d3839082a4bf1ef9a0edec356869f7e"></a>
+<a class="el" href="namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88ef">ShaderFamily</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shaderFileFamily</b> (const QString &amp;path) noexcept</td></tr>
+<tr class="separator:a0d3839082a4bf1ef9a0edec356869f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaee3421fd5c107475410341638ec6ec8" id="r_aaee3421fd5c107475410341638ec6ec8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#aaee3421fd5c107475410341638ec6ec8">vertexShaderSibling</a> (const QString &amp;fsPath) noexcept</td></tr>
+<tr class="separator:aaee3421fd5c107475410341638ec6ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f2af02688b05b86bca317b423e004d" id="r_ae5f2af02688b05b86bca317b423e004d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#ae5f2af02688b05b86bca317b423e004d">fragmentShaderSibling</a> (const QString &amp;vsPath) noexcept</td></tr>
+<tr class="separator:ae5f2af02688b05b86bca317b423e004d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1c9584823b572537548d5577fa3031" id="r_adf1c9584823b572537548d5577fa3031"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#adf1c9584823b572537548d5577fa3031">locateShaderPath</a> (const QString &amp;path, const QObject &amp;process) noexcept</td></tr>
+<tr class="separator:adf1c9584823b572537548d5577fa3031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b42a10daf863b722c594edfc613d3a0" id="r_a4b42a10daf863b722c594edfc613d3a0"><td class="memItemLeft" align="right" valign="top"><a id="a4b42a10daf863b722c594edfc613d3a0" name="a4b42a10daf863b722c594edfc613d3a0"></a>
 <a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a>&#160;</td><td class="memItemRight" valign="bottom"><b>programFromISFFragmentShaderPath</b> (const QString &amp;fsFilename, QByteArray fsData, ShaderSource::ProgramType type=ShaderSource::ProgramType::ISF)</td></tr>
 <tr class="separator:a4b42a10daf863b722c594edfc613d3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -518,6 +539,30 @@ Variables</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewScheduledForDeletion</b> {}</td></tr>
 <tr class="separator:a87a975ddcee131b7ee69cbde649f4521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="aed7034d7fdd5f95a3ffc3a9ec63e88ef" name="aed7034d7fdd5f95a3ffc3a9ec63e88ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed7034d7fdd5f95a3ffc3a9ec63e88ef">&#9670;&#160;</a></span>ShaderFamily</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88ef">Gfx::ShaderFamily</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Which of the shader families a file on disk belongs to, read from the "MODE" key of its ISF header. <code>Unknown</code> is a shader with no such key: an ISF without MODE, a bare GLSL snippet, a hand-written companion vertex shader. Deciding this is what lets several drop handlers share an extension: each one claims its own family and leaves the rest alone. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a74373eb8764903bca22079d5e5fb4797" name="a74373eb8764903bca22079d5e5fb4797"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74373eb8764903bca22079d5e5fb4797">&#9670;&#160;</a></span>addControlGroup()</h2>
@@ -570,6 +615,70 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewSchedu
 
 </div>
 </div>
+<a id="ae5f2af02688b05b86bca317b423e004d" name="ae5f2af02688b05b86bca317b423e004d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f2af02688b05b86bca317b423e004d">&#9670;&#160;</a></span>fragmentShaderSibling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Gfx::fragmentShaderSibling </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>vsPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> of the fragment shader <code>vsPath</code> is the companion of, or an empty string. A vertex shader that has one is not a standalone process. </p>
+
+</div>
+</div>
+<a id="adf1c9584823b572537548d5577fa3031" name="adf1c9584823b572537548d5577fa3031"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1c9584823b572537548d5577fa3031">&#9670;&#160;</a></span>locateShaderPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Gfx::locateShaderPath </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QObject &amp;&#160;</td>
+          <td class="paramname"><em>process</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Absolute path of the shader a process was created with. Construction data travels as a &lt;PROJECT&gt;: / &lt;LIBRARY&gt;: path so that it survives a project being moved; the model needs the resolved one, like the load path does. </p>
+
+</div>
+</div>
 <a id="a295b675353308693113a6e495af73f86" name="a295b675353308693113a6e495af73f86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a295b675353308693113a6e495af73f86">&#9670;&#160;</a></span>makeSyphonOutput()</h2>
 
@@ -586,6 +695,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewSchedu
       </table>
 </div><div class="memdoc">
 <p>Headless factory for the Syphon publishing node, so a test harness can drive the real output without the <a class="el" href="namespace_device.html" title="Manipulation of Devices from Qt.">Device</a> / Document machinery &ndash; the same hook Gfx::PipeWire::makePipewireOutput provides. </p>
+
+</div>
+</div>
+<a id="aaee3421fd5c107475410341638ec6ec8" name="aaee3421fd5c107475410341638ec6ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaee3421fd5c107475410341638ec6ec8">&#9670;&#160;</a></span>vertexShaderSibling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Gfx::vertexShaderSibling </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fsPath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_path.html" title="The Path class is a typesafe wrapper around ObjectPath.">Path</a> of the vertex shader that goes with <code>fsPath</code> &ndash; <code>foo.vert</code> or <code>foo.vs</code> next to <code>foo.fs</code> / <code>foo.frag</code> &ndash; or an empty string. </p>
 
 </div>
 </div>

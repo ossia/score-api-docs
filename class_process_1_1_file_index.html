@@ -108,25 +108,16 @@ $(document).ready(function(){initNavTree('class_process_1_1_file_index.html','')
   <div class="headertitle"><div class="title">Process::FileIndex Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>An index of the files under a folder, used to relink by name.  
- <a href="class_process_1_1_file_index.html#details">More...</a></p>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An index of the files under a folder, used to relink by name. </p>
-<p>Name-only matching is what every application does and the first thing users complain about, so this also keeps sizes: when several files share a name, the one whose size matches the reference wins, and the rest are still offered rather than hidden. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a60cc84acdcf47e08c05a455403168481" id="r_a60cc84acdcf47e08c05a455403168481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_file_index.html#a60cc84acdcf47e08c05a455403168481">scan</a> (const QString &amp;folder, int maxFiles=250000)</td></tr>
-<tr class="separator:a60cc84acdcf47e08c05a455403168481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977b38df9d6c5ecb764b98751d1161a6" id="r_a977b38df9d6c5ecb764b98751d1161a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_file_index.html#a977b38df9d6c5ecb764b98751d1161a6">scan</a> (const QString &amp;folder, <a class="el" href="class_process_1_1_file_scan.html">FileScan</a> *progress=nullptr)</td></tr>
+<tr class="separator:a977b38df9d6c5ecb764b98751d1161a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798b1bb44492bf35242f7716fdf0c36d" id="r_a798b1bb44492bf35242f7716fdf0c36d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_file_index.html#a798b1bb44492bf35242f7716fdf0c36d">candidates</a> (const QString &amp;missingPath, qint64 size=-1) const</td></tr>
 <tr class="separator:a798b1bb44492bf35242f7716fdf0c36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a245c7369a655c6d54b1b4d9909820" id="r_a54a245c7369a655c6d54b1b4d9909820"><td class="memItemLeft" align="right" valign="top"><a id="a54a245c7369a655c6d54b1b4d9909820" name="a54a245c7369a655c6d54b1b4d9909820"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>fileCount</b> () const noexcept</td></tr>
 <tr class="separator:a54a245c7369a655c6d54b1b4d9909820"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5aa3a64fd52920768c78c981ebb56478" id="r_a5aa3a64fd52920768c78c981ebb56478"><td class="memItemLeft" align="right" valign="top"><a id="a5aa3a64fd52920768c78c981ebb56478" name="a5aa3a64fd52920768c78c981ebb56478"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>truncated</b> () const noexcept</td></tr>
-<tr class="separator:a5aa3a64fd52920768c78c981ebb56478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a184507857263db49cb21d89f95603051" id="r_a184507857263db49cb21d89f95603051"><td class="memItemLeft" align="right" valign="top"><a id="a184507857263db49cb21d89f95603051" name="a184507857263db49cb21d89f95603051"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>root</b> () const noexcept</td></tr>
 <tr class="separator:a184507857263db49cb21d89f95603051"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,12 +148,12 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>root</
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Absolute paths whose file name matches, case-insensitively, best first. <code>size</code> (when &gt; 0) promotes exact size matches, which is the difference between "a file called kick.wav" and "this kick.wav". </p>
+<p>Absolute paths whose file name matches, case-insensitively, best first. <code>size</code>, when &gt; 0, promotes exact size matches. </p>
 
 </div>
 </div>
-<a id="a60cc84acdcf47e08c05a455403168481" name="a60cc84acdcf47e08c05a455403168481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60cc84acdcf47e08c05a455403168481">&#9670;&#160;</a></span>scan()</h2>
+<a id="a977b38df9d6c5ecb764b98751d1161a6" name="a977b38df9d6c5ecb764b98751d1161a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977b38df9d6c5ecb764b98751d1161a6">&#9670;&#160;</a></span>scan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,8 +167,8 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>root</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxFiles</em> = <code>250000</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_file_scan.html">FileScan</a> *&#160;</td>
+          <td class="paramname"><em>progress</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -186,8 +177,7 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>root</
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Walk <code>folder</code> recursively.</p>
-<p><code>maxFiles</code> is a guard against someone pointing this at their home folder or at "/": the scan stops there rather than freezing the application, and truncated() then says the answer may be incomplete. </p>
+<p>Walk <code>folder</code> recursively and exhaustively. A cancelled <code>progress</code> stops the walk and leaves the index holding what it had reached so far. </p>
 
 </div>
 </div>

@@ -41,6 +41,7 @@ var dir_e513620bfe3b582c58bf7f90170181cb =
     [ "MissingFilesDialog.hpp", "_missing_files_dialog_8hpp_source.html", null ],
     [ "Preset.hpp", "_preset_8hpp_source.html", null ],
     [ "PresetHelpers.hpp", "_preset_helpers_8hpp_source.html", null ],
+    [ "PreviewSettings.hpp", "_preview_settings_8hpp_source.html", null ],
     [ "score-lib-process/Process/Process.hpp", "score-lib-process_2_process_2_process_8hpp_source.html", null ],
     [ "Process/ProcessComponent.hpp", "_process_2_process_component_8hpp_source.html", null ],
     [ "ProcessContext.hpp", "_process_context_8hpp_source.html", null ],

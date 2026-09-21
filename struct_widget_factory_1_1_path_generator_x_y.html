@@ -118,11 +118,51 @@ static <a class="el" href="struct_process_1_1_port_item_layout.html">Process::Po
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad5b34878e7f263f000eb975502566612"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_widget</b> (T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent, QObject *context)</td></tr>
 <tr class="separator:ad5b34878e7f263f000eb975502566612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee792703366d52bc386d1c34c550156f" id="r_aee792703366d52bc386d1c34c550156f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_widget_factory_1_1_path_generator_x_y.html#aee792703366d52bc386d1c34c550156f">bindSiblings</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, <a class="el" href="classscore_1_1_q_graphics_path_generator_x_y.html">score::QGraphicsPathGeneratorXY</a> &amp;sl)</td></tr>
+<tr class="separator:aee792703366d52bc386d1c34c550156f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47359360c9fe6045f9fc9af8bda3b1dd" id="r_a47359360c9fe6045f9fc9af8bda3b1dd"><td class="memTemplParams" colspan="2"><a id="a47359360c9fe6045f9fc9af8bda3b1dd" name="a47359360c9fe6045f9fc9af8bda3b1dd"></a>
 template&lt;typename T , typename Control_T &gt; </td></tr>
 <tr class="memitem:a47359360c9fe6045f9fc9af8bda3b1dd"><td class="memTemplItemLeft" align="right" valign="top">static QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_item</b> (const T &amp;slider, Control_T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QGraphicsItem *parent, QObject *context)</td></tr>
 <tr class="separator:a47359360c9fe6045f9fc9af8bda3b1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aee792703366d52bc386d1c34c550156f" name="aee792703366d52bc386d1c34c550156f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee792703366d52bc386d1c34c550156f">&#9670;&#160;</a></span>bindSiblings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void WidgetFactory::PathGeneratorXY::bindSiblings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_q_graphics_path_generator_x_y.html">score::QGraphicsPathGeneratorXY</a> &amp;&#160;</td>
+          <td class="paramname"><em>sl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The item only ever gets handed its own port, but it draws a trajectory that the sibling controls of the process describe: they are matched by name, which is all the port factory has to go on. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html">plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp</a></li>
 </ul>

@@ -121,6 +121,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a332442f6ad4124ceadaa39997c100475" id="r_a332442f6ad4124ceadaa39997c100475"><td class="memItemLeft" align="right" valign="top"><a id="a332442f6ad4124ceadaa39997c100475" name="a332442f6ad4124ceadaa39997c100475"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const noexcept override</td></tr>
 <tr class="separator:a332442f6ad4124ceadaa39997c100475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad361baa5799defd0a74512794cb2f53c" id="r_ad361baa5799defd0a74512794cb2f53c"><td class="memItemLeft" align="right" valign="top"><a id="ad361baa5799defd0a74512794cb2f53c" name="ad361baa5799defd0a74512794cb2f53c"></a>
+const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>pattern</b> () const noexcept</td></tr>
+<tr class="separator:ad361baa5799defd0a74512794cb2f53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86c400483b5a65374cacdbc7285e69e" id="r_ab86c400483b5a65374cacdbc7285e69e"><td class="memItemLeft" align="right" valign="top"><a id="ab86c400483b5a65374cacdbc7285e69e" name="ab86c400483b5a65374cacdbc7285e69e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>request_pattern</b> (int idx) noexcept</td></tr>
+<tr class="memdesc:ab86c400483b5a65374cacdbc7285e69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask for a pattern: it takes effect at the next quantification point. <br /></td></tr>
+<tr class="separator:ab86c400483b5a65374cacdbc7285e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7821b740c555e1a35fdb8eaff7a19dc8" id="r_a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memItemLeft" align="right" valign="top"><a id="a7821b740c555e1a35fdb8eaff7a19dc8" name="a7821b740c555e1a35fdb8eaff7a19dc8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>legato</b> (int note) const noexcept</td></tr>
 <tr class="separator:a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +137,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>release_all</b> (int6
 <tr class="memitem:aad45d6374b738a9426a2512f5f3e0c15" id="r_aad45d6374b738a9426a2512f5f3e0c15"><td class="memItemLeft" align="right" valign="top"><a id="aad45d6374b738a9426a2512f5f3e0c15" name="aad45d6374b738a9426a2512f5f3e0c15"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_channel</b> (uint8_t c) noexcept</td></tr>
 <tr class="separator:aad45d6374b738a9426a2512f5f3e0c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a259c9e9c77013e5238739173445e6c71" id="r_a259c9e9c77013e5238739173445e6c71"><td class="memItemLeft" align="right" valign="top"><a id="a259c9e9c77013e5238739173445e6c71" name="a259c9e9c77013e5238739173445e6c71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>read_controls</b> () noexcept</td></tr>
+<tr class="separator:a259c9e9c77013e5238739173445e6c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f59520d29ed73dfb4d89284e87fff6" id="r_ae0f59520d29ed73dfb4d89284e87fff6"><td class="memItemLeft" align="right" valign="top"><a id="ae0f59520d29ed73dfb4d89284e87fff6" name="ae0f59520d29ed73dfb4d89284e87fff6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:ae0f59520d29ed73dfb4d89284e87fff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae469e952bbf1b140dbea3234a423dce9" id="r_ae469e952bbf1b140dbea3234a423dce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ae469e952bbf1b140dbea3234a423dce9">play_steps</a> (const ossia::token_request &amp;tk, int64_t tick_start, double samplesratio, bool rewinding, int64_t from_offset, int64_t to_offset) noexcept</td></tr>
+<tr class="separator:ae469e952bbf1b140dbea3234a423dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438ed5bfc937ba03e59690ff7bec5304" id="r_a438ed5bfc937ba03e59690ff7bec5304"><td class="memItemLeft" align="right" valign="top"><a id="a438ed5bfc937ba03e59690ff7bec5304" name="a438ed5bfc937ba03e59690ff7bec5304"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_switch</b> (int64_t date) noexcept</td></tr>
+<tr class="separator:a438ed5bfc937ba03e59690ff7bec5304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bcc5db0022deefac6298e892a3c6d94" id="r_a7bcc5db0022deefac6298e892a3c6d94"><td class="memItemLeft" align="right" valign="top"><a id="a7bcc5db0022deefac6298e892a3c6d94" name="a7bcc5db0022deefac6298e892a3c6d94"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play_step</b> (int64_t date, bool rewinding=false) noexcept</td></tr>
 <tr class="separator:a7bcc5db0022deefac6298e892a3c6d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +157,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a0e6c0c2d5bae9242ee57462fe2f0a539" id="r_a0e6c0c2d5bae9242ee57462fe2f0a539"><td class="memItemLeft" align="right" valign="top"><a id="a0e6c0c2d5bae9242ee57462fe2f0a539" name="a0e6c0c2d5bae9242ee57462fe2f0a539"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>pattern_select</b></td></tr>
+<tr class="separator:a0e6c0c2d5bae9242ee57462fe2f0a539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b25c8b9a91b426b438f702d75deb015" id="r_a7b25c8b9a91b426b438f702d75deb015"><td class="memItemLeft" align="right" valign="top"><a id="a7b25c8b9a91b426b438f702d75deb015" name="a7b25c8b9a91b426b438f702d75deb015"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>switch_quantification</b></td></tr>
+<tr class="separator:a7b25c8b9a91b426b438f702d75deb015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3165073c371f20ee8ea3ba28005dcd" id="r_aff3165073c371f20ee8ea3ba28005dcd"><td class="memItemLeft" align="right" valign="top"><a id="aff3165073c371f20ee8ea3ba28005dcd" name="aff3165073c371f20ee8ea3ba28005dcd"></a>
 ossia::midi_outlet&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
 <tr class="separator:aff3165073c371f20ee8ea3ba28005dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,12 +172,23 @@ ossia::value_outlet&#160;</td><td class="memItemRight" valign="bottom"><b>accent
 <tr class="memitem:ac91a202121527478c1ed2cdbaccfe0ae" id="r_ac91a202121527478c1ed2cdbaccfe0ae"><td class="memItemLeft" align="right" valign="top"><a id="ac91a202121527478c1ed2cdbaccfe0ae" name="ac91a202121527478c1ed2cdbaccfe0ae"></a>
 ossia::value_outlet&#160;</td><td class="memItemRight" valign="bottom"><b>slide_out</b></td></tr>
 <tr class="separator:ac91a202121527478c1ed2cdbaccfe0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0f22a8ea0f553e8cd3533338e0f54e" id="r_a8d0f22a8ea0f553e8cd3533338e0f54e"><td class="memItemLeft" align="right" valign="top"><a id="a8d0f22a8ea0f553e8cd3533338e0f54e" name="a8d0f22a8ea0f553e8cd3533338e0f54e"></a>
-<a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pattern</b></td></tr>
-<tr class="separator:a8d0f22a8ea0f553e8cd3533338e0f54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4db962da239100769a143fc5e1d2ce" id="r_aef4db962da239100769a143fc5e1d2ce"><td class="memItemLeft" align="right" valign="top"><a id="aef4db962da239100769a143fc5e1d2ce" name="aef4db962da239100769a143fc5e1d2ce"></a>
+std::vector&lt; <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>patterns</b></td></tr>
+<tr class="separator:aef4db962da239100769a143fc5e1d2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a969830b30c429a69fd7b75aef1ca501e" id="r_a969830b30c429a69fd7b75aef1ca501e"><td class="memItemLeft" align="right" valign="top"><a id="a969830b30c429a69fd7b75aef1ca501e" name="a969830b30c429a69fd7b75aef1ca501e"></a>
 ossia::flat_set&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>in_flight</b></td></tr>
 <tr class="separator:a969830b30c429a69fd7b75aef1ca501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2789a8966c15f3a2dd3d6723a4b9d7bf" id="r_a2789a8966c15f3a2dd3d6723a4b9d7bf"><td class="memItemLeft" align="right" valign="top"><a id="a2789a8966c15f3a2dd3d6723a4b9d7bf" name="a2789a8966c15f3a2dd3d6723a4b9d7bf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>current_pattern</b> {}</td></tr>
+<tr class="separator:a2789a8966c15f3a2dd3d6723a4b9d7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a1f47078b9a0d09630a491b7e05237" id="r_a67a1f47078b9a0d09630a491b7e05237"><td class="memItemLeft" align="right" valign="top"><a id="a67a1f47078b9a0d09630a491b7e05237" name="a67a1f47078b9a0d09630a491b7e05237"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pending_pattern</b> {-1}</td></tr>
+<tr class="memdesc:a67a1f47078b9a0d09630a491b7e05237"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> the next quantification point switches to; -1 when nothing waits. <br /></td></tr>
+<tr class="separator:a67a1f47078b9a0d09630a491b7e05237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6111f67e3f087370f34974b5c9a7cb77" id="r_a6111f67e3f087370f34974b5c9a7cb77"><td class="memItemLeft" align="right" valign="top"><a id="a6111f67e3f087370f34974b5c9a7cb77" name="a6111f67e3f087370f34974b5c9a7cb77"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>switch_rate</b> {1.}</td></tr>
+<tr class="memdesc:a6111f67e3f087370f34974b5c9a7cb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A token_request rate: 0 switches at the beginning of the tick. <br /></td></tr>
+<tr class="separator:a6111f67e3f087370f34974b5c9a7cb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46eb90d7b3380d415af0fc44b574a258" id="r_a46eb90d7b3380d415af0fc44b574a258"><td class="memItemLeft" align="right" valign="top"><a id="a46eb90d7b3380d415af0fc44b574a258" name="a46eb90d7b3380d415af0fc44b574a258"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>current</b> = 0</td></tr>
 <tr class="separator:a46eb90d7b3380d415af0fc44b574a258"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +208,68 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>release_pending</b> {
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td></tr>
 <tr class="separator:a844a1fc5f239a168ead7d00ab84317c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae469e952bbf1b140dbea3234a423dce9" name="ae469e952bbf1b140dbea3234a423dce9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae469e952bbf1b140dbea3234a423dce9">&#9670;&#160;</a></span>play_steps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::play_steps </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>tick_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>samplesratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rewinding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>from_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>to_offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Plays the steps of the current pattern whose offset in the tick falls in [from_offset; to_offset[. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_pattern_node_8hpp_source.html">PatternNode.hpp</a></li>
 </ul>

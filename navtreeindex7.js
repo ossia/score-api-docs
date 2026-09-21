@@ -1,11 +1,12 @@
 var NAVTREEINDEX7 =
 {
+"_unit_8hpp_source.html":[13,0,0,2,4,0,11],
 "_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3],
 "_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,15,5],
 "_unix_stream_widget_8hpp_source.html":[13,0,0,2,29,0,15,6],
 "_unused_8hpp_source.html":[13,0,0,1,1,12,37],
-"_unused_files_8hpp_source.html":[13,0,0,2,3,4,57],
-"_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,58],
+"_unused_files_8hpp_source.html":[13,0,0,2,3,4,58],
+"_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,59],
 "_update_address_8hpp_source.html":[13,0,0,2,4,0,12],
 "_update_address_settings_8hpp_source.html":[13,0,0,2,13,0,0,2,0],
 "_update_curve_8hpp_source.html":[13,0,0,2,11,0,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "_y_u_v420_8hpp_source.html":[13,0,0,2,17,1,4,0,37],
 "_y_u_v420_p10_8hpp_source.html":[13,0,0,2,17,1,4,0,38],
 "_y_u_v420_p12_8hpp_source.html":[13,0,0,2,17,1,4,0,39],
-"_y_u_v420_packed_8hpp_source.html":[13,0,0,2,17,1,4,1,16],
-"_y_u_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,40]
+"_y_u_v420_packed_8hpp_source.html":[13,0,0,2,17,1,4,1,16]
 };

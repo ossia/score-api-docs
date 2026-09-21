@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_process_1_1_node_item.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_process_1_1_node_item-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Process::NodeItem Class Reference</div></div>
@@ -153,12 +154,50 @@ QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>contentRect</b> () 
 <tr class="memdesc:a44b484f53f63b966765738ae391a3ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the node draws itself: the box the ports have to stay inside. <br /></td></tr>
 <tr class="separator:a44b484f53f63b966765738ae391a3ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a326ab2ad997a7cea3b0d77b2c0b5e974" id="r_a326ab2ad997a7cea3b0d77b2c0b5e974"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_node_item.html#a326ab2ad997a7cea3b0d77b2c0b5e974">dropOnCableHandler</a></td></tr>
+<tr class="separator:a326ab2ad997a7cea3b0d77b2c0b5e974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb3b14212fae94d55d1db7989af2397" id="r_a2eb3b14212fae94d55d1db7989af2397"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_node_item.html#a2eb3b14212fae94d55d1db7989af2397">canDropOnCableHandler</a></td></tr>
+<tr class="separator:a2eb3b14212fae94d55d1db7989af2397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a2c6d70c12249cb79458e1dc18651d347" id="r_a2c6d70c12249cb79458e1dc18651d347"><td class="memItemLeft" align="right" valign="top"><a id="a2c6d70c12249cb79458e1dc18651d347" name="a2c6d70c12249cb79458e1dc18651d347"></a>
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 5000</td></tr>
 <tr class="separator:a2c6d70c12249cb79458e1dc18651d347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2eb3b14212fae94d55d1db7989af2397" name="a2eb3b14212fae94d55d1db7989af2397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb3b14212fae94d55d1db7989af2397">&#9670;&#160;</a></span>canDropOnCableHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;bool(const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a>&amp;)&gt; Process::NodeItem::canDropOnCableHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether dropOnCableHandler would connect anything, to highlight the cable under the node while it is being dragged. </p>
+
+</div>
+</div>
+<a id="a326ab2ad997a7cea3b0d77b2c0b5e974" name="a326ab2ad997a7cea3b0d77b2c0b5e974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a326ab2ad997a7cea3b0d77b2c0b5e974">&#9670;&#160;</a></span>dropOnCableHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void( const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp;, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a>&amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a>&amp;)&gt; Process::NodeItem::dropOnCableHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set by the nodal view: called when the node is released over a cable, to append the insertion commands to the macro the move is already building. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_node_item_8hpp_source.html">NodeItem.hpp</a></li>
 <li><b>NodeItem.cpp</b></li>

@@ -103,7 +103,9 @@ $(document).ready(function(){initNavTree('class_dataflow_1_1_cable_item.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_dataflow_1_1_cable_item-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Dataflow::CableItem Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -116,6 +118,14 @@ Inheritance diagram for Dataflow::CableItem:</div>
   <img src="class_dataflow_1_1_cable_item.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a00d1f2d8e28f4e20a6260795a9c605a7" id="r_a00d1f2d8e28f4e20a6260795a9c605a7"><td class="memItemLeft" align="right" valign="top"><a id="a00d1f2d8e28f4e20a6260795a9c605a7" name="a00d1f2d8e28f4e20a6260795a9c605a7"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>GrabbedEnd</b> : uint8_t { <b>None</b>
+, <b>Source</b>
+, <b>Sink</b>
+ }</td></tr>
+<tr class="separator:a00d1f2d8e28f4e20a6260795a9c605a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a595e3d3a98d79e6f1f1a7650b96e8ca8" id="r_a595e3d3a98d79e6f1f1a7650b96e8ca8"><td class="memItemLeft" align="right" valign="top"><a id="a595e3d3a98d79e6f1f1a7650b96e8ca8" name="a595e3d3a98d79e6f1f1a7650b96e8ca8"></a>
@@ -151,9 +161,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setTarget</b> (<a cla
 <tr class="memitem:a1be0384bed29ff7e62ade4f709eec773" id="r_a1be0384bed29ff7e62ade4f709eec773"><td class="memItemLeft" align="right" valign="top"><a id="a1be0384bed29ff7e62ade4f709eec773" name="a1be0384bed29ff7e62ade4f709eec773"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resetDrop</b> ()</td></tr>
 <tr class="separator:a1be0384bed29ff7e62ade4f709eec773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec971c48ef142e8a8a3c1b16e5cd8d3" id="r_adec971c48ef142e8a8a3c1b16e5cd8d3"><td class="memItemLeft" align="right" valign="top"><a id="adec971c48ef142e8a8a3c1b16e5cd8d3" name="adec971c48ef142e8a8a3c1b16e5cd8d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDropTarget</b> (bool b)</td></tr>
+<tr class="memdesc:adec971c48ef142e8a8a3c1b16e5cd8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Highlight this cable as the one a node being dragged would land in. <br /></td></tr>
+<tr class="separator:adec971c48ef142e8a8a3c1b16e5cd8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01f423ea26247284f4d9230bb4f0960f" id="r_a01f423ea26247284f4d9230bb4f0960f"><td class="memItemLeft" align="right" valign="top"><a id="a01f423ea26247284f4d9230bb4f0960f" name="a01f423ea26247284f4d9230bb4f0960f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dropReceived</b> (const QPointF &amp;pos, const QMimeData &amp;arg_2)</td></tr>
 <tr class="separator:a01f423ea26247284f4d9230bb4f0960f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a64543ffaf845dad7125d98356a33eaf0" id="r_a64543ffaf845dad7125d98356a33eaf0"><td class="memItemLeft" align="right" valign="top">static GrabbedEnd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_cable_item.html#a64543ffaf845dad7125d98356a33eaf0">endNear</a> (QPointF scenePos, QPointF p1, QPointF p2) noexcept</td></tr>
+<tr class="separator:a64543ffaf845dad7125d98356a33eaf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e1b48a05a53f910a7175a236540c16" id="r_a16e1b48a05a53f910a7175a236540c16"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_cable_item.html#a16e1b48a05a53f910a7175a236540c16">grabZoneRadius</a> (QPointF p1, QPointF p2) noexcept</td></tr>
+<tr class="separator:a16e1b48a05a53f910a7175a236540c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -164,6 +185,87 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_cables_enabl
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 9999</td></tr>
 <tr class="separator:aee0303e891cda448967eb7a69c23a21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a64543ffaf845dad7125d98356a33eaf0" name="a64543ffaf845dad7125d98356a33eaf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64543ffaf845dad7125d98356a33eaf0">&#9670;&#160;</a></span>endNear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CableItem::GrabbedEnd Dataflow::CableItem::endNear </td>
+          <td>(</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>scenePos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Which end a press at <code>scenePos</code> would unplug and re-route. Both ends match on a cable too short to tell them apart; the sink wins there, as that is the end one usually means to move. </p>
+
+</div>
+</div>
+<a id="a16e1b48a05a53f910a7175a236540c16" name="a16e1b48a05a53f910a7175a236540c16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e1b48a05a53f910a7175a236540c16">&#9670;&#160;</a></span>grabZoneRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Dataflow::CableItem::grabZoneRadius </td>
+          <td>(</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How far from an end a press still grabs it. The innermost pixels belong to the port, which starts a new cable instead, so the zone has to clear <a class="el" href="class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a" title="Radius of the clickable zone around portCenter().">PortItem::hitRadius</a> by enough to be aimed at without magnifying the view. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_cable_item_8hpp_source.html">CableItem.hpp</a></li>
 <li><b>CableItem.cpp</b></li>

@@ -119,59 +119,74 @@ $(document).ready(function(){initNavTree('_missing_files_dialog_8hpp_source.html
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;score_lib_process_export.h&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>QLabel;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>QPushButton;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QTreeWidget;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QTreeWidgetItem;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>Document;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span>DocumentContext;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_process.html">Process</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">class </span>QLabel;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>QPushButton;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">class </span>QTimer;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>QTreeWidget;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>QTreeWidgetItem;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>Document;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">struct </span>DocumentContext;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_process_1_1_missing_files_dialog.html">   36</a></span><span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">MissingFilesDialog</a> final : <span class="keyword">public</span> QDialog</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">MissingFilesDialog</a>(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>&amp; doc, QWidget* parent);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">~MissingFilesDialog</a>();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> nothingMissing(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_process.html">Process</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_process_1_1_missing_files_dialog.html">   39</a></span><span class="keyword">class </span>SCORE_LIB_PROCESS_EXPORT <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">MissingFilesDialog</a> final : <span class="keyword">public</span> QDialog</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">MissingFilesDialog</a>(<a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>&amp; doc, QWidget* parent);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="class_process_1_1_missing_files_dialog.html">~MissingFilesDialog</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> rescan();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span> searchFolder();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> locateSelected();</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> applyRelink();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> updateSummary();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">struct </span>Resolution</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    std::vector&lt;QString&gt; candidates;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">int</span> chosen{-1};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  };</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  QTreeWidgetItem* itemFor(<span class="keyword">const</span> QString&amp; storedPath) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  QPointer&lt;score::Document&gt; m_doc;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  QLabel* m_summary{};</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  QTreeWidget* m_files{};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  QPushButton* m_search{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  QPushButton* m_locate{};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  QPushButton* m_apply{};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> nothingMissing(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> rescan();</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> searchFolder();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> cancelSearch();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> finishSearch(<a class="code hl_class" href="class_process_1_1_file_index.html">FileIndex</a> index, <span class="keywordtype">bool</span> cancelled);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> updateSearchProgress();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> locateSelected();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> applyRelink();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">void</span> updateSummary();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">struct </span>Resolution</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::vector&lt;QString&gt; candidates;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">int</span> chosen{-1};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  };</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  QTreeWidgetItem* itemFor(<span class="keyword">const</span> QString&amp; storedPath) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  QPointer&lt;score::Document&gt; m_doc;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_struct" href="struct_process_1_1_file_report.html">FileReport</a> m_report;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  QHash&lt;QString, Resolution&gt; m_resolutions;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  QString m_lastSearchFolder;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  QLabel* m_summary{};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  QTreeWidget* m_files{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  QPushButton* m_search{};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  QPushButton* m_locate{};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  QPushButton* m_apply{};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  QWidget* m_progressRow{};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  QLabel* m_progress{};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  QPushButton* m_cancel{};</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  QTimer* m_progressTimer{};</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  std::shared_ptr&lt;FileScan&gt; m_scan;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  QString m_searchRoot;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <a class="code hl_struct" href="struct_process_1_1_file_report.html">FileReport</a> m_report;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  QHash&lt;QString, Resolution&gt; m_resolutions;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  QString m_lastSearchFolder;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-<div class="ttc" id="aclass_process_1_1_missing_files_dialog_html"><div class="ttname"><a href="class_process_1_1_missing_files_dialog.html">Process::MissingFilesDialog</a></div><div class="ttdoc">Lists what a document cannot find, and helps point it at the files.</div><div class="ttdef"><b>Definition</b> MissingFilesDialog.hpp:37</div></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="ttc" id="aclass_process_1_1_file_index_html"><div class="ttname"><a href="class_process_1_1_file_index.html">Process::FileIndex</a></div><div class="ttdef"><b>Definition</b> MissingFiles.hpp:48</div></div>
+<div class="ttc" id="aclass_process_1_1_missing_files_dialog_html"><div class="ttname"><a href="class_process_1_1_missing_files_dialog.html">Process::MissingFilesDialog</a></div><div class="ttdoc">Lists what a document cannot find, and helps point it at the files.</div><div class="ttdef"><b>Definition</b> MissingFilesDialog.hpp:40</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition</b> Document.hpp:51</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:108</div></div>

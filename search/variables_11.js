@@ -28,13 +28,14 @@ var searchData=
   ['standardubo_25',['standardUBO',['../classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669',1,'score::gfx::ProcessNode']]],
   ['startbit_26',['startBit',['../struct_protocols_1_1_c_a_n_1_1_signal.html#aeb125f164c50ed20591199da6ec453f5',1,'Protocols::CAN::Signal']]],
   ['state_27',['state',['../structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html#a39367654fbdc56d7162147fb1e88867a',1,'score::gfx::interop::VideoOutputStrategyConfig::state'],['../classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8',1,'score::gfx::RenderList::state']]],
-  ['state_5f_28',['state_',['../class_factor_oracle2_m_i_d_i_1_1_state.html#a23e4136902d5e16960eb9d9557622210',1,'FactorOracle2MIDI::State::state_'],['../class_factor_1_1_state.html#ae768654d3b25982c959dd93426388bdd',1,'Factor::State::state_']]],
+  ['state_5f_28',['state_',['../class_factor_1_1_state.html#ae768654d3b25982c959dd93426388bdd',1,'Factor::State::state_'],['../class_factor_oracle2_m_i_d_i_1_1_state.html#a23e4136902d5e16960eb9d9557622210',1,'FactorOracle2MIDI::State::state_']]],
   ['states_5f_29',['states_',['../class_factor_1_1_factor_oracle.html#a385f3abbac1c57ae78c0374cd7c0b4dc',1,'Factor::FactorOracle::states_'],['../class_factor_oracle2_m_i_d_i_1_1_factor_oracle2_m_i_d_i.html#a1aba170a9126a8a37b0dc29e960f505c',1,'FactorOracle2MIDI::FactorOracle2MIDI::states_']]],
   ['stepperwidth_30',['stepperWidth',['../classscore_1_1_q_graphics_combo.html#adcb5a109759bc05d7fa760ae93d33922',1,'score::QGraphicsCombo']]],
   ['storedpath_31',['storedPath',['../struct_process_1_1_file_entry.html#aa79bae7c9167c7ef18e7d8d576d6f7f9',1,'Process::FileEntry']]],
   ['stride_32',['stride',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#adc13ecab2a581243d1dc0866385e7ebe',1,'score::gfx::interop::HostPinnedSlot::stride'],['../structscore_1_1gfx_1_1interop_1_1_host_pinned_ring_config.html#a94af6a320678385de57cba3d0f48b93a',1,'score::gfx::interop::HostPinnedRingConfig::stride']]],
   ['submit_33',['submit',['../structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html#a2465bdae2a50bae248f26e9bafabbf12',1,'score::gfx::interop::PacedFramePump::Hooks']]],
   ['summary_34',['summary',['../struct_media_1_1_audio_file_1_1_view_handle.html#aaf5d46e675b066148e5f1d39f4e9ced7',1,'Media::AudioFile::ViewHandle']]],
-  ['symbol_5f_35',['symbol_',['../class_factor_1_1_single_transition.html#af18ae1c99e955eb56d43b84222a9adff',1,'Factor::SingleTransition::symbol_'],['../class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a38a6c8337cf38096480fd5e0fa002bc1',1,'FactorOracle2MIDI::SingleTransition::symbol_']]],
-  ['sysex_36',['sysex',['../struct_protocols_1_1_m_i_d_i_devices_1_1_preset.html#a2ba382d2a627a774b496bdcdf06c2db5',1,'Protocols::MIDIDevices::Preset']]]
+  ['switch_5frate_35',['switch_rate',['../class_patternist_1_1pattern__node.html#a6111f67e3f087370f34974b5c9a7cb77',1,'Patternist::pattern_node']]],
+  ['symbol_5f_36',['symbol_',['../class_factor_1_1_single_transition.html#af18ae1c99e955eb56d43b84222a9adff',1,'Factor::SingleTransition::symbol_'],['../class_factor_oracle2_m_i_d_i_1_1_single_transition.html#a38a6c8337cf38096480fd5e0fa002bc1',1,'FactorOracle2MIDI::SingleTransition::symbol_']]],
+  ['sysex_37',['sysex',['../struct_protocols_1_1_m_i_d_i_devices_1_1_preset.html#a2ba382d2a627a774b496bdcdf06c2db5',1,'Protocols::MIDIDevices::Preset']]]
 ];

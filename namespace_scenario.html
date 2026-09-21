@@ -1257,6 +1257,20 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3637fcafcd2a63cc51bb66d9ce78ed95" id="r_a3637fcafcd2a63cc51bb66d9ce78ed95"><td class="memItemLeft" align="right" valign="top"><a id="a3637fcafcd2a63cc51bb66d9ce78ed95" name="a3637fcafcd2a63cc51bb66d9ce78ed95"></a>
 <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>closestParentProcessBeforeInterval</b> (const QObject *obj)</td></tr>
 <tr class="separator:a3637fcafcd2a63cc51bb66d9ce78ed95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84532f5137adb8603989f9b63e9e1ff" id="r_aa84532f5137adb8603989f9b63e9e1ff"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#aa84532f5137adb8603989f9b63e9e1ff">firstInletOfType</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, Process::PortType type) noexcept</td></tr>
+<tr class="separator:aa84532f5137adb8603989f9b63e9e1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45dfab5385c4fe2a2bdd1228375e813" id="r_aa45dfab5385c4fe2a2bdd1228375e813"><td class="memItemLeft" align="right" valign="top"><a id="aa45dfab5385c4fe2a2bdd1228375e813" name="aa45dfab5385c4fe2a2bdd1228375e813"></a>
+const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstOutletOfType</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, Process::PortType type) noexcept</td></tr>
+<tr class="separator:aa45dfab5385c4fe2a2bdd1228375e813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c4c609814eb9704567389999100605c" id="r_a5c4c609814eb9704567389999100605c"><td class="memItemLeft" align="right" valign="top"><a id="a5c4c609814eb9704567389999100605c" name="a5c4c609814eb9704567389999100605c"></a>
+const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstSignalOutlet</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc) noexcept</td></tr>
+<tr class="separator:a5c4c609814eb9704567389999100605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf27758d067db097769f47052425e38" id="r_accf27758d067db097769f47052425e38"><td class="memItemLeft" align="right" valign="top"><a id="accf27758d067db097769f47052425e38" name="accf27758d067db097769f47052425e38"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canInsertProcessInCable</b> (const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;ctx, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;cbl)</td></tr>
+<tr class="memdesc:accf27758d067db097769f47052425e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether insertProcessInCable would connect anything at all, for drop feedback. <br /></td></tr>
+<tr class="separator:accf27758d067db097769f47052425e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e9f919537c28508c3f8530ae353dbe" id="r_ad4e9f919537c28508c3f8530ae353dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_scenario.html#ad4e9f919537c28508c3f8530ae353dbe">insertProcessInCable</a> (<a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;disp, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;ctx, const <a class="el" href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a> &amp;model, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;cbl)</td></tr>
+<tr class="separator:ad4e9f919537c28508c3f8530ae353dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a501e2118951b4a9d69438a7786de6" id="r_a71a501e2118951b4a9d69438a7786de6"><td class="memItemLeft" align="right" valign="top"><a id="a71a501e2118951b4a9d69438a7786de6" name="a71a501e2118951b4a9d69438a7786de6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createProcessInCable</b> (const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;context, const <a class="el" href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a> &amp;model, const <a class="el" href="struct_process_1_1_process_data.html">Process::ProcessData</a> &amp;dat, std::optional&lt; <a class="el" href="struct_time_val.html">TimeVal</a> &gt; tv, std::function&lt; void(<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;)&gt; setup, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;cbl)</td></tr>
 <tr class="separator:a71a501e2118951b4a9d69438a7786de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1266,15 +1280,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetInCable</b>
 <tr class="memitem:addf8924383a5dc7c632886fd922d35f3" id="r_addf8924383a5dc7c632886fd922d35f3"><td class="memItemLeft" align="right" valign="top"><a id="addf8924383a5dc7c632886fd922d35f3" name="addf8924383a5dc7c632886fd922d35f3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createProcessBeforePort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_process_data.html">Process::ProcessData</a> &amp;dat, std::optional&lt; <a class="el" href="struct_time_val.html">TimeVal</a> &gt; tv, std::function&lt; void(<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;)&gt; setup, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> &amp;p)</td></tr>
 <tr class="separator:addf8924383a5dc7c632886fd922d35f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62616b340a212b74ab513bd42bde435" id="r_ab62616b340a212b74ab513bd42bde435"><td class="memItemLeft" align="right" valign="top"><a id="ab62616b340a212b74ab513bd42bde435" name="ab62616b340a212b74ab513bd42bde435"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createProcessAfterPort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_process_data.html">Process::ProcessData</a> &amp;dat, std::optional&lt; <a class="el" href="struct_time_val.html">TimeVal</a> &gt; tv, std::function&lt; void(<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;)&gt; setup, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p)</td></tr>
-<tr class="separator:ab62616b340a212b74ab513bd42bde435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3b96b433cf4e6bf683dde84c7c7643" id="r_a6c3b96b433cf4e6bf683dde84c7c7643"><td class="memItemLeft" align="right" valign="top"><a id="a6c3b96b433cf4e6bf683dde84c7c7643" name="a6c3b96b433cf4e6bf683dde84c7c7643"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>createProcessAfterPort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_process_data.html">Process::ProcessData</a> &amp;dat, std::optional&lt; <a class="el" href="struct_time_val.html">TimeVal</a> &gt; tv, std::function&lt; void(<a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;, <a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;)&gt; setup, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p, bool tryOtherOutlets)</td></tr>
+<tr class="separator:a6c3b96b433cf4e6bf683dde84c7c7643"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543cd30ca9c3130fa7398ca7953ffc2d" id="r_a543cd30ca9c3130fa7398ca7953ffc2d"><td class="memItemLeft" align="right" valign="top"><a id="a543cd30ca9c3130fa7398ca7953ffc2d" name="a543cd30ca9c3130fa7398ca7953ffc2d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetBeforePort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;dat, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> &amp;p)</td></tr>
 <tr class="separator:a543cd30ca9c3130fa7398ca7953ffc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec925ea441958113fa3a871a2775aa1" id="r_abec925ea441958113fa3a871a2775aa1"><td class="memItemLeft" align="right" valign="top"><a id="abec925ea441958113fa3a871a2775aa1" name="abec925ea441958113fa3a871a2775aa1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetAfterPort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;dat, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p)</td></tr>
-<tr class="separator:abec925ea441958113fa3a871a2775aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7464a1af25b403f94f1c552c7644b98" id="r_aa7464a1af25b403f94f1c552c7644b98"><td class="memItemLeft" align="right" valign="top"><a id="aa7464a1af25b403f94f1c552c7644b98" name="aa7464a1af25b403f94f1c552c7644b98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresetAfterPort</b> (<a class="el" href="class_scenario_1_1_scenario_document_presenter.html">Scenario::ScenarioDocumentPresenter</a> &amp;parent, const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;dat, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;parentProcess, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p, bool tryOtherOutlets)</td></tr>
+<tr class="separator:aa7464a1af25b403f94f1c552c7644b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e625b255abe4a0e220e0cf18ce32630" id="r_a2e625b255abe4a0e220e0cf18ce32630"><td class="memItemLeft" align="right" valign="top"><a id="a2e625b255abe4a0e220e0cf18ce32630" name="a2e625b255abe4a0e220e0cf18ce32630"></a>
 QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>renderSceneToSvg</b> (QGraphicsScene &amp;scene, const QString &amp;path, QRectF rect)</td></tr>
 <tr class="separator:a2e625b255abe4a0e220e0cf18ce32630"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1701,6 +1715,43 @@ constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>g_zoom_ba
 
 </div>
 </div>
+<a id="aa84532f5137adb8603989f9b63e9e1ff" name="aa84532f5137adb8603989f9b63e9e1ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84532f5137adb8603989f9b63e9e1ff">&#9670;&#160;</a></span>firstInletOfType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_process_1_1_inlet.html">Process::Inlet</a> * Scenario::firstInletOfType </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Process::PortType&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>First port of that type which carries signal flow: control ports are First port of that type, preferring signal ports over control ones. </p>
+
+</div>
+</div>
 <a id="ae5fa1f016f920bf0791a9bb04f2610c3" name="ae5fa1f016f920bf0791a9bb04f2610c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5fa1f016f920bf0791a9bb04f2610c3">&#9670;&#160;</a></span>freeProcessPosition()</h2>
 
@@ -1802,6 +1853,53 @@ constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>g_zoom_ba
 </table>
 </div><div class="memdoc">
 <p>Slides <code>desired</code> downwards until a node of that size does not overlap any process of <code>model</code>. The X is left where the caller put it, so a node chained after another one stays next to it however much is drawn further to the right. </p>
+
+</div>
+</div>
+<a id="ad4e9f919537c28508c3f8530ae353dbe" name="ad4e9f919537c28508c3f8530ae353dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4e9f919537c28508c3f8530ae353dbe">&#9670;&#160;</a></span>insertProcessInCable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::insertProcessInCable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1_dispatcher.html">score::Dispatcher</a> &amp;&#160;</td>
+          <td class="paramname"><em>disp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_scenario_1_1_scenario_document_model.html">Scenario::ScenarioDocumentModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>proc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;&#160;</td>
+          <td class="paramname"><em>cbl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Insert <code>proc</code> in <code>cbl</code> when it has both an inlet and an outlet of the cable's type; when only one end matches, leave the cable alone and just connect that end. </p>
 
 </div>
 </div>

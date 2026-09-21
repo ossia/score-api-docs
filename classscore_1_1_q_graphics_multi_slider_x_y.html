@@ -120,6 +120,16 @@ Inheritance diagram for score::QGraphicsMultiSliderXY:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af7ad304642e8720c686b8bd45b2a92d8" id="r_af7ad304642e8720c686b8bd45b2a92d8"><td class="memItemLeft" align="right" valign="top"><a id="af7ad304642e8720c686b8bd45b2a92d8" name="af7ad304642e8720c686b8bd45b2a92d8"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>cursorRect</b> (const ossia::vec2f &amp;cursor) const noexcept</td></tr>
+<tr class="memdesc:af7ad304642e8720c686b8bd45b2a92d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawn box of a cursor, in item coordinates - note that y is flipped. <br /></td></tr>
+<tr class="separator:af7ad304642e8720c686b8bd45b2a92d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91809641230049fdfbe394bc7d74dc37" id="r_a91809641230049fdfbe394bc7d74dc37"><td class="memItemLeft" align="right" valign="top"><a id="a91809641230049fdfbe394bc7d74dc37" name="a91809641230049fdfbe394bc7d74dc37"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>cursorPickRect</b> (const ossia::vec2f &amp;cursor) const noexcept</td></tr>
+<tr class="memdesc:a91809641230049fdfbe394bc7d74dc37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drawn box grown by a small margin, so that the whole node can be grabbed. <br /></td></tr>
+<tr class="separator:a91809641230049fdfbe394bc7d74dc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c6f5270f02291ee3968ca6f4cf6d0c" id="r_a40c6f5270f02291ee3968ca6f4cf6d0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_q_graphics_multi_slider_x_y.html#a40c6f5270f02291ee3968ca6f4cf6d0c">cursorAt</a> (QPointF p, bool margin=true) const noexcept</td></tr>
+<tr class="separator:a40c6f5270f02291ee3968ca6f4cf6d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7002ec987c9173df2bb8965d273586a8" id="r_a7002ec987c9173df2bb8965d273586a8"><td class="memItemLeft" align="right" valign="top"><a id="a7002ec987c9173df2bb8965d273586a8" name="a7002ec987c9173df2bb8965d273586a8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>QGraphicsMultiSliderXY</b> (QGraphicsItem *parent)</td></tr>
 <tr class="separator:a7002ec987c9173df2bb8965d273586a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +210,44 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a69973f123b33ed73f83b5a5308fc4df9"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>GridWidget</b></td></tr>
 <tr class="separator:a69973f123b33ed73f83b5a5308fc4df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a40c6f5270f02291ee3968ca6f4cf6d0c" name="a40c6f5270f02291ee3968ca6f4cf6d0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c6f5270f02291ee3968ca6f4cf6d0c">&#9670;&#160;</a></span>cursorAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::QGraphicsMultiSliderXY::cursorAt </td>
+          <td>(</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>margin</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Cursor under p, nearest centre first when several overlap, or -1 Index of the cursor at <code>p</code>, nearest centre first. <code>margin</code> adds the grab tolerance; deletion passes false so it cannot reach outside what is drawn. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_q_graphics_multi_slider_x_y_8hpp_source.html">QGraphicsMultiSliderXY.hpp</a></li>
 <li><b>QGraphicsMultiSliderXY.cpp</b></li>
