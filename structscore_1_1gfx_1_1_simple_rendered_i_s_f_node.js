@@ -2,6 +2,7 @@ var structscore_1_1gfx_1_1_simple_rendered_i_s_f_node =
 [
     [ "addInputEdge", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ad4fc386d45b28aa2abb211ed65948392", null ],
     [ "addOutputPass", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ab1579121167c57dbae6de8425ee3ab5b", null ],
+    [ "depthCompare", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#abd76670509bf21c33ff2bcd54c557281", null ],
     [ "hasOutputPassForEdge", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#aeaa95e78f4ad172f029231b8941d38c8", null ],
     [ "initState", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ac8e9e69e03ce55b5249531eaacad7153", null ],
     [ "releaseState", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#acc003df5f72587fdd101d46b651a91fc", null ],

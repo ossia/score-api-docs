@@ -117,6 +117,14 @@ QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>buffer</b> {}
 <tr class="memitem:a1821d2fcbbe07eaba9e5740fef84ea01" id="r_a1821d2fcbbe07eaba9e5740fef84ea01"><td class="memItemLeft" align="right" valign="top"><a id="a1821d2fcbbe07eaba9e5740fef84ea01" name="a1821d2fcbbe07eaba9e5740fef84ea01"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>read_buffer</b> {}</td></tr>
 <tr class="separator:a1821d2fcbbe07eaba9e5740fef84ea01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a78a6a3fb10ffc0030d41c609716c8" id="r_ae5a78a6a3fb10ffc0030d41c609716c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_attribute_s_s_b_o.html#ae5a78a6a3fb10ffc0030d41c609716c8">read_buffer_is_snapshot</a> {false}</td></tr>
+<tr class="separator:ae5a78a6a3fb10ffc0030d41c609716c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a4df80ca305be1e3426676d698a895a" id="r_a8a4df80ca305be1e3426676d698a895a"><td class="memItemLeft" align="right" valign="top"><a id="a8a4df80ca305be1e3426676d698a895a" name="a8a4df80ca305be1e3426676d698a895a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>warned_size_mismatch</b> {false}</td></tr>
+<tr class="separator:a8a4df80ca305be1e3426676d698a895a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653052fbcbdbafa811ea12586943afda" id="r_a653052fbcbdbafa811ea12586943afda"><td class="memItemLeft" align="right" valign="top"><a id="a653052fbcbdbafa811ea12586943afda" name="a653052fbcbdbafa811ea12586943afda"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>warned_borrowed_pair</b> {false}</td></tr>
+<tr class="separator:a653052fbcbdbafa811ea12586943afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add55e85eb10975fc151c74b5cdd9ddcb" id="r_add55e85eb10975fc151c74b5cdd9ddcb"><td class="memItemLeft" align="right" valign="top"><a id="add55e85eb10975fc151c74b5cdd9ddcb" name="add55e85eb10975fc151c74b5cdd9ddcb"></a>
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> {}</td></tr>
 <tr class="separator:add55e85eb10975fc151c74b5cdd9ddcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +159,22 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>scatterStagingSize
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatterPending</b> {false}</td></tr>
 <tr class="separator:ab487a0143d7294c974e9f13ea668581d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae5a78a6a3fb10ffc0030d41c609716c8" name="ae5a78a6a3fb10ffc0030d41c609716c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a78a6a3fb10ffc0030d41c609716c8">&#9670;&#160;</a></span>read_buffer_is_snapshot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderedCSFNode::GeometryBinding::AttributeSSBO::read_buffer_is_snapshot {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>read_buffer is a per-frame snapshot, not a ping-pong half: a node promoted to owning a loop must trade it for a real pair. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_rendered_c_s_f_node_8hpp_source.html">RenderedCSFNode.hpp</a></li>
 </ul>

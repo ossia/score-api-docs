@@ -1,5 +1,12 @@
 var NAVTREEINDEX28 =
 {
+"plugins_2score-plugin-clap_2_clap_2_window_8hpp_source.html":[13,0,0,2,9,0,6],
+"plugins_2score-plugin-controlsurface_2_control_surface_2_metadata_8hpp_source.html":[13,0,0,2,10,0,5],
+"plugins_2score-plugin-controlsurface_2_control_surface_2_presenter_8hpp_source.html":[13,0,0,2,10,0,6],
+"plugins_2score-plugin-controlsurface_2_control_surface_2commands_8hpp_source.html":[13,0,0,2,10,0,1],
+"plugins_2score-plugin-engine_2_execution_2_document_plugin_8hpp_source.html":[13,0,0,2,14,1,6],
+"plugins_2score-plugin-faust_2_faust_2commands_8hpp_source.html":[13,0,0,2,15,0,0],
+"plugins_2score-plugin-gfx_2_gfx_2_c_s_f_2_metadata_8hpp_source.html":[13,0,0,2,17,1,0,3],
 "plugins_2score-plugin-gfx_2_gfx_2_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,1,3],
 "plugins_2score-plugin-gfx_2_gfx_2_geometry_filter_2_metadata_8hpp_source.html":[13,0,0,2,17,1,2,3],
 "plugins_2score-plugin-gfx_2_gfx_2_graph_2_window_8hpp_source.html":[13,0,0,2,17,1,4,65],
@@ -242,12 +249,5 @@ var NAVTREEINDEX28 =
 "score__plugin__mapping_8hpp_source.html":[13,0,0,2,23,1],
 "score__plugin__media_8hpp_source.html":[13,0,0,2,24,3],
 "score__plugin__midi_8hpp_source.html":[13,0,0,2,25,2],
-"score__plugin__nodal_8hpp_source.html":[13,0,0,2,26,1],
-"score__plugin__packagemanager_8hpp_source.html":[13,0,0,2,27,1],
-"score__plugin__pd_8hpp_source.html":[13,0,0,2,28,1],
-"score__plugin__protocols_8hpp_source.html":[13,0,0,2,29,1],
-"score__plugin__recording_8hpp_source.html":[13,0,0,2,30,1],
-"score__plugin__remotecontrol_8hpp_source.html":[13,0,0,2,31,2],
-"score__plugin__scenario_8hpp_source.html":[13,0,0,2,32,6],
-"score__plugin__spline3d_8hpp_source.html":[13,0,0,2,34,1]
+"score__plugin__nodal_8hpp_source.html":[13,0,0,2,26,1]
 };

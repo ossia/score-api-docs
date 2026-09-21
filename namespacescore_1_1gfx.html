@@ -406,6 +406,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_n_v24_decoder.html">NV24Decoder</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decodes NV24 / NV42 semi-planar 4:4:4 8-bit videos.  <a href="structscore_1_1gfx_1_1_n_v24_decoder.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_offscreen_frame.html">OffscreenFrame</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RAII bracket for QRhi::beginOffscreenFrame / endOffscreenFrame.  <a href="structscore_1_1gfx_1_1_offscreen_frame.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a></td></tr>
@@ -562,6 +565,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_skeleton_g_p_u.html">SkeletonGPU</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_std430_type_info.html">Std430TypeInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_swap_chain_frame_guard.html">SwapChainFrameGuard</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a swapchain frame if the scope is left without presenting it.  <a href="structscore_1_1gfx_1_1_swap_chain_frame_guard.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_texgen_node.html">TexgenNode</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1205,6 +1211,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>remapPipelineVertexIn
 <tr class="memitem:a9730457c4347a92b074fbb88360776b5" id="r_a9730457c4347a92b074fbb88360776b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a9730457c4347a92b074fbb88360776b5">remapPipelineVertexInputs</a> (QRhiGraphicsPipeline &amp;pip, const QShader &amp;vertexShader, const ossia::geometry &amp;geom, const isf::descriptor &amp;desc, QRhi &amp;rhi, <a class="el" href="classscore_1_1gfx_1_1_vertex_fallback_pool.html">VertexFallbackPool</a> &amp;pool, QRhiResourceUpdateBatch &amp;batch, <a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> &amp;outPlan)</td></tr>
 <tr class="memdesc:a9730457c4347a92b074fbb88360776b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fallback-aware overload: the strict-matching behaviour of the overload above, extended so VERTEX_INPUTS entries with "REQUIRED": false silently resolve to a shared identity buffer from the pool when their semantic is absent upstream.  <br /></td></tr>
 <tr class="separator:a9730457c4347a92b074fbb88360776b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba741ae33a5ad6874a80868123c4e96" id="r_a3ba741ae33a5ad6874a80868123c4e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a3ba741ae33a5ad6874a80868123c4e96">dropTrailingOrphanVertexBindings</a> (QRhiVertexInputLayout &amp;layout) noexcept</td></tr>
+<tr class="separator:a3ba741ae33a5ad6874a80868123c4e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df4975977ddeac60400910db0264c96" id="r_a6df4975977ddeac60400910db0264c96"><td class="memItemLeft" align="right" valign="top"><a id="a6df4975977ddeac60400910db0264c96" name="a6df4975977ddeac60400910db0264c96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>warnOrphanVertexBindings</b> (const QRhiVertexInputLayout &amp;layout, const char *where) noexcept</td></tr>
+<tr class="separator:a6df4975977ddeac60400910db0264c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b9fe885aafe546214b24385dda52e77" id="r_a5b9fe885aafe546214b24385dda52e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_pipeline.html">Pipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77">buildPipeline</a> (const <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;rt, QRhiShaderResourceBindings *srb)</td></tr>
 <tr class="memdesc:a5b9fe885aafe546214b24385dda52e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lower-level buildPipeline variant: bring your own SRB.  <br /></td></tr>
 <tr class="separator:a5b9fe885aafe546214b24385dda52e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2709,6 +2720,33 @@ template&lt;typename CB  = QRhiCommandBuffer&gt; </div>
 <p>Draw a mesh, using indirect multi-draw when available in <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>. </p>
 <p>When <code>bufs.useIndirectDraw</code> is true (and Qt &gt;= 6.12), dispatches to <code>cb.drawIndexedIndirect</code> / <code>cb.drawIndirect</code> with the offset/count/stride stored in <code>bufs</code>. Otherwise falls back to the mesh's standard <code>draw()</code>.</p>
 <p>This is the main draw entry point for ISF / RawRaster / Scene renderers so that they can transparently support multi-draw indirect just by wiring an indirect buffer into <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>. </p>
+
+</div>
+</div>
+<a id="a3ba741ae33a5ad6874a80868123c4e96" name="a3ba741ae33a5ad6874a80868123c4e96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba741ae33a5ad6874a80868123c4e96">&#9670;&#160;</a></span>dropTrailingOrphanVertexBindings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::dropTrailingOrphanVertexBindings </td>
+          <td>(</td>
+          <td class="paramtype">QRhiVertexInputLayout &amp;&#160;</td>
+          <td class="paramname"><em>layout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Metal rejects a vertex buffer layout that no attribute reads; Vulkan and OpenGL accept it silently. </p>
 
 </div>
 </div>

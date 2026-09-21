@@ -434,7 +434,7 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </div><div class="memdoc">
 
 <p>Destroy the arena buffers via the owning <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
-<p>Every arena QRhiBuffer is routed through <code>RenderList::releaseBuffer</code> so the <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>'s bookkeeping sees the release and any other path that still holds a pointer to the buffer can't accidentally double- free it. Prefer this overload; call it from <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">RenderList::release()</a> before the QRhi teardown. </p>
+<p>Every arena QRhiBuffer is routed through <code><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ac4f4bd359c175d0e060f1b09ddda0dd3" title="Retire a buffer this render list&#39;s node owns.">RenderList::releaseBuffer</a></code> so the <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>'s bookkeeping sees the release and any other path that still holds a pointer to the buffer can't accidentally double- free it. Prefer this overload; call it from <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">RenderList::release()</a> before the QRhi teardown. </p>
 
 </div>
 </div>

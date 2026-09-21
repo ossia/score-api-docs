@@ -1464,8 +1464,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1513,8 +1513,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2577,6 +2577,7 @@ var hierarchy =
       [ "score::QGraphicsWaveformButton", "classscore_1_1_q_graphics_waveform_button.html", null ]
     ] ],
     [ "Nodes::Arpeggiator::OctaveMode", "struct_nodes_1_1_arpeggiator_1_1_octave_mode.html", null ],
+    [ "score::gfx::OffscreenFrame", "structscore_1_1gfx_1_1_offscreen_frame.html", null ],
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
     [ "LV2::on_start", "struct_l_v2_1_1on__start.html", null ],
     [ "score::OnlineExample", "structscore_1_1_online_example.html", null ],
@@ -2711,8 +2712,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -4779,6 +4780,7 @@ var hierarchy =
     ] ],
     [ "score::SubtypeVariant< Base, Args >", "classscore_1_1_subtype_variant.html", null ],
     [ "avnd_tools::PatternCombiner::sum", "structavnd__tools_1_1_pattern_combiner_1_1sum.html", null ],
+    [ "score::gfx::SwapChainFrameGuard", "structscore_1_1gfx_1_1_swap_chain_frame_guard.html", null ],
     [ "ao::Switch", "structao_1_1_switch.html", null ],
     [ "SyncInfo", "struct_sync_info.html", null ],
     [ "score::gfx::DMACaptureBackend::SyncMembership", "structscore_1_1gfx_1_1_d_m_a_capture_backend_1_1_sync_membership.html", null ],

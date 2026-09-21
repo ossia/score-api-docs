@@ -182,6 +182,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runInitialPas
 <tr class="memitem:a5b185737cf2421008e1ca8a4d9188634" id="r_a5b185737cf2421008e1ca8a4d9188634"><td class="memItemLeft" align="right" valign="top"><a id="a5b185737cf2421008e1ca8a4d9188634" name="a5b185737cf2421008e1ca8a4d9188634"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>runRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge)</td></tr>
 <tr class="separator:a5b185737cf2421008e1ca8a4d9188634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf61e69d0af5eb34b72c09a4f1301aa0" id="r_aaf61e69d0af5eb34b72c09a4f1301aa0"><td class="memItemLeft" align="right" valign="top">virtual QRhiGraphicsPipeline::CompareOp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#aaf61e69d0af5eb34b72c09a4f1301aa0">depthCompare</a> () const noexcept</td></tr>
+<tr class="memdesc:aaf61e69d0af5eb34b72c09a4f1301aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth compare this renderer's pipeline was built with.  <br /></td></tr>
+<tr class="separator:aaf61e69d0af5eb34b72c09a4f1301aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00c9cc3fa31204e95506913ae712b5e" id="r_ab00c9cc3fa31204e95506913ae712b5e"><td class="memItemLeft" align="right" valign="top"><a id="ab00c9cc3fa31204e95506913ae712b5e" name="ab00c9cc3fa31204e95506913ae712b5e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;)=0</td></tr>
 <tr class="separator:ab00c9cc3fa31204e95506913ae712b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -398,6 +401,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 <p>Create a pass for a new output edge (pipeline, SRB, processUBO). </p>
 
 <p>Reimplemented in <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html#ab65c6f9e546d32d06678dbd0889c408a">score::gfx::DirectVideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a2d39eaafbb5a4860c6ce2d8842ec3db1">score::gfx::GenericNodeRenderer</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node.html#afac510c710c859e1bf19e1f805963e9b">score::gfx::RenderedCSFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a58625afe20681b272b57a1e2db6e2b1f">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#ae3039c0b47186449974ab2a44b14b627">score::gfx::RenderedRawRasterPipelineNode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html#ab64a57a270bd58f6fc7b87bf270a60cd">score::gfx::SimpleRenderedVSANode</a>, <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#ab1579121167c57dbae6de8425ee3ab5b">score::gfx::SimpleRenderedISFNode</a>, <a class="el" href="classscore_1_1gfx_1_1_video_node_renderer.html#af23f0212ad42f26a692f305422795e9c">score::gfx::VideoNodeRenderer</a>, <a class="el" href="classscore_1_1gfx_1_1_d_m_a_capture_input_node_1_1_renderer.html#a54d48d61615f6565567d951c3606c4ec">score::gfx::DMACaptureInputNode::Renderer</a>, and <a class="el" href="class_gfx_1_1_window_capture_1_1_window_capture_node_1_1_renderer.html#aeaa31d525b5d5e89bb1a0b72a2c467fd">Gfx::WindowCapture::WindowCaptureNode::Renderer</a>.</p>
+
+</div>
+</div>
+<a id="aaf61e69d0af5eb34b72c09a4f1301aa0" name="aaf61e69d0af5eb34b72c09a4f1301aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf61e69d0af5eb34b72c09a4f1301aa0">&#9670;&#160;</a></span>depthCompare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QRhiGraphicsPipeline::CompareOp score::gfx::NodeRenderer::depthCompare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The depth compare this renderer's pipeline was built with. </p>
+
+<p>Reimplemented in <a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2dd534b345a7c739db2333c07f20b1bb">score::gfx::RenderedISFNode</a>, <a class="el" href="structscore_1_1gfx_1_1_rendered_raw_raster_pipeline_node.html#a5bac416d67b5fc5c5c76755e5c78741a">score::gfx::RenderedRawRasterPipelineNode</a>, and <a class="el" href="structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html#abd76670509bf21c33ff2bcd54c557281">score::gfx::SimpleRenderedISFNode</a>.</p>
 
 </div>
 </div>

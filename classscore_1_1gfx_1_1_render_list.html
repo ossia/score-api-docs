@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_render_list.html
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classscore_1_1gfx_1_1_render_list-members.html">List of all members</a>  </div>
@@ -150,19 +151,20 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (QRhiResourceUpdateBatch &amp;res)</td></tr>
 <tr class="memdesc:a6cafe12f314b850ea4c9a3f2a7454987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update / upload this <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>'s shared data. <br /></td></tr>
 <tr class="separator:a6cafe12f314b850ea4c9a3f2a7454987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ecfae9ee34b0cd147831df9d8769d11" id="r_a7ecfae9ee34b0cd147831df9d8769d11"><td class="memItemLeft" align="right" valign="top"><a id="a7ecfae9ee34b0cd147831df9d8769d11" name="a7ecfae9ee34b0cd147831df9d8769d11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (QRhiCommandBuffer &amp;commands, bool force=false)</td></tr>
-<tr class="memdesc:a7ecfae9ee34b0cd147831df9d8769d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render every node in order. <br /></td></tr>
-<tr class="separator:a7ecfae9ee34b0cd147831df9d8769d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12dab51c09ccd361eacca3355545b9dc" id="r_a12dab51c09ccd361eacca3355545b9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc">render</a> (QRhiCommandBuffer &amp;commands, bool force=false) noexcept</td></tr>
+<tr class="memdesc:a12dab51c09ccd361eacca3355545b9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render every node in order.  <br /></td></tr>
+<tr class="separator:a12dab51c09ccd361eacca3355545b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4565b446ad3521c0912545783cdc886" id="r_aa4565b446ad3521c0912545783cdc886"><td class="memItemLeft" align="right" valign="top">QRhiCommandBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aa4565b446ad3521c0912545783cdc886">currentCommandBuffer</a> () const noexcept</td></tr>
 <tr class="separator:aa4565b446ad3521c0912545783cdc886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cde7b19c5eee5009f717644af96ffd" id="r_a37cde7b19c5eee5009f717644af96ffd"><td class="memItemLeft" align="right" valign="top"><a id="a37cde7b19c5eee5009f717644af96ffd" name="a37cde7b19c5eee5009f717644af96ffd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="memdesc:a37cde7b19c5eee5009f717644af96ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release GPU resources owned by this render list. <br /></td></tr>
 <tr class="separator:a37cde7b19c5eee5009f717644af96ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f4bd359c175d0e060f1b09ddda0dd3" id="r_ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="memItemLeft" align="right" valign="top"><a id="ac4f4bd359c175d0e060f1b09ddda0dd3" name="ac4f4bd359c175d0e060f1b09ddda0dd3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseBuffer</b> (QRhiBuffer *buf)</td></tr>
+<tr class="memitem:ac4f4bd359c175d0e060f1b09ddda0dd3" id="r_ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ac4f4bd359c175d0e060f1b09ddda0dd3">releaseBuffer</a> (QRhiBuffer *buf)</td></tr>
+<tr class="memdesc:ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retire a buffer this render list's node owns.  <br /></td></tr>
 <tr class="separator:ac4f4bd359c175d0e060f1b09ddda0dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae00caf4de4347ba94f93f4eb93536210" id="r_ae00caf4de4347ba94f93f4eb93536210"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ae00caf4de4347ba94f93f4eb93536210">checkBindingsLive</a> (const QRhiShaderResourceBindings &amp;srb, const char *where) const noexcept</td></tr>
+<tr class="separator:ae00caf4de4347ba94f93f4eb93536210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe481e0bfc451d77de8d2fa8ed5d270f" id="r_afe481e0bfc451d77de8d2fa8ed5d270f"><td class="memItemLeft" align="right" valign="top"><a id="afe481e0bfc451d77de8d2fa8ed5d270f" name="afe481e0bfc451d77de8d2fa8ed5d270f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>maybeRebuild</b> (bool force=false)</td></tr>
 <tr class="memdesc:afe481e0bfc451d77de8d2fa8ed5d270f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the render size has changed in order to rebuild the pipelines. <br /></td></tr>
@@ -276,6 +278,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>removeInputRenderTarg
 <tr class="memdesc:aea6065b85db7c80c28e2a4c7df967a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the downstream render target size for a node.  <br /></td></tr>
 <tr class="separator:aea6065b85db7c80c28e2a4c7df967a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8e0490dda9ae6eef3d302b4a30e8afbd" id="r_a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd">adoptBuffer</a> (QRhiBuffer *buf)</td></tr>
+<tr class="memdesc:a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrow a buffer another node owns (a slot with owned == false).  <br /></td></tr>
+<tr class="separator:a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2349f97940ce1e11d97608279d7db4" id="r_a3e2349f97940ce1e11d97608279d7db4"><td class="memItemLeft" align="right" valign="top"><a id="a3e2349f97940ce1e11d97608279d7db4" name="a3e2349f97940ce1e11d97608279d7db4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>dropAdoptedBuffer</b> (QRhiBuffer *buf)</td></tr>
+<tr class="separator:a3e2349f97940ce1e11d97608279d7db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce409f7ea38a4fc94c50f3c452b391" id="r_afcce409f7ea38a4fc94c50f3c452b391"><td class="memItemLeft" align="right" valign="top"><a id="afcce409f7ea38a4fc94c50f3c452b391" name="afcce409f7ea38a4fc94c50f3c452b391"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>adoptedBufferCount</b> () noexcept</td></tr>
+<tr class="memdesc:afcce409f7ea38a4fc94c50f3c452b391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adoptions currently held, process-wide. Tests assert on this. <br /></td></tr>
+<tr class="separator:afcce409f7ea38a4fc94c50f3c452b391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c089c422e23c502d40f1392b6914ce" id="r_a04c089c422e23c502d40f1392b6914ce"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a04c089c422e23c502d40f1392b6914ce">isRetiredBuffer</a> (const QRhiBuffer *buf) noexcept</td></tr>
+<tr class="memdesc:a04c089c422e23c502d40f1392b6914ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffers this render list has retired, for the bind-time liveness check.  <br /></td></tr>
+<tr class="separator:a04c089c422e23c502d40f1392b6914ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf25c15756bf4d54404c5b2e8c0e4a1" id="r_a1bf25c15756bf4d54404c5b2e8c0e4a1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1bf25c15756bf4d54404c5b2e8c0e4a1">isRetiringBuffer</a> (const QRhiBuffer *buf) noexcept</td></tr>
+<tr class="separator:a1bf25c15756bf4d54404c5b2e8c0e4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c2ab65a9bf681765fb543c532885907" id="r_a2c2ab65a9bf681765fb543c532885907"><td class="memItemLeft" align="right" valign="top">static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a2c2ab65a9bf681765fb543c532885907">retiredBufferName</a> (const QRhiBuffer *buf)</td></tr>
+<tr class="separator:a2c2ab65a9bf681765fb543c532885907"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7610077957a464a12ea36213cb64068" id="r_af7610077957a464a12ea36213cb64068"><td class="memItemLeft" align="right" valign="top"><a id="af7610077957a464a12ea36213cb64068" name="af7610077957a464a12ea36213cb64068"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>retiredBufferCount</b> () noexcept</td></tr>
+<tr class="separator:af7610077957a464a12ea36213cb64068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30439c8846dbebc483f3cc54849a5d08" id="r_a30439c8846dbebc483f3cc54849a5d08"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a30439c8846dbebc483f3cc54849a5d08">noteBufferLive</a> (const QRhiBuffer *buf) noexcept</td></tr>
+<tr class="separator:a30439c8846dbebc483f3cc54849a5d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a7f1c98a7b69bdc0d3eaad456a0f20" id="r_af4a7f1c98a7b69bdc0d3eaad456a0f20"><td class="memItemLeft" align="right" valign="top"><a id="af4a7f1c98a7b69bdc0d3eaad456a0f20" name="af4a7f1c98a7b69bdc0d3eaad456a0f20"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>noteFrameCompleted</b> () noexcept</td></tr>
+<tr class="memdesc:af4a7f1c98a7b69bdc0d3eaad456a0f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the shared frame sequence and prune old retirements. <br /></td></tr>
+<tr class="separator:af4a7f1c98a7b69bdc0d3eaad456a0f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a0b1e6caec5312098d02f914a481db" id="r_a61a0b1e6caec5312098d02f914a481db"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a61a0b1e6caec5312098d02f914a481db">hasRetiredBinding</a> (const QRhiShaderResourceBindings &amp;srb) noexcept</td></tr>
+<tr class="separator:a61a0b1e6caec5312098d02f914a481db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60080e59855c64442d9bb6b1347798e" id="r_af60080e59855c64442d9bb6b1347798e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#af60080e59855c64442d9bb6b1347798e">strictBindingsEnabled</a> () noexcept</td></tr>
+<tr class="separator:af60080e59855c64442d9bb6b1347798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ba39dd678319abbad0a8f61659ff9d" id="r_a45ba39dd678319abbad0a8f61659ff9d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a45ba39dd678319abbad0a8f61659ff9d">staleBindingCount</a> () noexcept</td></tr>
+<tr class="separator:a45ba39dd678319abbad0a8f61659ff9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d02178d297bf485fc1883c2dc998d9f" id="r_a8d02178d297bf485fc1883c2dc998d9f"><td class="memItemLeft" align="right" valign="top"><a id="a8d02178d297bf485fc1883c2dc998d9f" name="a8d02178d297bf485fc1883c2dc998d9f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>resetStaleBindingCount</b> () noexcept</td></tr>
+<tr class="separator:a8d02178d297bf485fc1883c2dc998d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ae178a78f64300b29ba29beb21653e2b4" id="r_ae178a78f64300b29ba29beb21653e2b4"><td class="memItemLeft" align="right" valign="top"><a id="ae178a78f64300b29ba29beb21653e2b4" name="ae178a78f64300b29ba29beb21653e2b4"></a>
@@ -329,6 +369,36 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 </div>
 </div>
+<a id="a8e0490dda9ae6eef3d302b4a30e8afbd" name="a8e0490dda9ae6eef3d302b4a30e8afbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0490dda9ae6eef3d302b4a30e8afbd">&#9670;&#160;</a></span>adoptBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::adoptBuffer </td>
+          <td>(</td>
+          <td class="paramtype">QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Borrow a buffer another node owns (a slot with owned == false). </p>
+<p>Every adoption is a reference in a process-wide registry: the pointer is unique per QRhi and the owner is routinely on another render list, so the registry is shared the same way the retirement registry is. The consumer calls dropAdoptedBuffer() when its slot stops naming the buffer &ndash; it re-adopts, falls back to its own allocation, or releases its state &ndash; and an owner that has already released the buffer by then is what frees it.</p>
+<p>This is what makes the owned=false contract enforced rather than assumed: a buffer with a live adoption cannot be freed, whatever the owner does. </p>
+
+</div>
+</div>
 <a id="a96bec4f2145a1d59efb535ea65437a68" name="a96bec4f2145a1d59efb535ea65437a68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96bec4f2145a1d59efb535ea65437a68">&#9670;&#160;</a></span>assetTable()</h2>
 
@@ -357,6 +427,43 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 </div>
 </div>
+<a id="ae00caf4de4347ba94f93f4eb93536210" name="ae00caf4de4347ba94f93f4eb93536210"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae00caf4de4347ba94f93f4eb93536210">&#9670;&#160;</a></span>checkBindingsLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::checkBindingsLive </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiShaderResourceBindings &amp;&#160;</td>
+          <td class="paramname"><em>srb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True when no buffer bound by <code>srb</code> has been retired. Warns naming each offender. Reads only the binding list, never the buffer objects. </p>
+
+</div>
+</div>
 <a id="aa4565b446ad3521c0912545783cdc886" name="aa4565b446ad3521c0912545783cdc886"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4565b446ad3521c0912545783cdc886">&#9670;&#160;</a></span>currentCommandBuffer()</h2>
 
@@ -379,7 +486,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The command buffer <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11" title="Render every node in order.">render()</a> is currently recording into, or null outside a frame. Strategies that must record raw-API commands (the Vulkan host-import upload) need it at <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a> time, where only the resource batch is passed. </p>
+<p>The command buffer <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc" title="Render every node in order.">render()</a> is currently recording into, or null outside a frame. Strategies that must record raw-API commands (the Vulkan host-import upload) need it at <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a> time, where only the resource batch is passed. </p>
 
 </div>
 </div>
@@ -399,7 +506,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Submit the pending initial batch before destroying resources it may name. </p>
-<p>A QRhiResourceUpdateBatch stores raw QRhiBuffer / QRhiTexture pointers until it is committed, and QRhiResource::deleteLater() outside a frame deletes immediately. <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> mutations run between frames, so any path that tears down renderer resources while this batch is outstanding must call this first; otherwise the next <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11" title="Render every node in order.">render()</a> submits updates naming freed resources. </p>
+<p>A QRhiResourceUpdateBatch stores raw QRhiBuffer / QRhiTexture pointers until it is committed, and QRhiResource::deleteLater() outside a frame deletes immediately. <a class="el" href="structscore_1_1gfx_1_1_graph.html" title="Represents a graph of renderers.">Graph</a> mutations run between frames, so any path that tears down renderer resources while this batch is outstanding must call this first; otherwise the next <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc" title="Render every node in order.">render()</a> submits updates naming freed resources. </p>
 
 </div>
 </div>
@@ -428,6 +535,33 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 <p>Per-RenderList GPU-timing collector. </p>
 <p>Renderers wrap their begin/endPass regions in <code><a class="el" href="classscore_1_1gfx_1_1_scoped_gpu_timer.html" title="RAII helper that brackets a named pass region for GPU frame-debug.">ScopedGpuTimer</a></code> to attribute the CB-wide lastCompletedGpuTime to the named pass. The result is one frame stale — see <a class="el" href="_gpu_timing_8hpp_source.html">GpuTiming.hpp</a> for details. </p>
+
+</div>
+</div>
+<a id="a61a0b1e6caec5312098d02f914a481db" name="a61a0b1e6caec5312098d02f914a481db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61a0b1e6caec5312098d02f914a481db">&#9670;&#160;</a></span>hasRetiredBinding()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::hasRetiredBinding </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiShaderResourceBindings &amp;&#160;</td>
+          <td class="paramname"><em>srb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same question without the warning or the counter: for callers that are about to repair the binding rather than report it. </p>
 
 </div>
 </div>
@@ -518,6 +652,63 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 </div>
 </div>
+<a id="a04c089c422e23c502d40f1392b6914ce" name="a04c089c422e23c502d40f1392b6914ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c089c422e23c502d40f1392b6914ce">&#9670;&#160;</a></span>isRetiredBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::isRetiredBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Buffers this render list has retired, for the bind-time liveness check. </p>
+<p>A consumer that adopted a producer's buffer with owned=false keeps a raw pointer. If the producer retires it and the consumer never re-reads, the pointer stays in the consumer's shader resource bindings: the rebuild is gated on a hash of the pointers, and a pointer that goes dead without changing hashes the same. Qt cannot catch it either &ndash; its own generation check reads m_id off the resource, so a freed resource cannot report it.</p>
+<p>Recording the retirement gives a liveness oracle that does not dereference the pointer, which is what makes the failure deterministic instead of dependent on whether the freed chunk has been reused yet. True once the buffer has actually been freed. deleteLater() keeps the object alive until the end of the frame that retired it, so a binding made in that same frame still dereferences a live object: only a use in a LATER frame is a use-after-free. Counting the same-frame case made the oracle over-report by roughly an order of magnitude. </p>
+
+</div>
+</div>
+<a id="a1bf25c15756bf4d54404c5b2e8c0e4a1" name="a1bf25c15756bf4d54404c5b2e8c0e4a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bf25c15756bf4d54404c5b2e8c0e4a1">&#9670;&#160;</a></span>isRetiringBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::isRetiringBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True from the moment of retirement, same frame included: the slot should stop pointing at it even while the object is still alive. </p>
+
+</div>
+</div>
 <a id="a22a06c57b0931de15e4183b9a6459162" name="a22a06c57b0931de15e4183b9a6459162"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22a06c57b0931de15e4183b9a6459162">&#9670;&#160;</a></span>markBuilt()</h2>
 
@@ -569,7 +760,34 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the "any node requires depth" flag computed from the node graph. Mirrors what <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> recomputes; called from Graph::createRenderList so the freshly-built RL doesn't need a first-frame maybeRebuild to populate it. </p>
+<p>Set the "any node requires depth" flag computed from the node graph. Either direction invalidates the build: a rise leaves targets allocated without depth, a fall leaves every sink carrying a depth attachment nothing reads &ndash; 33 MB per sink at 4K, for the rest of the session. </p>
+
+</div>
+</div>
+<a id="a30439c8846dbebc483f3cc54849a5d08" name="a30439c8846dbebc483f3cc54849a5d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30439c8846dbebc483f3cc54849a5d08">&#9670;&#160;</a></span>noteBufferLive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::noteBufferLive </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Forget a retirement recorded at this address: the caller holds a buffer it created and has not released, so the allocator handed the freed address back and the retirement no longer describes the object there. Without this a recycled address reads as a use-after-free. </p>
 
 </div>
 </div>
@@ -666,6 +884,66 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 <p>Returns a reference to the registry that owns the Camera / Light / Material / PerDraw arena buffers. Source nodes (Camera, Light, PBRMesh, …) allocate a slot from this registry at construction and write their packed bytes into it at their own <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a>.</p>
 <p>Persist-across-rebuild contract: the registry is owned by the <a class="el" href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a> (OutputNode::m_registry) and survives <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> rebuilds — the same registry pointer is observed by both the pre- and post-rebuild <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> for a given <a class="el" href="classscore_1_1gfx_1_1_output_node.html" title="Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)">OutputNode</a>. Consumers that cache the registry pointer (e.g. ScenePreprocessor's m_registry) can compare it against the new RL's registry on <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> and skip the cache wipe when it is unchanged.</p>
 <p>Valid between <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> and <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">release()</a>. </p>
+
+</div>
+</div>
+<a id="ac4f4bd359c175d0e060f1b09ddda0dd3" name="ac4f4bd359c175d0e060f1b09ddda0dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4f4bd359c175d0e060f1b09ddda0dd3">&#9670;&#160;</a></span>releaseBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::releaseBuffer </td>
+          <td>(</td>
+          <td class="paramtype">QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retire a buffer this render list's node owns. </p>
+<p>The free is deferred while any consumer still holds the buffer through <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd" title="Borrow a buffer another node owns (a slot with owned == false).">adoptBuffer()</a>: the owner's release then only marks it orphaned, and the last dropAdoptedBuffer() frees it. A consumer that borrowed the handle therefore keeps binding a live object &ndash; the last contents its producer wrote &ndash; until it re-reads the producer's geometry and lets go, instead of binding a freed one. </p>
+
+</div>
+</div>
+<a id="a12dab51c09ccd361eacca3355545b9dc" name="a12dab51c09ccd361eacca3355545b9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12dab51c09ccd361eacca3355545b9dc">&#9670;&#160;</a></span>render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::render </td>
+          <td>(</td>
+          <td class="paramtype">QRhiCommandBuffer &amp;&#160;</td>
+          <td class="paramname"><em>commands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>force</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render every node in order. </p>
+<p>Never throws: a node that fails to build its pipeline, or any other exception raised while recording, is caught and reported here rather than escaping into the output node's frame bracket and, from there, into QCoreApplication::notify. </p>
 
 </div>
 </div>
@@ -832,6 +1110,33 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 </div>
 </div>
+<a id="a2c2ab65a9bf681765fb543c532885907" name="a2c2ab65a9bf681765fb543c532885907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2ab65a9bf681765fb543c532885907">&#9670;&#160;</a></span>retiredBufferName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray score::gfx::RenderList::retiredBufferName </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiBuffer *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Name the buffer carried at retirement, while it was still alive: reading name() off a retired buffer is the dereference this check exists to avoid. </p>
+
+</div>
+</div>
 <a id="a2dc50059329ca473a14a41d94577aca2" name="a2dc50059329ca473a14a41d94577aca2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dc50059329ca473a14a41d94577aca2">&#9670;&#160;</a></span>setInitialBatch()</h2>
 
@@ -858,6 +1163,58 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 <p>Store a resource update batch to be submitted on the next render frame. </p>
 <p>Used by incremental edge additions that happen after the first render frame (when the original m_initialBatch has already been consumed). </p>
+
+</div>
+</div>
+<a id="a45ba39dd678319abbad0a8f61659ff9d" name="a45ba39dd678319abbad0a8f61659ff9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ba39dd678319abbad0a8f61659ff9d">&#9670;&#160;</a></span>staleBindingCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::gfx::RenderList::staleBindingCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How many stale bindings checkBindingsLive has seen, process-wide. Tests assert on this: the render loop swallows the strict-mode exception and carries on, so a violation is invisible from the frame result alone. </p>
+
+</div>
+</div>
+<a id="af60080e59855c64442d9bb6b1347798e" name="af60080e59855c64442d9bb6b1347798e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af60080e59855c64442d9bb6b1347798e">&#9670;&#160;</a></span>strictBindingsEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::strictBindingsEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True when SCORE_GFX_STRICT_BINDINGS is set: a failed liveness check then throws instead of only warning. </p>
 
 </div>
 </div>

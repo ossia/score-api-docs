@@ -2,6 +2,7 @@ var classscore_1_1gfx_1_1_render_list =
 [
     [ "adaptImage", "classscore_1_1gfx_1_1_render_list.html#a4c05c20017599d13e6c64415ab6f5cb4", null ],
     [ "assetTable", "classscore_1_1gfx_1_1_render_list.html#a96bec4f2145a1d59efb535ea65437a68", null ],
+    [ "checkBindingsLive", "classscore_1_1gfx_1_1_render_list.html#ae00caf4de4347ba94f93f4eb93536210", null ],
     [ "clearRenderers", "classscore_1_1gfx_1_1_render_list.html#a576933e500bd9d6f77102ed2d3dd8153", null ],
     [ "currentCommandBuffer", "classscore_1_1gfx_1_1_render_list.html#aa4565b446ad3521c0912545783cdc886", null ],
     [ "defaultQuad", "classscore_1_1gfx_1_1_render_list.html#af6b0114789dc5aa29351866fb724fa95", null ],
@@ -23,8 +24,9 @@ var classscore_1_1gfx_1_1_render_list =
     [ "outputUBO", "classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e", null ],
     [ "registry", "classscore_1_1gfx_1_1_render_list.html#a0f136076fe4e851e70384962462100fd", null ],
     [ "release", "classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd", null ],
+    [ "releaseBuffer", "classscore_1_1gfx_1_1_render_list.html#ac4f4bd359c175d0e060f1b09ddda0dd3", null ],
     [ "removeInputRenderTarget", "classscore_1_1gfx_1_1_render_list.html#adc2548f21b54618374345eac0777b941", null ],
-    [ "render", "classscore_1_1gfx_1_1_render_list.html#a7ecfae9ee34b0cd147831df9d8769d11", null ],
+    [ "render", "classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc", null ],
     [ "renderTargetForInputPort", "classscore_1_1gfx_1_1_render_list.html#ade6c9eec96117aa9ad415aeed9dad218", null ],
     [ "renderTargetForOutput", "classscore_1_1gfx_1_1_render_list.html#a98d894ff589d1fa80d36a99e59801e8f", null ],
     [ "requiresDepth", "classscore_1_1gfx_1_1_render_list.html#a3a4fcc961c38477c0a912e16d8f3a7f1", null ],

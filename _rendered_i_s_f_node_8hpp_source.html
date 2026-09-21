@@ -147,83 +147,86 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_node_8hpp_source.html'
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> runRenderPass(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiCommandBuffer&amp; commands, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::pair&lt;Pass, Pass&gt; createPass(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, ossia::small_vector&lt;PassOutput, 1&gt;&amp; m_passSamplers,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      PassOutput target, <span class="keyword">const</span> isf::pass&amp; modelPass,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordtype">bool</span> previousPassIsPersistent);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::pair&lt;Pass, Pass&gt; createFinalPass(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, ossia::small_vector&lt;PassOutput, 1&gt;&amp; m_passSamplers,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&amp; target);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> initPasses(</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&amp; rt, <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge, QSize mainTexSize,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  PassOutput initPassSampler(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>&amp; n, <span class="keyword">const</span> isf::pass&amp; pass, <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QSize mainTexSize,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">struct </span>Passes</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ossia::small_vector&lt;Pass, 1&gt; passes;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    ossia::small_vector&lt;Pass, 1&gt; altPasses;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ossia::small_vector&lt;PassOutput, 1&gt; samplers;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  };</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::vector&lt;Sampler&gt;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  allSamplers(ossia::small_vector&lt;PassOutput, 1&gt;&amp;, <span class="keywordtype">int</span> mainOrAltPass) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  ossia::small_vector&lt;std::pair&lt;Edge*, Passes&gt;, 2&gt; m_passes;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  QRhiGraphicsPipeline::CompareOp <a class="code hl_function" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2dd534b345a7c739db2333c07f20b1bb">depthCompare</a>() <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  std::pair&lt;Pass, Pass&gt; createPass(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, ossia::small_vector&lt;PassOutput, 1&gt;&amp; m_passSamplers,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      PassOutput target, <span class="keyword">const</span> isf::pass&amp; modelPass,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordtype">bool</span> previousPassIsPersistent);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::pair&lt;Pass, Pass&gt; createFinalPass(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, ossia::small_vector&lt;PassOutput, 1&gt;&amp; m_passSamplers,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&amp; target);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> initPasses(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&amp; rt, <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge, QSize mainTexSize,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  PassOutput initPassSampler(</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>&amp; n, <span class="keyword">const</span> isf::pass&amp; pass, <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, QSize mainTexSize,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">struct </span>Passes</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    ossia::small_vector&lt;Pass, 1&gt; passes;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ossia::small_vector&lt;Pass, 1&gt; altPasses;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    ossia::small_vector&lt;PassOutput, 1&gt; samplers;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  std::vector&lt;Sampler&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  allSamplers(ossia::small_vector&lt;PassOutput, 1&gt;&amp;, <span class="keywordtype">int</span> mainOrAltPass) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>&amp; n;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  ossia::small_vector&lt;std::pair&lt;Edge*, Passes&gt;, 2&gt; m_passes;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  std::vector&lt;Sampler&gt; m_inputSamplers;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  std::vector&lt;Sampler&gt; m_audioSamplers;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  std::vector&lt;TextureRenderTarget&gt; m_innerPassTargets;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_i_s_f_node.html">ISFNode</a>&amp; n;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  std::vector&lt;Sampler&gt; m_inputSamplers;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  std::vector&lt;Sampler&gt; m_audioSamplers;</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>* m_mesh{};</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> m_meshBuffer{};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  QRhiBuffer* m_materialUBO{};</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">int</span> m_materialSize{};</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_audio_texture_upload.html">AudioTextureUpload</a> m_audioTex;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  std::vector&lt;TextureRenderTarget&gt; m_innerPassTargets;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>* m_mesh{};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> m_meshBuffer{};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  QRhiBuffer* m_materialUBO{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">int</span> m_materialSize{};</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="comment">// Graphics-visible storage buffers / images declared by the shader</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="comment">// (storage_input / csf_image_input / uniform_input). See IsfBindingsBuilder.</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_graphics_storage_resources.html">GraphicsStorageResources</a> m_storage;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="comment">// Multiview UBO: N × mat4 view-projection matrices, when MULTIVIEW &gt;= 2.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  QRhiBuffer* m_multiViewUBO{};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// First binding slot reserved for storage resources; determined lazily in</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="comment">// initPasses once the pass-sampler count is known (Rendered differs from</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// Simple by having one extra sampler per inner pass).</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">int</span> m_firstStorageBinding{-1};</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">// Guard so the persistent-SSBO state swap runs exactly once per frame even</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// when the node has multiple output edges (each triggers runRenderPass).</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// update() runs once per downstream sink, so once-per-frame work must be</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// keyed on the RenderList&#39;s frame counter, not a bool reset in update().</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  int64_t m_lastStorageSwapFrame{-1};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_audio_texture_upload.html">AudioTextureUpload</a> m_audioTex;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// Graphics-visible storage buffers / images declared by the shader</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="comment">// (storage_input / csf_image_input / uniform_input). See IsfBindingsBuilder.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_graphics_storage_resources.html">GraphicsStorageResources</a> m_storage;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Multiview UBO: N × mat4 view-projection matrices, when MULTIVIEW &gt;= 2.</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  QRhiBuffer* m_multiViewUBO{};</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// First binding slot reserved for storage resources; determined lazily in</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// initPasses once the pass-sampler count is known (Rendered differs from</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Simple by having one extra sampler per inner pass).</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">int</span> m_firstStorageBinding{-1};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// Guard so the persistent-SSBO state swap runs exactly once per frame even</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// when the node has multiple output edges (each triggers runRenderPass).</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// update() runs once per downstream sink, so once-per-frame work must be</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// keyed on the RenderList&#39;s frame counter, not a bool reset in update().</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  int64_t m_lastStorageSwapFrame{-1};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_i_s_f_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_i_s_f_node.html">score::gfx::ISFNode</a></div><div class="ttdoc">Data model for Interactive Shader Format filters.</div><div class="ttdef"><b>Definition</b> ISFNode.hpp:22</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:30</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:32</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_upload_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture_upload.html">score::gfx::AudioTextureUpload</a></div><div class="ttdef"><b>Definition</b> RenderedISFUtils.hpp:21</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:103</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:198</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_graphics_storage_resources_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_graphics_storage_resources.html">score::gfx::GraphicsStorageResources</a></div><div class="ttdoc">Aggregate of all graphics-visible storage resources for a node.</div><div class="ttdef"><b>Definition</b> IsfBindingsBuilder.hpp:115</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_mesh_buffers_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh_buffers.html">score::gfx::MeshBuffers</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:94</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition</b> Mesh.hpp:179</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:82</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:177</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_target_specs_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_target_specs.html">score::gfx::RenderTargetSpecs</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:56</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html">score::gfx::RenderedISFNode</a></div><div class="ttdef"><b>Definition</b> RenderedISFNode.hpp:10</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_a2dd534b345a7c739db2333c07f20b1bb"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2dd534b345a7c739db2333c07f20b1bb">score::gfx::RenderedISFNode::depthCompare</a></div><div class="ttdeci">QRhiGraphicsPipeline::CompareOp depthCompare() const noexcept override</div><div class="ttdoc">The depth compare this renderer's pipeline was built with.</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:1050</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_a44a08280ae1704ba1c1ddcc4ed11f247"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a44a08280ae1704ba1c1ddcc4ed11f247">score::gfx::RenderedISFNode::removeInputEdge</a></div><div class="ttdeci">void removeInputEdge(RenderList &amp;renderer, Edge &amp;edge) override</div><div class="ttdoc">Notify the renderer that an input edge was disconnected.</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:702</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_a4f4d2adc82903a4a851949779b0b137d"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a4f4d2adc82903a4a851949779b0b137d">score::gfx::RenderedISFNode::releaseState</a></div><div class="ttdeci">void releaseState(RenderList &amp;renderer) override</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:878</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_a58625afe20681b272b57a1e2db6e2b1f"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a58625afe20681b272b57a1e2db6e2b1f">score::gfx::RenderedISFNode::addOutputPass</a></div><div class="ttdeci">void addOutputPass(RenderList &amp;renderer, Edge &amp;edge, QRhiResourceUpdateBatch &amp;res) override</div><div class="ttdoc">Create a pass for a new output edge (pipeline, SRB, processUBO).</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:674</div></div>
@@ -233,7 +236,7 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_node_8hpp_source.html'
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_acdba4b3d9502028a6b39aaf759a960a8"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#acdba4b3d9502028a6b39aaf759a960a8">score::gfx::RenderedISFNode::updateInputSamplerFilter</a></div><div class="ttdeci">void updateInputSamplerFilter(const Port &amp;input, const RenderTargetSpecs &amp;spec) override</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:189</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_ad80ea7b614d6e9413b83eea2bc077917"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ad80ea7b614d6e9413b83eea2bc077917">score::gfx::RenderedISFNode::removeOutputPass</a></div><div class="ttdeci">void removeOutputPass(RenderList &amp;renderer, Edge &amp;edge) override</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:720</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_rendered_i_s_f_node_html_ae542161d38f5a69d761cc283482d4f56"><div class="ttname"><a href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#ae542161d38f5a69d761cc283482d4f56">score::gfx::RenderedISFNode::hasOutputPassForEdge</a></div><div class="ttdeci">bool hasOutputPassForEdge(Edge &amp;edge) const override</div><div class="ttdoc">Check if this renderer already has an output pass for the given edge.</div><div class="ttdef"><b>Definition</b> RenderedISFNode.cpp:754</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:152</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:247</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
