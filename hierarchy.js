@@ -1464,8 +1464,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1513,8 +1513,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2579,6 +2579,7 @@ var hierarchy =
     [ "Nodes::Arpeggiator::OctaveMode", "struct_nodes_1_1_arpeggiator_1_1_octave_mode.html", null ],
     [ "LV2::on_finish", "struct_l_v2_1_1on__finish.html", null ],
     [ "LV2::on_start", "struct_l_v2_1_1on__start.html", null ],
+    [ "score::OnlineExample", "structscore_1_1_online_example.html", null ],
     [ "OpaqueString", "class_opaque_string.html", [
       [ "StringKey< Process::LayerContextMenu >", "class_string_key.html", null ],
       [ "StringKey< Action >", "class_string_key.html", null ],
@@ -4038,6 +4039,7 @@ var hierarchy =
       [ "score::MinimalGUIApplication", "classscore_1_1_minimal_g_u_i_application.html", null ],
       [ "score::ModelMetadata", "classscore_1_1_model_metadata.html", null ],
       [ "score::ObjectLocker", "classscore_1_1_object_locker.html", null ],
+      [ "score::OnlineExamples", "classscore_1_1_online_examples.html", null ],
       [ "score::Presenter", "classscore_1_1_presenter.html", null ],
       [ "score::QGraphicsButton", "classscore_1_1_q_graphics_button.html", null ],
       [ "score::QGraphicsCheckBox", "classscore_1_1_q_graphics_check_box.html", null ],
@@ -4465,6 +4467,7 @@ var hierarchy =
       [ "WidgetWrapper< Widget >", "class_widget_wrapper.html", null ],
       [ "score::AboutWidget", "classscore_1_1_about_widget.html", null ],
       [ "score::BottomToolbarWidget", "classscore_1_1_bottom_toolbar_widget.html", null ],
+      [ "score::CategoryDrawer", "classscore_1_1_category_drawer.html", null ],
       [ "score::CentralViewStack", "classscore_1_1_central_view_stack.html", null ],
       [ "score::DoubleSlider", "classscore_1_1_double_slider.html", [
         [ "Mixer::AudioSliderWidget", "class_mixer_1_1_audio_slider_widget.html", null ],

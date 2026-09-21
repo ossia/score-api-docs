@@ -24,6 +24,7 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "MDMEnrollmentDetection.hpp", "_m_d_m_enrollment_detection_8hpp_source.html", null ],
     [ "lib/score/tools/Metadata.hpp", "lib_2score_2tools_2_metadata_8hpp_source.html", null ],
     [ "ObjectMatches.hpp", "_object_matches_8hpp_source.html", null ],
+    [ "Platforms.hpp", "_platforms_8hpp_source.html", null ],
     [ "PointerLock.hpp", "_pointer_lock_8hpp_source.html", null ],
     [ "PointerLockX11.hpp", "_pointer_lock_x11_8hpp_source.html", null ],
     [ "ProjectFiles.hpp", "_project_files_8hpp_source.html", null ],

@@ -203,7 +203,7 @@ var searchData=
   ['grey_200',['Grey',['../_video_pixel_format_8hpp.html#a21034b1612600049886fbf82a0034f79acaf3a042a037c064b7513ed640c22f77',1,'Video']]],
   ['grid_201',['Grid',['../class_nodes_1_1_pulse_to_note_1_1detail_1_1_grid.html',1,'Nodes::PulseToNote::detail']]],
   ['gridwidget_202',['GridWidget',['../structscore_1_1_grid_widget.html',1,'score']]],
-  ['group_203',['group',['../struct_protocols_1_1_m_i_d_i_devices_1_1_control.html#aec5da732bb5f3f9aeb2819ac1b455073',1,'Protocols::MIDIDevices::Control']]],
+  ['group_203',['group',['../structscore_1_1_online_example.html#ac1a0bfaa1c8589b05b8e8796277840f5',1,'score::OnlineExample::group'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_control.html#aec5da732bb5f3f9aeb2819ac1b455073',1,'Protocols::MIDIDevices::Control::group']]],
   ['gstreamer_5faudio_5fparameter_204',['gstreamer_audio_parameter',['../class_gfx_1_1_g_streamer_1_1gstreamer__audio__parameter.html',1,'Gfx::GStreamer']]],
   ['gstreamer_5fdevice_205',['gstreamer_device',['../class_gfx_1_1_g_streamer_1_1gstreamer__device.html',1,'Gfx::GStreamer']]],
   ['gstreamer_5foutput_5faudio_5fparameter_206',['gstreamer_output_audio_parameter',['../class_gfx_1_1_g_streamer_1_1gstreamer__output__audio__parameter.html',1,'Gfx::GStreamer']]],

@@ -138,6 +138,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestExit</b> ()</t
 <tr class="memitem:a2cf128835b994049014b7446f2c4f597" id="r_a2cf128835b994049014b7446f2c4f597"><td class="memItemLeft" align="right" valign="top"><a id="a2cf128835b994049014b7446f2c4f597" name="a2cf128835b994049014b7446f2c4f597"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forceExit</b> ()</td></tr>
 <tr class="separator:a2cf128835b994049014b7446f2c4f597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292f8d7091aa6789718f1daa8c4a7638" id="r_a292f8d7091aa6789718f1daa8c4a7638"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_interface.html#a292f8d7091aa6789718f1daa8c4a7638">showStartScreen</a> ()</td></tr>
+<tr class="memdesc:a292f8d7091aa6789718f1daa8c4a7638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implemented by the application that owns one; a no-op otherwise.  <br /></td></tr>
+<tr class="separator:a292f8d7091aa6789718f1daa8c4a7638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3db2df5130364a952401c6c6042d811" id="r_ab3db2df5130364a952401c6c6042d811"><td class="memItemLeft" align="right" valign="top"><a id="ab3db2df5130364a952401c6c6042d811" name="ab3db2df5130364a952401c6c6042d811"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ApplicationInterface</b> ()</td></tr>
 <tr class="separator:ab3db2df5130364a952401c6c6042d811"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,6 +226,35 @@ static <a class="el" href="classscore_1_1_application_interface.html">Applicatio
 <p>loadPluginData Utility method to load the minimal required data for plug-ins. </p>
 <p>For instance, the command system and the serialization system both require all the datas in the plug-ins to work correctly (else, a command may crash since a factory was not provided, or a file may not be able to be reloaded).</p>
 <p>This function takes care of loading the minimal set of elements from plugins so that all the base functions of the software will work correctly. </p>
+
+</div>
+</div>
+<a id="a292f8d7091aa6789718f1daa8c4a7638" name="a292f8d7091aa6789718f1daa8c4a7638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292f8d7091aa6789718f1daa8c4a7638">&#9670;&#160;</a></span>showStartScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::GUIApplicationInterface::showStartScreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented by the application that owns one; a no-op otherwise. </p>
+
+<p>Reimplemented in <a class="el" href="class_application.html#a31900659c3741cc3e899ed6561246e1d">Application</a>.</p>
 
 </div>
 </div>

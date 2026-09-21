@@ -184,9 +184,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveStack</b> ()</td>
 <tr class="memitem:a42cd542de448af7c9d8700ee5abddfea" id="r_a42cd542de448af7c9d8700ee5abddfea"><td class="memItemLeft" align="right" valign="top"><a id="a42cd542de448af7c9d8700ee5abddfea" name="a42cd542de448af7c9d8700ee5abddfea"></a>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadStack</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const QString &amp;)</td></tr>
 <tr class="separator:a42cd542de448af7c9d8700ee5abddfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a737be209b07adbd648301f574c2cc0d8" id="r_a737be209b07adbd648301f574c2cc0d8"><td class="memItemLeft" align="right" valign="top"><a id="a737be209b07adbd648301f574c2cc0d8" name="a737be209b07adbd648301f574c2cc0d8"></a>
-<a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadFile</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx)</td></tr>
-<tr class="separator:a737be209b07adbd648301f574c2cc0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40223b7fe4fc078ad0b92879d9d0a99c" id="r_a40223b7fe4fc078ad0b92879d9d0a99c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_manager.html#a40223b7fe4fc078ad0b92879d9d0a99c">loadFile</a> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, std::function&lt; void(<a class="el" href="classscore_1_1_document.html">Document</a> *)&gt; onDone={})</td></tr>
+<tr class="separator:a40223b7fe4fc078ad0b92879d9d0a99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a443c110005ab551e300a310c75150a74" id="r_a443c110005ab551e300a310c75150a74"><td class="memItemLeft" align="right" valign="top"><a id="a443c110005ab551e300a310c75150a74" name="a443c110005ab551e300a310c75150a74"></a>
 <a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>loadFile</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, const QString &amp;filename)</td></tr>
 <tr class="separator:a443c110005ab551e300a310c75150a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +268,36 @@ std::vector&lt; <a class="el" href="classscore_1_1_document.html">Document</a> *
 
 <p>checkAndUpdateJson </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean indicating if the document is loadable </dd></dl>
+
+</div>
+</div>
+<a id="a40223b7fe4fc078ad0b92879d9d0a99c" name="a40223b7fe4fc078ad0b92879d9d0a99c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40223b7fe4fc078ad0b92879d9d0a99c">&#9670;&#160;</a></span>loadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_document.html">Document</a> * score::DocumentManager::loadFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classscore_1_1_document.html">Document</a> *)&gt;&#160;</td>
+          <td class="paramname"><em>onDone</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Asks the user for a file and opens it.</p>
+<p><code>onDone</code> receives the document, or nullptr if the user cancelled or the file could not be read. The web file dialog answers through a callback, so there is nothing to return by the time this call ends. </p>
 
 </div>
 </div>

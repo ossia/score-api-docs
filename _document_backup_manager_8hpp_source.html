@@ -136,19 +136,23 @@ $(document).ready(function(){initNavTree('_document_backup_manager_8hpp_source.h
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> updateBackupData();</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  QTemporaryFile&amp; crashDataFile();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_class" href="classscore_1_1_command_backup_file.html">CommandBackupFile</a>&amp; crashCommandFile();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>&amp; m_doc;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QTemporaryFile m_modelFile;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_class" href="classscore_1_1_command_backup_file.html">CommandBackupFile</a>* m_commandFile{};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> storeModelData(<span class="keyword">const</span> QByteArray&amp; data);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QTemporaryFile&amp; crashDataFile();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_class" href="classscore_1_1_command_backup_file.html">CommandBackupFile</a>&amp; crashCommandFile();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_class" href="classscore_1_1_document.html">score::Document</a>&amp; m_doc;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  QString m_key;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  QTemporaryFile m_modelFile;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="classscore_1_1_command_backup_file.html">CommandBackupFile</a>* m_commandFile{};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 <div class="ttc" id="aclassscore_1_1_command_backup_file_html"><div class="ttname"><a href="classscore_1_1_command_backup_file.html">score::CommandBackupFile</a></div><div class="ttdoc">Abstraction over the backup of commands.</div><div class="ttdef"><b>Definition</b> CommandBackupFile.hpp:34</div></div>
 <div class="ttc" id="aclassscore_1_1_document_backup_manager_html"><div class="ttname"><a href="classscore_1_1_document_backup_manager.html">score::DocumentBackupManager</a></div><div class="ttdoc">Handles document backup to allow restoring if there is a crash.</div><div class="ttdef"><b>Definition</b> DocumentBackupManager.hpp:36</div></div>
 <div class="ttc" id="aclassscore_1_1_document_html"><div class="ttname"><a href="classscore_1_1_document.html">score::Document</a></div><div class="ttdoc">The Document class is the central part of the software.</div><div class="ttdef"><b>Definition</b> Document.hpp:51</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:117</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:108</div></div>
 <div class="ttc" id="astructscore_1_1_restorable_document_html"><div class="ttname"><a href="structscore_1_1_restorable_document.html">score::RestorableDocument</a></div><div class="ttdef"><b>Definition</b> DocumentBackups.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

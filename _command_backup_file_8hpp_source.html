@@ -154,13 +154,17 @@ $(document).ready(function(){initNavTree('_command_backup_file_8hpp_source.html'
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1_command_stack.html">score::CommandStack</a>&amp; m_stack;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_struct" href="structscore_1_1_command_stack_backup.html">CommandStackBackup</a> m_backup;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  QTemporaryFile m_file;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#if defined(__EMSCRIPTEN__)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  QString m_key;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  QTemporaryFile m_file;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>};</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclassscore_1_1_command_backup_file_html"><div class="ttname"><a href="classscore_1_1_command_backup_file.html">score::CommandBackupFile</a></div><div class="ttdoc">Abstraction over the backup of commands.</div><div class="ttdef"><b>Definition</b> CommandBackupFile.hpp:34</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_html"><div class="ttname"><a href="classscore_1_1_command_stack.html">score::CommandStack</a></div><div class="ttdef"><b>Definition</b> CommandStack.hpp:27</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:117</div></div>
+<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:108</div></div>
 <div class="ttc" id="astructscore_1_1_command_stack_backup_html"><div class="ttname"><a href="structscore_1_1_command_stack_backup.html">score::CommandStackBackup</a></div><div class="ttdoc">Serialized command stack data for backup / restore.</div><div class="ttdef"><b>Definition</b> CommandBackupFile.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

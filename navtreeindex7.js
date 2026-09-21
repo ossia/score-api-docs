@@ -1,7 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3],
+"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,15,5],
 "_unix_stream_widget_8hpp_source.html":[13,0,0,2,29,0,15,6],
-"_unused_8hpp_source.html":[13,0,0,1,1,12,36],
+"_unused_8hpp_source.html":[13,0,0,1,1,12,37],
 "_unused_files_8hpp_source.html":[13,0,0,2,3,4,57],
 "_unused_files_dialog_8hpp_source.html":[13,0,0,2,3,4,58],
 "_update_address_8hpp_source.html":[13,0,0,2,4,0,12],
@@ -45,7 +47,7 @@ var NAVTREEINDEX7 =
 "_vel_to_note_core_8hpp_source.html":[13,0,0,2,16,0,36],
 "_vendor_dma_registrar_8hpp.html":[13,0,0,2,17,1,4,2,46],
 "_vendor_dma_registrar_8hpp_source.html":[13,0,0,2,17,1,4,2,46],
-"_version_8hpp_source.html":[13,0,0,1,1,12,37],
+"_version_8hpp_source.html":[13,0,0,1,1,12,38],
 "_vertex_fallback_defaults_8hpp_source.html":[13,0,0,2,17,1,4,59],
 "_vertex_fallback_plan_8hpp_source.html":[13,0,0,2,17,1,4,60],
 "_vertex_fallback_pool_8hpp_source.html":[13,0,0,2,17,1,4,61],
@@ -225,7 +227,7 @@ var NAVTREEINDEX7 =
 "_wiimote_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,22,1],
 "_wiimote_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,22,2],
 "_wiimote_specific_settings_8hpp_source.html":[13,0,0,2,29,0,22,3],
-"_win_main_to_main_8hpp_source.html":[13,0,0,1,1,12,38],
+"_win_main_to_main_8hpp_source.html":[13,0,0,1,1,12,39],
 "_window_2_window_device_8hpp_source.html":[13,0,0,2,17,1,18,8],
 "_window_capture_backend_8hpp_source.html":[13,0,0,2,17,1,19,0],
 "_window_capture_device_8hpp_source.html":[13,0,0,2,17,1,19,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "_y_u_v420_p10_8hpp_source.html":[13,0,0,2,17,1,4,0,38],
 "_y_u_v420_p12_8hpp_source.html":[13,0,0,2,17,1,4,0,39],
 "_y_u_v420_packed_8hpp_source.html":[13,0,0,2,17,1,4,1,16],
-"_y_u_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,40],
-"_y_u_v422_p12_8hpp_source.html":[13,0,0,2,17,1,4,0,42],
-"_y_u_v440_8hpp_source.html":[13,0,0,2,17,1,4,0,43]
+"_y_u_v422_8hpp_source.html":[13,0,0,2,17,1,4,0,40]
 };

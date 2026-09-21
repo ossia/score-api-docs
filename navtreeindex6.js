@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"_script_widget_8hpp_source.html":[13,0,0,2,3,4,10,5],
+"_search_line_edit_8hpp_source.html":[13,0,0,1,1,13,23],
 "_search_replace_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,1],
 "_search_widget_8hpp_source.html":[13,0,0,2,32,4,6,4,2],
 "_section_memory_manager_8hpp_source.html":[13,0,0,2,19,2,0,3],
@@ -140,7 +142,7 @@ var NAVTREEINDEX6 =
 "_string_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,3],
 "_structure_synth_8hpp_source.html":[13,0,0,2,35,0,63],
 "_style_sheets_8hpp_source.html":[13,0,0,1,1,13,29],
-"_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,33],
+"_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,34],
 "_suil_8hpp_source.html":[13,0,0,2,22,0,7],
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0],
 "_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3],
@@ -188,7 +190,7 @@ var NAVTREEINDEX6 =
 "_texture_source_8hpp_source.html":[13,0,0,2,20,0,2,12],
 "_texture_to_buffer_8hpp_source.html":[13,0,0,2,35,0,69],
 "_thread_local_qml_engine_8hpp_source.html":[13,0,0,2,20,0,11],
-"_thread_pool_8hpp_source.html":[13,0,0,1,1,12,34],
+"_thread_pool_8hpp_source.html":[13,0,0,1,1,12,35],
 "_thumbnailer_8hpp_source.html":[13,0,0,2,24,2,8],
 "_time_mode_8hpp_source.html":[13,0,0,1,1,13,31],
 "_time_ruler_8hpp_source.html":[13,0,0,2,32,4,3,10,0],
@@ -208,7 +210,7 @@ var NAVTREEINDEX6 =
 "_time_value_8hpp_source.html":[13,0,0,2,3,4,53],
 "_time_value_serialization_8hpp_source.html":[13,0,0,2,3,4,54],
 "_timebar_8hpp_source.html":[13,0,0,2,32,4,3,5,0,4],
-"_timers_8hpp_source.html":[13,0,0,1,1,12,35],
+"_timers_8hpp_source.html":[13,0,0,1,1,12,36],
 "_tiny_obj_8hpp_source.html":[13,0,0,2,35,0,70],
 "_tonemap_8hpp_source.html":[13,0,0,2,17,1,4,0,31],
 "_tool_8hpp_source.html":[13,0,0,2,32,4,8,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "_undo_panel_delegate_8hpp_source.html":[13,0,0,1,0,8,0,1],
 "_undo_panel_factory_8hpp_source.html":[13,0,0,1,0,8,0,2],
 "_uniforms_8hpp_source.html":[13,0,0,2,17,1,4,57],
-"_unit_8hpp_source.html":[13,0,0,2,4,0,11],
-"_unit_widget_8hpp_source.html":[13,0,0,2,4,0,0,3],
-"_unix_datagram_widget_8hpp_source.html":[13,0,0,2,29,0,15,5]
+"_unit_8hpp_source.html":[13,0,0,2,4,0,11]
 };

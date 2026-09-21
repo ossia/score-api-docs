@@ -129,6 +129,7 @@ var NAVTREEINDEX4 =
 "_offscreen_device_8hpp_source.html":[13,0,0,2,17,1,18,4],
 "_ongoing_command_dispatcher_8hpp_source.html":[13,0,0,1,1,2,0,4],
 "_ongoing_state_8hpp_source.html":[13,0,0,2,11,0,1,9],
+"_online_examples_8hpp_source.html":[13,0,0,1,0,2,9],
 "_opaque_string_8hpp_source.html":[13,0,0,1,1,12,1,0],
 "_open_documents_file_8hpp_source.html":[13,0,0,1,0,0,6],
 "_open_g_l_8hpp_source.html":[13,0,0,1,1,4,0],
@@ -197,6 +198,7 @@ var NAVTREEINDEX4 =
 "_pitch_to_value_8hpp_source.html":[13,0,0,2,16,0,28],
 "_pixmap_8hpp_source.html":[13,0,0,1,1,13,18],
 "_pixmaps_8hpp_source.html":[13,0,0,2,3,4,12,0],
+"_platforms_8hpp_source.html":[13,0,0,1,1,12,24],
 "_play_context_menu_8hpp_source.html":[13,0,0,2,14,1,2,0],
 "_play_from_interval_in_scenario_8hpp_source.html":[13,0,0,2,14,1,2,1],
 "_play_listening_handler_8hpp_source.html":[13,0,0,2,14,0,0,0],
@@ -222,8 +224,8 @@ var NAVTREEINDEX4 =
 "_point_array_segment_8hpp_source.html":[13,0,0,2,11,0,4,1,0],
 "_point_tracker_8hpp_source.html":[13,0,0,2,8,2,10],
 "_pointer_8hpp_source.html":[13,0,0,1,1,12,2,8],
-"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,24],
-"_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,25],
+"_pointer_lock_8hpp_source.html":[13,0,0,1,1,12,25],
+"_pointer_lock_x11_8hpp_source.html":[13,0,0,1,1,12,26],
 "_port_8hpp_source.html":[13,0,0,2,3,4,3,12],
 "_port_address_combo_box_8hpp_source.html":[13,0,0,2,3,4,3,13],
 "_port_audio_interface_8hpp_source.html":[13,0,0,2,6,0,18],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_primitive_8hpp_source.html":[13,0,0,2,35,0,53],
 "_process_2_execution_2_process_component_8hpp_source.html":[13,0,0,2,3,4,5,0],
 "_process_2_process_component_8hpp_source.html":[13,0,0,2,3,4,42],
-"_process_2_scenario_execution_8hpp_source.html":[13,0,0,2,32,4,9,2],
-"_process_actions_8hpp_source.html":[13,0,0,2,3,4,0,0],
-"_process_command_factory_8hpp_source.html":[13,0,0,2,3,4,2,3]
+"_process_2_scenario_execution_8hpp_source.html":[13,0,0,2,32,4,9,2]
 };
