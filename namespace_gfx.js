@@ -147,6 +147,7 @@ var namespace_gfx =
       [ "VertexShaderArt", "namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88efa24863e133b7e9449050367605b0d8b87", null ]
     ] ],
     [ "addControlGroup", "namespace_gfx.html#a74373eb8764903bca22079d5e5fb4797", null ],
+    [ "cameraFormatName", "namespace_gfx.html#ae14710e413a8c7af7399549cb86e361f", null ],
     [ "fragmentShaderSibling", "namespace_gfx.html#ae5f2af02688b05b86bca317b423e004d", null ],
     [ "locateShaderPath", "namespace_gfx.html#adf1c9584823b572537548d5577fa3031", null ],
     [ "makeSyphonOutput", "namespace_gfx.html#a295b675353308693113a6e495af73f86", null ],

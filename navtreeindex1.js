@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_command_8hpp_source.html":[13,0,0,1,1,2,3],
 "_command_a_p_i_8hpp_source.html":[13,0,0,2,32,4,1,10],
 "_command_backup_file_8hpp_source.html":[13,0,0,1,0,0,3],
 "_command_data_8hpp_source.html":[13,0,0,1,1,2,4],
@@ -48,9 +49,9 @@ var NAVTREEINDEX1 =
 "_control_item_model_8hpp_source.html":[13,0,0,2,32,4,3,8,0,0],
 "_control_message_8hpp_source.html":[13,0,0,2,3,4,15],
 "_control_outlet_item_8hpp_source.html":[13,0,0,2,12,0,4],
-"_control_tree_8hpp.html":[13,0,0,2,17,1,26],
-"_control_tree_8hpp.html#a74373eb8764903bca22079d5e5fb4797":[13,0,0,2,17,1,26,1],
-"_control_tree_8hpp_source.html":[13,0,0,2,17,1,26],
+"_control_tree_8hpp.html":[13,0,0,2,17,1,27],
+"_control_tree_8hpp.html#a74373eb8764903bca22079d5e5fb4797":[13,0,0,2,17,1,27,1],
+"_control_tree_8hpp_source.html":[13,0,0,2,17,1,27],
 "_control_widget_domains_8hpp_source.html":[13,0,0,2,3,4,3,8],
 "_controls_8hpp_source.html":[13,0,0,2,8,0,0],
 "_core_actions_8hpp_source.html":[13,0,0,1,0,6,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_drop_layer_in_scenario_8hpp_source.html":[13,0,0,2,32,4,0,0,3],
 "_drop_on_cable_8hpp_source.html":[13,0,0,2,32,4,0,0,4],
 "_drop_on_node_8hpp_source.html":[13,0,0,2,32,4,0,0,5],
-"_drop_port_in_scenario_8hpp_source.html":[13,0,0,2,12,0,6],
-"_drop_preset_in_interval_8hpp_source.html":[13,0,0,2,32,4,0,0,6]
+"_drop_port_in_scenario_8hpp_source.html":[13,0,0,2,12,0,6]
 };

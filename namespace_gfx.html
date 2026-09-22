@@ -475,6 +475,8 @@ Functions</h2></td></tr>
 <tr class="memitem:afbc7888e19129a63369364697ef6340a" id="r_afbc7888e19129a63369364697ef6340a"><td class="memItemLeft" align="right" valign="top"><a id="afbc7888e19129a63369364697ef6340a" name="afbc7888e19129a63369364697ef6340a"></a>
 std::shared_ptr&lt; <a class="el" href="struct_gfx_1_1_camera_device_enumerator.html">CameraDeviceEnumerator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_camera_enumerator</b> ()</td></tr>
 <tr class="separator:afbc7888e19129a63369364697ef6340a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14710e413a8c7af7399549cb86e361f" id="r_ae14710e413a8c7af7399549cb86e361f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#ae14710e413a8c7af7399549cb86e361f">cameraFormatName</a> (int codec, int pixelformat) noexcept</td></tr>
+<tr class="separator:ae14710e413a8c7af7399549cb86e361f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195d16a5d7e1bb0922983e85ccf76b82" id="r_a195d16a5d7e1bb0922983e85ccf76b82"><td class="memItemLeft" align="right" valign="top"><a id="a195d16a5d7e1bb0922983e85ccf76b82" name="a195d16a5d7e1bb0922983e85ccf76b82"></a>
 const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandFactoryName</b> ()</td></tr>
 <tr class="separator:a195d16a5d7e1bb0922983e85ccf76b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -612,6 +614,44 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewSchedu
 
 <p>Creates <code>&lt;parent&gt;/&lt;group&gt;/&lt;name&gt;</code> for each control. </p>
 <dl class="section return"><dt>Returns</dt><dd>the created parameters, in the order of <code>controls</code>, so the caller can push values back into them later. An entry is null when its node could not be created &ndash; a name collision, in practice. </dd></dl>
+
+</div>
+</div>
+<a id="ae14710e413a8c7af7399549cb86e361f" name="ae14710e413a8c7af7399549cb86e361f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14710e413a8c7af7399549cb86e361f">&#9670;&#160;</a></span>cameraFormatName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Gfx::cameraFormatName </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pixelformat</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The name a camera format is offered under in the device list.</p>
+<p>A compressed stream carries no pixel format, a raw one no codec: the codec names the former, the layout the latter. Both lookups can answer nullptr, so neither is assigned to the string unchecked. </p>
 
 </div>
 </div>

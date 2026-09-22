@@ -135,10 +135,40 @@ constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>score::
 <tr class="separator:abfb8360514cc522aea0d1629da5ff580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6681045a0f136bf5a62f5f99421d9b" id="r_a8c6681045a0f136bf5a62f5f99421d9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#a8c6681045a0f136bf5a62f5f99421d9b">score::gfx::interop::fromDirectShowFourcc</a> (uint32_t fourcc) noexcept</td></tr>
 <tr class="separator:a8c6681045a0f136bf5a62f5f99421d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a611defabbd9a05f49c5d01dbfd6b5ed5" id="r_a611defabbd9a05f49c5d01dbfd6b5ed5"><td class="memItemLeft" align="right" valign="top">AVCodecID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#a611defabbd9a05f49c5d01dbfd6b5ed5">score::gfx::interop::directShowFourccCodec</a> (uint32_t fourcc) noexcept</td></tr>
+<tr class="separator:a611defabbd9a05f49c5d01dbfd6b5ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb938dfa6bf184ec46495d4dd0b96f4" id="r_adeb938dfa6bf184ec46495d4dd0b96f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_direct_show_pixel_format_8cpp.html#adeb938dfa6bf184ec46495d4dd0b96f4">score::gfx::interop::isDirectShowCompressedFourcc</a> (uint32_t fourcc) noexcept</td></tr>
 <tr class="separator:adeb938dfa6bf184ec46495d4dd0b96f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a611defabbd9a05f49c5d01dbfd6b5ed5" name="a611defabbd9a05f49c5d01dbfd6b5ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a611defabbd9a05f49c5d01dbfd6b5ed5">&#9670;&#160;</a></span>directShowFourccCodec()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVCodecID score::gfx::interop::directShowFourccCodec </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fourcc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What decodes a DirectShow fourcc: AV_CODEC_ID_RAWVIDEO when fromDirectShowFourcc names its layout, a decoder when the stream is compressed, AV_CODEC_ID_NONE when neither — an unsupported subtype.</p>
+<p>The compressed half comes from FFmpeg's RIFF video tags, so it covers every spelling FFmpeg knows; only what that table lacks and DirectShow emits (H.265, the odd Motion-JPEG fourccs, MDVF) is listed here. </p>
+
+</div>
+</div>
 <a id="a8c6681045a0f136bf5a62f5f99421d9b" name="a8c6681045a0f136bf5a62f5f99421d9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c6681045a0f136bf5a62f5f99421d9b">&#9670;&#160;</a></span>fromDirectShowFourcc()</h2>
 

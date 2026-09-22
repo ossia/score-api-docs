@@ -118,25 +118,32 @@ $(document).ready(function(){initNavTree('_direct_show_pixel_format_8hpp_source.
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>score::gfx::interop</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">   28</a></span><span class="keyword">constexpr</span> uint32_t <a class="code hl_function" href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">directShowFourcc</a>(<span class="keywordtype">char</span> a, <span class="keywordtype">char</span> b, <span class="keywordtype">char</span> c, <span class="keywordtype">char</span> d) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &lt;libavcodec/codec_id.h&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span>score::gfx::interop</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> uint32_t(uint8_t(a)) | (uint32_t(uint8_t(b)) &lt;&lt; 8)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>         | (uint32_t(uint8_t(c)) &lt;&lt; 16) | (uint32_t(uint8_t(d)) &lt;&lt; 24);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">   32</a></span><span class="keyword">constexpr</span> uint32_t <a class="code hl_function" href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">directShowFourcc</a>(<span class="keywordtype">char</span> a, <span class="keywordtype">char</span> b, <span class="keywordtype">char</span> c, <span class="keywordtype">char</span> d) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> uint32_t(uint8_t(a)) | (uint32_t(uint8_t(b)) &lt;&lt; 8)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>         | (uint32_t(uint8_t(c)) &lt;&lt; 16) | (uint32_t(uint8_t(d)) &lt;&lt; 24);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fromDirectShowFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">bool</span> isDirectShowCompressedFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <span class="comment">// namespace score::gfx::interop</span></div>
-<div class="ttc" id="a_direct_show_pixel_format_8hpp_html_abfb8360514cc522aea0d1629da5ff580"><div class="ttname"><a href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">score::gfx::interop::directShowFourcc</a></div><div class="ttdeci">constexpr uint32_t directShowFourcc(char a, char b, char c, char d) noexcept</div><div class="ttdoc">Build a fourcc the way DirectShow spells it, least-significant byte first.</div><div class="ttdef"><b>Definition</b> DirectShowPixelFormat.hpp:28</div></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><a class="code hl_enumeration" href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a> fromDirectShowFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>AVCodecID directShowFourccCodec(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keywordtype">bool</span> isDirectShowCompressedFourcc(uint32_t fourcc) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace score::gfx::interop</span></div>
+<div class="ttc" id="a_direct_show_pixel_format_8hpp_html_abfb8360514cc522aea0d1629da5ff580"><div class="ttname"><a href="_direct_show_pixel_format_8hpp.html#abfb8360514cc522aea0d1629da5ff580">score::gfx::interop::directShowFourcc</a></div><div class="ttdeci">constexpr uint32_t directShowFourcc(char a, char b, char c, char d) noexcept</div><div class="ttdoc">Build a fourcc the way DirectShow spells it, least-significant byte first.</div><div class="ttdef"><b>Definition</b> DirectShowPixelFormat.hpp:32</div></div>
 <div class="ttc" id="a_video_pixel_format_8hpp_html"><div class="ttname"><a href="_video_pixel_format_8hpp.html">VideoPixelFormat.hpp</a></div><div class="ttdoc">Vendor-neutral pixel format vocabulary + descriptive metadata.</div></div>
 <div class="ttc" id="a_video_pixel_format_8hpp_html_a8aedb3a75f7488e58e53c47c0b5e3ccb"><div class="ttname"><a href="_video_pixel_format_8hpp.html#a8aedb3a75f7488e58e53c47c0b5e3ccb">Video::VideoPixelFormat</a></div><div class="ttdeci">VideoPixelFormat</div><div class="ttdef"><b>Definition</b> VideoPixelFormat.hpp:235</div></div>
 </div><!-- fragment --></div><!-- contents -->

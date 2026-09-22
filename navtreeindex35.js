@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"struct_threedim_1_1_gaussian_splat_data.html":[12,0,62,32],
+"struct_threedim_1_1_geometry_loader_1_1ins.html":[12,0,62,34,0],
 "struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html":[12,0,62,34,0,0],
 "struct_threedim_1_1_geometry_packer_1_1ins.html":[12,0,62,35,0],
 "struct_threedim_1_1_geometry_packer_1_1outs.html":[12,0,62,35,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "structavnd__tools_1_1_point_tracker3_d.html":[12,0,4,18],
 "structavnd__tools_1_1_point_tracker_base.html":[12,0,4,19],
 "structavnd__tools_1_1_point_tracker_base_1_1ins.html":[12,0,4,19,0],
-"structavnd__tools_1_1_point_tracker_base_1_1track__record.html":[12,0,4,19,1],
-"structavnd__tools_1_1_point_tracker_base_1_1ui.html":[12,0,4,19,2],
-"structavnd__tools_1_1_queue.html":[12,0,4,20]
+"structavnd__tools_1_1_point_tracker_base_1_1track__record.html":[12,0,4,19,1]
 };

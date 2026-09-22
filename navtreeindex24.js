@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocation.html#a707d4ede226a79174e8340c5fef13245":[12,0,55,2,2,17,0],
 "classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocation.html#a83859586c25bb9031b52f0d3bdecce24":[12,0,55,2,2,17,5],
 "classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocation.html#a907ceaf0394bdfc93234dbdecfa9f727":[12,0,55,2,2,17,2],
 "classscore_1_1gfx_1_1interop_1_1_cuda_vmm_allocation.html#acfed7e5f014f32e2b2c1ff424805ba9d":[12,0,55,2,2,17,4],
@@ -83,8 +84,8 @@ var NAVTREEINDEX24 =
 "classscore__plugin__vst.html":[12,0,282],
 "classscore__plugin__vst3.html":[12,0,283],
 "classscore__plugin__ysfx.html":[12,0,284],
-"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,61,9],
 "classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[11,0,14,9],
+"classstd_1_1hash_3_01std_1_1pair_3_01int_00_01int_01_4_01_4.html":[12,0,61,9],
 "classvst3_1_1_application_plugin.html":[12,0,67,0],
 "classvst3_1_1_application_plugin.html#a6853897da3ff2bc9f8ce84e92a893a21":[12,0,67,0,0],
 "classvst3_1_1_component_handler.html":[12,0,67,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "dir_4299332d3f09b9ffe3bc5d5f405b73d8.html":[13,0,0,1,0,8,0,0],
 "dir_429a3b95430e499764317fbd3f9226c2.html":[13,0,0,2,32,4,3],
 "dir_43c1ce244cbc91e3291c440f849db483.html":[13,0,0,2,33,0],
-"dir_44169f70ed13d628f43dcb8cea3a2c09.html":[13,0,0,2,14,1],
-"dir_44402f6af0508220dfb6712e90596265.html":[13,0,0,2,29,0,15]
+"dir_44169f70ed13d628f43dcb8cea3a2c09.html":[13,0,0,2,14,1]
 };

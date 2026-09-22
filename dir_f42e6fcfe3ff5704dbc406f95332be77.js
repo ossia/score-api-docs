@@ -23,6 +23,7 @@ var dir_f42e6fcfe3ff5704dbc406f95332be77 =
     [ "AssetTable.hpp", "_asset_table_8hpp_source.html", null ],
     [ "CameraDevice.hpp", "_camera_device_8hpp_source.html", null ],
     [ "CameraDeviceEnumerator.hpp", "_camera_device_enumerator_8hpp_source.html", null ],
+    [ "CameraFormatName.hpp", "_camera_format_name_8hpp_source.html", null ],
     [ "CameraSettings.hpp", "_camera_settings_8hpp_source.html", null ],
     [ "CaptureControlTree.hpp", "_capture_control_tree_8hpp.html", "_capture_control_tree_8hpp" ],
     [ "score-plugin-gfx/Gfx/CommandFactory.hpp", "score-plugin-gfx_2_gfx_2_command_factory_8hpp_source.html", null ],
