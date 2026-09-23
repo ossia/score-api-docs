@@ -59,6 +59,7 @@ var NAVTREEINDEX3 =
 "_inspector_widget_base_8hpp_source.html":[13,0,0,2,1,0,2],
 "_inspector_widget_factory_interface_8hpp_source.html":[13,0,0,2,1,0,3],
 "_inspector_widget_list_8hpp_source.html":[13,0,0,2,1,0,4],
+"_install_8hpp_source.html":[13,0,0,2,27,0,2],
 "_instancer_8hpp_source.html":[13,0,0,2,35,0,44],
 "_int_slider_8hpp_source.html":[13,0,0,1,1,13,12],
 "_interface_8hpp_source.html":[13,0,0,1,1,8,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_message_item_model_algorithms_8hpp_source.html":[13,0,0,2,32,4,3,8,0,2],
 "_message_list_serialization_8hpp_source.html":[13,0,0,2,4,0,8],
 "_message_node_8hpp_source.html":[13,0,0,2,3,4,11,0],
-"_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1],
-"_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0]
+"_message_tree_view_8hpp_source.html":[13,0,0,2,32,4,2,1]
 };

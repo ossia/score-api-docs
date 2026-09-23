@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"_script_editor_8hpp_source.html":[13,0,0,2,3,4,10,2],
 "_script_process_8hpp_source.html":[13,0,0,2,3,4,10,3],
 "_script_tab_bar_8hpp_source.html":[13,0,0,2,3,4,10,4],
 "_script_widget_8hpp_source.html":[13,0,0,2,3,4,10,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "_u_y_v_y_compute_8hpp_source.html":[13,0,0,2,17,1,4,1,12],
 "_undo_application_plugin_8hpp_source.html":[13,0,0,1,0,8,1],
 "_undo_list_widget_8hpp_source.html":[13,0,0,1,0,8,0,0,0],
-"_undo_panel_delegate_8hpp_source.html":[13,0,0,1,0,8,0,1],
-"_undo_panel_factory_8hpp_source.html":[13,0,0,1,0,8,0,2]
+"_undo_panel_delegate_8hpp_source.html":[13,0,0,1,0,8,0,1]
 };

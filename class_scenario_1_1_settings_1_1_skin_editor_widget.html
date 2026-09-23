@@ -139,8 +139,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>skinChanged</b> (cons
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5ef441ec0f7b4e81bd45854ebadfb0c" id="r_ae5ef441ec0f7b4e81bd45854ebadfb0c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_settings_1_1_skin_editor_widget.html#ae5ef441ec0f7b4e81bd45854ebadfb0c">selectedParts</a> () noexcept</td></tr>
 <tr class="separator:ae5ef441ec0f7b4e81bd45854ebadfb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329ca9c518ebeba66dce87476db15266" id="r_a329ca9c518ebeba66dce87476db15266"><td class="memItemLeft" align="right" valign="top">static QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_settings_1_1_skin_editor_widget.html#a329ca9c518ebeba66dce87476db15266">savedState</a> () noexcept</td></tr>
+<tr class="separator:a329ca9c518ebeba66dce87476db15266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3405f45db19193421073a4c3c1ff2c51" id="r_a3405f45db19193421073a4c3c1ff2c51"><td class="memItemLeft" align="right" valign="top"><a id="a3405f45db19193421073a4c3c1ff2c51" name="a3405f45db19193421073a4c3c1ff2c51"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>saveState</b> () noexcept</td></tr>
+<tr class="memdesc:a3405f45db19193421073a4c3c1ff2c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records the skin as it now stands. <br /></td></tr>
+<tr class="separator:a3405f45db19193421073a4c3c1ff2c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a329ca9c518ebeba66dce87476db15266" name="a329ca9c518ebeba66dce87476db15266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a329ca9c518ebeba66dce87476db15266">&#9670;&#160;</a></span>savedState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject Scenario::Settings::SkinEditorWidget::savedState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The colours and fonts actually in force, as the settings hold them. A skin file is only where they came from, and fills in whatever this does not name. </p>
+
+</div>
+</div>
 <a id="ae5ef441ec0f7b4e81bd45854ebadfb0c" name="ae5ef441ec0f7b4e81bd45854ebadfb0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5ef441ec0f7b4e81bd45854ebadfb0c">&#9670;&#160;</a></span>selectedParts()</h2>
 
@@ -163,7 +195,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>In QSettings, so the model can honour them without a round trip through the settings machinery. </p>
+<p>In QSettings, so the model can honour them without a round trip through the settings machinery. Only governs what a newly picked skin contributes: what is in force afterwards is the saved state. </p>
 
 </div>
 </div>

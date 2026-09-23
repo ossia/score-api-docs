@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('class_video_1_1_video_thumbnailer.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_video_1_1_video_thumbnailer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Video::VideoThumbnailer Class Reference</div></div>
 </div><!--header-->
@@ -128,21 +128,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a408a398e237ff31000f9230f6e048d76" id="r_a408a398e237ff31000f9230f6e048d76"><td class="memItemLeft" align="right" valign="top"><a id="a408a398e237ff31000f9230f6e048d76" name="a408a398e237ff31000f9230f6e048d76"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>requestThumbnails</b> (int64_t req, QVector&lt; int64_t &gt; flicks)</td></tr>
 <tr class="separator:a408a398e237ff31000f9230f6e048d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addfb0c7980e7ac45b1f6d26722b443f2" id="r_addfb0c7980e7ac45b1f6d26722b443f2"><td class="memItemLeft" align="right" valign="top"><a id="addfb0c7980e7ac45b1f6d26722b443f2" name="addfb0c7980e7ac45b1f6d26722b443f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>requestHeight</b> (int height)</td></tr>
+<tr class="memdesc:addfb0c7980e7ac45b1f6d26722b443f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the thumbnails at that height; the width follows the video's aspect. <br /></td></tr>
+<tr class="separator:addfb0c7980e7ac45b1f6d26722b443f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab785f344fd1a24f0150b3cb14564be44" id="r_ab785f344fd1a24f0150b3cb14564be44"><td class="memItemLeft" align="right" valign="top"><a id="ab785f344fd1a24f0150b3cb14564be44" name="ab785f344fd1a24f0150b3cb14564be44"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>thumbnailReady</b> (int64_t req, int64_t flicks, QImage thumb)</td></tr>
 <tr class="separator:ab785f344fd1a24f0150b3cb14564be44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2461cb29577cc11b379f3e9faf28348" id="r_af2461cb29577cc11b379f3e9faf28348"><td class="memItemLeft" align="right" valign="top"><a id="af2461cb29577cc11b379f3e9faf28348" name="af2461cb29577cc11b379f3e9faf28348"></a>
 QImage&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int64_t flicks)</td></tr>
 <tr class="separator:af2461cb29577cc11b379f3e9faf28348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae18e627b0b7760016bbb91b8f27b6f75" id="r_ae18e627b0b7760016bbb91b8f27b6f75"><td class="memItemLeft" align="right" valign="top"><a id="ae18e627b0b7760016bbb91b8f27b6f75" name="ae18e627b0b7760016bbb91b8f27b6f75"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>aspectRatio</b> () const noexcept</td></tr>
+<tr class="separator:ae18e627b0b7760016bbb91b8f27b6f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145a4b5d37a05b38870dae6d5c3c3268" id="r_a145a4b5d37a05b38870dae6d5c3c3268"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_video_1_1_video_thumbnailer.html#a145a4b5d37a05b38870dae6d5c3c3268">thumbnailSize</a> () const noexcept</td></tr>
+<tr class="separator:a145a4b5d37a05b38870dae6d5c3c3268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:abadb4db65cb3d97ef870978451001014" id="r_abadb4db65cb3d97ef870978451001014"><td class="memItemLeft" align="right" valign="top"><a id="abadb4db65cb3d97ef870978451001014" name="abadb4db65cb3d97ef870978451001014"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>smallWidth</b> {}</td></tr>
-<tr class="separator:abadb4db65cb3d97ef870978451001014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6384d3f70b413d82d8bcc4eb4b732c" id="r_a8f6384d3f70b413d82d8bcc4eb4b732c"><td class="memItemLeft" align="right" valign="top"><a id="a8f6384d3f70b413d82d8bcc4eb4b732c" name="a8f6384d3f70b413d82d8bcc4eb4b732c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>smallHeight</b> {}</td></tr>
-<tr class="separator:a8f6384d3f70b413d82d8bcc4eb4b732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a3cf7a418cda824d45961494bb6de084f" id="r_a3cf7a418cda824d45961494bb6de084f"><td class="memItemLeft" align="right" valign="top"><a id="a3cf7a418cda824d45961494bb6de084f" name="a3cf7a418cda824d45961494bb6de084f"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>defaultThumbnailHeight</b> = 55</td></tr>
+<tr class="separator:a3cf7a418cda824d45961494bb6de084f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_metadata')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></td></tr>
 <tr class="memitem:a2c8b785ad1b3e3f64daa0c0149bb94dc inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a2c8b785ad1b3e3f64daa0c0149bb94dc"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
@@ -210,6 +219,33 @@ Tonemap&#160;</td><td class="memItemRight" valign="bottom"><b>tonemap</b> = ::Vi
 Deinterlace&#160;</td><td class="memItemRight" valign="bottom"><b>deinterlace</b> = ::Video::Deinterlace::Weave</td></tr>
 <tr class="separator:a37329af17ab10e93587b6aa83dd2e606 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a145a4b5d37a05b38870dae6d5c3c3268" name="a145a4b5d37a05b38870dae6d5c3c3268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145a4b5d37a05b38870dae6d5c3c3268">&#9670;&#160;</a></span>thumbnailSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize Video::VideoThumbnailer::thumbnailSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resolution the frames are currently decoded at, for the thumbnailer's own thread: the layer asks for a height and scales what it gets to the slot. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_thumbnailer_8hpp_source.html">Thumbnailer.hpp</a></li>
 <li><b>Thumbnailer.cpp</b></li>

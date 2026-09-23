@@ -635,10 +635,11 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e">Deprecated</a> = (1 &lt;&lt; 20 )
 , <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a3a7d8a0abd1c49424fb28e959aa54438">ExternalUIEmbeddable</a> = (1 &lt;&lt; 21 )
+, <a class="el" href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a483c6cbe563529e05ad8cf8ad53f7323">ExternalSourceRefreshable</a> = (1 &lt;&lt; 22 )
 , <b>SupportsLasting</b> = SupportsTemporal | TimeIndependent
-, <b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
 , <br />
-&#160;&#160;<b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
+&#160;&#160;<b>ExternalEffect</b> = SupportsTemporal | TimeIndependent | RequiresCustomData | ControlSurface
+, <b>SupportsAll</b> = SupportsTemporal | TimeIndependent | SupportsState
 <br />
  }</td></tr>
 <tr class="memdesc:a592bb361ebf8fbc09c929c93208c71f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Various settings for processes.  <a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">More...</a><br /></td></tr>
@@ -1259,6 +1260,8 @@ template&lt;typename T &gt; </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e" name="a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e"></a>Deprecated&#160;</td><td class="fielddoc"><p><a class="el" href="namespace_process.html" title="Base classes and tools to implement processes and layers.">Process</a> kind is deprecated. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a3a7d8a0abd1c49424fb28e959aa54438" name="a592bb361ebf8fbc09c929c93208c71f1a3a7d8a0abd1c49424fb28e959aa54438"></a>ExternalUIEmbeddable&#160;</td><td class="fielddoc"><p>The custom UI is made of plain widgets / Qt Quick and can be shown inside the main window (as opposed to plug-ins owning a native window). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a592bb361ebf8fbc09c929c93208c71f1a483c6cbe563529e05ad8cf8ad53f7323" name="a592bb361ebf8fbc09c929c93208c71f1a483c6cbe563529e05ad8cf8ad53f7323"></a>ExternalSourceRefreshable&#160;</td><td class="fielddoc"><p>The process's contents are a copy of an external source &ndash; a library script, a shader file... &ndash; which can move on independently of the document, and which the process can be brought back in line with. See <a class="el" href="class_process_1_1_process_model.html#aade83e078da656d15ced5f20d0fd981e">ProcessModel::externalSourceOutOfDate()</a>. </p>
 </td></tr>
 </table>
 

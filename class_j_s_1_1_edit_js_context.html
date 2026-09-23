@@ -158,9 +158,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>createQMLSerialDevice
 <tr class="memitem:adc32f808f525b006c5d97d165613ba8a" id="r_adc32f808f525b006c5d97d165613ba8a"><td class="memItemLeft" align="right" valign="top"><a id="adc32f808f525b006c5d97d165613ba8a" name="adc32f808f525b006c5d97d165613ba8a"></a>
 <a class="el" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>enumerateDevices</b> ()</td></tr>
 <tr class="separator:adc32f808f525b006c5d97d165613ba8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66579aa062f0e77f791a296ea254025" id="r_ad66579aa062f0e77f791a296ea254025"><td class="memItemLeft" align="right" valign="top"><a id="ad66579aa062f0e77f791a296ea254025" name="ad66579aa062f0e77f791a296ea254025"></a>
-<a class="el" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>enumerateDevices</b> (const QString &amp;uuid)</td></tr>
-<tr class="separator:ad66579aa062f0e77f791a296ea254025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f24b0a27c19d8b9554b39d78753211d" id="r_a6f24b0a27c19d8b9554b39d78753211d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a6f24b0a27c19d8b9554b39d78753211d">enumerateDevices</a> (const QString &amp;protocol)</td></tr>
+<tr class="separator:a6f24b0a27c19d8b9554b39d78753211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa215a38050386ed1c2fc57d7343374b4" id="r_aa215a38050386ed1c2fc57d7343374b4"><td class="memItemLeft" align="right" valign="top"><a id="aa215a38050386ed1c2fc57d7343374b4" name="aa215a38050386ed1c2fc57d7343374b4"></a>
+<a class="el" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>enumerateDevices</b> (const QStringList &amp;protocols)</td></tr>
+<tr class="separator:aa215a38050386ed1c2fc57d7343374b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82549de0dd261e91b4bc4e15229dd0df" id="r_a82549de0dd261e91b4bc4e15229dd0df"><td class="memItemLeft" align="right" valign="top"><a id="a82549de0dd261e91b4bc4e15229dd0df" name="a82549de0dd261e91b4bc4e15229dd0df"></a>
 <a class="el" href="class_j_s_1_1_device_listener.html">DeviceListener</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>listenDevice</b> (const QString &amp;name)</td></tr>
 <tr class="separator:a82549de0dd261e91b4bc4e15229dd0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -662,6 +664,25 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 </table>
 </div><div class="memdoc">
 <p>What the title bar shows: the file's base name, or "Untitled..." before it has been saved anywhere. </p>
+
+</div>
+</div>
+<a id="a6f24b0a27c19d8b9554b39d78753211d" name="a6f24b0a27c19d8b9554b39d78753211d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f24b0a27c19d8b9554b39d78753211d">&#9670;&#160;</a></span>enumerateDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_j_s_1_1_global_device_enumerator.html">GlobalDeviceEnumerator</a> * JS::EditJsContext::enumerateDevices </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><code>protocol</code> is either a protocol's user-visible name ("OSC", "Artnet", "Camera") or its factory UUID; only that protocol's enumerators run. </p>
 
 </div>
 </div>

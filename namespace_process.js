@@ -84,7 +84,7 @@ var namespace_process =
     [ "LayerFactoryList", "class_process_1_1_layer_factory_list.html", null ],
     [ "LayerPresenter", "class_process_1_1_layer_presenter.html", null ],
     [ "LayerView", "class_process_1_1_layer_view.html", null ],
-    [ "LayoutBuilderBase", "struct_process_1_1_layout_builder_base.html", null ],
+    [ "LayoutBuilderBase", "struct_process_1_1_layout_builder_base.html", "struct_process_1_1_layout_builder_base" ],
     [ "LineEdit", "struct_process_1_1_line_edit.html", null ],
     [ "LoadPresetCommandFactory", "class_process_1_1_load_preset_command_factory.html", null ],
     [ "LoadPresetCommandFactoryList", "class_process_1_1_load_preset_command_factory_list.html", null ],
@@ -229,6 +229,7 @@ var namespace_process =
       [ "NodeHasNoBackground", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a4f481ad2bc71ff07db49c5bd421342af", null ],
       [ "Deprecated", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a585b0e7bf1404104b7ed8ed9a713506e", null ],
       [ "ExternalUIEmbeddable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a3a7d8a0abd1c49424fb28e959aa54438", null ],
+      [ "ExternalSourceRefreshable", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a483c6cbe563529e05ad8cf8ad53f7323", null ],
       [ "SupportsLasting", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a29b3036018dcd388b9502a6aae1912b2", null ],
       [ "ExternalEffect", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1ac0745b11b10f8e4cdc8476e3d2862695", null ],
       [ "SupportsAll", "namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1accb6c989f8513bacb617f1d00fb237d9", null ]

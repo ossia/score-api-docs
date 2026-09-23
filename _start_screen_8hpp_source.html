@@ -2037,48 +2037,49 @@ $(document).ready(function(){initNavTree('_start_screen_8hpp_source.html',''); i
 <div class="line"><a id="l01957" name="l01957"></a><span class="lineno"> 1957</span>  QWidget::showEvent(event);</div>
 <div class="line"><a id="l01958" name="l01958"></a><span class="lineno"> 1958</span> </div>
 <div class="line"><a id="l01959" name="l01959"></a><span class="lineno"> 1959</span>  <span class="comment">// No window manager in the browser, and none places a frameless dialog.</span></div>
-<div class="line"><a id="l01960" name="l01960"></a><span class="lineno"> 1960</span>  QRect ref;</div>
-<div class="line"><a id="l01961" name="l01961"></a><span class="lineno"> 1961</span>  <span class="keywordflow">if</span>(<span class="keyword">auto</span>* main = score::GUIAppContext().mainWindow; main &amp;&amp; main-&gt;isVisible())</div>
-<div class="line"><a id="l01962" name="l01962"></a><span class="lineno"> 1962</span>    ref = main-&gt;frameGeometry();</div>
-<div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<span class="keyword">const</span> <span class="keyword">auto</span>* scr = screen() ? screen() : QGuiApplication::primaryScreen())</div>
-<div class="line"><a id="l01964" name="l01964"></a><span class="lineno"> 1964</span>    ref = scr-&gt;availableGeometry();</div>
-<div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span> </div>
-<div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span>  <span class="keywordflow">if</span>(ref.isValid())</div>
-<div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>    move(ref.center() - QPoint{width() / 2, height() / 2});</div>
-<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>}</div>
-<div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span> </div>
-<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span><span class="keywordtype">void</span> StartScreen::keyPressEvent(QKeyEvent* event)</div>
-<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span>{</div>
-<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>  <span class="keywordflow">switch</span>(event-&gt;key())</div>
-<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>  {</div>
-<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>    <span class="keywordflow">case</span> Qt::Key_Escape:</div>
-<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>      choose([<span class="keyword">this</span>] { openNewDocument(); });</div>
-<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>      <span class="keyword">event</span>-&gt;accept();</div>
-<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>    <span class="keywordflow">case</span> Qt::Key_Left:</div>
-<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>    <span class="keywordflow">case</span> Qt::Key_Up:</div>
-<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>      setCurrentPage(</div>
-<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>          (m_pages-&gt;currentIndex() + m_pages-&gt;count() - 1) % m_pages-&gt;count());</div>
-<div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>      <span class="keyword">event</span>-&gt;accept();</div>
-<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span>    <span class="keywordflow">case</span> Qt::Key_Right:</div>
-<div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>    <span class="keywordflow">case</span> Qt::Key_Down:</div>
-<div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span>      setCurrentPage((m_pages-&gt;currentIndex() + 1) % m_pages-&gt;count());</div>
-<div class="line"><a id="l01987" name="l01987"></a><span class="lineno"> 1987</span>      <span class="keyword">event</span>-&gt;accept();</div>
-<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01989" name="l01989"></a><span class="lineno"> 1989</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l01990" name="l01990"></a><span class="lineno"> 1990</span>      QWidget::keyPressEvent(event);</div>
-<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>  }</div>
-<div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>}</div>
-<div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span> </div>
-<div class="line"><a id="l01994" name="l01994"></a><span class="lineno"> 1994</span><span class="keywordtype">void</span> StartScreen::closeEvent(QCloseEvent* event)</div>
-<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span>{</div>
-<div class="line"><a id="l01996" name="l01996"></a><span class="lineno"> 1996</span>  <span class="comment">// Closed by other means (e.g. the window manager): make sure that the user</span></div>
-<div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span>  <span class="comment">// does not end up with an empty application window.</span></div>
-<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>  choose([<span class="keyword">this</span>] { openNewDocument(); });</div>
-<div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>  QWidget::closeEvent(event);</div>
-<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>}</div>
+<div class="line"><a id="l01960" name="l01960"></a><span class="lineno"> 1960</span>  <span class="comment">// At startup the main window is not mapped yet and its geometry is still the</span></div>
+<div class="line"><a id="l01961" name="l01961"></a><span class="lineno"> 1961</span>  <span class="comment">// requested one: only the screen it belongs to can be trusted.</span></div>
+<div class="line"><a id="l01962" name="l01962"></a><span class="lineno"> 1962</span>  <span class="keyword">auto</span>* main = score::GUIAppContext().mainWindow;</div>
+<div class="line"><a id="l01963" name="l01963"></a><span class="lineno"> 1963</span>  <span class="keyword">const</span> QScreen* scr = main ? main-&gt;screen() : screen();</div>
+<div class="line"><a id="l01964" name="l01964"></a><span class="lineno"> 1964</span>  <span class="keywordflow">if</span>(!scr)</div>
+<div class="line"><a id="l01965" name="l01965"></a><span class="lineno"> 1965</span>    scr = QGuiApplication::primaryScreen();</div>
+<div class="line"><a id="l01966" name="l01966"></a><span class="lineno"> 1966</span> </div>
+<div class="line"><a id="l01967" name="l01967"></a><span class="lineno"> 1967</span>  <span class="keywordflow">if</span>(scr)</div>
+<div class="line"><a id="l01968" name="l01968"></a><span class="lineno"> 1968</span>    move(scr-&gt;availableGeometry().center() - QPoint{width() / 2, height() / 2});</div>
+<div class="line"><a id="l01969" name="l01969"></a><span class="lineno"> 1969</span>}</div>
+<div class="line"><a id="l01970" name="l01970"></a><span class="lineno"> 1970</span> </div>
+<div class="line"><a id="l01971" name="l01971"></a><span class="lineno"> 1971</span><span class="keywordtype">void</span> StartScreen::keyPressEvent(QKeyEvent* event)</div>
+<div class="line"><a id="l01972" name="l01972"></a><span class="lineno"> 1972</span>{</div>
+<div class="line"><a id="l01973" name="l01973"></a><span class="lineno"> 1973</span>  <span class="keywordflow">switch</span>(event-&gt;key())</div>
+<div class="line"><a id="l01974" name="l01974"></a><span class="lineno"> 1974</span>  {</div>
+<div class="line"><a id="l01975" name="l01975"></a><span class="lineno"> 1975</span>    <span class="keywordflow">case</span> Qt::Key_Escape:</div>
+<div class="line"><a id="l01976" name="l01976"></a><span class="lineno"> 1976</span>      choose([<span class="keyword">this</span>] { openNewDocument(); });</div>
+<div class="line"><a id="l01977" name="l01977"></a><span class="lineno"> 1977</span>      <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a id="l01978" name="l01978"></a><span class="lineno"> 1978</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01979" name="l01979"></a><span class="lineno"> 1979</span>    <span class="keywordflow">case</span> Qt::Key_Left:</div>
+<div class="line"><a id="l01980" name="l01980"></a><span class="lineno"> 1980</span>    <span class="keywordflow">case</span> Qt::Key_Up:</div>
+<div class="line"><a id="l01981" name="l01981"></a><span class="lineno"> 1981</span>      setCurrentPage(</div>
+<div class="line"><a id="l01982" name="l01982"></a><span class="lineno"> 1982</span>          (m_pages-&gt;currentIndex() + m_pages-&gt;count() - 1) % m_pages-&gt;count());</div>
+<div class="line"><a id="l01983" name="l01983"></a><span class="lineno"> 1983</span>      <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a id="l01984" name="l01984"></a><span class="lineno"> 1984</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01985" name="l01985"></a><span class="lineno"> 1985</span>    <span class="keywordflow">case</span> Qt::Key_Right:</div>
+<div class="line"><a id="l01986" name="l01986"></a><span class="lineno"> 1986</span>    <span class="keywordflow">case</span> Qt::Key_Down:</div>
+<div class="line"><a id="l01987" name="l01987"></a><span class="lineno"> 1987</span>      setCurrentPage((m_pages-&gt;currentIndex() + 1) % m_pages-&gt;count());</div>
+<div class="line"><a id="l01988" name="l01988"></a><span class="lineno"> 1988</span>      <span class="keyword">event</span>-&gt;accept();</div>
+<div class="line"><a id="l01989" name="l01989"></a><span class="lineno"> 1989</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01990" name="l01990"></a><span class="lineno"> 1990</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l01991" name="l01991"></a><span class="lineno"> 1991</span>      QWidget::keyPressEvent(event);</div>
+<div class="line"><a id="l01992" name="l01992"></a><span class="lineno"> 1992</span>  }</div>
+<div class="line"><a id="l01993" name="l01993"></a><span class="lineno"> 1993</span>}</div>
+<div class="line"><a id="l01994" name="l01994"></a><span class="lineno"> 1994</span> </div>
+<div class="line"><a id="l01995" name="l01995"></a><span class="lineno"> 1995</span><span class="keywordtype">void</span> StartScreen::closeEvent(QCloseEvent* event)</div>
+<div class="line"><a id="l01996" name="l01996"></a><span class="lineno"> 1996</span>{</div>
+<div class="line"><a id="l01997" name="l01997"></a><span class="lineno"> 1997</span>  <span class="comment">// Closed by other means (e.g. the window manager): make sure that the user</span></div>
+<div class="line"><a id="l01998" name="l01998"></a><span class="lineno"> 1998</span>  <span class="comment">// does not end up with an empty application window.</span></div>
+<div class="line"><a id="l01999" name="l01999"></a><span class="lineno"> 1999</span>  choose([<span class="keyword">this</span>] { openNewDocument(); });</div>
+<div class="line"><a id="l02000" name="l02000"></a><span class="lineno"> 2000</span>  QWidget::closeEvent(event);</div>
 <div class="line"><a id="l02001" name="l02001"></a><span class="lineno"> 2001</span>}</div>
+<div class="line"><a id="l02002" name="l02002"></a><span class="lineno"> 2002</span>}</div>
 <div class="ttc" id="aclassscore_1_1_about_widget_html"><div class="ttname"><a href="classscore_1_1_about_widget.html">score::AboutWidget</a></div><div class="ttdoc">Version, partners and third-party licenses of ossia score.</div><div class="ttdef"><b>Definition</b> AboutWidget.hpp:18</div></div>
 <div class="ttc" id="aclassscore_1_1_category_drawer_html"><div class="ttname"><a href="classscore_1_1_category_drawer.html">score::CategoryDrawer</a></div><div class="ttdoc">A score presented as a card: thumbnail, name, author.</div><div class="ttdef"><b>Definition</b> StartScreen.hpp:570</div></div>
 <div class="ttc" id="aclassscore_1_1_example_card_html"><div class="ttname"><a href="classscore_1_1_example_card.html">score::ExampleCard</a></div><div class="ttdef"><b>Definition</b> StartScreen.hpp:684</div></div>

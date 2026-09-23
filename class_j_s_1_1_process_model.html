@@ -206,6 +206,10 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>rootFi
 <tr class="separator:a39ebfb98a66badbaeb079d697aa90963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a365a14d8cc46b8485fc6da0ac57926e0" id="r_a365a14d8cc46b8485fc6da0ac57926e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#a365a14d8cc46b8485fc6da0ac57926e0">followsRootFile</a> () const noexcept</td></tr>
 <tr class="separator:a365a14d8cc46b8485fc6da0ac57926e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56d5bc91f4ceb52b0cacfa4b041aeb6" id="r_af56d5bc91f4ceb52b0cacfa4b041aeb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#af56d5bc91f4ceb52b0cacfa4b041aeb6">externalSourceOutOfDate</a> () const noexcept override</td></tr>
+<tr class="separator:af56d5bc91f4ceb52b0cacfa4b041aeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa23e4e5fc9a19262aaee168ab98e9dbe" id="r_aa23e4e5fc9a19262aaee168ab98e9dbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_command.html">score::Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_process_model.html#aa23e4e5fc9a19262aaee168ab98e9dbe">refreshFromExternalSource</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
+<tr class="separator:aa23e4e5fc9a19262aaee168ab98e9dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22d422f6ff2c6e8cdce7dc61ed16e9a" id="r_ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memItemLeft" align="right" valign="top"><a id="ac22d422f6ff2c6e8cdce7dc61ed16e9a" name="ac22d422f6ff2c6e8cdce7dc61ed16e9a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (const std::vector&lt; QString &gt; &amp;str) const noexcept</td></tr>
 <tr class="separator:ac22d422f6ff2c6e8cdce7dc61ed16e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,6 +344,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ancestorTempo
 <tr class="memitem:a0ee8238dd59cfbe7a8a569d636576d67 inherit pub_methods_class_process_1_1_process_model" id="r_a0ee8238dd59cfbe7a8a569d636576d67"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forEachControl</b> (smallfun::function&lt; void(<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;, const ossia::value &amp;)&gt;) const</td></tr>
 <tr class="separator:a0ee8238dd59cfbe7a8a569d636576d67 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae527bf9f4653fbbcf5af0af13dbc4d89 inherit pub_methods_class_process_1_1_process_model" id="r_ae527bf9f4653fbbcf5af0af13dbc4d89"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>externalSourceOutOfDateChanged</b> (bool v)</td></tr>
+<tr class="separator:ae527bf9f4653fbbcf5af0af13dbc4d89 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed1d6015e00065f9914edc79e13e9e3 inherit pub_methods_class_process_1_1_process_model" id="r_afed1d6015e00065f9914edc79e13e9e3"><td class="memItemLeft" align="right" valign="top">
 virtual std::optional&lt; <a class="el" href="struct_process_1_1_magnetic_info.html">Process::MagneticInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>magneticPosition</b> (const QObject *o, const <a class="el" href="struct_time_val.html">TimeVal</a> t) const noexcept</td></tr>
 <tr class="separator:afed1d6015e00065f9914edc79e13e9e3 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -406,6 +413,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stopExecution</b> ()<
 <tr class="memitem:a466df13266657b05f6815dfd354d89c7 inherit pub_methods_class_process_1_1_process_model" id="r_a466df13266657b05f6815dfd354d89c7"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resetExecution</b> ()</td></tr>
 <tr class="separator:a466df13266657b05f6815dfd354d89c7 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b858f24776acabe4739af9a34c883fd inherit pub_methods_class_process_1_1_process_model" id="r_a2b858f24776acabe4739af9a34c883fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a2b858f24776acabe4739af9a34c883fd">executionPosition</a> (double arg_1)</td></tr>
+<tr class="separator:a2b858f24776acabe4739af9a34c883fd inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3077df173e9c90eee9e933b3095261cf inherit pub_methods_class_process_1_1_process_model" id="r_a3077df173e9c90eee9e933b3095261cf"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>durationChanged</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;arg_1)</td></tr>
 <tr class="separator:a3077df173e9c90eee9e933b3095261cf inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -610,6 +619,34 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af56d5bc91f4ceb52b0cacfa4b041aeb6" name="af56d5bc91f4ceb52b0cacfa4b041aeb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56d5bc91f4ceb52b0cacfa4b041aeb6">&#9670;&#160;</a></span>externalSourceOutOfDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JS::ProcessModel::externalSourceOutOfDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For a process carrying the ExternalSourceRefreshable flag: whether the source it was copied from holds something else than what the document does. The answer must be cheap &ndash; callers may ask on every repaint &ndash; so implementations cache it rather than looking at the disk each time. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#aade83e078da656d15ced5f20d0fd981e">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
 <a id="acc599d1ab1997fcdacbfee2a62ea1185" name="acc599d1ab1997fcdacbfee2a62ea1185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc599d1ab1997fcdacbfee2a62ea1185">&#9670;&#160;</a></span>flags()</h2>
 
@@ -717,6 +754,35 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 </table>
 </div><div class="memdoc">
 <p>The sources a .qml holds, together with those of its .ui.qml sibling. Members the disk has nothing for come back empty. </p>
+
+</div>
+</div>
+<a id="aa23e4e5fc9a19262aaee168ab98e9dbe" name="aa23e4e5fc9a19262aaee168ab98e9dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa23e4e5fc9a19262aaee168ab98e9dbe">&#9670;&#160;</a></span>refreshFromExternalSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_command.html">score::Command</a> * JS::ProcessModel::refreshFromExternalSource </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The command bringing the document's copy back in line with that source. Null when there is nothing to update to. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html#a5fc601322e437e1f337678fa8a5bfb2a">Process::ProcessModel</a>.</p>
 
 </div>
 </div>

@@ -11,6 +11,7 @@ var class_j_s_1_1_edit_js_context =
     [ "device", "class_j_s_1_1_edit_js_context.html#a471aa0a93d0ea36d477b519bdd4b8c9e", null ],
     [ "documentMetadata", "class_j_s_1_1_edit_js_context.html#ae4bd2a0074c3a849ef9dd99aedf7ece9", null ],
     [ "documentName", "class_j_s_1_1_edit_js_context.html#a778a6d3055e2dc8419b75501800ac992", null ],
+    [ "enumerateDevices", "class_j_s_1_1_edit_js_context.html#a6f24b0a27c19d8b9554b39d78753211d", null ],
     [ "find", "class_j_s_1_1_edit_js_context.html#acb23e62f7f92854d8c41f3f4e2748efe", null ],
     [ "inlet", "class_j_s_1_1_edit_js_context.html#a83cd87f5f8678b183a8ededf5c13ef74", null ],
     [ "outlet", "class_j_s_1_1_edit_js_context.html#a4184d39a9508e8853a70a25db2d5b434", null ],

@@ -517,6 +517,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_object_widget.html">ObjectWidget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_outlet_routing.html">OutletRouting</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_parent_time_info.html">ParentTimeInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_scenario_1_1_path_detector.html">PathDetector</a></td></tr>
@@ -1078,6 +1080,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a71182a003c811da48b687dc44bb5fcb9" id="r_a71182a003c811da48b687dc44bb5fcb9"><td class="memItemLeft" align="right" valign="top"><a id="a71182a003c811da48b687dc44bb5fcb9" name="a71182a003c811da48b687dc44bb5fcb9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dropStartsOnPlay</b> () noexcept</td></tr>
+<tr class="memdesc:a71182a003c811da48b687dc44bb5fcb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the modifiers held during a drop ask for a start-on-play trigger. <br /></td></tr>
+<tr class="separator:a71182a003c811da48b687dc44bb5fcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae968119ea5c8b788c39b013785eaf38d" id="r_ae968119ea5c8b788c39b013785eaf38d"><td class="memItemLeft" align="right" valign="top"><a id="ae968119ea5c8b788c39b013785eaf38d" name="ae968119ea5c8b788c39b013785eaf38d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addStartOnPlayTrigger</b> (<a class="el" href="class_scenario_1_1_command_1_1_macro.html">Command::Macro</a> &amp;m, const <a class="el" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a> &amp;ts)</td></tr>
+<tr class="memdesc:ae968119ea5c8b788c39b013785eaf38d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable the trigger and start-on-play, like a double-click in a scenario does. <br /></td></tr>
+<tr class="separator:ae968119ea5c8b788c39b013785eaf38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f94beab4d7d933c9f9750338b79b1eb" id="r_a8f94beab4d7d933c9f9750338b79b1eb"><td class="memItemLeft" align="right" valign="top"><a id="a8f94beab4d7d933c9f9750338b79b1eb" name="a8f94beab4d7d933c9f9750338b79b1eb"></a>
 <a class="el" href="struct_scenario_1_1_magnetic_states.html">MagneticStates</a>&#160;</td><td class="memItemRight" valign="bottom"><b>magneticStates</b> (<a class="el" href="struct_scenario_1_1_magnetic_states.html">MagneticStates</a> cur, <a class="el" href="struct_scenario_1_1_point.html">Scenario::Point</a> pt, const <a class="el" href="class_scenario_1_1_scenario_presenter.html">Scenario::ScenarioPresenter</a> &amp;pres)</td></tr>
 <tr class="separator:a8f94beab4d7d933c9f9750338b79b1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1265,6 +1275,12 @@ const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&#
 <tr class="memitem:a5c4c609814eb9704567389999100605c" id="r_a5c4c609814eb9704567389999100605c"><td class="memItemLeft" align="right" valign="top"><a id="a5c4c609814eb9704567389999100605c" name="a5c4c609814eb9704567389999100605c"></a>
 const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>firstSignalOutlet</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc) noexcept</td></tr>
 <tr class="separator:a5c4c609814eb9704567389999100605c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dceb9b297adff97911869efc9359cd" id="r_a92dceb9b297adff97911869efc9359cd"><td class="memItemLeft" align="right" valign="top"><a id="a92dceb9b297adff97911869efc9359cd" name="a92dceb9b297adff97911869efc9359cd"></a>
+<a class="el" href="struct_scenario_1_1_outlet_routing.html">OutletRouting</a>&#160;</td><td class="memItemRight" valign="bottom"><b>outletRouting</b> (const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;p) noexcept</td></tr>
+<tr class="separator:a92dceb9b297adff97911869efc9359cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4d83ce06c1a6dc6fbabd1d6f3db625d" id="r_af4d83ce06c1a6dc6fbabd1d6f3db625d"><td class="memItemLeft" align="right" valign="top"><a id="af4d83ce06c1a6dc6fbabd1d6f3db625d" name="af4d83ce06c1a6dc6fbabd1d6f3db625d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>applyOutletRouting</b> (<a class="el" href="class_scenario_1_1_command_1_1_macro.html">Command::Macro</a> &amp;m, const <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &amp;to, const <a class="el" href="struct_scenario_1_1_outlet_routing.html">OutletRouting</a> &amp;routing)</td></tr>
+<tr class="separator:af4d83ce06c1a6dc6fbabd1d6f3db625d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf27758d067db097769f47052425e38" id="r_accf27758d067db097769f47052425e38"><td class="memItemLeft" align="right" valign="top"><a id="accf27758d067db097769f47052425e38" name="accf27758d067db097769f47052425e38"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canInsertProcessInCable</b> (const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;ctx, const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;cbl)</td></tr>
 <tr class="memdesc:accf27758d067db097769f47052425e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether insertProcessInCable would connect anything at all, for drop feedback. <br /></td></tr>

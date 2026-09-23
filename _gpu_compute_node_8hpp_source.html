@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">using </span>texture_inputs = avnd::gpu_image_input_introspection&lt;Node_T&gt;;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">using </span>texture_outputs = avnd::gpu_image_output_introspection&lt;Node_T&gt;;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  std::shared_ptr&lt;Node_T&gt; state;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> m_last_message{};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  GpuMessageState m_last_message{};</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  ossia::small_flat_map&lt;const score::gfx::Port*, score::gfx::TextureRenderTarget, 2&gt;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      m_rts;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
@@ -542,10 +542,10 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  {</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keyword">auto</span>&amp; parent = node();</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="comment">// If we are paused, we don&#39;t run the processor implementation.</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">// if(parent.last_message.token.date == m_last_time) {</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">// if(parent.last_message.message.token.date == m_last_time) {</span></div>
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="comment">//   return;</span></div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="comment">// m_last_time = parent.last_message.token.date;</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="comment">// m_last_time = parent.last_message.message.token.date;</span></div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="comment">// Apply the controls</span></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    parent.processControlIn(</div>
@@ -617,7 +617,6 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="ttc" id="astructgpp_1_1qrhi_1_1handle__update_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1handle__update.html">gpp::qrhi::handle_update</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:253</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:198</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_message_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:49</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:177</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:247</div></div>
 </div><!-- fragment --></div><!-- contents -->

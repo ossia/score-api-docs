@@ -168,6 +168,8 @@ static <a class="el" href="classscore_1_1_skin.html">Skin</a> &amp;&#160;</td><t
 <tr class="separator:acecaaf887b4edd53c5f96e5bbb285c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51c02c4d8f16ba5389b3e6da39061b1" id="r_af51c02c4d8f16ba5389b3e6da39061b1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#af51c02c4d8f16ba5389b3e6da39061b1">exists</a> () noexcept</td></tr>
 <tr class="separator:af51c02c4d8f16ba5389b3e6da39061b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6ae55bc6daf572fac447a5c60d4e2c" id="r_a9b6ae55bc6daf572fac447a5c60d4e2c"><td class="memItemLeft" align="right" valign="top">static QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a9b6ae55bc6daf572fac447a5c60d4e2c">merged</a> (const QJsonObject &amp;base, const QJsonObject &amp;over)</td></tr>
+<tr class="separator:a9b6ae55bc6daf572fac447a5c60d4e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f67359a6f4efe0a2a0f7cad980d0f2" id="r_a83f67359a6f4efe0a2a0f7cad980d0f2"><td class="memItemLeft" align="right" valign="top">static const std::vector&lt; std::pair&lt; const char *, QPalette::ColorRole &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_skin.html#a83f67359a6f4efe0a2a0f7cad980d0f2">paletteRoles</a> () noexcept</td></tr>
 <tr class="separator:a83f67359a6f4efe0a2a0f7cad980d0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -501,6 +503,43 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>LoadIndex</b> {}</td><
 </table>
 </div><div class="memdoc">
 <p>Every font a skin may name, keyed as in the file. Single list so load, save, the defaults and the editor cannot drift apart; the editor writes through these pointers and emits changed(). </p>
+
+</div>
+</div>
+<a id="a9b6ae55bc6daf572fac447a5c60d4e2c" name="a9b6ae55bc6daf572fac447a5c60d4e2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b6ae55bc6daf572fac447a5c60d4e2c">&#9670;&#160;</a></span>merged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject score::Skin::merged </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;&#160;</td>
+          <td class="paramname"><em>base</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonObject &amp;&#160;</td>
+          <td class="paramname"><em>over</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><code>over</code> layered on <code>base</code>, objects merged recursively: a key the overlay names wins, anything it leaves out comes from the base. </p>
 
 </div>
 </div>

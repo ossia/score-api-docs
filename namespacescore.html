@@ -1170,12 +1170,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>closeRightClickWidget
 <tr class="memitem:aa035328c34d69d642498dd0c41fb2e99" id="r_aa035328c34d69d642498dd0c41fb2e99"><td class="memItemLeft" align="right" valign="top">QGraphicsProxyWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aa035328c34d69d642498dd0c41fb2e99">showTypeInBox</a> (QGraphicsScene &amp;scene, QPointF scenePos, const std::vector&lt; <a class="el" href="structscore_1_1_type_in_field.html">TypeInField</a> &gt; &amp;fields, std::function&lt; void(int, double)&gt; onChanged, std::function&lt; void()&gt; onFinished)</td></tr>
 <tr class="memdesc:aa035328c34d69d642498dd0c41fb2e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type-in box a right-click raises over a control with more than one number in it.  <br /></td></tr>
 <tr class="separator:aa035328c34d69d642498dd0c41fb2e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141ff3318043e3853f35bf1e50c7e050" id="r_a141ff3318043e3853f35bf1e50c7e050"><td class="memItemLeft" align="right" valign="top"><a id="a141ff3318043e3853f35bf1e50c7e050" name="a141ff3318043e3853f35bf1e50c7e050"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>linkComponentsRequested</b> () noexcept</td></tr>
+<tr class="separator:a141ff3318043e3853f35bf1e50c7e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a4453bf03ffeefafbb31d5aa8d0c40" id="r_a05a4453bf03ffeefafbb31d5aa8d0c40"><td class="memItemLeft" align="right" valign="top"><a id="a05a4453bf03ffeefafbb31d5aa8d0c40" name="a05a4453bf03ffeefafbb31d5aa8d0c40"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>toNumber</b> (double v) noexcept</td></tr>
 <tr class="separator:a05a4453bf03ffeefafbb31d5aa8d0c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb8b7961c695ed79bb608f42aa0e1172" id="r_afb8b7961c695ed79bb608f42aa0e1172"><td class="memItemLeft" align="right" valign="top"><a id="afb8b7961c695ed79bb608f42aa0e1172" name="afb8b7961c695ed79bb608f42aa0e1172"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>toNumber</b> (int v) noexcept</td></tr>
 <tr class="separator:afb8b7961c695ed79bb608f42aa0e1172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3616066dd71b4b9655113bf6b474b798" id="r_a3616066dd71b4b9655113bf6b474b798"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N, typename Set &gt; </td></tr>
+<tr class="memitem:a3616066dd71b4b9655113bf6b474b798"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacescore.html#a3616066dd71b4b9655113bf6b474b798">linkComponents</a> (const std::array&lt; T, N &gt; &amp;previous, std::size_t source, T current, Set &amp;&amp;set) noexcept</td></tr>
+<tr class="separator:a3616066dd71b4b9655113bf6b474b798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab048638063c5cfe9d7de1185928b3e65" id="r_ab048638063c5cfe9d7de1185928b3e65"><td class="memTemplParams" colspan="2"><a id="ab048638063c5cfe9d7de1185928b3e65" name="ab048638063c5cfe9d7de1185928b3e65"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab048638063c5cfe9d7de1185928b3e65"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator*</b> (double lhs, const <a class="el" href="structscore_1_1_value_assigner.html">ValueAssigner</a>&lt; T &gt; &amp;rhs) noexcept</td></tr>
@@ -2050,6 +2056,57 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>True when <code>path</code> is <code>folder</code> itself or lives below it. Both must be absolute. Used as the containment guard by everything that writes or deletes inside a project. </p>
+
+</div>
+</div>
+<a id="a3616066dd71b4b9655113bf6b474b798" name="a3616066dd71b4b9655113bf6b474b798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3616066dd71b4b9655113bf6b474b798">&#9670;&#160;</a></span>linkComponents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N, typename Set &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::linkComponents </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Set &amp;&amp;&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Give every component but <code>source</code> the delta that <code>source</code> just took. Normalized units: each one moves by the same fraction of its own range and stops at its own bounds. </p>
 
 </div>
 </div>

@@ -30,7 +30,7 @@ var namespaceoscr =
     [ "GraphWidget", "structoscr_1_1_graph_widget.html", null ],
     [ "InletInitFunc", "structoscr_1_1_inlet_init_func.html", null ],
     [ "LayerFactory", "classoscr_1_1_layer_factory.html", null ],
-    [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", null ],
+    [ "LayoutBuilder", "structoscr_1_1_layout_builder.html", "structoscr_1_1_layout_builder" ],
     [ "Logger", "structoscr_1_1_logger.html", null ],
     [ "MatchingWidget", "structoscr_1_1_matching_widget.html", null ],
     [ "MatchingWidget< Field >", "structoscr_1_1_matching_widget_3_01_field_01_4.html", null ],

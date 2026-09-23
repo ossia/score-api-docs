@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"_messages_panel_8hpp_source.html":[13,0,0,1,0,4,0],
 "_metadata_generator_8hpp_source.html":[13,0,0,2,19,2,11],
 "_metadata_widget_8hpp_source.html":[13,0,0,2,32,4,6,10],
 "_metadatas_8hpp_source.html":[13,0,0,2,8,3,18],
@@ -209,7 +210,7 @@ var NAVTREEINDEX4 =
 "_plugin_8hpp_source.html":[13,0,0,2,39,0,10],
 "_plugin_dependency_graph_8hpp_source.html":[13,0,0,1,0,5,0],
 "_plugin_instances_8hpp_source.html":[13,0,0,1,1,8,12],
-"_plugin_item_model_8hpp_source.html":[13,0,0,2,27,0,3],
+"_plugin_item_model_8hpp_source.html":[13,0,0,2,27,0,4],
 "_plugin_manager_8hpp_source.html":[13,0,0,1,0,5,1],
 "_plugin_requirements___qt_interface_8hpp_source.html":[13,0,0,1,1,8,4,4],
 "_plugin_scanner_8hpp_source.html":[13,0,0,2,24,0,16],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "_pretty_port_name_8hpp_source.html":[13,0,0,2,3,4,3,21],
 "_preview_node_8hpp_source.html":[13,0,0,2,17,1,4,32],
 "_preview_settings_8hpp_source.html":[13,0,0,2,3,4,41],
-"_primitive_8hpp_source.html":[13,0,0,2,35,0,53],
-"_process_2_execution_2_process_component_8hpp_source.html":[13,0,0,2,3,4,5,0]
+"_primitive_8hpp_source.html":[13,0,0,2,35,0,53]
 };

@@ -288,6 +288,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forEachContro
 <tr class="separator:a0ee8238dd59cfbe7a8a569d636576d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a449468f1c8afa5aa82ef3b5e4aa20618" id="r_a449468f1c8afa5aa82ef3b5e4aa20618"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618">mapExternalFiles</a> (<a class="el" href="class_process_1_1_external_file_map.html">Process::ExternalFileMap</a> &amp;map)</td></tr>
 <tr class="separator:a449468f1c8afa5aa82ef3b5e4aa20618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aade83e078da656d15ced5f20d0fd981e" id="r_aade83e078da656d15ced5f20d0fd981e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#aade83e078da656d15ced5f20d0fd981e">externalSourceOutOfDate</a> () const noexcept</td></tr>
+<tr class="separator:aade83e078da656d15ced5f20d0fd981e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc601322e437e1f337678fa8a5bfb2a" id="r_a5fc601322e437e1f337678fa8a5bfb2a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classscore_1_1_command.html">score::Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a5fc601322e437e1f337678fa8a5bfb2a">refreshFromExternalSource</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const</td></tr>
+<tr class="separator:a5fc601322e437e1f337678fa8a5bfb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae527bf9f4653fbbcf5af0af13dbc4d89" id="r_ae527bf9f4653fbbcf5af0af13dbc4d89"><td class="memItemLeft" align="right" valign="top"><a id="ae527bf9f4653fbbcf5af0af13dbc4d89" name="ae527bf9f4653fbbcf5af0af13dbc4d89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>externalSourceOutOfDateChanged</b> (bool v)</td></tr>
+<tr class="separator:ae527bf9f4653fbbcf5af0af13dbc4d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afed1d6015e00065f9914edc79e13e9e3" id="r_afed1d6015e00065f9914edc79e13e9e3"><td class="memItemLeft" align="right" valign="top"><a id="afed1d6015e00065f9914edc79e13e9e3" name="afed1d6015e00065f9914edc79e13e9e3"></a>
 virtual std::optional&lt; <a class="el" href="struct_process_1_1_magnetic_info.html">Process::MagneticInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>magneticPosition</b> (const QObject *o, const <a class="el" href="struct_time_val.html">TimeVal</a> t) const noexcept</td></tr>
 <tr class="separator:afed1d6015e00065f9914edc79e13e9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +361,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stopExecution</b> ()<
 <tr class="memitem:a466df13266657b05f6815dfd354d89c7" id="r_a466df13266657b05f6815dfd354d89c7"><td class="memItemLeft" align="right" valign="top"><a id="a466df13266657b05f6815dfd354d89c7" name="a466df13266657b05f6815dfd354d89c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resetExecution</b> ()</td></tr>
 <tr class="separator:a466df13266657b05f6815dfd354d89c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b858f24776acabe4739af9a34c883fd" id="r_a2b858f24776acabe4739af9a34c883fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a2b858f24776acabe4739af9a34c883fd">executionPosition</a> (double arg_1)</td></tr>
+<tr class="separator:a2b858f24776acabe4739af9a34c883fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3077df173e9c90eee9e933b3095261cf" id="r_a3077df173e9c90eee9e933b3095261cf"><td class="memItemLeft" align="right" valign="top"><a id="a3077df173e9c90eee9e933b3095261cf" name="a3077df173e9c90eee9e933b3095261cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>durationChanged</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;arg_1)</td></tr>
 <tr class="separator:a3077df173e9c90eee9e933b3095261cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -553,6 +562,53 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 
 </div>
 </div>
+<a id="a2b858f24776acabe4739af9a34c883fd" name="a2b858f24776acabe4739af9a34c883fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b858f24776acabe4739af9a34c883fd">&#9670;&#160;</a></span>executionPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::ProcessModel::executionPosition </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>arg_1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where the playhead is in the process, in [0; 1]: pushed by the parent interval while it runs, for the items that draw a running position. </p>
+
+</div>
+</div>
+<a id="aade83e078da656d15ced5f20d0fd981e" name="aade83e078da656d15ced5f20d0fd981e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade83e078da656d15ced5f20d0fd981e">&#9670;&#160;</a></span>externalSourceOutOfDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Process::ProcessModel::externalSourceOutOfDate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For a process carrying the ExternalSourceRefreshable flag: whether the source it was copied from holds something else than what the document does. The answer must be cheap &ndash; callers may ask on every repaint &ndash; so implementations cache it rather than looking at the disk each time. </p>
+
+<p>Reimplemented in <a class="el" href="class_j_s_1_1_process_model.html#af56d5bc91f4ceb52b0cacfa4b041aeb6">JS::ProcessModel</a>.</p>
+
+</div>
+</div>
 <a id="a63ae15dc8002c6aaa5f4be9c8cf2b712" name="a63ae15dc8002c6aaa5f4be9c8cf2b712"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a63ae15dc8002c6aaa5f4be9c8cf2b712">&#9670;&#160;</a></span>folded()</h2>
 
@@ -606,6 +662,35 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 <p>The default implementation covers file- and folder-valued control ports, so only a process that stores a path outside of a port needs to override it; such an override must still call this base implementation. </p>
 
 <p>Reimplemented in <a class="el" href="class_gfx_1_1_video_1_1_model.html#ab36e6f0b2b425c24074954e0feaefd95">Gfx::Video::Model</a>, <a class="el" href="class_j_s_1_1_process_model.html#a5fe7eba49661b2632237a6f58ac8ca74">JS::ProcessModel</a>, <a class="el" href="class_media_1_1_sound_1_1_process_model.html#a4e5952bec75c2a41cb865d1d785f37a7">Media::Sound::ProcessModel</a>, <a class="el" href="class_pd_1_1_process_model.html#ada52190ffcf2a86de51c265e3d25ea9a">Pd::ProcessModel</a>, and <a class="el" href="classvst3_1_1_model.html#aac5bf3f7ebe9285cdc5e2413a90bd75c">vst3::Model</a>.</p>
+
+</div>
+</div>
+<a id="a5fc601322e437e1f337678fa8a5bfb2a" name="a5fc601322e437e1f337678fa8a5bfb2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc601322e437e1f337678fa8a5bfb2a">&#9670;&#160;</a></span>refreshFromExternalSource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classscore_1_1_command.html">score::Command</a> * Process::ProcessModel::refreshFromExternalSource </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The command bringing the document's copy back in line with that source. Null when there is nothing to update to. </p>
+
+<p>Reimplemented in <a class="el" href="class_j_s_1_1_process_model.html#aa23e4e5fc9a19262aaee168ab98e9dbe">JS::ProcessModel</a>.</p>
 
 </div>
 </div>

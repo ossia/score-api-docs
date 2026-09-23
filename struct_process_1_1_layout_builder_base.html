@@ -145,9 +145,8 @@ QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>makeLabel<
 <tr class="memitem:aceecda053011705d68c7f670d4422f2a" id="r_aceecda053011705d68c7f670d4422f2a"><td class="memItemLeft" align="right" valign="top"><a id="aceecda053011705d68c7f670d4422f2a" name="aceecda053011705d68c7f670d4422f2a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>finalizeLayout</b> (QGraphicsItem *rootItem)</td></tr>
 <tr class="separator:aceecda053011705d68c7f670d4422f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a07a3ba1dc7a86b582e23de35946aa" id="r_a97a07a3ba1dc7a86b582e23de35946aa"><td class="memTemplParams" colspan="2"><a id="a97a07a3ba1dc7a86b582e23de35946aa" name="a97a07a3ba1dc7a86b582e23de35946aa"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a97a07a3ba1dc7a86b582e23de35946aa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_brush</b> (T cur)</td></tr>
+<tr class="memitem:a97a07a3ba1dc7a86b582e23de35946aa" id="r_a97a07a3ba1dc7a86b582e23de35946aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a97a07a3ba1dc7a86b582e23de35946aa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_process_1_1_layout_builder_base.html#a97a07a3ba1dc7a86b582e23de35946aa">get_brush</a> (T cur)</td></tr>
 <tr class="separator:a97a07a3ba1dc7a86b582e23de35946aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd48048384414268bcc06d3a18f86e3b" id="r_acd48048384414268bcc06d3a18f86e3b"><td class="memTemplParams" colspan="2"><a id="acd48048384414268bcc06d3a18f86e3b" name="acd48048384414268bcc06d3a18f86e3b"></a>
 template&lt;typename Item &gt; </td></tr>
@@ -185,6 +184,38 @@ QGraphicsItem *&#160;</td><td class="memItemRight" valign="bottom"><b>layout</b>
 std::vector&lt; <a class="el" href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>createdLayouts</b> {}</td></tr>
 <tr class="separator:a88846a62cd4735ee29785f0d4228a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a97a07a3ba1dc7a86b582e23de35946aa" name="a97a07a3ba1dc7a86b582e23de35946aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a07a3ba1dc7a86b582e23de35946aa">&#9670;&#160;</a></span>get_brush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1_brush_set.html">score::BrushSet</a> &amp; Process::LayoutBuilderBase::get_brush </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>cur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The skin brush a layout colour names. An object only ever asks for a role</p><ul>
+<li>a background, the value it edits, the value the engine sends back - so that a skin change applies to it like it does to the rest of the software. </li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="plugins_2score-lib-process_2_control_2_layout_8hpp_source.html">plugins/score-lib-process/Control/Layout.hpp</a></li>
 <li><b>Layout.cpp</b></li>

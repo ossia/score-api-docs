@@ -1466,8 +1466,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1515,8 +1515,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2620,6 +2620,7 @@ var hierarchy =
     [ "AvndJit::outlet_vis", "struct_avnd_jit_1_1outlet__vis.html", null ],
     [ "Jit::outlet_vis", "struct_jit_1_1outlet__vis.html", null ],
     [ "oscr::OutletInitFunc< Node >", "structoscr_1_1_outlet_init_func.html", null ],
+    [ "Scenario::OutletRouting", "struct_scenario_1_1_outlet_routing.html", null ],
     [ "Nodes::MidiHiRes::Output", "struct_nodes_1_1_midi_hi_res_1_1_output.html", null ],
     [ "score::gfx::OutputConfiguration", "structscore_1_1gfx_1_1_output_configuration.html", null ],
     [ "Gfx::OutputMapping", "struct_gfx_1_1_output_mapping.html", null ],
@@ -5069,6 +5070,7 @@ var hierarchy =
     [ "Nodes::MathGenerator::Node::ui", "struct_nodes_1_1_math_generator_1_1_node_1_1ui.html", null ],
     [ "Nodes::MathMapping::Node::ui", "struct_nodes_1_1_math_mapping_1_1_node_1_1ui.html", null ],
     [ "Nodes::MicroMapping::Node::ui", "struct_nodes_1_1_micro_mapping_1_1_node_1_1ui.html", null ],
+    [ "Nodes::PulseToNote::Node::ui", "struct_nodes_1_1_pulse_to_note_1_1_node_1_1ui.html", null ],
     [ "Nodes::RateLimiter::Node::ui", "struct_nodes_1_1_rate_limiter_1_1_node_1_1ui.html", null ],
     [ "Threedim::BuffersToGeometry2::ui", "struct_threedim_1_1_buffers_to_geometry2_1_1ui.html", null ],
     [ "Threedim::BuffersToGeometry::ui", "struct_threedim_1_1_buffers_to_geometry_1_1ui.html", null ],

@@ -135,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b169f0eb5776bb0bd75c99a8ae9f26d" id="r_a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#a5b169f0eb5776bb0bd75c99a8ae9f26d">on_createdDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) override</td></tr>
 <tr class="memdesc:a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_createdDocument Will be called after either on_newDocument or on_loadedDocument was called on every plug-in.  <br /></td></tr>
 <tr class="separator:a5b169f0eb5776bb0bd75c99a8ae9f26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4f235d710034dd18ed2e69e2df199a2" id="r_ab4f235d710034dd18ed2e69e2df199a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#ab4f235d710034dd18ed2e69e2df199a2">initialize</a> () override</td></tr>
+<tr class="memdesc:ab4f235d710034dd18ed2e69e2df199a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize  <br /></td></tr>
+<tr class="separator:ab4f235d710034dd18ed2e69e2df199a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a173bfb0da53b8ed4a1a1ee5c64d70f2e" id="r_a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#a173bfb0da53b8ed4a1a1ee5c64d70f2e">afterStartup</a> () override</td></tr>
 <tr class="memdesc:a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">afterStartup Called after all the documents have been created / loaded  <br /></td></tr>
 <tr class="separator:a173bfb0da53b8ed4a1a1ee5c64d70f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +154,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>runStartScripts</b> (
 <tr class="memitem:adfcaff7c9e36c36d8f0138bebeb7a27a inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_adfcaff7c9e36c36d8f0138bebeb7a27a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="structscore_1_1_g_u_i_elements.html">GUIElements</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#adfcaff7c9e36c36d8f0138bebeb7a27a">makeGUIElements</a> ()</td></tr>
 <tr class="memdesc:adfcaff7c9e36c36d8f0138bebeb7a27a inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeGUIElements  <br /></td></tr>
 <tr class="separator:adfcaff7c9e36c36d8f0138bebeb7a27a inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65db099590d76bf2c4361b161d35fd39 inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_a65db099590d76bf2c4361b161d35fd39"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39">initialize</a> ()</td></tr>
-<tr class="memdesc:a65db099590d76bf2c4361b161d35fd39 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">initialize  <br /></td></tr>
-<tr class="separator:a65db099590d76bf2c4361b161d35fd39 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b7f92447cd8f8e62856f3ca5159890 inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_ab9b7f92447cd8f8e62856f3ca5159890"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1_document.html">Document</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#ab9b7f92447cd8f8e62856f3ca5159890">currentDocument</a> () const</td></tr>
 <tr class="memdesc:ab9b7f92447cd8f8e62856f3ca5159890 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">currentDocument  <br /></td></tr>
 <tr class="separator:ab9b7f92447cd8f8e62856f3ca5159890 inherit pub_methods_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,8 +301,38 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 </div><div class="memdoc">
 <p>Load an ES module and give it a chance to set itself up.</p>
 <p>ES modules cannot go through QJSEngine::evaluate, which parses its input as a script: a top-level <code>export</code> is a syntax error there. They must be imported, which is why loading one is a function of its own.</p>
-<p>The module's <code><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39" title="initialize">initialize()</a></code> is called if it has one, and the module is left on the global object under its base name so that whatever runs next &ndash; another &ndash;script, the console, a menu action &ndash; can call into it.</p>
-<p>Returns the module, or the error value the caller should report: either the import failing, or <code><a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39" title="initialize">initialize()</a></code> throwing. </p>
+<p>The module's <code><a class="el" href="class_j_s_1_1_application_plugin.html#ab4f235d710034dd18ed2e69e2df199a2" title="initialize">initialize()</a></code> is called if it has one, and the module is left on the global object under its base name so that whatever runs next &ndash; another &ndash;script, the console, a menu action &ndash; can call into it.</p>
+<p>Returns the module, or the error value the caller should report: either the import failing, or <code><a class="el" href="class_j_s_1_1_application_plugin.html#ab4f235d710034dd18ed2e69e2df199a2" title="initialize">initialize()</a></code> throwing. </p>
+
+</div>
+</div>
+<a id="ab4f235d710034dd18ed2e69e2df199a2" name="ab4f235d710034dd18ed2e69e2df199a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4f235d710034dd18ed2e69e2df199a2">&#9670;&#160;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::ApplicationPlugin::initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>initialize </p>
+<p>This method will be called once every class has been loaded from every plug-in. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a65db099590d76bf2c4361b161d35fd39">score::GUIApplicationPlugin</a>.</p>
 
 </div>
 </div>

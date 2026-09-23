@@ -9,5 +9,6 @@ var classscore_1_1_q_graphics_path_generator_x_y =
       [ "Polygon", "classscore_1_1_q_graphics_path_generator_x_y.html#aad8340528a3ddeeda9a797d32c5dad67a85b0c22a10fc5b184fd3524560710143", null ]
     ] ],
     [ "pathPoint", "classscore_1_1_q_graphics_path_generator_x_y.html#ae39ab5e1c3531a80153b635e01a84b1c", null ],
+    [ "setExecutionPosition", "classscore_1_1_q_graphics_path_generator_x_y.html#ae3f7279eb807cbd23f25d2ec7d6bcca6", null ],
     [ "setPathMode", "classscore_1_1_q_graphics_path_generator_x_y.html#af711c195baab602d25dbca780c746c1e", null ]
 ];
