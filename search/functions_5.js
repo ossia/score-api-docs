@@ -45,7 +45,8 @@ var searchData=
   ['freeprocesspositionbelow_42',['freeProcessPositionBelow',['../namespace_scenario.html#a7eafac8eb7b323e368b8dbc9e71ff4e5',1,'Scenario']]],
   ['fromavpixelformat_43',['fromAVPixelFormat',['../structscore_1_1gfx_1_1_pixel_format_info.html#a3a508158b479bb414b23686c3ba5175c',1,'score::gfx::PixelFormatInfo']]],
   ['fromcodecparameters_44',['fromCodecParameters',['../structscore_1_1gfx_1_1_pixel_format_info.html#acfa4f17e6ba576bdf50723876d702300',1,'score::gfx::PixelFormatInfo']]],
-  ['fromtext_45',['fromText',['../class_explorer_1_1_address_value_widget.html#a44b26aa9b5b1d8a562a75d51e8854ab7',1,'Explorer::AddressValueWidget']]],
-  ['fromv4l2pixelformat_46',['fromV4L2PixelFormat',['../_v4_l2_pixel_format_8hpp.html#a5e7974416993eef6bf902e8432700152',1,'score::gfx::interop']]],
-  ['fulltextedited_47',['fullTextEdited',['../class_state_1_1_expandable_text_edit.html#a7200a861ea2d8c87d97b62d2925ca2eb',1,'State::ExpandableTextEdit']]]
+  ['fromcurvedata_45',['fromCurveData',['../class_curve_1_1_model.html#a7f5ea6f914489270135f59eff78a9819',1,'Curve::Model']]],
+  ['fromtext_46',['fromText',['../class_explorer_1_1_address_value_widget.html#a44b26aa9b5b1d8a562a75d51e8854ab7',1,'Explorer::AddressValueWidget']]],
+  ['fromv4l2pixelformat_47',['fromV4L2PixelFormat',['../_v4_l2_pixel_format_8hpp.html#a5e7974416993eef6bf902e8432700152',1,'score::gfx::interop']]],
+  ['fulltextedited_48',['fullTextEdited',['../class_state_1_1_expandable_text_edit.html#a7200a861ea2d8c87d97b62d2925ca2eb',1,'State::ExpandableTextEdit']]]
 ];

@@ -115,10 +115,10 @@ $(document).ready(function(){initNavTree('_move_point_command_object_8hpp_source
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Curve/Segment/CurveSegmentData.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_curve.html">Curve</a></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">struct </span>CurveSegmentMap;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;ossia/detail/small_vector.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_curve.html">Curve</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>Presenter;</div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_curve_1_1_move_point_command_object.html">   11</a></span><span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT <a class="code hl_class" href="class_curve_1_1_move_point_command_object.html">MovePointCommandObject</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_curve_1_1_command_object_base.html">CommandObjectBase</a></div>
@@ -137,22 +137,29 @@ $(document).ready(function(){initNavTree('_move_point_command_object_8hpp_source
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> cancel();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> handlePointOverlap(<a class="code hl_struct" href="struct_curve_1_1_curve_segment_map.html">CurveSegmentMap</a>&amp; segments);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> handleSuppressOnOverlap(<a class="code hl_struct" href="struct_curve_1_1_curve_segment_map.html">CurveSegmentMap</a>&amp; segments);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> handleCrossOnOverlap(<a class="code hl_struct" href="struct_curve_1_1_curve_segment_map.html">CurveSegmentMap</a>&amp; segments);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> setCurrentPoint(<a class="code hl_struct" href="struct_curve_1_1_curve_segment_map.html">CurveSegmentMap</a>&amp; segments);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">bool</span> crosses(<span class="keywordtype">double</span> x) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> setCurrentPoint(std::vector&lt;SegmentData&gt;&amp; segments);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">bool</span> suppressOverlapped(std::vector&lt;SegmentData&gt;&amp; segments) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">bool</span> crossOverlapped(std::vector&lt;SegmentData&gt;&amp; segments) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> setTooltip(<span class="keyword">const</span> Curve::Point&amp; p);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">void</span> unsetTooltip();</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> m_pressed{};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// In m_startSegments, found at press.</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  int64_t m_prevIndex{-1}, m_follIndex{-1};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="comment">// Where m_segments differs from m_startSegments after a plain move.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  ossia::small_vector&lt;int64_t, 2&gt; m_touched;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="comment">// The nearest points on each side at press, whatever the locking.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">double</span> m_innerMin{}, m_innerMax{};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>};</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
-<div class="ttc" id="aclass_curve_1_1_command_object_base_html"><div class="ttname"><a href="class_curve_1_1_command_object_base.html">Curve::CommandObjectBase</a></div><div class="ttdef"><b>Definition</b> CurveCommandObjectBase.hpp:56</div></div>
-<div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition</b> CurveModel.hpp:25</div></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="ttc" id="aclass_curve_1_1_command_object_base_html"><div class="ttname"><a href="class_curve_1_1_command_object_base.html">Curve::CommandObjectBase</a></div><div class="ttdef"><b>Definition</b> CurveCommandObjectBase.hpp:67</div></div>
+<div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition</b> CurveModel.hpp:26</div></div>
 <div class="ttc" id="aclass_curve_1_1_move_point_command_object_html"><div class="ttname"><a href="class_curve_1_1_move_point_command_object.html">Curve::MovePointCommandObject</a></div><div class="ttdef"><b>Definition</b> MovePointCommandObject.hpp:12</div></div>
 <div class="ttc" id="aclass_curve_1_1_presenter_html"><div class="ttname"><a href="class_curve_1_1_presenter.html">Curve::Presenter</a></div><div class="ttdef"><b>Definition</b> CurvePresenter.hpp:32</div></div>
 <div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:20</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:12</div></div>
-<div class="ttc" id="astruct_curve_1_1_curve_segment_map_html"><div class="ttname"><a href="struct_curve_1_1_curve_segment_map.html">Curve::CurveSegmentMap</a></div><div class="ttdef"><b>Definition</b> MovePointCommandObject.cpp:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

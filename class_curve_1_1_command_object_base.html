@@ -139,9 +139,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handleLocking</b> ()<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a51446f1cec783d0b6a0e0fe91a4e7473" id="r_a51446f1cec783d0b6a0e0fe91a4e7473"><td class="memItemLeft" align="right" valign="top"><a id="a51446f1cec783d0b6a0e0fe91a4e7473" name="a51446f1cec783d0b6a0e0fe91a4e7473"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>submit</b> (std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;&amp;)</td></tr>
-<tr class="separator:a51446f1cec783d0b6a0e0fe91a4e7473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d70e79124a8b7cd99d56df3994c7f5" id="r_a70d70e79124a8b7cd99d56df3994c7f5"><td class="memItemLeft" align="right" valign="top"><a id="a70d70e79124a8b7cd99d56df3994c7f5" name="a70d70e79124a8b7cd99d56df3994c7f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>submit</b> (const std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;)</td></tr>
+<tr class="separator:a70d70e79124a8b7cd99d56df3994c7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc012b0672727a5134e0fa1954ff98a4" id="r_acc012b0672727a5134e0fa1954ff98a4"><td class="memItemLeft" align="right" valign="top"><a id="acc012b0672727a5134e0fa1954ff98a4" name="acc012b0672727a5134e0fa1954ff98a4"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;segments, const OptionalId&lt; <a class="el" href="class_curve_1_1_segment_model.html">SegmentModel</a> &gt; &amp;id)</td></tr>
 <tr class="separator:acc012b0672727a5134e0fa1954ff98a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,9 +154,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_press</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:abab874d828b91ac921f2a8fbd999d757" id="r_abab874d828b91ac921f2a8fbd999d757"><td class="memItemLeft" align="right" valign="top"><a id="abab874d828b91ac921f2a8fbd999d757" name="abab874d828b91ac921f2a8fbd999d757"></a>
-QVector&lt; QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_oldCurveData</b></td></tr>
-<tr class="separator:abab874d828b91ac921f2a8fbd999d757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15470ca80349e777bb72e6a0b4e588b9" id="r_a15470ca80349e777bb72e6a0b4e588b9"><td class="memItemLeft" align="right" valign="top"><a id="a15470ca80349e777bb72e6a0b4e588b9" name="a15470ca80349e777bb72e6a0b4e588b9"></a>
 QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>m_originalPress</b></td></tr>
 <tr class="separator:a15470ca80349e777bb72e6a0b4e588b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +172,10 @@ const <a class="el" href="class_curve_1_1_model.html">Model</a> &amp;&#160;</td>
 <tr class="memitem:ac5c7d8a2a4c76ff672c92104737f2a8d" id="r_ac5c7d8a2a4c76ff672c92104737f2a8d"><td class="memItemLeft" align="right" valign="top"><a id="ac5c7d8a2a4c76ff672c92104737f2a8d" name="ac5c7d8a2a4c76ff672c92104737f2a8d"></a>
 std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_startSegments</b></td></tr>
 <tr class="separator:ac5c7d8a2a4c76ff672c92104737f2a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11cac483416e03113f04e2a3e9fc52f3" id="r_a11cac483416e03113f04e2a3e9fc52f3"><td class="memItemLeft" align="right" valign="top"><a id="a11cac483416e03113f04e2a3e9fc52f3" name="a11cac483416e03113f04e2a3e9fc52f3"></a>
+std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_segments</b></td></tr>
+<tr class="memdesc:a11cac483416e03113f04e2a3e9fc52f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The curve being submitted: kept across moves for its storage. <br /></td></tr>
+<tr class="separator:a11cac483416e03113f04e2a3e9fc52f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791e1127c044b554bc3379fdfe280de5" id="r_a791e1127c044b554bc3379fdfe280de5"><td class="memItemLeft" align="right" valign="top"><a id="a791e1127c044b554bc3379fdfe280de5" name="a791e1127c044b554bc3379fdfe280de5"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_xmin</b> {-1}</td></tr>
 <tr class="separator:a791e1127c044b554bc3379fdfe280de5"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -118,19 +118,25 @@ Inheritance diagram for Curve::UpdateCurve:</div>
 <area href="classscore_1_1_command.html" title="The Command class." alt="score::Command" shape="rect" coords="0,0,127,24"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Replaces a curve by <code>segments</code>, keeping only what differs: the cost of undo, redo and of the command on the stack is that of the change. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a994b691262db4e86ce0c20c3676b5c0b" id="r_a994b691262db4e86ce0c20c3676b5c0b"><td class="memItemLeft" align="right" valign="top"><a id="a994b691262db4e86ce0c20c3676b5c0b" name="a994b691262db4e86ce0c20c3676b5c0b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCurve</b> (const <a class="el" href="class_curve_1_1_model.html">Model</a> &amp;model, std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;&amp;segments)</td></tr>
-<tr class="separator:a994b691262db4e86ce0c20c3676b5c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7dbac3be71de9c9630205fdb5cb68d" id="r_add7dbac3be71de9c9630205fdb5cb68d"><td class="memItemLeft" align="right" valign="top"><a id="add7dbac3be71de9c9630205fdb5cb68d" name="add7dbac3be71de9c9630205fdb5cb68d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateCurve</b> (const <a class="el" href="class_curve_1_1_model.html">Model</a> &amp;model, const std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;segments)</td></tr>
+<tr class="separator:add7dbac3be71de9c9630205fdb5cb68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a585cc55d951eff536be17f397436f1bb" id="r_a585cc55d951eff536be17f397436f1bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_update_curve.html#a585cc55d951eff536be17f397436f1bb">undo</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
 <tr class="separator:a585cc55d951eff536be17f397436f1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4c6c18ec91d1d4b00a3bd15ec0f2730" id="r_ab4c6c18ec91d1d4b00a3bd15ec0f2730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_update_curve.html#ab4c6c18ec91d1d4b00a3bd15ec0f2730">redo</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const override</td></tr>
 <tr class="separator:ab4c6c18ec91d1d4b00a3bd15ec0f2730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b45a921d50a6d808682824e28616159" id="r_a1b45a921d50a6d808682824e28616159"><td class="memItemLeft" align="right" valign="top"><a id="a1b45a921d50a6d808682824e28616159" name="a1b45a921d50a6d808682824e28616159"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structunused__t.html">unused_t</a>, std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;&amp;segments)</td></tr>
-<tr class="separator:a1b45a921d50a6d808682824e28616159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a011d1cd4f12fef44db0f61cc67e37e0d" id="r_a011d1cd4f12fef44db0f61cc67e37e0d"><td class="memItemLeft" align="right" valign="top"><a id="a011d1cd4f12fef44db0f61cc67e37e0d" name="a011d1cd4f12fef44db0f61cc67e37e0d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const <a class="el" href="class_curve_1_1_model.html">Model</a> &amp;model, const std::vector&lt; <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a> &gt; &amp;segments)</td></tr>
+<tr class="memdesc:a011d1cd4f12fef44db0f61cc67e37e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">For an ongoing edit: <code>model</code> is as the last redo() left it. <br /></td></tr>
+<tr class="separator:a011d1cd4f12fef44db0f61cc67e37e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd98e7151d6566e85c98f5ac1568a52" id="r_a0bd98e7151d6566e85c98f5ac1568a52"><td class="memItemLeft" align="right" valign="top"><a id="a0bd98e7151d6566e85c98f5ac1568a52" name="a0bd98e7151d6566e85c98f5ac1568a52"></a>
+const std::vector&lt; <a class="el" href="struct_curve_1_1_curve_change.html">CurveChange</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>changes</b> () const noexcept</td></tr>
+<tr class="separator:a0bd98e7151d6566e85c98f5ac1568a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_command.html">score::Command</a></td></tr>
 <tr class="memitem:a46570e388c76adf0d1e1487e69826c6a inherit pub_methods_classscore_1_1_command" id="r_a46570e388c76adf0d1e1487e69826c6a"><td class="memItemLeft" align="right" valign="top">
 virtual const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>parentKey</b> () const noexcept=0</td></tr>

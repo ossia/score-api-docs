@@ -12,10 +12,11 @@ var searchData=
   ['bucketfor_9',['bucketFor',['../struct_media_1_1_waveform_summary.html#a5dd2ca60326b0b8a35ef650faa8b2a19',1,'Media::WaveformSummary']]],
   ['buffer_10',['buffer',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#ab802399b4181b7fb5b219c2716a950c6',1,'score::gfx::GpuResourceRegistry']]],
   ['buffertypefor_11',['bufferTypeFor',['../namespacescore_1_1gfx.html#a318887c25edd0426cc55730f2f08a4b0',1,'score::gfx']]],
-  ['build_5fsummary_12',['build_summary',['../struct_media_1_1_audio_file_1_1_view_handle.html#a817c17225c1a009c6f7215eafd67833f',1,'Media::AudioFile::ViewHandle']]],
-  ['buildextrabindings_13',['buildExtraBindings',['../namespacescore_1_1gfx.html#a3a95f9f5a14a7be8bd3a62cc4f7ffb23',1,'score::gfx']]],
-  ['buildpipeline_14',['buildpipeline',['../namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77',1,'score::gfx::buildPipeline(const RenderList &amp;renderer, const Mesh &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const TextureRenderTarget &amp;rt, QRhiShaderResourceBindings *srb)'],['../namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259',1,'score::gfx::buildPipeline(const RenderList &amp;renderer, const Mesh &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const TextureRenderTarget &amp;rt, QRhiBuffer *processUBO, QRhiBuffer *materialUBO, std::span&lt; const Sampler &gt; samplers, std::span&lt; QRhiShaderResourceBinding &gt; additionalBindings={})']]],
-  ['buildpipelinewithstate_15',['buildPipelineWithState',['../namespacescore_1_1gfx.html#a784148a3ac35372d525f900679d8a718',1,'score::gfx']]],
-  ['bytessaved_16',['bytesSaved',['../struct_process_1_1_file_report.html#aeecd70c8ba4e9e24eef97e12df8ca92e',1,'Process::FileReport']]],
-  ['bytestocopy_17',['bytesToCopy',['../struct_process_1_1_file_report.html#a7ae9d993e9eb4d511a392fdce7763302',1,'Process::FileReport']]]
+  ['build_12',['build',['../class_curve_1_1_min_max_pyramid.html#a9fee3ec07ce978380d2955f0e3c635a4',1,'Curve::MinMaxPyramid']]],
+  ['build_5fsummary_13',['build_summary',['../struct_media_1_1_audio_file_1_1_view_handle.html#a817c17225c1a009c6f7215eafd67833f',1,'Media::AudioFile::ViewHandle']]],
+  ['buildextrabindings_14',['buildExtraBindings',['../namespacescore_1_1gfx.html#a3a95f9f5a14a7be8bd3a62cc4f7ffb23',1,'score::gfx']]],
+  ['buildpipeline_15',['buildpipeline',['../namespacescore_1_1gfx.html#a5b9fe885aafe546214b24385dda52e77',1,'score::gfx::buildPipeline(const RenderList &amp;renderer, const Mesh &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const TextureRenderTarget &amp;rt, QRhiShaderResourceBindings *srb)'],['../namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259',1,'score::gfx::buildPipeline(const RenderList &amp;renderer, const Mesh &amp;mesh, const QShader &amp;vertexS, const QShader &amp;fragmentS, const TextureRenderTarget &amp;rt, QRhiBuffer *processUBO, QRhiBuffer *materialUBO, std::span&lt; const Sampler &gt; samplers, std::span&lt; QRhiShaderResourceBinding &gt; additionalBindings={})']]],
+  ['buildpipelinewithstate_16',['buildPipelineWithState',['../namespacescore_1_1gfx.html#a784148a3ac35372d525f900679d8a718',1,'score::gfx']]],
+  ['bytessaved_17',['bytesSaved',['../struct_process_1_1_file_report.html#aeecd70c8ba4e9e24eef97e12df8ca92e',1,'Process::FileReport']]],
+  ['bytestocopy_18',['bytesToCopy',['../struct_process_1_1_file_report.html#a7ae9d993e9eb4d511a392fdce7763302',1,'Process::FileReport']]]
 ];

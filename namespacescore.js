@@ -49,7 +49,7 @@ var namespacescore =
     [ "CommandKeyHash", "structscore_1_1_command_key_hash.html", null ],
     [ "CommandSpinbox", "structscore_1_1_command_spinbox.html", null ],
     [ "CommandStack", "classscore_1_1_command_stack.html", "classscore_1_1_command_stack" ],
-    [ "CommandStackBackup", "structscore_1_1_command_stack_backup.html", null ],
+    [ "CommandStackBackup", "structscore_1_1_command_stack_backup.html", "structscore_1_1_command_stack_backup" ],
     [ "CommandStackFacade", "classscore_1_1_command_stack_facade.html", null ],
     [ "CommandStore", "structscore_1_1_command_store.html", null ],
     [ "Component", "classscore_1_1_component.html", null ],

@@ -208,8 +208,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () INLINE_E
 <tr class="memitem:a38755b96f5bf7dd76297dbbc4e7e053d" id="r_a38755b96f5bf7dd76297dbbc4e7e053d"><td class="memItemLeft" align="right" valign="top"><a id="a38755b96f5bf7dd76297dbbc4e7e053d" name="a38755b96f5bf7dd76297dbbc4e7e053d"></a>
 <a class="el" href="structscore_1_1indirect__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
 <tr class="separator:a38755b96f5bf7dd76297dbbc4e7e053d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a941a2f94c010a5212936fc6611732078" id="r_a941a2f94c010a5212936fc6611732078"><td class="memItemLeft" align="right" valign="top"><a id="a941a2f94c010a5212936fc6611732078" name="a941a2f94c010a5212936fc6611732078"></a>
-Element &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
+<tr class="memitem:a941a2f94c010a5212936fc6611732078" id="r_a941a2f94c010a5212936fc6611732078"><td class="memItemLeft" align="right" valign="top">Element &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_id_container_3_01_element_00_01_model_00_01true_01_4.html#a941a2f94c010a5212936fc6611732078">at</a> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
 <tr class="separator:a941a2f94c010a5212936fc6611732078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -222,6 +221,35 @@ order_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_order</b></td></
 <tr class="separator:a3a2497bf4812bbb050609c1482af47c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a941a2f94c010a5212936fc6611732078" name="a941a2f94c010a5212936fc6611732078"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941a2f94c010a5212936fc6611732078">&#9670;&#160;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Element , typename Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Element &amp; <a class="el" href="class_id_container.html">IdContainer</a>&lt; Element, Model, true &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Always looks the id up: a pointer cached in the id can name an object that was replaced under the same id and not deleted yet. </p>
+
+</div>
+</div>
 <a id="aa9a17af19fd958413a2f45d05da52af9" name="aa9a17af19fd958413a2f45d05da52af9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9a17af19fd958413a2f45d05da52af9">&#9670;&#160;</a></span>insert()</h2>
 

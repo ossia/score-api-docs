@@ -12,5 +12,6 @@ var dir_bd652172bff30603eb5025b6ce39ae35 =
     [ "CurveModel.hpp", "_curve_model_8hpp_source.html", null ],
     [ "CurvePresenter.hpp", "_curve_presenter_8hpp_source.html", null ],
     [ "CurveStyle.hpp", "_curve_style_8hpp_source.html", null ],
-    [ "CurveView.hpp", "_curve_view_8hpp_source.html", null ]
+    [ "CurveView.hpp", "_curve_view_8hpp_source.html", null ],
+    [ "score-plugin-curve/Curve/Envelope.hpp", "score-plugin-curve_2_curve_2_envelope_8hpp_source.html", null ]
 ];

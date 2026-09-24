@@ -17,13 +17,14 @@ var searchData=
   ['loaddevicefromxml_14',['loadDeviceFromXML',['../namespace_device.html#ae28e7db29ec71528be7138e7ff38e166',1,'Device']]],
   ['loadfile_15',['loadFile',['../classscore_1_1_document_manager.html#a40223b7fe4fc078ad0b92879d9d0a99c',1,'score::DocumentManager']]],
   ['loadplugindata_16',['loadPluginData',['../classscore_1_1_g_u_i_application_interface.html#a44ea4a8579f15dcb6feae4e58c5fb441',1,'score::GUIApplicationInterface']]],
-  ['localcommand_17',['localCommand',['../classscore_1_1_command_stack.html#af4c3f99f095feeec42d60635b91df1dc',1,'score::CommandStack']]],
-  ['localpath_18',['localPath',['../classscore_1_1_online_examples.html#a69a93e15e5860e3b1e9d6ab3be8631db',1,'score::OnlineExamples']]],
-  ['localredo_19',['localRedo',['../classscore_1_1_command_stack.html#a4e71c0e7fa4acca66ba7d95d9c0a3124',1,'score::CommandStack']]],
-  ['localundo_20',['localUndo',['../classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c',1,'score::CommandStack']]],
-  ['locatefilepath_21',['locatefilepath',['../namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a',1,'score::locateFilePath(const QString &amp;filename) noexcept'],['../namespacescore.html#aa5dc206faf740132f1dbb03714aa6070',1,'score::locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept'],['../namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5',1,'score::locateFilePath(const QString &amp;filename, const PathRoots &amp;roots) noexcept']]],
-  ['locateshaderpath_22',['locateShaderPath',['../namespace_gfx.html#adf1c9584823b572537548d5577fa3031',1,'Gfx']]],
-  ['locktoborderenabled_23',['lockToBorderEnabled',['../class_gfx_1_1_output_mapping_canvas.html#a3f3c93be6f34d3c234881aa1e528fe14',1,'Gfx::OutputMappingCanvas']]],
-  ['lookslikeexistingfile_24',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
-  ['lostframes_25',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]]
+  ['loadsegments_17',['loadSegments',['../class_curve_1_1_model.html#a5f67eb15b2c155419d22e9c9f12bc8f6',1,'Curve::Model']]],
+  ['localcommand_18',['localCommand',['../classscore_1_1_command_stack.html#af4c3f99f095feeec42d60635b91df1dc',1,'score::CommandStack']]],
+  ['localpath_19',['localPath',['../classscore_1_1_online_examples.html#a69a93e15e5860e3b1e9d6ab3be8631db',1,'score::OnlineExamples']]],
+  ['localredo_20',['localRedo',['../classscore_1_1_command_stack.html#a4e71c0e7fa4acca66ba7d95d9c0a3124',1,'score::CommandStack']]],
+  ['localundo_21',['localUndo',['../classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c',1,'score::CommandStack']]],
+  ['locatefilepath_22',['locatefilepath',['../namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a',1,'score::locateFilePath(const QString &amp;filename) noexcept'],['../namespacescore.html#aa5dc206faf740132f1dbb03714aa6070',1,'score::locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept'],['../namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5',1,'score::locateFilePath(const QString &amp;filename, const PathRoots &amp;roots) noexcept']]],
+  ['locateshaderpath_23',['locateShaderPath',['../namespace_gfx.html#adf1c9584823b572537548d5577fa3031',1,'Gfx']]],
+  ['locktoborderenabled_24',['lockToBorderEnabled',['../class_gfx_1_1_output_mapping_canvas.html#a3f3c93be6f34d3c234881aa1e528fe14',1,'Gfx::OutputMappingCanvas']]],
+  ['lookslikeexistingfile_25',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
+  ['lostframes_26',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]]
 ];

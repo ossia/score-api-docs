@@ -193,8 +193,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () INLINE_E
 <tr class="memitem:a50a1d91368e54feb79f42b0294b10d69" id="r_a50a1d91368e54feb79f42b0294b10d69"><td class="memItemLeft" align="right" valign="top"><a id="a50a1d91368e54feb79f42b0294b10d69" name="a50a1d91368e54feb79f42b0294b10d69"></a>
 <a class="el" href="structscore_1_1indirect__map__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
 <tr class="separator:a50a1d91368e54feb79f42b0294b10d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d2cca0417cce2fd79d26db92c33573c" id="r_a8d2cca0417cce2fd79d26db92c33573c"><td class="memItemLeft" align="right" valign="top"><a id="a8d2cca0417cce2fd79d26db92c33573c" name="a8d2cca0417cce2fd79d26db92c33573c"></a>
-Element &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>at</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
+<tr class="memitem:a8d2cca0417cce2fd79d26db92c33573c" id="r_a8d2cca0417cce2fd79d26db92c33573c"><td class="memItemLeft" align="right" valign="top">Element &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_id_container_3_01_element_00_01_model_00_01false_01_4.html#a8d2cca0417cce2fd79d26db92c33573c">at</a> (const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;id) const INLINE_EXPORT</td></tr>
 <tr class="separator:a8d2cca0417cce2fd79d26db92c33573c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4309e5e3acd8eb6dac4e49c2543effff" id="r_a4309e5e3acd8eb6dac4e49c2543effff"><td class="memItemLeft" align="right" valign="top"><a id="a4309e5e3acd8eb6dac4e49c2543effff" name="a4309e5e3acd8eb6dac4e49c2543effff"></a>
 std::vector&lt; Element * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>as_vec</b> () const INLINE_EXPORT</td></tr>
@@ -242,6 +241,36 @@ map_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_map</b></td></tr>
 ossia::hash_map&lt; <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt;, Element * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_map</b></td></tr>
 <tr class="separator:aa02b2289ae4eb5286dbdbeb2bac34f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8d2cca0417cce2fd79d26db92c33573c" name="a8d2cca0417cce2fd79d26db92c33573c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d2cca0417cce2fd79d26db92c33573c">&#9670;&#160;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Element , typename Model &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Element &amp; <a class="el" href="class_id_container.html">IdContainer</a>&lt; Element, Model, false &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classid__base__t.html">Id</a>&lt; Model &gt; &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Always looks the id up: a pointer cached in the id can name an object that was replaced under the same id and not deleted yet. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_identified_object_map_8hpp_source.html">IdentifiedObjectMap.hpp</a></li>
 </ul>

@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('class_curve_1_1_segment_model.html',''
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_curve_1_1_segment_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Curve::SegmentModel Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -198,6 +199,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setFollowing</b> (con
 <tr class="memitem:a0dbc17fafbde18e6837cf9525d4cbaa6" id="r_a0dbc17fafbde18e6837cf9525d4cbaa6"><td class="memItemLeft" align="right" valign="top"><a id="a0dbc17fafbde18e6837cf9525d4cbaa6" name="a0dbc17fafbde18e6837cf9525d4cbaa6"></a>
 const OptionalId&lt; <a class="el" href="class_curve_1_1_segment_model.html">SegmentModel</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>following</b> () const</td></tr>
 <tr class="separator:a0dbc17fafbde18e6837cf9525d4cbaa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98c3981923fdc9671cfe12bd226123e8" id="r_a98c3981923fdc9671cfe12bd226123e8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_segment_model.html#a98c3981923fdc9671cfe12bd226123e8">setSpecificData</a> (const QVariant &amp;data)</td></tr>
+<tr class="separator:a98c3981923fdc9671cfe12bd226123e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f86f3f1f30ddec20219fcf8911dd2a" id="r_a91f86f3f1f30ddec20219fcf8911dd2a"><td class="memItemLeft" align="right" valign="top"><a id="a91f86f3f1f30ddec20219fcf8911dd2a" name="a91f86f3f1f30ddec20219fcf8911dd2a"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>specificDataEquals</b> (const QVariant &amp;data) const noexcept</td></tr>
+<tr class="separator:a91f86f3f1f30ddec20219fcf8911dd2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a2b8c5912ce192e74cac6cc2003c224" id="r_a3a2b8c5912ce192e74cac6cc2003c224"><td class="memItemLeft" align="right" valign="top"><a id="a3a2b8c5912ce192e74cac6cc2003c224" name="a3a2b8c5912ce192e74cac6cc2003c224"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerticalParameter</b> (double p)</td></tr>
 <tr class="separator:a3a2b8c5912ce192e74cac6cc2003c224"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +225,14 @@ virtual ossia::curve_segment&lt; float &gt;&#160;</td><td class="memItemRight" v
 <tr class="memitem:a4276f3492562350238deb18591a19594" id="r_a4276f3492562350238deb18591a19594"><td class="memItemLeft" align="right" valign="top"><a id="a4276f3492562350238deb18591a19594" name="a4276f3492562350238deb18591a19594"></a>
 virtual ossia::curve_segment&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeIntFunction</b> () const =0</td></tr>
 <tr class="separator:a4276f3492562350238deb18591a19594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd01aa9ecd6b282c8b288454ecaf425" id="r_a4fd01aa9ecd6b282c8b288454ecaf425"><td class="memItemLeft" align="right" valign="top">virtual ossia::curve_segment&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_segment_model.html#a4fd01aa9ecd6b282c8b288454ecaf425">makeScaledDoubleFunction</a> (double offset, double factor) const</td></tr>
+<tr class="separator:a4fd01aa9ecd6b282c8b288454ecaf425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af901824cfd789d9f70f430768b69a1e4" id="r_af901824cfd789d9f70f430768b69a1e4"><td class="memItemLeft" align="right" valign="top"><a id="af901824cfd789d9f70f430768b69a1e4" name="af901824cfd789d9f70f430768b69a1e4"></a>
+virtual ossia::curve_segment&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeScaledFloatFunction</b> (double offset, double factor) const</td></tr>
+<tr class="separator:af901824cfd789d9f70f430768b69a1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cbb7db2dd03d42c71bfdb0b4b54127" id="r_af5cbb7db2dd03d42c71bfdb0b4b54127"><td class="memItemLeft" align="right" valign="top"><a id="af5cbb7db2dd03d42c71bfdb0b4b54127" name="af5cbb7db2dd03d42c71bfdb0b4b54127"></a>
+virtual ossia::curve_segment&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>makeScaledIntFunction</b> (double offset, double factor) const</td></tr>
+<tr class="separator:af5cbb7db2dd03d42c71bfdb0b4b54127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59728a1b50b75ee6155555a18ee90214" id="r_a59728a1b50b75ee6155555a18ee90214"><td class="memItemLeft" align="right" valign="top"><a id="a59728a1b50b75ee6155555a18ee90214" name="a59728a1b50b75ee6155555a18ee90214"></a>
 <a class="el" href="struct_curve_1_1_segment_data.html">SegmentData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>toSegmentData</b> () const</td></tr>
 <tr class="separator:a59728a1b50b75ee6155555a18ee90214"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,6 +329,12 @@ Curve::Point&#160;</td><td class="memItemRight" valign="bottom"><b>m_start</b></
 Curve::Point&#160;</td><td class="memItemRight" valign="bottom"><b>m_end</b></td></tr>
 <tr class="separator:ad6b3f83715664e98dfe9c994e7e9aac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a2bf2a0e9b454c55aa5dcb5aa4698697b" id="r_a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memItemLeft" align="right" valign="top"><a id="a2bf2a0e9b454c55aa5dcb5aa4698697b" name="a2bf2a0e9b454c55aa5dcb5aa4698697b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Model</b></td></tr>
+<tr class="separator:a2bf2a0e9b454c55aa5dcb5aa4698697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_class_identified_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_identified_object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_identified_object.html">IdentifiedObject&lt; SegmentModel &gt;</a></td></tr>
@@ -322,6 +342,71 @@ Additional Inherited Members</h2></td></tr>
 static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>identified_object_tag</b></td></tr>
 <tr class="separator:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4fd01aa9ecd6b282c8b288454ecaf425" name="a4fd01aa9ecd6b282c8b288454ecaf425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd01aa9ecd6b282c8b288454ecaf425">&#9670;&#160;</a></span>makeScaledDoubleFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::curve_segment&lt; double &gt; Curve::SegmentModel::makeScaledDoubleFunction </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For segments whose values are not given by their two ends alone: the executor maps the curve's [0, 1] to offset + factor * y. </p>
+
+</div>
+</div>
+<a id="a98c3981923fdc9671cfe12bd226123e8" name="a98c3981923fdc9671cfe12bd226123e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98c3981923fdc9671cfe12bd226123e8">&#9670;&#160;</a></span>setSpecificData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Curve::SegmentModel::setSpecificData </td>
+          <td>(</td>
+          <td class="paramtype">const QVariant &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the type-specific data in place, emitting dataChanged if it changes. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_curve_segment_model_8hpp_source.html">CurveSegmentModel.hpp</a></li>
 <li><b>CurveSegmentModel.cpp</b></li>
