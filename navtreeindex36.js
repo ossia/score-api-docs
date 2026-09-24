@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"structavnd__tools_1_1_entity_to_midi_1_1ins.html":[12,0,4,9,1],
+"structavnd__tools_1_1_entity_to_midi_1_1out__msg.html":[12,0,4,9,2],
 "structavnd__tools_1_1_entity_to_midi_1_1outs.html":[12,0,4,9,3],
 "structavnd__tools_1_1_entity_to_midi_1_1speed__hist.html":[12,0,4,9,4],
 "structavnd__tools_1_1_entity_to_midi_1_1synth__state.html":[12,0,4,9,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "structoscr_1_1rgba__color.html":[11,0,8,56],
 "structoscr_1_1setup__control__for__exec.html":[11,0,8,62],
 "structoscr_1_1setup__control__for__exec.html":[12,0,43,62],
-"structoscr_1_1setup__control__for__exec.html#a57041bee8c6373a325240340242fe762":[12,0,43,62,1],
-"structoscr_1_1setup__control__for__exec.html#a57041bee8c6373a325240340242fe762":[11,0,8,62,1],
-"structoscr_1_1setup__control__for__exec.html#ab24725d16aa9690fa41d6a8675297cae":[11,0,8,62,0]
+"structoscr_1_1setup__control__for__exec.html#a57041bee8c6373a325240340242fe762":[12,0,43,62,1]
 };

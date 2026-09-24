@@ -1,5 +1,7 @@
 var NAVTREEINDEX30 =
 {
+"struct_engine_1_1score__to__ossia_1_1_curve_traits.html":[12,0,15,0,0],
+"struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01double_01_4.html":[12,0,15,0,1],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01float_01_4.html":[12,0,15,0,2],
 "struct_engine_1_1score__to__ossia_1_1_curve_traits_3_01int_01_4.html":[12,0,15,0,3],
 "struct_entity_map_serializer.html":[12,0,126],
@@ -247,7 +249,5 @@ var NAVTREEINDEX30 =
 "struct_gfx_1_1_window_output_settings.html":[12,0,22,159],
 "struct_gfx_1_1_window_output_settings.html":[11,0,5,135],
 "struct_gfx_1_1_window_settings.html":[11,0,5,137],
-"struct_gfx_1_1_window_settings.html":[12,0,22,161],
-"struct_gfx_1_1clear__msg__visitor.html":[11,0,5,16],
-"struct_gfx_1_1clear__msg__visitor.html":[12,0,22,40]
+"struct_gfx_1_1_window_settings.html":[12,0,22,161]
 };

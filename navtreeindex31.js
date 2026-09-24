@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"struct_gfx_1_1clear__msg__visitor.html":[11,0,5,16],
+"struct_gfx_1_1clear__msg__visitor.html":[12,0,22,40],
 "struct_gfx_1_1con__unvalidated.html":[11,0,5,18],
 "struct_gfx_1_1con__unvalidated.html":[12,0,22,42],
 "struct_gfx_1_1exec__control.html":[12,0,22,55],
@@ -247,7 +249,5 @@ var NAVTREEINDEX31 =
 "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_inputs.html":[12,0,42,14,0,0,0],
 "struct_nodes_1_1_l_f_o_1_1v2_1_1_node.html":[12,0,42,14,1,0],
 "struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1ins.html":[12,0,42,14,1,0,0],
-"struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1ui.html":[12,0,42,14,1,0,1],
-"struct_nodes_1_1_math_audio_filter_1_1_node.html":[12,0,42,15,0],
-"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html":[12,0,42,15,0,0]
+"struct_nodes_1_1_l_f_o_1_1v2_1_1_node_1_1ui.html":[12,0,42,14,1,0,1]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX44 =
 {
+"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a2d5ae253c3cfb7579578f5692dda800e":[12,0,55,2,2,27,0],
+"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a6d7691d11798ba87cd269f10690012f4":[12,0,55,2,2,27,3],
 "structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#ac763ae1ff7ec383b78d17ab463175038":[12,0,55,2,2,27,2],
 "structscore_1_1gfx_1_1interop_1_1_host_pinned_ring_1_1_impl.html":[12,0,55,2,2,29,0],
 "structscore_1_1gfx_1_1interop_1_1_host_pinned_ring_1_1_impl.html#a474f971b569c20116d9efc5f01123626":[12,0,55,2,2,29,0,2],

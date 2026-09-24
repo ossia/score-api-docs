@@ -1,5 +1,7 @@
 var NAVTREEINDEX28 =
 {
+"namespacescore_1_1gfx.html#a41f44deb18d072604a6718e850aa6893":[11,0,12,0,246],
+"namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc":[11,0,12,0,270],
 "namespacescore_1_1gfx.html#a470ce7ea9971343a5d792f89939e83c4":[11,0,12,0,248],
 "namespacescore_1_1gfx.html#a47bee8f12c4e5ea7dd873075f9e64639":[11,0,12,0,279],
 "namespacescore_1_1gfx.html#a488d8c7bfed5014274e6a982dfb1c756":[11,0,12,0,273],
@@ -173,7 +175,7 @@ var NAVTREEINDEX28 =
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,21],
 "score-plugin-avnd_2_avnd_processes_2_value_serialization_8hpp_source.html":[13,0,0,2,8,2,22],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,4],
-"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,13],
+"score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,0,2,8,3,13],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,15],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,20],
 "score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
@@ -233,7 +235,7 @@ var NAVTREEINDEX28 =
 "score-plugin-js_2_j_s_2_application_plugin_8hpp_source.html":[13,0,0,2,20,0,3],
 "score-plugin-js_2_j_s_2_commands_2_edit_script_8hpp_source.html":[13,0,0,2,20,0,0,0],
 "score-plugin-js_2_j_s_2_commands_2_script_macro_8hpp_source.html":[13,0,0,2,20,0,0,2],
-"score-plugin-js_2_j_s_2_executor_2_g_p_u_node_8hpp_source.html":[13,0,0,2,20,0,1,3],
+"score-plugin-js_2_j_s_2_executor_2_gpu_node_8hpp_source.html":[13,0,0,2,20,0,1,3],
 "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html":[13,0,0,2,20,0,2,5],
 "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html":[13,0,0,2,20,0,2,13],
 "score-plugin-lv2_2_l_v2_2_application_plugin_8hpp_source.html":[13,0,0,2,22,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX28 =
 "score-plugin-media_2_media_2_inspector_2_factory_8hpp_source.html":[13,0,0,2,24,0,2,1],
 "score-plugin-media_2_media_2_merger_2_executor_8hpp_source.html":[13,0,0,2,24,0,3,1],
 "score-plugin-media_2_media_2_merger_2_factory_8hpp_source.html":[13,0,0,2,24,0,3,2],
-"score-plugin-media_2_media_2_merger_2_inspector_8hpp_source.html":[13,0,0,2,24,0,3,3],
-"score-plugin-media_2_media_2_merger_2_model_8hpp_source.html":[13,0,0,2,24,0,3,5],
-"score-plugin-media_2_media_2_step_2_executor_8hpp_source.html":[13,0,0,2,24,0,6,1]
+"score-plugin-media_2_media_2_merger_2_inspector_8hpp_source.html":[13,0,0,2,24,0,3,3]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX32 =
 {
+"struct_nodes_1_1_math_audio_filter_1_1_node.html":[12,0,42,15,0],
+"struct_nodes_1_1_math_audio_filter_1_1_node_1_1_state.html":[12,0,42,15,0,0],
 "struct_nodes_1_1_math_audio_filter_1_1_node_1_1ui.html":[12,0,42,15,0,1],
 "struct_nodes_1_1_math_audio_generator_1_1_node.html":[12,0,42,16,0],
 "struct_nodes_1_1_math_audio_generator_1_1_node_1_1_state.html":[12,0,42,16,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX32 =
 "struct_process_1_1_trim_options.html":[11,0,10,159],
 "struct_process_1_1_trim_options.html#a41a01e9b4098dc56e009752d9ad77172":[11,0,10,159,1],
 "struct_process_1_1_trim_options.html#a41a01e9b4098dc56e009752d9ad77172":[12,0,48,159,1],
-"struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0":[12,0,48,159,2],
-"struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0":[11,0,10,159,2],
-"struct_process_1_1_trim_options.html#aae6e41e2390f2a7aacc7a798730e2601":[12,0,48,159,0]
+"struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0":[12,0,48,159,2]
 };

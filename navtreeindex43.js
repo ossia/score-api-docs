@@ -1,5 +1,7 @@
 var NAVTREEINDEX43 =
 {
+"structscore_1_1gfx_1_1_y_u_v_a420_decoder.html":[12,0,55,2,213],
+"structscore_1_1gfx_1_1_y_u_v_a420_decoder.html":[11,0,12,0,210],
 "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html#a17c75296387af89d5737c5b6f09b68ea":[12,0,55,2,213,0],
 "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html#a17c75296387af89d5737c5b6f09b68ea":[11,0,12,0,210,0],
 "structscore_1_1gfx_1_1_y_u_v_a420_decoder.html#a5c11535cd655196f3dab217f3dd558c1":[12,0,55,2,213,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX43 =
 "structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#af4b01649a0e9ab8f6f82b94604240df7":[12,0,55,2,2,26,14],
 "structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#afa4a49c2f3c8c27760adf4b00682cde7":[12,0,55,2,2,26,5],
 "structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html":[12,0,55,2,2,27],
-"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a0d524c244c73f664fe27df7f380c66e2":[12,0,55,2,2,27,1],
-"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a2d5ae253c3cfb7579578f5692dda800e":[12,0,55,2,2,27,0],
-"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a6d7691d11798ba87cd269f10690012f4":[12,0,55,2,2,27,3]
+"structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a0d524c244c73f664fe27df7f380c66e2":[12,0,55,2,2,27,1]
 };

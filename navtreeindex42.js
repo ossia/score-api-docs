@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"structscore_1_1gfx_1_1_shader_cache.html":[11,0,12,0,157],
+"structscore_1_1gfx_1_1_shader_cache.html":[12,0,55,2,160],
 "structscore_1_1gfx_1_1_shadow_cascades_u_b_o.html":[11,0,12,0,158],
 "structscore_1_1gfx_1_1_shadow_cascades_u_b_o.html":[12,0,55,2,161],
 "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html":[12,0,55,2,162],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html#a0074f8f5d88226eaa5137864f0eeef97":[12,0,55,2,212,0],
 "structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html#a0074f8f5d88226eaa5137864f0eeef97":[11,0,12,0,209,0],
 "structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html#a8623e6ba7b236cb0646fb18858cd5109":[12,0,55,2,212,1],
-"structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html#a8623e6ba7b236cb0646fb18858cd5109":[11,0,12,0,209,1],
-"structscore_1_1gfx_1_1_y_u_v_a420_decoder.html":[12,0,55,2,213],
-"structscore_1_1gfx_1_1_y_u_v_a420_decoder.html":[11,0,12,0,210]
+"structscore_1_1gfx_1_1_y_u_v444_p12_decoder.html#a8623e6ba7b236cb0646fb18858cd5109":[11,0,12,0,209,1]
 };

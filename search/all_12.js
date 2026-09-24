@@ -69,7 +69,7 @@ var searchData=
   ['reconcileallrenderlists_66',['reconcileAllRenderLists',['../structscore_1_1gfx_1_1_graph.html#a7752fb1a19e605efa25d6f01be740a80',1,'score::gfx::Graph']]],
   ['reconnect_5fcontrol_5fto_5fui_67',['reconnect_control_to_ui',['../structoscr_1_1setup__control__for__exec.html#a57041bee8c6373a325240340242fe762',1,'oscr::setup_control_for_exec']]],
   ['reconnectoutlets_68',['ReconnectOutlets',['../struct_execution_1_1_reconnect_outlets.html',1,'Execution']]],
-  ['record_69',['record',['../class_recording_1_1_record.html',1,'Recording::Record'],['../classscore_1_1gfx_1_1_gpu_timings.html#adc799018b3871164f5bf71d2b7248469',1,'score::gfx::GpuTimings::record()'],['../struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36',1,'Nodes::AudioLooper::Node::Record']]],
+  ['record_69',['record',['../class_recording_1_1_record.html',1,'Recording::Record'],['../struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36',1,'Nodes::AudioLooper::Node::Record'],['../classscore_1_1gfx_1_1_gpu_timings.html#adc799018b3871164f5bf71d2b7248469',1,'score::gfx::GpuTimings::record()']]],
   ['recordable_70',['Recordable',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a6138f7c2dccb204d113416acecc69b9d',1,'Process']]],
   ['recordautomationcreationvisitor_71',['RecordAutomationCreationVisitor',['../struct_recording_1_1_record_automation_creation_visitor.html',1,'Recording']]],
   ['recordautomationfirstcallbackvisitor_72',['RecordAutomationFirstCallbackVisitor',['../struct_recording_1_1_record_automation_first_callback_visitor.html',1,'Recording']]],

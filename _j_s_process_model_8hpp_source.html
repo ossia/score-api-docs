@@ -296,27 +296,28 @@ $(document).ready(function(){initNavTree('_j_s_process_model_8hpp_source.html','
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  QString effect() const noexcept override;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  <span class="keywordtype">void</span> loadPreset(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&amp; preset) override;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset savePreset() const noexcept override;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::ScriptChangeResult setQmlData(const QByteArray&amp;, <span class="keywordtype">bool</span> isFile);</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  QString m_root;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  QmlSource m_program;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">void</span> updateFileLink() noexcept;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  QByteArray m_qmlData;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  QQmlComponent* m_ui_component{};</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">mutable</span> QPointer&lt;QQuickItem&gt; m_ui_object{};</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="keyword">mutable</span> ComponentCache m_cache;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  JS::JSState m_state;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keywordtype">bool</span> m_isFile{};</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordtype">bool</span> m_modified{<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordtype">bool</span> m_outOfDate{};</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>};</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordtype">bool</span> presetMatches(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::Preset&amp; preset) const noexcept override;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  <a class="code hl_namespace" href="namespace_process.html">Process</a>::ScriptChangeResult setQmlData(const QByteArray&amp;, <span class="keywordtype">bool</span> isFile);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>  QString m_root;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>  QmlSource m_program;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  <span class="keywordtype">void</span> updateFileLink() noexcept;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  QByteArray m_qmlData;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  QQmlComponent* m_ui_component{};</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keyword">mutable</span> QPointer&lt;QQuickItem&gt; m_ui_object{};</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keyword">mutable</span> ComponentCache m_cache;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  JS::JSState m_state;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordtype">bool</span> m_isFile{};</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordtype">bool</span> m_modified{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">bool</span> m_outOfDate{};</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>};</div>
 </div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>W_REGISTER_ARGTYPE(JS::JSState)</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>W_REGISTER_ARGTYPE(JS::JSState)</div>
 <div class="ttc" id="aclass_j_s_1_1_process_model_html"><div class="ttname"><a href="class_j_s_1_1_process_model.html">JS::ProcessModel</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:101</div></div>
 <div class="ttc" id="aclass_j_s_1_1_process_model_html_a365a14d8cc46b8485fc6da0ac57926e0"><div class="ttname"><a href="class_j_s_1_1_process_model.html#a365a14d8cc46b8485fc6da0ac57926e0">JS::ProcessModel::followsRootFile</a></div><div class="ttdeci">bool followsRootFile() const noexcept</div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:154</div></div>
 <div class="ttc" id="aclass_j_s_1_1_process_model_html_a39ebfb98a66badbaeb079d697aa90963"><div class="ttname"><a href="class_j_s_1_1_process_model.html#a39ebfb98a66badbaeb079d697aa90963">JS::ProcessModel::rootFile</a></div><div class="ttdeci">const QString &amp; rootFile() const noexcept</div><div class="ttdoc">Path of the .qml this script was taken from; empty if it was written here.</div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:149</div></div>
@@ -329,7 +330,7 @@ $(document).ready(function(){initNavTree('_j_s_process_model_8hpp_source.html','
 <div class="ttc" id="anamespace_process_html_a592bb361ebf8fbc09c929c93208c71f1"><div class="ttname"><a href="namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1">Process::ProcessFlags</a></div><div class="ttdeci">ProcessFlags</div><div class="ttdoc">Various settings for processes.</div><div class="ttdef"><b>Definition</b> ProcessFlags.hpp:17</div></div>
 <div class="ttc" id="astruct_j_s_1_1_component_cache_1_1_cache_html"><div class="ttname"><a href="struct_j_s_1_1_component_cache_1_1_cache.html">JS::ComponentCache::Cache</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:76</div></div>
 <div class="ttc" id="astruct_j_s_1_1_component_cache_html"><div class="ttname"><a href="struct_j_s_1_1_component_cache.html">JS::ComponentCache</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:74</div></div>
-<div class="ttc" id="astruct_j_s_1_1_component_cache_html_a9eadf9b2560af1cc107e373e58547ef7"><div class="ttname"><a href="struct_j_s_1_1_component_cache.html#a9eadf9b2560af1cc107e373e58547ef7">JS::ComponentCache::key</a></div><div class="ttdeci">static QByteArray key(const QByteArray &amp;str, bool isFile) noexcept</div><div class="ttdef"><b>Definition</b> JSProcessModel.cpp:765</div></div>
+<div class="ttc" id="astruct_j_s_1_1_component_cache_html_a9eadf9b2560af1cc107e373e58547ef7"><div class="ttname"><a href="struct_j_s_1_1_component_cache.html#a9eadf9b2560af1cc107e373e58547ef7">JS::ComponentCache::key</a></div><div class="ttdeci">static QByteArray key(const QByteArray &amp;str, bool isFile) noexcept</div><div class="ttdef"><b>Definition</b> JSProcessModel.cpp:772</div></div>
 <div class="ttc" id="astruct_j_s_1_1_qml_source_1_1_member_spec_html"><div class="ttname"><a href="struct_j_s_1_1_qml_source_1_1_member_spec.html">JS::QmlSource::MemberSpec</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:47</div></div>
 <div class="ttc" id="astruct_j_s_1_1_qml_source_html"><div class="ttname"><a href="struct_j_s_1_1_qml_source.html">JS::QmlSource</a></div><div class="ttdef"><b>Definition</b> JSProcessModel.hpp:21</div></div>
 <div class="ttc" id="astruct_process_1_1_script_change_result_html"><div class="ttname"><a href="struct_process_1_1_script_change_result.html">Process::ScriptChangeResult</a></div><div class="ttdef"><b>Definition</b> ScriptProcess.hpp:14</div></div>
