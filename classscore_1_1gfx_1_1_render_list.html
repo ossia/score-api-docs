@@ -251,6 +251,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>anyNodeRequiresDepth<
 <tr class="memitem:a1cd71ed981495ebaed3e82c7513ea163" id="r_a1cd71ed981495ebaed3e82c7513ea163"><td class="memItemLeft" align="right" valign="top"><a id="a1cd71ed981495ebaed3e82c7513ea163" name="a1cd71ed981495ebaed3e82c7513ea163"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>samples</b> () const noexcept</td></tr>
 <tr class="separator:a1cd71ed981495ebaed3e82c7513ea163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32b6c9d35619679d07f490b8b422371" id="r_ad32b6c9d35619679d07f490b8b422371"><td class="memItemLeft" align="right" valign="top"><a id="ad32b6c9d35619679d07f490b8b422371" name="ad32b6c9d35619679d07f490b8b422371"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_quirks.html">Quirks</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>quirks</b> () const noexcept</td></tr>
+<tr class="separator:ad32b6c9d35619679d07f490b8b422371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac293aae34267030eab4a7696e9ad2b6a" id="r_ac293aae34267030eab4a7696e9ad2b6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ac293aae34267030eab4a7696e9ad2b6a">isolateFollowingPasses</a> () noexcept</td></tr>
+<tr class="memdesc:ac293aae34267030eab4a7696e9ad2b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the render passes that follow in a command buffer of their own.  <br /></td></tr>
+<tr class="separator:ac293aae34267030eab4a7696e9ad2b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5ffce8aad2db1cd91bc75ada7c759c" id="r_adc5ffce8aad2db1cd91bc75ada7c759c"><td class="memItemLeft" align="right" valign="top"><a id="adc5ffce8aad2db1cd91bc75ada7c759c" name="adc5ffce8aad2db1cd91bc75ada7c759c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRender</b> () const noexcept</td></tr>
 <tr class="separator:adc5ffce8aad2db1cd91bc75ada7c759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -649,6 +655,34 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 <p>Is this render list currently coherent with its output's GPU objects? </p>
 <p>False between the moment something invalidates the list (a fast-path viewport resize: resizeSwapchainSizedTargets) and the <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> that runs on the next render frame. In that window the output node has ALREADY destroyed and replaced its QRhiTextureRenderTarget / QRhiRenderPassDescriptor while the renderers still hold the pre-resize snapshot, so nothing outside the rebuild may ask a renderer for a render target. </p>
+
+</div>
+</div>
+<a id="ac293aae34267030eab4a7696e9ad2b6a" name="ac293aae34267030eab4a7696e9ad2b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac293aae34267030eab4a7696e9ad2b6a">&#9670;&#160;</a></span>isolateFollowingPasses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::isolateFollowingPasses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Put the render passes that follow in a command buffer of their own. </p>
+<p>For passes whose sample count is not ours to choose and which may be empty. Must be called outside a pass. </p>
 
 </div>
 </div>

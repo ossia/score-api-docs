@@ -17,6 +17,7 @@ var classscore_1_1gfx_1_1_render_list =
     [ "initialBatch", "classscore_1_1gfx_1_1_render_list.html#a21fe54e7bcbf8dd961d3c3da8c6b9fee", null ],
     [ "initMeshBuffer", "classscore_1_1gfx_1_1_render_list.html#a1c3daff52bd2d2231609696d5a3c7cd5", null ],
     [ "isBuilt", "classscore_1_1gfx_1_1_render_list.html#a3b8db5c800dea571f44995d0fb77dd10", null ],
+    [ "isolateFollowingPasses", "classscore_1_1gfx_1_1_render_list.html#ac293aae34267030eab4a7696e9ad2b6a", null ],
     [ "markBuilt", "classscore_1_1gfx_1_1_render_list.html#a22a06c57b0931de15e4183b9a6459162", null ],
     [ "markRequiresDepth", "classscore_1_1gfx_1_1_render_list.html#a557b2669cfd48a1ff136aed0413bb55a", null ],
     [ "maybeRebuild", "classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f", null ],

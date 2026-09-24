@@ -33,6 +33,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "OutputNode.hpp", "_output_node_8hpp_source.html", null ],
     [ "PipelineStateHelpers.hpp", "_pipeline_state_helpers_8hpp_source.html", null ],
     [ "PreviewNode.hpp", "_preview_node_8hpp_source.html", null ],
+    [ "Quirks.hpp", "_quirks_8hpp_source.html", null ],
     [ "RenderClock.hpp", "_render_clock_8hpp_source.html", null ],
     [ "RenderedCSFNode.hpp", "_rendered_c_s_f_node_8hpp_source.html", null ],
     [ "RenderedISFNode.hpp", "_rendered_i_s_f_node_8hpp_source.html", null ],

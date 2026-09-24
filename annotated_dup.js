@@ -2558,6 +2558,7 @@ var annotated_dup =
         [ "PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ],
         [ "ProcessNode", "classscore_1_1gfx_1_1_process_node.html", "classscore_1_1gfx_1_1_process_node" ],
         [ "ProcessUBO", "structscore_1_1gfx_1_1_process_u_b_o.html", null ],
+        [ "Quirks", "structscore_1_1gfx_1_1_quirks.html", "structscore_1_1gfx_1_1_quirks" ],
         [ "R210Decoder", "structscore_1_1gfx_1_1_r210_decoder.html", "structscore_1_1gfx_1_1_r210_decoder" ],
         [ "RawCameraData", "structscore_1_1gfx_1_1_raw_camera_data.html", null ],
         [ "RawLightData", "structscore_1_1gfx_1_1_raw_light_data.html", null ],

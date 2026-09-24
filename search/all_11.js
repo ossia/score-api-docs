@@ -61,5 +61,6 @@ var searchData=
   ['queue_58',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
   ['queues_59',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
   ['quiesce_60',['quiesce',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a865601899e118eef07d34f76c7235692',1,'score::gfx::DirectVideoOutputBackend']]],
-  ['quiet_61',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
+  ['quiet_61',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]],
+  ['quirks_62',['Quirks',['../structscore_1_1gfx_1_1_quirks.html',1,'score::gfx']]]
 ];

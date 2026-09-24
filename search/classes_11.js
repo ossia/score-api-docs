@@ -54,5 +54,6 @@ var searchData=
   ['quantificationwidget_51',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
   ['queue_52',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
   ['queues_53',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
-  ['quiet_54',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]]
+  ['quiet_54',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]],
+  ['quirks_55',['Quirks',['../structscore_1_1gfx_1_1_quirks.html',1,'score::gfx']]]
 ];

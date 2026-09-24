@@ -1515,8 +1515,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -4300,6 +4300,7 @@ var hierarchy =
     [ "Execution::Queues", "struct_execution_1_1_queues.html", null ],
     [ "RedoStrategy::Quiet", "struct_redo_strategy_1_1_quiet.html", null ],
     [ "SendStrategy::Quiet", "struct_send_strategy_1_1_quiet.html", null ],
+    [ "score::gfx::Quirks", "structscore_1_1gfx_1_1_quirks.html", null ],
     [ "QValidator", null, [
       [ "ExpressionValidator< TreeNode >", "class_expression_validator.html", null ],
       [ "Explorer::AddressBraceExpressionValidator", "class_explorer_1_1_address_brace_expression_validator.html", null ],
