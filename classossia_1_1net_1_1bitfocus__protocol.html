@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('classossia_1_1net_1_1bitfocus__protoco
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classossia_1_1net_1_1bitfocus__protocol-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ossia::net::bitfocus_protocol Class Reference</div></div>
 </div><!--header-->
@@ -136,59 +136,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>observe</b> (ossia::n
 <tr class="memitem:a79cbae7ce346905319f602f0b485a3a4" id="r_a79cbae7ce346905319f602f0b485a3a4"><td class="memItemLeft" align="right" valign="top"><a id="a79cbae7ce346905319f602f0b485a3a4" name="a79cbae7ce346905319f602f0b485a3a4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (ossia::net::node_base &amp;node_base) override</td></tr>
 <tr class="separator:a79cbae7ce346905319f602f0b485a3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ccb6eaf86693aeb04fa326343eb591" id="r_ab0ccb6eaf86693aeb04fa326343eb591"><td class="memItemLeft" align="right" valign="top"><a id="ab0ccb6eaf86693aeb04fa326343eb591" name="ab0ccb6eaf86693aeb04fa326343eb591"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setup_node</b> (auto &amp;config, ossia::net::node_base *node)</td></tr>
-<tr class="separator:ab0ccb6eaf86693aeb04fa326343eb591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81c1719f3dc9c50f7f2a2270ead81565" id="r_a81c1719f3dc9c50f7f2a2270ead81565"><td class="memItemLeft" align="right" valign="top"><a id="a81c1719f3dc9c50f7f2a2270ead81565" name="a81c1719f3dc9c50f7f2a2270ead81565"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setup_option_parameter</b> (const <a class="el" href="structbitfocus_1_1module__data_1_1config__field.html">bitfocus::module_data::config_field</a> &amp;opt, ossia::net::node_base *cld)</td></tr>
-<tr class="separator:a81c1719f3dc9c50f7f2a2270ead81565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9533e64cf8e910cbfece754b92cc6584" id="r_a9533e64cf8e910cbfece754b92cc6584"><td class="memItemLeft" align="right" valign="top"><a id="a9533e64cf8e910cbfece754b92cc6584" name="a9533e64cf8e910cbfece754b92cc6584"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_device</b> ()</td></tr>
-<tr class="separator:a9533e64cf8e910cbfece754b92cc6584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa023d9e4b2d53defab01231e2f7f211d" id="r_aa023d9e4b2d53defab01231e2f7f211d"><td class="memItemLeft" align="right" valign="top"><a id="aa023d9e4b2d53defab01231e2f7f211d" name="aa023d9e4b2d53defab01231e2f7f211d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_device</b> (ossia::net::device_base &amp;dev) override</td></tr>
 <tr class="separator:aa023d9e4b2d53defab01231e2f7f211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3158ef0cb379fb35293010cc1a5fcae" id="r_af3158ef0cb379fb35293010cc1a5fcae"><td class="memItemLeft" align="right" valign="top"><a id="af3158ef0cb379fb35293010cc1a5fcae" name="af3158ef0cb379fb35293010cc1a5fcae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init_device</b> (int categories=bitfocus::module_handler::All)</td></tr>
+<tr class="memdesc:af3158ef0cb379fb35293010cc1a5fcae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates or updates the tree from the module's current definitions. <br /></td></tr>
+<tr class="separator:af3158ef0cb379fb35293010cc1a5fcae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8069541eb5a1dec7c6a175b21db4d13" id="r_ae8069541eb5a1dec7c6a175b21db4d13"><td class="memItemLeft" align="right" valign="top"><a id="ae8069541eb5a1dec7c6a175b21db4d13" name="ae8069541eb5a1dec7c6a175b21db4d13"></a>
+QVariantMap&#160;</td><td class="memItemRight" valign="bottom"><b>collectOptions</b> (const ossia::net::node_base &amp;node, const std::vector&lt; <a class="el" href="structbitfocus_1_1module__data_1_1config__field.html">bitfocus::module_data::config_field</a> &gt; &amp;defs, const std::string &amp;group)</td></tr>
+<tr class="memdesc:ae8069541eb5a1dec7c6a175b21db4d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option values of an action or feedback node, typed as the module expects. <br /></td></tr>
+<tr class="separator:ae8069541eb5a1dec7c6a175b21db4d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a92ab061aeb39269ff42a974f86edb114" id="r_a92ab061aeb39269ff42a974f86edb114"><td class="memItemLeft" align="right" valign="top"><a id="a92ab061aeb39269ff42a974f86edb114" name="a92ab061aeb39269ff42a974f86edb114"></a>
-std::shared_ptr&lt; <a class="el" href="structbitfocus_1_1module__handler.html">bitfocus::module_handler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rc</b></td></tr>
-<tr class="separator:a92ab061aeb39269ff42a974f86edb114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54493faa3d3d5720d5fd1699968f3271" id="r_a54493faa3d3d5720d5fd1699968f3271"><td class="memItemLeft" align="right" valign="top"><a id="a54493faa3d3d5720d5fd1699968f3271" name="a54493faa3d3d5720d5fd1699968f3271"></a>
-ossia::net::network_context_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
-<tr class="separator:a54493faa3d3d5720d5fd1699968f3271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a723372565f8273618fbf5d4ae62ef7dd" id="r_a723372565f8273618fbf5d4ae62ef7dd"><td class="memItemLeft" align="right" valign="top"><a id="a723372565f8273618fbf5d4ae62ef7dd" name="a723372565f8273618fbf5d4ae62ef7dd"></a>
-ossia::net::device_base *&#160;</td><td class="memItemRight" valign="bottom"><b>m_dev</b> {}</td></tr>
-<tr class="separator:a723372565f8273618fbf5d4ae62ef7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede0cbf862730ca7fea572ce86503100" id="r_aede0cbf862730ca7fea572ce86503100"><td class="memItemLeft" ><a id="aede0cbf862730ca7fea572ce86503100" name="aede0cbf862730ca7fea572ce86503100"></a>
-struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43a563289a91312ea125b05149034413" id="r_a43a563289a91312ea125b05149034413"><td class="memItemLeft" >
-&#160;&#160;&#160;ossia::net::node_base *&#160;&#160;&#160;<b>actions</b> {}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a43a563289a91312ea125b05149034413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d28ad3e967f2cffaa91736450494cff" id="r_a7d28ad3e967f2cffaa91736450494cff"><td class="memItemLeft" >
-&#160;&#160;&#160;ossia::net::node_base *&#160;&#160;&#160;<b>feedbacks</b> {}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7d28ad3e967f2cffaa91736450494cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18696372f4887cd205629727cb1971bc" id="r_a18696372f4887cd205629727cb1971bc"><td class="memItemLeft" >
-&#160;&#160;&#160;ossia::net::node_base *&#160;&#160;&#160;<b>variables</b> {}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a18696372f4887cd205629727cb1971bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede0cbf862730ca7fea572ce86503100" id="r_aede0cbf862730ca7fea572ce86503100"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>nodes</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aede0cbf862730ca7fea572ce86503100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09cb2fc199e18592436e1460bc48da56" id="r_a09cb2fc199e18592436e1460bc48da56"><td class="memItemLeft" align="right" valign="top"><a id="a09cb2fc199e18592436e1460bc48da56" name="a09cb2fc199e18592436e1460bc48da56"></a>
-ossia::flat_map&lt; ossia::net::parameter_base *, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_actions</b></td></tr>
-<tr class="separator:a09cb2fc199e18592436e1460bc48da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e91c4956d73921c163bcd8c9470a84" id="r_a04e91c4956d73921c163bcd8c9470a84"><td class="memItemLeft" align="right" valign="top"><a id="a04e91c4956d73921c163bcd8c9470a84" name="a04e91c4956d73921c163bcd8c9470a84"></a>
-ossia::flat_map&lt; QString, ossia::net::parameter_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_variables_recv</b></td></tr>
-<tr class="separator:a04e91c4956d73921c163bcd8c9470a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cf1d313b751eb6d84419b292a55e9f" id="r_a76cf1d313b751eb6d84419b292a55e9f"><td class="memItemLeft" align="right" valign="top"><a id="a76cf1d313b751eb6d84419b292a55e9f" name="a76cf1d313b751eb6d84419b292a55e9f"></a>
-ossia::flat_map&lt; ossia::net::parameter_base *, QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_variables_send</b></td></tr>
-<tr class="separator:a76cf1d313b751eb6d84419b292a55e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad69aba71ef7da582c05d6ba9ce19b785" id="r_ad69aba71ef7da582c05d6ba9ce19b785"><td class="memItemLeft" align="right" valign="top"><a id="ad69aba71ef7da582c05d6ba9ce19b785" name="ad69aba71ef7da582c05d6ba9ce19b785"></a>
-ossia::flat_map&lt; QString, ossia::net::parameter_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_feedbacks_recv</b></td></tr>
-<tr class="separator:ad69aba71ef7da582c05d6ba9ce19b785"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:abb95868882e461a75ddcee16b31466c1" id="r_abb95868882e461a75ddcee16b31466c1"><td class="memItemLeft" align="right" valign="top"><a id="abb95868882e461a75ddcee16b31466c1" name="abb95868882e461a75ddcee16b31466c1"></a>
+static ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>optionDefault</b> (const <a class="el" href="structbitfocus_1_1module__data_1_1config__field.html">bitfocus::module_data::config_field</a> &amp;opt)</td></tr>
+<tr class="memdesc:abb95868882e461a75ddcee16b31466c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value an option parameter starts with. <br /></td></tr>
+<tr class="separator:abb95868882e461a75ddcee16b31466c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><b>BitfocusDevice.cpp</b></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_bitfocus_protocol_8hpp_source.html">BitfocusProtocol.hpp</a></li>
+<li><b>BitfocusProtocol.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

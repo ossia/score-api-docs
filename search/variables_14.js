@@ -1,14 +1,10 @@
 var searchData=
 [
-  ['value_0',['value',['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port']]],
-  ['vector_5fgui_1',['vector_gui',['../structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33',1,'score::ApplicationSettings']]],
-  ['vel_2',['vel',['../structavnd__tools_1_1_entity_to_midi_1_1synth__state.html#ada7d7986dc30c7873e8ef0e65ddbb8ed',1,'avnd_tools::EntityToMidi::synth_state']]],
-  ['verbose_3',['verbose',['../structscore_1_1gfx_1_1_kms_output_settings.html#afbd636919ef77d8fa37bf74d5e89ebcd',1,'score::gfx::KmsOutputSettings']]],
-  ['version_4',['version',['../struct_protocols_1_1_c_a_n_1_1_database.html#acdbc456adcfb8ede49ea77c3646c308d',1,'Protocols::CAN::Database']]],
-  ['vertex_5fshader_5',['vertex_shader',['../structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a11a2d1f81e65910fcbf612b5e87c1e97',1,'score::gfx::GPUVideoEncoder']]],
-  ['verticalsubsampling_6',['verticalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#a1c745fe211e0c5fe00c9ae486a4840a7',1,'Video::VideoPixelFormatInfo']]],
-  ['visiblerows_7',['visibleRows',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#aec41a996226fea904bf58faa6c052ebf',1,'score::gfx::interop::CpuStagedVideoOutputConfig']]],
-  ['vkexternalmemorysupported_8',['vkExternalMemorySupported',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#ac4093c8429f0e5e2f93ef4e743124b6b',1,'score::gfx::interop::GpuCapabilities']]],
-  ['vmmsupported_9',['vmmSupported',['../structscore_1_1gfx_1_1_cuda_functions.html#a1bfcb74a8b5ef1ab8f4573163a45af53',1,'score::gfx::CudaFunctions']]],
-  ['vulkanctx_10',['vulkanCtx',['../structscore_1_1gfx_1_1interop_1_1_rdma_gpu_buffer_config.html#a118aee79bb48460f61134e781b204e05',1,'score::gfx::interop::RdmaGpuBufferConfig']]]
+  ['ui_0',['ui',['../structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b',1,'score::ApplicationSettings']]],
+  ['uieventrate_1',['uiEventRate',['../structscore_1_1_application_settings.html#a6ccaa699bec50370335dd173c0d8c55a',1,'score::ApplicationSettings']]],
+  ['unit_2',['unit',['../struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#a928cf5450f4d0ecc73de1856b3b7f763',1,'Protocols::MIDIDevices::Scale']]],
+  ['universalplanes_3',['universalPlanes',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#acd5d5094e6aac76534dd84cc422cd82a',1,'score::gfx::drm::DeviceInfo']]],
+  ['upgradeindex_4',['upgradeindex',['../structbitfocus_1_1module__data.html#a25f1b565d8dd3879b798783ae293c832',1,'bitfocus::module_data::upgradeIndex'],['../struct_protocols_1_1_bitfocus_specific_settings.html#a1b21038034606719e741757a7486d31c',1,'Protocols::BitfocusSpecificSettings::upgradeIndex']]],
+  ['usedrange_5',['usedRange',['../struct_process_1_1_external_file_ref.html#a0b8a82354d3bd272b811093f7539e026',1,'Process::ExternalFileRef']]],
+  ['usekindsubfolders_6',['useKindSubfolders',['../structscore_1_1_consolidate_options.html#a405da0ee41befe58ac354cd491e74539',1,'score::ConsolidateOptions']]]
 ];

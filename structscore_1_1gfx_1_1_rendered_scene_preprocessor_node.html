@@ -129,17 +129,21 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_attr_view.html">GpuAttrView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html">InstSlotLayout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_m_d_i_state.html">MDIState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_gpu_copy.html">PendingGpuCopy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket_buffers.html">PrimitiveCloudBucketBuffers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_scene_counts_u_b_o.html">SceneCountsUBO</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_scene_data_binding.html">SceneDataBinding</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_skin_binding.html">SkinBinding</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -153,6 +157,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab3a92c81b757b56856d32f15e172dc32" id="r_ab3a92c81b757b56856d32f15e172dc32"><td class="memItemLeft" align="right" valign="top"><a id="ab3a92c81b757b56856d32f15e172dc32" name="ab3a92c81b757b56856d32f15e172dc32"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>TexChannel</b> = GpuResourceRegistry::TextureChannel</td></tr>
 <tr class="separator:ab3a92c81b757b56856d32f15e172dc32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7946b7f5e524395ed4028765092566" id="r_a6b7946b7f5e524395ed4028765092566"><td class="memItemLeft" align="right" valign="top"><a id="a6b7946b7f5e524395ed4028765092566" name="a6b7946b7f5e524395ed4028765092566"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LayerMap</b> = ossia::flat_map&lt; const ossia::texture_source *, int &gt;</td></tr>
+<tr class="separator:a6b7946b7f5e524395ed4028765092566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classscore_1_1gfx_1_1_node_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classscore_1_1gfx_1_1_node_renderer')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></td></tr>
 <tr class="memitem:a672157579c8f03046ba835c2dcfa453a inherit pub_types_classscore_1_1gfx_1_1_node_renderer" id="r_a672157579c8f03046ba835c2dcfa453a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a">PortSourceKey</a> = std::pair&lt; int32_t, const void * &gt;</td></tr>
 <tr class="separator:a672157579c8f03046ba835c2dcfa453a inherit pub_types_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +194,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>arenaSlotForMater
 <tr class="memitem:a4371ea283f431dc578026f6f0d59c4d8" id="r_a4371ea283f431dc578026f6f0d59c4d8"><td class="memItemLeft" align="right" valign="top"><a id="a4371ea283f431dc578026f6f0d59c4d8" name="a4371ea283f431dc578026f6f0d59c4d8"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>resolvePrototypeStableId</b> (const ossia::mesh_component *mc, const ossia::mesh_primitive &amp;prim) noexcept</td></tr>
 <tr class="separator:a4371ea283f431dc578026f6f0d59c4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa71b245a6201f7c3678468809b397cc9" id="r_aa71b245a6201f7c3678468809b397cc9"><td class="memItemLeft" align="right" valign="top"><a id="aa71b245a6201f7c3678468809b397cc9" name="aa71b245a6201f7c3678468809b397cc9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshPrimitiveCloudMeta</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, const <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
+<tr class="separator:aa71b245a6201f7c3678468809b397cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a412f8c537c04cf351b58441645098267" id="r_a412f8c537c04cf351b58441645098267"><td class="memItemLeft" align="right" valign="top"><a id="a412f8c537c04cf351b58441645098267" name="a412f8c537c04cf351b58441645098267"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuildPrimitiveClouds</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, const <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
 <tr class="separator:a412f8c537c04cf351b58441645098267"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,15 +212,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>computeMaterialsFinge
 <tr class="memitem:a397f72a5c8d0f76bb67157592fa504e8" id="r_a397f72a5c8d0f76bb67157592fa504e8"><td class="memItemLeft" align="right" valign="top"><a id="a397f72a5c8d0f76bb67157592fa504e8" name="a397f72a5c8d0f76bb67157592fa504e8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuildDynamicSlots</b> (MaterialChannel ch)</td></tr>
 <tr class="separator:a397f72a5c8d0f76bb67157592fa504e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7badfac6598b56f29a23c6d41b5412c8" id="r_a7badfac6598b56f29a23c6d41b5412c8"><td class="memItemLeft" align="right" valign="top"><a id="a7badfac6598b56f29a23c6d41b5412c8" name="a7badfac6598b56f29a23c6d41b5412c8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>rebuildChannel</b> (MaterialChannel ch, bool sameMaterialsContent, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
-<tr class="separator:a7badfac6598b56f29a23c6d41b5412c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd566e8637586ccd8c318a6b3250cc41" id="r_acd566e8637586ccd8c318a6b3250cc41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#acd566e8637586ccd8c318a6b3250cc41">registerChannelRefs</a> (MaterialChannel ch, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs, const std::vector&lt; LayerMap &gt; &amp;previous, std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;pendingUploads)</td></tr>
+<tr class="separator:acd566e8637586ccd8c318a6b3250cc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad110e93c2eb9e71f64ae71c631bbe5fd" id="r_ad110e93c2eb9e71f64ae71c631bbe5fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#ad110e93c2eb9e71f64ae71c631bbe5fd">keepClaimedLayers</a> (<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">GpuResourceRegistry::TextureChannelState</a> &amp;pool, const std::vector&lt; LayerMap &gt; &amp;previous)</td></tr>
+<tr class="separator:ad110e93c2eb9e71f64ae71c631bbe5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55abea4c778de2d74ae29554dad2045" id="r_ac55abea4c778de2d74ae29554dad2045"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#ac55abea4c778de2d74ae29554dad2045">allocateAndUploadPool</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;pendingUploads)</td></tr>
+<tr class="separator:ac55abea4c778de2d74ae29554dad2045"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7944e2db5efddcc9098a3a7d1bddce6e" id="r_a7944e2db5efddcc9098a3a7d1bddce6e"><td class="memItemLeft" align="right" valign="top"><a id="a7944e2db5efddcc9098a3a7d1bddce6e" name="a7944e2db5efddcc9098a3a7d1bddce6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>patchMaterialRefsFromCache</b> (MaterialChannel ch, <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
 <tr class="separator:a7944e2db5efddcc9098a3a7d1bddce6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e4eb97b9962feb45e013134b2c260a" id="r_ae4e4eb97b9962feb45e013134b2c260a"><td class="memItemLeft" align="right" valign="top"><a id="ae4e4eb97b9962feb45e013134b2c260a" name="ae4e4eb97b9962feb45e013134b2c260a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>appendTextureAuxes</b> (ossia::geometry &amp;g) const</td></tr>
 <tr class="separator:ae4e4eb97b9962feb45e013134b2c260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e8f92dda5463a89f4340079a82ee73" id="r_ab7e8f92dda5463a89f4340079a82ee73"><td class="memTemplParams" colspan="2"><a id="ab7e8f92dda5463a89f4340079a82ee73" name="ab7e8f92dda5463a89f4340079a82ee73"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ab7e8f92dda5463a89f4340079a82ee73"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>forEachSceneTexture</b> (F &amp;&amp;f) const</td></tr>
+<tr class="separator:ab7e8f92dda5463a89f4340079a82ee73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12706bddaa1aa97dbb3e8578683a402f" id="r_a12706bddaa1aa97dbb3e8578683a402f"><td class="memItemLeft" align="right" valign="top"><a id="a12706bddaa1aa97dbb3e8578683a402f" name="a12706bddaa1aa97dbb3e8578683a402f"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>computeSceneTextureFingerprint</b> () const noexcept</td></tr>
+<tr class="separator:a12706bddaa1aa97dbb3e8578683a402f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea5433d0422a2eb0516540023925996d" id="r_aea5433d0422a2eb0516540023925996d"><td class="memItemLeft" align="right" valign="top">QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#aea5433d0422a2eb0516540023925996d">textureForOutput</a> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;) override</td></tr>
 <tr class="separator:aea5433d0422a2eb0516540023925996d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad93d3be43acfcdcfe561c061b38f4a5c" id="r_ad93d3be43acfcdcfe561c061b38f4a5c"><td class="memItemLeft" align="right" valign="top"><a id="ad93d3be43acfcdcfe561c061b38f4a5c" name="ad93d3be43acfcdcfe561c061b38f4a5c"></a>
@@ -289,9 +309,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="separator:ae72e1187f02ba173f3dcf04982daa18d inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a3b414c533c91f5b07a807440cbf74281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a3b414c533c91f5b07a807440cbf74281">seedInitialOutputs</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="separator:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a9cc47581ab2bfa95a89fbb9a1d14a726"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726">followsRenderSize</a> () const noexcept</td></tr>
+<tr class="separator:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d7e511eae6a9ece7ce6853f83e6aa46" id="r_a4d7e511eae6a9ece7ce6853f83e6aa46"><td class="memItemLeft" align="right" valign="top"><a id="a4d7e511eae6a9ece7ce6853f83e6aa46" name="a4d7e511eae6a9ece7ce6853f83e6aa46"></a>
+static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>skinStreamCapacity</b> () noexcept</td></tr>
+<tr class="separator:a4d7e511eae6a9ece7ce6853f83e6aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdb6168eda021d99e70d158fda688561" id="r_abdb6168eda021d99e70d158fda688561"><td class="memItemLeft" align="right" valign="top"><a id="abdb6168eda021d99e70d158fda688561" name="abdb6168eda021d99e70d158fda688561"></a>
 static TexChannel&#160;</td><td class="memItemRight" valign="bottom"><b>toTexChannel</b> (MaterialChannel ch) noexcept</td></tr>
 <tr class="separator:abdb6168eda021d99e70d158fda688561"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -306,6 +331,9 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>geomAttrFormatB
 template&lt;int BytesPerVertex&gt; </td></tr>
 <tr class="memitem:ab2193efebeb2e323019914e7d00a2ab0"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; std::byte &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>extractCpuAttribute</b> (const ossia::geometry &amp;g, ossia::attribute_semantic sem)</td></tr>
 <tr class="separator:ab2193efebeb2e323019914e7d00a2ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad027de959b0049d507ee769af6fe4b11" id="r_ad027de959b0049d507ee769af6fe4b11"><td class="memItemLeft" align="right" valign="top"><a id="ad027de959b0049d507ee769af6fe4b11" name="ad027de959b0049d507ee769af6fe4b11"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>packSkinStream</b> (const ossia::geometry &amp;g, bool skinned, std::vector&lt; std::byte &gt; &amp;out)</td></tr>
+<tr class="separator:ad027de959b0049d507ee769af6fe4b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea3458e170a467fde79f36bdcec0b740" id="r_aea3458e170a467fde79f36bdcec0b740"><td class="memItemLeft" align="right" valign="top"><a id="aea3458e170a467fde79f36bdcec0b740" name="aea3458e170a467fde79f36bdcec0b740"></a>
 static <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_attr_view.html">GpuAttrView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extractGpuAttribute</b> (const ossia::geometry &amp;g, ossia::attribute_semantic sem)</td></tr>
 <tr class="separator:aea3458e170a467fde79f36bdcec0b740"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,12 +343,26 @@ static std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="
 <tr class="memitem:a2d43e7200d19ab0027ed7b683b8bcece" id="r_a2d43e7200d19ab0027ed7b683b8bcece"><td class="memItemLeft" align="right" valign="top"><a id="a2d43e7200d19ab0027ed7b683b8bcece" name="a2d43e7200d19ab0027ed7b683b8bcece"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>meshEmitsDraw</b> (const ossia::geometry &amp;mesh)</td></tr>
 <tr class="separator:a2d43e7200d19ab0027ed7b683b8bcece"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a848f10e5331946e5eb3f95dc94abda48" id="r_a848f10e5331946e5eb3f95dc94abda48"><td class="memItemLeft" align="right" valign="top"><a id="a848f10e5331946e5eb3f95dc94abda48" name="a848f10e5331946e5eb3f95dc94abda48"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>growBuf</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, QRhiBuffer *&amp;buf, int64_t &amp;cap, int64_t need, QRhiBuffer::UsageFlags flags, const char *name)</td></tr>
-<tr class="separator:a848f10e5331946e5eb3f95dc94abda48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc731611801fa0c925a799690292312" id="r_a7bc731611801fa0c925a799690292312"><td class="memItemLeft" align="right" valign="top"><a id="a7bc731611801fa0c925a799690292312" name="a7bc731611801fa0c925a799690292312"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>growBuf</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, QRhiBuffer *&amp;buf, int64_t &amp;cap, int64_t need, QRhiBuffer::UsageFlags flags, const char *name, bool exact=false)</td></tr>
+<tr class="separator:a7bc731611801fa0c925a799690292312"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af602a955a13a510cb405ea78f6e727aa" id="r_af602a955a13a510cb405ea78f6e727aa"><td class="memItemLeft" align="right" valign="top"><a id="af602a955a13a510cb405ea78f6e727aa" name="af602a955a13a510cb405ea78f6e727aa"></a>
+static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>primitiveCloudBucketKey</b> (const ossia::primitive_cloud_component &amp;cloud) noexcept</td></tr>
+<tr class="separator:af602a955a13a510cb405ea78f6e727aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb090dde81bb35dec452f9fd0cbf0cd" id="r_a4eb090dde81bb35dec452f9fd0cbf0cd"><td class="memItemLeft" align="right" valign="top"><a id="a4eb090dde81bb35dec452f9fd0cbf0cd" name="a4eb090dde81bb35dec452f9fd0cbf0cd"></a>
+static ossia::flat_map&lt; uint32_t, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bucketPrimitiveClouds</b> (const <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
+<tr class="separator:a4eb090dde81bb35dec452f9fd0cbf0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebde7c8a3f16df1a9f471a7d638d35cd" id="r_aebde7c8a3f16df1a9f471a7d638d35cd"><td class="memItemLeft" align="right" valign="top"><a id="aebde7c8a3f16df1a9f471a7d638d35cd" name="aebde7c8a3f16df1a9f471a7d638d35cd"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>packCloudMeta</b> (const <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a> &amp;b, std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_cloud_meta_g_p_u.html">CloudMetaGPU</a> &gt; &amp;out, ossia::aabb &amp;worldBounds)</td></tr>
+<tr class="separator:aebde7c8a3f16df1a9f471a7d638d35cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e2599f4c6223a5d4040e45f65c312b" id="r_a03e2599f4c6223a5d4040e45f65c312b"><td class="memItemLeft" align="right" valign="top"><a id="a03e2599f4c6223a5d4040e45f65c312b" name="a03e2599f4c6223a5d4040e45f65c312b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setGeometryBounds</b> (ossia::geometry &amp;g, const ossia::aabb &amp;worldBounds)</td></tr>
+<tr class="separator:a03e2599f4c6223a5d4040e45f65c312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7792c8871f9c12441febd69e6cb6fd" id="r_aab7792c8871f9c12441febd69e6cb6fd"><td class="memItemLeft" align="right" valign="top"><a id="aab7792c8871f9c12441febd69e6cb6fd" name="aab7792c8871f9c12441febd69e6cb6fd"></a>
 static QImage&#160;</td><td class="memItemRight" valign="bottom"><b>decodeTextureSource</b> (const ossia::texture_source &amp;src, <a class="el" href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a> *cache)</td></tr>
 <tr class="separator:aab7792c8871f9c12441febd69e6cb6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a8b1351a8c0db6b59451980aa68b21" id="r_ac1a8b1351a8c0db6b59451980aa68b21"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node.html#ac1a8b1351a8c0db6b59451980aa68b21">assignNewLayers</a> (<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">GpuResourceRegistry::TextureChannelState</a> &amp;pool, std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;pendingUploads)</td></tr>
+<tr class="separator:ac1a8b1351a8c0db6b59451980aa68b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -348,12 +390,30 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialUVTransf
 <tr class="memitem:aa4ccd81f2657409b5b47e286e657f769" id="r_aa4ccd81f2657409b5b47e286e657f769"><td class="memItemLeft" align="right" valign="top"><a id="aa4ccd81f2657409b5b47e286e657f769" name="aa4ccd81f2657409b5b47e286e657f769"></a>
 std::vector&lt; MaterialUVTransformGPU &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedMaterialUVTransforms</b></td></tr>
 <tr class="separator:aa4ccd81f2657409b5b47e286e657f769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bb5feaf87154dbcca7ca6d05521f97" id="r_a25bb5feaf87154dbcca7ca6d05521f97"><td class="memItemLeft" align="right" valign="top"><a id="a25bb5feaf87154dbcca7ca6d05521f97" name="a25bb5feaf87154dbcca7ca6d05521f97"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialWrapBuffer</b> {}</td></tr>
+<tr class="separator:a25bb5feaf87154dbcca7ca6d05521f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429713772e5cc3bca1207438cb58d1b3" id="r_a429713772e5cc3bca1207438cb58d1b3"><td class="memItemLeft" align="right" valign="top"><a id="a429713772e5cc3bca1207438cb58d1b3" name="a429713772e5cc3bca1207438cb58d1b3"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialWrapCap</b> {}</td></tr>
+<tr class="separator:a429713772e5cc3bca1207438cb58d1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad634927851fc6542925edd5972ab9188" id="r_ad634927851fc6542925edd5972ab9188"><td class="memItemLeft" align="right" valign="top"><a id="ad634927851fc6542925edd5972ab9188" name="ad634927851fc6542925edd5972ab9188"></a>
+std::vector&lt; MaterialWrapGPU &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedMaterialWraps</b></td></tr>
+<tr class="separator:ad634927851fc6542925edd5972ab9188"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86348b1fef22678aa3ec3948fea5658" id="r_ad86348b1fef22678aa3ec3948fea5658"><td class="memItemLeft" align="right" valign="top"><a id="ad86348b1fef22678aa3ec3948fea5658" name="ad86348b1fef22678aa3ec3948fea5658"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_scene_data_binding.html">SceneDataBinding</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneDataBuffers</b></td></tr>
 <tr class="separator:ad86348b1fef22678aa3ec3948fea5658"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc014d9858a720865203f113a124fef0" id="r_afc014d9858a720865203f113a124fef0"><td class="memItemLeft" align="right" valign="top"><a id="afc014d9858a720865203f113a124fef0" name="afc014d9858a720865203f113a124fef0"></a>
-std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_skin_binding.html">SkinBinding</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_skinBuffers</b></td></tr>
-<tr class="separator:afc014d9858a720865203f113a124fef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212ad73c2577c418663eace8308817d0" id="r_a212ad73c2577c418663eace8308817d0"><td class="memItemLeft" align="right" valign="top"><a id="a212ad73c2577c418663eace8308817d0" name="a212ad73c2577c418663eace8308817d0"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_jointMatricesBuffer</b> {}</td></tr>
+<tr class="separator:a212ad73c2577c418663eace8308817d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada12c5e50f88d78853a682a3d57cd6b5" id="r_ada12c5e50f88d78853a682a3d57cd6b5"><td class="memItemLeft" align="right" valign="top"><a id="ada12c5e50f88d78853a682a3d57cd6b5" name="ada12c5e50f88d78853a682a3d57cd6b5"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_jointMatricesCap</b> {}</td></tr>
+<tr class="separator:ada12c5e50f88d78853a682a3d57cd6b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3601ebc24540eb17401bfbe90c9ad79b" id="r_a3601ebc24540eb17401bfbe90c9ad79b"><td class="memItemLeft" align="right" valign="top"><a id="a3601ebc24540eb17401bfbe90c9ad79b" name="a3601ebc24540eb17401bfbe90c9ad79b"></a>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_world_transform_mat4.html">WorldTransformMat4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedJointMatrices</b></td></tr>
+<tr class="separator:a3601ebc24540eb17401bfbe90c9ad79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845d07edce7bc927855e34dba4949dc3" id="r_a845d07edce7bc927855e34dba4949dc3"><td class="memItemLeft" align="right" valign="top"><a id="a845d07edce7bc927855e34dba4949dc3" name="a845d07edce7bc927855e34dba4949dc3"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_skinStream</b> {}</td></tr>
+<tr class="separator:a845d07edce7bc927855e34dba4949dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdaa4edc1662a7c2113eb667044cf690" id="r_acdaa4edc1662a7c2113eb667044cf690"><td class="memItemLeft" align="right" valign="top"><a id="acdaa4edc1662a7c2113eb667044cf690" name="acdaa4edc1662a7c2113eb667044cf690"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sceneCountsBuffer</b> {}</td></tr>
 <tr class="separator:acdaa4edc1662a7c2113eb667044cf690"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,12 +462,9 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastSnapshotFram
 <tr class="memitem:a2f76172cc9e8becfc5913c3a11036e8e" id="r_a2f76172cc9e8becfc5913c3a11036e8e"><td class="memItemLeft" align="right" valign="top"><a id="a2f76172cc9e8becfc5913c3a11036e8e" name="a2f76172cc9e8becfc5913c3a11036e8e"></a>
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastGpuCopiesFrame</b> {-1}</td></tr>
 <tr class="separator:a2f76172cc9e8becfc5913c3a11036e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de181eda2dbed02fd8b70511edfad10" id="r_a8de181eda2dbed02fd8b70511edfad10"><td class="memItemLeft" align="right" valign="top"><a id="a8de181eda2dbed02fd8b70511edfad10" name="a8de181eda2dbed02fd8b70511edfad10"></a>
-<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_slot.html">GpuResourceRegistry::Slot</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_envSlot</b> {}</td></tr>
-<tr class="separator:a8de181eda2dbed02fd8b70511edfad10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79a9f694e20555fcf7848250d5f354b" id="r_ad79a9f694e20555fcf7848250d5f354b"><td class="memItemLeft" align="right" valign="top"><a id="ad79a9f694e20555fcf7848250d5f354b" name="ad79a9f694e20555fcf7848250d5f354b"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_env_aux_offset</b> {0}</td></tr>
-<tr class="separator:ad79a9f694e20555fcf7848250d5f354b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905e719a36e917f5e5c0610dfef47138" id="r_a905e719a36e917f5e5c0610dfef47138"><td class="memItemLeft" align="right" valign="top"><a id="a905e719a36e917f5e5c0610dfef47138" name="a905e719a36e917f5e5c0610dfef47138"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_envBuffer</b> {}</td></tr>
+<tr class="separator:a905e719a36e917f5e5c0610dfef47138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b8e0db127b7313266be9f385d3988c2" id="r_a1b8e0db127b7313266be9f385d3988c2"><td class="memItemLeft" align="right" valign="top"><a id="a1b8e0db127b7313266be9f385d3988c2" name="a1b8e0db127b7313266be9f385d3988c2"></a>
 <a class="el" href="structscore_1_1gfx_1_1_env_params_u_b_o.html">EnvParamsUBO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastEnvUpload</b> {}</td></tr>
 <tr class="separator:a1b8e0db127b7313266be9f385d3988c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -423,6 +480,9 @@ ossia::flat_map&lt; uint32_t, <a class="el" href="structscore_1_1gfx_1_1_rendere
 <tr class="memitem:a63a8200a705548edfa0990b328d618e0" id="r_a63a8200a705548edfa0990b328d618e0"><td class="memItemLeft" align="right" valign="top"><a id="a63a8200a705548edfa0990b328d618e0" name="a63a8200a705548edfa0990b328d618e0"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_primitiveCloudFrame</b> {0}</td></tr>
 <tr class="separator:a63a8200a705548edfa0990b328d618e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ae08d2a2759ff7e492f1badf4e7ee6" id="r_ad5ae08d2a2759ff7e492f1badf4e7ee6"><td class="memItemLeft" align="right" valign="top"><a id="ad5ae08d2a2759ff7e492f1badf4e7ee6" name="ad5ae08d2a2759ff7e492f1badf4e7ee6"></a>
+<a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html">InstSlotLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_instSlot</b> {kCompactInstSlot}</td></tr>
+<tr class="separator:ad5ae08d2a2759ff7e492f1badf4e7ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821f7213347af3be2b5597b2a1ca4a22" id="r_a821f7213347af3be2b5597b2a1ca4a22"><td class="memItemLeft" align="right" valign="top"><a id="a821f7213347af3be2b5597b2a1ca4a22" name="a821f7213347af3be2b5597b2a1ca4a22"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_instAttribs</b> {}</td></tr>
 <tr class="separator:a821f7213347af3be2b5597b2a1ca4a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,18 +516,30 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialsExtCap<
 <tr class="memitem:a279c849901c78623ea73cfe269717d82" id="r_a279c849901c78623ea73cfe269717d82"><td class="memItemLeft" align="right" valign="top"><a id="a279c849901c78623ea73cfe269717d82" name="a279c849901c78623ea73cfe269717d82"></a>
 <a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastRegistry</b> {}</td></tr>
 <tr class="separator:a279c849901c78623ea73cfe269717d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad450931af53bb8146dc3f58a82872178" id="r_ad450931af53bb8146dc3f58a82872178"><td class="memItemLeft" align="right" valign="top"><a id="ad450931af53bb8146dc3f58a82872178" name="ad450931af53bb8146dc3f58a82872178"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultMaterialUploaded</b> {false}</td></tr>
+<tr class="separator:ad450931af53bb8146dc3f58a82872178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd656986f13280746d13ffac9ea7586" id="r_a9dd656986f13280746d13ffac9ea7586"><td class="memItemLeft" align="right" valign="top"><a id="a9dd656986f13280746d13ffac9ea7586" name="a9dd656986f13280746d13ffac9ea7586"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_seenPoolGeneration</b> {~0ull}</td></tr>
+<tr class="separator:a9dd656986f13280746d13ffac9ea7586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9e11483e484d3285de9b57f95f31ab" id="r_a3f9e11483e484d3285de9b57f95f31ab"><td class="memItemLeft" align="right" valign="top"><a id="a3f9e11483e484d3285de9b57f95f31ab" name="a3f9e11483e484d3285de9b57f95f31ab"></a>
 std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedMaterialsFingerprint</b></td></tr>
 <tr class="separator:a3f9e11483e484d3285de9b57f95f31ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7be2dc6d3e1e159569cde3218147bef1" id="r_a7be2dc6d3e1e159569cde3218147bef1"><td class="memItemLeft" align="right" valign="top"><a id="a7be2dc6d3e1e159569cde3218147bef1" name="a7be2dc6d3e1e159569cde3218147bef1"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDynamicSlotFingerprint</b> {}</td></tr>
 <tr class="separator:a7be2dc6d3e1e159569cde3218147bef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a319e6eb05a7bd336c5c8fc43315ee" id="r_ab5a319e6eb05a7bd336c5c8fc43315ee"><td class="memItemLeft" align="right" valign="top"><a id="ab5a319e6eb05a7bd336c5c8fc43315ee" name="ab5a319e6eb05a7bd336c5c8fc43315ee"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedSceneTextureFingerprint</b> {}</td></tr>
+<tr class="separator:ab5a319e6eb05a7bd336c5c8fc43315ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd59bd789518f5c1abe8798ef3f3271" id="r_aacd59bd789518f5c1abe8798ef3f3271"><td class="memItemLeft" align="right" valign="top"><a id="aacd59bd789518f5c1abe8798ef3f3271" name="aacd59bd789518f5c1abe8798ef3f3271"></a>
 std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedMeshFingerprint</b></td></tr>
 <tr class="separator:aacd59bd789518f5c1abe8798ef3f3271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c0aa9d1d43f29136704ea260457086e" id="r_a0c0aa9d1d43f29136704ea260457086e"><td class="memItemLeft" align="right" valign="top"><a id="a0c0aa9d1d43f29136704ea260457086e" name="a0c0aa9d1d43f29136704ea260457086e"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedCloudFingerprint</b> {}</td></tr>
 <tr class="separator:a0c0aa9d1d43f29136704ea260457086e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fa68c6589ad0a5a0a11a075196faea" id="r_a37fa68c6589ad0a5a0a11a075196faea"><td class="memItemLeft" align="right" valign="top"><a id="a37fa68c6589ad0a5a0a11a075196faea" name="a37fa68c6589ad0a5a0a11a075196faea"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedCloudTransformFingerprint</b> {}</td></tr>
+<tr class="separator:a37fa68c6589ad0a5a0a11a075196faea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b9b0df48ee7af827e7f834a5b810945" id="r_a9b9b0df48ee7af827e7f834a5b810945"><td class="memItemLeft" align="right" valign="top"><a id="a9b9b0df48ee7af827e7f834a5b810945" name="a9b9b0df48ee7af827e7f834a5b810945"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_material_extensions_g_p_u.html">MaterialExtensionsGPU</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedMaterialExt</b></td></tr>
 <tr class="separator:a9b9b0df48ee7af827e7f834a5b810945"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -537,20 +609,100 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad462b32abff61fb3eb4aa20f637ae989" id="r_ad462b32abff61fb3eb4aa20f637ae989"><td class="memItemLeft" align="right" valign="top"><a id="ad462b32abff61fb3eb4aa20f637ae989" name="ad462b32abff61fb3eb4aa20f637ae989"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kInstSlotStride</b> = 32</td></tr>
-<tr class="separator:ad462b32abff61fb3eb4aa20f637ae989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c029872b454ae46f671a26a8748caa7" id="r_a1c029872b454ae46f671a26a8748caa7"><td class="memItemLeft" align="right" valign="top"><a id="a1c029872b454ae46f671a26a8748caa7" name="a1c029872b454ae46f671a26a8748caa7"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kInstTranslationOffset</b> = 0</td></tr>
-<tr class="separator:a1c029872b454ae46f671a26a8748caa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f34c2d7bf9e4d1fbfe91d6341c0b625" id="r_a1f34c2d7bf9e4d1fbfe91d6341c0b625"><td class="memItemLeft" align="right" valign="top"><a id="a1f34c2d7bf9e4d1fbfe91d6341c0b625" name="a1f34c2d7bf9e4d1fbfe91d6341c0b625"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kInstColorOffset</b> = 16</td></tr>
-<tr class="separator:a1f34c2d7bf9e4d1fbfe91d6341c0b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97ed572c1f6cc9a4affe2737e8a30e8" id="r_ac97ed572c1f6cc9a4affe2737e8a30e8"><td class="memItemLeft" align="right" valign="top"><a id="ac97ed572c1f6cc9a4affe2737e8a30e8" name="ac97ed572c1f6cc9a4affe2737e8a30e8"></a>
+static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>kSkinStride</b> = 24</td></tr>
+<tr class="separator:ac97ed572c1f6cc9a4affe2737e8a30e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46045b491743bf6cf3c62f4d04e5db8" id="r_ac46045b491743bf6cf3c62f4d04e5db8"><td class="memItemLeft" align="right" valign="top"><a id="ac46045b491743bf6cf3c62f4d04e5db8" name="ac46045b491743bf6cf3c62f4d04e5db8"></a>
+static constexpr <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html">InstSlotLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kCompactInstSlot</b> {32, 0, 0, 16, 16}</td></tr>
+<tr class="separator:ac46045b491743bf6cf3c62f4d04e5db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948084bd25280f95577e379fedf82ec6" id="r_a948084bd25280f95577e379fedf82ec6"><td class="memItemLeft" align="right" valign="top"><a id="a948084bd25280f95577e379fedf82ec6" name="a948084bd25280f95577e379fedf82ec6"></a>
+static constexpr <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html">InstSlotLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><b>kFullInstSlot</b> {96, 0, 48, 64, 80}</td></tr>
+<tr class="separator:a948084bd25280f95577e379fedf82ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced2ab0715ec19621351de8d9164229a" id="r_aced2ab0715ec19621351de8d9164229a"><td class="memItemLeft" align="right" valign="top"><a id="aced2ab0715ec19621351de8d9164229a" name="aced2ab0715ec19621351de8d9164229a"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kChannelLayerSize</b> = GpuResourceRegistry::kTextureLayerSize</td></tr>
 <tr class="separator:aced2ab0715ec19621351de8d9164229a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac55abea4c778de2d74ae29554dad2045" name="ac55abea4c778de2d74ae29554dad2045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55abea4c778de2d74ae29554dad2045">&#9670;&#160;</a></span>allocateAndUploadPool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderedScenePreprocessorNode::allocateAndUploadPool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pendingUploads</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Allocate or grow every bucket in the shared pool and issue the queued uploads. Returns true when any QRhiTexture was recreated, which the caller turns into a downstream SRB rebind. </p>
+
+</div>
+</div>
+<a id="ac1a8b1351a8c0db6b59451980aa68b21" name="ac1a8b1351a8c0db6b59451980aa68b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1a8b1351a8c0db6b59451980aa68b21">&#9670;&#160;</a></span>assignNewLayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void score::gfx::RenderedScenePreprocessorNode::assignNewLayers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">GpuResourceRegistry::TextureChannelState</a> &amp;&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pendingUploads</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Give each new source a layer: the lowest one no retained source holds, else a new one at the end. A layer whose source left the scene is freed here, and its source released. </p>
+
+</div>
+</div>
 <a id="a74d50857d31067c1a657969490f4a096" name="a74d50857d31067c1a657969490f4a096"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74d50857d31067c1a657969490f4a096">&#9670;&#160;</a></span>init()</h2>
 
@@ -625,6 +777,99 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kChan
 <p>Initialize edge-independent state: material UBO, samplers, mesh, shaders. Called once when the renderer enters a <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a6ef16f5b3d202ef2ef1b3de15bf9a4c1">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="ad110e93c2eb9e71f64ae71c631bbe5fd" name="ad110e93c2eb9e71f64ae71c631bbe5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad110e93c2eb9e71f64ae71c631bbe5fd">&#9670;&#160;</a></span>keepClaimedLayers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderedScenePreprocessorNode::keepClaimedLayers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">GpuResourceRegistry::TextureChannelState</a> &amp;&#160;</td>
+          <td class="paramname"><em>pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; LayerMap &gt; &amp;&#160;</td>
+          <td class="paramname"><em>previous</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Record the sources this preprocessor's scene maps (the layerMaps hold nothing else after registerChannelRefs), then map back the layers of the sources other preprocessors sharing the pool still claim, so assignNewLayers does not free them. </p>
+
+</div>
+</div>
+<a id="acd566e8637586ccd8c318a6b3250cc41" name="acd566e8637586ccd8c318a6b3250cc41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd566e8637586ccd8c318a6b3250cc41">&#9670;&#160;</a></span>registerChannelRefs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderedScenePreprocessorNode::registerChannelRefs </td>
+          <td>(</td>
+          <td class="paramtype">MaterialChannel&#160;</td>
+          <td class="paramname"><em>ch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;&#160;</td>
+          <td class="paramname"><em>fs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; LayerMap &gt; &amp;&#160;</td>
+          <td class="paramname"><em>previous</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html">PendingLayer</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pendingUploads</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Route one channel's material textures into the shared pool, deduping by texture_source pointer across every channel that already ran. Registration for ALL channels must finish before allocateAndUploadPool: the pool is shared, so a later channel discovering a new layer in a bucket an earlier one already sized would force that array to be reallocated and every layer in it re-uploaded.</p>
+<p><code>previous</code> is each bucket's map from before this rebuild. A source found there keeps its bucket and layer and is neither decoded nor uploaded again; only sources new to the pool are queued. </p>
 
 </div>
 </div>

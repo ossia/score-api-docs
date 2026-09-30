@@ -63,6 +63,7 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
     [ "SceneSelector.hpp", "_scene_selector_8hpp_source.html", null ],
     [ "SceneSwitch.hpp", "_scene_switch_8hpp_source.html", null ],
     [ "ShadowCascadeSetup.hpp", "_shadow_cascade_setup_8hpp_source.html", null ],
+    [ "StringListControl.hpp", "_string_list_control_8hpp_source.html", null ],
     [ "StructureSynth.hpp", "_structure_synth_8hpp_source.html", null ],
     [ "TagAs.hpp", "_tag_as_8hpp_source.html", null ],
     [ "TangentUtils.hpp", "_tangent_utils_8hpp_source.html", null ],

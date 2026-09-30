@@ -123,6 +123,8 @@ Inheritance diagram for JS::ApplicationPlugin:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_s_1_1_application_plugin_1_1_command_handler.html">CommandHandler</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_j_s_1_1_application_plugin_1_1_start_script.html">StartScript</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One &ndash;script argument.  <a href="struct_j_s_1_1_application_plugin_1_1_start_script.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +149,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>runStartScripts</b> (
 <tr class="memitem:ad8b1b6f83368eaee9798081aa80a7c5a" id="r_ad8b1b6f83368eaee9798081aa80a7c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#ad8b1b6f83368eaee9798081aa80a7c5a">on_newDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) override</td></tr>
 <tr class="memdesc:ad8b1b6f83368eaee9798081aa80a7c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">on_newDocument Will be called only when a new, empty document is created; classes inheriting from SerializableDocumentPlugin should be instantiated and added to the document at this point.  <br /></td></tr>
 <tr class="separator:ad8b1b6f83368eaee9798081aa80a7c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a9534edf625c47ce4c3b786b42eb70" id="r_aa6a9534edf625c47ce4c3b786b42eb70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_application_plugin.html#aa6a9534edf625c47ce4c3b786b42eb70">registerCommandHandler</a> (const QString &amp;name, const QJSValue &amp;fn, QJSEngine *engine)</td></tr>
+<tr class="memdesc:aa6a9534edf625c47ce4c3b786b42eb70"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>engine</code> is the one <code>fn</code> belongs to; the payload is built there.  <br /></td></tr>
+<tr class="separator:aa6a9534edf625c47ce4c3b786b42eb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfb54a3964b38cf7d6aff089d82a039" id="r_afcfb54a3964b38cf7d6aff089d82a039"><td class="memItemLeft" align="right" valign="top"><a id="afcfb54a3964b38cf7d6aff089d82a039" name="afcfb54a3964b38cf7d6aff089d82a039"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>callCommandHandler</b> (const QString &amp;name, const QByteArray &amp;payload)</td></tr>
+<tr class="separator:afcfb54a3964b38cf7d6aff089d82a039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
 <tr class="memitem:aba3e49da450d061909daaab4f4847f28 inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_aba3e49da450d061909daaab4f4847f28"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>GUIApplicationPlugin</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;presenter)</td></tr>
@@ -224,6 +232,12 @@ ossia::net::network_context_ptr&#160;</td><td class="memItemRight" valign="botto
 <tr class="memitem:a22e2f9b3de5245a32b2d175dd4f3bef6" id="r_a22e2f9b3de5245a32b2d175dd4f3bef6"><td class="memItemLeft" align="right" valign="top"><a id="a22e2f9b3de5245a32b2d175dd4f3bef6" name="a22e2f9b3de5245a32b2d175dd4f3bef6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_start_script_failed</b> {}</td></tr>
 <tr class="separator:a22e2f9b3de5245a32b2d175dd4f3bef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c3d175943a4071767d40ac4ccfbdd9" id="r_af7c3d175943a4071767d40ac4ccfbdd9"><td class="memItemLeft" align="right" valign="top"><a id="af7c3d175943a4071767d40ac4ccfbdd9" name="af7c3d175943a4071767d40ac4ccfbdd9"></a>
+QHash&lt; QString, <a class="el" href="struct_j_s_1_1_application_plugin_1_1_command_handler.html">CommandHandler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandHandlers</b></td></tr>
+<tr class="separator:af7c3d175943a4071767d40ac4ccfbdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3139ae375bcbb024126fc6cd585a03a" id="r_ae3139ae375bcbb024126fc6cd585a03a"><td class="memItemLeft" align="right" valign="top"><a id="ae3139ae375bcbb024126fc6cd585a03a" name="ae3139ae375bcbb024126fc6cd585a03a"></a>
+QSet&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_reportedMissingHandlers</b></td></tr>
+<tr class="separator:ae3139ae375bcbb024126fc6cd585a03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
 <tr class="memitem:ababf38f495b0fd0e30263c6bb65d2e5b inherit pub_attribs_classscore_1_1_g_u_i_application_plugin" id="r_ababf38f495b0fd0e30263c6bb65d2e5b"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="structscore_1_1_g_u_i_application_context.html">GUIApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
@@ -393,6 +407,44 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <p>on_newDocument Will be called only when a new, empty document is created; classes inheriting from SerializableDocumentPlugin should be instantiated and added to the document at this point. </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#a6eb40d143abe1b1232d9ba277cdbae26">score::GUIApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<a id="aa6a9534edf625c47ce4c3b786b42eb70" name="aa6a9534edf625c47ce4c3b786b42eb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a9534edf625c47ce4c3b786b42eb70">&#9670;&#160;</a></span>registerCommandHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::ApplicationPlugin::registerCommandHandler </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJSValue &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJSEngine *&#160;</td>
+          <td class="paramname"><em>engine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>engine</code> is the one <code>fn</code> belongs to; the payload is built there. </p>
+<p>Handlers for <a class="el" href="class_j_s_1_1_script_command.html" title="An undoable edit performed by a script.">JS::ScriptCommand</a>, by name.</p>
+<p>A script registers one with Score.registerCommandHandler() and then pushes edits against it with Score.pushCommand(); the command stores only the name and the payloads, so it stays serializable. Registering a name twice replaces the handler - reloading a script must not leave the old one behind. </p>
 
 </div>
 </div>

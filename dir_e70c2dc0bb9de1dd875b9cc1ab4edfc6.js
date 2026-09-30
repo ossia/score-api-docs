@@ -7,6 +7,7 @@ var dir_e70c2dc0bb9de1dd875b9cc1ab4edfc6 =
     [ "DuplicateInterval.hpp", "_duplicate_interval_8hpp_source.html", null ],
     [ "Encapsulate.hpp", "_encapsulate_8hpp_source.html", null ],
     [ "HideRackInViewModel.hpp", "_hide_rack_in_view_model_8hpp_source.html", null ],
+    [ "PasteAnchors.hpp", "_paste_anchors_8hpp_source.html", null ],
     [ "score-plugin-scenario/Scenario/Commands/Scenario/Properties.hpp", "score-plugin-scenario_2_scenario_2_commands_2_scenario_2_properties_8hpp_source.html", null ],
     [ "ScenarioPaste.hpp", "_scenario_paste_8hpp_source.html", null ],
     [ "ScenarioPasteContent.hpp", "_scenario_paste_content_8hpp_source.html", null ],

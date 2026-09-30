@@ -2,6 +2,7 @@ var dir_b760342c48181f544d2706818bb5bf8f =
 [
     [ "Attributes.hpp", "_attributes_8hpp_source.html", null ],
     [ "Concepts.hpp", "_concepts_8hpp_source.html", null ],
+    [ "ControlViews.hpp", "_control_views_8hpp_source.html", null ],
     [ "CpuAnalysisNode.hpp", "_cpu_analysis_node_8hpp_source.html", null ],
     [ "CpuFilterNode.hpp", "_cpu_filter_node_8hpp_source.html", null ],
     [ "score-plugin-avnd/Crousti/Executor.hpp", "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html", null ],
@@ -25,5 +26,6 @@ var dir_b760342c48181f544d2706818bb5bf8f =
     [ "SceneConcepts.hpp", "_scene_concepts_8hpp_source.html", null ],
     [ "ScoreLayer.hpp", "_score_layer_8hpp_source.html", null ],
     [ "TextureConversion.hpp", "_texture_conversion_8hpp_source.html", null ],
-    [ "TextureFormat.hpp", "_texture_format_8hpp_source.html", null ]
+    [ "TextureFormat.hpp", "_texture_format_8hpp_source.html", null ],
+    [ "WorkerBinding.hpp", "_worker_binding_8hpp_source.html", null ]
 ];

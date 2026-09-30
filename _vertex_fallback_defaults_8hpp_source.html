@@ -152,29 +152,31 @@ $(document).ready(function(){initNavTree('_vertex_fallback_defaults_8hpp_source.
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//                    set, else from NAME via ossia::name_to_semantic).</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//                    Pass attribute_semantic::custom for unknown names.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//   `decl_type`      the GLSL TYPE the shader declared, lowercased</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//                    (&quot;float&quot;, &quot;vec2&quot;, &quot;vec3&quot;, &quot;vec4&quot;). mat4 / integer</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//                    types are unsupported in v1 — returns nullopt.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//   `user_default`   the DEFAULT[] array from the JSON header (may be</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//                    empty). When non-empty, overrides the semantic</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//                    whitelist: numbers are packed into the payload in</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//                    declaration order, then truncated / zero-padded to</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//                    fit the declared type width.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">// Returns `std::nullopt` when neither a user DEFAULT nor a whitelisted</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// semantic default applies — the caller is expected to fail the pipeline</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// build with a clear error referencing the input name.</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>SCORE_PLUGIN_GFX_EXPORT std::optional&lt;VertexFallbackSpec&gt; resolveVertexFallback(</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ossia::attribute_semantic semantic,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    std::string_view decl_type,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; user_default) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// Stable hash of a fallback spec&#39;s byte payload. Used as part of the</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// VertexFallbackPool key so two shaders declaring the same semantic and</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// TYPE with different DEFAULT arrays don&#39;t share a buffer.</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>SCORE_PLUGIN_GFX_EXPORT uint64_t</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>hashVertexFallback(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_vertex_fallback_spec.html">VertexFallbackSpec</a>&amp; spec) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//                    (&quot;float&quot;, &quot;vec2&quot;, &quot;vec3&quot;, &quot;vec4&quot;, &quot;int&quot;, &quot;ivec2..4&quot;,</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//                    &quot;uint&quot;, &quot;uvec2..4&quot;). mat4 is unsupported — returns</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//                    nullopt. An integer type needs a user DEFAULT, except</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//                    instance_draw_id, which defaults to 0.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">//   `user_default`   the DEFAULT[] array from the JSON header (may be</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">//                    empty). When non-empty, overrides the semantic</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">//                    whitelist: numbers are packed into the payload in</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">//                    declaration order, then truncated / zero-padded to</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//                    fit the declared type width.</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">//</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Returns `std::nullopt` when neither a user DEFAULT nor a whitelisted</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// semantic default applies — the caller is expected to fail the pipeline</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// build with a clear error referencing the input name.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>SCORE_PLUGIN_GFX_EXPORT std::optional&lt;VertexFallbackSpec&gt; resolveVertexFallback(</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ossia::attribute_semantic semantic,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::string_view decl_type,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; user_default) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// Stable hash of a fallback spec&#39;s byte payload. Used as part of the</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// VertexFallbackPool key so two shaders declaring the same semantic and</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// TYPE with different DEFAULT arrays don&#39;t share a buffer.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>SCORE_PLUGIN_GFX_EXPORT uint64_t</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>hashVertexFallback(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_vertex_fallback_spec.html">VertexFallbackSpec</a>&amp; spec) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_vertex_fallback_spec_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_vertex_fallback_spec.html">score::gfx::VertexFallbackSpec</a></div><div class="ttdef"><b>Definition</b> VertexFallbackDefaults.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->

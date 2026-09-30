@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('structbitfocus_1_1module__handler.html
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structbitfocus_1_1module__handler-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">bitfocus::module_handler Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -119,10 +119,19 @@ Inheritance diagram for bitfocus::module_handler:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a6033f4b691a8965805f1aecbe94b8d3e" id="r_a6033f4b691a8965805f1aecbe94b8d3e"><td class="memItemLeft" align="right" valign="top"><a id="a6033f4b691a8965805f1aecbe94b8d3e" name="a6033f4b691a8965805f1aecbe94b8d3e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DefinitionCategory</b> { <b>Actions</b> = 1
+, <b>Feedbacks</b> = 2
+, <b>Variables</b> = 4
+, <b>All</b> = 7
+ }</td></tr>
+<tr class="separator:a6033f4b691a8965805f1aecbe94b8d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abb52707a73b5450581d4ca6e335906f0" id="r_abb52707a73b5450581d4ca6e335906f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#abb52707a73b5450581d4ca6e335906f0">module_handler</a> (QString path, QString entrypoint, QString nodeVersion, QString apiversion, module_configuration config)</td></tr>
-<tr class="separator:abb52707a73b5450581d4ca6e335906f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aae5713842dfcffe48fa440a076a44a" id="r_a0aae5713842dfcffe48fa440a076a44a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#a0aae5713842dfcffe48fa440a076a44a">module_handler</a> (QString path, QString entrypoint, QString nodeVersion, QString apiversion, module_configuration config, QString label={}, bool firstInit=false, std::optional&lt; int &gt; upgradeIndex={}, std::optional&lt; std::set&lt; QString &gt; &gt; <a class="el" href="structbitfocus_1_1module__handler.html#ac683df3597687ddf467e5c23e901e2cc">secretKeys</a>={})</td></tr>
+<tr class="separator:a0aae5713842dfcffe48fa440a076a44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd34576b9e3845a7b07379fd825c10e1" id="r_afd34576b9e3845a7b07379fd825c10e1"><td class="memItemLeft" align="right" valign="top"><a id="afd34576b9e3845a7b07379fd825c10e1" name="afd34576b9e3845a7b07379fd825c10e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (QString res)</td></tr>
 <tr class="separator:afd34576b9e3845a7b07379fd825c10e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,9 +143,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>afterRegistration</b>
 <tr class="separator:ab106da792a7d4b077e3084696bf2ddba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92edf2bb92c7ee1b7f505dc982e909c7" id="r_a92edf2bb92c7ee1b7f505dc982e909c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#a92edf2bb92c7ee1b7f505dc982e909c7">processMessage</a> (std::string_view v) override</td></tr>
 <tr class="separator:a92edf2bb92c7ee1b7f505dc982e909c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ca7474a83fdb8ef0586370d18644a77" id="r_a7ca7474a83fdb8ef0586370d18644a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler.html#a7ca7474a83fdb8ef0586370d18644a77">on_process_exited</a> () override</td></tr>
+<tr class="separator:a7ca7474a83fdb8ef0586370d18644a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb6af6a9b482221aec010a8f61681ab" id="r_adcb6af6a9b482221aec010a8f61681ab"><td class="memItemLeft" align="right" valign="top"><a id="adcb6af6a9b482221aec010a8f61681ab" name="adcb6af6a9b482221aec010a8f61681ab"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>writeRequest</b> (QString name, QString p)</td></tr>
 <tr class="separator:adcb6af6a9b482221aec010a8f61681ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4693f273c5dc4bae2729ce8d085d81d9" id="r_a4693f273c5dc4bae2729ce8d085d81d9"><td class="memItemLeft" align="right" valign="top"><a id="a4693f273c5dc4bae2729ce8d085d81d9" name="a4693f273c5dc4bae2729ce8d085d81d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeNotification</b> (QString name, QString p)</td></tr>
+<tr class="separator:a4693f273c5dc4bae2729ce8d085d81d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a482ecfd5b1314711d7e23c89f3be6d6e" id="r_a482ecfd5b1314711d7e23c89f3be6d6e"><td class="memItemLeft" align="right" valign="top"><a id="a482ecfd5b1314711d7e23c89f3be6d6e" name="a482ecfd5b1314711d7e23c89f3be6d6e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>writeReply</b> (QJsonValue id, QString p)</td></tr>
 <tr class="separator:a482ecfd5b1314711d7e23c89f3be6d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +169,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_register</b> (QJso
 <tr class="memitem:aa0f09cae0880d740e4f289bf8f15f94e" id="r_aa0f09cae0880d740e4f289bf8f15f94e"><td class="memItemLeft" align="right" valign="top"><a id="aa0f09cae0880d740e4f289bf8f15f94e" name="aa0f09cae0880d740e4f289bf8f15f94e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_setActionDefinitions</b> (QJsonArray obj)</td></tr>
 <tr class="separator:aa0f09cae0880d740e4f289bf8f15f94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7425a6d2237349889a23b7896ae024f" id="r_ad7425a6d2237349889a23b7896ae024f"><td class="memItemLeft" align="right" valign="top"><a id="ad7425a6d2237349889a23b7896ae024f" name="ad7425a6d2237349889a23b7896ae024f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_setVariableDefinitions</b> (QJsonArray obj)</td></tr>
-<tr class="separator:ad7425a6d2237349889a23b7896ae024f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363f108c97afc33ddd20491feb5ee18c" id="r_a363f108c97afc33ddd20491feb5ee18c"><td class="memItemLeft" align="right" valign="top"><a id="a363f108c97afc33ddd20491feb5ee18c" name="a363f108c97afc33ddd20491feb5ee18c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_setVariableDefinitions</b> (QJsonArray obj, QJsonArray values)</td></tr>
+<tr class="separator:a363f108c97afc33ddd20491feb5ee18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fafb86366fa6eeda9feec508d41449" id="r_aa6fafb86366fa6eeda9feec508d41449"><td class="memItemLeft" align="right" valign="top"><a id="aa6fafb86366fa6eeda9feec508d41449" name="aa6fafb86366fa6eeda9feec508d41449"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_setFeedbackDefinitions</b> (QJsonArray obj)</td></tr>
 <tr class="separator:aa6fafb86366fa6eeda9feec508d41449"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +184,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_setVariableValues<
 <tr class="memitem:a743954276dc730ac9e6273ad2da1fe34" id="r_a743954276dc730ac9e6273ad2da1fe34"><td class="memItemLeft" align="right" valign="top"><a id="a743954276dc730ac9e6273ad2da1fe34" name="a743954276dc730ac9e6273ad2da1fe34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_set_status</b> (QJsonObject obj)</td></tr>
 <tr class="separator:a743954276dc730ac9e6273ad2da1fe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76fcb62b61f80a5c6b7d498e66a7abfd" id="r_a76fcb62b61f80a5c6b7d498e66a7abfd"><td class="memItemLeft" align="right" valign="top"><a id="a76fcb62b61f80a5c6b7d498e66a7abfd" name="a76fcb62b61f80a5c6b7d498e66a7abfd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_log_message</b> (QJsonObject obj)</td></tr>
+<tr class="separator:a76fcb62b61f80a5c6b7d498e66a7abfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf06ad4eac165ff82327fbcf7e5adfaf" id="r_adf06ad4eac165ff82327fbcf7e5adfaf"><td class="memItemLeft" align="right" valign="top"><a id="adf06ad4eac165ff82327fbcf7e5adfaf" name="adf06ad4eac165ff82327fbcf7e5adfaf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_saveConfig</b> (QJsonObject obj)</td></tr>
 <tr class="separator:adf06ad4eac165ff82327fbcf7e5adfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,9 +214,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_sharedUdpSocketSen
 <tr class="memitem:a5e7a0b5547eb3e93d31066f9ad4a2752" id="r_a5e7a0b5547eb3e93d31066f9ad4a2752"><td class="memItemLeft" align="right" valign="top"><a id="a5e7a0b5547eb3e93d31066f9ad4a2752" name="a5e7a0b5547eb3e93d31066f9ad4a2752"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_send_osc</b> (QJsonObject obj)</td></tr>
 <tr class="separator:a5e7a0b5547eb3e93d31066f9ad4a2752"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add4591cd64cff2c49042f802dcfc934f" id="r_add4591cd64cff2c49042f802dcfc934f"><td class="memItemLeft" align="right" valign="top"><a id="add4591cd64cff2c49042f802dcfc934f" name="add4591cd64cff2c49042f802dcfc934f"></a>
-<a class="el" href="structbitfocus_1_1module__data_1_1config__field.html">module_data::config_field</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parseConfigField</b> (QJsonObject f)</td></tr>
-<tr class="separator:add4591cd64cff2c49042f802dcfc934f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53c05a98f82b0d2a6b2cb012e74544a7" id="r_a53c05a98f82b0d2a6b2cb012e74544a7"><td class="memItemLeft" align="right" valign="top"><a id="a53c05a98f82b0d2a6b2cb012e74544a7" name="a53c05a98f82b0d2a6b2cb012e74544a7"></a>
+<a class="el" href="structbitfocus_1_1module__data_1_1config__field.html">module_data::config_field</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parseConfigField</b> (const QJsonObject &amp;f)</td></tr>
+<tr class="separator:a53c05a98f82b0d2a6b2cb012e74544a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96eaf547e33b61367421a10f6d0959f" id="r_ab96eaf547e33b61367421a10f6d0959f"><td class="memItemLeft" align="right" valign="top"><a id="ab96eaf547e33b61367421a10f6d0959f" name="ab96eaf547e33b61367421a10f6d0959f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_response_configFields</b> (QJsonArray fields)</td></tr>
 <tr class="separator:ab96eaf547e33b61367421a10f6d0959f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,18 +265,38 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>executeHttpRequest</b
 <tr class="memitem:a7bf91ceabb93063a71f3b08e374da26b" id="r_a7bf91ceabb93063a71f3b08e374da26b"><td class="memItemLeft" align="right" valign="top"><a id="a7bf91ceabb93063a71f3b08e374da26b" name="a7bf91ceabb93063a71f3b08e374da26b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>startStopRecordingActions</b> ()</td></tr>
 <tr class="separator:a7bf91ceabb93063a71f3b08e374da26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7522750c9ad48bd6058ab14d4cd2e524" id="r_a7522750c9ad48bd6058ab14d4cd2e524"><td class="memItemLeft" align="right" valign="top"><a id="a7522750c9ad48bd6058ab14d4cd2e524" name="a7522750c9ad48bd6058ab14d4cd2e524"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sharedUdpSocketMessage</b> ()</td></tr>
-<tr class="separator:a7522750c9ad48bd6058ab14d4cd2e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49aa50613fd16df1ceab101d8da542c2" id="r_a49aa50613fd16df1ceab101d8da542c2"><td class="memItemLeft" align="right" valign="top"><a id="a49aa50613fd16df1ceab101d8da542c2" name="a49aa50613fd16df1ceab101d8da542c2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>sharedUdpSocketError</b> ()</td></tr>
-<tr class="separator:a49aa50613fd16df1ceab101d8da542c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93f6da9630812294d0a2390748b0b849" id="r_a93f6da9630812294d0a2390748b0b849"><td class="memItemLeft" align="right" valign="top"><a id="a93f6da9630812294d0a2390748b0b849" name="a93f6da9630812294d0a2390748b0b849"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sharedUdpSocketMessage</b> (const QString &amp;handleId, int port, const QByteArray &amp;data, const QString &amp;address, int sourcePort, bool ipv6)</td></tr>
+<tr class="separator:a93f6da9630812294d0a2390748b0b849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec940dd0f9e1374d5c9d23962ed353f" id="r_acec940dd0f9e1374d5c9d23962ed353f"><td class="memItemLeft" align="right" valign="top"><a id="acec940dd0f9e1374d5c9d23962ed353f" name="acec940dd0f9e1374d5c9d23962ed353f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sharedUdpSocketError</b> (const QString &amp;handleId, int port, const QString &amp;message)</td></tr>
+<tr class="separator:acec940dd0f9e1374d5c9d23962ed353f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e3f6987af88b6b3830a0ae78131a1ec" id="r_a2e3f6987af88b6b3830a0ae78131a1ec"><td class="memItemLeft" align="right" valign="top"><a id="a2e3f6987af88b6b3830a0ae78131a1ec" name="a2e3f6987af88b6b3830a0ae78131a1ec"></a>
 const <a class="el" href="structbitfocus_1_1module__data.html">bitfocus::module_data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> ()</td></tr>
 <tr class="separator:a2e3f6987af88b6b3830a0ae78131a1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac683df3597687ddf467e5c23e901e2cc" id="r_ac683df3597687ddf467e5c23e901e2cc"><td class="memItemLeft" align="right" valign="top"><a id="ac683df3597687ddf467e5c23e901e2cc" name="ac683df3597687ddf467e5c23e901e2cc"></a>
+std::optional&lt; std::set&lt; QString &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>secretKeys</b> () const</td></tr>
+<tr class="memdesc:ac683df3597687ddf467e5c23e901e2cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration keys of the secret fields, once known. <br /></td></tr>
+<tr class="separator:ac683df3597687ddf467e5c23e901e2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0a17f9cce972db3fea38e21eeb6b6f" id="r_aad0a17f9cce972db3fea38e21eeb6b6f"><td class="memItemLeft" align="right" valign="top"><a id="aad0a17f9cce972db3fea38e21eeb6b6f" name="aad0a17f9cce972db3fea38e21eeb6b6f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>takeChangedDefinitions</b> () noexcept</td></tr>
+<tr class="memdesc:aad0a17f9cce972db3fea38e21eeb6b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The categories changed since the last call. <br /></td></tr>
+<tr class="separator:aad0a17f9cce972db3fea38e21eeb6b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e78b12de220eedce78290d0cac9b40" id="r_a74e78b12de220eedce78290d0cac9b40"><td class="memItemLeft" align="right" valign="top"><a id="a74e78b12de220eedce78290d0cac9b40" name="a74e78b12de220eedce78290d0cac9b40"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>configurationParsed</b> ()</td></tr>
 <tr class="separator:a74e78b12de220eedce78290d0cac9b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a439df26e6244716719b610269ae8192c" id="r_a439df26e6244716719b610269ae8192c"><td class="memItemLeft" align="right" valign="top"><a id="a439df26e6244716719b610269ae8192c" name="a439df26e6244716719b610269ae8192c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reregistered</b> ()</td></tr>
+<tr class="memdesc:a439df26e6244716719b610269ae8192c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The module registered again after its process was restarted. <br /></td></tr>
+<tr class="separator:a439df26e6244716719b610269ae8192c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3367d9e46df573ec7d84c69099d19ed1" id="r_a3367d9e46df573ec7d84c69099d19ed1"><td class="memItemLeft" align="right" valign="top"><a id="a3367d9e46df573ec7d84c69099d19ed1" name="a3367d9e46df573ec7d84c69099d19ed1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>definitionsChanged</b> ()</td></tr>
+<tr class="memdesc:a3367d9e46df573ec7d84c69099d19ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action, feedback or variable definitions changed after registration. <br /></td></tr>
+<tr class="separator:a3367d9e46df573ec7d84c69099d19ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f518b00008a256a00a758b76e8a7e3e" id="r_a2f518b00008a256a00a758b76e8a7e3e"><td class="memItemLeft" align="right" valign="top"><a id="a2f518b00008a256a00a758b76e8a7e3e" name="a2f518b00008a256a00a758b76e8a7e3e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configurationSaved</b> ()</td></tr>
+<tr class="memdesc:a2f518b00008a256a00a758b76e8a7e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The configuration the module asked to persist. <br /></td></tr>
+<tr class="separator:a2f518b00008a256a00a758b76e8a7e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b6523cdd005e369d9b13f09ac91863" id="r_a75b6523cdd005e369d9b13f09ac91863"><td class="memItemLeft" align="right" valign="top"><a id="a75b6523cdd005e369d9b13f09ac91863" name="a75b6523cdd005e369d9b13f09ac91863"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>variableChanged</b> (QString var, QVariant val)</td></tr>
 <tr class="separator:a75b6523cdd005e369d9b13f09ac91863"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,38 +307,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>feedbackValueChanged<
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (std::string_view res)</td></tr>
 <tr class="separator:a0630d73326c9cd8ec4771d783f1a0bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structbitfocus_1_1module__handler__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structbitfocus_1_1module__handler__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structbitfocus_1_1module__handler__base.html">bitfocus::module_handler_base</a></td></tr>
-<tr class="memitem:a1a030598fa7c9601c5b2f0bc578af779 inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a1a030598fa7c9601c5b2f0bc578af779"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString node_path, QString module_path, QString entrypoint)</td></tr>
-<tr class="separator:a1a030598fa7c9601c5b2f0bc578af779 inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6234d03cdafcb0dd38428d469fed9b29 inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a6234d03cdafcb0dd38428d469fed9b29"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString node_path, QString module_path, QString entrypoint, QString connection_id)</td></tr>
+<tr class="separator:a6234d03cdafcb0dd38428d469fed9b29 inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6053e66247fa235b48c3090ec7153fb inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_aa6053e66247fa235b48c3090ec7153fb"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_read</b> (QSocketDescriptor, QSocketNotifier::Type)</td></tr>
 <tr class="separator:aa6053e66247fa235b48c3090ec7153fb inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0630d73326c9cd8ec4771d783f1a0bad inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a0630d73326c9cd8ec4771d783f1a0bad"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (std::string_view res)</td></tr>
 <tr class="separator:a0630d73326c9cd8ec4771d783f1a0bad inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f4ee1f12baf6195556f9ef35469374 inherit pub_methods_structbitfocus_1_1module__handler__base" id="r_a09f4ee1f12baf6195556f9ef35469374"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>restart_process</b> ()</td></tr>
+<tr class="memdesc:a09f4ee1f12baf6195556f9ef35469374 inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the module again, false where unsupported. <br /></td></tr>
+<tr class="separator:a09f4ee1f12baf6195556f9ef35469374 inherit pub_methods_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structbitfocus_1_1module__handler__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structbitfocus_1_1module__handler__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structbitfocus_1_1module__handler__base.html">bitfocus::module_handler_base</a></td></tr>
+<tr class="memitem:ac852b69cc8cc46de61f504104a086d01 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_ac852b69cc8cc46de61f504104a086d01"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler__base.html#ac852b69cc8cc46de61f504104a086d01">max_message_size</a> = 256 * 1024 * 1024</td></tr>
+<tr class="separator:ac852b69cc8cc46de61f504104a086d01 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd73dc1e1dea1dcae5e8a8d561826f6 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a1cd73dc1e1dea1dcae5e8a8d561826f6"><td class="memItemLeft" align="right" valign="top">
 char&#160;</td><td class="memItemRight" valign="bottom"><b>buf</b> [16 *4096] {}</td></tr>
 <tr class="separator:a1cd73dc1e1dea1dcae5e8a8d561826f6 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da387621a64aa53aef536582c014450 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a9da387621a64aa53aef536582c014450"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b></td></tr>
 <tr class="separator:a9da387621a64aa53aef536582c014450 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4656a3cf4a7fea845c1ef3472f6d38 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_afb4656a3cf4a7fea845c1ef3472f6d38"><td class="memItemLeft" align="right" valign="top">
-QProcess&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> {}</td></tr>
-<tr class="separator:afb4656a3cf4a7fea845c1ef3472f6d38 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70792cf874d823128c5caa704b62e309 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a70792cf874d823128c5caa704b62e309"><td class="memItemLeft" align="right" valign="top">
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>scanned</b> {}</td></tr>
+<tr class="memdesc:a70792cf874d823128c5caa704b62e309 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes of the queue already searched for a message end. <br /></td></tr>
+<tr class="separator:a70792cf874d823128c5caa704b62e309 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab384609315142eff7498fd0321b49002 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_ab384609315142eff7498fd0321b49002"><td class="memItemLeft" align="right" valign="top">
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>pending_write</b></td></tr>
+<tr class="memdesc:ab384609315142eff7498fd0321b49002 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes the module has not read yet: the socket is non-blocking. <br /></td></tr>
+<tr class="separator:ab384609315142eff7498fd0321b49002 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ae7e4ad14f7c8b50ccca43a337f792 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a74ae7e4ad14f7c8b50ccca43a337f792"><td class="memItemLeft" align="right" valign="top">
+std::unique_ptr&lt; QProcess &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a74ae7e4ad14f7c8b50ccca43a337f792 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115dd6100d6424148592639528d64f67 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a115dd6100d6424148592639528d64f67"><td class="memItemLeft" align="right" valign="top">
 QSocketNotifier *&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> {}</td></tr>
 <tr class="separator:a115dd6100d6424148592639528d64f67 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca07ca0eca175e54ae7aa464af7fe54a inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_aca07ca0eca175e54ae7aa464af7fe54a"><td class="memItemLeft" align="right" valign="top">
+QSocketNotifier *&#160;</td><td class="memItemRight" valign="bottom"><b>write_socket</b> {}</td></tr>
+<tr class="separator:aca07ca0eca175e54ae7aa464af7fe54a inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac63a936b587f2a6ab48a86c99860fb6 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_aac63a936b587f2a6ab48a86c99860fb6"><td class="memItemLeft" align="right" valign="top">
-int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {-1, -1}</td></tr>
 <tr class="separator:aac63a936b587f2a6ab48a86c99860fb6 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eb8241ed9aa6c86e1f11e46b1a0c42 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a66eb8241ed9aa6c86e1f11e46b1a0c42"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>discarding</b> {}</td></tr>
+<tr class="memdesc:a66eb8241ed9aa6c86e1f11e46b1a0c42 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skipping the rest of an over-long message. <br /></td></tr>
+<tr class="separator:a66eb8241ed9aa6c86e1f11e46b1a0c42 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dc4222c4977de576f14b11db63f0e2 inherit pub_attribs_structbitfocus_1_1module__handler__base" id="r_a76dc4222c4977de576f14b11db63f0e2"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>release_grace_ms</b> {}</td></tr>
+<tr class="memdesc:a76dc4222c4977de576f14b11db63f0e2 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the process gets to shut down once released. <br /></td></tr>
+<tr class="separator:a76dc4222c4977de576f14b11db63f0e2 inherit pub_attribs_structbitfocus_1_1module__handler__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abb52707a73b5450581d4ca6e335906f0" name="abb52707a73b5450581d4ca6e335906f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb52707a73b5450581d4ca6e335906f0">&#9670;&#160;</a></span>module_handler()</h2>
+<a id="a0aae5713842dfcffe48fa440a076a44a" name="a0aae5713842dfcffe48fa440a076a44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aae5713842dfcffe48fa440a076a44a">&#9670;&#160;</a></span>module_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +399,31 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">module_configuration&#160;</td>
-          <td class="paramname"><em>config</em>&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>label</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>firstInit</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>upgradeIndex</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; std::set&lt; QString &gt; &gt;&#160;</td>
+          <td class="paramname"><em>secretKeys</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -356,6 +442,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7ca7474a83fdb8ef0586370d18644a77" name="a7ca7474a83fdb8ef0586370d18644a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ca7474a83fdb8ef0586370d18644a77">&#9670;&#160;</a></span>on_process_exited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bitfocus::module_handler::on_process_exited </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="structbitfocus_1_1module__handler__base.html">bitfocus::module_handler_base</a>.</p>
+
+</div>
+</div>
 <a id="a92edf2bb92c7ee1b7f505dc982e909c7" name="a92edf2bb92c7ee1b7f505dc982e909c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92edf2bb92c7ee1b7f505dc982e909c7">&#9670;&#160;</a></span>processMessage()</h2>
 

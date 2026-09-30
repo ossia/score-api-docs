@@ -165,59 +165,61 @@ $(document).ready(function(){initNavTree('_gltf_parser_8hpp_source.html',''); in
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    uint32_t vertex_count{0};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    uint32_t index_count{0};</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">int</span> material_index{-1};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// Local-space AABB over the POSITION stream. Populated by</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// extract_primitive from the glTF POSITION accessor&#39;s min/max when</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// present (spec-required but optionally trusted); otherwise derived</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// by walking positions. Empty aabb = &quot;not yet computed&quot;; downstream</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// GPU culling treats empty as infinite (never cull).</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ossia::aabb bounds{};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="comment">// KHR_materials_variants: per-variant material override index.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// Indexed by variant (parallel to scene_state::variant_names).</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// -1 at a position = &quot;no override for this variant, use default&quot;.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::vector&lt;int&gt; variant_material_indices;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  };</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::uint64_t stable_id{0};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// Local-space AABB over the POSITION stream. Populated by</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// extract_primitive from the glTF POSITION accessor&#39;s min/max when</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// present (spec-required but optionally trusted); otherwise derived</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// by walking positions. Empty aabb = &quot;not yet computed&quot;; downstream</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// GPU culling treats empty as infinite (never cull).</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    ossia::aabb bounds{};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="comment">// KHR_materials_variants: per-variant material override index.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">// Indexed by variant (parallel to scene_state::variant_names).</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// -1 at a position = &quot;no override for this variant, use default&quot;.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::vector&lt;int&gt; variant_material_indices;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  };</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">   62</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">SceneNode</a></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::string name;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    ossia::scene_transform local_transform;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">int</span> parent_index{-1};</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::vector&lt;ScenePart&gt; parts;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::shared_ptr&lt;ossia::light_component&gt; light;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    std::shared_ptr&lt;ossia::camera_component&gt; camera;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// glTF skin index. -1 = not skinned. When ≥ 0, the mesh_component</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// emitted from this node&#39;s parts gets stamped with skin_index so</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// ScenePreprocessor binds the matching skeleton&#39;s joint_matrices</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// auxiliary buffer for the skinning vertex shader to read.</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    int32_t skin_index{-1};</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">// Stable node_id, derived from the glTF node index + 1. Used by</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// AnimationPlayer to find the node via channel.target_node_id, and</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// by skeleton_component::joint_node_ids to resolve each joint to</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// its node&#39;s world transform.</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    std::uint64_t stable_id{0};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">   63</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">SceneNode</a></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    std::string name;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    ossia::scene_transform local_transform;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">int</span> parent_index{-1};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::vector&lt;ScenePart&gt; parts;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    std::shared_ptr&lt;ossia::light_component&gt; light;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::shared_ptr&lt;ossia::camera_component&gt; camera;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// glTF skin index. -1 = not skinned. When ≥ 0, the mesh_component</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// emitted from this node&#39;s parts gets stamped with skin_index so</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// ScenePreprocessor binds the matching skeleton&#39;s joint_matrices</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// auxiliary buffer for the skinning vertex shader to read.</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    int32_t skin_index{-1};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// Stable node_id, derived from the glTF node index + 1. Used by</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// AnimationPlayer to find the node via channel.target_node_id, and</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// by skeleton_component::joint_node_ids to resolve each joint to</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// its node&#39;s world transform.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::uint64_t stable_id{0};</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  };</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  std::vector&lt;SceneNode&gt; m_scene_nodes;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  std::vector&lt;std::shared_ptr&lt;ossia::material_component&gt;&gt; m_materials;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  std::vector&lt;std::shared_ptr&lt;ossia::skeleton_component&gt;&gt; m_skeletons;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="comment">// KHR_materials_variants: names (UI-facing) declared at asset scope.</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">// Parallel to mesh_primitive::material_variants and</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// scene_state::active_variant_index.</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  std::vector&lt;std::string&gt; m_variant_names;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// Rich scene state emitted by rebuild_scene — full hierarchy with</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// materials, lights, cameras, skeletons. AssetLoader consumes this</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// via the apply-lambda returned by ins::gltf_t::process.</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  std::shared_ptr&lt;const ossia::scene_state&gt; m_raw_state;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  std::vector&lt;SceneNode&gt; m_scene_nodes;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  std::vector&lt;std::shared_ptr&lt;ossia::material_component&gt;&gt; m_materials;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  std::vector&lt;std::shared_ptr&lt;ossia::skeleton_component&gt;&gt; m_skeletons;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="comment">// KHR_materials_variants: names (UI-facing) declared at asset scope.</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="comment">// Parallel to mesh_primitive::material_variants and</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="comment">// scene_state::active_variant_index.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  std::vector&lt;std::string&gt; m_variant_names;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  std::vector&lt;ossia::animation_component_ptr&gt; m_animations;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// Rich scene state emitted by rebuild_scene — full hierarchy with</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">// materials, lights, cameras, skeletons. AssetLoader consumes this</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">// via the apply-lambda returned by ins::gltf_t::process.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  std::shared_ptr&lt;const ossia::scene_state&gt; m_raw_state;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
 </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_gltf_parser_html"><div class="ttname"><a href="class_threedim_1_1_gltf_parser.html">Threedim::GltfParser</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:19</div></div>
-<div class="ttc" id="astruct_threedim_1_1_gltf_parser_1_1_scene_node_html"><div class="ttname"><a href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">Threedim::GltfParser::SceneNode</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:63</div></div>
+<div class="ttc" id="astruct_threedim_1_1_gltf_parser_1_1_scene_node_html"><div class="ttname"><a href="struct_threedim_1_1_gltf_parser_1_1_scene_node.html">Threedim::GltfParser::SceneNode</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:64</div></div>
 <div class="ttc" id="astruct_threedim_1_1_gltf_parser_1_1_scene_part_html"><div class="ttname"><a href="struct_threedim_1_1_gltf_parser_1_1_scene_part.html">Threedim::GltfParser::ScenePart</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:34</div></div>
 <div class="ttc" id="astruct_threedim_1_1_gltf_parser_1_1ins_1_1gltf__t_html"><div class="ttname"><a href="struct_threedim_1_1_gltf_parser_1_1ins_1_1gltf__t.html">Threedim::GltfParser::ins::gltf_t</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:24</div></div>
 <div class="ttc" id="astruct_threedim_1_1_gltf_parser_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_gltf_parser_1_1ins.html">Threedim::GltfParser::ins</a></div><div class="ttdef"><b>Definition</b> GltfParser.hpp:22</div></div>

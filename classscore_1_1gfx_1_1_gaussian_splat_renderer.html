@@ -135,12 +135,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af13f9553a6e291ca1a8fc89ac7c3a11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a536d375cddd430430b4f53823704749a" id="r_a536d375cddd430430b4f53823704749a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a536d375cddd430430b4f53823704749a">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
 <tr class="separator:a536d375cddd430430b4f53823704749a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18370f6215f8921fe18435406a5e6341" id="r_a18370f6215f8921fe18435406a5e6341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a18370f6215f8921fe18435406a5e6341">initState</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</td></tr>
+<tr class="separator:a18370f6215f8921fe18435406a5e6341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992362222840a2d784437b89cdcf4775" id="r_a992362222840a2d784437b89cdcf4775"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a992362222840a2d784437b89cdcf4775">addOutputPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, QRhiResourceUpdateBatch &amp;res) override</td></tr>
+<tr class="memdesc:a992362222840a2d784437b89cdcf4775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pass for a new output edge (pipeline, SRB, processUBO).  <br /></td></tr>
+<tr class="separator:a992362222840a2d784437b89cdcf4775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff408ab3d598276e0a0bed727682168" id="r_a8ff408ab3d598276e0a0bed727682168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a8ff408ab3d598276e0a0bed727682168">removeOutputPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
+<tr class="separator:a8ff408ab3d598276e0a0bed727682168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7adebbc8cc8f6f1ce2cd7800817177" id="r_aef7adebbc8cc8f6f1ce2cd7800817177"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aef7adebbc8cc8f6f1ce2cd7800817177">hasOutputPassForEdge</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const override</td></tr>
+<tr class="memdesc:aef7adebbc8cc8f6f1ce2cd7800817177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this renderer already has an output pass for the given edge.  <br /></td></tr>
+<tr class="separator:aef7adebbc8cc8f6f1ce2cd7800817177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e0ae66dd37e2f95b20189cd0d8c0ac" id="r_af8e0ae66dd37e2f95b20189cd0d8c0ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#af8e0ae66dd37e2f95b20189cd0d8c0ac">update</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *edge) override</td></tr>
 <tr class="separator:af8e0ae66dd37e2f95b20189cd0d8c0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253d1b7dc235e9442d406059148b9645" id="r_a253d1b7dc235e9442d406059148b9645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a253d1b7dc235e9442d406059148b9645">runInitialPasses</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch *&amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
 <tr class="separator:a253d1b7dc235e9442d406059148b9645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3055f5ccc651ad1eafffe4ca6234ada" id="r_ad3055f5ccc651ad1eafffe4ca6234ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#ad3055f5ccc651ad1eafffe4ca6234ada">runRenderPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
 <tr class="separator:ad3055f5ccc651ad1eafffe4ca6234ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8fbcfb67c96538a15e7b81e1abf857" id="r_aae8fbcfb67c96538a15e7b81e1abf857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aae8fbcfb67c96538a15e7b81e1abf857">releaseState</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;) override</td></tr>
+<tr class="separator:aae8fbcfb67c96538a15e7b81e1abf857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381e14f92f5ec4f97e695cdf9f5ee5f6" id="r_a381e14f92f5ec4f97e695cdf9f5ee5f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a381e14f92f5ec4f97e695cdf9f5ee5f6">release</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;) override</td></tr>
 <tr class="separator:a381e14f92f5ec4f97e695cdf9f5ee5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_generic_node_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_generic_node_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></td></tr>
@@ -151,6 +163,8 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>imageOutlet</b> () const noexcept</td></tr>
 <tr class="memdesc:a9f642ea7d298ffc4107ecc32d2c63087 inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node's first <a class="el" href="structscore_1_1gfx_1_1_image.html" title="Image data and metadata.">Image</a> outlet, or nullptr. Not always output[0]. <br /></td></tr>
 <tr class="separator:a9f642ea7d298ffc4107ecc32d2c63087 inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006c73232fb9a65ab2995a42d06b0474 inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer" id="r_a006c73232fb9a65ab2995a42d06b0474"><td class="memItemLeft" align="right" valign="top">virtual std::span&lt; const <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">samplersForOutputEdge</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
+<tr class="separator:a006c73232fb9a65ab2995a42d06b0474 inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd26be75c2928ba58f92f43f9d338bb inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer" id="r_a7cd26be75c2928ba58f92f43f9d338bb"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMeshInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiResourceUpdateBatch &amp;res)</td></tr>
 <tr class="separator:a7cd26be75c2928ba58f92f43f9d338bb inherit pub_methods_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,6 +267,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="separator:ac1ec2efa172271644eedd01c573469cc inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a3b414c533c91f5b07a807440cbf74281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a3b414c533c91f5b07a807440cbf74281">seedInitialOutputs</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="separator:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a9cc47581ab2bfa95a89fbb9a1d14a726"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726">followsRenderSize</a> () const noexcept</td></tr>
+<tr class="separator:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -271,12 +287,17 @@ QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexS</b></td>
 <tr class="memitem:a8cfa936d8a5750d5cd49ba7be2cd988a inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_a8cfa936d8a5750d5cd49ba7be2cd988a"><td class="memItemLeft" align="right" valign="top">
 QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></td></tr>
 <tr class="separator:a8cfa936d8a5750d5cd49ba7be2cd988a inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae488b2c527f0a0312182e0697e7716a3 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_ae488b2c527f0a0312182e0697e7716a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#ae488b2c527f0a0312182e0697e7716a3">m_outputPremultiplied</a> {false}</td></tr>
+<tr class="separator:ae488b2c527f0a0312182e0697e7716a3 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fca596faef22d6638d7cc98ec9fff38 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_a0fca596faef22d6638d7cc98ec9fff38"><td class="memItemLeft" align="right" valign="top">
 PassMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_p</b></td></tr>
 <tr class="separator:a0fca596faef22d6638d7cc98ec9fff38 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab30c0ccfde9551ce25407c6cd98021de inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_ab30c0ccfde9551ce25407c6cd98021de"><td class="memItemLeft" align="right" valign="top">
 ossia::small_vector&lt; std::pair&lt; QVector&lt; quint32 &gt;, QRhiGraphicsPipeline * &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipelineCache</b></td></tr>
 <tr class="separator:ab30c0ccfde9551ce25407c6cd98021de inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb2991902d7d672e0c175a86eec6db7 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_a9bb2991902d7d672e0c175a86eec6db7"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipelinePlan</b></td></tr>
+<tr class="separator:a9bb2991902d7d672e0c175a86eec6db7 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88c7cfaba2a206266c878bf39bc6b08 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer" id="r_af88c7cfaba2a206266c878bf39bc6b08"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshbufs</b></td></tr>
 <tr class="separator:af88c7cfaba2a206266c878bf39bc6b08 inherit pub_attribs_classscore_1_1gfx_1_1_generic_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -333,6 +354,82 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 <tr class="separator:af05e71e0110ada3cc6597e8e1092c25a inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a992362222840a2d784437b89cdcf4775" name="a992362222840a2d784437b89cdcf4775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992362222840a2d784437b89cdcf4775">&#9670;&#160;</a></span>addOutputPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GaussianSplatRenderer::addOutputPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create a pass for a new output edge (pipeline, SRB, processUBO). </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ab678f4a4872b8b7a40de3917bca9f91f">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="aef7adebbc8cc8f6f1ce2cd7800817177" name="aef7adebbc8cc8f6f1ce2cd7800817177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7adebbc8cc8f6f1ce2cd7800817177">&#9670;&#160;</a></span>hasOutputPassForEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::GaussianSplatRenderer::hasOutputPassForEdge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if this renderer already has an output pass for the given edge. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ae72e1187f02ba173f3dcf04982daa18d">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
 <a id="a536d375cddd430430b4f53823704749a" name="a536d375cddd430430b4f53823704749a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a536d375cddd430430b4f53823704749a">&#9670;&#160;</a></span>init()</h2>
 
@@ -371,6 +468,45 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 
 </div>
 </div>
+<a id="a18370f6215f8921fe18435406a5e6341" name="a18370f6215f8921fe18435406a5e6341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18370f6215f8921fe18435406a5e6341">&#9670;&#160;</a></span>initState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GaussianSplatRenderer::initState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initialize edge-independent state: material UBO, samplers, mesh, shaders. Called once when the renderer enters a <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a6ef16f5b3d202ef2ef1b3de15bf9a4c1">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
 <a id="a381e14f92f5ec4f97e695cdf9f5ee5f6" name="a381e14f92f5ec4f97e695cdf9f5ee5f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a381e14f92f5ec4f97e695cdf9f5ee5f6">&#9670;&#160;</a></span>release()</h2>
 
@@ -396,6 +532,74 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="aae8fbcfb67c96538a15e7b81e1abf857" name="aae8fbcfb67c96538a15e7b81e1abf857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae8fbcfb67c96538a15e7b81e1abf857">&#9670;&#160;</a></span>releaseState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GaussianSplatRenderer::releaseState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release edge-independent state. Called once when the renderer leaves a <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>. </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#af7b60f4724aafdb04e1dd53f5379c61f">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="a8ff408ab3d598276e0a0bed727682168" name="a8ff408ab3d598276e0a0bed727682168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff408ab3d598276e0a0bed727682168">&#9670;&#160;</a></span>removeOutputPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GaussianSplatRenderer::removeOutputPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove the pass for a removed output edge. Pure-virtual: every concrete renderer must explicitly handle edge removal. Sinks (<a class="el" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>) and data-only renderers that store no per-edge GPU state can override with an empty body. </p>
+
+<p>Implements <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a112486fa2b7fc58e1187de6a537d2746">score::gfx::NodeRenderer</a>.</p>
 
 </div>
 </div>

@@ -138,6 +138,8 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>imageOutlet</b> () const noexcept</td></tr>
 <tr class="memdesc:a9f642ea7d298ffc4107ecc32d2c63087"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node's first <a class="el" href="structscore_1_1gfx_1_1_image.html" title="Image data and metadata.">Image</a> outlet, or nullptr. Not always output[0]. <br /></td></tr>
 <tr class="separator:a9f642ea7d298ffc4107ecc32d2c63087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006c73232fb9a65ab2995a42d06b0474" id="r_a006c73232fb9a65ab2995a42d06b0474"><td class="memItemLeft" align="right" valign="top">virtual std::span&lt; const <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">samplersForOutputEdge</a> (const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) const noexcept</td></tr>
+<tr class="separator:a006c73232fb9a65ab2995a42d06b0474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd26be75c2928ba58f92f43f9d338bb" id="r_a7cd26be75c2928ba58f92f43f9d338bb"><td class="memItemLeft" align="right" valign="top"><a id="a7cd26be75c2928ba58f92f43f9d338bb" name="a7cd26be75c2928ba58f92f43f9d338bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultMeshInit</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a> &amp;mesh, QRhiResourceUpdateBatch &amp;res)</td></tr>
 <tr class="separator:a7cd26be75c2928ba58f92f43f9d338bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +245,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="separator:ac1ec2efa172271644eedd01c573469cc inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a3b414c533c91f5b07a807440cbf74281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a3b414c533c91f5b07a807440cbf74281">seedInitialOutputs</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="separator:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a9cc47581ab2bfa95a89fbb9a1d14a726"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726">followsRenderSize</a> () const noexcept</td></tr>
+<tr class="separator:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -255,12 +259,17 @@ QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_vertexS</b></td>
 <tr class="memitem:a8cfa936d8a5750d5cd49ba7be2cd988a" id="r_a8cfa936d8a5750d5cd49ba7be2cd988a"><td class="memItemLeft" align="right" valign="top"><a id="a8cfa936d8a5750d5cd49ba7be2cd988a" name="a8cfa936d8a5750d5cd49ba7be2cd988a"></a>
 QShader&#160;</td><td class="memItemRight" valign="bottom"><b>m_fragmentS</b></td></tr>
 <tr class="separator:a8cfa936d8a5750d5cd49ba7be2cd988a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae488b2c527f0a0312182e0697e7716a3" id="r_ae488b2c527f0a0312182e0697e7716a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_generic_node_renderer.html#ae488b2c527f0a0312182e0697e7716a3">m_outputPremultiplied</a> {false}</td></tr>
+<tr class="separator:ae488b2c527f0a0312182e0697e7716a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fca596faef22d6638d7cc98ec9fff38" id="r_a0fca596faef22d6638d7cc98ec9fff38"><td class="memItemLeft" align="right" valign="top"><a id="a0fca596faef22d6638d7cc98ec9fff38" name="a0fca596faef22d6638d7cc98ec9fff38"></a>
 PassMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_p</b></td></tr>
 <tr class="separator:a0fca596faef22d6638d7cc98ec9fff38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab30c0ccfde9551ce25407c6cd98021de" id="r_ab30c0ccfde9551ce25407c6cd98021de"><td class="memItemLeft" align="right" valign="top"><a id="ab30c0ccfde9551ce25407c6cd98021de" name="ab30c0ccfde9551ce25407c6cd98021de"></a>
 ossia::small_vector&lt; std::pair&lt; QVector&lt; quint32 &gt;, QRhiGraphicsPipeline * &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipelineCache</b></td></tr>
 <tr class="separator:ab30c0ccfde9551ce25407c6cd98021de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bb2991902d7d672e0c175a86eec6db7" id="r_a9bb2991902d7d672e0c175a86eec6db7"><td class="memItemLeft" align="right" valign="top"><a id="a9bb2991902d7d672e0c175a86eec6db7" name="a9bb2991902d7d672e0c175a86eec6db7"></a>
+<a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_pipelinePlan</b></td></tr>
+<tr class="separator:a9bb2991902d7d672e0c175a86eec6db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88c7cfaba2a206266c878bf39bc6b08" id="r_af88c7cfaba2a206266c878bf39bc6b08"><td class="memItemLeft" align="right" valign="top"><a id="af88c7cfaba2a206266c878bf39bc6b08" name="af88c7cfaba2a206266c878bf39bc6b08"></a>
 <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_meshbufs</b></td></tr>
 <tr class="separator:af88c7cfaba2a206266c878bf39bc6b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -622,6 +631,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a006c73232fb9a65ab2995a42d06b0474" name="a006c73232fb9a65ab2995a42d06b0474"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006c73232fb9a65ab2995a42d06b0474">&#9670;&#160;</a></span>samplersForOutputEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::span&lt; const <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt; score::gfx::GenericNodeRenderer::samplersForOutputEdge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;&#160;</td>
+          <td class="paramname"><em>edge</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Samplers bound by the pass that draws <code>edge</code>. Every sampler of the node by default. A renderer whose outlets each carry their own texture (avnd CPU texture outputs: one sampler per outlet) returns only the sampler of the outlet the edge leaves from; otherwise every outlet would draw whatever sits at binding 3, i.e. the first one. </p>
+
+</div>
+</div>
 <a id="a345330f30811425c8246ddd690554127" name="a345330f30811425c8246ddd690554127"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a345330f30811425c8246ddd690554127">&#9670;&#160;</a></span>update()</h2>
 
@@ -708,6 +744,22 @@ Additional Inherited Members</h2></td></tr>
 <p>Updates the sampler texture for an input port. Called when the upstream texture may have changed (edge add, RT recreation). If the port has SamplableDepth and depthTex is non-null, the depth sampler (immediately after the color sampler) is also updated. </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ad4e94506ec3678b93c1b16914a30b8f9">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae488b2c527f0a0312182e0697e7716a3" name="ae488b2c527f0a0312182e0697e7716a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae488b2c527f0a0312182e0697e7716a3">&#9670;&#160;</a></span>m_outputPremultiplied</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::GenericNodeRenderer::m_outputPremultiplied {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>What the fragment shader writes into the consumers' targets: straight colour (decoded images, video, CPU textures) is composited with the straight "over", premultiplied colour (a copy of a render target) with the premultiplied one. </p>
 
 </div>
 </div>

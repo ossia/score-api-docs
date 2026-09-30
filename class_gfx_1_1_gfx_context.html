@@ -183,9 +183,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateGraph</b> ()</t
 double&#160;</td><td class="memItemRight" valign="bottom"><b>stepRate</b> () const noexcept</td></tr>
 <tr class="memdesc:a039a10098697f94897360e84ad60b04c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step used by <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">renderFrames()</a>, in frames per second. <br /></td></tr>
 <tr class="separator:a039a10098697f94897360e84ad60b04c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc2545948eea70e629cfffd70323467" id="r_acfc2545948eea70e629cfffd70323467"><td class="memItemLeft" align="right" valign="top"><a id="acfc2545948eea70e629cfffd70323467" name="acfc2545948eea70e629cfffd70323467"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepRate</b> (double fps) noexcept</td></tr>
-<tr class="separator:acfc2545948eea70e629cfffd70323467"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c9415d5fd976e28dab2f14d5d5a49a" id="r_a95c9415d5fd976e28dab2f14d5d5a49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_context.html#a95c9415d5fd976e28dab2f14d5d5a49a">setStepRate</a> (double fps)</td></tr>
+<tr class="separator:a95c9415d5fd976e28dab2f14d5d5a49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b6fdf9091bafa2db70f1990c22af64" id="r_a44b6fdf9091bafa2db70f1990c22af64"><td class="memItemLeft" align="right" valign="top"><a id="a44b6fdf9091bafa2db70f1990c22af64" name="a44b6fdf9091bafa2db70f1990c22af64"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>executionStepped</b> () const noexcept</td></tr>
+<tr class="memdesc:a44b6fdf9091bafa2db70f1990c22af64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the execution currently only advances through <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">renderFrames()</a>. <br /></td></tr>
+<tr class="separator:a44b6fdf9091bafa2db70f1990c22af64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5392c50bf195820647f6fa0c3f1945f" id="r_ad5392c50bf195820647f6fa0c3f1945f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_gfx_context.html#ad5392c50bf195820647f6fa0c3f1945f">renderInProgress</a> () const noexcept</td></tr>
+<tr class="memdesc:ad5392c50bf195820647f6fa0c3f1945f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a render driven from here, or a frame on one of the outputs' devices, is under way on the calling stack.  <br /></td></tr>
+<tr class="separator:ad5392c50bf195820647f6fa0c3f1945f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec5f9e78bca768ca34cbf115f5728ce" id="r_a6ec5f9e78bca768ca34cbf115f5728ce"><td class="memItemLeft" align="right" valign="top"><a id="a6ec5f9e78bca768ca34cbf115f5728ce" name="a6ec5f9e78bca768ca34cbf115f5728ce"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>send_message</b> (<a class="el" href="structscore_1_1gfx_1_1_message.html">score::gfx::Message</a> &amp;&amp;msg) noexcept</td></tr>
 <tr class="separator:a6ec5f9e78bca768ca34cbf115f5728ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,7 +284,54 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>GfxExecutionAction</
 drawn" depends on how long the caller happened to wait and how fast the machine is &ndash; a harness that sleeps and then grabs gets a different frame on a Raspberry Pi than on a workstation, and an animated shader gives a different image every run.</p>
 <p>Stepping instead makes frame N mean the same thing everywhere, which is what lets a rendered frame be compared against a stored reference at all.</p>
 <p>Each step also hands every process node a synthetic token of <code>frame / <a class="el" href="class_gfx_1_1_gfx_context.html#a039a10098697f94897360e84ad60b04c" title="Step used by renderFrames(), in frames per second.">stepRate()</a></code>, so TIME, TIMEDELTA, FRAMEINDEX and PROGRESS follow the counter rather than whatever the transport last delivered. Without it an animated shader keeps reading the execution clock and frame N is a different picture every run.</p>
-<p>Still on the execution clock: whatever a node takes from the transport itself rather than from its process UBO &ndash; video decode position, automation &ndash; so a graph built on those is only as reproducible as that clock is. </p>
+<p>When the document is playing, each step first runs the execution for exactly one step of samples, so automations, scripts and media positions are at <code>(frame + 1) / <a class="el" href="class_gfx_1_1_gfx_context.html#a039a10098697f94897360e84ad60b04c" title="Step used by renderFrames(), in frames per second.">stepRate()</a></code> seconds of execution when frame N is drawn. The count restarts at every play. </p>
+
+</div>
+</div>
+<a id="ad5392c50bf195820647f6fa0c3f1945f" name="ad5392c50bf195820647f6fa0c3f1945f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5392c50bf195820647f6fa0c3f1945f">&#9670;&#160;</a></span>renderInProgress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Gfx::GfxContext::renderInProgress </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether a render driven from here, or a frame on one of the outputs' devices, is under way on the calling stack. </p>
+<p>Every entry point that updates the graph or renders (the render clocks, the free-wheel and vsync callbacks, renderFrames) returns without doing anything while this holds. </p>
+
+</div>
+</div>
+<a id="a95c9415d5fd976e28dab2f14d5d5a49a" name="a95c9415d5fd976e28dab2f14d5d5a49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c9415d5fd976e28dab2f14d5d5a49a">&#9670;&#160;</a></span>setStepRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::GfxContext::setStepRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fps</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A rate above zero puts the execution under the step clock: now if the document plays, else from its next play, until that play stops. </p>
 
 </div>
 </div>

@@ -104,7 +104,9 @@ $(document).ready(function(){initNavTree('struct_ui_1_1_value_display_1_1_node_1
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_ui_1_1_value_display_1_1_node_1_1_layer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Ui::ValueDisplay::Node::Layer Struct Reference</div></div>
 </div><!--header-->
@@ -137,6 +139,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuildText</b> ()</t
 <tr class="memitem:a7bd4afe3f32e1e38c7430d3abc010ace" id="r_a7bd4afe3f32e1e38c7430d3abc010ace"><td class="memItemLeft" align="right" valign="top"><a id="a7bd4afe3f32e1e38c7430d3abc010ace" name="a7bd4afe3f32e1e38c7430d3abc010ace"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_values</b> (const ossia::value &amp;v)</td></tr>
 <tr class="separator:a7bd4afe3f32e1e38c7430d3abc010ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3098ebce46489a253ac0c7cf3c7d3959" id="r_a3098ebce46489a253ac0c7cf3c7d3959"><td class="memItemLeft" align="right" valign="top"><a id="a3098ebce46489a253ac0c7cf3c7d3959" name="a3098ebce46489a253ac0c7cf3c7d3959"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>flashLevel</b> () const noexcept</td></tr>
+<tr class="memdesc:a3098ebce46489a253ac0c7cf3c7d3959"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 when values just arrived, 0 once the flash has faded. <br /></td></tr>
+<tr class="separator:a3098ebce46489a253ac0c7cf3c7d3959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc8dd1b7b8bfe490250c7b9e77738c27" id="r_acc8dd1b7b8bfe490250c7b9e77738c27"><td class="memItemLeft" align="right" valign="top"><a id="acc8dd1b7b8bfe490250c7b9e77738c27" name="acc8dd1b7b8bfe490250c7b9e77738c27"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:acc8dd1b7b8bfe490250c7b9e77738c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +232,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMove</b> (const Q
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeave</b> (const QPointF &amp;pos, const QMimeData &amp;arg_2)</td></tr>
 <tr class="separator:a30123585a33c72146132d2b189b7e2ab inherit pub_methods_class_process_1_1_layer_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a51fe1d1f6d1fc3568f21cce837a8d48f" id="r_a51fe1d1f6d1fc3568f21cce837a8d48f"><td class="memItemLeft" align="right" valign="top"><a id="a51fe1d1f6d1fc3568f21cce837a8d48f" name="a51fe1d1f6d1fc3568f21cce837a8d48f"></a>
+static QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>flashRect</b> () noexcept</td></tr>
+<tr class="memdesc:a51fe1d1f6d1fc3568f21cce837a8d48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the gutter left of the text, above the input port. <br /></td></tr>
+<tr class="separator:a51fe1d1f6d1fc3568f21cce837a8d48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a6920976424654c3791c41ea61dfc8fa2" id="r_a6920976424654c3791c41ea61dfc8fa2"><td class="memItemLeft" align="right" valign="top"><a id="a6920976424654c3791c41ea61dfc8fa2" name="a6920976424654c3791c41ea61dfc8fa2"></a>
@@ -246,6 +259,20 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>txt_cache</b></td>
 <tr class="memitem:a2036e07190fad54230f03ccf4e20f2f6" id="r_a2036e07190fad54230f03ccf4e20f2f6"><td class="memItemLeft" align="right" valign="top"><a id="a2036e07190fad54230f03ccf4e20f2f6" name="a2036e07190fad54230f03ccf4e20f2f6"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_buf</b></td></tr>
 <tr class="separator:a2036e07190fad54230f03ccf4e20f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5796e52bbe7c4dd45584a7fbd79665e7" id="r_a5796e52bbe7c4dd45584a7fbd79665e7"><td class="memItemLeft" align="right" valign="top"><a id="a5796e52bbe7c4dd45584a7fbd79665e7" name="a5796e52bbe7c4dd45584a7fbd79665e7"></a>
+QElapsedTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_flash</b></td></tr>
+<tr class="separator:a5796e52bbe7c4dd45584a7fbd79665e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834d740e7dd3a1d17d83905c654176cc" id="r_a834d740e7dd3a1d17d83905c654176cc"><td class="memItemLeft" align="right" valign="top"><a id="a834d740e7dd3a1d17d83905c654176cc" name="a834d740e7dd3a1d17d83905c654176cc"></a>
+QTimer&#160;</td><td class="memItemRight" valign="bottom"><b>m_flashTimer</b></td></tr>
+<tr class="separator:a834d740e7dd3a1d17d83905c654176cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a667f7c469270d84a2d6451bcc5303c91" id="r_a667f7c469270d84a2d6451bcc5303c91"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_value_display_1_1_node_1_1_layer.html#a667f7c469270d84a2d6451bcc5303c91">flash_ms</a> = 300</td></tr>
+<tr class="separator:a667f7c469270d84a2d6451bcc5303c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8283ac68f04914b016cc3026ad67150c" id="r_a8283ac68f04914b016cc3026ad67150c"><td class="memItemLeft" align="right" valign="top"><a id="a8283ac68f04914b016cc3026ad67150c" name="a8283ac68f04914b016cc3026ad67150c"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>flash_step_ms</b> = 50</td></tr>
+<tr class="separator:a8283ac68f04914b016cc3026ad67150c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -305,6 +332,30 @@ qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultWidth</b> {
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_process_1_1_effect_layer_view.html">Process::EffectLayerView</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a667f7c469270d84a2d6451bcc5303c91" name="a667f7c469270d84a2d6451bcc5303c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a667f7c469270d84a2d6451bcc5303c91">&#9670;&#160;</a></span>flash_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Ui::ValueDisplay::Node::Layer::flash_ms = 300</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lit when values arrive, fading out: a value that does not change the text (the same number again) still shows it arrived. </p>
 
 </div>
 </div>

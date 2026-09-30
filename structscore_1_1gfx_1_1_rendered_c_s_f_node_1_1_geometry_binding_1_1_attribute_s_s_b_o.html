@@ -128,9 +128,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>warned_borrowed_pair<
 <tr class="memitem:add55e85eb10975fc151c74b5cdd9ddcb" id="r_add55e85eb10975fc151c74b5cdd9ddcb"><td class="memItemLeft" align="right" valign="top"><a id="add55e85eb10975fc151c74b5cdd9ddcb" name="add55e85eb10975fc151c74b5cdd9ddcb"></a>
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> {}</td></tr>
 <tr class="separator:add55e85eb10975fc151c74b5cdd9ddcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f45aa654d9dae17da2b9f047efd69bb" id="r_a5f45aa654d9dae17da2b9f047efd69bb"><td class="memItemLeft" align="right" valign="top"><a id="a5f45aa654d9dae17da2b9f047efd69bb" name="a5f45aa654d9dae17da2b9f047efd69bb"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>offset</b> {}</td></tr>
+<tr class="separator:a5f45aa654d9dae17da2b9f047efd69bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4be2c9fc22a0fee7a25fff39fe2658" id="r_afc4be2c9fc22a0fee7a25fff39fe2658"><td class="memItemLeft" align="right" valign="top"><a id="afc4be2c9fc22a0fee7a25fff39fe2658" name="afc4be2c9fc22a0fee7a25fff39fe2658"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>owned</b> {true}</td></tr>
 <tr class="separator:afc4be2c9fc22a0fee7a25fff39fe2658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17ae87d1847c966c6946547da7f9396e" id="r_a17ae87d1847c966c6946547da7f9396e"><td class="memItemLeft" align="right" valign="top">QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_attribute_s_s_b_o.html#a17ae87d1847c966c6946547da7f9396e">restore_source</a> {}</td></tr>
+<tr class="separator:a17ae87d1847c966c6946547da7f9396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a766791fed82da99cfe42586ec4965e68" id="r_a766791fed82da99cfe42586ec4965e68"><td class="memItemLeft" align="right" valign="top"><a id="a766791fed82da99cfe42586ec4965e68" name="a766791fed82da99cfe42586ec4965e68"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>restore_offset</b> {}</td></tr>
+<tr class="separator:a766791fed82da99cfe42586ec4965e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b50e00e32a1cfd5ecf449e5a7ef927c" id="r_a8b50e00e32a1cfd5ecf449e5a7ef927c"><td class="memItemLeft" align="right" valign="top"><a id="a8b50e00e32a1cfd5ecf449e5a7ef927c" name="a8b50e00e32a1cfd5ecf449e5a7ef927c"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>restore_size</b> {}</td></tr>
+<tr class="separator:a8b50e00e32a1cfd5ecf449e5a7ef927c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab94f2cfd4b676d6ffd66bb7887327b" id="r_a8ab94f2cfd4b676d6ffd66bb7887327b"><td class="memItemLeft" align="right" valign="top"><a id="a8ab94f2cfd4b676d6ffd66bb7887327b" name="a8ab94f2cfd4b676d6ffd66bb7887327b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>restore_seen</b> {false}</td></tr>
+<tr class="separator:a8ab94f2cfd4b676d6ffd66bb7887327b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad33505e50ecb5640e9389de22a15dbda" id="r_ad33505e50ecb5640e9389de22a15dbda"><td class="memItemLeft" align="right" valign="top"><a id="ad33505e50ecb5640e9389de22a15dbda" name="ad33505e50ecb5640e9389de22a15dbda"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr class="separator:ad33505e50ecb5640e9389de22a15dbda"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +186,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>scatterPending</b> {f
       </table>
 </div><div class="memdoc">
 <p>read_buffer is a per-frame snapshot, not a ping-pong half: a node promoted to owning a loop must trade it for a real pair. </p>
+
+</div>
+</div>
+<a id="a17ae87d1847c966c6946547da7f9396e" name="a17ae87d1847c966c6946547da7f9396e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ae87d1847c966c6946547da7f9396e">&#9670;&#160;</a></span>restore_source</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiBuffer* score::gfx::RenderedCSFNode::GeometryBinding::AttributeSSBO::restore_source {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A read_write attribute on a GPU upstream works on an owned copy of restore_source, refreshed before the passes run every frame. </p>
 
 </div>
 </div>

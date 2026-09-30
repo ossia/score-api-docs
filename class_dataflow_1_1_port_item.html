@@ -151,6 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetDrop</b> ()</td>
 <tr class="memitem:a5510730297a0bf731fe7e191f2fc0794" id="r_a5510730297a0bf731fe7e191f2fc0794"><td class="memItemLeft" align="right" valign="top"><a id="a5510730297a0bf731fe7e191f2fc0794" name="a5510730297a0bf731fe7e191f2fc0794"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighlight</b> (bool b)</td></tr>
 <tr class="separator:a5510730297a0bf731fe7e191f2fc0794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af792574a24ee7c126c059756dd8a2163" id="r_af792574a24ee7c126c059756dd8a2163"><td class="memItemLeft" align="right" valign="top"><a id="af792574a24ee7c126c059756dd8a2163" name="af792574a24ee7c126c059756dd8a2163"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>highlighted</b> () const noexcept</td></tr>
+<tr class="separator:af792574a24ee7c126c059756dd8a2163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b4bba4ead238af202e1f2e3967e3ff4" id="r_a8b4bba4ead238af202e1f2e3967e3ff4"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a8b4bba4ead238af202e1f2e3967e3ff4">drawnRect</a> () const noexcept</td></tr>
 <tr class="separator:a8b4bba4ead238af202e1f2e3967e3ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1756b7be976552d61bbe7bfb8f3f7a8" id="r_ab1756b7be976552d61bbe7bfb8f3f7a8"><td class="memItemLeft" align="right" valign="top"><a id="ab1756b7be976552d61bbe7bfb8f3f7a8" name="ab1756b7be976552d61bbe7bfb8f3f7a8"></a>
@@ -169,6 +172,8 @@ QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b> () 
 <tr class="memitem:ae37a59274517686dd8c14d1f598fa803" id="r_ae37a59274517686dd8c14d1f598fa803"><td class="memItemLeft" align="right" valign="top"><a id="ae37a59274517686dd8c14d1f598fa803" name="ae37a59274517686dd8c14d1f598fa803"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (const QPointF &amp;point) const override</td></tr>
 <tr class="separator:ae37a59274517686dd8c14d1f598fa803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a652f2265b50ea08d9a1c6b70a95b5" id="r_a80a652f2265b50ea08d9a1c6b70a95b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a80a652f2265b50ea08d9a1c6b70a95b5">collidesWithPath</a> (const QPainterPath &amp;path, Qt::ItemSelectionMode mode=Qt::IntersectsItemShape) const override</td></tr>
+<tr class="separator:a80a652f2265b50ea08d9a1c6b70a95b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56270a74dab387649b8c5dfcf42c642f" id="r_a56270a74dab387649b8c5dfcf42c642f"><td class="memItemLeft" align="right" valign="top"><a id="a56270a74dab387649b8c5dfcf42c642f" name="a56270a74dab387649b8c5dfcf42c642f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createCable</b> (<a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *src, <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *snk)</td></tr>
 <tr class="separator:a56270a74dab387649b8c5dfcf42c642f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,9 +215,7 @@ static <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *&#16
 <tr class="memitem:a085ca5da319fb0d9dd909a0188fe15a1" id="r_a085ca5da319fb0d9dd909a0188fe15a1"><td class="memItemLeft" align="right" valign="top"><a id="a085ca5da319fb0d9dd909a0188fe15a1" name="a085ca5da319fb0d9dd909a0188fe15a1"></a>
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 700</td></tr>
 <tr class="separator:a085ca5da319fb0d9dd909a0188fe15a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8b5c2e111e8cd14b8e99d86c27169a" id="r_a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memItemLeft" align="right" valign="top"><a id="a8e8b5c2e111e8cd14b8e99d86c27169a" name="a8e8b5c2e111e8cd14b8e99d86c27169a"></a>
-static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>hitRadius</b> = 5.5</td></tr>
-<tr class="memdesc:a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the clickable zone around <a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter()</a>. <br /></td></tr>
+<tr class="memitem:a8e8b5c2e111e8cd14b8e99d86c27169a" id="r_a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a">hitRadius</a> = 4.</td></tr>
 <tr class="separator:a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -276,6 +279,43 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dataflow::CableItem<
 <tr class="separator:a380607356dcc2ae2fedf67094017b3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a80a652f2265b50ea08d9a1c6b70a95b5" name="a80a652f2265b50ea08d9a1c6b70a95b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a652f2265b50ea08d9a1c6b70a95b5">&#9670;&#160;</a></span>collidesWithPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Dataflow::PortItem::collidesWithPath </td>
+          <td>(</td>
+          <td class="paramtype">const QPainterPath &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::ItemSelectionMode&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>Qt::IntersectsItemShape</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For an item inside a parent that clips its children (a nodal slot), Qt hit-tests the clip path - which starts from the bounding rect, not the shape - instead of the shape, so the port would grab the pointer over its whole bounding rect. Tests the shape, cut by the clip. </p>
+
+</div>
+</div>
 <a id="a8b4bba4ead238af202e1f2e3967e3ff4" name="a8b4bba4ead238af202e1f2e3967e3ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8b4bba4ead238af202e1f2e3967e3ff4">&#9670;&#160;</a></span>drawnRect()</h2>
 
@@ -325,6 +365,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dataflow::CableItem<
 </table>
 </div><div class="memdoc">
 <p>Center of the drawn port circle, in item coordinates. Cables, the drag line and magnetic snapping all anchor on this point. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8e8b5c2e111e8cd14b8e99d86c27169a" name="a8e8b5c2e111e8cd14b8e99d86c27169a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e8b5c2e111e8cd14b8e99d86c27169a">&#9670;&#160;</a></span>hitRadius</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double Dataflow::PortItem::hitRadius = 4.</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Radius of the clickable zone around <a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter()</a>: the drawn circle (radius 3 and a 1.5px pen) and its antialiased edge. The hand cursor follows this zone. </p>
 
 </div>
 </div>

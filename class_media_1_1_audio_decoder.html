@@ -164,10 +164,42 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b> {}</t
 <tr class="memitem:ae21547b11f66462bf5f1e941ec00ab6c" id="r_ae21547b11f66462bf5f1e941ec00ab6c"><td class="memItemLeft" align="right" valign="top"><a id="ae21547b11f66462bf5f1e941ec00ab6c" name="ae21547b11f66462bf5f1e941ec00ab6c"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>track</b> {-1}</td></tr>
 <tr class="separator:ae21547b11f66462bf5f1e941ec00ab6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af55d54a73fb24836ef4470ee6c888eca" id="r_af55d54a73fb24836ef4470ee6c888eca"><td class="memItemLeft" align="right" valign="top"><a id="af55d54a73fb24836ef4470ee6c888eca" name="af55d54a73fb24836ef4470ee6c888eca"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>decoded</b> {}</td></tr>
-<tr class="separator:af55d54a73fb24836ef4470ee6c888eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804bde0e2d2eac5ba424d0f600c2806e" id="r_a804bde0e2d2eac5ba424d0f600c2806e"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_audio_decoder.html#a804bde0e2d2eac5ba424d0f600c2806e">decoded</a> {}</td></tr>
+<tr class="separator:a804bde0e2d2eac5ba424d0f600c2806e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee16aabebeb2ee02a56989f8df016e9e" id="r_aee16aabebeb2ee02a56989f8df016e9e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_audio_decoder.html#aee16aabebeb2ee02a56989f8df016e9e">produced</a> {}</td></tr>
+<tr class="separator:aee16aabebeb2ee02a56989f8df016e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a804bde0e2d2eac5ba424d0f600c2806e" name="a804bde0e2d2eac5ba424d0f600c2806e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a804bde0e2d2eac5ba424d0f600c2806e">&#9670;&#160;</a></span>decoded</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;std::size_t&gt; Media::AudioDecoder::decoded {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Written by the decode thread once the samples below it are in place, read by the owner (newData / finishedDecoding handlers, playback) while decoding goes on. </p>
+
+</div>
+</div>
+<a id="aee16aabebeb2ee02a56989f8df016e9e" name="aee16aabebeb2ee02a56989f8df016e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee16aabebeb2ee02a56989f8df016e9e">&#9670;&#160;</a></span>produced</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t Media::AudioDecoder::produced {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frames the file produced: <code>decoded</code> without the padding decodeRemaining() adds up to the buffer size </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_audio_decoder_8hpp_source.html">AudioDecoder.hpp</a></li>
 <li><b>AudioDecoder.cpp</b></li>

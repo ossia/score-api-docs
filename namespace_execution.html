@@ -190,7 +190,7 @@ Live modification during execution.</h1>
 <div class="line">[ The execution algorithm applies the</div>
 <div class="line">  commands at the end of the current tick ]</div>
 <div class="ttc" id="anamespace_execution_html"><div class="ttname"><a href="namespace_execution.html">Execution</a></div><div class="ttdoc">Components used for the execution of a score.</div><div class="ttdef"><b>Definition</b> ProcessComponent.cpp:14</div></div>
-<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:242</div></div>
+<div class="ttc" id="astruct_execution_1_1_context_html_a1a0fd8f494c0a427dc09b7da3e94bf36"><div class="ttname"><a href="struct_execution_1_1_context.html#a1a0fd8f494c0a427dc09b7da3e94bf36">Execution::Context::executionQueue</a></div><div class="ttdeci">ExecutionCommandQueue &amp; executionQueue</div><div class="ttdef"><b>Definition</b> ExecutionContext.hpp:247</div></div>
 </div><!-- fragment --><p>For modification of values, for instance the duration of a Interval, this is easily visible. See for instance <a class="el" href="class_execution_1_1_interval_component_base.html">Execution::IntervalComponentBase</a> 's constructor. <br  />
  For creation and removal of objects, this should be handled automatically by the various ComponentHierarchy classes which take care of creating and removing the objects in the correct order. The Component classes just have to provide functions that will do the actual instantiation, and pre- &amp; post- removal steps. <br  />
 <br  />
@@ -378,6 +378,15 @@ template&lt;typename T , typename Impl &gt; </td></tr>
 template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:acf6eef690325494540c17034bb4bfadc"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gc</b> (T &amp;&amp;... t) noexcept</td></tr>
 <tr class="separator:acf6eef690325494540c17034bb4bfadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd4932804d908e4c554a39da4e85341" id="r_a1cd4932804d908e4c554a39da4e85341"><td class="memItemLeft" align="right" valign="top">ossia::hash_set&lt; const void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_execution.html#a1cd4932804d908e4c554a39da4e85341">deviceAddresses</a> (ossia::net::device_base &amp;d)</td></tr>
+<tr class="memdesc:a1cd4932804d908e4c554a39da4e85341"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node and parameter addresses a device owns.  <br /></td></tr>
+<tr class="separator:a1cd4932804d908e4c554a39da4e85341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dcb26b6d9fc9854cc88b564ce1a5f7e" id="r_a4dcb26b6d9fc9854cc88b564ce1a5f7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_execution.html#a4dcb26b6d9fc9854cc88b564ce1a5f7e">addressBelongsTo</a> (const ossia::destination_t &amp;dest, const ossia::hash_set&lt; const void * &gt; &amp;owned) noexcept</td></tr>
+<tr class="memdesc:a4dcb26b6d9fc9854cc88b564ce1a5f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the address a port stores is one of <code>owned</code>.  <br /></td></tr>
+<tr class="separator:a4dcb26b6d9fc9854cc88b564ce1a5f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac23f74489ea2d77333585920779bae01" id="r_ac23f74489ea2d77333585920779bae01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_execution.html#ac23f74489ea2d77333585920779bae01">clearAddresses</a> (std::span&lt; ossia::graph_node *const  &gt; nodes, const ossia::hash_set&lt; const void * &gt; &amp;owned) noexcept</td></tr>
+<tr class="memdesc:ac23f74489ea2d77333585920779bae01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset every port address in <code>nodes</code> that is one of <code>owned</code>.  <br /></td></tr>
+<tr class="separator:ac23f74489ea2d77333585920779bae01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670e4e9cfe63ea513e35ae9d4d6ec953" id="r_a670e4e9cfe63ea513e35ae9d4d6ec953"><td class="memItemLeft" align="right" valign="top"><a id="a670e4e9cfe63ea513e35ae9d4d6ec953" name="a670e4e9cfe63ea513e35ae9d4d6ec953"></a>
 Audio::tick_fun&#160;</td><td class="memItemRight" valign="bottom"><b>makeExecutionTick</b> (ossia::tick_setup_options opt, <a class="el" href="class_execution_1_1_document_plugin.html">Execution::DocumentPlugin</a> &amp;plug, const std::shared_ptr&lt; Execution::BaseScenarioElement &gt; &amp;scenar)</td></tr>
 <tr class="separator:a670e4e9cfe63ea513e35ae9d4d6ec953"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -434,6 +443,106 @@ template&lt;&gt; </td></tr>
 <p>The default implementation, <a class="el" href="class_execution_1_1_default_clock.html">DefaultClock</a>, uses sleep() and threading to do the execution.</p>
 <p>Other implementations could be used to synchronize to external clocks, such as the sound card clock, or the host clock if score is used as a plug-in.</p>
 <p>The derived constructors should set-up the clock drive mode, speed, etc. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4dcb26b6d9fc9854cc88b564ce1a5f7e" name="a4dcb26b6d9fc9854cc88b564ce1a5f7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dcb26b6d9fc9854cc88b564ce1a5f7e">&#9670;&#160;</a></span>addressBelongsTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Execution::addressBelongsTo </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::destination_t &amp;&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::hash_set&lt; const void * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>owned</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the address a port stores is one of <code>owned</code>. </p>
+<p>Pointer identity only: the stored address may already dangle, and must never be dereferenced here. </p>
+
+</div>
+</div>
+<a id="ac23f74489ea2d77333585920779bae01" name="ac23f74489ea2d77333585920779bae01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac23f74489ea2d77333585920779bae01">&#9670;&#160;</a></span>clearAddresses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Execution::clearAddresses </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; ossia::graph_node *const &gt;&#160;</td>
+          <td class="paramname"><em>nodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::hash_set&lt; const void * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>owned</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset every port address in <code>nodes</code> that is one of <code>owned</code>. </p>
+<p>Runs on the execution thread. Ports addressed to another device are left alone. </p>
+
+</div>
+</div>
+<a id="a1cd4932804d908e4c554a39da4e85341" name="a1cd4932804d908e4c554a39da4e85341"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cd4932804d908e4c554a39da4e85341">&#9670;&#160;</a></span>deviceAddresses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::hash_set&lt; const void * &gt; Execution::deviceAddresses </td>
+          <td>(</td>
+          <td class="paramtype">ossia::net::device_base &amp;&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The node and parameter addresses a device owns. </p>
+<p>Taken while the device is alive. A node and a parameter are distinct objects, so one set holds both. </p>
 
 </div>
 </div>

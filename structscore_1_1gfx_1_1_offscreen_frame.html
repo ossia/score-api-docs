@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_offscreen_frame
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_offscreen_frame-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::OffscreenFrame Struct Reference</div></div>
 </div><!--header-->
@@ -139,9 +140,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a77797d2b35370cdb8734146feb08bd" id="r_a7a77797d2b35370cdb8734146feb08bd"><td class="memItemLeft" align="right" valign="top"><a id="a7a77797d2b35370cdb8734146feb08bd" name="a7a77797d2b35370cdb8734146feb08bd"></a>
 QRhiCommandBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>commands</b> () const noexcept</td></tr>
 <tr class="separator:a7a77797d2b35370cdb8734146feb08bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19b5f65b0f7029e732fecfa92eaef353" id="r_a19b5f65b0f7029e732fecfa92eaef353"><td class="memItemLeft" align="right" valign="top"><a id="a19b5f65b0f7029e732fecfa92eaef353" name="a19b5f65b0f7029e732fecfa92eaef353"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () noexcept</td></tr>
-<tr class="separator:a19b5f65b0f7029e732fecfa92eaef353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a444b76fed2a040e54e4a4f72cb2c4e" id="r_a8a444b76fed2a040e54e4a4f72cb2c4e"><td class="memItemLeft" align="right" valign="top"><a id="a8a444b76fed2a040e54e4a4f72cb2c4e" name="a8a444b76fed2a040e54e4a4f72cb2c4e"></a>
+QRhi::FrameOpResult&#160;</td><td class="memItemRight" valign="bottom"><b>beginResult</b> () const noexcept</td></tr>
+<tr class="separator:a8a444b76fed2a040e54e4a4f72cb2c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2013b6d87c7ae44f08db0218b7616e81" id="r_a2013b6d87c7ae44f08db0218b7616e81"><td class="memItemLeft" align="right" valign="top"><a id="a2013b6d87c7ae44f08db0218b7616e81" name="a2013b6d87c7ae44f08db0218b7616e81"></a>
+QRhi::FrameOpResult&#160;</td><td class="memItemRight" valign="bottom"><b>endResult</b> () const noexcept</td></tr>
+<tr class="separator:a2013b6d87c7ae44f08db0218b7616e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a879a0651e54aa3437bda74ba00f67c" id="r_a6a879a0651e54aa3437bda74ba00f67c"><td class="memItemLeft" align="right" valign="top"><a id="a6a879a0651e54aa3437bda74ba00f67c" name="a6a879a0651e54aa3437bda74ba00f67c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>deviceLost</b> () const noexcept</td></tr>
+<tr class="separator:a6a879a0651e54aa3437bda74ba00f67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a97b0a00a261c9c7a5dc24afdc6e1b" id="r_a91a97b0a00a261c9c7a5dc24afdc6e1b"><td class="memItemLeft" align="right" valign="top"><a id="a91a97b0a00a261c9c7a5dc24afdc6e1b" name="a91a97b0a00a261c9c7a5dc24afdc6e1b"></a>
+QRhi::FrameOpResult&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () noexcept</td></tr>
+<tr class="separator:a91a97b0a00a261c9c7a5dc24afdc6e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a9dbb7f76689855fe930454c43dad188b" id="r_a9dbb7f76689855fe930454c43dad188b"><td class="memItemLeft" align="right" valign="top"><a id="a9dbb7f76689855fe930454c43dad188b" name="a9dbb7f76689855fe930454c43dad188b"></a>
+static std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>simulateDeviceLost</b> {false}</td></tr>
+<tr class="memdesc:a9dbb7f76689855fe930454c43dad188b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test seam: while set, every new frame fails to begin with FrameOpDeviceLost without touching the QRhi. <br /></td></tr>
+<tr class="separator:a9dbb7f76689855fe930454c43dad188b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Utils.hpp</a></li>

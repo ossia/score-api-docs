@@ -29,5 +29,6 @@ var dir_aa638cb09df48c01e6deabc296ba21ac =
     [ "QGraphicsXYChooser.hpp", "_q_graphics_x_y_chooser_8hpp_source.html", null ],
     [ "QGraphicsXYSpinbox.hpp", "_q_graphics_x_y_spinbox_8hpp_source.html", null ],
     [ "QGraphicsXYZChooser.hpp", "_q_graphics_x_y_z_chooser_8hpp_source.html", null ],
-    [ "QGraphicsXYZSpinbox.hpp", "_q_graphics_x_y_z_spinbox_8hpp_source.html", null ]
+    [ "QGraphicsXYZSpinbox.hpp", "_q_graphics_x_y_z_spinbox_8hpp_source.html", null ],
+    [ "Stepper.hpp", "_stepper_8hpp_source.html", null ]
 ];

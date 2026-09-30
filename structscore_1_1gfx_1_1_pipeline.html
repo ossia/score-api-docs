@@ -129,7 +129,25 @@ QRhiGraphicsPipeline *&#160;</td><td class="memItemRight" valign="bottom"><b>pip
 <tr class="memitem:ae4febb1597a0ca26f6b35f8c2641fd82" id="r_ae4febb1597a0ca26f6b35f8c2641fd82"><td class="memItemLeft" align="right" valign="top"><a id="ae4febb1597a0ca26f6b35f8c2641fd82" name="ae4febb1597a0ca26f6b35f8c2641fd82"></a>
 QRhiShaderResourceBindings *&#160;</td><td class="memItemRight" valign="bottom"><b>srb</b> {}</td></tr>
 <tr class="separator:ae4febb1597a0ca26f6b35f8c2641fd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83109fb1bd25ce5e9b01609996e462df" id="r_a83109fb1bd25ce5e9b01609996e462df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_pipeline.html#a83109fb1bd25ce5e9b01609996e462df">plan</a> {}</td></tr>
+<tr class="separator:a83109fb1bd25ce5e9b01609996e462df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a83109fb1bd25ce5e9b01609996e462df" name="a83109fb1bd25ce5e9b01609996e462df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83109fb1bd25ce5e9b01609996e462df">&#9670;&#160;</a></span>plan</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> score::gfx::Pipeline::plan {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Which of the geometry's vertex bindings this pipeline kept, and in what order, plus the fallback bindings it appended. Empty/uncompacted means "bind every geometry input one-to-one", which is what the builders that do not compact expect. The fallback buffers are owned by <a class="el" href="classscore_1_1gfx_1_1_vertex_fallback_pool.html">VertexFallbackPool</a>; the plan holds non-owning pointers. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Utils.hpp</a></li>
 </ul>

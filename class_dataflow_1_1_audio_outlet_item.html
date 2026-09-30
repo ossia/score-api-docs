@@ -174,6 +174,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>resetDrop</b> ()</td>
 <tr class="memitem:a5510730297a0bf731fe7e191f2fc0794 inherit pub_methods_class_dataflow_1_1_port_item" id="r_a5510730297a0bf731fe7e191f2fc0794"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setHighlight</b> (bool b)</td></tr>
 <tr class="separator:a5510730297a0bf731fe7e191f2fc0794 inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af792574a24ee7c126c059756dd8a2163 inherit pub_methods_class_dataflow_1_1_port_item" id="r_af792574a24ee7c126c059756dd8a2163"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>highlighted</b> () const noexcept</td></tr>
+<tr class="separator:af792574a24ee7c126c059756dd8a2163 inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b4bba4ead238af202e1f2e3967e3ff4 inherit pub_methods_class_dataflow_1_1_port_item" id="r_a8b4bba4ead238af202e1f2e3967e3ff4"><td class="memItemLeft" align="right" valign="top">QRectF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a8b4bba4ead238af202e1f2e3967e3ff4">drawnRect</a> () const noexcept</td></tr>
 <tr class="separator:a8b4bba4ead238af202e1f2e3967e3ff4 inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1756b7be976552d61bbe7bfb8f3f7a8 inherit pub_methods_class_dataflow_1_1_port_item" id="r_ab1756b7be976552d61bbe7bfb8f3f7a8"><td class="memItemLeft" align="right" valign="top">
@@ -192,6 +195,8 @@ QPainterPath&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b> () 
 <tr class="memitem:ae37a59274517686dd8c14d1f598fa803 inherit pub_methods_class_dataflow_1_1_port_item" id="r_ae37a59274517686dd8c14d1f598fa803"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>contains</b> (const QPointF &amp;point) const override</td></tr>
 <tr class="separator:ae37a59274517686dd8c14d1f598fa803 inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80a652f2265b50ea08d9a1c6b70a95b5 inherit pub_methods_class_dataflow_1_1_port_item" id="r_a80a652f2265b50ea08d9a1c6b70a95b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a80a652f2265b50ea08d9a1c6b70a95b5">collidesWithPath</a> (const QPainterPath &amp;path, Qt::ItemSelectionMode mode=Qt::IntersectsItemShape) const override</td></tr>
+<tr class="separator:a80a652f2265b50ea08d9a1c6b70a95b5 inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56270a74dab387649b8c5dfcf42c642f inherit pub_methods_class_dataflow_1_1_port_item" id="r_a56270a74dab387649b8c5dfcf42c642f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>createCable</b> (<a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *src, <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *snk)</td></tr>
 <tr class="separator:a56270a74dab387649b8c5dfcf42c642f inherit pub_methods_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,9 +241,7 @@ static <a class="el" href="class_dataflow_1_1_port_item.html">PortItem</a> *&#16
 <tr class="memitem:a085ca5da319fb0d9dd909a0188fe15a1 inherit pub_static_attribs_class_dataflow_1_1_port_item" id="r_a085ca5da319fb0d9dd909a0188fe15a1"><td class="memItemLeft" align="right" valign="top">
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 700</td></tr>
 <tr class="separator:a085ca5da319fb0d9dd909a0188fe15a1 inherit pub_static_attribs_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e8b5c2e111e8cd14b8e99d86c27169a inherit pub_static_attribs_class_dataflow_1_1_port_item" id="r_a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memItemLeft" align="right" valign="top">
-static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>hitRadius</b> = 5.5</td></tr>
-<tr class="memdesc:a8e8b5c2e111e8cd14b8e99d86c27169a inherit pub_static_attribs_class_dataflow_1_1_port_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">Radius of the clickable zone around <a class="el" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">portCenter()</a>. <br /></td></tr>
+<tr class="memitem:a8e8b5c2e111e8cd14b8e99d86c27169a inherit pub_static_attribs_class_dataflow_1_1_port_item" id="r_a8e8b5c2e111e8cd14b8e99d86c27169a"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a">hitRadius</a> = 4.</td></tr>
 <tr class="separator:a8e8b5c2e111e8cd14b8e99d86c27169a inherit pub_static_attribs_class_dataflow_1_1_port_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_dataflow_1_1_port_item"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dataflow_1_1_port_item')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_dataflow_1_1_port_item.html">Dataflow::PortItem</a></td></tr>
 <tr class="memitem:ac7b310d6e468bbd62a4d469a39b210fd inherit pro_methods_class_dataflow_1_1_port_item" id="r_ac7b310d6e468bbd62a4d469a39b210fd"><td class="memItemLeft" align="right" valign="top">

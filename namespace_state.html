@@ -115,6 +115,7 @@ $(document).ready(function(){initNavTree('namespace_state.html',''); initResizab
 <a href="namespace_state.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utilities for OSSIA data structures. </p>
+<p><a class="el" href="struct_state_1_1_address.html" title="The Address struct.">Address</a> ///.</p>
 <p>This namespace contains :</p>
 <ul>
 <li>PIMPL wrappers for OSSIA classes, to diminish compile time at the cost of performance (which is not relevant at all for the user interface).</li>
@@ -141,6 +142,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_1_1_address_validator.html">AddressValidator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_state_1_1_address_validator.html" title="The AddressValidator class.">AddressValidator</a> class.  <a href="class_state_1_1_address_validator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_state_1_1_anchor.html">Anchor</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state_1_1_bool_value_widget.html">BoolValueWidget</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,12 +294,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>addressIsChildOf</b> 
 <tr class="memitem:a839a275c64295fa96bdbd93b281637f1" id="r_a839a275c64295fa96bdbd93b281637f1"><td class="memItemLeft" align="right" valign="top"><a id="a839a275c64295fa96bdbd93b281637f1" name="a839a275c64295fa96bdbd93b281637f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rerootAddress</b> (<a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;current, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;oldRoot, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;newRoot)</td></tr>
 <tr class="separator:a839a275c64295fa96bdbd93b281637f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a61aab5c84353087a01076b4f32cfc" id="r_a47a61aab5c84353087a01076b4f32cfc"><td class="memItemLeft" align="right" valign="top"><a id="a47a61aab5c84353087a01076b4f32cfc" name="a47a61aab5c84353087a01076b4f32cfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>readAnchor</b> (<a class="el" href="class_data_stream_reader.html">DataStreamReader</a> &amp;r, const std::shared_ptr&lt; const <a class="el" href="struct_state_1_1_anchor.html">Anchor</a> &gt; &amp;a)</td></tr>
+<tr class="separator:a47a61aab5c84353087a01076b4f32cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0998a1ea6fe6916653da4199c28f6399" id="r_a0998a1ea6fe6916653da4199c28f6399"><td class="memItemLeft" align="right" valign="top"><a id="a0998a1ea6fe6916653da4199c28f6399" name="a0998a1ea6fe6916653da4199c28f6399"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeAnchor</b> (<a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;w, std::shared_ptr&lt; const <a class="el" href="struct_state_1_1_anchor.html">Anchor</a> &gt; &amp;a)</td></tr>
+<tr class="memdesc:a0998a1ea6fe6916653da4199c28f6399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leaves the anchor empty, and the stream marked corrupt, on invalid data. <br /></td></tr>
+<tr class="separator:a0998a1ea6fe6916653da4199c28f6399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3228721d1793c0450bc215dd5775ac02" id="r_a3228721d1793c0450bc215dd5775ac02"><td class="memItemLeft" align="right" valign="top"><a id="a3228721d1793c0450bc215dd5775ac02" name="a3228721d1793c0450bc215dd5775ac02"></a>
 std::optional&lt; <a class="el" href="struct_state_1_1_address.html">State::Address</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseAddress</b> (const QString &amp;str)</td></tr>
 <tr class="separator:a3228721d1793c0450bc215dd5775ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83320614d9868dadc311ee9225f61981" id="r_a83320614d9868dadc311ee9225f61981"><td class="memItemLeft" align="right" valign="top"><a id="a83320614d9868dadc311ee9225f61981" name="a83320614d9868dadc311ee9225f61981"></a>
 std::optional&lt; <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseAddressAccessor</b> (const QString &amp;str)</td></tr>
 <tr class="separator:a83320614d9868dadc311ee9225f61981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae4a7e60c09812760c6c0e31c59b05a" id="r_a3ae4a7e60c09812760c6c0e31c59b05a"><td class="memItemLeft" align="right" valign="top"><a id="a3ae4a7e60c09812760c6c0e31c59b05a" name="a3ae4a7e60c09812760c6c0e31c59b05a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveAnchors</b> (<a class="el" href="class_j_s_o_n_reader.html">JSONReader</a> &amp;r, const char *key, const <a class="el" href="class_tree_node.html">Expression</a> &amp;e)</td></tr>
+<tr class="memdesc:a3ae4a7e60c09812760c6c0e31c59b05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An expression is serialized as a string, which loses its anchors. <br /></td></tr>
+<tr class="separator:a3ae4a7e60c09812760c6c0e31c59b05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a3444ac9b7a8c6e6bb64edffe790a7" id="r_aa3a3444ac9b7a8c6e6bb64edffe790a7"><td class="memItemLeft" align="right" valign="top"><a id="aa3a3444ac9b7a8c6e6bb64edffe790a7" name="aa3a3444ac9b7a8c6e6bb64edffe790a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loadAnchors</b> (<a class="el" href="class_j_s_o_n_writer.html">JSONWriter</a> &amp;w, const char *key, <a class="el" href="class_tree_node.html">Expression</a> &amp;e)</td></tr>
+<tr class="separator:aa3a3444ac9b7a8c6e6bb64edffe790a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6b240b3fe4a657abebc95bc7d7b29f" id="r_afb6b240b3fe4a657abebc95bc7d7b29f"><td class="memItemLeft" align="right" valign="top"><a id="afb6b240b3fe4a657abebc95bc7d7b29f" name="afb6b240b3fe4a657abebc95bc7d7b29f"></a>
 QDebug&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (QDebug s, const <a class="el" href="struct_state_1_1_message.html">Message</a> &amp;mess)</td></tr>
 <tr class="separator:afb6b240b3fe4a657abebc95bc7d7b29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,6 +326,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>findAddressInExpressi
 <tr class="memitem:a8debde34d13fe5b6f1cedcf968ff083d" id="r_a8debde34d13fe5b6f1cedcf968ff083d"><td class="memItemLeft" align="right" valign="top"><a id="a8debde34d13fe5b6f1cedcf968ff083d" name="a8debde34d13fe5b6f1cedcf968ff083d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceAddress</b> (<a class="el" href="class_tree_node.html">State::Expression</a> &amp;expr, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;oldAddr, const <a class="el" href="struct_state_1_1_address.html">State::Address</a> &amp;newAddr)</td></tr>
 <tr class="separator:a8debde34d13fe5b6f1cedcf968ff083d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1edca54826d17b634a0488a4c9b4f7" id="r_a3b1edca54826d17b634a0488a4c9b4f7"><td class="memItemLeft" align="right" valign="top"><a id="a3b1edca54826d17b634a0488a4c9b4f7" name="a3b1edca54826d17b634a0488a4c9b4f7"></a>
+std::vector&lt; std::shared_ptr&lt; const <a class="el" href="struct_state_1_1_anchor.html">Anchor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>anchors</b> (const <a class="el" href="class_tree_node.html">Expression</a> &amp;e)</td></tr>
+<tr class="memdesc:a3b1edca54826d17b634a0488a4c9b4f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anchors of the addresses in order of appearance, null where there is none. <br /></td></tr>
+<tr class="separator:a3b1edca54826d17b634a0488a4c9b4f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf21d229fe9166a360043a07d5475114" id="r_aaf21d229fe9166a360043a07d5475114"><td class="memItemLeft" align="right" valign="top"><a id="aaf21d229fe9166a360043a07d5475114" name="aaf21d229fe9166a360043a07d5475114"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnchors</b> (<a class="el" href="class_tree_node.html">Expression</a> &amp;e, const std::vector&lt; std::shared_ptr&lt; const <a class="el" href="struct_state_1_1_anchor.html">Anchor</a> &gt; &gt; &amp;a)</td></tr>
+<tr class="memdesc:aaf21d229fe9166a360043a07d5475114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inverse of <a class="el" href="namespace_state.html#a3b1edca54826d17b634a0488a4c9b4f7" title="Anchors of the addresses in order of appearance, null where there is none.">anchors()</a>; extra entries are ignored. <br /></td></tr>
+<tr class="separator:aaf21d229fe9166a360043a07d5475114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf23ca2ffbee8cc3e5960cfcf9996246" id="r_aaf23ca2ffbee8cc3e5960cfcf9996246"><td class="memItemLeft" align="right" valign="top"><a id="aaf23ca2ffbee8cc3e5960cfcf9996246" name="aaf23ca2ffbee8cc3e5960cfcf9996246"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>identical</b> (const <a class="el" href="class_tree_node.html">Expression</a> &amp;a, const <a class="el" href="class_tree_node.html">Expression</a> &amp;b)</td></tr>
+<tr class="memdesc:aaf23ca2ffbee8cc3e5960cfcf9996246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equal, with the same anchors. <br /></td></tr>
+<tr class="separator:aaf23ca2ffbee8cc3e5960cfcf9996246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab775581b949f3bde6e346a1a958d721b" id="r_ab775581b949f3bde6e346a1a958d721b"><td class="memItemLeft" align="right" valign="top"><a id="ab775581b949f3bde6e346a1a958d721b" name="ab775581b949f3bde6e346a1a958d721b"></a>
 SCORE_LIB_STATE_EXPORT std::optional&lt; <a class="el" href="class_tree_node.html">State::Expression</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>parseExpression</b> (const QString &amp;str)</td></tr>
 <tr class="separator:ab775581b949f3bde6e346a1a958d721b"><td class="memSeparator" colspan="2">&#160;</td></tr>

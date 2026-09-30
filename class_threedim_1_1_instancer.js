@@ -1,5 +1,7 @@
 var class_threedim_1_1_instancer =
 [
+    [ "Bake", "struct_threedim_1_1_instancer_1_1_bake.html", null ],
+    [ "BakeSource", "struct_threedim_1_1_instancer_1_1_bake_source.html", null ],
     [ "CachedView", "struct_threedim_1_1_instancer_1_1_cached_view.html", null ],
     [ "ins", "struct_threedim_1_1_instancer_1_1ins.html", null ],
     [ "outs", "struct_threedim_1_1_instancer_1_1outs.html", null ]

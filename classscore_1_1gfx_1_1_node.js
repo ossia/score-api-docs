@@ -3,6 +3,7 @@ var classscore_1_1gfx_1_1_node =
     [ "createRenderer", "classscore_1_1gfx_1_1_node.html#afada9ff513c4820efe50ee92c85364f6", null ],
     [ "firstInputRenderTargetSpecs", "classscore_1_1gfx_1_1_node.html#af921dceec4cb7c4b4864b7e45cd1ca27", null ],
     [ "hasExplicitRenderTargetSize", "classscore_1_1gfx_1_1_node.html#a086b847bb5817aa81399a77d84815ac6", null ],
+    [ "hasExplicitRenderTargetSpecs", "classscore_1_1gfx_1_1_node.html#a4ede0028044a2990357a53b11b93eff0", null ],
     [ "materialChange", "classscore_1_1gfx_1_1_node.html#a8508b6bdb512aa868529f61d8c28a21b", null ],
     [ "process", "classscore_1_1gfx_1_1_node.html#acac03f2e76d8ab63548bab3fac5968a3", null ],
     [ "renderedNodesChanged", "classscore_1_1gfx_1_1_node.html#aefe3301b3b662a8eb8c0276a348a5fa3", null ],

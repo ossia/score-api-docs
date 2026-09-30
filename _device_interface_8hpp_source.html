@@ -300,119 +300,124 @@ $(document).ready(function(){initNavTree('_device_interface_8hpp_source.html',''
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordtype">void</span> deviceChanged(ossia::net::device_base* old_dev, ossia::net::device_base* new_dev)</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, deviceChanged, old_dev, new_dev)</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="comment">/* If logging is enabled, these two signals may be sent</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">   * when something happens */</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="keywordtype">void</span> logInbound(<span class="keyword">const</span> QString&amp; arg_1) <span class="keyword">const</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, logInbound, arg_1)</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keywordtype">void</span> logOutbound(<span class="keyword">const</span> QString&amp; arg_1) <span class="keyword">const</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, logOutbound, arg_1)</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="keywordtype">void</span> connectionChanged(<span class="keywordtype">bool</span> arg_1) <span class="keyword">const</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, connectionChanged, arg_1)</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <a class="code hl_struct" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> m_settings;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <a class="code hl_struct" href="struct_device_1_1_device_capas.html">DeviceCapas</a> m_capas;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="keyword">using </span>callback_pair = std::pair&lt;</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>      ossia::net::parameter_base*,</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>      ossia::callback_container&lt;ossia::value_callback&gt;::iterator&gt;;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  score::hash_map&lt;State::Address, callback_pair&gt; m_callbacks;</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="keywordtype">void</span> removeListening_impl(ossia::net::node_base&amp; node, <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a> addr);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">void</span> removeListening_impl(</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      ossia::net::node_base&amp; node, <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a> addr, std::vector&lt;State::Address&gt;&amp;);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="keywordtype">void</span> renameListening_impl(<span class="keyword">const</span> <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a>&amp; parent, <span class="keyword">const</span> QString&amp; newName);</div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">void</span> setLogging_impl(DeviceLogging) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <span class="keywordtype">void</span> enableCallbacks();</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> disableCallbacks();</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="comment">// Refresh without handling callbacks</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <a class="code hl_class" href="class_tree_node.html">Device::Node</a> simple_refresh();</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">bool</span> listen_impl(<span class="keyword">const</span> <a class="code hl_struct" href="struct_state_1_1_address.html">State::Address</a>&amp; addr, <span class="keywordtype">bool</span> b);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="class_device_1_1_device_interface.html#ac65b39668e9241d44b218eb4e25f6a29">  207</a></span>  void deviceClearing(ossia::net::device_base* dev)</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, deviceClearing, dev)</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="comment">/* If logging is enabled, these two signals may be sent</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">   * when something happens */</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">void</span> logInbound(const QString&amp; arg_1) const</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, logInbound, arg_1)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="keywordtype">void</span> logOutbound(const QString&amp; arg_1) const</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, logOutbound, arg_1)</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="keywordtype">void</span> connectionChanged(<span class="keywordtype">bool</span> arg_1) const</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      E_SIGNAL(SCORE_LIB_DEVICE_EXPORT, connectionChanged, arg_1)</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>protected:</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <a class="code hl_namespace" href="namespace_device.html">Device</a>::<a class="code hl_struct" href="struct_device_1_1_device_settings.html">DeviceSettings</a> m_settings;</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <a class="code hl_struct" href="struct_device_1_1_device_capas.html">DeviceCapas</a> m_capas;</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span> </div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  using callback_pair = <a class="code hl_namespace" href="namespacestd.html">std</a>::pair&lt;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      ossia::net::parameter_base*,</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>      ossia::callback_container&lt;ossia::value_callback&gt;::iterator&gt;;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <a class="code hl_namespace" href="namespacescore.html">score</a>::hash_map&lt;<a class="code hl_namespace" href="namespace_state.html">State</a>::Address, callback_pair&gt; m_callbacks;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="keywordtype">void</span> removeListening_impl(ossia::net::node_base&amp; node, <a class="code hl_namespace" href="namespace_state.html">State</a>::Address addr);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordtype">void</span> removeListening_impl(</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>      ossia::net::node_base&amp; node, <a class="code hl_namespace" href="namespace_state.html">State</a>::Address addr, <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;<a class="code hl_namespace" href="namespace_state.html">State</a>::Address&gt;&amp;);</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keywordtype">void</span> renameListening_impl(const <a class="code hl_namespace" href="namespace_state.html">State</a>::Address&amp; parent, const QString&amp; newName);</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="keywordtype">void</span> setLogging_impl(DeviceLogging) const;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="keywordtype">void</span> enableCallbacks();</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="keywordtype">void</span> disableCallbacks();</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="comment">// What the explorer asked to listen to; outlives the callbacks, which die</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <span class="comment">// with the ossia nodes on reconnect / refresh.</span></div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  ossia::hash_set&lt;State::Address&gt; m_listeningRequests;</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  DeviceLogging m_logging = DeviceLogging::LogNothing;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">bool</span> m_callbacksEnabled = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>};</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="comment">// Refresh without handling callbacks</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  <a class="code hl_namespace" href="namespace_device.html">Device</a>::<a class="code hl_class" href="class_tree_node.html">Node</a> simple_refresh();</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>private:</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">bool</span> listen_impl(const <a class="code hl_namespace" href="namespace_state.html">State</a>::Address&amp; addr, <span class="keywordtype">bool</span> b);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="comment">// What the explorer asked to listen to; outlives the callbacks, which die</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="comment">// with the ossia nodes on reconnect / refresh.</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  ossia::hash_set&lt;<a class="code hl_namespace" href="namespace_state.html">State</a>::Address&gt; m_listeningRequests;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  DeviceLogging m_logging = DeviceLogging::LogNothing;</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordtype">bool</span> m_callbacksEnabled = false;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>};</div>
 </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="foldopen" id="foldopen00244" data-start="{" data-end="};">
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="class_device_1_1_owning_device_interface.html">  244</a></span><span class="keyword">class </span>SCORE_LIB_DEVICE_EXPORT <a class="code hl_class" href="class_device_1_1_owning_device_interface.html">OwningDeviceInterface</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_device_1_1_device_interface.html">DeviceInterface</a></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>{</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <a class="code hl_class" href="class_device_1_1_owning_device_interface.html">~OwningDeviceInterface</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordtype">void</span> replaceDevice(ossia::net::device_base*);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordtype">void</span> releaseDevice();</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keyword">using </span>DeviceInterface::DeviceInterface;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  ossia::net::device_base* getDevice() <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> m_dev.get(); }</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  std::shared_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordtype">bool</span> m_owned{<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>};</div>
-</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="foldopen" id="foldopen00250" data-start="{" data-end="};">
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="class_device_1_1_owning_device_interface.html">  250</a></span>class SCORE_LIB_DEVICE_EXPORT <a class="code hl_class" href="class_device_1_1_owning_device_interface.html">OwningDeviceInterface</a> : public <a class="code hl_class" href="class_device_1_1_device_interface.html">DeviceInterface</a></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>{</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <a class="code hl_class" href="class_device_1_1_owning_device_interface.html">~OwningDeviceInterface</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordtype">void</span> replaceDevice(ossia::net::device_base*);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> releaseDevice();</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">void</span> disconnect() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keyword">using </span>DeviceInterface::DeviceInterface;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>getNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>createNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="foldopen" id="foldopen00269" data-start="{" data-end="}">
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno"><a class="line" href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">  269</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">hasEditableValue</a>(ossia::parameter_type t) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>{</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordflow">switch</span>(t)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  {</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">case</span> ossia::parameter_type::MESSAGE:</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">case</span> ossia::parameter_type::AUDIO:</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordflow">case</span> ossia::parameter_type::MIDI:</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordflow">case</span> ossia::parameter_type::TEXTURE:</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    <span class="keywordflow">case</span> ossia::parameter_type::GEOMETRY:</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  }</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>}</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  ossia::net::device_base* getDevice() <span class="keyword">const</span> <span class="keyword">final</span> <span class="keyword">override</span> { <span class="keywordflow">return</span> m_dev.get(); }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  std::shared_ptr&lt;ossia::net::device_base&gt; m_dev;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordtype">bool</span> m_owned{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>};</div>
 </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>SCORE_LIB_DEVICE_EXPORT <a class="code hl_class" href="class_tree_node.html">Device::Node</a> ToDeviceExplorer(<span class="keyword">const</span> ossia::net::node_base&amp; node);</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>findNodeFromPath(<span class="keyword">const</span> <a class="code hl_class" href="class_tree_node.html">Device::Node</a>&amp; path, ossia::net::device_base&amp; dev);</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>findNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>getNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>createNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="foldopen" id="foldopen00275" data-start="{" data-end="}">
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">  275</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">hasEditableValue</a>(ossia::parameter_type t) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>{</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  <span class="keywordflow">switch</span>(t)</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">case</span> ossia::parameter_type::MESSAGE:</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">case</span> ossia::parameter_type::AUDIO:</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordflow">case</span> ossia::parameter_type::MIDI:</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordflow">case</span> ossia::parameter_type::TEXTURE:</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordflow">case</span> ossia::parameter_type::GEOMETRY:</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
+</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>SCORE_LIB_DEVICE_EXPORT <a class="code hl_class" href="class_tree_node.html">Device::Node</a> ToDeviceExplorer(<span class="keyword">const</span> ossia::net::node_base&amp; node);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>SCORE_LIB_DEVICE_EXPORT</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="keywordtype">void</span> releaseDevice(</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    ossia::net::network_context&amp; ctx, std::unique_ptr&lt;ossia::net::device_base&gt; dev);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>SCORE_LIB_DEVICE_EXPORT</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="keywordtype">void</span> releaseDevice(</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    ossia::net::network_context&amp; ctx, std::shared_ptr&lt;ossia::net::device_base&gt; dev);</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>findNodeFromPath(<span class="keyword">const</span> <a class="code hl_class" href="class_tree_node.html">Device::Node</a>&amp; path, ossia::net::device_base&amp; dev);</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>SCORE_LIB_DEVICE_EXPORT ossia::net::node_base*</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>findNodeFromPath(<span class="keyword">const</span> QStringList&amp; path, ossia::net::device_base&amp; dev);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>SCORE_LIB_DEVICE_EXPORT</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="keywordtype">void</span> releaseDevice(</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>    ossia::net::network_context&amp; ctx, std::unique_ptr&lt;ossia::net::device_base&gt; dev);</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>SCORE_LIB_DEVICE_EXPORT</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="keywordtype">void</span> releaseDevice(</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    ossia::net::network_context&amp; ctx, std::shared_ptr&lt;ossia::net::device_base&gt; dev);</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>}</div>
 <div class="ttc" id="aclass_device_1_1_device_interface_html"><div class="ttname"><a href="class_device_1_1_device_interface.html">Device::DeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:107</div></div>
-<div class="ttc" id="aclass_device_1_1_owning_device_interface_html"><div class="ttname"><a href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:245</div></div>
+<div class="ttc" id="aclass_device_1_1_owning_device_interface_html"><div class="ttname"><a href="class_device_1_1_owning_device_interface.html">Device::OwningDeviceInterface</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:251</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; DeviceExplorerNode &gt;</a></div></div>
 <div class="ttc" id="anamespace_device_html"><div class="ttname"><a href="namespace_device.html">Device</a></div><div class="ttdoc">Manipulation of Devices from Qt.</div><div class="ttdef"><b>Definition</b> AddressSettings.cpp:14</div></div>
-<div class="ttc" id="anamespace_device_html_a80de34992a1ca4155f4ea4a1ddae1529"><div class="ttname"><a href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">Device::hasEditableValue</a></div><div class="ttdeci">bool hasEditableValue(ossia::parameter_type t) noexcept</div><div class="ttdoc">Whether a parameter of that kind carries a value the explorer can show and edit.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:269</div></div>
+<div class="ttc" id="anamespace_device_html_a80de34992a1ca4155f4ea4a1ddae1529"><div class="ttname"><a href="namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529">Device::hasEditableValue</a></div><div class="ttdeci">bool hasEditableValue(ossia::parameter_type t) noexcept</div><div class="ttdoc">Whether a parameter of that kind carries a value the explorer can show and edit.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:275</div></div>
 <div class="ttc" id="anamespace_device_html_a875f36aa64bc4a597def54be38ed4d44"><div class="ttname"><a href="namespace_device.html#a875f36aa64bc4a597def54be38ed4d44">Device::carries</a></div><div class="ttdeci">constexpr bool carries(NodeKind set, NodeKind wanted) noexcept</div><div class="ttdoc">Whether every kind in wanted is in set.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:74</div></div>
 <div class="ttc" id="anamespace_device_html_a894eb8afb112a7d3667fd1ac16cee5d9"><div class="ttname"><a href="namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9">Device::NodeKind</a></div><div class="ttdeci">NodeKind</div><div class="ttdoc">The kinds of nodes a device can carry.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:52</div></div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:35</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:108</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="astruct_device_1_1_address_settings_html"><div class="ttname"><a href="struct_device_1_1_address_settings.html">Device::AddressSettings</a></div><div class="ttdef"><b>Definition</b> AddressSettings.hpp:49</div></div>
 <div class="ttc" id="astruct_device_1_1_device_capas_html"><div class="ttname"><a href="struct_device_1_1_device_capas.html">Device::DeviceCapas</a></div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:80</div></div>
 <div class="ttc" id="astruct_device_1_1_device_settings_html"><div class="ttname"><a href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a></div><div class="ttdef"><b>Definition</b> DeviceSettings.hpp:20</div></div>
 <div class="ttc" id="astruct_device_1_1_full_address_settings_html"><div class="ttname"><a href="struct_device_1_1_full_address_settings.html">Device::FullAddressSettings</a></div><div class="ttdef"><b>Definition</b> AddressSettings.hpp:62</div></div>
-<div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition</b> Address.hpp:58</div></div>
+<div class="ttc" id="astruct_state_1_1_address_html"><div class="ttname"><a href="struct_state_1_1_address.html">State::Address</a></div><div class="ttdoc">The Address struct.</div><div class="ttdef"><b>Definition</b> Address.hpp:81</div></div>
 <div class="ttc" id="astruct_state_1_1_message_html"><div class="ttname"><a href="struct_state_1_1_message.html">State::Message</a></div><div class="ttdoc">The Message struct.</div><div class="ttdef"><b>Definition</b> Message.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

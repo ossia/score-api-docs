@@ -1,7 +1,9 @@
 var classscore_1_1_command_stack =
 [
+    [ "beginPendingEdit", "classscore_1_1_command_stack.html#a04ec29ff7c7042199ce643de4f1724ab", null ],
     [ "disableActions", "classscore_1_1_command_stack.html#a34febb0870463d0784933e345ceee949", null ],
     [ "enableActions", "classscore_1_1_command_stack.html#a8d92c198cf578f67d44245f327beb29f", null ],
+    [ "isReplaying", "classscore_1_1_command_stack.html#a0307fca1dce6507e7d02215ab75eda0f", null ],
     [ "localCommand", "classscore_1_1_command_stack.html#af4c3f99f095feeec42d60635b91df1dc", null ],
     [ "localRedo", "classscore_1_1_command_stack.html#a4e71c0e7fa4acca66ba7d95d9c0a3124", null ],
     [ "localUndo", "classscore_1_1_command_stack.html#aca82bc449af903ef00024db0fc412c3c", null ],

@@ -206,41 +206,42 @@ $(document).ready(function(){initNavTree('_math_generator_8hpp_source.html','');
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    self.b = this-&gt;inputs.b;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    self.c = this-&gt;inputs.c;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">auto</span> res = self.expr.result();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    outputs.port(res);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_struct" href="struct_nodes_1_1_generic_math_mapping.html">GenericMathMapping&lt;State&gt;::store_output</a>(self, res);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    self.pa = self.a;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    self.pb = self.b;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    self.pc = self.c;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">  104</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">ui</a></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    halp_meta(layout, halp::layouts::vbox)</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      halp_meta(layout, halp::layouts::hbox)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      halp::control&lt;&amp;ins::a&gt; a;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      halp::control&lt;&amp;ins::b&gt; b;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      halp::control&lt;&amp;ins::c&gt; c;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    } controls;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    struct : halp::control&lt;&amp;ins::expr&gt;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      halp_flag(dynamic_size);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    } expr;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  };</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span> res = self.expr.result(); res.valid())</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      outputs.port(res);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <a class="code hl_struct" href="struct_nodes_1_1_generic_math_mapping.html">GenericMathMapping&lt;State&gt;::store_output</a>(self, res);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    self.pa = self.a;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    self.pb = self.b;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    self.pc = self.c;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00105" data-start="{" data-end="};">
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">  105</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">ui</a></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    halp_meta(layout, halp::layouts::vbox)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      halp_meta(layout, halp::layouts::hbox)</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      halp::control&lt;&amp;ins::a&gt; a;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      halp::control&lt;&amp;ins::b&gt; b;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      halp::control&lt;&amp;ins::c&gt; c;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    } controls;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    struct : halp::control&lt;&amp;ins::expr&gt;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      halp_flag(dynamic_size);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    } expr;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  };</div>
 </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>};</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
 </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>}</div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:35</div></div>
 <div class="ttc" id="astruct_nodes_1_1_generic_math_mapping_html"><div class="ttname"><a href="struct_nodes_1_1_generic_math_mapping.html">Nodes::GenericMathMapping</a></div><div class="ttdef"><b>Definition</b> MathMapping_generic.hpp:12</div></div>
-<div class="ttc" id="astruct_nodes_1_1_math_generator_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">Nodes::MathGenerator::Node::ui</a></div><div class="ttdef"><b>Definition</b> MathGenerator.hpp:105</div></div>
+<div class="ttc" id="astruct_nodes_1_1_math_generator_1_1_node_1_1ui_html"><div class="ttname"><a href="struct_nodes_1_1_math_generator_1_1_node_1_1ui.html">Nodes::MathGenerator::Node::ui</a></div><div class="ttdef"><b>Definition</b> MathGenerator.hpp:106</div></div>
 <div class="ttc" id="astruct_nodes_1_1_math_generator_1_1_node_html"><div class="ttname"><a href="struct_nodes_1_1_math_generator_1_1_node.html">Nodes::MathGenerator::Node</a></div><div class="ttdef"><b>Definition</b> MathGenerator.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

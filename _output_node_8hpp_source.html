@@ -123,114 +123,131 @@ $(document).ready(function(){initNavTree('_output_node_8hpp_source.html',''); in
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>GpuResourceRegistry;</div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_configuration.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi{};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  std::function&lt;void()&gt; onReady;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::function&lt;void()&gt; onResize;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">   32</a></span>  std::function&lt;void()&gt; <a class="code hl_variable" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">onReleaseRenderList</a>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>OffscreenFrame;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_configuration.html">   15</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> graphicsApi{};</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  std::function&lt;void()&gt; onReady;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::function&lt;void()&gt; onResize;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">   33</a></span>  std::function&lt;void()&gt; <a class="code hl_variable" href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">onReleaseRenderList</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html">   35</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">using </span>score::gfx::NodeRenderer::NodeRenderer;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">~OutputNodeRenderer</a>();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  finishFrame(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiCommandBuffer&amp; commands, QRhiResourceUpdateBatch*&amp; res);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// Sinks have no output edges, so there is nothing to release per-edge.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// Concrete sinks may still override, e.g. to drop per-input bookkeeping</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// routed through addOutputPass.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">   46</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">removeOutputPass</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp;)<span class="keyword"> override </span>{ }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html">   36</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">using </span>score::gfx::NodeRenderer::NodeRenderer;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">~OutputNodeRenderer</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  finishFrame(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, QRhiCommandBuffer&amp; commands, QRhiResourceUpdateBatch*&amp; res);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="comment">// Sinks have no output edges, so there is nothing to release per-edge.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="comment">// Concrete sinks may still override, e.g. to drop per-input bookkeeping</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// routed through addOutputPass.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">   47</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">removeOutputPass</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp;, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp;)<span class="keyword"> override </span>{ }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">class </span>Window;</div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="};">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html">   53</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">~OutputNode</a>();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;RenderList&gt;) = 0;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>* renderer() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">   61</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">createRenderer</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> = 0;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> startRendering() = 0;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> render() = 0;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stopRendering() = 0;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canRender() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRendererChange() = 0;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> createOutput(<a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a> conf) = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateGraphicsAPI(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> destroyOutput() = 0;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">virtual</span> std::shared_ptr&lt;RenderState&gt; renderState() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">   83</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="comment">// If set, the host is responsible for calling render() at this</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// rate (given in milliseconds)</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::optional&lt;double&gt; manualRenderingRate;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordtype">bool</span> outputNeedsRenderPass{};</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> supportsVSync{};</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* parent{};</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  };</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">class </span>Window;</div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html">   54</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">~OutputNode</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setRenderer(std::shared_ptr&lt;RenderList&gt;) = 0;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>* renderer() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">   62</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node_renderer.html">OutputNodeRenderer</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">createRenderer</a>(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span> = 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> startRendering() = 0;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> render() = 0;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> stopRendering() = 0;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> canRender() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> onRendererChange() = 0;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> setVSyncCallback(std::function&lt;<span class="keywordtype">void</span>()&gt;);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> createOutput(<a class="code hl_struct" href="structscore_1_1gfx_1_1_output_configuration.html">OutputConfiguration</a> conf) = 0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> updateGraphicsAPI(<a class="code hl_enumeration" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> destroyOutput() = 0;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">virtual</span> std::shared_ptr&lt;RenderState&gt; renderState() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="};">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">   84</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// If set, the host is responsible for calling render() at this</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// rate (given in milliseconds)</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    std::optional&lt;double&gt; manualRenderingRate;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> outputNeedsRenderPass{};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordtype">bool</span> supportsVSync{};</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// The host renders this output&#39;s RenderList itself, from its own frame</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="comment">// loop: GfxContext never calls render() on it.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span> hostDriven{};</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>* parent{};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  };</div>
 </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a58ec922c2b9226a9ee609a9d43bc63cc">  113</a></span>  virtual <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> currentRenderTarget() const noexcept { <span class="keywordflow">return</span> {}; }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a>&amp; acquireRegistry();</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">  139</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">registry</a>() const noexcept { <span class="keywordflow">return</span> m_registry.get(); }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keywordtype">void</span> releaseRegistry();</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_output_node.html">OutputNode</a>();</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordtype">void</span> releaseOwnedRenderList();</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">Configuration</a> configuration() const noexcept = 0;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a58ec922c2b9226a9ee609a9d43bc63cc">  118</a></span>  virtual <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> currentRenderTarget() const noexcept { <span class="keywordflow">return</span> {}; }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a>&amp; acquireRegistry();</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">  144</a></span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">registry</a>() const noexcept { <span class="keywordflow">return</span> m_registry.get(); }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keywordtype">void</span> releaseRegistry();</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_output_node.html#a5458d9ad6b49618360b5facd61faa76c">  166</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classscore_1_1gfx_1_1_output_node.html#a5458d9ad6b49618360b5facd61faa76c">deviceLost</a>() const noexcept { <span class="keywordflow">return</span> m_deviceLost; }</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="comment">// Set by concrete createOutput() implementations from</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="comment">// OutputConfiguration::onReleaseRenderList.</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  std::function&lt;void()&gt; m_onReleaseRenderList;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <span class="comment">// Persistent across RenderList rebuilds. See acquireRegistry() docs.</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="comment">// unique_ptr is opaque-typed in this header (forward-declared above);</span></div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="comment">// its destructor needs the full type, hence the out-of-line ~OutputNode</span></div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="comment">// implementation in OutputNode.cpp.</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  std::unique_ptr&lt;GpuResourceRegistry&gt; m_registry;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>};</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keywordtype">void</span> handleDeviceLost(<span class="keyword">const</span> <span class="keywordtype">char</span>* output) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keywordtype">bool</span> checkDeviceLost(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_offscreen_frame.html">OffscreenFrame</a>&amp; frame, QRhi&amp; rhi, <span class="keyword">const</span> <span class="keywordtype">char</span>* output) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <span class="keywordtype">bool</span> checkDeviceLost(<span class="keywordtype">int</span> frameOpResult, QRhi&amp; rhi, <span class="keyword">const</span> <span class="keywordtype">char</span>* output) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordtype">void</span> resetDeviceLost() noexcept { m_deviceLost = <span class="keyword">false</span>; }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keyword">explicit</span> OutputNode();</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  <span class="keywordtype">void</span> releaseOwnedRenderList();</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="comment">// Set by concrete createOutput() implementations from</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="comment">// OutputConfiguration::onReleaseRenderList.</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  std::function&lt;void()&gt; m_onReleaseRenderList;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="comment">// Persistent across RenderList rebuilds. See acquireRegistry() docs.</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  <span class="comment">// unique_ptr is opaque-typed in this header (forward-declared above);</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="comment">// its destructor needs the full type, hence the out-of-line ~OutputNode</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="comment">// implementation in OutputNode.cpp.</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  std::unique_ptr&lt;GpuResourceRegistry&gt; m_registry;</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">bool</span> m_deviceLost{};</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>};</div>
 </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_gpu_resource_registry_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_gpu_resource_registry.html">score::gfx::GpuResourceRegistry</a></div><div class="ttdoc">Per-RenderList arena store for GPU-resident scene data.</div><div class="ttdef"><b>Definition</b> GpuResourceRegistry.hpp:44</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:74</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:76</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:54</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:55</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html_a0f4a8ebac30efd36d51e81e2a03e5eda"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html#a0f4a8ebac30efd36d51e81e2a03e5eda">score::gfx::OutputNode::createRenderer</a></div><div class="ttdeci">OutputNodeRenderer * createRenderer(RenderList &amp;r) const noexcept override=0</div><div class="ttdoc">Create a renderer in a given context for this node.</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html_a3a305e3b12c4d97eddc4a6951f0dcac1"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">score::gfx::OutputNode::registry</a></div><div class="ttdeci">GpuResourceRegistry * registry() const noexcept</div><div class="ttdoc">Non-owning accessor. Returns null if no registry has been acquired yet (e.g. queried before the first...</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:139</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:36</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html_a414a524c3127f654ffd193c6e549a288"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">score::gfx::OutputNodeRenderer::removeOutputPass</a></div><div class="ttdeci">void removeOutputPass(RenderList &amp;, Edge &amp;) override</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:46</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html_a3a305e3b12c4d97eddc4a6951f0dcac1"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1">score::gfx::OutputNode::registry</a></div><div class="ttdeci">GpuResourceRegistry * registry() const noexcept</div><div class="ttdoc">Non-owning accessor. Returns null if no registry has been acquired yet (e.g. queried before the first...</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:144</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html_a5458d9ad6b49618360b5facd61faa76c"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html#a5458d9ad6b49618360b5facd61faa76c">score::gfx::OutputNode::deviceLost</a></div><div class="ttdeci">virtual bool deviceLost() const noexcept</div><div class="ttdoc">True once the output's graphics device was reported lost.</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:166</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:37</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html_a414a524c3127f654ffd193c6e549a288"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html#a414a524c3127f654ffd193c6e549a288">score::gfx::OutputNodeRenderer::removeOutputPass</a></div><div class="ttdeci">void removeOutputPass(RenderList &amp;, Edge &amp;) override</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:47</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a5b6a96306e1a02ccc56d8bb785bc6734"><div class="ttname"><a href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">score::gfx::GraphicsApi</a></div><div class="ttdeci">GraphicsApi</div><div class="ttdoc">Available graphics APIs to use.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:22</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:198</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_configuration.html">score::gfx::OutputConfiguration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:15</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_configuration_html_aa17da6d8db375c5d9aa51d8d95479f88"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">score::gfx::OutputConfiguration::onReleaseRenderList</a></div><div class="ttdeci">std::function&lt; void()&gt; onReleaseRenderList</div><div class="ttdoc">Ask the owning Graph to release + deregister the RenderList that was built against this output's QRhi...</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:32</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_output_node_1_1_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">score::gfx::OutputNode::Configuration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:84</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:247</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:220</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_offscreen_frame_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_offscreen_frame.html">score::gfx::OffscreenFrame</a></div><div class="ttdoc">RAII bracket for QRhi::beginOffscreenFrame / endOffscreenFrame.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:49</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_configuration.html">score::gfx::OutputConfiguration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:16</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_configuration_html_aa17da6d8db375c5d9aa51d8d95479f88"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_configuration.html#aa17da6d8db375c5d9aa51d8d95479f88">score::gfx::OutputConfiguration::onReleaseRenderList</a></div><div class="ttdeci">std::function&lt; void()&gt; onReleaseRenderList</div><div class="ttdoc">Ask the owning Graph to release + deregister the RenderList that was built against this output's QRhi...</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:33</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_output_node_1_1_configuration_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_output_node_1_1_configuration.html">score::gfx::OutputNode::Configuration</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:85</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:279</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

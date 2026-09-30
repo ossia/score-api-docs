@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_gpu_resource_reg
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classscore_1_1gfx_1_1_gpu_resource_registry-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::GpuResourceRegistry Class Reference</div></div>
@@ -125,6 +126,9 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_gpu_resource_reg
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_slab.html">MeshSlab</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slab handle returned by MeshArenaManager::acquire.  <a href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_slab.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_primitive_cloud_uploads.html">PrimitiveCloudUploads</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared state for one of the PBR texture channels. Preprocessors / producers read-modify this in place; contents are view-independent (asset identity drives layer assignment) so sharing across preprocessors is correct.  <a href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_primitive_cloud_uploads.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_slot.html">Slot</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +196,9 @@ QRhi *&#160;</td><td class="memItemRight" valign="bottom"><b>boundRhi</b> () con
 <tr class="memitem:acb5f80d29b4fb6b093aec7753bac3977" id="r_acb5f80d29b4fb6b093aec7753bac3977"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#acb5f80d29b4fb6b093aec7753bac3977">seedDefaults</a> (QRhiResourceUpdateBatch &amp;batch)</td></tr>
 <tr class="memdesc:acb5f80d29b4fb6b093aec7753bac3977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seed reserved arena slots with sensible defaults.  <br /></td></tr>
 <tr class="separator:acb5f80d29b4fb6b093aec7753bac3977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff9a678107e6e13e2002ba23261bc32a" id="r_aff9a678107e6e13e2002ba23261bc32a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#aff9a678107e6e13e2002ba23261bc32a">uploadDefaultMaterial</a> (QRhiResourceUpdateBatch &amp;batch)</td></tr>
+<tr class="memdesc:aff9a678107e6e13e2002ba23261bc32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write the default <a class="el" href="structscore_1_1gfx_1_1_material_g_p_u.html">MaterialGPU</a> into Material arena slot 0.  <br /></td></tr>
+<tr class="separator:aff9a678107e6e13e2002ba23261bc32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbcaf06098d8517a978269283a7a47b" id="r_a2cbcaf06098d8517a978269283a7a47b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a2cbcaf06098d8517a978269283a7a47b">destroy</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="memdesc:a2cbcaf06098d8517a978269283a7a47b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the arena buffers via the owning <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>.  <br /></td></tr>
 <tr class="separator:a2cbcaf06098d8517a978269283a7a47b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,13 +243,18 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>arenaSlotCount</b
 <tr class="memitem:a9bf5fbeed24e332fbb5cfba81ffd6922" id="r_a9bf5fbeed24e332fbb5cfba81ffd6922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a9bf5fbeed24e332fbb5cfba81ffd6922">isLive</a> (const ossia::gpu_slot_ref &amp;r) const noexcept</td></tr>
 <tr class="memdesc:a9bf5fbeed24e332fbb5cfba81ffd6922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the ref still points at a live allocation.  <br /></td></tr>
 <tr class="separator:a9bf5fbeed24e332fbb5cfba81ffd6922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f4abb391f88c61c706317c666f2b1e" id="r_ad0f4abb391f88c61c706317c666f2b1e"><td class="memItemLeft" align="right" valign="top"><a id="ad0f4abb391f88c61c706317c666f2b1e" name="ad0f4abb391f88c61c706317c666f2b1e"></a>
-<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>textureChannel</b> (TextureChannel ch) noexcept</td></tr>
-<tr class="memdesc:ad0f4abb391f88c61c706317c666f2b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared state for one of the PBR texture channels. Preprocessors / producers read-modify this in place; contents are view-independent (asset identity drives layer assignment) so sharing across preprocessors is correct. <br /></td></tr>
-<tr class="separator:ad0f4abb391f88c61c706317c666f2b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce9a3f8751fa4331326ec45fa1803eb" id="r_a8ce9a3f8751fa4331326ec45fa1803eb"><td class="memItemLeft" align="right" valign="top"><a id="a8ce9a3f8751fa4331326ec45fa1803eb" name="a8ce9a3f8751fa4331326ec45fa1803eb"></a>
-const <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>textureChannel</b> (TextureChannel ch) const noexcept</td></tr>
-<tr class="separator:a8ce9a3f8751fa4331326ec45fa1803eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b43419901f9e717e079195b46c1cc3" id="r_a25b43419901f9e717e079195b46c1cc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a25b43419901f9e717e079195b46c1cc3">textureChannel</a> (TextureChannel) noexcept</td></tr>
+<tr class="separator:a25b43419901f9e717e079195b46c1cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101fbb2edd37f7d30a5de56b26505c9e" id="r_a101fbb2edd37f7d30a5de56b26505c9e"><td class="memItemLeft" align="right" valign="top"><a id="a101fbb2edd37f7d30a5de56b26505c9e" name="a101fbb2edd37f7d30a5de56b26505c9e"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>textureChannel</b> (TextureChannel) const noexcept</td></tr>
+<tr class="separator:a101fbb2edd37f7d30a5de56b26505c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86da3e90cbb1f5a232bec35846c190f" id="r_ac86da3e90cbb1f5a232bec35846c190f"><td class="memItemLeft" align="right" valign="top"><a id="ac86da3e90cbb1f5a232bec35846c190f" name="ac86da3e90cbb1f5a232bec35846c190f"></a>
+<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>texturePool</b> () noexcept</td></tr>
+<tr class="memdesc:ac86da3e90cbb1f5a232bec35846c190f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shared pool, for call sites that are not per-channel. <br /></td></tr>
+<tr class="separator:ac86da3e90cbb1f5a232bec35846c190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d97b05a16d199913e729e7baa5aa4e" id="r_af7d97b05a16d199913e729e7baa5aa4e"><td class="memItemLeft" align="right" valign="top"><a id="af7d97b05a16d199913e729e7baa5aa4e" name="af7d97b05a16d199913e729e7baa5aa4e"></a>
+const <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>texturePool</b> () const noexcept</td></tr>
+<tr class="separator:af7d97b05a16d199913e729e7baa5aa4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8419ea9130c7a7f6022ba83d175b0ef" id="r_ad8419ea9130c7a7f6022ba83d175b0ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#ad8419ea9130c7a7f6022ba83d175b0ef">resolveDynamicSlot</a> (TextureChannel channel, void *native_handle) noexcept</td></tr>
 <tr class="memdesc:ad8419ea9130c7a7f6022ba83d175b0ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a runtime GPU texture handle for this channel's dynamic-slot set. Returns the slot index (0 .. kMaxDynamicSlots-1) or -1 if the slot cap is exhausted.  <br /></td></tr>
 <tr class="separator:ad8419ea9130c7a7f6022ba83d175b0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,9 +288,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>meshStreamFreeByt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a848cedd22f0be9549490301584e8ea53" id="r_a848cedd22f0be9549490301584e8ea53"><td class="memItemLeft" align="right" valign="top"><a id="a848cedd22f0be9549490301584e8ea53" name="a848cedd22f0be9549490301584e8ea53"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>textureChannelArrayName</b> (TextureChannel ch) noexcept</td></tr>
-<tr class="memdesc:a848cedd22f0be9549490301584e8ea53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader-visible aux-texture name for a channel's static array (<code>baseColorArray</code>, <code>metalRoughArray</code>, <code>normalArray</code>, <code>emissiveArray</code>, <code>occlusionArray</code>). <br /></td></tr>
+<tr class="memitem:a848cedd22f0be9549490301584e8ea53" id="r_a848cedd22f0be9549490301584e8ea53"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a848cedd22f0be9549490301584e8ea53">textureChannelArrayName</a> (TextureChannel ch) noexcept</td></tr>
+<tr class="memdesc:a848cedd22f0be9549490301584e8ea53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader-visible aux-texture name for a channel's static array (<code>baseColorArray</code>, <code>metalRoughArray</code>, <code>normalArray</code>, <code>emissiveArray</code>, <code>occlusionArray</code>).  <br /></td></tr>
 <tr class="separator:a848cedd22f0be9549490301584e8ea53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab63bf717a70834469ee4a8f81a0425c0" id="r_ab63bf717a70834469ee4a8f81a0425c0"><td class="memItemLeft" align="right" valign="top"><a id="ab63bf717a70834469ee4a8f81a0425c0" name="ab63bf717a70834469ee4a8f81a0425c0"></a>
 static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>textureChannelDynBaseName</b> (TextureChannel ch) noexcept</td></tr>
@@ -289,17 +300,28 @@ static QRhiTexture::Flags&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="memdesc:aa316b053a6790b2d0b4d095efd60ea69"><td class="mdescLeft">&#160;</td><td class="mdescRight">QRhiTexture creation flags for a channel. sRGB channels (base color, emissive) get hardware sRGB→linear on sample; MR and normal stay linear. <br /></td></tr>
 <tr class="separator:aa316b053a6790b2d0b4d095efd60ea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af393509dcb3511a6912d310670de01f0" id="r_af393509dcb3511a6912d310670de01f0"><td class="memItemLeft" align="right" valign="top"><a id="af393509dcb3511a6912d310670de01f0" name="af393509dcb3511a6912d310670de01f0"></a>
+struct <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_primitive_cloud_uploads.html">score::gfx::GpuResourceRegistry::PrimitiveCloudUploads</a>&#160;</td><td class="memItemRight" valign="bottom"><b>primitiveCloudUploads</b></td></tr>
+<tr class="separator:af393509dcb3511a6912d310670de01f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae993e01d0ef6c81b2758ae8064e43673" id="r_ae993e01d0ef6c81b2758ae8064e43673"><td class="memItemLeft" align="right" valign="top"><a id="ae993e01d0ef6c81b2758ae8064e43673" name="ae993e01d0ef6c81b2758ae8064e43673"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kTextureLayerSize</b> = 1024</td></tr>
 <tr class="separator:ae993e01d0ef6c81b2758ae8064e43673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a5d8568b820a6b6ab4bc4c64ee8317" id="r_ab6a5d8568b820a6b6ab4bc4c64ee8317"><td class="memItemLeft" align="right" valign="top"><a id="ab6a5d8568b820a6b6ab4bc4c64ee8317" name="ab6a5d8568b820a6b6ab4bc4c64ee8317"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxDynamicSlots</b> = 4</td></tr>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxDynamicSlots</b> = 8</td></tr>
 <tr class="separator:ab6a5d8568b820a6b6ab4bc4c64ee8317"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a729e4d2324436ecec09960df29812633" id="r_a729e4d2324436ecec09960df29812633"><td class="memItemLeft" align="right" valign="top"><a id="a729e4d2324436ecec09960df29812633" name="a729e4d2324436ecec09960df29812633"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxBuckets</b> = 16</td></tr>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kMaxBuckets</b> = 8</td></tr>
 <tr class="separator:a729e4d2324436ecec09960df29812633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bc634ed03ee0dc9f7960429f0ff747" id="r_a94bc634ed03ee0dc9f7960429f0ff747"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a94bc634ed03ee0dc9f7960429f0ff747">kSharedArrayName</a> = &quot;materialArray&quot;</td></tr>
+<tr class="separator:a94bc634ed03ee0dc9f7960429f0ff747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9e294d1205cfe4a4048e80779320a19" id="r_ad9e294d1205cfe4a4048e80779320a19"><td class="memItemLeft" align="right" valign="top"><a id="ad9e294d1205cfe4a4048e80779320a19" name="ad9e294d1205cfe4a4048e80779320a19"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>kSharedDynName</b> = &quot;materialDyn&quot;</td></tr>
+<tr class="separator:ad9e294d1205cfe4a4048e80779320a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dbc37e3ea6a9b28711c722db801b243" id="r_a3dbc37e3ea6a9b28711c722db801b243"><td class="memItemLeft" align="right" valign="top"><a id="a3dbc37e3ea6a9b28711c722db801b243" name="a3dbc37e3ea6a9b28711c722db801b243"></a>
 static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>kMeshStride</b> [(std::size_t) MeshStream::Count_] = {16, 16, 8, 16, 16, 8, 4}</td></tr>
 <tr class="separator:a3dbc37e3ea6a9b28711c722db801b243"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -821,6 +843,62 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 </div>
 </div>
+<a id="a25b43419901f9e717e079195b46c1cc3" name="a25b43419901f9e717e079195b46c1cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b43419901f9e717e079195b46c1cc3">&#9670;&#160;</a></span>textureChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html">TextureChannelState</a> &amp; score::gfx::GpuResourceRegistry::textureChannel </td>
+          <td>(</td>
+          <td class="paramtype">TextureChannel&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every channel resolves to the same pool. Which channel a ref belongs to still decides its colourspace: see textureChannelFlags, which the caller feeds into findOrCreateBucket. </p>
+
+</div>
+</div>
+<a id="a848cedd22f0be9549490301584e8ea53" name="a848cedd22f0be9549490301584e8ea53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848cedd22f0be9549490301584e8ea53">&#9670;&#160;</a></span>textureChannelArrayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * score::gfx::GpuResourceRegistry::textureChannelArrayName </td>
+          <td>(</td>
+          <td class="paramtype">TextureChannel&#160;</td>
+          <td class="paramname"><em>ch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shader-visible aux-texture name for a channel's static array (<code>baseColorArray</code>, <code>metalRoughArray</code>, <code>normalArray</code>, <code>emissiveArray</code>, <code>occlusionArray</code>). </p>
+<p>For the per-channel presets; the shared pool publishes under kSharedArrayName. </p>
+
+</div>
+</div>
 <a id="a88481d58ec82edb96e60f3b48d6d8ca2" name="a88481d58ec82edb96e60f3b48d6d8ca2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88481d58ec82edb96e60f3b48d6d8ca2">&#9670;&#160;</a></span>toOssiaRef()</h2>
 
@@ -898,6 +976,27 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 
 <p>Upload <code>size</code> bytes starting at <code>data</code> into a slot. </p>
 <p>Thin wrapper around <code>QRhiResourceUpdateBatch::updateDynamicBuffer</code> (for Dynamic-usage arenas) or <code>uploadStaticBuffer</code> (Static). Called by source nodes in their <code>update()</code> when their content changes — never per frame for unchanged data. </p>
+
+</div>
+</div>
+<a id="aff9a678107e6e13e2002ba23261bc32a" name="aff9a678107e6e13e2002ba23261bc32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff9a678107e6e13e2002ba23261bc32a">&#9670;&#160;</a></span>uploadDefaultMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GpuResourceRegistry::uploadDefaultMaterial </td>
+          <td>(</td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>batch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write the default <a class="el" href="structscore_1_1gfx_1_1_material_g_p_u.html">MaterialGPU</a> into Material arena slot 0. </p>
+<p>Unconditional, unlike <a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#acb5f80d29b4fb6b093aec7753bac3977" title="Seed reserved arena slots with sensible defaults.">seedDefaults()</a>: a consumer whose own batch is known to be submitted re-issues the write, since the <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a>'s initial batch can be dropped before it reaches the GPU. </p>
 
 </div>
 </div>
@@ -986,6 +1085,29 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 <div class="line">           32u * 1024u * 1024u,</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a94bc634ed03ee0dc9f7960429f0ff747" name="a94bc634ed03ee0dc9f7960429f0ff747"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bc634ed03ee0dc9f7960429f0ff747">&#9670;&#160;</a></span>kSharedArrayName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* score::gfx::GpuResourceRegistry::kSharedArrayName = &quot;materialArray&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Shader-visible aux-texture names for the shared pool. One ladder, <code>materialArray0..kMaxBuckets-1</code>, and one dynamic run, <code>materialDyn0..kMaxDynamicSlots-1</code>. </p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-avnd_2_crousti_2
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>{</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">using </span>field_file_type = <span class="keyword">decltype</span>(Field::file);</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  field_file_type ffile;</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  ffile.bytes = <span class="keyword">decltype</span>(ffile.bytes)(file.data.constData(), file.file.size());</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  ffile.bytes = <span class="keyword">decltype</span>(ffile.bytes)(file.data.constData(), file.data.size());</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  ffile.filename = file.filename;</div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keywordflow">return</span> Field::process(ffile);</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>}</div>

@@ -112,9 +112,12 @@ $(document).ready(function(){initNavTree('struct_scenario_1_1_processes_being_co
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40da82169bc71633d24a8098ecbf8a70" id="r_a40da82169bc71633d24a8098ecbf8a70"><td class="memItemLeft" align="right" valign="top"><a id="a40da82169bc71633d24a8098ecbf8a70" name="a40da82169bc71633d24a8098ecbf8a70"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessesBeingCopied</b> (const rapidjson::Value::Array &amp;sourceProcesses, const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;parent, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
-<tr class="separator:a40da82169bc71633d24a8098ecbf8a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f55b368dcc4dbb35ee3f9fcc6ae3a8f" id="r_a9f55b368dcc4dbb35ee3f9fcc6ae3a8f"><td class="memItemLeft" align="right" valign="top"><a id="a9f55b368dcc4dbb35ee3f9fcc6ae3a8f" name="a9f55b368dcc4dbb35ee3f9fcc6ae3a8f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessesBeingCopied</b> (const rapidjson::Value::ConstArray &amp;sourceProcesses, const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;parent, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="separator:a9f55b368dcc4dbb35ee3f9fcc6ae3a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab6aabaf7c39719035ac77ac817811c" id="r_a2ab6aabaf7c39719035ac77ac817811c"><td class="memItemLeft" align="right" valign="top"><a id="a2ab6aabaf7c39719035ac77ac817811c" name="a2ab6aabaf7c39719035ac77ac817811c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>remapAnchors</b> (const rapidjson::Value &amp;copy, const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;parent, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="separator:a2ab6aabaf7c39719035ac77ac817811c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,6 +127,10 @@ std::vector&lt; <a class="el" href="class_process_1_1_process_model.html">Proces
 <tr class="memitem:a507827481255a06dd6d5c233038b28d9" id="r_a507827481255a06dd6d5c233038b28d9"><td class="memItemLeft" align="right" valign="top"><a id="a507827481255a06dd6d5c233038b28d9" name="a507827481255a06dd6d5c233038b28d9"></a>
 std::vector&lt; <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>processes_ids</b></td></tr>
 <tr class="separator:a507827481255a06dd6d5c233038b28d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45767baea10c9c391f053ae680a7128b" id="r_a45767baea10c9c391f053ae680a7128b"><td class="memItemLeft" align="right" valign="top"><a id="a45767baea10c9c391f053ae680a7128b" name="a45767baea10c9c391f053ae680a7128b"></a>
+std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sources</b></td></tr>
+<tr class="memdesc:a45767baea10c9c391f053ae680a7128b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of each process in the copied array. <br /></td></tr>
+<tr class="separator:a45767baea10c9c391f053ae680a7128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_scenario_paste_8hpp_source.html">ScenarioPaste.hpp</a></li>

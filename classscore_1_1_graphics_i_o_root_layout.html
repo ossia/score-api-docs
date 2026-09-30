@@ -143,12 +143,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setBrush</b> (<a clas
 <tr class="memitem:a1cb723127df8700bf5a7adca474d8308 inherit pub_methods_classscore_1_1_graphics_layout" id="r_a1cb723127df8700bf5a7adca474d8308"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackground</b> (const QString &amp;b)</td></tr>
 <tr class="separator:a1cb723127df8700bf5a7adca474d8308 inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9d3d9dc821befd5903e9bf268412e3 inherit pub_methods_classscore_1_1_graphics_layout" id="r_a0c9d3d9dc821befd5903e9bf268412e3"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasBackground</b> () const noexcept</td></tr>
+<tr class="memdesc:a0c9d3d9dc821befd5903e9bf268412e3 inherit pub_methods_classscore_1_1_graphics_layout"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the layout paints a box of its own. <br /></td></tr>
+<tr class="separator:a0c9d3d9dc821befd5903e9bf268412e3 inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387a6af6dcd2ffb061dfb8d30f5c7616 inherit pub_methods_classscore_1_1_graphics_layout" id="r_a387a6af6dcd2ffb061dfb8d30f5c7616"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMargin</b> (qreal m)</td></tr>
 <tr class="separator:a387a6af6dcd2ffb061dfb8d30f5c7616 inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc5a37bf43ad970139dfe25641611cc inherit pub_methods_classscore_1_1_graphics_layout" id="r_a8fc5a37bf43ad970139dfe25641611cc"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPadding</b> (qreal p)</td></tr>
 <tr class="separator:a8fc5a37bf43ad970139dfe25641611cc inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69331b5dba49694f0e16e9015ac4dd5 inherit pub_methods_classscore_1_1_graphics_layout" id="r_ad69331b5dba49694f0e16e9015ac4dd5"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpacing</b> (qreal s)</td></tr>
+<tr class="memdesc:ad69331b5dba49694f0e16e9015ac4dd5 inherit pub_methods_classscore_1_1_graphics_layout"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gap between box layout children. Default: 2 * padding. <br /></td></tr>
+<tr class="separator:ad69331b5dba49694f0e16e9015ac4dd5 inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60e4303a236ff231eb3ce34ab20d092 inherit pub_methods_classscore_1_1_graphics_layout" id="r_ab60e4303a236ff231eb3ce34ab20d092"><td class="memItemLeft" align="right" valign="top">
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>spacing</b> () const noexcept</td></tr>
+<tr class="separator:ab60e4303a236ff231eb3ce34ab20d092 inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464c9666613202148aa747b6ab1f84eb inherit pub_methods_classscore_1_1_graphics_layout" id="r_a464c9666613202148aa747b6ab1f84eb"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateChildrenRects</b> (const QList&lt; QGraphicsItem * &gt; &amp;)</td></tr>
 <tr class="separator:a464c9666613202148aa747b6ab1f84eb inherit pub_methods_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +243,9 @@ qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_margin</b> {}</td>
 <tr class="memitem:a74aabf06525b39857a10d77e980d14f1 inherit pro_attribs_classscore_1_1_graphics_layout" id="r_a74aabf06525b39857a10d77e980d14f1"><td class="memItemLeft" align="right" valign="top">
 qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_padding</b> {}</td></tr>
 <tr class="separator:a74aabf06525b39857a10d77e980d14f1 inherit pro_attribs_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d03328b63063777db8aedda9f39960d inherit pro_attribs_classscore_1_1_graphics_layout" id="r_a2d03328b63063777db8aedda9f39960d"><td class="memItemLeft" align="right" valign="top">
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_spacing</b> {-1.}</td></tr>
+<tr class="separator:a2d03328b63063777db8aedda9f39960d inherit pro_attribs_classscore_1_1_graphics_layout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classscore_1_1_resizeable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classscore_1_1_resizeable_item')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></td></tr>
 <tr class="memitem:a4ecbee0f5d88c403177b0107ac07a753 inherit pro_attribs_classscore_1_1_resizeable_item" id="r_a4ecbee0f5d88c403177b0107ac07a753"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumHeight</b> {}</td></tr>

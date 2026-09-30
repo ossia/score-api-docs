@@ -160,6 +160,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>markCurrentIndexAsSav
 <tr class="memitem:a93f558a984afe7139b4dc32565d86595" id="r_a93f558a984afe7139b4dc32565d86595"><td class="memItemLeft" align="right" valign="top"><a id="a93f558a984afe7139b4dc32565d86595" name="a93f558a984afe7139b4dc32565d86595"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isAtSavedIndex</b> () const</td></tr>
 <tr class="separator:a93f558a984afe7139b4dc32565d86595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0307fca1dce6507e7d02215ab75eda0f" id="r_a0307fca1dce6507e7d02215ab75eda0f"><td class="memItemLeft" align="right" valign="top"><a id="a0307fca1dce6507e7d02215ab75eda0f" name="a0307fca1dce6507e7d02215ab75eda0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReplaying</b> () const noexcept</td></tr>
+<tr class="memdesc:a0307fca1dce6507e7d02215ab75eda0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a command is being undone or redone. <br /></td></tr>
+<tr class="separator:a0307fca1dce6507e7d02215ab75eda0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ec29ff7c7042199ce643de4f1724ab" id="r_a04ec29ff7c7042199ce643de4f1724ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_command_stack.html#a04ec29ff7c7042199ce643de4f1724ab">beginPendingEdit</a> ()</td></tr>
+<tr class="separator:a04ec29ff7c7042199ce643de4f1724ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847d8018c343796155db4866c1953196" id="r_a847d8018c343796155db4866c1953196"><td class="memItemLeft" align="right" valign="top"><a id="a847d8018c343796155db4866c1953196" name="a847d8018c343796155db4866c1953196"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>endPendingEdit</b> ()</td></tr>
+<tr class="separator:a847d8018c343796155db4866c1953196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78aa6fd32a86014d79fda98d29258e6f" id="r_a78aa6fd32a86014d79fda98d29258e6f"><td class="memItemLeft" align="right" valign="top"><a id="a78aa6fd32a86014d79fda98d29258e6f" name="a78aa6fd32a86014d79fda98d29258e6f"></a>
 QStack&lt; <a class="el" href="classscore_1_1_command.html">score::Command</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>undoable</b> ()</td></tr>
 <tr class="separator:a78aa6fd32a86014d79fda98d29258e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -336,6 +345,24 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 <tr class="separator:ad99887659fec42a49c43f44440bbe31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a04ec29ff7c7042199ce643de4f1724ab" name="a04ec29ff7c7042199ce643de4f1724ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ec29ff7c7042199ce643de4f1724ab">&#9670;&#160;</a></span>beginPendingEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::CommandStack::beginPendingEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An edit applied before its command is pushed: the document counts as modified until endPendingEdit(). </p>
+
+</div>
+</div>
 <a id="a34febb0870463d0784933e345ceee949" name="a34febb0870463d0784933e345ceee949"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34febb0870463d0784933e345ceee949">&#9670;&#160;</a></span>disableActions()</h2>
 

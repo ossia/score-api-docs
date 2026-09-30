@@ -154,98 +154,109 @@ $(document).ready(function(){initNavTree('_camera_math_8hpp_source.html',''); in
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> (int64_t)((cameraCount &lt; 1 ? 1 : cameraCount) * <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structscore_1_1gfx_1_1_camera_u_b_o_data.html">CameraUBOData</a>));</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">inline</span> <span class="keywordtype">void</span> writeMat4(<span class="keywordtype">float</span> dst[16], <span class="keyword">const</span> QMatrix4x4&amp; src)</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  std::memcpy(dst, src.constData(), 16 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// Reverse-Z perspective projection in OpenGL NDC convention.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">//</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">// Standard OpenGL perspective: view_z ∈ [-far, -near] → NDC z ∈ [-1, +1].</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Reverse-Z (this function):    view_z ∈ [-far, -near] → NDC z ∈ [-1, +1]</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//   but inverted: near → +1, far → -1.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// QRhi&#39;s clipSpaceCorrMatrix on Vulkan/Metal/D3D remaps the output NDC z ∈</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">// [-1, +1] down to the backend-native [0, 1] without further flipping:</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// near → 1.0, far → 0.0 in the depth buffer.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">//</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// This is paired project-wide with a float (D32F) depth attachment, a</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">// GREATER depth compare and a clear-depth of 0.0. Mixing conventions on a</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// single depth buffer produces garbage.</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">inline</span> <span class="keywordtype">void</span> setReverseZPerspective(</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    QMatrix4x4&amp; out, <span class="keywordtype">float</span> fovYDeg, <span class="keywordtype">float</span> aspect, <span class="keywordtype">float</span> nearPlane,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">float</span> farPlane)</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  out.setToIdentity();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordflow">if</span>(nearPlane == farPlane || aspect == 0.f)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> radians = (fovYDeg * 0.5f) * <span class="keywordtype">float</span>(M_PI / 180.0);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> sine = std::sin(radians);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">if</span>(sine == 0.f)</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> cotan = std::cos(radians) / sine;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> clip = farPlane - nearPlane;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  out(0, 0) = cotan / aspect;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  out(1, 1) = cotan;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  out(2, 2) = (farPlane + nearPlane) / clip;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  out(2, 3) = (2.f * farPlane * nearPlane) / clip;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  out(3, 2) = -1.f;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  out(3, 3) = 0.f;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// Reverse-Z ORTHOGRAPHIC projection, in the same convention as</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// setReverseZPerspective above: view_z = -near -&gt; NDC z = +1,</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// view_z = -far -&gt; NDC z = -1, paired with a D32F attachment, a GREATER depth</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">// compare and a clear-depth of 0.0.</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">//</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// halfWidth / halfHeight are the half-extents of the view volume in view space</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// — glTF&#39;s `xmag` / `ymag`, which is what ossia::camera_component carries.</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">//</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// Derivation of the z row: z_ndc = a*z_view + b with a*(-near) + b = +1 and</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// a*(-far) + b = -1  =&gt;  a = 2/(far-near), b = (far+near)/(far-near). w stays 1</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// (no perspective divide), which is exactly what makes parallel edges stay</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// parallel.</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">inline</span> <span class="keywordtype">void</span> setReverseZOrthographic(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    QMatrix4x4&amp; out, <span class="keywordtype">float</span> halfWidth, <span class="keywordtype">float</span> halfHeight, <span class="keywordtype">float</span> nearPlane,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordtype">float</span> farPlane)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  out.setToIdentity();</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordflow">if</span>(nearPlane == farPlane || halfWidth == 0.f || halfHeight == 0.f)</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> clip = farPlane - nearPlane;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  out(0, 0) = 1.f / halfWidth;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  out(1, 1) = 1.f / halfHeight;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  out(2, 2) = 2.f / clip;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  out(2, 3) = (farPlane + nearPlane) / clip;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  out(3, 2) = 0.f;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  out(3, 3) = 1.f;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">// The value packCameraUBO writes into CameraUBOData::params[3] (`camera.params.w`</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">// in a scene shader) so the shader can tell which projection the author asked</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// for. Perspective is 0, so a shader that ignores the field still reads the</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// common case correctly.</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">enum class</span> CameraProjectionMode : <span class="keywordtype">int</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  Perspective = 0,</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  Orthographic = 1,</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  Fulldome = 2,</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// Pack a camera_component&#39;s view/projection/position into a CameraUBOData.</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// `worldTransform` is the camera node&#39;s accumulated world matrix (its</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// column 3 is the eye position and its inverse is the view matrix).</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">// `aspectOverride` of &lt;= 0 falls back to `renderSize.width / renderSize.height`.</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keywordtype">void</span> packCameraUBO(</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    CameraUBOData&amp; out, <span class="keyword">const</span> ossia::camera_component&amp; cam,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">const</span> QMatrix4x4&amp; worldTransform, QSize renderSize, <span class="keywordtype">float</span> timeSeconds,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">float</span> aspectOverride = -1.f);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// Index into the scene&#39;s camera list of the camera packed at `slot`: the active</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">// camera first, then the others cyclically in insertion order, so a camera</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// array&#39;s faces keep their order after whichever of them is active.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> std::size_t</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>cameraPackIndex(std::size_t slot, std::size_t count, <span class="keywordtype">int</span> active) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">const</span> std::size_t a = active &lt; 0 ? 0u : std::size_t(active);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">return</span> count == 0 ? 0u : (a + slot) % count;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">inline</span> <span class="keywordtype">void</span> writeMat4(<span class="keywordtype">float</span> dst[16], <span class="keyword">const</span> QMatrix4x4&amp; src)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std::memcpy(dst, src.constData(), 16 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// Reverse-Z perspective projection in OpenGL NDC convention.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">//</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">// Standard OpenGL perspective: view_z ∈ [-far, -near] → NDC z ∈ [-1, +1].</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// Reverse-Z (this function):    view_z ∈ [-far, -near] → NDC z ∈ [-1, +1]</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">//   but inverted: near → +1, far → -1.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">// QRhi&#39;s clipSpaceCorrMatrix on Vulkan/Metal/D3D remaps the output NDC z ∈</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// [-1, +1] down to the backend-native [0, 1] without further flipping:</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// near → 1.0, far → 0.0 in the depth buffer.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// This is paired project-wide with a float (D32F) depth attachment, a</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// GREATER depth compare and a clear-depth of 0.0. Mixing conventions on a</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// single depth buffer produces garbage.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">inline</span> <span class="keywordtype">void</span> setReverseZPerspective(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    QMatrix4x4&amp; out, <span class="keywordtype">float</span> fovYDeg, <span class="keywordtype">float</span> aspect, <span class="keywordtype">float</span> nearPlane,</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">float</span> farPlane)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  out.setToIdentity();</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordflow">if</span>(nearPlane == farPlane || aspect == 0.f)</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> radians = (fovYDeg * 0.5f) * <span class="keywordtype">float</span>(M_PI / 180.0);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> sine = std::sin(radians);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordflow">if</span>(sine == 0.f)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> cotan = std::cos(radians) / sine;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> clip = farPlane - nearPlane;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  out(0, 0) = cotan / aspect;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  out(1, 1) = cotan;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  out(2, 2) = (farPlane + nearPlane) / clip;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  out(2, 3) = (2.f * farPlane * nearPlane) / clip;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  out(3, 2) = -1.f;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  out(3, 3) = 0.f;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>}</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// Reverse-Z ORTHOGRAPHIC projection, in the same convention as</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// setReverseZPerspective above: view_z = -near -&gt; NDC z = +1,</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// view_z = -far -&gt; NDC z = -1, paired with a D32F attachment, a GREATER depth</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">// compare and a clear-depth of 0.0.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// halfWidth / halfHeight are the half-extents of the view volume in view space</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// — glTF&#39;s `xmag` / `ymag`, which is what ossia::camera_component carries.</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// Derivation of the z row: z_ndc = a*z_view + b with a*(-near) + b = +1 and</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// a*(-far) + b = -1  =&gt;  a = 2/(far-near), b = (far+near)/(far-near). w stays 1</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// (no perspective divide), which is exactly what makes parallel edges stay</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// parallel.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">inline</span> <span class="keywordtype">void</span> setReverseZOrthographic(</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    QMatrix4x4&amp; out, <span class="keywordtype">float</span> halfWidth, <span class="keywordtype">float</span> halfHeight, <span class="keywordtype">float</span> nearPlane,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">float</span> farPlane)</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  out.setToIdentity();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordflow">if</span>(nearPlane == farPlane || halfWidth == 0.f || halfHeight == 0.f)</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keyword">const</span> <span class="keywordtype">float</span> clip = farPlane - nearPlane;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  out(0, 0) = 1.f / halfWidth;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  out(1, 1) = 1.f / halfHeight;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  out(2, 2) = 2.f / clip;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  out(2, 3) = (farPlane + nearPlane) / clip;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  out(3, 2) = 0.f;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  out(3, 3) = 1.f;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">// The value packCameraUBO writes into CameraUBOData::params[3] (`camera.params.w`</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">// in a scene shader) so the shader can tell which projection the author asked</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// for. Perspective is 0, so a shader that ignores the field still reads the</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">// common case correctly.</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="keyword">enum class</span> CameraProjectionMode : <span class="keywordtype">int</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  Perspective = 0,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  Orthographic = 1,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  Fulldome = 2,</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">// Pack a camera_component&#39;s view/projection/position into a CameraUBOData.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">// `worldTransform` is the camera node&#39;s accumulated world matrix (its</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">// column 3 is the eye position and its inverse is the view matrix).</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">// `aspectOverride` of &lt;= 0 falls back to the camera&#39;s own aspect when it has</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">// `aspect_ratio_set`, then to `renderSize.width / renderSize.height`.</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keywordtype">void</span> packCameraUBO(</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    CameraUBOData&amp; out, <span class="keyword">const</span> ossia::camera_component&amp; cam,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keyword">const</span> QMatrix4x4&amp; worldTransform, QSize renderSize, <span class="keywordtype">float</span> timeSeconds,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordtype">float</span> aspectOverride = -1.f);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_camera_u_b_o_data_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_camera_u_b_o_data.html">score::gfx::CameraUBOData</a></div><div class="ttdef"><b>Definition</b> CameraMath.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->

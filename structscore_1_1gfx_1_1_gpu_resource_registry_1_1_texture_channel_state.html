@@ -115,8 +115,8 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_gpu_resource_re
  <a href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Channel texture state with multi-bucket support. </p>
-<p>The MaterialGPU::textureRefs[] encoding is <code>source:2 | bucket:7 | layer:23</code> — the 7-bit bucket field addresses up to 128 distinct (format, pixelSize) tuples in the encoding; the runtime cap is kMaxBuckets (currently 16).</p>
-<p>The <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> struct holds the discriminating (format, pixelSize) tuple. Dynamic (runtime-GPU) slots stay at channel scope — they carry opaque QRhiTexture*s with no canonical format/size, so no sensible bucket to live in. </p>
+<p>The MaterialGPU::textureRefs[] encoding is <code>source:2 | bucket:7 | layer:23</code> — the 7-bit bucket field addresses up to 128 distinct bucket keys in the encoding; the runtime cap is kMaxBuckets (currently 8).</p>
+<p>The <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> struct holds the discriminating (format, pixelSize, colourspace) tuple. Dynamic (runtime-GPU) slots stay at channel scope — they carry opaque QRhiTexture*s with no canonical format/size, so no sensible bucket to live in. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -131,21 +131,30 @@ QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>primaryArray
 <tr class="memitem:ae210a5ed3c0958f1f5d4248641fa0332" id="r_ae210a5ed3c0958f1f5d4248641fa0332"><td class="memItemLeft" align="right" valign="top"><a id="ae210a5ed3c0958f1f5d4248641fa0332" name="ae210a5ed3c0958f1f5d4248641fa0332"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>primaryLayers</b> () const noexcept</td></tr>
 <tr class="separator:ae210a5ed3c0958f1f5d4248641fa0332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccb44c5f473985988b9d1520d8d2580" id="r_adccb44c5f473985988b9d1520d8d2580"><td class="memItemLeft" align="right" valign="top"><a id="adccb44c5f473985988b9d1520d8d2580" name="adccb44c5f473985988b9d1520d8d2580"></a>
-<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ensurePrimary</b> (QRhiTexture::Format fmt, QSize sz)</td></tr>
-<tr class="separator:adccb44c5f473985988b9d1520d8d2580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ce893f3cabb1323b7450639de77ac3" id="r_a32ce893f3cabb1323b7450639de77ac3"><td class="memItemLeft" align="right" valign="top"><a id="a32ce893f3cabb1323b7450639de77ac3" name="a32ce893f3cabb1323b7450639de77ac3"></a>
-std::pair&lt; int, <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>findOrCreateBucket</b> (QRhiTexture::Format fmt, QSize sz)</td></tr>
-<tr class="separator:a32ce893f3cabb1323b7450639de77ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeec6d58bef7cc20468c3c5dc607c728" id="r_adeec6d58bef7cc20468c3c5dc607c728"><td class="memItemLeft" align="right" valign="top"><a id="adeec6d58bef7cc20468c3c5dc607c728" name="adeec6d58bef7cc20468c3c5dc607c728"></a>
-std::pair&lt; int, <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>findOrCreateBucket</b> (QRhiTexture::Format fmt, QSize sz, const ossia::texture_sampler_config &amp;sampler_cfg)</td></tr>
-<tr class="separator:adeec6d58bef7cc20468c3c5dc607c728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7a3b39150579ed6c2c7786398e24f1" id="r_a8b7a3b39150579ed6c2c7786398e24f1"><td class="memItemLeft" align="right" valign="top"><a id="a8b7a3b39150579ed6c2c7786398e24f1" name="a8b7a3b39150579ed6c2c7786398e24f1"></a>
+<a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ensurePrimary</b> (QRhiTexture::Format fmt, QSize sz, QRhiTexture::Flags flags={})</td></tr>
+<tr class="separator:a8b7a3b39150579ed6c2c7786398e24f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2545fe0d02d66206c7d87421df7219" id="r_a6a2545fe0d02d66206c7d87421df7219"><td class="memItemLeft" align="right" valign="top"><a id="a6a2545fe0d02d66206c7d87421df7219" name="a6a2545fe0d02d66206c7d87421df7219"></a>
+std::pair&lt; int, <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>findOrCreateBucket</b> (QRhiTexture::Format fmt, QSize sz, QRhiTexture::Flags flags)</td></tr>
+<tr class="separator:a6a2545fe0d02d66206c7d87421df7219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a87a55d5349ddf196e70c3d95d98fb3d5" id="r_a87a55d5349ddf196e70c3d95d98fb3d5"><td class="memItemLeft" align="right" valign="top"><a id="a87a55d5349ddf196e70c3d95d98fb3d5" name="a87a55d5349ddf196e70c3d95d98fb3d5"></a>
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state_1_1_bucket.html">Bucket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buckets</b></td></tr>
 <tr class="separator:a87a55d5349ddf196e70c3d95d98fb3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbd914d08ce7a1c78728986233175824" id="r_acbd914d08ce7a1c78728986233175824"><td class="memItemLeft" align="right" valign="top"><a id="acbd914d08ce7a1c78728986233175824" name="acbd914d08ce7a1c78728986233175824"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>generation</b> {0}</td></tr>
+<tr class="separator:acbd914d08ce7a1c78728986233175824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a87a129bf8bf717b76dd0e021c2994" id="r_a83a87a129bf8bf717b76dd0e021c2994"><td class="memItemLeft" align="right" valign="top"><a id="a83a87a129bf8bf717b76dd0e021c2994" name="a83a87a129bf8bf717b76dd0e021c2994"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>rebuilds</b> {0}</td></tr>
+<tr class="separator:a83a87a129bf8bf717b76dd0e021c2994"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ec887581d5387722884d144d72f86c" id="r_a19ec887581d5387722884d144d72f86c"><td class="memItemLeft" align="right" valign="top"><a id="a19ec887581d5387722884d144d72f86c" name="a19ec887581d5387722884d144d72f86c"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>layerUploads</b> {0}</td></tr>
+<tr class="separator:a19ec887581d5387722884d144d72f86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a81105938fc16561d134ac060895b37" id="r_a2a81105938fc16561d134ac060895b37"><td class="memItemLeft" align="right" valign="top"><a id="a2a81105938fc16561d134ac060895b37" name="a2a81105938fc16561d134ac060895b37"></a>
+ossia::flat_map&lt; const void *, std::vector&lt; const ossia::texture_source * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>claims</b></td></tr>
+<tr class="separator:a2a81105938fc16561d134ac060895b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c023d21004f8e791f5d3afd541d612" id="r_ac7c023d21004f8e791f5d3afd541d612"><td class="memItemLeft" align="right" valign="top"><a id="ac7c023d21004f8e791f5d3afd541d612" name="ac7c023d21004f8e791f5d3afd541d612"></a>
 ossia::flat_map&lt; quint64, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dynamicSlotMap</b></td></tr>
 <tr class="separator:ac7c023d21004f8e791f5d3afd541d612"><td class="memSeparator" colspan="2">&#160;</td></tr>

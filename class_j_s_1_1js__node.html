@@ -118,9 +118,9 @@ Inheritance diagram for JS::js_node:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a43835455e49a775d5c2439e43f5aba68" id="r_a43835455e49a775d5c2439e43f5aba68"><td class="memItemLeft" align="right" valign="top"><a id="a43835455e49a775d5c2439e43f5aba68" name="a43835455e49a775d5c2439e43f5aba68"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>js_node</b> (ossia::execution_state &amp;st)</td></tr>
-<tr class="separator:a43835455e49a775d5c2439e43f5aba68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e457250f8ab9f7417026f9250e47f0" id="r_ab5e457250f8ab9f7417026f9250e47f0"><td class="memItemLeft" align="right" valign="top"><a id="ab5e457250f8ab9f7417026f9250e47f0" name="ab5e457250f8ab9f7417026f9250e47f0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>js_node</b> (ossia::execution_state &amp;st, std::shared_ptr&lt; const <a class="el" href="struct_local_tree_1_1_scriptable_snapshot.html">LocalTree::ScriptableSnapshot</a> &gt; names)</td></tr>
+<tr class="separator:ab5e457250f8ab9f7417026f9250e47f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec51e70e3a834bb384684d75d31a8ab7" id="r_aec51e70e3a834bb384684d75d31a8ab7"><td class="memItemLeft" align="right" valign="top"><a id="aec51e70e3a834bb384684d75d31a8ab7" name="aec51e70e3a834bb384684d75d31a8ab7"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const noexcept override</td></tr>
 <tr class="separator:aec51e70e3a834bb384684d75d31a8ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +193,18 @@ std::vector&lt; std::pair&lt; <a class="el" href="class_j_s_1_1_midi_outlet.html
 <tr class="memitem:a75e538042ded3bf7318fd0729396fdbe" id="r_a75e538042ded3bf7318fd0729396fdbe"><td class="memItemLeft" align="right" valign="top"><a id="a75e538042ded3bf7318fd0729396fdbe" name="a75e538042ded3bf7318fd0729396fdbe"></a>
 ossia::qt::qml_engine_functions *&#160;</td><td class="memItemRight" valign="bottom"><b>m_execFuncs</b> {}</td></tr>
 <tr class="separator:a75e538042ded3bf7318fd0729396fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c098b133508d1b309662c656fc5dbbf" id="r_a2c098b133508d1b309662c656fc5dbbf"><td class="memItemLeft" align="right" valign="top"><a id="a2c098b133508d1b309662c656fc5dbbf" name="a2c098b133508d1b309662c656fc5dbbf"></a>
+std::shared_ptr&lt; const <a class="el" href="struct_local_tree_1_1_scriptable_snapshot.html">LocalTree::ScriptableSnapshot</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_names</b></td></tr>
+<tr class="memdesc:a2c098b133508d1b309662c656fc5dbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaced from the GUI thread through the execution queue. <br /></td></tr>
+<tr class="separator:a2c098b133508d1b309662c656fc5dbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cfc935d78b375f22696305a373a4822" id="r_a4cfc935d78b375f22696305a373a4822"><td class="memItemLeft" align="right" valign="top"><a id="a4cfc935d78b375f22696305a373a4822" name="a4cfc935d78b375f22696305a373a4822"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_namesChanged</b> {}</td></tr>
+<tr class="memdesc:a4cfc935d78b375f22696305a373a4822"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="namespace_device.html" title="Manipulation of Devices from Qt.">Device</a> caches address lookups. <br /></td></tr>
+<tr class="separator:a4cfc935d78b375f22696305a373a4822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9178a61127ab856389a48dae7aeb81a7" id="r_a9178a61127ab856389a48dae7aeb81a7"><td class="memItemLeft" align="right" valign="top"><a id="a9178a61127ab856389a48dae7aeb81a7" name="a9178a61127ab856389a48dae7aeb81a7"></a>
+QJSValue&#160;</td><td class="memItemRight" valign="bottom"><b>m_namespaces</b></td></tr>
+<tr class="memdesc:a9178a61127ab856389a48dae7aeb81a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Score.Controls, Triggers and Conditions of this process. <br /></td></tr>
+<tr class="separator:a9178a61127ab856389a48dae7aeb81a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab10306b205c779f0a0669e2ee6ea0070" id="r_ab10306b205c779f0a0669e2ee6ea0070"><td class="memItemLeft" align="right" valign="top"><a id="ab10306b205c779f0a0669e2ee6ea0070" name="ab10306b205c779f0a0669e2ee6ea0070"></a>
 std::optional&lt; QJSValueList &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_tickCall</b></td></tr>
 <tr class="separator:ab10306b205c779f0a0669e2ee6ea0070"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -12,5 +12,6 @@ var dir_11d0d5461602a732819a8983098b4844 =
     [ "DropProcessInScenario.hpp", "_drop_process_in_scenario_8hpp_source.html", null ],
     [ "DropProcessOnState.hpp", "_drop_process_on_state_8hpp_source.html", null ],
     [ "MessageDropHandler.hpp", "_message_drop_handler_8hpp_source.html", null ],
+    [ "PresetDrop.hpp", "_preset_drop_8hpp_source.html", null ],
     [ "ScenarioDropHandler.hpp", "_scenario_drop_handler_8hpp_source.html", null ]
 ];

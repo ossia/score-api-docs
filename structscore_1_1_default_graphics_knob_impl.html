@@ -111,10 +111,10 @@ $(document).ready(function(){initNavTree('structscore_1_1_default_graphics_knob_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a50ba8baa6c9e600ceff1815af555fd01" id="r_a50ba8baa6c9e600ceff1815af555fd01"><td class="memTemplParams" colspan="2"><a id="a50ba8baa6c9e600ceff1815af555fd01" name="a50ba8baa6c9e600ceff1815af555fd01"></a>
+<tr class="memitem:ad214699a7043a4dd51a5f514664b7a92" id="r_ad214699a7043a4dd51a5f514664b7a92"><td class="memTemplParams" colspan="2"><a id="ad214699a7043a4dd51a5f514664b7a92" name="ad214699a7043a4dd51a5f514664b7a92"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a50ba8baa6c9e600ceff1815af555fd01"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>paint</b> (T &amp;self, const <a class="el" href="classscore_1_1_skin.html">score::Skin</a> &amp;skin, const QString &amp;text, QPainter *painter, QWidget *widget)</td></tr>
-<tr class="separator:a50ba8baa6c9e600ceff1815af555fd01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad214699a7043a4dd51a5f514664b7a92"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>paint</b> (T &amp;self, const <a class="el" href="classscore_1_1_skin.html">score::Skin</a> &amp;skin, const QString &amp;text, QPainter *painter, QWidget *widget, const QStyleOptionGraphicsItem *option=nullptr)</td></tr>
+<tr class="separator:ad214699a7043a4dd51a5f514664b7a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb426f7e8eef14dd9d64a3d80375c12" id="r_a1fb426f7e8eef14dd9d64a3d80375c12"><td class="memTemplParams" colspan="2"><a id="a1fb426f7e8eef14dd9d64a3d80375c12" name="a1fb426f7e8eef14dd9d64a3d80375c12"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1fb426f7e8eef14dd9d64a3d80375c12"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mousePressEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
@@ -135,17 +135,56 @@ template&lt;typename T &gt; <br />
 requires std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</td></tr>
 <tr class="memitem:a5a51d0b44590ed2d856a5eaa1722c263"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contextMenuEvent</b> (T &amp;self, QPointF pos)</td></tr>
 <tr class="separator:a5a51d0b44590ed2d856a5eaa1722c263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8988c56eb8bc7dcfb4fd2cb26022aaab" id="r_a8988c56eb8bc7dcfb4fd2cb26022aaab"><td class="memTemplParams" colspan="2"><a id="a8988c56eb8bc7dcfb4fd2cb26022aaab" name="a8988c56eb8bc7dcfb4fd2cb26022aaab"></a>
-template&lt;typename T &gt; <br />
-requires std::is_floating_point_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;</td></tr>
-<tr class="memitem:a8988c56eb8bc7dcfb4fd2cb26022aaab"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>contextMenuEvent</b> (T &amp;self, QPointF pos)</td></tr>
-<tr class="separator:a8988c56eb8bc7dcfb4fd2cb26022aaab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a5e4b373da4dd32d08e8294981f351" id="r_a24a5e4b373da4dd32d08e8294981f351"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires (!std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;)</td></tr>
+<tr class="memitem:a24a5e4b373da4dd32d08e8294981f351"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structscore_1_1_default_graphics_knob_impl.html#a24a5e4b373da4dd32d08e8294981f351">contextMenuEvent</a> (T &amp;self, QPointF pos)</td></tr>
+<tr class="separator:a24a5e4b373da4dd32d08e8294981f351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c88bc80f17f62a2a1433ecb2e96441" id="r_a75c88bc80f17f62a2a1433ecb2e96441"><td class="memTemplParams" colspan="2"><a id="a75c88bc80f17f62a2a1433ecb2e96441" name="a75c88bc80f17f62a2a1433ecb2e96441"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a75c88bc80f17f62a2a1433ecb2e96441"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (T &amp;self, QGraphicsSceneMouseEvent *event)</td></tr>
 <tr class="separator:a75c88bc80f17f62a2a1433ecb2e96441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a24a5e4b373da4dd32d08e8294981f351" name="a24a5e4b373da4dd32d08e8294981f351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a5e4b373da4dd32d08e8294981f351">&#9670;&#160;</a></span>contextMenuEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; <br />
+requires (!std::is_integral_v&lt;std::decay_t&lt;decltype(std::declval&lt;T&gt;().value())&gt;&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void score::DefaultGraphicsKnobImpl::contextMenuEvent </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A value typed in as a real number, map(m_value): a scalar control, or one whose value() is more than the number (the time chooser's {time, sync}). </p>
+
+</div>
+</div>
 <a id="a8c858022c24da44b3f4d580e7d4548c5" name="a8c858022c24da44b3f4d580e7d4548c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c858022c24da44b3f4d580e7d4548c5">&#9670;&#160;</a></span>ungrabMouseEvent()</h2>
 

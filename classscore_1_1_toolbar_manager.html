@@ -113,11 +113,17 @@ $(document).ready(function(){initNavTree('classscore_1_1_toolbar_manager.html','
  <a href="classscore_1_1_toolbar_manager.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classscore_1_1_toolbar_manager.html" title="The ToolbarManager class.">ToolbarManager</a> class. </p>
-<p>Keeps track of the <a class="el" href="classscore_1_1_toolbar.html">Toolbar</a>s registered in the software.</p>
+<p>Keeps track of the <a class="el" href="classscore_1_1_toolbar.html">Toolbar</a>s registered in the software, and owns them: they are created without a parent, and without a main window (<a class="el" href="classscore_1_1_minimal_application.html">MinimalApplication</a>) nothing else deletes them.</p>
 <p>Accessible through an <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a>. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac540ae867f55e948695683c8fce05b8c" id="r_ac540ae867f55e948695683c8fce05b8c"><td class="memItemLeft" align="right" valign="top"><a id="ac540ae867f55e948695683c8fce05b8c" name="ac540ae867f55e948695683c8fce05b8c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ToolbarManager</b> (const <a class="el" href="classscore_1_1_toolbar_manager.html">ToolbarManager</a> &amp;)=delete</td></tr>
+<tr class="separator:ac540ae867f55e948695683c8fce05b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c91ef5032e1d072ddabc7836998403" id="r_a43c91ef5032e1d072ddabc7836998403"><td class="memItemLeft" align="right" valign="top"><a id="a43c91ef5032e1d072ddabc7836998403" name="a43c91ef5032e1d072ddabc7836998403"></a>
+<a class="el" href="classscore_1_1_toolbar_manager.html">ToolbarManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classscore_1_1_toolbar_manager.html">ToolbarManager</a> &amp;)=delete</td></tr>
+<tr class="separator:a43c91ef5032e1d072ddabc7836998403"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5283a61e7614bd423f757c7b1f3fe1f" id="r_ad5283a61e7614bd423f757c7b1f3fe1f"><td class="memItemLeft" align="right" valign="top"><a id="ad5283a61e7614bd423f757c7b1f3fe1f" name="ad5283a61e7614bd423f757c7b1f3fe1f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>insert</b> (<a class="el" href="classscore_1_1_toolbar.html">Toolbar</a> val)</td></tr>
 <tr class="separator:ad5283a61e7614bd423f757c7b1f3fe1f"><td class="memSeparator" colspan="2">&#160;</td></tr>

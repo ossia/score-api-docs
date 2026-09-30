@@ -127,7 +127,7 @@ Inheritance diagram for score::gfx::P010Encoder:</div>
 <p>Each 10-bit sample (0..1023) sits in the high 10 bits of its 16-bit word (low 6 bits zero), matching AV_PIX_FMT_P010LE / GStreamer P010_10LE. Two planes: Y full-res, interleaved UV half-res. Feed a &gt;8-bit source texture (RGBA16F) for real 10-bit precision.</p>
 <p>Two implementations selected at compile time (see <a class="el" href="structscore_1_1gfx_1_1_y_u_v422_p10_encoder.html" title="GPU RGBA -&gt; yuv422p10le encoder (planar 4:2:2, 10-bit).">YUV422P10Encoder</a> for the full rationale and the qtbase commit reference):</p>
 <ul>
-<li>Qt &gt;= 6.10: native R16 (Y) / RG16 (UV) targets; QRhi reads them back tightly. Bilinear sampling averages the 2x2 chroma block.</li>
+<li>Qt &gt;= 6.10: native R16 (Y) / RG16 (UV) targets; QRhi reads them back tightly. The 2x2 chroma block is fetched texel by texel and averaged.</li>
 <li>Qt &lt; 6.10: the GL backend reads 16-bit single/dual-channel textures back as 8-bit RGBA, so we pack the bytes into RGBA8 ourselves.</li>
 </ul>
 <p>Both paths expose the same readback byte layout (Y = 2w bytes/row over h rows, UV = 2w bytes/row over h/2 rows, U then V interleaved per site), so consumers are agnostic. Requires width % 2 == 0. </p>
@@ -210,7 +210,8 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a219b723cffd40e900d3822d4e9c2fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2755445ecda12c63482c9ace29bdc708" id="r_a2755445ecda12c63482c9ace29bdc708"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p010_encoder.html#a2755445ecda12c63482c9ace29bdc708">y_frag</a></td></tr>
 <tr class="separator:a2755445ecda12c63482c9ace29bdc708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb2c140b17247292c496cd0af8e5e365" id="r_aeb2c140b17247292c496cd0af8e5e365"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p010_encoder.html#aeb2c140b17247292c496cd0af8e5e365">uv_frag</a></td></tr>
+<tr class="memitem:aeb2c140b17247292c496cd0af8e5e365" id="r_aeb2c140b17247292c496cd0af8e5e365"><td class="memItemLeft" align="right" valign="top"><a id="aeb2c140b17247292c496cd0af8e5e365" name="aeb2c140b17247292c496cd0af8e5e365"></a>
+static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>uv_frag</b></td></tr>
 <tr class="separator:aeb2c140b17247292c496cd0af8e5e365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_structscore_1_1gfx_1_1_g_p_u_video_encoder"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_structscore_1_1gfx_1_1_g_p_u_video_encoder')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html">score::gfx::GPUVideoEncoder</a></td></tr>
 <tr class="memitem:a11a2d1f81e65910fcbf612b5e87c1e97 inherit pub_static_attribs_structscore_1_1gfx_1_1_g_p_u_video_encoder" id="r_a11a2d1f81e65910fcbf612b5e87c1e97"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a11a2d1f81e65910fcbf612b5e87c1e97">vertex_shader</a></td></tr>
@@ -446,49 +447,6 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral">    // 10-bit value -&gt; high 10 bits of a 16-bit UNORM word (low 6 bits zero).</span></div>
 <div class="line"><span class="stringliteral">    float pack10hi(float v) {</span></div>
 <div class="line"><span class="stringliteral">      return round(clamp(v, 0.0, 1.0) * 1023.0) * 64.0 / 65535.0;</span></div>
-<div class="line"><span class="stringliteral">    }</span></div>
-<div class="line"><span class="stringliteral">  )_&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="aeb2c140b17247292c496cd0af8e5e365" name="aeb2c140b17247292c496cd0af8e5e365"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb2c140b17247292c496cd0af8e5e365">&#9670;&#160;</a></span>uv_frag</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr const char* score::gfx::P010Encoder::uv_frag</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
-<div class="line"><span class="stringliteral">    layout(location = 0) in vec2 v_texcoord;</span></div>
-<div class="line"><span class="stringliteral">    layout(location = 0) out vec4 fragColor;</span></div>
-<div class="line"><span class="stringliteral">    layout(binding = 3) uniform sampler2D src_tex;</span></div>
-<div class="line"><span class="stringliteral">    )_&quot; </span><span class="stringliteral">&quot;%1&quot;</span> R<span class="stringliteral">&quot;_(</span></div>
-<div class="line"><span class="stringliteral">    )_&quot; </span><span class="stringliteral">&quot;%2&quot;</span> R<span class="stringliteral">&quot;_(</span></div>
-<div class="line"><span class="stringliteral">    vec2 flip_y(vec2 tc) {</span></div>
-<div class="line"><span class="stringliteral">    // Only OpenGL. The rest of the engine puts its geometry through</span></div>
-<div class="line"><span class="stringliteral">    // renderer.clipSpaceCorrMatrix, which negates Y on Vulkan; this pass draws</span></div>
-<div class="line"><span class="stringliteral">    // a hardcoded triangle in raw NDC and does not, so the correction it needs</span></div>
-<div class="line"><span class="stringliteral">    // is not the same one. Flipping on Vulkan as well handed libav, GStreamer,</span></div>
-<div class="line"><span class="stringliteral">    // NDI and every other consumer an upside-down picture.</span></div>
-<div class="line"><span class="stringliteral">      return tc;</span></div>
-<div class="line"><span class="stringliteral">      return vec2(tc.x, 1.0 - tc.y);</span></div>
-<div class="line"><span class="stringliteral">    }</span></div>
-<div class="line"><span class="stringliteral">    void main() {</span></div>
-<div class="line"><span class="stringliteral">      vec3 rgb = texture(src_tex, flip_y(v_texcoord)).rgb;</span></div>
-<div class="line"><span class="stringliteral">      vec3 yuv = convert_from_rgb(rgb);</span></div>
-<div class="line"><span class="stringliteral">      fragColor = vec4(pack10hi(yuv.y), pack10hi(yuv.z), 0.0, 1.0);</span></div>
 <div class="line"><span class="stringliteral">    }</span></div>
 <div class="line"><span class="stringliteral">  )_&quot;</span></div>
 </div><!-- fragment -->

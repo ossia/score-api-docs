@@ -7,6 +7,7 @@ var namespace_state =
     [ "AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
     [ "AddressFragmentValidator", "class_state_1_1_address_fragment_validator.html", null ],
     [ "AddressValidator", "class_state_1_1_address_validator.html", null ],
+    [ "Anchor", "struct_state_1_1_anchor.html", null ],
     [ "BoolValueWidget", "class_state_1_1_bool_value_widget.html", null ],
     [ "DestinationQualifiers", "struct_state_1_1_destination_qualifiers.html", null ],
     [ "DestinationQualifierWidget", "class_state_1_1_destination_qualifier_widget.html", null ],
@@ -31,7 +32,12 @@ var namespace_state =
     [ "VecDomainWidget", "class_state_1_1_vec_domain_widget.html", null ],
     [ "VecEditBase", "struct_state_1_1_vec_edit_base.html", null ],
     [ "VecWidget", "class_state_1_1_vec_widget.html", null ],
+    [ "anchors", "namespace_state.html#a3b1edca54826d17b634a0488a4c9b4f7", null ],
+    [ "identical", "namespace_state.html#aaf23ca2ffbee8cc3e5960cfcf9996246", null ],
     [ "isTrueExpression", "namespace_state.html#a1580ad4d2787babcd9df7b897f9e9aa1", null ],
     [ "prettyPrintValue", "namespace_state.html#a7cc58c26d518c94a6c433fe61e51415e", null ],
-    [ "printValue", "namespace_state.html#a6f738dba6fda26380ce38161c33699b5", null ]
+    [ "printValue", "namespace_state.html#a6f738dba6fda26380ce38161c33699b5", null ],
+    [ "saveAnchors", "namespace_state.html#a3ae4a7e60c09812760c6c0e31c59b05a", null ],
+    [ "setAnchors", "namespace_state.html#aaf21d229fe9166a360043a07d5475114", null ],
+    [ "writeAnchor", "namespace_state.html#a0998a1ea6fe6916653da4199c28f6399", null ]
 ];

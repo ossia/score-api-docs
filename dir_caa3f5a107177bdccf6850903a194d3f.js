@@ -12,6 +12,7 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
     [ "PointTracker.hpp", "_point_tracker_8hpp_source.html", null ],
     [ "Queue.hpp", "_queue_8hpp_source.html", null ],
+    [ "Regex.hpp", "_regex_8hpp_source.html", null ],
     [ "Rendezvous.hpp", "_rendezvous_8hpp_source.html", null ],
     [ "Spammer.hpp", "_spammer_8hpp_source.html", null ],
     [ "StringBytes.hpp", "_string_bytes_8hpp_source.html", null ],

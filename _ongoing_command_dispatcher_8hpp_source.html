@@ -178,31 +178,32 @@ $(document).ready(function(){initNavTree('_ongoing_command_dispatcher_8hpp_sourc
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    {</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      stack().disableActions();</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      m_cmd = std::make_unique&lt;TheCommand&gt;(watched, std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      m_cmd-&gt;redo(stack().context());</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      safe_cast&lt;TheCommand*&gt;(m_cmd.get())-&gt;update(watched, std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      m_cmd-&gt;redo(stack().context());</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      safe_cast&lt;TheCommand*&gt;(m_cmd.get())-&gt;update(watched, std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    redo();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> commit();</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span> rollback();</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">void</span> rollback_without_undo();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  std::unique_ptr&lt;score::Command&gt; m_cmd;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">const</span> QObject* m_watched{};</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> commit();</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">void</span> rollback();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span> rollback_without_undo();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span> redo();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  std::unique_ptr&lt;score::Command&gt; m_cmd;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keyword">const</span> QObject* m_watched{};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
 </div>
 <div class="ttc" id="aclass_i_command_dispatcher_html"><div class="ttname"><a href="class_i_command_dispatcher.html">ICommandDispatcher</a></div><div class="ttdoc">The ICommandDispatcher class.</div><div class="ttdef"><b>Definition</b> ICommandDispatcher.hpp:21</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html"><div class="ttname"><a href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a></div><div class="ttdoc">The OngoingCommandDispatcher class.</div><div class="ttdef"><b>Definition</b> OngoingCommandDispatcher.hpp:29</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html_a6aaea238af6367fa225a3b06dc496e77"><div class="ttname"><a href="class_ongoing_command_dispatcher.html#a6aaea238af6367fa225a3b06dc496e77">OngoingCommandDispatcher::submit</a></div><div class="ttdeci">void submit(Watched &amp;&amp;watched, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition</b> OngoingCommandDispatcher.hpp:46</div></div>
 <div class="ttc" id="aclass_ongoing_command_dispatcher_html_abea9ce63d1d9e214d5208f877a20568c"><div class="ttname"><a href="class_ongoing_command_dispatcher.html#abea9ce63d1d9e214d5208f877a20568c">OngoingCommandDispatcher::watching</a></div><div class="ttdeci">bool watching(const QObject *obj) const noexcept</div><div class="ttdef"><b>Definition</b> OngoingCommandDispatcher.hpp:41</div></div>
-<div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:20</div></div>
+<div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

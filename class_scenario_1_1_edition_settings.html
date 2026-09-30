@@ -142,6 +142,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>restoreTool</b> ()</t
 <tr class="memitem:a53f24c3b1bdcb3138c5ec8c89b149b28" id="r_a53f24c3b1bdcb3138c5ec8c89b149b28"><td class="memItemLeft" align="right" valign="top"><a id="a53f24c3b1bdcb3138c5ec8c89b149b28" name="a53f24c3b1bdcb3138c5ec8c89b149b28"></a>
 LockMode&#160;</td><td class="memItemRight" valign="bottom"><b>lockMode</b> () const</td></tr>
 <tr class="separator:a53f24c3b1bdcb3138c5ec8c89b149b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b19c71ad9a7726663af2c79930e3b2" id="r_a09b19c71ad9a7726663af2c79930e3b2"><td class="memItemLeft" align="right" valign="top"><a id="a09b19c71ad9a7726663af2c79930e3b2" name="a09b19c71ad9a7726663af2c79930e3b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>recordPlayback</b> () const noexcept</td></tr>
+<tr class="memdesc:a09b19c71ad9a7726663af2c79930e3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keep in the document the values playback writes into published controls. <br /></td></tr>
+<tr class="separator:a09b19c71ad9a7726663af2c79930e3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24815f32aa43c667833e8d8d427f7a73" id="r_a24815f32aa43c667833e8d8d427f7a73"><td class="memItemLeft" align="right" valign="top"><a id="a24815f32aa43c667833e8d8d427f7a73" name="a24815f32aa43c667833e8d8d427f7a73"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRecordPlayback</b> (bool b)</td></tr>
+<tr class="separator:a24815f32aa43c667833e8d8d427f7a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8d6511af8e529ab8e62c412239106a" id="r_afa8d6511af8e529ab8e62c412239106a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_edition_settings.html#afa8d6511af8e529ab8e62c412239106a">setLockHeld</a> (bool held)</td></tr>
+<tr class="separator:afa8d6511af8e529ab8e62c412239106a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb70317c4e666db63823fb083b63c46" id="r_aeeb70317c4e666db63823fb083b63c46"><td class="memItemLeft" align="right" valign="top"><a id="aeeb70317c4e666db63823fb083b63c46" name="aeeb70317c4e666db63823fb083b63c46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLockMode</b> (LockMode lockMode)</td></tr>
 <tr class="separator:aeeb70317c4e666db63823fb083b63c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +163,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>toolChanged</b> (Scen
 <tr class="memitem:af933be6a09016367c37e801b80a0b526" id="r_af933be6a09016367c37e801b80a0b526"><td class="memItemLeft" align="right" valign="top"><a id="af933be6a09016367c37e801b80a0b526" name="af933be6a09016367c37e801b80a0b526"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>lockModeChanged</b> (LockMode lockMode)</td></tr>
 <tr class="separator:af933be6a09016367c37e801b80a0b526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06f55144cfdc67cc49450069f251973e" id="r_a06f55144cfdc67cc49450069f251973e"><td class="memItemLeft" align="right" valign="top"><a id="a06f55144cfdc67cc49450069f251973e" name="a06f55144cfdc67cc49450069f251973e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>recordPlaybackChanged</b> (bool b)</td></tr>
+<tr class="separator:a06f55144cfdc67cc49450069f251973e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -167,6 +179,26 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; ExpandMode &gt;(w_internal::viewLiteral(&quot;expandMode&quot;), w_internal::viewLiteral(&quot;ExpandMode&quot;), &amp;W_ThisType::expandMode, &amp;W_ThisType::setExpandMode, W_Notify, &amp;W_ThisType::expandModeChanged)))</td></tr>
 <tr class="separator:a2bcd6892a2543416b0460949b8f39bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="afa8d6511af8e529ab8e62c412239106a" name="afa8d6511af8e529ab8e62c412239106a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8d6511af8e529ab8e62c412239106a">&#9670;&#160;</a></span>setLockHeld()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::EditionSettings::setLockHeld </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>held</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether the lock key (Shift) is held: the lock follows it, and the resets of the lock (tool changes, setDefault) go back to it instead of Free </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_scenario_edition_settings_8hpp_source.html">ScenarioEditionSettings.hpp</a></li>
 <li><b>ScenarioEditionSettings.cpp</b></li>

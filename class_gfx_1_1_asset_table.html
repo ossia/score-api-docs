@@ -316,7 +316,7 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>coldCount</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Force eviction until the cold-pool byte total is below <code>max_bytes</code>. Called explicitly by UI ("unload unused") or implicitly by maybeAutoTrim. </p><dl class="section return"><dt>Returns</dt><dd>bytes evicted. </dd></dl>
+<p>Force eviction until the cold-pool byte total is below <code>max_bytes</code>; a budget of 0 evicts every cold entry, zero-byte ones included. Called explicitly by UI ("unload unused") or implicitly by maybeAutoTrim. </p><dl class="section return"><dt>Returns</dt><dd>bytes evicted. </dd></dl>
 
 </div>
 </div>

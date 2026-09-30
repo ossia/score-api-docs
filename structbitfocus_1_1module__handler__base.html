@@ -121,37 +121,81 @@ Inheritance diagram for bitfocus::module_handler_base:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a030598fa7c9601c5b2f0bc578af779" id="r_a1a030598fa7c9601c5b2f0bc578af779"><td class="memItemLeft" align="right" valign="top"><a id="a1a030598fa7c9601c5b2f0bc578af779" name="a1a030598fa7c9601c5b2f0bc578af779"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString node_path, QString module_path, QString entrypoint)</td></tr>
-<tr class="separator:a1a030598fa7c9601c5b2f0bc578af779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6234d03cdafcb0dd38428d469fed9b29" id="r_a6234d03cdafcb0dd38428d469fed9b29"><td class="memItemLeft" align="right" valign="top"><a id="a6234d03cdafcb0dd38428d469fed9b29" name="a6234d03cdafcb0dd38428d469fed9b29"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>module_handler_base</b> (QString node_path, QString module_path, QString entrypoint, QString connection_id)</td></tr>
+<tr class="separator:a6234d03cdafcb0dd38428d469fed9b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6053e66247fa235b48c3090ec7153fb" id="r_aa6053e66247fa235b48c3090ec7153fb"><td class="memItemLeft" align="right" valign="top"><a id="aa6053e66247fa235b48c3090ec7153fb" name="aa6053e66247fa235b48c3090ec7153fb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_read</b> (QSocketDescriptor, QSocketNotifier::Type)</td></tr>
 <tr class="separator:aa6053e66247fa235b48c3090ec7153fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0630d73326c9cd8ec4771d783f1a0bad" id="r_a0630d73326c9cd8ec4771d783f1a0bad"><td class="memItemLeft" align="right" valign="top"><a id="a0630d73326c9cd8ec4771d783f1a0bad" name="a0630d73326c9cd8ec4771d783f1a0bad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>do_write</b> (std::string_view res)</td></tr>
 <tr class="separator:a0630d73326c9cd8ec4771d783f1a0bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f4ee1f12baf6195556f9ef35469374" id="r_a09f4ee1f12baf6195556f9ef35469374"><td class="memItemLeft" align="right" valign="top"><a id="a09f4ee1f12baf6195556f9ef35469374" name="a09f4ee1f12baf6195556f9ef35469374"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>restart_process</b> ()</td></tr>
+<tr class="memdesc:a09f4ee1f12baf6195556f9ef35469374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the module again, false where unsupported. <br /></td></tr>
+<tr class="separator:a09f4ee1f12baf6195556f9ef35469374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab36239c9c03cb40810646ccaea8b5377" id="r_ab36239c9c03cb40810646ccaea8b5377"><td class="memItemLeft" align="right" valign="top"><a id="ab36239c9c03cb40810646ccaea8b5377" name="ab36239c9c03cb40810646ccaea8b5377"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>processMessage</b> (std::string_view)=0</td></tr>
 <tr class="separator:ab36239c9c03cb40810646ccaea8b5377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5da5ba0bd34f7a55b36bc55045000d22" id="r_a5da5ba0bd34f7a55b36bc55045000d22"><td class="memItemLeft" align="right" valign="top"><a id="a5da5ba0bd34f7a55b36bc55045000d22" name="a5da5ba0bd34f7a55b36bc55045000d22"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_process_exited</b> ()</td></tr>
+<tr class="separator:a5da5ba0bd34f7a55b36bc55045000d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ac852b69cc8cc46de61f504104a086d01" id="r_ac852b69cc8cc46de61f504104a086d01"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbitfocus_1_1module__handler__base.html#ac852b69cc8cc46de61f504104a086d01">max_message_size</a> = 256 * 1024 * 1024</td></tr>
+<tr class="separator:ac852b69cc8cc46de61f504104a086d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd73dc1e1dea1dcae5e8a8d561826f6" id="r_a1cd73dc1e1dea1dcae5e8a8d561826f6"><td class="memItemLeft" align="right" valign="top"><a id="a1cd73dc1e1dea1dcae5e8a8d561826f6" name="a1cd73dc1e1dea1dcae5e8a8d561826f6"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>buf</b> [16 *4096] {}</td></tr>
 <tr class="separator:a1cd73dc1e1dea1dcae5e8a8d561826f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da387621a64aa53aef536582c014450" id="r_a9da387621a64aa53aef536582c014450"><td class="memItemLeft" align="right" valign="top"><a id="a9da387621a64aa53aef536582c014450" name="a9da387621a64aa53aef536582c014450"></a>
 std::vector&lt; char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b></td></tr>
 <tr class="separator:a9da387621a64aa53aef536582c014450"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4656a3cf4a7fea845c1ef3472f6d38" id="r_afb4656a3cf4a7fea845c1ef3472f6d38"><td class="memItemLeft" align="right" valign="top"><a id="afb4656a3cf4a7fea845c1ef3472f6d38" name="afb4656a3cf4a7fea845c1ef3472f6d38"></a>
-QProcess&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> {}</td></tr>
-<tr class="separator:afb4656a3cf4a7fea845c1ef3472f6d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70792cf874d823128c5caa704b62e309" id="r_a70792cf874d823128c5caa704b62e309"><td class="memItemLeft" align="right" valign="top"><a id="a70792cf874d823128c5caa704b62e309" name="a70792cf874d823128c5caa704b62e309"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>scanned</b> {}</td></tr>
+<tr class="memdesc:a70792cf874d823128c5caa704b62e309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes of the queue already searched for a message end. <br /></td></tr>
+<tr class="separator:a70792cf874d823128c5caa704b62e309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab384609315142eff7498fd0321b49002" id="r_ab384609315142eff7498fd0321b49002"><td class="memItemLeft" align="right" valign="top"><a id="ab384609315142eff7498fd0321b49002" name="ab384609315142eff7498fd0321b49002"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>pending_write</b></td></tr>
+<tr class="memdesc:ab384609315142eff7498fd0321b49002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes the module has not read yet: the socket is non-blocking. <br /></td></tr>
+<tr class="separator:ab384609315142eff7498fd0321b49002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ae7e4ad14f7c8b50ccca43a337f792" id="r_a74ae7e4ad14f7c8b50ccca43a337f792"><td class="memItemLeft" align="right" valign="top"><a id="a74ae7e4ad14f7c8b50ccca43a337f792" name="a74ae7e4ad14f7c8b50ccca43a337f792"></a>
+std::unique_ptr&lt; QProcess &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>process</b></td></tr>
+<tr class="separator:a74ae7e4ad14f7c8b50ccca43a337f792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a115dd6100d6424148592639528d64f67" id="r_a115dd6100d6424148592639528d64f67"><td class="memItemLeft" align="right" valign="top"><a id="a115dd6100d6424148592639528d64f67" name="a115dd6100d6424148592639528d64f67"></a>
 QSocketNotifier *&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b> {}</td></tr>
 <tr class="separator:a115dd6100d6424148592639528d64f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca07ca0eca175e54ae7aa464af7fe54a" id="r_aca07ca0eca175e54ae7aa464af7fe54a"><td class="memItemLeft" align="right" valign="top"><a id="aca07ca0eca175e54ae7aa464af7fe54a" name="aca07ca0eca175e54ae7aa464af7fe54a"></a>
+QSocketNotifier *&#160;</td><td class="memItemRight" valign="bottom"><b>write_socket</b> {}</td></tr>
+<tr class="separator:aca07ca0eca175e54ae7aa464af7fe54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac63a936b587f2a6ab48a86c99860fb6" id="r_aac63a936b587f2a6ab48a86c99860fb6"><td class="memItemLeft" align="right" valign="top"><a id="aac63a936b587f2a6ab48a86c99860fb6" name="aac63a936b587f2a6ab48a86c99860fb6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {}</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pfd</b> [2] {-1, -1}</td></tr>
 <tr class="separator:aac63a936b587f2a6ab48a86c99860fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66eb8241ed9aa6c86e1f11e46b1a0c42" id="r_a66eb8241ed9aa6c86e1f11e46b1a0c42"><td class="memItemLeft" align="right" valign="top"><a id="a66eb8241ed9aa6c86e1f11e46b1a0c42" name="a66eb8241ed9aa6c86e1f11e46b1a0c42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>discarding</b> {}</td></tr>
+<tr class="memdesc:a66eb8241ed9aa6c86e1f11e46b1a0c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skipping the rest of an over-long message. <br /></td></tr>
+<tr class="separator:a66eb8241ed9aa6c86e1f11e46b1a0c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76dc4222c4977de576f14b11db63f0e2" id="r_a76dc4222c4977de576f14b11db63f0e2"><td class="memItemLeft" align="right" valign="top"><a id="a76dc4222c4977de576f14b11db63f0e2" name="a76dc4222c4977de576f14b11db63f0e2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>release_grace_ms</b> {}</td></tr>
+<tr class="memdesc:a76dc4222c4977de576f14b11db63f0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long the process gets to shut down once released. <br /></td></tr>
+<tr class="separator:a76dc4222c4977de576f14b11db63f0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac852b69cc8cc46de61f504104a086d01" name="ac852b69cc8cc46de61f504104a086d01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac852b69cc8cc46de61f504104a086d01">&#9670;&#160;</a></span>max_message_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t bitfocus::module_handler_base::max_message_size = 256 * 1024 * 1024</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Longest message accepted from the module, and most bytes waiting for it to read; past that, messages are dropped </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_bitfocus_context_8hpp_source.html">BitfocusContext.hpp</a></li>
 <li><b>BitfocusContext.unix.cpp</b></li>

@@ -1,7 +1,7 @@
 var namespace_execution =
 [
     [ "AddProcess", "struct_execution_1_1_add_process.html", null ],
-    [ "Clock", "class_execution_1_1_clock.html", null ],
+    [ "Clock", "class_execution_1_1_clock.html", "class_execution_1_1_clock" ],
     [ "ClockFactory", "class_execution_1_1_clock_factory.html", null ],
     [ "ClockFactoryList", "class_execution_1_1_clock_factory_list.html", null ],
     [ "Context", "struct_execution_1_1_context.html", "struct_execution_1_1_context" ],
@@ -51,5 +51,8 @@ var namespace_execution =
     [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],
     [ "TimeSyncExecutionCallbacks", "struct_execution_1_1_time_sync_execution_callbacks.html", null ],
     [ "Transaction", "struct_execution_1_1_transaction.html", null ],
-    [ "time_function", "namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d", null ]
+    [ "time_function", "namespace_execution.html#aa65c041c9e6cd2071fd9f337e843f81d", null ],
+    [ "addressBelongsTo", "namespace_execution.html#a4dcb26b6d9fc9854cc88b564ce1a5f7e", null ],
+    [ "clearAddresses", "namespace_execution.html#ac23f74489ea2d77333585920779bae01", null ],
+    [ "deviceAddresses", "namespace_execution.html#a1cd4932804d908e4c554a39da4e85341", null ]
 ];

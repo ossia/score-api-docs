@@ -136,8 +136,26 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>owner</b></td></tr
 <tr class="separator:a10fadb58959f00d0194b376e26f683f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8a82354d3bd272b811093f7539e026" id="r_a0b8a82354d3bd272b811093f7539e026"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_process_1_1_media_range.html">MediaRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_external_file_ref.html#a0b8a82354d3bd272b811093f7539e026">usedRange</a></td></tr>
 <tr class="separator:a0b8a82354d3bd272b811093f7539e026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58e85f99e00c0d7d966650f30b3f69c" id="r_aa58e85f99e00c0d7d966650f30b3f69c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_external_file_ref.html#aa58e85f99e00c0d7d966650f30b3f69c">companions</a></td></tr>
+<tr class="separator:aa58e85f99e00c0d7d966650f30b3f69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa58e85f99e00c0d7d966650f30b3f69c" name="aa58e85f99e00c0d7d966650f30b3f69c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58e85f99e00c0d7d966650f30b3f69c">&#9670;&#160;</a></span>companions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;QString&gt; Process::ExternalFileRef::companions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Files this one names relative to its own folder, and is useless without: the samples of a Hydrogen drumkit.xml or of a KORG .kmp.</p>
+<p>Paths are relative to the folder of <code>path</code>. A reference with companions is collected together with them into a folder of its own, so that their layout relative to it &ndash; which is how the file finds them &ndash; survives. </p>
+
+</div>
+</div>
 <a id="af01eedaa60dae41d7b3dd3c417ae5209" name="af01eedaa60dae41d7b3dd3c417ae5209"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af01eedaa60dae41d7b3dd3c417ae5209">&#9670;&#160;</a></span>path</h2>
 

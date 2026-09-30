@@ -128,6 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e11412306c832a9c19f9c50e794adc8" id="r_a8e11412306c832a9c19f9c50e794adc8"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_state_data_interface.html#a8e11412306c832a9c19f9c50e794adc8">matchingAddresses</a> ()</td></tr>
 <tr class="memdesc:a8e11412306c832a9c19f9c50e794adc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">matchingAddresses The addresses that correspond to this state.  <br /></td></tr>
 <tr class="separator:a8e11412306c832a9c19f9c50e794adc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcddb7a6825c346f9adf983001b154b2" id="r_abcddb7a6825c346f9adf983001b154b2"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_state_data_interface.html#abcddb7a6825c346f9adf983001b154b2">takenOverAddresses</a> () const</td></tr>
+<tr class="memdesc:abcddb7a6825c346f9adf983001b154b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">takenOverAddresses The addresses the process starts from the value they have (e.g. an automation with tween): the state it starts from does not send them when played.  <br /></td></tr>
+<tr class="separator:abcddb7a6825c346f9adf983001b154b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4efb71b7d91fe681fd2769663ed50ab2" id="r_a4efb71b7d91fe681fd2769663ed50ab2"><td class="memItemLeft" align="right" valign="top">virtual State::MessageList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_state_data_interface.html#a4efb71b7d91fe681fd2769663ed50ab2">messages</a> () const</td></tr>
 <tr class="memdesc:a4efb71b7d91fe681fd2769663ed50ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">messages The current messages in this point of the process.  <br /></td></tr>
 <tr class="separator:a4efb71b7d91fe681fd2769663ed50ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +298,35 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 
 <p>setMessages Request a message change on behalf of the process. </p>
 <p>Should return the actual new state of the process. </p>
+
+</div>
+</div>
+<a id="abcddb7a6825c346f9adf983001b154b2" name="abcddb7a6825c346f9adf983001b154b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcddb7a6825c346f9adf983001b154b2">&#9670;&#160;</a></span>takenOverAddresses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="struct_state_1_1_address_accessor.html">State::AddressAccessor</a> &gt; ProcessStateDataInterface::takenOverAddresses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>takenOverAddresses The addresses the process starts from the value they have (e.g. an automation with tween): the state it starts from does not send them when played. </p>
+
+<p>Reimplemented in <a class="el" href="class_automation_1_1_process_state.html#a15f8a885b7b62ec3a252eaa935cd825c">Automation::ProcessState</a>.</p>
 
 </div>
 </div>

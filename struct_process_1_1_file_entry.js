@@ -1,5 +1,6 @@
 var struct_process_1_1_file_entry =
 [
+    [ "companions", "struct_process_1_1_file_entry.html#abb417c937370ad7e2d9e6868af99ae06", null ],
     [ "copyNeeded", "struct_process_1_1_file_entry.html#a7951277ce03f0dd1c0bbbf4bde0b3380", null ],
     [ "destinationPath", "struct_process_1_1_file_entry.html#a8e15b06cb167180d8c4d42c848a424e5", null ],
     [ "newSize", "struct_process_1_1_file_entry.html#a4d6a4c1f566919bb3ad696d08320891e", null ],

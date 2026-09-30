@@ -174,9 +174,10 @@ AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecCo
 <tr class="memitem:a2e7538c68187107f804b021a0e4de51b" id="r_a2e7538c68187107f804b021a0e4de51b"><td class="memItemLeft" align="right" valign="top"><a id="a2e7538c68187107f804b021a0e4de51b" name="a2e7538c68187107f804b021a0e4de51b"></a>
 <a class="el" href="class_video_1_1_rescale.html">Rescale</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rescale</b></td></tr>
 <tr class="separator:a2e7538c68187107f804b021a0e4de51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdb4cfc7006a93454eb43cca68f02295" id="r_acdb4cfc7006a93454eb43cca68f02295"><td class="memItemLeft" align="right" valign="top"><a id="acdb4cfc7006a93454eb43cca68f02295" name="acdb4cfc7006a93454eb43cca68f02295"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
-<tr class="separator:acdb4cfc7006a93454eb43cca68f02295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13afbdf213067ad9b390aa68e44bb176" id="r_a13afbdf213067ad9b390aa68e44bb176"><td class="memItemLeft" align="right" valign="top"><a id="a13afbdf213067ad9b390aa68e44bb176" name="a13afbdf213067ad9b390aa68e44bb176"></a>
+std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
+<tr class="memdesc:a13afbdf213067ad9b390aa68e44bb176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by the decoding thread, polled by the owner waiting for the end. <br /></td></tr>
+<tr class="separator:a13afbdf213067ad9b390aa68e44bb176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_rescale_8hpp_source.html">Rescale.hpp</a></li>

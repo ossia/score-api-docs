@@ -1,6 +1,7 @@
 var classscore_1_1gfx_1_1_gpu_resource_registry =
 [
     [ "MeshSlab", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_slab.html", null ],
+    [ "PrimitiveCloudUploads", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_primitive_cloud_uploads.html", null ],
     [ "Slot", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_slot.html", null ],
     [ "TextureChannelState", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state" ],
     [ "acquireMeshSlab", "classscore_1_1gfx_1_1_gpu_resource_registry.html#ab0b3a7aecb24e21159a916018b313602", null ],
@@ -28,8 +29,10 @@ var classscore_1_1gfx_1_1_gpu_resource_registry =
     [ "slotOffset", "classscore_1_1gfx_1_1_gpu_resource_registry.html#abde17b2352a9b6677fbb2c34eca8f040", null ],
     [ "sweepMeshSlabs", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a287650dd2e53082ccec24a7e47ae3ec4", null ],
     [ "sweepStaleDynamicTextureSlots", "classscore_1_1gfx_1_1_gpu_resource_registry.html#ae5a03cfb5758a31917159e89bd98d237", null ],
-    [ "textureChannel", "classscore_1_1gfx_1_1_gpu_resource_registry.html#ad0f4abb391f88c61c706317c666f2b1e", null ],
+    [ "textureChannel", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a25b43419901f9e717e079195b46c1cc3", null ],
+    [ "texturePool", "classscore_1_1gfx_1_1_gpu_resource_registry.html#ac86da3e90cbb1f5a232bec35846c190f", null ],
     [ "toOssiaRef", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a88481d58ec82edb96e60f3b48d6d8ca2", null ],
     [ "updateSlot", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a8b50153e8bfc48e860a6657a3b289c9e", null ],
+    [ "uploadDefaultMaterial", "classscore_1_1gfx_1_1_gpu_resource_registry.html#aff9a678107e6e13e2002ba23261bc32a", null ],
     [ "uploadMeshStream", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a12f0863147b94156bccc6363473f11eb", null ]
 ];

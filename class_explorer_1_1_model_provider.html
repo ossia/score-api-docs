@@ -123,6 +123,9 @@ Inheritance diagram for Explorer::ModelProvider:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a09fef4f764be8bb91e8917b0d446efcd" id="r_a09fef4f764be8bb91e8917b0d446efcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device_1_1_node_based_item_model.html">Device::NodeBasedItemModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_model_provider.html#a09fef4f764be8bb91e8917b0d446efcd">getNodeModel</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept override</td></tr>
 <tr class="separator:a09fef4f764be8bb91e8917b0d446efcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcef1ba74e0db284719e704ba8cbca5" id="r_aebcef1ba74e0db284719e704ba8cbca5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_explorer_1_1_model_provider.html#aebcef1ba74e0db284719e704ba8cbca5">findDevice</a> (const QString &amp;name, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx) const noexcept override</td></tr>
+<tr class="memdesc:aebcef1ba74e0db284719e704ba8cbca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a device of the document by name, even if the explorer does not show it.  <br /></td></tr>
+<tr class="separator:aebcef1ba74e0db284719e704ba8cbca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_interface_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_interface_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_interface_base.html">score::InterfaceBase</a></td></tr>
 <tr class="memitem:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base" id="r_a993744914ec2a9cdf05f07f6f1643d55"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td class="memItemRight" valign="bottom"><b>interfaceKey</b> () const noexcept=0</td></tr>
@@ -130,6 +133,46 @@ virtual <a class="el" href="class_uuid_key.html">InterfaceKey</a>&#160;</td><td 
 <tr class="separator:a993744914ec2a9cdf05f07f6f1643d55 inherit pub_methods_classscore_1_1_interface_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aebcef1ba74e0db284719e704ba8cbca5" name="aebcef1ba74e0db284719e704ba8cbca5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcef1ba74e0db284719e704ba8cbca5">&#9670;&#160;</a></span>findDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_device_1_1_device_interface.html">Device::DeviceInterface</a> * Explorer::ModelProvider::findDevice </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds a device of the document by name, even if the explorer does not show it. </p>
+
+<p>Reimplemented from <a class="el" href="class_device_1_1_device_model_provider.html#acbf5a5407bef5326bffe92aa6d583b4f">Device::DeviceModelProvider</a>.</p>
+
+</div>
+</div>
 <a id="a09fef4f764be8bb91e8917b0d446efcd" name="a09fef4f764be8bb91e8917b0d446efcd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09fef4f764be8bb91e8917b0d446efcd">&#9670;&#160;</a></span>getNodeModel()</h2>
 

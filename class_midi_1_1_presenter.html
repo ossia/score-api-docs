@@ -135,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4fe28fe66f6b1948f6aa1b997bf5e720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8104ab84d627b55503a8c5c49c6e26c9" id="r_a8104ab84d627b55503a8c5c49c6e26c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_midi_1_1_presenter.html#a8104ab84d627b55503a8c5c49c6e26c9">parentGeometryChanged</a> () override</td></tr>
 <tr class="separator:a8104ab84d627b55503a8c5c49c6e26c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9617d35a2c571544688b2c390c0dcc" id="r_a9f9617d35a2c571544688b2c390c0dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_midi_1_1_presenter.html#a9f9617d35a2c571544688b2c390c0dcc">on_focusChanged</a> () override</td></tr>
+<tr class="separator:a9f9617d35a2c571544688b2c390c0dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f5d81d773a1ba32adceb198b9b6feb" id="r_a96f5d81d773a1ba32adceb198b9b6feb"><td class="memItemLeft" align="right" valign="top"><a id="a96f5d81d773a1ba32adceb198b9b6feb" name="a96f5d81d773a1ba32adceb198b9b6feb"></a>
 const <a class="el" href="class_midi_1_1_process_model.html">Midi::ProcessModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> () const noexcept</td></tr>
 <tr class="separator:a96f5d81d773a1ba32adceb198b9b6feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,15 +149,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_deselectOtherNotes
 <tr class="memitem:a4e759318ace42d7030eec7aef2d65f09" id="r_a4e759318ace42d7030eec7aef2d65f09"><td class="memItemLeft" align="right" valign="top"><a id="a4e759318ace42d7030eec7aef2d65f09" name="a4e759318ace42d7030eec7aef2d65f09"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_duplicate</b> ()</td></tr>
 <tr class="separator:a4e759318ace42d7030eec7aef2d65f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7654a03eb89b481f3d7c1d2f4ae322bd" id="r_a7654a03eb89b481f3d7c1d2f4ae322bd"><td class="memItemLeft" align="right" valign="top"><a id="a7654a03eb89b481f3d7c1d2f4ae322bd" name="a7654a03eb89b481f3d7c1d2f4ae322bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_noteChanged</b> (<a class="el" href="class_midi_1_1_note_view.html">NoteView</a> &amp;v)</td></tr>
-<tr class="separator:a7654a03eb89b481f3d7c1d2f4ae322bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b61254dece9a323f307fb1a7074b1ae" id="r_a4b61254dece9a323f307fb1a7074b1ae"><td class="memItemLeft" align="right" valign="top"><a id="a4b61254dece9a323f307fb1a7074b1ae" name="a4b61254dece9a323f307fb1a7074b1ae"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_noteChangeFinished</b> (<a class="el" href="class_midi_1_1_note_view.html">NoteView</a> &amp;v)</td></tr>
-<tr class="separator:a4b61254dece9a323f307fb1a7074b1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b9e55bba9698f7981f9c2b467f1d59b" id="r_a2b9e55bba9698f7981f9c2b467f1d59b"><td class="memItemLeft" align="right" valign="top"><a id="a2b9e55bba9698f7981f9c2b467f1d59b" name="a2b9e55bba9698f7981f9c2b467f1d59b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_noteChanged</b> (<a class="el" href="class_midi_1_1_note_view.html">NoteView</a> &amp;v, int semitones)</td></tr>
+<tr class="memdesc:a2b9e55bba9698f7981f9c2b467f1d59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A drag of <code>v</code> by <code>semitones</code>, its time from where the view is. <br /></td></tr>
+<tr class="separator:a2b9e55bba9698f7981f9c2b467f1d59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d35c8add2ffe55b4f07edb54ad9eef4" id="r_a2d35c8add2ffe55b4f07edb54ad9eef4"><td class="memItemLeft" align="right" valign="top"><a id="a2d35c8add2ffe55b4f07edb54ad9eef4" name="a2d35c8add2ffe55b4f07edb54ad9eef4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_noteChangeFinished</b> (<a class="el" href="class_midi_1_1_note_view.html">NoteView</a> &amp;v, int semitones)</td></tr>
+<tr class="separator:a2d35c8add2ffe55b4f07edb54ad9eef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6971312a42416e80f6f0e874d6455912" id="r_a6971312a42416e80f6f0e874d6455912"><td class="memItemLeft" align="right" valign="top"><a id="a6971312a42416e80f6f0e874d6455912" name="a6971312a42416e80f6f0e874d6455912"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_noteScaled</b> (const <a class="el" href="class_midi_1_1_note.html">Note</a> &amp;note, double newScale)</td></tr>
 <tr class="separator:a6971312a42416e80f6f0e874d6455912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0556e3c71a0b8297dfe9f9d3ebcdc6d4" id="r_a0556e3c71a0b8297dfe9f9d3ebcdc6d4"><td class="memItemLeft" align="right" valign="top"><a id="a0556e3c71a0b8297dfe9f9d3ebcdc6d4" name="a0556e3c71a0b8297dfe9f9d3ebcdc6d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>on_transpose</b> (int semitones)</td></tr>
+<tr class="separator:a0556e3c71a0b8297dfe9f9d3ebcdc6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5f5ae891dc94fbbd6dd95d0bf168c4a" id="r_ae5f5ae891dc94fbbd6dd95d0bf168c4a"><td class="memItemLeft" align="right" valign="top"><a id="ae5f5ae891dc94fbbd6dd95d0bf168c4a" name="ae5f5ae891dc94fbbd6dd95d0bf168c4a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_requestVelocityChange</b> (const <a class="el" href="class_midi_1_1_note.html">Note</a> &amp;note, double velocityDelta)</td></tr>
 <tr class="separator:ae5f5ae891dc94fbbd6dd95d0bf168c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +184,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>focused</b> () const<
 <tr class="memitem:acb4f4585c09d231eea4e244f8d480639 inherit pub_methods_class_process_1_1_layer_presenter" id="r_acb4f4585c09d231eea4e244f8d480639"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setFocus</b> (bool focus)</td></tr>
 <tr class="separator:acb4f4585c09d231eea4e244f8d480639 inherit pub_methods_class_process_1_1_layer_presenter"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4aad67fe1fd37c826ec785a925d19a inherit pub_methods_class_process_1_1_layer_presenter" id="r_a0e4aad67fe1fd37c826ec785a925d19a"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_focusChanged</b> ()</td></tr>
-<tr class="separator:a0e4aad67fe1fd37c826ec785a925d19a inherit pub_methods_class_process_1_1_layer_presenter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d2e75b60f201ef9f2f18be4c5a8225 inherit pub_methods_class_process_1_1_layer_presenter" id="r_a93d2e75b60f201ef9f2f18be4c5a8225"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setFullView</b> ()</td></tr>
 <tr class="separator:a93d2e75b60f201ef9f2f18be4c5a8225 inherit pub_methods_class_process_1_1_layer_presenter"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +219,33 @@ const <a class="el" href="class_process_1_1_process_model.html">Process::Process
 <tr class="separator:a569562954e1aeab337af9e50544d5567 inherit pro_attribs_class_process_1_1_layer_presenter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9f9617d35a2c571544688b2c390c0dcc" name="a9f9617d35a2c571544688b2c390c0dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f9617d35a2c571544688b2c390c0dcc">&#9670;&#160;</a></span>on_focusChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Midi::Presenter::on_focusChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a>.</p>
+
+</div>
+</div>
 <a id="a4fe28fe66f6b1948f6aa1b997bf5e720" name="a4fe28fe66f6b1948f6aa1b997bf5e720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4fe28fe66f6b1948f6aa1b997bf5e720">&#9670;&#160;</a></span>on_zoomRatioChanged()</h2>
 

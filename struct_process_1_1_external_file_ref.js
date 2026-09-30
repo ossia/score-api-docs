@@ -1,5 +1,6 @@
 var struct_process_1_1_external_file_ref =
 [
+    [ "companions", "struct_process_1_1_external_file_ref.html#aa58e85f99e00c0d7d966650f30b3f69c", null ],
     [ "directory", "struct_process_1_1_external_file_ref.html#ad2bbc54324b75c6c75a9ecd52a6b381e", null ],
     [ "owner", "struct_process_1_1_external_file_ref.html#a10fadb58959f00d0194b376e26f683f5", null ],
     [ "path", "struct_process_1_1_external_file_ref.html#af01eedaa60dae41d7b3dd3c417ae5209", null ],

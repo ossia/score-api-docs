@@ -9,6 +9,7 @@ var class_process_1_1_process_model =
     [ "position", "class_process_1_1_process_model.html#a41b20d7a3edfc3f5969a3cf177c9fd5c", null ],
     [ "presetMatches", "class_process_1_1_process_model.html#a5a6b0da1cb10dcdd777e6f542b093abe", null ],
     [ "refreshFromExternalSource", "class_process_1_1_process_model.html#a5fc601322e437e1f337678fa8a5bfb2a", null ],
+    [ "scriptable", "class_process_1_1_process_model.html#a69fc04d9b9942440a7904671804a50e4", null ],
     [ "scriptEditorPlacement", "class_process_1_1_process_model.html#a756a2f1b878de0bfba7fd10834e5f098", null ],
     [ "selectableChildren", "class_process_1_1_process_model.html#a5b2ed6f42effa546e738b6d991a6e3d5", null ],
     [ "setParentDuration", "class_process_1_1_process_model.html#aca261d66704364d06318dce734933b71", null ],

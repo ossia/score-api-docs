@@ -114,7 +114,27 @@ $(document).ready(function(){initNavTree('_uuid_key_serialization_8hpp_source.ht
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;score/plugins/UuidKey.hpp&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;<a class="code" href="_data_stream_visitor_8hpp.html">score/serialization/DataStreamVisitor.hpp</a>&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>SCORE_SERALIZE_DATASTREAM_DEFINE_T(template &lt;typename T&gt;, <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;T&gt;</a>)</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if defined(SCORE_DEBUG_DELIMITERS)</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>SCORE_SERALIZE_DATASTREAM_DEFINE_T(template &lt;typename T&gt;, <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;T&gt;</a>)</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// The same 16 bytes DataStreamReader writes, without one: QSettings streams</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// these while flushing, which can happen after the application&#39;s components</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// are gone.</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>QDataStream&amp; operator&lt;&lt;(QDataStream&amp; stream, <span class="keyword">const</span> <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;T&gt;</a>&amp; obj)</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  stream.writeRawData(</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(obj.impl().data), <span class="keyword">sizeof</span>(obj.impl().data));</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>QDataStream&amp; operator&gt;&gt;(QDataStream&amp; stream, <a class="code hl_class" href="class_uuid_key.html">UuidKey&lt;T&gt;</a>&amp; obj)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  stream.readRawData(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(obj.impl().data), <span class="keyword">sizeof</span>(obj.impl().data));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">return</span> stream;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_data_stream_visitor_8hpp_html"><div class="ttname"><a href="_data_stream_visitor_8hpp.html">DataStreamVisitor.hpp</a></div></div>
 <div class="ttc" id="aclass_uuid_key_html"><div class="ttname"><a href="class_uuid_key.html">UuidKey</a></div><div class="ttdef"><b>Definition</b> UuidKey.hpp:345</div></div>
 </div><!-- fragment --></div><!-- contents -->

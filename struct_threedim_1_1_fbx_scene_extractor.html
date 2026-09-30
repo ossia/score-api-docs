@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('struct_threedim_1_1_fbx_scene_extracto
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -111,6 +112,11 @@ $(document).ready(function(){initNavTree('struct_threedim_1_1_fbx_scene_extracto
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_threedim_1_1_fbx_scene_extractor_1_1_mesh_parts.html">MeshParts</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad3180d2b4060db951f36932a4a01a8df" id="r_ad3180d2b4060db951f36932a4a01a8df"><td class="memItemLeft" align="right" valign="top"><a id="ad3180d2b4060db951f36932a4a01a8df" name="ad3180d2b4060db951f36932a4a01a8df"></a>
@@ -122,9 +128,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>link_joint_parents</b
 <tr class="memitem:a29d950da0ce17533ee0fcf70e59d3c45" id="r_a29d950da0ce17533ee0fcf70e59d3c45"><td class="memItemLeft" align="right" valign="top"><a id="a29d950da0ce17533ee0fcf70e59d3c45" name="a29d950da0ce17533ee0fcf70e59d3c45"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>register_material</b> (const ufbx_material *m)</td></tr>
 <tr class="separator:a29d950da0ce17533ee0fcf70e59d3c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaa473427bd5f8cb5dedc9f64b820c2d" id="r_adaa473427bd5f8cb5dedc9f64b820c2d"><td class="memItemLeft" align="right" valign="top"><a id="adaa473427bd5f8cb5dedc9f64b820c2d" name="adaa473427bd5f8cb5dedc9f64b820c2d"></a>
-<a class="el" href="struct_threedim_1_1_fbx_parser_1_1_scene_part.html">FbxParser::ScenePart</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extract_part</b> (const ufbx_node *node, const ufbx_mesh *umesh, const ufbx_mesh_part &amp;part)</td></tr>
-<tr class="separator:adaa473427bd5f8cb5dedc9f64b820c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26768b6dae75ddefc80debf7d24fea2e" id="r_a26768b6dae75ddefc80debf7d24fea2e"><td class="memItemLeft" align="right" valign="top"><a id="a26768b6dae75ddefc80debf7d24fea2e" name="a26768b6dae75ddefc80debf7d24fea2e"></a>
+<a class="el" href="struct_threedim_1_1_fbx_parser_1_1_scene_part.html">FbxParser::ScenePart</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extract_part</b> (const ufbx_mesh *umesh, const ufbx_mesh_part &amp;part)</td></tr>
+<tr class="separator:a26768b6dae75ddefc80debf7d24fea2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa9cd2727f721fed437f310a2b689f6" id="r_aaaa9cd2727f721fed437f310a2b689f6"><td class="memItemLeft" align="right" valign="top"><a id="aaaa9cd2727f721fed437f310a2b689f6" name="aaaa9cd2727f721fed437f310a2b689f6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>resolve_material</b> (const ufbx_node *node, const ufbx_mesh *umesh, uint32_t slot)</td></tr>
+<tr class="separator:aaaa9cd2727f721fed437f310a2b689f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4899fbfc01bcd2b94c1f333e81658d52" id="r_a4899fbfc01bcd2b94c1f333e81658d52"><td class="memItemLeft" align="right" valign="top"><a id="a4899fbfc01bcd2b94c1f333e81658d52" name="a4899fbfc01bcd2b94c1f333e81658d52"></a>
+const <a class="el" href="struct_threedim_1_1_fbx_scene_extractor_1_1_mesh_parts.html">MeshParts</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>extract_mesh</b> (const ufbx_mesh *umesh)</td></tr>
+<tr class="separator:a4899fbfc01bcd2b94c1f333e81658d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a545edae8986ef157feb5b1b4534bf951" id="r_a545edae8986ef157feb5b1b4534bf951"><td class="memItemLeft" align="right" valign="top"><a id="a545edae8986ef157feb5b1b4534bf951" name="a545edae8986ef157feb5b1b4534bf951"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>extract_node</b> (const ufbx_node *node, int parent_index)</td></tr>
 <tr class="separator:a545edae8986ef157feb5b1b4534bf951"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,6 +177,9 @@ std::unordered_map&lt; const ufbx_node *, int &gt;&#160;</td><td class="memItemR
 <tr class="memitem:abb15de83b65f1e138c6d9b054231b4e6" id="r_abb15de83b65f1e138c6d9b054231b4e6"><td class="memItemLeft" align="right" valign="top"><a id="abb15de83b65f1e138c6d9b054231b4e6" name="abb15de83b65f1e138c6d9b054231b4e6"></a>
 std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tri_indices</b></td></tr>
 <tr class="separator:abb15de83b65f1e138c6d9b054231b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab19c47f8ab320a7dab5e4d6a57fd0308" id="r_ab19c47f8ab320a7dab5e4d6a57fd0308"><td class="memItemLeft" align="right" valign="top"><a id="ab19c47f8ab320a7dab5e4d6a57fd0308" name="ab19c47f8ab320a7dab5e4d6a57fd0308"></a>
+std::unordered_map&lt; const ufbx_mesh *, <a class="el" href="struct_threedim_1_1_fbx_scene_extractor_1_1_mesh_parts.html">MeshParts</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mesh_parts</b></td></tr>
+<tr class="separator:ab19c47f8ab320a7dab5e4d6a57fd0308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><b>FbxParser.cpp</b></li>

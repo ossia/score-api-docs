@@ -195,6 +195,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveStack</b> ()</td>
 <tr class="memitem:a0b6356281904a36fc898d320c49cae7f" id="r_a0b6356281904a36fc898d320c49cae7f"><td class="memItemLeft" align="right" valign="top"><a id="a0b6356281904a36fc898d320c49cae7f" name="a0b6356281904a36fc898d320c49cae7f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>closeAllDocuments</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a0b6356281904a36fc898d320c49cae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43b72531f2e2399a8fc3a9e166df118" id="r_ad43b72531f2e2399a8fc3a9e166df118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_document_manager.html#ad43b72531f2e2399a8fc3a9e166df118">closeRemainingDocuments</a> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> *ctx=nullptr)</td></tr>
+<tr class="separator:ad43b72531f2e2399a8fc3a9e166df118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a400441871dd59090d7455d0b15e713c1" id="r_a400441871dd59090d7455d0b15e713c1"><td class="memItemLeft" align="right" valign="top"><a id="a400441871dd59090d7455d0b15e713c1" name="a400441871dd59090d7455d0b15e713c1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>preparingNewDocument</b> () const</td></tr>
 <tr class="separator:a400441871dd59090d7455d0b15e713c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,6 +270,25 @@ std::vector&lt; <a class="el" href="classscore_1_1_document.html">Document</a> *
 
 <p>checkAndUpdateJson </p>
 <dl class="section return"><dt>Returns</dt><dd>boolean indicating if the document is loadable </dd></dl>
+
+</div>
+</div>
+<a id="ad43b72531f2e2399a8fc3a9e166df118" name="ad43b72531f2e2399a8fc3a9e166df118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43b72531f2e2399a8fc3a9e166df118">&#9670;&#160;</a></span>closeRemainingDocuments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::DocumentManager::closeRemainingDocuments </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tears down the documents still open without prompting; given <code>ctx</code>, GUI application plug-ins get on_closeDocument() as in forceCloseDocument(). Must run while the application plug-ins still exist (see ~Presenter). </p>
 
 </div>
 </div>

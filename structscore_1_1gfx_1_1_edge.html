@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_edge.html','');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_edge-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::Edge Struct Reference</div></div>
 </div><!--header-->
@@ -117,8 +118,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_edge.html','');
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a084302245cc4b7774307619ca22ca6c5" id="r_a084302245cc4b7774307619ca22ca6c5"><td class="memItemLeft" align="right" valign="top"><a id="a084302245cc4b7774307619ca22ca6c5" name="a084302245cc4b7774307619ca22ca6c5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Edge</b> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink, Process::CableType t)</td></tr>
+<tr class="memitem:a084302245cc4b7774307619ca22ca6c5" id="r_a084302245cc4b7774307619ca22ca6c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_edge.html#a084302245cc4b7774307619ca22ca6c5">Edge</a> (<a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *source, <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *sink, Process::CableType t)</td></tr>
 <tr class="separator:a084302245cc4b7774307619ca22ca6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -132,9 +132,75 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7b52b36b836f1a787b92a53373ff5055" id="r_a7b52b36b836f1a787b92a53373ff5055"><td class="memItemLeft" align="right" valign="top"><a id="a7b52b36b836f1a787b92a53373ff5055" name="a7b52b36b836f1a787b92a53373ff5055"></a>
 Process::CableType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> {}</td></tr>
 <tr class="separator:a7b52b36b836f1a787b92a53373ff5055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a131fe636b48858bf4a181b6801c33eb0" id="r_a131fe636b48858bf4a181b6801c33eb0"><td class="memItemLeft" align="right" valign="top">static std::atomic&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_edge.html#a131fe636b48858bf4a181b6801c33eb0">generation</a> {0}</td></tr>
+<tr class="separator:a131fe636b48858bf4a181b6801c33eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a084302245cc4b7774307619ca22ca6c5" name="a084302245cc4b7774307619ca22ca6c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084302245cc4b7774307619ca22ca6c5">&#9670;&#160;</a></span>Edge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">score::gfx::Edge::Edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *&#160;</td>
+          <td class="paramname"><em>sink</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Process::CableType&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sink port keeps its edges ordered by source (node id, output index), sources in the transparent QUEUE last: several cables into one input are drawn, and composited, in that order. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a131fe636b48858bf4a181b6801c33eb0" name="a131fe636b48858bf4a181b6801c33eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131fe636b48858bf4a181b6801c33eb0">&#9670;&#160;</a></span>generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;uint64_t&gt; score::gfx::Edge::generation {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bumped whenever an edge is created or destroyed: lets per-frame code cache what it derives from the graph's connectivity. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Utils.hpp</a></li>
+<li><b>score-plugin-gfx/Gfx/Graph/Utils.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

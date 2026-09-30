@@ -6,15 +6,18 @@ var dir_b6529b88cbf2db17432854d1a0d067de =
     [ "EditContext.hpp", "_edit_context_8hpp_source.html", null ],
     [ "ImportedUi.hpp", "_imported_ui_8hpp_source.html", null ],
     [ "score-plugin-js/JS/Qml/Metatypes.hpp", "score-plugin-js_2_j_s_2_qml_2_metatypes_8hpp_source.html", null ],
+    [ "ParseDuration.hpp", "_parse_duration_8hpp_source.html", null ],
     [ "PortSink.hpp", "_port_sink_8hpp_source.html", null ],
     [ "PortSource.hpp", "_port_source_8hpp_source.html", null ],
     [ "QmlObjects.hpp", "_qml_objects_8hpp_source.html", null ],
     [ "QmlProcess.hpp", "_qml_process_8hpp_source.html", null ],
     [ "QmlRhiObjects.hpp", "_qml_rhi_objects_8hpp_source.html", null ],
     [ "QtMetatypes.hpp", "_qt_metatypes_8hpp_source.html", null ],
+    [ "ScriptableNames.hpp", "_scriptable_names_8hpp_source.html", null ],
     [ "TextureSource.hpp", "_texture_source_8hpp_source.html", null ],
     [ "score-plugin-js/JS/Qml/Utils.hpp", "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html", null ],
     [ "ValueTypes.Qt5.hpp", "_value_types_8_qt5_8hpp_source.html", null ],
     [ "ValueTypes.Qt6.hpp", "_value_types_8_qt6_8hpp_source.html", null ],
+    [ "VariantToJs.hpp", "_variant_to_js_8hpp_source.html", null ],
     [ "ViewContext.hpp", "_view_context_8hpp_source.html", null ]
 ];

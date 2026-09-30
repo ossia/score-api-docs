@@ -128,19 +128,24 @@ $(document).ready(function(){initNavTree('_snapshot_action_8hpp_source.html','')
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QGraphicsScene&amp; scene, <span class="keyword">const</span> QString&amp; path = {},</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QRectF rect = QRectF(0, 0, 1920, 1080));</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_snapshot_action.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scenario_1_1_snapshot_action.html">SnapshotAction</a> : <span class="keyword">public</span> QAction</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_struct" href="struct_scenario_1_1_snapshot_action.html">SnapshotAction</a>(QGraphicsScene&amp; scene, QWidget* parent);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// Render a region of a QGraphicsScene to a file: SVG for a .svg path, else a</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// raster image in the format of the extension. False if nothing was written.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>SCORE_PLUGIN_SCENARIO_EXPORT</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">bool</span> renderSceneToFile(QGraphicsScene&amp; scene, <span class="keyword">const</span> QString&amp; path, QRectF rect);</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> takeScreenshot(QGraphicsScene&amp; scene);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_scenario_1_1_snapshot_action.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_scenario_1_1_snapshot_action.html">SnapshotAction</a> : <span class="keyword">public</span> QAction</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="struct_scenario_1_1_snapshot_action.html">SnapshotAction</a>(QGraphicsScene&amp; scene, QWidget* parent);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> takeScreenshot(QGraphicsScene&amp; scene);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
-<div class="ttc" id="astruct_scenario_1_1_snapshot_action_html"><div class="ttname"><a href="struct_scenario_1_1_snapshot_action.html">Scenario::SnapshotAction</a></div><div class="ttdef"><b>Definition</b> SnapshotAction.hpp:20</div></div>
+<div class="ttc" id="astruct_scenario_1_1_snapshot_action_html"><div class="ttname"><a href="struct_scenario_1_1_snapshot_action.html">Scenario::SnapshotAction</a></div><div class="ttdef"><b>Definition</b> SnapshotAction.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

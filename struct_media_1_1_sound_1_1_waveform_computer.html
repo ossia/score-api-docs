@@ -124,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaba8e1fbd485e17cedfe212afb826e22" id="r_aaba8e1fbd485e17cedfe212afb826e22"><td class="memItemLeft" align="right" valign="top"><a id="aaba8e1fbd485e17cedfe212afb826e22" name="aaba8e1fbd485e17cedfe212afb826e22"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="separator:aaba8e1fbd485e17cedfe212afb826e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bc05b7398d8d0f3d157bd15d6cb243" id="r_ae1bc05b7398d8d0f3d157bd15d6cb243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_media_1_1_sound_1_1_waveform_computer.html#ae1bc05b7398d8d0f3d157bd15d6cb243">claim</a> (const QVector&lt; QImage * &gt; &amp;img)</td></tr>
+<tr class="separator:ae1bc05b7398d8d0f3d157bd15d6cb243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f905bd59176ba234eff580016d438d7" id="r_a1f905bd59176ba234eff580016d438d7"><td class="memItemLeft" align="right" valign="top"><a id="a1f905bd59176ba234eff580016d438d7" name="a1f905bd59176ba234eff580016d438d7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>recompute</b> (<a class="el" href="struct_media_1_1_sound_1_1_waveform_request.html">WaveformRequest</a> req)</td></tr>
 <tr class="separator:a1f905bd59176ba234eff580016d438d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +139,26 @@ Friends</h2></td></tr>
 struct&#160;</td><td class="memItemRight" valign="bottom"><b>WaveformComputerImpl</b></td></tr>
 <tr class="separator:a2913a9a407e9cf17b2879809b4aa7df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae1bc05b7398d8d0f3d157bd15d6cb243" name="ae1bc05b7398d8d0f3d157bd15d6cb243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bc05b7398d8d0f3d157bd15d6cb243">&#9670;&#160;</a></span>claim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Sound::WaveformComputer::claim </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; QImage * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>img</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Takes ownership of images received from ready(). Every receiver of ready() must call this before keeping them: until then the computer owns them, and returns unclaimed ones (event dropped with its receiver) to the pool when it dies. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_waveform_computer_8hpp_source.html">WaveformComputer.hpp</a></li>
 <li><b>WaveformComputer.cpp</b></li>

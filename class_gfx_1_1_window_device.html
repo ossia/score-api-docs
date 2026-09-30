@@ -141,9 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee2827241ab7ebf6e4efc957366b58aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4944762a2a0a679681e82fbf31bdd6e0" id="r_a4944762a2a0a679681e82fbf31bdd6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a4944762a2a0a679681e82fbf31bdd6e0">renderFrames</a> (int frames) const</td></tr>
 <tr class="separator:a4944762a2a0a679681e82fbf31bdd6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e342fd79af430c53b4d43e4c4a06d1" id="r_ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memItemLeft" align="right" valign="top"><a id="ac6e342fd79af430c53b4d43e4c4a06d1" name="ac6e342fd79af430c53b4d43e4c4a06d1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepRate</b> (double fps) const</td></tr>
-<tr class="memdesc:ac6e342fd79af430c53b4d43e4c4a06d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames per second the step clock advances by. 60 unless set. <br /></td></tr>
+<tr class="memitem:ac6e342fd79af430c53b4d43e4c4a06d1" id="r_ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#ac6e342fd79af430c53b4d43e4c4a06d1">setStepRate</a> (double fps) const</td></tr>
 <tr class="separator:ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4fcc2563e3cbb89d0265be7e4bfc740" id="r_ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#ab4fcc2563e3cbb89d0265be7e4bfc740">grabFrame</a> (int frames, const QString &amp;path) const</td></tr>
 <tr class="separator:ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,6 +261,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>namespaceUpdated</b> 
 <tr class="memitem:a3e4d13e1c5c1b079b90c3ac9997bfd3d inherit pub_methods_class_device_1_1_device_interface" id="r_a3e4d13e1c5c1b079b90c3ac9997bfd3d"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceChanged</b> (ossia::net::device_base *old_dev, ossia::net::device_base *new_dev)</td></tr>
 <tr class="separator:a3e4d13e1c5c1b079b90c3ac9997bfd3d inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b39668e9241d44b218eb4e25f6a29 inherit pub_methods_class_device_1_1_device_interface" id="r_ac65b39668e9241d44b218eb4e25f6a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_device_interface.html#ac65b39668e9241d44b218eb4e25f6a29">deviceClearing</a> (ossia::net::device_base *dev)</td></tr>
+<tr class="separator:ac65b39668e9241d44b218eb4e25f6a29 inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a60c5443449fc05d87135d1534777d inherit pub_methods_class_device_1_1_device_interface" id="r_aa2a60c5443449fc05d87135d1534777d"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>logInbound</b> (const QString &amp;arg_1) const</td></tr>
 <tr class="separator:aa2a60c5443449fc05d87135d1534777d inherit pub_methods_class_device_1_1_device_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,6 +508,25 @@ score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Ad
       </table>
 </div><div class="memdoc">
 <p>Render exactly <code>frames</code> times and return. See <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">GfxContext::renderFrames</a>. Call it repeatedly to step frame by frame: the clock keeps counting across calls, so renderFrames(1) sixty times is the timeline renderFrames(60) is. </p>
+
+</div>
+</div>
+<a id="ac6e342fd79af430c53b4d43e4c4a06d1" name="ac6e342fd79af430c53b4d43e4c4a06d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6e342fd79af430c53b4d43e4c4a06d1">&#9670;&#160;</a></span>setStepRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::setStepRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fps</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frames per second the step clock advances by. 60 unless set. Call it before Score.play() for the execution to be stepped from its first tick; see <a class="el" href="class_gfx_1_1_gfx_context.html#a95c9415d5fd976e28dab2f14d5d5a49a">GfxContext::setStepRate</a>. </p>
 
 </div>
 </div>

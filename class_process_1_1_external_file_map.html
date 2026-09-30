@@ -130,10 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab5d12bcef3b6527ab718d3f52b273b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06d63d8fa0b32c6c784bacead05676bd" id="r_a06d63d8fa0b32c6c784bacead05676bd"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_external_file_map.html#a06d63d8fa0b32c6c784bacead05676bd">map</a> (<a class="el" href="struct_process_1_1_external_file_ref.html">ExternalFileRef</a> ref)</td></tr>
 <tr class="separator:a06d63d8fa0b32c6c784bacead05676bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01de5c1290cfa5e36bca27785fbe632d" id="r_a01de5c1290cfa5e36bca27785fbe632d"><td class="memItemLeft" align="right" valign="top"><a id="a01de5c1290cfa5e36bca27785fbe632d" name="a01de5c1290cfa5e36bca27785fbe632d"></a>
-<a class="el" href="class_process_1_1_external_file_map.html#a06d63d8fa0b32c6c784bacead05676bd">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>control</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;inlet, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">score::FileKind</a> kind, <a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193">FileUsage</a> usage=<a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193a324118a6721dd6b8a9b9f4e327df2bf5">FileUsage::Input</a>)</td></tr>
-<tr class="memdesc:a01de5c1290cfa5e36bca27785fbe632d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A path (or list of paths) held in a control port's value. <br /></td></tr>
-<tr class="separator:a01de5c1290cfa5e36bca27785fbe632d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af85090303b6142dd1d9fad66f8315028" id="r_af85090303b6142dd1d9fad66f8315028"><td class="memItemLeft" align="right" valign="top"><a id="af85090303b6142dd1d9fad66f8315028" name="af85090303b6142dd1d9fad66f8315028"></a>
+<a class="el" href="class_process_1_1_external_file_map.html#a06d63d8fa0b32c6c784bacead05676bd">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>control</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;inlet, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">score::FileKind</a> kind, <a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193">FileUsage</a> usage=<a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193a324118a6721dd6b8a9b9f4e327df2bf5">FileUsage::Input</a>, <a class="el" href="class_process_1_1_external_file_map.html#a06d63d8fa0b32c6c784bacead05676bd">const</a> <a class="el" href="namespace_process.html#a4eebee215db9548e25e5381fdb3af0a3">CompanionFiles</a> &amp;companions={})</td></tr>
+<tr class="memdesc:af85090303b6142dd1d9fad66f8315028"><td class="mdescLeft">&#160;</td><td class="mdescRight">A path (or list of paths) held in a control port's value. <br /></td></tr>
+<tr class="separator:af85090303b6142dd1d9fad66f8315028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c14ae52803504693ee4b4dc05797e3" id="r_ab7c14ae52803504693ee4b4dc05797e3"><td class="memItemLeft" align="right" valign="top"><a id="ab7c14ae52803504693ee4b4dc05797e3" name="ab7c14ae52803504693ee4b4dc05797e3"></a>
 <a class="el" href="class_process_1_1_external_file_map.html#a06d63d8fa0b32c6c784bacead05676bd">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>folder</b> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;inlet)</td></tr>
 <tr class="memdesc:ab7c14ae52803504693ee4b4dc05797e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A folder held in a control port's value. <br /></td></tr>
@@ -197,7 +197,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>owner</b></td></tr
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Report a reference and ask the mapper what to do with it. Returns the replacement path, or {} if it must stay as it is. </p>
+<p>Report a reference and ask the mapper what to do with it. Returns the replacement path, or {} if it must stay as it is &ndash; always {} for a reference that is not rewritable, which the mapper still sees. </p>
 
 </div>
 </div>

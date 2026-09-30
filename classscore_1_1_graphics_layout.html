@@ -125,8 +125,10 @@ Inheritance diagram for score::GraphicsLayout:</div>
 <area href="classscore_1_1_graphics_h_box_layout.html" alt="score::GraphicsHBoxLayout" shape="rect" coords="333,504,545,528"/>
 <area href="classscore_1_1_graphics_i_o_root_layout.html" alt="score::GraphicsIORootLayout" shape="rect" coords="333,560,545,584"/>
 <area href="classscore_1_1_graphics_split_layout.html" alt="score::GraphicsSplitLayout" shape="rect" coords="333,616,545,640"/>
-<area href="classscore_1_1_graphics_tab_layout.html" alt="score::GraphicsTabLayout" shape="rect" coords="333,672,545,696"/>
-<area href="classscore_1_1_graphics_v_box_layout.html" alt="score::GraphicsVBoxLayout" shape="rect" coords="333,728,545,752"/>
+<area href="classscore_1_1_graphics_strip_detail_layout.html" alt="score::GraphicsStripDetailLayout" shape="rect" coords="333,672,545,696"/>
+<area href="classscore_1_1_graphics_tab_layout.html" alt="score::GraphicsTabLayout" shape="rect" coords="333,728,545,752"/>
+<area href="classscore_1_1_graphics_table_layout.html" alt="score::GraphicsTableLayout" shape="rect" coords="333,784,545,808"/>
+<area href="classscore_1_1_graphics_v_box_layout.html" alt="score::GraphicsVBoxLayout" shape="rect" coords="333,840,545,864"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -147,12 +149,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setBrush</b> (<a clas
 <tr class="memitem:a1cb723127df8700bf5a7adca474d8308" id="r_a1cb723127df8700bf5a7adca474d8308"><td class="memItemLeft" align="right" valign="top"><a id="a1cb723127df8700bf5a7adca474d8308" name="a1cb723127df8700bf5a7adca474d8308"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setBackground</b> (const QString &amp;b)</td></tr>
 <tr class="separator:a1cb723127df8700bf5a7adca474d8308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9d3d9dc821befd5903e9bf268412e3" id="r_a0c9d3d9dc821befd5903e9bf268412e3"><td class="memItemLeft" align="right" valign="top"><a id="a0c9d3d9dc821befd5903e9bf268412e3" name="a0c9d3d9dc821befd5903e9bf268412e3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasBackground</b> () const noexcept</td></tr>
+<tr class="memdesc:a0c9d3d9dc821befd5903e9bf268412e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the layout paints a box of its own. <br /></td></tr>
+<tr class="separator:a0c9d3d9dc821befd5903e9bf268412e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387a6af6dcd2ffb061dfb8d30f5c7616" id="r_a387a6af6dcd2ffb061dfb8d30f5c7616"><td class="memItemLeft" align="right" valign="top"><a id="a387a6af6dcd2ffb061dfb8d30f5c7616" name="a387a6af6dcd2ffb061dfb8d30f5c7616"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMargin</b> (qreal m)</td></tr>
 <tr class="separator:a387a6af6dcd2ffb061dfb8d30f5c7616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc5a37bf43ad970139dfe25641611cc" id="r_a8fc5a37bf43ad970139dfe25641611cc"><td class="memItemLeft" align="right" valign="top"><a id="a8fc5a37bf43ad970139dfe25641611cc" name="a8fc5a37bf43ad970139dfe25641611cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPadding</b> (qreal p)</td></tr>
 <tr class="separator:a8fc5a37bf43ad970139dfe25641611cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69331b5dba49694f0e16e9015ac4dd5" id="r_ad69331b5dba49694f0e16e9015ac4dd5"><td class="memItemLeft" align="right" valign="top"><a id="ad69331b5dba49694f0e16e9015ac4dd5" name="ad69331b5dba49694f0e16e9015ac4dd5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpacing</b> (qreal s)</td></tr>
+<tr class="memdesc:ad69331b5dba49694f0e16e9015ac4dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gap between box layout children. Default: 2 * padding. <br /></td></tr>
+<tr class="separator:ad69331b5dba49694f0e16e9015ac4dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60e4303a236ff231eb3ce34ab20d092" id="r_ab60e4303a236ff231eb3ce34ab20d092"><td class="memItemLeft" align="right" valign="top"><a id="ab60e4303a236ff231eb3ce34ab20d092" name="ab60e4303a236ff231eb3ce34ab20d092"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>spacing</b> () const noexcept</td></tr>
+<tr class="separator:ab60e4303a236ff231eb3ce34ab20d092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464c9666613202148aa747b6ab1f84eb" id="r_a464c9666613202148aa747b6ab1f84eb"><td class="memItemLeft" align="right" valign="top"><a id="a464c9666613202148aa747b6ab1f84eb" name="a464c9666613202148aa747b6ab1f84eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateChildrenRects</b> (const QList&lt; QGraphicsItem * &gt; &amp;)</td></tr>
 <tr class="separator:a464c9666613202148aa747b6ab1f84eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -227,6 +240,9 @@ qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_margin</b> {}</td>
 <tr class="memitem:a74aabf06525b39857a10d77e980d14f1" id="r_a74aabf06525b39857a10d77e980d14f1"><td class="memItemLeft" align="right" valign="top"><a id="a74aabf06525b39857a10d77e980d14f1" name="a74aabf06525b39857a10d77e980d14f1"></a>
 qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_padding</b> {}</td></tr>
 <tr class="separator:a74aabf06525b39857a10d77e980d14f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d03328b63063777db8aedda9f39960d" id="r_a2d03328b63063777db8aedda9f39960d"><td class="memItemLeft" align="right" valign="top"><a id="a2d03328b63063777db8aedda9f39960d" name="a2d03328b63063777db8aedda9f39960d"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_spacing</b> {-1.}</td></tr>
+<tr class="separator:a2d03328b63063777db8aedda9f39960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classscore_1_1_resizeable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classscore_1_1_resizeable_item')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></td></tr>
 <tr class="memitem:a4ecbee0f5d88c403177b0107ac07a753 inherit pro_attribs_classscore_1_1_resizeable_item" id="r_a4ecbee0f5d88c403177b0107ac07a753"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumHeight</b> {}</td></tr>

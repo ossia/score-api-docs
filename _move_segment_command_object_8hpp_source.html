@@ -111,46 +111,47 @@ $(document).ready(function(){initNavTree('_move_segment_command_object_8hpp_sour
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span>{</div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">class </span>CommandStackFacade;</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>} <span class="comment">// namespace score</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// To simplify :</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Take the current state of the curve</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// Compute the state we have to be in</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// Make a command that sets a new state for the curve.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// Will move the segment and potentially the start point of the next segment</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// and the end point of the previous segment.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// Or does the command do this ?</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// How to find the previous - next segments ? They have to be linked...</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// How to prevent overlapping segments ?</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Can move create new segments ? I&#39;d say no.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_curve.html">Curve</a></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_curve_1_1_move_segment_command_object.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_curve_1_1_move_segment_command_object.html">MoveSegmentCommandObject</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_curve_1_1_move_segment_command_object.html">MoveSegmentCommandObject</a>(<span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> press();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> move();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> release();</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> cancel();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="comment">// SingleOngoingCommandDispatcher m_dispatcher;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;CurveCommandObjectBase.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;score/model/Identifier.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;ossia/detail/hash_map.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_curve.html">Curve</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">class </span>SegmentModel;</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_curve_1_1_move_segment_command_object.html">   15</a></span><span class="keyword">class </span>SCORE_PLUGIN_CURVE_EXPORT <a class="code hl_class" href="class_curve_1_1_move_segment_command_object.html">MoveSegmentCommandObject</a> final</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    : <span class="keyword">public</span> <a class="code hl_class" href="class_curve_1_1_command_object_base.html">CommandObjectBase</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="class_curve_1_1_move_segment_command_object.html">MoveSegmentCommandObject</a>(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_curve_1_1_model.html">Model</a>&amp; model, <a class="code hl_class" href="class_curve_1_1_presenter.html">Presenter</a>* presenter, <span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a>&amp; stack);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_class" href="class_curve_1_1_move_segment_command_object.html">~MoveSegmentCommandObject</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> on_press() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">void</span> move();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> release();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> cancel();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">bool</span> m_pressed{};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">bool</span> m_moved{};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  ossia::hash_set&lt;int32_t&gt; m_movedIds;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="comment">// How far the moved points can go</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">double</span> m_dxMin{}, m_dxMax{}, m_dyMin{}, m_dyMax{};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="ttc" id="aclass_curve_1_1_move_segment_command_object_html"><div class="ttname"><a href="class_curve_1_1_move_segment_command_object.html">Curve::MoveSegmentCommandObject</a></div><div class="ttdef"><b>Definition</b> MoveSegmentCommandObject.hpp:20</div></div>
-<div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:20</div></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="ttc" id="aclass_curve_1_1_command_object_base_html"><div class="ttname"><a href="class_curve_1_1_command_object_base.html">Curve::CommandObjectBase</a></div><div class="ttdef"><b>Definition</b> CurveCommandObjectBase.hpp:67</div></div>
+<div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition</b> CurveModel.hpp:26</div></div>
+<div class="ttc" id="aclass_curve_1_1_move_segment_command_object_html"><div class="ttname"><a href="class_curve_1_1_move_segment_command_object.html">Curve::MoveSegmentCommandObject</a></div><div class="ttdef"><b>Definition</b> MoveSegmentCommandObject.hpp:17</div></div>
+<div class="ttc" id="aclass_curve_1_1_presenter_html"><div class="ttname"><a href="class_curve_1_1_presenter.html">Curve::Presenter</a></div><div class="ttdef"><b>Definition</b> CurvePresenter.hpp:32</div></div>
+<div class="ttc" id="aclassscore_1_1_command_stack_facade_html"><div class="ttname"><a href="classscore_1_1_command_stack_facade.html">score::CommandStackFacade</a></div><div class="ttdoc">A small abstraction layer over the score::CommandStack.</div><div class="ttdef"><b>Definition</b> CommandStackFacade.hpp:21</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:12</div></div>
-<div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:108</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

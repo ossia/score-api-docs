@@ -121,6 +121,8 @@ Inheritance diagram for LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;:</div
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,6 +137,9 @@ std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt
 <tr class="memitem:afd757a905ce47097a20c4430957dda81" id="r_afd757a905ce47097a20c4430957dda81"><td class="memItemLeft" align="right" valign="top"><a id="afd757a905ce47097a20c4430957dda81" name="afd757a905ce47097a20c4430957dda81"></a>
 SharedInstance&#160;</td><td class="memItemRight" valign="bottom"><b>instantiate_handle</b> (int sampleRate)</td></tr>
 <tr class="separator:afd757a905ce47097a20c4430957dda81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5a2b8cb2bd7bfe24abe482ffa181ea" id="r_abb5a2b8cb2bd7bfe24abe482ffa181ea"><td class="memItemLeft" align="right" valign="top"><a id="abb5a2b8cb2bd7bfe24abe482ffa181ea" name="abb5a2b8cb2bd7bfe24abe482ffa181ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>renew_primary_instance</b> (int sampleRate)</td></tr>
+<tr class="separator:abb5a2b8cb2bd7bfe24abe482ffa181ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2431291846840383bb3616be088bc30c" id="r_a2431291846840383bb3616be088bc30c"><td class="memItemLeft" align="right" valign="top"><a id="a2431291846840383bb3616be088bc30c" name="a2431291846840383bb3616be088bc30c"></a>
 std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_voice_for_pool</b> (int sampleRate, LilvState *state)</td></tr>
 <tr class="separator:a2431291846840383bb3616be088bc30c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,15 +170,28 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () c
 <tr class="memitem:a566193105bccd1fd71ddcdfd6e29c6dd" id="r_a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memItemLeft" align="right" valign="top"><a id="a566193105bccd1fd71ddcdfd6e29c6dd" name="a566193105bccd1fd71ddcdfd6e29c6dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateTime</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
 <tr class="separator:a566193105bccd1fd71ddcdfd6e29c6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6526e5f5bc4c21f001481e713d36ae4" id="r_aa6526e5f5bc4c21f001481e713d36ae4"><td class="memItemLeft" align="right" valign="top"><a id="aa6526e5f5bc4c21f001481e713d36ae4" name="aa6526e5f5bc4c21f001481e713d36ae4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>forgeTime</b> (uint8_t *buffer, const ossia::token_request &amp;tk, ossia::exec_state_facade st, float speed)</td></tr>
+<tr class="separator:aa6526e5f5bc4c21f001481e713d36ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c6fedbccd61543ec8cf0498d7dba05" id="r_a10c6fedbccd61543ec8cf0498d7dba05"><td class="memItemLeft" align="right" valign="top"><a id="a10c6fedbccd61543ec8cf0498d7dba05" name="a10c6fedbccd61543ec8cf0498d7dba05"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>preProcessVoice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v, std::size_t voice_idx)</td></tr>
 <tr class="separator:a10c6fedbccd61543ec8cf0498d7dba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644c05a76aaccfeae7354ffb566a73f4" id="r_a644c05a76aaccfeae7354ffb566a73f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">feedCVInputs</a> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v, std::size_t voice_idx) noexcept</td></tr>
+<tr class="separator:a644c05a76aaccfeae7354ffb566a73f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49eb102655030a7f580366133acf2554" id="r_a49eb102655030a7f580366133acf2554"><td class="memItemLeft" align="right" valign="top"><a id="a49eb102655030a7f580366133acf2554" name="a49eb102655030a7f580366133acf2554"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>writeCVOutputs</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
+<tr class="memdesc:a49eb102655030a7f580366133acf2554"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CV outputs of voice 0, after the control outlets. <br /></td></tr>
+<tr class="separator:a49eb102655030a7f580366133acf2554"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e19709747c81b209688d9fe6aaf7efa" id="r_a6e19709747c81b209688d9fe6aaf7efa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a> (<a class="el" href="struct_iterator.html">Iterator</a> &amp;it) noexcept</td></tr>
+<tr class="separator:a6e19709747c81b209688d9fe6aaf7efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ab24e41d6c00dbfec316539b0d1843" id="r_a43ab24e41d6c00dbfec316539b0d1843"><td class="memItemLeft" align="right" valign="top"><a id="a43ab24e41d6c00dbfec316539b0d1843" name="a43ab24e41d6c00dbfec316539b0d1843"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>postProcessVoice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
 <tr class="separator:a43ab24e41d6c00dbfec316539b0d1843"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc2a8574e20647d8f37f3620cf1094c6" id="r_adc2a8574e20647d8f37f3620cf1094c6"><td class="memItemLeft" align="right" valign="top"><a id="adc2a8574e20647d8f37f3620cf1094c6" name="adc2a8574e20647d8f37f3620cf1094c6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>surfaceVoiceZeroOutputs</b> (int64_t offset)</td></tr>
 <tr class="separator:adc2a8574e20647d8f37f3620cf1094c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87249cce6b1bf0af416e84a05ec58a41" id="r_a87249cce6b1bf0af416e84a05ec58a41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">stop_voices</a> () noexcept</td></tr>
+<tr class="separator:a87249cce6b1bf0af416e84a05ec58a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a914f016ceee9633cd3588ee6dc249b17" id="r_a914f016ceee9633cd3588ee6dc249b17"><td class="memItemLeft" align="right" valign="top"><a id="a914f016ceee9633cd3588ee6dc249b17" name="a914f016ceee9633cd3588ee6dc249b17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a914f016ceee9633cd3588ee6dc249b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,6 +207,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c61104501c06f07f2c944e3c57a2893" id="r_a4c61104501c06f07f2c944e3c57a2893"><td class="memItemLeft" align="right" valign="top"><a id="a4c61104501c06f07f2c944e3c57a2893" name="a4c61104501c06f07f2c944e3c57a2893"></a>
 static std::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>voice_control_value</b> (const ossia::value &amp;val, std::size_t voice_idx) noexcept</td></tr>
 <tr class="separator:a4c61104501c06f07f2c944e3c57a2893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae532b0f57a982802099ebbee7a765f9" id="r_aae532b0f57a982802099ebbee7a765f9"><td class="memTemplParams" colspan="2"><a id="aae532b0f57a982802099ebbee7a765f9" name="aae532b0f57a982802099ebbee7a765f9"></a>
+template&lt;typename Channel &gt; </td></tr>
+<tr class="memitem:aae532b0f57a982802099ebbee7a765f9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>readChannel</b> (const Channel &amp;ch, float *dst, const <a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a> &amp;s) noexcept</td></tr>
+<tr class="separator:aae532b0f57a982802099ebbee7a765f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7b344d3f8d056e341a4dd22b9b2812" id="r_a5b7b344d3f8d056e341a4dd22b9b2812"><td class="memTemplParams" colspan="2"><a id="a5b7b344d3f8d056e341a4dd22b9b2812" name="a5b7b344d3f8d056e341a4dd22b9b2812"></a>
+template&lt;typename Channel &gt; </td></tr>
+<tr class="memitem:a5b7b344d3f8d056e341a4dd22b9b2812"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>writeChannel</b> (Channel &amp;ch, const float *src, const <a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a> &amp;s)</td></tr>
+<tr class="separator:a5b7b344d3f8d056e341a4dd22b9b2812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -213,6 +239,18 @@ ossia::float_vector&#160;</td><td class="memItemRight" valign="bottom"><b>fParam
 <tr class="memitem:aa31deb99c5a389014bfbb873512856fc" id="r_aa31deb99c5a389014bfbb873512856fc"><td class="memItemLeft" align="right" valign="top"><a id="aa31deb99c5a389014bfbb873512856fc" name="aa31deb99c5a389014bfbb873512856fc"></a>
 std::unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timePositionBuffer</b> {}</td></tr>
 <tr class="separator:aa31deb99c5a389014bfbb873512856fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6ceded9292b7db0b1b2dca00006539" id="r_abc6ceded9292b7db0b1b2dca00006539"><td class="memItemLeft" align="right" valign="top"><a id="abc6ceded9292b7db0b1b2dca00006539" name="abc6ceded9292b7db0b1b2dca00006539"></a>
+std::unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stoppedPositionBuffer</b> {}</td></tr>
+<tr class="memdesc:abc6ceded9292b7db0b1b2dca00006539"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same position with a speed of 0: the transport is stopped. <br /></td></tr>
+<tr class="separator:abc6ceded9292b7db0b1b2dca00006539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9115c7b265f9812112fa3e9fe0fc7a8" id="r_aa9115c7b265f9812112fa3e9fe0fc7a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#aa9115c7b265f9812112fa3e9fe0fc7a8">m_sendStopped</a> {true}</td></tr>
+<tr class="separator:aa9115c7b265f9812112fa3e9fe0fc7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44a9ec5cf65037c774098152c0adeb5" id="r_ac44a9ec5cf65037c774098152c0adeb5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#ac44a9ec5cf65037c774098152c0adeb5">mustStop</a> {}</td></tr>
+<tr class="separator:ac44a9ec5cf65037c774098152c0adeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74241ef1698e40b205c63ff423417303" id="r_a74241ef1698e40b205c63ff423417303"><td class="memItemLeft" align="right" valign="top"><a id="a74241ef1698e40b205c63ff423417303" name="a74241ef1698e40b205c63ff423417303"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeForged</b> {}</td></tr>
+<tr class="memdesc:a74241ef1698e40b205c63ff423417303"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position buffers hold a position: a run happened. <br /></td></tr>
+<tr class="separator:a74241ef1698e40b205c63ff423417303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7454ace4056772d63cdf3d2f553a1fb6" id="r_a7454ace4056772d63cdf3d2f553a1fb6"><td class="memItemLeft" align="right" valign="top"><a id="a7454ace4056772d63cdf3d2f553a1fb6" name="a7454ace4056772d63cdf3d2f553a1fb6"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_block_size</b> {4096}</td></tr>
 <tr class="separator:a7454ace4056772d63cdf3d2f553a1fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +263,9 @@ OnExecStart&#160;</td><td class="memItemRight" valign="bottom"><b>on_start</b></
 <tr class="memitem:aafb93dcacf0a8d917d3946b7fc6bc97f" id="r_aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memItemLeft" align="right" valign="top"><a id="aafb93dcacf0a8d917d3946b7fc6bc97f" name="aafb93dcacf0a8d917d3946b7fc6bc97f"></a>
 OnExecFinished&#160;</td><td class="memItemRight" valign="bottom"><b>on_finished</b></td></tr>
 <tr class="separator:aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05020e763c4ab9ad39c88ac5824c5ac" id="r_ad05020e763c4ab9ad39c88ac5824c5ac"><td class="memItemLeft" align="right" valign="top"><a id="ad05020e763c4ab9ad39c88ac5824c5ac" name="ad05020e763c4ab9ad39c88ac5824c5ac"></a>
+struct <a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">LV2::lv2_node::buffer_span</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_span</b></td></tr>
+<tr class="separator:ad05020e763c4ab9ad39c88ac5824c5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -232,6 +273,138 @@ Static Public Attributes</h2></td></tr>
 static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>kVoicePoolReserve</b> = 256</td></tr>
 <tr class="separator:abb7d6b8d6f28ccfe99e13f75f6965a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a644c05a76aaccfeae7354ffb566a73f4" name="a644c05a76aaccfeae7354ffb566a73f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644c05a76aaccfeae7354ffb566a73f4">&#9670;&#160;</a></span>feedCVInputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::feedCVInputs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>voice_idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The CV inputs of voice <code>voice_idx</code>: its channel of each CV inlet, or the first one. </p>
+
+</div>
+</div>
+<a id="a87249cce6b1bf0af416e84a05ec58a41" name="a87249cce6b1bf0af416e84a05ec58a41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87249cce6b1bf0af416e84a05ec58a41">&#9670;&#160;</a></span>stop_voices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::stop_voices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The transport stopped: the plug-in hears it (a position with a speed of 0, what all_notes_off queued) in a run of one frame. </p>
+
+</div>
+</div>
+<a id="a6e19709747c81b209688d9fe6aaf7efa" name="a6e19709747c81b209688d9fe6aaf7efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e19709747c81b209688d9fe6aaf7efa">&#9670;&#160;</a></span>writeTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::writeTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_iterator.html">Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The transport position, preceded by a stopped one on the first run of a play or when stopping. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa9115c7b265f9812112fa3e9fe0fc7a8" name="aa9115c7b265f9812112fa3e9fe0fc7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9115c7b265f9812112fa3e9fe0fc7a8">&#9670;&#160;</a></span>m_sendStopped</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::m_sendStopped {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A plug-in only told "speed 1" again after a stop would not know that it stopped: the first run of a play says "stopped" first (the instance lives on from the previous play). </p>
+
+</div>
+</div>
+<a id="ac44a9ec5cf65037c774098152c0adeb5" name="ac44a9ec5cf65037c774098152c0adeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44a9ec5cf65037c774098152c0adeb5">&#9670;&#160;</a></span>mustStop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::mustStop {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set by the process when the transport stops: the next (empty) tick tells the plug-in, runs it once, and nothing else. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-lv2_2_l_v2_2_node_8hpp_source.html">score-plugin-lv2/LV2/Node.hpp</a></li>
 </ul>

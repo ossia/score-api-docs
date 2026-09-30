@@ -131,9 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96b9d970b89e2e8d607cbe1b6f7b9385" id="r_a96b9d970b89e2e8d607cbe1b6f7b9385"><td class="memItemLeft" align="right" valign="top"><a id="a96b9d970b89e2e8d607cbe1b6f7b9385" name="a96b9d970b89e2e8d607cbe1b6f7b9385"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>FilePlacement</b> (QString projectFolder, <a class="el" href="structscore_1_1_consolidate_options.html">ConsolidateOptions</a> opts={}) noexcept</td></tr>
 <tr class="separator:a96b9d970b89e2e8d607cbe1b6f7b9385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0a28774b58741fdc605688fc131aa4" id="r_a0c0a28774b58741fdc605688fc131aa4"><td class="memItemLeft" align="right" valign="top"><a id="a0c0a28774b58741fdc605688fc131aa4" name="a0c0a28774b58741fdc605688fc131aa4"></a>
-<a class="el" href="structscore_1_1_file_placement_1_1_placement.html">Placement</a>&#160;</td><td class="memItemRight" valign="bottom"><b>place</b> (const QString &amp;absoluteSource, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">FileKind</a> kind)</td></tr>
-<tr class="separator:a0c0a28774b58741fdc605688fc131aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189683e9b125e497a650e7e1997d3e0e" id="r_a189683e9b125e497a650e7e1997d3e0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_file_placement_1_1_placement.html">Placement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_file_placement.html#a189683e9b125e497a650e7e1997d3e0e">place</a> (const QString &amp;absoluteSource, <a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">FileKind</a> kind, const std::vector&lt; QString &gt; &amp;companions={})</td></tr>
+<tr class="separator:a189683e9b125e497a650e7e1997d3e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e1d1944685df68fde261c37c77fdc6" id="r_af9e1d1944685df68fde261c37c77fdc6"><td class="memItemLeft" align="right" valign="top"><a id="af9e1d1944685df68fde261c37c77fdc6" name="af9e1d1944685df68fde261c37c77fdc6"></a>
 const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>projectFolder</b> () const noexcept</td></tr>
 <tr class="separator:af9e1d1944685df68fde261c37c77fdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +140,42 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>projec
 const <a class="el" href="structscore_1_1_consolidate_options.html">ConsolidateOptions</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>options</b> () const noexcept</td></tr>
 <tr class="separator:a736acdbeecfa5861e4ff4a0e2ca2f6d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a189683e9b125e497a650e7e1997d3e0e" name="a189683e9b125e497a650e7e1997d3e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189683e9b125e497a650e7e1997d3e0e">&#9670;&#160;</a></span>place()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1_file_placement_1_1_placement.html">FilePlacement::Placement</a> score::FilePlacement::place </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>absoluteSource</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacescore.html#a9d767484f95a8d8c0f1b6e31aee76ec9">FileKind</a>&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>companions</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><code>companions</code> are files the source names relative to its own folder (a drumkit's samples). Such a source gets a folder of its own, named after the one it comes from, where the companions keep their relative paths. An existing folder is only reused when the source and every companion found next to it are byte-identical to what it holds. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_project_files_8hpp_source.html">ProjectFiles.hpp</a></li>
 <li><b>ProjectFiles.cpp</b></li>

@@ -117,9 +117,8 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_graphics_storag
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aef9751db4bd07f8ed8a5a026cd4a5ef4" id="r_aef9751db4bd07f8ed8a5a026cd4a5ef4"><td class="memItemLeft" align="right" valign="top"><a id="aef9751db4bd07f8ed8a5a026cd4a5ef4" name="aef9751db4bd07f8ed8a5a026cd4a5ef4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
-<tr class="separator:aef9751db4bd07f8ed8a5a026cd4a5ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf31cd20223b6b41511f3652f7ca4468" id="r_adf31cd20223b6b41511f3652f7ca4468"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graphics_storage_resources.html#adf31cd20223b6b41511f3652f7ca4468">release</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
+<tr class="separator:adf31cd20223b6b41511f3652f7ca4468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -156,8 +155,29 @@ QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>sentinelUnifo
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>sentinelSize</b> {0}</td></tr>
 <tr class="separator:a2d0c824b11699269fe0ad4b16cc02276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adf31cd20223b6b41511f3652f7ca4468" name="adf31cd20223b6b41511f3652f7ca4468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf31cd20223b6b41511f3652f7ca4468">&#9670;&#160;</a></span>release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GraphicsStorageResources::release </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Owned SSBOs retire through <a class="el" href="classscore_1_1gfx_1_1_render_list.html#ac4f4bd359c175d0e060f1b09ddda0dd3" title="Retire a buffer this render list&#39;s node owns.">RenderList::releaseBuffer</a>, like every owned buffer, so that an adoption of one keeps it alive. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_isf_bindings_builder_8hpp_source.html">IsfBindingsBuilder.hpp</a></li>
+<li><b>IsfBindingsBuilder.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

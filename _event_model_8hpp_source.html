@@ -186,49 +186,57 @@ $(document).ready(function(){initNavTree('_event_model_8hpp_source.html',''); in
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">bool</span> active() const noexcept;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span> setCondition(const <a class="code hl_namespace" href="namespace_state.html">State</a>::Expression&amp; arg);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> setDate(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; date);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> setStatus(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::ExecutionStatus status, const <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::<a class="code hl_class" href="class_scenario_1_1_scenario_interface.html">ScenarioInterface</a>&amp;);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> setOffsetBehavior(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::OffsetBehavior);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  const QBrush&amp; color(const <a class="code hl_namespace" href="namespace_process.html">Process</a>::Style&amp;) const noexcept;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>public:</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <span class="keywordtype">void</span> dateChanged(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, dateChanged, arg_1)</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span> conditionChanged(const <a class="code hl_namespace" href="namespace_state.html">State</a>::Expression&amp; arg_1)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, conditionChanged, arg_1)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> statesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, statesChanged)</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">void</span> statusChanged(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::ExecutionStatus status)</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, statusChanged, status)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> offsetBehaviorChanged(OffsetBehavior arg_1)</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, offsetBehaviorChanged, arg_1)</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  timeSyncChanged(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; oldt, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; newt)</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, timeSyncChanged, oldt, newt)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>private:</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; m_timeSync;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  StateIdVec m_states;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <a class="code hl_namespace" href="namespace_state.html">State</a>::Expression m_condition;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_date{TimeVal::zero()};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_scenario_1_1_event_model.html#a7efe133bfc14bf85d66713ec38facf2e">   80</a></span>  <span class="keywordtype">bool</span> scriptable() const noexcept { <span class="keywordflow">return</span> m_scriptable; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> setScriptable(<span class="keywordtype">bool</span> b);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> setCondition(<span class="keyword">const</span> <a class="code hl_class" href="class_tree_node.html">State::Expression</a>&amp; arg);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> setDate(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; date);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> setStatus(Scenario::ExecutionStatus status, <span class="keyword">const</span> <a class="code hl_class" href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a>&amp;);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> setOffsetBehavior(Scenario::OffsetBehavior);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">const</span> QBrush&amp; color(<span class="keyword">const</span> <a class="code hl_struct" href="struct_process_1_1_style.html">Process::Style</a>&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> dateChanged(<span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; arg_1)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, dateChanged, arg_1)</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> conditionChanged(<span class="keyword">const</span> <a class="code hl_class" href="class_tree_node.html">State::Expression</a>&amp; arg_1)</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, conditionChanged, arg_1)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> statesChanged() E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, statesChanged)</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span> statusChanged(<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::ExecutionStatus status)</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, statusChanged, status)</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> offsetBehaviorChanged(OffsetBehavior arg_1)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, offsetBehaviorChanged, arg_1)</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> scriptableChanged(<span class="keywordtype">bool</span> b)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, scriptableChanged, b)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  timeSyncChanged(<a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; oldt, <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; newt)</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      E_SIGNAL(SCORE_PLUGIN_SCENARIO_EXPORT, timeSyncChanged, oldt, newt)</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  ExecutionStatusProperty m_status{};</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  OffsetBehavior m_offset{};</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  PROPERTY(<span class="keywordtype">double</span>, date READ dateInFlicks NOTIFY dateChanged)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  W_PROPERTY(</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      Scenario::OffsetBehavior,</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>      offsetBehavior READ offsetBehavior WRITE setOffsetBehavior NOTIFY</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>          offsetBehaviorChanged,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      W_Final)</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  PROPERTY(<span class="keywordtype">bool</span>, scriptable READ scriptable WRITE setScriptable NOTIFY scriptableChanged)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>private:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <a class="code hl_class" href="classid__base__t.html">Id</a>&lt;<a class="code hl_class" href="class_scenario_1_1_time_sync_model.html">TimeSyncModel</a>&gt; m_timeSync;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  StateIdVec m_states;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_namespace" href="namespace_state.html">State</a>::Expression m_condition;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_struct" href="struct_time_val.html">TimeVal</a> m_date{TimeVal::zero()};</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  ExecutionStatusProperty m_status{};</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  OffsetBehavior m_offset{};</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">bool</span> m_scriptable{};</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  PROPERTY(<span class="keywordtype">double</span>, date READ dateInFlicks NOTIFY dateChanged)</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  W_PROPERTY(</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      Scenario::OffsetBehavior,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      offsetBehavior READ offsetBehavior WRITE setOffsetBehavior NOTIFY</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>          offsetBehaviorChanged,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      W_Final)</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
 </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>, <span class="stringliteral">&quot;Event&quot;</span>)</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>TR_TEXT_METADATA(, <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::EventModel, <a class="code hl_class" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Event&quot;)</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>}</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>DEFAULT_MODEL_METADATA(<a class="code hl_class" href="class_scenario_1_1_event_model.html">Scenario::EventModel</a>, <span class="stringliteral">&quot;Event&quot;</span>)</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>TR_TEXT_METADATA(, <a class="code hl_namespace" href="namespace_scenario.html">Scenario</a>::EventModel, <a class="code hl_class" href="class_pretty_name__k.html">PrettyName_k</a>, &quot;Event&quot;)</div>
 <div class="ttc" id="aclass_data_stream_html"><div class="ttname"><a href="class_data_stream.html">DataStream</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:53</div></div>
 <div class="ttc" id="aclass_j_s_o_n_object_html"><div class="ttname"><a href="class_j_s_o_n_object.html">JSONObject</a></div><div class="ttdef"><b>Definition</b> VisitorInterface.hpp:61</div></div>
 <div class="ttc" id="aclass_pretty_name__k_html"><div class="ttname"><a href="class_pretty_name__k.html">PrettyName_k</a></div><div class="ttdoc">Metadata to get the name that will be shown in the user interface.</div></div>
@@ -236,11 +244,13 @@ $(document).ready(function(){initNavTree('_event_model_8hpp_source.html',''); in
 <div class="ttc" id="aclass_scenario_1_1_scenario_interface_html"><div class="ttname"><a href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a></div><div class="ttdef"><b>Definition</b> ScenarioInterface.hpp:20</div></div>
 <div class="ttc" id="aclass_scenario_1_1_time_sync_model_html"><div class="ttname"><a href="class_scenario_1_1_time_sync_model.html">Scenario::TimeSyncModel</a></div><div class="ttdef"><b>Definition</b> TimeSyncModel.hpp:34</div></div>
 <div class="ttc" id="aclass_selectable_html"><div class="ttname"><a href="class_selectable.html">Selectable</a></div><div class="ttdoc">The Selectable class.</div><div class="ttdef"><b>Definition</b> Selectable.hpp:14</div></div>
+<div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; ExprData &gt;</a></div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:59</div></div>
 <div class="ttc" id="aclassscore_1_1_entity_html"><div class="ttname"><a href="classscore_1_1_entity.html">score::Entity</a></div><div class="ttdoc">Base for complex model objects.</div><div class="ttdef"><b>Definition</b> EntityBase.hpp:24</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>
 <div class="ttc" id="anamespace_scenario_html"><div class="ttname"><a href="namespace_scenario.html">Scenario</a></div><div class="ttdoc">Main plug-in of score.</div><div class="ttdef"><b>Definition</b> score-plugin-dataflow/Dataflow/PortItem.hpp:13</div></div>
 <div class="ttc" id="anamespace_state_html"><div class="ttname"><a href="namespace_state.html">State</a></div><div class="ttdoc">Utilities for OSSIA data structures.</div><div class="ttdef"><b>Definition</b> DeviceInterface.hpp:35</div></div>
+<div class="ttc" id="astruct_process_1_1_style_html"><div class="ttname"><a href="struct_process_1_1_style.html">Process::Style</a></div><div class="ttdef"><b>Definition</b> ScenarioStyle.hpp:13</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition</b> TimeValue.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

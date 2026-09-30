@@ -307,46 +307,49 @@ $(document).ready(function(){initNavTree('_scenario_document_view_8hpp_source.ht
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>private:</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keywordtype">void</span> timerEvent(QTimerEvent* event) override;</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  QWidget* m_widget{};</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; m_context;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  ScenarioScene m_scene;</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="comment">// The three views below are put into m_widget&#39;s layout, which REPARENTS</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="comment">// them: Qt then deletes them through ~QWidget&#39;s deleteChildren(). As</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>  <span class="comment">// by-value members that would be `delete` on an address inside this object,</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// which is not a heap allocation -- the same defect the scenes and the base</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="comment">// item have to avoid.</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// Heap-allocated, they are Qt&#39;s to delete, and QPointer means we can also</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="comment">// delete them ourselves in ~ScenarioDocumentView for the OTHER teardown</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="comment">// order (a document closed with removeTab orphans the widget, so nothing</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// Qt-side ever deletes it) without risking a double free. Deleting them in</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="comment">// the destructor BODY also keeps the original ordering guarantee: a view</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// dies before the by-value scene it renders.</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  QPointer&lt;ProcessGraphicsView&gt; m_view;</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// Owned by the scene, not by value. m_scene is a QObject child of m_widget,</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// so ~QWidget destroys it -- and QGraphicsScene::clear() deletes its</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  <span class="comment">// top-level items -- before ScenarioDocumentView&#39;s own members are destroyed.</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="comment">// As a by-value member that would be `delete` on a non-heap address.</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a>* m_baseObject{};</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  QGraphicsScene m_timeRulerScene;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  QPointer&lt;TimeRulerGraphicsView&gt; m_timeRulerView;</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  TimeRulerBase* m_timeRuler{};</div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  QGraphicsScene m_minimapScene;</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  QPointer&lt;MinimapGraphicsView&gt; m_minimapView;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="comment">// Same treatment as m_baseObject: a QGraphicsItem added to a scene that</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  <span class="comment">// deletes its top-level items, so it must be heap-allocated and left to</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  <span class="comment">// that scene. Never deleted here.</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  Minimap* m_minimap{};</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  AddressBarWidget* m_addressBar{};</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  <span class="keywordtype">int</span> m_timer{-1};</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordtype">bool</span> m_transport{};</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>};</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="comment">// Orphaned by CentralViewStack::releaseMainView on document close, after</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="comment">// which we are its only owner; deleted by Qt first if the window goes down</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="comment">// with the document still in it. QPointer covers both.</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  QPointer&lt;QWidget&gt; m_widget;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  const <a class="code hl_namespace" href="namespacescore.html">score</a>::DocumentContext&amp; m_context;</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <a class="code hl_class" href="class_scenario_1_1_scenario_scene.html">ScenarioScene</a> m_scene;</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  <span class="comment">// The three views below are put into m_widget&#39;s layout, which REPARENTS</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="comment">// them: Qt then deletes them through ~QWidget&#39;s deleteChildren(). As</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="comment">// by-value members that would be `delete` on an address inside this object,</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  <span class="comment">// which is not a heap allocation -- the same defect the scenes and the base</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="comment">// item have to avoid.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  <span class="comment">// Heap-allocated, they are Qt&#39;s to delete, and QPointer means we can also</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <span class="comment">// delete them ourselves in ~ScenarioDocumentView for the OTHER teardown</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="comment">// order (a document closed with removeTab orphans the widget, so nothing</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  <span class="comment">// Qt-side ever deletes it) without risking a double free. Deleting them in</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  <span class="comment">// the destructor BODY also keeps the original ordering guarantee: a view</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>  <span class="comment">// dies before the by-value scene it renders.</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  QPointer&lt;<a class="code hl_class" href="class_scenario_1_1_process_graphics_view.html">ProcessGraphicsView</a>&gt; m_view;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="comment">// Owned by the scene, not by value. m_scene is a QObject child of m_widget,</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="comment">// so ~QWidget destroys it -- and QGraphicsScene::clear() deletes its</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// top-level items -- before ScenarioDocumentView&#39;s own members are destroyed.</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="comment">// As a by-value member that would be `delete` on a non-heap address.</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>  <a class="code hl_class" href="class_base_graphics_object.html">BaseGraphicsObject</a>* m_baseObject{};</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  QGraphicsScene m_timeRulerScene;</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  QPointer&lt;TimeRulerGraphicsView&gt; m_timeRulerView;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  TimeRulerBase* m_timeRuler{};</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  QGraphicsScene m_minimapScene;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  QPointer&lt;MinimapGraphicsView&gt; m_minimapView;</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  <span class="comment">// Same treatment as m_baseObject: a QGraphicsItem added to a scene that</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="comment">// deletes its top-level items, so it must be heap-allocated and left to</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  <span class="comment">// that scene. Never deleted here.</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  Minimap* m_minimap{};</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  AddressBarWidget* m_addressBar{};</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keywordtype">int</span> m_timer{-1};</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordtype">bool</span> m_transport{};</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>};</div>
 </div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>}</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
 <div class="ttc" id="aclass_base_graphics_object_html"><div class="ttname"><a href="class_base_graphics_object.html">BaseGraphicsObject</a></div><div class="ttdef"><b>Definition</b> GraphicsProxyObject.hpp:8</div></div>
 <div class="ttc" id="aclass_dataflow_1_1_auto_scrollable_view_html"><div class="ttname"><a href="class_dataflow_1_1_auto_scrollable_view.html">Dataflow::AutoScrollableView</a></div><div class="ttdoc">A QGraphicsView that knows how to move its content for auto-scroll.</div><div class="ttdef"><b>Definition</b> AutoScrollableView.hpp:17</div></div>
 <div class="ttc" id="aclass_scenario_1_1_address_bar_widget_html"><div class="ttname"><a href="class_scenario_1_1_address_bar_widget.html">Scenario::AddressBarWidget</a></div><div class="ttdoc">Clickable path of the interval shown in the central view.</div><div class="ttdef"><b>Definition</b> AddressBarWidget.hpp:27</div></div>

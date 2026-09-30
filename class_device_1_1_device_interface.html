@@ -296,6 +296,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>namespaceUpdated</b> 
 <tr class="memitem:a3e4d13e1c5c1b079b90c3ac9997bfd3d" id="r_a3e4d13e1c5c1b079b90c3ac9997bfd3d"><td class="memItemLeft" align="right" valign="top"><a id="a3e4d13e1c5c1b079b90c3ac9997bfd3d" name="a3e4d13e1c5c1b079b90c3ac9997bfd3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceChanged</b> (ossia::net::device_base *old_dev, ossia::net::device_base *new_dev)</td></tr>
 <tr class="separator:a3e4d13e1c5c1b079b90c3ac9997bfd3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65b39668e9241d44b218eb4e25f6a29" id="r_ac65b39668e9241d44b218eb4e25f6a29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_device_1_1_device_interface.html#ac65b39668e9241d44b218eb4e25f6a29">deviceClearing</a> (ossia::net::device_base *dev)</td></tr>
+<tr class="separator:ac65b39668e9241d44b218eb4e25f6a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2a60c5443449fc05d87135d1534777d" id="r_aa2a60c5443449fc05d87135d1534777d"><td class="memItemLeft" align="right" valign="top"><a id="aa2a60c5443449fc05d87135d1534777d" name="aa2a60c5443449fc05d87135d1534777d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>logInbound</b> (const QString &amp;arg_1) const</td></tr>
 <tr class="separator:aa2a60c5443449fc05d87135d1534777d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,6 +369,25 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 <tr class="separator:a2b91473be2a79f5f63847fcf153c5aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac65b39668e9241d44b218eb4e25f6a29" name="ac65b39668e9241d44b218eb4e25f6a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65b39668e9241d44b218eb4e25f6a29">&#9670;&#160;</a></span>deviceClearing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Device::DeviceInterface::deviceClearing </td>
+          <td>(</td>
+          <td class="paramtype">ossia::net::device_base *&#160;</td>
+          <td class="paramname"><em>dev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Emitted by disconnect() before it destroys the device's nodes: holders of parameter pointers into that tree must drop them here, deviceChanged comes after the nodes are gone. </p>
+
+</div>
+</div>
 <a id="a2119e8eb55cbca9e8f404d202f3a5864" name="a2119e8eb55cbca9e8f404d202f3a5864"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2119e8eb55cbca9e8f404d202f3a5864">&#9670;&#160;</a></span>setListening()</h2>
 

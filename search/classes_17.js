@@ -41,7 +41,7 @@ var searchData=
   ['windowsettings_38',['WindowSettings',['../struct_gfx_1_1_window_settings.html',1,'Gfx']]],
   ['windowsettingswidget_39',['WindowSettingsWidget',['../class_gfx_1_1_window_settings_widget.html',1,'Gfx']]],
   ['wordlist_40',['WordList',['../struct_word_list.html',1,'']]],
-  ['worker_41',['worker',['../struct_threedim_1_1_struc_synth_1_1worker.html',1,'Threedim::StrucSynth']]],
+  ['worker_41',['worker',['../structao_1_1_regex_1_1worker.html',1,'ao::Regex::worker'],['../struct_threedim_1_1_struc_synth_1_1worker.html',1,'Threedim::StrucSynth::worker']]],
   ['worker_5frouting_5fscope_42',['worker_routing_scope',['../struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html',1,'LV2::lv2_node']]],
   ['worldtransformemit_43',['WorldTransformEmit',['../structscore_1_1gfx_1_1_world_transform_emit.html',1,'score::gfx']]],
   ['worldtransformmat4_44',['WorldTransformMat4',['../structscore_1_1gfx_1_1_world_transform_mat4.html',1,'score::gfx']]],

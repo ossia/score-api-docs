@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('class_execution_1_1_clock.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_execution_1_1_clock-members.html">List of all members</a>  </div>
@@ -117,7 +118,7 @@ Inheritance diagram for Execution::Clock:</div>
   <img src="class_execution_1_1_clock.png" usemap="#Execution::Clock_map" alt=""/>
   <map id="Execution::Clock_map" name="Execution::Clock_map">
 <area href="class_dataflow_1_1_clock.html" alt="Dataflow::Clock" shape="rect" coords="0,56,185,80"/>
-<area href="class_execution_1_1_manual_clock_1_1_clock.html" alt="Execution::ManualClock::Clock" shape="rect" coords="195,56,380,80"/>
+<area href="class_execution_1_1_manual_clock_1_1_clock.html" alt="Execution::ManualClock::Clock" shape="rect" coords="0,112,185,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -141,6 +142,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="memitem:adee1f92724521a6f656ecd173411902d" id="r_adee1f92724521a6f656ecd173411902d"><td class="memItemLeft" align="right" valign="top"><a id="adee1f92724521a6f656ecd173411902d" name="adee1f92724521a6f656ecd173411902d"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>paused</b> () const</td></tr>
 <tr class="separator:adee1f92724521a6f656ecd173411902d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114c9ecd140bb6d43462f260c2bc7ad2" id="r_a114c9ecd140bb6d43462f260c2bc7ad2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_execution_1_1_clock.html#a114c9ecd140bb6d43462f260c2bc7ad2">setStepping</a> (bool stepping)</td></tr>
+<tr class="memdesc:a114c9ecd140bb6d43462f260c2bc7ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the execution under step control, or back to its own clock.  <br /></td></tr>
+<tr class="separator:a114c9ecd140bb6d43462f260c2bc7ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95a23fd9618bd8b0e753a532bce90f1" id="r_ad95a23fd9618bd8b0e753a532bce90f1"><td class="memItemLeft" align="right" valign="top"><a id="ad95a23fd9618bd8b0e753a532bce90f1" name="ad95a23fd9618bd8b0e753a532bce90f1"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>stepping</b> () const noexcept</td></tr>
+<tr class="separator:ad95a23fd9618bd8b0e753a532bce90f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b54799dd5539a44209b20a51936f70" id="r_a24b54799dd5539a44209b20a51936f70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_execution_1_1_clock.html#a24b54799dd5539a44209b20a51936f70">stepTo</a> (double seconds)</td></tr>
+<tr class="separator:a24b54799dd5539a44209b20a51936f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aab03abacdfadba5dbf2a7ec064ef499f" id="r_aab03abacdfadba5dbf2a7ec064ef499f"><td class="memItemLeft" align="right" valign="top"><a id="aab03abacdfadba5dbf2a7ec064ef499f" name="aab03abacdfadba5dbf2a7ec064ef499f"></a>
+static <a class="el" href="class_execution_1_1_clock.html">Clock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>running</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) noexcept</td></tr>
+<tr class="memdesc:aab03abacdfadba5dbf2a7ec064ef499f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The clock of the execution currently playing <code>doc</code>, if any. <br /></td></tr>
+<tr class="separator:aab03abacdfadba5dbf2a7ec064ef499f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6e48590679e406fda2cc8af4acd1c6" id="r_a8e6e48590679e406fda2cc8af4acd1c6"><td class="memItemLeft" align="right" valign="top"><a id="a8e6e48590679e406fda2cc8af4acd1c6" name="a8e6e48590679e406fda2cc8af4acd1c6"></a>
+static int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>playCount</b> () noexcept</td></tr>
+<tr class="memdesc:a8e6e48590679e406fda2cc8af4acd1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incremented each time a clock starts playing. <br /></td></tr>
+<tr class="separator:a8e6e48590679e406fda2cc8af4acd1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13e9d9adf0c21abd761c4e2ca940fc9" id="r_ae13e9d9adf0c21abd761c4e2ca940fc9"><td class="memItemLeft" align="right" valign="top"><a id="ae13e9d9adf0c21abd761c4e2ca940fc9" name="ae13e9d9adf0c21abd761c4e2ca940fc9"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>requestStepping</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc, bool stepping)</td></tr>
+<tr class="memdesc:ae13e9d9adf0c21abd761c4e2ca940fc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next clock that plays <code>doc</code> starts stepping, until it stops. <br /></td></tr>
+<tr class="separator:ae13e9d9adf0c21abd761c4e2ca940fc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c438dee177f1feff4a269833eb0299" id="r_a07c438dee177f1feff4a269833eb0299"><td class="memItemLeft" align="right" valign="top"><a id="a07c438dee177f1feff4a269833eb0299" name="a07c438dee177f1feff4a269833eb0299"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>steppingRequested</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) noexcept</td></tr>
+<tr class="separator:a07c438dee177f1feff4a269833eb0299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -166,6 +193,66 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>resume_impl</
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_impl</b> ()=0</td></tr>
 <tr class="separator:abd547f07b48b36e647e74db81e440ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a114c9ecd140bb6d43462f260c2bc7ad2" name="a114c9ecd140bb6d43462f260c2bc7ad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114c9ecd140bb6d43462f260c2bc7ad2">&#9670;&#160;</a></span>setStepping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Execution::Clock::setStepping </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>stepping</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the execution under step control, or back to its own clock. </p>
+
+<p>Reimplemented in <a class="el" href="class_dataflow_1_1_clock.html#a6c99a8822869e27c9f2e662d499c1448">Dataflow::Clock</a>.</p>
+
+</div>
+</div>
+<a id="a24b54799dd5539a44209b20a51936f70" name="a24b54799dd5539a44209b20a51936f70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b54799dd5539a44209b20a51936f70">&#9670;&#160;</a></span>stepTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Execution::Clock::stepTo </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>seconds</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Runs the execution synchronously until <code>seconds</code> have been executed since the clock started stepping. </p>
+
+<p>Reimplemented in <a class="el" href="class_dataflow_1_1_clock.html#a059b0e0ce84297556fa559759c8eaf02">Dataflow::Clock</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_clock_factory_8hpp_source.html">ClockFactory.hpp</a></li>
 <li><b>ClockFactory.cpp</b></li>

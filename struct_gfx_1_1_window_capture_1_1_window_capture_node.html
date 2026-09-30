@@ -158,6 +158,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (
 <tr class="memitem:a8ec26c237925a2b1d5905d5591c30dfc inherit pub_methods_classscore_1_1gfx_1_1_process_node" id="r_a8ec26c237925a2b1d5905d5591c30dfc"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::buffer_spec &amp;)</td></tr>
 <tr class="separator:a8ec26c237925a2b1d5905d5591c30dfc inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ab19533793ee89a2c1a78044bd08e6 inherit pub_methods_classscore_1_1gfx_1_1_process_node" id="r_af7ab19533793ee89a2c1a78044bd08e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#af7ab19533793ee89a2c1a78044bd08e6">resetEventPortsAfterFrame</a> () noexcept</td></tr>
+<tr class="separator:af7ab19533793ee89a2c1a78044bd08e6 inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node" id="r_abe3e5324b8df85751b01d0d02fbe49dd"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Node</b> ()</td></tr>
 <tr class="separator:abe3e5324b8df85751b01d0d02fbe49dd inherit pub_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +212,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasRenderTargetChange
 <tr class="memitem:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a086b847bb5817aa81399a77d84815ac6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a086b847bb5817aa81399a77d84815ac6">hasExplicitRenderTargetSize</a> (int32_t port) const noexcept</td></tr>
 <tr class="memdesc:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a given port has a user-specified render target size.  <br /></td></tr>
 <tr class="separator:a086b847bb5817aa81399a77d84815ac6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ede0028044a2990357a53b11b93eff0 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a4ede0028044a2990357a53b11b93eff0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a4ede0028044a2990357a53b11b93eff0">hasExplicitRenderTargetSpecs</a> (int32_t port) const noexcept</td></tr>
+<tr class="memdesc:a4ede0028044a2990357a53b11b93eff0 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the user set a size or a format on a texture inlet.  <br /></td></tr>
+<tr class="separator:a4ede0028044a2990357a53b11b93eff0 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_a787a9e931cc9a74eec85ca6b436b03e6"><td class="memItemLeft" align="right" valign="top">
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSize</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
 <tr class="separator:a787a9e931cc9a74eec85ca6b436b03e6 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,6 +240,10 @@ std::unique_ptr&lt; <a class="el" href="struct_gfx_1_1_window_capture_1_1_window
 <tr class="memitem:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node" id="r_a3d1669ef6e4560e73f413f040c97e669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_process_u_b_o.html">ProcessUBO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a3d1669ef6e4560e73f413f040c97e669">standardUBO</a> {}</td></tr>
 <tr class="memdesc:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every node matching with a score process will have such an UBO.  <br /></td></tr>
 <tr class="separator:a3d1669ef6e4560e73f413f040c97e669 inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d1d10132d8cb758f61901c02c1bd1a inherit pub_attribs_classscore_1_1gfx_1_1_process_node" id="r_a98d1d10132d8cb758f61901c02c1bd1a"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_event_ports</b></td></tr>
+<tr class="memdesc:a98d1d10132d8cb758f61901c02c1bd1a inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values of the EVENT inputs: 1 for the frame they fire in, else 0. <br /></td></tr>
+<tr class="separator:a98d1d10132d8cb758f61901c02c1bd1a inherit pub_attribs_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></td></tr>
 <tr class="memitem:a32f530890af66e0ecee6c66cdf430146 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a32f530890af66e0ecee6c66cdf430146"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
@@ -262,6 +271,12 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>nodeId</b> = score
 <tr class="memitem:a83182f75a9d0d9745e241df697965549 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a83182f75a9d0d9745e241df697965549"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresDepth</b> {}</td></tr>
 <tr class="separator:a83182f75a9d0d9745e241df697965549 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classscore_1_1gfx_1_1_process_node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classscore_1_1gfx_1_1_process_node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></td></tr>
+<tr class="memitem:a2765c95a84e5969cde07a82d600b4e1a inherit pro_methods_classscore_1_1gfx_1_1_process_node" id="r_a2765c95a84e5969cde07a82d600b4e1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_process_node.html#a2765c95a84e5969cde07a82d600b4e1a">fireEventPort</a> (int32_t port, const ossia::value &amp;v) noexcept</td></tr>
+<tr class="separator:a2765c95a84e5969cde07a82d600b4e1a inherit pro_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad5802f4c21209a1ebfeba1122da9665b" name="ad5802f4c21209a1ebfeba1122da9665b"></a>

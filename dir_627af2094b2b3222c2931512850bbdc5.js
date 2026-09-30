@@ -9,6 +9,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "DefaultGraphicsKnobImpl.hpp", "_default_graphics_knob_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsSliderImpl.hpp", "_default_graphics_slider_impl_8hpp_source.html", null ],
     [ "DefaultGraphicsSpinboxImpl.hpp", "_default_graphics_spinbox_impl_8hpp_source.html", null ],
+    [ "FirstUserInput.hpp", "_first_user_input_8hpp_source.html", null ],
     [ "GraphicsItem.hpp", "_graphics_item_8hpp_source.html", null ],
     [ "GraphicsLayout.hpp", "_graphics_layout_8hpp_source.html", null ],
     [ "GraphicsProxyObject.hpp", "_graphics_proxy_object_8hpp_source.html", null ],
@@ -21,6 +22,7 @@ var dir_627af2094b2b3222c2931512850bbdc5 =
     [ "RightClickWidget.hpp", "_right_click_widget_8hpp_source.html", null ],
     [ "TextItem.hpp", "_text_item_8hpp_source.html", null ],
     [ "TypeInWidget.hpp", "_type_in_widget_8hpp_source.html", null ],
+    [ "WidgetPresentation.hpp", "_widget_presentation_8hpp_source.html", null ],
     [ "YPos.hpp", "_y_pos_8hpp_source.html", null ],
     [ "ZoomItem.hpp", "_zoom_item_8hpp_source.html", null ]
 ];

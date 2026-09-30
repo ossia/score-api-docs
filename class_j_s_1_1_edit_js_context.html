@@ -124,10 +124,26 @@ Public Member Functions</h2></td></tr>
 const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ctx</b> ()</td></tr>
 <tr class="memdesc:a36fb0ef6013c686caef397ce62d86d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global ////. <br /></td></tr>
 <tr class="separator:a36fb0ef6013c686caef397ce62d86d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad548dec12c78a2c8b70f76f2f45ab2cb" id="r_ad548dec12c78a2c8b70f76f2f45ab2cb"><td class="memItemLeft" align="right" valign="top"><a id="ad548dec12c78a2c8b70f76f2f45ab2cb" name="ad548dec12c78a2c8b70f76f2f45ab2cb"></a>
+QJSValue&#160;</td><td class="memItemRight" valign="bottom"><b>controls</b> () const noexcept</td></tr>
+<tr class="memdesc:ad548dec12c78a2c8b70f76f2f45ab2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The published objects of the current document, by name. <br /></td></tr>
+<tr class="separator:ad548dec12c78a2c8b70f76f2f45ab2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731c6c841ebc335563aeb29d667d028a" id="r_a731c6c841ebc335563aeb29d667d028a"><td class="memItemLeft" align="right" valign="top"><a id="a731c6c841ebc335563aeb29d667d028a" name="a731c6c841ebc335563aeb29d667d028a"></a>
+QJSValue&#160;</td><td class="memItemRight" valign="bottom"><b>triggers</b> () const noexcept</td></tr>
+<tr class="separator:a731c6c841ebc335563aeb29d667d028a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c93e8319ff22622fd2d6391bc6051b2" id="r_a2c93e8319ff22622fd2d6391bc6051b2"><td class="memItemLeft" align="right" valign="top"><a id="a2c93e8319ff22622fd2d6391bc6051b2" name="a2c93e8319ff22622fd2d6391bc6051b2"></a>
+QJSValue&#160;</td><td class="memItemRight" valign="bottom"><b>conditions</b> () const noexcept</td></tr>
+<tr class="separator:a2c93e8319ff22622fd2d6391bc6051b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da4408f6bb3effedc391c8386e64769" id="r_a8da4408f6bb3effedc391c8386e64769"><td class="memItemLeft" align="right" valign="top"><a id="a8da4408f6bb3effedc391c8386e64769" name="a8da4408f6bb3effedc391c8386e64769"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNamespaces</b> (QJSValue ns)</td></tr>
+<tr class="memdesc:a8da4408f6bb3effedc391c8386e64769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set from <a class="el" href="class_j_s_1_1_scriptable_names.html#a14bdccc38e3dca591347fefe6e721efb" title="Controls, Triggers and Conditions proxies over the given Device object.">ScriptableNames::makeNamespaces</a>, on this object's engine. <br /></td></tr>
+<tr class="separator:a8da4408f6bb3effedc391c8386e64769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a471aa0a93d0ea36d477b519bdd4b8c9e" id="r_a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="memItemLeft" align="right" valign="top"><a id="a471aa0a93d0ea36d477b519bdd4b8c9e" name="a471aa0a93d0ea36d477b519bdd4b8c9e"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>device</b> (QString name)</td></tr>
 <tr class="memdesc:a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devices ///. <br /></td></tr>
 <tr class="separator:a471aa0a93d0ea36d477b519bdd4b8c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8800018ee59713fe9daf886109cb6f85" id="r_a8800018ee59713fe9daf886109cb6f85"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a8800018ee59713fe9daf886109cb6f85">deviceSettings</a> (QString name)</td></tr>
+<tr class="separator:a8800018ee59713fe9daf886109cb6f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34ea4a9c9dadbaf059de294af51ba4a0" id="r_a34ea4a9c9dadbaf059de294af51ba4a0"><td class="memItemLeft" align="right" valign="top"><a id="a34ea4a9c9dadbaf059de294af51ba4a0" name="a34ea4a9c9dadbaf059de294af51ba4a0"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>deviceToJson</b> (QString addr)</td></tr>
 <tr class="separator:a34ea4a9c9dadbaf059de294af51ba4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +216,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> (QO
 <tr class="memitem:a9bcfb5e3e11f68ba578c46a8e67cb7f4" id="r_a9bcfb5e3e11f68ba578c46a8e67cb7f4"><td class="memItemLeft" align="right" valign="top"><a id="a9bcfb5e3e11f68ba578c46a8e67cb7f4" name="a9bcfb5e3e11f68ba578c46a8e67cb7f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (QObject *sel, QString new_name)</td></tr>
 <tr class="separator:a9bcfb5e3e11f68ba578c46a8e67cb7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ceccd96f5fca6e83752ed1145bc4c4" id="r_a69ceccd96f5fca6e83752ed1145bc4c4"><td class="memItemLeft" align="right" valign="top"><a id="a69ceccd96f5fca6e83752ed1145bc4c4" name="a69ceccd96f5fca6e83752ed1145bc4c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setComment</b> (QObject *sel, QString comment)</td></tr>
+<tr class="memdesc:a69ceccd96f5fca6e83752ed1145bc4c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an object's comment, as an undoable command. <br /></td></tr>
+<tr class="separator:a69ceccd96f5fca6e83752ed1145bc4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4589c3c9c07c1406eca49a3f9d88cb11" id="r_a4589c3c9c07c1406eca49a3f9d88cb11"><td class="memItemLeft" align="right" valign="top"><a id="a4589c3c9c07c1406eca49a3f9d88cb11" name="a4589c3c9c07c1406eca49a3f9d88cb11"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>createBox</b> (QObject *obj, QString startTime, QString duration, double y)</td></tr>
 <tr class="separator:a4589c3c9c07c1406eca49a3f9d88cb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,6 +252,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>disableCondition</b> 
 <tr class="memitem:a092c5cea7bb0e680c1fcd7cb5f856221" id="r_a092c5cea7bb0e680c1fcd7cb5f856221"><td class="memItemLeft" align="right" valign="top"><a id="a092c5cea7bb0e680c1fcd7cb5f856221" name="a092c5cea7bb0e680c1fcd7cb5f856221"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>expression</b> (QObject *obj)</td></tr>
 <tr class="separator:a092c5cea7bb0e680c1fcd7cb5f856221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d9094006ff83ae1186cae4cf31165ee" id="r_a8d9094006ff83ae1186cae4cf31165ee"><td class="memItemLeft" align="right" valign="top"><a id="a8d9094006ff83ae1186cae4cf31165ee" name="a8d9094006ff83ae1186cae4cf31165ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScriptable</b> (QObject *obj, bool scriptable)</td></tr>
+<tr class="memdesc:a8d9094006ff83ae1186cae4cf31165ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes <code>obj</code> under score:/controls, score:/triggers or score:/conditions. <br /></td></tr>
+<tr class="separator:a8d9094006ff83ae1186cae4cf31165ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9cc4fe20beec9bc1c4c877526cb6259" id="r_aa9cc4fe20beec9bc1c4c877526cb6259"><td class="memItemLeft" align="right" valign="top"><a id="aa9cc4fe20beec9bc1c4c877526cb6259" name="aa9cc4fe20beec9bc1c4c877526cb6259"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>scriptableAddress</b> (QObject *obj)</td></tr>
+<tr class="separator:aa9cc4fe20beec9bc1c4c877526cb6259"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66b8e24e6bafd9b772b8743a9940e86" id="r_ad66b8e24e6bafd9b772b8743a9940e86"><td class="memItemLeft" align="right" valign="top"><a id="ad66b8e24e6bafd9b772b8743a9940e86" name="ad66b8e24e6bafd9b772b8743a9940e86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>trigger</b> (QObject *obj)</td></tr>
+<tr class="separator:ad66b8e24e6bafd9b772b8743a9940e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8de0c526d419b644a44c812824364c9" id="r_aa8de0c526d419b644a44c812824364c9"><td class="memItemLeft" align="right" valign="top"><a id="aa8de0c526d419b644a44c812824364c9" name="aa8de0c526d419b644a44c812824364c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setIntervalDuration</b> (QObject *object, <a class="el" href="struct_time_val.html">TimeVal</a> flicks)</td></tr>
 <tr class="separator:aa8de0c526d419b644a44c812824364c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -304,6 +334,8 @@ QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>cable</b> (QObje
 <tr class="memitem:ab1d0632a4ed58f2dfee6b36bbea3cb03" id="r_ab1d0632a4ed58f2dfee6b36bbea3cb03"><td class="memItemLeft" align="right" valign="top"><a id="ab1d0632a4ed58f2dfee6b36bbea3cb03" name="ab1d0632a4ed58f2dfee6b36bbea3cb03"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (QObject *obj, QString addr)</td></tr>
 <tr class="separator:ab1d0632a4ed58f2dfee6b36bbea3cb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab445496e99c8217815aec3e5b5589c19" id="r_ab445496e99c8217815aec3e5b5589c19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#ab445496e99c8217815aec3e5b5589c19">setPropagate</a> (QObject *obj, bool propagate)</td></tr>
+<tr class="separator:ab445496e99c8217815aec3e5b5589c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5503e9d4e286df9fb58237a7961436" id="r_aeb5503e9d4e286df9fb58237a7961436"><td class="memItemLeft" align="right" valign="top"><a id="aeb5503e9d4e286df9fb58237a7961436" name="aeb5503e9d4e286df9fb58237a7961436"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QObject *obj, double value)</td></tr>
 <tr class="separator:aeb5503e9d4e286df9fb58237a7961436"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,6 +366,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QObject
 <tr class="memitem:a99ef9bf18a4b35aa6c509660e08f2167" id="r_a99ef9bf18a4b35aa6c509660e08f2167"><td class="memItemLeft" align="right" valign="top"><a id="a99ef9bf18a4b35aa6c509660e08f2167" name="a99ef9bf18a4b35aa6c509660e08f2167"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (QObject *obj, QList&lt; QVariant &gt; value)</td></tr>
 <tr class="separator:a99ef9bf18a4b35aa6c509660e08f2167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab7173fde4daf6b63e7997d904edc0c" id="r_a4ab7173fde4daf6b63e7997d904edc0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a4ab7173fde4daf6b63e7997d904edc0c">editValue</a> (QObject *obj, QVariant value)</td></tr>
+<tr class="separator:a4ab7173fde4daf6b63e7997d904edc0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c7d73b77c18d56938a62b00268bc85" id="r_a11c7d73b77c18d56938a62b00268bc85"><td class="memItemLeft" align="right" valign="top"><a id="a11c7d73b77c18d56938a62b00268bc85" name="a11c7d73b77c18d56938a62b00268bc85"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>commitEdit</b> ()</td></tr>
+<tr class="memdesc:a11c7d73b77c18d56938a62b00268bc85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put the edit in progress on the undo stack; nothing if there is none. <br /></td></tr>
+<tr class="separator:a11c7d73b77c18d56938a62b00268bc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa894ae42ed70ed5ada8b1a7e06f404b7" id="r_aa894ae42ed70ed5ada8b1a7e06f404b7"><td class="memItemLeft" align="right" valign="top"><a id="aa894ae42ed70ed5ada8b1a7e06f404b7" name="aa894ae42ed70ed5ada8b1a7e06f404b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pushExecutionValue</b> (QObject *<a class="el" href="class_j_s_1_1_edit_js_context.html#af7e2271f1dccd1f5b0ebebbfeecec6c9">port</a>, QVariant value)</td></tr>
+<tr class="separator:aa894ae42ed70ed5ada8b1a7e06f404b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb4fbbea96adb1afc1d71091d13873a" id="r_a3bb4fbbea96adb1afc1d71091d13873a"><td class="memItemLeft" align="right" valign="top"><a id="a3bb4fbbea96adb1afc1d71091d13873a" name="a3bb4fbbea96adb1afc1d71091d13873a"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>portName</b> (QObject *<a class="el" href="class_j_s_1_1_edit_js_context.html#af7e2271f1dccd1f5b0ebebbfeecec6c9">port</a>)</td></tr>
 <tr class="separator:a3bb4fbbea96adb1afc1d71091d13873a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,15 +445,41 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceAddress</b> (Q
 void&#160;</td><td class="memItemRight" valign="bottom"><b>startMacro</b> ()</td></tr>
 <tr class="memdesc:a10eeda0f3ff76d82592b488c0eeb7270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo-redo ///. <br /></td></tr>
 <tr class="separator:a10eeda0f3ff76d82592b488c0eeb7270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2391508519e7a1d1f2be4765790c5d4e" id="r_a2391508519e7a1d1f2be4765790c5d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a2391508519e7a1d1f2be4765790c5d4e">withMacro</a> (QJSValue fn)</td></tr>
+<tr class="separator:a2391508519e7a1d1f2be4765790c5d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6911e26171d0ea39743046694ffc62" id="r_a1d6911e26171d0ea39743046694ffc62"><td class="memItemLeft" align="right" valign="top"><a id="a1d6911e26171d0ea39743046694ffc62" name="a1d6911e26171d0ea39743046694ffc62"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>endMacro</b> ()</td></tr>
 <tr class="separator:a1d6911e26171d0ea39743046694ffc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac184843ad9fafd088222d8cc5f36c2d1" id="r_ac184843ad9fafd088222d8cc5f36c2d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#ac184843ad9fafd088222d8cc5f36c2d1">registerCommandHandler</a> (QString name, QJSValue fn)</td></tr>
+<tr class="separator:ac184843ad9fafd088222d8cc5f36c2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a9c8f255585b52f286182cc0615825" id="r_a87a9c8f255585b52f286182cc0615825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a87a9c8f255585b52f286182cc0615825">pushCommand</a> (QString name, QJSValue undoPayload, QJSValue redoPayload)</td></tr>
+<tr class="separator:a87a9c8f255585b52f286182cc0615825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5da093f85dd83a731a7d0ff694a66d2" id="r_af5da093f85dd83a731a7d0ff694a66d2"><td class="memItemLeft" align="right" valign="top"><a id="af5da093f85dd83a731a7d0ff694a66d2" name="af5da093f85dd83a731a7d0ff694a66d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> ()</td></tr>
 <tr class="separator:af5da093f85dd83a731a7d0ff694a66d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecc569ef0031eb4a9cee83278e93543" id="r_a1ecc569ef0031eb4a9cee83278e93543"><td class="memItemLeft" align="right" valign="top"><a id="a1ecc569ef0031eb4a9cee83278e93543" name="a1ecc569ef0031eb4a9cee83278e93543"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> ()</td></tr>
 <tr class="separator:a1ecc569ef0031eb4a9cee83278e93543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3812234b4c3d6015755b0aa52a5fe90c" id="r_a3812234b4c3d6015755b0aa52a5fe90c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a3812234b4c3d6015755b0aa52a5fe90c">canUndo</a> ()</td></tr>
+<tr class="separator:a3812234b4c3d6015755b0aa52a5fe90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac819eca0ab3d7f7a8c7586d17d3e9ac9" id="r_ac819eca0ab3d7f7a8c7586d17d3e9ac9"><td class="memItemLeft" align="right" valign="top"><a id="ac819eca0ab3d7f7a8c7586d17d3e9ac9" name="ac819eca0ab3d7f7a8c7586d17d3e9ac9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canRedo</b> ()</td></tr>
+<tr class="separator:ac819eca0ab3d7f7a8c7586d17d3e9ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322d310afbc7ad9b27662670de1bf8a1" id="r_a322d310afbc7ad9b27662670de1bf8a1"><td class="memItemLeft" align="right" valign="top"><a id="a322d310afbc7ad9b27662670de1bf8a1" name="a322d310afbc7ad9b27662670de1bf8a1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>undoIndex</b> ()</td></tr>
+<tr class="memdesc:a322d310afbc7ad9b27662670de1bf8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of commands that can still be undone (the stack's current index). <br /></td></tr>
+<tr class="separator:a322d310afbc7ad9b27662670de1bf8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645b03ad050ceb3b5267b69cbb3c07e5" id="r_a645b03ad050ceb3b5267b69cbb3c07e5"><td class="memItemLeft" align="right" valign="top"><a id="a645b03ad050ceb3b5267b69cbb3c07e5" name="a645b03ad050ceb3b5267b69cbb3c07e5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>undoCount</b> ()</td></tr>
+<tr class="memdesc:a645b03ad050ceb3b5267b69cbb3c07e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total number of commands on the stack. <br /></td></tr>
+<tr class="separator:a645b03ad050ceb3b5267b69cbb3c07e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65c4011ff79d6d758b56efaeb100fec2" id="r_a65c4011ff79d6d758b56efaeb100fec2"><td class="memItemLeft" align="right" valign="top"><a id="a65c4011ff79d6d758b56efaeb100fec2" name="a65c4011ff79d6d758b56efaeb100fec2"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>undoText</b> ()</td></tr>
+<tr class="memdesc:a65c4011ff79d6d758b56efaeb100fec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of the command the next undo()/redo() would apply, or "". <br /></td></tr>
+<tr class="separator:a65c4011ff79d6d758b56efaeb100fec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7974c31223ef98310a68c7acedfb4900" id="r_a7974c31223ef98310a68c7acedfb4900"><td class="memItemLeft" align="right" valign="top"><a id="a7974c31223ef98310a68c7acedfb4900" name="a7974c31223ef98310a68c7acedfb4900"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>redoText</b> ()</td></tr>
+<tr class="separator:a7974c31223ef98310a68c7acedfb4900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753578bf8657d43fb67b2432c76a1425" id="r_a753578bf8657d43fb67b2432c76a1425"><td class="memItemLeft" align="right" valign="top"><a id="a753578bf8657d43fb67b2432c76a1425" name="a753578bf8657d43fb67b2432c76a1425"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> (QString path)</td></tr>
 <tr class="separator:a753578bf8657d43fb67b2432c76a1425"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,6 +496,18 @@ QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (QStrin
 <tr class="memitem:a47b91aa4f773bb8de1af8b6f866997e2" id="r_a47b91aa4f773bb8de1af8b6f866997e2"><td class="memItemLeft" align="right" valign="top"><a id="a47b91aa4f773bb8de1af8b6f866997e2" name="a47b91aa4f773bb8de1af8b6f866997e2"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>findByLabel</b> (QString p)</td></tr>
 <tr class="separator:a47b91aa4f773bb8de1af8b6f866997e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e57d7517922c3b4bc066d321a1814b5" id="r_a0e57d7517922c3b4bc066d321a1814b5"><td class="memItemLeft" align="right" valign="top"><a id="a0e57d7517922c3b4bc066d321a1814b5" name="a0e57d7517922c3b4bc066d321a1814b5"></a>
+QObjectList&#160;</td><td class="memItemRight" valign="bottom"><b>references</b> (QObject *obj)</td></tr>
+<tr class="memdesc:a0e57d7517922c3b4bc066d321a1814b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The states, ports, events and syncs holding an address anchored to obj. <br /></td></tr>
+<tr class="separator:a0e57d7517922c3b4bc066d321a1814b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55ee47c1393b846d50e31af7803c216" id="r_aa55ee47c1393b846d50e31af7803c216"><td class="memItemLeft" align="right" valign="top"><a id="aa55ee47c1393b846d50e31af7803c216" name="aa55ee47c1393b846d50e31af7803c216"></a>
+QObjectList&#160;</td><td class="memItemRight" valign="bottom"><b>targets</b> (QObject *obj)</td></tr>
+<tr class="memdesc:aa55ee47c1393b846d50e31af7803c216"><td class="mdescLeft">&#160;</td><td class="mdescRight">The objects the addresses of a state, port, event or sync are anchored to. <br /></td></tr>
+<tr class="separator:aa55ee47c1393b846d50e31af7803c216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a9e915714c7b6b42c558cb64f2c6a5" id="r_a92a9e915714c7b6b42c558cb64f2c6a5"><td class="memItemLeft" align="right" valign="top"><a id="a92a9e915714c7b6b42c558cb64f2c6a5" name="a92a9e915714c7b6b42c558cb64f2c6a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rebind</b> (QObject *obj, QString from, QString to)</td></tr>
+<tr class="memdesc:a92a9e915714c7b6b42c558cb64f2c6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points the addresses <code>from</code> held by the object at <code>to</code> <br /></td></tr>
+<tr class="separator:a92a9e915714c7b6b42c558cb64f2c6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd72cf8dfe8d53460b2c7d9239fe6df" id="r_a0fd72cf8dfe8d53460b2c7d9239fe6df"><td class="memItemLeft" align="right" valign="top"><a id="a0fd72cf8dfe8d53460b2c7d9239fe6df" name="a0fd72cf8dfe8d53460b2c7d9239fe6df"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>path</b> (QObject *obj)</td></tr>
 <tr class="separator:a0fd72cf8dfe8d53460b2c7d9239fe6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -552,6 +631,15 @@ Friends</h2></td></tr>
 <tr class="memitem:a316451247dde463fd48901c5483c3116" id="r_a316451247dde463fd48901c5483c3116"><td class="memItemLeft" align="right" valign="top"><a id="a316451247dde463fd48901c5483c3116" name="a316451247dde463fd48901c5483c3116"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt; &gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::ctx), w_internal::viewLiteral(&quot;ctx&quot;), std::integral_constant&lt; decltype((&amp;W_ThisType::ctx)), &amp;W_ThisType::ctx &gt;(), w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;&quot;)&gt;(&quot;&quot; &quot;&quot;), w_internal::W_EmptyFlag)))</td></tr>
 <tr class="separator:a316451247dde463fd48901c5483c3116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa01ba4f7bd2fda5f8f8b0f21e2a4816" id="r_afa01ba4f7bd2fda5f8f8b0f21e2a4816"><td class="memItemLeft" align="right" valign="top"><a id="afa01ba4f7bd2fda5f8f8b0f21e2a4816" name="afa01ba4f7bd2fda5f8f8b0f21e2a4816"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QJSValue &gt;(w_internal::viewLiteral(&quot;Controls&quot;), w_internal::viewLiteral(&quot;QJSValue&quot;), &amp;W_ThisType::controls)))</td></tr>
+<tr class="separator:afa01ba4f7bd2fda5f8f8b0f21e2a4816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b5133936c93a052be51c4a9cd9aa32" id="r_af0b5133936c93a052be51c4a9cd9aa32"><td class="memItemLeft" align="right" valign="top"><a id="af0b5133936c93a052be51c4a9cd9aa32" name="af0b5133936c93a052be51c4a9cd9aa32"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QJSValue &gt;(w_internal::viewLiteral(&quot;Triggers&quot;), w_internal::viewLiteral(&quot;QJSValue&quot;), &amp;W_ThisType::triggers)))</td></tr>
+<tr class="separator:af0b5133936c93a052be51c4a9cd9aa32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21de06ee857a91347bbf04902c9a7853" id="r_a21de06ee857a91347bbf04902c9a7853"><td class="memItemLeft" align="right" valign="top"><a id="a21de06ee857a91347bbf04902c9a7853" name="a21de06ee857a91347bbf04902c9a7853"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QJSValue &gt;(w_internal::viewLiteral(&quot;Conditions&quot;), w_internal::viewLiteral(&quot;QJSValue&quot;), &amp;W_ThisType::conditions)))</td></tr>
+<tr class="separator:a21de06ee857a91347bbf04902c9a7853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fa079c1b9e86daa9a6628534bfc5c00" id="r_a0fa079c1b9e86daa9a6628534bfc5c00"><td class="memItemLeft" align="right" valign="top"><a id="a0fa079c1b9e86daa9a6628534bfc5c00" name="a0fa079c1b9e86daa9a6628534bfc5c00"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::MethodStateTag, W_ThisType ** &gt; &gt;, w_internal::MethodStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaMethodInfo((&amp;W_ThisType::transport), w_internal::viewLiteral(&quot;transport&quot;), std::integral_constant&lt; decltype((&amp;W_ThisType::transport)), &amp;W_ThisType::transport &gt;(), w_internal::viewParsedLiterals&lt; w_internal::countParsedLiterals(&quot;&quot; &quot;&quot;)&gt;(&quot;&quot; &quot;&quot;), w_internal::W_EmptyFlag)))</td></tr>
 <tr class="separator:a0fa079c1b9e86daa9a6628534bfc5c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,6 +703,43 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 
 </div>
 </div>
+<a id="a3812234b4c3d6015755b0aa52a5fe90c" name="a3812234b4c3d6015755b0aa52a5fe90c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3812234b4c3d6015755b0aa52a5fe90c">&#9670;&#160;</a></span>canUndo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool JS::EditJsContext::canUndo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Undo-stack introspection. Mirroring the stack script-side desynchronises as soon as a macro commits nothing, or a document is loaded behind it. </p>
+
+</div>
+</div>
+<a id="a8800018ee59713fe9daf886109cb6f85" name="a8800018ee59713fe9daf886109cb6f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8800018ee59713fe9daf886109cb6f85">&#9670;&#160;</a></span>deviceSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant JS::EditJsContext::deviceSettings </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An existing device's settings as a JS object - {Name, Protocol} plus the protocol's own keys, as the document saves them. createDevice() accepts the same object, taking the name and protocol from its own arguments. </p>
+
+</div>
+</div>
 <a id="ae4bd2a0074c3a849ef9dd99aedf7ece9" name="ae4bd2a0074c3a849ef9dd99aedf7ece9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4bd2a0074c3a849ef9dd99aedf7ece9">&#9670;&#160;</a></span>documentMetadata()</h2>
 
@@ -664,6 +789,35 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 </table>
 </div><div class="memdoc">
 <p>What the title bar shows: the file's base name, or "Untitled..." before it has been saved anywhere. </p>
+
+</div>
+</div>
+<a id="a4ab7173fde4daf6b63e7997d904edc0c" name="a4ab7173fde4daf6b63e7997d904edc0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab7173fde4daf6b63e7997d904edc0c">&#9670;&#160;</a></span>editValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::EditJsContext::editValue </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVariant&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An edit still in progress, such as a slider being dragged: every call of one gesture updates the same command, and <a class="el" href="class_j_s_1_1_edit_js_context.html#a11c7d73b77c18d56938a62b00268bc85" title="Put the edit in progress on the undo stack; nothing if there is none.">commitEdit()</a> puts it on the undo stack as one step - what score's own control widgets do between press and release. Editing another control first commits the previous edit, so a gesture whose end was lost does not leak into the next one. </p>
 
 </div>
 </div>
@@ -782,6 +936,70 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 
 </div>
 </div>
+<a id="a87a9c8f255585b52f286182cc0615825" name="a87a9c8f255585b52f286182cc0615825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87a9c8f255585b52f286182cc0615825">&#9670;&#160;</a></span>pushCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::EditJsContext::pushCommand </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJSValue&#160;</td>
+          <td class="paramname"><em>undoPayload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJSValue&#160;</td>
+          <td class="paramname"><em>redoPayload</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Push an undoable edit the engine knows nothing about - state that lives in the script or outside the process. The payloads are JSON-serialisable values handed back to the handler on redo and on undo; the command stores them rather than closures, so it survives the crash-recovery backup. Pushing applies the edit: the redo payload is replayed immediately, and inside an open macro it undoes together with the engine edits around it. </p>
+
+</div>
+</div>
+<a id="ac184843ad9fafd088222d8cc5f36c2d1" name="ac184843ad9fafd088222d8cc5f36c2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac184843ad9fafd088222d8cc5f36c2d1">&#9670;&#160;</a></span>registerCommandHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::EditJsContext::registerCommandHandler </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QJSValue&#160;</td>
+          <td class="paramname"><em>fn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register the handler <code>fn</code> that pushCommand("name", ...) replays against. Registering a name twice replaces it. </p>
+
+</div>
+</div>
 <a id="ab4f06dcb6ee406a82e985612df101023" name="ab4f06dcb6ee406a82e985612df101023"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4f06dcb6ee406a82e985612df101023">&#9670;&#160;</a></span>setExpression()</h2>
 
@@ -811,6 +1029,35 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 
 </div>
 </div>
+<a id="ab445496e99c8217815aec3e5b5589c19" name="ab445496e99c8217815aec3e5b5589c19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab445496e99c8217815aec3e5b5589c19">&#9670;&#160;</a></span>setPropagate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::EditJsContext::setPropagate </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>obj</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>propagate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether an audio outlet is cabled to its parent interval. An outlet writes to its address only when nothing is cabled to it. </p>
+
+</div>
+</div>
 <a id="af38091341d5e2e921caceb24246a267c" name="af38091341d5e2e921caceb24246a267c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af38091341d5e2e921caceb24246a267c">&#9670;&#160;</a></span>setUnit()</h2>
 
@@ -837,6 +1084,25 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
       </table>
 </div><div class="memdoc">
 <p>The unit of an existing address, spelled as the address panel shows it: "color.rgba", "position.cart2D", "" to clear. The unit is what picks the colour swatch and the XY pad over plain number fields. </p>
+
+</div>
+</div>
+<a id="a2391508519e7a1d1f2be4765790c5d4e" name="a2391508519e7a1d1f2be4765790c5d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2391508519e7a1d1f2be4765790c5d4e">&#9670;&#160;</a></span>withMacro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void JS::EditJsContext::withMacro </td>
+          <td>(</td>
+          <td class="paramtype">QJSValue&#160;</td>
+          <td class="paramname"><em>fn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Run <code>fn</code> in a macro, committed even if the script errors. A nested call joins the enclosing macro. <a class="el" href="class_j_s_1_1_edit_js_context.html#a10eeda0f3ff76d82592b488c0eeb7270" title="Undo-redo ///.">startMacro()</a>/endMacro() by hand is not exception-safe, and <a class="el" href="class_j_s_1_1_edit_js_context.html#a10eeda0f3ff76d82592b488c0eeb7270" title="Undo-redo ///.">startMacro()</a> overwrites an open macro, rolling back what it had already applied. </p>
 
 </div>
 </div>

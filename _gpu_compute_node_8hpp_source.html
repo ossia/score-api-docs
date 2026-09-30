@@ -179,36 +179,36 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">bool</span> m_createdPipeline{};</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span> m_initialized{};</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">int</span> sampler_k = 0;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">int</span> ubo_k = 0;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  ossia::flat_map&lt;int, QRhiBuffer*&gt; createdUbos;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  ossia::flat_map&lt;int, QRhiTexture*&gt; createdTexs;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 6, 0)</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  std::vector&lt;QRhiBufferReadbackResult*&gt; bufReadbacks;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">void</span> addReadback(QRhiBufferReadbackResult* r) { bufReadbacks.push_back(r); }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  std::vector&lt;QRhiReadbackResult*&gt; texReadbacks;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> addReadback(QRhiReadbackResult* r) { texReadbacks.push_back(r); }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">const</span> GpuComputeNode&lt;Node_T&gt;&amp; node() const noexcept</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>GpuComputeNode&lt;Node_T&gt;&amp;<span class="keyword">&gt;</span>(score::gfx::NodeRenderer::node);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  GpuComputeRenderer(<span class="keyword">const</span> GpuComputeNode&lt;Node_T&gt;&amp; p)</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      : ComputeRendererBaseType&lt;Node_T&gt;{p}</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      , state{std::make_shared&lt;Node_T&gt;()}</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    prepareNewState&lt;Node_T&gt;(state, p);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  renderTargetForInput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>&amp; p)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> it = m_rts.find(&amp;p);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    SCORE_ASSERT(it != m_rts.end());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">int</span> ubo_k = 0;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  ossia::flat_map&lt;int, QRhiBuffer*&gt; createdUbos;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  ossia::flat_map&lt;int, QRhiTexture*&gt; createdTexs;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#if QT_VERSION &lt; QT_VERSION_CHECK(6, 6, 0)</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::vector&lt;QRhiBufferReadbackResult*&gt; bufReadbacks;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">void</span> addReadback(QRhiBufferReadbackResult* r) { bufReadbacks.push_back(r); }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  std::vector&lt;QRhiReadbackResult*&gt; texReadbacks;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> addReadback(QRhiReadbackResult* r) { texReadbacks.push_back(r); }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">const</span> GpuComputeNode&lt;Node_T&gt;&amp; node() const noexcept</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>GpuComputeNode&lt;Node_T&gt;&amp;<span class="keyword">&gt;</span>(score::gfx::NodeRenderer::node);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  GpuComputeRenderer(<span class="keyword">const</span> GpuComputeNode&lt;Node_T&gt;&amp; p)</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      : ComputeRendererBaseType&lt;Node_T&gt;{p}</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      , state{std::make_shared&lt;Node_T&gt;()}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    prepareNewState&lt;Node_T&gt;(state, p);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  renderTargetForInput(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>&amp; p)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">auto</span> it = m_rts.find(&amp;p);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span>(it == m_rts.end())</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">return</span> {};</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> it-&gt;second;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
@@ -318,8 +318,8 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <span class="keyword">using </span>bindings_type = <span class="keyword">decltype</span>(Node_T::layout::bindings);</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    <span class="keyword">using </span>image_type = std::decay_t&lt;<span class="keyword">decltype</span>(bindings_type{}.*F::image())&gt;;</div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    <span class="keyword">auto</span> tex = createInput(</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        renderer, sampler_k++, gpp::qrhi::textureFormat&lt;image_type&gt;(),</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.renderSize);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        renderer, Idx, gpp::qrhi::textureFormat&lt;image_type&gt;(),</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        renderer.<a class="code hl_function" href="classscore_1_1gfx_1_1_render_list.html#a1a23334b08a646d35c90023546c36e5e">resolveInputRenderTargetSpecs</a>(node(), Idx).size);</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">using </span>sampler_type = <span class="keyword">typename</span> avnd::member_reflection&lt;F::image()&gt;::member_type;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    createdTexs[sampler_type::binding()] = tex;</div>
@@ -525,31 +525,31 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
 <div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>    m_createdPipeline = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    sampler_k = 0;</div>
-<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    ubo_k = 0;</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    m_initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  }</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r)<span class="keyword"> override</span></div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="keyword">  </span>{</div>
-<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>    releaseState(r);</div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  }</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>  <span class="keywordtype">void</span> runCompute(</div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; cb,</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      QRhiResourceUpdateBatch*&amp; res)</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  {</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="keyword">auto</span>&amp; parent = node();</div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="comment">// If we are paused, we don&#39;t run the processor implementation.</span></div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">// if(parent.last_message.message.token.date == m_last_time) {</span></div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="comment">//   return;</span></div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>    <span class="comment">// m_last_time = parent.last_message.message.token.date;</span></div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
-<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    <span class="comment">// Apply the controls</span></div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>    parent.processControlIn(</div>
-<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>        *<span class="keyword">this</span>, *this-&gt;state, m_last_message, parent.last_message, parent.m_ctx);</div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    ubo_k = 0;</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>    m_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  }</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r)<span class="keyword"> override</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="keyword">  </span>{</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    releaseState(r);</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  }</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>  <span class="keywordtype">void</span> runCompute(</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>      QRhiResourceUpdateBatch*&amp; res)</div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>  {</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>    <span class="keyword">auto</span>&amp; parent = node();</div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>    <span class="comment">// If we are paused, we don&#39;t run the processor implementation.</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <span class="comment">// if(parent.last_message.message.token.date == m_last_time) {</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>    <span class="comment">//   return;</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="comment">// }</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>    <span class="comment">// m_last_time = parent.last_message.message.token.date;</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>    <span class="comment">// Apply the controls</span></div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    parent.processControlIn(</div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>        *<span class="keyword">this</span>, *this-&gt;state, m_last_message, parent.last_message, parent.m_ctx);</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    parent.drainWorker(renderer.dateFromStepClock);</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="comment">// Run the compute shader</span></div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    {</div>
@@ -603,22 +603,23 @@ $(document).ready(function(){initNavTree('_gpu_compute_node_8hpp_source.html',''
 <div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span>}</div>
 <div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:36</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:37</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a3a4fcc961c38477c0a912e16d8f3a7f1"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a3a4fcc961c38477c0a912e16d8f3a7f1">score::gfx::RenderList::requiresDepth</a></div><div class="ttdeci">bool requiresDepth(const score::gfx::Port &amp;p) const noexcept</div><div class="ttdoc">Whether this list of rendering actions requires depth testing at all.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1199</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:259</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_aba4c2c67428caf9f0a0bc409e948cf61"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#aba4c2c67428caf9f0a0bc409e948cf61">score::gfx::RenderList::emptyTexture</a></div><div class="ttdeci">QRhiTexture &amp; emptyTexture() const noexcept</div><div class="ttdoc">Texture to use when a texture is missing (2D)</div><div class="ttdef"><b>Definition</b> RenderList.hpp:282</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a1a23334b08a646d35c90023546c36e5e"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a1a23334b08a646d35c90023546c36e5e">score::gfx::RenderList::resolveInputRenderTargetSpecs</a></div><div class="ttdeci">RenderTargetSpecs resolveInputRenderTargetSpecs(const Node &amp;node, int32_t port) noexcept</div><div class="ttdoc">The render target specs of a texture inlet, with its size resolved.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:366</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_a3a4fcc961c38477c0a912e16d8f3a7f1"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#a3a4fcc961c38477c0a912e16d8f3a7f1">score::gfx::RenderList::requiresDepth</a></div><div class="ttdeci">bool requiresDepth(const score::gfx::Port &amp;p) const noexcept</div><div class="ttdoc">Whether this list of rendering actions requires depth testing at all.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1709</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:274</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_aba4c2c67428caf9f0a0bc409e948cf61"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#aba4c2c67428caf9f0a0bc409e948cf61">score::gfx::RenderList::emptyTexture</a></div><div class="ttdeci">QRhiTexture &amp; emptyTexture() const noexcept</div><div class="ttdoc">Texture to use when a texture is missing (2D)</div><div class="ttdef"><b>Definition</b> RenderList.hpp:297</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a433eac87f8111d670824ff45923297fc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:1392</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a51bb4eaee676109688bc83de5e6eaa2a"><div class="ttname"><a href="namespacescore_1_1gfx.html#a51bb4eaee676109688bc83de5e6eaa2a">score::gfx::createRenderTarget</a></div><div class="ttdeci">TextureRenderTarget createRenderTarget(const RenderState &amp;state, QRhiTexture *tex, int samples, bool depth, bool samplableDepth)</div><div class="ttdoc">Create a render target from a texture.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:60</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a433eac87f8111d670824ff45923297fc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:1448</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a51bb4eaee676109688bc83de5e6eaa2a"><div class="ttname"><a href="namespacescore_1_1gfx.html#a51bb4eaee676109688bc83de5e6eaa2a">score::gfx::createRenderTarget</a></div><div class="ttdeci">TextureRenderTarget createRenderTarget(const RenderState &amp;state, QRhiTexture *tex, int samples, bool depth, bool samplableDepth)</div><div class="ttdoc">Create a render target from a texture.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:68</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1generate__shaders_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1generate__shaders.html">gpp::qrhi::generate_shaders</a></div><div class="ttdef"><b>Definition</b> GppShaders.hpp:10</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1handle__dispatch_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1handle__dispatch.html">gpp::qrhi::handle_dispatch</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:129</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1handle__release_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1handle__release.html">gpp::qrhi::handle_release</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:92</div></div>
 <div class="ttc" id="astructgpp_1_1qrhi_1_1handle__update_html"><div class="ttname"><a href="structgpp_1_1qrhi_1_1handle__update.html">gpp::qrhi::handle_update</a></div><div class="ttdef"><b>Definition</b> GppCoroutines.hpp:253</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:198</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:177</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:247</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:220</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:199</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:279</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

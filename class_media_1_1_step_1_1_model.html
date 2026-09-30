@@ -105,11 +105,15 @@ $(document).ready(function(){initNavTree('class_media_1_1_step_1_1_model.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_media_1_1_step_1_1_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Media::Step::Model Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A step sequencer with several sequences.  
+ <a href="class_media_1_1_step_1_1_model.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Media::Step::Model:</div>
 <div class="dyncontent">
@@ -123,7 +127,11 @@ Inheritance diagram for Media::Step::Model:</div>
 <area href="class_identified_object_abstract.html" title="Base class for IdentifiedObject." alt="IdentifiedObjectAbstract" shape="rect" coords="0,56,271,80"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A step sequencer with several sequences. </p>
+<p>Each sequence has its own number of steps. The Sequence inlet picks the one that plays; a new pick waits for the next point of the Quantization grid, and the new sequence starts at its first step. The Duration inlet is the length of a step, in seconds or synced to the tempo, for all sequences.</p>
+<p>Steps are stored between 0 (max) and 1 (min), as drawn. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b3a020a33e9ee7e8d0bbcfc70092052" id="r_a2b3a020a33e9ee7e8d0bbcfc70092052"><td class="memItemLeft" align="right" valign="top"><a id="a2b3a020a33e9ee7e8d0bbcfc70092052" name="a2b3a020a33e9ee7e8d0bbcfc70092052"></a>
@@ -138,13 +146,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:a6bb7dec75e9e0b8083d4fe62673a4834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a549a6d244884f97e7132bea057b8f23d" id="r_a549a6d244884f97e7132bea057b8f23d"><td class="memItemLeft" align="right" valign="top"><a id="a549a6d244884f97e7132bea057b8f23d" name="a549a6d244884f97e7132bea057b8f23d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>stepCount</b> () const</td></tr>
+<tr class="memdesc:a549a6d244884f97e7132bea057b8f23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Of the current sequence. <br /></td></tr>
 <tr class="separator:a549a6d244884f97e7132bea057b8f23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55c483ec7122934b5b3575c9250db41f" id="r_a55c483ec7122934b5b3575c9250db41f"><td class="memItemLeft" align="right" valign="top"><a id="a55c483ec7122934b5b3575c9250db41f" name="a55c483ec7122934b5b3575c9250db41f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>stepDuration</b> () const</td></tr>
-<tr class="separator:a55c483ec7122934b5b3575c9250db41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00aecd08bfec51b54eb59fba563cce54" id="r_a00aecd08bfec51b54eb59fba563cce54"><td class="memItemLeft" align="right" valign="top"><a id="a00aecd08bfec51b54eb59fba563cce54" name="a00aecd08bfec51b54eb59fba563cce54"></a>
 const ossia::float_vector &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>steps</b> () const</td></tr>
+<tr class="memdesc:a00aecd08bfec51b54eb59fba563cce54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Of the current sequence. <br /></td></tr>
 <tr class="separator:a00aecd08bfec51b54eb59fba563cce54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d57c3e5d98daf93ea791c6b7c6e04e" id="r_a62d57c3e5d98daf93ea791c6b7c6e04e"><td class="memItemLeft" align="right" valign="top"><a id="a62d57c3e5d98daf93ea791c6b7c6e04e" name="a62d57c3e5d98daf93ea791c6b7c6e04e"></a>
+const std::vector&lt; ossia::float_vector &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>sequences</b> () const noexcept</td></tr>
+<tr class="separator:a62d57c3e5d98daf93ea791c6b7c6e04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb63d837ea45ed039103e8492a37ba86" id="r_abb63d837ea45ed039103e8492a37ba86"><td class="memItemLeft" align="right" valign="top"><a id="abb63d837ea45ed039103e8492a37ba86" name="abb63d837ea45ed039103e8492a37ba86"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>currentSequence</b> () const noexcept</td></tr>
+<tr class="separator:abb63d837ea45ed039103e8492a37ba86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ac773b073bd0415a6c2df1cef0cb559" id="r_a7ac773b073bd0415a6c2df1cef0cb559"><td class="memItemLeft" align="right" valign="top"><a id="a7ac773b073bd0415a6c2df1cef0cb559" name="a7ac773b073bd0415a6c2df1cef0cb559"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> () const</td></tr>
 <tr class="separator:a7ac773b073bd0415a6c2df1cef0cb559"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,27 +167,39 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>max</b> () const</t
 <tr class="memitem:a049b2bba539edb55a0914a1ecd5444b5" id="r_a049b2bba539edb55a0914a1ecd5444b5"><td class="memItemLeft" align="right" valign="top"><a id="a049b2bba539edb55a0914a1ecd5444b5" name="a049b2bba539edb55a0914a1ecd5444b5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stepCountChanged</b> (int arg_1)</td></tr>
 <tr class="separator:a049b2bba539edb55a0914a1ecd5444b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a537e067891a91f26a5b6dd92d7e27c48" id="r_a537e067891a91f26a5b6dd92d7e27c48"><td class="memItemLeft" align="right" valign="top"><a id="a537e067891a91f26a5b6dd92d7e27c48" name="a537e067891a91f26a5b6dd92d7e27c48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stepDurationChanged</b> (int arg_1)</td></tr>
-<tr class="separator:a537e067891a91f26a5b6dd92d7e27c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be1c9e065f4449407aa10eac3917ac0" id="r_a0be1c9e065f4449407aa10eac3917ac0"><td class="memItemLeft" align="right" valign="top"><a id="a0be1c9e065f4449407aa10eac3917ac0" name="a0be1c9e065f4449407aa10eac3917ac0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stepsChanged</b> ()</td></tr>
+<tr class="memdesc:a0be1c9e065f4449407aa10eac3917ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any step of any sequence, or the list of sequences. <br /></td></tr>
 <tr class="separator:a0be1c9e065f4449407aa10eac3917ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee6804b1601b5d11447c5684d8ca4d5" id="r_a1ee6804b1601b5d11447c5684d8ca4d5"><td class="memItemLeft" align="right" valign="top"><a id="a1ee6804b1601b5d11447c5684d8ca4d5" name="a1ee6804b1601b5d11447c5684d8ca4d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>currentSequenceChanged</b> (int arg_1)</td></tr>
+<tr class="separator:a1ee6804b1601b5d11447c5684d8ca4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36c384a9838224f86342718296787589" id="r_a36c384a9838224f86342718296787589"><td class="memItemLeft" align="right" valign="top"><a id="a36c384a9838224f86342718296787589" name="a36c384a9838224f86342718296787589"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>minChanged</b> (double arg_1)</td></tr>
 <tr class="separator:a36c384a9838224f86342718296787589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a8b9c481ee73a78dd38fc5346ded59" id="r_aa8a8b9c481ee73a78dd38fc5346ded59"><td class="memItemLeft" align="right" valign="top"><a id="aa8a8b9c481ee73a78dd38fc5346ded59" name="aa8a8b9c481ee73a78dd38fc5346ded59"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>maxChanged</b> (double arg_1)</td></tr>
 <tr class="separator:aa8a8b9c481ee73a78dd38fc5346ded59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc3b0503a3a50d061577670b4a6ace4" id="r_a3dc3b0503a3a50d061577670b4a6ace4"><td class="memItemLeft" align="right" valign="top"><a id="a3dc3b0503a3a50d061577670b4a6ace4" name="a3dc3b0503a3a50d061577670b4a6ace4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>execPosition</b> (int arg_1)</td></tr>
+<tr class="memdesc:a3dc3b0503a3a50d061577670b4a6ace4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The step that played last, -1 when stopped; from the executor. <br /></td></tr>
+<tr class="separator:a3dc3b0503a3a50d061577670b4a6ace4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56d8fe2bcf18a2fd729b4b72079a2147" id="r_a56d8fe2bcf18a2fd729b4b72079a2147"><td class="memItemLeft" align="right" valign="top"><a id="a56d8fe2bcf18a2fd729b4b72079a2147" name="a56d8fe2bcf18a2fd729b4b72079a2147"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepCount</b> (int s)</td></tr>
+<tr class="memdesc:a56d8fe2bcf18a2fd729b4b72079a2147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Of the current sequence. <br /></td></tr>
 <tr class="separator:a56d8fe2bcf18a2fd729b4b72079a2147"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68312902dae4d4fd36235691139fd80b" id="r_a68312902dae4d4fd36235691139fd80b"><td class="memItemLeft" align="right" valign="top"><a id="a68312902dae4d4fd36235691139fd80b" name="a68312902dae4d4fd36235691139fd80b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setStepDuration</b> (int s)</td></tr>
-<tr class="separator:a68312902dae4d4fd36235691139fd80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70d66239d0357cace1fe793ae9b9c39e" id="r_a70d66239d0357cace1fe793ae9b9c39e"><td class="memItemLeft" align="right" valign="top"><a id="a70d66239d0357cace1fe793ae9b9c39e" name="a70d66239d0357cace1fe793ae9b9c39e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSteps</b> (ossia::float_vector v)</td></tr>
+<tr class="memdesc:a70d66239d0357cace1fe793ae9b9c39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Of the current sequence. <br /></td></tr>
 <tr class="separator:a70d66239d0357cace1fe793ae9b9c39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1915054bc3bde128837b3a9b5d5181" id="r_a2d1915054bc3bde128837b3a9b5d5181"><td class="memItemLeft" align="right" valign="top"><a id="a2d1915054bc3bde128837b3a9b5d5181" name="a2d1915054bc3bde128837b3a9b5d5181"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSequenceSteps</b> (int sequence, ossia::float_vector v)</td></tr>
+<tr class="separator:a2d1915054bc3bde128837b3a9b5d5181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9270a91e0e3d09ded2d5f226c3383cf" id="r_ab9270a91e0e3d09ded2d5f226c3383cf"><td class="memItemLeft" align="right" valign="top"><a id="ab9270a91e0e3d09ded2d5f226c3383cf" name="ab9270a91e0e3d09ded2d5f226c3383cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSequences</b> (std::vector&lt; ossia::float_vector &gt; v)</td></tr>
+<tr class="separator:ab9270a91e0e3d09ded2d5f226c3383cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc38596cf9069befc1dab915d0d3c4f" id="r_a2dc38596cf9069befc1dab915d0d3c4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_step_1_1_model.html#a2dc38596cf9069befc1dab915d0d3c4f">setCurrentSequence</a> (int n)</td></tr>
+<tr class="separator:a2dc38596cf9069befc1dab915d0d3c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a8d1f2585d6c3531494ad6eb806651" id="r_a26a8d1f2585d6c3531494ad6eb806651"><td class="memItemLeft" align="right" valign="top"><a id="a26a8d1f2585d6c3531494ad6eb806651" name="a26a8d1f2585d6c3531494ad6eb806651"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMin</b> (double v)</td></tr>
 <tr class="separator:a26a8d1f2585d6c3531494ad6eb806651"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,6 +345,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>externalSourceOutOfDa
 <tr class="memitem:afed1d6015e00065f9914edc79e13e9e3 inherit pub_methods_class_process_1_1_process_model" id="r_afed1d6015e00065f9914edc79e13e9e3"><td class="memItemLeft" align="right" valign="top">
 virtual std::optional&lt; <a class="el" href="struct_process_1_1_magnetic_info.html">Process::MagneticInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>magneticPosition</b> (const QObject *o, const <a class="el" href="struct_time_val.html">TimeVal</a> t) const noexcept</td></tr>
 <tr class="separator:afed1d6015e00065f9914edc79e13e9e3 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fc04d9b9942440a7904671804a50e4 inherit pub_methods_class_process_1_1_process_model" id="r_a69fc04d9b9942440a7904671804a50e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_model.html#a69fc04d9b9942440a7904671804a50e4">scriptable</a> () const noexcept</td></tr>
+<tr class="separator:a69fc04d9b9942440a7904671804a50e4 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403f432f3b8edeabeec86097cab87ec6 inherit pub_methods_class_process_1_1_process_model" id="r_a403f432f3b8edeabeec86097cab87ec6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setScriptable</b> (bool b)</td></tr>
+<tr class="separator:a403f432f3b8edeabeec86097cab87ec6 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0274d968e7b88e3ad614d96e99e92a05 inherit pub_methods_class_process_1_1_process_model" id="r_a0274d968e7b88e3ad614d96e99e92a05"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>scriptableChanged</b> (bool b)</td></tr>
+<tr class="separator:a0274d968e7b88e3ad614d96e99e92a05 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9f5c80dbbde5c054eb384367303106c inherit pub_methods_class_process_1_1_process_model" id="r_ab9f5c80dbbde5c054eb384367303106c"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>loops</b> () const noexcept</td></tr>
 <tr class="separator:ab9f5c80dbbde5c054eb384367303106c inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -486,6 +519,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize_imp
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:adda62aef8a4772c382e7782bd39d3c33" id="r_adda62aef8a4772c382e7782bd39d3c33"><td class="memItemLeft" align="right" valign="top"><a id="adda62aef8a4772c382e7782bd39d3c33" name="adda62aef8a4772c382e7782bd39d3c33"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sequenceSelect</b></td></tr>
+<tr class="separator:adda62aef8a4772c382e7782bd39d3c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0704aebda27fdd434fae9fe9b75345ec" id="r_a0704aebda27fdd434fae9fe9b75345ec"><td class="memItemLeft" align="right" valign="top"><a id="a0704aebda27fdd434fae9fe9b75345ec" name="a0704aebda27fdd434fae9fe9b75345ec"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>switchQuantification</b></td></tr>
+<tr class="separator:a0704aebda27fdd434fae9fe9b75345ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad54576dfc1dc83cbbe8a7cf1db646bb2" id="r_ad54576dfc1dc83cbbe8a7cf1db646bb2"><td class="memItemLeft" align="right" valign="top"><a id="ad54576dfc1dc83cbbe8a7cf1db646bb2" name="ad54576dfc1dc83cbbe8a7cf1db646bb2"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>stepDuration</b></td></tr>
+<tr class="separator:ad54576dfc1dc83cbbe8a7cf1db646bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af887423456d7b0ee5b44f91d00a57dbf" id="r_af887423456d7b0ee5b44f91d00a57dbf"><td class="memItemLeft" align="right" valign="top"><a id="af887423456d7b0ee5b44f91d00a57dbf" name="af887423456d7b0ee5b44f91d00a57dbf"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outlet</b></td></tr>
 <tr class="separator:af887423456d7b0ee5b44f91d00a57dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -504,6 +546,23 @@ QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>externalUI</b> {
 <a class="el" href="class_path.html">Path</a>&lt; model &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_path_cache</b></td></tr>
 <tr class="separator:a5d9e43c3174e926131af32e331e1f1f3 inherit pub_attribs_class_identified_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a197221521fef946a61efc533f7acb0df" id="r_a197221521fef946a61efc533f7acb0df"><td class="memItemLeft" align="right" valign="top"><a id="a197221521fef946a61efc533f7acb0df" name="a197221521fef946a61efc533f7acb0df"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>maxSequences</b> = 64</td></tr>
+<tr class="separator:a197221521fef946a61efc533f7acb0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2424afd261bd591aafe2d14711359271" id="r_a2424afd261bd591aafe2d14711359271"><td class="memItemLeft" align="right" valign="top"><a id="a2424afd261bd591aafe2d14711359271" name="a2424afd261bd591aafe2d14711359271"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>maxSteps</b> = 256</td></tr>
+<tr class="separator:a2424afd261bd591aafe2d14711359271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_classscore_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classscore_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classscore_1_1_entity.html">score::Entity&lt; ProcessModel &gt;</a></td></tr>
+<tr class="memitem:a37cc43550b6badc98597268840813463 inherit pub_static_attribs_classscore_1_1_entity" id="r_a37cc43550b6badc98597268840813463"><td class="memItemLeft" align="right" valign="top">
+static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>entity_tag</b></td></tr>
+<tr class="separator:a37cc43550b6badc98597268840813463 inherit pub_static_attribs_classscore_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_attribs_class_identified_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_identified_object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_identified_object.html">IdentifiedObject&lt; model &gt;</a></td></tr>
+<tr class="memitem:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object" id="r_a78ad8bcfb6b25f7023b461c6b7246430"><td class="memItemLeft" align="right" valign="top">
+static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>identified_object_tag</b> = true</td></tr>
+<tr class="separator:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:ac8d5513769ce97418f44fae53d4b0472" id="r_ac8d5513769ce97418f44fae53d4b0472"><td class="memItemLeft" align="right" valign="top"><a id="ac8d5513769ce97418f44fae53d4b0472" name="ac8d5513769ce97418f44fae53d4b0472"></a>
@@ -512,9 +571,6 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 <tr class="memitem:ab5b3b9ddac252ac2a0dd0c5bc15283e8" id="r_ab5b3b9ddac252ac2a0dd0c5bc15283e8"><td class="memItemLeft" align="right" valign="top"><a id="ab5b3b9ddac252ac2a0dd0c5bc15283e8" name="ab5b3b9ddac252ac2a0dd0c5bc15283e8"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; double &gt;(w_internal::viewLiteral(&quot;min&quot;), w_internal::viewLiteral(&quot;double&quot;), &amp;W_ThisType::min, &amp;W_ThisType::setMin, W_Notify, &amp;W_ThisType::minChanged)))</td></tr>
 <tr class="separator:ab5b3b9ddac252ac2a0dd0c5bc15283e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07313df393d673637d9299cf51434837" id="r_a07313df393d673637d9299cf51434837"><td class="memItemLeft" align="right" valign="top"><a id="a07313df393d673637d9299cf51434837" name="a07313df393d673637d9299cf51434837"></a>
-constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; int &gt;(w_internal::viewLiteral(&quot;stepDuration&quot;), w_internal::viewLiteral(&quot;int&quot;), &amp;W_ThisType::stepDuration, &amp;W_ThisType::setStepDuration, W_Notify, &amp;W_ThisType::stepDurationChanged)))</td></tr>
-<tr class="separator:a07313df393d673637d9299cf51434837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72e4925ea44f9932ad622608f4a0a2ad" id="r_a72e4925ea44f9932ad622608f4a0a2ad"><td class="memItemLeft" align="right" valign="top"><a id="a72e4925ea44f9932ad622608f4a0a2ad" name="a72e4925ea44f9932ad622608f4a0a2ad"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; int &gt;(w_internal::viewLiteral(&quot;stepCount&quot;), w_internal::viewLiteral(&quot;int&quot;), &amp;W_ThisType::stepCount, &amp;W_ThisType::setStepCount, W_Notify, &amp;W_ThisType::stepCountChanged)))</td></tr>
 <tr class="separator:a72e4925ea44f9932ad622608f4a0a2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -542,14 +598,6 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = <a cl
 <tr class="memitem:a7370c1d6b71bffe747fa0d2453dac35f inherit pub_types_classscore_1_1_serializable_interface" id="r_a7370c1d6b71bffe747fa0d2453dac35f"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>is_abstract_base_tag</b> = std::integral_constant&lt; bool, true &gt;</td></tr>
 <tr class="separator:a7370c1d6b71bffe747fa0d2453dac35f inherit pub_types_classscore_1_1_serializable_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_classscore_1_1_entity"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classscore_1_1_entity')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classscore_1_1_entity.html">score::Entity&lt; ProcessModel &gt;</a></td></tr>
-<tr class="memitem:a37cc43550b6badc98597268840813463 inherit pub_static_attribs_classscore_1_1_entity" id="r_a37cc43550b6badc98597268840813463"><td class="memItemLeft" align="right" valign="top">
-static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>entity_tag</b></td></tr>
-<tr class="separator:a37cc43550b6badc98597268840813463 inherit pub_static_attribs_classscore_1_1_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_attribs_class_identified_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_class_identified_object')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="class_identified_object.html">IdentifiedObject&lt; model &gt;</a></td></tr>
-<tr class="memitem:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object" id="r_a78ad8bcfb6b25f7023b461c6b7246430"><td class="memItemLeft" align="right" valign="top">
-static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>identified_object_tag</b> = true</td></tr>
-<tr class="separator:a78ad8bcfb6b25f7023b461c6b7246430 inherit pub_static_attribs_class_identified_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_process_1_1_process_model"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_process_1_1_process_model')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a></td></tr>
 <tr class="memitem:ae7dc32253a9289cf9c9ae38888392729 inherit pro_methods_class_process_1_1_process_model" id="r_ae7dc32253a9289cf9c9ae38888392729"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAndScale</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;newDuration) noexcept</td></tr>
@@ -572,6 +620,26 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setDurationAn
 <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_outlets</b></td></tr>
 <tr class="separator:a492e4ff09bb020871101ea4fbedb1f80 inherit pro_attribs_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2dc38596cf9069befc1dab915d0d3c4f" name="a2dc38596cf9069befc1dab915d0d3c4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dc38596cf9069befc1dab915d0d3c4f">&#9670;&#160;</a></span>setCurrentSequence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Step::Model::setCurrentSequence </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Selects a sequence, adding empty ones up to it if needed; the Sequence port follows. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-media_2_media_2_step_2_model_8hpp_source.html">score-plugin-media/Media/Step/Model.hpp</a></li>
 <li><b>score-plugin-media/Media/Step/Model.cpp</b></li>

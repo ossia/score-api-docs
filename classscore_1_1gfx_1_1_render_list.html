@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_render_list.html
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
@@ -156,6 +157,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (QRhiResou
 <tr class="separator:a12dab51c09ccd361eacca3355545b9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4565b446ad3521c0912545783cdc886" id="r_aa4565b446ad3521c0912545783cdc886"><td class="memItemLeft" align="right" valign="top">QRhiCommandBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aa4565b446ad3521c0912545783cdc886">currentCommandBuffer</a> () const noexcept</td></tr>
 <tr class="separator:aa4565b446ad3521c0912545783cdc886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a31c4f17b67498524f1c187a12d7d52" id="r_a4a31c4f17b67498524f1c187a12d7d52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4a31c4f17b67498524f1c187a12d7d52">rendering</a> () const noexcept</td></tr>
+<tr class="separator:a4a31c4f17b67498524f1c187a12d7d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37cde7b19c5eee5009f717644af96ffd" id="r_a37cde7b19c5eee5009f717644af96ffd"><td class="memItemLeft" align="right" valign="top"><a id="a37cde7b19c5eee5009f717644af96ffd" name="a37cde7b19c5eee5009f717644af96ffd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> ()</td></tr>
 <tr class="memdesc:a37cde7b19c5eee5009f717644af96ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release GPU resources owned by this render list. <br /></td></tr>
@@ -210,6 +213,14 @@ QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTex
 QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTextureArray</b> () const noexcept</td></tr>
 <tr class="memdesc:a90f38182c12bda04690c3f183ecf76d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture to use when a 2D array (sampler2DArray) is missing. <br /></td></tr>
 <tr class="separator:a90f38182c12bda04690c3f183ecf76d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614d7c1cd12a2f7d7bfe4868dbb9b6f1" id="r_a614d7c1cd12a2f7d7bfe4868dbb9b6f1"><td class="memItemLeft" align="right" valign="top"><a id="a614d7c1cd12a2f7d7bfe4868dbb9b6f1" name="a614d7c1cd12a2f7d7bfe4868dbb9b6f1"></a>
+QRhiTexture &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>emptyTextureFor</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;in) const noexcept</td></tr>
+<tr class="memdesc:a614d7c1cd12a2f7d7bfe4868dbb9b6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty texture of the view type an image input port samples. <br /></td></tr>
+<tr class="separator:a614d7c1cd12a2f7d7bfe4868dbb9b6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6db34f4d9ec8998cd06a20ff54b262" id="r_a6e6db34f4d9ec8998cd06a20ff54b262"><td class="memItemLeft" align="right" valign="top"><a id="a6e6db34f4d9ec8998cd06a20ff54b262" name="a6e6db34f4d9ec8998cd06a20ff54b262"></a>
+QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>selfFeedbackGrab</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> &amp;in) const noexcept</td></tr>
+<tr class="memdesc:a6e6db34f4d9ec8998cd06a20ff54b262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Texture a GrabsFromSource port fed by its own node samples: the previous-frame copy, or an empty texture of the port's kind when the output is a depth or multisampled texture, which cannot be copied. nullptr when the port is not self-fed. <br /></td></tr>
+<tr class="separator:a6e6db34f4d9ec8998cd06a20ff54b262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cb2a527d818e954a9af25642cd5b6e" id="r_a44cb2a527d818e954a9af25642cd5b6e"><td class="memItemLeft" align="right" valign="top">QRhiBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e">outputUBO</a> () const noexcept</td></tr>
 <tr class="memdesc:a44cb2a527d818e954a9af25642cd5b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO corresponding to the output parameters:  <br /></td></tr>
 <tr class="separator:a44cb2a527d818e954a9af25642cd5b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,6 +283,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>createAllInputRenderT
 <tr class="memitem:a3b8db5c800dea571f44995d0fb77dd10" id="r_a3b8db5c800dea571f44995d0fb77dd10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a3b8db5c800dea571f44995d0fb77dd10">isBuilt</a> () const noexcept</td></tr>
 <tr class="memdesc:a3b8db5c800dea571f44995d0fb77dd10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this render list currently coherent with its output's GPU objects?  <br /></td></tr>
 <tr class="separator:a3b8db5c800dea571f44995d0fb77dd10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1829612a7bfb658aa2e31e73475d1326" id="r_a1829612a7bfb658aa2e31e73475d1326"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1829612a7bfb658aa2e31e73475d1326">outputTargetsStale</a> () const noexcept</td></tr>
+<tr class="memdesc:a1829612a7bfb658aa2e31e73475d1326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are the output's targets waiting to be rebuilt on the next frame?  <br /></td></tr>
+<tr class="separator:a1829612a7bfb658aa2e31e73475d1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a557b2669cfd48a1ff136aed0413bb55a" id="r_a557b2669cfd48a1ff136aed0413bb55a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a557b2669cfd48a1ff136aed0413bb55a">markRequiresDepth</a> (bool value) noexcept</td></tr>
 <tr class="separator:a557b2669cfd48a1ff136aed0413bb55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ffbc940f2ab658778bd8fe4d97d36b4" id="r_a5ffbc940f2ab658778bd8fe4d97d36b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a5ffbc940f2ab658778bd8fe4d97d36b4">onEdgeRemoved</a> (<a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, const ossia::hash_set&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> * &gt; *preserveSinks=nullptr)</td></tr>
@@ -280,18 +294,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>createAllInputRenderT
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeInputRenderTarget</b> (const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *port)</td></tr>
 <tr class="memdesc:adc2548f21b54618374345eac0777b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the render target for a specific input port. <br /></td></tr>
 <tr class="separator:adc2548f21b54618374345eac0777b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb2b54ca49affacf2b5f7ad7ce02a7e" id="r_a2fb2b54ca49affacf2b5f7ad7ce02a7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a2fb2b54ca49affacf2b5f7ad7ce02a7e">ensureSelfFeedbackTargets</a> ()</td></tr>
+<tr class="separator:a2fb2b54ca49affacf2b5f7ad7ce02a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6065b85db7c80c28e2a4c7df967a58" id="r_aea6065b85db7c80c28e2a4c7df967a58"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#aea6065b85db7c80c28e2a4c7df967a58">resolveDownstreamSize</a> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> *node, const ossia::small_flat_map&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>, 16 &gt; &amp;resolvedSpecs) const noexcept</td></tr>
 <tr class="memdesc:aea6065b85db7c80c28e2a4c7df967a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the downstream render target size for a node.  <br /></td></tr>
 <tr class="separator:aea6065b85db7c80c28e2a4c7df967a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a23334b08a646d35c90023546c36e5e" id="r_a1a23334b08a646d35c90023546c36e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1a23334b08a646d35c90023546c36e5e">resolveInputRenderTargetSpecs</a> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;node, int32_t port) noexcept</td></tr>
+<tr class="memdesc:a1a23334b08a646d35c90023546c36e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The render target specs of a texture inlet, with its size resolved.  <br /></td></tr>
+<tr class="separator:a1a23334b08a646d35c90023546c36e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cdab8f4b3d9b17be2eaecc6eec9b2c3" id="r_a3cdab8f4b3d9b17be2eaecc6eec9b2c3"><td class="memItemLeft" align="right" valign="top"><a id="a3cdab8f4b3d9b17be2eaecc6eec9b2c3" name="a3cdab8f4b3d9b17be2eaecc6eec9b2c3"></a>
+<a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolveInputRenderTargetSpecs</b> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;node, int32_t port, const ossia::small_flat_map&lt; const <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>, 16 &gt; &amp;resolvedSpecs) noexcept</td></tr>
+<tr class="memdesc:a3cdab8f4b3d9b17be2eaecc6eec9b2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">As above, taking the inlets already in <code>resolvedSpecs</code> as resolved: resolving every inlet sinks first then costs one step per cable. <br /></td></tr>
+<tr class="separator:a3cdab8f4b3d9b17be2eaecc6eec9b2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e0490dda9ae6eef3d302b4a30e8afbd" id="r_a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd">adoptBuffer</a> (QRhiBuffer *buf)</td></tr>
 <tr class="memdesc:a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrow a buffer another node owns (a slot with owned == false).  <br /></td></tr>
 <tr class="separator:a8e0490dda9ae6eef3d302b4a30e8afbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e2349f97940ce1e11d97608279d7db4" id="r_a3e2349f97940ce1e11d97608279d7db4"><td class="memItemLeft" align="right" valign="top"><a id="a3e2349f97940ce1e11d97608279d7db4" name="a3e2349f97940ce1e11d97608279d7db4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>dropAdoptedBuffer</b> (QRhiBuffer *buf)</td></tr>
-<tr class="separator:a3e2349f97940ce1e11d97608279d7db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26021ce120e965a73da44e4af75b353a" id="r_a26021ce120e965a73da44e4af75b353a"><td class="memItemLeft" align="right" valign="top"><a id="a26021ce120e965a73da44e4af75b353a" name="a26021ce120e965a73da44e4af75b353a"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>dropAdoptedBuffer</b> (QRhi &amp;rhi, QRhiBuffer *buf)</td></tr>
+<tr class="memdesc:a26021ce120e965a73da44e4af75b353a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>rhi</code> is the QRhi the caller renders with, which created <code>buf</code>. <br /></td></tr>
+<tr class="separator:a26021ce120e965a73da44e4af75b353a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbbfd9cab12c4dd6f29cf7a3fe347ab" id="r_a4dbbfd9cab12c4dd6f29cf7a3fe347ab"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4dbbfd9cab12c4dd6f29cf7a3fe347ab">releaseResource</a> (QRhi &amp;rhi, QRhiResource *res)</td></tr>
+<tr class="memdesc:a4dbbfd9cab12c4dd6f29cf7a3fe347ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free a resource that a pending resource update batch may still name.  <br /></td></tr>
+<tr class="separator:a4dbbfd9cab12c4dd6f29cf7a3fe347ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcce409f7ea38a4fc94c50f3c452b391" id="r_afcce409f7ea38a4fc94c50f3c452b391"><td class="memItemLeft" align="right" valign="top"><a id="afcce409f7ea38a4fc94c50f3c452b391" name="afcce409f7ea38a4fc94c50f3c452b391"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>adoptedBufferCount</b> () noexcept</td></tr>
 <tr class="memdesc:afcce409f7ea38a4fc94c50f3c452b391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adoptions currently held, process-wide. Tests assert on this. <br /></td></tr>
@@ -346,6 +373,9 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> = 0</td>
 <tr class="memitem:ae8c34b638b49e97cc524225d6c1e09d5" id="r_ae8c34b638b49e97cc524225d6c1e09d5"><td class="memItemLeft" align="right" valign="top"><a id="ae8c34b638b49e97cc524225d6c1e09d5" name="ae8c34b638b49e97cc524225d6c1e09d5"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>currentDate</b> [4] {}</td></tr>
 <tr class="separator:ae8c34b638b49e97cc524225d6c1e09d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6110cce3679dfa07cb947a27712a297" id="r_ad6110cce3679dfa07cb947a27712a297"><td class="memItemLeft" align="right" valign="top"><a id="ad6110cce3679dfa07cb947a27712a297" name="ad6110cce3679dfa07cb947a27712a297"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dateFromStepClock</b> {false}</td></tr>
+<tr class="separator:ad6110cce3679dfa07cb947a27712a297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -400,7 +430,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Borrow a buffer another node owns (a slot with owned == false). </p>
-<p>Every adoption is a reference in a process-wide registry: the pointer is unique per QRhi and the owner is routinely on another render list, so the registry is shared the same way the retirement registry is. The consumer calls dropAdoptedBuffer() when its slot stops naming the buffer &ndash; it re-adopts, falls back to its own allocation, or releases its state &ndash; and an owner that has already released the buffer by then is what frees it.</p>
+<p>Every adoption is a reference in a process-wide registry: the pointer is unique per QRhi and the owner is routinely on another render list, so the registry is shared the same way the retirement registry is. The consumer calls <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a26021ce120e965a73da44e4af75b353a" title="rhi is the QRhi the caller renders with, which created buf.">dropAdoptedBuffer()</a> when its slot stops naming the buffer &ndash; it re-adopts, falls back to its own allocation, or releases its state &ndash; and an owner that has already released the buffer by then is what frees it.</p>
 <p>This is what makes the owned=false contract enforced rather than assumed: a buffer with a live adoption cannot be freed, whatever the owner does. </p>
 
 </div>
@@ -493,6 +523,24 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </table>
 </div><div class="memdoc">
 <p>The command buffer <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc" title="Render every node in order.">render()</a> is currently recording into, or null outside a frame. Strategies that must record raw-API commands (the Vulkan host-import upload) need it at <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987" title="Update / upload this RenderList&#39;s shared data.">update()</a> time, where only the resource batch is passed. </p>
+
+</div>
+</div>
+<a id="a2fb2b54ca49affacf2b5f7ad7ce02a7e" name="a2fb2b54ca49affacf2b5f7ad7ce02a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb2b54ca49affacf2b5f7ad7ce02a7e">&#9670;&#160;</a></span>ensureSelfFeedbackTargets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::ensureSelfFeedbackTargets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Give every image input port fed by its own node a second render target, so the node never draws into the texture it samples. </p>
 
 </div>
 </div>
@@ -654,7 +702,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Is this render list currently coherent with its output's GPU objects? </p>
-<p>False between the moment something invalidates the list (a fast-path viewport resize: resizeSwapchainSizedTargets) and the <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> that runs on the next render frame. In that window the output node has ALREADY destroyed and replaced its QRhiTextureRenderTarget / QRhiRenderPassDescriptor while the renderers still hold the pre-resize snapshot, so nothing outside the rebuild may ask a renderer for a render target. </p>
+<p>False until the list has been built, and between a forced invalidation and the <a class="el" href="classscore_1_1gfx_1_1_render_list.html#afe481e0bfc451d77de8d2fa8ed5d270f" title="Check if the render size has changed in order to rebuild the pipelines.">maybeRebuild()</a> that runs on the next render frame; nothing outside the rebuild may ask a renderer for a render target then. </p>
 
 </div>
 </div>
@@ -794,7 +842,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the "any node requires depth" flag computed from the node graph. Either direction invalidates the build: a rise leaves targets allocated without depth, a fall leaves every sink carrying a depth attachment nothing reads &ndash; 33 MB per sink at 4K, for the rest of the session. </p>
+<p>Set the "any node requires depth" flag computed from the node graph. Either direction makes the output's targets stale: a rise leaves them without depth, a fall leaves every sink carrying a depth attachment nothing reads &ndash; 33 MB per sink at 4K, for the rest of the session. Only the output and the passes drawing into it are rebuilt, not the renderers. </p>
 
 </div>
 </div>
@@ -857,6 +905,34 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a1829612a7bfb658aa2e31e73475d1326" name="a1829612a7bfb658aa2e31e73475d1326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1829612a7bfb658aa2e31e73475d1326">&#9670;&#160;</a></span>outputTargetsStale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::outputTargetsStale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Are the output's targets waiting to be rebuilt on the next frame? </p>
+<p>True between an output resize or a change of the depth requirement and the next render frame. The output node may already have replaced its QRhiTextureRenderTarget / QRhiRenderPassDescriptor, so a pass drawing into the output must not be built in that window; the frame builds them all. </p>
 
 </div>
 </div>
@@ -938,7 +1014,46 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Retire a buffer this render list's node owns. </p>
-<p>The free is deferred while any consumer still holds the buffer through <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd" title="Borrow a buffer another node owns (a slot with owned == false).">adoptBuffer()</a>: the owner's release then only marks it orphaned, and the last dropAdoptedBuffer() frees it. A consumer that borrowed the handle therefore keeps binding a live object &ndash; the last contents its producer wrote &ndash; until it re-reads the producer's geometry and lets go, instead of binding a freed one. </p>
+<p>The free is deferred while any consumer still holds the buffer through <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd" title="Borrow a buffer another node owns (a slot with owned == false).">adoptBuffer()</a>: the owner's release then only marks it orphaned, and the last <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a26021ce120e965a73da44e4af75b353a" title="rhi is the QRhi the caller renders with, which created buf.">dropAdoptedBuffer()</a> frees it. A consumer that borrowed the handle therefore keeps binding a live object &ndash; the last contents its producer wrote &ndash; until it re-reads the producer's geometry and lets go, instead of binding a freed one. </p>
+
+</div>
+</div>
+<a id="a4dbbfd9cab12c4dd6f29cf7a3fe347ab" name="a4dbbfd9cab12c4dd6f29cf7a3fe347ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbbfd9cab12c4dd6f29cf7a3fe347ab">&#9670;&#160;</a></span>releaseResource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::releaseResource </td>
+          <td>(</td>
+          <td class="paramtype">QRhi &amp;&#160;</td>
+          <td class="paramname"><em>rhi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResource *&#160;</td>
+          <td class="paramname"><em>res</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Free a resource that a pending resource update batch may still name. </p>
+<p>QRhiResource::deleteLater() deletes at once when no frame is being recorded, while the initial batch built by <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> is only submitted on the first frame. Outside a frame the resource is kept until a render list on the same QRhi records or submits its next batch, or is released, or the QRhi is destroyed. <code>rhi</code> is the QRhi that created <code>res:</code> before Qt 6.5 a resource cannot name it. </p>
 
 </div>
 </div>
@@ -978,6 +1093,32 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 <p>Render every node in order. </p>
 <p>Never throws: a node that fails to build its pipeline, or any other exception raised while recording, is caught and reported here rather than escaping into the output node's frame bracket and, from there, into QCoreApplication::notify. </p>
+
+</div>
+</div>
+<a id="a4a31c4f17b67498524f1c187a12d7d52" name="a4a31c4f17b67498524f1c187a12d7d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a31c4f17b67498524f1c187a12d7d52">&#9670;&#160;</a></span>rendering()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderList::rendering </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc" title="Render every node in order.">render()</a> is on the stack for this list. A <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a12dab51c09ccd361eacca3355545b9dc" title="Render every node in order.">render()</a> entered while it is returns without recording anything. </p>
 
 </div>
 </div>
@@ -1095,9 +1236,8 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Fast-path for pure viewport resize. </p>
-<p>Update state.outputSize to <code>newOutputSize</code> and state.renderSize to <code>newRenderSize</code>, and mark every renderer's renderTargetSpecsChanged so the <code>rt_changed</code> block in renderInternal does the RT recreation and sampler rebinding on the next render frame.</p>
+<p>Update state.outputSize to <code>newOutputSize</code> and state.renderSize to <code>newRenderSize</code>, and mark the output's targets stale: the next render frame rebuilds the output renderer and the passes drawing into it, then the <code>rt_changed</code> block recreates the input render targets whose resolved size follows the output and re-initialises only the renderers reading them, and those allocating at the render size (followsRenderSize). Every other renderer keeps its GPU state (feedback textures, simulation buffers), which a <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd" title="Release GPU resources owned by this render list.">release()</a> + <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a1be674c6e8c42ce80724f3a1ff3a9bd6" title="Initialize data for this renderer.">init()</a> of the whole list would wipe on every resize of the output.</p>
 <p>The two sizes are distinct: the output node owns the render size (the <code>/rendersize</code> override, ScreenNode::setRenderSize), the platform owns the output size (the swapchain). Callers pass both from the <a class="el" href="structscore_1_1gfx_1_1_render_state.html" title="Global state associated to a rendering context.">RenderState</a> the output node has already updated.</p>
-<p>Skips the full <code>recreateOutputRenderList</code> teardown + rebuild (pipeline compiles, ScenePreprocessor rebuild, mesh slab uploads, texture array reallocation): the persistent registry and ScenePreprocessor caches make that work unnecessary for a pure size change. Cost is O(N renderers), with no GPU drain and no allocation until the next frame's rt_changed block recreates the RTs.</p>
 <p>Returns true on success. Returns false, and the caller must fall back to recreateOutputRenderList, when:</p><ul>
 <li>either size is invalid</li>
 <li>renderers vector is empty (RL not yet initialised) </li>
@@ -1140,7 +1280,47 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><div class="memdoc">
 
 <p>Resolve the downstream render target size for a node. </p>
-<p>Returns the maximum size across all downstream render targets that this node renders to. Used as fallback when a node's input port has no explicit render target size. </p>
+<p>Returns the largest width and the largest height across the texture inlets this node renders into: the output node counts as the render size, an inlet with an explicit size as that size, and an inlet without one as the size it resolves to in turn, down the chain. Used as fallback when a node's input port has no explicit render target size. Empty when the node feeds no texture inlet of this render list.</p>
+<p>Entries of <code>resolvedSpecs</code> take precedence over the recursive resolution. </p>
+
+</div>
+</div>
+<a id="a1a23334b08a646d35c90023546c36e5e" name="a1a23334b08a646d35c90023546c36e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a23334b08a646d35c90023546c36e5e">&#9670;&#160;</a></span>resolveInputRenderTargetSpecs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> score::gfx::RenderList::resolveInputRenderTargetSpecs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The render target specs of a texture inlet, with its size resolved. </p>
+<p>The inlet's own settings; without an explicit size, the size inherited from downstream (resolveDownstreamSize), else the render size. </p>
 
 </div>
 </div>

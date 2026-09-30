@@ -8,7 +8,6 @@ var class_data_stream_reader =
     [ "read", "class_data_stream_reader.html#a48e6d858c48d36a4d18987ce59fb0f6f", null ],
     [ "read", "class_data_stream_reader.html#ae0dbb9cf48c27102064904fcb282774c", null ],
     [ "read", "class_data_stream_reader.html#a3f91e965a51ecd27191de313aec7018b", null ],
-    [ "read", "class_data_stream_reader.html#af71b0532c78e709287a9f47e3d368611", null ],
     [ "read", "class_data_stream_reader.html#afd7030e13424f93e7d2e823aacb3b932", null ],
     [ "read", "class_data_stream_reader.html#a1ae84e8851cb76a05dfdce9d9feb3637", null ],
     [ "read", "class_data_stream_reader.html#affa5e8a40516bba2850bedca7a065536", null ],

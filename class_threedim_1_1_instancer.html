@@ -115,6 +115,10 @@ $(document).ready(function(){initNavTree('class_threedim_1_1_instancer.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_threedim_1_1_instancer_1_1_bake.html">Bake</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_threedim_1_1_instancer_1_1_bake_source.html">BakeSource</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_threedim_1_1_instancer_1_1_cached_view.html">CachedView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_threedim_1_1_instancer_1_1ins.html">ins</a></td></tr>
@@ -129,6 +133,21 @@ Public Types</h2></td></tr>
 , <b>Translation</b>
  }</td></tr>
 <tr class="separator:a866dbfaa467fa7188113fdc6c785af4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ef490ac18d53e2549a12f8ee2ad1b1" id="r_a80ef490ac18d53e2549a12f8ee2ad1b1"><td class="memItemLeft" align="right" valign="top"><a id="a80ef490ac18d53e2549a12f8ee2ad1b1" name="a80ef490ac18d53e2549a12f8ee2ad1b1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>InstanceTransformMode</b> { <b>FullMatrix</b>
+, <b>TranslationOnly</b>
+ }</td></tr>
+<tr class="separator:a80ef490ac18d53e2549a12f8ee2ad1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52c73109683195767bd57862bc1ee6e" id="r_ab52c73109683195767bd57862bc1ee6e"><td class="memItemLeft" align="right" valign="top"><a id="ab52c73109683195767bd57862bc1ee6e" name="ab52c73109683195767bd57862bc1ee6e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>BakeSourceIndex</b> { <br />
+&#160;&#160;<b>BakeTransforms</b>
+, <b>BakeRotations</b>
+, <b>BakeScales</b>
+, <b>BakeColors</b>
+, <br />
+&#160;&#160;<b>BakeCustom</b>
+, <b>BakeSourceCount</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab52c73109683195767bd57862bc1ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -153,9 +172,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="e
 <tr class="memitem:a2347a242e6d8d3180abf4943df13d52f" id="r_a2347a242e6d8d3180abf4943df13d52f"><td class="memItemLeft" align="right" valign="top"><a id="a2347a242e6d8d3180abf4943df13d52f" name="a2347a242e6d8d3180abf4943df13d52f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;r, QRhiResourceUpdateBatch &amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a> *e)</td></tr>
 <tr class="separator:a2347a242e6d8d3180abf4943df13d52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941b8b492376159422f75b18e96ce0c3" id="r_a941b8b492376159422f75b18e96ce0c3"><td class="memItemLeft" align="right" valign="top"><a id="a941b8b492376159422f75b18e96ce0c3" name="a941b8b492376159422f75b18e96ce0c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runInitialPasses</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;r, QRhiCommandBuffer &amp;cb, QRhiResourceUpdateBatch *&amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a> &amp;e)</td></tr>
+<tr class="separator:a941b8b492376159422f75b18e96ce0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb6d89b807ebfe8d8160dff3429bb66" id="r_accb6d89b807ebfe8d8160dff3429bb66"><td class="memItemLeft" align="right" valign="top"><a id="accb6d89b807ebfe8d8160dff3429bb66" name="accb6d89b807ebfe8d8160dff3429bb66"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;r)</td></tr>
 <tr class="separator:accb6d89b807ebfe8d8160dff3429bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47af2953d11fbda0c8422a4685544842" id="r_a47af2953d11fbda0c8422a4685544842"><td class="memItemLeft" align="right" valign="top"><a id="a47af2953d11fbda0c8422a4685544842" name="a47af2953d11fbda0c8422a4685544842"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>refresh</b> ()</td></tr>
+<tr class="separator:a47af2953d11fbda0c8422a4685544842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac4a144599d79ca73fdbaa4f7e44e29" id="r_a9ac4a144599d79ca73fdbaa4f7e44e29"><td class="memItemLeft" align="right" valign="top"><a id="a9ac4a144599d79ca73fdbaa4f7e44e29" name="a9ac4a144599d79ca73fdbaa4f7e44e29"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ensureBakeTarget</b> (QRhiBuffer *&amp;buf, quint32 bytes, const char *name)</td></tr>
+<tr class="separator:a9ac4a144599d79ca73fdbaa4f7e44e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b7108eaa9cc71a2b1c6e398b267a54" id="r_ae3b7108eaa9cc71a2b1c6e398b267a54"><td class="memItemLeft" align="right" valign="top"><a id="ae3b7108eaa9cc71a2b1c6e398b267a54" name="ae3b7108eaa9cc71a2b1c6e398b267a54"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>prepareBake</b> (const <a class="el" href="struct_threedim_1_1_instancer_1_1_bake_source.html">BakeSource</a>(&amp;sources)[BakeSourceCount], uint32_t transform_kind, uint32_t &amp;count, bool full, const QMatrix4x4 &amp;proto)</td></tr>
+<tr class="separator:ae3b7108eaa9cc71a2b1c6e398b267a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -216,6 +247,42 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_version_counter<
 <tr class="memitem:a2b577fd164074bc3f3b6189071ada04d" id="r_a2b577fd164074bc3f3b6189071ada04d"><td class="memItemLeft" align="right" valign="top"><a id="a2b577fd164074bc3f3b6189071ada04d" name="a2b577fd164074bc3f3b6189071ada04d"></a>
 ossia::gpu_slot_ref&#160;</td><td class="memItemRight" valign="bottom"><b>m_xform_ref</b> {}</td></tr>
 <tr class="separator:a2b577fd164074bc3f3b6189071ada04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d3f5d2218013f900c74bfc2d3cca45" id="r_a87d3f5d2218013f900c74bfc2d3cca45"><td class="memItemLeft" align="right" valign="top"><a id="a87d3f5d2218013f900c74bfc2d3cca45" name="a87d3f5d2218013f900c74bfc2d3cca45"></a>
+QRhi *&#160;</td><td class="memItemRight" valign="bottom"><b>m_rhi</b> {}</td></tr>
+<tr class="separator:a87d3f5d2218013f900c74bfc2d3cca45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89732e715a526f89f62bca460f6b92eb" id="r_a89732e715a526f89f62bca460f6b92eb"><td class="memItemLeft" align="right" valign="top"><a id="a89732e715a526f89f62bca460f6b92eb" name="a89732e715a526f89f62bca460f6b92eb"></a>
+<a class="el" href="struct_threedim_1_1_instancer_1_1_bake.html">Bake</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_bake</b> {}</td></tr>
+<tr class="separator:a89732e715a526f89f62bca460f6b92eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba908b4e56ef2428119b6d367748d8d6" id="r_aba908b4e56ef2428119b6d367748d8d6"><td class="memItemLeft" align="right" valign="top"><a id="aba908b4e56ef2428119b6d367748d8d6" name="aba908b4e56ef2428119b6d367748d8d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_baking</b> {}</td></tr>
+<tr class="separator:aba908b4e56ef2428119b6d367748d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b58dab286dbae5b44db26f2ff22066" id="r_ac2b58dab286dbae5b44db26f2ff22066"><td class="memItemLeft" align="right" valign="top"><a id="ac2b58dab286dbae5b44db26f2ff22066" name="ac2b58dab286dbae5b44db26f2ff22066"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakedTransforms</b> {}</td></tr>
+<tr class="separator:ac2b58dab286dbae5b44db26f2ff22066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628775f3d30deacc9b217bdbdaad197f" id="r_a628775f3d30deacc9b217bdbdaad197f"><td class="memItemLeft" align="right" valign="top"><a id="a628775f3d30deacc9b217bdbdaad197f" name="a628775f3d30deacc9b217bdbdaad197f"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakedColors</b> {}</td></tr>
+<tr class="separator:a628775f3d30deacc9b217bdbdaad197f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf728e2dce7cff565e039f6c2aa7307" id="r_afbf728e2dce7cff565e039f6c2aa7307"><td class="memItemLeft" align="right" valign="top"><a id="afbf728e2dce7cff565e039f6c2aa7307" name="afbf728e2dce7cff565e039f6c2aa7307"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakedCustom</b> {}</td></tr>
+<tr class="separator:afbf728e2dce7cff565e039f6c2aa7307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550124bf04c56096cb6788b18e5e8999" id="r_a550124bf04c56096cb6788b18e5e8999"><td class="memItemLeft" align="right" valign="top"><a id="a550124bf04c56096cb6788b18e5e8999" name="a550124bf04c56096cb6788b18e5e8999"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakeParams</b> {}</td></tr>
+<tr class="separator:a550124bf04c56096cb6788b18e5e8999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663b4092b4a993f8bea1a0db0a0e157d" id="r_a663b4092b4a993f8bea1a0db0a0e157d"><td class="memItemLeft" align="right" valign="top"><a id="a663b4092b4a993f8bea1a0db0a0e157d" name="a663b4092b4a993f8bea1a0db0a0e157d"></a>
+QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakeDummy</b> {}</td></tr>
+<tr class="separator:a663b4092b4a993f8bea1a0db0a0e157d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb0394f977e4abdfa7d3de3d2eb85ee" id="r_a7bb0394f977e4abdfa7d3de3d2eb85ee"><td class="memItemLeft" align="right" valign="top"><a id="a7bb0394f977e4abdfa7d3de3d2eb85ee" name="a7bb0394f977e4abdfa7d3de3d2eb85ee"></a>
+QRhiShaderResourceBindings *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakeSrb</b> {}</td></tr>
+<tr class="separator:a7bb0394f977e4abdfa7d3de3d2eb85ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a614a1dff90acedeb025f4d2c3220baae" id="r_a614a1dff90acedeb025f4d2c3220baae"><td class="memItemLeft" align="right" valign="top"><a id="a614a1dff90acedeb025f4d2c3220baae" name="a614a1dff90acedeb025f4d2c3220baae"></a>
+QRhiComputePipeline *&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakePipeline</b> {}</td></tr>
+<tr class="separator:a614a1dff90acedeb025f4d2c3220baae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a79ab51c764575fbcbf5bf61a3432b" id="r_a62a79ab51c764575fbcbf5bf61a3432b"><td class="memItemLeft" align="right" valign="top"><a id="a62a79ab51c764575fbcbf5bf61a3432b" name="a62a79ab51c764575fbcbf5bf61a3432b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bakeSrbDirty</b> {true}</td></tr>
+<tr class="separator:a62a79ab51c764575fbcbf5bf61a3432b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5547b204248db9b268c3f0ec84ff78c" id="r_ab5547b204248db9b268c3f0ec84ff78c"><td class="memItemLeft" align="right" valign="top"><a id="ab5547b204248db9b268c3f0ec84ff78c" name="ab5547b204248db9b268c3f0ec84ff78c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_warnedBakeFallback</b> {}</td></tr>
+<tr class="separator:ab5547b204248db9b268c3f0ec84ff78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_instancer_8hpp_source.html">Instancer.hpp</a></li>

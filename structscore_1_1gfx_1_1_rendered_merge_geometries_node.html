@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_rendered_merge_
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structscore_1_1gfx_1_1_rendered_merge_geometries_node-members.html">List of all members</a>  </div>
@@ -119,6 +120,11 @@ Inheritance diagram for score::gfx::RenderedMergeGeometriesNode:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node_1_1_gpu_bake.html">GpuBake</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a70d8833a63a80b98861f5ba76ef6905a" id="r_a70d8833a63a80b98861f5ba76ef6905a"><td class="memItemLeft" align="right" valign="top"><a id="a70d8833a63a80b98861f5ba76ef6905a" name="a70d8833a63a80b98861f5ba76ef6905a"></a>
@@ -126,21 +132,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70d8833a63a80b98861f5ba76ef6905a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6e76ed187733ea22cf721e7860fed87" id="r_aa6e76ed187733ea22cf721e7860fed87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#aa6e76ed187733ea22cf721e7860fed87">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiResourceUpdateBatch &amp;) override</td></tr>
 <tr class="separator:aa6e76ed187733ea22cf721e7860fed87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2b8b72aeaa6947af50475ea732c748f" id="r_af2b8b72aeaa6947af50475ea732c748f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#af2b8b72aeaa6947af50475ea732c748f">release</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;) override</td></tr>
-<tr class="separator:af2b8b72aeaa6947af50475ea732c748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6938c04d1c39f229871059aed210b0b7" id="r_a6938c04d1c39f229871059aed210b0b7"><td class="memItemLeft" align="right" valign="top"><a id="a6938c04d1c39f229871059aed210b0b7" name="a6938c04d1c39f229871059aed210b0b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseGpuBake</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, <a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node_1_1_gpu_bake.html">GpuBake</a> &amp;bake)</td></tr>
+<tr class="separator:a6938c04d1c39f229871059aed210b0b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81054df876021ad4814869b97c50e9cb" id="r_a81054df876021ad4814869b97c50e9cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#a81054df876021ad4814869b97c50e9cb">release</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) override</td></tr>
+<tr class="separator:a81054df876021ad4814869b97c50e9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2cba7a75cc11b788270a30c83cd547" id="r_abc2cba7a75cc11b788270a30c83cd547"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#abc2cba7a75cc11b788270a30c83cd547">process</a> (int32_t port, const ossia::transform3d &amp;v) override</td></tr>
+<tr class="separator:abc2cba7a75cc11b788270a30c83cd547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad06f1a3f8781e9ff334504986e194491" id="r_ad06f1a3f8781e9ff334504986e194491"><td class="memItemLeft" align="right" valign="top"><a id="ad06f1a3f8781e9ff334504986e194491" name="ad06f1a3f8781e9ff334504986e194491"></a>
 const ossia::geometry_spec *&#160;</td><td class="memItemRight" valign="bottom"><b>findFirstByPort</b> (int32_t port) const</td></tr>
 <tr class="separator:ad06f1a3f8781e9ff334504986e194491"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0049c83b5d7c98455f572d19c9b4a7" id="r_a8b0049c83b5d7c98455f572d19c9b4a7"><td class="memItemLeft" align="right" valign="top"><a id="a8b0049c83b5d7c98455f572d19c9b4a7" name="a8b0049c83b5d7c98455f572d19c9b4a7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>anyInputChanged</b> () const</td></tr>
 <tr class="separator:a8b0049c83b5d7c98455f572d19c9b4a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181d1efeaca5ab31824e4577bddfc124" id="r_a181d1efeaca5ab31824e4577bddfc124"><td class="memItemLeft" align="right" valign="top"><a id="a181d1efeaca5ab31824e4577bddfc124" name="a181d1efeaca5ab31824e4577bddfc124"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuild</b> ()</td></tr>
-<tr class="separator:a181d1efeaca5ab31824e4577bddfc124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8da648f22ccfff6132daecbeaf847309" id="r_a8da648f22ccfff6132daecbeaf847309"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#a8da648f22ccfff6132daecbeaf847309">update</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiResourceUpdateBatch &amp;, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *) override</td></tr>
-<tr class="separator:a8da648f22ccfff6132daecbeaf847309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14d4b72f2a4048465d43de51ed6aeca9" id="r_a14d4b72f2a4048465d43de51ed6aeca9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#a14d4b72f2a4048465d43de51ed6aeca9">runInitialPasses</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;, QRhiResourceUpdateBatch *&amp;, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
-<tr class="separator:a14d4b72f2a4048465d43de51ed6aeca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876c63aa97ce619d91ccbf218b3a3837" id="r_a876c63aa97ce619d91ccbf218b3a3837"><td class="memItemLeft" align="right" valign="top"><a id="a876c63aa97ce619d91ccbf218b3a3837" name="a876c63aa97ce619d91ccbf218b3a3837"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ensureGpuBake</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiBuffer *source, <a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node_1_1_gpu_bake.html">GpuBake</a> &amp;bake)</td></tr>
+<tr class="separator:a876c63aa97ce619d91ccbf218b3a3837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9527c95b79e2b77a389d47983eae5610" id="r_a9527c95b79e2b77a389d47983eae5610"><td class="memItemLeft" align="right" valign="top"><a id="a9527c95b79e2b77a389d47983eae5610" name="a9527c95b79e2b77a389d47983eae5610"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>warnUntransformed</b> (const ossia::geometry::attribute &amp;attr, const char *reason)</td></tr>
+<tr class="separator:a9527c95b79e2b77a389d47983eae5610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828fa7d0a50c425ed8417825ee2cf8d3" id="r_a828fa7d0a50c425ed8417825ee2cf8d3"><td class="memItemLeft" align="right" valign="top"><a id="a828fa7d0a50c425ed8417825ee2cf8d3" name="a828fa7d0a50c425ed8417825ee2cf8d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>bakeGpuBuffers</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, int port, std::vector&lt; ossia::geometry &gt; &amp;meshes, const ossia::transform3d &amp;transform)</td></tr>
+<tr class="separator:a828fa7d0a50c425ed8417825ee2cf8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdb7ef6d5e946cbb98856aa00b11a2d1" id="r_afdb7ef6d5e946cbb98856aa00b11a2d1"><td class="memItemLeft" align="right" valign="top"><a id="afdb7ef6d5e946cbb98856aa00b11a2d1" name="afdb7ef6d5e946cbb98856aa00b11a2d1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>runGpuBakes</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch *&amp;res)</td></tr>
+<tr class="separator:afdb7ef6d5e946cbb98856aa00b11a2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a128764f884e4e53ebec2a95fd06457b7" id="r_a128764f884e4e53ebec2a95fd06457b7"><td class="memItemLeft" align="right" valign="top"><a id="a128764f884e4e53ebec2a95fd06457b7" name="a128764f884e4e53ebec2a95fd06457b7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rebuild</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
+<tr class="separator:a128764f884e4e53ebec2a95fd06457b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbd50e67b4785a1a736aba3fefb8cef4" id="r_adbd50e67b4785a1a736aba3fefb8cef4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#adbd50e67b4785a1a736aba3fefb8cef4">update</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> *) override</td></tr>
+<tr class="separator:adbd50e67b4785a1a736aba3fefb8cef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a48e3b98ef943fd412e2c82965a6f89" id="r_a9a48e3b98ef943fd412e2c82965a6f89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#a9a48e3b98ef943fd412e2c82965a6f89">runInitialPasses</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;commands, QRhiResourceUpdateBatch *&amp;res, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge) override</td></tr>
+<tr class="separator:a9a48e3b98ef943fd412e2c82965a6f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56e468f6206c5e154996476ebcc8d5b3" id="r_a56e468f6206c5e154996476ebcc8d5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#a56e468f6206c5e154996476ebcc8d5b3">runRenderPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, QRhiCommandBuffer &amp;, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;) override</td></tr>
 <tr class="separator:a56e468f6206c5e154996476ebcc8d5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa93a1a77bde48945a64a97d378fcb37a" id="r_aa93a1a77bde48945a64a97d378fcb37a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node.html#aa93a1a77bde48945a64a97d378fcb37a">removeOutputPass</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;) override</td></tr>
@@ -180,9 +203,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="memitem:ae2539585b175bd7a5fac20046ea120b9 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_ae2539585b175bd7a5fac20046ea120b9"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::scene_spec &amp;v)</td></tr>
 <tr class="separator:ae2539585b175bd7a5fac20046ea120b9 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ca3ed3b66d9fc3032b1c98836a75299 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a4ca3ed3b66d9fc3032b1c98836a75299"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t port, const ossia::transform3d &amp;v)</td></tr>
-<tr class="separator:a4ca3ed3b66d9fc3032b1c98836a75299 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fbcccc2c6b77bd8c2d5fb9ec4326476 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a4fbcccc2c6b77bd8c2d5fb9ec4326476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a4fbcccc2c6b77bd8c2d5fb9ec4326476">process</a> (int32_t port, const ossia::geometry_spec &amp;v, const void *source_key)</td></tr>
 <tr class="separator:a4fbcccc2c6b77bd8c2d5fb9ec4326476 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f79f4b716f7b128d4c677ebfd7433b1 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a0f79f4b716f7b128d4c677ebfd7433b1"><td class="memItemLeft" align="right" valign="top">
@@ -210,6 +230,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> (int32_t 
 <tr class="separator:ae72e1187f02ba173f3dcf04982daa18d inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a3b414c533c91f5b07a807440cbf74281"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a3b414c533c91f5b07a807440cbf74281">seedInitialOutputs</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer)</td></tr>
 <tr class="separator:a3b414c533c91f5b07a807440cbf74281 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a9cc47581ab2bfa95a89fbb9a1d14a726"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726">followsRenderSize</a> () const noexcept</td></tr>
+<tr class="separator:a9cc47581ab2bfa95a89fbb9a1d14a726 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -222,6 +244,30 @@ ossia::geometry_spec&#160;</td><td class="memItemRight" valign="bottom"><b>m_out
 <tr class="memitem:a57d72ef07abad01f70d45dbbde08a83e" id="r_a57d72ef07abad01f70d45dbbde08a83e"><td class="memItemLeft" align="right" valign="top"><a id="a57d72ef07abad01f70d45dbbde08a83e" name="a57d72ef07abad01f70d45dbbde08a83e"></a>
 std::array&lt; ossia::geometry_spec, MergeGeometriesNode::kMaxInputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedInputs</b></td></tr>
 <tr class="separator:a57d72ef07abad01f70d45dbbde08a83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9714091dc954a92c67349214ede9c10e" id="r_a9714091dc954a92c67349214ede9c10e"><td class="memItemLeft" align="right" valign="top"><a id="a9714091dc954a92c67349214ede9c10e" name="a9714091dc954a92c67349214ede9c10e"></a>
+std::array&lt; ossia::transform3d, MergeGeometriesNode::kMaxInputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_transforms</b></td></tr>
+<tr class="separator:a9714091dc954a92c67349214ede9c10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada92bf1d3317f65391a0be9a7eaaa47e" id="r_ada92bf1d3317f65391a0be9a7eaaa47e"><td class="memItemLeft" align="right" valign="top"><a id="ada92bf1d3317f65391a0be9a7eaaa47e" name="ada92bf1d3317f65391a0be9a7eaaa47e"></a>
+std::array&lt; int64_t, MergeGeometriesNode::kMaxInputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDirtyIndex</b> {}</td></tr>
+<tr class="separator:ada92bf1d3317f65391a0be9a7eaaa47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90796b4d9bc700a63826d48cfbb36a44" id="r_a90796b4d9bc700a63826d48cfbb36a44"><td class="memItemLeft" align="right" valign="top"><a id="a90796b4d9bc700a63826d48cfbb36a44" name="a90796b4d9bc700a63826d48cfbb36a44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_transformsChanged</b> {}</td></tr>
+<tr class="separator:a90796b4d9bc700a63826d48cfbb36a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70ea79cea9ff9bf04320b9e56cc6cb2" id="r_ad70ea79cea9ff9bf04320b9e56cc6cb2"><td class="memItemLeft" align="right" valign="top"><a id="ad70ea79cea9ff9bf04320b9e56cc6cb2" name="ad70ea79cea9ff9bf04320b9e56cc6cb2"></a>
+ossia::flat_map&lt; std::pair&lt; int, QRhiBuffer * &gt;, <a class="el" href="structscore_1_1gfx_1_1_rendered_merge_geometries_node_1_1_gpu_bake.html">GpuBake</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_gpuBakes</b></td></tr>
+<tr class="separator:ad70ea79cea9ff9bf04320b9e56cc6cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0adb7e4c301dcdbf85c064a42b94b979" id="r_a0adb7e4c301dcdbf85c064a42b94b979"><td class="memItemLeft" align="right" valign="top"><a id="a0adb7e4c301dcdbf85c064a42b94b979" name="a0adb7e4c301dcdbf85c064a42b94b979"></a>
+QRhiComputePipeline *&#160;</td><td class="memItemRight" valign="bottom"><b>m_gpuBakePipeline</b> {}</td></tr>
+<tr class="separator:a0adb7e4c301dcdbf85c064a42b94b979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3386b3a20765c287755bdd85e1c6de1c" id="r_a3386b3a20765c287755bdd85e1c6de1c"><td class="memItemLeft" align="right" valign="top"><a id="a3386b3a20765c287755bdd85e1c6de1c" name="a3386b3a20765c287755bdd85e1c6de1c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_gpuBakeUnavailable</b> {}</td></tr>
+<tr class="separator:a3386b3a20765c287755bdd85e1c6de1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d679252859e6d3347ae1d928fc77055" id="r_a0d679252859e6d3347ae1d928fc77055"><td class="memItemLeft" align="right" valign="top"><a id="a0d679252859e6d3347ae1d928fc77055" name="a0d679252859e6d3347ae1d928fc77055"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_gpuBakeFrame</b> {-1}</td></tr>
+<tr class="separator:a0d679252859e6d3347ae1d928fc77055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abac18b0028423355ccfb95d034c3fe36" id="r_abac18b0028423355ccfb95d034c3fe36"><td class="memItemLeft" align="right" valign="top"><a id="abac18b0028423355ccfb95d034c3fe36" name="abac18b0028423355ccfb95d034c3fe36"></a>
+ossia::flat_set&lt; std::tuple&lt; int, int, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_warnedUntransformed</b></td></tr>
+<tr class="separator:abac18b0028423355ccfb95d034c3fe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_node_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_node_renderer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></td></tr>
 <tr class="memitem:a9259b9b6e30514de6962dce0efe155a4 inherit pub_attribs_classscore_1_1gfx_1_1_node_renderer" id="r_a9259b9b6e30514de6962dce0efe155a4"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>node</b></td></tr>
@@ -312,8 +358,46 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="af2b8b72aeaa6947af50475ea732c748f" name="af2b8b72aeaa6947af50475ea732c748f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2b8b72aeaa6947af50475ea732c748f">&#9670;&#160;</a></span>release()</h2>
+<a id="abc2cba7a75cc11b788270a30c83cd547" name="abc2cba7a75cc11b788270a30c83cd547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2cba7a75cc11b788270a30c83cd547">&#9670;&#160;</a></span>process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderedMergeGeometriesNode::process </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::transform3d &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="a81054df876021ad4814869b97c50e9cb" name="a81054df876021ad4814869b97c50e9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81054df876021ad4814869b97c50e9cb">&#9670;&#160;</a></span>release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void score::gfx::RenderedMergeGeometriesNode::release </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramname"><em>renderer</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -379,8 +463,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a14d4b72f2a4048465d43de51ed6aeca9" name="a14d4b72f2a4048465d43de51ed6aeca9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d4b72f2a4048465d43de51ed6aeca9">&#9670;&#160;</a></span>runInitialPasses()</h2>
+<a id="a9a48e3b98ef943fd412e2c82965a6f89" name="a9a48e3b98ef943fd412e2c82965a6f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a48e3b98ef943fd412e2c82965a6f89">&#9670;&#160;</a></span>runInitialPasses()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,13 +482,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">QRhiCommandBuffer &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>commands</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">QRhiResourceUpdateBatch *&amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>res</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -473,8 +557,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8da648f22ccfff6132daecbeaf847309" name="a8da648f22ccfff6132daecbeaf847309"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8da648f22ccfff6132daecbeaf847309">&#9670;&#160;</a></span>update()</h2>
+<a id="adbd50e67b4785a1a736aba3fefb8cef4" name="adbd50e67b4785a1a736aba3fefb8cef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbd50e67b4785a1a736aba3fefb8cef4">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -486,7 +570,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void score::gfx::RenderedMergeGeometriesNode::update </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramname"><em>renderer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

@@ -115,6 +115,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c0a4fddd3bde38166f7e542714da694" id="r_a7c0a4fddd3bde38166f7e542714da694"><td class="memItemLeft" align="right" valign="top"><a id="a7c0a4fddd3bde38166f7e542714da694" name="a7c0a4fddd3bde38166f7e542714da694"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>LV2Data</b> (<a class="el" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a> &amp;h, <a class="el" href="struct_l_v2_1_1_effect_context.html">LV2::EffectContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a7c0a4fddd3bde38166f7e542714da694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83969bb93af04090b814b3b6e290e67" id="r_ae83969bb93af04090b814b3b6e290e67"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_l_v2_data.html#ae83969bb93af04090b814b3b6e290e67">atomBufferSize</a> (int port_index) const noexcept</td></tr>
+<tr class="separator:ae83969bb93af04090b814b3b6e290e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3905695351ef2cfde65cc43194bb89c" id="r_ae3905695351ef2cfde65cc43194bb89c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_l_v2_data.html#ae3905695351ef2cfde65cc43194bb89c">portRanges</a> (ossia::float_vector &amp;min, ossia::float_vector &amp;max, ossia::float_vector &amp;init) const</td></tr>
+<tr class="separator:ae3905695351ef2cfde65cc43194bb89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -150,7 +154,11 @@ ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="separator:a2eceb72d722ed88b326e530bd6daed2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86dddee0ed803cf9c391704621ca876e" id="r_a86dddee0ed803cf9c391704621ca876e"><td class="memItemLeft" align="right" valign="top"><a id="a86dddee0ed803cf9c391704621ca876e" name="a86dddee0ed803cf9c391704621ca876e"></a>
 ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cv_ports</b></td></tr>
+<tr class="memdesc:a86dddee0ed803cf9c391704621ca876e"><td class="mdescLeft">&#160;</td><td class="mdescRight">CV inputs (and audio ports with no direction); CV outputs. <br /></td></tr>
 <tr class="separator:a86dddee0ed803cf9c391704621ca876e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bb2a5e2aaba9fc974da599f67244d5" id="r_a05bb2a5e2aaba9fc974da599f67244d5"><td class="memItemLeft" align="right" valign="top"><a id="a05bb2a5e2aaba9fc974da599f67244d5" name="a05bb2a5e2aaba9fc974da599f67244d5"></a>
+ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cv_out_ports</b></td></tr>
+<tr class="separator:a05bb2a5e2aaba9fc974da599f67244d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8949857d219ede0a0641d9d1adc7887" id="r_ac8949857d219ede0a0641d9d1adc7887"><td class="memItemLeft" align="right" valign="top"><a id="ac8949857d219ede0a0641d9d1adc7887" name="ac8949857d219ede0a0641d9d1adc7887"></a>
 ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>atom_in_ports</b></td></tr>
 <tr class="separator:ac8949857d219ede0a0641d9d1adc7887"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +168,74 @@ ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="memitem:aa84ab2c300e71fc21652e996611aaaa9" id="r_aa84ab2c300e71fc21652e996611aaaa9"><td class="memItemLeft" align="right" valign="top"><a id="aa84ab2c300e71fc21652e996611aaaa9" name="aa84ab2c300e71fc21652e996611aaaa9"></a>
 ossia::small_vector&lt; int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>time_Position_ports</b> {}</td></tr>
 <tr class="separator:aa84ab2c300e71fc21652e996611aaaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3350eb31d4f95783181e81c1a301ac4" id="r_ac3350eb31d4f95783181e81c1a301ac4"><td class="memItemLeft" align="right" valign="top"><a id="ac3350eb31d4f95783181e81c1a301ac4" name="ac3350eb31d4f95783181e81c1a301ac4"></a>
+std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>atom_minimum_sizes</b></td></tr>
+<tr class="memdesc:ac3350eb31d4f95783181e81c1a301ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">rsz:minimumSize of each port, by port index; 0 when not given. <br /></td></tr>
+<tr class="separator:ac3350eb31d4f95783181e81c1a301ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae83969bb93af04090b814b3b6e290e67" name="ae83969bb93af04090b814b3b6e290e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83969bb93af04090b814b3b6e290e67">&#9670;&#160;</a></span>atomBufferSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LV2::LV2Data::atomBufferSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port_index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bytes to allocate for the buffer of atom port <code>port_index</code>: at least what the plug-in asks for with rsz:minimumSize. </p>
+
+</div>
+</div>
+<a id="ae3905695351ef2cfde65cc43194bb89c" name="ae3905695351ef2cfde65cc43194bb89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3905695351ef2cfde65cc43194bb89c">&#9670;&#160;</a></span>portRanges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LV2::LV2Data::portRanges </td>
+          <td>(</td>
+          <td class="paramtype">ossia::float_vector &amp;&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ossia::float_vector &amp;&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ossia::float_vector &amp;&#160;</td>
+          <td class="paramname"><em>init</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>lv2:minimum, lv2:maximum and lv2:default of each port, by port index. What the plug-in leaves out is filled in: minimum 0, maximum one more than the minimum (or twice the default above it), default the minimum. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
 <li><b>Context.cpp</b></li>

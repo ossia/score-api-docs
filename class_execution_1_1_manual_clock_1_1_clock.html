@@ -114,7 +114,8 @@ Inheritance diagram for Execution::ManualClock::Clock:</div>
  <div class="center">
   <img src="class_execution_1_1_manual_clock_1_1_clock.png" usemap="#Execution::ManualClock::Clock_map" alt=""/>
   <map id="Execution::ManualClock::Clock_map" name="Execution::ManualClock::Clock_map">
-<area href="class_execution_1_1_clock.html" alt="Execution::Clock" shape="rect" coords="195,0,380,24"/>
+<area href="class_dataflow_1_1_clock.html" alt="Dataflow::Clock" shape="rect" coords="97,56,282,80"/>
+<area href="class_execution_1_1_clock.html" alt="Execution::Clock" shape="rect" coords="0,0,185,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -123,6 +124,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af910d4b7a36410020a518b0f01ca50b9" id="r_af910d4b7a36410020a518b0f01ca50b9"><td class="memItemLeft" align="right" valign="top"><a id="af910d4b7a36410020a518b0f01ca50b9" name="af910d4b7a36410020a518b0f01ca50b9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Clock</b> (const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx)</td></tr>
 <tr class="separator:af910d4b7a36410020a518b0f01ca50b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_dataflow_1_1_clock"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_dataflow_1_1_clock')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_dataflow_1_1_clock.html">Dataflow::Clock</a></td></tr>
+<tr class="memitem:af07daaddfb09fdf0c2637640b7fa2ba8 inherit pub_methods_class_dataflow_1_1_clock" id="r_af07daaddfb09fdf0c2637640b7fa2ba8"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>Clock</b> (const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx, bool stepping=false)</td></tr>
+<tr class="separator:af07daaddfb09fdf0c2637640b7fa2ba8 inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa0d09a03f9d27193044f7bd4217590 inherit pub_methods_class_dataflow_1_1_clock" id="r_a0aa0d09a03f9d27193044f7bd4217590"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#a0aa0d09a03f9d27193044f7bd4217590">paused</a> () const override</td></tr>
+<tr class="separator:a0aa0d09a03f9d27193044f7bd4217590 inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c99a8822869e27c9f2e662d499c1448 inherit pub_methods_class_dataflow_1_1_clock" id="r_a6c99a8822869e27c9f2e662d499c1448"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#a6c99a8822869e27c9f2e662d499c1448">setStepping</a> (bool stepping) override</td></tr>
+<tr class="memdesc:a6c99a8822869e27c9f2e662d499c1448 inherit pub_methods_class_dataflow_1_1_clock"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the execution under step control, or back to its own clock.  <br /></td></tr>
+<tr class="separator:a6c99a8822869e27c9f2e662d499c1448 inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a066526ab1f8f6bddf48d4302ff34d inherit pub_methods_class_dataflow_1_1_clock" id="r_a19a066526ab1f8f6bddf48d4302ff34d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#a19a066526ab1f8f6bddf48d4302ff34d">stepping</a> () const noexcept override</td></tr>
+<tr class="separator:a19a066526ab1f8f6bddf48d4302ff34d inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059b0e0ce84297556fa559759c8eaf02 inherit pub_methods_class_dataflow_1_1_clock" id="r_a059b0e0ce84297556fa559759c8eaf02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#a059b0e0ce84297556fa559759c8eaf02">stepTo</a> (double seconds) override</td></tr>
+<tr class="separator:a059b0e0ce84297556fa559759c8eaf02 inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb33a174afbd4b1c3aa6e0402ac8b4fb inherit pub_methods_class_dataflow_1_1_clock" id="r_adb33a174afbd4b1c3aa6e0402ac8b4fb"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>steppedSeconds</b> () const noexcept</td></tr>
+<tr class="separator:adb33a174afbd4b1c3aa6e0402ac8b4fb inherit pub_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_execution_1_1_clock"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_execution_1_1_clock')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_execution_1_1_clock.html">Execution::Clock</a></td></tr>
 <tr class="memitem:a6a86a81570abcbed0d1f87cf799f0e41 inherit pub_methods_class_execution_1_1_clock" id="r_a6a86a81570abcbed0d1f87cf799f0e41"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>Clock</b> (const <a class="el" href="struct_execution_1_1_context.html">Execution::Context</a> &amp;ctx)</td></tr>
@@ -142,6 +159,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_execution_1_1_clock"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_execution_1_1_clock')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_execution_1_1_clock.html">Execution::Clock</a></td></tr>
+<tr class="memitem:aab03abacdfadba5dbf2a7ec064ef499f inherit pub_static_methods_class_execution_1_1_clock" id="r_aab03abacdfadba5dbf2a7ec064ef499f"><td class="memItemLeft" align="right" valign="top">
+static <a class="el" href="class_execution_1_1_clock.html">Clock</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>running</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) noexcept</td></tr>
+<tr class="memdesc:aab03abacdfadba5dbf2a7ec064ef499f inherit pub_static_methods_class_execution_1_1_clock"><td class="mdescLeft">&#160;</td><td class="mdescRight">The clock of the execution currently playing <code>doc</code>, if any. <br /></td></tr>
+<tr class="separator:aab03abacdfadba5dbf2a7ec064ef499f inherit pub_static_methods_class_execution_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6e48590679e406fda2cc8af4acd1c6 inherit pub_static_methods_class_execution_1_1_clock" id="r_a8e6e48590679e406fda2cc8af4acd1c6"><td class="memItemLeft" align="right" valign="top">
+static int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>playCount</b> () noexcept</td></tr>
+<tr class="memdesc:a8e6e48590679e406fda2cc8af4acd1c6 inherit pub_static_methods_class_execution_1_1_clock"><td class="mdescLeft">&#160;</td><td class="mdescRight">Incremented each time a clock starts playing. <br /></td></tr>
+<tr class="separator:a8e6e48590679e406fda2cc8af4acd1c6 inherit pub_static_methods_class_execution_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae13e9d9adf0c21abd761c4e2ca940fc9 inherit pub_static_methods_class_execution_1_1_clock" id="r_ae13e9d9adf0c21abd761c4e2ca940fc9"><td class="memItemLeft" align="right" valign="top">
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>requestStepping</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc, bool stepping)</td></tr>
+<tr class="memdesc:ae13e9d9adf0c21abd761c4e2ca940fc9 inherit pub_static_methods_class_execution_1_1_clock"><td class="mdescLeft">&#160;</td><td class="mdescRight">The next clock that plays <code>doc</code> starts stepping, until it stops. <br /></td></tr>
+<tr class="separator:ae13e9d9adf0c21abd761c4e2ca940fc9 inherit pub_static_methods_class_execution_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c438dee177f1feff4a269833eb0299 inherit pub_static_methods_class_execution_1_1_clock" id="r_a07c438dee177f1feff4a269833eb0299"><td class="memItemLeft" align="right" valign="top">
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>steppingRequested</b> (const <a class="el" href="classscore_1_1_document.html">score::Document</a> &amp;doc) noexcept</td></tr>
+<tr class="separator:a07c438dee177f1feff4a269833eb0299 inherit pub_static_methods_class_execution_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_execution_1_1_clock"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_execution_1_1_clock')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_execution_1_1_clock.html">Execution::Clock</a></td></tr>
 <tr class="memitem:a36d664fa3a0175651e944c7b583f6c86 inherit pub_attribs_class_execution_1_1_clock" id="r_a36d664fa3a0175651e944c7b583f6c86"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="struct_execution_1_1_context.html">Context</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
@@ -149,6 +182,11 @@ const <a class="el" href="struct_execution_1_1_context.html">Context</a> &amp;&#
 <tr class="memitem:a3691ebd939ce4182642015c72989e615 inherit pub_attribs_class_execution_1_1_clock" id="r_a3691ebd939ce4182642015c72989e615"><td class="memItemLeft" align="right" valign="top">
 std::shared_ptr&lt; BaseScenarioElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>scenario</b></td></tr>
 <tr class="separator:a3691ebd939ce4182642015c72989e615 inherit pub_attribs_class_execution_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_dataflow_1_1_clock"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_dataflow_1_1_clock')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_dataflow_1_1_clock.html">Dataflow::Clock</a></td></tr>
+<tr class="memitem:ab3af8ebed6a18e1c37c7b95eb45a34eb inherit pro_methods_class_dataflow_1_1_clock" id="r_ab3af8ebed6a18e1c37c7b95eb45a34eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#ab3af8ebed6a18e1c37c7b95eb45a34eb">pause_impl</a> () override</td></tr>
+<tr class="separator:ab3af8ebed6a18e1c37c7b95eb45a34eb inherit pro_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa807714a2606b00df2355797d06c167 inherit pro_methods_class_dataflow_1_1_clock" id="r_afa807714a2606b00df2355797d06c167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_clock.html#afa807714a2606b00df2355797d06c167">resume_impl</a> () override</td></tr>
+<tr class="separator:afa807714a2606b00df2355797d06c167 inherit pro_methods_class_dataflow_1_1_clock"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9964eb2222d879d6e247987e979acbdb" name="a9964eb2222d879d6e247987e979acbdb"></a>
@@ -174,7 +212,7 @@ std::shared_ptr&lt; BaseScenarioElement &gt;&#160;</td><td class="memItemRight" 
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="class_execution_1_1_clock.html">Execution::Clock</a>.</p>
+<p>Reimplemented from <a class="el" href="class_dataflow_1_1_clock.html">Dataflow::Clock</a>.</p>
 
 </div>
 </div>

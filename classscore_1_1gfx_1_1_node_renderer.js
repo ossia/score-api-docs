@@ -6,6 +6,7 @@ var classscore_1_1gfx_1_1_node_renderer =
     [ "addOutputPass", "classscore_1_1gfx_1_1_node_renderer.html#ab678f4a4872b8b7a40de3917bca9f91f", null ],
     [ "depthCompare", "classscore_1_1gfx_1_1_node_renderer.html#aaf61e69d0af5eb34b72c09a4f1301aa0", null ],
     [ "findGeometryByPort", "classscore_1_1gfx_1_1_node_renderer.html#ac0478272e7a65732be5dc390110af0c9", null ],
+    [ "followsRenderSize", "classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726", null ],
     [ "forEachSceneOnPort", "classscore_1_1gfx_1_1_node_renderer.html#ab20b73db66693b34e16039529290ee33", null ],
     [ "hasOutputPassForEdge", "classscore_1_1gfx_1_1_node_renderer.html#ae72e1187f02ba173f3dcf04982daa18d", null ],
     [ "initState", "classscore_1_1gfx_1_1_node_renderer.html#a6ef16f5b3d202ef2ef1b3de15bf9a4c1", null ],
