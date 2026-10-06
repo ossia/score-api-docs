@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['triplebufferindex_2ehpp_0',['TripleBufferIndex.hpp',['../_triple_buffer_index_8hpp.html',1,'']]]
+  ['stageprofiler_2ehpp_0',['StageProfiler.hpp',['../_stage_profiler_8hpp.html',1,'']]]
 ];

@@ -120,7 +120,7 @@ Inheritance diagram for Media::Step::step_node:</div>
  </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Plays the steps of one of several sequences. </p>
-<p>A step lasts <code>duration</code> seconds, on a grid starting at the beginning of the interval, or when synced a fraction of a whole note on the musical grid, so it follows the tempo and the bar lines. A sequence asked for on <code>sequence_select</code> starts at its first step at the next point of the <code>switch_quantification</code> grid (Patternist's convention: 0 is at once, 1 a bar, above 1 a fraction of a whole note). </p>
+<p>A step lasts <code>duration</code> seconds, or when synced a fraction of a whole note, so that it follows the tempo. Either way the steps are counted from the start of the process: its first step plays as it starts, wherever that falls on the bars. A sequence asked for on <code>sequence_select</code> starts at its first step at the next point of the <code>switch_quantification</code> grid (Patternist's convention: 0 is at once, 1 a bar, above 1 a fraction of a whole note). </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,6 +140,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>read_controls</b> () 
 <tr class="memitem:a661a1429fd5d9038c1361cf89a2c4b83" id="r_a661a1429fd5d9038c1361cf89a2c4b83"><td class="memItemLeft" align="right" valign="top"><a id="a661a1429fd5d9038c1361cf89a2c4b83" name="a661a1429fd5d9038c1361cf89a2c4b83"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a661a1429fd5d9038c1361cf89a2c4b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a711acc7f229250ce47131301d5ef0349" id="r_a711acc7f229250ce47131301d5ef0349"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">step_quarters</a> (const ossia::token_request &amp;tk) const noexcept</td></tr>
+<tr class="separator:a711acc7f229250ce47131301d5ef0349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7ffe87b9536fb032a7aab508c104f8" id="r_aea7ffe87b9536fb032a7aab508c104f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_step_1_1step__node.html#aea7ffe87b9536fb032a7aab508c104f8">follow_jump</a> (const ossia::token_request &amp;tk) noexcept</td></tr>
+<tr class="separator:aea7ffe87b9536fb032a7aab508c104f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d75fd4ac54640e54eb9b4d3b2b6138a" id="r_a7d75fd4ac54640e54eb9b4d3b2b6138a"><td class="memItemLeft" align="right" valign="top"><a id="a7d75fd4ac54640e54eb9b4d3b2b6138a" name="a7d75fd4ac54640e54eb9b4d3b2b6138a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>play_steps</b> (const ossia::token_request &amp;tk, double ratio, int64_t tick_start, bool rewinding, int64_t from, int64_t to) noexcept</td></tr>
 <tr class="memdesc:a7d75fd4ac54640e54eb9b4d3b2b6138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the steps whose sample falls in [from; to[. <br /></td></tr>
@@ -189,8 +193,84 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>current</b> {}</td></t
 std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><b>last</b> {-1}</td></tr>
 <tr class="memdesc:a404fd0d52d6b4e690bf7b4f4e7581ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">The step that played last; read by the UI thread. <br /></td></tr>
 <tr class="separator:a404fd0d52d6b4e690bf7b4f4e7581ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f0e2b6309810b7e6b1dfb08e2bf0f4" id="r_ab5f0e2b6309810b7e6b1dfb08e2bf0f4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a> {}</td></tr>
+<tr class="separator:ab5f0e2b6309810b7e6b1dfb08e2bf0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf2b73201450d59d88662d3ce663b4c" id="r_addf2b73201450d59d88662d3ce663b4c"><td class="memItemLeft" align="right" valign="top"><a id="addf2b73201450d59d88662d3ce663b4c" name="addf2b73201450d59d88662d3ce663b4c"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_date</b> {std::numeric_limits&lt;int64_t&gt;::min()}</td></tr>
+<tr class="memdesc:addf2b73201450d59d88662d3ce663b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the next tick starts if time goes on; anything else is a jump. <br /></td></tr>
+<tr class="separator:addf2b73201450d59d88662d3ce663b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aea7ffe87b9536fb032a7aab508c104f8" name="aea7ffe87b9536fb032a7aab508c104f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7ffe87b9536fb032a7aab508c104f8">&#9670;&#160;</a></span>follow_jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Media::Step::step_node::follow_jump </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The process started, or the transport moved it: count the steps from its start again, and play on from the step the position falls in. </p>
+
+</div>
+</div>
+<a id="a711acc7f229250ce47131301d5ef0349" name="a711acc7f229250ce47131301d5ef0349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a711acc7f229250ce47131301d5ef0349">&#9670;&#160;</a></span>step_quarters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Media::Step::step_node::step_quarters </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Length of a synced step, in quarter notes: as the quantification grid, a bar or more counts in bars. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab5f0e2b6309810b7e6b1dfb08e2bf0f4" name="ab5f0e2b6309810b7e6b1dfb08e2bf0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">&#9670;&#160;</a></span>origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Media::Step::step_node::origin {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Musical position, in quarter notes, of the start of the process: synced steps are counted from it. </p>
+
+</div>
+</div>
 <a id="a1db2294e15db3825bccdcbfcc91256c0" name="a1db2294e15db3825bccdcbfcc91256c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1db2294e15db3825bccdcbfcc91256c0">&#9670;&#160;</a></span>sequences</h2>
 

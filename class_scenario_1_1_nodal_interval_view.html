@@ -175,6 +175,11 @@ QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>enclosingRect</b> (
 <tr class="memitem:a631202c7acd1434dcdb50d547e80fb21" id="r_a631202c7acd1434dcdb50d547e80fb21"><td class="memItemLeft" align="right" valign="top"><a id="a631202c7acd1434dcdb50d547e80fb21" name="a631202c7acd1434dcdb50d547e80fb21"></a>
 QGraphicsItem &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nodeContainer</b> () const noexcept</td></tr>
 <tr class="separator:a631202c7acd1434dcdb50d547e80fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e60718020fbe551286c2e98ab02bed0" id="r_a9e60718020fbe551286c2e98ab02bed0"><td class="memItemLeft" align="right" valign="top"><a id="a9e60718020fbe551286c2e98ab02bed0" name="a9e60718020fbe551286c2e98ab02bed0"></a>
+const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> () const noexcept</td></tr>
+<tr class="separator:a9e60718020fbe551286c2e98ab02bed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf12ef338195a94e01b573369a813ca" id="r_a0bf12ef338195a94e01b573369a813ca"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a0bf12ef338195a94e01b573369a813ca">pastePosition</a> (QPointF scenePos) const</td></tr>
+<tr class="separator:a0bf12ef338195a94e01b573369a813ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ad82a2c60babb6e69d155d5da3a5ec" id="r_a50ad82a2c60babb6e69d155d5da3a5ec"><td class="memItemLeft" align="right" valign="top"><a id="a50ad82a2c60babb6e69d155d5da3a5ec" name="a50ad82a2c60babb6e69d155d5da3a5ec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
 <tr class="separator:a50ad82a2c60babb6e69d155d5da3a5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,6 +252,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumWidth</b> 
 <tr class="separator:abff67af1b8dc1eac6003755e45381591 inherit pro_attribs_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0bf12ef338195a94e01b573369a813ca" name="a0bf12ef338195a94e01b573369a813ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf12ef338195a94e01b573369a813ca">&#9670;&#160;</a></span>pastePosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPointF Scenario::NodalIntervalView::pastePosition </td>
+          <td>(</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>scenePos</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where to put what is pasted, in nodeContainer() coordinates: at <code>scenePos</code> when it is over the visible part of this item, else in the middle of it. </p>
+
+</div>
+</div>
 <a id="a67e0803c6af33400d9166bc14ea3ff76" name="a67e0803c6af33400d9166bc14ea3ff76"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67e0803c6af33400d9166bc14ea3ff76">&#9670;&#160;</a></span>recenterRelativeToView()</h2>
 

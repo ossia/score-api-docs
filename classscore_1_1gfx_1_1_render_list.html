@@ -227,6 +227,10 @@ QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>selfFeedback
 <tr class="memitem:a0f136076fe4e851e70384962462100fd" id="r_a0f136076fe4e851e70384962462100fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a0f136076fe4e851e70384962462100fd">registry</a> () noexcept</td></tr>
 <tr class="memdesc:a0f136076fe4e851e70384962462100fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-output GPU arena store for scene-graph source nodes.  <br /></td></tr>
 <tr class="separator:a0f136076fe4e851e70384962462100fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87a078b6876b2f6d95bbd99853b3d6a" id="r_ac87a078b6876b2f6d95bbd99853b3d6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#ac87a078b6876b2f6d95bbd99853b3d6a">releaseRendererState</a> (<a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> &amp;r)</td></tr>
+<tr class="separator:ac87a078b6876b2f6d95bbd99853b3d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef52453b6bb1ec416300dbdb1a1378a" id="r_a4ef52453b6bb1ec416300dbdb1a1378a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a4ef52453b6bb1ec416300dbdb1a1378a">releaseOwnedTarget</a> (<a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;rt)</td></tr>
+<tr class="separator:a4ef52453b6bb1ec416300dbdb1a1378a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8a650f0bbf3887ce5e1064d33260191" id="r_aa8a650f0bbf3887ce5e1064d33260191"><td class="memItemLeft" align="right" valign="top"><a id="aa8a650f0bbf3887ce5e1064d33260191" name="aa8a650f0bbf3887ce5e1064d33260191"></a>
 const <a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>registry</b> () const noexcept</td></tr>
 <tr class="separator:aa8a650f0bbf3887ce5e1064d33260191"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1015,6 +1019,44 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 
 <p>Retire a buffer this render list's node owns. </p>
 <p>The free is deferred while any consumer still holds the buffer through <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a8e0490dda9ae6eef3d302b4a30e8afbd" title="Borrow a buffer another node owns (a slot with owned == false).">adoptBuffer()</a>: the owner's release then only marks it orphaned, and the last <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a26021ce120e965a73da44e4af75b353a" title="rhi is the QRhi the caller renders with, which created buf.">dropAdoptedBuffer()</a> frees it. A consumer that borrowed the handle therefore keeps binding a live object &ndash; the last contents its producer wrote &ndash; until it re-reads the producer's geometry and lets go, instead of binding a freed one. </p>
+
+</div>
+</div>
+<a id="a4ef52453b6bb1ec416300dbdb1a1378a" name="a4ef52453b6bb1ec416300dbdb1a1378a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef52453b6bb1ec416300dbdb1a1378a">&#9670;&#160;</a></span>releaseOwnedTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::releaseOwnedTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;&#160;</td>
+          <td class="paramname"><em>rt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frees a render target of this list or of one of its renderers, first making the registry forget its texture. </p>
+
+</div>
+</div>
+<a id="ac87a078b6876b2f6d95bbd99853b3d6a" name="ac87a078b6876b2f6d95bbd99853b3d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac87a078b6876b2f6d95bbd99853b3d6a">&#9670;&#160;</a></span>releaseRendererState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::RenderList::releaseRendererState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a> &amp;&#160;</td>
+          <td class="paramname"><em>r</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Releases a renderer's state, first making the registry forget its port textures, which may be published as dynamic textures. </p>
 
 </div>
 </div>

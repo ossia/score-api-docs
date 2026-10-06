@@ -268,6 +268,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>markMeshSlabSeen</b> 
 <tr class="separator:a287650dd2e53082ccec24a7e47ae3ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a03cfb5758a31917159e89bd98d237" id="r_ae5a03cfb5758a31917159e89bd98d237"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#ae5a03cfb5758a31917159e89bd98d237">sweepStaleDynamicTextureSlots</a> () noexcept</td></tr>
 <tr class="separator:ae5a03cfb5758a31917159e89bd98d237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f2c27a74e99d89f5e0f45a436545334" id="r_a9f2c27a74e99d89f5e0f45a436545334"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a9f2c27a74e99d89f5e0f45a436545334">forgetDynamicTexture</a> (const QRhiTexture *tex) noexcept</td></tr>
+<tr class="separator:a9f2c27a74e99d89f5e0f45a436545334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fe4fde6056d9604a2c1d40772811f5" id="r_a77fe4fde6056d9604a2c1d40772811f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#a77fe4fde6056d9604a2c1d40772811f5">drainExpiredPendingReleases</a> (uint32_t current_frame, uint32_t grace=2) noexcept</td></tr>
 <tr class="separator:a77fe4fde6056d9604a2c1d40772811f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae17914a95575f787d08f26d03b826093" id="r_ae17914a95575f787d08f26d03b826093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html#ae17914a95575f787d08f26d03b826093">releaseMeshSlab</a> (uint64_t stable_id, uint32_t current_frame) noexcept</td></tr>
@@ -514,6 +516,33 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </table>
 </div><div class="memdoc">
 <p>Free pending-release slabs whose released_frame + grace &lt;= current_frame. Called by sweepMeshSlabs and by acquireMeshSlab before its fresh allocate, so a count-mismatch whose previous slot has served its grace recycles that capacity in the same update() instead of a spurious "pool exhausted". Leaves the *SlotsUsed trackers alone: those are decremented eagerly at enqueue time. </p>
+
+</div>
+</div>
+<a id="a9f2c27a74e99d89f5e0f45a436545334" name="a9f2c27a74e99d89f5e0f45a436545334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f2c27a74e99d89f5e0f45a436545334">&#9670;&#160;</a></span>forgetDynamicTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::GpuResourceRegistry::forgetDynamicTexture </td>
+          <td>(</td>
+          <td class="paramtype">const QRhiTexture *&#160;</td>
+          <td class="paramname"><em>tex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Nulls every dynamic slot holding <code>tex</code> (pointer comparison only), which its owner is about to free. The table change makes consumers rebind before their next draw. </p>
 
 </div>
 </div>

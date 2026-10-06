@@ -7,12 +7,13 @@ var searchData=
   ['nearestsampling_4',['nearestSampling',['../structscore_1_1gfx_1_1_packed_decoder.html#a56a0ed1a60190ac251e7a49a4164b61e',1,'score::gfx::PackedDecoder']]],
   ['newsize_5',['newSize',['../struct_process_1_1_file_entry.html#a4d6a4c1f566919bb3ad696d08320891e',1,'Process::FileEntry']]],
   ['newstoredpath_6',['newStoredPath',['../struct_process_1_1_file_entry.html#a373a1c2e81adc6addc2e253642cb6e92',1,'Process::FileEntry']]],
-  ['node_7',['node',['../structscore_1_1gfx_1_1_port.html#a6be11bbdf8a6631a446c943d42562818',1,'score::gfx::Port']]],
-  ['nodekinds_8',['nodeKinds',['../struct_device_1_1_device_capas.html#a28324d17ff7c105ee9d0c282760e3638',1,'Device::DeviceCapas']]],
-  ['nodes_9',['nodes',['../classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4',1,'score::gfx::RenderList']]],
-  ['note_10',['note',['../struct_process_1_1_file_entry.html#a228f5aee24ddb7c59e3248b233fc9d22',1,'Process::FileEntry']]],
-  ['notices_11',['notices',['../struct_protocols_1_1_m_i_d_i_devices_1_1_source.html#a17ae7905d7ced541ab500786f4dc9af4',1,'Protocols::MIDIDevices::Source']]],
-  ['number_12',['number',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#adbe0b46f965324db123dcffa551b063b',1,'Protocols::MIDIDevices::Message']]],
-  ['numplanes_13',['numPlanes',['../structscore_1_1gfx_1_1_pixel_format_info.html#aca736a46d2b3ade23e6c70468fb2ba0c',1,'score::gfx::PixelFormatInfo']]],
-  ['nvidiapeermem_14',['nvidiaPeermem',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a2752a81cec95fb52f3d6266169c20f64',1,'score::gfx::interop::GpuCapabilities']]]
+  ['next_5fdate_7',['next_date',['../class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c',1,'Media::Step::step_node']]],
+  ['node_8',['node',['../structscore_1_1gfx_1_1_port.html#a6be11bbdf8a6631a446c943d42562818',1,'score::gfx::Port']]],
+  ['nodekinds_9',['nodeKinds',['../struct_device_1_1_device_capas.html#a28324d17ff7c105ee9d0c282760e3638',1,'Device::DeviceCapas']]],
+  ['nodes_10',['nodes',['../classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4',1,'score::gfx::RenderList']]],
+  ['note_11',['note',['../struct_process_1_1_file_entry.html#a228f5aee24ddb7c59e3248b233fc9d22',1,'Process::FileEntry']]],
+  ['notices_12',['notices',['../struct_protocols_1_1_m_i_d_i_devices_1_1_source.html#a17ae7905d7ced541ab500786f4dc9af4',1,'Protocols::MIDIDevices::Source']]],
+  ['number_13',['number',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#adbe0b46f965324db123dcffa551b063b',1,'Protocols::MIDIDevices::Message']]],
+  ['numplanes_14',['numPlanes',['../structscore_1_1gfx_1_1_pixel_format_info.html#aca736a46d2b3ade23e6c70468fb2ba0c',1,'score::gfx::PixelFormatInfo']]],
+  ['nvidiapeermem_15',['nvidiaPeermem',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a2752a81cec95fb52f3d6266169c20f64',1,'score::gfx::interop::GpuCapabilities']]]
 ];

@@ -138,12 +138,16 @@ Public Types</h2></td></tr>
 , <a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6a2d3a6874a311f5507b59eff1b0a60477">BGGR</a>
  }</td></tr>
 <tr class="separator:a083415fa7af65d02f2588857b552dee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad82beb5607fa332e14190b5ac9577bd7" id="r_ad82beb5607fa332e14190b5ac9577bd7"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7">Source</a> { <b>Capture</b>
+, <b>File</b>
+ }</td></tr>
+<tr class="separator:ad82beb5607fa332e14190b5ac9577bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad628f093e4fbd414c4ec237f8b023cf0" id="r_ad628f093e4fbd414c4ec237f8b023cf0"><td class="memItemLeft" align="right" valign="top"><a id="ad628f093e4fbd414c4ec237f8b023cf0" name="ad628f093e4fbd414c4ec237f8b023cf0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BayerDecoder</b> (QRhiTexture::Format fmt, int bytesPerSample, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, <a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6">Phase</a> phase, double sampleScale=1.0)</td></tr>
-<tr class="separator:ad628f093e4fbd414c4ec237f8b023cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa467168ea14bb042a1c1291eb6766149" id="r_aa467168ea14bb042a1c1291eb6766149"><td class="memItemLeft" align="right" valign="top"><a id="aa467168ea14bb042a1c1291eb6766149" name="aa467168ea14bb042a1c1291eb6766149"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BayerDecoder</b> (QRhiTexture::Format fmt, int bytesPerSample, <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;d, <a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6">Phase</a> phase, double sampleScale=1.0, <a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7">Source</a> source=Source::Capture, QString f=&quot;&quot;)</td></tr>
+<tr class="separator:aa467168ea14bb042a1c1291eb6766149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b194e5b76b7f87964c8ff8bb294b5c3" id="r_a1b194e5b76b7f87964c8ff8bb294b5c3"><td class="memItemLeft" align="right" valign="top">std::pair&lt; QShader, QShader &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#a1b194e5b76b7f87964c8ff8bb294b5c3">init</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) override</td></tr>
 <tr class="memdesc:a1b194e5b76b7f87964c8ff8bb294b5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html" title="Processes and renders a video frame on the GPU.">GPUVideoDecoder</a>.  <br /></td></tr>
 <tr class="separator:a1b194e5b76b7f87964c8ff8bb294b5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +177,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>bytesPerSample</b> {}<
 <tr class="memitem:a519807115b292def752358dfaaad1865" id="r_a519807115b292def752358dfaaad1865"><td class="memItemLeft" align="right" valign="top"><a id="a519807115b292def752358dfaaad1865" name="a519807115b292def752358dfaaad1865"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>sampleScale</b> {1.0}</td></tr>
 <tr class="separator:a519807115b292def752358dfaaad1865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4accf8acaa68beceace7481cc472796" id="r_aa4accf8acaa68beceace7481cc472796"><td class="memItemLeft" align="right" valign="top"><a id="aa4accf8acaa68beceace7481cc472796" name="aa4accf8acaa68beceace7481cc472796"></a>
+<a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7">Source</a>&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> {Source::Capture}</td></tr>
+<tr class="separator:aa4accf8acaa68beceace7481cc472796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad995fa660eefeb071f98634d2c6874f3" id="r_ad995fa660eefeb071f98634d2c6874f3"><td class="memItemLeft" align="right" valign="top"><a id="ad995fa660eefeb071f98634d2c6874f3" name="ad995fa660eefeb071f98634d2c6874f3"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>filter</b></td></tr>
+<tr class="separator:ad995fa660eefeb071f98634d2c6874f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:ac798b702a346427f64cbe627bc71dd59 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_ac798b702a346427f64cbe627bc71dd59"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>samplers</b></td></tr>
@@ -186,9 +196,11 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a98be1b4919153911ca6e0a2175ee69fe" id="r_a98be1b4919153911ca6e0a2175ee69fe"><td class="memItemLeft" align="right" valign="top"><a id="a98be1b4919153911ca6e0a2175ee69fe" name="a98be1b4919153911ca6e0a2175ee69fe"></a>
-static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td></tr>
+<tr class="memitem:a98be1b4919153911ca6e0a2175ee69fe" id="r_a98be1b4919153911ca6e0a2175ee69fe"><td class="memItemLeft" align="right" valign="top">static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#a98be1b4919153911ca6e0a2175ee69fe">frag</a></td></tr>
+<tr class="memdesc:a98be1b4919153911ca6e0a2175ee69fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture inputs: the long material block, with the sensor corrections.  <br /></td></tr>
 <tr class="separator:a98be1b4919153911ca6e0a2175ee69fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af44a66ac2ead3cbeb5c2bd098f6085e7" id="r_af44a66ac2ead3cbeb5c2bd098f6085e7"><td class="memItemLeft" align="right" valign="top">static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#af44a66ac2ead3cbeb5c2bd098f6085e7">fileFrag</a></td></tr>
+<tr class="separator:af44a66ac2ead3cbeb5c2bd098f6085e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -237,6 +249,29 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <tr><td class="fieldname"><a id="a083415fa7af65d02f2588857b552dee6a2d3a6874a311f5507b59eff1b0a60477" name="a083415fa7af65d02f2588857b552dee6a2d3a6874a311f5507b59eff1b0a60477"></a>BGGR&#160;</td><td class="fielddoc"><p>red at (1,1) </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="ad82beb5607fa332e14190b5ac9577bd7" name="ad82beb5607fa332e14190b5ac9577bd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad82beb5607fa332e14190b5ac9577bd7">&#9670;&#160;</a></span>Source</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7">score::gfx::BayerDecoder::Source</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Which renderer draws it, which sets the material block the shaders declare: a block that does not match the renderer's buffer reads past it. </p>
 
 </div>
 </div>
@@ -319,6 +354,64 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <p>It returns a {vertex, fragment} shader pair. </p>
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a2006599f62b8b95fdc6bc2e0224ef56e">score::gfx::GPUVideoDecoder</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af44a66ac2ead3cbeb5c2bd098f6085e7" name="af44a66ac2ead3cbeb5c2bd098f6085e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af44a66ac2ead3cbeb5c2bd098f6085e7">&#9670;&#160;</a></span>fileFrag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr auto score::gfx::BayerDecoder::fileFrag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">)_&quot; SCORE_GFX_VIDEO_UNIFORMS R</span><span class="stringliteral">&quot;_(</span></div>
+<div class="line"><span class="stringliteral">vec3 adjustCapture(vec3 c) { return c; }</span></div>
+<div class="line"><span class="stringliteral">)_&quot;  R</span><span class="stringliteral">&quot;_(layout(binding=3) uniform sampler2D u_tex;layout(location = 0) in vec2 v_texcoord;layout(location = 0) out vec4 fragColor;vec4 processTexture(vec4 tex) {  vec4 processed = tex;  { %1 }  return processed;}float smp(ivec2 q, ivec2 lim) {  return texelFetch(u_tex, clamp(q, ivec2(0), lim), 0).r;}void main() {  ivec2 sz = textureSize(u_tex, 0);  ivec2 lim = sz - ivec2(1);  ivec2 ip = clamp(ivec2(floor(v_texcoord * vec2(sz))), ivec2(0), lim);  // (0,0) marks the red site; the other three cells follow from its parity.  ivec2 c = (ip + ivec2(%2, %3)) &amp; 1;  float ctr = smp(ip, lim);  float n  = smp(ip + ivec2( 0,-1), lim);  float s  = smp(ip + ivec2( 0, 1), lim);  float w  = smp(ip + ivec2(-1, 0), lim);  float e  = smp(ip + ivec2( 1, 0), lim);  float nw = smp(ip + ivec2(-1,-1), lim);  float ne = smp(ip + ivec2( 1,-1), lim);  float sw = smp(ip + ivec2(-1, 1), lim);  float se = smp(ip + ivec2( 1, 1), lim);  float cross4 = (n + s + w + e) * 0.25;  float diag4  = (nw + ne + sw + se) * 0.25;  float horz2  = (w + e) * 0.5;  float vert2  = (n + s) * 0.5;  vec3 rgb;  if(c.x == 0 &amp;&amp; c.y == 0)    rgb = vec3(ctr, cross4, diag4);          // red site  else if(c.x == 1 &amp;&amp; c.y == 1)    rgb = vec3(diag4, cross4, ctr);          // blue site  else if(c.x == 1 &amp;&amp; c.y == 0)    rgb = vec3(horz2, ctr, vert2);           // green, red neighbours across  else    rgb = vec3(vert2, ctr, horz2);           // green, blue neighbours across  fragColor = processTexture(vec4(adjustCapture(rgb * %4), 1.0));})_&quot;</span></div>
+</div><!-- fragment --><p>Raw files (CineForm RAW, Magic Lantern, Phantom Cine) played as video: the video renderers' material block, which has no corrections. </p>
+
+</div>
+</div>
+<a id="a98be1b4919153911ca6e0a2175ee69fe" name="a98be1b4919153911ca6e0a2175ee69fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98be1b4919153911ca6e0a2175ee69fe">&#9670;&#160;</a></span>frag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const constexpr auto score::gfx::BayerDecoder::frag</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><span class="stringliteral"></span> </div>
+<div class="line"><span class="stringliteral">)_&quot; <a class="code hl_define" href="_capture_adjust_g_l_s_l_8hpp.html#afd6c882fa49278a83cadae3d11c205e0">SCORE_GFX_CAPTURE_UNIFORMS</a> <a class="code hl_define" href="_capture_adjust_g_l_s_l_8hpp.html#ab9970ecb11d9cff4defe394913e0c660">SCORE_GFX_CAPTURE_ADJUST_FN</a>  R</span><span class="stringliteral">&quot;_(layout(binding=3) uniform sampler2D u_tex;layout(location = 0) in vec2 v_texcoord;layout(location = 0) out vec4 fragColor;vec4 processTexture(vec4 tex) {  vec4 processed = tex;  { %1 }  return processed;}float smp(ivec2 q, ivec2 lim) {  return texelFetch(u_tex, clamp(q, ivec2(0), lim), 0).r;}void main() {  ivec2 sz = textureSize(u_tex, 0);  ivec2 lim = sz - ivec2(1);  ivec2 ip = clamp(ivec2(floor(v_texcoord * vec2(sz))), ivec2(0), lim);  // (0,0) marks the red site; the other three cells follow from its parity.  ivec2 c = (ip + ivec2(%2, %3)) &amp; 1;  float ctr = smp(ip, lim);  float n  = smp(ip + ivec2( 0,-1), lim);  float s  = smp(ip + ivec2( 0, 1), lim);  float w  = smp(ip + ivec2(-1, 0), lim);  float e  = smp(ip + ivec2( 1, 0), lim);  float nw = smp(ip + ivec2(-1,-1), lim);  float ne = smp(ip + ivec2( 1,-1), lim);  float sw = smp(ip + ivec2(-1, 1), lim);  float se = smp(ip + ivec2( 1, 1), lim);  float cross4 = (n + s + w + e) * 0.25;  float diag4  = (nw + ne + sw + se) * 0.25;  float horz2  = (w + e) * 0.5;  float vert2  = (n + s) * 0.5;  vec3 rgb;  if(c.x == 0 &amp;&amp; c.y == 0)    rgb = vec3(ctr, cross4, diag4);          // red site  else if(c.x == 1 &amp;&amp; c.y == 1)    rgb = vec3(diag4, cross4, ctr);          // blue site  else if(c.x == 1 &amp;&amp; c.y == 0)    rgb = vec3(horz2, ctr, vert2);           // green, red neighbours across  else    rgb = vec3(vert2, ctr, horz2);           // green, blue neighbours across  fragColor = processTexture(vec4(adjustCapture(rgb * %4), 1.0));})_&quot;</span></div>
+<div class="ttc" id="a_capture_adjust_g_l_s_l_8hpp_html_ab9970ecb11d9cff4defe394913e0c660"><div class="ttname"><a href="_capture_adjust_g_l_s_l_8hpp.html#ab9970ecb11d9cff4defe394913e0c660">SCORE_GFX_CAPTURE_ADJUST_FN</a></div><div class="ttdeci">#define SCORE_GFX_CAPTURE_ADJUST_FN</div><div class="ttdef"><b>Definition</b> CaptureAdjustGLSL.hpp:48</div></div>
+<div class="ttc" id="a_capture_adjust_g_l_s_l_8hpp_html_afd6c882fa49278a83cadae3d11c205e0"><div class="ttname"><a href="_capture_adjust_g_l_s_l_8hpp.html#afd6c882fa49278a83cadae3d11c205e0">SCORE_GFX_CAPTURE_UNIFORMS</a></div><div class="ttdeci">#define SCORE_GFX_CAPTURE_UNIFORMS</div><div class="ttdef"><b>Definition</b> CaptureAdjustGLSL.hpp:30</div></div>
+</div><!-- fragment -->
+<p>Capture inputs: the long material block, with the sensor corrections. </p>
 
 </div>
 </div>

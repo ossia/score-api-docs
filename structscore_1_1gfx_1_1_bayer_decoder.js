@@ -6,6 +6,10 @@ var structscore_1_1gfx_1_1_bayer_decoder =
       [ "GBRG", "structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6a7e1f04bffd48aa2e163b2a925fb3986a", null ],
       [ "BGGR", "structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6a2d3a6874a311f5507b59eff1b0a60477", null ]
     ] ],
+    [ "Source", "structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7", [
+      [ "Capture", "structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7a44a50f07b4bdc57740901280f9eddaf5", null ],
+      [ "File", "structscore_1_1gfx_1_1_bayer_decoder.html#ad82beb5607fa332e14190b5ac9577bd7a0b27918290ff5323bea1e3b78a9cf04e", null ]
+    ] ],
     [ "exec", "structscore_1_1gfx_1_1_bayer_decoder.html#ac46634d2d602c1174f9b0fc0f2c99e8b", null ],
     [ "init", "structscore_1_1gfx_1_1_bayer_decoder.html#a1b194e5b76b7f87964c8ff8bb294b5c3", null ]
 ];

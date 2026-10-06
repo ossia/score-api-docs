@@ -14,6 +14,7 @@ var classscore_1_1gfx_1_1_gpu_resource_registry =
     [ "destroy", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a2cbcaf06098d8517a978269283a7a47b", null ],
     [ "destroyOwned", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a007d84073c2e35a703ad3cdc0d70310b", null ],
     [ "drainExpiredPendingReleases", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a77fe4fde6056d9604a2c1d40772811f5", null ],
+    [ "forgetDynamicTexture", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a9f2c27a74e99d89f5e0f45a436545334", null ],
     [ "free", "classscore_1_1gfx_1_1_gpu_resource_registry.html#ac030a623a2b7b140fbba1bef2fa7c0f6", null ],
     [ "init", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a9a4e3cd62bb7d225094288a05fba156d", null ],
     [ "isInitialized", "classscore_1_1gfx_1_1_gpu_resource_registry.html#a6c6ddd7482d7f25033629652a16e5e2e", null ],

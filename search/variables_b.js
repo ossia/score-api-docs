@@ -14,6 +14,6 @@ var searchData=
   ['loadlist_11',['loadList',['../structscore_1_1_application_settings.html#ac4485606b08677be4115260f2e30b241',1,'score::ApplicationSettings']]],
   ['lock_5fto_5fbars_12',['lock_to_bars',['../struct_nodes_1_1_l_f_o_1_1v3_1_1_node_1_1ins.html#a0d598fed3c4dba351b047a15a6233aa2',1,'Nodes::LFO::v3::Node::ins']]],
   ['log2chromah_13',['log2ChromaH',['../structscore_1_1gfx_1_1_pixel_format_info.html#a7b53de3ad1a60f30b257f6fc741e8de8',1,'score::gfx::PixelFormatInfo']]],
-  ['log2chromaw_14',['log2ChromaW',['../structscore_1_1gfx_1_1_pixel_format_info.html#a21f313c9e0af07549038b962f0a8b2c2',1,'score::gfx::PixelFormatInfo']]],
+  ['log2chromaw_14',['log2chromaw',['../structscore_1_1gfx_1_1_pixel_format_info.html#a21f313c9e0af07549038b962f0a8b2c2',1,'score::gfx::PixelFormatInfo::log2ChromaW'],['../structscore_1_1gfx_1_1_planar_y_u_v_layout.html#ae3384386be42edeb134288638506369a',1,'score::gfx::PlanarYUVLayout::log2ChromaW']]],
   ['lsb_15',['lsb',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#aedd3bfe6632fce71068d503bb18ec6f3',1,'Protocols::MIDIDevices::Message']]]
 ];

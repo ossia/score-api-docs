@@ -1,12 +1,15 @@
 var dir_e88defce6f57758c14d933078c1cb6c6 =
 [
     [ "CameraInput.hpp", "_camera_input_8hpp_source.html", null ],
+    [ "DecoderThreading.hpp", "_decoder_threading_8hpp.html", "_decoder_threading_8hpp" ],
     [ "ExternalInput.hpp", "_external_input_8hpp_source.html", null ],
+    [ "FrameAccess.hpp", "_frame_access_8hpp.html", "_frame_access_8hpp" ],
     [ "FrameQueue.hpp", "_frame_queue_8hpp_source.html", null ],
     [ "GpuFormats.hpp", "_gpu_formats_8hpp_source.html", null ],
     [ "GStreamerCompatibility.hpp", "_g_streamer_compatibility_8hpp_source.html", null ],
     [ "LibavInterrupt.hpp", "_libav_interrupt_8hpp_source.html", null ],
     [ "LibavStreamInput.hpp", "_libav_stream_input_8hpp_source.html", null ],
+    [ "PlaybackTime.hpp", "_playback_time_8hpp.html", "_playback_time_8hpp" ],
     [ "Rescale.hpp", "_rescale_8hpp_source.html", null ],
     [ "Thumbnailer.hpp", "_thumbnailer_8hpp_source.html", null ],
     [ "VideoDecoder.hpp", "_video_decoder_8hpp_source.html", null ],

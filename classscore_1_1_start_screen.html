@@ -111,22 +111,13 @@ $(document).ready(function(){initNavTree('classscore_1_1_start_screen.html','');
   <div class="headertitle"><div class="title">score::StartScreen Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The window shown when score starts without a document.  
- <a href="classscore_1_1_start_screen.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::StartScreen:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classscore_1_1_start_screen.png" alt=""/>
  </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The window shown when score starts without a document. </p>
-<p>Layout:</p>
-<p>+------------------------------------------------------------&mdash;+ | splash artwork: logo, tagline, version [update notice] × | +--------&mdash;+------------------------------------------------&mdash;+ | Home | | | Examples | page (home / examples / learn / community) | | Learn | | | Community | | | Exit | | +--------&mdash;+------------------------------------------------&mdash;+</p>
-<p>Every way of leaving the screen without choosing anything (Escape, the × button, a close request) opens a new empty score, so the user always ends up in a usable editor.</p>
-<p>Templates, examples and recent files are plain .score files; their project information (name, author, thumbnail) is read in the background with ProjectInfo::peek() and shown on hover or on the example cards. </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac71ce56d3cceffd79355dabbd3c9937f" id="r_ac71ce56d3cceffd79355dabbd3c9937f"><td class="memItemLeft" align="right" valign="top"><a id="ac71ce56d3cceffd79355dabbd3c9937f" name="ac71ce56d3cceffd79355dabbd3c9937f"></a>
@@ -195,6 +186,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a136fcefa7f2e7476cd403fd5b7d8110e" id="r_a136fcefa7f2e7476cd403fd5b7d8110e"><td class="memItemLeft" align="right" valign="top"><a id="a136fcefa7f2e7476cd403fd5b7d8110e" name="a136fcefa7f2e7476cd403fd5b7d8110e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paintEvent</b> (QPaintEvent *event) override</td></tr>
 <tr class="separator:a136fcefa7f2e7476cd403fd5b7d8110e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc6b3bc6e868351c32f700bf65ceab8" id="r_abbc6b3bc6e868351c32f700bf65ceab8"><td class="memItemLeft" align="right" valign="top"><a id="abbc6b3bc6e868351c32f700bf65ceab8" name="abbc6b3bc6e868351c32f700bf65ceab8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>eventFilter</b> (QObject *watched, QEvent *event) override</td></tr>
+<tr class="separator:abbc6b3bc6e868351c32f700bf65ceab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78772cc00a3818110e09ab7c630c6b58" id="r_a78772cc00a3818110e09ab7c630c6b58"><td class="memItemLeft" align="right" valign="top"><a id="a78772cc00a3818110e09ab7c630c6b58" name="a78772cc00a3818110e09ab7c630c6b58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>keyPressEvent</b> (QKeyEvent *event) override</td></tr>
 <tr class="separator:a78772cc00a3818110e09ab7c630c6b58"><td class="memSeparator" colspan="2">&#160;</td></tr>

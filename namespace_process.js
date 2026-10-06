@@ -130,7 +130,7 @@ var namespace_process =
     [ "ProcessDropHandlerList", "class_process_1_1_process_drop_handler_list.html", null ],
     [ "ProcessFactory_T", "class_process_1_1_process_factory___t.html", null ],
     [ "ProcessFactoryList", "class_process_1_1_process_factory_list.html", null ],
-    [ "ProcessFocusManager", "class_process_1_1_process_focus_manager.html", null ],
+    [ "ProcessFocusManager", "class_process_1_1_process_focus_manager.html", "class_process_1_1_process_focus_manager" ],
     [ "ProcessIdentifier", "struct_process_1_1_process_identifier.html", null ],
     [ "ProcessModel", "class_process_1_1_process_model.html", "class_process_1_1_process_model" ],
     [ "ProcessModelFactory", "class_process_1_1_process_model_factory.html", null ],

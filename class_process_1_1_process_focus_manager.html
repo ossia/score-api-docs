@@ -136,6 +136,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>focus</b> (<a class="
 <tr class="memitem:a9bd990c60af86b62af09b3f093adbdbd" id="r_a9bd990c60af86b62af09b3f093adbdbd"><td class="memItemLeft" align="right" valign="top"><a id="a9bd990c60af86b62af09b3f093adbdbd" name="a9bd990c60af86b62af09b3f093adbdbd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>focusNothing</b> ()</td></tr>
 <tr class="separator:a9bd990c60af86b62af09b3f093adbdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab529126c4c147ed4be44b0c9b3154a5d" id="r_ab529126c4c147ed4be44b0c9b3154a5d"><td class="memItemLeft" align="right" valign="top"><a id="ab529126c4c147ed4be44b0c9b3154a5d" name="ab529126c4c147ed4be44b0c9b3154a5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectionChanged</b> () noexcept</td></tr>
+<tr class="memdesc:ab529126c4c147ed4be44b0c9b3154a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called on every change of selection. <br /></td></tr>
+<tr class="separator:ab529126c4c147ed4be44b0c9b3154a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e5b921cd1d2e253887783a136fe58e4" id="r_a4e5b921cd1d2e253887783a136fe58e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_process_focus_manager.html#a4e5b921cd1d2e253887783a136fe58e4">selectionNewerThanFocus</a> () const noexcept</td></tr>
+<tr class="separator:a4e5b921cd1d2e253887783a136fe58e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a63b1ad57c6e8eb4c8b73eae22fc9aa" id="r_a9a63b1ad57c6e8eb4c8b73eae22fc9aa"><td class="memItemLeft" align="right" valign="top"><a id="a9a63b1ad57c6e8eb4c8b73eae22fc9aa" name="a9a63b1ad57c6e8eb4c8b73eae22fc9aa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sig_focusedPresenter</b> (<a class="el" href="class_process_1_1_layer_presenter.html">LayerPresenter</a> *arg_1)</td></tr>
 <tr class="separator:a9a63b1ad57c6e8eb4c8b73eae22fc9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +164,33 @@ Static Public Member Functions</h2></td></tr>
 static <a class="el" href="class_process_1_1_process_focus_manager.html">ProcessFocusManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:af066ef8b7f73de334d33b7c684f1d1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4e5b921cd1d2e253887783a136fe58e4" name="a4e5b921cd1d2e253887783a136fe58e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e5b921cd1d2e253887783a136fe58e4">&#9670;&#160;</a></span>selectionNewerThanFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Process::ProcessFocusManager::selectionNewerThanFocus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether the selection changed more recently than the focus. Clicking some items changes only one of the two. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_process_focus_manager_8hpp_source.html">ProcessFocusManager.hpp</a></li>
 <li><b>ProcessFocusManager.cpp</b></li>

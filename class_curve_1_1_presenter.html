@@ -171,6 +171,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setBoundedMove</b> (b
 <tr class="memitem:a107b7545cc3f0a8c3559703d17eac51e" id="r_a107b7545cc3f0a8c3559703d17eac51e"><td class="memItemLeft" align="right" valign="top"><a id="a107b7545cc3f0a8c3559703d17eac51e" name="a107b7545cc3f0a8c3559703d17eac51e"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b> () const noexcept</td></tr>
 <tr class="separator:a107b7545cc3f0a8c3559703d17eac51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37839e682504af17b3bd41ab80935814" id="r_a37839e682504af17b3bd41ab80935814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_presenter.html#a37839e682504af17b3bd41ab80935814">setMagnetism</a> (std::function&lt; double(double)&gt; f) noexcept</td></tr>
+<tr class="separator:a37839e682504af17b3bd41ab80935814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa552097f3047f4f471169e04685c0b90" id="r_aa552097f3047f4f471169e04685c0b90"><td class="memItemLeft" align="right" valign="top"><a id="aa552097f3047f4f471169e04685c0b90" name="aa552097f3047f4f471169e04685c0b90"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>magnetic</b> (double x) const</td></tr>
+<tr class="separator:aa552097f3047f4f471169e04685c0b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b872cc3fbf0ed5e31e670ac3d115ab" id="r_a86b872cc3fbf0ed5e31e670ac3d115ab"><td class="memItemLeft" align="right" valign="top"><a id="a86b872cc3fbf0ed5e31e670ac3d115ab" name="a86b872cc3fbf0ed5e31e670ac3d115ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuRequested</b> (const QPoint &amp;arg_1, const QPointF &amp;arg_2)</td></tr>
 <tr class="separator:a86b872cc3fbf0ed5e31e670ac3d115ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +202,33 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>View</b></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Replaces the selected point arrays, or all of them if none is selected, by linear segments that follow them within the simplification tolerance. </p>
+
+</div>
+</div>
+<a id="a37839e682504af17b3bd41ab80935814" name="a37839e682504af17b3bd41ab80935814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37839e682504af17b3bd41ab80935814">&#9670;&#160;</a></span>setMagnetism()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Curve::Presenter::setMagnetism </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; double(double)&gt;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Where a point dragged to <code>x</code> lands, e.g. following the timeline's magnetism for processes whose x is time. Identity when unset. </p>
 
 </div>
 </div>

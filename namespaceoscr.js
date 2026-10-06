@@ -59,7 +59,7 @@ var namespaceoscr =
     [ "ProtocolSettingsWidget", "classoscr_1_1_protocol_settings_widget.html", null ],
     [ "QPainterAdapter", "structoscr_1_1_q_painter_adapter.html", "structoscr_1_1_q_painter_adapter" ],
     [ "rgba_color", "structoscr_1_1rgba__color.html", null ],
-    [ "RootItem", "structoscr_1_1_root_item.html", null ],
+    [ "RootItem", "structoscr_1_1_root_item.html", "structoscr_1_1_root_item" ],
     [ "ScoreLayerFactory", "classoscr_1_1_score_layer_factory.html", null ],
     [ "Serializer", "structoscr_1_1_serializer.html", null ],
     [ "SetGUIValue", "structoscr_1_1_set_g_u_i_value.html", null ],

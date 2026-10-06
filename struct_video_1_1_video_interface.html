@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('struct_video_1_1_video_interface.html'
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_video_1_1_video_interface-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Video::VideoInterface Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -135,9 +136,13 @@ virtual AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>dequeue_
 <tr class="memitem:a574fe3e5f0576c2332f84939be6b9cbc" id="r_a574fe3e5f0576c2332f84939be6b9cbc"><td class="memItemLeft" align="right" valign="top"><a id="a574fe3e5f0576c2332f84939be6b9cbc" name="a574fe3e5f0576c2332f84939be6b9cbc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release_frame</b> (AVFrame *frame) noexcept=0</td></tr>
 <tr class="separator:a574fe3e5f0576c2332f84939be6b9cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5cb152cfdf24c88465b8b1f01e5c933" id="r_ab5cb152cfdf24c88465b8b1f01e5c933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ab5cb152cfdf24c88465b8b1f01e5c933">seek</a> (int64_t flicks)</td></tr>
+<tr class="separator:ab5cb152cfdf24c88465b8b1f01e5c933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad22fa83792f30d06ae86f93f276d0819" id="r_ad22fa83792f30d06ae86f93f276d0819"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad22fa83792f30d06ae86f93f276d0819">seek_generation</a> {}</td></tr>
+<tr class="separator:ad22fa83792f30d06ae86f93f276d0819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_metadata')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></td></tr>
 <tr class="memitem:a2c8b785ad1b3e3f64daa0c0149bb94dc inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a2c8b785ad1b3e3f64daa0c0149bb94dc"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
@@ -145,6 +150,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></
 <tr class="memitem:a34fb34fd54496c01525277c9e7f89d8e inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a34fb34fd54496c01525277c9e7f89d8e"><td class="memItemLeft" align="right" valign="top">
 AVCodecID&#160;</td><td class="memItemRight" valign="bottom"><b>codec_id</b> = AV_CODEC_ID_NONE</td></tr>
 <tr class="separator:a34fb34fd54496c01525277c9e7f89d8e inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1da18db860eb4066370df867265ece5 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_aa1da18db860eb4066370df867265ece5"><td class="memItemLeft" align="right" valign="top">
+FrameAccess&#160;</td><td class="memItemRight" valign="bottom"><b>frame_access</b> = FrameAccess::Unknown</td></tr>
+<tr class="separator:aa1da18db860eb4066370df867265ece5 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b57edcf6d1348109f4197aae800a3b inherit pub_attribs_struct_video_1_1_video_metadata" id="r_ae8b57edcf6d1348109f4197aae800a3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_metadata.html#ae8b57edcf6d1348109f4197aae800a3b">max_keyframe_gap</a> {-1}</td></tr>
+<tr class="separator:ae8b57edcf6d1348109f4197aae800a3b inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741acf3d405eb10f32a1b432be6edf15 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a741acf3d405eb10f32a1b432be6edf15"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b> {}</td></tr>
 <tr class="separator:a741acf3d405eb10f32a1b432be6edf15 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +167,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>flicks_per_dts</b> 
 <tr class="memitem:a83f8ae62a202fe01125c83dd0ae13736 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a83f8ae62a202fe01125c83dd0ae13736"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dts_per_flicks</b> {}</td></tr>
 <tr class="separator:a83f8ae62a202fe01125c83dd0ae13736 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a981a01622e1880957c64d9aad7cec840"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>start_pts</b> {}</td></tr>
+<tr class="memdesc:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestamp shown at playback time 0: see playbackStartPts. <br /></td></tr>
+<tr class="separator:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a5661683b81dc908b754583d12c8fb02d"><td class="memItemLeft" align="right" valign="top">
+AVRational&#160;</td><td class="memItemRight" valign="bottom"><b>time_base</b> {0, 1}</td></tr>
+<tr class="memdesc:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata"><td class="mdescLeft">&#160;</td><td class="mdescRight">The video stream's time base, which pts are counted in. <br /></td></tr>
+<tr class="separator:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_image_format"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_image_format')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a></td></tr>
 <tr class="memitem:a695ab56b687abdc5bfd6db6be25fdd45 inherit pub_attribs_struct_video_1_1_image_format" id="r_a695ab56b687abdc5bfd6db6be25fdd45"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> {}</td></tr>
@@ -205,6 +223,52 @@ Tonemap&#160;</td><td class="memItemRight" valign="bottom"><b>tonemap</b> = ::Vi
 Deinterlace&#160;</td><td class="memItemRight" valign="bottom"><b>deinterlace</b> = ::Video::Deinterlace::Weave</td></tr>
 <tr class="separator:a37329af17ab10e93587b6aa83dd2e606 inherit pub_attribs_struct_video_1_1_image_format"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5cb152cfdf24c88465b8b1f01e5c933" name="ab5cb152cfdf24c88465b8b1f01e5c933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5cb152cfdf24c88465b8b1f01e5c933">&#9670;&#160;</a></span>seek()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Video::VideoInterface::seek </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>flicks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Asks for the frames from this playback time on; a source that cannot seek ignores it. </p>
+
+<p>Reimplemented in <a class="el" href="class_video_1_1_video_decoder.html#ae67e6ec167d849b978683c8bcbc2b67f">Video::VideoDecoder</a>, and <a class="el" href="class_gfx_1_1_pipe_wire_1_1_input_stream.html#a1c465f0a5234b911b85072416a4d8eb8">Gfx::PipeWire::InputStream</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad22fa83792f30d06ae86f93f276d0819" name="ad22fa83792f30d06ae86f93f276d0819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad22fa83792f30d06ae86f93f276d0819">&#9670;&#160;</a></span>seek_generation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_int Video::VideoInterface::seek_generation {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The generation (frameGeneration) of the last seek done: a frame of an earlier one is from before it, and is not to be shown. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_video_interface_8hpp_source.html">VideoInterface.hpp</a></li>
 <li><b>VideoDecoder.cpp</b></li>

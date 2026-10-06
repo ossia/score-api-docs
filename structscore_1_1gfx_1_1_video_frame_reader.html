@@ -146,9 +146,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>releaseAllFrames</b> 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2696d7e77103d8683a9141da06008bd3" id="r_a2696d7e77103d8683a9141da06008bd3"><td class="memItemLeft" align="right" valign="top"><a id="a2696d7e77103d8683a9141da06008bd3" name="a2696d7e77103d8683a9141da06008bd3"></a>
-static AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>nextFrame</b> (const <a class="el" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a> &amp;node, <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a> &amp;decoder, std::vector&lt; AVFrame * &gt; &amp;framesToFree, AVFrame *&amp;nextFrame)</td></tr>
-<tr class="separator:a2696d7e77103d8683a9141da06008bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c7a35e324958424af8701ec72716601" id="r_a5c7a35e324958424af8701ec72716601"><td class="memItemLeft" align="right" valign="top">static AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_video_frame_reader.html#a5c7a35e324958424af8701ec72716601">nextFrame</a> (const <a class="el" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a> &amp;node, <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a> &amp;decoder, std::vector&lt; AVFrame * &gt; &amp;framesToFree, AVFrame *&amp;nextFrame, bool showing)</td></tr>
+<tr class="separator:a5c7a35e324958424af8701ec72716601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -172,6 +171,67 @@ std::vector&lt; AVFrame * &gt;&#160;</td><td class="memItemRight" valign="bottom
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_refcounted_frame.html">RefcountedFrame</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_framesInFlight</b></td></tr>
 <tr class="separator:af575db64a4031ebad3f67a5cf3c84310 inherit pub_attribs_structscore_1_1gfx_1_1_video_frame_share"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5c7a35e324958424af8701ec72716601" name="a5c7a35e324958424af8701ec72716601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c7a35e324958424af8701ec72716601">&#9670;&#160;</a></span>nextFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AVFrame * score::gfx::VideoFrameReader::nextFrame </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classscore_1_1gfx_1_1_video_node.html">VideoNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>decoder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; AVFrame * &gt; &amp;&#160;</td>
+          <td class="paramname"><em>framesToFree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AVFrame *&amp;&#160;</td>
+          <td class="paramname"><em>nextFrame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The frame for the node's current time, if a new one is due. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">showing</td><td>whether a frame is on screen: until one is, the first frame shows even before its time, as in <a class="el" href="classscore_1_1gfx_1_1_direct_video_node_renderer.html" title="Renderer for intra-only video codecs with instant seeking.">DirectVideoNodeRenderer</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_video_node_8hpp_source.html">VideoNode.hpp</a></li>
 <li><b>VideoNode.cpp</b></li>

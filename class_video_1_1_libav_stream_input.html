@@ -154,6 +154,9 @@ const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ur
 <tr class="memitem:ae144424911c2f3e2432ce6f944665f11 inherit pub_methods_class_video_1_1_external_input" id="r_ae144424911c2f3e2432ce6f944665f11"><td class="memItemLeft" align="right" valign="top">
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>notifyFormatChange</b> (int new_w, int new_h, AVPixelFormat new_pixfmt) noexcept</td></tr>
 <tr class="separator:ae144424911c2f3e2432ce6f944665f11 inherit pub_methods_class_video_1_1_external_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_video_1_1_video_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_video_1_1_video_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></td></tr>
+<tr class="memitem:ab5cb152cfdf24c88465b8b1f01e5c933 inherit pub_methods_struct_video_1_1_video_interface" id="r_ab5cb152cfdf24c88465b8b1f01e5c933"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ab5cb152cfdf24c88465b8b1f01e5c933">seek</a> (int64_t flicks)</td></tr>
+<tr class="separator:ab5cb152cfdf24c88465b8b1f01e5c933 inherit pub_methods_struct_video_1_1_video_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_video_1_1_lib_a_v_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_video_1_1_lib_a_v_decoder')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_video_1_1_lib_a_v_decoder.html">Video::LibAVDecoder</a></td></tr>
 <tr class="memitem:aaee71055b4bfb7a2ca7fde01859d46ac inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_aaee71055b4bfb7a2ca7fde01859d46ac"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enqueue_frame</b> (const AVPacket *pkt) noexcept</td></tr>
@@ -185,6 +188,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>load_packet_in_frame<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_struct_video_1_1_video_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_interface')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></td></tr>
+<tr class="memitem:ad22fa83792f30d06ae86f93f276d0819 inherit pub_attribs_struct_video_1_1_video_interface" id="r_ad22fa83792f30d06ae86f93f276d0819"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad22fa83792f30d06ae86f93f276d0819">seek_generation</a> {}</td></tr>
+<tr class="separator:ad22fa83792f30d06ae86f93f276d0819 inherit pub_attribs_struct_video_1_1_video_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_metadata')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></td></tr>
 <tr class="memitem:a2c8b785ad1b3e3f64daa0c0149bb94dc inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a2c8b785ad1b3e3f64daa0c0149bb94dc"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
@@ -192,6 +198,11 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></
 <tr class="memitem:a34fb34fd54496c01525277c9e7f89d8e inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a34fb34fd54496c01525277c9e7f89d8e"><td class="memItemLeft" align="right" valign="top">
 AVCodecID&#160;</td><td class="memItemRight" valign="bottom"><b>codec_id</b> = AV_CODEC_ID_NONE</td></tr>
 <tr class="separator:a34fb34fd54496c01525277c9e7f89d8e inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1da18db860eb4066370df867265ece5 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_aa1da18db860eb4066370df867265ece5"><td class="memItemLeft" align="right" valign="top">
+FrameAccess&#160;</td><td class="memItemRight" valign="bottom"><b>frame_access</b> = FrameAccess::Unknown</td></tr>
+<tr class="separator:aa1da18db860eb4066370df867265ece5 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b57edcf6d1348109f4197aae800a3b inherit pub_attribs_struct_video_1_1_video_metadata" id="r_ae8b57edcf6d1348109f4197aae800a3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_metadata.html#ae8b57edcf6d1348109f4197aae800a3b">max_keyframe_gap</a> {-1}</td></tr>
+<tr class="separator:ae8b57edcf6d1348109f4197aae800a3b inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a741acf3d405eb10f32a1b432be6edf15 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a741acf3d405eb10f32a1b432be6edf15"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b> {}</td></tr>
 <tr class="separator:a741acf3d405eb10f32a1b432be6edf15 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +215,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>flicks_per_dts</b> 
 <tr class="memitem:a83f8ae62a202fe01125c83dd0ae13736 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a83f8ae62a202fe01125c83dd0ae13736"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dts_per_flicks</b> {}</td></tr>
 <tr class="separator:a83f8ae62a202fe01125c83dd0ae13736 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a981a01622e1880957c64d9aad7cec840"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>start_pts</b> {}</td></tr>
+<tr class="memdesc:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timestamp shown at playback time 0: see playbackStartPts. <br /></td></tr>
+<tr class="separator:a981a01622e1880957c64d9aad7cec840 inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a5661683b81dc908b754583d12c8fb02d"><td class="memItemLeft" align="right" valign="top">
+AVRational&#160;</td><td class="memItemRight" valign="bottom"><b>time_base</b> {0, 1}</td></tr>
+<tr class="memdesc:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata"><td class="mdescLeft">&#160;</td><td class="mdescRight">The video stream's time base, which pts are counted in. <br /></td></tr>
+<tr class="separator:a5661683b81dc908b754583d12c8fb02d inherit pub_attribs_struct_video_1_1_video_metadata"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_image_format"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_image_format')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a></td></tr>
 <tr class="memitem:a695ab56b687abdc5bfd6db6be25fdd45 inherit pub_attribs_struct_video_1_1_image_format" id="r_a695ab56b687abdc5bfd6db6be25fdd45"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> {}</td></tr>
@@ -273,6 +292,11 @@ AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecCo
 <tr class="memitem:a2e7538c68187107f804b021a0e4de51b inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_a2e7538c68187107f804b021a0e4de51b"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_video_1_1_rescale.html">Rescale</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rescale</b></td></tr>
 <tr class="separator:a2e7538c68187107f804b021a0e4de51b inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ec1331db8b85e78911ed5e5852f8fa inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_a26ec1331db8b85e78911ed5e5852f8fa"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_video_1_1_missing_timestamps.html">MissingTimestamps</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_missingTimestamps</b></td></tr>
+<tr class="separator:a26ec1331db8b85e78911ed5e5852f8fa inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad790cee501b4e490d19e0bead99cc860 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_ad790cee501b4e490d19e0bead99cc860"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#ad790cee501b4e490d19e0bead99cc860">m_ptsLead</a> {}</td></tr>
+<tr class="separator:ad790cee501b4e490d19e0bead99cc860 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13afbdf213067ad9b390aa68e44bb176 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_a13afbdf213067ad9b390aa68e44bb176"><td class="memItemLeft" align="right" valign="top">
 std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
 <tr class="memdesc:a13afbdf213067ad9b390aa68e44bb176 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by the decoding thread, polled by the owner waiting for the end. <br /></td></tr>

@@ -174,11 +174,32 @@ AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecCo
 <tr class="memitem:a2e7538c68187107f804b021a0e4de51b" id="r_a2e7538c68187107f804b021a0e4de51b"><td class="memItemLeft" align="right" valign="top"><a id="a2e7538c68187107f804b021a0e4de51b" name="a2e7538c68187107f804b021a0e4de51b"></a>
 <a class="el" href="class_video_1_1_rescale.html">Rescale</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rescale</b></td></tr>
 <tr class="separator:a2e7538c68187107f804b021a0e4de51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ec1331db8b85e78911ed5e5852f8fa" id="r_a26ec1331db8b85e78911ed5e5852f8fa"><td class="memItemLeft" align="right" valign="top"><a id="a26ec1331db8b85e78911ed5e5852f8fa" name="a26ec1331db8b85e78911ed5e5852f8fa"></a>
+<a class="el" href="struct_video_1_1_missing_timestamps.html">MissingTimestamps</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_missingTimestamps</b></td></tr>
+<tr class="separator:a26ec1331db8b85e78911ed5e5852f8fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad790cee501b4e490d19e0bead99cc860" id="r_ad790cee501b4e490d19e0bead99cc860"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#ad790cee501b4e490d19e0bead99cc860">m_ptsLead</a> {}</td></tr>
+<tr class="separator:ad790cee501b4e490d19e0bead99cc860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13afbdf213067ad9b390aa68e44bb176" id="r_a13afbdf213067ad9b390aa68e44bb176"><td class="memItemLeft" align="right" valign="top"><a id="a13afbdf213067ad9b390aa68e44bb176" name="a13afbdf213067ad9b390aa68e44bb176"></a>
 std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
 <tr class="memdesc:a13afbdf213067ad9b390aa68e44bb176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by the decoding thread, polled by the owner waiting for the end. <br /></td></tr>
 <tr class="separator:a13afbdf213067ad9b390aa68e44bb176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad790cee501b4e490d19e0bead99cc860" name="ad790cee501b4e490d19e0bead99cc860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad790cee501b4e490d19e0bead99cc860">&#9670;&#160;</a></span>m_ptsLead</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Video::LibAVDecoder::m_ptsLead {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The largest pts - dts seen: a seek for a time asks for that much earlier, the demuxer seeking on dts. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_rescale_8hpp_source.html">Rescale.hpp</a></li>
 <li><b>VideoDecoder.cpp</b></li>

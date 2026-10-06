@@ -141,6 +141,8 @@ const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>timeSyncs
 <tr class="memitem:a953e4c43c5c6bc664befc4f36fdf5f46" id="r_a953e4c43c5c6bc664befc4f36fdf5f46"><td class="memItemLeft" align="right" valign="top"><a id="a953e4c43c5c6bc664befc4f36fdf5f46" name="a953e4c43c5c6bc664befc4f36fdf5f46"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>playInterval</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;itv)</td></tr>
 <tr class="separator:a953e4c43c5c6bc664befc4f36fdf5f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe806e33a1718c6bbb3503381f53044" id="r_adbe806e33a1718c6bbb3503381f53044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_execution_1_1_scenario_component_base.html#adbe806e33a1718c6bbb3503381f53044">playIntervalFrom</a> (const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;itv, <a class="el" href="struct_time_val.html">TimeVal</a> t)</td></tr>
+<tr class="separator:adbe806e33a1718c6bbb3503381f53044"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a305bcb977072200b196a17983ef8d" id="r_a42a305bcb977072200b196a17983ef8d"><td class="memItemLeft" align="right" valign="top"><a id="a42a305bcb977072200b196a17983ef8d" name="a42a305bcb977072200b196a17983ef8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stopInterval</b> (const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;itv)</td></tr>
 <tr class="separator:a42a305bcb977072200b196a17983ef8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +236,36 @@ Additional Inherited Members</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>model_type</b> = Process_T</td></tr>
 <tr class="separator:a6bd5e79eb23e0c94eb41bbc7ee29f43a inherit pub_types_class_process_1_1_generic_process_component___t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adbe806e33a1718c6bbb3503381f53044" name="adbe806e33a1718c6bbb3503381f53044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe806e33a1718c6bbb3503381f53044">&#9670;&#160;</a></span>playIntervalFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Execution::ScenarioComponentBase::playIntervalFrom </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>itv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_time_val.html">TimeVal</a>&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>While the score plays: moves <code>itv</code> to <code>t</code>, starting it at once if it is not running. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_process_2_scenario_execution_8hpp_source.html">Process/ScenarioExecution.hpp</a></li>
 <li><b>ScenarioExecution.cpp</b></li>

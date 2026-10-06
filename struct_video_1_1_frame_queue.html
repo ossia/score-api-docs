@@ -150,6 +150,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_discard_frame</b>
 <tr class="memitem:a0c8aa97d7d6067602d4b6db96676e811" id="r_a0c8aa97d7d6067602d4b6db96676e811"><td class="memItemLeft" align="right" valign="top"><a id="a0c8aa97d7d6067602d4b6db96676e811" name="a0c8aa97d7d6067602d4b6db96676e811"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release</b> (AVFrame *frame) noexcept</td></tr>
 <tr class="separator:a0c8aa97d7d6067602d4b6db96676e811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24fcbf7d2ee30184cf2e432e1a93f006" id="r_a24fcbf7d2ee30184cf2e432e1a93f006"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_frame_queue.html#a24fcbf7d2ee30184cf2e432e1a93f006">start_generation</a> () noexcept</td></tr>
+<tr class="separator:a24fcbf7d2ee30184cf2e432e1a93f006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c2faed89122ae7c9e420ef4c536bb2" id="r_aa0c2faed89122ae7c9e420ef4c536bb2"><td class="memItemLeft" align="right" valign="top"><a id="aa0c2faed89122ae7c9e420ef4c536bb2" name="aa0c2faed89122ae7c9e420ef4c536bb2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drain</b> ()</td></tr>
 <tr class="separator:aa0c2faed89122ae7c9e420ef4c536bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,6 +159,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drain</b> ()</td></tr
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
 <tr class="separator:a1ff601f6051c73bc6f5e9f49c6effc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a24fcbf7d2ee30184cf2e432e1a93f006" name="a24fcbf7d2ee30184cf2e432e1a93f006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24fcbf7d2ee30184cf2e432e1a93f006">&#9670;&#160;</a></span>start_generation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Video::FrameQueue::start_generation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Frames enqueued from now on belong to a new seek. Each frame carries the generation it was enqueued in (frameGeneration). </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_frame_queue_8hpp_source.html">FrameQueue.hpp</a></li>
 <li><b>FrameQueue.cpp</b></li>

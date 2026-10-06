@@ -113,6 +113,7 @@ $(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_video_material_
  <a href="structscore_1_1gfx_1_1_video_material_u_b_o.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>UBO shared across all video objects. </p>
+<p>Must match the <code>material_t</code> block of SCORE_GFX_VIDEO_UNIFORMS field for field (std140 puts its vec4 at offset 16): a shorter buffer makes the shaders read past its end. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -122,7 +123,25 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b> [2] {1.f, 
 <tr class="memitem:a106164f7fdd1595076a3b6d878f53404" id="r_a106164f7fdd1595076a3b6d878f53404"><td class="memItemLeft" align="right" valign="top"><a id="a106164f7fdd1595076a3b6d878f53404" name="a106164f7fdd1595076a3b6d878f53404"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>textureSize</b> [2] {1.f, 1.f}</td></tr>
 <tr class="separator:a106164f7fdd1595076a3b6d878f53404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4107415efe937259cf6198f8b230c77" id="r_ac4107415efe937259cf6198f8b230c77"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_video_material_u_b_o.html#ac4107415efe937259cf6198f8b230c77">field</a> [4] {}</td></tr>
+<tr class="separator:ac4107415efe937259cf6198f8b230c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac4107415efe937259cf6198f8b230c77" name="ac4107415efe937259cf6198f8b230c77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4107415efe937259cf6198f8b230c77">&#9670;&#160;</a></span>field</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float score::gfx::VideoMaterialUBO::field[4] {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>(parity of the newest field, deinterlace mode, unused, unused): see videoFieldMode. Zero is progressive. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_common_u_b_os_8hpp_source.html">CommonUBOs.hpp</a></li>
 </ul>

@@ -818,6 +818,7 @@ var hierarchy =
     [ "score::gfx::DecodedImage", "structscore_1_1gfx_1_1_decoded_image.html", null ],
     [ "Nodes::PulseToNote::detail::DecodedNote", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_decoded_note.html", null ],
     [ "Video::DecoderConfiguration", "struct_video_1_1_decoder_configuration.html", null ],
+    [ "Video::DecoderThreading", "struct_video_1_1_decoder_threading.html", null ],
     [ "Media::DecodingSetup", "struct_media_1_1_decoding_setup.html", null ],
     [ "boost::default_dfs_visitor", null, [
       [ "Execution::dfs_visitor", "struct_execution_1_1dfs__visitor.html", null ],
@@ -1153,6 +1154,7 @@ var hierarchy =
     [ "Faust::FoundKeys", "struct_faust_1_1_found_keys.html", null ],
     [ "gpp::qrhi::DefaultPipeline::layout::fragment_input", "structgpp_1_1qrhi_1_1_default_pipeline_1_1layout_1_1fragment__input.html", null ],
     [ "avnd_tools::value_serialization::json_reader::frame", "structavnd__tools_1_1value__serialization_1_1json__reader_1_1frame.html", null ],
+    [ "Video::FrameAccessProbe", "struct_video_1_1_frame_access_probe.html", null ],
     [ "score::gfx::drm::FramebufferDesc", "structscore_1_1gfx_1_1drm_1_1_framebuffer_desc.html", null ],
     [ "libfreenect2::FrameListener", null, [
       [ "Gfx::Kinect2::Listener", "struct_gfx_1_1_kinect2_1_1_listener.html", null ]
@@ -1245,10 +1247,12 @@ var hierarchy =
       [ "score::gfx::P210Decoder", "structscore_1_1gfx_1_1_p210_decoder.html", null ],
       [ "score::gfx::P410Decoder", "structscore_1_1gfx_1_1_p410_decoder.html", null ],
       [ "score::gfx::PA16Decoder", "structscore_1_1gfx_1_1_p_a16_decoder.html", null ],
+      [ "score::gfx::PAL8Decoder", "structscore_1_1gfx_1_1_p_a_l8_decoder.html", null ],
       [ "score::gfx::PackedBitfieldYUVDecoder", "structscore_1_1gfx_1_1_packed_bitfield_y_u_v_decoder.html", null ],
       [ "score::gfx::PackedDecoder", "structscore_1_1gfx_1_1_packed_decoder.html", null ],
       [ "score::gfx::PackedRectDecoder", "structscore_1_1gfx_1_1_packed_rect_decoder.html", null ],
       [ "score::gfx::PlanarDecoder", "structscore_1_1gfx_1_1_planar_decoder.html", null ],
+      [ "score::gfx::PlanarYUVDecoder", "structscore_1_1gfx_1_1_planar_y_u_v_decoder.html", null ],
       [ "score::gfx::R210Decoder", "structscore_1_1gfx_1_1_r210_decoder.html", null ],
       [ "score::gfx::RGB24Decoder", "structscore_1_1gfx_1_1_r_g_b24_decoder.html", null ],
       [ "score::gfx::RGB48Decoder", "structscore_1_1gfx_1_1_r_g_b48_decoder.html", null ],
@@ -1258,6 +1262,7 @@ var hierarchy =
       [ "score::gfx::V210Decoder", "structscore_1_1gfx_1_1_v210_decoder.html", null ],
       [ "score::gfx::VUYADecoder", "structscore_1_1gfx_1_1_v_u_y_a_decoder.html", null ],
       [ "score::gfx::XV30Decoder", "structscore_1_1gfx_1_1_x_v30_decoder.html", null ],
+      [ "score::gfx::XYZ12Decoder", "structscore_1_1gfx_1_1_x_y_z12_decoder.html", null ],
       [ "score::gfx::Y210Decoder", "structscore_1_1gfx_1_1_y210_decoder.html", null ],
       [ "score::gfx::YUV420Decoder", "structscore_1_1gfx_1_1_y_u_v420_decoder.html", null ],
       [ "score::gfx::YUV420P10Decoder", "structscore_1_1gfx_1_1_y_u_v420_p10_decoder.html", null ],
@@ -1496,8 +1501,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -2388,6 +2393,7 @@ var hierarchy =
     [ "Dataflow::minmax< T >", "struct_dataflow_1_1minmax.html", null ],
     [ "Curve::MinMaxPyramid", "class_curve_1_1_min_max_pyramid.html", null ],
     [ "Protocols::MinuitSpecificSettings", "struct_protocols_1_1_minuit_specific_settings.html", null ],
+    [ "Video::MissingTimestamps", "struct_video_1_1_missing_timestamps.html", null ],
     [ "Media::AudioFile::MmapReader", "struct_media_1_1_audio_file_1_1_mmap_reader.html", null ],
     [ "Media::AudioFile::MmapView", "struct_media_1_1_audio_file_1_1_mmap_view.html", null ],
     [ "Protocols::Artnet::ModeInfo", "struct_protocols_1_1_artnet_1_1_mode_info.html", null ],
@@ -2849,6 +2855,7 @@ var hierarchy =
     [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
     [ "score::FilePlacement::Placement", "structscore_1_1_file_placement_1_1_placement.html", null ],
+    [ "score::gfx::PlanarYUVLayout", "structscore_1_1gfx_1_1_planar_y_u_v_layout.html", null ],
     [ "score::gfx::interop::BorrowedHostBuffer::Plane", "structscore_1_1gfx_1_1interop_1_1_borrowed_host_buffer_1_1_plane.html", null ],
     [ "Threedim::Plane", "struct_threedim_1_1_plane.html", null ],
     [ "score::gfx::drm::PlaneFormat", "structscore_1_1gfx_1_1drm_1_1_plane_format.html", null ],
@@ -3562,6 +3569,9 @@ var hierarchy =
       [ "score::HelperPanelDelegate::FasterLabel", "structscore_1_1_helper_panel_delegate_1_1_faster_label.html", null ],
       [ "score::ReactiveLabel< Property_T >", "classscore_1_1_reactive_label.html", null ]
     ] ],
+    [ "QLayout", null, [
+      [ "score::CardFlowLayout", "classscore_1_1_card_flow_layout.html", null ]
+    ] ],
     [ "QLineEdit", null, [
       [ "Process::AddressLineEditBase< State::AddressAccessorValidator, Parent_T >", "class_process_1_1_address_line_edit_base.html", [
         [ "Process::AddressAccessorLineEdit< Parent_T >", "class_process_1_1_address_accessor_line_edit.html", null ]
@@ -4274,8 +4284,7 @@ var hierarchy =
       [ "JS::QmlProcess", "class_j_s_1_1_qml_process.html", null ]
     ] ],
     [ "QProxyStyle", null, [
-      [ "score::ApplicationStyle", "classscore_1_1_application_style.html", null ],
-      [ "score::ScrollingPopupStyle", "structscore_1_1_scrolling_popup_style.html", null ]
+      [ "score::ApplicationStyle", "classscore_1_1_application_style.html", null ]
     ] ],
     [ "QPushButton", null, [
       [ "score::ToggleButton", "structscore_1_1_toggle_button.html", null ]

@@ -126,190 +126,259 @@ $(document).ready(function(){initNavTree('_step_node_8hpp_source.html',''); init
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>Media::Step</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="class_media_1_1_step_1_1step__node.html">step_node</a> final : <span class="keyword">public</span> ossia::nonowning_graph_node</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  ossia::value_inlet sequence_select;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  ossia::value_inlet switch_quantification;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  ossia::value_inlet duration;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  ossia::value_outlet out;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">   37</a></span>  std::vector&lt;ossia::float_vector&gt; <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> current_sequence{};</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">   41</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a>{-1};</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">double</span> switch_rate{1.};</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">   45</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>{0.0625};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">bool</span> synced{<span class="keyword">true</span>};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">   49</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>{};</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">   51</a></span>  std::atomic_int <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">last</a>{-1};</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_class" href="class_media_1_1_step_1_1step__node.html">step_node</a>()</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    m_inlets.push_back(&amp;sequence_select);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    m_inlets.push_back(&amp;switch_quantification);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    m_inlets.push_back(&amp;duration);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    m_outlets.push_back(&amp;out);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::string label() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Step&quot;</span>; }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> request_sequence(<span class="keywordtype">int</span> idx) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.empty())</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    idx = std::clamp(idx, 0, <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()) - 1);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = (idx == current_sequence) ? -1 : idx;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">   72</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">set_duration</a>(<span class="keyword">const</span> ossia::value&amp; v) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  {</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">switch</span>(v.get_type())</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordflow">case</span> ossia::val_type::FLOAT:</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keywordflow">case</span> ossia::val_type::INT:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keywordflow">case</span> ossia::val_type::BOOL:</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> = ossia::convert&lt;float&gt;(v);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        synced = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keywordflow">default</span>: {</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keyword">auto</span> vec = ossia::convert&lt;ossia::vec2f&gt;(v);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> = vec[0];</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        synced = vec[1] != 0.f;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  }</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="class_media_1_1_step_1_1step__node.html">step_node</a> final : <span class="keyword">public</span> ossia::nonowning_graph_node</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  ossia::value_inlet sequence_select;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  ossia::value_inlet switch_quantification;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  ossia::value_inlet duration;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  ossia::value_outlet out;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">   38</a></span>  std::vector&lt;ossia::float_vector&gt; <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">int</span> current_sequence{};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">   42</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a>{-1};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">double</span> switch_rate{1.};</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">   46</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>{0.0625};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">bool</span> synced{<span class="keyword">true</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">   50</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>{};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">   52</a></span>  std::atomic_int <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">last</a>{-1};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">   56</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a>{};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c">   58</a></span>  int64_t <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c">next_date</a>{std::numeric_limits&lt;int64_t&gt;::min()};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="class_media_1_1_step_1_1step__node.html">step_node</a>()</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    m_inlets.push_back(&amp;sequence_select);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    m_inlets.push_back(&amp;switch_quantification);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    m_inlets.push_back(&amp;duration);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    m_outlets.push_back(&amp;out);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  std::string label() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;Step&quot;</span>; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">void</span> request_sequence(<span class="keywordtype">int</span> idx) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.empty())</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    idx = std::clamp(idx, 0, <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()) - 1);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = (idx == current_sequence) ? -1 : idx;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">   79</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">set_duration</a>(<span class="keyword">const</span> ossia::value&amp; v) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">switch</span>(v.get_type())</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="keywordflow">case</span> ossia::val_type::FLOAT:</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">case</span> ossia::val_type::INT:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="keywordflow">case</span> ossia::val_type::BOOL:</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> = ossia::convert&lt;float&gt;(v);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        synced = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">default</span>: {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keyword">auto</span> vec = ossia::convert&lt;ossia::vec2f&gt;(v);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> = vec[0];</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        synced = vec[1] != 0.f;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> read_controls() noexcept</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = sequence_select-&gt;get_data(); !d.empty())</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      request_sequence(ossia::convert&lt;int&gt;(d.back().value));</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = switch_quantification-&gt;get_data(); !d.empty())</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      switch_rate = ossia::convert&lt;float&gt;(d.back().value);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = duration-&gt;get_data(); !d.empty())</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">set_duration</a>(d.back().value);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade st) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">// Before any early return: the inlets are cleared once the node has run.</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    read_controls();</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">if</span>(tk.paused() || <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.empty())</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    current_sequence = std::clamp(current_sequence, 0, <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()) - 1);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> &gt;= <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()))</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = -1;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> ratio = st.modelToSamples();</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">const</span> int64_t tick_start = tk.physical_start(ratio);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> rewinding = tk.backward();</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> never = std::numeric_limits&lt;int64_t&gt;::max();</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    int64_t switch_at = never;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> &gt;= 0)</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordflow">if</span>(switch_rate &lt;= 0.)</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        switch_at = tick_start;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keyword">const</span> <span class="keyword">auto</span> points = tk.get_quantification_dates(switch_rate);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">if</span>(!points.empty())</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>          switch_at = tick_start + tk.physical_position(points.front().position, ratio);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(tk, ratio, tick_start, rewinding, std::numeric_limits&lt;int64_t&gt;::min(), switch_at);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordflow">if</span>(switch_at != never)</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    {</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      current_sequence = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = -1;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = 0;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(tk, ratio, tick_start, rewinding, switch_at, never);</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="foldopen" id="foldopen00143" data-start="{" data-end="}">
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">  143</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>      <span class="keyword">const</span> ossia::token_request&amp; tk, <span class="keywordtype">double</span> ratio, int64_t tick_start, <span class="keywordtype">bool</span> rewinding,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      int64_t from, int64_t to) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordflow">if</span>(!(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> &gt; 0.) || !std::isfinite(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>))</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">auto</span> play = [&amp;](int64_t sample) {</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keywordflow">if</span>(sample &gt;= from &amp;&amp; sample &lt; to)</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        play_step(sample, rewinding);</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    };</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordflow">if</span>(synced)</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    {</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      <span class="comment">// The grid of the tempo and of the bar lines, in tick order both ways.</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; q : tk.get_quantification_dates(1. / <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>))</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        play(tick_start + tk.physical_position(q.position, ratio));</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>      <span class="comment">// k * d from the start of the interval.</span></div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> d = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> * ossia::flicks_per_second&lt;double&gt;;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>      <span class="keyword">const</span> int64_t lo = std::min(tk.prev_date.impl, tk.date.impl);</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>      <span class="keyword">const</span> int64_t hi = std::max(tk.prev_date.impl, tk.date.impl);</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      <span class="comment">// [prev; date[ going forward, ]date; prev] rewinding: the same steps</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      <span class="comment">// are crossed on the way out and on the way back.</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      int64_t k0 = rewinding ? int64_t(std::floor(lo / d)) + 1 : int64_t(std::ceil(lo / d));</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      int64_t k1 = rewinding ? int64_t(std::floor(hi / d)) : int64_t(std::ceil(hi / d)) - 1;</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      <span class="comment">// A tick never holds more steps than it has samples.</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      k1 = std::min(k1, k0 + 4096);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>      <span class="keywordflow">if</span>(!rewinding)</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      {</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <span class="keywordflow">for</span>(int64_t k = k0; k &lt;= k1; k++)</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>          play(tk.to_physical_time_in_tick(ossia::time_value{int64_t(k * d)}, ratio));</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      }</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">for</span>(int64_t k = k1; k &gt;= k0; k--)</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>          play(tk.to_physical_time_in_tick(ossia::time_value{int64_t(k * d)}, ratio));</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>      }</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    }</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">void</span> read_controls() noexcept</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = sequence_select-&gt;get_data(); !d.empty())</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      request_sequence(ossia::convert&lt;int&gt;(d.back().value));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = switch_quantification-&gt;get_data(); !d.empty())</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      switch_rate = ossia::convert&lt;float&gt;(d.back().value);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span>(<span class="keyword">auto</span>&amp; d = duration-&gt;get_data(); !d.empty())</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">set_duration</a>(d.back().value);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade st) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// Before any early return: the inlets are cleared once the node has run.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    read_controls();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">if</span>(tk.paused() || <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.empty())</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    current_sequence = std::clamp(current_sequence, 0, <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()) - 1);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> &gt;= <span class="keywordtype">int</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.size()))</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = -1;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> ratio = st.modelToSamples();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">const</span> int64_t tick_start = tk.physical_start(ratio);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> rewinding = tk.backward();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">if</span>(tk.prev_date.impl != <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c">next_date</a>)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#aea7ffe87b9536fb032a7aab508c104f8">follow_jump</a>(tk);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c">next_date</a> = tk.date.impl;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> never = std::numeric_limits&lt;int64_t&gt;::max();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    int64_t switch_at = never;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> &gt;= 0)</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    {</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <span class="keywordflow">if</span>(switch_rate &lt;= 0.)</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        switch_at = tick_start;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keyword">const</span> <span class="keyword">auto</span> points = tk.get_quantification_dates(switch_rate);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">if</span>(!points.empty())</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>          switch_at = tick_start + tk.physical_position(points.front().position, ratio);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    }</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(tk, ratio, tick_start, rewinding, std::numeric_limits&lt;int64_t&gt;::min(), switch_at);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordflow">if</span>(switch_at != never)</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      current_sequence = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">pending_sequence</a> = -1;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = 0;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(tk, ratio, tick_start, rewinding, switch_at, never);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    }</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="}">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">  155</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">step_quarters</a>(<span class="keyword">const</span> ossia::token_request&amp; tk) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> rate = 1. / <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">if</span>(rate &gt; 1.)</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordflow">return</span> 4. / rate;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; sig = tk.signature;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> bar</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        = (sig.upper &gt; 0 &amp;&amp; sig.lower &gt; 0) ? 4. * sig.upper / sig.lower : 4.;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordflow">return</span> bar / rate;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  }</div>
 </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keywordtype">void</span> play_step(int64_t sample, <span class="keywordtype">bool</span> rewinding) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  {</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; seq = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>[current_sequence];</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = seq.size();</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keywordflow">if</span>(n == 0)</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="comment">// Rewinding mirrors going forward: step back first, so going out and back</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="comment">// over the same ground crosses the same steps.</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keywordflow">if</span>(rewinding)</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = (<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> + n - 1) % n;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    <span class="keywordflow">if</span>(current &lt; 0 || current &gt;= n)</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = 0;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    out-&gt;write_value(seq[<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>], sample);</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">last</a>.store(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>, std::memory_order_relaxed);</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">if</span>(!rewinding)</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = (<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> + 1) % n;</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  }</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>};</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#aea7ffe87b9536fb032a7aab508c104f8">  168</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#aea7ffe87b9536fb032a7aab508c104f8">follow_jump</a>(<span class="keyword">const</span> ossia::token_request&amp; tk) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="comment">// Quarter notes since the start of the process, at this tick&#39;s tempo.</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> elapsed</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        = tk.prev_date.impl / ossia::flicks_per_second&lt;double&gt; * tk.tempo / 60.;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a> = tk.musical_start_position - elapsed;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>.empty() ? 0 : int(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>[current_sequence].size());</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keywordflow">if</span>(n == 0 || !(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> &gt; 0.) || !std::isfinite(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>))</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">// Steps whose time has come before this tick, the one on its start excluded.</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">double</span> before{};</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="keywordflow">if</span>(synced)</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> q = <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">step_quarters</a>(tk);</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>      <span class="keywordflow">if</span>(q &gt; 0.)</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        before = std::ceil((tk.musical_start_position - <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a>) / q - 1e-9);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> d = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> * ossia::flicks_per_second&lt;double&gt;;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>      before = std::ceil(tk.prev_date.impl / d);</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">if</span>(std::isfinite(before) &amp;&amp; before &gt;= 0.)</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = int(std::fmod(before, <span class="keywordtype">double</span>(n)));</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  }</div>
 </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>}</div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html">Media::Step::step_node</a></div><div class="ttdoc">Plays the steps of one of several sequences.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:28</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a00525c16b40c80164ee6f3e02fae42fa"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">Media::Step::step_node::step_duration</a></div><div class="ttdeci">double step_duration</div><div class="ttdoc">Seconds, or a fraction of a whole note when synced.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:45</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a0732a8d32826e77058f0fcc4b9c05406"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">Media::Step::step_node::pending_sequence</a></div><div class="ttdeci">int pending_sequence</div><div class="ttdoc">Sequence the next quantification point switches to; -1 when none waits.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:41</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a1db2294e15db3825bccdcbfcc91256c0"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">Media::Step::step_node::sequences</a></div><div class="ttdeci">std::vector&lt; ossia::float_vector &gt; sequences</div><div class="ttdef"><b>Definition</b> StepNode.hpp:37</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a3ec94bd5d6116c27a7e6e23c6eba2ccd"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">Media::Step::step_node::set_duration</a></div><div class="ttdeci">void set_duration(const ossia::value &amp;v) noexcept</div><div class="ttdoc">A plain number is seconds; {value, mode}: mode 0 seconds, else synced.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:72</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a404fd0d52d6b4e690bf7b4f4e7581ead"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">Media::Step::step_node::last</a></div><div class="ttdeci">std::atomic_int last</div><div class="ttdoc">The step that played last; read by the UI thread.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:51</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a7d75fd4ac54640e54eb9b4d3b2b6138a"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">Media::Step::step_node::play_steps</a></div><div class="ttdeci">void play_steps(const ossia::token_request &amp;tk, double ratio, int64_t tick_start, bool rewinding, int64_t from, int64_t to) noexcept</div><div class="ttdoc">Plays the steps whose sample falls in [from; to[.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:143</div></div>
-<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_af8edf3ef05e57737d261695eb3b0fc84"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">Media::Step::step_node::current</a></div><div class="ttdeci">int current</div><div class="ttdoc">The step that plays next.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:49</div></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00197" data-start="{" data-end="}">
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">  197</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">play_steps</a>(</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      <span class="keyword">const</span> ossia::token_request&amp; tk, <span class="keywordtype">double</span> ratio, int64_t tick_start, <span class="keywordtype">bool</span> rewinding,</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      int64_t from, int64_t to) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>  {</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keywordflow">if</span>(!(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> &gt; 0.) || !std::isfinite(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a>))</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">auto</span> play = [&amp;](int64_t sample) {</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keywordflow">if</span>(sample &gt;= from &amp;&amp; sample &lt; to)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        play_step(sample, rewinding);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    };</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordflow">if</span>(synced)</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    {</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      <span class="comment">// k steps from the start, in tick order both ways: the musical positions</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>      <span class="comment">// of [start; end[ going forward, ]end; start] rewinding.</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> q = <a class="code hl_function" href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">step_quarters</a>(tk);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> ms = tk.musical_start_position;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> me = tk.musical_end_position;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>      <span class="keywordflow">if</span>(!(q &gt; 0.) || ms == me)</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      <span class="keyword">constexpr</span> <span class="keywordtype">double</span> eps = 1e-9;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>      int64_t k = rewinding ? int64_t(std::floor((ms - <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a>) / q + eps))</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>                            : int64_t(std::ceil((ms - <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a>) / q - eps));</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      <span class="comment">// A tick never holds more steps than it has samples.</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> guard = 0; guard &lt; 4096; guard++, k += rewinding ? -1 : 1)</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      {</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="keyword">const</span> <span class="keywordtype">double</span> m = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">origin</a> + k * q;</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>        <span class="keywordflow">if</span>(rewinding ? (m &lt;= me + eps) : (m &gt;= me - eps))</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        play(tick_start + tk.physical_position(m, ratio));</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      }</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>      <span class="comment">// k * d from the start of the interval.</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>      <span class="keyword">const</span> <span class="keywordtype">double</span> d = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">step_duration</a> * ossia::flicks_per_second&lt;double&gt;;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>      <span class="keyword">const</span> int64_t lo = std::min(tk.prev_date.impl, tk.date.impl);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>      <span class="keyword">const</span> int64_t hi = std::max(tk.prev_date.impl, tk.date.impl);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>      <span class="comment">// [prev; date[ going forward, ]date; prev] rewinding: the same steps</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>      <span class="comment">// are crossed on the way out and on the way back.</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>      int64_t k0 = rewinding ? int64_t(std::floor(lo / d)) + 1 : int64_t(std::ceil(lo / d));</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>      int64_t k1 = rewinding ? int64_t(std::floor(hi / d)) : int64_t(std::ceil(hi / d)) - 1;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>      <span class="comment">// A tick never holds more steps than it has samples.</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>      k1 = std::min(k1, k0 + 4096);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <span class="keywordflow">if</span>(!rewinding)</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      {</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <span class="keywordflow">for</span>(int64_t k = k0; k &lt;= k1; k++)</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>          play(tk.to_physical_time_in_tick(ossia::time_value{int64_t(k * d)}, ratio));</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>      {</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <span class="keywordflow">for</span>(int64_t k = k1; k &gt;= k0; k--)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>          play(tk.to_physical_time_in_tick(ossia::time_value{int64_t(k * d)}, ratio));</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>      }</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  }</div>
+</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> play_step(int64_t sample, <span class="keywordtype">bool</span> rewinding) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; seq = <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">sequences</a>[current_sequence];</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n = seq.size();</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keywordflow">if</span>(n == 0)</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <span class="comment">// Rewinding mirrors going forward: step back first, so going out and back</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="comment">// over the same ground crosses the same steps.</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordflow">if</span>(rewinding)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = (<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> + n - 1) % n;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordflow">if</span>(current &lt; 0 || current &gt;= n)</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = 0;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    out-&gt;write_value(seq[<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>], sample);</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">last</a>.store(<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a>, std::memory_order_relaxed);</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordflow">if</span>(!rewinding)</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      <a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> = (<a class="code hl_variable" href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">current</a> + 1) % n;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  }</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>};</div>
+</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>}</div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html">Media::Step::step_node</a></div><div class="ttdoc">Plays the steps of one of several sequences.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:29</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a00525c16b40c80164ee6f3e02fae42fa"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a00525c16b40c80164ee6f3e02fae42fa">Media::Step::step_node::step_duration</a></div><div class="ttdeci">double step_duration</div><div class="ttdoc">Seconds, or a fraction of a whole note when synced.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:46</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a0732a8d32826e77058f0fcc4b9c05406"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a0732a8d32826e77058f0fcc4b9c05406">Media::Step::step_node::pending_sequence</a></div><div class="ttdeci">int pending_sequence</div><div class="ttdoc">Sequence the next quantification point switches to; -1 when none waits.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:42</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a1db2294e15db3825bccdcbfcc91256c0"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a1db2294e15db3825bccdcbfcc91256c0">Media::Step::step_node::sequences</a></div><div class="ttdeci">std::vector&lt; ossia::float_vector &gt; sequences</div><div class="ttdef"><b>Definition</b> StepNode.hpp:38</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a3ec94bd5d6116c27a7e6e23c6eba2ccd"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a3ec94bd5d6116c27a7e6e23c6eba2ccd">Media::Step::step_node::set_duration</a></div><div class="ttdeci">void set_duration(const ossia::value &amp;v) noexcept</div><div class="ttdoc">A plain number is seconds; {value, mode}: mode 0 seconds, else synced.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:79</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a404fd0d52d6b4e690bf7b4f4e7581ead"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a404fd0d52d6b4e690bf7b4f4e7581ead">Media::Step::step_node::last</a></div><div class="ttdeci">std::atomic_int last</div><div class="ttdoc">The step that played last; read by the UI thread.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:52</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a711acc7f229250ce47131301d5ef0349"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a711acc7f229250ce47131301d5ef0349">Media::Step::step_node::step_quarters</a></div><div class="ttdeci">double step_quarters(const ossia::token_request &amp;tk) const noexcept</div><div class="ttdef"><b>Definition</b> StepNode.hpp:155</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_a7d75fd4ac54640e54eb9b4d3b2b6138a"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#a7d75fd4ac54640e54eb9b4d3b2b6138a">Media::Step::step_node::play_steps</a></div><div class="ttdeci">void play_steps(const ossia::token_request &amp;tk, double ratio, int64_t tick_start, bool rewinding, int64_t from, int64_t to) noexcept</div><div class="ttdoc">Plays the steps whose sample falls in [from; to[.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:197</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_ab5f0e2b6309810b7e6b1dfb08e2bf0f4"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#ab5f0e2b6309810b7e6b1dfb08e2bf0f4">Media::Step::step_node::origin</a></div><div class="ttdeci">double origin</div><div class="ttdef"><b>Definition</b> StepNode.hpp:56</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_addf2b73201450d59d88662d3ce663b4c"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#addf2b73201450d59d88662d3ce663b4c">Media::Step::step_node::next_date</a></div><div class="ttdeci">int64_t next_date</div><div class="ttdoc">Where the next tick starts if time goes on; anything else is a jump.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:58</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_aea7ffe87b9536fb032a7aab508c104f8"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#aea7ffe87b9536fb032a7aab508c104f8">Media::Step::step_node::follow_jump</a></div><div class="ttdeci">void follow_jump(const ossia::token_request &amp;tk) noexcept</div><div class="ttdef"><b>Definition</b> StepNode.hpp:168</div></div>
+<div class="ttc" id="aclass_media_1_1_step_1_1step__node_html_af8edf3ef05e57737d261695eb3b0fc84"><div class="ttname"><a href="class_media_1_1_step_1_1step__node.html#af8edf3ef05e57737d261695eb3b0fc84">Media::Step::step_node::current</a></div><div class="ttdeci">int current</div><div class="ttdoc">The step that plays next.</div><div class="ttdef"><b>Definition</b> StepNode.hpp:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

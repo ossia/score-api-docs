@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: score::ScrollingPopupStyle Struct Reference</title>
+        <title>score: score::gfx::PlanarYUVLayout Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('structscore_1_1_scrolling_popup_style.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structscore_1_1gfx_1_1_planar_y_u_v_layout.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,29 +103,39 @@ $(document).ready(function(){initNavTree('structscore_1_1_scrolling_popup_style.
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="structscore_1_1_scrolling_popup_style-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">score::ScrollingPopupStyle Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="structscore_1_1gfx_1_1_planar_y_u_v_layout-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">score::gfx::PlanarYUVLayout Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for score::ScrollingPopupStyle:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="structscore_1_1_scrolling_popup_style.png" alt=""/>
- </div></div>
+
+<p>The shape of a planar YUV format: chroma subsampling, sample size, and an optional alpha plane.  
+ <a href="structscore_1_1gfx_1_1_planar_y_u_v_layout.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Asks for the scrolling list drop-down rather than the style's menu one.</p>
-<p>The style answers SH_ComboBox_Popup for a non-editable box, whose list is then a QMenu: it wraps into columns once taller than the screen. A combo box in the scene is a QGraphicsProxyWidget and its menu is laid out in the scene, where there is no screen to measure against. The list drop-down bounds itself to maxVisibleItems and scrolls. </p>
+<div class="textblock"><p>The shape of a planar YUV format: chroma subsampling, sample size, and an optional alpha plane. </p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af7c5dbb630e7ea5ee16ec6a42763f0e9" id="r_af7c5dbb630e7ea5ee16ec6a42763f0e9"><td class="memItemLeft" align="right" valign="top"><a id="af7c5dbb630e7ea5ee16ec6a42763f0e9" name="af7c5dbb630e7ea5ee16ec6a42763f0e9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>styleHint</b> (StyleHint hint, const QStyleOption *opt, const QWidget *w, QStyleHintReturn *ret) const override</td></tr>
-<tr class="separator:af7c5dbb630e7ea5ee16ec6a42763f0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ae3384386be42edeb134288638506369a" id="r_ae3384386be42edeb134288638506369a"><td class="memItemLeft" align="right" valign="top"><a id="ae3384386be42edeb134288638506369a" name="ae3384386be42edeb134288638506369a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>log2ChromaW</b> {1}</td></tr>
+<tr class="memdesc:ae3384386be42edeb134288638506369a"><td class="mdescLeft">&#160;</td><td class="mdescRight">1 halves the chroma planes' width, 2 quarters it. <br /></td></tr>
+<tr class="separator:ae3384386be42edeb134288638506369a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773069f0d3040e03e1ceca8bb9d9867b" id="r_a773069f0d3040e03e1ceca8bb9d9867b"><td class="memItemLeft" align="right" valign="top"><a id="a773069f0d3040e03e1ceca8bb9d9867b" name="a773069f0d3040e03e1ceca8bb9d9867b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>log2ChromaH</b> {1}</td></tr>
+<tr class="separator:a773069f0d3040e03e1ceca8bb9d9867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6deb818434c06bfe84bca46a4d536ae4" id="r_a6deb818434c06bfe84bca46a4d536ae4"><td class="memItemLeft" align="right" valign="top"><a id="a6deb818434c06bfe84bca46a4d536ae4" name="a6deb818434c06bfe84bca46a4d536ae4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>bytesPerSample</b> {1}</td></tr>
+<tr class="separator:a6deb818434c06bfe84bca46a4d536ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80d139ff48d50ab9b635b5f2c3ed4a1" id="r_ad80d139ff48d50ab9b635b5f2c3ed4a1"><td class="memItemLeft" align="right" valign="top"><a id="ad80d139ff48d50ab9b635b5f2c3ed4a1" name="ad80d139ff48d50ab9b635b5f2c3ed4a1"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b> {&quot;1.0&quot;}</td></tr>
+<tr class="memdesc:ad80d139ff48d50ab9b635b5f2c3ed4a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brings a sample to the 8-bit-referenced colour matrices. <br /></td></tr>
+<tr class="separator:ad80d139ff48d50ab9b635b5f2c3ed4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905e4015e549d28e4033cec6a2588de1" id="r_a905e4015e549d28e4033cec6a2588de1"><td class="memItemLeft" align="right" valign="top"><a id="a905e4015e549d28e4033cec6a2588de1" name="a905e4015e549d28e4033cec6a2588de1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>alpha</b> {false}</td></tr>
+<tr class="separator:a905e4015e549d28e4033cec6a2588de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><b>QGraphicsCombo.cpp</b></li>
+<li><a class="el" href="_planar_y_u_v_8hpp_source.html">PlanarYUV.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
