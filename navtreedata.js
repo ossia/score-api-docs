@@ -153,17 +153,17 @@ var NAVTREEINDEX =
 "struct_pd_1_1libpd__list__wrapper.html",
 "struct_protocols_1_1_bitfocus_specific_settings.html#a21907963a50dd0bb253da78ee6e47879",
 "struct_scenario_1_1_slot.html",
-"struct_threedim_1_1_extract_buffer_1_1ins.html",
-"structavnd__tools_1_1_deserialize.html",
-"structoscr_1_1_port.html",
-"structscore_1_1_g_u_i_application_context.html#a56e095a4a7ae4751638f5dc9afdb06b5",
-"structscore_1_1gfx_1_1_bayer_decoder.html#a1b194e5b76b7f87964c8ff8bb294b5c3",
-"structscore_1_1gfx_1_1_graph.html",
-"structscore_1_1gfx_1_1_n_v24_decoder.html",
-"structscore_1_1gfx_1_1_rendered_c_s_f_node.html#a1a96de33e2a76e48a9a562b84e465cd9",
-"structscore_1_1gfx_1_1_u_y_v_y_encoder.html#ad52e06c4e35a2b48cdf649220e8aba3e",
-"structscore_1_1gfx_1_1drm_1_1_device_info.html#a337e346372bf414ab12290c95aaa1efd",
-"structscore_1_1gfx_1_1port__indices.html"
+"struct_threedim_1_1_deformation_control_1_1range.html",
+"structavnd__tools_1_1_beat_tracker_1_1ins.html",
+"structoscr_1_1_normalizer_from_mapper.html",
+"structscore_1_1_g_u_i_application_context.html#a088bb1d03043afc26f5b18ad9d90ad45",
+"structscore_1_1gfx_1_1_bayer_decoder.html#a083415fa7af65d02f2588857b552dee6a7e1f04bffd48aa2e163b2a925fb3986a",
+"structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html",
+"structscore_1_1gfx_1_1_n_v16_decoder.html#a46c88a10e8f119c6fe7a850bb21c9bcb",
+"structscore_1_1gfx_1_1_render_state_1_1_caps.html",
+"structscore_1_1gfx_1_1_u_y_v_y_encoder.html#a96cd7e435a17fa970db9bfd736073469",
+"structscore_1_1gfx_1_1drm_1_1_connector_info.html#ab19d52d2294d109eaa56462d0062d114",
+"structscore_1_1gfx_1_1port__counts.html#a8e6c568819676947bfe232e829eae245"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1501,8 +1501,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1627,11 +1627,14 @@ var hierarchy =
     [ "Threedim::AssetLoader::ins", "struct_threedim_1_1_asset_loader_1_1ins.html", null ],
     [ "Threedim::BuffersToGeometry2::ins", "struct_threedim_1_1_buffers_to_geometry2_1_1ins.html", null ],
     [ "Threedim::BuffersToGeometry::ins", "struct_threedim_1_1_buffers_to_geometry_1_1ins.html", null ],
+    [ "Threedim::Camera::ins", "struct_threedim_1_1_camera_1_1ins.html", null ],
+    [ "Threedim::CameraArray::ins", "struct_threedim_1_1_camera_array_1_1ins.html", null ],
     [ "Threedim::CameraSwitch::ins", "struct_threedim_1_1_camera_switch_1_1ins.html", null ],
     [ "Threedim::ConfigurePrimitive::ins", "struct_threedim_1_1_configure_primitive_1_1ins.html", null ],
     [ "Threedim::CreateCollection::ins", "struct_threedim_1_1_create_collection_1_1ins.html", null ],
     [ "Threedim::CubemapComposer::ins", "struct_threedim_1_1_cubemap_composer_1_1ins.html", null ],
     [ "Threedim::CubemapLoader::ins", "struct_threedim_1_1_cubemap_loader_1_1ins.html", null ],
+    [ "Threedim::EnvironmentLoader::ins", "struct_threedim_1_1_environment_loader_1_1ins.html", null ],
     [ "Threedim::ExtractBuffer2::ins", "struct_threedim_1_1_extract_buffer2_1_1ins.html", null ],
     [ "Threedim::ExtractBuffer::ins", "struct_threedim_1_1_extract_buffer_1_1ins.html", null ],
     [ "Threedim::ExtractSceneBuffer::ins", "struct_threedim_1_1_extract_scene_buffer_1_1ins.html", null ],
@@ -1645,7 +1648,6 @@ var hierarchy =
     [ "Threedim::InjectBuffer::ins", "struct_threedim_1_1_inject_buffer_1_1ins.html", null ],
     [ "Threedim::InjectTexture::ins", "struct_threedim_1_1_inject_texture_1_1ins.html", null ],
     [ "Threedim::Instancer::ins", "struct_threedim_1_1_instancer_1_1ins.html", null ],
-    [ "Threedim::InverseKinematics::ins", "struct_threedim_1_1_inverse_kinematics_1_1ins.html", null ],
     [ "Threedim::Light::ins", "struct_threedim_1_1_light_1_1ins.html", null ],
     [ "Threedim::MaterialOverride::ins", "struct_threedim_1_1_material_override_1_1ins.html", null ],
     [ "Threedim::PBRMesh::ins", "struct_threedim_1_1_p_b_r_mesh_1_1ins.html", null ],
@@ -1663,6 +1665,7 @@ var hierarchy =
     [ "Threedim::TextToMesh::ins", "struct_threedim_1_1_text_to_mesh_1_1ins.html", null ],
     [ "Threedim::TextToTexture::ins", "struct_threedim_1_1_text_to_texture_1_1ins.html", null ],
     [ "Threedim::TextureToBuffer::ins", "struct_threedim_1_1_texture_to_buffer_1_1ins.html", null ],
+    [ "Threedim::Transform3D::ins", "struct_threedim_1_1_transform3_d_1_1ins.html", null ],
     [ "Threedim::VoxelLoader::ins", "struct_threedim_1_1_voxel_loader_1_1ins.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
     [ "score::gfx::FlatScene::InstanceDraw", "structscore_1_1gfx_1_1_flat_scene_1_1_instance_draw.html", null ],
@@ -1908,6 +1911,9 @@ var hierarchy =
         ] ],
         [ "Process::ProcessFactory_T< Gfx::VSA::Model >", "class_process_1_1_process_factory___t.html", [
           [ "Gfx::VSA::ProcessFactory", "struct_gfx_1_1_v_s_a_1_1_process_factory.html", null ]
+        ] ],
+        [ "Process::ProcessFactory_T< YSFX::ProcessModel >", "class_process_1_1_process_factory___t.html", [
+          [ "YSFX::ProcessFactory", "struct_y_s_f_x_1_1_process_factory.html", null ]
         ] ],
         [ "Process::ProcessFactory_T< oscr::ProcessModel< Node > >", "class_process_1_1_process_factory___t.html", [
           [ "oscr::ProcessFactory< Node >", "structoscr_1_1_process_factory.html", null ]
@@ -2785,8 +2791,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -5359,6 +5365,7 @@ var hierarchy =
     [ "WidgetFactory::XYSlider", "struct_widget_factory_1_1_x_y_slider.html", null ],
     [ "WidgetFactory::XYSpinboxes", "struct_widget_factory_1_1_x_y_spinboxes.html", null ],
     [ "halp::xyz_spinboxes_f32", null, [
+      [ "Threedim::Camera::ins::Eye", "struct_threedim_1_1_camera_1_1ins_1_1_eye.html", null ],
       [ "Threedim::PositionControl", "struct_threedim_1_1_position_control.html", null ],
       [ "Threedim::RotationControl", "struct_threedim_1_1_rotation_control.html", null ],
       [ "Threedim::ScaleControl", "struct_threedim_1_1_scale_control.html", null ]

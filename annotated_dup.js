@@ -3417,6 +3417,7 @@ var annotated_dup =
       [ "LanguageSpec", "struct_y_s_f_x_1_1_language_spec.html", null ],
       [ "LayerFactory", "struct_y_s_f_x_1_1_layer_factory.html", null ],
       [ "LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
+      [ "ProcessFactory", "struct_y_s_f_x_1_1_process_factory.html", null ],
       [ "ProcessModel", "class_y_s_f_x_1_1_process_model.html", null ],
       [ "ScriptMacro", "class_y_s_f_x_1_1_script_macro.html", null ],
       [ "Window", "class_y_s_f_x_1_1_window.html", null ]

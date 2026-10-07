@@ -128,51 +128,52 @@ $(document).ready(function(){initNavTree('_p_c_l_to_geometry_8hpp_source.html','
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  halp_meta(name, <span class="stringliteral">&quot;Pointcloud to mesh&quot;</span>)</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Meshes&quot;</span>)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  halp_meta(c_name, <span class="stringliteral">&quot;pointcloud_to_mesh&quot;</span>)</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/pointcloud-to-mesh.html&quot;</span>)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(uuid, <span class="stringliteral">&quot;2450ffbf-04ed-4b42-8848-69f200d2742a&quot;</span>)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">enum</span> BufferType</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    XYZ,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    XYZ_RGB,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    XYZW,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    XYZW_RGBA</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  };</div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">   28</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; in;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    halp::enum_t&lt;BufferType, <span class="stringliteral">&quot;Buffer type&quot;</span>&gt; type;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  } inputs;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  halp_meta(description, <span class="stringliteral">&quot;Interpret a GPU point-cloud buffer as renderable geometry using the selected point layout.&quot;</span>)</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/pointcloud-to-mesh.html&quot;</span>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  halp_meta(uuid, <span class="stringliteral">&quot;2450ffbf-04ed-4b42-8848-69f200d2742a&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">enum</span> BufferType</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    XYZ,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    XYZ_RGB,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    XYZW,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    XYZW_RGBA</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  };</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">   29</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    halp::gpu_buffer_input&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; in;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    halp::enum_t&lt;BufferType, <span class="stringliteral">&quot;Buffer type&quot;</span>&gt; type;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">struct</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="comment">// Use Noiuse::dynamic_geometry</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keywordtype">float</span> transform[16]{};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    } geometry;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  } outputs;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  PCLToMesh2();</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> operator()();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  int64_t m_warnedBytes{-1};</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">int</span> m_warnedStride{-1};</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// Use Noiuse::dynamic_geometry</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordtype">float</span> transform[16]{};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    } geometry;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  } outputs;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  PCLToMesh2();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> operator()();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  int64_t m_warnedBytes{-1};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">int</span> m_warnedStride{-1};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_p_c_l_to_mesh2_html"><div class="ttname"><a href="class_threedim_1_1_p_c_l_to_mesh2.html">Threedim::PCLToMesh2</a></div><div class="ttdef"><b>Definition</b> PCLToGeometry.hpp:13</div></div>
-<div class="ttc" id="astruct_threedim_1_1_p_c_l_to_mesh2_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">Threedim::PCLToMesh2::ins</a></div><div class="ttdef"><b>Definition</b> PCLToGeometry.hpp:29</div></div>
+<div class="ttc" id="astruct_threedim_1_1_p_c_l_to_mesh2_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_p_c_l_to_mesh2_1_1ins.html">Threedim::PCLToMesh2::ins</a></div><div class="ttdef"><b>Definition</b> PCLToGeometry.hpp:30</div></div>
 <div class="ttc" id="astruct_threedim_1_1_position_control_html"><div class="ttname"><a href="struct_threedim_1_1_position_control.html">Threedim::PositionControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:98</div></div>
 <div class="ttc" id="astruct_threedim_1_1_rotation_control_html"><div class="ttname"><a href="struct_threedim_1_1_rotation_control.html">Threedim::RotationControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:103</div></div>
 <div class="ttc" id="astruct_threedim_1_1_scale_control_html"><div class="ttname"><a href="struct_threedim_1_1_scale_control.html">Threedim::ScaleControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:107</div></div>

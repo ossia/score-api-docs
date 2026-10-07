@@ -159,76 +159,77 @@ $(document).ready(function(){initNavTree('_extract_scene_buffer_8hpp_source.html
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  halp_meta(name, <span class="stringliteral">&quot;Extract Scene Buffer&quot;</span>)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/3D/Scene&quot;</span>)</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  halp_meta(c_name, <span class="stringliteral">&quot;extract_scene_buffer&quot;</span>)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  halp_meta(authors, <span class="stringliteral">&quot;ossia team&quot;</span>)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  halp_meta(</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      manual_url,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/extract-scene-buffer.html&quot;</span>)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  halp_meta(uuid, <span class="stringliteral">&quot;5f2b8e1c-4a7d-4e9b-b0f1-3c6e8d2a5b74&quot;</span>)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">enum</span> Kind</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Environment,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_class" href="class_threedim_1_1_camera.html">Camera</a>,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    Material</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  };</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">   62</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      halp_meta(name, <span class="stringliteral">&quot;Scene In&quot;</span>);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      ossia::scene_spec scene;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      uint8_t dirty{0};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    } scene_in;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    struct : halp::combobox_t&lt;<span class="stringliteral">&quot;Kind&quot;</span>, Kind&gt;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      <span class="keyword">struct </span><a class="code hl_struct" href="structrange.html">range</a></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        std::string_view values[3]{<span class="stringliteral">&quot;Environment&quot;</span>, <span class="stringliteral">&quot;Camera&quot;</span>, <span class="stringliteral">&quot;Material&quot;</span>};</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">int</span> init{0};</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      };</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    } kind;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Index inside scene.state-&gt;cameras / -&gt;materials. Ignored when</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Kind == Environment (the environment is a singleton on scene_state).</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index&quot;</span>, halp::irange{0, 1024, 0}&gt; index;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  } inputs;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  halp_meta(description, <span class="stringliteral">&quot;Expose a scene environment, camera or material GPU buffer without flattening the scene.&quot;</span>)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  halp_meta(authors, <span class="stringliteral">&quot;ossia team&quot;</span>)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  halp_meta(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      manual_url,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/extract-scene-buffer.html&quot;</span>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  halp_meta(uuid, <span class="stringliteral">&quot;5f2b8e1c-4a7d-4e9b-b0f1-3c6e8d2a5b74&quot;</span>)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">enum</span> Kind</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    Environment,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_class" href="class_threedim_1_1_camera.html">Camera</a>,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    Material</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  };</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="};">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">   63</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      halp_meta(name, <span class="stringliteral">&quot;Scene In&quot;</span>);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      ossia::scene_spec scene;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      uint8_t dirty{0};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    } scene_in;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    struct : halp::combobox_t&lt;<span class="stringliteral">&quot;Kind&quot;</span>, Kind&gt;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keyword">struct </span><a class="code hl_struct" href="structrange.html">range</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        std::string_view values[3]{<span class="stringliteral">&quot;Environment&quot;</span>, <span class="stringliteral">&quot;Camera&quot;</span>, <span class="stringliteral">&quot;Material&quot;</span>};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordtype">int</span> init{0};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      };</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    } kind;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="comment">// Index inside scene.state-&gt;cameras / -&gt;materials. Ignored when</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Kind == Environment (the environment is a singleton on scene_state).</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    halp::spinbox_i32&lt;<span class="stringliteral">&quot;Index&quot;</span>, halp::irange{0, 1024, 0}&gt; index;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="foldopen" id="foldopen00085" data-start="{" data-end="};">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">   85</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">outs</a></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    halp::gpu_buffer_output&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; buffer;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  } outputs;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">   86</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">outs</a></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    halp::gpu_buffer_output&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; buffer;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  } outputs;</div>
 </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="comment">// Execution-thread tick. No heavy work here — just snapshot the</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// current scene ref + control values. Slot resolution needs the</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// registry (render thread) so it happens in update().</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> operator()();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">// Render-thread hooks. update() resolves the slot ref against the</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// renderer&#39;s GpuResourceRegistry, validates via isLive(), and</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// publishes the buffer handle + offset + size on the outlet. init()</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// and release() are no-ops for now — the node owns no GPU state.</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> update(</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r, QRhiResourceUpdateBatch&amp; res,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="comment">// Execution-thread tick. No heavy work here — just snapshot the</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="comment">// current scene ref + control values. Slot resolution needs the</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">// registry (render thread) so it happens in update().</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> operator()();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="comment">// Render-thread hooks. update() resolves the slot ref against the</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="comment">// renderer&#39;s GpuResourceRegistry, validates via isLive(), and</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="comment">// publishes the buffer handle + offset + size on the outlet. init()</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// and release() are no-ops for now — the node owns no GPU state.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">void</span> update(</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r, QRhiResourceUpdateBatch&amp; res,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
 </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_camera_html"><div class="ttname"><a href="class_threedim_1_1_camera.html">Threedim::Camera</a></div><div class="ttdef"><b>Definition</b> Camera.hpp:64</div></div>
 <div class="ttc" id="aclass_threedim_1_1_extract_scene_buffer_html"><div class="ttname"><a href="class_threedim_1_1_extract_scene_buffer.html">Threedim::ExtractSceneBuffer</a></div><div class="ttdef"><b>Definition</b> ExtractSceneBuffer.hpp:44</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
-<div class="ttc" id="astruct_threedim_1_1_extract_scene_buffer_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">Threedim::ExtractSceneBuffer::ins</a></div><div class="ttdef"><b>Definition</b> ExtractSceneBuffer.hpp:63</div></div>
-<div class="ttc" id="astruct_threedim_1_1_extract_scene_buffer_1_1outs_html"><div class="ttname"><a href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">Threedim::ExtractSceneBuffer::outs</a></div><div class="ttdef"><b>Definition</b> ExtractSceneBuffer.hpp:86</div></div>
-<div class="ttc" id="astructrange_html"><div class="ttname"><a href="structrange.html">range</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:127</div></div>
+<div class="ttc" id="astruct_threedim_1_1_extract_scene_buffer_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_extract_scene_buffer_1_1ins.html">Threedim::ExtractSceneBuffer::ins</a></div><div class="ttdef"><b>Definition</b> ExtractSceneBuffer.hpp:64</div></div>
+<div class="ttc" id="astruct_threedim_1_1_extract_scene_buffer_1_1outs_html"><div class="ttname"><a href="struct_threedim_1_1_extract_scene_buffer_1_1outs.html">Threedim::ExtractSceneBuffer::outs</a></div><div class="ttdef"><b>Definition</b> ExtractSceneBuffer.hpp:87</div></div>
+<div class="ttc" id="astructrange_html"><div class="ttname"><a href="structrange.html">range</a></div><div class="ttdef"><b>Definition</b> MIDISync.hpp:128</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:220</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

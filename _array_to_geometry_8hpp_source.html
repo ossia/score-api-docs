@@ -129,34 +129,35 @@ $(document).ready(function(){initNavTree('_array_to_geometry_8hpp_source.html','
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  halp_meta(name, <span class="stringliteral">&quot;Array to mesh&quot;</span>)</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Utilities&quot;</span>)</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  halp_meta(c_name, <span class="stringliteral">&quot;array_to_mesh&quot;</span>)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/array-to-mesh.html&quot;</span>)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  halp_meta(uuid, <span class="stringliteral">&quot;dfc5bae9-c75c-4180-b4e8-be3063c8d8f2&quot;</span>)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_array_to_mesh_1_1ins.html">   22</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_array_to_mesh_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    struct : halp::val_port&lt;<span class="stringliteral">&quot;Input&quot;</span>, std::vector&lt;float&gt;&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_array_to_mesh.html">ArrayToMesh</a>&amp; self) { self.create_mesh(value); }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    } in;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    halp::toggle&lt;<span class="stringliteral">&quot;Triangulate&quot;</span>&gt; triangulate;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  } inputs;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  halp_meta(description, <span class="stringliteral">&quot;Convert an array of vertex coordinates into a mesh with optional triangulation.&quot;</span>)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/array-to-mesh.html&quot;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  halp_meta(uuid, <span class="stringliteral">&quot;dfc5bae9-c75c-4180-b4e8-be3063c8d8f2&quot;</span>)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_array_to_mesh_1_1ins.html">   23</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_array_to_mesh_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    struct : halp::val_port&lt;<span class="stringliteral">&quot;Input&quot;</span>, std::vector&lt;float&gt;&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keywordtype">void</span> update(<a class="code hl_class" href="class_threedim_1_1_array_to_mesh.html">ArrayToMesh</a>&amp; self) { self.create_mesh(value); }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    } in;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    halp::toggle&lt;<span class="stringliteral">&quot;Triangulate&quot;</span>&gt; triangulate;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_struct" href="struct_threedim_1_1_primitive_outputs.html">PrimitiveOutputs</a> outputs;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> create_mesh(std::span&lt;float&gt; v);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::vector&lt;float&gt; complete;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="struct_threedim_1_1_primitive_outputs.html">PrimitiveOutputs</a> outputs;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> create_mesh(std::span&lt;float&gt; v);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  std::vector&lt;float&gt; complete;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_array_to_mesh_html"><div class="ttname"><a href="class_threedim_1_1_array_to_mesh.html">Threedim::ArrayToMesh</a></div><div class="ttdef"><b>Definition</b> ArrayToGeometry.hpp:14</div></div>
-<div class="ttc" id="astruct_threedim_1_1_array_to_mesh_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_array_to_mesh_1_1ins.html">Threedim::ArrayToMesh::ins</a></div><div class="ttdef"><b>Definition</b> ArrayToGeometry.hpp:23</div></div>
+<div class="ttc" id="astruct_threedim_1_1_array_to_mesh_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_array_to_mesh_1_1ins.html">Threedim::ArrayToMesh::ins</a></div><div class="ttdef"><b>Definition</b> ArrayToGeometry.hpp:24</div></div>
 <div class="ttc" id="astruct_threedim_1_1_position_control_html"><div class="ttname"><a href="struct_threedim_1_1_position_control.html">Threedim::PositionControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:98</div></div>
 <div class="ttc" id="astruct_threedim_1_1_primitive_outputs_html"><div class="ttname"><a href="struct_threedim_1_1_primitive_outputs.html">Threedim::PrimitiveOutputs</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:117</div></div>
 <div class="ttc" id="astruct_threedim_1_1_rotation_control_html"><div class="ttname"><a href="struct_threedim_1_1_rotation_control.html">Threedim::RotationControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:103</div></div>

@@ -246,8 +246,8 @@ var NAVTREEINDEX31 =
 "struct_cuda_interop_image__t.html":[12,0,112],
 "struct_cuda_interop_resource__t.html":[12,0,113],
 "struct_cuda_interop_semaphore__t.html":[12,0,114],
-"struct_curve_1_1_curve_change.html":[11,0,1,6],
 "struct_curve_1_1_curve_change.html":[12,0,11,8],
-"struct_curve_1_1_curve_domain.html":[11,0,1,8],
-"struct_curve_1_1_curve_domain.html":[12,0,11,10]
+"struct_curve_1_1_curve_change.html":[11,0,1,6],
+"struct_curve_1_1_curve_domain.html":[12,0,11,10],
+"struct_curve_1_1_curve_domain.html":[11,0,1,8]
 };

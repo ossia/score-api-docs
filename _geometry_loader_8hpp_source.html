@@ -140,52 +140,53 @@ $(document).ready(function(){initNavTree('_geometry_loader_8hpp_source.html','')
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  halp_meta(name, <span class="stringliteral">&quot;Geometry Loader&quot;</span>)</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Meshes&quot;</span>)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  halp_meta(c_name, <span class="stringliteral">&quot;geometry_loader&quot;</span>)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  halp_meta(</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      authors,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="stringliteral">&quot;Jean-Michaël Celerier, TinyOBJ authors, miniPLY authors, vcglib authors, Eigen authors&quot;</span>)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/meshes.html#geometry-loader&quot;</span>)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  halp_meta(uuid, <span class="stringliteral">&quot;5df71765-505f-4ab7-98c1-f305d10a01ef&quot;</span>)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_loader_1_1ins.html">   36</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_geometry_loader_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  {</div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="};">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">   38</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">geom_t</a> : halp::file_port&lt;&quot;3D file&quot;&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      halp_meta(extensions, <span class="stringliteral">&quot;3D files (*.obj *.ply *.stl *.off)&quot;</span>);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keyword">static</span> std::function&lt;void(<a class="code hl_class" href="class_threedim_1_1_geometry_loader.html">GeometryLoader</a>&amp;)&gt; process(file_type data);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    } geom;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  halp_meta(description, <span class="stringliteral">&quot;Load OBJ, PLY, STL or OFF geometry without scene hierarchy or materials.&quot;</span>)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  halp_meta(</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      authors,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;Jean-Michaël Celerier, TinyOBJ authors, miniPLY authors, vcglib authors, Eigen authors&quot;</span>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/meshes.html#geometry-loader&quot;</span>)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  halp_meta(uuid, <span class="stringliteral">&quot;5df71765-505f-4ab7-98c1-f305d10a01ef&quot;</span>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_loader_1_1ins.html">   37</a></span>  struct <a class="code hl_struct" href="struct_threedim_1_1_geometry_loader_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">   39</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">geom_t</a> : halp::file_port&lt;&quot;3D file&quot;&gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      halp_meta(extensions, <span class="stringliteral">&quot;3D files (*.obj *.ply *.stl *.off)&quot;</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keyword">static</span> std::function&lt;void(<a class="code hl_class" href="class_threedim_1_1_geometry_loader.html">GeometryLoader</a>&amp;)&gt; process(file_type data);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    } geom;</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  } inputs;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="struct_threedim_1_1_position_control.html">PositionControl</a> position;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_struct" href="struct_threedim_1_1_rotation_control.html">RotationControl</a> rotation;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="struct_threedim_1_1_scale_control.html">ScaleControl</a> scale;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">struct</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    struct : halp::mesh</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      std::vector&lt;halp::dynamic_geometry&gt; <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    } geometry;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  } outputs;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">void</span> rebuild_geometry();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> operator()();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::vector&lt;mesh&gt; meshinfo{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  float_vec complete;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// Per-frame TRS matrix cache (see TransformHelper.hpp).</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  CachedTRS m_cachedTRS{};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">struct</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    struct : halp::mesh</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      std::vector&lt;halp::dynamic_geometry&gt; <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    } geometry;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  } outputs;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> rebuild_geometry();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> operator()();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::vector&lt;mesh&gt; meshinfo{};</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  float_vec complete;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="comment">// Per-frame TRS matrix cache (see TransformHelper.hpp).</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  CachedTRS m_cachedTRS{};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_geometry_loader_html"><div class="ttname"><a href="class_threedim_1_1_geometry_loader.html">Threedim::GeometryLoader</a></div><div class="ttdef"><b>Definition</b> GeometryLoader.hpp:25</div></div>
-<div class="ttc" id="astruct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">Threedim::GeometryLoader::ins::geom_t</a></div><div class="ttdef"><b>Definition</b> GeometryLoader.hpp:39</div></div>
-<div class="ttc" id="astruct_threedim_1_1_geometry_loader_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_loader_1_1ins.html">Threedim::GeometryLoader::ins</a></div><div class="ttdef"><b>Definition</b> GeometryLoader.hpp:37</div></div>
+<div class="ttc" id="astruct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_loader_1_1ins_1_1geom__t.html">Threedim::GeometryLoader::ins::geom_t</a></div><div class="ttdef"><b>Definition</b> GeometryLoader.hpp:40</div></div>
+<div class="ttc" id="astruct_threedim_1_1_geometry_loader_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_loader_1_1ins.html">Threedim::GeometryLoader::ins</a></div><div class="ttdef"><b>Definition</b> GeometryLoader.hpp:38</div></div>
 <div class="ttc" id="astruct_threedim_1_1_position_control_html"><div class="ttname"><a href="struct_threedim_1_1_position_control.html">Threedim::PositionControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:98</div></div>
 <div class="ttc" id="astruct_threedim_1_1_rotation_control_html"><div class="ttname"><a href="struct_threedim_1_1_rotation_control.html">Threedim::RotationControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:103</div></div>
 <div class="ttc" id="astruct_threedim_1_1_scale_control_html"><div class="ttname"><a href="struct_threedim_1_1_scale_control.html">Threedim::ScaleControl</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:107</div></div>

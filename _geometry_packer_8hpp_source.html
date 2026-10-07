@@ -715,90 +715,91 @@ $(document).ready(function(){initNavTree('_geometry_packer_8hpp_source.html','')
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>  halp_meta(name, <span class="stringliteral">&quot;Repack attributes&quot;</span>)</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>  halp_meta(category, <span class="stringliteral">&quot;Visuals/Utilities&quot;</span>)</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  halp_meta(c_name, <span class="stringliteral">&quot;pack_geometry&quot;</span>)</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/repack-attributes.html&quot;</span>)</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  halp_meta(uuid, <span class="stringliteral">&quot;7d7d5973-4aa9-4bfe-9249-8b892d92e0db&quot;</span>)</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>  <span class="keyword">enum class</span> Attribute3</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  {</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    None,</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    Vec3,</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    Vec4</div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>  };</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  <span class="keyword">enum class</span> Attribute2</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  {</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    None,</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    Vec2</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  };</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
-<div class="foldopen" id="foldopen00614" data-start="{" data-end="};">
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_packer_1_1ins.html">  614</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_packer_1_1ins.html">ins</a></div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  {</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    {</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>      <span class="keywordtype">float</span> transform[16]{};</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    } geometry;</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Position&quot;</span>, Attribute3&gt; position;</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Normal&quot;</span>, Attribute3&gt; normal;</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Color&quot;</span>, Attribute3&gt; color;</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;TexCoord&quot;</span>, Attribute2&gt; texcoord;</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Tangent&quot;</span>, Attribute3&gt; tangent;</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>  } inputs;</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  halp_meta(description, <span class="stringliteral">&quot;Repack selected geometry attributes into a GPU buffer and report its vertex stride.&quot;</span>)</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  halp_meta(manual_url, <span class="stringliteral">&quot;https://ossia.io/score-docs/processes/repack-attributes.html&quot;</span>)</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>  halp_meta(uuid, <span class="stringliteral">&quot;7d7d5973-4aa9-4bfe-9249-8b892d92e0db&quot;</span>)</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span> </div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keyword">enum class</span> Attribute3</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  {</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    None,</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    Vec3,</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    Vec4</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  };</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  <span class="keyword">enum class</span> Attribute2</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  {</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    None,</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    Vec2</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  };</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="foldopen" id="foldopen00615" data-start="{" data-end="};">
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_packer_1_1ins.html">  615</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_packer_1_1ins.html">ins</a></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  {</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    {</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>      halp_meta(name, <span class="stringliteral">&quot;Geometry&quot;</span>);</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>      halp::dynamic_gpu_geometry <a class="code hl_struct" href="struct_threedim_1_1mesh.html">mesh</a>;</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      <span class="keywordtype">float</span> transform[16]{};</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>      <span class="keywordtype">bool</span> dirty_mesh = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>      <span class="keywordtype">bool</span> dirty_transform = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    } geometry;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Position&quot;</span>, Attribute3&gt; position;</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Normal&quot;</span>, Attribute3&gt; normal;</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Color&quot;</span>, Attribute3&gt; color;</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;TexCoord&quot;</span>, Attribute2&gt; texcoord;</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>    halp::combobox_t&lt;<span class="stringliteral">&quot;Tangent&quot;</span>, Attribute3&gt; tangent;</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>  } inputs;</div>
 </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span> </div>
-<div class="foldopen" id="foldopen00632" data-start="{" data-end="};">
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_packer_1_1outs.html">  632</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_packer_1_1outs.html">outs</a></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>  {</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>    halp::gpu_buffer_output&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; buffer;</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    <span class="keyword">struct</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    {</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      halp_meta(name, <span class="stringliteral">&quot;Stride&quot;</span>);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      int32_t value{};</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    } stride;</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  } outputs;</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
+<div class="foldopen" id="foldopen00633" data-start="{" data-end="};">
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno"><a class="line" href="struct_threedim_1_1_geometry_packer_1_1outs.html">  633</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_threedim_1_1_geometry_packer_1_1outs.html">outs</a></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  {</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>    halp::gpu_buffer_output&lt;<span class="stringliteral">&quot;Buffer&quot;</span>&gt; buffer;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span> </div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>    <span class="keyword">struct</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>    {</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>      halp_meta(name, <span class="stringliteral">&quot;Stride&quot;</span>);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>      int32_t value{};</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    } stride;</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  } outputs;</div>
 </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span> </div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>  <a class="code hl_class" href="class_threedim_1_1_geometry_packer.html">GeometryPacker</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  <a class="code hl_class" href="class_threedim_1_1_geometry_packer.html">~GeometryPacker</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  <span class="keywordtype">void</span> update(</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res,</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge);</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  <span class="keywordtype">void</span> operator()() { }</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>  <span class="keywordtype">void</span> buildAttributeSpecs();</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  <span class="keywordtype">bool</span> specsChanged() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>  <a class="code hl_class" href="class_threedim_1_1_packed_extraction_strategy.html">PackedExtractionStrategy</a> m_strategy;</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  std::vector&lt;packed_attribute_spec&gt; m_specs;</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  std::vector&lt;packed_attribute_spec&gt; m_lastSpecs;</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  <span class="keywordtype">bool</span> m_initialized{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>};</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  <a class="code hl_class" href="class_threedim_1_1_geometry_packer.html">GeometryPacker</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  <a class="code hl_class" href="class_threedim_1_1_geometry_packer.html">~GeometryPacker</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span> </div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  <span class="keywordtype">void</span> init(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>  <span class="keywordtype">void</span> update(</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiResourceUpdateBatch&amp; res,</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>* e);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span> </div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>  <span class="keywordtype">void</span> release(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; r);</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span> </div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>  <span class="keywordtype">void</span> runInitialPasses(</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a>&amp; renderer, QRhiCommandBuffer&amp; commands,</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span> </div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>  <span class="keywordtype">void</span> operator()() { }</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>  <span class="keywordtype">void</span> buildAttributeSpecs();</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>  <span class="keywordtype">bool</span> specsChanged() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span> </div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>  <a class="code hl_class" href="class_threedim_1_1_packed_extraction_strategy.html">PackedExtractionStrategy</a> m_strategy;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>  std::vector&lt;packed_attribute_spec&gt; m_specs;</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  std::vector&lt;packed_attribute_spec&gt; m_lastSpecs;</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  <span class="keywordtype">bool</span> m_initialized{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>};</div>
 </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>}</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>}</div>
 <div class="ttc" id="aclass_threedim_1_1_geometry_packer_html"><div class="ttname"><a href="class_threedim_1_1_geometry_packer.html">Threedim::GeometryPacker</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:594</div></div>
 <div class="ttc" id="aclass_threedim_1_1_packed_extraction_strategy_html"><div class="ttname"><a href="class_threedim_1_1_packed_extraction_strategy.html">Threedim::PackedExtractionStrategy</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:36</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a433eac87f8111d670824ff45923297fc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a433eac87f8111d670824ff45923297fc">score::gfx::makeCompute</a></div><div class="ttdeci">QShader makeCompute(const RenderState &amp;v, QString compute)</div><div class="ttdoc">Compile a compute shader.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:1448</div></div>
-<div class="ttc" id="astruct_threedim_1_1_geometry_packer_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_packer_1_1ins.html">Threedim::GeometryPacker::ins</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:615</div></div>
-<div class="ttc" id="astruct_threedim_1_1_geometry_packer_1_1outs_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_packer_1_1outs.html">Threedim::GeometryPacker::outs</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:633</div></div>
+<div class="ttc" id="astruct_threedim_1_1_geometry_packer_1_1ins_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_packer_1_1ins.html">Threedim::GeometryPacker::ins</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:616</div></div>
+<div class="ttc" id="astruct_threedim_1_1_geometry_packer_1_1outs_html"><div class="ttname"><a href="struct_threedim_1_1_geometry_packer_1_1outs.html">Threedim::GeometryPacker::outs</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:634</div></div>
 <div class="ttc" id="astruct_threedim_1_1gpu__buffer__view_html"><div class="ttname"><a href="struct_threedim_1_1gpu__buffer__view.html">Threedim::gpu_buffer_view</a></div><div class="ttdef"><b>Definition</b> GeometryToBufferStrategies.hpp:246</div></div>
 <div class="ttc" id="astruct_threedim_1_1mesh_html"><div class="ttname"><a href="struct_threedim_1_1mesh.html">Threedim::mesh</a></div><div class="ttdef"><b>Definition</b> TinyObj.hpp:27</div></div>
 <div class="ttc" id="astruct_threedim_1_1packed__attribute__info_html"><div class="ttname"><a href="struct_threedim_1_1packed__attribute__info.html">Threedim::packed_attribute_info</a></div><div class="ttdef"><b>Definition</b> GeometryPacker.hpp:24</div></div>
