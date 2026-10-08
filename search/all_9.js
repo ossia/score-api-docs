@@ -85,7 +85,7 @@ var searchData=
   ['identifiedobjectabstract_82',['IdentifiedObjectAbstract',['../class_identified_object_abstract.html',1,'']]],
   ['identity_83',['identity',['../struct_protocols_1_1_m_i_d_i_devices_1_1_device_entry.html#a682054edac4221de03643f4c144b7a34',1,'Protocols::MIDIDevices::DeviceEntry']]],
   ['idgen_84',['IdGen',['../structscore_1_1_id_gen.html',1,'score']]],
-  ['image_85',['image',['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image'],['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image']]],
+  ['image_85',['image',['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image'],['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image']]],
   ['image_5fnode_86',['image_node',['../class_gfx_1_1_images_1_1image__node.html',1,'Gfx::Images']]],
   ['image_5ft_87',['image_t',['../struct_threedim_1_1_image_loader_1_1ins_1_1image__t.html',1,'Threedim::ImageLoader::ins::image_t'],['../struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html',1,'Threedim::CubemapLoader::ins::image_t']]],
   ['imagecache_88',['ImageCache',['../struct_gfx_1_1_image_cache.html',1,'Gfx']]],

@@ -1550,8 +1550,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -4148,6 +4148,7 @@ var hierarchy =
       [ "score::DocumentView", "classscore_1_1_document_view.html", null ],
       [ "score::FileDownloader", "classscore_1_1_file_downloader.html", null ],
       [ "score::FileWatch", "classscore_1_1_file_watch.html", null ],
+      [ "score::FileWatch::Worker", "classscore_1_1_file_watch_1_1_worker.html", null ],
       [ "score::FirstUserInput", "classscore_1_1_first_user_input.html", null ],
       [ "score::FocusManager", "structscore_1_1_focus_manager.html", null ],
       [ "score::HighResolutionTimer", "classscore_1_1_high_resolution_timer.html", null ],
@@ -4297,6 +4298,9 @@ var hierarchy =
     ] ],
     [ "QQmlAbstractUrlInterceptor", null, [
       [ "JS::EditedScriptRedirect", "class_j_s_1_1_edited_script_redirect.html", null ]
+    ] ],
+    [ "QQmlParserStatus", null, [
+      [ "JS::GlobalDeviceEnumerator", "class_j_s_1_1_global_device_enumerator.html", null ]
     ] ],
     [ "QQmlPropertyValueSource", null, [
       [ "JS::AddressSource", "struct_j_s_1_1_address_source.html", null ],

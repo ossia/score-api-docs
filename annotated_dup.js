@@ -2839,7 +2839,7 @@ var annotated_dup =
       [ "FileDownloader", "classscore_1_1_file_downloader.html", null ],
       [ "FilePath", "structscore_1_1_file_path.html", null ],
       [ "FilePlacement", "classscore_1_1_file_placement.html", "classscore_1_1_file_placement" ],
-      [ "FileWatch", "classscore_1_1_file_watch.html", null ],
+      [ "FileWatch", "classscore_1_1_file_watch.html", "classscore_1_1_file_watch" ],
       [ "FirstUserInput", "classscore_1_1_first_user_input.html", null ],
       [ "FixedTabWidget", "classscore_1_1_fixed_tab_widget.html", "classscore_1_1_fixed_tab_widget" ],
       [ "FlicksSpinBox", "structscore_1_1_flicks_spin_box.html", null ],

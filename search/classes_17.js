@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['w_5fmetaobjectcreatorhelper_0',['w_metaobjectcreatorhelper',['../struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::MidiMessage ::W_MetaObjectCreatorHelper'],['../struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::OutValueMessage ::W_MetaObjectCreatorHelper'],['../struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper.html',1,'State::DestinationQualifiers ::W_MetaObjectCreatorHelper'],['../struct_j_s_1_1_in_value_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::InValueMessage ::W_MetaObjectCreatorHelper']]],
+  ['w_5fmetaobjectcreatorhelper_0',['w_metaobjectcreatorhelper',['../struct_j_s_1_1_midi_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::MidiMessage ::W_MetaObjectCreatorHelper'],['../struct_j_s_1_1_in_value_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::InValueMessage ::W_MetaObjectCreatorHelper'],['../struct_state_1_1_destination_qualifiers_01_1_1_w___meta_object_creator_helper.html',1,'State::DestinationQualifiers ::W_MetaObjectCreatorHelper'],['../struct_j_s_1_1_out_value_message_01_1_1_w___meta_object_creator_helper.html',1,'JS::OutValueMessage ::W_MetaObjectCreatorHelper']]],
   ['watched_1',['Watched',['../structscore_1_1_recursive_watch_1_1_watched.html',1,'score::RecursiveWatch']]],
   ['waveformcomputer_2',['WaveformComputer',['../struct_media_1_1_sound_1_1_waveform_computer.html',1,'Media::Sound']]],
   ['waveformcomputerimpl_3',['WaveformComputerImpl',['../struct_media_1_1_sound_1_1_waveform_computer_impl.html',1,'Media::Sound']]],
@@ -25,7 +25,7 @@ var searchData=
   ['wiimoteprotocolsettingswidget_22',['WiimoteProtocolSettingsWidget',['../class_protocols_1_1_wiimote_protocol_settings_widget.html',1,'Protocols']]],
   ['wiimotespecificsettings_23',['WiimoteSpecificSettings',['../struct_protocols_1_1_wiimote_specific_settings.html',1,'Protocols']]],
   ['win32_5fhandles_24',['win32_handles',['../structbitfocus_1_1win32__handles.html',1,'bitfocus']]],
-  ['window_25',['window',['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../class_clap_1_1_window.html',1,'Clap::Window']]],
+  ['window_25',['window',['../class_clap_1_1_window.html',1,'Clap::Window'],['../class_l_v2_1_1_window.html',1,'LV2::Window'],['../classscore_1_1gfx_1_1_window.html',1,'score::gfx::Window'],['../classvst3_1_1_window.html',1,'vst3::Window'],['../classvst_1_1_window.html',1,'vst::Window'],['../class_y_s_f_x_1_1_window.html',1,'YSFX::Window']]],
   ['window_5fdevice_26',['window_device',['../class_gfx_1_1window__device.html',1,'Gfx']]],
   ['windowcapturebackend_27',['WindowCaptureBackend',['../struct_gfx_1_1_window_capture_1_1_window_capture_backend.html',1,'Gfx::WindowCapture']]],
   ['windowcapturedevice_28',['WindowCaptureDevice',['../class_gfx_1_1_window_capture_1_1_window_capture_device.html',1,'Gfx::WindowCapture']]],
@@ -41,7 +41,7 @@ var searchData=
   ['windowsettings_38',['WindowSettings',['../struct_gfx_1_1_window_settings.html',1,'Gfx']]],
   ['windowsettingswidget_39',['WindowSettingsWidget',['../class_gfx_1_1_window_settings_widget.html',1,'Gfx']]],
   ['wordlist_40',['WordList',['../struct_word_list.html',1,'']]],
-  ['worker_41',['worker',['../structao_1_1_regex_1_1worker.html',1,'ao::Regex::worker'],['../struct_threedim_1_1_struc_synth_1_1worker.html',1,'Threedim::StrucSynth::worker']]],
+  ['worker_41',['worker',['../struct_threedim_1_1_struc_synth_1_1worker.html',1,'Threedim::StrucSynth::worker'],['../structao_1_1_regex_1_1worker.html',1,'ao::Regex::worker'],['../classscore_1_1_file_watch_1_1_worker.html',1,'score::FileWatch::Worker']]],
   ['worker_5frouting_5fscope_42',['worker_routing_scope',['../struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html',1,'LV2::lv2_node']]],
   ['worldtransformemit_43',['WorldTransformEmit',['../structscore_1_1gfx_1_1_world_transform_emit.html',1,'score::gfx']]],
   ['worldtransformmat4_44',['WorldTransformMat4',['../structscore_1_1gfx_1_1_world_transform_mat4.html',1,'score::gfx']]],

@@ -114,7 +114,7 @@ var namespacescore =
     [ "FileDownloader", "classscore_1_1_file_downloader.html", null ],
     [ "FilePath", "structscore_1_1_file_path.html", null ],
     [ "FilePlacement", "classscore_1_1_file_placement.html", "classscore_1_1_file_placement" ],
-    [ "FileWatch", "classscore_1_1_file_watch.html", null ],
+    [ "FileWatch", "classscore_1_1_file_watch.html", "classscore_1_1_file_watch" ],
     [ "FirstUserInput", "classscore_1_1_first_user_input.html", null ],
     [ "FixedTabWidget", "classscore_1_1_fixed_tab_widget.html", "classscore_1_1_fixed_tab_widget" ],
     [ "FlicksSpinBox", "structscore_1_1_flicks_spin_box.html", null ],
@@ -387,6 +387,13 @@ var namespacescore =
       [ "Unknown", "namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa88183b946cc5f0e8c96b2e66e1c74a7e", null ],
       [ "Invalid", "namespacescore.html#a41d584dc2ada3da7ca1d79230b104bcfa4bbb8f967da6d1a610596d7257179c2b", null ]
     ] ],
+    [ "NvidiaGlxVendorState", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853", [
+      [ "NoDriver", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a9d82001754240fa010388e7a8036c358", null ],
+      [ "NotInstalled", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a4c2d0402e7f6a5450b1e413abf3e9b1f", null ],
+      [ "VersionMismatch", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a2d50084f04994afa70d78b604a22dd31", null ],
+      [ "Consistent", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a30a61870b0726430151d669fd3459ac1", null ],
+      [ "Unknown", "namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a88183b946cc5f0e8c96b2e66e1c74a7e", null ]
+    ] ],
     [ "addonArchitecture", "namespacescore.html#abe55a013aba51db7fae79be5eb285678", null ],
     [ "anySerializers", "namespacescore.html#a0b6720796cb590c0cd175f0f5b83d981", null ],
     [ "applyDefaultPalette", "namespacescore.html#aecb3f3ed13189ae832d432b96ef89249", null ],
@@ -420,6 +427,10 @@ var namespacescore =
     [ "materializeFile", "namespacescore.html#a467612b37ae4654419b8dc0b01453937", null ],
     [ "mediaSubfolder", "namespacescore.html#a3931d6c83f2257066ee55f7768dee24f", null ],
     [ "newProcessedFilePath", "namespacescore.html#a32796149f51ff5e6483f20895442a6b3", null ],
+    [ "nvidiaGlxLibraryVersion", "namespacescore.html#a87b75d461c3aa93ed454203205b6389b", null ],
+    [ "nvidiaGlxVendorState", "namespacescore.html#aa8377ab63902f2e44d4a7611977802d7", null ],
+    [ "nvidiaGlxVendorState", "namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3", null ],
+    [ "nvidiaKernelDriverVersion", "namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6", null ],
     [ "parseJsonField", "namespacescore.html#af5b703cc8728ecd74cdeebfc9148b8cc", null ],
     [ "parseJsonNumber", "namespacescore.html#a2a536512cd929ef2bc2e9ae50785afbb", null ],
     [ "pathRoots", "namespacescore.html#a9a613cae5a4d20eace91101b3e672a8d", null ],

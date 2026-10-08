@@ -1106,6 +1106,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>applyPipelineState</b
 <tr class="memitem:ac6f26bc5652db9edccd8905a5d0b2eae" id="r_ac6f26bc5652db9edccd8905a5d0b2eae"><td class="memItemLeft" align="right" valign="top"><a id="ac6f26bc5652db9edccd8905a5d0b2eae" name="ac6f26bc5652db9edccd8905a5d0b2eae"></a>
 std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>importRenderState</b> (QSize sz, QRhi *rhi)</td></tr>
 <tr class="separator:ac6f26bc5652db9edccd8905a5d0b2eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28162aebe8c40b5d48696c7f6afa745" id="r_ad28162aebe8c40b5d48696c7f6afa745"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ad28162aebe8c40b5d48696c7f6afa745">previewFirstRowIsPictureBottom</a> (QRhi &amp;rhi) noexcept</td></tr>
+<tr class="separator:ad28162aebe8c40b5d48696c7f6afa745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3954ff39fdc4721efbf532a139052c8" id="r_aa3954ff39fdc4721efbf532a139052c8"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#aa3954ff39fdc4721efbf532a139052c8">persistentTextureIndex</a> (int writerPass, int readerPass, int frameParity) noexcept</td></tr>
 <tr class="separator:aa3954ff39fdc4721efbf532a139052c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a52ec9bb06bd25a9c9f115a832c2150" id="r_a2a52ec9bb06bd25a9c9f115a832c2150"><td class="memItemLeft" align="right" valign="top"><a id="a2a52ec9bb06bd25a9c9f115a832c2150" name="a2a52ec9bb06bd25a9c9f115a832c2150"></a>
@@ -3779,6 +3781,33 @@ template&lt;typename CB  = QRhiCommandBuffer&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Which texture of a persistent pass's pair the pass at <code>readerPass</code> samples. The writer renders into textures[frameParity]; the main and alternate pass sets have parity 0 and 1 and swap every frame. As in VVISF, where each pass hands its freshly rendered buffer to the passes drawn after it, a reader after the writer sees this frame and the writer itself and the passes before it see the previous frame. </p>
+
+</div>
+</div>
+<a id="ad28162aebe8c40b5d48696c7f6afa745" name="ad28162aebe8c40b5d48696c7f6afa745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28162aebe8c40b5d48696c7f6afa745">&#9670;&#160;</a></span>previewFirstRowIsPictureBottom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_PLUGIN_GFX_EXPORT bool score::gfx::previewFirstRowIsPictureBottom </td>
+          <td>(</td>
+          <td class="paramtype">QRhi &amp;&#160;</td>
+          <td class="paramname"><em>rhi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True when the host texture's first row is the picture's bottom, i.e. OpenGL's framebuffer order. Quick3D's Texture.sourceItem samples the texture raw, so this cannot be corrected downstream; createRenderer and the host item's <code>mirrorVertically</code> both derive from it. </p>
 
 </div>
 </div>

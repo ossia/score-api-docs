@@ -7,11 +7,12 @@ var searchData=
   ['centrewide_4',['CentreWide',['../structscore_1_1gfx_1_1_yuv420_packed_encoder.html#a968052ceec306e5c3bfbffbbacb49c71ad01f82b5570df1fcd8c89685b9b56792',1,'score::gfx::Yuv420PackedEncoder']]],
   ['collect_5',['Collect',['../namespace_process.html#a10d23874bbbd9dcf91f2054338003079ae7ca851922b13f555127b04b70435ca9',1,'Process']]],
   ['combo_6',['Combo',['../struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622ad8929068f239cc2984d214ec4717cc5f',1,'Process::ControlPresentation']]],
-  ['contentmismatch_7',['ContentMismatch',['../_rdma_playout_probe_8hpp.html#ab7eb5d14c0670c75fb0102fac64212dca60231867a8dd01e1f688039300b4f11b',1,'score::gfx::interop']]],
-  ['controlsurface_8',['ControlSurface',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254',1,'Process']]],
-  ['copy_9',['Copy',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75a5fb63579fc981698f97d55bfecb213ea',1,'score']]],
-  ['cpustaging_10',['CpuStaging',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea6c4f5c5957161c170d020440d8e4e1ee',1,'score::gfx::interop']]],
-  ['createcontrols_11',['CreateControls',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d',1,'Process']]],
-  ['cuda_12',['Cuda',['../_rdma_gpu_buffer_8hpp.html#a4fd5995e708352db065278769194307ca8b95dcff7397d0693c03e394af5552aa',1,'score::gfx::interop']]],
-  ['cudahostreg_13',['CudaHostReg',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea5660b521841b6ec41207a5a5156e0f80',1,'score::gfx::interop']]]
+  ['consistent_7',['Consistent',['../namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853a30a61870b0726430151d669fd3459ac1',1,'score']]],
+  ['contentmismatch_8',['ContentMismatch',['../_rdma_playout_probe_8hpp.html#ab7eb5d14c0670c75fb0102fac64212dca60231867a8dd01e1f688039300b4f11b',1,'score::gfx::interop']]],
+  ['controlsurface_9',['ControlSurface',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a04d62df558a1f3d140a99921aadbd254',1,'Process']]],
+  ['copy_10',['Copy',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75a5fb63579fc981698f97d55bfecb213ea',1,'score']]],
+  ['cpustaging_11',['CpuStaging',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea6c4f5c5957161c170d020440d8e4e1ee',1,'score::gfx::interop']]],
+  ['createcontrols_12',['CreateControls',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d',1,'Process']]],
+  ['cuda_13',['Cuda',['../_rdma_gpu_buffer_8hpp.html#a4fd5995e708352db065278769194307ca8b95dcff7397d0693c03e394af5552aa',1,'score::gfx::interop']]],
+  ['cudahostreg_14',['CudaHostReg',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea5660b521841b6ec41207a5a5156e0f80',1,'score::gfx::interop']]]
 ];

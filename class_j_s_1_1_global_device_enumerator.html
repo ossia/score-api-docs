@@ -115,11 +115,19 @@ Inheritance diagram for JS::GlobalDeviceEnumerator:</div>
  <div class="center">
   <img src="class_j_s_1_1_global_device_enumerator.png" alt=""/>
  </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>QML writes <code>enumerate</code> and the filter in an order the author cannot choose: literals before script bindings, and two literals in reverse source order (qqmlirbuilder.cpp, QmlIR::Object::appendBinding prepends). Enumerating unfiltered is expensive and on Windows deadlocks, so the walk waits for componentComplete(), after finalize() has converged every binding. Only QML object creation defers; Score.enumerateDevices() still walks on the write. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6830681261e58bb07c1f2e8788a6ebdd" id="r_a6830681261e58bb07c1f2e8788a6ebdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_global_device_enumerator.html#a6830681261e58bb07c1f2e8788a6ebdd">GlobalDeviceEnumerator</a> ()</td></tr>
 <tr class="separator:a6830681261e58bb07c1f2e8788a6ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac58fb5624b101fc77913e37f85133189" id="r_ac58fb5624b101fc77913e37f85133189"><td class="memItemLeft" align="right" valign="top"><a id="ac58fb5624b101fc77913e37f85133189" name="ac58fb5624b101fc77913e37f85133189"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>classBegin</b> () override</td></tr>
+<tr class="separator:ac58fb5624b101fc77913e37f85133189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdbee2f434934c0bee5a05e76cff1e3" id="r_a1bdbee2f434934c0bee5a05e76cff1e3"><td class="memItemLeft" align="right" valign="top"><a id="a1bdbee2f434934c0bee5a05e76cff1e3" name="a1bdbee2f434934c0bee5a05e76cff1e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>componentComplete</b> () override</td></tr>
+<tr class="separator:a1bdbee2f434934c0bee5a05e76cff1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77bd6946a4d51da438b6298fa1370458" id="r_a77bd6946a4d51da438b6298fa1370458"><td class="memItemLeft" align="right" valign="top"><a id="a77bd6946a4d51da438b6298fa1370458" name="a77bd6946a4d51da438b6298fa1370458"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setContext</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> *doc)</td></tr>
 <tr class="separator:a77bd6946a4d51da438b6298fa1370458"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +170,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>deviceTypesChanged</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:aad04ea47eec40c3de7c9d59ab5ffd02c" id="r_aad04ea47eec40c3de7c9d59ab5ffd02c"><td class="memItemLeft" align="right" valign="top"><a id="aad04ea47eec40c3de7c9d59ab5ffd02c" name="aad04ea47eec40c3de7c9d59ab5ffd02c"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::InterfaceStateTag, W_ThisType ** &gt; &gt;, w_internal::InterfaceStateTag, W_ThisType **) -&gt; decltype((static_cast&lt; QQmlParserStatus * &gt;(nullptr)))</td></tr>
+<tr class="separator:aad04ea47eec40c3de7c9d59ab5ffd02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6ebfa3bf6f27a0e3efdae65fe9870d" id="r_acf6ebfa3bf6f27a0e3efdae65fe9870d"><td class="memItemLeft" align="right" valign="top"><a id="acf6ebfa3bf6f27a0e3efdae65fe9870d" name="acf6ebfa3bf6f27a0e3efdae65fe9870d"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b> (w_internal::Index&lt; w_internal::stateCount&lt; __COUNTER__, w_internal::PropertyStateTag, W_ThisType ** &gt; &gt;, w_internal::PropertyStateTag, W_ThisType **) -&gt; decltype((w_internal::makeMetaPropertyInfo&lt; QQmlListProperty&lt; <a class="el" href="struct_j_s_1_1_device_identifier.html">JS::DeviceIdentifier</a> &gt; &gt;(w_internal::viewLiteral(&quot;devices&quot;), w_internal::viewLiteral(&quot;QQmlListProperty&lt;<a class="el" href="struct_j_s_1_1_device_identifier.html">JS::DeviceIdentifier</a>&gt;&quot;), &amp;W_ThisType::devices)))</td></tr>
 <tr class="separator:acf6ebfa3bf6f27a0e3efdae65fe9870d"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -325,6 +325,7 @@ var namespacescore_1_1gfx =
     [ "packedBitfieldFilter", "namespacescore_1_1gfx.html#a5691789a21be9f5d8b380b7a16d18cba", null ],
     [ "parseOutputFormat", "namespacescore_1_1gfx.html#a90ec0d7190c2a57ae54844ecc2273599", null ],
     [ "persistentTextureIndex", "namespacescore_1_1gfx.html#aa3954ff39fdc4721efbf532a139052c8", null ],
+    [ "previewFirstRowIsPictureBottom", "namespacescore_1_1gfx.html#ad28162aebe8c40b5d48696c7f6afa745", null ],
     [ "readbackDstOffsetAlignment", "namespacescore_1_1gfx.html#a47bee8f12c4e5ea7dd873075f9e64639", null ],
     [ "readbackHostMemoryAlignment", "namespacescore_1_1gfx.html#a9e9c766f3f637ee5f0b397e4783f4e47", null ],
     [ "readbackTextureSupported", "namespacescore_1_1gfx.html#aa5959fa86e5b75220dfbc2cad7c90546", null ],

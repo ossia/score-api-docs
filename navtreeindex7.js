@@ -102,9 +102,10 @@ var NAVTREEINDEX7 =
 "_value_types_8_qt5_8hpp_source.html":[13,0,0,2,20,0,2,16],
 "_value_types_8_qt6_8hpp_source.html":[13,0,0,2,20,0,2,17],
 "_value_widget_8hpp_source.html":[13,0,0,2,4,0,0,0,5],
+"_value_write_back_8hpp_source.html":[13,0,0,2,20,0,2,18],
 "_variant_based_node_8hpp_source.html":[13,0,0,1,1,7,1,6],
 "_variant_serialization_8hpp_source.html":[13,0,0,1,1,10,14],
-"_variant_to_js_8hpp_source.html":[13,0,0,2,20,0,2,18],
+"_variant_to_js_8hpp_source.html":[13,0,0,2,20,0,2,19],
 "_vcg_importers_8hpp_source.html":[13,0,0,2,35,0,74],
 "_vec_widgets_8hpp_source.html":[13,0,0,2,4,0,0,0,6],
 "_vel_to_note_8hpp_source.html":[13,0,0,2,16,0,40],
@@ -245,9 +246,8 @@ var NAVTREEINDEX7 =
 "_video_pixel_format_a_v_8hpp_source.html":[13,0,0,2,17,1,4,2,50],
 "_video_pixel_format_q_rhi_8hpp.html":[13,0,0,2,17,1,4,2,51],
 "_video_pixel_format_q_rhi_8hpp_source.html":[13,0,0,2,17,1,4,2,51],
-"_view_context_8hpp_source.html":[13,0,0,2,20,0,2,19],
+"_view_context_8hpp_source.html":[13,0,0,2,20,0,2,20],
 "_visitor_common_8hpp.html":[13,0,0,1,1,10,15],
 "_visitor_common_8hpp.html#aba88450f2e8b9397ef16609ee1d5952f":[13,0,0,1,1,10,15,0],
-"_visitor_common_8hpp_source.html":[13,0,0,1,1,10,15],
-"_visitor_interface_8hpp_source.html":[13,0,0,1,1,10,16]
+"_visitor_common_8hpp_source.html":[13,0,0,1,1,10,15]
 };

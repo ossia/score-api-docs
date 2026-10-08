@@ -18,6 +18,7 @@ var dir_b6529b88cbf2db17432854d1a0d067de =
     [ "score-plugin-js/JS/Qml/Utils.hpp", "score-plugin-js_2_j_s_2_qml_2_utils_8hpp_source.html", null ],
     [ "ValueTypes.Qt5.hpp", "_value_types_8_qt5_8hpp_source.html", null ],
     [ "ValueTypes.Qt6.hpp", "_value_types_8_qt6_8hpp_source.html", null ],
+    [ "ValueWriteBack.hpp", "_value_write_back_8hpp_source.html", null ],
     [ "VariantToJs.hpp", "_variant_to_js_8hpp_source.html", null ],
     [ "ViewContext.hpp", "_view_context_8hpp_source.html", null ]
 ];
