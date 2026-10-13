@@ -129,7 +129,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_attr_view.html">GpuAttrView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html">GpuIndexRules</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html">InstSlotLayout</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_loader_light_slots.html">LoaderLightSlots</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_m_d_i_state.html">MDIState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,10 +152,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a05083e3da61b49d43c65be4685e579d4" id="r_a05083e3da61b49d43c65be4685e579d4"><td class="memItemLeft" align="right" valign="top"><a id="a05083e3da61b49d43c65be4685e579d4" name="a05083e3da61b49d43c65be4685e579d4"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>MdiAttr</b> : uint8_t { <b>Positions</b>
+<tr class="memitem:a05083e3da61b49d43c65be4685e579d4" id="r_a05083e3da61b49d43c65be4685e579d4"><td class="memItemLeft" align="right" valign="top"><a id="a05083e3da61b49d43c65be4685e579d4" name="a05083e3da61b49d43c65be4685e579d4"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>MdiAttr</b> : uint8_t { <br />
+&#160;&#160;<b>Positions</b>
 , <b>Normals</b>
 , <b>Texcoords</b>
 , <b>Tangents</b>
+, <br />
+&#160;&#160;<b>Colors</b>
+, <b>Texcoords1</b>
+, <b>Indices</b>
+<br />
  }</td></tr>
 <tr class="separator:a05083e3da61b49d43c65be4685e579d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a92c81b757b56856d32f15e172dc32" id="r_ab3a92c81b757b56856d32f15e172dc32"><td class="memItemLeft" align="right" valign="top"><a id="ab3a92c81b757b56856d32f15e172dc32" name="ab3a92c81b757b56856d32f15e172dc32"></a>
@@ -241,6 +251,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>packAndUploadCameras<
 <tr class="memitem:a9d14132126b88889b40b8136a28d37f1" id="r_a9d14132126b88889b40b8136a28d37f1"><td class="memItemLeft" align="right" valign="top"><a id="a9d14132126b88889b40b8136a28d37f1" name="a9d14132126b88889b40b8136a28d37f1"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>mdiBufferFor</b> (MdiAttr a) const noexcept</td></tr>
 <tr class="separator:a9d14132126b88889b40b8136a28d37f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada19cc0742b94951bb4d5c99d42000c5" id="r_ada19cc0742b94951bb4d5c99d42000c5"><td class="memItemLeft" align="right" valign="top"><a id="ada19cc0742b94951bb4d5c99d42000c5" name="ada19cc0742b94951bb4d5c99d42000c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>widenPendingGpuIndices</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;cb, QRhiResourceUpdateBatch *&amp;res)</td></tr>
+<tr class="separator:ada19cc0742b94951bb4d5c99d42000c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7e9bc3e445063eaead9f5774aa724fe" id="r_ab7e9bc3e445063eaead9f5774aa724fe"><td class="memItemLeft" align="right" valign="top"><a id="ab7e9bc3e445063eaead9f5774aa724fe" name="ab7e9bc3e445063eaead9f5774aa724fe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>issuePendingGpuCopies</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, QRhiCommandBuffer &amp;cb)</td></tr>
 <tr class="separator:ab7e9bc3e445063eaead9f5774aa724fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,9 +353,15 @@ static <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_no
 <tr class="memitem:a62f23fd89de44710590cbb73ac8bd8fc" id="r_a62f23fd89de44710590cbb73ac8bd8fc"><td class="memItemLeft" align="right" valign="top"><a id="a62f23fd89de44710590cbb73ac8bd8fc" name="a62f23fd89de44710590cbb73ac8bd8fc"></a>
 static std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>extractCpuIndices</b> (const ossia::geometry &amp;g)</td></tr>
 <tr class="separator:a62f23fd89de44710590cbb73ac8bd8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d43e7200d19ab0027ed7b683b8bcece" id="r_a2d43e7200d19ab0027ed7b683b8bcece"><td class="memItemLeft" align="right" valign="top"><a id="a2d43e7200d19ab0027ed7b683b8bcece" name="a2d43e7200d19ab0027ed7b683b8bcece"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>meshEmitsDraw</b> (const ossia::geometry &amp;mesh)</td></tr>
-<tr class="separator:a2d43e7200d19ab0027ed7b683b8bcece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4b00b86bb6f15e7b567c2b4b536aef" id="r_a0d4b00b86bb6f15e7b567c2b4b536aef"><td class="memItemLeft" align="right" valign="top"><a id="a0d4b00b86bb6f15e7b567c2b4b536aef" name="a0d4b00b86bb6f15e7b567c2b4b536aef"></a>
+static <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_attr_view.html">GpuAttrView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>extractGpuIndices</b> (const ossia::geometry &amp;g, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html">GpuIndexRules</a> rules)</td></tr>
+<tr class="separator:a0d4b00b86bb6f15e7b567c2b4b536aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2df5b3c7ddc3afd46994c9fae0a81e4" id="r_aa2df5b3c7ddc3afd46994c9fae0a81e4"><td class="memItemLeft" align="right" valign="top"><a id="aa2df5b3c7ddc3afd46994c9fae0a81e4" name="aa2df5b3c7ddc3afd46994c9fae0a81e4"></a>
+static <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html">GpuIndexRules</a>&#160;</td><td class="memItemRight" valign="bottom"><b>gpuIndexRules</b> (const QRhi &amp;rhi) noexcept</td></tr>
+<tr class="separator:aa2df5b3c7ddc3afd46994c9fae0a81e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f8544b9fe637bc73cb8b85c5348f06" id="r_a61f8544b9fe637bc73cb8b85c5348f06"><td class="memItemLeft" align="right" valign="top"><a id="a61f8544b9fe637bc73cb8b85c5348f06" name="a61f8544b9fe637bc73cb8b85c5348f06"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>meshEmitsDraw</b> (const ossia::geometry &amp;mesh, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html">GpuIndexRules</a> indexRules)</td></tr>
+<tr class="separator:a61f8544b9fe637bc73cb8b85c5348f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc731611801fa0c925a799690292312" id="r_a7bc731611801fa0c925a799690292312"><td class="memItemLeft" align="right" valign="top"><a id="a7bc731611801fa0c925a799690292312" name="a7bc731611801fa0c925a799690292312"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>growBuf</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, QRhiBuffer *&amp;buf, int64_t &amp;cap, int64_t need, QRhiBuffer::UsageFlags flags, const char *name, bool exact=false)</td></tr>
 <tr class="separator:a7bc731611801fa0c925a799690292312"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,6 +538,21 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialsExtCap<
 <tr class="memitem:ad450931af53bb8146dc3f58a82872178" id="r_ad450931af53bb8146dc3f58a82872178"><td class="memItemLeft" align="right" valign="top"><a id="ad450931af53bb8146dc3f58a82872178" name="ad450931af53bb8146dc3f58a82872178"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_defaultMaterialUploaded</b> {false}</td></tr>
 <tr class="separator:ad450931af53bb8146dc3f58a82872178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0094172787419533ea90caf173fdad" id="r_a7d0094172787419533ea90caf173fdad"><td class="memItemLeft" align="right" valign="top"><a id="a7d0094172787419533ea90caf173fdad" name="a7d0094172787419533ea90caf173fdad"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_warnedUint16GpuIndices</b> {false}</td></tr>
+<tr class="separator:a7d0094172787419533ea90caf173fdad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad23359155d80dc8414ee54f0054aa759" id="r_ad23359155d80dc8414ee54f0054aa759"><td class="memItemLeft" align="right" valign="top"><a id="ad23359155d80dc8414ee54f0054aa759" name="ad23359155d80dc8414ee54f0054aa759"></a>
+<a class="el" href="classscore_1_1gfx_1_1_g_p_u_index_widen.html">score::gfx::GPUIndexWiden</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexWiden</b></td></tr>
+<tr class="separator:ad23359155d80dc8414ee54f0054aa759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d731d11a7a26a251fb0f56b1357b5e" id="r_ae2d731d11a7a26a251fb0f56b1357b5e"><td class="memItemLeft" align="right" valign="top"><a id="ae2d731d11a7a26a251fb0f56b1357b5e" name="ae2d731d11a7a26a251fb0f56b1357b5e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexWidenTried</b> {false}</td></tr>
+<tr class="separator:ae2d731d11a7a26a251fb0f56b1357b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf3c9cfe67d24019ccc32185728921a" id="r_a2cf3c9cfe67d24019ccc32185728921a"><td class="memItemLeft" align="right" valign="top"><a id="a2cf3c9cfe67d24019ccc32185728921a" name="a2cf3c9cfe67d24019ccc32185728921a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_indexWidenReady</b> {false}</td></tr>
+<tr class="separator:a2cf3c9cfe67d24019ccc32185728921a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a598f1780873b479f70dce17cc7354c36" id="r_a598f1780873b479f70dce17cc7354c36"><td class="memItemLeft" align="right" valign="top"><a id="a598f1780873b479f70dce17cc7354c36" name="a598f1780873b479f70dce17cc7354c36"></a>
+std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_g_p_u_index_widen_1_1_prepared_op.html">score::gfx::GPUIndexWiden::PreparedOp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_widenOps</b></td></tr>
+<tr class="separator:a598f1780873b479f70dce17cc7354c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dd656986f13280746d13ffac9ea7586" id="r_a9dd656986f13280746d13ffac9ea7586"><td class="memItemLeft" align="right" valign="top"><a id="a9dd656986f13280746d13ffac9ea7586" name="a9dd656986f13280746d13ffac9ea7586"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_seenPoolGeneration</b> {~0ull}</td></tr>
 <tr class="separator:a9dd656986f13280746d13ffac9ea7586"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -555,6 +589,9 @@ std::vector&lt; PerDrawBoundsGPU &gt;&#160;</td><td class="memItemRight" valign=
 <tr class="memitem:a5733d2d19ce55b806f5b7c3e7b5c9407" id="r_a5733d2d19ce55b806f5b7c3e7b5c9407"><td class="memItemLeft" align="right" valign="top"><a id="a5733d2d19ce55b806f5b7c3e7b5c9407" name="a5733d2d19ce55b806f5b7c3e7b5c9407"></a>
 ossia::hash_map&lt; const ossia::material_component *, <a class="el" href="structscore_1_1gfx_1_1_gpu_resource_registry_1_1_slot.html">GpuResourceRegistry::Slot</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_loaderMaterialSlots</b></td></tr>
 <tr class="separator:a5733d2d19ce55b806f5b7c3e7b5c9407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0136a5380b40ce32ddb703a251929573" id="r_a0136a5380b40ce32ddb703a251929573"><td class="memItemLeft" align="right" valign="top"><a id="a0136a5380b40ce32ddb703a251929573" name="a0136a5380b40ce32ddb703a251929573"></a>
+ossia::hash_map&lt; const ossia::light_component *, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_loader_light_slots.html">LoaderLightSlots</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_loaderLightSlots</b></td></tr>
+<tr class="separator:a0136a5380b40ce32ddb703a251929573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c74fe5be5d1ca875c65a62d6cfcf82b" id="r_a4c74fe5be5d1ca875c65a62d6cfcf82b"><td class="memItemLeft" align="right" valign="top"><a id="a4c74fe5be5d1ca875c65a62d6cfcf82b" name="a4c74fe5be5d1ca875c65a62d6cfcf82b"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_lastDrawCount</b> {}</td></tr>
 <tr class="separator:a4c74fe5be5d1ca875c65a62d6cfcf82b"><td class="memSeparator" colspan="2">&#160;</td></tr>

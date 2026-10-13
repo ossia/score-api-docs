@@ -1139,6 +1139,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9d5f891419eef5423c5e81b7d4e8f514" id="r_a9d5f891419eef5423c5e81b7d4e8f514"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a9d5f891419eef5423c5e81b7d4e8f514">loadApplicationResources</a> ()</td></tr>
+<tr class="separator:a9d5f891419eef5423c5e81b7d4e8f514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a990661d87363a907999aacbe0fb27b9d" id="r_a990661d87363a907999aacbe0fb27b9d"><td class="memItemLeft" align="right" valign="top"><a id="a990661d87363a907999aacbe0fb27b9d" name="a990661d87363a907999aacbe0fb27b9d"></a>
 const <a class="el" href="structscore_1_1_application_context.html">ApplicationContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>AppContext</b> ()</td></tr>
 <tr class="separator:a990661d87363a907999aacbe0fb27b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1595,6 +1597,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setHelp</b> (QAction 
 <tr class="memitem:ab11dec7313a08388192b2259f2b50e62" id="r_ab11dec7313a08388192b2259f2b50e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ab11dec7313a08388192b2259f2b50e62">setItemViewDragPixmap</a> (QDrag &amp;drag, QAbstractItemView &amp;view, const QStyleOptionViewItem &amp;option, const QModelIndexList &amp;indexes)</td></tr>
 <tr class="memdesc:ab11dec7313a08388192b2259f2b50e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Give a QDrag the drag image QAbstractItemView::startDrag would have made.  <br /></td></tr>
 <tr class="separator:ab11dec7313a08388192b2259f2b50e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a5fdfa0d90853d534af8ec457099d56" id="r_a6a5fdfa0d90853d534af8ec457099d56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a6a5fdfa0d90853d534af8ec457099d56">interactiveSession</a> () noexcept</td></tr>
+<tr class="separator:a6a5fdfa0d90853d534af8ec457099d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adebf75f54cfd2a84e2ed00c0442a9762" id="r_adebf75f54cfd2a84e2ed00c0442a9762"><td class="memItemLeft" align="right" valign="top"><a id="adebf75f54cfd2a84e2ed00c0442a9762" name="adebf75f54cfd2a84e2ed00c0442a9762"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>question</b> (QWidget *parent, const QString &amp;title, const QString &amp;text)</td></tr>
 <tr class="separator:adebf75f54cfd2a84e2ed00c0442a9762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2078,6 +2082,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a6a5fdfa0d90853d534af8ec457099d56" name="a6a5fdfa0d90853d534af8ec457099d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a5fdfa0d90853d534af8ec457099d56">&#9670;&#160;</a></span>interactiveSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::interactiveSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether a human is there to answer a dialog: false in tests (SCORE_SANITIZE_SKIP_CHECKS), without a GUI, when a script drives the session, and on the offscreen and minimal platforms. </p>
+
+</div>
+</div>
 <a id="a52a08d8d23cef734b83474916ddd530b" name="a52a08d8d23cef734b83474916ddd530b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52a08d8d23cef734b83474916ddd530b">&#9670;&#160;</a></span>isContainedRelativePath()</h2>
 
@@ -2236,6 +2266,24 @@ template&lt;typename T , std::size_t N, typename Set &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Give every component but <code>source</code> the delta that <code>source</code> just took. Normalized units: each one moves by the same fraction of its own range and stops at its own bounds. </p>
+
+</div>
+</div>
+<a id="a9d5f891419eef5423c5e81b7d4e8f514" name="a9d5f891419eef5423c5e81b7d4e8f514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5f891419eef5423c5e81b7d4e8f514">&#9670;&#160;</a></span>loadApplicationResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::loadApplicationResources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialise the embedded resources, static links included, and register the fonts with the current QApplication. Call before any view or plugin. </p>
 
 </div>
 </div>

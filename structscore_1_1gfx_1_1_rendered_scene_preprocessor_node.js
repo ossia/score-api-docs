@@ -2,7 +2,9 @@ var structscore_1_1gfx_1_1_rendered_scene_preprocessor_node =
 [
     [ "CloudMetaGPU", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_cloud_meta_g_p_u.html", null ],
     [ "GpuAttrView", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_attr_view.html", null ],
+    [ "GpuIndexRules", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html", null ],
     [ "InstSlotLayout", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html", null ],
+    [ "LoaderLightSlots", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_loader_light_slots.html", null ],
     [ "MDIState", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_m_d_i_state.html", null ],
     [ "PendingGpuCopy", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_gpu_copy.html", null ],
     [ "PendingLayer", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_pending_layer.html", null ],

@@ -184,6 +184,8 @@ const std::shared_ptr&lt; ossia::graph_interface &gt; &amp;&#160;</td><td class=
 <tr class="memitem:acaab2635a04c0c3d8b195d5583c1ac1f" id="r_acaab2635a04c0c3d8b195d5583c1ac1f"><td class="memItemLeft" align="right" valign="top"><a id="acaab2635a04c0c3d8b195d5583c1ac1f" name="acaab2635a04c0c3d8b195d5583c1ac1f"></a>
 const std::shared_ptr&lt; ossia::execution_state &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>execState</b></td></tr>
 <tr class="separator:acaab2635a04c0c3d8b195d5583c1ac1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21a81d028f170bef09c46a417a7cf1f" id="r_af21a81d028f170bef09c46a417a7cf1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_execution_1_1_context.html#af21a81d028f170bef09c46a417a7cf1f">retired</a> = false</td></tr>
+<tr class="separator:af21a81d028f170bef09c46a417a7cf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1a0fd8f494c0a427dc09b7da3e94bf36" name="a1a0fd8f494c0a427dc09b7da3e94bf36"></a>
@@ -198,6 +200,22 @@ const std::shared_ptr&lt; ossia::execution_state &gt; &amp;&#160;</td><td class=
       </table>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd>LiveModification </dd></dl>
+
+</div>
+</div>
+<a id="af21a81d028f170bef09c46a417a7cf1f" name="af21a81d028f170bef09c46a417a7cf1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21a81d028f170bef09c46a417a7cf1f">&#9670;&#160;</a></span>retired</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Execution::Context::retired = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set when this context's ContextData has been replaced. A replaced ContextData can outlive its replacement: the tick holds a strong reference and audio_engine::sync() does not wait for the audio thread when running() is false. Until it dies it stays subscribed to the cable signal and to every port it bound, over an execution_state whose devices may already be gone, so retired contexts must do nothing.</p>
+<p>Declared last: ContextData initialises <a class="el" href="struct_execution_1_1_context.html">Context</a> positionally. UI thread only. </p>
 
 </div>
 </div>

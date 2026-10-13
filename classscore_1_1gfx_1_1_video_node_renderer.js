@@ -4,5 +4,6 @@ var classscore_1_1gfx_1_1_video_node_renderer =
     [ "hasOutputPassForEdge", "classscore_1_1gfx_1_1_video_node_renderer.html#a5975e2e4ebbfca17924eedb64e898e4d", null ],
     [ "initState", "classscore_1_1gfx_1_1_video_node_renderer.html#aff3c6d0073d3adc6bcbb22cacb4e1339", null ],
     [ "releaseState", "classscore_1_1gfx_1_1_video_node_renderer.html#ae24efccfd168632ead246efb52600f1d", null ],
-    [ "removeOutputPass", "classscore_1_1gfx_1_1_video_node_renderer.html#ad50576eaeb9a6395634b75364863fcdf", null ]
+    [ "removeOutputPass", "classscore_1_1gfx_1_1_video_node_renderer.html#ad50576eaeb9a6395634b75364863fcdf", null ],
+    [ "textureForOutput", "classscore_1_1gfx_1_1_video_node_renderer.html#a1a3fea07e47f605171a4e7299871b662", null ]
 ];

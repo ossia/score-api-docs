@@ -805,7 +805,7 @@ $(document).ready(function(){initNavTree('_device_recorder_8hpp_source.html','')
 <div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>  {</div>
 <div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    std::shared_ptr&lt;recorder_thread&gt; recorder;</div>
 <div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>    std::shared_ptr&lt;player_thread&gt; player;</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    <span class="keyword">using </span>mode_type = <span class="keyword">decltype</span>(<a class="code hl_struct" href="structavnd__tools_1_1_device_recorder_1_1inputs__t.html">DeviceRecorder::inputs_t</a>{}.mode.value);</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    <span class="keyword">using </span>mode_type = <span class="keyword">decltype</span>(std::declval&lt;inputs_t&amp;&gt;().mode.value);</div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>    mode_type mode{};</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    Separator separator{Separator::Colon};</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>    <span class="keywordtype">void</span> operator()()</div>

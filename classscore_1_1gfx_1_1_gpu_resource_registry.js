@@ -1,6 +1,7 @@
 var classscore_1_1gfx_1_1_gpu_resource_registry =
 [
     [ "MeshSlab", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_slab.html", null ],
+    [ "MeshUploadBatch", "classscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_upload_batch.html", "classscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_upload_batch" ],
     [ "PrimitiveCloudUploads", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_primitive_cloud_uploads.html", null ],
     [ "Slot", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_slot.html", null ],
     [ "TextureChannelState", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state.html", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_texture_channel_state" ],

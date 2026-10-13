@@ -914,6 +914,7 @@ var hierarchy =
     [ "State::Domain", "struct_state_1_1_domain.html", null ],
     [ "Scenario::DoNotMoveInterval_StateWrapper", "class_scenario_1_1_do_not_move_interval___state_wrapper.html", null ],
     [ "score::gfx::DrawCall", "structscore_1_1gfx_1_1_draw_call.html", null ],
+    [ "score::gfx::DrawCommandRange", "structscore_1_1gfx_1_1_draw_command_range.html", null ],
     [ "Jit::Driver", "struct_jit_1_1_driver.html", null ],
     [ "score::gfx::drm::DrmFunctions", "structscore_1_1gfx_1_1drm_1_1_drm_functions.html", null ],
     [ "Device::DroppedAddress", "struct_device_1_1_dropped_address.html", null ],
@@ -1224,6 +1225,8 @@ var hierarchy =
     [ "score::gfx::RenderedMergeGeometriesNode::GpuBake", "structscore_1_1gfx_1_1_rendered_merge_geometries_node_1_1_gpu_bake.html", null ],
     [ "score::gfx::GPUBufferScatter", "classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html", null ],
     [ "score::gfx::interop::GpuCapabilities", "structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html", null ],
+    [ "score::gfx::RenderedScenePreprocessorNode::GpuIndexRules", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_gpu_index_rules.html", null ],
+    [ "score::gfx::GPUIndexWiden", "classscore_1_1gfx_1_1_g_p_u_index_widen.html", null ],
     [ "score::gfx::GpuResourceRegistry", "classscore_1_1gfx_1_1_gpu_resource_registry.html", null ],
     [ "score::gfx::interop::GpuRingBufferSlot", "structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html", null ],
     [ "score::gfx::GpuTimings", "classscore_1_1gfx_1_1_gpu_timings.html", null ],
@@ -1550,8 +1553,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2257,6 +2260,8 @@ var hierarchy =
     ] ],
     [ "ao::Switch::Literal", "structao_1_1_switch_1_1_literal.html", null ],
     [ "score::LoadedPluginVersions", "structscore_1_1_loaded_plugin_versions.html", null ],
+    [ "score::gfx::FlatScene::LoaderLight", "structscore_1_1gfx_1_1_flat_scene_1_1_loader_light.html", null ],
+    [ "score::gfx::RenderedScenePreprocessorNode::LoaderLightSlots", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_loader_light_slots.html", null ],
     [ "Protocols::LocalSpecificSettings", "struct_protocols_1_1_local_specific_settings.html", null ],
     [ "Jit::located_sdk", "struct_jit_1_1located__sdk.html", null ],
     [ "score::LockHelper", "classscore_1_1_lock_helper.html", null ],
@@ -2325,6 +2330,7 @@ var hierarchy =
     [ "Threedim::FbxSceneExtractor::MeshParts", "struct_threedim_1_1_fbx_scene_extractor_1_1_mesh_parts.html", null ],
     [ "score::gfx::GpuResourceRegistry::MeshSlab", "structscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_slab.html", null ],
     [ "score::gfx::MeshUBO", "structscore_1_1gfx_1_1_mesh_u_b_o.html", null ],
+    [ "score::gfx::GpuResourceRegistry::MeshUploadBatch", "classscore_1_1gfx_1_1_gpu_resource_registry_1_1_mesh_upload_batch.html", null ],
     [ "bitfocus::win32_handles::message", "structbitfocus_1_1win32__handles_1_1message.html", null ],
     [ "LV2::Message", "struct_l_v2_1_1_message.html", null ],
     [ "Protocols::CAN::Message", "struct_protocols_1_1_c_a_n_1_1_message.html", null ],
@@ -2760,6 +2766,7 @@ var hierarchy =
     [ "LocalTree::ParameterBinding", "struct_local_tree_1_1_parameter_binding.html", null ],
     [ "Recording::ParameterPolicy", "struct_recording_1_1_parameter_policy.html", null ],
     [ "score::gfx::GPUBufferScatter::Params", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_params.html", null ],
+    [ "score::gfx::GPUIndexWiden::Params", "structscore_1_1gfx_1_1_g_p_u_index_widen_1_1_params.html", null ],
     [ "ParentComponent_T", null, [
       [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >", "classscore_1_1_component_hierarchy_manager.html", null ],
       [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >", "classscore_1_1_polymorphic_component_hierarchy_manager.html", null ]
@@ -2954,6 +2961,7 @@ var hierarchy =
     [ "Process::PortItemLayout", "struct_process_1_1_port_item_layout.html", null ],
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "score::gfx::GPUBufferScatter::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_prepared_op.html", null ],
+    [ "score::gfx::GPUIndexWiden::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_index_widen_1_1_prepared_op.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "Protocols::MIDIDevices::Preset", "struct_protocols_1_1_m_i_d_i_devices_1_1_preset.html", null ],
     [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
@@ -5307,6 +5315,7 @@ var hierarchy =
       [ "score::gfx::interop::DvpOutputGl< Lock >", "structscore_1_1gfx_1_1interop_1_1_dvp_output_gl.html", null ]
     ] ],
     [ "score::gfx::interop::VideoOutputStrategyConfig", "structscore_1_1gfx_1_1interop_1_1_video_output_strategy_config.html", null ],
+    [ "score::gfx::VideoOwnTexture", "classscore_1_1gfx_1_1_video_own_texture.html", null ],
     [ "Video::VideoPixelFormatInfo", "struct_video_1_1_video_pixel_format_info.html", null ],
     [ "Gfx::Video::VideoProps", "struct_gfx_1_1_video_1_1_video_props.html", null ],
     [ "view_impl_t", null, [

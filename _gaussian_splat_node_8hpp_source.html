@@ -697,7 +697,7 @@ $(document).ready(function(){initNavTree('_gaussian_splat_node_8hpp_source.html'
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="stringliteral">    uint useSorting; // 0 = no sorting, 1 = use sorted indices</span></div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="stringliteral">};</span></div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="stringliteral">layout(location = 0) out vec2 f_center;  // screen-space splat center (pixels)</span></div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="stringliteral">layout(location = 0) out vec2 f_offset; // offset from the splat centre, NDC pixels (x right, y up)</span></div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="stringliteral">layout(location = 1) out vec4 f_color;</span></div>
 <div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="stringliteral">layout(location = 2) out vec3 f_conic;</span></div>
 <div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="stringliteral"></span> </div>
@@ -815,85 +815,90 @@ $(document).ready(function(){initNavTree('_gaussian_splat_node_8hpp_source.html'
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="stringliteral">        return;</span></div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="stringliteral">    }</span></div>
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="stringliteral">    // Inverse covariance (conic) for fragment Gaussian evaluation.</span></div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="stringliteral">    // The cross-term sign must match the screen-space convention of gl_FragCoord:</span></div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="stringliteral">    //   Vulkan/Metal/D3D (clipSpaceCorr[1][1] &lt; 0): both screen axes flip</span></div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="stringliteral">    //     relative to J-space, preserving the cross-product sign.</span></div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="stringliteral">    //   OpenGL (clipSpaceCorr[1][1] &gt; 0): only X flips, requiring correction.</span></div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="stringliteral">    float inv_det = 1.0 / det;</span></div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="stringliteral">    float crossSign = sign(clipSpaceCorr[1][1]);</span></div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="stringliteral">    f_conic = vec3(cov_yy * inv_det, crossSign * cov_xy * inv_det, cov_xx * inv_det);</span></div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="stringliteral">    // Oriented quad: major axis along eigVec1, minor along eigVec2</span></div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="stringliteral">    vec2 pixelOffset = quadPos.x * r1 * eigVec1 + quadPos.y * r2 * eigVec2;</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="stringliteral">    vec2 center = ndc.xy;</span></div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="stringliteral">    vec2 ndcOffset = pixelOffset * 2.0 / viewport;</span></div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="stringliteral">    gl_Position = clipSpaceCorr * vec4(center + ndcOffset, ndc.z, 1.0);</span></div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="stringliteral">    // Score&#39;s texture compositing pipeline flips Y when sampling for Vulkan/HLSL/Metal.</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="stringliteral">    // To match this convention (same as ISF shaders), we undo clipSpaceCorr&#39;s Y-flip here</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="stringliteral">    // so the compositing re-flip produces a correctly oriented final image.</span></div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="stringliteral">    gl_Position.y = -gl_Position.y;</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="stringliteral">    // Screen-space center in pixels (matches gl_FragCoord coordinate system)</span></div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="stringliteral">    vec4 centerClip = clipSpaceCorr * vec4(ndc.xy, ndc.z, 1.0);</span></div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="stringliteral">    centerClip.y = -centerClip.y;</span></div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span><span class="stringliteral">    f_center = (centerClip.xy / centerClip.w * 0.5 + 0.5) * viewport;</span></div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="stringliteral">    // Fade out excessively large projected splats.</span></div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span><span class="stringliteral">    float alpha = splat.color.a * mipCoef;</span></div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="stringliteral">    float maxR = max(r1, r2);</span></div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="stringliteral">    float fadeRadius = 512.0;</span></div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="stringliteral">    if (maxR &gt; fadeRadius) {</span></div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span><span class="stringliteral">        float fade = fadeRadius / maxR;</span></div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="stringliteral">        alpha *= fade;</span></div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="stringliteral">        if (alpha &lt; 1.0 / 255.0) {</span></div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="stringliteral">            gl_Position = vec4(0.0, 0.0, 2.0, 1.0);</span></div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span><span class="stringliteral">            return;</span></div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span><span class="stringliteral">        }</span></div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span><span class="stringliteral">    }</span></div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span><span class="stringliteral">    f_color = vec4(splat.color.rgb, alpha);</span></div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span><span class="stringliteral">}</span></div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="stringliteral">)_&quot;;</span></div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span><span class="stringliteral"></span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> fragment_shader = R<span class="stringliteral">&quot;_(#version 450</span></div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="stringliteral">layout(location = 0) in vec2 f_center;  // screen-space splat center (pixels)</span></div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="stringliteral">layout(location = 1) in vec4 f_color;</span></div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span><span class="stringliteral">layout(location = 2) in vec3 f_conic;</span></div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span><span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span><span class="stringliteral">void main() {</span></div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><span class="stringliteral">    // Pixel offset from splat center, computed per-fragment for precision.</span></div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span><span class="stringliteral">    // Unlike interpolated UVs, this is exact regardless of quad orientation.</span></div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span><span class="stringliteral">    vec2 d = gl_FragCoord.xy - f_center;</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="stringliteral">    // Inverse covariance (conic) for fragment Gaussian evaluation, in the same</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="stringliteral">    // space as the quad: NDC scaled to pixels (x right, y up). J-space is that</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="stringliteral">    // space negated on both axes (view z &lt; 0), which leaves cov_xy unchanged.</span></div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="stringliteral">    // The fragment stage evaluates the Gaussian on the interpolated quad</span></div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="stringliteral">    // offset, never on gl_FragCoord: the window origin is bottom-left on</span></div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span><span class="stringliteral">    // OpenGL and top-left elsewhere, and its relation to NDC differs again</span></div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="stringliteral">    // between Vulkan (y down) and Metal/D3D (y up), so a gl_FragCoord-based</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span><span class="stringliteral">    // centre and cross-term sign cannot be right on every backend (it put</span></div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span><span class="stringliteral">    // every splat off its quad on Metal/D3D, i.e. a black image).</span></div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span><span class="stringliteral">    float inv_det = 1.0 / det;</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="stringliteral">    f_conic = vec3(cov_yy * inv_det, -cov_xy * inv_det, cov_xx * inv_det);</span></div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="stringliteral">    // Oriented quad: major axis along eigVec1, minor along eigVec2</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span><span class="stringliteral">    vec2 pixelOffset = quadPos.x * r1 * eigVec1 + quadPos.y * r2 * eigVec2;</span></div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span><span class="stringliteral">    vec2 center = ndc.xy;</span></div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span><span class="stringliteral">    vec2 ndcOffset = pixelOffset * 2.0 / viewport;</span></div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span><span class="stringliteral">    gl_Position = clipSpaceCorr * vec4(center + ndcOffset, ndc.z, 1.0);</span></div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span><span class="stringliteral">    // Published images have render-target row order: on Vulkan that means</span></div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="stringliteral">    // undoing clipSpaceCorr&#39;s Y-flip, on OpenGL flipping the GL-convention</span></div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span><span class="stringliteral">    // NDC. Metal and D3D already get render-target order from clipSpaceCorr</span></div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="stringliteral">    // (no Y term there); negating unconditionally drew them upside down.</span></div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="stringliteral">#if !defined(QSHADER_HLSL) &amp;&amp; !defined(QSHADER_MSL)</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span><span class="stringliteral">    gl_Position.y = -gl_Position.y;</span></div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span><span class="stringliteral">#endif</span></div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span><span class="stringliteral">    // gl_Position.w is 1, so this interpolates linearly in screen space and</span></div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="stringliteral">    // is exact at every fragment.</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="stringliteral">    f_offset = pixelOffset;</span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span><span class="stringliteral">    // Fade out excessively large projected splats.</span></div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="stringliteral">    float alpha = splat.color.a * mipCoef;</span></div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="stringliteral">    float maxR = max(r1, r2);</span></div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="stringliteral">    float fadeRadius = 512.0;</span></div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span><span class="stringliteral">    if (maxR &gt; fadeRadius) {</span></div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span><span class="stringliteral">        float fade = fadeRadius / maxR;</span></div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span><span class="stringliteral">        alpha *= fade;</span></div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span><span class="stringliteral">        if (alpha &lt; 1.0 / 255.0) {</span></div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span><span class="stringliteral">            gl_Position = vec4(0.0, 0.0, 2.0, 1.0);</span></div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="stringliteral">            return;</span></div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="stringliteral">        }</span></div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span><span class="stringliteral">    }</span></div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="stringliteral">    f_color = vec4(splat.color.rgb, alpha);</span></div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="stringliteral">}</span></div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="stringliteral">)_&quot;;</span></div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span><span class="stringliteral"></span><span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> fragment_shader = R<span class="stringliteral">&quot;_(#version 450</span></div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="stringliteral">layout(location = 0) in vec2 f_offset; // offset from the splat centre, NDC pixels</span></div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span><span class="stringliteral">layout(location = 1) in vec4 f_color;</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><span class="stringliteral">layout(location = 2) in vec3 f_conic;</span></div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span><span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
 <div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="stringliteral">    float power = -0.5 * (f_conic.x * d.x * d.x +</span></div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="stringliteral">                          2.0 * f_conic.y * d.x * d.y +</span></div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="stringliteral">                          f_conic.z * d.y * d.y);</span></div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="stringliteral">    if (power &gt; 0.0) discard;</span></div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="stringliteral">    float gaussian = exp(power);</span></div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="stringliteral">    float alpha = min(0.99, gaussian * f_color.a);</span></div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="stringliteral">    if (alpha &lt; 1.0/255.0) discard;</span></div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="stringliteral">    fragColor = vec4(f_color.rgb * alpha, alpha);</span></div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="stringliteral">}</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="stringliteral">)_&quot;;</span></div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="stringliteral"></span> </div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="stringliteral">} </span><span class="comment">// namespace GaussianSplatShaders</span></div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>} <span class="comment">// namespace score::gfx</span></div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="stringliteral">void main() {</span></div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="stringliteral">    // Offset from the splat centre in the conic&#39;s own space (see the vertex</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="stringliteral">    // stage), identical on every backend.</span></div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="stringliteral">    vec2 d = f_offset;</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="stringliteral">    float power = -0.5 * (f_conic.x * d.x * d.x +</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="stringliteral">                          2.0 * f_conic.y * d.x * d.y +</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="stringliteral">                          f_conic.z * d.y * d.y);</span></div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="stringliteral">    if (power &gt; 0.0) discard;</span></div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="stringliteral">    float gaussian = exp(power);</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="stringliteral">    float alpha = min(0.99, gaussian * f_color.a);</span></div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="stringliteral">    if (alpha &lt; 1.0/255.0) discard;</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="stringliteral">    fragColor = vec4(f_color.rgb * alpha, alpha);</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="stringliteral">}</span></div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="stringliteral">)_&quot;;</span></div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="stringliteral"></span> </div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="stringliteral">} </span><span class="comment">// namespace GaussianSplatShaders</span></div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span> </div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>} <span class="comment">// namespace score::gfx</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html">score::gfx::GaussianSplatRenderer</a></div><div class="ttdoc">Renderer for GaussianSplatNode.</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.hpp:75</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a18370f6215f8921fe18435406a5e6341"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a18370f6215f8921fe18435406a5e6341">score::gfx::GaussianSplatRenderer::initState</a></div><div class="ttdeci">void initState(RenderList &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:550</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a8ff408ab3d598276e0a0bed727682168"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a8ff408ab3d598276e0a0bed727682168">score::gfx::GaussianSplatRenderer::removeOutputPass</a></div><div class="ttdeci">void removeOutputPass(RenderList &amp;renderer, Edge &amp;edge) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:604</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a992362222840a2d784437b89cdcf4775"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a992362222840a2d784437b89cdcf4775">score::gfx::GaussianSplatRenderer::addOutputPass</a></div><div class="ttdeci">void addOutputPass(RenderList &amp;renderer, Edge &amp;edge, QRhiResourceUpdateBatch &amp;res) override</div><div class="ttdoc">Create a pass for a new output edge (pipeline, SRB, processUBO).</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:597</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_aae8fbcfb67c96538a15e7b81e1abf857"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aae8fbcfb67c96538a15e7b81e1abf857">score::gfx::GaussianSplatRenderer::releaseState</a></div><div class="ttdeci">void releaseState(RenderList &amp;) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:1038</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_aef7adebbc8cc8f6f1ce2cd7800817177"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aef7adebbc8cc8f6f1ce2cd7800817177">score::gfx::GaussianSplatRenderer::hasOutputPassForEdge</a></div><div class="ttdeci">bool hasOutputPassForEdge(Edge &amp;edge) const override</div><div class="ttdoc">Check if this renderer already has an output pass for the given edge.</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:612</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:318</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a18370f6215f8921fe18435406a5e6341"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a18370f6215f8921fe18435406a5e6341">score::gfx::GaussianSplatRenderer::initState</a></div><div class="ttdeci">void initState(RenderList &amp;renderer, QRhiResourceUpdateBatch &amp;res) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:552</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a8ff408ab3d598276e0a0bed727682168"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a8ff408ab3d598276e0a0bed727682168">score::gfx::GaussianSplatRenderer::removeOutputPass</a></div><div class="ttdeci">void removeOutputPass(RenderList &amp;renderer, Edge &amp;edge) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:606</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_a992362222840a2d784437b89cdcf4775"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#a992362222840a2d784437b89cdcf4775">score::gfx::GaussianSplatRenderer::addOutputPass</a></div><div class="ttdeci">void addOutputPass(RenderList &amp;renderer, Edge &amp;edge, QRhiResourceUpdateBatch &amp;res) override</div><div class="ttdoc">Create a pass for a new output edge (pipeline, SRB, processUBO).</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:599</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_aae8fbcfb67c96538a15e7b81e1abf857"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aae8fbcfb67c96538a15e7b81e1abf857">score::gfx::GaussianSplatRenderer::releaseState</a></div><div class="ttdeci">void releaseState(RenderList &amp;) override</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:1048</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_gaussian_splat_renderer_html_aef7adebbc8cc8f6f1ce2cd7800817177"><div class="ttname"><a href="classscore_1_1gfx_1_1_gaussian_splat_renderer.html#aef7adebbc8cc8f6f1ce2cd7800817177">score::gfx::GaussianSplatRenderer::hasOutputPassForEdge</a></div><div class="ttdeci">bool hasOutputPassForEdge(Edge &amp;edge) const override</div><div class="ttdoc">Check if this renderer already has an output pass for the given edge.</div><div class="ttdef"><b>Definition</b> GaussianSplatNode.cpp:614</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:326</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:279</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>

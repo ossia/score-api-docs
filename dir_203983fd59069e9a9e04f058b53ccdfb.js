@@ -56,6 +56,7 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
     [ "Primitive.hpp", "_primitive_8hpp_source.html", null ],
     [ "SceneDuplicator.hpp", "_scene_duplicator_8hpp_source.html", null ],
     [ "SceneFromMeshes.hpp", "_scene_from_meshes_8hpp_source.html", null ],
+    [ "SceneGlob.hpp", "_scene_glob_8hpp_source.html", null ],
     [ "SceneGraphFilter.hpp", "_scene_graph_filter_8hpp_source.html", null ],
     [ "SceneGroup.hpp", "_scene_group_8hpp_source.html", null ],
     [ "SceneInspector.hpp", "_scene_inspector_8hpp_source.html", null ],

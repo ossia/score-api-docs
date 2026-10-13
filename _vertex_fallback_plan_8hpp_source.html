@@ -165,17 +165,23 @@ $(document).ready(function(){initNavTree('_vertex_fallback_plan_8hpp_source.html
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  std::vector&lt;int&gt; mesh_bindings;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> compacted{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">bool</span> empty() const noexcept { <span class="keywordflow">return</span> slots.empty() &amp;&amp; !compacted; }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> clear() noexcept</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    slots.clear();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    mesh_bindings.clear();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    compacted = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="comment">// The pipeline draws each point as a quad: every vertex binding steps per</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// instance, and a point list of N vertices is drawn as N instances of 6</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// vertices (isf::raw_raster_point_quads, for backends without a point size).</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">bool</span> point_quads{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">bool</span> empty() const noexcept { <span class="keywordflow">return</span> slots.empty() &amp;&amp; !compacted &amp;&amp; !point_quads; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> clear() noexcept</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    slots.clear();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    mesh_bindings.clear();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    compacted = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    point_quads = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <span class="comment">// namespace score::gfx</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <span class="comment">// namespace score::gfx</span></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_fallback_binding_plan_1_1_slot_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_fallback_binding_plan_1_1_slot.html">score::gfx::FallbackBindingPlan::Slot</a></div><div class="ttdef"><b>Definition</b> VertexFallbackPlan.hpp:29</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_fallback_binding_plan_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_fallback_binding_plan.html">score::gfx::FallbackBindingPlan</a></div><div class="ttdef"><b>Definition</b> VertexFallbackPlan.hpp:27</div></div>

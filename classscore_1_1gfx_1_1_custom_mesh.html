@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_custom_mesh.html
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classscore_1_1gfx_1_1_custom_mesh-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::CustomMesh Class Reference</div></div>
@@ -118,6 +119,26 @@ Inheritance diagram for score::gfx::CustomMesh:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0eb04c1f44ed0a4b868066e67dcb3163" id="r_a0eb04c1f44ed0a4b868066e67dcb3163"><td class="memItemLeft" align="right" valign="top"><a id="a0eb04c1f44ed0a4b868066e67dcb3163" name="a0eb04c1f44ed0a4b868066e67dcb3163"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CommandRange</b> = <a class="el" href="structscore_1_1gfx_1_1_draw_command_range.html">DrawCommandRange</a></td></tr>
+<tr class="separator:a0eb04c1f44ed0a4b868066e67dcb3163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_structscore_1_1gfx_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structscore_1_1gfx_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></td></tr>
+<tr class="memitem:a72e7dc86ad0ecc8372f481533873137c inherit pub_types_structscore_1_1gfx_1_1_mesh" id="r_a72e7dc86ad0ecc8372f481533873137c"><td class="memItemLeft" align="right" valign="top"><a id="a72e7dc86ad0ecc8372f481533873137c" name="a72e7dc86ad0ecc8372f481533873137c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flag</b> { <br />
+&#160;&#160;<b>HasPosition</b> = SCORE_FLAG(1)
+, <b>HasTexCoord</b> = SCORE_FLAG(2)
+, <b>HasColor</b> = SCORE_FLAG(3)
+, <b>HasNormals</b> = SCORE_FLAG(4)
+, <br />
+&#160;&#160;<b>HasTangents</b> = SCORE_FLAG(5)
+<br />
+ }</td></tr>
+<tr class="separator:a72e7dc86ad0ecc8372f481533873137c inherit pub_types_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd9046370ad0f5fb03210410b9f71ed inherit pub_types_structscore_1_1gfx_1_1_mesh" id="r_aebd9046370ad0f5fb03210410b9f71ed"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> = QFlags&lt; Flag &gt;</td></tr>
+<tr class="separator:aebd9046370ad0f5fb03210410b9f71ed inherit pub_types_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6fd9ee82e4f1664288bdba5ad066c18b" id="r_a6fd9ee82e4f1664288bdba5ad066c18b"><td class="memItemLeft" align="right" valign="top"><a id="a6fd9ee82e4f1664288bdba5ad066c18b" name="a6fd9ee82e4f1664288bdba5ad066c18b"></a>
@@ -171,11 +192,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reload</b> (const oss
 <tr class="memitem:a47bcbbe4c9d24af50e4c3fdd3f095b9a" id="r_a47bcbbe4c9d24af50e4c3fdd3f095b9a"><td class="memItemLeft" align="right" valign="top"><a id="a47bcbbe4c9d24af50e4c3fdd3f095b9a" name="a47bcbbe4c9d24af50e4c3fdd3f095b9a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drawWithFallbackBindings</b> (const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, const <a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> &amp;plan) const noexcept</td></tr>
 <tr class="separator:a47bcbbe4c9d24af50e4c3fdd3f095b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb067dad0b9484c9948b75e181f4fa1b" id="r_afb067dad0b9484c9948b75e181f4fa1b"><td class="memItemLeft" align="right" valign="top"><a id="afb067dad0b9484c9948b75e181f4fa1b" name="afb067dad0b9484c9948b75e181f4fa1b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawSingleMesh</b> (std::size_t mesh_index, std::size_t buffer_offset, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, const <a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> &amp;plan={}) const noexcept</td></tr>
-<tr class="separator:afb067dad0b9484c9948b75e181f4fa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e1c941041a5cf81b839df75803d009" id="r_a74e1c941041a5cf81b839df75803d009"><td class="memItemLeft" align="right" valign="top"><a id="a74e1c941041a5cf81b839df75803d009" name="a74e1c941041a5cf81b839df75803d009"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>drawSingleMesh</b> (std::size_t mesh_index, std::size_t buffer_offset, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, const <a class="el" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> &amp;plan={}, <a class="el" href="structscore_1_1gfx_1_1_draw_command_range.html">CommandRange</a> <a class="el" href="structrange.html">range</a>={}) const noexcept</td></tr>
+<tr class="separator:a74e1c941041a5cf81b839df75803d009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4909c3b9974dec3a2f88c1df1d3e4e64" id="r_a4909c3b9974dec3a2f88c1df1d3e4e64"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structscore_1_1gfx_1_1_draw_command_range.html">CommandRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a4909c3b9974dec3a2f88c1df1d3e4e64">blendCommandRange</a> () const noexcept</td></tr>
+<tr class="separator:a4909c3b9974dec3a2f88c1df1d3e4e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a923db1e70efa910867b469ce603d212b" id="r_a923db1e70efa910867b469ce603d212b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a923db1e70efa910867b469ce603d212b">subMeshLayoutMatchesFirst</a> (std::size_t i) const noexcept</td></tr>
 <tr class="separator:a923db1e70efa910867b469ce603d212b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ba6d155809b1b2cacd5f8238edcf1c" id="r_a97ba6d155809b1b2cacd5f8238edcf1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#a97ba6d155809b1b2cacd5f8238edcf1c">drawsAsPlainVertexList</a> () const noexcept</td></tr>
+<tr class="separator:a97ba6d155809b1b2cacd5f8238edcf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac178980cad286cc271a7f52e4d9cd6" id="r_afac178980cad286cc271a7f52e4d9cd6"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_custom_mesh.html#afac178980cad286cc271a7f52e4d9cd6">defaultVertexShader</a> () const noexcept override</td></tr>
 <tr class="memdesc:afac178980cad286cc271a7f52e4d9cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic vertex shader that is going to work with this mesh.  <br /></td></tr>
 <tr class="separator:afac178980cad286cc271a7f52e4d9cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,20 +214,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>hasGeometryChanged</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_structscore_1_1gfx_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structscore_1_1gfx_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></td></tr>
-<tr class="memitem:a72e7dc86ad0ecc8372f481533873137c inherit pub_types_structscore_1_1gfx_1_1_mesh" id="r_a72e7dc86ad0ecc8372f481533873137c"><td class="memItemLeft" align="right" valign="top"><a id="a72e7dc86ad0ecc8372f481533873137c" name="a72e7dc86ad0ecc8372f481533873137c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Flag</b> { <br />
-&#160;&#160;<b>HasPosition</b> = SCORE_FLAG(1)
-, <b>HasTexCoord</b> = SCORE_FLAG(2)
-, <b>HasColor</b> = SCORE_FLAG(3)
-, <b>HasNormals</b> = SCORE_FLAG(4)
-, <br />
-&#160;&#160;<b>HasTangents</b> = SCORE_FLAG(5)
-<br />
- }</td></tr>
-<tr class="separator:a72e7dc86ad0ecc8372f481533873137c inherit pub_types_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebd9046370ad0f5fb03210410b9f71ed inherit pub_types_structscore_1_1gfx_1_1_mesh" id="r_aebd9046370ad0f5fb03210410b9f71ed"><td class="memItemLeft" align="right" valign="top">
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Flags</b> = QFlags&lt; Flag &gt;</td></tr>
-<tr class="separator:aebd9046370ad0f5fb03210410b9f71ed inherit pub_types_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structscore_1_1gfx_1_1_mesh"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structscore_1_1gfx_1_1_mesh')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></td></tr>
 <tr class="memitem:af79affa0457d2469c3df78b2ac27dcbf inherit pub_attribs_structscore_1_1gfx_1_1_mesh" id="r_af79affa0457d2469c3df78b2ac27dcbf"><td class="memItemLeft" align="right" valign="top">
 ossia::geometry_filter_list_ptr&#160;</td><td class="memItemRight" valign="bottom"><b>filters</b></td></tr>
@@ -212,6 +223,32 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 <tr class="separator:ac563a12bfbf459c473163c0945695b36 inherit pub_attribs_structscore_1_1gfx_1_1_mesh"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4909c3b9974dec3a2f88c1df1d3e4e64" name="a4909c3b9974dec3a2f88c1df1d3e4e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4909c3b9974dec3a2f88c1df1d3e4e64">&#9670;&#160;</a></span>blendCommandRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structscore_1_1gfx_1_1_draw_command_range.html">CustomMesh::CommandRange</a> &gt; score::gfx::CustomMesh::blendCommandRange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The commands of the alpha-blended draws in a single-mesh indirect draw, from the ScenePreprocessor's _blend_draw_cmds auxiliary; empty without. </p>
+
+</div>
+</div>
 <a id="afac178980cad286cc271a7f52e4d9cd6" name="afac178980cad286cc271a7f52e4d9cd6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afac178980cad286cc271a7f52e4d9cd6">&#9670;&#160;</a></span>defaultVertexShader()</h2>
 
@@ -276,6 +313,32 @@ std::atomic_int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>dirtyG
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>.</p>
+
+</div>
+</div>
+<a id="a97ba6d155809b1b2cacd5f8238edcf1c" name="a97ba6d155809b1b2cacd5f8238edcf1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ba6d155809b1b2cacd5f8238edcf1c">&#9670;&#160;</a></span>drawsAsPlainVertexList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::CustomMesh::drawsAsPlainVertexList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>True when every sub-mesh is one plain draw: no index buffer, a single instance and no indirect or CPU command list. Only such a draw can be replayed as one instance per vertex (FallbackBindingPlan::point_quads). </p>
 
 </div>
 </div>

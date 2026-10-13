@@ -45,6 +45,7 @@ var classscore_1_1gfx_1_1_render_list =
     [ "setInitialBatch", "classscore_1_1gfx_1_1_render_list.html#a2dc50059329ca473a14a41d94577aca2", null ],
     [ "update", "classscore_1_1gfx_1_1_render_list.html#a6cafe12f314b850ea4c9a3f2a7454987", null ],
     [ "vertexFallbackPool", "classscore_1_1gfx_1_1_render_list.html#a2ad7079c58bcc381970fa048ee7e48d4", null ],
+    [ "whiteTexture", "classscore_1_1gfx_1_1_render_list.html#a776e544cbc44e17146702b9254c911e6", null ],
     [ "nodes", "classscore_1_1gfx_1_1_render_list.html#ab2cdbf0f3dba7154f6551d478eee31c4", null ],
     [ "output", "classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4", null ],
     [ "renderers", "classscore_1_1gfx_1_1_render_list.html#a73bb243161c6a3a62aa9216748d4c110", null ],
