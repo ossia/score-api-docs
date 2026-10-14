@@ -44,7 +44,7 @@ var searchData=
   ['on_5fstart_41',['on_start',['../struct_l_v2_1_1on__start.html',1,'LV2']]],
   ['on_5fvaluechange_42',['on_valueChange',['../struct_dataflow_1_1_curve_inlet.html#ae1587139603ace7c919483fdc6f82c2f',1,'Dataflow::CurveInlet']]],
   ['onabouttorender_43',['onAboutToRender',['../classscore_1_1gfx_1_1_window.html#a8583732542b1d5d1527353296a9ba91b',1,'score::gfx::Window']]],
-  ['onactivated_44',['onActivated',['../classscore_1_1_example_card.html#a1de73dac024a08bd3c5ea0addfd7067f',1,'score::ExampleCard']]],
+  ['onactivated_44',['onActivated',['../classscore_1_1_example_card.html#ae023efa5091519db22175c94bbda505e',1,'score::ExampleCard']]],
   ['oncurrentindexchanged_45',['onCurrentIndexChanged',['../classscore_1_1_graphics_strip_detail_layout.html#a2f0527eb373e2889878e482d9f9230c4',1,'score::GraphicsStripDetailLayout']]],
   ['ondelete_46',['onDelete',['../class_execution_1_1_state_component_base.html#a5e893dcec3666158222f14faf7653ede',1,'Execution::StateComponentBase']]],
   ['onedgeremoved_47',['onedgeremoved',['../structscore_1_1gfx_1_1_graph.html#a508b62ab93ea0dd33684034c1ed09089',1,'score::gfx::Graph::onEdgeRemoved()'],['../classscore_1_1gfx_1_1_render_list.html#a5ffbc940f2ab658778bd8fe4d97d36b4',1,'score::gfx::RenderList::onEdgeRemoved()']]],

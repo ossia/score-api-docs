@@ -1,5 +1,15 @@
 var NAVTREEINDEX38 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,379],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,381],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,382],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__set_3_01_t_01_4_01_4.html":[12,0,383],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1monostate_01_4.html":[12,0,384],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1nullable__variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,385],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__map__type_01_4.html":[12,0,386],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1value__variant__type_01_4.html":[12,0,387],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1variant_3_01_args_8_8_8_01_4_01_4.html":[12,0,388],
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vecf__domain_3_01_n_01_4_01_4.html":[12,0,389],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1vector__domain_01_4.html":[12,0,390],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_3_01_t_01_4_01_4.html":[12,0,403],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01score_1_1_entity_list_3_01_t_01_4_01_4.html":[12,0,404],
@@ -239,15 +249,5 @@ var NAVTREEINDEX38 =
 "struct_widget_factory_1_1_fixed_normalizer.html":[12,0,68,5],
 "struct_widget_factory_1_1_float_control.html":[12,0,68,6],
 "struct_widget_factory_1_1_float_range_slider.html":[12,0,68,7],
-"struct_widget_factory_1_1_float_range_spin_box.html":[12,0,68,8],
-"struct_widget_factory_1_1_float_spin_box.html":[12,0,68,9],
-"struct_widget_factory_1_1_folder_chooser.html":[12,0,68,10],
-"struct_widget_factory_1_1_h_s_v_slider.html":[12,0,68,11],
-"struct_widget_factory_1_1_impulse_button.html":[12,0,68,12],
-"struct_widget_factory_1_1_int_range_slider.html":[12,0,68,13],
-"struct_widget_factory_1_1_int_slider.html":[12,0,68,14],
-"struct_widget_factory_1_1_int_spin_box.html":[12,0,68,15],
-"struct_widget_factory_1_1_line_edit.html":[12,0,68,17],
-"struct_widget_factory_1_1_linear_normalizer.html":[12,0,68,16],
-"struct_widget_factory_1_1_log_normalizer.html":[12,0,68,18]
+"struct_widget_factory_1_1_float_range_spin_box.html":[12,0,68,8]
 };

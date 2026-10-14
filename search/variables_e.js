@@ -3,7 +3,7 @@ var searchData=
   ['of_0',['of',['../struct_protocols_1_1_m_i_d_i_devices_1_1_layer.html#ab282d50f0a305819747af2663feb9f3c',1,'Protocols::MIDIDevices::Layer']]],
   ['offset_1',['offset',['../structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3',1,'score::gfx::BitField']]],
   ['onabouttorender_2',['onAboutToRender',['../classscore_1_1gfx_1_1_window.html#a8583732542b1d5d1527353296a9ba91b',1,'score::gfx::Window']]],
-  ['onactivated_3',['onActivated',['../classscore_1_1_example_card.html#a1de73dac024a08bd3c5ea0addfd7067f',1,'score::ExampleCard']]],
+  ['onactivated_3',['onActivated',['../classscore_1_1_example_card.html#ae023efa5091519db22175c94bbda505e',1,'score::ExampleCard']]],
   ['oncurrentindexchanged_4',['onCurrentIndexChanged',['../classscore_1_1_graphics_strip_detail_layout.html#a2f0527eb373e2889878e482d9f9230c4',1,'score::GraphicsStripDetailLayout']]],
   ['onlycollectedfolders_5',['onlyCollectedFolders',['../struct_process_1_1_unused_files_options.html#adc1b5a091bf3e6586b3f485cd599297a',1,'Process::UnusedFilesOptions']]],
   ['onpathschanged_6',['onPathsChanged',['../struct_media_1_1_settings_1_1_plugin_tab_spec.html#a75164b69c1e749b41a351853dd0623ee',1,'Media::Settings::PluginTabSpec']]],

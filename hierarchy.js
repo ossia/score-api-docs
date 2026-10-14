@@ -3599,6 +3599,7 @@ var hierarchy =
       ] ],
       [ "State::AddressFragmentLineEdit", "class_state_1_1_address_fragment_line_edit.html", null ],
       [ "State::ExpandableTextEdit", "class_state_1_1_expandable_text_edit.html", null ],
+      [ "score::FilterEdit", "classscore_1_1_filter_edit.html", null ],
       [ "score::PromptLineEdit", "classscore_1_1_prompt_line_edit.html", null ],
       [ "score::SearchLineEdit", "classscore_1_1_search_line_edit.html", [
         [ "Explorer::ExplorerSearchLineEdit", "class_explorer_1_1_explorer_search_line_edit.html", null ],

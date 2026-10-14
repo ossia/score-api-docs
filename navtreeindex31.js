@@ -1,5 +1,15 @@
 var NAVTREEINDEX31 =
 {
+"plugins_2score-plugin-nodal_2_nodal_2_presenter_8hpp_source.html":[13,0,0,2,26,0,5],
+"plugins_2score-plugin-nodal_2_nodal_2commands_8hpp_source.html":[13,0,0,2,26,0,1],
+"plugins_2score-plugin-packagemanager_2_package_manager_2_presenter_8hpp_source.html":[13,0,0,2,27,0,5],
+"plugins_2score-plugin-protocols_2_protocols_2_network_widgets_2serialization_8hpp_source.html":[13,0,0,2,29,0,15,0],
+"plugins_2score-plugin-protocols_2_protocols_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,29,0,20,2],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_controller_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,0,0],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_http_server_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,1,0],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_settings_2_presenter_8hpp_source.html":[13,0,0,2,31,1,2,2],
+"plugins_2score-plugin-remotecontrol_2_remote_control_2_websockets_2_document_plugin_8hpp_source.html":[13,0,0,2,31,1,3,1],
+"plugins_2score-plugin-spline3d_2_spline3_d_2_metadata_8hpp_source.html":[13,0,0,2,34,0,3],
 "plugins_2score-plugin-spline3d_2_spline3_d_2commands_8hpp_source.html":[13,0,0,2,34,0,0],
 "plugins_2score-plugin-spline_2_spline_2_metadata_8hpp_source.html":[13,0,0,2,33,0,3],
 "plugins_2score-plugin-spline_2_spline_2_presenter_8hpp_source.html":[13,0,0,2,33,0,5],
@@ -239,15 +249,5 @@ var NAVTREEINDEX31 =
 "struct___gst_map_info.html":[12,0,73],
 "struct___gst_video_meta.html":[12,0,74],
 "struct_analysis_1_1_c_s_d.html":[12,0,0,4],
-"struct_analysis_1_1_centroid.html":[12,0,0,2],
-"struct_analysis_1_1_crest.html":[12,0,0,3],
-"struct_analysis_1_1_energy_difference.html":[12,0,0,5],
-"struct_analysis_1_1_envelope_follower.html":[12,0,0,6],
-"struct_analysis_1_1_flatness.html":[12,0,0,7],
-"struct_analysis_1_1_gist_state.html":[12,0,0,10],
-"struct_analysis_1_1_h_f_q.html":[12,0,0,11],
-"struct_analysis_1_1_kurtosis.html":[12,0,0,12],
-"struct_analysis_1_1_m_f_c_c.html":[12,0,0,14],
-"struct_analysis_1_1_mel_spectrum.html":[12,0,0,13],
-"struct_analysis_1_1_peak.html":[12,0,0,15]
+"struct_analysis_1_1_centroid.html":[12,0,0,2]
 };

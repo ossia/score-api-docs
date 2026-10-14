@@ -33,7 +33,7 @@ var searchData=
   ['markmeshslabseen_30',['markMeshSlabSeen',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a0d391e3cde490ab11c028623fd9a8b1d',1,'score::gfx::GpuResourceRegistry']]],
   ['markrequiresdepth_31',['markRequiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a557b2669cfd48a1ff136aed0413bb55a',1,'score::gfx::RenderList']]],
   ['marshall_32',['marshall',['../namespacescore.html#aba88450f2e8b9397ef16609ee1d5952f',1,'score']]],
-  ['matches_33',['matches',['../class_process_1_1_automatable_factory.html#a4861a6e5b7b7ca7f3c3a75eb14e44e25',1,'Process::AutomatableFactory']]],
+  ['matches_33',['matches',['../class_process_1_1_automatable_factory.html#a4861a6e5b7b7ca7f3c3a75eb14e44e25',1,'Process::AutomatableFactory::matches()'],['../classscore_1_1_example_card.html#a7445a0267f65ee64f61173a103dbc8a9',1,'score::ExampleCard::matches()']]],
   ['matchingaddresses_34',['matchingaddresses',['../class_automation_1_1_process_state.html#ad20a53e5113aa683d5f42b1be9e31a17',1,'Automation::ProcessState::matchingAddresses()'],['../class_process_state_data_interface.html#a8e11412306c832a9c19f9c50e794adc8',1,'ProcessStateDataInterface::matchingAddresses()']]],
   ['materialchange_35',['materialChange',['../classscore_1_1gfx_1_1_node.html#a8508b6bdb512aa868529f61d8c28a21b',1,'score::gfx::Node']]],
   ['materializefile_36',['materializeFile',['../namespacescore.html#a467612b37ae4654419b8dc0b01453937',1,'score']]],
