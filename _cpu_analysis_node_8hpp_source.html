@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('_cpu_analysis_node_8hpp_source.html','
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        || avnd::geometry_input_introspection&lt;Node_T&gt;::size &gt; 0</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        || scene_input_introspection&lt;Node_T&gt;::size &gt; 0)</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    {</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      res = renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;nextResourceUpdateBatch();</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>      res = renderer.state.rhi-&gt;nextResourceUpdateBatch();</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::texture_input_introspection&lt;Node_T&gt;::size &gt; 0)</div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        texture_ins.inputAboutToFinish(*<span class="keyword">this</span>, renderer, p, res);</div>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('_cpu_analysis_node_8hpp_source.html','
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">  </span>{</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">auto</span>&amp; parent = this-&gt;node();</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">auto</span>&amp; rhi = *renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">auto</span>&amp; rhi = *renderer.state.rhi;</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="comment">// Insert a synchronisation point to allow readbacks to complete</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    rhi.finish();</div>
@@ -377,7 +377,6 @@ $(document).ready(function(){initNavTree('_cpu_analysis_node_8hpp_source.html','
 <div class="ttc" id="aclassoscr_1_1_process_model_html"><div class="ttname"><a href="classoscr_1_1_process_model.html">oscr::ProcessModel</a></div><div class="ttdef"><b>Definition</b> score-plugin-avnd/Crousti/ProcessModel.hpp:88</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node_renderer.html">score::gfx::OutputNodeRenderer</a></div><div class="ttdef"><b>Definition</b> OutputNode.hpp:37</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:274</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:83</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>

@@ -85,7 +85,7 @@ var searchData=
   ['markmeshslabseen_82',['markMeshSlabSeen',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a0d391e3cde490ab11c028623fd9a8b1d',1,'score::gfx::GpuResourceRegistry']]],
   ['markrequiresdepth_83',['markRequiresDepth',['../classscore_1_1gfx_1_1_render_list.html#a557b2669cfd48a1ff136aed0413bb55a',1,'score::gfx::RenderList']]],
   ['marshall_84',['marshall',['../namespacescore.html#aba88450f2e8b9397ef16609ee1d5952f',1,'score']]],
-  ['match_85',['match',['../struct_protocols_1_1_m_i_d_i_devices_1_1_device_map.html#a7d1a15cdb754eb740d2e11ec1a5103c6',1,'Protocols::MIDIDevices::DeviceMap::match'],['../structao_1_1_regex.html#af0427d9378f66010ddad956c35d07597ac9b66b818421cd83e2caa9f6381530ac',1,'ao::Regex::Match']]],
+  ['match_85',['match',['../structao_1_1_regex.html#af0427d9378f66010ddad956c35d07597ac9b66b818421cd83e2caa9f6381530ac',1,'ao::Regex::Match'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_device_map.html#a7d1a15cdb754eb740d2e11ec1a5103c6',1,'Protocols::MIDIDevices::DeviceMap::match']]],
   ['matchedcurvetransition_86',['MatchedCurveTransition',['../class_curve_1_1_matched_curve_transition.html',1,'Curve']]],
   ['matchedcurvetransition_3c_20curveevent_3c_20element_5ft_2c_20modifier_5ft_20_3e_20_3e_87',['MatchedCurveTransition&lt; CurveEvent&lt; Element_T, Modifier_T &gt; &gt;',['../class_curve_1_1_matched_curve_transition.html',1,'Curve']]],
   ['matchedtransition_88',['matchedtransition',['../class_scenario_1_1_matched_transition.html',1,'Scenario::MatchedTransition&lt; Scenario_T, Event_T &gt;'],['../classscore_1_1_matched_transition.html',1,'score::MatchedTransition&lt; Event &gt;']]],

@@ -556,7 +556,7 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>        || avnd::buffer_input_introspection&lt;Node_T&gt;::size &gt; 0</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>        || avnd::geometry_input_introspection&lt;Node_T&gt;::size &gt; 0)</div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span>    {</div>
-<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>      res = renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;nextResourceUpdateBatch();</div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>      res = renderer.state.rhi-&gt;nextResourceUpdateBatch();</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::texture_input_introspection&lt;Node_T&gt;::size &gt; 0)</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>        texture_ins.inputAboutToFinish(*<span class="keyword">this</span>, renderer, p, res);</div>
@@ -575,7 +575,7 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span>      QRhiResourceUpdateBatch*&amp; res, <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a>&amp; edge)<span class="keyword"> override</span></div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="keyword">  </span>{</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span>    <span class="keyword">auto</span>&amp; parent = node();</div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    <span class="keyword">auto</span>&amp; rhi = *renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi;</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    <span class="keyword">auto</span>&amp; rhi = *renderer.state.rhi;</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span> </div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="comment">// runInitialPasses runs once per outgoing edge per frame, but the expensive</span></div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    <span class="comment">// work below -- the rhi.finish() sync point, input readbacks, operator()() and</span></div>
@@ -633,7 +633,7 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>        texture_outs.runInitialPasses(*<span class="keyword">this</span>, renderer, res);</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>        commands.resourceUpdate(res);</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        res = renderer.<a class="code hl_variable" href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">state</a>.rhi-&gt;nextResourceUpdateBatch();</div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span>        res = renderer.state.rhi-&gt;nextResourceUpdateBatch();</div>
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>      }</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span> </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>      <span class="comment">// Copy the data to the model node</span></div>
@@ -738,7 +738,6 @@ $(document).ready(function(){initNavTree('_cpu_filter_node_8hpp_source.html','')
 <div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:326</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html_ab9817d2afdcffb76ff503951907a4dd8"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html#ab9817d2afdcffb76ff503951907a4dd8">score::gfx::RenderList::state</a></div><div class="ttdeci">RenderState &amp; state</div><div class="ttdoc">RenderState corresponding to this RenderList.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:274</div></div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:83</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
