@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"_graphics_layout_8hpp_source.html":[13,0,0,1,1,5,11],
 "_graphics_proxy_object_8hpp_source.html":[13,0,0,1,1,5,12],
 "_graphics_scene_tool_8hpp_source.html":[13,0,0,1,1,11,1],
 "_graphics_scene_tool_palette_8hpp_source.html":[13,0,0,1,1,11,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "_mapping_inspector_widget_8hpp_source.html":[13,0,0,2,23,0,1,1],
 "_mapping_model_8hpp_source.html":[13,0,0,2,23,0,5],
 "_mapping_presenter_8hpp_source.html":[13,0,0,2,23,0,6],
-"_mapping_process_metadata_8hpp_source.html":[13,0,0,2,23,0,7],
-"_mapping_view_8hpp_source.html":[13,0,0,2,23,0,8]
+"_mapping_process_metadata_8hpp_source.html":[13,0,0,2,23,0,7]
 };

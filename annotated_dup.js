@@ -900,10 +900,12 @@ var annotated_dup =
       [ "View", "class_interp_state_1_1_view.html", null ]
     ] ],
     [ "Jit", null, [
+      [ "Bytebeat", null, [
+        [ "Generated", "struct_jit_1_1_bytebeat_1_1_generated.html", null ]
+      ] ],
       [ "AddonCompiler", "class_jit_1_1_addon_compiler.html", null ],
       [ "AddonData", "struct_jit_1_1_addon_data.html", "struct_jit_1_1_addon_data" ],
       [ "ApplicationPlugin", "struct_jit_1_1_application_plugin.html", "struct_jit_1_1_application_plugin" ],
-      [ "bytebeat_node", "class_jit_1_1bytebeat__node.html", null ],
       [ "BytebeatExecutor", "class_jit_1_1_bytebeat_executor.html", null ],
       [ "BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
       [ "ClangCC1Driver", "class_jit_1_1_clang_c_c1_driver.html", null ],

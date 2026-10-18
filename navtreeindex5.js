@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_plugin_8hpp_source.html":[13,0,0,2,39,0,10],
 "_plugin_dependency_graph_8hpp_source.html":[13,0,0,1,0,5,0],
 "_plugin_instances_8hpp_source.html":[13,0,0,1,1,8,12],
 "_plugin_item_model_8hpp_source.html":[13,0,0,2,27,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_scenario_document_presenter_8hpp_source.html":[13,0,0,2,32,4,3,7,9],
 "_scenario_document_view_8hpp_source.html":[13,0,0,2,32,4,3,7,10],
 "_scenario_document_view_constants_8hpp_source.html":[13,0,0,2,32,4,3,7,11],
-"_scenario_drop_handler_8hpp_source.html":[13,0,0,2,32,4,0,0,13],
-"_scenario_edition_settings_8hpp_source.html":[13,0,0,2,32,4,0,4]
+"_scenario_drop_handler_8hpp_source.html":[13,0,0,2,32,4,0,0,13]
 };

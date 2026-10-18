@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"struct_widget_factory_1_1_float_range_spin_box.html":[12,0,68,8],
 "struct_widget_factory_1_1_float_spin_box.html":[12,0,68,9],
 "struct_widget_factory_1_1_folder_chooser.html":[12,0,68,10],
 "struct_widget_factory_1_1_h_s_v_slider.html":[12,0,68,11],
@@ -242,12 +243,11 @@ var NAVTREEINDEX39 =
 "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html":[12,0,40,0,0],
 "structmtk_1_1_m_i_d_i_sync_out_1_1storage_1_1impl.html":[12,0,40,0,1,0],
 "structmtk_1_1sleep__accurate.html":[12,0,40,1],
-"structoscr_1_1_controller_int_spin_box.html":[12,0,43,4],
 "structoscr_1_1_controller_int_spin_box.html":[11,0,8,4],
+"structoscr_1_1_controller_int_spin_box.html":[12,0,43,4],
 "structoscr_1_1_controller_line_edit.html":[11,0,8,5],
 "structoscr_1_1_controller_line_edit.html":[12,0,43,5],
-"structoscr_1_1_custom_control_factory.html":[11,0,8,7],
 "structoscr_1_1_custom_control_factory.html":[12,0,43,7],
-"structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[11,0,8,8],
+"structoscr_1_1_custom_control_factory.html":[11,0,8,7],
 "structoscr_1_1_custom_control_factory_3_01_node_00_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[12,0,43,8]
 };

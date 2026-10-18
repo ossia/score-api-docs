@@ -1169,6 +1169,7 @@ var hierarchy =
     [ "FW_T< Factory_T, Types_T >", "struct_f_w___t.html", null ],
     [ "Threedim::GaussianSplatData", "struct_threedim_1_1_gaussian_splat_data.html", null ],
     [ "gpp::qrhi::generate_shaders", "structgpp_1_1qrhi_1_1generate__shaders.html", null ],
+    [ "Jit::Bytebeat::Generated", "struct_jit_1_1_bytebeat_1_1_generated.html", null ],
     [ "generator", "structgenerator.html", null ],
     [ "ossia::net::generic_device", null, [
       [ "Gfx::Kinect2::kinect2_device", "class_gfx_1_1_kinect2_1_1kinect2__device.html", null ]
@@ -1504,8 +1505,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1553,8 +1554,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2538,7 +2539,6 @@ var hierarchy =
       [ "Nodes::Smooth::v2::Node", "struct_nodes_1_1_smooth_1_1v2_1_1_node.html", null ]
     ] ],
     [ "ossia::nonowning_graph_node", null, [
-      [ "Jit::bytebeat_node", "class_jit_1_1bytebeat__node.html", null ],
       [ "Media::Step::step_node", "class_media_1_1_step_1_1step__node.html", null ],
       [ "Patternist::pattern_node", "class_patternist_1_1pattern__node.html", null ],
       [ "ossia::control_surface_node", "classossia_1_1control__surface__node.html", null ],

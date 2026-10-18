@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"_scenario_edition_settings_8hpp_source.html":[13,0,0,2,32,4,0,4],
 "_scenario_editor_8hpp_source.html":[13,0,0,2,32,4,3,15],
 "_scenario_factory_8hpp_source.html":[13,0,0,2,32,4,9,3],
 "_scenario_global_command_manager_8hpp_source.html":[13,0,0,2,32,4,9,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "_text_to_texture_8hpp_source.html":[13,0,0,2,35,0,69],
 "_texture_conversion_8hpp_source.html":[13,0,0,2,8,3,25],
 "_texture_format_8hpp_source.html":[13,0,0,2,8,3,26],
-"_texture_info_8hpp_source.html":[13,0,0,2,35,0,70],
-"_texture_loader_8hpp_source.html":[13,0,0,2,17,1,4,61]
+"_texture_info_8hpp_source.html":[13,0,0,2,35,0,70]
 };

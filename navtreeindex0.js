@@ -166,6 +166,7 @@ var NAVTREEINDEX0 =
 "_buffer_to_geometry_8hpp_source.html":[13,0,0,2,35,0,14],
 "_buffer_to_geometry_common_8hpp_source.html":[13,0,0,2,35,0,16],
 "_bytebeat_8hpp_source.html":[13,0,0,2,19,1,0],
+"_bytebeat_codegen_8hpp_source.html":[13,0,0,2,19,1,1],
 "_c_a_n_device_8hpp_source.html":[13,0,0,2,29,0,2,0],
 "_c_a_n_interfaces_8hpp_source.html":[13,0,0,2,29,0,2,1],
 "_c_a_n_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,2,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "_color_space_out_8hpp.html#ad48a1d47022288adac9f3de56c3528f3":[13,0,0,2,17,1,4,1,2,0],
 "_color_space_out_8hpp.html#aef9c643c7a3c7197e629aa5194eda2d4":[13,0,0,2,17,1,4,1,2,2],
 "_color_space_out_8hpp.html#af3aca175af14569c34686539563eb7b7":[13,0,0,2,17,1,4,1,2,1],
-"_color_space_out_8hpp_source.html":[13,0,0,2,17,1,4,1,2],
-"_column_8hpp_source.html":[13,0,0,2,13,0,3,2]
+"_color_space_out_8hpp_source.html":[13,0,0,2,17,1,4,1,2]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"_double_slider_8hpp_source.html":[13,0,0,1,1,13,7],
 "_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,8],
 "_driver_8hpp_source.html":[13,0,0,2,19,2,0,1],
 "_drm_fourcc_8hpp_source.html":[13,0,0,2,17,1,4,2,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_graphic_widgets_8hpp_source.html":[13,0,0,1,1,5,14],
 "_graphics_box_layout_8hpp_source.html":[13,0,0,1,1,5,0,1],
 "_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2],
-"_graphics_item_8hpp_source.html":[13,0,0,1,1,5,10],
-"_graphics_layout_8hpp_source.html":[13,0,0,1,1,5,11]
+"_graphics_item_8hpp_source.html":[13,0,0,1,1,5,10]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"_column_8hpp_source.html":[13,0,0,2,13,0,3,2],
 "_combiner_8hpp_source.html":[13,0,0,2,8,2,4],
 "_combo_box_8hpp_source.html":[13,0,0,1,1,13,4],
 "_command_8hpp_source.html":[13,0,0,1,1,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "_document_templates_8hpp_source.html":[13,0,0,1,0,2,7],
 "_document_view_8hpp_source.html":[13,0,0,1,0,2,8],
 "_domain_8hpp_source.html":[13,0,0,2,4,0,3],
-"_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4],
-"_double_slider_8hpp_source.html":[13,0,0,1,1,13,7]
+"_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4]
 };

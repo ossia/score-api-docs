@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01ossia_1_1impulse_01_4_01_4.html":[12,0,378],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base_3_01std_1_1string_01_4_01_4.html":[12,0,379],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1domain__base__variant_01_4.html":[12,0,381],
 "struct_t_serializer_3_01_j_s_o_n_object_00_01ossia_1_1flat__map_3_01_t_00_01_u_01_4_01_4.html":[12,0,382],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "struct_widget_factory_1_1_file_chooser.html":[12,0,68,4],
 "struct_widget_factory_1_1_fixed_normalizer.html":[12,0,68,5],
 "struct_widget_factory_1_1_float_control.html":[12,0,68,6],
-"struct_widget_factory_1_1_float_range_slider.html":[12,0,68,7],
-"struct_widget_factory_1_1_float_range_spin_box.html":[12,0,68,8]
+"struct_widget_factory_1_1_float_range_slider.html":[12,0,68,7]
 };

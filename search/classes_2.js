@@ -73,8 +73,7 @@ var searchData=
   ['bufferview_70',['BufferView',['../structscore_1_1gfx_1_1_buffer_view.html',1,'score::gfx']]],
   ['busactivationvisitor_71',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
   ['button_72',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_process_1_1_button.html',1,'Process::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
-  ['bytebeat_5fnode_73',['bytebeat_node',['../class_jit_1_1bytebeat__node.html',1,'Jit']]],
-  ['bytebeatexecutor_74',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
-  ['bytebeatlanguagespec_75',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
-  ['bytestostring_76',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
+  ['bytebeatexecutor_73',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
+  ['bytebeatlanguagespec_74',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
+  ['bytestostring_75',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
 ];

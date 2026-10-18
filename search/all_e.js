@@ -99,7 +99,7 @@ var searchData=
   ['nvdvpcontext_5ft_96',['NvDvpContext_t',['../struct_nv_dvp_context__t.html',1,'']]],
   ['nvidiaconsumer_97',['NvidiaConsumer',['../_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4ae5c8478f4997e99aafc7c1b2851ee9c1',1,'score::gfx::interop']]],
   ['nvidiaglxlibraryversion_98',['nvidiaGlxLibraryVersion',['../namespacescore.html#a87b75d461c3aa93ed454203205b6389b',1,'score']]],
-  ['nvidiaglxvendorstate_99',['nvidiaglxvendorstate',['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept'],['../namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853',1,'score::NvidiaGlxVendorState']]],
+  ['nvidiaglxvendorstate_99',['nvidiaglxvendorstate',['../namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853',1,'score::NvidiaGlxVendorState'],['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept']]],
   ['nvidiakerneldriverversion_100',['nvidiaKernelDriverVersion',['../namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6',1,'score']]],
   ['nvidiapeermem_101',['nvidiaPeermem',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a2752a81cec95fb52f3d6266169c20f64',1,'score::gfx::interop::GpuCapabilities']]],
   ['nvidiaproquadro_102',['NvidiaProQuadro',['../_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4ae518021b9b497a1727f631ee0f24ba19',1,'score::gfx::interop']]]
