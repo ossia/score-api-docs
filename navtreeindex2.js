@@ -163,6 +163,7 @@ var NAVTREEINDEX2 =
 "_g_p_s_specific_settings_8hpp_source.html":[13,0,0,2,29,0,5,3],
 "_g_p_u_buffer_scatter_8hpp_source.html":[13,0,0,2,17,1,4,15],
 "_g_p_u_index_widen_8hpp_source.html":[13,0,0,2,17,1,4,16],
+"_g_p_u_strided_copy_8hpp_source.html":[13,0,0,2,17,1,4,18],
 "_g_p_u_video_decoder_8hpp_source.html":[13,0,0,2,17,1,4,0,6],
 "_g_p_u_video_decoder_factory_8hpp_source.html":[13,0,0,2,17,1,4,0,7],
 "_g_p_u_video_encoder_8hpp_source.html":[13,0,0,2,17,1,4,1,4],
@@ -238,7 +239,7 @@ var NAVTREEINDEX2 =
 "_gpu_compute_node_8hpp_source.html":[13,0,0,2,8,3,13],
 "_gpu_formats_8hpp_source.html":[13,0,0,2,24,2,5],
 "_gpu_resource_registry_8hpp_source.html":[13,0,0,2,17,1,4,17],
-"_gpu_timing_8hpp_source.html":[13,0,0,2,17,1,4,18],
+"_gpu_timing_8hpp_source.html":[13,0,0,2,17,1,4,19],
 "_gpu_utils_8hpp_source.html":[13,0,0,2,8,3,15],
 "_gradient_execution_8hpp_source.html":[13,0,0,2,7,1,0],
 "_gradient_metadata_8hpp_source.html":[13,0,0,2,7,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "_graph_interval_presenter_8hpp_source.html":[13,0,0,2,32,4,3,5,1,0],
 "_graphic_widgets_8hpp_source.html":[13,0,0,1,1,5,14],
 "_graphics_box_layout_8hpp_source.html":[13,0,0,1,1,5,0,1],
-"_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2],
-"_graphics_item_8hpp_source.html":[13,0,0,1,1,5,10]
+"_graphics_grid_layout_8hpp_source.html":[13,0,0,1,1,5,0,2]
 };

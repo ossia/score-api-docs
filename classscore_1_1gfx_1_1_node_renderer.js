@@ -4,6 +4,7 @@ var classscore_1_1gfx_1_1_node_renderer =
     [ "PortSourceKey", "classscore_1_1gfx_1_1_node_renderer.html#a672157579c8f03046ba835c2dcfa453a", null ],
     [ "addInputEdge", "classscore_1_1gfx_1_1_node_renderer.html#a12598f9e0194cad7c417587d24d3d293", null ],
     [ "addOutputPass", "classscore_1_1gfx_1_1_node_renderer.html#ab678f4a4872b8b7a40de3917bca9f91f", null ],
+    [ "currentMesh", "classscore_1_1gfx_1_1_node_renderer.html#a678040c3b62a4826ccda7ab77756c8f2", null ],
     [ "depthCompare", "classscore_1_1gfx_1_1_node_renderer.html#aaf61e69d0af5eb34b72c09a4f1301aa0", null ],
     [ "findGeometryByPort", "classscore_1_1gfx_1_1_node_renderer.html#ac0478272e7a65732be5dc390110af0c9", null ],
     [ "followsRenderSize", "classscore_1_1gfx_1_1_node_renderer.html#a9cc47581ab2bfa95a89fbb9a1d14a726", null ],

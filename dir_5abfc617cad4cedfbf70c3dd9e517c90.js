@@ -18,6 +18,7 @@ var dir_5abfc617cad4cedfbf70c3dd9e517c90 =
     [ "GPUBufferScatter.hpp", "_g_p_u_buffer_scatter_8hpp_source.html", null ],
     [ "GPUIndexWiden.hpp", "_g_p_u_index_widen_8hpp_source.html", null ],
     [ "GpuResourceRegistry.hpp", "_gpu_resource_registry_8hpp_source.html", null ],
+    [ "GPUStridedCopy.hpp", "_g_p_u_strided_copy_8hpp_source.html", null ],
     [ "GpuTiming.hpp", "_gpu_timing_8hpp_source.html", null ],
     [ "score-plugin-gfx/Gfx/Graph/Graph.hpp", "score-plugin-gfx_2_gfx_2_graph_2_graph_8hpp_source.html", null ],
     [ "HWAccelSetup.hpp", "_h_w_accel_setup_8hpp_source.html", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX16 =
 {
+"class_protocols_1_1_libmapper_client_enumerator.html":[12,0,49,43],
+"class_protocols_1_1_libmapper_client_protocol_factory.html":[12,0,49,44],
 "class_protocols_1_1_libmapper_client_protocol_settings_widget.html":[12,0,49,45],
 "class_protocols_1_1_library_device_enumerator.html":[12,0,49,47],
 "class_protocols_1_1_library_device_enumerator.html#a4422098e41a9c38deb8caee63986f3f7":[12,0,49,47,1],
@@ -120,20 +122,20 @@ var NAVTREEINDEX16 =
 "class_scenario_1_1_amovible_slot_footer.html":[12,0,54,5],
 "class_scenario_1_1_automation_drop_handler.html":[11,0,11,4],
 "class_scenario_1_1_automation_drop_handler.html":[12,0,54,6],
-"class_scenario_1_1_base_element_context.html":[12,0,54,7],
 "class_scenario_1_1_base_element_context.html":[11,0,11,5],
-"class_scenario_1_1_base_scenario.html":[11,0,11,6],
+"class_scenario_1_1_base_element_context.html":[12,0,54,7],
 "class_scenario_1_1_base_scenario.html":[12,0,54,8],
-"class_scenario_1_1_base_scenario_container.html":[12,0,54,9],
+"class_scenario_1_1_base_scenario.html":[11,0,11,6],
 "class_scenario_1_1_base_scenario_container.html":[11,0,11,7],
-"class_scenario_1_1_base_scenario_displayed_elements_provider.html":[11,0,11,8],
+"class_scenario_1_1_base_scenario_container.html":[12,0,54,9],
 "class_scenario_1_1_base_scenario_displayed_elements_provider.html":[12,0,54,10],
+"class_scenario_1_1_base_scenario_displayed_elements_provider.html":[11,0,11,8],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html":[11,0,11,9],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette.html":[12,0,54,11],
-"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[11,0,11,10],
 "class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[12,0,54,12],
-"class_scenario_1_1_base_scenario_interval_resizer.html":[11,0,11,11],
+"class_scenario_1_1_base_scenario_displayed_elements_tool_palette_factory.html":[11,0,11,10],
 "class_scenario_1_1_base_scenario_interval_resizer.html":[12,0,54,13],
+"class_scenario_1_1_base_scenario_interval_resizer.html":[11,0,11,11],
 "class_scenario_1_1_c_s_p_coherency_checker_interface.html":[12,0,54,44],
 "class_scenario_1_1_c_s_p_coherency_checker_interface.html":[11,0,11,42],
 "class_scenario_1_1_c_s_p_coherency_checker_list.html":[11,0,11,43],
@@ -247,7 +249,5 @@ var NAVTREEINDEX16 =
 "class_scenario_1_1_command_1_1_remove_slot_from_rack.html":[12,0,54,0,89],
 "class_scenario_1_1_command_1_1_remove_state_process.html":[12,0,54,0,90],
 "class_scenario_1_1_command_1_1_remove_trigger.html":[12,0,54,0,91],
-"class_scenario_1_1_command_1_1_rename_address_in_state.html":[12,0,54,0,93],
-"class_scenario_1_1_command_1_1_rename_addresses_in_state.html":[12,0,54,0,92],
-"class_scenario_1_1_command_1_1_replace_addresses.html":[12,0,54,0,94]
+"class_scenario_1_1_command_1_1_rename_address_in_state.html":[12,0,54,0,93]
 };

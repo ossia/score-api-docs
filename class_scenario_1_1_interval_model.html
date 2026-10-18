@@ -262,6 +262,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clearFullView</b> ()<
 <tr class="memitem:a4400462a76dc169134b9582ca1583fd4" id="r_a4400462a76dc169134b9582ca1583fd4"><td class="memItemLeft" align="right" valign="top"><a id="a4400462a76dc169134b9582ca1583fd4" name="a4400462a76dc169134b9582ca1583fd4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceSmallView</b> (const Rack &amp;other)</td></tr>
 <tr class="separator:a4400462a76dc169134b9582ca1583fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62621ccd09b7591595afbeea882b52d" id="r_ac62621ccd09b7591595afbeea882b52d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_interval_model.html#ac62621ccd09b7591595afbeea882b52d">restoreSmallView</a> (const Rack &amp;other)</td></tr>
+<tr class="separator:ac62621ccd09b7591595afbeea882b52d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c0b91492582d4e2618d150dac777bbf" id="r_a7c0b91492582d4e2618d150dac777bbf"><td class="memItemLeft" align="right" valign="top"><a id="a7c0b91492582d4e2618d150dac777bbf" name="a7c0b91492582d4e2618d150dac777bbf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replaceFullView</b> (const FullRack &amp;other)</td></tr>
 <tr class="separator:a7c0b91492582d4e2618d150dac777bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -684,6 +686,25 @@ static const constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><
 </table>
 </div><div class="memdoc">
 <p>The point of the node canvas shown at the center of the view, in canvas coordinates. Unset until the canvas has been shown once: the view then picks one (the center of the nodes, or what an older document's pan offset amounts to) and stores it here. </p>
+
+</div>
+</div>
+<a id="ac62621ccd09b7591595afbeea882b52d" name="ac62621ccd09b7591595afbeea882b52d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac62621ccd09b7591595afbeea882b52d">&#9670;&#160;</a></span>restoreSmallView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::IntervalModel::restoreSmallView </td>
+          <td>(</td>
+          <td class="paramtype">const Rack &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Same result as replaceSmallView, but when <code>other</code> only adds one slot or one layer to the current rack (what undoing a process removal does), it is applied incrementally: the presenters then create that slot or layer instead of rebuilding every slot of the interval. </p>
 
 </div>
 </div>

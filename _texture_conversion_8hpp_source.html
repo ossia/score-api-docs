@@ -1692,68 +1692,71 @@ $(document).ready(function(){initNavTree('_texture_conversion_8hpp_source.html',
 <div class="line"><a id="l01580" name="l01580"></a><span class="lineno"> 1580</span> </div>
 <div class="line"><a id="l01581" name="l01581"></a><span class="lineno"> 1581</span>  if(buf.size() &lt; bytesize)</div>
 <div class="line"><a id="l01582" name="l01582"></a><span class="lineno"> 1582</span>  {</div>
-<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    cpu_tex.bytes = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>  }</div>
-<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>  {</div>
-<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>    <span class="comment">// FIXME ARGB needs special handling too</span></div>
-<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { std::string_view{Tex::format()}; })</div>
-<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>    {</div>
-<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>      <span class="keyword">constexpr</span> std::string_view fmt = Tex::format();</div>
-<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>      <span class="keywordflow">if</span>(fmt == <span class="stringliteral">&quot;rgb&quot;</span>) {</div>
-<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>      }</div>
-<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>      {</div>
-<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span>        <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>        gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>      }</div>
-<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>    }</div>
-<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Tex::RGB; })</div>
-<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span>    {</div>
-<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::cpu_dynamic_format_texture&lt;Tex&gt;){</div>
-<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span>        <span class="keywordflow">if</span>(cpu_tex.format == Tex::RGB)</div>
-<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span>          gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>        {</div>
-<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>          <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>          gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>        }</div>
-<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>      }</div>
-<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>      {</div>
-<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>      }</div>
-<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>    }</div>
-<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>    {</div>
-<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>      <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
-<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>      gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
-<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span>    }</div>
-<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span> </div>
-<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>    <span class="keyword">using </span>components_type = std::decay_t&lt;<span class="keyword">decltype</span>(cpu_tex.bytes)&gt;;</div>
-<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span>    cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span>components_type<span class="keyword">&gt;</span>(buf.data());</div>
+<div class="line"><a id="l01583" name="l01583"></a><span class="lineno"> 1583</span>    <span class="comment">// No usable frame (the readback is smaller than the texture, e.g. while an</span></div>
+<div class="line"><a id="l01584" name="l01584"></a><span class="lineno"> 1584</span>    <span class="comment">// edit resizes its source): processors must not read this one.</span></div>
+<div class="line"><a id="l01585" name="l01585"></a><span class="lineno"> 1585</span>    cpu_tex.bytes = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l01586" name="l01586"></a><span class="lineno"> 1586</span>    cpu_tex.changed = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01587" name="l01587"></a><span class="lineno"> 1587</span>  }</div>
+<div class="line"><a id="l01588" name="l01588"></a><span class="lineno"> 1588</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01589" name="l01589"></a><span class="lineno"> 1589</span>  {</div>
+<div class="line"><a id="l01590" name="l01590"></a><span class="lineno"> 1590</span>    <span class="comment">// FIXME ARGB needs special handling too</span></div>
+<div class="line"><a id="l01591" name="l01591"></a><span class="lineno"> 1591</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { std::string_view{Tex::format()}; })</div>
+<div class="line"><a id="l01592" name="l01592"></a><span class="lineno"> 1592</span>    {</div>
+<div class="line"><a id="l01593" name="l01593"></a><span class="lineno"> 1593</span>      <span class="keyword">constexpr</span> std::string_view fmt = Tex::format();</div>
+<div class="line"><a id="l01594" name="l01594"></a><span class="lineno"> 1594</span>      <span class="keywordflow">if</span>(fmt == <span class="stringliteral">&quot;rgb&quot;</span>) {</div>
+<div class="line"><a id="l01595" name="l01595"></a><span class="lineno"> 1595</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01596" name="l01596"></a><span class="lineno"> 1596</span>      }</div>
+<div class="line"><a id="l01597" name="l01597"></a><span class="lineno"> 1597</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01598" name="l01598"></a><span class="lineno"> 1598</span>      {</div>
+<div class="line"><a id="l01599" name="l01599"></a><span class="lineno"> 1599</span>        <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01600" name="l01600"></a><span class="lineno"> 1600</span>        gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01601" name="l01601"></a><span class="lineno"> 1601</span>      }</div>
+<div class="line"><a id="l01602" name="l01602"></a><span class="lineno"> 1602</span>    }</div>
+<div class="line"><a id="l01603" name="l01603"></a><span class="lineno"> 1603</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { Tex::RGB; })</div>
+<div class="line"><a id="l01604" name="l01604"></a><span class="lineno"> 1604</span>    {</div>
+<div class="line"><a id="l01605" name="l01605"></a><span class="lineno"> 1605</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(avnd::cpu_dynamic_format_texture&lt;Tex&gt;){</div>
+<div class="line"><a id="l01606" name="l01606"></a><span class="lineno"> 1606</span>        <span class="keywordflow">if</span>(cpu_tex.format == Tex::RGB)</div>
+<div class="line"><a id="l01607" name="l01607"></a><span class="lineno"> 1607</span>          gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01608" name="l01608"></a><span class="lineno"> 1608</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01609" name="l01609"></a><span class="lineno"> 1609</span>        {</div>
+<div class="line"><a id="l01610" name="l01610"></a><span class="lineno"> 1610</span>          <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01611" name="l01611"></a><span class="lineno"> 1611</span>          gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01612" name="l01612"></a><span class="lineno"> 1612</span>        }</div>
+<div class="line"><a id="l01613" name="l01613"></a><span class="lineno"> 1613</span>      }</div>
+<div class="line"><a id="l01614" name="l01614"></a><span class="lineno"> 1614</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01615" name="l01615"></a><span class="lineno"> 1615</span>      {</div>
+<div class="line"><a id="l01616" name="l01616"></a><span class="lineno"> 1616</span>        gpp::qrhi::toRGB(rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01617" name="l01617"></a><span class="lineno"> 1617</span>      }</div>
+<div class="line"><a id="l01618" name="l01618"></a><span class="lineno"> 1618</span>    }</div>
+<div class="line"><a id="l01619" name="l01619"></a><span class="lineno"> 1619</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01620" name="l01620"></a><span class="lineno"> 1620</span>    {</div>
+<div class="line"><a id="l01621" name="l01621"></a><span class="lineno"> 1621</span>      <span class="keyword">const</span> <span class="keyword">auto</span> dstFormat = gpp::qrhi::textureFormat(cpu_tex);</div>
+<div class="line"><a id="l01622" name="l01622"></a><span class="lineno"> 1622</span>      gpp::qrhi::convertTexture(dstFormat, rb.format, buf, rb.pixelSize.width(), rb.pixelSize.height());</div>
+<div class="line"><a id="l01623" name="l01623"></a><span class="lineno"> 1623</span>    }</div>
 <div class="line"><a id="l01624" name="l01624"></a><span class="lineno"> 1624</span> </div>
-<div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span>    <span class="comment">// The texture read back has the published row order (RowOrder.hpp); the</span></div>
-<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>    <span class="comment">// halp texture wants its top row first.</span></div>
-<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">score::gfx::uploadReversesRows</a>(rhi))</div>
-<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>      <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
-<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>      {</div>
-<div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span>        <span class="keywordtype">int</span> bpp = 0;</div>
-<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { cpu_tex.bytes_per_pixel(); })</div>
-<div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>          bpp = cpu_tex.bytes_per_pixel();</div>
-<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>          bpp = cpu_tex.bytes_per_pixel;</div>
-<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span> </div>
-<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>        inplaceMirror(</div>
-<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>            <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(cpu_tex.bytes), cpu_tex.width,</div>
-<div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span>            cpu_tex.height, bpp);</div>
-<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>      }</div>
-<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span> </div>
-<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>    cpu_tex.changed = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>  }</div>
-<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span>}</div>
-<div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>}</div>
+<div class="line"><a id="l01625" name="l01625"></a><span class="lineno"> 1625</span>    <span class="keyword">using </span>components_type = std::decay_t&lt;<span class="keyword">decltype</span>(cpu_tex.bytes)&gt;;</div>
+<div class="line"><a id="l01626" name="l01626"></a><span class="lineno"> 1626</span>    cpu_tex.bytes = <span class="keyword">reinterpret_cast&lt;</span>components_type<span class="keyword">&gt;</span>(buf.data());</div>
+<div class="line"><a id="l01627" name="l01627"></a><span class="lineno"> 1627</span> </div>
+<div class="line"><a id="l01628" name="l01628"></a><span class="lineno"> 1628</span>    <span class="comment">// The texture read back has the published row order (RowOrder.hpp); the</span></div>
+<div class="line"><a id="l01629" name="l01629"></a><span class="lineno"> 1629</span>    <span class="comment">// halp texture wants its top row first.</span></div>
+<div class="line"><a id="l01630" name="l01630"></a><span class="lineno"> 1630</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">score::gfx::uploadReversesRows</a>(rhi))</div>
+<div class="line"><a id="l01631" name="l01631"></a><span class="lineno"> 1631</span>      <span class="keywordflow">if</span>(cpu_tex.width * cpu_tex.height &gt; 0)</div>
+<div class="line"><a id="l01632" name="l01632"></a><span class="lineno"> 1632</span>      {</div>
+<div class="line"><a id="l01633" name="l01633"></a><span class="lineno"> 1633</span>        <span class="keywordtype">int</span> bpp = 0;</div>
+<div class="line"><a id="l01634" name="l01634"></a><span class="lineno"> 1634</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<span class="keyword">requires</span> { cpu_tex.bytes_per_pixel(); })</div>
+<div class="line"><a id="l01635" name="l01635"></a><span class="lineno"> 1635</span>          bpp = cpu_tex.bytes_per_pixel();</div>
+<div class="line"><a id="l01636" name="l01636"></a><span class="lineno"> 1636</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01637" name="l01637"></a><span class="lineno"> 1637</span>          bpp = cpu_tex.bytes_per_pixel;</div>
+<div class="line"><a id="l01638" name="l01638"></a><span class="lineno"> 1638</span> </div>
+<div class="line"><a id="l01639" name="l01639"></a><span class="lineno"> 1639</span>        inplaceMirror(</div>
+<div class="line"><a id="l01640" name="l01640"></a><span class="lineno"> 1640</span>            <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(cpu_tex.bytes), cpu_tex.width,</div>
+<div class="line"><a id="l01641" name="l01641"></a><span class="lineno"> 1641</span>            cpu_tex.height, bpp);</div>
+<div class="line"><a id="l01642" name="l01642"></a><span class="lineno"> 1642</span>      }</div>
+<div class="line"><a id="l01643" name="l01643"></a><span class="lineno"> 1643</span> </div>
+<div class="line"><a id="l01644" name="l01644"></a><span class="lineno"> 1644</span>    cpu_tex.changed = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01645" name="l01645"></a><span class="lineno"> 1645</span>  }</div>
+<div class="line"><a id="l01646" name="l01646"></a><span class="lineno"> 1646</span>}</div>
+<div class="line"><a id="l01647" name="l01647"></a><span class="lineno"> 1647</span>}</div>
 <div class="ttc" id="anamespaceoscr_html"><div class="ttname"><a href="namespaceoscr.html">oscr</a></div><div class="ttdef"><b>Definition</b> Controls.hpp:27</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a0c965b81df625d9368d94a280cb694b6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">score::gfx::uploadReversesRows</a></div><div class="ttdeci">bool uploadReversesRows(const QRhi &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->

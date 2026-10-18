@@ -5,5 +5,6 @@ var class_scenario_1_1_interval_model =
     [ "getSlotHeightForProcess", "class_scenario_1_1_interval_model.html#a056b3b5b3ef883a6e4000e46546a5045", null ],
     [ "legacyNodalOffset", "class_scenario_1_1_interval_model.html#a7a2b95edd76d006965c94d93bbfdfb3d", null ],
     [ "nodalCenter", "class_scenario_1_1_interval_model.html#ac26237d3ef3e4709374263232918d63a", null ],
+    [ "restoreSmallView", "class_scenario_1_1_interval_model.html#ac62621ccd09b7591595afbeea882b52d", null ],
     [ "processes", "class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030", null ]
 ];

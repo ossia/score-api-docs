@@ -54,6 +54,7 @@ var dir_203983fd59069e9a9e04f058b53ccdfb =
     [ "PCLToGeometry.hpp", "_p_c_l_to_geometry_8hpp_source.html", null ],
     [ "Ply.hpp", "_ply_8hpp_source.html", null ],
     [ "Primitive.hpp", "_primitive_8hpp_source.html", null ],
+    [ "RecentParseCache.hpp", "_recent_parse_cache_8hpp_source.html", null ],
     [ "SceneDuplicator.hpp", "_scene_duplicator_8hpp_source.html", null ],
     [ "SceneFromMeshes.hpp", "_scene_from_meshes_8hpp_source.html", null ],
     [ "SceneGlob.hpp", "_scene_glob_8hpp_source.html", null ],

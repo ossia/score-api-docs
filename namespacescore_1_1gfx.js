@@ -55,6 +55,7 @@ var namespacescore_1_1gfx =
     [ "GPUBufferScatter", "classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html", "classscore_1_1gfx_1_1_g_p_u_buffer_scatter" ],
     [ "GPUIndexWiden", "classscore_1_1gfx_1_1_g_p_u_index_widen.html", "classscore_1_1gfx_1_1_g_p_u_index_widen" ],
     [ "GpuResourceRegistry", "classscore_1_1gfx_1_1_gpu_resource_registry.html", "classscore_1_1gfx_1_1_gpu_resource_registry" ],
+    [ "GPUStridedCopy", "classscore_1_1gfx_1_1_g_p_u_strided_copy.html", "classscore_1_1gfx_1_1_g_p_u_strided_copy" ],
     [ "GpuTimings", "classscore_1_1gfx_1_1_gpu_timings.html", "classscore_1_1gfx_1_1_gpu_timings" ],
     [ "GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", "classscore_1_1gfx_1_1_g_p_u_video_decoder" ],
     [ "GPUVideoEncoder", "structscore_1_1gfx_1_1_g_p_u_video_encoder.html", "structscore_1_1gfx_1_1_g_p_u_video_encoder" ],

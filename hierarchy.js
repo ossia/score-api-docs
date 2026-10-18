@@ -766,6 +766,7 @@ var hierarchy =
     [ "Protocols::convert_osc_transport_to_server", "struct_protocols_1_1convert__osc__transport__to__server.html", null ],
     [ "Scenario::CopiedCables", "struct_scenario_1_1_copied_cables.html", null ],
     [ "Scenario::CopiedPaths", "struct_scenario_1_1_copied_paths.html", null ],
+    [ "score::gfx::RenderedScenePreprocessorNode::CopyLayout", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_copy_layout.html", null ],
     [ "Gfx::CornerWarp", "struct_gfx_1_1_corner_warp.html", null ],
     [ "score::gfx::interop::CpuStagedNoLockPolicy", "structscore_1_1gfx_1_1interop_1_1_cpu_staged_no_lock_policy.html", null ],
     [ "score::gfx::interop::CpuStagedVideoOutput", "classscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output.html", null ],
@@ -1230,6 +1231,7 @@ var hierarchy =
     [ "score::gfx::GPUIndexWiden", "classscore_1_1gfx_1_1_g_p_u_index_widen.html", null ],
     [ "score::gfx::GpuResourceRegistry", "classscore_1_1gfx_1_1_gpu_resource_registry.html", null ],
     [ "score::gfx::interop::GpuRingBufferSlot", "structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html", null ],
+    [ "score::gfx::GPUStridedCopy", "classscore_1_1gfx_1_1_g_p_u_strided_copy.html", null ],
     [ "score::gfx::GpuTimings", "classscore_1_1gfx_1_1_gpu_timings.html", null ],
     [ "score::gfx::GPUVideoDecoder", "classscore_1_1gfx_1_1_g_p_u_video_decoder.html", [
       [ "score::gfx::BayerDecoder", "structscore_1_1gfx_1_1_bayer_decoder.html", null ],
@@ -1554,8 +1556,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -2190,6 +2192,7 @@ var hierarchy =
     [ "JSONObject", "class_j_s_o_n_object.html", null ],
     [ "JsonValue", "struct_json_value.html", null ],
     [ "LocalTree::ScriptableProcessBase::Kept", "struct_local_tree_1_1_scriptable_process_base_1_1_kept.html", null ],
+    [ "Threedim::RecentParseCache< T >::Key", "struct_threedim_1_1_recent_parse_cache_1_1_key.html", null ],
     [ "Threedim::keypoint_3d", "struct_threedim_1_1keypoint__3d.html", null ],
     [ "Threedim::keypoint_stream", "struct_threedim_1_1keypoint__stream.html", null ],
     [ "Gfx::Kinect2::kinect2_camera", "struct_gfx_1_1_kinect2_1_1kinect2__camera.html", null ],
@@ -2649,6 +2652,7 @@ var hierarchy =
       [ "Scenario::StatePresenter", "class_scenario_1_1_state_presenter.html", null ],
       [ "Scenario::TimenodeGraph", "struct_scenario_1_1_timenode_graph.html", null ],
       [ "SimpleHierarchicalScenarioComponent< Component_T, Scenario_T, IntervalComponent_T, HasOwnership >", "class_simple_hierarchical_scenario_component.html", null ],
+      [ "avnd_tools::PatternDeviceObserver", "structavnd__tools_1_1_pattern_device_observer.html", null ],
       [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >", "classscore_1_1_component_hierarchy_manager.html", null ],
       [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >", "classscore_1_1_polymorphic_component_hierarchy_manager.html", [
         [ "Execution::IntervalComponent", "class_execution_1_1_interval_component.html", null ],
@@ -2767,6 +2771,7 @@ var hierarchy =
     [ "Recording::ParameterPolicy", "struct_recording_1_1_parameter_policy.html", null ],
     [ "score::gfx::GPUBufferScatter::Params", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_params.html", null ],
     [ "score::gfx::GPUIndexWiden::Params", "structscore_1_1gfx_1_1_g_p_u_index_widen_1_1_params.html", null ],
+    [ "score::gfx::GPUStridedCopy::Params", "structscore_1_1gfx_1_1_g_p_u_strided_copy_1_1_params.html", null ],
     [ "ParentComponent_T", null, [
       [ "score::ComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T >", "classscore_1_1_component_hierarchy_manager.html", null ],
       [ "score::PolymorphicComponentHierarchyManager< ParentComponent_T, ChildModel_T, ChildComponent_T, ChildComponentFactoryList_T, HasOwnership >", "classscore_1_1_polymorphic_component_hierarchy_manager.html", null ]
@@ -2962,6 +2967,7 @@ var hierarchy =
     [ "Process::PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
     [ "score::gfx::GPUBufferScatter::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_prepared_op.html", null ],
     [ "score::gfx::GPUIndexWiden::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_index_widen_1_1_prepared_op.html", null ],
+    [ "score::gfx::GPUStridedCopy::PreparedOp", "structscore_1_1gfx_1_1_g_p_u_strided_copy_1_1_prepared_op.html", null ],
     [ "Process::Preset", "struct_process_1_1_preset.html", null ],
     [ "Protocols::MIDIDevices::Preset", "struct_protocols_1_1_m_i_d_i_devices_1_1_preset.html", null ],
     [ "bitfocus::module_data::preset_definition", "structbitfocus_1_1module__data_1_1preset__definition.html", null ],
@@ -4664,6 +4670,7 @@ var hierarchy =
     [ "score::gfx::ReadbackTarget", "structscore_1_1gfx_1_1_readback_target.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
+    [ "Threedim::RecentParseCache< T >", "class_threedim_1_1_recent_parse_cache.html", null ],
     [ "Execution::RecomputePropagate", "struct_execution_1_1_recompute_propagate.html", null ],
     [ "Execution::ReconnectOutlets< T >", "struct_execution_1_1_reconnect_outlets.html", null ],
     [ "Recording::RecordAutomationCreationVisitor", "struct_recording_1_1_record_automation_creation_visitor.html", null ],
