@@ -133,108 +133,306 @@ $(document).ready(function(){initNavTree('_pattern_model_8hpp_source.html',''); 
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  Note,</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  Legato</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_patternist_1_1_lane.html">Lane</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::vector&lt;Patternist::Note&gt; pattern;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  uint8_t note{};</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_struct" href="struct_patternist_1_1_lane.html">Lane</a>&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> note == other.note &amp;&amp; pattern == other.pattern;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
-</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="};">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_pattern.html">   36</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> length{16};</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> division{16};</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  std::vector&lt;Lane&gt; lanes;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a>&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> length == other.length &amp;&amp; division == other.division &amp;&amp; lanes == other.lanes;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
-</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>Q_DECLARE_METATYPE(Patternist::Note)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>W_REGISTER_ARGTYPE(Patternist::Note)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span>Patternist</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">enum class</span> Condition : uint8_t</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  Always,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  Fill,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  NotFill,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  First,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  NotFirst,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  Cycle</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html">   48</a></span><span class="keyword">class </span>SCORE_PLUGIN_MIDI_EXPORT <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html">   48</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_patternist_1_1_step_params.html">StepParams</a></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  SCORE_SERIALIZE_FRIENDS</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  W_OBJECT(<a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a407536512917ac52a2d16fe2e9806bf3">   55</a></span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> maxPatterns = 128;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  PROCESS_METADATA_IMPL(<a class="code hl_class" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> QString&amp; custom,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(Impl&amp; vis, QObject* parent)</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      : <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>{vis, parent}</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    vis.writeTo(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    init();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">void</span> init();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <a class="code hl_class" href="class_patternist_1_1_process_model.html">~ProcessModel</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">void</span> setChannel(<span class="keywordtype">int</span> n);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">int</span> channel() const noexcept;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">void</span> setCurrentPattern(<span class="keywordtype">int</span> n);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">int</span> currentPattern() const noexcept;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> setPattern(<span class="keywordtype">int</span> n, <a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a> p);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> setPatterns(const <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;<a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a>&gt;&amp; n);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  const <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;<a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a>&gt;&amp; patterns() const noexcept;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; patternSelect;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; switchQuantification;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::MidiOutlet&gt; outlet;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Outlet&gt; accent;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Outlet&gt; slide;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>public:</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> channelChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(channelChanged, arg_1);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> currentPatternChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(currentPatternChanged, arg_1);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> execPosition(<span class="keywordtype">int</span> arg_1) W_SIGNAL(execPosition, arg_1);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span> patternsChanged() W_SIGNAL(patternsChanged);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  PROPERTY(<span class="keywordtype">int</span>, channel READ channel WRITE setChannel NOTIFY channelChanged, W_Final)</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  PROPERTY(</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordtype">int</span>,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      currentPattern READ currentPattern WRITE setCurrentPattern NOTIFY</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>          currentPatternChanged,</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      W_Final)</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>private:</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span> setDurationAndScale(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span> setDurationAndGrow(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> setDurationAndShrink(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keywordtype">int</span> m_channel{1};</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">int</span> m_currentPattern{};</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  std::vector&lt;Pattern&gt; m_patterns;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#aaa22bdcf57931ee096a6397fd95055ec">   51</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#aaa22bdcf57931ee096a6397fd95055ec">velocity</a>{1.f};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#ad7ab680ea23d745a30b49f368bed50ba">   54</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#ad7ab680ea23d745a30b49f368bed50ba">velocityRandom</a>{0.f};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a0198d36af637cf0ef218ad8dbc7925a0">   56</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a0198d36af637cf0ef218ad8dbc7925a0">chance</a>{1.f};</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#afa52afba10c08bc729a29eba2886a3a3">   58</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#afa52afba10c08bc729a29eba2886a3a3">offset</a>{0.f};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#ae7022ebe48144bfaa8372635b40817e0">   61</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#ae7022ebe48144bfaa8372635b40817e0">offsetRandom</a>{0.f};</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a0bc62ee86a05b9e2f56135848596d776">   63</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a0bc62ee86a05b9e2f56135848596d776">gate</a>{1.f};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a222d034e82113cb1150928fe625cc43f">   66</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a222d034e82113cb1150928fe625cc43f">gateRandom</a>{0.f};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a05dff617958da28befc2cf11f76e8d4d">   68</a></span>  uint8_t <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a05dff617958da28befc2cf11f76e8d4d">ratchet</a>{1};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a1d51956050c0c341b59a8c79b1cf365c">   71</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a1d51956050c0c341b59a8c79b1cf365c">pace</a>{0.f};</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a2227580de4fe33a009ed57d701074e08">   73</a></span>  int8_t <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a2227580de4fe33a009ed57d701074e08">pitch</a>{0};</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_step_params.html#a8a4b325c5f736d69d19442b4c0f7869a">   76</a></span>  uint8_t <a class="code hl_variable" href="struct_patternist_1_1_step_params.html#a8a4b325c5f736d69d19442b4c0f7869a">pitchRandom</a>{0};</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  Condition condition{Condition::Always};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  uint8_t cycleA{1};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  uint8_t cycleB{2};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> StepParams&amp;) <span class="keyword">const</span> <span class="keyword">noexcept</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">bool</span> isDefault() const noexcept { <span class="keywordflow">return</span> *<span class="keyword">this</span> == StepParams{}; }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
 </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
-<div class="ttc" id="aclass_patternist_1_1_process_model_html"><div class="ttname"><a href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:49</div></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> euclidHit(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> steps, <span class="keywordtype">int</span> pulses, <span class="keywordtype">int</span> rotation) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordflow">if</span>(steps &lt;= 0 || pulses &lt;= 0)</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordflow">if</span>(pulses &gt;= steps)</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> j = (((i - rotation) % steps) + steps) % steps;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">return</span> (j * pulses) % steps &lt; pulses;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="};">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html">   97</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_patternist_1_1_lane.html">Lane</a></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>{</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  std::vector&lt;Patternist::Note&gt; pattern;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#ac594d19cf1b93b3172b3521926b25b72">  101</a></span>  uint8_t <a class="code hl_variable" href="struct_patternist_1_1_lane.html#ac594d19cf1b93b3172b3521926b25b72">note</a>{};</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordtype">bool</span> mute{};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">bool</span> solo{};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#adf28be8af79dc579a542123fbe310b75">  105</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_patternist_1_1_lane.html#adf28be8af79dc579a542123fbe310b75">length</a>{};</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#ad43e184dce25de1bc26d4bc83cb0626c">  107</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_patternist_1_1_lane.html#ad43e184dce25de1bc26d4bc83cb0626c">division</a>{};</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#adff9eeb51062264c379d16d183f31c96">  109</a></span>  <span class="keywordtype">float</span> <a class="code hl_variable" href="struct_patternist_1_1_lane.html#adff9eeb51062264c379d16d183f31c96">velocity</a>{100.f / 127.f};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#a30d3f74b9554662bb94b184d23499688">  111</a></span>  std::vector&lt;StepParams&gt; <a class="code hl_variable" href="struct_patternist_1_1_lane.html#a30d3f74b9554662bb94b184d23499688">params</a>;</div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="};">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_lane.html#acf1d224bae1d50ad63390f5367eac39f">  114</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="struct_patternist_1_1_lane.html#acf1d224bae1d50ad63390f5367eac39f">RandomPerHit</a> : uint8_t</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  {</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    VelocityPerHit = 1,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    PitchPerHit = 2,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    TimingPerHit = 4,</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    GatePerHit = 8</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  };</div>
+</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  uint8_t randomPerHit{};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Lane&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
+</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> uint8_t accentLane = 255;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> uint8_t slideLane = 254;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> isControlLane(<span class="keyword">const</span> Lane&amp; l) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>{</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keywordflow">return</span> l.note == accentLane || l.note == slideLane;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="foldopen" id="foldopen00138" data-start="{" data-end="};">
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_pattern.html">  138</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_patternist_1_1_pattern.html">Pattern</a></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>{</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> maxLength = 128;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> maxLanes = 128;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="struct_patternist_1_1_pattern.html#ab297adf0fd724940b9c125fa2e2cfc6b">  143</a></span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_patternist_1_1_pattern.html#ab297adf0fd724940b9c125fa2e2cfc6b">maxDivision</a> = 64;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keywordtype">int</span> length{16};</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordtype">int</span> division{16};</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  std::vector&lt;Lane&gt; lanes;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> Pattern&amp; other) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  {</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <span class="keywordflow">return</span> length == other.length &amp;&amp; division == other.division &amp;&amp; lanes == other.lanes;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  }</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
+</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>SCORE_PLUGIN_MIDI_EXPORT <span class="keywordtype">void</span> normalize(Pattern&amp; p) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> anySolo(<span class="keyword">const</span> Pattern&amp; p) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>{</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordflow">for</span>(<span class="keyword">const</span> Lane&amp; l : p.lanes)</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    if(l.solo)</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>      return true;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="keyword">inline</span> <span class="keywordtype">int</span> laneLength(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keywordflow">return</span> l.length &gt; 0 ? l.length : p.length;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">inline</span> <span class="keywordtype">int</span> laneDivision(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keywordflow">return</span> l.division &gt; 0 ? l.division : p.division;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>}</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keyword">inline</span> Note writtenNote(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l, <span class="keywordtype">int</span> step) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keywordflow">return</span> (step &gt;= 0 &amp;&amp; step &lt; <span class="keywordtype">int</span>(l.pattern.size())) ? l.pattern[step] : Note::Rest;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">inline</span> <span class="keyword">const</span> StepParams&amp; stepParams(<span class="keyword">const</span> Lane&amp; l, <span class="keywordtype">int</span> step) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>{</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">static</span> <span class="keyword">const</span> StepParams defaults;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  <span class="keywordflow">return</span> (step &gt;= 0 &amp;&amp; step &lt; <span class="keywordtype">int</span>(l.params.size())) ? l.params[step] : defaults;</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword">inline</span> <span class="keywordtype">bool</span> tieStrikes(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l, <span class="keywordtype">int</span> step) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>{</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> len = laneLength(p, l);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>  <span class="keywordflow">if</span>(len &lt;= 0)</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> prev = ((step - 1) % len + len) % len;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  <span class="keywordflow">if</span>(writtenNote(p, l, prev) == Note::Rest)</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keyword">const</span> StepParams&amp; sp = stepParams(l, step);</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  <span class="keyword">const</span> StepParams&amp; pp = stepParams(l, prev);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span> spread</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>      = !(l.randomPerHit &amp; Lane::PitchPerHit) &amp;&amp; (sp.pitchRandom &gt; 0 || pp.pitchRandom &gt; 0);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordflow">return</span> sp.ratchet &gt; 1 || sp.pitch != pp.pitch || spread;</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>}</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">inline</span> <span class="keywordtype">int</span> struckStep(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l, <span class="keywordtype">int</span> step) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>{</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> len = laneLength(p, l);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; len; k++)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    <span class="keywordflow">if</span>(writtenNote(p, l, step) != Note::Legato || tieStrikes(p, l, step))</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>      <span class="keywordflow">return</span> step;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    step = ((step - 1) % len + len) % len;</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  }</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  <span class="keywordflow">return</span> step;</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="keyword">inline</span> Note audibleNote(<span class="keyword">const</span> Pattern&amp; p, <span class="keyword">const</span> Lane&amp; l, <span class="keywordtype">int</span> step, <span class="keywordtype">bool</span> anySolo) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordflow">if</span>(l.mute || (anySolo &amp;&amp; !l.solo))</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    <span class="keywordflow">return</span> Note::Rest;</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordflow">return</span> writtenNote(p, l, step);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="keyword">enum class</span> LaneLabels : uint8_t</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>{</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  NameAndNumber,</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  Name,</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>  Number,</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  DrumName</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>};</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>}</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>Q_DECLARE_METATYPE(Patternist::LaneLabels)</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>W_REGISTER_ARGTYPE(Patternist::LaneLabels)</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="keyword">namespace </span>Patternist</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="foldopen" id="foldopen00246" data-start="{" data-end="};">
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html">  246</a></span><span class="keyword">class </span>SCORE_PLUGIN_MIDI_EXPORT <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a> final : <span class="keyword">public</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>{</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  SCORE_SERIALIZE_FRIENDS</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  W_OBJECT(<a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>)</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a407536512917ac52a2d16fe2e9806bf3">  253</a></span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> maxPatterns = 128;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  PROCESS_METADATA_IMPL(<a class="code hl_class" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a>)</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>      <span class="keyword">const</span> <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; duration, <span class="keyword">const</span> QString&amp; custom,</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>      <span class="keyword">const</span> <a class="code hl_class" href="classid__base__t.html">Id&lt;Process::ProcessModel&gt;</a>&amp; <span class="keywordtype">id</span>, QObject* parent);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Impl&gt;</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>(Impl&amp; vis, QObject* parent)</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      : <a class="code hl_namespace" href="namespace_process.html">Process</a>::<a class="code hl_class" href="class_patternist_1_1_process_model.html">ProcessModel</a>{vis, parent}</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  {</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    vis.writeTo(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    init();</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  }</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordtype">void</span> init();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keywordtype">void</span> sanitize();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <a class="code hl_class" href="class_patternist_1_1_process_model.html">~ProcessModel</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  <span class="keywordtype">void</span> setChannel(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  <span class="keywordtype">int</span> channel() const noexcept;</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  <span class="keywordtype">void</span> setCurrentPattern(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordtype">int</span> currentPattern() const noexcept;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keywordtype">void</span> setLaneLabels(LaneLabels l);</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  LaneLabels laneLabels() const noexcept;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#ad70ad8d4588406f492e6528c9b2dce20">  287</a></span>  const <a class="code hl_namespace" href="namespacestd.html">std</a>::vector&lt;int64_t&gt;&amp; execSteps() const noexcept { <span class="keywordflow">return</span> m_execSteps; }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  <span class="keywordtype">void</span> setExecSteps(std::vector&lt;int64_t&gt; s) { m_execSteps = std::move(s); }</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordtype">void</span> setPattern(<span class="keywordtype">int</span> n, Pattern p);</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  <span class="keywordtype">void</span> setPatterns(<span class="keyword">const</span> std::vector&lt;Pattern&gt;&amp; n);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keyword">const</span> std::vector&lt;Pattern&gt;&amp; patterns() const noexcept;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; patternSelect;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; switchQuantification;</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a2d9242bc4cbb175ddcce0352a1d4aa20">  297</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; fill;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a6dcce4ff9346942150ab56709d7613c8">  299</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; density;</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#ace6305bfd9813e7a2f4e0980f28c8df9">  301</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; velocity;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a66a7ae6a9aae6892bb8633f3a89483e7">  303</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; swing;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#ae241304549c98e77fa1b150f5e0c35c7">  305</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; ratchet;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a2c78d1e0a3762da65e0e7ef47e56f812">  307</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; pace;</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#abd1f1164e6e36b0a03d58ef510588662">  309</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::ControlInlet&gt; repeatTime;</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::MidiOutlet&gt; outlet;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Outlet&gt; accent;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_namespace" href="namespace_process.html">Process</a>::Outlet&gt; slide;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>public:</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="keywordtype">void</span> channelChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(channelChanged, arg_1);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <span class="keywordtype">void</span> currentPatternChanged(<span class="keywordtype">int</span> arg_1) W_SIGNAL(currentPatternChanged, arg_1);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#afedc2f6d16ddc3c03c77f7ec95f2712c">  318</a></span>  <span class="keywordtype">void</span> execStepsChanged() W_SIGNAL(execStepsChanged);</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a2028a1f820a3ac94ab0f82856da1e7cc">  321</a></span>  <span class="keywordtype">void</span> execPattern(<span class="keywordtype">int</span> current, <span class="keywordtype">int</span> pending) W_SIGNAL(execPattern, current, pending);</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordtype">void</span> patternsChanged() W_SIGNAL(patternsChanged);</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordtype">void</span> laneLabelsChanged(LaneLabels arg_1) W_SIGNAL(laneLabelsChanged, arg_1);</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="class_patternist_1_1_process_model.html#a8f1656bb142ded8a40bc623b555732cd">  325</a></span>  <span class="keywordtype">void</span> timeGridChanged() W_SIGNAL(timeGridChanged);</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  PROPERTY(<span class="keywordtype">int</span>, channel READ channel WRITE setChannel NOTIFY channelChanged, W_Final)</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  PROPERTY(</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>      <span class="keywordtype">int</span>,</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>      currentPattern READ currentPattern WRITE setCurrentPattern NOTIFY</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>          currentPatternChanged,</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>      W_Final)</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  PROPERTY(</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>      LaneLabels,</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>      laneLabels READ laneLabels WRITE setLaneLabels NOTIFY laneLabelsChanged, W_Final)</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>private:</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordtype">void</span> ancestorStartDateChanged() override;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <span class="keywordtype">void</span> ancestorTempoChanged() override;</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <span class="keywordtype">void</span> setDurationAndScale(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <span class="keywordtype">void</span> setDurationAndGrow(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  <span class="keywordtype">void</span> setDurationAndShrink(const <a class="code hl_struct" href="struct_time_val.html">TimeVal</a>&amp; newDuration) noexcept override;</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keywordtype">int</span> m_channel{1};</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keywordtype">int</span> m_currentPattern{};</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  LaneLabels m_laneLabels{LaneLabels::NameAndNumber};</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  std::vector&lt;int64_t&gt; m_execSteps;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  std::vector&lt;bool&gt; m_grown;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  std::vector&lt;Pattern&gt; m_patterns;</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>};</div>
+</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>}</div>
+<div class="ttc" id="aclass_patternist_1_1_process_model_html"><div class="ttname"><a href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:247</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:80</div></div>
 <div class="ttc" id="aclassid__base__t_html"><div class="ttname"><a href="classid__base__t.html">id_base_t</a></div><div class="ttdoc">The id_base_t class.</div><div class="ttdef"><b>Definition</b> Identifier.hpp:59</div></div>
 <div class="ttc" id="anamespace_process_html"><div class="ttname"><a href="namespace_process.html">Process</a></div><div class="ttdoc">Base classes and tools to implement processes and layers.</div><div class="ttdef"><b>Definition</b> JSONVisitor.hpp:1115</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
-<div class="ttc" id="astruct_patternist_1_1_lane_html"><div class="ttname"><a href="struct_patternist_1_1_lane.html">Patternist::Lane</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:26</div></div>
-<div class="ttc" id="astruct_patternist_1_1_pattern_html"><div class="ttname"><a href="struct_patternist_1_1_pattern.html">Patternist::Pattern</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:37</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html"><div class="ttname"><a href="struct_patternist_1_1_lane.html">Patternist::Lane</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:98</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_a30d3f74b9554662bb94b184d23499688"><div class="ttname"><a href="struct_patternist_1_1_lane.html#a30d3f74b9554662bb94b184d23499688">Patternist::Lane::params</a></div><div class="ttdeci">std::vector&lt; StepParams &gt; params</div><div class="ttdoc">Same size as pattern.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:111</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_ac594d19cf1b93b3172b3521926b25b72"><div class="ttname"><a href="struct_patternist_1_1_lane.html#ac594d19cf1b93b3172b3521926b25b72">Patternist::Lane::note</a></div><div class="ttdeci">uint8_t note</div><div class="ttdoc">A MIDI note, or accentLane or slideLane.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:101</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_acf1d224bae1d50ad63390f5367eac39f"><div class="ttname"><a href="struct_patternist_1_1_lane.html#acf1d224bae1d50ad63390f5367eac39f">Patternist::Lane::RandomPerHit</a></div><div class="ttdeci">RandomPerHit</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:115</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_ad43e184dce25de1bc26d4bc83cb0626c"><div class="ttname"><a href="struct_patternist_1_1_lane.html#ad43e184dce25de1bc26d4bc83cb0626c">Patternist::Lane::division</a></div><div class="ttdeci">int division</div><div class="ttdoc">Steps per whole note; 0 follows the pattern.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:107</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_adf28be8af79dc579a542123fbe310b75"><div class="ttname"><a href="struct_patternist_1_1_lane.html#adf28be8af79dc579a542123fbe310b75">Patternist::Lane::length</a></div><div class="ttdeci">int length</div><div class="ttdoc">Steps before the lane loops; 0 follows the pattern.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:105</div></div>
+<div class="ttc" id="astruct_patternist_1_1_lane_html_adff9eeb51062264c379d16d183f31c96"><div class="ttname"><a href="struct_patternist_1_1_lane.html#adff9eeb51062264c379d16d183f31c96">Patternist::Lane::velocity</a></div><div class="ttdeci">float velocity</div><div class="ttdoc">0 - 1.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:109</div></div>
+<div class="ttc" id="astruct_patternist_1_1_pattern_html"><div class="ttname"><a href="struct_patternist_1_1_pattern.html">Patternist::Pattern</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:139</div></div>
+<div class="ttc" id="astruct_patternist_1_1_pattern_html_ab297adf0fd724940b9c125fa2e2cfc6b"><div class="ttname"><a href="struct_patternist_1_1_pattern.html#ab297adf0fd724940b9c125fa2e2cfc6b">Patternist::Pattern::maxDivision</a></div><div class="ttdeci">static const constexpr int maxDivision</div><div class="ttdoc">Steps per whole note, at most.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:143</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html"><div class="ttname"><a href="struct_patternist_1_1_step_params.html">Patternist::StepParams</a></div><div class="ttdef"><b>Definition</b> PatternModel.hpp:49</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a0198d36af637cf0ef218ad8dbc7925a0"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a0198d36af637cf0ef218ad8dbc7925a0">Patternist::StepParams::chance</a></div><div class="ttdeci">float chance</div><div class="ttdoc">0 - 1, scaled by the Density input.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:56</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a05dff617958da28befc2cf11f76e8d4d"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a05dff617958da28befc2cf11f76e8d4d">Patternist::StepParams::ratchet</a></div><div class="ttdeci">uint8_t ratchet</div><div class="ttdoc">Notes played within the step, 1 - 8.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:68</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a0bc62ee86a05b9e2f56135848596d776"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a0bc62ee86a05b9e2f56135848596d776">Patternist::StepParams::gate</a></div><div class="ttdeci">float gate</div><div class="ttdoc">0 - 1 of a step; a tie, or 1, holds the note until the next step.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:63</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a1d51956050c0c341b59a8c79b1cf365c"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a1d51956050c0c341b59a8c79b1cf365c">Patternist::StepParams::pace</a></div><div class="ttdeci">float pace</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:71</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a2227580de4fe33a009ed57d701074e08"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a2227580de4fe33a009ed57d701074e08">Patternist::StepParams::pitch</a></div><div class="ttdeci">int8_t pitch</div><div class="ttdoc">Semitones added to the lane's note.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:73</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a222d034e82113cb1150928fe625cc43f"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a222d034e82113cb1150928fe625cc43f">Patternist::StepParams::gateRandom</a></div><div class="ttdeci">float gateRandom</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:66</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_a8a4b325c5f736d69d19442b4c0f7869a"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#a8a4b325c5f736d69d19442b4c0f7869a">Patternist::StepParams::pitchRandom</a></div><div class="ttdeci">uint8_t pitchRandom</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:76</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_aaa22bdcf57931ee096a6397fd95055ec"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#aaa22bdcf57931ee096a6397fd95055ec">Patternist::StepParams::velocity</a></div><div class="ttdeci">float velocity</div><div class="ttdoc">0 - 1, scaled by the lane's velocity and the Velocity input.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:51</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_ad7ab680ea23d745a30b49f368bed50ba"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#ad7ab680ea23d745a30b49f368bed50ba">Patternist::StepParams::velocityRandom</a></div><div class="ttdeci">float velocityRandom</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:54</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_ae7022ebe48144bfaa8372635b40817e0"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#ae7022ebe48144bfaa8372635b40817e0">Patternist::StepParams::offsetRandom</a></div><div class="ttdeci">float offsetRandom</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:61</div></div>
+<div class="ttc" id="astruct_patternist_1_1_step_params_html_afa52afba10c08bc729a29eba2886a3a3"><div class="ttname"><a href="struct_patternist_1_1_step_params.html#afa52afba10c08bc729a29eba2886a3a3">Patternist::StepParams::offset</a></div><div class="ttdeci">float offset</div><div class="ttdoc">-0.5 - 0.5 of a step: early or late.</div><div class="ttdef"><b>Definition</b> PatternModel.hpp:58</div></div>
 <div class="ttc" id="astruct_time_val_html"><div class="ttname"><a href="struct_time_val.html">TimeVal</a></div><div class="ttdef"><b>Definition</b> TimeValue.hpp:21</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

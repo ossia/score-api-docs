@@ -16,12 +16,13 @@ var searchData=
   ['nodefootprint_13',['nodeFootprint',['../namespace_scenario.html#a8b96dcb6a5cc6ab796024408a9487326',1,'Scenario']]],
   ['nodekindof_14',['nodeKindOf',['../namespace_process.html#af523bfd4ba2e7d329eeda0153f3db154',1,'Process']]],
   ['normalizedvalue_15',['normalizedValue',['../namespaceoscr.html#aacbc2f572f15f53e4c035fb076bce7d9',1,'oscr']]],
-  ['notebufferlive_16',['noteBufferLive',['../classscore_1_1gfx_1_1_render_list.html#a30439c8846dbebc483f3cc54849a5d08',1,'score::gfx::RenderList']]],
-  ['noteframecompleted_17',['noteFrameCompleted',['../classscore_1_1gfx_1_1_render_list.html#af4a7f1c98a7b69bdc0d3eaad456a0f20',1,'score::gfx::RenderList']]],
-  ['nothingmissing_18',['nothingMissing',['../class_process_1_1_missing_files_dialog.html#abcb57cc496a4851bc0d2747c0940e8ac',1,'Process::MissingFilesDialog']]],
-  ['nv12externaloesusable_19',['nv12ExternalOesUsable',['../namespacescore_1_1gfx.html#ad7a3269925ffc4b0f8364b3831b7d06a',1,'score::gfx']]],
-  ['nv16decoder_20',['NV16Decoder',['../structscore_1_1gfx_1_1_n_v16_decoder.html#a86769c17839b393b22362ae2e2deda5b',1,'score::gfx::NV16Decoder']]],
-  ['nvidiaglxlibraryversion_21',['nvidiaGlxLibraryVersion',['../namespacescore.html#a87b75d461c3aa93ed454203205b6389b',1,'score']]],
-  ['nvidiaglxvendorstate_22',['nvidiaglxvendorstate',['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept']]],
-  ['nvidiakerneldriverversion_23',['nvidiaKernelDriverVersion',['../namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6',1,'score']]]
+  ['note_5fshift_16',['note_shift',['../class_patternist_1_1pattern__node.html#a4ddf64dc8f0e8c8c7998b61cf7450644',1,'Patternist::pattern_node']]],
+  ['notebufferlive_17',['noteBufferLive',['../classscore_1_1gfx_1_1_render_list.html#a30439c8846dbebc483f3cc54849a5d08',1,'score::gfx::RenderList']]],
+  ['noteframecompleted_18',['noteFrameCompleted',['../classscore_1_1gfx_1_1_render_list.html#af4a7f1c98a7b69bdc0d3eaad456a0f20',1,'score::gfx::RenderList']]],
+  ['nothingmissing_19',['nothingMissing',['../class_process_1_1_missing_files_dialog.html#abcb57cc496a4851bc0d2747c0940e8ac',1,'Process::MissingFilesDialog']]],
+  ['nv12externaloesusable_20',['nv12ExternalOesUsable',['../namespacescore_1_1gfx.html#ad7a3269925ffc4b0f8364b3831b7d06a',1,'score::gfx']]],
+  ['nv16decoder_21',['NV16Decoder',['../structscore_1_1gfx_1_1_n_v16_decoder.html#a86769c17839b393b22362ae2e2deda5b',1,'score::gfx::NV16Decoder']]],
+  ['nvidiaglxlibraryversion_22',['nvidiaGlxLibraryVersion',['../namespacescore.html#a87b75d461c3aa93ed454203205b6389b',1,'score']]],
+  ['nvidiaglxvendorstate_23',['nvidiaglxvendorstate',['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept']]],
+  ['nvidiakerneldriverversion_24',['nvidiaKernelDriverVersion',['../namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6',1,'score']]]
 ];

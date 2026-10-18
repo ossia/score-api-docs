@@ -76,7 +76,7 @@ var searchData=
   ['identifiedobject_3c_20timesyncmodel_20_3e_73',['IdentifiedObject&lt; TimeSyncModel &gt;',['../class_identified_object.html',1,'']]],
   ['identifiedobjectabstract_74',['IdentifiedObjectAbstract',['../class_identified_object_abstract.html',1,'']]],
   ['idgen_75',['IdGen',['../structscore_1_1_id_gen.html',1,'score']]],
-  ['image_76',['image',['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image'],['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image']]],
+  ['image_76',['image',['../structscore_1_1gfx_1_1_image.html',1,'score::gfx::Image'],['../structscore_1_1gfx_1_1image.html',1,'score::gfx::image']]],
   ['image_5fnode_77',['image_node',['../class_gfx_1_1_images_1_1image__node.html',1,'Gfx::Images']]],
   ['image_5ft_78',['image_t',['../struct_threedim_1_1_image_loader_1_1ins_1_1image__t.html',1,'Threedim::ImageLoader::ins::image_t'],['../struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html',1,'Threedim::CubemapLoader::ins::image_t']]],
   ['imagecache_79',['ImageCache',['../struct_gfx_1_1_image_cache.html',1,'Gfx']]],

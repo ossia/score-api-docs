@@ -19,8 +19,9 @@ var searchData=
   ['hastier2amdpinned_16',['hasTier2AmdPinned',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#abf9876d7a20073b037d1fde8c0782424',1,'score::gfx::interop::GpuCapabilities']]],
   ['hasview_17',['hasView',['../classscore_1_1_settings.html#a0c1d076610dcc4c7cd3573b33282908a',1,'score::Settings']]],
   ['haswaveform_18',['hasWaveform',['../classscore_1_1_q_graphics_waveform_button.html#ab3e400fa1dd74de1c0607d483ff32c1c',1,'score::QGraphicsWaveformButton']]],
-  ['healthy_19',['healthy',['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_d3_d11.html#aabcaa78798606bc69b61940a61b2d038',1,'score::gfx::interop::DvpCaptureD3D11::healthy()'],['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_gl.html#a8595ea409ac29cf1970cb7300e1cf393',1,'score::gfx::interop::DvpCaptureGl::healthy()']]],
-  ['hierarchicalscenariocomponent_20',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)']]],
-  ['holdspointer_21',['holdsPointer',['../structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5',1,'score::InfiniteScroller']]],
-  ['hwcodecname_22',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]]
+  ['headerlaneat_19',['headerLaneAt',['../class_patternist_1_1_view.html#a8f1863dd672c5854426c9a292c2bb42e',1,'Patternist::View']]],
+  ['healthy_20',['healthy',['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_d3_d11.html#aabcaa78798606bc69b61940a61b2d038',1,'score::gfx::interop::DvpCaptureD3D11::healthy()'],['../structscore_1_1gfx_1_1interop_1_1_dvp_capture_gl.html#a8595ea409ac29cf1970cb7300e1cf393',1,'score::gfx::interop::DvpCaptureGl::healthy()']]],
+  ['hierarchicalscenariocomponent_21',['hierarchicalscenariocomponent',['../class_hierarchical_scenario_component.html#a790566cb77ec6c3421418e8971c2299d',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(Args &amp;&amp;... args)'],['../class_hierarchical_scenario_component.html#af17743fb3449d212cac1fdf879bd4130',1,'HierarchicalScenarioComponent::HierarchicalScenarioComponent(score::lazy_init_t, Args &amp;&amp;... args)']]],
+  ['holdspointer_22',['holdsPointer',['../structscore_1_1_infinite_scroller.html#a9963b9c506ad5656811b35d04d6fc2a5',1,'score::InfiniteScroller']]],
+  ['hwcodecname_23',['hwCodecName',['../namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0',1,'score::gfx']]]
 ];

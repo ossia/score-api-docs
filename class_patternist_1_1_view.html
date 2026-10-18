@@ -103,6 +103,8 @@ $(document).ready(function(){initNavTree('class_patternist_1_1_view.html',''); i
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_patternist_1_1_view-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Patternist::View Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -118,20 +120,138 @@ Inheritance diagram for Patternist::View:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1_view_1_1_cell.html">Cell</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1_view_1_1_paste_target.html">PasteTarget</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa32088ce24a44af6ea06fc88c7be7973" id="r_aa32088ce24a44af6ea06fc88c7be7973"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973">Mode</a> { <a class="el" href="class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973a01e49ee7364d951a3d1bdea7dd3a1b7b">Fit</a>
+, <a class="el" href="class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973a3d1f92a565d3b1a61880236e33c49bf3">Timeline</a>
+ }</td></tr>
+<tr class="separator:aa32088ce24a44af6ea06fc88c7be7973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aac0b723fbbdc508fce3804b3b2bd8b57" id="r_aac0b723fbbdc508fce3804b3b2bd8b57"><td class="memItemLeft" align="right" valign="top"><a id="aac0b723fbbdc508fce3804b3b2bd8b57" name="aac0b723fbbdc508fce3804b3b2bd8b57"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>View</b> (const <a class="el" href="class_patternist_1_1_process_model.html">Patternist::ProcessModel</a> &amp;model, QGraphicsItem *parent)</td></tr>
 <tr class="separator:aac0b723fbbdc508fce3804b3b2bd8b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623bd161f85b99dce3bee4d78f6fa0f5" id="r_a623bd161f85b99dce3bee4d78f6fa0f5"><td class="memItemLeft" align="right" valign="top"><a id="a623bd161f85b99dce3bee4d78f6fa0f5" name="a623bd161f85b99dce3bee4d78f6fa0f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toggled</b> (int lane, int index)</td></tr>
-<tr class="separator:a623bd161f85b99dce3bee4d78f6fa0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c0e24262530a808f33b9c648df8453" id="r_ac3c0e24262530a808f33b9c648df8453"><td class="memItemLeft" align="right" valign="top"><a id="ac3c0e24262530a808f33b9c648df8453" name="ac3c0e24262530a808f33b9c648df8453"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMode</b> (<a class="el" href="class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973">Mode</a> m)</td></tr>
+<tr class="separator:ac3c0e24262530a808f33b9c648df8453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9466d84f5244e6bda0124cb0cbd05658" id="r_a9466d84f5244e6bda0124cb0cbd05658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#a9466d84f5244e6bda0124cb0cbd05658">setAdvanced</a> (bool b)</td></tr>
+<tr class="separator:a9466d84f5244e6bda0124cb0cbd05658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7be1c9e47b18ca7bdb45472a1eef742" id="r_ae7be1c9e47b18ca7bdb45472a1eef742"><td class="memItemLeft" align="right" valign="top"><a id="ae7be1c9e47b18ca7bdb45472a1eef742" name="ae7be1c9e47b18ca7bdb45472a1eef742"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setTimeGrid</b> (const <a class="el" href="struct_patternist_1_1_time_grid.html">TimeGrid</a> &amp;g)</td></tr>
+<tr class="separator:ae7be1c9e47b18ca7bdb45472a1eef742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a975bc69377d0a99b458290dfa1fb884d" id="r_a975bc69377d0a99b458290dfa1fb884d"><td class="memItemLeft" align="right" valign="top"><a id="a975bc69377d0a99b458290dfa1fb884d" name="a975bc69377d0a99b458290dfa1fb884d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setZoom</b> (ZoomRatio z)</td></tr>
+<tr class="separator:a975bc69377d0a99b458290dfa1fb884d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ef62a8fa418ea54c4e82b44576671d" id="r_a22ef62a8fa418ea54c4e82b44576671d"><td class="memItemLeft" align="right" valign="top"><a id="a22ef62a8fa418ea54c4e82b44576671d" name="a22ef62a8fa418ea54c4e82b44576671d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setField</b> (StepField f)</td></tr>
+<tr class="separator:a22ef62a8fa418ea54c4e82b44576671d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a75e33bec4ad33965ac2c0c263ff44c" id="r_a1a75e33bec4ad33965ac2c0c263ff44c"><td class="memItemLeft" align="right" valign="top"><a id="a1a75e33bec4ad33965ac2c0c263ff44c" name="a1a75e33bec4ad33965ac2c0c263ff44c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectedLane</b> (int lane)</td></tr>
+<tr class="separator:a1a75e33bec4ad33965ac2c0c263ff44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa392edc62bc20a4fcdf1b714c648ce99" id="r_aa392edc62bc20a4fcdf1b714c648ce99"><td class="memItemLeft" align="right" valign="top"><a id="aa392edc62bc20a4fcdf1b714c648ce99" name="aa392edc62bc20a4fcdf1b714c648ce99"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>selectedLane</b> () const noexcept</td></tr>
+<tr class="separator:aa392edc62bc20a4fcdf1b714c648ce99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1863dd672c5854426c9a292c2bb42e" id="r_a8f1863dd672c5854426c9a292c2bb42e"><td class="memItemLeft" align="right" valign="top"><a id="a8f1863dd672c5854426c9a292c2bb42e" name="a8f1863dd672c5854426c9a292c2bb42e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>headerLaneAt</b> (QPointF pos) const noexcept</td></tr>
+<tr class="memdesc:a8f1863dd672c5854426c9a292c2bb42e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_patternist_1_1_lane.html">Lane</a> whose header is at <code>pos</code>, or -1. <br /></td></tr>
+<tr class="separator:a8f1863dd672c5854426c9a292c2bb42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c05e765905e4d3e1a8a021783f79d74" id="r_a7c05e765905e4d3e1a8a021783f79d74"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_patternist_1_1_step_selection.html">StepSelection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#a7c05e765905e4d3e1a8a021783f79d74">selection</a> () const</td></tr>
+<tr class="separator:a7c05e765905e4d3e1a8a021783f79d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5da3033d52f8783e502415d9ad270c" id="r_acf5da3033d52f8783e502415d9ad270c"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#acf5da3033d52f8783e502415d9ad270c">selectedLanes</a> () const noexcept</td></tr>
+<tr class="separator:acf5da3033d52f8783e502415d9ad270c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b37e4059d929faa0b9ae42f0de3b59e" id="r_a7b37e4059d929faa0b9ae42f0de3b59e"><td class="memItemLeft" align="right" valign="top"><a id="a7b37e4059d929faa0b9ae42f0de3b59e" name="a7b37e4059d929faa0b9ae42f0de3b59e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectedLanes</b> (std::vector&lt; int &gt; lanes)</td></tr>
+<tr class="separator:a7b37e4059d929faa0b9ae42f0de3b59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa207a767b2ccd355864920cc60c4f894" id="r_aa207a767b2ccd355864920cc60c4f894"><td class="memItemLeft" align="right" valign="top"><a id="aa207a767b2ccd355864920cc60c4f894" name="aa207a767b2ccd355864920cc60c4f894"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearSelection</b> ()</td></tr>
+<tr class="memdesc:aa207a767b2ccd355864920cc60c4f894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Both the steps and the lanes. <br /></td></tr>
+<tr class="separator:aa207a767b2ccd355864920cc60c4f894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4fa684ffb3774ca9b7c5d3ba41b4311" id="r_aa4fa684ffb3774ca9b7c5d3ba41b4311"><td class="memItemLeft" align="right" valign="top"><a id="aa4fa684ffb3774ca9b7c5d3ba41b4311" name="aa4fa684ffb3774ca9b7c5d3ba41b4311"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectAll</b> ()</td></tr>
+<tr class="separator:aa4fa684ffb3774ca9b7c5d3ba41b4311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6885771f82d013189c0dab39b627d21" id="r_aa6885771f82d013189c0dab39b627d21"><td class="memItemLeft" align="right" valign="top"><a id="aa6885771f82d013189c0dab39b627d21" name="aa6885771f82d013189c0dab39b627d21"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSelectMode</b> (bool b)</td></tr>
+<tr class="separator:aa6885771f82d013189c0dab39b627d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e062c0d0620f90c0774cc68dfcd3124" id="r_a5e062c0d0620f90c0774cc68dfcd3124"><td class="memItemLeft" align="right" valign="top"><a id="a5e062c0d0620f90c0774cc68dfcd3124" name="a5e062c0d0620f90c0774cc68dfcd3124"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRings</b> (bool b)</td></tr>
+<tr class="memdesc:a5e062c0d0620f90c0774cc68dfcd3124"><td class="mdescLeft">&#160;</td><td class="mdescRight">In the editor: the lanes as concentric rings, each its own loop. <br /></td></tr>
+<tr class="separator:a5e062c0d0620f90c0774cc68dfcd3124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa2b8021c51e02630638df860bb01330" id="r_afa2b8021c51e02630638df860bb01330"><td class="memItemLeft" align="right" valign="top"><a id="afa2b8021c51e02630638df860bb01330" name="afa2b8021c51e02630638df860bb01330"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>rings</b> () const noexcept</td></tr>
+<tr class="separator:afa2b8021c51e02630638df860bb01330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14edea1c3a8dc8fc77fb81f970956799" id="r_a14edea1c3a8dc8fc77fb81f970956799"><td class="memItemLeft" align="right" valign="top"><a id="a14edea1c3a8dc8fc77fb81f970956799" name="a14edea1c3a8dc8fc77fb81f970956799"></a>
+<a class="el" href="struct_patternist_1_1_view_1_1_paste_target.html">PasteTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pasteTarget</b> (int lanes) const</td></tr>
+<tr class="separator:a14edea1c3a8dc8fc77fb81f970956799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0653a976623105e72058d72db9df08fe" id="r_a0653a976623105e72058d72db9df08fe"><td class="memItemLeft" align="right" valign="top">StepField&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a> () const noexcept</td></tr>
+<tr class="separator:a0653a976623105e72058d72db9df08fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeee66f39318a854c442e5b5812ddbc1d" id="r_aeee66f39318a854c442e5b5812ddbc1d"><td class="memItemLeft" align="right" valign="top"><a id="aeee66f39318a854c442e5b5812ddbc1d" name="aeee66f39318a854c442e5b5812ddbc1d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>minimumHeight</b> () const noexcept</td></tr>
+<tr class="memdesc:aeee66f39318a854c442e5b5812ddbc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The height under which the editor's lanes would get too low to use. <br /></td></tr>
+<tr class="separator:aeee66f39318a854c442e5b5812ddbc1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42f3b82fc1ab13347d18d0023474c96" id="r_ad42f3b82fc1ab13347d18d0023474c96"><td class="memItemLeft" align="right" valign="top"><a id="ad42f3b82fc1ab13347d18d0023474c96" name="ad42f3b82fc1ab13347d18d0023474c96"></a>
+const std::vector&lt; float &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>draggedValues</b> () const noexcept</td></tr>
+<tr class="memdesc:ad42f3b82fc1ab13347d18d0023474c96"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a Shift- or Alt-drag in the parameter bars sets, for every step. <br /></td></tr>
+<tr class="separator:ad42f3b82fc1ab13347d18d0023474c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8799fcaa5c38e49d005b57b6d24f6e1d" id="r_a8799fcaa5c38e49d005b57b6d24f6e1d"><td class="memItemLeft" align="right" valign="top"><a id="a8799fcaa5c38e49d005b57b6d24f6e1d" name="a8799fcaa5c38e49d005b57b6d24f6e1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintStep</b> (int lane, int step, Patternist::Note n)</td></tr>
+<tr class="memdesc:a8799fcaa5c38e49d005b57b6d24f6e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a step while painting: emitted for every step the mouse enters. <br /></td></tr>
+<tr class="separator:a8799fcaa5c38e49d005b57b6d24f6e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24df8a26413e355331bac13465554e4" id="r_ae24df8a26413e355331bac13465554e4"><td class="memItemLeft" align="right" valign="top"><a id="ae24df8a26413e355331bac13465554e4" name="ae24df8a26413e355331bac13465554e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintFinished</b> ()</td></tr>
+<tr class="separator:ae24df8a26413e355331bac13465554e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4dd69c354e36f01e4858545ac007d02" id="r_af4dd69c354e36f01e4858545ac007d02"><td class="memItemLeft" align="right" valign="top"><a id="af4dd69c354e36f01e4858545ac007d02" name="af4dd69c354e36f01e4858545ac007d02"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>noteChanged</b> (int lane, int note)</td></tr>
 <tr class="separator:af4dd69c354e36f01e4858545ac007d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a396d6f5e02fa45e879824ca128ce8b08" id="r_a396d6f5e02fa45e879824ca128ce8b08"><td class="memItemLeft" align="right" valign="top"><a id="a396d6f5e02fa45e879824ca128ce8b08" name="a396d6f5e02fa45e879824ca128ce8b08"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>noteChangeFinished</b> ()</td></tr>
 <tr class="separator:a396d6f5e02fa45e879824ca128ce8b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c16838dde0d698c6184b3915062fff" id="r_a49c16838dde0d698c6184b3915062fff"><td class="memItemLeft" align="right" valign="top"><a id="a49c16838dde0d698c6184b3915062fff" name="a49c16838dde0d698c6184b3915062fff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>muteToggled</b> (int lane)</td></tr>
+<tr class="separator:a49c16838dde0d698c6184b3915062fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6788c7b913cfd1ae7e1ef0551cd66f10" id="r_a6788c7b913cfd1ae7e1ef0551cd66f10"><td class="memItemLeft" align="right" valign="top"><a id="a6788c7b913cfd1ae7e1ef0551cd66f10" name="a6788c7b913cfd1ae7e1ef0551cd66f10"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>soloToggled</b> (int lane)</td></tr>
+<tr class="separator:a6788c7b913cfd1ae7e1ef0551cd66f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afceec84ce869551009ed43d841b7defa" id="r_afceec84ce869551009ed43d841b7defa"><td class="memItemLeft" align="right" valign="top"><a id="afceec84ce869551009ed43d841b7defa" name="afceec84ce869551009ed43d841b7defa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>laneSelected</b> (int lane)</td></tr>
+<tr class="separator:afceec84ce869551009ed43d841b7defa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147d4e8ee3b416be23157e93b6434f11" id="r_a147d4e8ee3b416be23157e93b6434f11"><td class="memItemLeft" align="right" valign="top"><a id="a147d4e8ee3b416be23157e93b6434f11" name="a147d4e8ee3b416be23157e93b6434f11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fieldEdited</b> (int lane, int step, int <a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a>, float value)</td></tr>
+<tr class="memdesc:a147d4e8ee3b416be23157e93b6434f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">A bar of the parameter lane was dragged to <code>value</code>. <br /></td></tr>
+<tr class="separator:a147d4e8ee3b416be23157e93b6434f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06c79516722eb6bc397c32b8b946ce74" id="r_a06c79516722eb6bc397c32b8b946ce74"><td class="memItemLeft" align="right" valign="top"><a id="a06c79516722eb6bc397c32b8b946ce74" name="a06c79516722eb6bc397c32b8b946ce74"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fieldEditFinished</b> ()</td></tr>
+<tr class="separator:a06c79516722eb6bc397c32b8b946ce74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5867ceab31f4d44e698073eadc23a8a" id="r_af5867ceab31f4d44e698073eadc23a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#af5867ceab31f4d44e698073eadc23a8a">fieldValuesEdited</a> (int lane, int <a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a>)</td></tr>
+<tr class="separator:af5867ceab31f4d44e698073eadc23a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22c737d041f42f99acb518a27e8ee71" id="r_ae22c737d041f42f99acb518a27e8ee71"><td class="memItemLeft" align="right" valign="top"><a id="ae22c737d041f42f99acb518a27e8ee71" name="ae22c737d041f42f99acb518a27e8ee71"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stepMenuRequested</b> (int lane, int step, QPoint screen)</td></tr>
+<tr class="separator:ae22c737d041f42f99acb518a27e8ee71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149d06b6edc5cc1455a9180d59caa84" id="r_a1149d06b6edc5cc1455a9180d59caa84"><td class="memItemLeft" align="right" valign="top"><a id="a1149d06b6edc5cc1455a9180d59caa84" name="a1149d06b6edc5cc1455a9180d59caa84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>selectionChanged</b> ()</td></tr>
+<tr class="separator:a1149d06b6edc5cc1455a9180d59caa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9ae0fb80bbdf70dc8482256fb32aa0" id="r_a9d9ae0fb80bbdf70dc8482256fb32aa0"><td class="memItemLeft" align="right" valign="top"><a id="a9d9ae0fb80bbdf70dc8482256fb32aa0" name="a9d9ae0fb80bbdf70dc8482256fb32aa0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fieldSelected</b> (int <a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a>)</td></tr>
+<tr class="separator:a9d9ae0fb80bbdf70dc8482256fb32aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a55941571175352c2ff1882779eaac" id="r_a46a55941571175352c2ff1882779eaac"><td class="memItemLeft" align="right" valign="top"><a id="a46a55941571175352c2ff1882779eaac" name="a46a55941571175352c2ff1882779eaac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fieldRandomized</b> (int lane, int <a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a>)</td></tr>
+<tr class="memdesc:a46a55941571175352c2ff1882779eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">For <code>lane</code>, or every lane when it is -1. <br /></td></tr>
+<tr class="separator:a46a55941571175352c2ff1882779eaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d814601a843573f0760c55445f9ee2" id="r_a36d814601a843573f0760c55445f9ee2"><td class="memItemLeft" align="right" valign="top"><a id="a36d814601a843573f0760c55445f9ee2" name="a36d814601a843573f0760c55445f9ee2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>fieldReset</b> (int lane, int <a class="el" href="class_patternist_1_1_view.html#a0653a976623105e72058d72db9df08fe">field</a>)</td></tr>
+<tr class="separator:a36d814601a843573f0760c55445f9ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7e8d2b85a7f4c8b6f04948da1ffb7c" id="r_a3e7e8d2b85a7f4c8b6f04948da1ffb7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_view.html#a3e7e8d2b85a7f4c8b6f04948da1ffb7c">laneValueEdited</a> (int lane, int which, int value)</td></tr>
+<tr class="separator:a3e7e8d2b85a7f4c8b6f04948da1ffb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dc99d31737a903fbb3aac699c0dc3aa" id="r_a0dc99d31737a903fbb3aac699c0dc3aa"><td class="memItemLeft" align="right" valign="top"><a id="a0dc99d31737a903fbb3aac699c0dc3aa" name="a0dc99d31737a903fbb3aac699c0dc3aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>laneValueEditFinished</b> ()</td></tr>
+<tr class="separator:a0dc99d31737a903fbb3aac699c0dc3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_layer_view"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_layer_view')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_layer_view.html">Process::LayerView</a></td></tr>
 <tr class="memitem:ad721ceeec085fd37a990e01362fde0d3 inherit pub_methods_class_process_1_1_layer_view" id="r_ad721ceeec085fd37a990e01362fde0d3"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>LayerView</b> (QGraphicsItem *parent)</td></tr>
@@ -212,12 +332,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeave</b> (const 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_class_process_1_1_layer_view"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_process_1_1_layer_view')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_process_1_1_layer_view.html">Process::LayerView</a></td></tr>
-<tr class="memitem:a678eecd4a3c120d8a5cc9c5b2f36c3d6 inherit pro_methods_class_process_1_1_layer_view" id="r_a678eecd4a3c120d8a5cc9c5b2f36c3d6"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>heightChanged</b> (qreal)</td></tr>
-<tr class="separator:a678eecd4a3c120d8a5cc9c5b2f36c3d6 inherit pro_methods_class_process_1_1_layer_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75393982a128cf35123cd2aae5b45b31 inherit pro_methods_class_process_1_1_layer_view" id="r_a75393982a128cf35123cd2aae5b45b31"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>widthChanged</b> (qreal)</td></tr>
-<tr class="separator:a75393982a128cf35123cd2aae5b45b31 inherit pro_methods_class_process_1_1_layer_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df3eb7ecf09b8ea3e84d09ee72252d1 inherit pro_methods_class_process_1_1_layer_view" id="r_a4df3eb7ecf09b8ea3e84d09ee72252d1"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hoverEnterEvent</b> (QGraphicsSceneHoverEvent *event) override</td></tr>
 <tr class="separator:a4df3eb7ecf09b8ea3e84d09ee72252d1 inherit pro_methods_class_process_1_1_layer_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +351,189 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>contextMenuEvent</b> (QGraphicsSceneContextMenuEvent *event) override</td></tr>
 <tr class="separator:a8530d1a73094ef7b3f0fa67383436061 inherit pro_methods_class_process_1_1_layer_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aa32088ce24a44af6ea06fc88c7be7973" name="aa32088ce24a44af6ea06fc88c7be7973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa32088ce24a44af6ea06fc88c7be7973">&#9670;&#160;</a></span>Mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973">Patternist::View::Mode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa32088ce24a44af6ea06fc88c7be7973a01e49ee7364d951a3d1bdea7dd3a1b7b" name="aa32088ce24a44af6ea06fc88c7be7973a01e49ee7364d951a3d1bdea7dd3a1b7b"></a>Fit&#160;</td><td class="fielddoc"><p>The steps share the whole layer: in a node, or in the editor. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aa32088ce24a44af6ea06fc88c7be7973a3d1f92a565d3b1a61880236e33c49bf3" name="aa32088ce24a44af6ea06fc88c7be7973a3d1f92a565d3b1a61880236e33c49bf3"></a>Timeline&#160;</td><td class="fielddoc"><p>The steps fall where they play, on the parent's bar grid. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0653a976623105e72058d72db9df08fe" name="a0653a976623105e72058d72db9df08fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0653a976623105e72058d72db9df08fe">&#9670;&#160;</a></span>field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">StepField Patternist::View::field </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The parameter the bars show: the one chosen, unless the selected lane is an accent or a slide that has no use for it. </p>
+
+</div>
+</div>
+<a id="af5867ceab31f4d44e698073eadc23a8a" name="af5867ceab31f4d44e698073eadc23a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5867ceab31f4d44e698073eadc23a8a">&#9670;&#160;</a></span>fieldValuesEdited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::View::fieldValuesEdited </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>field</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The values of a parameter for every step of a lane changed, while Shift- or Alt-dragging in the parameter bars: see <a class="el" href="class_patternist_1_1_view.html#ad42f3b82fc1ab13347d18d0023474c96" title="What a Shift- or Alt-drag in the parameter bars sets, for every step.">draggedValues()</a>. </p>
+
+</div>
+</div>
+<a id="a3e7e8d2b85a7f4c8b6f04948da1ffb7c" name="a3e7e8d2b85a7f4c8b6f04948da1ffb7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e7e8d2b85a7f4c8b6f04948da1ffb7c">&#9670;&#160;</a></span>laneValueEdited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::View::laneValueEdited </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>which</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A lane's steps (0) or rate (1) dragged in its header; 0 follows the pattern. </p>
+
+</div>
+</div>
+<a id="acf5da3033d52f8783e502415d9ad270c" name="acf5da3033d52f8783e502415d9ad270c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5da3033d52f8783e502415d9ad270c">&#9670;&#160;</a></span>selectedLanes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; int &gt; &amp; Patternist::View::selectedLanes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lanes picked whole, with Ctrl-click on their header or the All lanes button: what Copy, Paste and Clear act on when no step is selected. Picking lanes drops the steps selected, and the other way round. </p>
+
+</div>
+</div>
+<a id="a7c05e765905e4d3e1a8a021783f79d74" name="a7c05e765905e4d3e1a8a021783f79d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c05e765905e4d3e1a8a021783f79d74">&#9670;&#160;</a></span>selection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_patternist_1_1_step_selection.html">StepSelection</a> &amp; Patternist::View::selection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Steps selected by dragging in the select mode, or with Ctrl: in every lane, those under the stretch of time dragged over. </p>
+
+</div>
+</div>
+<a id="a9466d84f5244e6bda0124cb0cbd05658" name="a9466d84f5244e6bda0124cb0cbd05658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9466d84f5244e6bda0124cb0cbd05658">&#9670;&#160;</a></span>setAdvanced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::View::setAdvanced </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mute and solo buttons, step numbers, the selected lane and its parameter bars, a step menu on right-click. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_pattern_view_8hpp_source.html">PatternView.hpp</a></li>
 <li><b>PatternView.cpp</b></li>

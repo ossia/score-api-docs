@@ -103,8 +103,12 @@ $(document).ready(function(){initNavTree('class_patternist_1_1pattern__node.html
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_patternist_1_1pattern__node-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Patternist::pattern_node Class Reference</div></div>
 </div><!--header-->
@@ -116,6 +120,32 @@ Inheritance diagram for Patternist::pattern_node:</div>
   <img src="class_patternist_1_1pattern__node.png" alt=""/>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1display__state.html">display_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message waiting for the tick its musical position falls in.  <a href="struct_patternist_1_1pattern__node_1_1event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1grid__point.html">grid_point</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The grid points of a tick, across the divisions the lanes walk.  <a href="struct_patternist_1_1pattern__node_1_1grid__point.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1hit.html">hit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1lane__state.html">lane_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_patternist_1_1pattern__node_1_1step__controls.html">step_controls</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aca28e8177aef5c967ddcb911931e49ca" id="r_aca28e8177aef5c967ddcb911931e49ca"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#aca28e8177aef5c967ddcb911931e49ca">event_kind</a> : uint8_t { <b>accent</b>
+, <b>note_off</b>
+, <b>note_on</b>
+, <b>slide</b>
+ }</td></tr>
+<tr class="separator:aca28e8177aef5c967ddcb911931e49ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a332442f6ad4124ceadaa39997c100475" id="r_a332442f6ad4124ceadaa39997c100475"><td class="memItemLeft" align="right" valign="top"><a id="a332442f6ad4124ceadaa39997c100475" name="a332442f6ad4124ceadaa39997c100475"></a>
@@ -128,32 +158,117 @@ const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request_pattern</b> (int idx) noexcept</td></tr>
 <tr class="memdesc:ab86c400483b5a65374cacdbc7285e69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ask for a pattern: it takes effect at the next quantification point. <br /></td></tr>
 <tr class="separator:ab86c400483b5a65374cacdbc7285e69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7821b740c555e1a35fdb8eaff7a19dc8" id="r_a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memItemLeft" align="right" valign="top"><a id="a7821b740c555e1a35fdb8eaff7a19dc8" name="a7821b740c555e1a35fdb8eaff7a19dc8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>legato</b> (int note) const noexcept</td></tr>
-<tr class="separator:a7821b740c555e1a35fdb8eaff7a19dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073fd1821c42266aa7dd37e2ebdbfe34" id="r_a073fd1821c42266aa7dd37e2ebdbfe34"><td class="memItemLeft" align="right" valign="top"><a id="a073fd1821c42266aa7dd37e2ebdbfe34" name="a073fd1821c42266aa7dd37e2ebdbfe34"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>release_all</b> (int64_t timestamp) noexcept</td></tr>
 <tr class="separator:a073fd1821c42266aa7dd37e2ebdbfe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbd7b9df064c52aea717f72f773a99f" id="r_adfbd7b9df064c52aea717f72f773a99f"><td class="memItemLeft" align="right" valign="top"><a id="adfbd7b9df064c52aea717f72f773a99f" name="adfbd7b9df064c52aea717f72f773a99f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_lanes</b> () noexcept</td></tr>
+<tr class="separator:adfbd7b9df064c52aea717f72f773a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda49c74bbcab9123b405ee192a1e8aa" id="r_aeda49c74bbcab9123b405ee192a1e8aa"><td class="memItemLeft" align="right" valign="top"><a id="aeda49c74bbcab9123b405ee192a1e8aa" name="aeda49c74bbcab9123b405ee192a1e8aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>replace_patterns</b> (std::vector&lt; <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &gt; &amp;list) noexcept</td></tr>
+<tr class="memdesc:aeda49c74bbcab9123b405ee192a1e8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a new list, swapped in so that the old one is freed elsewhere. <br /></td></tr>
+<tr class="separator:aeda49c74bbcab9123b405ee192a1e8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad45d6374b738a9426a2512f5f3e0c15" id="r_aad45d6374b738a9426a2512f5f3e0c15"><td class="memItemLeft" align="right" valign="top"><a id="aad45d6374b738a9426a2512f5f3e0c15" name="aad45d6374b738a9426a2512f5f3e0c15"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_channel</b> (uint8_t c) noexcept</td></tr>
 <tr class="separator:aad45d6374b738a9426a2512f5f3e0c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad55744cf20c77be337dc400c7e11d22" id="r_aad55744cf20c77be337dc400c7e11d22"><td class="memItemLeft" align="right" valign="top"><a id="aad55744cf20c77be337dc400c7e11d22" name="aad55744cf20c77be337dc400c7e11d22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_switch_rate</b> (float v) noexcept</td></tr>
+<tr class="separator:aad55744cf20c77be337dc400c7e11d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f2d545ba0d95528b18274be6075a3f6" id="r_a8f2d545ba0d95528b18274be6075a3f6"><td class="memItemLeft" align="right" valign="top"><a id="a8f2d545ba0d95528b18274be6075a3f6" name="a8f2d545ba0d95528b18274be6075a3f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_density</b> (float v) noexcept</td></tr>
+<tr class="separator:a8f2d545ba0d95528b18274be6075a3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd071a4d4007a2b989e9ffbb2f8babd" id="r_a9bd071a4d4007a2b989e9ffbb2f8babd"><td class="memItemLeft" align="right" valign="top"><a id="a9bd071a4d4007a2b989e9ffbb2f8babd" name="a9bd071a4d4007a2b989e9ffbb2f8babd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_velocity_scale</b> (float v) noexcept</td></tr>
+<tr class="separator:a9bd071a4d4007a2b989e9ffbb2f8babd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2378a41cf388673fd80d64547f4ba3b" id="r_aa2378a41cf388673fd80d64547f4ba3b"><td class="memItemLeft" align="right" valign="top"><a id="aa2378a41cf388673fd80d64547f4ba3b" name="aa2378a41cf388673fd80d64547f4ba3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_swing</b> (float v) noexcept</td></tr>
+<tr class="separator:aa2378a41cf388673fd80d64547f4ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3851957611ec468632c9fb3fba0aa9d2" id="r_a3851957611ec468632c9fb3fba0aa9d2"><td class="memItemLeft" align="right" valign="top"><a id="a3851957611ec468632c9fb3fba0aa9d2" name="a3851957611ec468632c9fb3fba0aa9d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ratchet_scale</b> (float v) noexcept</td></tr>
+<tr class="separator:a3851957611ec468632c9fb3fba0aa9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af758d7aaf67acacd1a0703f7d68e3dfa" id="r_af758d7aaf67acacd1a0703f7d68e3dfa"><td class="memItemLeft" align="right" valign="top"><a id="af758d7aaf67acacd1a0703f7d68e3dfa" name="af758d7aaf67acacd1a0703f7d68e3dfa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_pace_offset</b> (float v) noexcept</td></tr>
+<tr class="separator:af758d7aaf67acacd1a0703f7d68e3dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10243b5101a4b4df674ea790226de66" id="r_af10243b5101a4b4df674ea790226de66"><td class="memItemLeft" align="right" valign="top"><a id="af10243b5101a4b4df674ea790226de66" name="af10243b5101a4b4df674ea790226de66"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_repeat_time</b> (ossia::vec2f v) noexcept</td></tr>
+<tr class="separator:af10243b5101a4b4df674ea790226de66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a259c9e9c77013e5238739173445e6c71" id="r_a259c9e9c77013e5238739173445e6c71"><td class="memItemLeft" align="right" valign="top"><a id="a259c9e9c77013e5238739173445e6c71" name="a259c9e9c77013e5238739173445e6c71"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>read_controls</b> () noexcept</td></tr>
 <tr class="separator:a259c9e9c77013e5238739173445e6c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876766643f3835563cab3dd386fe56ad" id="r_a876766643f3835563cab3dd386fe56ad"><td class="memItemLeft" align="right" valign="top"><a id="a876766643f3835563cab3dd386fe56ad" name="a876766643f3835563cab3dd386fe56ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>transport</b> () noexcept</td></tr>
+<tr class="memdesc:a876766643f3835563cab3dd386fe56ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playhead moved somewhere else: the next tick follows it. <br /></td></tr>
+<tr class="separator:a876766643f3835563cab3dd386fe56ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0f59520d29ed73dfb4d89284e87fff6" id="r_ae0f59520d29ed73dfb4d89284e87fff6"><td class="memItemLeft" align="right" valign="top"><a id="ae0f59520d29ed73dfb4d89284e87fff6" name="ae0f59520d29ed73dfb4d89284e87fff6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:ae0f59520d29ed73dfb4d89284e87fff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae469e952bbf1b140dbea3234a423dce9" id="r_ae469e952bbf1b140dbea3234a423dce9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ae469e952bbf1b140dbea3234a423dce9">play_steps</a> (const ossia::token_request &amp;tk, int64_t tick_start, double samplesratio, bool rewinding, int64_t from_offset, int64_t to_offset) noexcept</td></tr>
-<tr class="separator:ae469e952bbf1b140dbea3234a423dce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbaf0e521e9c8ed65bef5e9016b2327" id="r_a0bbaf0e521e9c8ed65bef5e9016b2327"><td class="memItemLeft" align="right" valign="top"><a id="a0bbaf0e521e9c8ed65bef5e9016b2327" name="a0bbaf0e521e9c8ed65bef5e9016b2327"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>publish</b> () noexcept</td></tr>
+<tr class="separator:a0bbaf0e521e9c8ed65bef5e9016b2327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6444f0125d082b01d866c971f672d26" id="r_ae6444f0125d082b01d866c971f672d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ae6444f0125d082b01d866c971f672d26">play_steps</a> (const ossia::token_request &amp;tk, int64_t tick_start, double samplesratio, bool rewinding, bool timed, int64_t from_offset, int64_t to_offset) noexcept</td></tr>
+<tr class="separator:ae6444f0125d082b01d866c971f672d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136c5ad245856a0254bb932ddce9ef47" id="r_a136c5ad245856a0254bb932ddce9ef47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a136c5ad245856a0254bb932ddce9ef47">reposition</a> (const ossia::token_request &amp;tk) noexcept</td></tr>
+<tr class="separator:a136c5ad245856a0254bb932ddce9ef47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a33ff7ad06b52bbfc8d6217c4feb6d4" id="r_a4a33ff7ad06b52bbfc8d6217c4feb6d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a4a33ff7ad06b52bbfc8d6217c4feb6d4">resync</a> (const ossia::token_request &amp;tk) noexcept</td></tr>
+<tr class="separator:a4a33ff7ad06b52bbfc8d6217c4feb6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0683872d46337eec08c3a2ab43b69855" id="r_a0683872d46337eec08c3a2ab43b69855"><td class="memItemLeft" align="right" valign="top"><a id="a0683872d46337eec08c3a2ab43b69855" name="a0683872d46337eec08c3a2ab43b69855"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release_removed_lanes</b> (int64_t date) noexcept</td></tr>
+<tr class="memdesc:a0683872d46337eec08c3a2ab43b69855"><td class="mdescLeft">&#160;</td><td class="mdescRight">A lane that is gone cannot release what it held: release it here. <br /></td></tr>
+<tr class="separator:a0683872d46337eec08c3a2ab43b69855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcb1ea7805ed195434dee74d2015e12" id="r_abdcb1ea7805ed195434dee74d2015e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#abdcb1ea7805ed195434dee74d2015e12">play_lane</a> (const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;pat, int i, double position, double unit, bool rewinding, bool timed, bool solo, int64_t date) noexcept</td></tr>
+<tr class="separator:abdcb1ea7805ed195434dee74d2015e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ddf64dc8f0e8c8c7998b61cf7450644" id="r_a4ddf64dc8f0e8c8c7998b61cf7450644"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a4ddf64dc8f0e8c8c7998b61cf7450644">note_shift</a> (const <a class="el" href="struct_patternist_1_1_lane.html">Lane</a> &amp;l, int step) noexcept</td></tr>
+<tr class="separator:a4ddf64dc8f0e8c8c7998b61cf7450644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3471e9e1d479d46420719b1477fa311" id="r_ad3471e9e1d479d46420719b1477fa311"><td class="memItemLeft" align="right" valign="top"><a id="ad3471e9e1d479d46420719b1477fa311" name="ad3471e9e1d479d46420719b1477fa311"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update_repeat_time</b> () noexcept</td></tr>
+<tr class="separator:ad3471e9e1d479d46420719b1477fa311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31945172a7f83d89ec33f5dc37cb7cbe" id="r_a31945172a7f83d89ec33f5dc37cb7cbe"><td class="memTemplParams" colspan="2"><a id="a31945172a7f83d89ec33f5dc37cb7cbe" name="a31945172a7f83d89ec33f5dc37cb7cbe"></a>
+template&lt;typename Gate &gt; </td></tr>
+<tr class="memitem:a31945172a7f83d89ec33f5dc37cb7cbe"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>hits</b> (const <a class="el" href="struct_patternist_1_1_step_params.html">StepParams</a> &amp;p, double unit, bool scheduled, std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1hit.html">hit</a>, <a class="el" href="class_patternist_1_1pattern__node.html#aea5a89a2cce789e2556a234fe45e01f5">max_ratchet</a> &gt; &amp;out, Gate &amp;&amp;gate_of) const noexcept</td></tr>
+<tr class="separator:a31945172a7f83d89ec33f5dc37cb7cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9623cc50580764005a3f2c1173fc75" id="r_a9f9623cc50580764005a3f2c1173fc75"><td class="memItemLeft" align="right" valign="top"><a id="a9f9623cc50580764005a3f2c1173fc75" name="a9f9623cc50580764005a3f2c1173fc75"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>swing_delay</b> (int step) const noexcept</td></tr>
+<tr class="memdesc:a9f9623cc50580764005a3f2c1173fc75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every other step is delayed, by up to half a step. <br /></td></tr>
+<tr class="separator:a9f9623cc50580764005a3f2c1173fc75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fd3f67a419e873ffcd9ad3b70c3fc87" id="r_a9fd3f67a419e873ffcd9ad3b70c3fc87"><td class="memItemLeft" align="right" valign="top"><a id="a9fd3f67a419e873ffcd9ad3b70c3fc87" name="a9fd3f67a419e873ffcd9ad3b70c3fc87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>condition_holds</b> (const <a class="el" href="struct_patternist_1_1_step_params.html">StepParams</a> &amp;p, int64_t pass) const noexcept</td></tr>
+<tr class="separator:a9fd3f67a419e873ffcd9ad3b70c3fc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac46e033eef56cae2371ee52ca6fb327" id="r_aac46e033eef56cae2371ee52ca6fb327"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#aac46e033eef56cae2371ee52ca6fb327">control_value</a> (const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;pat, int i, int64_t n) noexcept</td></tr>
+<tr class="separator:aac46e033eef56cae2371ee52ca6fb327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c9ac4c958c9e998885434829f01cda" id="r_a79c9ac4c958c9e998885434829f01cda"><td class="memItemLeft" align="right" valign="top"><a id="a79c9ac4c958c9e998885434829f01cda" name="a79c9ac4c958c9e998885434829f01cda"></a>
+<a class="el" href="struct_patternist_1_1pattern__node_1_1step__controls.html">step_controls</a>&#160;</td><td class="memItemRight" valign="bottom"><b>controls_at</b> (const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;pat, double grid, bool scheduled) noexcept</td></tr>
+<tr class="separator:a79c9ac4c958c9e998885434829f01cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1fa1ccfd6f0f7598af303b4ed859c4" id="r_a0b1fa1ccfd6f0f7598af303b4ed859c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a0b1fa1ccfd6f0f7598af303b4ed859c4">play_step</a> (const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;pat, int i, int step, int64_t pass, double grid, double at, double unit, bool scheduled, bool solo, int64_t date) noexcept</td></tr>
+<tr class="separator:a0b1fa1ccfd6f0f7598af303b4ed859c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534f71898984b846f1d2e922c6b29531" id="r_a534f71898984b846f1d2e922c6b29531"><td class="memItemLeft" align="right" valign="top"><a id="a534f71898984b846f1d2e922c6b29531" name="a534f71898984b846f1d2e922c6b29531"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>push_event</b> (<a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a> e, bool scheduled, int64_t date) noexcept</td></tr>
+<tr class="separator:a534f71898984b846f1d2e922c6b29531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50d05f378165f23d4b857472576af44" id="r_aa50d05f378165f23d4b857472576af44"><td class="memItemLeft" align="right" valign="top"><a id="aa50d05f378165f23d4b857472576af44" name="aa50d05f378165f23d4b857472576af44"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>flush_immediate</b> (int64_t date) noexcept</td></tr>
+<tr class="memdesc:aa50d05f378165f23d4b857472576af44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every lane's releases go before any lane strikes. <br /></td></tr>
+<tr class="separator:aa50d05f378165f23d4b857472576af44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34269f2c235917a81b7f9e8d51076877" id="r_a34269f2c235917a81b7f9e8d51076877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a34269f2c235917a81b7f9e8d51076877">emit_until</a> (const ossia::token_request &amp;tk, int64_t tick_start, double samplesratio, double end) noexcept</td></tr>
+<tr class="separator:a34269f2c235917a81b7f9e8d51076877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac8a5832e6da22dde0be1df91baa3132" id="r_aac8a5832e6da22dde0be1df91baa3132"><td class="memItemLeft" align="right" valign="top"><a id="aac8a5832e6da22dde0be1df91baa3132" name="aac8a5832e6da22dde0be1df91baa3132"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>emit</b> (const <a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a> &amp;e, int64_t date) noexcept</td></tr>
+<tr class="separator:aac8a5832e6da22dde0be1df91baa3132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438ed5bfc937ba03e59690ff7bec5304" id="r_a438ed5bfc937ba03e59690ff7bec5304"><td class="memItemLeft" align="right" valign="top"><a id="a438ed5bfc937ba03e59690ff7bec5304" name="a438ed5bfc937ba03e59690ff7bec5304"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_switch</b> (int64_t date) noexcept</td></tr>
 <tr class="separator:a438ed5bfc937ba03e59690ff7bec5304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcc5db0022deefac6298e892a3c6d94" id="r_a7bcc5db0022deefac6298e892a3c6d94"><td class="memItemLeft" align="right" valign="top"><a id="a7bcc5db0022deefac6298e892a3c6d94" name="a7bcc5db0022deefac6298e892a3c6d94"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>play_step</b> (int64_t date, bool rewinding=false) noexcept</td></tr>
-<tr class="separator:a7bcc5db0022deefac6298e892a3c6d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3f022d15cf2ed57716daa71f3ae719" id="r_a6e3f022d15cf2ed57716daa71f3ae719"><td class="memItemLeft" align="right" valign="top"><a id="a6e3f022d15cf2ed57716daa71f3ae719" name="a6e3f022d15cf2ed57716daa71f3ae719"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:a6e3f022d15cf2ed57716daa71f3ae719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ef9384f8c4fb8d4f9170ff395a387a6" id="r_a8ef9384f8c4fb8d4f9170ff395a387a6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a8ef9384f8c4fb8d4f9170ff395a387a6">finite</a> (float v) noexcept</td></tr>
+<tr class="separator:a8ef9384f8c4fb8d4f9170ff395a387a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08eaa981357a6fd0950fb8495ff9ba7c" id="r_a08eaa981357a6fd0950fb8495ff9ba7c"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a08eaa981357a6fd0950fb8495ff9ba7c">points_between</a> (double from, double to, double bar_line, double bar, int division) noexcept</td></tr>
+<tr class="separator:a08eaa981357a6fd0950fb8495ff9ba7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48c5c69f9f69a12602ca123a8b960bf7" id="r_a48c5c69f9f69a12602ca123a8b960bf7"><td class="memItemLeft" align="right" valign="top"><a id="a48c5c69f9f69a12602ca123a8b960bf7" name="a48c5c69f9f69a12602ca123a8b960bf7"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>timing</b> (const <a class="el" href="struct_patternist_1_1_lane.html">Lane</a> &amp;l, int step, double shift) noexcept</td></tr>
+<tr class="memdesc:a48c5c69f9f69a12602ca123a8b960bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a step's note starts, in steps from its grid point. <br /></td></tr>
+<tr class="separator:a48c5c69f9f69a12602ca123a8b960bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -163,6 +278,27 @@ ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>pattern
 <tr class="memitem:a7b25c8b9a91b426b438f702d75deb015" id="r_a7b25c8b9a91b426b438f702d75deb015"><td class="memItemLeft" align="right" valign="top"><a id="a7b25c8b9a91b426b438f702d75deb015" name="a7b25c8b9a91b426b438f702d75deb015"></a>
 ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>switch_quantification</b></td></tr>
 <tr class="separator:a7b25c8b9a91b426b438f702d75deb015"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f27b196477c0dfd5044a71835aae8b" id="r_a35f27b196477c0dfd5044a71835aae8b"><td class="memItemLeft" align="right" valign="top"><a id="a35f27b196477c0dfd5044a71835aae8b" name="a35f27b196477c0dfd5044a71835aae8b"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>fill_in</b></td></tr>
+<tr class="separator:a35f27b196477c0dfd5044a71835aae8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982669fe988a3004168f46c6c4312d7a" id="r_a982669fe988a3004168f46c6c4312d7a"><td class="memItemLeft" align="right" valign="top"><a id="a982669fe988a3004168f46c6c4312d7a" name="a982669fe988a3004168f46c6c4312d7a"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>density_in</b></td></tr>
+<tr class="separator:a982669fe988a3004168f46c6c4312d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde10ba70b1ff0bc328d7085ee6fddd4" id="r_abde10ba70b1ff0bc328d7085ee6fddd4"><td class="memItemLeft" align="right" valign="top"><a id="abde10ba70b1ff0bc328d7085ee6fddd4" name="abde10ba70b1ff0bc328d7085ee6fddd4"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_in</b></td></tr>
+<tr class="separator:abde10ba70b1ff0bc328d7085ee6fddd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2647226cf14e43bec1a22f38440fb1cc" id="r_a2647226cf14e43bec1a22f38440fb1cc"><td class="memItemLeft" align="right" valign="top"><a id="a2647226cf14e43bec1a22f38440fb1cc" name="a2647226cf14e43bec1a22f38440fb1cc"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>swing_in</b></td></tr>
+<tr class="separator:a2647226cf14e43bec1a22f38440fb1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a046787b4e5879e5cc2d695796a00e3" id="r_a1a046787b4e5879e5cc2d695796a00e3"><td class="memItemLeft" align="right" valign="top"><a id="a1a046787b4e5879e5cc2d695796a00e3" name="a1a046787b4e5879e5cc2d695796a00e3"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>ratchet_in</b></td></tr>
+<tr class="separator:a1a046787b4e5879e5cc2d695796a00e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc6833a85f8aabd7eaa78d8b78f86ef" id="r_a5dc6833a85f8aabd7eaa78d8b78f86ef"><td class="memItemLeft" align="right" valign="top"><a id="a5dc6833a85f8aabd7eaa78d8b78f86ef" name="a5dc6833a85f8aabd7eaa78d8b78f86ef"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>pace_in</b></td></tr>
+<tr class="separator:a5dc6833a85f8aabd7eaa78d8b78f86ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828d1973f6569679761f30487a9533aa" id="r_a828d1973f6569679761f30487a9533aa"><td class="memItemLeft" align="right" valign="top"><a id="a828d1973f6569679761f30487a9533aa" name="a828d1973f6569679761f30487a9533aa"></a>
+ossia::value_inlet&#160;</td><td class="memItemRight" valign="bottom"><b>repeat_time_in</b></td></tr>
+<tr class="separator:a828d1973f6569679761f30487a9533aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3165073c371f20ee8ea3ba28005dcd" id="r_aff3165073c371f20ee8ea3ba28005dcd"><td class="memItemLeft" align="right" valign="top"><a id="aff3165073c371f20ee8ea3ba28005dcd" name="aff3165073c371f20ee8ea3ba28005dcd"></a>
 ossia::midi_outlet&#160;</td><td class="memItemRight" valign="bottom"><b>out</b></td></tr>
 <tr class="separator:aff3165073c371f20ee8ea3ba28005dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,9 +311,8 @@ ossia::value_outlet&#160;</td><td class="memItemRight" valign="bottom"><b>slide_
 <tr class="memitem:aef4db962da239100769a143fc5e1d2ce" id="r_aef4db962da239100769a143fc5e1d2ce"><td class="memItemLeft" align="right" valign="top"><a id="aef4db962da239100769a143fc5e1d2ce" name="aef4db962da239100769a143fc5e1d2ce"></a>
 std::vector&lt; <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>patterns</b></td></tr>
 <tr class="separator:aef4db962da239100769a143fc5e1d2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969830b30c429a69fd7b75aef1ca501e" id="r_a969830b30c429a69fd7b75aef1ca501e"><td class="memItemLeft" align="right" valign="top"><a id="a969830b30c429a69fd7b75aef1ca501e" name="a969830b30c429a69fd7b75aef1ca501e"></a>
-ossia::flat_set&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>in_flight</b></td></tr>
-<tr class="separator:a969830b30c429a69fd7b75aef1ca501e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4d9ec1b8091d96ae76a70fe2bd1f53" id="r_a7c4d9ec1b8091d96ae76a70fe2bd1f53"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a7c4d9ec1b8091d96ae76a70fe2bd1f53">in_flight</a> {}</td></tr>
+<tr class="separator:a7c4d9ec1b8091d96ae76a70fe2bd1f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2789a8966c15f3a2dd3d6723a4b9d7bf" id="r_a2789a8966c15f3a2dd3d6723a4b9d7bf"><td class="memItemLeft" align="right" valign="top"><a id="a2789a8966c15f3a2dd3d6723a4b9d7bf" name="a2789a8966c15f3a2dd3d6723a4b9d7bf"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>current_pattern</b> {}</td></tr>
 <tr class="separator:a2789a8966c15f3a2dd3d6723a4b9d7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,9 +324,48 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pending_pattern</b> {-
 double&#160;</td><td class="memItemRight" valign="bottom"><b>switch_rate</b> {1.}</td></tr>
 <tr class="memdesc:a6111f67e3f087370f34974b5c9a7cb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A token_request rate: 0 switches at the beginning of the tick. <br /></td></tr>
 <tr class="separator:a6111f67e3f087370f34974b5c9a7cb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46eb90d7b3380d415af0fc44b574a258" id="r_a46eb90d7b3380d415af0fc44b574a258"><td class="memItemLeft" align="right" valign="top"><a id="a46eb90d7b3380d415af0fc44b574a258" name="a46eb90d7b3380d415af0fc44b574a258"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>current</b> = 0</td></tr>
+<tr class="memitem:ad5075ae17093335eac136fd82b335465" id="r_ad5075ae17093335eac136fd82b335465"><td class="memItemLeft" align="right" valign="top"><a id="ad5075ae17093335eac136fd82b335465" name="ad5075ae17093335eac136fd82b335465"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b> {}</td></tr>
+<tr class="separator:ad5075ae17093335eac136fd82b335465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a30055008f4c4f486705d288d07924" id="r_a38a30055008f4c4f486705d288d07924"><td class="memItemLeft" align="right" valign="top"><a id="a38a30055008f4c4f486705d288d07924" name="a38a30055008f4c4f486705d288d07924"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>density</b> {1.f}</td></tr>
+<tr class="separator:a38a30055008f4c4f486705d288d07924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82e1965f3a5658d7323815719731788" id="r_ae82e1965f3a5658d7323815719731788"><td class="memItemLeft" align="right" valign="top"><a id="ae82e1965f3a5658d7323815719731788" name="ae82e1965f3a5658d7323815719731788"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_scale</b> {1.f}</td></tr>
+<tr class="separator:ae82e1965f3a5658d7323815719731788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac953b98b379a4f9dacda8322104e35c4" id="r_ac953b98b379a4f9dacda8322104e35c4"><td class="memItemLeft" align="right" valign="top"><a id="ac953b98b379a4f9dacda8322104e35c4" name="ac953b98b379a4f9dacda8322104e35c4"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>swing</b> {0.f}</td></tr>
+<tr class="separator:ac953b98b379a4f9dacda8322104e35c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc98e1718b6f514006b3255d13b9f2b8" id="r_afc98e1718b6f514006b3255d13b9f2b8"><td class="memItemLeft" align="right" valign="top"><a id="afc98e1718b6f514006b3255d13b9f2b8" name="afc98e1718b6f514006b3255d13b9f2b8"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>ratchet_scale</b> {1.f}</td></tr>
+<tr class="memdesc:afc98e1718b6f514006b3255d13b9f2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies every step's ratchet, 1 - 8, fractions included. <br /></td></tr>
+<tr class="separator:afc98e1718b6f514006b3255d13b9f2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66e3fb088dca6b756b75342ec38941a" id="r_ac66e3fb088dca6b756b75342ec38941a"><td class="memItemLeft" align="right" valign="top"><a id="ac66e3fb088dca6b756b75342ec38941a" name="ac66e3fb088dca6b756b75342ec38941a"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>pace_offset</b> {0.f}</td></tr>
+<tr class="memdesc:ac66e3fb088dca6b756b75342ec38941a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Added to every step's pace, -1 - 1. <br /></td></tr>
+<tr class="separator:ac66e3fb088dca6b756b75342ec38941a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e6b0ac45955d684b05dc29d46c1a438" id="r_a0e6b0ac45955d684b05dc29d46c1a438"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a0e6b0ac45955d684b05dc29d46c1a438">repeat_time</a> {0.}</td></tr>
+<tr class="separator:a0e6b0ac45955d684b05dc29d46c1a438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61a26474d2b44cff083a6df666ed360" id="r_ac61a26474d2b44cff083a6df666ed360"><td class="memItemLeft" align="right" valign="top"><a id="ac61a26474d2b44cff083a6df666ed360" name="ac61a26474d2b44cff083a6df666ed360"></a>
+ossia::vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>repeat_time_value</b> {0.f, 0.f}</td></tr>
+<tr class="memdesc:ac61a26474d2b44cff083a6df666ed360"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time chooser's value: {seconds, 0} or {whole notes, synced}. <br /></td></tr>
+<tr class="separator:ac61a26474d2b44cff083a6df666ed360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae9dacbd8ce2a118f679ba410d80a4c" id="r_a0ae9dacbd8ce2a118f679ba410d80a4c"><td class="memItemLeft" align="right" valign="top"><a id="a0ae9dacbd8ce2a118f679ba410d80a4c" name="a0ae9dacbd8ce2a118f679ba410d80a4c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>tempo</b> {120.}</td></tr>
+<tr class="separator:a0ae9dacbd8ce2a118f679ba410d80a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf02d614e91935f6596f0bd61376fee7" id="r_abf02d614e91935f6596f0bd61376fee7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#abf02d614e91935f6596f0bd61376fee7">origin</a> = std::numeric_limits&lt;double&gt;::quiet_NaN()</td></tr>
+<tr class="separator:abf02d614e91935f6596f0bd61376fee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9def6c753503f04fab1b5754d990b73" id="r_ab9def6c753503f04fab1b5754d990b73"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ab9def6c753503f04fab1b5754d990b73">transport_requested</a> {}</td></tr>
+<tr class="separator:ab9def6c753503f04fab1b5754d990b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eb90d7b3380d415af0fc44b574a258" id="r_a46eb90d7b3380d415af0fc44b574a258"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a46eb90d7b3380d415af0fc44b574a258">current</a> = 0</td></tr>
 <tr class="separator:a46eb90d7b3380d415af0fc44b574a258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa92ac39f6713e390a9a97f987db65d15" id="r_aa92ac39f6713e390a9a97f987db65d15"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#aa92ac39f6713e390a9a97f987db65d15">main_played</a> {}</td></tr>
+<tr class="separator:aa92ac39f6713e390a9a97f987db65d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6b931273a4e16c2e62145c1e8ac0b8" id="r_a8a6b931273a4e16c2e62145c1e8ac0b8"><td class="memItemLeft" align="right" valign="top">std::array&lt; bool, Pattern::maxLanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a8a6b931273a4e16c2e62145c1e8ac0b8">resync_lane</a> {}</td></tr>
+<tr class="separator:a8a6b931273a4e16c2e62145c1e8ac0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4da555448280e26ed6afc5198cb38ae" id="r_ab4da555448280e26ed6afc5198cb38ae"><td class="memItemLeft" align="right" valign="top"><a id="ab4da555448280e26ed6afc5198cb38ae" name="ab4da555448280e26ed6afc5198cb38ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>resync_main</b> {}</td></tr>
+<tr class="separator:ab4da555448280e26ed6afc5198cb38ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d6681cd12a2d6c0a6761ec8d75f6729" id="r_a4d6681cd12a2d6c0a6761ec8d75f6729"><td class="memItemLeft" align="right" valign="top"><a id="a4d6681cd12a2d6c0a6761ec8d75f6729" name="a4d6681cd12a2d6c0a6761ec8d75f6729"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>last</b> = -1</td></tr>
 <tr class="separator:a4d6681cd12a2d6c0a6761ec8d75f6729"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,10 +381,400 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>release_pending</b> {
 <tr class="memitem:a844a1fc5f239a168ead7d00ab84317c0" id="r_a844a1fc5f239a168ead7d00ab84317c0"><td class="memItemLeft" align="right" valign="top"><a id="a844a1fc5f239a168ead7d00ab84317c0" name="a844a1fc5f239a168ead7d00ab84317c0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td></tr>
 <tr class="separator:a844a1fc5f239a168ead7d00ab84317c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f0c0b09490e2cd018145cb671ba3e6" id="r_ac2f0c0b09490e2cd018145cb671ba3e6"><td class="memItemLeft" align="right" valign="top"><a id="ac2f0c0b09490e2cd018145cb671ba3e6" name="ac2f0c0b09490e2cd018145cb671ba3e6"></a>
+std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1lane__state.html">lane_state</a>, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lanes</b> {}</td></tr>
+<tr class="separator:ac2f0c0b09490e2cd018145cb671ba3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed25b57f7485b2ba96e211f73a2524e" id="r_a0ed25b57f7485b2ba96e211f73a2524e"><td class="memItemLeft" align="right" valign="top"><a id="a0ed25b57f7485b2ba96e211f73a2524e" name="a0ed25b57f7485b2ba96e211f73a2524e"></a>
+std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a>, <a class="el" href="class_patternist_1_1pattern__node.html#a2fc17e2b2ff355038f22bbd08e44fc6d">max_events</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> {}</td></tr>
+<tr class="separator:a0ed25b57f7485b2ba96e211f73a2524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3e5744f1cd0e465cf44c8958a86ef8" id="r_a4d3e5744f1cd0e465cf44c8958a86ef8"><td class="memItemLeft" align="right" valign="top"><a id="a4d3e5744f1cd0e465cf44c8958a86ef8" name="a4d3e5744f1cd0e465cf44c8958a86ef8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>queue_size</b> {}</td></tr>
+<tr class="separator:a4d3e5744f1cd0e465cf44c8958a86ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7bb7839820e9a849024eecdc2b3a47" id="r_a3e7bb7839820e9a849024eecdc2b3a47"><td class="memItemLeft" align="right" valign="top"><a id="a3e7bb7839820e9a849024eecdc2b3a47" name="a3e7bb7839820e9a849024eecdc2b3a47"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_order</b> {}</td></tr>
+<tr class="separator:a3e7bb7839820e9a849024eecdc2b3a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a0e5d25ef19a6303deb0a1219c56935" id="r_a6a0e5d25ef19a6303deb0a1219c56935"><td class="memItemLeft" align="right" valign="top"><a id="a6a0e5d25ef19a6303deb0a1219c56935" name="a6a0e5d25ef19a6303deb0a1219c56935"></a>
+std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a>, 2 *max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>immediate</b> {}</td></tr>
+<tr class="memdesc:a6a0e5d25ef19a6303deb0a1219c56935"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a step without musical time sends, all at the same date. <br /></td></tr>
+<tr class="separator:a6a0e5d25ef19a6303deb0a1219c56935"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf58984c14a1776207dd87b769a65fc4" id="r_acf58984c14a1776207dd87b769a65fc4"><td class="memItemLeft" align="right" valign="top"><a id="acf58984c14a1776207dd87b769a65fc4" name="acf58984c14a1776207dd87b769a65fc4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>immediate_size</b> {}</td></tr>
+<tr class="separator:acf58984c14a1776207dd87b769a65fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbe8df2bd04992b38c1a8d952d3832c" id="r_adcbe8df2bd04992b38c1a8d952d3832c"><td class="memItemLeft" align="right" valign="top"><a id="adcbe8df2bd04992b38c1a8d952d3832c" name="adcbe8df2bd04992b38c1a8d952d3832c"></a>
+std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1grid__point.html">grid_point</a>, max_points &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>points</b> {}</td></tr>
+<tr class="separator:adcbe8df2bd04992b38c1a8d952d3832c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57956bb5b45f8a61e022a4232c6db47" id="r_ad57956bb5b45f8a61e022a4232c6db47"><td class="memItemLeft" align="right" valign="top"><a id="ad57956bb5b45f8a61e022a4232c6db47" name="ad57956bb5b45f8a61e022a4232c6db47"></a>
+std::minstd_rand&#160;</td><td class="memItemRight" valign="bottom"><b>rng</b> {0x5eed}</td></tr>
+<tr class="separator:ad57956bb5b45f8a61e022a4232c6db47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180232a2ef4dbf9c2510a4bfcc0f3c4b" id="r_a180232a2ef4dbf9c2510a4bfcc0f3c4b"><td class="memItemLeft" align="right" valign="top"><a id="a180232a2ef4dbf9c2510a4bfcc0f3c4b" name="a180232a2ef4dbf9c2510a4bfcc0f3c4b"></a>
+std::array&lt; int16_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>control_lanes</b> {}</td></tr>
+<tr class="memdesc:a180232a2ef4dbf9c2510a4bfcc0f3c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The accent and slide lanes of the pattern playing. <br /></td></tr>
+<tr class="separator:a180232a2ef4dbf9c2510a4bfcc0f3c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a85000008b5dd7c7c2732deae5b5260" id="r_a1a85000008b5dd7c7c2732deae5b5260"><td class="memItemLeft" align="right" valign="top"><a id="a1a85000008b5dd7c7c2732deae5b5260" name="a1a85000008b5dd7c7c2732deae5b5260"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>control_lane_count</b> {}</td></tr>
+<tr class="separator:a1a85000008b5dd7c7c2732deae5b5260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e849d4d70788e682af76c2ef768ce8" id="r_a88e849d4d70788e682af76c2ef768ce8"><td class="memItemLeft" align="right" valign="top"><a id="a88e849d4d70788e682af76c2ef768ce8" name="a88e849d4d70788e682af76c2ef768ce8"></a>
+<a class="el" href="struct_patternist_1_1pattern__node_1_1display__state.html">display_state</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shown</b></td></tr>
+<tr class="separator:a88e849d4d70788e682af76c2ef768ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aea5a89a2cce789e2556a234fe45e01f5" id="r_aea5a89a2cce789e2556a234fe45e01f5"><td class="memItemLeft" align="right" valign="top"><a id="aea5a89a2cce789e2556a234fe45e01f5" name="aea5a89a2cce789e2556a234fe45e01f5"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_ratchet</b> = 16</td></tr>
+<tr class="memdesc:aea5a89a2cce789e2556a234fe45e01f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A step's hits once multiplied, held to what a step can still tell apart. <br /></td></tr>
+<tr class="separator:aea5a89a2cce789e2556a234fe45e01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0beffa704d61bc05d4dd7dedfc2a8e5" id="r_ac0beffa704d61bc05d4dd7dedfc2a8e5"><td class="memItemLeft" align="right" valign="top"><a id="ac0beffa704d61bc05d4dd7dedfc2a8e5" name="ac0beffa704d61bc05d4dd7dedfc2a8e5"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_lanes</b> = Pattern::maxLanes</td></tr>
+<tr class="separator:ac0beffa704d61bc05d4dd7dedfc2a8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc17e2b2ff355038f22bbd08e44fc6d" id="r_a2fc17e2b2ff355038f22bbd08e44fc6d"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a2fc17e2b2ff355038f22bbd08e44fc6d">max_events</a> = 4 * max_lanes * (2 * <a class="el" href="class_patternist_1_1pattern__node.html#aea5a89a2cce789e2556a234fe45e01f5">max_ratchet</a> + 1)</td></tr>
+<tr class="separator:a2fc17e2b2ff355038f22bbd08e44fc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6456fdea999d120fb81fe7c8753dee83" id="r_a6456fdea999d120fb81fe7c8753dee83"><td class="memItemLeft" align="right" valign="top"><a id="a6456fdea999d120fb81fe7c8753dee83" name="a6456fdea999d120fb81fe7c8753dee83"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_points</b> = 2048</td></tr>
+<tr class="separator:a6456fdea999d120fb81fe7c8753dee83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2aa8315fe587cfb7d2d14988aa26198" id="r_ad2aa8315fe587cfb7d2d14988aa26198"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ad2aa8315fe587cfb7d2d14988aa26198">release_reserve</a> = 2 * max_lanes</td></tr>
+<tr class="separator:ad2aa8315fe587cfb7d2d14988aa26198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="aca28e8177aef5c967ddcb911931e49ca" name="aca28e8177aef5c967ddcb911931e49ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca28e8177aef5c967ddcb911931e49ca">&#9670;&#160;</a></span>event_kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="class_patternist_1_1pattern__node.html#aca28e8177aef5c967ddcb911931e49ca">Patternist::pattern_node::event_kind</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>At the same position, in this order: an accent is set before the notes it acts on, a slide changes once the note it glides into is struck. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae469e952bbf1b140dbea3234a423dce9" name="ae469e952bbf1b140dbea3234a423dce9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae469e952bbf1b140dbea3234a423dce9">&#9670;&#160;</a></span>play_steps()</h2>
+<a id="aac46e033eef56cae2371ee52ca6fb327" name="aac46e033eef56cae2371ee52ca6fb327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac46e033eef56cae2371ee52ca6fb327">&#9670;&#160;</a></span>control_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Patternist::pattern_node::control_value </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td>
+          <td class="paramname"><em>pat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Step <code>n</code> of control lane <code>i</code>: 0 when it does not play, otherwise its accent amount, or its glide time for a slide. Drawn once per step. </p>
+
+</div>
+</div>
+<a id="a34269f2c235917a81b7f9e8d51076877" name="a34269f2c235917a81b7f9e8d51076877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34269f2c235917a81b7f9e8d51076877">&#9670;&#160;</a></span>emit_until()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::emit_until </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>tick_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>samplesratio</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>end</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends what is due before musical position <code>end</code>, in order: at the same position a note-off goes before a note-on, so that a note restarted on the step that ends it is heard; then in the order they were pushed. </p>
+
+</div>
+</div>
+<a id="a8ef9384f8c4fb8d4f9170ff395a387a6" name="a8ef9384f8c4fb8d4f9170ff395a387a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ef9384f8c4fb8d4f9170ff395a387a6">&#9670;&#160;</a></span>finite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool Patternist::pattern_node::finite </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The controls, from the inlets or from the GUI: each one keeps its value when given something that is not a finite number, and is held to its range otherwise. </p>
+
+</div>
+</div>
+<a id="a4ddf64dc8f0e8c8c7998b61cf7450644" name="a4ddf64dc8f0e8c8c7998b61cf7450644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ddf64dc8f0e8c8c7998b61cf7450644">&#9670;&#160;</a></span>note_shift()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Patternist::pattern_node::note_shift </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_lane.html">Lane</a> &amp;&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The timing random a whole note moves by, in steps: none when each hit draws its own. </p>
+
+</div>
+</div>
+<a id="abdcb1ea7805ed195434dee74d2015e12" name="abdcb1ea7805ed195434dee74d2015e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcb1ea7805ed195434dee74d2015e12">&#9670;&#160;</a></span>play_lane()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::play_lane </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td>
+          <td class="paramname"><em>pat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>rewinding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>solo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>date</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_patternist_1_1_lane.html">Lane</a> <code>i</code> reaches a point of its grid at musical position <code>position</code>, in quarters; <code>unit</code> is the length of its step in quarters. </p>
+
+</div>
+</div>
+<a id="a0b1fa1ccfd6f0f7598af303b4ed859c4" name="a0b1fa1ccfd6f0f7598af303b4ed859c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1fa1ccfd6f0f7598af303b4ed859c4">&#9670;&#160;</a></span>play_step()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::play_step </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td>
+          <td class="paramname"><em>pat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>pass</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>at</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>scheduled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>solo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>date</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Plays step <code>step</code> of lane <code>i</code> at musical position <code>at</code>, its point on the grid being <code>grid</code>. When <code>scheduled</code> is false everything goes out at once, at <code>date</code>. </p>
+
+</div>
+</div>
+<a id="ae6444f0125d082b01d866c971f672d26" name="ae6444f0125d082b01d866c971f672d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6444f0125d082b01d866c971f672d26">&#9670;&#160;</a></span>play_steps()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,6 +809,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td><
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int64_t&#160;</td>
           <td class="paramname"><em>from_offset</em>, </td>
         </tr>
@@ -267,6 +837,267 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td><
 </table>
 </div><div class="memdoc">
 <p>Plays the steps of the current pattern whose offset in the tick falls in [from_offset; to_offset[. </p>
+
+</div>
+</div>
+<a id="a08eaa981357a6fd0950fb8495ff9ba7c" name="a08eaa981357a6fd0950fb8495ff9ba7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08eaa981357a6fd0950fb8495ff9ba7c">&#9670;&#160;</a></span>points_between()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int64_t Patternist::pattern_node::points_between </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>to</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bar_line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>division</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Points of a grid of <code>division</code> per whole note in [from; to[, the grid starting again at every bar line: bars of <code>bar</code> quarters, one of them at <code>bar_line</code>. The same points get_quantification_dates() walks. </p>
+
+</div>
+</div>
+<a id="a136c5ad245856a0254bb932ddce9ef47" name="a136c5ad245856a0254bb932ddce9ef47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136c5ad245856a0254bb932ddce9ef47">&#9670;&#160;</a></span>reposition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::reposition </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>After a transport: the counters as if the pattern had played from its origin up to where the tick starts. </p>
+
+</div>
+</div>
+<a id="a4a33ff7ad06b52bbfc8d6217c4feb6d4" name="a4a33ff7ad06b52bbfc8d6217c4feb6d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a33ff7ad06b52bbfc8d6217c4feb6d4">&#9670;&#160;</a></span>resync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::pattern_node::resync </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puts the lanes flagged by replace_patterns where they would be had they always played: a lane on the pattern's grid on its count, another on the points of its own grid since the origin. What they hold carries on. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a46eb90d7b3380d415af0fc44b574a258" name="a46eb90d7b3380d415af0fc44b574a258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46eb90d7b3380d415af0fc44b574a258">&#9670;&#160;</a></span>current</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Patternist::pattern_node::current = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Step of the pattern's own grid, which the lanes without a length or a division of their own follow. </p>
+
+</div>
+</div>
+<a id="a7c4d9ec1b8091d96ae76a70fe2bd1f53" name="a7c4d9ec1b8091d96ae76a70fe2bd1f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4d9ec1b8091d96ae76a70fe2bd1f53">&#9670;&#160;</a></span>in_flight</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;uint8_t, 128&gt; Patternist::pattern_node::in_flight {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>For each note, how many of the lanes' notes are sounding on it: two lanes on one note share a single voice, released by the last of them. </p>
+
+</div>
+</div>
+<a id="aa92ac39f6713e390a9a97f987db65d15" name="aa92ac39f6713e390a9a97f987db65d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa92ac39f6713e390a9a97f987db65d15">&#9670;&#160;</a></span>main_played</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Patternist::pattern_node::main_played {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Points of the pattern's own grid since the origin: <code>current</code> before the modulo, so that a new length starts from where the pattern is. </p>
+
+</div>
+</div>
+<a id="a2fc17e2b2ff355038f22bbd08e44fc6d" name="a2fc17e2b2ff355038f22bbd08e44fc6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc17e2b2ff355038f22bbd08e44fc6d">&#9670;&#160;</a></span>max_events</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Patternist::pattern_node::max_events = 4 * max_lanes * (2 * <a class="el" href="class_patternist_1_1pattern__node.html#aea5a89a2cce789e2556a234fe45e01f5">max_ratchet</a> + 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Once half full, what is due goes out before the next grid point, so the queue holds at most the steps around the one playing: the one before (late offset and swing delay it by up to a step), this one and the next (scheduled early), with room to spare - each a note-on and a note-off per hit, and a release. </p>
+
+</div>
+</div>
+<a id="abf02d614e91935f6596f0bd61376fee7" name="abf02d614e91935f6596f0bd61376fee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf02d614e91935f6596f0bd61376fee7">&#9670;&#160;</a></span>origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Patternist::pattern_node::origin = std::numeric_limits&lt;double&gt;::quiet_NaN()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Musical position the step counters count from: where the pattern started playing, or switched. NaN until the first tick with musical time. </p>
+
+</div>
+</div>
+<a id="ad2aa8315fe587cfb7d2d14988aa26198" name="ad2aa8315fe587cfb7d2d14988aa26198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2aa8315fe587cfb7d2d14988aa26198">&#9670;&#160;</a></span>release_reserve</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Patternist::pattern_node::release_reserve = 2 * max_lanes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The queue keeps room for releases: when it is that full, a note that could not be released later is not struck at all. </p>
+
+</div>
+</div>
+<a id="a0e6b0ac45955d684b05dc29d46c1a438" name="a0e6b0ac45955d684b05dc29d46c1a438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e6b0ac45955d684b05dc29d46c1a438">&#9670;&#160;</a></span>repeat_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Patternist::pattern_node::repeat_time {0.}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When above 0, the steps that ratchet repeat every so many quarters instead of dividing the step by their ratchet. </p>
+
+</div>
+</div>
+<a id="a8a6b931273a4e16c2e62145c1e8ac0b8" name="a8a6b931273a4e16c2e62145c1e8ac0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6b931273a4e16c2e62145c1e8ac0b8">&#9670;&#160;</a></span>resync_lane</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;bool, Pattern::maxLanes&gt; Patternist::pattern_node::resync_lane {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set when the list changes under a playing pattern: lanes that are new or changed rate, and the pattern's own counter when its length or rate changed, join on the next tick where they would be had they always played. </p>
+
+</div>
+</div>
+<a id="ab9def6c753503f04fab1b5754d990b73" name="ab9def6c753503f04fab1b5754d990b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9def6c753503f04fab1b5754d990b73">&#9670;&#160;</a></span>transport_requested</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Patternist::pattern_node::transport_requested {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set by a transport: the next tick moves the step counters to where the playhead landed. </p>
 
 </div>
 </div>

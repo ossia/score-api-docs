@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['value_0',['value',['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port::value'],['../structbitfocus_1_1module__data_1_1config__field_1_1choice.html#a5de71a443a9d08231c2a73329ecfc0d8',1,'bitfocus::module_data::config_field::choice::value']]],
+  ['value_0',['value',['../structbitfocus_1_1module__data_1_1config__field_1_1choice.html#a5de71a443a9d08231c2a73329ecfc0d8',1,'bitfocus::module_data::config_field::choice::value'],['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port::value']]],
   ['valueonhoverdatakey_1',['ValueOnHoverDataKey',['../namespacescore.html#ae9cf17a97b8ef7894150cec3a871b3bf',1,'score']]],
   ['vector_5fgui_2',['vector_gui',['../structscore_1_1_application_settings.html#a5a8ef894289b5b262d95be6dd55f8a33',1,'score::ApplicationSettings']]],
   ['vel_3',['vel',['../structavnd__tools_1_1_entity_to_midi_1_1synth__state.html#ada7d7986dc30c7873e8ef0e65ddbb8ed',1,'avnd_tools::EntityToMidi::synth_state']]],
-  ['verbose_4',['verbose',['../structscore_1_1gfx_1_1_kms_output_settings.html#afbd636919ef77d8fa37bf74d5e89ebcd',1,'score::gfx::KmsOutputSettings']]],
-  ['version_5',['version',['../struct_protocols_1_1_c_a_n_1_1_database.html#acdbc456adcfb8ede49ea77c3646c308d',1,'Protocols::CAN::Database']]],
-  ['vertex_5fshader_6',['vertex_shader',['../structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a11a2d1f81e65910fcbf612b5e87c1e97',1,'score::gfx::GPUVideoEncoder']]],
-  ['verticalsubsampling_7',['verticalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#a1c745fe211e0c5fe00c9ae486a4840a7',1,'Video::VideoPixelFormatInfo']]],
-  ['visiblerows_8',['visibleRows',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#aec41a996226fea904bf58faa6c052ebf',1,'score::gfx::interop::CpuStagedVideoOutputConfig']]],
-  ['visiblewhenfolded_9',['visibleWhenFolded',['../class_process_1_1_port.html#aa51c4c0b1f2b672ae8fa7f0a26fa9133',1,'Process::Port']]],
-  ['vkexternalmemorysupported_10',['vkExternalMemorySupported',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#ac4093c8429f0e5e2f93ef4e743124b6b',1,'score::gfx::interop::GpuCapabilities']]],
-  ['vmmsupported_11',['vmmSupported',['../structscore_1_1gfx_1_1_cuda_functions.html#a1bfcb74a8b5ef1ab8f4573163a45af53',1,'score::gfx::CudaFunctions']]],
-  ['vulkanctx_12',['vulkanCtx',['../structscore_1_1gfx_1_1interop_1_1_rdma_gpu_buffer_config.html#a118aee79bb48460f61134e781b204e05',1,'score::gfx::interop::RdmaGpuBufferConfig']]]
+  ['velocity_4',['velocity',['../struct_patternist_1_1_step_params.html#aaa22bdcf57931ee096a6397fd95055ec',1,'Patternist::StepParams::velocity'],['../struct_patternist_1_1_lane.html#adff9eeb51062264c379d16d183f31c96',1,'Patternist::Lane::velocity'],['../class_patternist_1_1_process_model.html#ace6305bfd9813e7a2f4e0980f28c8df9',1,'Patternist::ProcessModel::velocity']]],
+  ['velocityrandom_5',['velocityRandom',['../struct_patternist_1_1_step_params.html#ad7ab680ea23d745a30b49f368bed50ba',1,'Patternist::StepParams']]],
+  ['verbose_6',['verbose',['../structscore_1_1gfx_1_1_kms_output_settings.html#afbd636919ef77d8fa37bf74d5e89ebcd',1,'score::gfx::KmsOutputSettings']]],
+  ['version_7',['version',['../struct_protocols_1_1_c_a_n_1_1_database.html#acdbc456adcfb8ede49ea77c3646c308d',1,'Protocols::CAN::Database']]],
+  ['vertex_5fshader_8',['vertex_shader',['../structscore_1_1gfx_1_1_g_p_u_video_encoder.html#a11a2d1f81e65910fcbf612b5e87c1e97',1,'score::gfx::GPUVideoEncoder']]],
+  ['verticalsubsampling_9',['verticalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#a1c745fe211e0c5fe00c9ae486a4840a7',1,'Video::VideoPixelFormatInfo']]],
+  ['visiblerows_10',['visibleRows',['../structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_config.html#aec41a996226fea904bf58faa6c052ebf',1,'score::gfx::interop::CpuStagedVideoOutputConfig']]],
+  ['visiblewhenfolded_11',['visibleWhenFolded',['../class_process_1_1_port.html#aa51c4c0b1f2b672ae8fa7f0a26fa9133',1,'Process::Port']]],
+  ['vkexternalmemorysupported_12',['vkExternalMemorySupported',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#ac4093c8429f0e5e2f93ef4e743124b6b',1,'score::gfx::interop::GpuCapabilities']]],
+  ['vmmsupported_13',['vmmSupported',['../structscore_1_1gfx_1_1_cuda_functions.html#a1bfcb74a8b5ef1ab8f4573163a45af53',1,'score::gfx::CudaFunctions']]],
+  ['vulkanctx_14',['vulkanCtx',['../structscore_1_1gfx_1_1interop_1_1_rdma_gpu_buffer_config.html#a118aee79bb48460f61134e781b204e05',1,'score::gfx::interop::RdmaGpuBufferConfig']]]
 ];

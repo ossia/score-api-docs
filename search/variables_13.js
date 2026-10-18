@@ -12,7 +12,8 @@ var searchData=
   ['timecodefont_9',['TimecodeFont',['../classscore_1_1_skin.html#a1e7ed4b883a65461b84fbdfbf5188c0a',1,'score::Skin']]],
   ['timestampns_10',['timestampNs',['../structscore_1_1gfx_1_1drm_1_1_flip_event.html#a9eb956af17d4ec544d4993b56dae6a6d',1,'score::gfx::drm::FlipEvent']]],
   ['transition_5f_11',['transition_',['../class_factor_1_1_state.html#ad5a81c4758cf1b70dffc8e4f21793488',1,'Factor::State::transition_'],['../class_factor_oracle2_m_i_d_i_1_1_state.html#a0412fc16278ce6a0965fdb0854109acd',1,'FactorOracle2MIDI::State::transition_']]],
-  ['tree_12',['tree',['../struct_local_tree_1_1_scriptable_roots.html#a63ce7d74219b691ec2f8702543d459bd',1,'LocalTree::ScriptableRoots']]],
-  ['trytorestore_13',['tryToRestore',['../structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714',1,'score::ApplicationSettings']]],
-  ['type_14',['type',['../structscore_1_1gfx_1_1_port.html#acbb433c506834c3e711d745b4abeb288',1,'score::gfx::Port::type'],['../struct_video_1_1_decoder_threading.html#ab3805e9516467eb928c5ba8d46d52139',1,'Video::DecoderThreading::type']]]
+  ['transport_5frequested_12',['transport_requested',['../class_patternist_1_1pattern__node.html#ab9def6c753503f04fab1b5754d990b73',1,'Patternist::pattern_node']]],
+  ['tree_13',['tree',['../struct_local_tree_1_1_scriptable_roots.html#a63ce7d74219b691ec2f8702543d459bd',1,'LocalTree::ScriptableRoots']]],
+  ['trytorestore_14',['tryToRestore',['../structscore_1_1_application_settings.html#a761ffb07905a9fa1234563f8bd559714',1,'score::ApplicationSettings']]],
+  ['type_15',['type',['../structscore_1_1gfx_1_1_port.html#acbb433c506834c3e711d745b4abeb288',1,'score::gfx::Port::type'],['../struct_video_1_1_decoder_threading.html#ab3805e9516467eb928c5ba8d46d52139',1,'Video::DecoderThreading::type']]]
 ];

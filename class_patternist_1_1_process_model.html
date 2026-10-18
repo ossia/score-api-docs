@@ -139,6 +139,10 @@ template&lt;typename Impl &gt; </td></tr>
 <tr class="memitem:a59aaa760db18d9fe7a3980729f76e4fc" id="r_a59aaa760db18d9fe7a3980729f76e4fc"><td class="memItemLeft" align="right" valign="top"><a id="a59aaa760db18d9fe7a3980729f76e4fc" name="a59aaa760db18d9fe7a3980729f76e4fc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
 <tr class="separator:a59aaa760db18d9fe7a3980729f76e4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8239de72a2d963865bb1a12321b26f" id="r_a2a8239de72a2d963865bb1a12321b26f"><td class="memItemLeft" align="right" valign="top"><a id="a2a8239de72a2d963865bb1a12321b26f" name="a2a8239de72a2d963865bb1a12321b26f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sanitize</b> ()</td></tr>
+<tr class="memdesc:a2a8239de72a2d963865bb1a12321b26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Brings what was loaded into the ranges everything else relies on. <br /></td></tr>
+<tr class="separator:a2a8239de72a2d963865bb1a12321b26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4f3b294d212a4a21968f93d19534dc" id="r_abe4f3b294d212a4a21968f93d19534dc"><td class="memItemLeft" align="right" valign="top"><a id="abe4f3b294d212a4a21968f93d19534dc" name="abe4f3b294d212a4a21968f93d19534dc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setChannel</b> (int n)</td></tr>
 <tr class="separator:abe4f3b294d212a4a21968f93d19534dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +155,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCurrentPattern</b>
 <tr class="memitem:a00433277c1c95442a49740099cce757e" id="r_a00433277c1c95442a49740099cce757e"><td class="memItemLeft" align="right" valign="top"><a id="a00433277c1c95442a49740099cce757e" name="a00433277c1c95442a49740099cce757e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>currentPattern</b> () const noexcept</td></tr>
 <tr class="separator:a00433277c1c95442a49740099cce757e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a314e06ea72037cbbdb4982fe70cdf30d" id="r_a314e06ea72037cbbdb4982fe70cdf30d"><td class="memItemLeft" align="right" valign="top"><a id="a314e06ea72037cbbdb4982fe70cdf30d" name="a314e06ea72037cbbdb4982fe70cdf30d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLaneLabels</b> (LaneLabels l)</td></tr>
+<tr class="separator:a314e06ea72037cbbdb4982fe70cdf30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8fa558d82cc5326b3c0743cd55785c" id="r_add8fa558d82cc5326b3c0743cd55785c"><td class="memItemLeft" align="right" valign="top"><a id="add8fa558d82cc5326b3c0743cd55785c" name="add8fa558d82cc5326b3c0743cd55785c"></a>
+LaneLabels&#160;</td><td class="memItemRight" valign="bottom"><b>laneLabels</b> () const noexcept</td></tr>
+<tr class="separator:add8fa558d82cc5326b3c0743cd55785c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70ad8d4588406f492e6528c9b2dce20" id="r_ad70ad8d4588406f492e6528c9b2dce20"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int64_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_process_model.html#ad70ad8d4588406f492e6528c9b2dce20">execSteps</a> () const noexcept</td></tr>
+<tr class="separator:ad70ad8d4588406f492e6528c9b2dce20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480d0fb5de1253e085b49b135241fec6" id="r_a480d0fb5de1253e085b49b135241fec6"><td class="memItemLeft" align="right" valign="top"><a id="a480d0fb5de1253e085b49b135241fec6" name="a480d0fb5de1253e085b49b135241fec6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setExecSteps</b> (std::vector&lt; int64_t &gt; s)</td></tr>
+<tr class="separator:a480d0fb5de1253e085b49b135241fec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a586adb53cc012f6a578e9fa11231f95d" id="r_a586adb53cc012f6a578e9fa11231f95d"><td class="memItemLeft" align="right" valign="top"><a id="a586adb53cc012f6a578e9fa11231f95d" name="a586adb53cc012f6a578e9fa11231f95d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPattern</b> (int n, <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> p)</td></tr>
 <tr class="separator:a586adb53cc012f6a578e9fa11231f95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,12 +181,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>channelChanged</b> (i
 <tr class="memitem:a685fcf13ad4872093bba0b4dee92e3f6" id="r_a685fcf13ad4872093bba0b4dee92e3f6"><td class="memItemLeft" align="right" valign="top"><a id="a685fcf13ad4872093bba0b4dee92e3f6" name="a685fcf13ad4872093bba0b4dee92e3f6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>currentPatternChanged</b> (int arg_1)</td></tr>
 <tr class="separator:a685fcf13ad4872093bba0b4dee92e3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1793b688d1e4485fe2f1a124a4a39c10" id="r_a1793b688d1e4485fe2f1a124a4a39c10"><td class="memItemLeft" align="right" valign="top"><a id="a1793b688d1e4485fe2f1a124a4a39c10" name="a1793b688d1e4485fe2f1a124a4a39c10"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>execPosition</b> (int arg_1)</td></tr>
-<tr class="separator:a1793b688d1e4485fe2f1a124a4a39c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedc2f6d16ddc3c03c77f7ec95f2712c" id="r_afedc2f6d16ddc3c03c77f7ec95f2712c"><td class="memItemLeft" align="right" valign="top"><a id="afedc2f6d16ddc3c03c77f7ec95f2712c" name="afedc2f6d16ddc3c03c77f7ec95f2712c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>execStepsChanged</b> ()</td></tr>
+<tr class="memdesc:afedc2f6d16ddc3c03c77f7ec95f2712c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_patternist_1_1_process_model.html#ad70ad8d4588406f492e6528c9b2dce20">execSteps()</a> changed. <br /></td></tr>
+<tr class="separator:afedc2f6d16ddc3c03c77f7ec95f2712c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2028a1f820a3ac94ab0f82856da1e7cc" id="r_a2028a1f820a3ac94ab0f82856da1e7cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_process_model.html#a2028a1f820a3ac94ab0f82856da1e7cc">execPattern</a> (int current, int pending)</td></tr>
+<tr class="separator:a2028a1f820a3ac94ab0f82856da1e7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80ee62a315e143898cf7b3a17c58746" id="r_af80ee62a315e143898cf7b3a17c58746"><td class="memItemLeft" align="right" valign="top"><a id="af80ee62a315e143898cf7b3a17c58746" name="af80ee62a315e143898cf7b3a17c58746"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>patternsChanged</b> ()</td></tr>
 <tr class="separator:af80ee62a315e143898cf7b3a17c58746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f83cf25fc6a2fcf5cbcbc9262733eee" id="r_a3f83cf25fc6a2fcf5cbcbc9262733eee"><td class="memItemLeft" align="right" valign="top"><a id="a3f83cf25fc6a2fcf5cbcbc9262733eee" name="a3f83cf25fc6a2fcf5cbcbc9262733eee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>laneLabelsChanged</b> (LaneLabels arg_1)</td></tr>
+<tr class="separator:a3f83cf25fc6a2fcf5cbcbc9262733eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f1656bb142ded8a40bc623b555732cd" id="r_a8f1656bb142ded8a40bc623b555732cd"><td class="memItemLeft" align="right" valign="top"><a id="a8f1656bb142ded8a40bc623b555732cd" name="a8f1656bb142ded8a40bc623b555732cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>timeGridChanged</b> ()</td></tr>
+<tr class="memdesc:a8f1656bb142ded8a40bc623b555732cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bar grid the steps fall on moved: an ancestor moved or changed tempo. <br /></td></tr>
+<tr class="separator:a8f1656bb142ded8a40bc623b555732cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_process_model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_process_model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a></td></tr>
 <tr class="memitem:a882042368991e0eee4cd5a51d73d04c0 inherit pub_methods_class_process_1_1_process_model" id="r_a882042368991e0eee4cd5a51d73d04c0"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ProcessModel</b> (<a class="el" href="struct_time_val.html">TimeVal</a> duration, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">ProcessModel</a> &gt; &amp;id, const QString &amp;name, QObject *parent)</td></tr>
@@ -290,12 +315,6 @@ virtual std::vector&lt; <a class="el" href="struct_process_1_1_preset.html">Proc
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>presetMatches</b> (const <a class="el" href="struct_process_1_1_preset.html">Preset</a> &amp;preset) const noexcept</td></tr>
 <tr class="memdesc:a5a6b0da1cb10dcdd777e6f542b093abe inherit pub_methods_class_process_1_1_process_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the preset applies to this process: same process key and same effect. <br /></td></tr>
 <tr class="separator:a5a6b0da1cb10dcdd777e6f542b093abe inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe5acde3d540a7f042229bf8d4acf35 inherit pub_methods_class_process_1_1_process_model" id="r_aefe5acde3d540a7f042229bf8d4acf35"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ancestorStartDateChanged</b> ()</td></tr>
-<tr class="separator:aefe5acde3d540a7f042229bf8d4acf35 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac997fd6fc747c01f9266add182eb3f74 inherit pub_methods_class_process_1_1_process_model" id="r_ac997fd6fc747c01f9266add182eb3f74"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ancestorTempoChanged</b> ()</td></tr>
-<tr class="separator:ac997fd6fc747c01f9266add182eb3f74 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ee8238dd59cfbe7a8a569d636576d67 inherit pub_methods_class_process_1_1_process_model" id="r_a0ee8238dd59cfbe7a8a569d636576d67"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>forEachControl</b> (smallfun::function&lt; void(<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;, const ossia::value &amp;)&gt;) const</td></tr>
 <tr class="separator:a0ee8238dd59cfbe7a8a569d636576d67 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -491,6 +510,34 @@ std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Pr
 <tr class="memitem:a8f2b5cc4b629abde1551da2808c90d0b" id="r_a8f2b5cc4b629abde1551da2808c90d0b"><td class="memItemLeft" align="right" valign="top"><a id="a8f2b5cc4b629abde1551da2808c90d0b" name="a8f2b5cc4b629abde1551da2808c90d0b"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>switchQuantification</b></td></tr>
 <tr class="separator:a8f2b5cc4b629abde1551da2808c90d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9242bc4cbb175ddcce0352a1d4aa20" id="r_a2d9242bc4cbb175ddcce0352a1d4aa20"><td class="memItemLeft" align="right" valign="top"><a id="a2d9242bc4cbb175ddcce0352a1d4aa20" name="a2d9242bc4cbb175ddcce0352a1d4aa20"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fill</b></td></tr>
+<tr class="memdesc:a2d9242bc4cbb175ddcce0352a1d4aa20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steps with the Fill / Not fill condition play while it is on / off. <br /></td></tr>
+<tr class="separator:a2d9242bc4cbb175ddcce0352a1d4aa20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dcce4ff9346942150ab56709d7613c8" id="r_a6dcce4ff9346942150ab56709d7613c8"><td class="memItemLeft" align="right" valign="top"><a id="a6dcce4ff9346942150ab56709d7613c8" name="a6dcce4ff9346942150ab56709d7613c8"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>density</b></td></tr>
+<tr class="memdesc:a6dcce4ff9346942150ab56709d7613c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the chance of every step. <br /></td></tr>
+<tr class="separator:a6dcce4ff9346942150ab56709d7613c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace6305bfd9813e7a2f4e0980f28c8df9" id="r_ace6305bfd9813e7a2f4e0980f28c8df9"><td class="memItemLeft" align="right" valign="top"><a id="ace6305bfd9813e7a2f4e0980f28c8df9" name="ace6305bfd9813e7a2f4e0980f28c8df9"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>velocity</b></td></tr>
+<tr class="memdesc:ace6305bfd9813e7a2f4e0980f28c8df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scales the velocity of every step. <br /></td></tr>
+<tr class="separator:ace6305bfd9813e7a2f4e0980f28c8df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a7ae6a9aae6892bb8633f3a89483e7" id="r_a66a7ae6a9aae6892bb8633f3a89483e7"><td class="memItemLeft" align="right" valign="top"><a id="a66a7ae6a9aae6892bb8633f3a89483e7" name="a66a7ae6a9aae6892bb8633f3a89483e7"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>swing</b></td></tr>
+<tr class="memdesc:a66a7ae6a9aae6892bb8633f3a89483e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delays every other step, by up to half a step. <br /></td></tr>
+<tr class="separator:a66a7ae6a9aae6892bb8633f3a89483e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae241304549c98e77fa1b150f5e0c35c7" id="r_ae241304549c98e77fa1b150f5e0c35c7"><td class="memItemLeft" align="right" valign="top"><a id="ae241304549c98e77fa1b150f5e0c35c7" name="ae241304549c98e77fa1b150f5e0c35c7"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ratchet</b></td></tr>
+<tr class="memdesc:ae241304549c98e77fa1b150f5e0c35c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies every step's ratchet. <br /></td></tr>
+<tr class="separator:ae241304549c98e77fa1b150f5e0c35c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c78d1e0a3762da65e0e7ef47e56f812" id="r_a2c78d1e0a3762da65e0e7ef47e56f812"><td class="memItemLeft" align="right" valign="top"><a id="a2c78d1e0a3762da65e0e7ef47e56f812" name="a2c78d1e0a3762da65e0e7ef47e56f812"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pace</b></td></tr>
+<tr class="memdesc:a2c78d1e0a3762da65e0e7ef47e56f812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Added to every step's pace. <br /></td></tr>
+<tr class="separator:a2c78d1e0a3762da65e0e7ef47e56f812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1f1164e6e36b0a03d58ef510588662" id="r_abd1f1164e6e36b0a03d58ef510588662"><td class="memItemLeft" align="right" valign="top"><a id="abd1f1164e6e36b0a03d58ef510588662" name="abd1f1164e6e36b0a03d58ef510588662"></a>
+std::unique_ptr&lt; <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>repeatTime</b></td></tr>
+<tr class="memdesc:abd1f1164e6e36b0a03d58ef510588662"><td class="mdescLeft">&#160;</td><td class="mdescRight">When set, the interval the steps that ratchet repeat at. <br /></td></tr>
+<tr class="separator:abd1f1164e6e36b0a03d58ef510588662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6534cb3c2d4e71a0eb6c2e5e39e39363" id="r_a6534cb3c2d4e71a0eb6c2e5e39e39363"><td class="memItemLeft" align="right" valign="top"><a id="a6534cb3c2d4e71a0eb6c2e5e39e39363" name="a6534cb3c2d4e71a0eb6c2e5e39e39363"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_midi_outlet.html">Process::MidiOutlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>outlet</b></td></tr>
 <tr class="separator:a6534cb3c2d4e71a0eb6c2e5e39e39363"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -590,6 +637,62 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>is_abstract_base_tag
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2028a1f820a3ac94ab0f82856da1e7cc" name="a2028a1f820a3ac94ab0f82856da1e7cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2028a1f820a3ac94ab0f82856da1e7cc">&#9670;&#160;</a></span>execPattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::ProcessModel::execPattern </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pending</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pattern playing and the one waiting for the next quantification point (-1 when none is), or -1, -1 when stopped. </p>
+
+</div>
+</div>
+<a id="ad70ad8d4588406f492e6528c9b2dce20" name="ad70ad8d4588406f492e6528c9b2dce20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70ad8d4588406f492e6528c9b2dce20">&#9670;&#160;</a></span>execSteps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; int64_t &gt; &amp; Patternist::ProcessModel::execSteps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>For each lane of the playing pattern, how many steps it played before the one it is on, -1 for none. </p>
 
 </div>
 </div>

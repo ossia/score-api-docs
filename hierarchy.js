@@ -275,6 +275,7 @@ var hierarchy =
     [ "Category_k", "class_category__k.html", null ],
     [ "Library::CategoryPaths", "class_library_1_1_category_paths.html", null ],
     [ "avnd_tools::value_serialization::cbor_writer", "structavnd__tools_1_1value__serialization_1_1cbor__writer.html", null ],
+    [ "Patternist::View::Cell", "struct_patternist_1_1_view_1_1_cell.html", null ],
     [ "Scenario::CentralIntervalDisplay", "class_scenario_1_1_central_interval_display.html", null ],
     [ "Scenario::CentralNodalDisplay", "class_scenario_1_1_central_nodal_display.html", null ],
     [ "avnd_tools::EntityToMidi::chan_info", "structavnd__tools_1_1_entity_to_midi_1_1chan__info.html", null ],
@@ -412,6 +413,7 @@ var hierarchy =
       [ "Nodal::CreateNode", "class_nodal_1_1_create_node.html", null ],
       [ "Nodal::RemoveNode", "class_nodal_1_1_remove_node.html", null ],
       [ "Nodal::ReplaceAllNodes", "class_nodal_1_1_replace_all_nodes.html", null ],
+      [ "Patternist::ReplacePatterns", "class_patternist_1_1_replace_patterns.html", null ],
       [ "Patternist::UpdatePattern", "class_patternist_1_1_update_pattern.html", null ],
       [ "Patternist::UpdatePatterns", "class_patternist_1_1_update_patterns.html", null ],
       [ "Process::ChangePortSettings", "class_process_1_1_change_port_settings.html", null ],
@@ -815,6 +817,7 @@ var hierarchy =
     [ "DataType", null, [
       [ "TreeNode< DataType >", "class_tree_node.html", null ]
     ] ],
+    [ "Patternist::pattern_node::lane_state::decided", "struct_patternist_1_1pattern__node_1_1lane__state_1_1decided.html", null ],
     [ "Gfx::AssetTable::DecodedAsset", "struct_gfx_1_1_asset_table_1_1_decoded_asset.html", null ],
     [ "score::gfx::DecodedImage", "structscore_1_1gfx_1_1_decoded_image.html", null ],
     [ "Nodes::PulseToNote::detail::DecodedNote", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_decoded_note.html", null ],
@@ -895,6 +898,7 @@ var hierarchy =
     [ "score::Dispatcher", "structscore_1_1_dispatcher.html", [
       [ "score::Dispatcher_T< T >", "structscore_1_1_dispatcher___t.html", null ]
     ] ],
+    [ "Patternist::pattern_node::display_state", "struct_patternist_1_1pattern__node_1_1display__state.html", null ],
     [ "Scenario::DisplayedElementsContainer", "struct_scenario_1_1_displayed_elements_container.html", null ],
     [ "Scenario::DisplayedElementsModel", "class_scenario_1_1_displayed_elements_model.html", null ],
     [ "Scenario::DisplayedElementsPresenterContainer", "struct_scenario_1_1_displayed_elements_presenter_container.html", null ],
@@ -1006,6 +1010,7 @@ var hierarchy =
     [ "Analysis::EnvelopeFollower", "struct_analysis_1_1_envelope_follower.html", null ],
     [ "Threedim::EnvironmentLoader", "class_threedim_1_1_environment_loader.html", null ],
     [ "score::gfx::EnvParamsUBO", "structscore_1_1gfx_1_1_env_params_u_b_o.html", null ],
+    [ "Patternist::pattern_node::event", "struct_patternist_1_1pattern__node_1_1event.html", null ],
     [ "Ui::MidiDisplay::Node::Layer::Event", "struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html", null ],
     [ "avnd_tools::btrk::event_estimator", "structavnd__tools_1_1btrk_1_1event__estimator.html", null ],
     [ "Clap::event_storage", "struct_clap_1_1event__storage.html", null ],
@@ -1115,6 +1120,7 @@ var hierarchy =
     [ "Threedim::FbxSceneExtractor", "struct_threedim_1_1_fbx_scene_extractor.html", null ],
     [ "bitfocus::module_data::feedback_definition", "structbitfocus_1_1module__data_1_1feedback__definition.html", null ],
     [ "bitfocus::module_data::feedback_instance", "structbitfocus_1_1module__data_1_1feedback__instance.html", null ],
+    [ "Patternist::FieldRange", "struct_patternist_1_1_field_range.html", null ],
     [ "halp::file_port", null, [
       [ "Threedim::AssetLoader::ins::asset_t", "struct_threedim_1_1_asset_loader_1_1ins_1_1asset__t.html", null ],
       [ "Threedim::CubemapLoader::ins::image_t", "struct_threedim_1_1_cubemap_loader_1_1ins_1_1image__t.html", null ],
@@ -1132,6 +1138,7 @@ var hierarchy =
     [ "Process::FileReport", "struct_process_1_1_file_report.html", null ],
     [ "Process::FileScan", "class_process_1_1_file_scan.html", null ],
     [ "avnd_tools::btrk::spectral_flux_odf::filter_band", "structavnd__tools_1_1btrk_1_1spectral__flux__odf_1_1filter__band.html", null ],
+    [ "Patternist::FitLayout", "struct_patternist_1_1_fit_layout.html", null ],
     [ "WidgetFactory::FixedNormalizer< Norm_T >", "struct_widget_factory_1_1_fixed_normalizer.html", null ],
     [ "Protocols::Artnet::Fixture", "struct_protocols_1_1_artnet_1_1_fixture.html", null ],
     [ "FixtureData", null, [
@@ -1383,6 +1390,7 @@ var hierarchy =
     [ "score::gfx::GraphicsUBO", "structscore_1_1gfx_1_1_graphics_u_b_o.html", null ],
     [ "score::PluginLoader::PluginDependencyGraph::GraphVertex", "structscore_1_1_plugin_loader_1_1_plugin_dependency_graph_1_1_graph_vertex.html", null ],
     [ "Nodes::PulseToNote::detail::Grid", "class_nodes_1_1_pulse_to_note_1_1detail_1_1_grid.html", null ],
+    [ "Patternist::pattern_node::grid_point", "struct_patternist_1_1pattern__node_1_1grid__point.html", null ],
     [ "score::GridWidget< T >", "structscore_1_1_grid_widget.html", null ],
     [ "Gfx::GStreamer::gstreamer_pipeline", "struct_gfx_1_1_g_streamer_1_1gstreamer__pipeline.html", null ],
     [ "Gfx::GStreamer::GStreamerSettings", "struct_gfx_1_1_g_streamer_1_1_g_streamer_settings.html", null ],
@@ -1449,6 +1457,7 @@ var hierarchy =
       [ "score::HierarchicModel< Model, Arg, Args... >", "structscore_1_1_hierarchic_model_3_01_model_00_01_arg_00_01_args_8_8_8_01_4.html", null ]
     ] ],
     [ "score::HighResolutionTimerPrivate", "classscore_1_1_high_resolution_timer_private.html", null ],
+    [ "Patternist::pattern_node::hit", "struct_patternist_1_1pattern__node_1_1hit.html", null ],
     [ "score::gfx::interop::PacedFramePump::Hooks", "structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html", null ],
     [ "LV2::HostContext", "struct_l_v2_1_1_host_context.html", null ],
     [ "score::gfx::interop::HostFramePool", "classscore_1_1gfx_1_1interop_1_1_host_frame_pool.html", null ],
@@ -1556,8 +1565,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1833,6 +1842,9 @@ var hierarchy =
       [ "Process::LayerFactory", "class_process_1_1_layer_factory.html", [
         [ "Process::LayerFactory_T< Step::Model, Step::Presenter, Step::View >", "class_process_1_1_layer_factory___t.html", [
           [ "Media::Step::LayerFactory", "struct_media_1_1_step_1_1_layer_factory.html", null ]
+        ] ],
+        [ "Process::LayerFactory_T< Patternist::ProcessModel, Patternist::Presenter, Patternist::View >", "class_process_1_1_layer_factory___t.html", [
+          [ "Patternist::LayerFactory", "struct_patternist_1_1_layer_factory.html", null ]
         ] ],
         [ "Curve::CurveLayerFactory_T< Model_T, LayerPresenter_T, LayerView_T, CurveColors_T, HeaderDelegate_T >", "class_curve_1_1_curve_layer_factory___t.html", null ],
         [ "Process::EffectLayerFactory_Base", "class_process_1_1_effect_layer_factory___base.html", [
@@ -2203,6 +2215,7 @@ var hierarchy =
     [ "score::gfx::KmsOutputSettings", "structscore_1_1gfx_1_1_kms_output_settings.html", null ],
     [ "Protocols::MIDIDevices::Label", "struct_protocols_1_1_m_i_d_i_devices_1_1_label.html", null ],
     [ "Patternist::Lane", "struct_patternist_1_1_lane.html", null ],
+    [ "Patternist::pattern_node::lane_state", "struct_patternist_1_1pattern__node_1_1lane__state.html", null ],
     [ "Faust::LanguageSpec", "struct_faust_1_1_language_spec.html", null ],
     [ "Gfx::CSF::LanguageSpec", "struct_gfx_1_1_c_s_f_1_1_language_spec.html", null ],
     [ "Gfx::GeometryFilter::LanguageSpec", "struct_gfx_1_1_geometry_filter_1_1_language_spec.html", null ],
@@ -2779,6 +2792,7 @@ var hierarchy =
     [ "Scenario::ParentTimeInfo", "struct_scenario_1_1_parent_time_info.html", null ],
     [ "score::gfx::Pass", "structscore_1_1gfx_1_1_pass.html", null ],
     [ "Nodes::AudioLooper::Node::passthrough_selector", "struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector.html", null ],
+    [ "Patternist::View::PasteTarget", "struct_patternist_1_1_view_1_1_paste_target.html", null ],
     [ "Pd::PatchSpec", "struct_pd_1_1_patch_spec.html", null ],
     [ "Path< Object >", "class_path.html", null ],
     [ "Path< Automation::ProcessModel >", "class_path.html", null ],
@@ -2803,8 +2817,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3986,7 +4000,9 @@ var hierarchy =
       [ "MoveEventTest", "class_move_event_test.html", null ],
       [ "MoveIntervalTest", "class_move_interval_test.html", null ],
       [ "NodeTest", "class_node_test.html", null ],
+      [ "Patternist::Controller", "class_patternist_1_1_controller.html", null ],
       [ "Patternist::LibraryHandler", "class_patternist_1_1_library_handler.html", null ],
+      [ "Patternist::TimeGridWatcher", "class_patternist_1_1_time_grid_watcher.html", null ],
       [ "Pd::LibraryHandler", "class_pd_1_1_library_handler.html", null ],
       [ "Process::ApplicationPlugin", "class_process_1_1_application_plugin.html", null ],
       [ "Process::CompileKeyFilter", "class_process_1_1_compile_key_filter.html", null ],
@@ -4558,6 +4574,7 @@ var hierarchy =
       [ "Media::Sound::AudioPreviewWidget", "class_media_1_1_sound_1_1_audio_preview_widget.html", null ],
       [ "Mixer::AudioBusWidget", "class_mixer_1_1_audio_bus_widget.html", null ],
       [ "Mixer::AudioDeviceSlider", "class_mixer_1_1_audio_device_slider.html", null ],
+      [ "Patternist::Editor", "class_patternist_1_1_editor.html", null ],
       [ "Pd::UiWrapper", "struct_pd_1_1_ui_wrapper.html", null ],
       [ "Process::AddressAccessorEditWidget", "class_process_1_1_address_accessor_edit_widget.html", null ],
       [ "Process::DocumentBackgroundPreview", "class_process_1_1_document_background_preview.html", null ],
@@ -4910,8 +4927,12 @@ var hierarchy =
     [ "LocalTree::StateRecall", "struct_local_tree_1_1_state_recall.html", null ],
     [ "Nodes::PulseToNote::detail::Statistics", "struct_nodes_1_1_pulse_to_note_1_1detail_1_1_statistics.html", null ],
     [ "score::gfx::Std430TypeInfo", "structscore_1_1gfx_1_1_std430_type_info.html", null ],
+    [ "Patternist::pattern_node::step_controls", "struct_patternist_1_1pattern__node_1_1step__controls.html", null ],
     [ "Execution::ManualClock::StepGate", "struct_execution_1_1_manual_clock_1_1_step_gate.html", null ],
+    [ "Patternist::StepParams", "struct_patternist_1_1_step_params.html", null ],
     [ "score::Stepper", "structscore_1_1_stepper.html", null ],
+    [ "Patternist::StepSelection", "struct_patternist_1_1_step_selection.html", null ],
+    [ "Patternist::StepSlot", "struct_patternist_1_1_step_slot.html", null ],
     [ "mtk::MIDISyncOut::storage", "unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html", null ],
     [ "Gfx::Video::VideoProps::Stream", "struct_gfx_1_1_video_1_1_video_props_1_1_stream.html", null ],
     [ "stream_events", null, [
@@ -5050,6 +5071,7 @@ var hierarchy =
     [ "Scenario::Timebars", "struct_scenario_1_1_timebars.html", null ],
     [ "WidgetFactory::TimeChooserT< Normalizer >", "struct_widget_factory_1_1_time_chooser_t.html", null ],
     [ "avnd_tools::EntityToMidi::timed_msg", "structavnd__tools_1_1_entity_to_midi_1_1timed__msg.html", null ],
+    [ "Patternist::TimeGrid", "struct_patternist_1_1_time_grid.html", null ],
     [ "Scenario::TimenodeGraphComponents", "struct_scenario_1_1_timenode_graph_components.html", null ],
     [ "Scenario::TimenodeGraphConnectedComponent", "struct_scenario_1_1_timenode_graph_connected_component.html", null ],
     [ "Scenario::TimenodeProperties", "struct_scenario_1_1_timenode_properties.html", null ],

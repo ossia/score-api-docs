@@ -2,8 +2,12 @@ var dir_da44c41f03a34461ff90de8b17a1092b =
 [
     [ "Commands", "dir_6ea753a7f62ee594e4b6f10e4775fd30.html", "dir_6ea753a7f62ee594e4b6f10e4775fd30" ],
     [ "PatternCommandFactory.hpp", "_pattern_command_factory_8hpp_source.html", null ],
+    [ "PatternController.hpp", "_pattern_controller_8hpp_source.html", null ],
+    [ "PatternEdit.hpp", "_pattern_edit_8hpp_source.html", null ],
+    [ "PatternEditor.hpp", "_pattern_editor_8hpp_source.html", null ],
     [ "PatternExecutor.hpp", "_pattern_executor_8hpp_source.html", null ],
     [ "PatternFactory.hpp", "_pattern_factory_8hpp_source.html", null ],
+    [ "PatternGrid.hpp", "_pattern_grid_8hpp_source.html", null ],
     [ "PatternInspector.hpp", "_pattern_inspector_8hpp_source.html", null ],
     [ "PatternLibrary.hpp", "_pattern_library_8hpp_source.html", null ],
     [ "PatternMetadata.hpp", "_pattern_metadata_8hpp_source.html", null ],
@@ -11,5 +15,6 @@ var dir_da44c41f03a34461ff90de8b17a1092b =
     [ "PatternNode.hpp", "_pattern_node_8hpp_source.html", null ],
     [ "PatternParsing.hpp", "_pattern_parsing_8hpp_source.html", null ],
     [ "PatternPresenter.hpp", "_pattern_presenter_8hpp_source.html", null ],
+    [ "PatternTimeGrid.hpp", "_pattern_time_grid_8hpp_source.html", null ],
     [ "PatternView.hpp", "_pattern_view_8hpp_source.html", null ]
 ];

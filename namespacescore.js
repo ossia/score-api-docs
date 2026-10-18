@@ -246,7 +246,7 @@ var namespacescore =
     [ "QGraphicsLogSlider", "classscore_1_1_q_graphics_log_slider.html", null ],
     [ "QGraphicsMultiSlider", "classscore_1_1_q_graphics_multi_slider.html", null ],
     [ "QGraphicsMultiSliderXY", "classscore_1_1_q_graphics_multi_slider_x_y.html", "classscore_1_1_q_graphics_multi_slider_x_y" ],
-    [ "QGraphicsNoteChooser", "classscore_1_1_q_graphics_note_chooser.html", null ],
+    [ "QGraphicsNoteChooser", "classscore_1_1_q_graphics_note_chooser.html", "classscore_1_1_q_graphics_note_chooser" ],
     [ "QGraphicsPathGeneratorXY", "classscore_1_1_q_graphics_path_generator_x_y.html", "classscore_1_1_q_graphics_path_generator_x_y" ],
     [ "QGraphicsPixmapButton", "classscore_1_1_q_graphics_pixmap_button.html", null ],
     [ "QGraphicsPixmapEnum", "classscore_1_1_q_graphics_pixmap_enum.html", null ],
