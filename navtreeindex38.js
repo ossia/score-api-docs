@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"struct_scenario_1_1get__curve__domain.html":[12,0,54,110],
 "struct_scenario_1_1get__curve__domain.html":[11,0,11,108],
 "struct_scenario_1_1get__start__end.html":[12,0,54,111],
 "struct_scenario_1_1get__start__end.html":[11,0,11,109],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "struct_threedim_1_1_inject_buffer_1_1ins.html":[12,0,62,46,0],
 "struct_threedim_1_1_inject_buffer_1_1outs.html":[12,0,62,46,1],
 "struct_threedim_1_1_inject_texture_1_1ins.html":[12,0,62,47,0],
-"struct_threedim_1_1_inject_texture_1_1outs.html":[12,0,62,47,1],
-"struct_threedim_1_1_instancer_1_1_bake.html":[12,0,62,48,0]
+"struct_threedim_1_1_inject_texture_1_1outs.html":[12,0,62,47,1]
 };

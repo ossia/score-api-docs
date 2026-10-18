@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259":[11,0,12,0,245],
 "namespacescore_1_1gfx.html#a90e26c8145a2840ea6faef0298ab0230":[11,0,12,0,257],
 "namespacescore_1_1gfx.html#a90ec0d7190c2a57ae54844ecc2273599":[11,0,12,0,304],
 "namespacescore_1_1gfx.html#a92fd59953f2b6e16a7360894cee555b0":[11,0,12,0,287],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_model_8hpp_source.html":[13,0,0,2,31,1,2,1],
 "score-plugin-remotecontrol_2_remote_control_2_settings_2_view_8hpp_source.html":[13,0,0,2,31,1,2,3],
 "score-plugin-remotecontrol_2_remote_control_2_websockets_2_scenario_2_process_8hpp_source.html":[13,0,0,2,31,1,3,0,2],
-"score-plugin-scenario_2_interpolation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,32,1,0,0],
-"score-plugin-scenario_2_scenario_2_commands_2_scenario_2_properties_8hpp_source.html":[13,0,0,2,32,4,1,5,8]
+"score-plugin-scenario_2_interpolation_2_commands_2_change_address_8hpp_source.html":[13,0,0,2,32,1,0,0]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"struct_protocols_1_1_m_c_u_specific_settings_1_1_map_slot.html":[12,0,49,56,0],
 "struct_protocols_1_1_m_c_u_specific_settings_1_1_map_slot.html#af13cae8939c5a88c7366ffae3810585c":[12,0,49,56,0,0],
 "struct_protocols_1_1_m_i_d_i_devices_1_1_bank.html":[12,0,49,2,0],
 "struct_protocols_1_1_m_i_d_i_devices_1_1_condition.html":[12,0,49,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "struct_scenario_1_1_timenode_properties.html":[12,0,54,287],
 "struct_scenario_1_1_timenode_properties.html":[11,0,11,285],
 "struct_scenario_1_1_vertical_extent.html":[12,0,54,324],
-"struct_scenario_1_1_vertical_extent.html":[11,0,11,322],
-"struct_scenario_1_1get__curve__domain.html":[12,0,54,110]
+"struct_scenario_1_1_vertical_extent.html":[11,0,11,322]
 };

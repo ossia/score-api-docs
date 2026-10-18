@@ -3,6 +3,7 @@ var class_patternist_1_1_process_model =
     [ "execPattern", "class_patternist_1_1_process_model.html#a2028a1f820a3ac94ab0f82856da1e7cc", null ],
     [ "execSteps", "class_patternist_1_1_process_model.html#ad70ad8d4588406f492e6528c9b2dce20", null ],
     [ "execStepsChanged", "class_patternist_1_1_process_model.html#afedc2f6d16ddc3c03c77f7ec95f2712c", null ],
+    [ "loadPreset", "class_patternist_1_1_process_model.html#a035f47430f775f128ad0c7b51a59c0fb", null ],
     [ "sanitize", "class_patternist_1_1_process_model.html#a2a8239de72a2d963865bb1a12321b26f", null ],
     [ "timeGridChanged", "class_patternist_1_1_process_model.html#a8f1656bb142ded8a40bc623b555732cd", null ],
     [ "density", "class_patternist_1_1_process_model.html#a6dcce4ff9346942150ab56709d7613c8", null ],

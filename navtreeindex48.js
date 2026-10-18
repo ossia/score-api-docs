@@ -1,5 +1,6 @@
 var NAVTREEINDEX48 =
 {
+"structscore_1_1gfx_1_1drm_1_1_flip_event.html#a9eb956af17d4ec544d4993b56dae6a6d":[12,0,55,2,1,4,0],
 "structscore_1_1gfx_1_1drm_1_1_framebuffer_desc.html":[12,0,55,2,1,5],
 "structscore_1_1gfx_1_1drm_1_1_kms_device_1_1_dumb_buffer.html":[12,0,55,2,1,6,0],
 "structscore_1_1gfx_1_1drm_1_1_mode_info.html":[12,0,55,2,1,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX48 =
 "structscore_1_1gfx_1_1port__indices.html":[11,0,12,0,131],
 "structscore_1_1indirect__cast__map__iterator.html":[12,0,55,167],
 "structscore_1_1indirect__cast__map__iterator.html":[11,0,12,161],
-"structscore_1_1indirect__iterator.html":[12,0,55,168],
-"structscore_1_1indirect__iterator.html":[11,0,12,162]
+"structscore_1_1indirect__iterator.html":[12,0,55,168]
 };

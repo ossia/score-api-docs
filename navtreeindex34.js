@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"struct_j_s_1_1_application_plugin_1_1_command_handler.html":[12,0,31,7,0],
 "struct_j_s_1_1_application_plugin_1_1_start_script.html":[12,0,31,7,1],
 "struct_j_s_1_1_application_plugin_1_1_start_script.html#a188b2ca28f6db42702efb9dd94f34267":[12,0,31,7,1,4],
 "struct_j_s_1_1_application_plugin_1_1_start_script.html#a301f099a4e482baf9e430b05ba5ba2f1":[12,0,31,7,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "struct_mime_writer_3_01_process_1_1_process_data_01_4.html":[12,0,205],
 "struct_mime_writer_3_01_state_1_1_message_list_01_4.html":[12,0,206],
 "struct_nodal_1_1_add_node.html":[12,0,41,0],
-"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html":[12,0,41,3,0],
-"struct_nodal_1_1_nodal_executor_base_1_1_registered_node.html":[12,0,41,6,0]
+"struct_nodal_1_1_hierarchy_manager_1_1_child_pair.html":[12,0,41,3,0]
 };

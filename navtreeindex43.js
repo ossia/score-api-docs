@@ -1,5 +1,6 @@
 var NAVTREEINDEX43 =
 {
+"structscore_1_1gfx_1_1_camera_u_b_o_data.html":[11,0,12,0,13],
 "structscore_1_1gfx_1_1_capture_adjust.html":[12,0,55,2,17],
 "structscore_1_1gfx_1_1_capture_adjust.html":[11,0,12,0,14],
 "structscore_1_1gfx_1_1_capture_adjust.html#a1edac309108b3ec2bed29108d97ac276":[11,0,12,0,14,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX43 =
 "structscore_1_1gfx_1_1_graph.html#a1c3b40f6e90a21e4fb0636257f7bc975":[12,0,55,2,59,4],
 "structscore_1_1gfx_1_1_graph.html#a2034f430b7902ec179bd2d83c32f6815":[11,0,12,0,56,20],
 "structscore_1_1gfx_1_1_graph.html#a2034f430b7902ec179bd2d83c32f6815":[12,0,55,2,59,20],
-"structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5":[11,0,12,0,56,15],
-"structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5":[12,0,55,2,59,15]
+"structscore_1_1gfx_1_1_graph.html#a2053b9d1b4c0466c9cc5fe87be8cb5a5":[11,0,12,0,56,15]
 };

@@ -175,6 +175,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPatterns</b> (cons
 <tr class="memitem:a6e04e4406f3e803f772af6764c025577" id="r_a6e04e4406f3e803f772af6764c025577"><td class="memItemLeft" align="right" valign="top"><a id="a6e04e4406f3e803f772af6764c025577" name="a6e04e4406f3e803f772af6764c025577"></a>
 const std::vector&lt; <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>patterns</b> () const noexcept</td></tr>
 <tr class="separator:a6e04e4406f3e803f772af6764c025577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035f47430f775f128ad0c7b51a59c0fb" id="r_a035f47430f775f128ad0c7b51a59c0fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_process_model.html#a035f47430f775f128ad0c7b51a59c0fb">loadPreset</a> (const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;preset) override</td></tr>
+<tr class="separator:a035f47430f775f128ad0c7b51a59c0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa1ac42be1e2aa6449a77fdd502f48a" id="r_a8fa1ac42be1e2aa6449a77fdd502f48a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_preset.html">Process::Preset</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_process_model.html#a8fa1ac42be1e2aa6449a77fdd502f48a">savePreset</a> () const noexcept override</td></tr>
+<tr class="separator:a8fa1ac42be1e2aa6449a77fdd502f48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53edfe90c66a0f4892315f0865a518b7" id="r_a53edfe90c66a0f4892315f0865a518b7"><td class="memItemLeft" align="right" valign="top"><a id="a53edfe90c66a0f4892315f0865a518b7" name="a53edfe90c66a0f4892315f0865a518b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>channelChanged</b> (int arg_1)</td></tr>
 <tr class="separator:a53edfe90c66a0f4892315f0865a518b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,12 +306,6 @@ const <a class="el" href="struct_process_1_1_outlets.html">Process::Outlets</a> 
 <tr class="memitem:aca2fcdddb0d752517a172cdfdfae6814 inherit pub_methods_class_process_1_1_process_model" id="r_aca2fcdddb0d752517a172cdfdfae6814"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_process_1_1_outlet.html">Process::Outlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>outlet</b> (const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; &amp;) const noexcept</td></tr>
 <tr class="separator:aca2fcdddb0d752517a172cdfdfae6814 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab639674bf52152b20c33efe13e07a6ab inherit pub_methods_class_process_1_1_process_model" id="r_ab639674bf52152b20c33efe13e07a6ab"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPreset</b> (const <a class="el" href="struct_process_1_1_preset.html">Preset</a> &amp;preset)</td></tr>
-<tr class="separator:ab639674bf52152b20c33efe13e07a6ab inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6f69f10a83e4a6b15db4fba17c973f2 inherit pub_methods_class_process_1_1_process_model" id="r_ab6f69f10a83e4a6b15db4fba17c973f2"><td class="memItemLeft" align="right" valign="top">
-virtual <a class="el" href="struct_process_1_1_preset.html">Preset</a>&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> () const noexcept</td></tr>
-<tr class="separator:ab6f69f10a83e4a6b15db4fba17c973f2 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2259e9f8d397c3485d3e165b6b988738 inherit pub_methods_class_process_1_1_process_model" id="r_a2259e9f8d397c3485d3e165b6b988738"><td class="memItemLeft" align="right" valign="top">
 virtual std::vector&lt; <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>builtinPresets</b> () const noexcept</td></tr>
 <tr class="separator:a2259e9f8d397c3485d3e165b6b988738 inherit pub_methods_class_process_1_1_process_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -693,6 +691,62 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>is_abstract_base_tag
 </table>
 </div><div class="memdoc">
 <p>For each lane of the playing pattern, how many steps it played before the one it is on, -1 for none. </p>
+
+</div>
+</div>
+<a id="a035f47430f775f128ad0c7b51a59c0fb" name="a035f47430f775f128ad0c7b51a59c0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a035f47430f775f128ad0c7b51a59c0fb">&#9670;&#160;</a></span>loadPreset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::ProcessModel::loadPreset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &amp;&#160;</td>
+          <td class="paramname"><em>preset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The patterns, the channel and the lane labels, with the controls. A preset without controls leaves them as they are and starts on its first pattern. </p>
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
+
+</div>
+</div>
+<a id="a8fa1ac42be1e2aa6449a77fdd502f48a" name="a8fa1ac42be1e2aa6449a77fdd502f48a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa1ac42be1e2aa6449a77fdd502f48a">&#9670;&#160;</a></span>savePreset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> Patternist::ProcessModel::savePreset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a>.</p>
 
 </div>
 </div>

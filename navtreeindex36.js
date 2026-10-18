@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"struct_process_1_1_control_page.html#a7931db9af090e8d28b86fa86b48a31f6":[11,0,10,27,1],
 "struct_process_1_1_control_page.html#aca8f6ea8aa9d8f04fed39ed651d16644":[11,0,10,27,3],
 "struct_process_1_1_control_page.html#aca8f6ea8aa9d8f04fed39ed651d16644":[12,0,48,27,3],
 "struct_process_1_1_control_presentation.html":[11,0,10,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "struct_protocols_1_1_m_c_u_specific_settings.html#a14269f68b34cce032f7509382a705cd2":[12,0,49,56,1],
 "struct_protocols_1_1_m_c_u_specific_settings.html#a14269f68b34cce032f7509382a705cd2a03707e738a0dae2b0f9f31af4636d905":[12,0,49,56,1,0],
 "struct_protocols_1_1_m_c_u_specific_settings.html#a14269f68b34cce032f7509382a705cd2a09befab6956afe5664f3f6e95c66d1c5":[12,0,49,56,1,1],
-"struct_protocols_1_1_m_c_u_specific_settings.html#a7a97ff73839908c3e0e7b6d7d2a0e6ca":[12,0,49,56,2],
-"struct_protocols_1_1_m_c_u_specific_settings_1_1_map_slot.html":[12,0,49,56,0]
+"struct_protocols_1_1_m_c_u_specific_settings.html#a7a97ff73839908c3e0e7b6d7d2a0e6ca":[12,0,49,56,2]
 };

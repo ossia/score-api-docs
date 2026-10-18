@@ -1,5 +1,6 @@
 var NAVTREEINDEX47 =
 {
+"structscore_1_1gfx_1_1_v210_decoder.html":[12,0,55,2,193],
 "structscore_1_1gfx_1_1_v210_decoder.html#a6f3f91addbb17b8ddc83231cfcc314bc":[11,0,12,0,190,0],
 "structscore_1_1gfx_1_1_v210_decoder.html#a6f3f91addbb17b8ddc83231cfcc314bc":[12,0,55,2,193,0],
 "structscore_1_1gfx_1_1_v210_decoder.html#ae50b88ea225802aba9586a8779f9fea3":[11,0,12,0,190,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX47 =
 "structscore_1_1gfx_1_1drm_1_1_device_info.html#a75118e40abfed3ddb09d21f0ce944773":[12,0,55,2,1,2,1],
 "structscore_1_1gfx_1_1drm_1_1_device_info.html#acd5d5094e6aac76534dd84cc422cd82a":[12,0,55,2,1,2,2],
 "structscore_1_1gfx_1_1drm_1_1_drm_functions.html":[12,0,55,2,1,3],
-"structscore_1_1gfx_1_1drm_1_1_flip_event.html":[12,0,55,2,1,4],
-"structscore_1_1gfx_1_1drm_1_1_flip_event.html#a9eb956af17d4ec544d4993b56dae6a6d":[12,0,55,2,1,4,0]
+"structscore_1_1gfx_1_1drm_1_1_flip_event.html":[12,0,55,2,1,4]
 };

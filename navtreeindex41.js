@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"structoscr_1_1controller__needs__factory_3_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[12,0,43,3],
 "structoscr_1_1controller__needs__factory_3_01avnd_1_1field__reflection_3_01_n_00_01_field_01_4_01_4.html":[11,0,8,3],
 "structoscr_1_1dispatch__control__reconnect.html":[12,0,43,19],
 "structoscr_1_1dispatch__control__reconnect.html":[11,0,8,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX41 =
 "structscore_1_1_infinite_scroller.html":[11,0,12,170],
 "structscore_1_1_layout_selection.html":[12,0,55,184],
 "structscore_1_1_layout_selection.html":[11,0,12,178],
-"structscore_1_1_layout_selection.html#ac947d73944fe6a964e7c29dafb08ddfb":[11,0,12,178,0],
-"structscore_1_1_layout_selection.html#ac947d73944fe6a964e7c29dafb08ddfb":[12,0,55,184,0]
+"structscore_1_1_layout_selection.html#ac947d73944fe6a964e7c29dafb08ddfb":[11,0,12,178,0]
 };
