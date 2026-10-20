@@ -494,6 +494,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
 <tr class="memitem:a248d1a0f95d4fa58e1dcf217c2d332e1" id="r_a248d1a0f95d4fa58e1dcf217c2d332e1"><td class="memItemLeft" align="right" valign="top"><a id="a248d1a0f95d4fa58e1dcf217c2d332e1" name="a248d1a0f95d4fa58e1dcf217c2d332e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>saveAs</b> (QString path)</td></tr>
 <tr class="separator:a248d1a0f95d4fa58e1dcf217c2d332e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96e339b32baed8c7b60b1aab4f1801d1" id="r_a96e339b32baed8c7b60b1aab4f1801d1"><td class="memItemLeft" align="right" valign="top">QVariantList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a96e339b32baed8c7b60b1aab4f1801d1">consolidate</a> (bool collectLibraryFiles)</td></tr>
+<tr class="separator:a96e339b32baed8c7b60b1aab4f1801d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fcfff663a1c1aa347b5a7f5ec4197cb" id="r_a3fcfff663a1c1aa347b5a7f5ec4197cb"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a3fcfff663a1c1aa347b5a7f5ec4197cb">archive</a> (QString zipPath, bool collectLibraryFiles)</td></tr>
+<tr class="separator:a3fcfff663a1c1aa347b5a7f5ec4197cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb23e62f7f92854d8c41f3f4e2748efe" id="r_acb23e62f7f92854d8c41f3f4e2748efe"><td class="memItemLeft" align="right" valign="top"><a id="acb23e62f7f92854d8c41f3f4e2748efe" name="acb23e62f7f92854d8c41f3f4e2748efe"></a>
 QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (QString p)</td></tr>
 <tr class="memdesc:acb23e62f7f92854d8c41f3f4e2748efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Document ///. <br /></td></tr>
@@ -658,6 +662,35 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
 <tr class="separator:a0fa079c1b9e86daa9a6628534bfc5c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3fcfff663a1c1aa347b5a7f5ec4197cb" name="a3fcfff663a1c1aa347b5a7f5ec4197cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fcfff663a1c1aa347b5a7f5ec4197cb">&#9670;&#160;</a></span>archive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString JS::EditJsContext::archive </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>zipPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>collectLibraryFiles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As File &gt; Project files &gt; Archive: consolidates, saves, then writes the project into <code>zipPath</code>. Returns an empty string, or the error. </p>
+
+</div>
+</div>
 <a id="ae240ea0c3d93a675f6a9c1da78d8cad5" name="ae240ea0c3d93a675f6a9c1da78d8cad5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae240ea0c3d93a675f6a9c1da78d8cad5">&#9670;&#160;</a></span>automate() <span class="overload">[1/2]</span></h2>
 
@@ -731,6 +764,25 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
       </table>
 </div><div class="memdoc">
 <p>Undo-stack introspection. Mirroring the stack script-side desynchronises as soon as a macro commits nothing, or a document is loaded behind it. </p>
+
+</div>
+</div>
+<a id="a96e339b32baed8c7b60b1aab4f1801d1" name="a96e339b32baed8c7b60b1aab4f1801d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96e339b32baed8c7b60b1aab4f1801d1">&#9670;&#160;</a></span>consolidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariantList JS::EditJsContext::consolidate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>collectLibraryFiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>As File &gt; Project files &gt; Consolidate: copies every file the document uses next to it, rewrites the references and saves. Returns one {path, newPath, source, action, note} entry per reference. </p>
 
 </div>
 </div>
