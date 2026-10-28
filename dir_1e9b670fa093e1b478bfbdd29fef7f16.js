@@ -14,5 +14,6 @@ var dir_1e9b670fa093e1b478bfbdd29fef7f16 =
     [ "ProcessWidget.hpp", "_process_widget_8hpp_source.html", null ],
     [ "ProjectLibraryWidget.hpp", "_project_library_widget_8hpp_source.html", null ],
     [ "RecursiveFilterProxy.hpp", "_recursive_filter_proxy_8hpp_source.html", null ],
+    [ "SupportPackages.hpp", "_support_packages_8hpp_source.html", null ],
     [ "SystemLibraryWidget.hpp", "_system_library_widget_8hpp_source.html", null ]
 ];

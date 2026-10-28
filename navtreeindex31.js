@@ -1,5 +1,8 @@
 var NAVTREEINDEX31 =
 {
+"namespacescore_1_1gfx.html#a843aa4372e6afa53def5b752bfd8b08b":[11,0,12,0,343],
+"namespacescore_1_1gfx.html#a877909a193ffdee07d9af327bffbf6d2":[11,0,12,0,239],
+"namespacescore_1_1gfx.html#a88bbc0ddff2a0ede77eaa961c9b3aa64":[11,0,12,0,298],
 "namespacescore_1_1gfx.html#a88fac52ca08db346817ce888cc043220":[11,0,12,0,275],
 "namespacescore_1_1gfx.html#a890a0b33e509badc0750b4dd6001db7f":[11,0,12,0,234],
 "namespacescore_1_1gfx.html#a8a9f595fc39a0920c64def6125927259":[11,0,12,0,245],
@@ -246,8 +249,5 @@ var NAVTREEINDEX31 =
 "score-plugin-protocols_2_protocols_2_settings_2_view_8hpp_source.html":[13,0,0,2,29,0,20,3],
 "score-plugin-recording_2_recording_2_application_plugin_8hpp_source.html":[13,0,0,2,30,0,2],
 "score-plugin-remotecontrol_2_remote_control_2_application_plugin_8hpp_source.html":[13,0,0,2,31,1,4],
-"score-plugin-remotecontrol_2_remote_control_2_controller_2_remote_control_provider_8hpp_source.html":[13,0,0,2,31,1,0,1],
-"score-plugin-remotecontrol_2_remote_control_2_settings_2_factory_8hpp_source.html":[13,0,0,2,31,1,2,0],
-"score-plugin-remotecontrol_2_remote_control_2_settings_2_model_8hpp_source.html":[13,0,0,2,31,1,2,1],
-"score-plugin-remotecontrol_2_remote_control_2_settings_2_view_8hpp_source.html":[13,0,0,2,31,1,2,3]
+"score-plugin-remotecontrol_2_remote_control_2_controller_2_remote_control_provider_8hpp_source.html":[13,0,0,2,31,1,0,1]
 };

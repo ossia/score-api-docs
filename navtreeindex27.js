@@ -1,5 +1,8 @@
 var NAVTREEINDEX27 =
 {
+"classvst_1_1_window.html":[12,0,66,17],
+"classvst_1_1vst__node.html":[12,0,66,13],
+"classvst_1_1vst__node.html#a81cd2b08f631d711a487c653f673f2ee":[12,0,66,13,2],
 "classvst_1_1vst__node.html#ae3d5c304036842daa4e731fd608a5dd5":[12,0,66,13,1],
 "classvst_1_1vst__node__base.html":[12,0,66,14],
 "codingstyle_8hpp_source.html":[13,0,0,1,0,3,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX27 =
 "dir_9a874cc5a5cf7561e897f23cbdb7bc3f.html":[13,0,0,2,0,0,2],
 "dir_9b860792800701c4683414b4a77a0071.html":[13,0,0,2,29,0,22],
 "dir_9c0153d687d6b83f751b52c05b31e992.html":[13,0,0,1,1,2,1],
-"dir_9cb54f933cdfb81cdeacb1f40fc6937d.html":[13,0,0,2,11,0,0],
-"dir_9ce6fb9ac068741c513ecbdb334f43f6.html":[13,0,0,2,32,4,1,6],
-"dir_9dc403dfeea06d03f915de27a7a2ab94.html":[13,0,0,1,0,0],
-"dir_9f62ac64b904fbfc63d0b13e2b5bcb7c.html":[13,0,0,2,13,0,1,0,0]
+"dir_9cb54f933cdfb81cdeacb1f40fc6937d.html":[13,0,0,2,11,0,0]
 };

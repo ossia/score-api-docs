@@ -285,7 +285,7 @@ var namespacescore =
     [ "Settings", "classscore_1_1_settings.html", "classscore_1_1_settings" ],
     [ "SettingsCommand", "classscore_1_1_settings_command.html", null ],
     [ "SettingsCommandBase", "classscore_1_1_settings_command_base.html", null ],
-    [ "SettingsCommandDispatcher", "classscore_1_1_settings_command_dispatcher.html", null ],
+    [ "SettingsCommandDispatcher", "classscore_1_1_settings_command_dispatcher.html", "classscore_1_1_settings_command_dispatcher" ],
     [ "SettingsDelegateFactory", "classscore_1_1_settings_delegate_factory.html", null ],
     [ "SettingsDelegateFactory_T", "classscore_1_1_settings_delegate_factory___t.html", null ],
     [ "SettingsDelegateModel", "classscore_1_1_settings_delegate_model.html", null ],

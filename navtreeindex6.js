@@ -219,6 +219,7 @@ var NAVTREEINDEX6 =
 "_subtype_variant_8hpp_source.html":[13,0,0,1,1,12,34],
 "_suil_8hpp_source.html":[13,0,0,2,22,0,7],
 "_summary_inspector_widget_8hpp_source.html":[13,0,0,2,32,4,6,6,0],
+"_support_packages_8hpp_source.html":[13,0,0,2,21,0,14],
 "_swap_slots_8hpp_source.html":[13,0,0,2,32,4,1,3,0,3],
 "_sweeper_8hpp_source.html":[13,0,0,2,8,2,16],
 "_switch_8hpp_source.html":[13,0,0,2,8,2,17],
@@ -226,7 +227,7 @@ var NAVTREEINDEX6 =
 "_syphon_helpers_8hpp_source.html":[13,0,0,2,17,1,14,0],
 "_syphon_input_8hpp_source.html":[13,0,0,2,17,1,14,1],
 "_syphon_output_8hpp_source.html":[13,0,0,2,17,1,14,2],
-"_system_library_widget_8hpp_source.html":[13,0,0,2,21,0,14],
+"_system_library_widget_8hpp_source.html":[13,0,0,2,21,0,15],
 "_t_c_p_server_widget_8hpp_source.html":[13,0,0,2,29,0,15,2],
 "_t_c_p_widget_8hpp_source.html":[13,0,0,2,29,0,15,3],
 "_table1_d_8hpp_source.html":[13,0,0,2,8,2,19],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "_texgen_8hpp_source.html":[13,0,0,2,19,3,0],
 "_texgen_node_8hpp_source.html":[13,0,0,2,17,1,4,60],
 "_text_box_8hpp_source.html":[13,0,0,2,37,0,2],
-"_text_dialog_8hpp_source.html":[13,0,0,2,32,4,0,1,4],
-"_text_item_8hpp_source.html":[13,0,0,1,1,5,20]
+"_text_dialog_8hpp_source.html":[13,0,0,2,32,4,0,1,4]
 };

@@ -119,6 +119,9 @@ template&lt;typename TheCommand , typename... Args&gt; </td></tr>
 template&lt;typename TheCommand , typename... Args&gt; </td></tr>
 <tr class="memitem:a76ffbb7affbcebc08572e38af0b3febd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>submitDeferredCommand</b> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a76ffbb7affbcebc08572e38af0b3febd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a0f9e9cff9436c7114380736df47a6" id="r_ae5a0f9e9cff9436c7114380736df47a6"><td class="memTemplParams" colspan="2">template&lt;typename... TheCommands&gt; </td></tr>
+<tr class="memitem:ae5a0f9e9cff9436c7114380736df47a6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classscore_1_1_settings_command_dispatcher.html#ae5a0f9e9cff9436c7114380736df47a6">discardDeferred</a> ()</td></tr>
+<tr class="separator:ae5a0f9e9cff9436c7114380736df47a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a129b445e2238949f81bbee2376fdacd8" id="r_a129b445e2238949f81bbee2376fdacd8"><td class="memItemLeft" align="right" valign="top"><a id="a129b445e2238949f81bbee2376fdacd8" name="a129b445e2238949f81bbee2376fdacd8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>commit</b> ()</td></tr>
 <tr class="separator:a129b445e2238949f81bbee2376fdacd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,6 +129,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>commit</b> ()</td></t
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rollback</b> ()</td></tr>
 <tr class="separator:af7c3cc06a247196019ddd572222c7433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae5a0f9e9cff9436c7114380736df47a6" name="ae5a0f9e9cff9436c7114380736df47a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5a0f9e9cff9436c7114380736df47a6">&#9670;&#160;</a></span>discardDeferred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... TheCommands&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::SettingsCommandDispatcher::discardDeferred </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Drops pending deferred commands of these types, e.g. values a panel queued that no longer apply. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_settings_command_dispatcher_8hpp_source.html">SettingsCommandDispatcher.hpp</a></li>
 </ul>
