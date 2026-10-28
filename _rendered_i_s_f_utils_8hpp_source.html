@@ -171,19 +171,20 @@ $(document).ready(function(){initNavTree('_rendered_i_s_f_utils_8hpp_source.html
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  ossia::fft_complex* executeFFT(<span class="keyword">const</span> <span class="keywordtype">float</span>* samples, std::size_t count);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  std::vector&lt;float&gt; m_scratchpad;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::vector&lt;float&gt; m_fftInput;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  ossia::hash_map&lt;const AudioTexture*, std::vector&lt;float&gt;&gt; m_histograms;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  ossia::hash_map&lt;const AudioTexture*, int64_t&gt; m_uploadedFrame;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  ossia::fft m_fft;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  std::size_t m_fftSize{};</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::vector&lt;float&gt; m_binRow;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  std::vector&lt;float&gt; m_fftInput;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  ossia::hash_map&lt;const AudioTexture*, std::vector&lt;float&gt;&gt; m_histograms;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  ossia::hash_map&lt;const AudioTexture*, int64_t&gt; m_uploadedFrame;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  ossia::fft m_fft;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  std::size_t m_fftSize{};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a55f071c6e98c752b85fdd09fcde70e1a"><div class="ttname"><a href="namespacescore_1_1gfx.html#a55f071c6e98c752b85fdd09fcde70e1a">score::gfx::advanceFrameIndex</a></div><div class="ttdeci">bool advanceFrameIndex(int32_t &amp;frameIndex, int64_t &amp;lastFrame, int64_t frame) noexcept</div><div class="ttdef"><b>Definition</b> RenderedISFUtils.hpp:24</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture.html">score::gfx::AudioTexture</a></div><div class="ttdoc">Data model for audio data being sent to the GPU.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:174</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture.html">score::gfx::AudioTexture</a></div><div class="ttdoc">Data model for audio data being sent to the GPU.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:190</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_audio_texture_upload_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_audio_texture_upload.html">score::gfx::AudioTextureUpload</a></div><div class="ttdef"><b>Definition</b> RenderedISFUtils.hpp:35</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_persist_sampler_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_persist_sampler.html">score::gfx::PersistSampler</a></div><div class="ttdef"><b>Definition</b> RenderedISFUtils.hpp:14</div></div>
 </div><!-- fragment --></div><!-- contents -->

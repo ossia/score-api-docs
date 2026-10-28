@@ -35,6 +35,7 @@ var searchData=
   ['locatefilepath_32',['locatefilepath',['../namespacescore.html#a2ebb03b039cbd5cc61c5268ee3b27f1a',1,'score::locateFilePath(const QString &amp;filename) noexcept'],['../namespacescore.html#aa5dc206faf740132f1dbb03714aa6070',1,'score::locateFilePath(const QString &amp;filename, const score::DocumentContext &amp;ctx) noexcept'],['../namespacescore.html#abac5b13e0341afdc0f4b7fa32466a2b5',1,'score::locateFilePath(const QString &amp;filename, const PathRoots &amp;roots) noexcept']]],
   ['locateshaderpath_33',['locateShaderPath',['../namespace_gfx.html#adf1c9584823b572537548d5577fa3031',1,'Gfx']]],
   ['locktoborderenabled_34',['lockToBorderEnabled',['../class_gfx_1_1_output_mapping_canvas.html#a3f3c93be6f34d3c234881aa1e528fe14',1,'Gfx::OutputMappingCanvas']]],
-  ['lookslikeexistingfile_35',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
-  ['lostframes_36',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]]
+  ['logshadererror_35',['logShaderError',['../namespace_gfx.html#a93561637c56abe4b15506dabf77c2475',1,'Gfx']]],
+  ['lookslikeexistingfile_36',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
+  ['lostframes_37',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]]
 ];

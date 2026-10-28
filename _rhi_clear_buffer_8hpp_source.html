@@ -145,23 +145,27 @@ $(document).ready(function(){initNavTree('_rhi_clear_buffer_8hpp_source.html',''
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    quint32 size,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    quint32 pattern = 0u);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}  <span class="comment">// namespace RhiClearBuffer</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>std::size_t <a class="code hl_function" href="namespacescore_1_1gfx_1_1_rhi_clear_buffer.html#a8369659d0ca6151a30e1fe8d0abc3e5a">poolBytes</a>() <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}  <span class="comment">// namespace RhiClearBuffer</span></div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">// Metal-specific implementation hook (lives in RhiClearBufferMetal.mm).</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">// On non-Apple platforms a no-op stub is provided in RhiClearBuffer.cpp.</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// Returns true on success, false if the native path is unavailable</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">// (caller should fall back to the batch variant).</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">bool</span> clearBufferMetal(</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    QRhi&amp; rhi,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    QRhiCommandBuffer&amp; cb,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    QRhiBuffer* buf,</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    quint32 offset,</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    quint32 size,</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    quint32 pattern);</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}  <span class="comment">// namespace score::gfx</span></div>
-<div class="ttc" id="anamespacescore_1_1gfx_1_1_rhi_clear_buffer_html_ae7e6d93d746ec96aba2b5e1bf3e25af2"><div class="ttname"><a href="namespacescore_1_1gfx_1_1_rhi_clear_buffer.html#ae7e6d93d746ec96aba2b5e1bf3e25af2">score::gfx::RhiClearBuffer::clearBuffer</a></div><div class="ttdeci">void clearBuffer(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb, QRhiBuffer *buf, quint32 offset, quint32 size, quint32 pattern=0u)</div><div class="ttdef"><b>Definition</b> RhiClearBuffer.cpp:211</div></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">// Metal-specific implementation hook (lives in RhiClearBufferMetal.mm).</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">// On non-Apple platforms a no-op stub is provided in RhiClearBuffer.cpp.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">// Returns true on success, false if the native path is unavailable</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">// (caller should fall back to the batch variant).</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">bool</span> clearBufferMetal(</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    QRhi&amp; rhi,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    QRhiBuffer* buf,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    quint32 offset,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    quint32 size,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    quint32 pattern);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}  <span class="comment">// namespace score::gfx</span></div>
+<div class="ttc" id="anamespacescore_1_1gfx_1_1_rhi_clear_buffer_html_a8369659d0ca6151a30e1fe8d0abc3e5a"><div class="ttname"><a href="namespacescore_1_1gfx_1_1_rhi_clear_buffer.html#a8369659d0ca6151a30e1fe8d0abc3e5a">score::gfx::RhiClearBuffer::poolBytes</a></div><div class="ttdeci">std::size_t poolBytes() noexcept</div><div class="ttdoc">For tests: the bytes this thread's zero and pattern pools hold.</div><div class="ttdef"><b>Definition</b> RhiClearBuffer.cpp:257</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_1_1_rhi_clear_buffer_html_ae7e6d93d746ec96aba2b5e1bf3e25af2"><div class="ttname"><a href="namespacescore_1_1gfx_1_1_rhi_clear_buffer.html#ae7e6d93d746ec96aba2b5e1bf3e25af2">score::gfx::RhiClearBuffer::clearBuffer</a></div><div class="ttdeci">void clearBuffer(QRhi &amp;rhi, QRhiCommandBuffer &amp;cb, QRhiBuffer *buf, quint32 offset, quint32 size, quint32 pattern=0u)</div><div class="ttdef"><b>Definition</b> RhiClearBuffer.cpp:214</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

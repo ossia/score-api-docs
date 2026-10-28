@@ -109,9 +109,6 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_flattened_scene_
   <div class="headertitle"><div class="title">score::gfx::FlattenedSceneFilterNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Per-pass filter on a flattened scene: geometry_spec → geometry_spec.  
- <a href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::gfx::FlattenedSceneFilterNode:</div>
 <div class="dyncontent">
@@ -122,21 +119,7 @@ Inheritance diagram for score::gfx::FlattenedSceneFilterNode:</div>
 <area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,56,220,80"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Per-pass filter on a flattened scene: geometry_spec → geometry_spec. </p>
-<p>Reads the <code>filter_tag</code> and <code>filter_material_index</code> metadata fields that <a class="el" href="classscore_1_1gfx_1_1_scene_preprocessor_node.html" title="Bridge from scene_spec (hierarchical, CPU) to geometry_spec (flat, GPU-resident).">ScenePreprocessorNode</a> writes onto every output geometry, and emits a new geometry_spec containing only the draws that match the configured predicate. All underlying GPU buffers are shared via <code>shared_ptr</code> — the filter only rewrites the mesh_list; no GPU data is copied.</p>
-<p>Inputs:</p><ul>
-<li><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> 0: Geometry (Types::Geometry)</li>
-<li><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> 1: Filter mode (Types::Int): 0 = tag equals match value 1 = tag differs from match value 2 = material index equals match value 3 = material index differs from match value 4 = blend_mode equals match (0 = opaque, 1 = premul-alpha) 5 = blend_mode differs from match 6 = depth_write equals (match != 0) 7 = depth_write differs from (match != 0) 8 = cull_mode equals match (0 = none, 1 = front, 2 = back) 9 = cull_mode differs from match 10 = topology equals match (0 = triangles, 1 = tri strip, …) 11 = topology differs from match 12 = format_id equals match_str (rapidhash of match_str truncated to 32 bits compared with filter_tag; an empty match_str short-circuits to 0u so it matches the "untagged" sentinel rather than the rapidhash of the empty string) 13 = format_id differs from match_str</li>
-<li><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> 2: Match value (Types::Int) — user-supplied, interpreted per mode</li>
-<li><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> 3: Match string (Types::Empty control) — used by modes 12/13</li>
-</ul>
-<p>Per-draw filtering (e.g. "alphaMode=BLEND draws inside a single MDI
-batch") is not handled here — ScenePreprocessor emits one geometry per MDI batch so mesh-level fields collapse to 0. Use a CSF compute filter for per-draw cases; this node is for multi-mesh inputs (per-object producers, pre-MDI composition).</p>
-<p>Outputs:</p><ul>
-<li><a class="el" href="structscore_1_1gfx_1_1_port.html" title="Port of a score::gfx::Node.">Port</a> 0: Geometry (Types::Geometry) </li>
-</ul>
-</div><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a91de76a740d160a47ba61a2d5404a39d" id="r_a91de76a740d160a47ba61a2d5404a39d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html#a91de76a740d160a47ba61a2d5404a39d">createRenderer</a> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;r) const noexcept override</td></tr>
@@ -229,6 +212,8 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetS
 <tr class="memitem:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_aa1b9dfcc16e1dc6a5e62282a5b830fca"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSpecs</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
 <tr class="separator:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf71e897cdd44df4a2eaa648e331af4 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_aaaf71e897cdd44df4a2eaa648e331af4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#aaaf71e897cdd44df4a2eaa648e331af4">adjustRenderTargetSpecs</a> (int32_t port, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;spec) const noexcept</td></tr>
+<tr class="separator:aaaf71e897cdd44df4a2eaa648e331af4 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_af921dceec4cb7c4b4864b7e45cd1ca27"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#af921dceec4cb7c4b4864b7e45cd1ca27">firstInputRenderTargetSpecs</a> () const noexcept</td></tr>
 <tr class="memdesc:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the first texture input asks to be rendered into.  <br /></td></tr>
 <tr class="separator:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>

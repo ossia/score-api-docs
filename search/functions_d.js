@@ -20,9 +20,10 @@ var searchData=
   ['notebufferlive_17',['noteBufferLive',['../classscore_1_1gfx_1_1_render_list.html#a30439c8846dbebc483f3cc54849a5d08',1,'score::gfx::RenderList']]],
   ['noteframecompleted_18',['noteFrameCompleted',['../classscore_1_1gfx_1_1_render_list.html#af4a7f1c98a7b69bdc0d3eaad456a0f20',1,'score::gfx::RenderList']]],
   ['nothingmissing_19',['nothingMissing',['../class_process_1_1_missing_files_dialog.html#abcb57cc496a4851bc0d2747c0940e8ac',1,'Process::MissingFilesDialog']]],
-  ['nv12externaloesusable_20',['nv12ExternalOesUsable',['../namespacescore_1_1gfx.html#ad7a3269925ffc4b0f8364b3831b7d06a',1,'score::gfx']]],
-  ['nv16decoder_21',['NV16Decoder',['../structscore_1_1gfx_1_1_n_v16_decoder.html#a86769c17839b393b22362ae2e2deda5b',1,'score::gfx::NV16Decoder']]],
-  ['nvidiaglxlibraryversion_22',['nvidiaGlxLibraryVersion',['../namespacescore.html#a87b75d461c3aa93ed454203205b6389b',1,'score']]],
-  ['nvidiaglxvendorstate_23',['nvidiaglxvendorstate',['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept']]],
-  ['nvidiakerneldriverversion_24',['nvidiaKernelDriverVersion',['../namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6',1,'score']]]
+  ['numworkgroupsthroughuniform_20',['numWorkGroupsThroughUniform',['../namespacescore_1_1gfx.html#a3ec9a52852733c1b66fa033273e11e00',1,'score::gfx']]],
+  ['nv12externaloesusable_21',['nv12ExternalOesUsable',['../namespacescore_1_1gfx.html#ad7a3269925ffc4b0f8364b3831b7d06a',1,'score::gfx']]],
+  ['nv16decoder_22',['NV16Decoder',['../structscore_1_1gfx_1_1_n_v16_decoder.html#a86769c17839b393b22362ae2e2deda5b',1,'score::gfx::NV16Decoder']]],
+  ['nvidiaglxlibraryversion_23',['nvidiaGlxLibraryVersion',['../namespacescore.html#a87b75d461c3aa93ed454203205b6389b',1,'score']]],
+  ['nvidiaglxvendorstate_24',['nvidiaglxvendorstate',['../namespacescore.html#ae1a928d1f6cb2b6e53691dacc09d35f3',1,'score::nvidiaGlxVendorState(const QString &amp;kernelVersion, const QString &amp;libraryVersion) noexcept'],['../namespacescore.html#aa8377ab63902f2e44d4a7611977802d7',1,'score::nvidiaGlxVendorState() noexcept']]],
+  ['nvidiakerneldriverversion_25',['nvidiaKernelDriverVersion',['../namespacescore.html#a6d0b2758c8733d55a80aaed00b1cb4e6',1,'score']]]
 ];

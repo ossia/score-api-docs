@@ -12,7 +12,8 @@ var searchData=
   ['blockpixels_9',['blockPixels',['../struct_video_1_1_video_pixel_format_info.html#a0d4070f7971901817634f6805a38c073',1,'Video::VideoPixelFormatInfo']]],
   ['bucket_10',['bucket',['../struct_media_1_1_waveform_summary.html#abf3dc7ea9acefdc68c54ce2ebc37dfeb',1,'Media::WaveformSummary']]],
   ['bucketcount_11',['bucketCount',['../struct_media_1_1_waveform_summary.html#a38b38ed0a4cdd41b44cf818b91e3bf80',1,'Media::WaveformSummary']]],
-  ['buffer_5fusage_12',['buffer_usage',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a468d66d44ca15abf685306f104ee91af',1,'score::gfx::GraphicsSSBO']]],
-  ['buffercount_13',['bufferCount',['../structscore_1_1gfx_1_1_kms_output_settings.html#a7cee682a4f09179c0b30ca10243f4873',1,'score::gfx::KmsOutputSettings']]],
-  ['busaddressable_14',['busAddressable',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#aff2934743bef38f5ec46ca39396082f2',1,'score::gfx::interop::AmdGlExtensions']]]
+  ['buffer_12',['buffer',['../structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_auxiliary_s_s_b_o.html#ae01c7d3fb0589bdc964153aeae941106',1,'score::gfx::RenderedCSFNode::GeometryBinding::AuxiliarySSBO']]],
+  ['buffer_5fusage_13',['buffer_usage',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a468d66d44ca15abf685306f104ee91af',1,'score::gfx::GraphicsSSBO']]],
+  ['buffercount_14',['bufferCount',['../structscore_1_1gfx_1_1_kms_output_settings.html#a7cee682a4f09179c0b30ca10243f4873',1,'score::gfx::KmsOutputSettings']]],
+  ['busaddressable_15',['busAddressable',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#aff2934743bef38f5ec46ca39396082f2',1,'score::gfx::interop::AmdGlExtensions']]]
 ];

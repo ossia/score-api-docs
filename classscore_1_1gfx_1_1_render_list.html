@@ -228,6 +228,9 @@ QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>selfFeedback
 <tr class="memitem:a44cb2a527d818e954a9af25642cd5b6e" id="r_a44cb2a527d818e954a9af25642cd5b6e"><td class="memItemLeft" align="right" valign="top">QRhiBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e">outputUBO</a> () const noexcept</td></tr>
 <tr class="memdesc:a44cb2a527d818e954a9af25642cd5b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">UBO corresponding to the output parameters:  <br /></td></tr>
 <tr class="separator:a44cb2a527d818e954a9af25642cd5b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e02f2c546772add4ea20c915ad956b" id="r_a97e02f2c546772add4ea20c915ad956b"><td class="memItemLeft" align="right" valign="top">QRhiBuffer &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a97e02f2c546772add4ea20c915ad956b">outputUBO</a> (int sampleCount) const noexcept</td></tr>
+<tr class="memdesc:a97e02f2c546772add4ea20c915ad956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The output UBO for a pass rendering at <code>sampleCount</code> samples.  <br /></td></tr>
+<tr class="separator:a97e02f2c546772add4ea20c915ad956b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f136076fe4e851e70384962462100fd" id="r_a0f136076fe4e851e70384962462100fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classscore_1_1gfx_1_1_gpu_resource_registry.html">GpuResourceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_render_list.html#a0f136076fe4e851e70384962462100fd">registry</a> () noexcept</td></tr>
 <tr class="memdesc:a0f136076fe4e851e70384962462100fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-output GPU arena store for scene-graph source nodes.  <br /></td></tr>
 <tr class="separator:a0f136076fe4e851e70384962462100fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -945,7 +948,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div>
 </div>
 <a id="a44cb2a527d818e954a9af25642cd5b6e" name="a44cb2a527d818e954a9af25642cd5b6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44cb2a527d818e954a9af25642cd5b6e">&#9670;&#160;</a></span>outputUBO()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44cb2a527d818e954a9af25642cd5b6e">&#9670;&#160;</a></span>outputUBO() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,6 +975,35 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 <li>Render size</li>
 <li>Per-API adjustments and globals </li>
 </ul>
+
+</div>
+</div>
+<a id="a97e02f2c546772add4ea20c915ad956b" name="a97e02f2c546772add4ea20c915ad956b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97e02f2c546772add4ea20c915ad956b">&#9670;&#160;</a></span>outputUBO() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiBuffer &amp; score::gfx::RenderList::outputUBO </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleCount</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The output UBO for a pass rendering at <code>sampleCount</code> samples. </p>
+<p>Identical to <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e" title="UBO corresponding to the output parameters:">outputUBO()</a> but for MSAA_SAMPLES, which is the pass's own sample count: a pass whose target is not at samples() (a raw raster OUTPUT declaring SAMPLES, a single-sampled per-mip / face / layer iteration) must not read the render list's (shader board U24). A count &lt;= 0 (unknown, e.g. a swap-chain wrapper) or one the device does not support gives <a class="el" href="classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e" title="UBO corresponding to the output parameters:">outputUBO()</a>. </p>
 
 </div>
 </div>

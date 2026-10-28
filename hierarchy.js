@@ -229,6 +229,7 @@ var hierarchy =
     [ "LV2::lv2_node< OnExecStart, OnExecFinished >::buffer_span", "struct_l_v2_1_1lv2__node_1_1buffer__span.html", null ],
     [ "score::gfx::BufferCopyRegion", "structscore_1_1gfx_1_1_buffer_copy_region.html", null ],
     [ "Threedim::BufferInfo", "class_threedim_1_1_buffer_info.html", null ],
+    [ "score::gfx::BufferRange", "structscore_1_1gfx_1_1_buffer_range.html", null ],
     [ "Threedim::BuffersToGeometry", "class_threedim_1_1_buffers_to_geometry.html", null ],
     [ "Threedim::BuffersToGeometry2", "class_threedim_1_1_buffers_to_geometry2.html", null ],
     [ "score::gfx::BufferView", "structscore_1_1gfx_1_1_buffer_view.html", null ],
@@ -1565,8 +1566,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
       [ "Video::VideoMetadata", "struct_video_1_1_video_metadata.html", [
@@ -1600,6 +1601,7 @@ var hierarchy =
     [ "score::gfx::interop::ImportedGpuBufferRingConfig", "structscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring_config.html", null ],
     [ "WidgetFactory::ImpulseButton", "struct_widget_factory_1_1_impulse_button.html", null ],
     [ "in_relationship< T, U >", "structin__relationship.html", null ],
+    [ "Gfx::ProgramCache::IncludedFile", "struct_gfx_1_1_program_cache_1_1_included_file.html", null ],
     [ "increase_timer_precision", "structincrease__timer__precision.html", null ],
     [ "Threedim::IndexedExtractionStrategy", "class_threedim_1_1_indexed_extraction_strategy.html", null ],
     [ "score::indirect_cast_map_iterator< base_iterator_t, CastTo >", "structscore_1_1indirect__cast__map__iterator.html", null ],
@@ -1608,6 +1610,7 @@ var hierarchy =
     [ "score::indirect_ptr_iterator< base_iterator_t >", "structscore_1_1indirect__ptr__iterator.html", null ],
     [ "score::IndirectArray< T, N >", "classscore_1_1_indirect_array.html", null ],
     [ "score::IndirectContainerWrapper< Container >", "classscore_1_1_indirect_container_wrapper.html", null ],
+    [ "score::gfx::IndirectCountClamp", "classscore_1_1gfx_1_1_indirect_count_clamp.html", null ],
     [ "score::IndirectMap< Map_T >", "classscore_1_1_indirect_map.html", null ],
     [ "score::IndirectUnorderedMap< Map_T >", "classscore_1_1_indirect_unordered_map.html", null ],
     [ "score::InfiniteScroller", "structscore_1_1_infinite_scroller.html", null ],
@@ -1618,6 +1621,7 @@ var hierarchy =
     [ "oscr::InletInitFunc< Node >", "structoscr_1_1_inlet_init_func.html", null ],
     [ "avnd_tools::Rendezvous::Input", "structavnd__tools_1_1_rendezvous_1_1_input.html", null ],
     [ "Nodes::MidiHiRes::Input", "struct_nodes_1_1_midi_hi_res_1_1_input.html", null ],
+    [ "score::gfx::IndirectCountClamp::Input", "structscore_1_1gfx_1_1_indirect_count_clamp_1_1_input.html", null ],
     [ "InputCopier", "struct_input_copier.html", null ],
     [ "Nodes::LFO::v1::Node::Inputs", "struct_nodes_1_1_l_f_o_1_1v1_1_1_node_1_1_inputs.html", null ],
     [ "avnd_tools::DeviceRecorder::inputs_t", "structavnd__tools_1_1_device_recorder_1_1inputs__t.html", null ],
@@ -2525,7 +2529,8 @@ var hierarchy =
         [ "score::gfx::GaussianSplatRenderer", "classscore_1_1gfx_1_1_gaussian_splat_renderer.html", null ],
         [ "score::gfx::ImagesNode::PreloadedRenderer", "classscore_1_1gfx_1_1_images_node_1_1_preloaded_renderer.html", null ],
         [ "score::gfx::TexgenNode::Rendered", "structscore_1_1gfx_1_1_texgen_node_1_1_rendered.html", null ],
-        [ "score::gfx::TextNode::Renderer", "classscore_1_1gfx_1_1_text_node_1_1_renderer.html", null ]
+        [ "score::gfx::TextNode::Renderer", "classscore_1_1gfx_1_1_text_node_1_1_renderer.html", null ],
+        [ "score::gfx::TouchHistoryRenderer", "classscore_1_1gfx_1_1_touch_history_renderer.html", null ]
       ] ],
       [ "score::gfx::GeometryFilterNodeRenderer", "structscore_1_1gfx_1_1_geometry_filter_node_renderer.html", null ],
       [ "score::gfx::OutputNodeRenderer", "classscore_1_1gfx_1_1_output_node_renderer.html", [
@@ -2818,8 +2823,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -2958,7 +2963,9 @@ var hierarchy =
     [ "oscr::pmf_member_type< V T::* >", "structoscr_1_1pmf__member__type_3_01_v_01_t_1_1_5_01_4.html", null ],
     [ "Scenario::Point", "struct_scenario_1_1_point.html", null ],
     [ "Curve::Element::Point_tag", "struct_curve_1_1_element_1_1_point__tag.html", null ],
+    [ "Gfx::pointer_addresses", "struct_gfx_1_1pointer__addresses.html", null ],
     [ "score::PointerLock", "structscore_1_1_pointer_lock.html", null ],
+    [ "score::gfx::PointerState", "structscore_1_1gfx_1_1_pointer_state.html", null ],
     [ "Curve::PointId", "struct_curve_1_1_point_id.html", null ],
     [ "avnd_tools::PointTrackerBase< N >", "structavnd__tools_1_1_point_tracker_base.html", null ],
     [ "avnd_tools::PointTrackerBase< 2 >", "structavnd__tools_1_1_point_tracker_base.html", [
@@ -4297,7 +4304,8 @@ var hierarchy =
             [ "score::gfx::ImagesNode", "structscore_1_1gfx_1_1_images_node.html", null ],
             [ "score::gfx::ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", null ],
             [ "score::gfx::TexgenNode", "structscore_1_1gfx_1_1_texgen_node.html", null ],
-            [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ]
+            [ "score::gfx::TextNode", "structscore_1_1gfx_1_1_text_node.html", null ],
+            [ "score::gfx::TouchHistoryNode", "structscore_1_1gfx_1_1_touch_history_node.html", null ]
           ] ],
           [ "score::gfx::SceneFilterNode", "classscore_1_1gfx_1_1_scene_filter_node.html", null ],
           [ "score::gfx::ScenePreprocessorNode", "classscore_1_1gfx_1_1_scene_preprocessor_node.html", null ],
@@ -4685,6 +4693,7 @@ var hierarchy =
     [ "score::gfx::interop::RdmaVideoOutput", "classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html", null ],
     [ "score::gfx::interop::RdmaVideoOutputConfig", "structscore_1_1gfx_1_1interop_1_1_rdma_video_output_config.html", null ],
     [ "score::gfx::interop::HostPinnedRing::Impl::ReadbackHandle", "structscore_1_1gfx_1_1interop_1_1_host_pinned_ring_1_1_impl_1_1_readback_handle.html", null ],
+    [ "score::gfx::ReadbackStats", "structscore_1_1gfx_1_1_readback_stats.html", null ],
     [ "score::gfx::ReadbackTarget", "structscore_1_1gfx_1_1_readback_target.html", null ],
     [ "Reader< T >", "class_reader.html", null ],
     [ "Video::ReadFrame", "struct_video_1_1_read_frame.html", null ],
@@ -4731,6 +4740,10 @@ var hierarchy =
     [ "score::gfx::detail::rhi_feature_dispatch_indirect< R, std::void_t< decltype(R::DispatchIndirect)> >", "structscore_1_1gfx_1_1detail_1_1rhi__feature__dispatch__indirect_3_01_r_00_01std_1_1void__t_3_010972bf9976e7c277e131dca522fdfecc.html", null ],
     [ "score::gfx::detail::rhi_feature_indirect_count< R, typename >", "structscore_1_1gfx_1_1detail_1_1rhi__feature__indirect__count.html", null ],
     [ "score::gfx::detail::rhi_feature_indirect_count< R, std::void_t< decltype(R::DrawIndirectCount)> >", "structscore_1_1gfx_1_1detail_1_1rhi__feature__indirect__count_3_01_r_00_01std_1_1void__t_3_01decba2c0926bcc2575f6c480cdc9e2f32ed.html", null ],
+    [ "score::gfx::detail::rhi_pipeline_uses_indirect_draws< P, typename >", "structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html", null ],
+    [ "score::gfx::detail::rhi_pipeline_uses_indirect_draws< P, std::void_t< decltype(P::UsesIndirectDraws)> >", "structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws_3_01_p_00_01std_1_1void__t_4f13b433371e717e4375ea4c91724790.html", null ],
+    [ "score::gfx::detail::rhi_renderbuffer_no_transient_backing< RB, typename >", "structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html", null ],
+    [ "score::gfx::detail::rhi_renderbuffer_no_transient_backing< RB, std::void_t< decltype(RB::NoTransientBacking)> >", "structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing_3_01_r_b_00_01std_1_1vf93c388a45527ce07382e484ae78e157.html", null ],
     [ "score::RightClickImpl", "structscore_1_1_right_click_impl.html", null ],
     [ "RootLayout", null, [
       [ "oscr::RootItem< Info, RootLayout >", "structoscr_1_1_root_item.html", null ]
@@ -4748,6 +4761,7 @@ var hierarchy =
     [ "Dataflow::SavedPort", "struct_dataflow_1_1_saved_port.html", null ],
     [ "Protocols::MIDIDevices::Scale", "struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html", null ],
     [ "Protocols::FixtureDatabase::Scan", "struct_protocols_1_1_fixture_database_1_1_scan.html", null ],
+    [ "score::gfx::ScatterSource", "structscore_1_1gfx_1_1_scatter_source.html", null ],
     [ "Scenario::ScenarioBeingCopied", "struct_scenario_1_1_scenario_being_copied.html", null ],
     [ "Scenario::ScenarioCreate< T >", "class_scenario_1_1_scenario_create.html", null ],
     [ "Scenario::ScenarioCreate< CommentBlockModel >", "class_scenario_1_1_scenario_create_3_01_comment_block_model_01_4.html", null ],
@@ -4837,6 +4851,12 @@ var hierarchy =
       [ "oscr::setup_control_for_exec< Node, Field, N, NField >", "structoscr_1_1setup__control__for__exec_3_01_node_00_01_field_00_01_n_00_01_n_field_01_4.html", null ]
     ] ],
     [ "score::gfx::ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
+    [ "Gfx::ShaderSamplerSource", "class_gfx_1_1_shader_sampler_source.html", [
+      [ "Gfx::CSF::Model", "class_gfx_1_1_c_s_f_1_1_model.html", null ],
+      [ "Gfx::Filter::Model", "class_gfx_1_1_filter_1_1_model.html", null ],
+      [ "Gfx::GeometryFilter::Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
+      [ "Gfx::VSA::Model", "class_gfx_1_1_v_s_a_1_1_model.html", null ]
+    ] ],
     [ "Gfx::ShaderSource", "struct_gfx_1_1_shader_source.html", [
       [ "Gfx::ProcessedProgram", "struct_gfx_1_1_processed_program.html", null ]
     ] ],
@@ -4854,6 +4874,7 @@ var hierarchy =
     [ "FactorOracle2MIDI::SingleTransition< T >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
     [ "FactorOracle2MIDI::SingleTransition< int >", "class_factor_oracle2_m_i_d_i_1_1_single_transition.html", null ],
     [ "Factor::SingleTransition< ossia::value >", "class_factor_1_1_single_transition.html", null ],
+    [ "score::gfx::ISFNode::SizeExpressions", "structscore_1_1gfx_1_1_i_s_f_node_1_1_size_expressions.html", null ],
     [ "Media::Sound::WaveformComputerImpl::SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", null ],
     [ "score::SizeVisitor", "structscore_1_1_size_visitor.html", null ],
     [ "score::gfx::SkeletonGPU", "structscore_1_1gfx_1_1_skeleton_g_p_u.html", null ],
@@ -4865,6 +4886,7 @@ var hierarchy =
     [ "score::gfx::interop::CpuStagedVideoOutput::Slot", "structscore_1_1gfx_1_1interop_1_1_cpu_staged_video_output_1_1_slot.html", null ],
     [ "score::gfx::interop::DvpCaptureD3D11< Lock >::Slot", "structscore_1_1gfx_1_1interop_1_1_dvp_capture_d3_d11_1_1_slot.html", null ],
     [ "score::gfx::interop::DvpCaptureGl< Lock >::Slot", "structscore_1_1gfx_1_1interop_1_1_dvp_capture_gl_1_1_slot.html", null ],
+    [ "score::gfx::PointerState::Slot", "structscore_1_1gfx_1_1_pointer_state_1_1_slot.html", null ],
     [ "Scenario::SlotId", "struct_scenario_1_1_slot_id.html", null ],
     [ "Scenario::SlotPath", "struct_scenario_1_1_slot_path.html", null ],
     [ "ossia::small_vector", null, [

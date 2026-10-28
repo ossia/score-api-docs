@@ -125,6 +125,8 @@ ossia::small_vector&lt; <a class="el" href="structscore_1_1gfx_1_1_buffer_view.h
 <tr class="memitem:ab40acf3aa5e4e390c145719b8269aad9" id="r_ab40acf3aa5e4e390c145719b8269aad9"><td class="memItemLeft" align="right" valign="top"><a id="ab40acf3aa5e4e390c145719b8269aad9" name="ab40acf3aa5e4e390c145719b8269aad9"></a>
 QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>indirectDrawBuffer</b> {}</td></tr>
 <tr class="separator:ab40acf3aa5e4e390c145719b8269aad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba512cb0e66465623f7b66542198d557" id="r_aba512cb0e66465623f7b66542198d557"><td class="memItemLeft" align="right" valign="top">quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html#aba512cb0e66465623f7b66542198d557">instanceMultiplier</a> {1}</td></tr>
+<tr class="separator:aba512cb0e66465623f7b66542198d557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c1a8768e71027fb30794ccc7d6c48a" id="r_a59c1a8768e71027fb30794ccc7d6c48a"><td class="memItemLeft" align="right" valign="top"><a id="a59c1a8768e71027fb30794ccc7d6c48a" name="a59c1a8768e71027fb30794ccc7d6c48a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>useIndirectDraw</b> {false}</td></tr>
 <tr class="separator:a59c1a8768e71027fb30794ccc7d6c48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +155,8 @@ QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>indirectCount
 <tr class="memitem:a08df432db7e8c9d8c5ebf35774f0712d" id="r_a08df432db7e8c9d8c5ebf35774f0712d"><td class="memItemLeft" align="right" valign="top"><a id="a08df432db7e8c9d8c5ebf35774f0712d" name="a08df432db7e8c9d8c5ebf35774f0712d"></a>
 quint32&#160;</td><td class="memItemRight" valign="bottom"><b>indirectCountOffset</b> {0}</td></tr>
 <tr class="separator:a08df432db7e8c9d8c5ebf35774f0712d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b86ee78858297658d9fd91d079cd936" id="r_a2b86ee78858297658d9fd91d079cd936"><td class="memItemLeft" align="right" valign="top">QRhiBuffer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html#a2b86ee78858297658d9fd91d079cd936">clampedIndirectBuffer</a> {}</td></tr>
+<tr class="separator:a2b86ee78858297658d9fd91d079cd936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9c252584348a851875535ed0ae3636f" id="r_ab9c252584348a851875535ed0ae3636f"><td class="memItemLeft" align="right" valign="top"><a id="ab9c252584348a851875535ed0ae3636f" name="ab9c252584348a851875535ed0ae3636f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>gpuIndirectCountSupported</b> {false}</td></tr>
 <tr class="separator:ab9c252584348a851875535ed0ae3636f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +179,37 @@ Static Public Attributes</h2></td></tr>
 static constexpr quint32&#160;</td><td class="memItemRight" valign="bottom"><b>indirect_record_stride</b> = 5 * sizeof(uint32_t)</td></tr>
 <tr class="separator:a18b3be2dea122d17d919abbb29d8632a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2b86ee78858297658d9fd91d079cd936" name="a2b86ee78858297658d9fd91d079cd936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b86ee78858297658d9fd91d079cd936">&#9670;&#160;</a></span>clampedIndirectBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRhiBuffer* score::gfx::MeshBuffers::clampedIndirectBuffer {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Without the count rung: a copy of indirectDrawBuffer's slots with those at or past the GPU-written count zeroed (<a class="el" href="classscore_1_1gfx_1_1_indirect_count_clamp.html" title="The draw-count rung, emulated with compute for backends without it.">IndirectCountClamp</a>), at offset 0 and the same stride. The plain indirect rungs draw it instead, so a producer's dead slots are not drawn whatever they hold. Refreshed by the consumer every frame, null when the clamp did not run. </p>
+
+</div>
+</div>
+<a id="aba512cb0e66465623f7b66542198d557" name="aba512cb0e66465623f7b66542198d557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba512cb0e66465623f7b66542198d557">&#9670;&#160;</a></span>instanceMultiplier</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint32 score::gfx::MeshBuffers::instanceMultiplier {1}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Raw raster PIPELINE_STATE INSTANCE_COUNT on a mesh draw: each CPU-issued draw of the mesh draws this many times its instances (shader board R21). Not applied to GPU-indirect draws, whose counts the host never reads, nor to a mesh with per-instance attributes, whose data covers its own instances only. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_mesh_8hpp_source.html">Mesh.hpp</a></li>
 </ul>

@@ -103,7 +103,7 @@ var searchData=
   ['engine_100',['engine',['../namespace_engine.html',1,'Engine'],['../struct_nodes_1_1_arpeggiator_1_1_engine.html',1,'Nodes::Arpeggiator::Engine'],['../class_nodes_1_1_pulse_to_note_1_1detail_1_1_engine.html',1,'Nodes::PulseToNote::detail::Engine&lt; MaxVoices, MaxInputs &gt;']]],
   ['engine_3a_3anetwork_101',['Network',['../namespace_engine_1_1_network.html',1,'Engine']]],
   ['ensureselffeedbacktargets_102',['ensureSelfFeedbackTargets',['../classscore_1_1gfx_1_1_render_list.html#a2fb2b54ca49affacf2b5f7ad7ce02a7e',1,'score::gfx::RenderList']]],
-  ['ensurestorageresources_103',['ensureStorageResources',['../namespacescore_1_1gfx.html#acdf83d35ee60bc8ea7025bb6d6ba146b',1,'score::gfx']]],
+  ['ensurestorageresources_103',['ensureStorageResources',['../namespacescore_1_1gfx.html#a5b672e368fbbb129f63141eee97b4220',1,'score::gfx']]],
   ['entermode_104',['enterMode',['../struct_nodes_1_1_audio_looper_1_1_node.html#a7572bd1f2dccb4aef88444e153ad9244',1,'Nodes::AudioLooper::Node']]],
   ['entity_105',['Entity',['../classscore_1_1_entity.html',1,'score']]],
   ['entity_3c_20eventmodel_20_3e_106',['Entity&lt; EventModel &gt;',['../classscore_1_1_entity.html',1,'score']]],

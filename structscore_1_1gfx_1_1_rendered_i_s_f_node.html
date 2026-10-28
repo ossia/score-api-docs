@@ -158,6 +158,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2dd534b345a7c739db2333c07f20b1bb" id="r_a2dd534b345a7c739db2333c07f20b1bb"><td class="memItemLeft" align="right" valign="top">QRhiGraphicsPipeline::CompareOp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#a2dd534b345a7c739db2333c07f20b1bb">depthCompare</a> () const noexcept override</td></tr>
 <tr class="memdesc:a2dd534b345a7c739db2333c07f20b1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth compare this renderer's pipeline was built with.  <br /></td></tr>
 <tr class="separator:a2dd534b345a7c739db2333c07f20b1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3eee0a931b5aa11f15735c2453f4a07" id="r_aa3eee0a931b5aa11f15735c2453f4a07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_rendered_i_s_f_node.html#aa3eee0a931b5aa11f15735c2453f4a07">blittedEdges</a> () const noexcept</td></tr>
+<tr class="separator:aa3eee0a931b5aa11f15735c2453f4a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1gfx_1_1_node_renderer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1gfx_1_1_node_renderer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></td></tr>
 <tr class="memitem:a8403de351fee4cf2990283c63cc8e1c0 inherit pub_methods_classscore_1_1gfx_1_1_node_renderer" id="r_a8403de351fee4cf2990283c63cc8e1c0"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>NodeRenderer</b> (const <a class="el" href="classscore_1_1gfx_1_1_node.html">Node</a> &amp;node)</td></tr>
@@ -345,6 +347,32 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>renderTargetSpecsChan
 <p>Create a pass for a new output edge (pipeline, SRB, processUBO). </p>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html#ab678f4a4872b8b7a40de3917bca9f91f">score::gfx::NodeRenderer</a>.</p>
+
+</div>
+</div>
+<a id="aa3eee0a931b5aa11f15735c2453f4a07" name="aa3eee0a931b5aa11f15735c2453f4a07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3eee0a931b5aa11f15735c2453f4a07">&#9670;&#160;</a></span>blittedEdges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int score::gfx::RenderedISFNode::blittedEdges </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How many output edges draw the last pass into its own target and blit it, rather than straight into the destination. For tests. </p>
 
 </div>
 </div>

@@ -7,6 +7,7 @@ var dir_138f4802af862fcf99fd1df27fca8235 =
     [ "OffscreenDevice.hpp", "_offscreen_device_8hpp_source.html", null ],
     [ "OutputMapping.hpp", "_output_mapping_8hpp_source.html", null ],
     [ "OutputPreview.hpp", "_output_preview_8hpp_source.html", null ],
+    [ "PointerAddresses.hpp", "_pointer_addresses_8hpp_source.html", null ],
     [ "TestCard.hpp", "_test_card_8hpp_source.html", null ],
     [ "Window/WindowDevice.hpp", "_window_2_window_device_8hpp_source.html", null ],
     [ "WindowSettings.hpp", "_window_settings_8hpp_source.html", null ],

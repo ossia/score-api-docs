@@ -68,12 +68,13 @@ var searchData=
   ['buffer_5fspan_65',['buffer_span',['../struct_l_v2_1_1lv2__node_1_1buffer__span.html',1,'LV2::lv2_node']]],
   ['buffercopyregion_66',['BufferCopyRegion',['../structscore_1_1gfx_1_1_buffer_copy_region.html',1,'score::gfx']]],
   ['bufferinfo_67',['BufferInfo',['../class_threedim_1_1_buffer_info.html',1,'Threedim']]],
-  ['bufferstogeometry_68',['BuffersToGeometry',['../class_threedim_1_1_buffers_to_geometry.html',1,'Threedim']]],
-  ['bufferstogeometry2_69',['BuffersToGeometry2',['../class_threedim_1_1_buffers_to_geometry2.html',1,'Threedim']]],
-  ['bufferview_70',['BufferView',['../structscore_1_1gfx_1_1_buffer_view.html',1,'score::gfx']]],
-  ['busactivationvisitor_71',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
-  ['button_72',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_process_1_1_button.html',1,'Process::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
-  ['bytebeatexecutor_73',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
-  ['bytebeatlanguagespec_74',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
-  ['bytestostring_75',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
+  ['bufferrange_68',['BufferRange',['../structscore_1_1gfx_1_1_buffer_range.html',1,'score::gfx']]],
+  ['bufferstogeometry_69',['BuffersToGeometry',['../class_threedim_1_1_buffers_to_geometry.html',1,'Threedim']]],
+  ['bufferstogeometry2_70',['BuffersToGeometry2',['../class_threedim_1_1_buffers_to_geometry2.html',1,'Threedim']]],
+  ['bufferview_71',['BufferView',['../structscore_1_1gfx_1_1_buffer_view.html',1,'score::gfx']]],
+  ['busactivationvisitor_72',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
+  ['button_73',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_process_1_1_button.html',1,'Process::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
+  ['bytebeatexecutor_74',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
+  ['bytebeatlanguagespec_75',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
+  ['bytestostring_76',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
 ];

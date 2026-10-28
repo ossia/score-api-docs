@@ -128,15 +128,21 @@ $(document).ready(function(){initNavTree('_scene_filter_node_8hpp_source.html','
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">int</span> m_mode{0};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::string m_name;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>ossia::scene_spec</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><a class="code hl_function" href="namespacescore_1_1gfx.html#a3a4a5e41062d5b9022ea869bacdc6348">filterScene</a>(<span class="keyword">const</span> ossia::scene_spec&amp; in, <span class="keywordtype">int</span> mode, std::string_view pattern);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:216</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:250</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_scene_filter_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_scene_filter_node.html">score::gfx::SceneFilterNode</a></div><div class="ttdoc">Tree-level filter on a scene_spec.</div><div class="ttdef"><b>Definition</b> SceneFilterNode.hpp:28</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a3a4a5e41062d5b9022ea869bacdc6348"><div class="ttname"><a href="namespacescore_1_1gfx.html#a3a4a5e41062d5b9022ea869bacdc6348">score::gfx::filterScene</a></div><div class="ttdeci">ossia::scene_spec filterScene(const ossia::scene_spec &amp;in, int mode, std::string_view pattern)</div><div class="ttdoc">The Scene Filter's rewrite of a scene, for a mode and a name pattern.</div><div class="ttdef"><b>Definition</b> SceneFilterNode.cpp:215</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

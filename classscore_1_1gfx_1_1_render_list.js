@@ -26,6 +26,7 @@ var classscore_1_1gfx_1_1_render_list =
     [ "onEdgeRemoved", "classscore_1_1gfx_1_1_render_list.html#a5ffbc940f2ab658778bd8fe4d97d36b4", null ],
     [ "outputTargetsStale", "classscore_1_1gfx_1_1_render_list.html#a1829612a7bfb658aa2e31e73475d1326", null ],
     [ "outputUBO", "classscore_1_1gfx_1_1_render_list.html#a44cb2a527d818e954a9af25642cd5b6e", null ],
+    [ "outputUBO", "classscore_1_1gfx_1_1_render_list.html#a97e02f2c546772add4ea20c915ad956b", null ],
     [ "registry", "classscore_1_1gfx_1_1_render_list.html#a0f136076fe4e851e70384962462100fd", null ],
     [ "release", "classscore_1_1gfx_1_1_render_list.html#a37cde7b19c5eee5009f717644af96ffd", null ],
     [ "releaseBuffer", "classscore_1_1gfx_1_1_render_list.html#ac4f4bd359c175d0e060f1b09ddda0dd3", null ],

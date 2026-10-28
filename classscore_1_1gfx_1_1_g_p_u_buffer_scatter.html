@@ -104,7 +104,9 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_g_p_u_buffer_sca
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::gfx::GPUBufferScatter Class Reference</div></div>
@@ -133,6 +135,26 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create or update an SRB+UBO for a specific scatter operation.  <a href="structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_prepared_op.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afe7df6ff2e647ed817203a0feb5190af" id="r_afe7df6ff2e647ed817203a0feb5190af"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html#afe7df6ff2e647ed817203a0feb5190af">SourceFormat</a> : uint32_t { <br />
+&#160;&#160;<b>Float32</b> = 0
+, <a class="el" href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html#afe7df6ff2e647ed817203a0feb5190afad4b317e906c78227899266e920520320">Unorm8</a> = 1
+, <b>Half</b> = 2
+, <b>Uint32</b> = 3
+, <br />
+&#160;&#160;<b>Sint32</b> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:afe7df6ff2e647ed817203a0feb5190af"><td class="mdescLeft">&#160;</td><td class="mdescRight">How a source component is stored.  <a href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html#afe7df6ff2e647ed817203a0feb5190af">More...</a><br /></td></tr>
+<tr class="separator:afe7df6ff2e647ed817203a0feb5190af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b65087fa0afe60c0afb3942b47f15e" id="r_aa8b65087fa0afe60c0afb3942b47f15e"><td class="memItemLeft" align="right" valign="top"><a id="aa8b65087fa0afe60c0afb3942b47f15e" name="aa8b65087fa0afe60c0afb3942b47f15e"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html#aa8b65087fa0afe60c0afb3942b47f15e">DestinationKind</a> : uint32_t { <b>Float</b> = 0
+, <b>Uint</b> = 1
+, <b>Int</b> = 2
+ }</td></tr>
+<tr class="memdesc:aa8b65087fa0afe60c0afb3942b47f15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the destination component holds: float, uint or int. <br /></td></tr>
+<tr class="separator:aa8b65087fa0afe60c0afb3942b47f15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a940d7c4d029eb5cd24caaa33721b1e8a" id="r_a940d7c4d029eb5cd24caaa33721b1e8a"><td class="memItemLeft" align="right" valign="top"><a id="a940d7c4d029eb5cd24caaa33721b1e8a" name="a940d7c4d029eb5cd24caaa33721b1e8a"></a>
@@ -153,12 +175,48 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (QRhiCom
 <tr class="memdesc:a47c0d8cc27eeaae98d615419cbb21f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatch the scatter. Must be called inside beginComputePass/endComputePass. <br /></td></tr>
 <tr class="separator:a47c0d8cc27eeaae98d615419cbb21f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a29853a7c49bd1fb813f28c331028d4ea" id="r_a29853a7c49bd1fb813f28c331028d4ea"><td class="memItemLeft" align="right" valign="top"><a id="a29853a7c49bd1fb813f28c331028d4ea" name="a29853a7c49bd1fb813f28c331028d4ea"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>scatterOnCpu</b> (const <a class="el" href="structscore_1_1gfx_1_1_g_p_u_buffer_scatter_1_1_params.html">Params</a> &amp;p, const char *src, int64_t src_size, char *dst, int64_t dst_size)</td></tr>
+<tr class="memdesc:a29853a7c49bd1fb813f28c331028d4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The scatter on the CPU, for a backend without compute: decodes <code>p.element_count</code> elements of <code>src</code> (<code>src_size</code> bytes) into <code>dst</code>, laid out like the shader's output. <code>dst</code> is the destination buffer's bytes. <br /></td></tr>
+<tr class="separator:a29853a7c49bd1fb813f28c331028d4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a11225f8ba5b722c348eb9b82f476c2d3" id="r_a11225f8ba5b722c348eb9b82f476c2d3"><td class="memItemLeft" align="right" valign="top"><a id="a11225f8ba5b722c348eb9b82f476c2d3" name="a11225f8ba5b722c348eb9b82f476c2d3"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>LocalSize</b> = 256</td></tr>
 <tr class="separator:a11225f8ba5b722c348eb9b82f476c2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="afe7df6ff2e647ed817203a0feb5190af" name="afe7df6ff2e647ed817203a0feb5190af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7df6ff2e647ed817203a0feb5190af">&#9670;&#160;</a></span>SourceFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classscore_1_1gfx_1_1_g_p_u_buffer_scatter.html#afe7df6ff2e647ed817203a0feb5190af">score::gfx::GPUBufferScatter::SourceFormat</a> : uint32_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How a source component is stored. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afe7df6ff2e647ed817203a0feb5190afad4b317e906c78227899266e920520320" name="afe7df6ff2e647ed817203a0feb5190afad4b317e906c78227899266e920520320"></a>Unorm8&#160;</td><td class="fielddoc"><p>0..255 read as 0..1 (the byte value for an integer destination) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_g_p_u_buffer_scatter_8hpp_source.html">GPUBufferScatter.hpp</a></li>
 <li><b>GPUBufferScatter.cpp</b></li>

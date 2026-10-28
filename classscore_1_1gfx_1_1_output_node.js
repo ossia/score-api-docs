@@ -7,6 +7,7 @@ var classscore_1_1gfx_1_1_output_node =
     [ "currentRenderTarget", "classscore_1_1gfx_1_1_output_node.html#a58ec922c2b9226a9ee609a9d43bc63cc", null ],
     [ "deviceLost", "classscore_1_1gfx_1_1_output_node.html#a5458d9ad6b49618360b5facd61faa76c", null ],
     [ "handleDeviceLost", "classscore_1_1gfx_1_1_output_node.html#a14d3f3fec62f2b8f4533a681073f9ec7", null ],
+    [ "pointerState", "classscore_1_1gfx_1_1_output_node.html#ae9b6d2a4c2717d900e4ea298b89f534e", null ],
     [ "registry", "classscore_1_1gfx_1_1_output_node.html#a3a305e3b12c4d97eddc4a6951f0dcac1", null ],
     [ "releaseOwnedRenderList", "classscore_1_1gfx_1_1_output_node.html#a03a0c787e68fec50978a5d7848a6f16f", null ],
     [ "releaseRegistry", "classscore_1_1gfx_1_1_output_node.html#ac53fee3c4c7bf8c570e55c5b9bd93d8c", null ],

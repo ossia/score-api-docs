@@ -162,13 +162,14 @@ var searchData=
   ['logmessage_159',['LogMessage',['../structscore_1_1_log_message.html',1,'score']]],
   ['logmessagesitemmodel_160',['LogMessagesItemModel',['../classscore_1_1_log_messages_item_model.html',1,'score']]],
   ['lognormalizer_161',['LogNormalizer',['../struct_widget_factory_1_1_log_normalizer.html',1,'WidgetFactory']]],
-  ['lookslikeexistingfile_162',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
-  ['loopwrapper_163',['LoopWrapper',['../struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html',1,'Media::Sound::WaveformComputerImpl']]],
-  ['lostframes_164',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]],
-  ['lsb_165',['lsb',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#aedd3bfe6632fce71068d503bb18ec6f3',1,'Protocols::MIDIDevices::Message']]],
-  ['lv2_5fatom_5fbuffer_166',['LV2_Atom_Buffer',['../struct_l_v2___atom___buffer.html',1,'']]],
-  ['lv2_5fnode_167',['lv2_node',['../struct_l_v2_1_1lv2__node.html',1,'LV2']]],
-  ['lv2_5fnode_5fprocess_168',['lv2_node_process',['../class_l_v2_1_1lv2__node__process.html',1,'LV2']]],
-  ['lv2data_169',['LV2Data',['../struct_l_v2_1_1_l_v2_data.html',1,'LV2']]],
-  ['lv2pluginchooserdialog_170',['LV2PluginChooserDialog',['../struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html',1,'LV2']]]
+  ['logshadererror_162',['logShaderError',['../namespace_gfx.html#a93561637c56abe4b15506dabf77c2475',1,'Gfx']]],
+  ['lookslikeexistingfile_163',['looksLikeExistingFile',['../namespace_process.html#ab16c8f0c80f7b97c59067b22c399b76f',1,'Process']]],
+  ['loopwrapper_164',['LoopWrapper',['../struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_loop_wrapper.html',1,'Media::Sound::WaveformComputerImpl']]],
+  ['lostframes_165',['lostFrames',['../classscore_1_1gfx_1_1interop_1_1_rdma_video_output.html#a7b4c1706179eb5885ad4d80a87a10cf0',1,'score::gfx::interop::RdmaVideoOutput']]],
+  ['lsb_166',['lsb',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#aedd3bfe6632fce71068d503bb18ec6f3',1,'Protocols::MIDIDevices::Message']]],
+  ['lv2_5fatom_5fbuffer_167',['LV2_Atom_Buffer',['../struct_l_v2___atom___buffer.html',1,'']]],
+  ['lv2_5fnode_168',['lv2_node',['../struct_l_v2_1_1lv2__node.html',1,'LV2']]],
+  ['lv2_5fnode_5fprocess_169',['lv2_node_process',['../class_l_v2_1_1lv2__node__process.html',1,'LV2']]],
+  ['lv2data_170',['LV2Data',['../struct_l_v2_1_1_l_v2_data.html',1,'LV2']]],
+  ['lv2pluginchooserdialog_171',['LV2PluginChooserDialog',['../struct_l_v2_1_1_l_v2_plugin_chooser_dialog.html',1,'LV2']]]
 ];

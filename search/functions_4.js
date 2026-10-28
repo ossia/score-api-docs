@@ -26,7 +26,7 @@ var searchData=
   ['engagedcapturestrategy_23',['engagedCaptureStrategy',['../structscore_1_1gfx_1_1_d_m_a_capture_input_node.html#abf7ff28e3280c68bc5dd51a3a2848b74',1,'score::gfx::DMACaptureInputNode']]],
   ['engageddescription_24',['engagedDescription',['../classscore_1_1gfx_1_1_kms_output_node.html#ada5da5fb6d7392ef216b068b7183adf5',1,'score::gfx::KmsOutputNode']]],
   ['ensureselffeedbacktargets_25',['ensureSelfFeedbackTargets',['../classscore_1_1gfx_1_1_render_list.html#a2fb2b54ca49affacf2b5f7ad7ce02a7e',1,'score::gfx::RenderList']]],
-  ['ensurestorageresources_26',['ensureStorageResources',['../namespacescore_1_1gfx.html#acdf83d35ee60bc8ea7025bb6d6ba146b',1,'score::gfx']]],
+  ['ensurestorageresources_26',['ensureStorageResources',['../namespacescore_1_1gfx.html#a5b672e368fbbb129f63141eee97b4220',1,'score::gfx']]],
   ['entermode_27',['enterMode',['../struct_nodes_1_1_audio_looper_1_1_node.html#a7572bd1f2dccb4aef88444e153ad9244',1,'Nodes::AudioLooper::Node']]],
   ['enumeratedevices_28',['enumeratedevices',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html#a5383bb5fb8a7f61d1ec5a68ad9e06100',1,'score::gfx::drm::KmsDevice::enumerateDevices()'],['../class_j_s_1_1_edit_js_context.html#a6f24b0a27c19d8b9554b39d78753211d',1,'JS::EditJsContext::enumerateDevices()']]],
   ['envelope_29',['envelope',['../namespace_curve.html#a283c7cc23c683a279b2dcf56748c1e1f',1,'Curve']]],

@@ -7,12 +7,13 @@ var searchData=
   ['when_4',['when',['../struct_protocols_1_1_m_i_d_i_devices_1_1_control.html#ac9c3b952b3d384006bc8de1ab2014b60',1,'Protocols::MIDIDevices::Control']]],
   ['whitebalance_5',['whiteBalance',['../structscore_1_1gfx_1_1_capture_adjust.html#af6473cc7000eb0b0413c66bdfd3edc4c',1,'score::gfx::CaptureAdjust']]],
   ['widgetpalette_6',['WidgetPalette',['../classscore_1_1_skin.html#ad122962d74c1d5fcfde6719aa8bdab88',1,'score::Skin']]],
-  ['width_7',['width',['../structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4',1,'score::gfx::BitField::width'],['../structscore_1_1gfx_1_1_kms_output_settings.html#a4d965cd6dbf9b6d9c4e4119dac324787',1,'score::gfx::KmsOutputSettings::width']]],
-  ['window_8',['window',['../struct_ui_1_1_midi_display_1_1_node.html#acf189e6f75d668c486f8749262f6fd25',1,'Ui::MidiDisplay::Node']]],
-  ['windowposition_9',['windowPosition',['../struct_gfx_1_1_output_mapping.html#a380582436e9ebd607f70a1d65712bd9d',1,'Gfx::OutputMapping']]],
-  ['worker_5fresults_10',['worker_results',['../structoscr_1_1node__with__worker.html#a649783340d8fe7775d3051d6951f615a',1,'oscr::node_with_worker']]],
-  ['writeback_11',['writeback',['../structscore_1_1gfx_1_1drm_1_1_connector_info.html#ab19d52d2294d109eaa56462d0062d114',1,'score::gfx::drm::ConnectorInfo']]],
-  ['writebackconnectors_12',['writebackConnectors',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#a019a89624c03d917eb26d82209573144',1,'score::gfx::drm::DeviceInfo']]],
-  ['writes_13',['writes',['../struct_local_tree_1_1_scriptable_roots.html#a1bfca08c9aab3cb4884a52099c1b4591',1,'LocalTree::ScriptableRoots']]],
-  ['written_14',['written',['../struct_local_tree_1_1_scriptable_process_base_1_1_kept.html#a55158163d2b24bf0a7949228f54d25f1',1,'LocalTree::ScriptableProcessBase::Kept']]]
+  ['width_7',['width',['../structscore_1_1gfx_1_1_kms_output_settings.html#a4d965cd6dbf9b6d9c4e4119dac324787',1,'score::gfx::KmsOutputSettings::width'],['../structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4',1,'score::gfx::BitField::width']]],
+  ['width_5fexpression_8',['width_expression',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a9bfef26e3846b7b9c1cc917b969da666',1,'score::gfx::GraphicsStorageImage']]],
+  ['window_9',['window',['../struct_ui_1_1_midi_display_1_1_node.html#acf189e6f75d668c486f8749262f6fd25',1,'Ui::MidiDisplay::Node']]],
+  ['windowposition_10',['windowPosition',['../struct_gfx_1_1_output_mapping.html#a380582436e9ebd607f70a1d65712bd9d',1,'Gfx::OutputMapping']]],
+  ['worker_5fresults_11',['worker_results',['../structoscr_1_1node__with__worker.html#a649783340d8fe7775d3051d6951f615a',1,'oscr::node_with_worker']]],
+  ['writeback_12',['writeback',['../structscore_1_1gfx_1_1drm_1_1_connector_info.html#ab19d52d2294d109eaa56462d0062d114',1,'score::gfx::drm::ConnectorInfo']]],
+  ['writebackconnectors_13',['writebackConnectors',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#a019a89624c03d917eb26d82209573144',1,'score::gfx::drm::DeviceInfo']]],
+  ['writes_14',['writes',['../struct_local_tree_1_1_scriptable_roots.html#a1bfca08c9aab3cb4884a52099c1b4591',1,'LocalTree::ScriptableRoots']]],
+  ['written_15',['written',['../struct_local_tree_1_1_scriptable_process_base_1_1_kept.html#a55158163d2b24bf0a7949228f54d25f1',1,'LocalTree::ScriptableProcessBase::Kept']]]
 ];

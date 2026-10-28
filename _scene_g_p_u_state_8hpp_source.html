@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('_scene_g_p_u_state_8hpp_source.html','
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// Raw* structs are written by source nodes (Camera, Light, Transform3D,</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// EnvironmentLoader) into their own GpuResourceRegistry arena slot at their</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// operator()() time: view-independent, no aspect-ratio math or scene-graph</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// composition. The cooked structs (CameraUBOData, LightGPU, MaterialGPU,</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// PerDrawGPU, WorldTransformMat4) are produced by ScenePreprocessor from those</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// composition. The cooked structs (CameraUBOData, PerDrawGPU,</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// WorldTransformMat4) are produced by ScenePreprocessor from those</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// arenas plus render-target state, and are what consumer shaders bind.</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// Materials and env are composition-independent, so Raw == Cooked for them and</span></div>
@@ -679,116 +679,119 @@ $(document).ready(function(){initNavTree('_scene_g_p_u_state_8hpp_source.html','
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>  {</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>    ossia::instance_component_ptr instance;</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>    QMatrix4x4 worldTransform;</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>  };</div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>    <span class="comment">// Index of the prototype&#39;s material in scene_state::materials, -1 when</span></div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="comment">// it is not there: what PerDraw.tag_hash is looked up with.</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>    <span class="keywordtype">int</span> materialIndex{-1};</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>  };</div>
 </div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>  std::vector&lt;InstanceDraw&gt; instances;</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span> </div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>  <span class="comment">// Primitive cloud (splat / point-cloud) entries: format-agnostic payloads whose</span></div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  <span class="comment">// schema is described by their CSF chain. ScenePreprocessor buckets them by</span></div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>  <span class="comment">// format_id, one indirect-draw geometry per bucket; an empty format_id is</span></div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>  <span class="comment">// bucketed individually on the stable id.</span></div>
-<div class="foldopen" id="foldopen00547" data-start="{" data-end="};">
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">  547</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">PrimitiveCloudDraw</a></div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>  {</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    ossia::primitive_cloud_component_ptr cloud;</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>    QMatrix4x4 worldTransform;</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>    <span class="comment">// RawTransform arena slot index, or 0xFFFFFFFFu if no producer</span></div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    <span class="comment">// transform was on the walk path. Mirrors PerDrawGPU.transform_slot.</span></div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    uint32_t transform_slot{0xFFFFFFFFu};</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  };</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>  std::vector&lt;InstanceDraw&gt; instances;</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span> </div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>  <span class="comment">// Primitive cloud (splat / point-cloud) entries: format-agnostic payloads whose</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>  <span class="comment">// schema is described by their CSF chain. ScenePreprocessor buckets them by</span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>  <span class="comment">// format_id, one indirect-draw geometry per bucket; an empty format_id is</span></div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>  <span class="comment">// bucketed individually on the stable id.</span></div>
+<div class="foldopen" id="foldopen00550" data-start="{" data-end="};">
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">  550</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">PrimitiveCloudDraw</a></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>  {</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>    ossia::primitive_cloud_component_ptr cloud;</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    QMatrix4x4 worldTransform;</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>    <span class="comment">// RawTransform arena slot index, or 0xFFFFFFFFu if no producer</span></div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>    <span class="comment">// transform was on the walk path. Mirrors PerDrawGPU.transform_slot.</span></div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    uint32_t transform_slot{0xFFFFFFFFu};</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  };</div>
 </div>
-<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  std::vector&lt;PrimitiveCloudDraw&gt; primitive_clouds;</div>
-<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span> </div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>  <span class="comment">// Cameras collected from the scene tree. Each entry keeps its source</span></div>
-<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>  <span class="comment">// camera_component alive, its accumulated world transform (column 3 =</span></div>
-<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  <span class="comment">// eye position, inverse = view matrix), and the scene_node_id of the</span></div>
-<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="comment">// node it was attached to so consumers can resolve `active_camera_id`.</span></div>
-<div class="foldopen" id="foldopen00561" data-start="{" data-end="};">
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">  561</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">CameraEntry</a></div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  {</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    ossia::camera_component_ptr component;</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    QMatrix4x4 worldTransform;</div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    ossia::scene_node_id node_id{};</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>  };</div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span>  std::vector&lt;PrimitiveCloudDraw&gt; primitive_clouds;</div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span> </div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="comment">// Cameras collected from the scene tree. Each entry keeps its source</span></div>
+<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>  <span class="comment">// camera_component alive, its accumulated world transform (column 3 =</span></div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>  <span class="comment">// eye position, inverse = view matrix), and the scene_node_id of the</span></div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>  <span class="comment">// node it was attached to so consumers can resolve `active_camera_id`.</span></div>
+<div class="foldopen" id="foldopen00564" data-start="{" data-end="};">
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">  564</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">CameraEntry</a></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  {</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    ossia::camera_component_ptr component;</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>    QMatrix4x4 worldTransform;</div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    ossia::scene_node_id node_id{};</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  };</div>
 </div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  std::vector&lt;CameraEntry&gt; cameras;</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>  <span class="comment">// Index into `cameras` of the currently-active camera. -1 when the scene</span></div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  <span class="comment">// has no cameras; in that case downstream falls back to a default eye</span></div>
-<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>  <span class="comment">// placement (see the legacy single-camera fields below, populated from</span></div>
-<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <span class="comment">// this slot if valid or from a default otherwise).</span></div>
-<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  <span class="keywordtype">int</span> activeCameraIndex{-1};</div>
-<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span> </div>
-<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  <span class="comment">// Camera (from scene or override) — legacy mirror fields. Kept populated</span></div>
-<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  <span class="comment">// for consumers that haven&#39;t migrated to `cameras[activeCameraIndex]`</span></div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>  <span class="comment">// yet. Resolved by flattenScene() after the tree walk:</span></div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <span class="comment">//   - cameras empty   → sensible default (eye at (0,1,3))</span></div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  <span class="comment">//   - cameras nonempty → copied from cameras[activeCameraIndex]</span></div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  QMatrix4x4 viewMatrix;</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  QMatrix4x4 projectionMatrix;</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  QVector3D cameraPosition;</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>  <span class="keywordtype">float</span> cameraFov{60.f};</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  <span class="keywordtype">float</span> cameraNear{0.1f};</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keywordtype">float</span> cameraFar{1000.f};</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keywordtype">bool</span> hasCamera{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>  <span class="keywordtype">void</span> clear()</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  {</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    draws.clear();</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    lightArenaSlots.clear();</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    loaderLights.clear();</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    materials.clear();</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    material_extensions.clear();</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    skins.clear();</div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    scene_data.clear();</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    instances.clear();</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    primitive_clouds.clear();</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    cameras.clear();</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    worldTransforms.clear();</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    activeCameraIndex = -1;</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    hasCamera = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    <span class="comment">// The legacy single-camera mirror is part of the state too: leaving it</span></div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    <span class="comment">// populated means a reused FlatScene reports the previous scene&#39;s camera</span></div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    <span class="comment">// to any consumer that reads it without checking hasCamera.</span></div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    viewMatrix.setToIdentity();</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    projectionMatrix.setToIdentity();</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    cameraPosition = {};</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    cameraFov = 60.f;</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    cameraNear = 0.1f;</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    cameraFar = 1000.f;</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  }</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>};</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>  std::vector&lt;CameraEntry&gt; cameras;</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span> </div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>  <span class="comment">// Index into `cameras` of the currently-active camera. -1 when the scene</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>  <span class="comment">// has no cameras; in that case downstream falls back to a default eye</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  <span class="comment">// placement (see the legacy single-camera fields below, populated from</span></div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  <span class="comment">// this slot if valid or from a default otherwise).</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>  <span class="keywordtype">int</span> activeCameraIndex{-1};</div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>  <span class="comment">// Camera (from scene or override) — legacy mirror fields. Kept populated</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>  <span class="comment">// for consumers that haven&#39;t migrated to `cameras[activeCameraIndex]`</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>  <span class="comment">// yet. Resolved by flattenScene() after the tree walk:</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>  <span class="comment">//   - cameras empty   → sensible default (eye at (0,1,3))</span></div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>  <span class="comment">//   - cameras nonempty → copied from cameras[activeCameraIndex]</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>  QMatrix4x4 viewMatrix;</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>  QMatrix4x4 projectionMatrix;</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  QVector3D cameraPosition;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>  <span class="keywordtype">float</span> cameraFov{60.f};</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>  <span class="keywordtype">float</span> cameraNear{0.1f};</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>  <span class="keywordtype">float</span> cameraFar{1000.f};</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>  <span class="keywordtype">bool</span> hasCamera{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>  <span class="keywordtype">void</span> clear()</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>  {</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    draws.clear();</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    lightArenaSlots.clear();</div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span>    loaderLights.clear();</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    materials.clear();</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    material_extensions.clear();</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    skins.clear();</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    scene_data.clear();</div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    instances.clear();</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    primitive_clouds.clear();</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>    cameras.clear();</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    worldTransforms.clear();</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    activeCameraIndex = -1;</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    hasCamera = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <span class="comment">// The legacy single-camera mirror is part of the state too: leaving it</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    <span class="comment">// populated means a reused FlatScene reports the previous scene&#39;s camera</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    <span class="comment">// to any consumer that reads it without checking hasCamera.</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>    viewMatrix.setToIdentity();</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    projectionMatrix.setToIdentity();</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    cameraPosition = {};</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    cameraFov = 60.f;</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    cameraNear = 0.1f;</div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    cameraFar = 1000.f;</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  }</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>};</div>
 </div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">// Flatten a scene_spec into a FlatScene for GPU consumption.</span></div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">// With a registry, a transform or light raw_slot that is not live in its arena</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">// is treated as unstamped.</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="keywordtype">void</span> flattenScene(</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>    <span class="keyword">const</span> ossia::scene_spec&amp; scene,</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>    FlatScene&amp; out,</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>    <span class="keywordtype">float</span> aspectRatio,</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">const</span> GpuResourceRegistry* registry = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span> </div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">// Build a transient ossia::geometry that wraps a mesh_primitive&#39;s buffers</span></div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment">// and attributes. The result is heap-allocated and owned by shared_ptr so</span></div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment">// callers can keep it alive beyond the flatten pass (see DrawCall::owned_mesh).</span></div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>std::shared_ptr&lt;ossia::geometry&gt;</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>primitiveToGeometry(<span class="keyword">const</span> ossia::mesh_primitive&amp; prim);</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>MaterialGPU packMaterial(<span class="keyword">const</span> ossia::material_component&amp; mc);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>MaterialExtensionsGPU packMaterialExtensions(<span class="keyword">const</span> ossia::material_component&amp; mc);</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>}</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span> </div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment">// Flatten a scene_spec into a FlatScene for GPU consumption.</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">// With a registry, a transform or light raw_slot that is not live in its arena</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment">// is treated as unstamped.</span></div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="keywordtype">void</span> flattenScene(</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">const</span> ossia::scene_spec&amp; scene,</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    FlatScene&amp; out,</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keywordtype">float</span> aspectRatio,</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>    <span class="keyword">const</span> GpuResourceRegistry* registry = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="comment">// Build a transient ossia::geometry that wraps a mesh_primitive&#39;s buffers</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="comment">// and attributes. The result is heap-allocated and owned by shared_ptr so</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="comment">// callers can keep it alive beyond the flatten pass (see DrawCall::owned_mesh).</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>std::shared_ptr&lt;ossia::geometry&gt;</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>primitiveToGeometry(<span class="keyword">const</span> ossia::mesh_primitive&amp; prim);</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span> </div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>MaterialGPU packMaterial(<span class="keyword">const</span> ossia::material_component&amp; mc);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>MaterialExtensionsGPU packMaterialExtensions(<span class="keyword">const</span> ossia::material_component&amp; mc);</div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_draw_call_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_draw_call.html">score::gfx::DrawCall</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:420</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_env_params_u_b_o_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_env_params_u_b_o.html">score::gfx::EnvParamsUBO</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:367</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_camera_entry_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">score::gfx::FlatScene::CameraEntry</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:562</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_camera_entry_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_camera_entry.html">score::gfx::FlatScene::CameraEntry</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:565</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_instance_draw_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_instance_draw.html">score::gfx::FlatScene::InstanceDraw</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:537</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_loader_light_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_loader_light.html">score::gfx::FlatScene::LoaderLight</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:507</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">score::gfx::FlatScene::PrimitiveCloudDraw</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:548</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene_1_1_primitive_cloud_draw.html">score::gfx::FlatScene::PrimitiveCloudDraw</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:551</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_flat_scene_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_flat_scene.html">score::gfx::FlatScene</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:494</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_material_extensions_g_p_u_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_material_extensions_g_p_u.html">score::gfx::MaterialExtensionsGPU</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:212</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_material_g_p_u_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_material_g_p_u.html">score::gfx::MaterialGPU</a></div><div class="ttdef"><b>Definition</b> SceneGPUState.hpp:87</div></div>

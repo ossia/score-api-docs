@@ -249,34 +249,105 @@ $(document).ready(function(){initNavTree('_rhi_indirect_compat_8hpp_source.html'
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>}</div>
 </div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CB = QRhiCommandBuffer&gt;</div>
-<div class="foldopen" id="foldopen00153" data-start="{" data-end="}">
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">  153</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">dispatchIndirectCompat</a>(</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    CB&amp; cb, QRhiBuffer* argsBuffer, quint32 argsOffset) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(rhiHasDispatchIndirect)</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>  {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    cb.dispatchIndirect(argsBuffer, argsOffset);</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  }</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    (void)cb;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">namespace </span>detail</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>{</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="foldopen" id="foldopen00153" data-start="{" data-end="};">
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">  153</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">rhi_pipeline_uses_indirect_draws</a></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>{</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> exists = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">static</span> <span class="keyword">typename</span> P::Flags flag() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> {}; }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
 </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> P&gt;</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="};">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws_3_01_p_00_01std_1_1void__t_4f13b433371e717e4375ea4c91724790.html">  159</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">rhi_pipeline_uses_indirect_draws</a>&lt;P, <a class="code hl_namespace" href="namespacestd.html">std</a>::void_t&lt;decltype(P::UsesIndirectDraws)&gt;&gt;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>{</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> exists = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">static</span> <span class="keyword">typename</span> P::Flags flag() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> P::UsesIndirectDraws; }</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
+</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RB, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="};">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">  166</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">rhi_renderbuffer_no_transient_backing</a></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> exists = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">static</span> <span class="keyword">typename</span> RB::Flags flag() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> {}; }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>};</div>
+</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> RB&gt;</div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="};">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing_3_01_r_b_00_01std_1_1vf93c388a45527ce07382e484ae78e157.html">  172</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">rhi_renderbuffer_no_transient_backing</a>&lt;</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    RB, <a class="code hl_namespace" href="namespacestd.html">std</a>::void_t&lt;decltype(RB::NoTransientBacking)&gt;&gt;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> exists = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keyword">static</span> <span class="keyword">typename</span> RB::Flags flag() <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> RB::NoTransientBacking; }</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>};</div>
+</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#if defined(SCORE_GFX_SIMULATE_QT612)</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">rhiHasIndirectCommandBufferFlags</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">  191</a></span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_variable" href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">rhiHasIndirectCommandBufferFlags</a></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    = <a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">detail::rhi_pipeline_uses_indirect_draws&lt;QRhiGraphicsPipeline&gt;::exists</a></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>      &amp;&amp; <a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">detail::rhi_renderbuffer_no_transient_backing&lt;QRhiRenderBuffer&gt;::exists</a>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00199" data-start="{" data-end="}">
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a637ae1c78311656fcd40555fc66424ec">  199</a></span><span class="keyword">inline</span> QRhiGraphicsPipeline::Flags <a class="code hl_function" href="namespacescore_1_1gfx.html#a637ae1c78311656fcd40555fc66424ec">indirectDrawPipelineFlags</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>{</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<a class="code hl_variable" href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">rhiHasIndirectCommandBufferFlags</a>)</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keywordflow">if</span>(rhi.backend() == QRhi::Metal)</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keywordflow">return</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">detail::rhi_pipeline_uses_indirect_draws&lt;QRhiGraphicsPipeline&gt;::flag</a>();</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>}</div>
+</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="foldopen" id="foldopen00211" data-start="{" data-end="}">
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#ae6c47b279693f4d3ad5e8f0feec6826c">  211</a></span><span class="keyword">inline</span> QRhiRenderBuffer::Flags <a class="code hl_function" href="namespacescore_1_1gfx.html#ae6c47b279693f4d3ad5e8f0feec6826c">depthStencilRenderBufferFlags</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>{</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(<a class="code hl_variable" href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">rhiHasIndirectCommandBufferFlags</a>)</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">if</span>(rhi.backend() == QRhi::Metal)</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">return</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">detail::rhi_renderbuffer_no_transient_backing&lt;QRhiRenderBuffer&gt;::flag</a>();</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keywordflow">return</span> {};</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
+</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> CB = QRhiCommandBuffer&gt;</div>
+<div class="foldopen" id="foldopen00222" data-start="{" data-end="}">
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">  222</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">dispatchIndirectCompat</a>(</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>    CB&amp; cb, QRhiBuffer* argsBuffer, quint32 argsOffset) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>{</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(rhiHasDispatchIndirect)</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  {</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    cb.dispatchIndirect(argsBuffer, argsOffset);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  }</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  {</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    (void)cb;</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  }</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a2e5926b5fc656ba00c56c274dea08e6f"><div class="ttname"><a href="namespacescore_1_1gfx.html#a2e5926b5fc656ba00c56c274dea08e6f">score::gfx::drawIndirectCountCompat</a></div><div class="ttdeci">bool drawIndirectCountCompat(CB &amp;cb, bool indexed, QRhiBuffer *indirectBuffer, quint32 indirectOffset, QRhiBuffer *countBuffer, quint32 countOffset, quint32 maxDrawCount, quint32 stride) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:126</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a4f35e2edf1a8d63a815b9c6ce90a6faf"><div class="ttname"><a href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">score::gfx::dispatchIndirectCompat</a></div><div class="ttdeci">bool dispatchIndirectCompat(CB &amp;cb, QRhiBuffer *argsBuffer, quint32 argsOffset) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:153</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a4f35e2edf1a8d63a815b9c6ce90a6faf"><div class="ttname"><a href="namespacescore_1_1gfx.html#a4f35e2edf1a8d63a815b9c6ce90a6faf">score::gfx::dispatchIndirectCompat</a></div><div class="ttdeci">bool dispatchIndirectCompat(CB &amp;cb, QRhiBuffer *argsBuffer, quint32 argsOffset) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:222</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a637ae1c78311656fcd40555fc66424ec"><div class="ttname"><a href="namespacescore_1_1gfx.html#a637ae1c78311656fcd40555fc66424ec">score::gfx::indirectDrawPipelineFlags</a></div><div class="ttdeci">QRhiGraphicsPipeline::Flags indirectDrawPipelineFlags(const QRhi &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:199</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a6b03cfaee36bd382cf7f04c6caf18926"><div class="ttname"><a href="namespacescore_1_1gfx.html#a6b03cfaee36bd382cf7f04c6caf18926">score::gfx::rhiSupportsDrawIndirectCount</a></div><div class="ttdeci">bool rhiSupportsDrawIndirectCount(R &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:104</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_aa00d5d224ab0b6906c54625b26eb58e9"><div class="ttname"><a href="namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9">score::gfx::rhiHasIndirectCommandBufferFlags</a></div><div class="ttdeci">constexpr bool rhiHasIndirectCommandBufferFlags</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:192</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ad10117fdd6de7f7d48bd99aba3f3d031"><div class="ttname"><a href="namespacescore_1_1gfx.html#ad10117fdd6de7f7d48bd99aba3f3d031">score::gfx::rhiSupportsDispatchIndirect</a></div><div class="ttdeci">bool rhiSupportsDispatchIndirect(R &amp;rhi) noexcept</div><div class="ttdoc">QRhi::DispatchIndirect reported by the device; same convention as above.</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:114</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ae6c47b279693f4d3ad5e8f0feec6826c"><div class="ttname"><a href="namespacescore_1_1gfx.html#ae6c47b279693f4d3ad5e8f0feec6826c">score::gfx::depthStencilRenderBufferFlags</a></div><div class="ttdeci">QRhiRenderBuffer::Flags depthStencilRenderBufferFlags(const QRhi &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:211</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__feature__dispatch__indirect_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__feature__dispatch__indirect.html">score::gfx::detail::rhi_feature_dispatch_indirect</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:78</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__feature__indirect__count_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__feature__indirect__count.html">score::gfx::detail::rhi_feature_indirect_count</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:64</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__has__dispatch__indirect.html">score::gfx::detail::rhi_has_dispatch_indirect</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:51</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__has__indirect__count_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__has__indirect__count.html">score::gfx::detail::rhi_has_indirect_count</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:39</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__pipeline__uses__indirect__draws.html">score::gfx::detail::rhi_pipeline_uses_indirect_draws</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:154</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing_html"><div class="ttname"><a href="structscore_1_1gfx_1_1detail_1_1rhi__renderbuffer__no__transient__backing.html">score::gfx::detail::rhi_renderbuffer_no_transient_backing</a></div><div class="ttdef"><b>Definition</b> RhiIndirectCompat.hpp:167</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

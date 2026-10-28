@@ -52,12 +52,15 @@ var searchData=
   ['maxpatterns_49',['maxPatterns',['../class_patternist_1_1_process_model.html#a407536512917ac52a2d16fe2e9806bf3',1,'Patternist::ProcessModel']]],
   ['maxstep_50',['maxStep',['../class_dataflow_1_1_cable_drag_auto_scroller.html#afabd71eedb131706c46f6d6aa4e24dac',1,'Dataflow::CableDragAutoScroller']]],
   ['memexporttoshareablehandle_51',['memExportToShareableHandle',['../structscore_1_1gfx_1_1_cuda_functions.html#a18873d12be7847f4d380c27f029c7c9f',1,'score::gfx::CudaFunctions']]],
-  ['messages_52',['messages',['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages'],['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages']]],
+  ['messages_52',['messages',['../struct_scenario_1_1_selected_nodes.html#a46bece1f2d2df2fb12699d6ae00d7e33',1,'Scenario::SelectedNodes::messages'],['../struct_explorer_1_1_selected_nodes.html#ae290430e3602a169ce75d658819a3a87',1,'Explorer::SelectedNodes::messages']]],
   ['metalsupported_53',['metalSupported',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#ab9288de586b2bcd764d58be45dc5b8b6',1,'score::gfx::interop::GpuCapabilities']]],
   ['min_54',['min',['../struct_protocols_1_1_m_i_d_i_devices_1_1_scale.html#a226c450107c04ff185a8ddba63e71b09',1,'Protocols::MIDIDevices::Scale::min'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a04ae6f786f04b056ba341d85c1c5ca72',1,'Protocols::MIDIDevices::Value::min']]],
-  ['minimumgain_55',['minimumGain',['../struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0',1,'Process::TrimOptions']]],
-  ['modelfilename_56',['modelFileName',['../structscore_1_1_restorable_document.html#a3b4bb7706157738046d0387a7fc0b189',1,'score::RestorableDocument']]],
-  ['module_57',['module',['../struct_j_s_1_1_application_plugin_1_1_start_script.html#a5f5549b0aa3c5298fb26bf9c6e8e32b8',1,'JS::ApplicationPlugin::StartScript']]],
-  ['momentary_58',['momentary',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a5dc1386daef97e8e1911c4c0c5f721f0',1,'Protocols::MIDIDevices::Value']]],
-  ['muststop_59',['mustStop',['../struct_l_v2_1_1lv2__node.html#ac44a9ec5cf65037c774098152c0adeb5',1,'LV2::lv2_node']]]
+  ['min_5fsize_55',['min_size',['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a0ee05fc7572768a8f90d7008d2140136',1,'score::gfx::GraphicsUBO']]],
+  ['minimumgain_56',['minimumGain',['../struct_process_1_1_trim_options.html#a8f18b222f4543f42aed57bb8bafe5ec0',1,'Process::TrimOptions']]],
+  ['mipmap_5fset_57',['mipmap_set',['../structscore_1_1gfx_1_1_sampler.html#ada828da74563969018645ec1971c5e3b',1,'score::gfx::Sampler']]],
+  ['mips_5ffollow_5ftexture_58',['mips_follow_texture',['../structscore_1_1gfx_1_1_sampler.html#aace2c9e8b9b90960fe15df3aa9d304c0',1,'score::gfx::Sampler']]],
+  ['modelfilename_59',['modelFileName',['../structscore_1_1_restorable_document.html#a3b4bb7706157738046d0387a7fc0b189',1,'score::RestorableDocument']]],
+  ['module_60',['module',['../struct_j_s_1_1_application_plugin_1_1_start_script.html#a5f5549b0aa3c5298fb26bf9c6e8e32b8',1,'JS::ApplicationPlugin::StartScript']]],
+  ['momentary_61',['momentary',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a5dc1386daef97e8e1911c4c0c5f721f0',1,'Protocols::MIDIDevices::Value']]],
+  ['muststop_62',['mustStop',['../struct_l_v2_1_1lv2__node.html#ac44a9ec5cf65037c774098152c0adeb5',1,'LV2::lv2_node']]]
 ];

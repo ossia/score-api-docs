@@ -9,5 +9,6 @@ var structscore_1_1gfx_1_1_graphics_storage_image =
     [ "persistent", "structscore_1_1gfx_1_1_graphics_storage_image.html#a16f437bcd4dbe1f050c57145dae185c5", null ],
     [ "prev", "structscore_1_1gfx_1_1_graphics_storage_image.html#afbf11a73a3bdd9b80f00df69bc3b0998", null ],
     [ "prev_binding", "structscore_1_1gfx_1_1_graphics_storage_image.html#aa0045a5e3ee381a14cad166bbafcd401", null ],
-    [ "texture", "structscore_1_1gfx_1_1_graphics_storage_image.html#a5428a5a41f6b81c33e5783356c0e064c", null ]
+    [ "texture", "structscore_1_1gfx_1_1_graphics_storage_image.html#a5428a5a41f6b81c33e5783356c0e064c", null ],
+    [ "width_expression", "structscore_1_1gfx_1_1_graphics_storage_image.html#a9bfef26e3846b7b9c1cc917b969da666", null ]
 ];

@@ -144,8 +144,21 @@ QRhiShaderResourceBinding::StageFlags&#160;</td><td class="memItemRight" valign=
 <tr class="memitem:a1834870bb21f3c98ed71d981919ef193" id="r_a1834870bb21f3c98ed71d981919ef193"><td class="memItemLeft" align="right" valign="top"><a id="a1834870bb21f3c98ed71d981919ef193" name="a1834870bb21f3c98ed71d981919ef193"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>input_port_index</b> {-1}</td></tr>
 <tr class="separator:a1834870bb21f3c98ed71d981919ef193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27abf14195201faa4d2d27bd052a5f78" id="r_a27abf14195201faa4d2d27bd052a5f78"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graphics_u_b_o.html#a27abf14195201faa4d2d27bd052a5f78">offset</a> {0}</td></tr>
+<tr class="separator:a27abf14195201faa4d2d27bd052a5f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdd25216d322f058276329f08e4292b8" id="r_afdd25216d322f058276329f08e4292b8"><td class="memItemLeft" align="right" valign="top"><a id="afdd25216d322f058276329f08e4292b8" name="afdd25216d322f058276329f08e4292b8"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> {0}</td></tr>
+<tr class="separator:afdd25216d322f058276329f08e4292b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ddc74b779fbaa856492e16bc15e6c3" id="r_a93ddc74b779fbaa856492e16bc15e6c3"><td class="memItemLeft" align="right" valign="top"><a id="a93ddc74b779fbaa856492e16bc15e6c3" name="a93ddc74b779fbaa856492e16bc15e6c3"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>refused</b></td></tr>
+<tr class="memdesc:a93ddc74b779fbaa856492e16bc15e6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="structscore_1_1gfx_1_1_graphics_s_s_b_o.html#a7e48b87b0a7bad11894d5e5298781709">GraphicsSSBO::refused</a>. <br /></td></tr>
+<tr class="separator:a93ddc74b779fbaa856492e16bc15e6c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a956f15051e66ad77a743bcd08a5b38d5" id="r_a956f15051e66ad77a743bcd08a5b38d5"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_graphics_u_b_o.html#a956f15051e66ad77a743bcd08a5b38d5">declared_size</a> {}</td></tr>
 <tr class="separator:a956f15051e66ad77a743bcd08a5b38d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ee05fc7572768a8f90d7008d2140136" id="r_a0ee05fc7572768a8f90d7008d2140136"><td class="memItemLeft" align="right" valign="top"><a id="a0ee05fc7572768a8f90d7008d2140136" name="a0ee05fc7572768a8f90d7008d2140136"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>min_size</b> {}</td></tr>
+<tr class="memdesc:a0ee05fc7572768a8f90d7008d2140136"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest buffer that can back it: minimumUniformBlockSize (U42). <br /></td></tr>
+<tr class="separator:a0ee05fc7572768a8f90d7008d2140136"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a956f15051e66ad77a743bcd08a5b38d5" name="a956f15051e66ad77a743bcd08a5b38d5"></a>
@@ -160,6 +173,21 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>input_port_index</b> {
       </table>
 </div><div class="memdoc">
 <p>std140 size of the block the shader declares, from the LAYOUT alone. Independent of any upstream buffer, so the placeholder allocated for a never-connected input still covers everything the shader reads. </p>
+
+</div>
+</div>
+<a id="a27abf14195201faa4d2d27bd052a5f78" name="a27abf14195201faa4d2d27bd052a5f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27abf14195201faa4d2d27bd052a5f78">&#9670;&#160;</a></span>offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t score::gfx::GraphicsUBO::offset {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The published range of a borrowed <code>buffer</code> (shader board U42); size 0 means to its end. </p>
 
 </div>
 </div>

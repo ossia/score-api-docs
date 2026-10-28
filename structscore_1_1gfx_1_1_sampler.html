@@ -126,7 +126,29 @@ QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>texture</b> 
 <tr class="memitem:a82a2a31a3b876d4eb1a31148f67ec727" id="r_a82a2a31a3b876d4eb1a31148f67ec727"><td class="memItemLeft" align="right" valign="top"><a id="a82a2a31a3b876d4eb1a31148f67ec727" name="a82a2a31a3b876d4eb1a31148f67ec727"></a>
 QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>fallback</b> {}</td></tr>
 <tr class="separator:a82a2a31a3b876d4eb1a31148f67ec727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2c9e8b9b90960fe15df3aa9d304c0" id="r_aace2c9e8b9b90960fe15df3aa9d304c0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_sampler.html#aace2c9e8b9b90960fe15df3aa9d304c0">mips_follow_texture</a> {}</td></tr>
+<tr class="separator:aace2c9e8b9b90960fe15df3aa9d304c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada828da74563969018645ec1971c5e3b" id="r_ada828da74563969018645ec1971c5e3b"><td class="memItemLeft" align="right" valign="top"><a id="ada828da74563969018645ec1971c5e3b" name="ada828da74563969018645ec1971c5e3b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>mipmap_set</b> {}</td></tr>
+<tr class="memdesc:ada828da74563969018645ec1971c5e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The inlet sets the mipmap mode (U34), which then wins over following. <br /></td></tr>
+<tr class="separator:ada828da74563969018645ec1971c5e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aace2c9e8b9b90960fe15df3aa9d304c0" name="aace2c9e8b9b90960fe15df3aa9d304c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace2c9e8b9b90960fe15df3aa9d304c0">&#9670;&#160;</a></span>mips_follow_texture</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::Sampler::mips_follow_texture {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The sampler's mipmap mode is the texture's (followTextureMips) unless the inlet sets one: a cubemap input whose shader leaves MIPMAP_MODE out. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_utils_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Utils.hpp</a></li>
 </ul>

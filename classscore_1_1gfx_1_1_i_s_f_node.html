@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_i_s_f_node.html'
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -110,9 +111,6 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1_i_s_f_node.html'
   <div class="headertitle"><div class="title">score::gfx::ISFNode Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Data model for Interactive Shader Format filters.  
- <a href="classscore_1_1gfx_1_1_i_s_f_node.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for score::gfx::ISFNode:</div>
 <div class="dyncontent">
@@ -123,10 +121,12 @@ Inheritance diagram for score::gfx::ISFNode:</div>
 <area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="0,56,149,80"/>
   </map>
 </div></div>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Data model for Interactive Shader Format filters. </p>
-<p>See <a href="https://isf.video">https://isf.video</a> </p>
-</div><table class="memberdecls">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_i_s_f_node_1_1_size_expressions.html">SizeExpressions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5bb46d3eb6932d705f93762ad593dd8d" id="r_a5bb46d3eb6932d705f93762ad593dd8d"><td class="memItemLeft" align="right" valign="top"><a id="a5bb46d3eb6932d705f93762ad593dd8d" name="a5bb46d3eb6932d705f93762ad593dd8d"></a>
@@ -144,6 +144,8 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>computeTextureSize</
 <tr class="memitem:a280dee183f21421a3c0f148c1fc30149" id="r_a280dee183f21421a3c0f148c1fc30149"><td class="memItemLeft" align="right" valign="top"><a id="a280dee183f21421a3c0f148c1fc30149" name="a280dee183f21421a3c0f148c1fc30149"></a>
 const isf::descriptor &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>descriptor</b> () const noexcept</td></tr>
 <tr class="separator:a280dee183f21421a3c0f148c1fc30149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbe4a8e1083f52d6cf2a6b134b43c818" id="r_acbe4a8e1083f52d6cf2a6b134b43c818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_i_s_f_node.html#acbe4a8e1083f52d6cf2a6b134b43c818">adjustRenderTargetSpecs</a> (int32_t port, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;spec) const noexcept override</td></tr>
+<tr class="separator:acbe4a8e1083f52d6cf2a6b134b43c818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f936b69f62c56d802ad83fb8b7f1585" id="r_a3f936b69f62c56d802ad83fb8b7f1585"><td class="memItemLeft" align="right" valign="top"><a id="a3f936b69f62c56d802ad83fb8b7f1585" name="a3f936b69f62c56d802ad83fb8b7f1585"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>cameraInput</b> () const noexcept</td></tr>
 <tr class="separator:a3f936b69f62c56d802ad83fb8b7f1585"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,6 +287,12 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_computeS</b></td
 <tr class="memitem:aac22b2481cf8641b06a774403b222de3" id="r_aac22b2481cf8641b06a774403b222de3"><td class="memItemLeft" align="right" valign="top"><a id="aac22b2481cf8641b06a774403b222de3" name="aac22b2481cf8641b06a774403b222de3"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cameraInput</b> {-1}</td></tr>
 <tr class="separator:aac22b2481cf8641b06a774403b222de3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84eefed5210d250e57e81034adb29c9d" id="r_a84eefed5210d250e57e81034adb29c9d"><td class="memItemLeft" align="right" valign="top"><a id="a84eefed5210d250e57e81034adb29c9d" name="a84eefed5210d250e57e81034adb29c9d"></a>
+std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_sizeExpressionsMutex</b></td></tr>
+<tr class="separator:a84eefed5210d250e57e81034adb29c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff19b4988ff326f2fc120707dd67c0f" id="r_aeff19b4988ff326f2fc120707dd67c0f"><td class="memItemLeft" align="right" valign="top"><a id="aeff19b4988ff326f2fc120707dd67c0f" name="aeff19b4988ff326f2fc120707dd67c0f"></a>
+std::vector&lt; std::unique_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_i_s_f_node_1_1_size_expressions.html">SizeExpressions</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sizeExpressions</b></td></tr>
+<tr class="separator:aeff19b4988ff326f2fc120707dd67c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeab42c4afb889b0956fa7e0f143a843d" id="r_aeab42c4afb889b0956fa7e0f143a843d"><td class="memItemLeft" align="right" valign="top"><a id="aeab42c4afb889b0956fa7e0f143a843d" name="aeab42c4afb889b0956fa7e0f143a843d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_materialSize</b> {}</td></tr>
 <tr class="separator:aeab42c4afb889b0956fa7e0f143a843d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,6 +342,45 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2765c95a84e5969cde07a82d600b4e1a inherit pro_methods_classscore_1_1gfx_1_1_process_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acbe4a8e1083f52d6cf2a6b134b43c818" name="acbe4a8e1083f52d6cf2a6b134b43c818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbe4a8e1083f52d6cf2a6b134b43c818">&#9670;&#160;</a></span>adjustRenderTargetSpecs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::ISFNode::adjustRenderTargetSpecs </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;&#160;</td>
+          <td class="paramname"><em>spec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An image input whose JSON declares a MIPMAP_MODE samples a mip chain: the render target the upstream draws into gets one (shader board U37). </p>
+
+<p>Reimplemented from <a class="el" href="classscore_1_1gfx_1_1_node.html#aaaf71e897cdd44df4a2eaa648e331af4">score::gfx::Node</a>.</p>
+
+</div>
+</div>
 <a id="aa5d60b1d44019095612f67cdc2f11bbe" name="aa5d60b1d44019095612f67cdc2f11bbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5d60b1d44019095612f67cdc2f11bbe">&#9670;&#160;</a></span>createRenderer()</h2>
 

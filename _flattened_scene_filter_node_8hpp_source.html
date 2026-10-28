@@ -116,29 +116,34 @@ $(document).ready(function(){initNavTree('_flattened_scene_filter_node_8hpp_sour
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">   48</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">FlattenedSceneFilterNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">FlattenedSceneFilterNode</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">~FlattenedSceneFilterNode</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>ossia::geometry_spec <a class="code hl_function" href="namespacescore_1_1gfx.html#a14ee01e3e020cb6920bdb480756a1167">filterFlattenedScene</a>(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">const</span> ossia::geometry_spec&amp; in, <span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> match, <span class="keyword">const</span> std::string&amp; match_str);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">int</span> m_mode{0};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">int</span> m_match{0};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::string m_match_str;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="};">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">   54</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">FlattenedSceneFilterNode</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_process_node.html">ProcessNode</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">FlattenedSceneFilterNode</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">~FlattenedSceneFilterNode</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a>* createRenderer(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; r) <span class="keyword">const</span> <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> process(int32_t port, <span class="keyword">const</span> ossia::value&amp; v) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">int</span> m_mode{0};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">int</span> m_match{0};</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  std::string m_match_str;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_flattened_scene_filter_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">score::gfx::FlattenedSceneFilterNode</a></div><div class="ttdoc">Per-pass filter on a flattened scene: geometry_spec → geometry_spec.</div><div class="ttdef"><b>Definition</b> FlattenedSceneFilterNode.hpp:49</div></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_flattened_scene_filter_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_flattened_scene_filter_node.html">score::gfx::FlattenedSceneFilterNode</a></div><div class="ttdef"><b>Definition</b> FlattenedSceneFilterNode.hpp:55</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:216</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_process_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_process_node.html">score::gfx::ProcessNode</a></div><div class="ttdoc">Common base class for nodes that map to score processes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:250</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a14ee01e3e020cb6920bdb480756a1167"><div class="ttname"><a href="namespacescore_1_1gfx.html#a14ee01e3e020cb6920bdb480756a1167">score::gfx::filterFlattenedScene</a></div><div class="ttdeci">ossia::geometry_spec filterFlattenedScene(const ossia::geometry_spec &amp;in, int mode, int match, const std::string &amp;match_str)</div><div class="ttdoc">Per-pass filter on a flattened scene: geometry_spec → geometry_spec.</div><div class="ttdef"><b>Definition</b> FlattenedSceneFilterNode.cpp:74</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -116,6 +116,7 @@ Inheritance diagram for Gfx::VSA::Model:</div>
   <img src="class_gfx_1_1_v_s_a_1_1_model.png" usemap="#Gfx::VSA::Model_map" alt=""/>
   <map id="Gfx::VSA::Model_map" name="Gfx::VSA::Model_map">
 <area href="class_process_1_1_process_model.html" title="The Process class." alt="Process::ProcessModel" shape="rect" coords="140,224,411,248"/>
+<area href="class_gfx_1_1_shader_sampler_source.html" alt="Gfx::ShaderSamplerSource" shape="rect" coords="421,224,692,248"/>
 <area href="classscore_1_1_entity.html" alt="score::Entity&lt; ProcessModel &gt;" shape="rect" coords="0,168,271,192"/>
 <area href="classscore_1_1_serializable_interface.html" alt="score::SerializableInterface&lt; ProcessModel &gt;" shape="rect" coords="281,168,552,192"/>
 <area href="class_identified_object.html" title="The IdentifiedObject class." alt="IdentifiedObject&lt; model &gt;" shape="rect" coords="0,112,271,136"/>
@@ -125,6 +126,9 @@ Inheritance diagram for Gfx::VSA::Model:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac21eaa1a8df3658af192536b888fe2d8" id="r_ac21eaa1a8df3658af192536b888fe2d8"><td class="memItemLeft" align="right" valign="top"><a id="ac21eaa1a8df3658af192536b888fe2d8" name="ac21eaa1a8df3658af192536b888fe2d8"></a>
+const isf::sampler_config *&#160;</td><td class="memItemRight" valign="bottom"><b>shaderSampler</b> (const Gfx::TextureInlet &amp;inlet) const noexcept override</td></tr>
+<tr class="separator:ac21eaa1a8df3658af192536b888fe2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca6478fb339d56428ad9a4404d8af68" id="r_a0ca6478fb339d56428ad9a4404d8af68"><td class="memItemLeft" align="right" valign="top"><a id="a0ca6478fb339d56428ad9a4404d8af68" name="a0ca6478fb339d56428ad9a4404d8af68"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> (const <a class="el" href="struct_time_val.html">TimeVal</a> &amp;duration, const <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &gt; &amp;id, QObject *parent)</td></tr>
 <tr class="separator:a0ca6478fb339d56428ad9a4404d8af68"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,6 +464,11 @@ virtual <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; ProcessModel &g
 <tr class="memitem:aafa05e605f693e319e066767bd657abd inherit pub_methods_classscore_1_1_serializable_interface" id="r_aafa05e605f693e319e066767bd657abd"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>serialize_impl</b> (const <a class="el" href="struct_visitor_variant.html">VisitorVariant</a> &amp;vis) const</td></tr>
 <tr class="separator:aafa05e605f693e319e066767bd657abd inherit pub_methods_classscore_1_1_serializable_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_gfx_1_1_shader_sampler_source"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_gfx_1_1_shader_sampler_source')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_gfx_1_1_shader_sampler_source.html">Gfx::ShaderSamplerSource</a></td></tr>
+<tr class="memitem:a878592bd9f521f84f2077b2a64eb8c93 inherit pub_methods_class_gfx_1_1_shader_sampler_source" id="r_a878592bd9f521f84f2077b2a64eb8c93"><td class="memItemLeft" align="right" valign="top">
+virtual const isf::sampler_config *&#160;</td><td class="memItemRight" valign="bottom"><b>shaderSampler</b> (const TextureInlet &amp;inlet) const noexcept=0</td></tr>
+<tr class="memdesc:a878592bd9f521f84f2077b2a64eb8c93 inherit pub_methods_class_gfx_1_1_shader_sampler_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Null when the shader declares no sampler for that input. <br /></td></tr>
+<tr class="separator:a878592bd9f521f84f2077b2a64eb8c93 inherit pub_methods_class_gfx_1_1_shader_sampler_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>

@@ -125,7 +125,7 @@ Inheritance diagram for score::gfx::ScenePreprocessorNode:</div>
 <div class="textblock"><p>Bridge from <code>scene_spec</code> (hierarchical, CPU) to <code>geometry_spec</code> (flat, GPU-resident). </p>
 <p>Receives a <code>scene_spec</code> on its input port, walks the hierarchy, and emits a <code>geometry_spec</code> on its output port containing one geometry per scene mesh primitive. Each output geometry carries a set of well-known auxiliary buffers:</p>
 <ul>
-<li><code>scene_lights</code> : LightGPU[] (per scene light_component)</li>
+<li><code>scene_lights</code> : <a class="el" href="structscore_1_1gfx_1_1_raw_light_data.html">RawLightData</a>[] (per scene light_component)</li>
 <li><code>scene_materials</code> : <a class="el" href="structscore_1_1gfx_1_1_material_g_p_u.html">MaterialGPU</a>[] (per scene material)</li>
 <li><code>scene_materials_ext</code> : MaterialExtGPU[] (extended material data)</li>
 <li><code>per_draws</code> : PerDrawGPU[] (one per draw: model/normal mat, material/transform/skeleton slots)</li>
@@ -140,7 +140,7 @@ Inheritance diagram for score::gfx::ScenePreprocessorNode:</div>
 </ul>
 <p>Conditionally emitted (when present in the scene):</p><ul>
 <li><code>scene_material_uv_xforms</code> : mat3[] (per-material UV transforms)</li>
-<li><code>per_draw_bounds</code> : AABB[] (per-draw world-space bounds)</li>
+<li><code>per_draw_bounds</code> : AABB[] (per-draw local-space bounds, +-FLT_MAX when unknown)</li>
 <li><code>shadow_cascades</code> : CascadeUBO[] (shadow cascade matrices)</li>
 </ul>
 <p>Per-draw indexing in shaders uses the MDI <code>firstInstance</code> / <code>gl_DrawID</code> mechanism. Shaders read <code>per_draws[gl_DrawID]</code> to recover model/normal matrices and slot indices into the shared tables.</p>
@@ -243,6 +243,8 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetS
 <tr class="memitem:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_aa1b9dfcc16e1dc6a5e62282a5b830fca"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>resolveRenderTargetSpecs</b> (int32_t port, <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer) const noexcept</td></tr>
 <tr class="separator:aa1b9dfcc16e1dc6a5e62282a5b830fca inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf71e897cdd44df4a2eaa648e331af4 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_aaaf71e897cdd44df4a2eaa648e331af4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#aaaf71e897cdd44df4a2eaa648e331af4">adjustRenderTargetSpecs</a> (int32_t port, <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &amp;spec) const noexcept</td></tr>
+<tr class="separator:aaaf71e897cdd44df4a2eaa648e331af4 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node" id="r_af921dceec4cb7c4b4864b7e45cd1ca27"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structscore_1_1gfx_1_1_render_target_specs.html">RenderTargetSpecs</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#af921dceec4cb7c4b4864b7e45cd1ca27">firstInputRenderTargetSpecs</a> () const noexcept</td></tr>
 <tr class="memdesc:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the first texture input asks to be rendered into.  <br /></td></tr>
 <tr class="separator:af921dceec4cb7c4b4864b7e45cd1ca27 inherit pub_methods_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>

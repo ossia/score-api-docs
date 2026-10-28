@@ -192,6 +192,12 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="separator:adddf837fcd179b3383d7b869d548bdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8583732542b1d5d1527353296a9ba91b" id="r_a8583732542b1d5d1527353296a9ba91b"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_window.html#a8583732542b1d5d1527353296a9ba91b">onAboutToRender</a></td></tr>
 <tr class="separator:a8583732542b1d5d1527353296a9ba91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cee097f406174dc0adfeaf0322c9149" id="r_a7cee097f406174dc0adfeaf0322c9149"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_pointer_state.html">PointerState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_window.html#a7cee097f406174dc0adfeaf0322c9149">pointerState</a></td></tr>
+<tr class="separator:a7cee097f406174dc0adfeaf0322c9149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfeab9cad5ef690a38eab1b360a5e61c" id="r_acfeab9cad5ef690a38eab1b360a5e61c"><td class="memItemLeft" align="right" valign="top"><a id="acfeab9cad5ef690a38eab1b360a5e61c" name="acfeab9cad5ef690a38eab1b360a5e61c"></a>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onPointersChanged</b></td></tr>
+<tr class="memdesc:acfeab9cad5ef690a38eab1b360a5e61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on the GUI thread after each change of pointerState. <br /></td></tr>
+<tr class="separator:acfeab9cad5ef690a38eab1b360a5e61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae08ff883b7ffe38447a4371307db178a" id="r_ae08ff883b7ffe38447a4371307db178a"><td class="memItemLeft" align="right" valign="top"><a id="ae08ff883b7ffe38447a4371307db178a" name="ae08ff883b7ffe38447a4371307db178a"></a>
 std::function&lt; void(QRhiCommandBuffer &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>onRender</b></td></tr>
 <tr class="separator:ae08ff883b7ffe38447a4371307db178a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +224,21 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
       </table>
 </div><div class="memdoc">
 <p>Refreshes whatever gates a frame, before m_canRender is read. The vsync loop re-enters render() on its own, without ever passing through the node's own render(), so a node that recomputes state per tick needs a hook here or it only ever runs on the timer-driven path. </p>
+
+</div>
+</div>
+<a id="a7cee097f406174dc0adfeaf0322c9149" name="a7cee097f406174dc0adfeaf0322c9149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cee097f406174dc0adfeaf0322c9149">&#9670;&#160;</a></span>pointerState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="structscore_1_1gfx_1_1_pointer_state.html">PointerState</a>&gt; score::gfx::Window::pointerState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Filled from the mouse and touch events over the window: slot 0 the mouse or first finger, in clip space (<a class="el" href="structscore_1_1gfx_1_1_pointer_state.html">PointerState</a>). The window device publishes it as its <code>touch/points</code> address. </p>
 
 </div>
 </div>

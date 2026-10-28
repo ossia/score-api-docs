@@ -145,6 +145,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac6e342fd79af430c53b4d43e4c4a06d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4fcc2563e3cbb89d0265be7e4bfc740" id="r_ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#ab4fcc2563e3cbb89d0265be7e4bfc740">grabFrame</a> (int frames, const QString &amp;path) const</td></tr>
 <tr class="separator:ab4fcc2563e3cbb89d0265be7e4bfc740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9eebed39237e70dc84fcb7a738c595" id="r_a0d9eebed39237e70dc84fcb7a738c595"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1_window_device.html#a0d9eebed39237e70dc84fcb7a738c595">setPointer</a> (int slot, double x, double y, double pressure) const</td></tr>
+<tr class="separator:a0d9eebed39237e70dc84fcb7a738c595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3509b9db476a3919f2ff22e3c9ad9a3" id="r_ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memItemLeft" align="right" valign="top"><a id="ab3509b9db476a3919f2ff22e3c9ad9a3" name="ab3509b9db476a3919f2ff22e3c9ad9a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>GfxOutputDevice</b> (const <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a> &amp;settings, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:ab3509b9db476a3919f2ff22e3c9ad9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,6 +510,47 @@ score::hash_map&lt; <a class="el" href="struct_state_1_1_address.html">State::Ad
       </table>
 </div><div class="memdoc">
 <p>Render exactly <code>frames</code> times and return. See <a class="el" href="class_gfx_1_1_gfx_context.html#a0612cd2012de29ef69b2fce1e16d4f68" title="Render exactly frames times, synchronously, and return.">GfxContext::renderFrames</a>. Call it repeatedly to step frame by frame: the clock keeps counting across calls, so renderFrames(1) sixty times is the timeline renderFrames(60) is. </p>
+
+</div>
+</div>
+<a id="a0d9eebed39237e70dc84fcb7a738c595" name="a0d9eebed39237e70dc84fcb7a738c595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9eebed39237e70dc84fcb7a738c595">&#9670;&#160;</a></span>setPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::WindowDevice::setPointer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pressure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set pointer <code>slot</code> over this output, as the window's mouse and touch events do: <code>x</code>, <code>y</code> in clip space ([-1, 1], y up), <code>pressure</code> 0 when released. Writes the device's touch/points (what touch/history records) and, for slot 0, the mouse, cursor/clip and cursor/gl, so that a script can play a gesture into a grab (<a class="el" href="_pointer_addresses_8hpp_source.html">Window/PointerAddresses.hpp</a>). </p>
 
 </div>
 </div>

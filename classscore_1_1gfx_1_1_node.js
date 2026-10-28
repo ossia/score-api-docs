@@ -1,5 +1,6 @@
 var classscore_1_1gfx_1_1_node =
 [
+    [ "adjustRenderTargetSpecs", "classscore_1_1gfx_1_1_node.html#aaaf71e897cdd44df4a2eaa648e331af4", null ],
     [ "createRenderer", "classscore_1_1gfx_1_1_node.html#afada9ff513c4820efe50ee92c85364f6", null ],
     [ "firstInputRenderTargetSpecs", "classscore_1_1gfx_1_1_node.html#af921dceec4cb7c4b4864b7e45cd1ca27", null ],
     [ "hasExplicitRenderTargetSize", "classscore_1_1gfx_1_1_node.html#a086b847bb5817aa81399a77d84815ac6", null ],
