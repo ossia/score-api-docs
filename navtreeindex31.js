@@ -243,7 +243,7 @@ var NAVTREEINDEX31 =
 "score-plugin-avnd_2_avnd_processes_2_utils_8hpp_source.html":[13,0,0,2,8,2,22],
 "score-plugin-avnd_2_avnd_processes_2_value_serialization_8hpp_source.html":[13,0,0,2,8,2,23],
 "score-plugin-avnd_2_crousti_2_executor_8hpp_source.html":[13,0,0,2,8,3,5],
-"score-plugin-avnd_2_crousti_2_g_p_u_node_8hpp_source.html":[13,0,0,2,8,3,14],
+"score-plugin-avnd_2_crousti_2_gpu_node_8hpp_source.html":[13,0,0,2,8,3,14],
 "score-plugin-avnd_2_crousti_2_layer_8hpp_source.html":[13,0,0,2,8,3,16],
 "score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html":[13,0,0,2,8,3,21],
 "score-plugin-clap_2_clap_2_application_plugin_8hpp_source.html":[13,0,0,2,9,0,0],
