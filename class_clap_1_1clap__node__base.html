@@ -105,6 +105,7 @@ $(document).ready(function(){initNavTree('class_clap_1_1clap__node__base.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_clap_1_1clap__node__base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Clap::clap_node_base Class Reference</div></div>
 </div><!--header-->
@@ -205,6 +206,12 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_tick_frames</b> 
 <tr class="separator:aac0aa2445afd6f5c21c91f509115cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c3ee586078a26448d3807af35d3165" id="r_a65c3ee586078a26448d3807af35d3165"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::pair&lt; uint16_t, libremidi::ump &gt;, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a65c3ee586078a26448d3807af35d3165">m_deferred_midi</a></td></tr>
 <tr class="separator:a65c3ee586078a26448d3807af35d3165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d56589c8fba7d4e8bf5a7f4f156ffa1" id="r_a8d56589c8fba7d4e8bf5a7f4f156ffa1"><td class="memItemLeft" align="right" valign="top"><a id="a8d56589c8fba7d4e8bf5a7f4f156ffa1" name="a8d56589c8fba7d4e8bf5a7f4f156ffa1"></a>
+<a class="el" href="class_process_1_1_midi_sysex_arena.html">Process::MidiSysexArena</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysex_arena</b></td></tr>
+<tr class="separator:a8d56589c8fba7d4e8bf5a7f4f156ffa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dba4ed924b7a1363815f3b1bbeb665b" id="r_a5dba4ed924b7a1363815f3b1bbeb665b"><td class="memItemLeft" align="right" valign="top"><a id="a5dba4ed924b7a1363815f3b1bbeb665b" name="a5dba4ed924b7a1363815f3b1bbeb665b"></a>
+std::vector&lt; Process::MidiSysexArena::stream &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysex_streams</b></td></tr>
+<tr class="separator:a5dba4ed924b7a1363815f3b1bbeb665b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94da67a8249e1496d4ae7d9cd14c3b62" id="r_a94da67a8249e1496d4ae7d9cd14c3b62"><td class="memItemLeft" align="right" valign="top"><a id="a94da67a8249e1496d4ae7d9cd14c3b62" name="a94da67a8249e1496d4ae7d9cd14c3b62"></a>
 <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_input_events</b></td></tr>
 <tr class="separator:a94da67a8249e1496d4ae7d9cd14c3b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,6 +245,11 @@ clap_process_status&#160;</td><td class="memItemRight" valign="bottom"><b>m_last
 <tr class="memitem:ae4c14801eb9544f21f0003922a77acf1" id="r_ae4c14801eb9544f21f0003922a77acf1"><td class="memItemLeft" align="right" valign="top"><a id="ae4c14801eb9544f21f0003922a77acf1" name="ae4c14801eb9544f21f0003922a77acf1"></a>
 std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_all_notes_off</b> {false}</td></tr>
 <tr class="separator:ae4c14801eb9544f21f0003922a77acf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a20f675e6054716be9201ca4d85883df9" id="r_a20f675e6054716be9201ca4d85883df9"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a20f675e6054716be9201ca4d85883df9">max_sysex_events</a> = 128</td></tr>
+<tr class="separator:a20f675e6054716be9201ca4d85883df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac1c34e0cf34cda3f90bb1b3cdf2df76e" name="ac1c34e0cf34cda3f90bb1b3cdf2df76e"></a>
@@ -279,6 +291,29 @@ std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>
       </table>
 </div><div class="memdoc">
 <p>Events from ticks that covered no whole sample, with the port they came in on, waiting for the next block that does cover one. </p>
+
+</div>
+</div>
+<a id="a20f675e6054716be9201ca4d85883df9" name="a20f675e6054716be9201ca4d85883df9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f675e6054716be9201ca4d85883df9">&#9670;&#160;</a></span>max_sysex_events</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t Clap::clap_node_base::max_sysex_events = 128</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The bytes of the system-exclusive messages of one process call, until the next; one stream per MIDI input port. The sysex events of a call stay within the capacity reserved up front, since all_events points at them. </p>
 
 </div>
 </div>

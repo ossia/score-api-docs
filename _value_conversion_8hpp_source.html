@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('_value_conversion_8hpp_source.html',''
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// Whether a string is text at all: valid UTF-8 with no control character</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">// beyond tab, CR and LF. ossia&#39;s STRING is a std::string, so a device may put</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">// a PNG in one, and decoding that as text destroys it.</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>SCORE_LIB_STATE_EXPORT <span class="keywordtype">bool</span> isBinary(<span class="keyword">const</span> QByteArray&amp; bytes) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>SCORE_LIB_STATE_TEST_EXPORT <span class="keywordtype">bool</span> isBinary(<span class="keyword">const</span> QByteArray&amp; bytes) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// What a cell shows for bytes that are not text: the first few in hex, and the</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// count.</span></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('_value_conversion_8hpp_source.html',''
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">// The body of a quoted string literal: backslash, double quote and the</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">// whitespace a single line cannot carry become escapes, so that what</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// toPrettyString writes is what parseValue reads back.</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>SCORE_LIB_STATE_EXPORT QString escapeStringLiteral(<span class="keyword">const</span> QString&amp; s);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>SCORE_LIB_STATE_TEST_EXPORT QString escapeStringLiteral(<span class="keyword">const</span> QString&amp; s);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// Adornishments to allow to differentiate between different value types, e.g.</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// &#39;a&#39;, [&#39;a&#39;, 12], or &quot;str&quot; for a string.</span></div>

@@ -136,6 +136,8 @@ halp::knob_f32&lt;&quot;Offset&quot;, halp::range{-1., 1., 0.5}&gt;&#160;</td><t
 <tr class="separator:acf7723d6a4e6a4f15e2c9c9504d2452b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d598fed3c4dba351b047a15a6233aa2" id="r_a0d598fed3c4dba351b047a15a6233aa2"><td class="memItemLeft" align="right" valign="top">halp::toggle&lt;&quot;Lock to bars&quot;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_l_f_o_1_1v3_1_1_node_1_1ins.html#a0d598fed3c4dba351b047a15a6233aa2">lock_to_bars</a></td></tr>
 <tr class="separator:a0d598fed3c4dba351b047a15a6233aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af689c09db665f4745b8ab2887d7c8aaa" id="r_af689c09db665f4745b8ab2887d7c8aaa"><td class="memItemLeft" align="right" valign="top">halp::toggle&lt;&quot;One shot&quot;&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_l_f_o_1_1v3_1_1_node_1_1ins.html#af689c09db665f4745b8ab2887d7c8aaa">one_shot</a></td></tr>
+<tr class="separator:af689c09db665f4745b8ab2887d7c8aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a4c5c18b06c766ca6331f01b7d96a83de" name="a4c5c18b06c766ca6331f01b7d96a83de"></a>
@@ -165,6 +167,21 @@ halp::knob_f32&lt;&quot;Offset&quot;, halp::range{-1., 1., 0.5}&gt;&#160;</td><t
       </table>
 </div><div class="memdoc">
 <p>Synced only. Off, the cycles count from where playback started or the retrigger was pressed; on, from the start of the timeline (or the retrigger), so they fall on the bars wherever playback starts. </p>
+
+</div>
+</div>
+<a id="af689c09db665f4745b8ab2887d7c8aaa" name="af689c09db665f4745b8ab2887d7c8aaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af689c09db665f4745b8ab2887d7c8aaa">&#9670;&#160;</a></span>one_shot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">halp::toggle&lt;&quot;One shot&quot;&gt; Nodes::LFO::v3::Node::ins::one_shot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Runs a single cycle from the start of playback or from Retrigger, then sends nothing until the next Retrigger. </p>
 
 </div>
 </div>

@@ -106,47 +106,48 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_audio_looper_1_1_node
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="struct_nodes_1_1_audio_looper_1_1_node-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Nodes::AudioLooper::Node Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Nodes::AudioLooper::Node:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="struct_nodes_1_1_audio_looper_1_1_node.png" usemap="#Nodes::AudioLooper::Node_map" alt=""/>
+  <map id="Nodes::AudioLooper::Node_map" name="Nodes::AudioLooper::Node_map">
+<area href="struct_nodes_1_1_looper_1_1looper__node.html" alt="Nodes::Looper::looper_node&lt; Node &gt;" shape="rect" coords="0,0,225,24"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html">ins</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector.html">passthrough_selector</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html">ui</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html">worker_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a85b4aea660e00a5d3ed65327c2f708a2" id="r_a85b4aea660e00a5d3ed65327c2f708a2"><td class="memItemLeft" align="right" valign="top"><a id="a85b4aea660e00a5d3ed65327c2f708a2" name="a85b4aea660e00a5d3ed65327c2f708a2"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>LoopMode</b> { <b>Play</b>
-, <b>Record</b>
-, <b>Overdub</b>
-, <b>Stop</b>
- }</td></tr>
-<tr class="separator:a85b4aea660e00a5d3ed65327c2f708a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae159b1f9bc4b749a8689e268117ffb99" id="r_ae159b1f9bc4b749a8689e268117ffb99"><td class="memItemLeft" align="right" valign="top"><a id="ae159b1f9bc4b749a8689e268117ffb99" name="ae159b1f9bc4b749a8689e268117ffb99"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Postaction</b> { <b>Play</b>
-, <b>Overdub</b>
- }</td></tr>
-<tr class="separator:ae159b1f9bc4b749a8689e268117ffb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae972d07b32b4e005d3122e1ca5711cc4" id="r_ae972d07b32b4e005d3122e1ca5711cc4"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> { <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c">Always</a>
-, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166">Recording</a>
- }</td></tr>
-<tr class="separator:ae972d07b32b4e005d3122e1ca5711cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef63d8cef5ef1373ba303bb2e656c338" id="r_aef63d8cef5ef1373ba303bb2e656c338"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> { <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754">None</a>
-, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36">Record</a>
-, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75">Full</a>
- }</td></tr>
-<tr class="separator:aef63d8cef5ef1373ba303bb2e656c338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2d8a43ca213149a140607b1dd5adc7" id="r_aef2d8a43ca213149a140607b1dd5adc7"><td class="memItemLeft" align="right" valign="top"><a id="aef2d8a43ca213149a140607b1dd5adc7" name="aef2d8a43ca213149a140607b1dd5adc7"></a>
+<tr class="memitem:ae1ce7ed027d88b80d72f26178251b85d" id="r_ae1ce7ed027d88b80d72f26178251b85d"><td class="memItemLeft" align="right" valign="top"><a id="ae1ce7ed027d88b80d72f26178251b85d" name="ae1ce7ed027d88b80d72f26178251b85d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LoopMode</b> = Looper::LoopMode</td></tr>
+<tr class="separator:ae1ce7ed027d88b80d72f26178251b85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b0b77d067f2bbd21044cec278c6850" id="r_a58b0b77d067f2bbd21044cec278c6850"><td class="memItemLeft" align="right" valign="top"><a id="a58b0b77d067f2bbd21044cec278c6850" name="a58b0b77d067f2bbd21044cec278c6850"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Passthrough</b> = <a class="el" href="namespace_nodes_1_1_looper.html#a973985575f769af9a79e8fa99fc1f78c">Looper::Passthrough</a></td></tr>
+<tr class="separator:a58b0b77d067f2bbd21044cec278c6850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:aa027aea331fec14db24ae09d18a5f57b inherit pub_types_struct_nodes_1_1_looper_1_1looper__node" id="r_aa027aea331fec14db24ae09d18a5f57b"><td class="memItemLeft" align="right" valign="top">
+using&#160;</td><td class="memItemRight" valign="bottom"><b>LoopMode</b> = Looper::LoopMode</td></tr>
+<tr class="separator:aa027aea331fec14db24ae09d18a5f57b inherit pub_types_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04b07d757242873357dc8b4242d28f3d inherit pub_types_struct_nodes_1_1_looper_1_1looper__node" id="r_a04b07d757242873357dc8b4242d28f3d"><td class="memItemLeft" align="right" valign="top">
 using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = ossia::token_request</td></tr>
-<tr class="separator:aef2d8a43ca213149a140607b1dd5adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a04b07d757242873357dc8b4242d28f3d inherit pub_types_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,146 +160,409 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a10f795fc8fa1c74afa6347182fad9dbe" id="r_a10f795fc8fa1c74afa6347182fad9dbe"><td class="memItemLeft" align="right" valign="top"><a id="a10f795fc8fa1c74afa6347182fad9dbe" name="a10f795fc8fa1c74afa6347182fad9dbe"></a>
 Audio Utilities&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (author, &quot;ossia score&quot;) halp_meta(manual_url</td></tr>
 <tr class="separator:a10f795fc8fa1c74afa6347182fad9dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abff8a302da492b6646f0a6e8da111d3b" id="r_abff8a302da492b6646f0a6e8da111d3b"><td class="memItemLeft" align="right" valign="top"><a id="abff8a302da492b6646f0a6e8da111d3b" name="abff8a302da492b6646f0a6e8da111d3b"></a>
-Audio Utilities Loop audio&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;a0ad4227-ac3d-448b-a19b-19581ed4e2c6&quot;)</td></tr>
-<tr class="separator:abff8a302da492b6646f0a6e8da111d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a610bf1303b7e57e0f532b27e40c0c401" id="r_a610bf1303b7e57e0f532b27e40c0c401"><td class="memItemLeft" align="right" valign="top"><a id="a610bf1303b7e57e0f532b27e40c0c401" name="a610bf1303b7e57e0f532b27e40c0c401"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (recommended_height, 65)</td></tr>
-<tr class="separator:a610bf1303b7e57e0f532b27e40c0c401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7572bd1f2dccb4aef88444e153ad9244" id="r_a7572bd1f2dccb4aef88444e153ad9244"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a7572bd1f2dccb4aef88444e153ad9244">enterMode</a> (LoopMode m, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> restart)</td></tr>
-<tr class="separator:a7572bd1f2dccb4aef88444e153ad9244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa275fc81b65de0954b6c2d9efa2a8a19" id="r_aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memItemLeft" align="right" valign="top"><a id="aa275fc81b65de0954b6c2d9efa2a8a19" name="aa275fc81b65de0954b6c2d9efa2a8a19"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fade</b> (const ossia::token_request &amp;tk)</td></tr>
-<tr class="separator:aa275fc81b65de0954b6c2d9efa2a8a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4a30fa92cf60de8cacd699da8e4f85d" id="r_ad4a30fa92cf60de8cacd699da8e4f85d"><td class="memItemLeft" align="right" valign="top"><a id="ad4a30fa92cf60de8cacd699da8e4f85d" name="ad4a30fa92cf60de8cacd699da8e4f85d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeAction</b> (const ossia::token_request &amp;tk)</td></tr>
-<tr class="separator:ad4a30fa92cf60de8cacd699da8e4f85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad850b7d24fe93e490c63194448443fca" id="r_ad850b7d24fe93e490c63194448443fca"><td class="memItemLeft" align="right" valign="top"><a id="ad850b7d24fe93e490c63194448443fca" name="ad850b7d24fe93e490c63194448443fca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>checkPostAction</b> (const std::string &amp;postaction, int postaction_bars, const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">State</a> &amp;st)</td></tr>
-<tr class="separator:ad850b7d24fe93e490c63194448443fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742965aecd162738a2ea72fd7e3a4f94" id="r_a742965aecd162738a2ea72fd7e3a4f94"><td class="memItemLeft" align="right" valign="top"><a id="a742965aecd162738a2ea72fd7e3a4f94" name="a742965aecd162738a2ea72fd7e3a4f94"></a>
+Audio Utilities Loop audio in and turn the loop into a clip of the timeline&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;a0ad4227-ac3d-448b-a19b-19581ed4e2c6&quot;)</td></tr>
+<tr class="separator:a742965aecd162738a2ea72fd7e3a4f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4060619b3e0cff120024b645a5ad88" id="r_a5f4060619b3e0cff120024b645a5ad88"><td class="memItemLeft" align="right" valign="top"><a id="a5f4060619b3e0cff120024b645a5ad88" name="a5f4060619b3e0cff120024b645a5ad88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (recommended_height, 200)</td></tr>
+<tr class="separator:a5f4060619b3e0cff120024b645a5ad88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae9b8323e68a8440c47850a19062709" id="r_aeae9b8323e68a8440c47850a19062709"><td class="memItemLeft" align="right" valign="top"><a id="aeae9b8323e68a8440c47850a19062709" name="aeae9b8323e68a8440c47850a19062709"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_flag</b> (process_exec)</td></tr>
+<tr class="separator:aeae9b8323e68a8440c47850a19062709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121b6552cdb71b47622480647e7497c5" id="r_a121b6552cdb71b47622480647e7497c5"><td class="memItemLeft" align="right" valign="top"><a id="a121b6552cdb71b47622480647e7497c5" name="a121b6552cdb71b47622480647e7497c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_message</b> (const <a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a> &amp;r)</td></tr>
+<tr class="memdesc:a121b6552cdb71b47622480647e7497c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">From the view: applied at the start of the next tick. <br /></td></tr>
+<tr class="separator:a121b6552cdb71b47622480647e7497c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ea8eab3c336caf60b4b7c5ced7c8f7" id="r_af8ea8eab3c336caf60b4b7c5ced7c8f7"><td class="memItemLeft" align="right" valign="top"><a id="af8ea8eab3c336caf60b4b7c5ced7c8f7" name="af8ea8eab3c336caf60b4b7c5ced7c8f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="separator:af8ea8eab3c336caf60b4b7c5ced7c8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab8913a442fb0ac74b6e202aadc5fac6" id="r_aab8913a442fb0ac74b6e202aadc5fac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aab8913a442fb0ac74b6e202aadc5fac6">prepare_stretch</a> (double rate, int frames)</td></tr>
+<tr class="separator:aab8913a442fb0ac74b6e202aadc5fac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff091c625ab14d4e21e1da99b25b9d2" id="r_a1ff091c625ab14d4e21e1da99b25b9d2"><td class="memItemLeft" align="right" valign="top"><a id="a1ff091c625ab14d4e21e1da99b25b9d2" name="a1ff091c625ab14d4e21e1da99b25b9d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>allocate_ring</b> (int channels, int64_t frames)</td></tr>
+<tr class="memdesc:a1ff091c625ab14d4e21e1da99b25b9d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main thread only. <br /></td></tr>
+<tr class="separator:a1ff091c625ab14d4e21e1da99b25b9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ebef0cc5d875fcb3d6aba4725b85aa" id="r_ac9ebef0cc5d875fcb3d6aba4725b85aa"><td class="memItemLeft" align="right" valign="top"><a id="ac9ebef0cc5d875fcb3d6aba4725b85aa" name="ac9ebef0cc5d875fcb3d6aba4725b85aa"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>looper_run</b> (int64_t start, int64_t length)</td></tr>
+<tr class="separator:ac9ebef0cc5d875fcb3d6aba4725b85aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb60ff6422bc893f4341f18cdf9afef" id="r_afcb60ff6422bc893f4341f18cdf9afef"><td class="memItemLeft" align="right" valign="top"><a id="afcb60ff6422bc893f4341f18cdf9afef" name="afcb60ff6422bc893f4341f18cdf9afef"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>run_mode</b> (int64_t start, int64_t length)</td></tr>
+<tr class="separator:afcb60ff6422bc893f4341f18cdf9afef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170dc5a38924e2a979c078a643c8e549" id="r_a170dc5a38924e2a979c078a643c8e549"><td class="memItemLeft" align="right" valign="top"><a id="a170dc5a38924e2a979c078a643c8e549" name="a170dc5a38924e2a979c078a643c8e549"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_trim_recording</b> (int64_t frames)</td></tr>
+<tr class="separator:a170dc5a38924e2a979c078a643c8e549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b29defa9f7b2d4023348db00e732e54" id="r_a1b29defa9f7b2d4023348db00e732e54"><td class="memItemLeft" align="right" valign="top"><a id="a1b29defa9f7b2d4023348db00e732e54" name="a1b29defa9f7b2d4023348db00e732e54"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const tick &amp;tk)</td></tr>
 <tr class="separator:a1b29defa9f7b2d4023348db00e732e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af46bd730213ff55a15ebb254860583d5" id="r_af46bd730213ff55a15ebb254860583d5"><td class="memItemLeft" align="right" valign="top"><a id="af46bd730213ff55a15ebb254860583d5" name="af46bd730213ff55a15ebb254860583d5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>preAction</b> (ossia::token_request tk, Postaction postaction, int postaction_bars, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> passthrough, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a> restart)</td></tr>
-<tr class="separator:af46bd730213ff55a15ebb254860583d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a562dd83b9cbb6439f1b25d7d71849c63" id="r_a562dd83b9cbb6439f1b25d7d71849c63"><td class="memItemLeft" align="right" valign="top"><a id="a562dd83b9cbb6439f1b25d7d71849c63" name="a562dd83b9cbb6439f1b25d7d71849c63"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (const ossia::token_request &amp;tk, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> pt)</td></tr>
-<tr class="separator:a562dd83b9cbb6439f1b25d7d71849c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae08bc4bcbf2b27f5f9881d04fb279336" id="r_ae08bc4bcbf2b27f5f9881d04fb279336"><td class="memItemLeft" align="right" valign="top"><a id="ae08bc4bcbf2b27f5f9881d04fb279336" name="ae08bc4bcbf2b27f5f9881d04fb279336"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>action</b> (int64_t start, int64_t length, <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Passthrough</a> pt)</td></tr>
-<tr class="separator:ae08bc4bcbf2b27f5f9881d04fb279336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9545a5ed8a81857a89aea7582850090" id="r_ad9545a5ed8a81857a89aea7582850090"><td class="memItemLeft" align="right" valign="top"><a id="ad9545a5ed8a81857a89aea7582850090" name="ad9545a5ed8a81857a89aea7582850090"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>play</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:ad9545a5ed8a81857a89aea7582850090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3177ecacf5ac8b0e8b905b26b69e5f" id="r_a1f3177ecacf5ac8b0e8b905b26b69e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a1f3177ecacf5ac8b0e8b905b26b69e5f">silence</a> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:a1f3177ecacf5ac8b0e8b905b26b69e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a392169a298ebe67db0df578893e84aa0" id="r_a392169a298ebe67db0df578893e84aa0"><td class="memItemLeft" align="right" valign="top"><a id="a392169a298ebe67db0df578893e84aa0" name="a392169a298ebe67db0df578893e84aa0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mix_input</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:a392169a298ebe67db0df578893e84aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa28064132dd4dd61bbf40255248e7fa" id="r_afa28064132dd4dd61bbf40255248e7fa"><td class="memItemLeft" align="right" valign="top"><a id="afa28064132dd4dd61bbf40255248e7fa" name="afa28064132dd4dd61bbf40255248e7fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:afa28064132dd4dd61bbf40255248e7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b5948aeb1f677986a7f43e3db2903f" id="r_a74b5948aeb1f677986a7f43e3db2903f"><td class="memItemLeft" align="right" valign="top"><a id="a74b5948aeb1f677986a7f43e3db2903f" name="a74b5948aeb1f677986a7f43e3db2903f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:a74b5948aeb1f677986a7f43e3db2903f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66cd38410c964e5a3adbbd07521d35dc" id="r_a66cd38410c964e5a3adbbd07521d35dc"><td class="memItemLeft" align="right" valign="top"><a id="a66cd38410c964e5a3adbbd07521d35dc" name="a66cd38410c964e5a3adbbd07521d35dc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>record_noecho</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:a66cd38410c964e5a3adbbd07521d35dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0b9b4df43473f75a1038306f4f93ef" id="r_abf0b9b4df43473f75a1038306f4f93ef"><td class="memItemLeft" align="right" valign="top"><a id="abf0b9b4df43473f75a1038306f4f93ef" name="abf0b9b4df43473f75a1038306f4f93ef"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>overdub</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:abf0b9b4df43473f75a1038306f4f93ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc91392d3d873690852745050363863" id="r_aadc91392d3d873690852745050363863"><td class="memItemLeft" align="right" valign="top"><a id="aadc91392d3d873690852745050363863" name="aadc91392d3d873690852745050363863"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>overdub_noecho</b> (int64_t first_pos, int64_t samples)</td></tr>
-<tr class="separator:aadc91392d3d873690852745050363863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c8293273843244d34b2d96241f4841" id="r_a94c8293273843244d34b2d96241f4841"><td class="memItemLeft" align="right" valign="top"><a id="a94c8293273843244d34b2d96241f4841" name="a94c8293273843244d34b2d96241f4841"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
+<tr class="memdesc:a94c8293273843244d34b2d96241f4841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stopping the process keeps the loop: only the transport starts over. <br /></td></tr>
+<tr class="separator:a94c8293273843244d34b2d96241f4841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbacc5c6bf97f8a8bf1a89cf51d37b52" id="r_adbacc5c6bf97f8a8bf1a89cf51d37b52"><td class="memItemLeft" align="right" valign="top"><a id="adbacc5c6bf97f8a8bf1a89cf51d37b52" name="adbacc5c6bf97f8a8bf1a89cf51d37b52"></a>
+const float *&#160;</td><td class="memItemRight" valign="bottom"><b>layer_data</b> (int layer, int chan) const noexcept</td></tr>
+<tr class="separator:adbacc5c6bf97f8a8bf1a89cf51d37b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d193c77d51168aaa3471b82a45240e" id="r_a76d193c77d51168aaa3471b82a45240e"><td class="memTemplParams" colspan="2"><a id="a76d193c77d51168aaa3471b82a45240e" name="a76d193c77d51168aaa3471b82a45240e"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a76d193c77d51168aaa3471b82a45240e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fetch_audio</b> (int64_t start, int64_t frames, T **out) noexcept</td></tr>
+<tr class="memdesc:a76d193c77d51168aaa3471b82a45240e"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the stretchers read: the loop as it is heard, round and round. <br /></td></tr>
+<tr class="separator:a76d193c77d51168aaa3471b82a45240e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06e5a9989c199cc67547bf72308d0569" id="r_a06e5a9989c199cc67547bf72308d0569"><td class="memTemplParams" colspan="2"><a id="a06e5a9989c199cc67547bf72308d0569" name="a06e5a9989c199cc67547bf72308d0569"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a06e5a9989c199cc67547bf72308d0569"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fetch_audio_backward</b> (int64_t, int64_t frames, T **out) noexcept</td></tr>
+<tr class="separator:a06e5a9989c199cc67547bf72308d0569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:aab46c601460a33b8778e6b23c5f19a5b inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aab46c601460a33b8778e6b23c5f19a5b"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>loop_arrived</b> () noexcept</td></tr>
+<tr class="memdesc:aab46c601460a33b8778e6b23c5f19a5b inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value came in on Mode. <br /></td></tr>
+<tr class="separator:aab46c601460a33b8778e6b23c5f19a5b inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38628462648d503dec7330e3105c38a1 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a38628462648d503dec7330e3105c38a1"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_close_take</b> (const ossia::token_request &amp;tk, LoopMode mode, bool ended_by_postaction)</td></tr>
+<tr class="separator:a38628462648d503dec7330e3105c38a1 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d1176bf5255ff87071930d9271cca1d inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a8d1176bf5255ff87071930d9271cca1d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a8d1176bf5255ff87071930d9271cca1d">looper_trim_extension</a> (int64_t max_frames)</td></tr>
+<tr class="separator:a8d1176bf5255ff87071930d9271cca1d inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121b39a70a1721ae450187106f754449 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a121b39a70a1721ae450187106f754449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a121b39a70a1721ae450187106f754449">looper_rephase</a> (const ossia::token_request &amp;tk)</td></tr>
+<tr class="separator:a121b39a70a1721ae450187106f754449 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adefc1fe78535f0e7d9787665994dd1b2 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_adefc1fe78535f0e7d9787665994dd1b2"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>looper_frames_to_end</b> () const noexcept</td></tr>
+<tr class="memdesc:adefc1fe78535f0e7d9787665994dd1b2 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">An extending overdub grows the loop at its end instead of reaching it. <br /></td></tr>
+<tr class="separator:adefc1fe78535f0e7d9787665994dd1b2 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec96c34c5ebf36316a206f35258d3a7 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_adec96c34c5ebf36316a206f35258d3a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1loop__period.html">Looper::loop_period</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#adec96c34c5ebf36316a206f35258d3a7">looper_period</a> (const ossia::token_request &amp;tk) const noexcept</td></tr>
+<tr class="separator:adec96c34c5ebf36316a206f35258d3a7 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a146e1a7a18fa2de66472e2d22d29cb5f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a146e1a7a18fa2de66472e2d22d29cb5f"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_point</b> ()</td></tr>
+<tr class="separator:a146e1a7a18fa2de66472e2d22d29cb5f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a714c08ef26669471010879ca13e8f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a07a714c08ef26669471010879ca13e8f"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>looper_passes</b> () const noexcept</td></tr>
+<tr class="separator:a07a714c08ef26669471010879ca13e8f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1b1859485b3ef8cd66d18370f77e86 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a1b1b1859485b3ef8cd66d18370f77e86"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>looper_muted</b> (int pass) const noexcept</td></tr>
+<tr class="separator:a1b1b1859485b3ef8cd66d18370f77e86 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a944ac3bfd6086aaaf6b01fe8a9eafa17 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a944ac3bfd6086aaaf6b01fe8a9eafa17"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_set_muted</b> (int pass, bool muted)</td></tr>
+<tr class="separator:a944ac3bfd6086aaaf6b01fe8a9eafa17 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa974c2cb2d0edb056af84e16344834cc inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa974c2cb2d0edb056af84e16344834cc"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_mute</b> (int pass)</td></tr>
+<tr class="separator:aa974c2cb2d0edb056af84e16344834cc inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8551eea1f5a525a6b7a4254e1c14aa10 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a8551eea1f5a525a6b7a4254e1c14aa10"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_erase</b> (int pass)</td></tr>
+<tr class="separator:a8551eea1f5a525a6b7a4254e1c14aa10 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae5f026dedc17953e6852dc1a46cbd213" id="r_ae5f026dedc17953e6852dc1a46cbd213"><td class="memItemLeft" align="right" valign="top">static constexpr std::array&lt; int, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae5f026dedc17953e6852dc1a46cbd213">removed_inlets</a> () noexcept</td></tr>
+<tr class="separator:ae5f026dedc17953e6852dc1a46cbd213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a68568bb6bd41f1d6d38dcf40ae2151e6" id="r_a68568bb6bd41f1d6d38dcf40ae2151e6"><td class="memItemLeft" align="right" valign="top"><a id="a68568bb6bd41f1d6d38dcf40ae2151e6" name="a68568bb6bd41f1d6d38dcf40ae2151e6"></a>
-Audio Utilities&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta(description</td></tr>
+Audio Utilities&#160;</td><td class="memItemRight" valign="bottom"><b>https</b>: halp_meta( description</td></tr>
 <tr class="separator:a68568bb6bd41f1d6d38dcf40ae2151e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81ebac0c6dff7b2aae23bafb9702ff04" id="r_a81ebac0c6dff7b2aae23bafb9702ff04"><td class="memItemLeft" align="right" valign="top"><a id="a81ebac0c6dff7b2aae23bafb9702ff04" name="a81ebac0c6dff7b2aae23bafb9702ff04"></a>
+Audio Utilities Loop audio in&#160;</td><td class="memItemRight" valign="bottom"><b>layers</b></td></tr>
+<tr class="separator:a81ebac0c6dff7b2aae23bafb9702ff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae3a966fc371a7bc336f5e4083c5758" id="r_a2ae3a966fc371a7bc336f5e4083c5758"><td class="memItemLeft" align="right" valign="top"><a id="a2ae3a966fc371a7bc336f5e4083c5758" name="a2ae3a966fc371a7bc336f5e4083c5758"></a>
 struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html">Nodes::AudioLooper::Node::ins</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
 <tr class="separator:a2ae3a966fc371a7bc336f5e4083c5758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad570f50cddbfe67a72eb610f3a399b7b" id="r_ad570f50cddbfe67a72eb610f3a399b7b"><td class="memItemLeft" ><a id="ad570f50cddbfe67a72eb610f3a399b7b" name="ad570f50cddbfe67a72eb610f3a399b7b"></a>
+<tr class="memitem:af49edebd622df26899f890f3b79c6f40" id="r_af49edebd622df26899f890f3b79c6f40"><td class="memItemLeft" ><a id="af49edebd622df26899f890f3b79c6f40" name="af49edebd622df26899f890f3b79c6f40"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a573c4eb7c66610fd16cce86a0b631e0b" id="r_a573c4eb7c66610fd16cce86a0b631e0b"><td class="memItemLeft" >
+<tr class="memitem:a481e16f9451d93e7ca375736bf3c8fad" id="r_a481e16f9451d93e7ca375736bf3c8fad"><td class="memItemLeft" >
 &#160;&#160;&#160;halp::mimic_audio_bus&lt;&quot;out&quot;, &amp;ins::audio &gt;&#160;&#160;&#160;<b>audio</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a573c4eb7c66610fd16cce86a0b631e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad570f50cddbfe67a72eb610f3a399b7b" id="r_ad570f50cddbfe67a72eb610f3a399b7b"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ad570f50cddbfe67a72eb610f3a399b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d9b6581d0fedc87b7b3093c54528e9f" id="r_a5d9b6581d0fedc87b7b3093c54528e9f"><td class="memItemLeft" align="right" valign="top"><a id="a5d9b6581d0fedc87b7b3093c54528e9f" name="a5d9b6581d0fedc87b7b3093c54528e9f"></a>
-struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html">Nodes::AudioLooper::Node::State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
-<tr class="separator:a5d9b6581d0fedc87b7b3093c54528e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a481e16f9451d93e7ca375736bf3c8fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1d2b9527d7cf1b5d66221d9509364f" id="r_a3d1d2b9527d7cf1b5d66221d9509364f"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>phase</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3d1d2b9527d7cf1b5d66221d9509364f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49edebd622df26899f890f3b79c6f40" id="r_af49edebd622df26899f890f3b79c6f40"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af49edebd622df26899f890f3b79c6f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66efcc66cf98395da37959fa8b081cff" id="r_a66efcc66cf98395da37959fa8b081cff"><td class="memItemLeft" align="right" valign="top"><a id="a66efcc66cf98395da37959fa8b081cff" name="a66efcc66cf98395da37959fa8b081cff"></a>
+struct <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html">Nodes::AudioLooper::Node::worker_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>worker</b></td></tr>
+<tr class="separator:a66efcc66cf98395da37959fa8b081cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e391aebd7a1b1e0896981e4c8987c5" id="r_a15e391aebd7a1b1e0896981e4c8987c5"><td class="memItemLeft" align="right" valign="top"><a id="a15e391aebd7a1b1e0896981e4c8987c5" name="a15e391aebd7a1b1e0896981e4c8987c5"></a>
+std::function&lt; void(<a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>send_message</b></td></tr>
+<tr class="separator:a15e391aebd7a1b1e0896981e4c8987c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ee52e6c7bc340d0f03ac1c800079e5" id="r_ab9ee52e6c7bc340d0f03ac1c800079e5"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ab9ee52e6c7bc340d0f03ac1c800079e5">send_message_from_worker</a></td></tr>
+<tr class="separator:ab9ee52e6c7bc340d0f03ac1c800079e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb047618679daa80c2d79aa7e716b1e8" id="r_adb047618679daa80c2d79aa7e716b1e8"><td class="memItemLeft" align="right" valign="top"><a id="adb047618679daa80c2d79aa7e716b1e8" name="adb047618679daa80c2d79aa7e716b1e8"></a>
+const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_document_context</b> {}</td></tr>
+<tr class="separator:adb047618679daa80c2d79aa7e716b1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e07bdad07701ca80c2a14c83ab41bf5" id="r_a0e07bdad07701ca80c2a14c83ab41bf5"><td class="memItemLeft" align="right" valign="top"><a id="a0e07bdad07701ca80c2a14c83ab41bf5" name="a0e07bdad07701ca80c2a14c83ab41bf5"></a>
 ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_state</b></td></tr>
 <tr class="separator:a0e07bdad07701ca80c2a14c83ab41bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77aeae51d2ee7026fd98dc2c6791813c" id="r_a77aeae51d2ee7026fd98dc2c6791813c"><td class="memItemLeft" align="right" valign="top"><a id="a77aeae51d2ee7026fd98dc2c6791813c" name="a77aeae51d2ee7026fd98dc2c6791813c"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1audio__layers.html">Looper::audio_layers</a>&#160;</td><td class="memItemRight" valign="bottom"><b>layers</b></td></tr>
+<tr class="separator:a77aeae51d2ee7026fd98dc2c6791813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d709f50c440d7b9df9c51cfacb3310" id="r_a04d709f50c440d7b9df9c51cfacb3310"><td class="memItemLeft" align="right" valign="top"><a id="a04d709f50c440d7b9df9c51cfacb3310" name="a04d709f50c440d7b9df9c51cfacb3310"></a>
+std::shared_ptr&lt; <a class="el" href="struct_nodes_1_1_looper_1_1take__writer.html">Looper::take_writer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>writer</b></td></tr>
+<tr class="separator:a04d709f50c440d7b9df9c51cfacb3310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd803704659a325f0261ed4db124d6c" id="r_abfd803704659a325f0261ed4db124d6c"><td class="memItemLeft" align="right" valign="top"><a id="abfd803704659a325f0261ed4db124d6c" name="abfd803704659a325f0261ed4db124d6c"></a>
+std::shared_ptr&lt; <a class="el" href="struct_nodes_1_1_looper_1_1export__buffer.html">Looper::export_buffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>export_audio</b></td></tr>
+<tr class="separator:abfd803704659a325f0261ed4db124d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c7020b4c2991483503515380908a2e2" id="r_a8c7020b4c2991483503515380908a2e2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="struct_nodes_1_1_looper_1_1audio__stop__take.html">Looper::audio_stop_take</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a8c7020b4c2991483503515380908a2e2">stop_take</a></td></tr>
+<tr class="separator:a8c7020b4c2991483503515380908a2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:ac614ad2465d1f6c84e06a782de3ca7bf inherit pub_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ac614ad2465d1f6c84e06a782de3ca7bf"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1transport.html">Looper::transport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transport</b></td></tr>
+<tr class="separator:ac614ad2465d1f6c84e06a782de3ca7bf inherit pub_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a089977beacfb97ada4564848dca62c09" id="r_a089977beacfb97ada4564848dca62c09"><td class="memItemLeft" align="right" valign="top">static constexpr int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a089977beacfb97ada4564848dca62c09">work_per_tick</a> = 262144</td></tr>
+<tr class="separator:a089977beacfb97ada4564848dca62c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a4c5080285c0c3ce2ede28e234de017fd" id="r_a4c5080285c0c3ce2ede28e234de017fd"><td class="memItemLeft" align="right" valign="top"><a id="a4c5080285c0c3ce2ede28e234de017fd" name="a4c5080285c0c3ce2ede28e234de017fd"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>Looper::looper_node&lt; Node &gt;</b></td></tr>
+<tr class="separator:a4c5080285c0c3ce2ede28e234de017fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:a8d674113ce0a38769554bb2f858f743e inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a8d674113ce0a38769554bb2f858f743e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a8d674113ce0a38769554bb2f858f743e">pass_pending</a> () const noexcept</td></tr>
+<tr class="separator:a8d674113ce0a38769554bb2f858f743e inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23beb5bd08186846c8876a7611daf3f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a23beb5bd08186846c8876a7611daf3f7"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pass_open</b> () const noexcept</td></tr>
+<tr class="memdesc:a23beb5bd08186846c8876a7611daf3f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pass is open in the stack. <br /></td></tr>
+<tr class="separator:a23beb5bd08186846c8876a7611daf3f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dbfde0e77b1969ca36e6c029b4f7e7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a60dbfde0e77b1969ca36e6c029b4f7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60dbfde0e77b1969ca36e6c029b4f7e7">material_arriving</a> ()</td></tr>
+<tr class="separator:a60dbfde0e77b1969ca36e6c029b4f7e7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d6e7fb03549c9d9978c0df73f864c4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a79d6e7fb03549c9d9978c0df73f864c4"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pass_advanced</b> (double frames, bool backwards)</td></tr>
+<tr class="memdesc:a79d6e7fb03549c9d9978c0df73f864c4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pass being taken in went over <code>frames</code> more frames of the loop. <br /></td></tr>
+<tr class="separator:a79d6e7fb03549c9d9978c0df73f864c4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8004391e075b165bea79dd484862fc5b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a8004391e075b165bea79dd484862fc5b"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>pass_progress</b> () const noexcept</td></tr>
+<tr class="memdesc:a8004391e075b165bea79dd484862fc5b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frames the pass being taken in went over. <br /></td></tr>
+<tr class="separator:a8004391e075b165bea79dd484862fc5b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528a9905b452c057b6af7ac2c1db9360 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a528a9905b452c057b6af7ac2c1db9360"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>passes_changing</b> ()</td></tr>
+<tr class="memdesc:a528a9905b452c057b6af7ac2c1db9360 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The passes, or what is heard of them, are about to change. <br /></td></tr>
+<tr class="separator:a528a9905b452c057b6af7ac2c1db9360 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85920f9ea49e3a8cdf27b71730256213 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a85920f9ea49e3a8cdf27b71730256213"><td class="memItemLeft" align="right" valign="top">
+Node &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>self</b> () noexcept</td></tr>
+<tr class="separator:a85920f9ea49e3a8cdf27b71730256213 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a5d1844a65dfcd268b28aa84ab0912 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a19a5d1844a65dfcd268b28aa84ab0912"><td class="memItemLeft" align="right" valign="top">
+const Node &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>self</b> () const noexcept</td></tr>
+<tr class="separator:a19a5d1844a65dfcd268b28aa84ab0912 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a68c076d1a9b958d4c007c0e8efdc0 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a17a68c076d1a9b958d4c007c0e8efdc0"><td class="memItemLeft" align="right" valign="top">
+auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stack</b> () noexcept</td></tr>
+<tr class="separator:a17a68c076d1a9b958d4c007c0e8efdc0 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686eedf85d1f3143457dfa674e30d41c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a686eedf85d1f3143457dfa674e30d41c"><td class="memItemLeft" align="right" valign="top">
+const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stack</b> () const noexcept</td></tr>
+<tr class="separator:a686eedf85d1f3143457dfa674e30d41c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1acfa6741e3ef8e14c8098118eb7ac9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa1acfa6741e3ef8e14c8098118eb7ac9"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>view_request</b> (const <a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a> &amp;r) noexcept</td></tr>
+<tr class="memdesc:aa1acfa6741e3ef8e14c8098118eb7ac9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">From the view: applied at the start of the next tick. <br /></td></tr>
+<tr class="separator:aa1acfa6741e3ef8e14c8098118eb7ac9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd63b7b0b14d4bcda730cd19f36f1d1e inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_abd63b7b0b14d4bcda730cd19f36f1d1e"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>run_tick</b> (const tick &amp;tk)</td></tr>
+<tr class="separator:abd63b7b0b14d4bcda730cd19f36f1d1e inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ca3343831b959f2b2e246d0815cc5a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ae2ca3343831b959f2b2e246d0815cc5a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>apply_buttons</b> ()</td></tr>
+<tr class="separator:ae2ca3343831b959f2b2e246d0815cc5a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace162da61e65c6f0de883e21878cc818 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ace162da61e65c6f0de883e21878cc818"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>follow_merges</b> ()</td></tr>
+<tr class="separator:ace162da61e65c6f0de883e21878cc818 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0193589812401d8bd0b9e8ed60ecd8f6 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a0193589812401d8bd0b9e8ed60ecd8f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a0193589812401d8bd0b9e8ed60ecd8f6">clear_loop</a> ()</td></tr>
+<tr class="separator:a0193589812401d8bd0b9e8ed60ecd8f6 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d1984730ed289333147ca05ee51eb9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ad5d1984730ed289333147ca05ee51eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#ad5d1984730ed289333147ca05ee51eb9">drop_taken_pass</a> ()</td></tr>
+<tr class="separator:ad5d1984730ed289333147ca05ee51eb9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60732bd38f89eafb5cf223924fffff9b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a60732bd38f89eafb5cf223924fffff9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60732bd38f89eafb5cf223924fffff9b">undo_pass</a> ()</td></tr>
+<tr class="separator:a60732bd38f89eafb5cf223924fffff9b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82091993a7d81a6b6f86e7cf1b4d3634 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a82091993a7d81a6b6f86e7cf1b4d3634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a82091993a7d81a6b6f86e7cf1b4d3634">erase_pass</a> (int pass)</td></tr>
+<tr class="separator:a82091993a7d81a6b6f86e7cf1b4d3634 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa3a2069bec3b2da272a85c3177a9579a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mute_pass</b> (int pass)</td></tr>
+<tr class="memdesc:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">A muted pass is kept as it is; muting it again lets it be heard. <br /></td></tr>
+<tr class="separator:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd1cdc9e230b7bda68528a986951f81c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_afd1cdc9e230b7bda68528a986951f81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#afd1cdc9e230b7bda68528a986951f81c">make_room</a> ()</td></tr>
+<tr class="separator:afd1cdc9e230b7bda68528a986951f81c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320ce60c3a51c0c489c568bb8ddc8d8b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a320ce60c3a51c0c489c568bb8ddc8d8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a320ce60c3a51c0c489c568bb8ddc8d8b">begin_pass</a> (int64_t start)</td></tr>
+<tr class="separator:a320ce60c3a51c0c489c568bb8ddc8d8b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad024ea7f0db0f0df73a103e956f85aba inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ad024ea7f0db0f0df73a103e956f85aba"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_pass_now</b> (int64_t start)</td></tr>
+<tr class="separator:ad024ea7f0db0f0df73a103e956f85aba inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c1068f669e12c41e1b290c39fb66f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a78c1068f669e12c41e1b290c39fb66f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a78c1068f669e12c41e1b290c39fb66f7">close_pass</a> (bool cycle=false)</td></tr>
+<tr class="separator:a78c1068f669e12c41e1b290c39fb66f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa38b3d3a60f9d2423c614f1266dce1fb inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa38b3d3a60f9d2423c614f1266dce1fb"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>merge_extra_pass</b> ()</td></tr>
+<tr class="separator:aa38b3d3a60f9d2423c614f1266dce1fb inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc844aeaf17ceb5b14eeec279f26464 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aefc844aeaf17ceb5b14eeec279f26464"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#aefc844aeaf17ceb5b14eeec279f26464">capture</a> (const tick &amp;tk)</td></tr>
+<tr class="separator:aefc844aeaf17ceb5b14eeec279f26464 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9e279a37a17d641dbdab8792336c8b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a1b9e279a37a17d641dbdab8792336c8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a1b9e279a37a17d641dbdab8792336c8b">capture_layer</a> (const tick &amp;tk, int64_t now, int64_t end)</td></tr>
+<tr class="separator:a1b9e279a37a17d641dbdab8792336c8b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a9ef54c0de172e6af9127f8c6dd986 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a17a9ef54c0de172e6af9127f8c6dd986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a17a9ef54c0de172e6af9127f8c6dd986">stop_score</a> ()</td></tr>
+<tr class="separator:a17a9ef54c0de172e6af9127f8c6dd986 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc9bbf77c8e7fad9c1dfb71d9f7cb4a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a6bc9bbf77c8e7fad9c1dfb71d9f7cb4a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a6bc9bbf77c8e7fad9c1dfb71d9f7cb4a">rounds_since_made</a> (const ossia::token_request &amp;tk) const noexcept</td></tr>
+<tr class="separator:a6bc9bbf77c8e7fad9c1dfb71d9f7cb4a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9443f5151dbda6a2dfa7978ddc3a8397 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a9443f5151dbda6a2dfa7978ddc3a8397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a9443f5151dbda6a2dfa7978ddc3a8397">run_export</a> ()</td></tr>
+<tr class="separator:a9443f5151dbda6a2dfa7978ddc3a8397 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fa215ea5a9816e23db8f82db999219 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ad8fa215ea5a9816e23db8f82db999219"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>take_written</b> (int slot, int number, bool ok, bool alone)</td></tr>
+<tr class="separator:ad8fa215ea5a9816e23db8f82db999219 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1f36d71ac3af2cbaa1671151425d25 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_adf1f36d71ac3af2cbaa1671151425d25"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>last_take_whole</b> () const noexcept</td></tr>
+<tr class="memdesc:adf1f36d71ac3af2cbaa1671151425d25 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last take has the mix and every pass as they are now. <br /></td></tr>
+<tr class="separator:adf1f36d71ac3af2cbaa1671151425d25 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b9a2c79723feb1ce33b6963ec904fb inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a88b9a2c79723feb1ce33b6963ec904fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a88b9a2c79723feb1ce33b6963ec904fb">prepare_stop_notice</a> (<a class="el" href="struct_nodes_1_1_looper_1_1stop__take__notice.html">Looper::stop_take_notice</a> &amp;n, double date)</td></tr>
+<tr class="separator:a88b9a2c79723feb1ce33b6963ec904fb inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50b20f3c41f7e73b2b09f76bce4e7c3c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a50b20f3c41f7e73b2b09f76bce4e7c3c"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>claim_take_slot</b> () noexcept</td></tr>
+<tr class="separator:a50b20f3c41f7e73b2b09f76bce4e7c3c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c55f5e4370100d39a8ff5266408354 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_af9c55f5e4370100d39a8ff5266408354"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>view_due</b> (int64_t frames) noexcept</td></tr>
+<tr class="memdesc:af9c55f5e4370100d39a8ff5266408354 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the view is due a message: some 30 a second. <br /></td></tr>
+<tr class="separator:af9c55f5e4370100d39a8ff5266408354 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a5a75ab34e9f52eb7439f865c9eea1 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_af8a5a75ab34e9f52eb7439f865c9eea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#af8a5a75ab34e9f52eb7439f865c9eea1">fill_view</a> (<a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a> &amp;v) const noexcept</td></tr>
+<tr class="separator:af8a5a75ab34e9f52eb7439f865c9eea1 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b7f7d6a59e5feba81e231ebaf33a49 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a24b7f7d6a59e5feba81e231ebaf33a49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a24b7f7d6a59e5feba81e231ebaf33a49">placeable_take</a> () const noexcept</td></tr>
+<tr class="separator:a24b7f7d6a59e5feba81e231ebaf33a49 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:aa545911041aeb83a3fb91cabe2502985 inherit pro_static_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa545911041aeb83a3fb91cabe2502985"><td class="memItemLeft" align="right" valign="top">
+static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>lazy_passes</b> () noexcept</td></tr>
+<tr class="separator:aa545911041aeb83a3fb91cabe2502985 inherit pro_static_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a4ca76585533081e3d368c612d34f5 inherit pro_static_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ab8a4ca76585533081e3d368c612d34f5"><td class="memItemLeft" align="right" valign="top">
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_looper_id</b> () noexcept</td></tr>
+<tr class="separator:ab8a4ca76585533081e3d368c612d34f5 inherit pro_static_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
+<tr class="memitem:a49b19d52131d4eec09863ceb46dc9225 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a49b19d52131d4eec09863ceb46dc9225"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_rate</b> {48000.}</td></tr>
+<tr class="separator:a49b19d52131d4eec09863ceb46dc9225 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab85ede0c958ca413b645fb774a633c41 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ab85ede0c958ca413b645fb774a633c41"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_tempo</b> {120.}</td></tr>
+<tr class="separator:ab85ede0c958ca413b645fb774a633c41 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a922a14f96de0376d26d60d5e9298d64a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a922a14f96de0376d26d60d5e9298d64a"><td class="memItemLeft" align="right" valign="top">
+ossia::time_signature&#160;</td><td class="memItemRight" valign="bottom"><b>m_signature</b> {4, 4}</td></tr>
+<tr class="separator:a922a14f96de0376d26d60d5e9298d64a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d12c182a35a0adc88ba0bb4597bae47 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a4d12c182a35a0adc88ba0bb4597bae47"><td class="memItemLeft" align="right" valign="top">
+LoopMode&#160;</td><td class="memItemRight" valign="bottom"><b>m_mode</b> {LoopMode::Stop}</td></tr>
+<tr class="memdesc:a4d12c182a35a0adc88ba0bb4597bae47 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mode asked for, as the transport takes it up. <br /></td></tr>
+<tr class="separator:a4d12c182a35a0adc88ba0bb4597bae47 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4b2eb7e2a36e92313e9ab44065fdb1 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_acc4b2eb7e2a36e92313e9ab44065fdb1"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1loop__input.html">Looper::loop_input</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_loop</b></td></tr>
+<tr class="memdesc:acc4b2eb7e2a36e92313e9ab44065fdb1 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">What came in on Mode, and what it shows. <br /></td></tr>
+<tr class="separator:acc4b2eb7e2a36e92313e9ab44065fdb1 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4909227b9a0d85a963b33fc770d184a0 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a4909227b9a0d85a963b33fc770d184a0"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1switches.html">Looper::switches</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_switches</b></td></tr>
+<tr class="separator:a4909227b9a0d85a963b33fc770d184a0 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68a411fd4d9eabe99463f3f0e3a2be3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ab68a411fd4d9eabe99463f3f0e3a2be3"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_speed</b> {1.}</td></tr>
+<tr class="memdesc:ab68a411fd4d9eabe99463f3f0e3a2be3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The playhead goes at m_speed, backwards when m_reverse is set. <br /></td></tr>
+<tr class="separator:ab68a411fd4d9eabe99463f3f0e3a2be3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc60fece9c6f5c72325bd744d535bf3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a2fc60fece9c6f5c72325bd744d535bf3"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_reverse</b> {}</td></tr>
+<tr class="separator:a2fc60fece9c6f5c72325bd744d535bf3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad36d8555cc4b4f60b50f540e22d4b1f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_aad36d8555cc4b4f60b50f540e22d4b1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1transport_1_1timeline__point.html">Looper::transport::timeline_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#aad36d8555cc4b4f60b50f540e22d4b1f">m_origin</a> {}</td></tr>
+<tr class="separator:aad36d8555cc4b4f60b50f540e22d4b1f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceebf5f64b99023749e0ff926c7de94f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_aceebf5f64b99023749e0ff926c7de94f"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_loop_tempo</b> {120.}</td></tr>
+<tr class="memdesc:aceebf5f64b99023749e0ff926c7de94f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tempo the loop was recorded at: the loop keeps its own speed. <br /></td></tr>
+<tr class="separator:aceebf5f64b99023749e0ff926c7de94f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03753c2913843e25c4ec6e7036dbc9cb inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a03753c2913843e25c4ec6e7036dbc9cb"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a03753c2913843e25c4ec6e7036dbc9cb">m_extend_unit</a> {}</td></tr>
+<tr class="separator:a03753c2913843e25c4ec6e7036dbc9cb inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9bc71d9f110c52d389e5785f9bb700 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a6c9bc71d9f110c52d389e5785f9bb700"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_extended</b> {}</td></tr>
+<tr class="separator:a6c9bc71d9f110c52d389e5785f9bb700 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e770babdda02c31808925e25485c21f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a5e770babdda02c31808925e25485c21f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a5e770babdda02c31808925e25485c21f">m_cycle_pending</a> {}</td></tr>
+<tr class="separator:a5e770babdda02c31808925e25485c21f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c150aa7e562e0724d1f12675076509 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a18c150aa7e562e0724d1f12675076509"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_pending</b> {}</td></tr>
+<tr class="separator:a18c150aa7e562e0724d1f12675076509 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5373e9ed747901fbfcab37a060d3730 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ad5373e9ed747901fbfcab37a060d3730"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_writing</b> {}</td></tr>
+<tr class="separator:ad5373e9ed747901fbfcab37a060d3730 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace117ff6686631b4244ac3f0630c2ed inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_aace117ff6686631b4244ac3f0630c2ed"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_date</b> {}</td></tr>
+<tr class="separator:aace117ff6686631b4244ac3f0630c2ed inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bce2124a9905736cb907248a823339 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a04bce2124a9905736cb907248a823339"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a04bce2124a9905736cb907248a823339">m_job_date</a> {}</td></tr>
+<tr class="separator:a04bce2124a9905736cb907248a823339 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8b16079b1c397624edee5ab0ba1106d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ab8b16079b1c397624edee5ab0ba1106d"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_tempo</b> {120.}</td></tr>
+<tr class="separator:ab8b16079b1c397624edee5ab0ba1106d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2112967e28266f8da64553a48c0d3adc inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a2112967e28266f8da64553a48c0d3adc"><td class="memItemLeft" align="right" valign="top">
+ossia::time_signature&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_signature</b> {4, 4}</td></tr>
+<tr class="separator:a2112967e28266f8da64553a48c0d3adc inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dbeb4ea9c58a971b169afd7073a071d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a5dbeb4ea9c58a971b169afd7073a071d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_item</b> {}</td></tr>
+<tr class="separator:a5dbeb4ea9c58a971b169afd7073a071d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1617b56634c8f9beb8e2f5c1b0a006f1 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a1617b56634c8f9beb8e2f5c1b0a006f1"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_layers</b> {}</td></tr>
+<tr class="separator:a1617b56634c8f9beb8e2f5c1b0a006f1 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09738ddcd99ebbe0ef6a1dea976bc292 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a09738ddcd99ebbe0ef6a1dea976bc292"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_mix</b> {}</td></tr>
+<tr class="separator:a09738ddcd99ebbe0ef6a1dea976bc292 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf3742905b9c8cdb91c716dc9ede4340 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_acf3742905b9c8cdb91c716dc9ede4340"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_number</b> {}</td></tr>
+<tr class="separator:acf3742905b9c8cdb91c716dc9ede4340 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a115c9d6e41e14f3cbd5d92d464d19e96 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a115c9d6e41e14f3cbd5d92d464d19e96"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_slot</b> {}</td></tr>
+<tr class="separator:a115c9d6e41e14f3cbd5d92d464d19e96 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4374a61dd412b52419b67172f70eedc5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a4374a61dd412b52419b67172f70eedc5"><td class="memItemLeft" align="right" valign="top">halp::clip_stretch&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a4374a61dd412b52419b67172f70eedc5">m_job_stretch</a> {}</td></tr>
+<tr class="separator:a4374a61dd412b52419b67172f70eedc5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b938dfec370d8493a64340e5639b00f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a8b938dfec370d8493a64340e5639b00f"><td class="memItemLeft" align="right" valign="top">
+halp::clip_stretch&#160;</td><td class="memItemRight" valign="bottom"><b>m_stop_stretch</b> {}</td></tr>
+<tr class="separator:a8b938dfec370d8493a64340e5639b00f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd221b2b0b91b2d464242747a8c278e8 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_afd221b2b0b91b2d464242747a8c278e8"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_takes_written</b> {}</td></tr>
+<tr class="separator:afd221b2b0b91b2d464242747a8c278e8 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b01203856ca09d32501f6135c9091a8 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a0b01203856ca09d32501f6135c9091a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a0b01203856ca09d32501f6135c9091a8">m_take_request</a> {}</td></tr>
+<tr class="separator:a0b01203856ca09d32501f6135c9091a8 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b56caadc095f7715faf9bd5f9992d3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a29b56caadc095f7715faf9bd5f9992d3"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_job_request</b> {}</td></tr>
+<tr class="separator:a29b56caadc095f7715faf9bd5f9992d3 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac17ec31b1d2ac263d0014a7e3413268b inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ac17ec31b1d2ac263d0014a7e3413268b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#ac17ec31b1d2ac263d0014a7e3413268b">m_part_request</a> {.pass = -1, .layers = -1}</td></tr>
+<tr class="separator:ac17ec31b1d2ac263d0014a7e3413268b inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6909c33f1ccf9b8f5e7e9610a75185a0 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a6909c33f1ccf9b8f5e7e9610a75185a0"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_job_part</b> {}</td></tr>
+<tr class="separator:a6909c33f1ccf9b8f5e7e9610a75185a0 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744501fb5e6c4259b12f13427f42bcc4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a744501fb5e6c4259b12f13427f42bcc4"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_export_first</b> {}</td></tr>
+<tr class="separator:a744501fb5e6c4259b12f13427f42bcc4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd4fd206948f655d951409d1fea5951 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a1bd4fd206948f655d951409d1fea5951"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a1bd4fd206948f655d951409d1fea5951">m_version</a> {}</td></tr>
+<tr class="separator:a1bd4fd206948f655d951409d1fea5951 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef19048a22f1364fbaf7302ed645d4a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a3ef19048a22f1364fbaf7302ed645d4a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_job_version</b> {}</td></tr>
+<tr class="separator:a3ef19048a22f1364fbaf7302ed645d4a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b87ea7141e958b40a7098aba8fc99a9 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a6b87ea7141e958b40a7098aba8fc99a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a6b87ea7141e958b40a7098aba8fc99a9">m_pass_pending</a> {}</td></tr>
+<tr class="separator:a6b87ea7141e958b40a7098aba8fc99a9 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a58db8a01f809e9449c5bacad0c922 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a69a58db8a01f809e9449c5bacad0c922"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_start</b> {}</td></tr>
+<tr class="separator:a69a58db8a01f809e9449c5bacad0c922 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92c1c6743514d691897654ea312b5e4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_af92c1c6743514d691897654ea312b5e4"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_length</b> {}</td></tr>
+<tr class="separator:af92c1c6743514d691897654ea312b5e4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ff7d500366fe7815ff2d27c49dc12e4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a5ff7d500366fe7815ff2d27c49dc12e4"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_progress</b> {}</td></tr>
+<tr class="separator:a5ff7d500366fe7815ff2d27c49dc12e4 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f10f6bcb6c82a357004f759fc19e98 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a09f10f6bcb6c82a357004f759fc19e98"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_backwards</b> {}</td></tr>
+<tr class="separator:a09f10f6bcb6c82a357004f759fc19e98 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2df06ba95ebbc0b2e7d545b13c34420d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a2df06ba95ebbc0b2e7d545b13c34420d"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_next_take_slot</b> {}</td></tr>
+<tr class="separator:a2df06ba95ebbc0b2e7d545b13c34420d inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcce0ad82b65c565bc1abae4d3239ccd inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_afcce0ad82b65c565bc1abae4d3239ccd"><td class="memItemLeft" align="right" valign="top">
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_view_countdown</b> {}</td></tr>
+<tr class="separator:afcce0ad82b65c565bc1abae4d3239ccd inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11af0d2b2ebf593be3bc847e34c23797 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a11af0d2b2ebf593be3bc847e34c23797"><td class="memItemLeft" align="right" valign="top">
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_id</b> {next_looper_id()}</td></tr>
+<tr class="memdesc:a11af0d2b2ebf593be3bc847e34c23797 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells this looper's messages from another's, and counts its stops. <br /></td></tr>
+<tr class="separator:a11af0d2b2ebf593be3bc847e34c23797 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf47de8c3f2139f09f3a2f80be1714f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_adbf47de8c3f2139f09f3a2f80be1714f"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stops</b> {}</td></tr>
+<tr class="separator:adbf47de8c3f2139f09f3a2f80be1714f inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ecfa66d19d6ed0739b7f2401711ee5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a08ecfa66d19d6ed0739b7f2401711ee5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b> {}</td></tr>
+<tr class="separator:a08ecfa66d19d6ed0739b7f2401711ee5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6e45b0363c4b559bd79a6e0e1172c6 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a0d6e45b0363c4b559bd79a6e0e1172c6"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_request</b> {}</td></tr>
+<tr class="separator:a0d6e45b0363c4b559bd79a6e0e1172c6 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca8edc501c968d7b6bb3a58aade5906 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a9ca8edc501c968d7b6bb3a58aade5906"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_requested</b> {}</td></tr>
+<tr class="separator:a9ca8edc501c968d7b6bb3a58aade5906 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="aef63d8cef5ef1373ba303bb2e656c338" name="aef63d8cef5ef1373ba303bb2e656c338"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef63d8cef5ef1373ba303bb2e656c338">&#9670;&#160;</a></span>Passthrough</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338">Nodes::AudioLooper::Node::Passthrough</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754" name="aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>The input is never heard, in any mode. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36" name="aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36"></a>Record&#160;</td><td class="fielddoc"><p>Heard while recording and overdubbing; playback is the loop alone. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75" name="aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75"></a>Full&#160;</td><td class="fielddoc"><p>Always heard, mixed over the loop during playback. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="ae972d07b32b4e005d3122e1ca5711cc4" name="ae972d07b32b4e005d3122e1ca5711cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae972d07b32b4e005d3122e1ca5711cc4">&#9670;&#160;</a></span>Restart</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Nodes::AudioLooper::Node::Restart</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Where the loop is read from when the mode changes.</p>
-<p>Order matters: the first is what the object did before there was a choice. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c" name="ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c"></a>Always&#160;</td><td class="fielddoc"><p>Every change of mode reads the loop from its beginning again. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166" name="ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166"></a>Recording&#160;</td><td class="fielddoc"><p>Only a recording does; playing and overdubbing carry straight on. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7572bd1f2dccb4aef88444e153ad9244" name="a7572bd1f2dccb4aef88444e153ad9244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7572bd1f2dccb4aef88444e153ad9244">&#9670;&#160;</a></span>enterMode()</h2>
+<a id="aab8913a442fb0ac74b6e202aadc5fac6" name="aab8913a442fb0ac74b6e202aadc5fac6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab8913a442fb0ac74b6e202aadc5fac6">&#9670;&#160;</a></span>prepare_stretch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,16 +571,16 @@ ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>o
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Nodes::AudioLooper::Node::enterMode </td>
+          <td class="memname">void Nodes::AudioLooper::Node::prepare_stretch </td>
           <td>(</td>
-          <td class="paramtype">LoopMode&#160;</td>
-          <td class="paramname"><em>m</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rate</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4">Restart</a>&#160;</td>
-          <td class="paramname"><em>restart</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frames</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -330,12 +594,12 @@ ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>o
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Taking up a mode. A recording always starts its buffer again &ndash; there is nothing yet to carry on from. Whether playing and overdubbing do is what the Restart setting is for: reading the loop from the top on every change jumps, which is heard when overdubbing hands over to playing. </p>
+<p>Main thread only: the stretcher allocates. It is run once here over the longest span it will be given, on silence, so that the buffers it sizes on its first run are sized before the audio thread runs it. </p>
 
 </div>
 </div>
-<a id="a1f3177ecacf5ac8b0e8b905b26b69e5f" name="a1f3177ecacf5ac8b0e8b905b26b69e5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3177ecacf5ac8b0e8b905b26b69e5f">&#9670;&#160;</a></span>silence()</h2>
+<a id="ae5f026dedc17953e6852dc1a46cbd213" name="ae5f026dedc17953e6852dc1a46cbd213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f026dedc17953e6852dc1a46cbd213">&#9670;&#160;</a></span>removed_inlets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,35 +608,78 @@ ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>o
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Nodes::AudioLooper::Node::silence </td>
+          <td class="memname">static constexpr std::array&lt; int, 1 &gt; Nodes::AudioLooper::Node::removed_inlets </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>first_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>samples</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Outlet buffers come from a pool and are resized, not cleared: writing nothing leaves the previous tick's audio in them. </p>
+<p>Inlets that presets which do not name their controls count in their indices, and that the looper does not have: Sync. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab9ee52e6c7bc340d0f03ac1c800079e5" name="ab9ee52e6c7bc340d0f03ac1c800079e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9ee52e6c7bc340d0f03ac1c800079e5">&#9670;&#160;</a></span>send_message_from_worker</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>)&gt; Nodes::AudioLooper::Node::send_message_from_worker</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>What the take the score's stop leaves is told to the views with, from its worker. </p>
+
+</div>
+</div>
+<a id="a8c7020b4c2991483503515380908a2e2" name="a8c7020b4c2991483503515380908a2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c7020b4c2991483503515380908a2e2">&#9670;&#160;</a></span>stop_take</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="struct_nodes_1_1_looper_1_1audio__stop__take.html">Looper::audio_stop_take</a>&gt; Nodes::AudioLooper::Node::stop_take</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>What the take the score's stop leaves is made of: the node may be gone before it is written. </p>
+
+</div>
+</div>
+<a id="a089977beacfb97ada4564848dca62c09" name="a089977beacfb97ada4564848dca62c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089977beacfb97ada4564848dca62c09">&#9670;&#160;</a></span>work_per_tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int64_t Nodes::AudioLooper::Node::work_per_tick = 262144</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Samples the looper's background work &ndash; merging passes, flattening a take, drawing the overview &ndash; goes through in one tick at most. </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_looper_8hpp_source.html">Looper.hpp</a></li>
+<li><a class="el" href="_audio_looper_8hpp_source.html">AudioLooper.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

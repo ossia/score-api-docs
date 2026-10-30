@@ -10,6 +10,7 @@ var dir_c1795678b349032337c770a7195025ac =
     [ "CableItem.hpp", "_cable_item_8hpp_source.html", null ],
     [ "ControlWidgetDomains.hpp", "_control_widget_domains_8hpp_source.html", null ],
     [ "plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp", "plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html", null ],
+    [ "MidiSysexArena.hpp", "_midi_sysex_arena_8hpp_source.html", null ],
     [ "MinMaxFloatPort.hpp", "_min_max_float_port_8hpp_source.html", null ],
     [ "NodeItem.hpp", "_node_item_8hpp_source.html", null ],
     [ "Port.hpp", "_port_8hpp_source.html", null ],

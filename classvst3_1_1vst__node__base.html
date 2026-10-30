@@ -210,6 +210,11 @@ Steinberg::Vst::EventList&#160;</td><td class="memItemRight" valign="bottom"><b>
 <tr class="separator:a9050ceb060ec2032494f0bd02b4f493c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390036fda4567d5ec4299635535a5934" id="r_a390036fda4567d5ec4299635535a5934"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::pair&lt; int, libremidi::ump &gt;, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a390036fda4567d5ec4299635535a5934">m_deferred</a></td></tr>
 <tr class="separator:a390036fda4567d5ec4299635535a5934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac243678ea44902143b22cb3b09495eeb" id="r_ac243678ea44902143b22cb3b09495eeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_process_1_1_midi_sysex_arena.html">Process::MidiSysexArena</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#ac243678ea44902143b22cb3b09495eeb">m_sysexArena</a></td></tr>
+<tr class="separator:ac243678ea44902143b22cb3b09495eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3473613ed10a6801daf9b6c06885fb1" id="r_af3473613ed10a6801daf9b6c06885fb1"><td class="memItemLeft" align="right" valign="top"><a id="af3473613ed10a6801daf9b6c06885fb1" name="af3473613ed10a6801daf9b6c06885fb1"></a>
+std::vector&lt; Process::MidiSysexArena::stream &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysexStreams</b></td></tr>
+<tr class="separator:af3473613ed10a6801daf9b6c06885fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -288,6 +293,21 @@ ossia::hash_map&lt; Steinberg::Vst::ParamID, std::size_t &gt;&#160;</td><td clas
 </table>
 </div><div class="memdoc">
 <p>Queues that exist only to carry MIDI controllers. Nothing else clears them - setControls() only touches the ones a control port backs - so dispatchMidi has to, or points accumulate block after block. </p>
+
+</div>
+</div>
+<a id="ac243678ea44902143b22cb3b09495eeb" name="ac243678ea44902143b22cb3b09495eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac243678ea44902143b22cb3b09495eeb">&#9670;&#160;</a></span>m_sysexArena</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_process_1_1_midi_sysex_arena.html">Process::MidiSysexArena</a> vst3::vst_node_base::m_sysexArena</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The bytes of the system-exclusive messages m_inputEvents points at, kept until the next block; one stream per event input bus. </p>
 
 </div>
 </div>

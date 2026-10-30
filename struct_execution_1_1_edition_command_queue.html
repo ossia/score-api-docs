@@ -114,7 +114,10 @@ Inheritance diagram for Execution::EditionCommandQueue:</div>
  <div class="center">
   <img src="struct_execution_1_1_edition_command_queue.png" alt=""/>
  </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Commands from the execution threads to the UI thread.</p>
+<p>enqueue() allocates a block when the preallocated ones are used up; the try_ variants never allocate once the producing thread has enqueued once, and return false when the preallocated capacity is full. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aad64eae5eaaed0599e997d89d5558ce1" id="r_aad64eae5eaaed0599e997d89d5558ce1"><td class="memTemplParams" colspan="2"><a id="aad64eae5eaaed0599e997d89d5558ce1" name="aad64eae5eaaed0599e997d89d5558ce1"></a>

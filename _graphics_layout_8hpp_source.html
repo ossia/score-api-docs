@@ -135,26 +135,40 @@ $(document).ready(function(){initNavTree('_graphics_layout_8hpp_source.html','')
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> setSpacing(qreal s);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  qreal spacing() const noexcept;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> updateChildrenRects(const QList&lt;QGraphicsItem*&gt;&amp;);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> paint(QPainter* painter, const QStyleOptionGraphicsItem* option, QWidget* widget)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      override;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> setAlignment(Qt::Alignment a);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  Qt::Alignment alignment() const noexcept { <span class="keywordflow">return</span> m_alignment; }</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>protected:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_namespace" href="namespacescore.html">score</a>::<a class="code hl_struct" href="structscore_1_1_brush_set.html">BrushSet</a>* m_bg{};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  QPixmap* m_pix{};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  qreal m_margin{};</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  qreal m_padding{};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  qreal m_spacing{-1.};</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">void</span> updateChildrenRects(<span class="keyword">const</span> QList&lt;QGraphicsItem*&gt;&amp;);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> setFitMargins(qreal right, qreal bottom);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> relayoutAround(QGraphicsItem* item);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> paint(QPainter* painter, <span class="keyword">const</span> QStyleOptionGraphicsItem* option, QWidget* widget)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_struct" href="structscore_1_1_brush_set.html">score::BrushSet</a>* m_bg{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  QPixmap* m_pix{};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  qreal m_margin{};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  qreal m_padding{};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  qreal m_spacing{-1.};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  qreal m_fitRight{-1.};</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  qreal m_fitBottom{-1.};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  Qt::Alignment m_alignment{};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>SCORE_LIB_BASE_EXPORT</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>qreal <a class="code hl_function" href="namespacescore.html#ad19d94e74de358c63f7160645239d281">alignedOffset</a>(Qt::Alignment a, qreal avail, qreal w) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclassscore_1_1_background_item_html"><div class="ttname"><a href="classscore_1_1_background_item.html">score::BackgroundItem</a></div><div class="ttdef"><b>Definition</b> RectItem.hpp:110</div></div>
 <div class="ttc" id="aclassscore_1_1_graphics_layout_html"><div class="ttname"><a href="classscore_1_1_graphics_layout.html">score::GraphicsLayout</a></div><div class="ttdef"><b>Definition</b> GraphicsLayout.hpp:8</div></div>
 <div class="ttc" id="aclassscore_1_1_graphics_layout_html_a0c9d3d9dc821befd5903e9bf268412e3"><div class="ttname"><a href="classscore_1_1_graphics_layout.html#a0c9d3d9dc821befd5903e9bf268412e3">score::GraphicsLayout::hasBackground</a></div><div class="ttdeci">bool hasBackground() const noexcept</div><div class="ttdoc">Whether the layout paints a box of its own.</div><div class="ttdef"><b>Definition</b> GraphicsLayout.hpp:19</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:83</div></div>
+<div class="ttc" id="anamespacescore_html_ad19d94e74de358c63f7160645239d281"><div class="ttname"><a href="namespacescore.html#ad19d94e74de358c63f7160645239d281">score::alignedOffset</a></div><div class="ttdeci">qreal alignedOffset(Qt::Alignment a, qreal avail, qreal w) noexcept</div><div class="ttdef"><b>Definition</b> GraphicsLayout.cpp:63</div></div>
 <div class="ttc" id="astructscore_1_1_brush_set_html"><div class="ttname"><a href="structscore_1_1_brush_set.html">score::BrushSet</a></div><div class="ttdef"><b>Definition</b> Skin.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

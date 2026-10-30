@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('struct_widget_factory_1_1_enum.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_widget_factory_1_1_enum-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">WidgetFactory::Enum Struct Reference</div></div>
 </div><!--header-->
@@ -118,11 +119,44 @@ static <a class="el" href="struct_process_1_1_port_item_layout.html">Process::Po
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a21a7b6494a8c7398677bff2137c6aeff"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_widget</b> (T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent, QObject *context)</td></tr>
 <tr class="separator:a21a7b6494a8c7398677bff2137c6aeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a770410f170c413611bc8622927fbe123" id="r_a770410f170c413611bc8622927fbe123"><td class="memTemplParams" colspan="2"><a id="a770410f170c413611bc8622927fbe123" name="a770410f170c413611bc8622927fbe123"></a>
+<tr class="memitem:a282d8aae5117f3b012101b66a25f3122" id="r_a282d8aae5117f3b012101b66a25f3122"><td class="memTemplParams" colspan="2"><a id="a282d8aae5117f3b012101b66a25f3122" name="a282d8aae5117f3b012101b66a25f3122"></a>
 template&lt;typename T , typename Control_T &gt; </td></tr>
-<tr class="memitem:a770410f170c413611bc8622927fbe123"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_item</b> (const T &amp;slider, Control_T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QGraphicsItem *parent, QObject *context)</td></tr>
-<tr class="separator:a770410f170c413611bc8622927fbe123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282d8aae5117f3b012101b66a25f3122"><td class="memTemplItemLeft" align="right" valign="top">static QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_combo_item</b> (const T &amp;slider, Control_T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QObject *context)</td></tr>
+<tr class="separator:a282d8aae5117f3b012101b66a25f3122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a674f58fbc36a74682d3631bc40e5f579" id="r_a674f58fbc36a74682d3631bc40e5f579"><td class="memTemplParams" colspan="2"><a id="a674f58fbc36a74682d3631bc40e5f579" name="a674f58fbc36a74682d3631bc40e5f579"></a>
+template&lt;typename T , typename Control_T &gt; </td></tr>
+<tr class="memitem:a674f58fbc36a74682d3631bc40e5f579"><td class="memTemplItemLeft" align="right" valign="top">static QGraphicsItem *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_item</b> (const T &amp;slider, Control_T &amp;inlet, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QGraphicsItem *parent, QObject *context)</td></tr>
+<tr class="separator:a674f58fbc36a74682d3631bc40e5f579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae567c61547ef575e5e6651f0d8675b03" id="r_ae567c61547ef575e5e6651f0d8675b03"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_widget_factory_1_1_enum.html#ae567c61547ef575e5e6651f0d8675b03">max_values_as_buttons</a> = 8</td></tr>
+<tr class="separator:ae567c61547ef575e5e6651f0d8675b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae567c61547ef575e5e6651f0d8675b03" name="ae567c61547ef575e5e6651f0d8675b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae567c61547ef575e5e6651f0d8675b03">&#9670;&#160;</a></span>max_values_as_buttons</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t WidgetFactory::Enum::max_values_as_buttons = 8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Beyond this many values, a grid of buttons takes more room than the rest of the process: the enum is drawn as a drop-down instead. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="plugins_2score-lib-process_2_process_2_dataflow_2_control_widgets_8hpp_source.html">plugins/score-lib-process/Process/Dataflow/ControlWidgets.hpp</a></li>
 </ul>

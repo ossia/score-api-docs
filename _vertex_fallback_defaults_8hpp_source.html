@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('_vertex_fallback_defaults_8hpp_source.
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">// Returns `std::nullopt` when neither a user DEFAULT nor a whitelisted</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// semantic default applies — the caller is expected to fail the pipeline</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// build with a clear error referencing the input name.</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>SCORE_PLUGIN_GFX_EXPORT std::optional&lt;VertexFallbackSpec&gt; resolveVertexFallback(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>SCORE_PLUGIN_GFX_TEST_EXPORT std::optional&lt;VertexFallbackSpec&gt; resolveVertexFallback(</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ossia::attribute_semantic semantic,</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::string_view decl_type,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> std::vector&lt;double&gt;&amp; user_default) <span class="keyword">noexcept</span>;</div>

@@ -116,22 +116,29 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_chord_1_1_node.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1chord__type.html">chord_type</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1ins.html">ins</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1learned__chord.html">learned_chord</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1ui.html">ui</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a6eef3e58c4e0de5c3ed01d38bb3e2ec6" id="r_a6eef3e58c4e0de5c3ed01d38bb3e2ec6"><td class="memItemLeft" align="right" valign="top"><a id="a6eef3e58c4e0de5c3ed01d38bb3e2ec6" name="a6eef3e58c4e0de5c3ed01d38bb3e2ec6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Chord</b> { <br />
-&#160;&#160;<b>Maj</b>
-, <b>Min</b>
-, <b>Sus2</b>
-, <b>Sus4</b>
-, <br />
-&#160;&#160;<b>Dim</b>
-, <b>Aug</b>
-<br />
+<tr class="memitem:ad90ebdbae8aa41ab9965336cf079e82a" id="r_ad90ebdbae8aa41ab9965336cf079e82a"><td class="memItemLeft" align="right" valign="top"><a id="ad90ebdbae8aa41ab9965336cf079e82a" name="ad90ebdbae8aa41ab9965336cf079e82a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlayMode</b> : uint8_t { <b>Table</b>
+, <b>Harmonizer</b>
+, <b>Memory</b>
  }</td></tr>
-<tr class="separator:a6eef3e58c4e0de5c3ed01d38bb3e2ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ad90ebdbae8aa41ab9965336cf079e82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95faf8306f83a2469d9b76af9ea94d2f" id="r_a95faf8306f83a2469d9b76af9ea94d2f"><td class="memItemLeft" align="right" valign="top"><a id="a95faf8306f83a2469d9b76af9ea94d2f" name="a95faf8306f83a2469d9b76af9ea94d2f"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>StrumDirection</b> : uint8_t { <b>Up</b>
+, <b>Down</b>
+, <b>Alternate</b>
+ }</td></tr>
+<tr class="separator:a95faf8306f83a2469d9b76af9ea94d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0baef5564d7fc5ac1e2ef6593027594" id="r_af0baef5564d7fc5ac1e2ef6593027594"><td class="memItemLeft" align="right" valign="top"><a id="af0baef5564d7fc5ac1e2ef6593027594" name="af0baef5564d7fc5ac1e2ef6593027594"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>memory_table</b> = std::array&lt; <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1learned__chord.html">learned_chord</a>, 128 &gt;</td></tr>
+<tr class="memdesc:af0baef5564d7fc5ac1e2ef6593027594"><td class="mdescLeft">&#160;</td><td class="mdescRight">The learned chord of each key. <br /></td></tr>
+<tr class="separator:af0baef5564d7fc5ac1e2ef6593027594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48fc074e5c71c799349341ec233e060e" id="r_a48fc074e5c71c799349341ec233e060e"><td class="memItemLeft" align="right" valign="top"><a id="a48fc074e5c71c799349341ec233e060e" name="a48fc074e5c71c799349341ec233e060e"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>midi_out</b> = halp::midi_out_bus&lt;&quot;out&quot;, libremidi::message &gt;</td></tr>
 <tr class="separator:a48fc074e5c71c799349341ec233e060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,64 +151,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af086bfc65dde176c1471273b99192a9f" id="r_af086bfc65dde176c1471273b99192a9f"><td class="memItemLeft" align="right" valign="top"><a id="af086bfc65dde176c1471273b99192a9f" name="af086bfc65dde176c1471273b99192a9f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;Chord&quot;) halp_meta(c_name</td></tr>
 <tr class="separator:af086bfc65dde176c1471273b99192a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99cc4232e87b96bd24e5468d40af6368" id="r_a99cc4232e87b96bd24e5468d40af6368"><td class="memItemLeft" align="right" valign="top"><a id="a99cc4232e87b96bd24e5468d40af6368" name="a99cc4232e87b96bd24e5468d40af6368"></a>
-Chord&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi&quot;) halp_meta(author</td></tr>
-<tr class="separator:a99cc4232e87b96bd24e5468d40af6368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e80e27d8ebf261c269a0afdef7fb53a" id="r_a3e80e27d8ebf261c269a0afdef7fb53a"><td class="memItemLeft" align="right" valign="top"><a id="a3e80e27d8ebf261c269a0afdef7fb53a" name="a3e80e27d8ebf261c269a0afdef7fb53a"></a>
+Chord&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Midi/Pitch&quot;) halp_meta(author</td></tr>
+<tr class="separator:a3e80e27d8ebf261c269a0afdef7fb53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a91c13cff9017e3ff175cd28422bddd" id="r_a2a91c13cff9017e3ff175cd28422bddd"><td class="memItemLeft" align="right" valign="top"><a id="a2a91c13cff9017e3ff175cd28422bddd" name="a2a91c13cff9017e3ff175cd28422bddd"></a>
 Chord ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/midi-utilities.html#chord&quot;) halp_meta(description</td></tr>
 <tr class="separator:a2a91c13cff9017e3ff175cd28422bddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae84c32e126c26604aee2973c1e800323" id="r_ae84c32e126c26604aee2973c1e800323"><td class="memItemLeft" align="right" valign="top"><a id="ae84c32e126c26604aee2973c1e800323" name="ae84c32e126c26604aee2973c1e800323"></a>
 Chord ossia score Generate a chord from a single note&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (uuid, &quot;F0904279-EA26-48DB-B0DF-F68FE3091DA1&quot;)</td></tr>
 <tr class="separator:ae84c32e126c26604aee2973c1e800323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ec4f75015b8ba82fd1aa1bec752ad7" id="r_a64ec4f75015b8ba82fd1aa1bec752ad7"><td class="memItemLeft" align="right" valign="top"><a id="a64ec4f75015b8ba82fd1aa1bec752ad7" name="a64ec4f75015b8ba82fd1aa1bec752ad7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk)</td></tr>
-<tr class="separator:a64ec4f75015b8ba82fd1aa1bec752ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf02f386a946c6699202df568d344041" id="r_aaf02f386a946c6699202df568d344041"><td class="memItemLeft" align="right" valign="top"><a id="aaf02f386a946c6699202df568d344041" name="aaf02f386a946c6699202df568d344041"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>halp_flag</b> (process_exec)</td></tr>
+<tr class="separator:aaf02f386a946c6699202df568d344041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac778bf09b21fe18876a330bbd5ab3e17" id="r_ac778bf09b21fe18876a330bbd5ab3e17"><td class="memItemLeft" align="right" valign="top"><a id="ac778bf09b21fe18876a330bbd5ab3e17" name="ac778bf09b21fe18876a330bbd5ab3e17"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup info) noexcept</td></tr>
+<tr class="separator:ac778bf09b21fe18876a330bbd5ab3e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ee385a6864780094ca7d298be779f6" id="r_ad4ee385a6864780094ca7d298be779f6"><td class="memItemLeft" align="right" valign="top"><a id="ad4ee385a6864780094ca7d298be779f6" name="ad4ee385a6864780094ca7d298be779f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> () noexcept</td></tr>
+<tr class="separator:ad4ee385a6864780094ca7d298be779f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d72019bdcf5ef14fad52ad393c16ba" id="r_ab2d72019bdcf5ef14fad52ad393c16ba"><td class="memItemLeft" align="right" valign="top"><a id="ab2d72019bdcf5ef14fad52ad393c16ba" name="ab2d72019bdcf5ef14fad52ad393c16ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const halp::tick_musical &amp;tk) noexcept</td></tr>
+<tr class="separator:ab2d72019bdcf5ef14fad52ad393c16ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7865ba05bf965d27d2688f3960deca7" id="r_ab7865ba05bf965d27d2688f3960deca7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab7865ba05bf965d27d2688f3960deca7">voices</a> (int pitch, std::array&lt; int, <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#aaccb58c95b5c2ca7c7c1f2a5115f5712">max_voices</a> &gt; &amp;out) noexcept</td></tr>
+<tr class="separator:ab7865ba05bf965d27d2688f3960deca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa8bfbcc7d0ac78759a45d8d5b7ca555f" id="r_aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memTemplParams" colspan="2"><a id="aa8bfbcc7d0ac78759a45d8d5b7ca555f" name="aa8bfbcc7d0ac78759a45d8d5b7ca555f"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>startChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, midi_out &amp;op)</td></tr>
-<tr class="separator:aa8bfbcc7d0ac78759a45d8d5b7ca555f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68aef37125bce94f8d26c342e0a795d6" id="r_a68aef37125bce94f8d26c342e0a795d6"><td class="memTemplParams" colspan="2"><a id="a68aef37125bce94f8d26c342e0a795d6" name="a68aef37125bce94f8d26c342e0a795d6"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a68aef37125bce94f8d26c342e0a795d6"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stopChord</b> (const T &amp;chord, const libremidi::message &amp;m, const std::size_t num, midi_out &amp;op)</td></tr>
-<tr class="separator:a68aef37125bce94f8d26c342e0a795d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90417c6769de2ca32ff7c6ac29b05bea" id="r_a90417c6769de2ca32ff7c6ac29b05bea"><td class="memTemplParams" colspan="2"><a id="a90417c6769de2ca32ff7c6ac29b05bea" name="a90417c6769de2ca32ff7c6ac29b05bea"></a>
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:a90417c6769de2ca32ff7c6ac29b05bea"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchChord</b> (std::string_view chord, const libremidi::message &amp;m, int num, midi_out &amp;op, F &amp;&amp;f)</td></tr>
-<tr class="separator:a90417c6769de2ca32ff7c6ac29b05bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e0eae76a86e6c277f67d1cb11fccd0" id="r_a40e0eae76a86e6c277f67d1cb11fccd0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#a40e0eae76a86e6c277f67d1cb11fccd0">parse_memory</a> (std::string_view s, <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#af0baef5564d7fc5ac1e2ef6593027594">memory_table</a> &amp;table) noexcept</td></tr>
+<tr class="separator:a40e0eae76a86e6c277f67d1cb11fccd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6fea432b4ec0354d63b6a51e28a4e50" id="r_ab6fea432b4ec0354d63b6a51e28a4e50"><td class="memItemLeft" align="right" valign="top">static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab6fea432b4ec0354d63b6a51e28a4e50">print_memory_entry</a> (int key, const <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1learned__chord.html">learned_chord</a> &amp;c, char *buf) noexcept</td></tr>
+<tr class="separator:ab6fea432b4ec0354d63b6a51e28a4e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf884b45bf4b4e816d1ab5277cffa71" id="r_abdf884b45bf4b4e816d1ab5277cffa71"><td class="memItemLeft" align="right" valign="top">static halp::string_list_value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#abdf884b45bf4b4e816d1ab5277cffa71">memory_rows</a> (const <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#af0baef5564d7fc5ac1e2ef6593027594">memory_table</a> &amp;table)</td></tr>
+<tr class="separator:abdf884b45bf4b4e816d1ab5277cffa71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e9efec725eeae393a8a1a06e190cd9" id="r_a57e9efec725eeae393a8a1a06e190cd9"><td class="memItemLeft" align="right" valign="top">static halp::string_list_value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#a57e9efec725eeae393a8a1a06e190cd9">memory_rows_from_text</a> (std::string_view s)</td></tr>
+<tr class="separator:a57e9efec725eeae393a8a1a06e190cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53bcd3b8b8e9d833978f9c1fe0d30d8c" id="r_a53bcd3b8b8e9d833978f9c1fe0d30d8c"><td class="memItemLeft" align="right" valign="top"><a id="a53bcd3b8b8e9d833978f9c1fe0d30d8c" name="a53bcd3b8b8e9d833978f9c1fe0d30d8c"></a>
+static ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>rows_value</b> (const halp::string_list_value &amp;rows)</td></tr>
+<tr class="separator:a53bcd3b8b8e9d833978f9c1fe0d30d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a756c3372af3364d350da9bc504a05131" id="r_a756c3372af3364d350da9bc504a05131"><td class="memItemLeft" ><a id="a756c3372af3364d350da9bc504a05131" name="a756c3372af3364d350da9bc504a05131"></a>
+<tr class="memitem:a4f59e13e6c25acd7436e44e8be312ee9" id="r_a4f59e13e6c25acd7436e44e8be312ee9"><td class="memItemLeft" align="right" valign="top"><a id="a4f59e13e6c25acd7436e44e8be312ee9" name="a4f59e13e6c25acd7436e44e8be312ee9"></a>
+struct <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1ins.html">Nodes::Chord::Node::ins</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:a4f59e13e6c25acd7436e44e8be312ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45203fc6c97f2a91d4e29db285e36b24" id="r_a45203fc6c97f2a91d4e29db285e36b24"><td class="memItemLeft" ><a id="a45203fc6c97f2a91d4e29db285e36b24" name="a45203fc6c97f2a91d4e29db285e36b24"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56ef8f4422bec5dcfd9115b06b7c536f" id="r_a56ef8f4422bec5dcfd9115b06b7c536f"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::midi_bus&lt;&quot;in&quot;, libremidi::message &gt;&#160;&#160;&#160;<b>midi</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a56ef8f4422bec5dcfd9115b06b7c536f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af5b96fea13f901d87ea958f2de89c1" id="r_a5af5b96fea13f901d87ea958f2de89c1"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::hslider_i32&lt;&quot;Num. Notes&quot;, halp::irange{1, 5, 3}&gt;&#160;&#160;&#160;<b>num</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a5af5b96fea13f901d87ea958f2de89c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9056f63ef16ccd5a2842149c196c8dd3" id="r_a9056f63ef16ccd5a2842149c196c8dd3"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::enum_t&lt; Chord, &quot;Chord&quot;&gt;&#160;&#160;&#160;<b>chord</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a9056f63ef16ccd5a2842149c196c8dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a756c3372af3364d350da9bc504a05131" id="r_a756c3372af3364d350da9bc504a05131"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a756c3372af3364d350da9bc504a05131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f3d5b23698ae04cc5625eb878f1d78" id="r_aa4f3d5b23698ae04cc5625eb878f1d78"><td class="memItemLeft" ><a id="aa4f3d5b23698ae04cc5625eb878f1d78" name="aa4f3d5b23698ae04cc5625eb878f1d78"></a>
-struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3267900e81e6d3d9128ec26c1d9ee0" id="r_a9e3267900e81e6d3d9128ec26c1d9ee0"><td class="memItemLeft" >
+<tr class="memitem:a3158b271e72a865607b1d0dbd198ba78" id="r_a3158b271e72a865607b1d0dbd198ba78"><td class="memItemLeft" >
 &#160;&#160;&#160;midi_out&#160;&#160;&#160;<b>midi</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a9e3267900e81e6d3d9128ec26c1d9ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f3d5b23698ae04cc5625eb878f1d78" id="r_aa4f3d5b23698ae04cc5625eb878f1d78"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aa4f3d5b23698ae04cc5625eb878f1d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fbfe84119a850a85423c870e893aaec" id="r_a7fbfe84119a850a85423c870e893aaec"><td class="memItemLeft" align="right" valign="top"><a id="a7fbfe84119a850a85423c870e893aaec" name="a7fbfe84119a850a85423c870e893aaec"></a>
-ossia::flat_map&lt; uint8_t, std::vector&lt; <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1chord__type.html">chord_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>chords</b></td></tr>
-<tr class="separator:a7fbfe84119a850a85423c870e893aaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3158b271e72a865607b1d0dbd198ba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45203fc6c97f2a91d4e29db285e36b24" id="r_a45203fc6c97f2a91d4e29db285e36b24"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a45203fc6c97f2a91d4e29db285e36b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab66207d6502774d0a9e2099cd0034dd1" id="r_ab66207d6502774d0a9e2099cd0034dd1"><td class="memItemLeft" align="right" valign="top">static halp_meta(local_midi_tick_batch_reserve, 4096) enum Chord constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab66207d6502774d0a9e2099cd0034dd1">legacy_chord_count</a> = 6</td></tr>
+<tr class="separator:ab66207d6502774d0a9e2099cd0034dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41eda18acb719124a061eb49ed81716" id="r_ad41eda18acb719124a061eb49ed81716"><td class="memItemLeft" align="right" valign="top"><a id="ad41eda18acb719124a061eb49ed81716" name="ad41eda18acb719124a061eb49ed81716"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>chord_count</b> = <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab66207d6502774d0a9e2099cd0034dd1">legacy_chord_count</a> + mtk::chord_type_count</td></tr>
+<tr class="separator:ad41eda18acb719124a061eb49ed81716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaccb58c95b5c2ca7c7c1f2a5115f5712" id="r_aaccb58c95b5c2ca7c7c1f2a5115f5712"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#aaccb58c95b5c2ca7c7c1f2a5115f5712">max_voices</a> = 12</td></tr>
+<tr class="separator:aaccb58c95b5c2ca7c7c1f2a5115f5712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3cea5733c5934c39e53672e2a0eb6eb" id="r_ab3cea5733c5934c39e53672e2a0eb6eb"><td class="memItemLeft" align="right" valign="top"><a id="ab3cea5733c5934c39e53672e2a0eb6eb" name="ab3cea5733c5934c39e53672e2a0eb6eb"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_intervals</b> = 8</td></tr>
+<tr class="separator:ab3cea5733c5934c39e53672e2a0eb6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698731b352df697212fc9ba01b716e39" id="r_a698731b352df697212fc9ba01b716e39"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#a698731b352df697212fc9ba01b716e39">max_memory_text</a> = 128 * 64</td></tr>
+<tr class="separator:a698731b352df697212fc9ba01b716e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e7ff99a9897e609552922aed075cd7f" id="r_a3e7ff99a9897e609552922aed075cd7f"><td class="memItemLeft" align="right" valign="top"><a id="a3e7ff99a9897e609552922aed075cd7f" name="a3e7ff99a9897e609552922aed075cd7f"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>memory_row_id</b> = 10000</td></tr>
+<tr class="memdesc:a3e7ff99a9897e609552922aed075cd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identity of the row of a learned key, in the Memory list. <br /></td></tr>
+<tr class="separator:a3e7ff99a9897e609552922aed075cd7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d384a925175b631f479437a4d2ddc5a" id="r_a3d384a925175b631f479437a4d2ddc5a"><td class="memItemLeft" align="right" valign="top"><a id="a3d384a925175b631f479437a4d2ddc5a" name="a3d384a925175b631f479437a4d2ddc5a"></a>
 static const constexpr std::array&lt; int, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>major7</b> {0, 4, 7, 11, 12}</td></tr>
 <tr class="separator:a3d384a925175b631f479437a4d2ddc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +239,275 @@ static const constexpr std::array&lt; int, 5 &gt;&#160;</td><td class="memItemRi
 <tr class="memitem:a6eac6b1d4ef979f8b911e325bfc1e575" id="r_a6eac6b1d4ef979f8b911e325bfc1e575"><td class="memItemLeft" align="right" valign="top"><a id="a6eac6b1d4ef979f8b911e325bfc1e575" name="a6eac6b1d4ef979f8b911e325bfc1e575"></a>
 static const constexpr std::array&lt; int, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>aug</b> {0, 4, 8, 10, 12}</td></tr>
 <tr class="separator:a6eac6b1d4ef979f8b911e325bfc1e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a2fa0d36c7862eef8c53fe8bc40425" id="r_af8a2fa0d36c7862eef8c53fe8bc40425"><td class="memItemLeft" align="right" valign="top">static constexpr std::array&lt; const std::array&lt; int, 5 &gt; *, <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab66207d6502774d0a9e2099cd0034dd1">legacy_chord_count</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#af8a2fa0d36c7862eef8c53fe8bc40425">legacy_chords</a></td></tr>
+<tr class="separator:af8a2fa0d36c7862eef8c53fe8bc40425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abdf884b45bf4b4e816d1ab5277cffa71" name="abdf884b45bf4b4e816d1ab5277cffa71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf884b45bf4b4e816d1ab5277cffa71">&#9670;&#160;</a></span>memory_rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static halp::string_list_value Nodes::Chord::Node::memory_rows </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#af0baef5564d7fc5ac1e2ef6593027594">memory_table</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The rows of the Memory list for a table: one per learned key, in key order. </p>
+
+</div>
+</div>
+<a id="a57e9efec725eeae393a8a1a06e190cd9" name="a57e9efec725eeae393a8a1a06e190cd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e9efec725eeae393a8a1a06e190cd9">&#9670;&#160;</a></span>memory_rows_from_text()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static halp::string_list_value Nodes::Chord::Node::memory_rows_from_text </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A row for each entry of a memory text, in its order: an entry that parses is written as learning writes it, another one is kept as it is. </p>
+
+</div>
+</div>
+<a id="a40e0eae76a86e6c277f67d1cb11fccd0" name="a40e0eae76a86e6c277f67d1cb11fccd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40e0eae76a86e6c277f67d1cb11fccd0">&#9670;&#160;</a></span>parse_memory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Nodes::Chord::Node::parse_memory </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_nodes_1_1_chord_1_1_node.html#af0baef5564d7fc5ac1e2ef6593027594">memory_table</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>"60: 0 4 7; C3: 12 15 19". Entries are separated by ';' or new lines; an entry that does not parse is skipped. </p>
+
+</div>
+</div>
+<a id="ab6fea432b4ec0354d63b6a51e28a4e50" name="ab6fea432b4ec0354d63b6a51e28a4e50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6fea432b4ec0354d63b6a51e28a4e50">&#9670;&#160;</a></span>print_memory_entry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::size_t Nodes::Chord::Node::print_memory_entry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_nodes_1_1_chord_1_1_node_1_1learned__chord.html">learned_chord</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>"C4: 0 4 7": the key as a note name, then its intervals. Returns the length written, at most 64. </p>
+
+</div>
+</div>
+<a id="ab7865ba05bf965d27d2688f3960deca7" name="ab7865ba05bf965d27d2688f3960deca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7865ba05bf965d27d2688f3960deca7">&#9670;&#160;</a></span>voices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Nodes::Chord::Node::voices </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; int, <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#aaccb58c95b5c2ca7c7c1f2a5115f5712">max_voices</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Voices of the chord a note-on plays, as semitones from the note, in voice order (root first). For tests and the inspector. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab66207d6502774d0a9e2099cd0034dd1" name="ab66207d6502774d0a9e2099cd0034dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66207d6502774d0a9e2099cd0034dd1">&#9670;&#160;</a></span>legacy_chord_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">halp_meta (local_midi_tick_batch_reserve, 4096) enum Chord constexpr int Nodes::Chord::Node::legacy_chord_count = 6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The first six are saved in documents by name and keep their notes; the others follow mtk::chord_types, in its order. </p>
+
+</div>
+</div>
+<a id="af8a2fa0d36c7862eef8c53fe8bc40425" name="af8a2fa0d36c7862eef8c53fe8bc40425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8a2fa0d36c7862eef8c53fe8bc40425">&#9670;&#160;</a></span>legacy_chords</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array&lt;const std::array&lt;int, 5&gt;*, <a class="el" href="struct_nodes_1_1_chord_1_1_node.html#ab66207d6502774d0a9e2099cd0034dd1">legacy_chord_count</a>&gt; Nodes::Chord::Node::legacy_chords</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">      &amp;major7, &amp;minor7, &amp;sus2, &amp;sus4, &amp;dim, &amp;aug}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a698731b352df697212fc9ba01b716e39" name="a698731b352df697212fc9ba01b716e39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698731b352df697212fc9ba01b716e39">&#9670;&#160;</a></span>max_memory_text</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Nodes::Chord::Node::max_memory_text = 128 * 64</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The memory rows the audio thread reads, as text: 128 keys of up to 12 intervals. </p>
+
+</div>
+</div>
+<a id="aaccb58c95b5c2ca7c7c1f2a5115f5712" name="aaccb58c95b5c2ca7c7c1f2a5115f5712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaccb58c95b5c2ca7c7c1f2a5115f5712">&#9670;&#160;</a></span>max_voices</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Nodes::Chord::Node::max_voices = 12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Voices one input note can produce: 8 intervals and the root, or a learned chord. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_chord_8hpp_source.html">Chord.hpp</a></li>
 </ul>

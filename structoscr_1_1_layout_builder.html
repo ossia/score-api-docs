@@ -163,7 +163,7 @@ requires (sizeof...(T) &gt; 1)</td></tr>
 <tr class="memdesc:ac87789d1b4781ec2c1d052f79d71f52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The strip cell being built, if any. <br /></td></tr>
 <tr class="separator:ac87789d1b4781ec2c1d052f79d71f52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab58ace2bbe0240b320d25b5120341a11" id="r_ab58ace2bbe0240b320d25b5120341a11"><td class="memItemLeft" align="right" valign="top"><a id="ab58ace2bbe0240b320d25b5120341a11" name="ab58ace2bbe0240b320d25b5120341a11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>acceptFileDrops</b> (<a class="el" href="struct_process_1_1_file_chooser_base.html">Process::FileChooserBase</a> &amp;port)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>acceptFileDrops</b> (Process::FileChooserBase &amp;port)</td></tr>
 <tr class="memdesc:ab58ace2bbe0240b320d25b5120341a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Files dropped on the enclosing strip cell set the port. <br /></td></tr>
 <tr class="separator:ab58ace2bbe0240b320d25b5120341a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad68dada4c04ecdc885386754a83f8c42" id="r_ad68dada4c04ecdc885386754a83f8c42"><td class="memTemplParams" colspan="2"><a id="ad68dada4c04ecdc885386754a83f8c42" name="ad68dada4c04ecdc885386754a83f8c42"></a>
@@ -181,6 +181,9 @@ template&lt;typename Item &gt; </td></tr>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a5c723e876998228ef7fd392d58e7cc38"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustom</b> (Item &amp;item)</td></tr>
 <tr class="separator:a5c723e876998228ef7fd392d58e7cc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4526f545a47775449521a81e08298d2d" id="r_a4526f545a47775449521a81e08298d2d"><td class="memTemplParams" colspan="2">template&lt;typename Item &gt; </td></tr>
+<tr class="memitem:a4526f545a47775449521a81e08298d2d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structoscr_1_1_layout_builder.html#a4526f545a47775449521a81e08298d2d">watchControl</a> (Item &amp;item, auto member)</td></tr>
+<tr class="separator:a4526f545a47775449521a81e08298d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca5a30168b8d833ada042b626f2d8af" id="r_a3ca5a30168b8d833ada042b626f2d8af"><td class="memTemplParams" colspan="2"><a id="a3ca5a30168b8d833ada042b626f2d8af" name="a3ca5a30168b8d833ada042b626f2d8af"></a>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a3ca5a30168b8d833ada042b626f2d8af"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createCustomControl</b> (Item &amp;item, auto... member)</td></tr>
@@ -248,6 +251,12 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>displayText
 template&lt;typename Item , typename F &gt; </td></tr>
 <tr class="memitem:a48fe53049fe8064f3798b39c46076a16"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>forEachMember</b> (Item &amp;item, F &amp;&amp;f)</td></tr>
 <tr class="separator:a48fe53049fe8064f3798b39c46076a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_struct_process_1_1_layout_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_struct_process_1_1_layout_builder_base')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></td></tr>
+<tr class="memitem:a7f10f1e7c7c45531a80f5a789abfde72 inherit pub_static_methods_struct_process_1_1_layout_builder_base" id="r_a7f10f1e7c7c45531a80f5a789abfde72"><td class="memTemplParams" colspan="2">
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a7f10f1e7c7c45531a80f5a789abfde72 inherit pub_static_methods_struct_process_1_1_layout_builder_base"><td class="memTemplItemLeft" align="right" valign="top">static Qt::Alignment&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_alignment</b> (T cur) noexcept</td></tr>
+<tr class="memdesc:a7f10f1e7c7c45531a80f5a789abfde72 inherit pub_static_methods_struct_process_1_1_layout_builder_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any enum with left, center and right, like halp::alignments. <br /></td></tr>
+<tr class="separator:a7f10f1e7c7c45531a80f5a789abfde72 inherit pub_static_methods_struct_process_1_1_layout_builder_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -395,6 +404,47 @@ template&lt;typename Port_T , typename Item &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Port_T is <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> or <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>: a control a layout names is set up the same way whichever side it is on, the widget following the port's value. </p>
+
+</div>
+</div>
+<a id="a4526f545a47775449521a81e08298d2d" name="a4526f545a47775449521a81e08298d2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4526f545a47775449521a81e08298d2d">&#9670;&#160;</a></span>watchControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Info &gt; </div>
+<div class="memtemplate">
+template&lt;typename Item &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structoscr_1_1_layout_builder.html">oscr::LayoutBuilder</a>&lt; Info &gt;::watchControl </td>
+          <td>(</td>
+          <td class="paramtype">Item &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">auto&#160;</td>
+          <td class="paramname"><em>member</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A custom item that shows a control without editing it: its watch() is given the control's field, with the value the control has, at once and each time it changes, whether the process runs or not. </p>
 
 </div>
 </div>

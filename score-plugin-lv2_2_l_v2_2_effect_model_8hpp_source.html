@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_effect_model
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">// Resolve a plug-in URI, bundle path or (legacy) display name against the</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">// loaded world, loading its bundle on demand. Main thread only.</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// (get_lv2_plugin_name is declared in LV2/Context.hpp.)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>SCORE_PLUGIN_LV2_EXPORT std::optional&lt;Lilv::Plugin&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>SCORE_PLUGIN_LV2_TEST_EXPORT std::optional&lt;Lilv::Plugin&gt;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>find_lv2_plugin(Lilv::World&amp; world, QString path);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>PROCESS_METADATA(</div>

@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_pattern_grid_8hpp_source.html',''); i
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>SCORE_PLUGIN_MIDI_EXPORT</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>SCORE_PLUGIN_MIDI_TEST_EXPORT</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>std::vector&lt;StepSlot&gt; timelineSlots(</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> division, <span class="keyword">const</span> TimeGrid&amp; grid, ZoomRatio zoom, <span class="keywordtype">double</span> width,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    std::size_t maxSlots = 100000);</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('_pattern_grid_8hpp_source.html',''); i
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>SCORE_PLUGIN_MIDI_EXPORT <span class="keywordtype">double</span> longestLoop(<span class="keyword">const</span> Pattern&amp; p) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>SCORE_PLUGIN_MIDI_EXPORT</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>SCORE_PLUGIN_MIDI_TEST_EXPORT</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>std::vector&lt;StepSlot&gt; fitLaneSlots(</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> division, ossia::time_signature sig, <span class="keywordtype">double</span> span, <span class="keywordtype">double</span> x0,</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">double</span> x1);</div>
@@ -185,16 +185,16 @@ $(document).ready(function(){initNavTree('_pattern_grid_8hpp_source.html',''); i
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
 </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>SCORE_PLUGIN_MIDI_EXPORT</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>SCORE_PLUGIN_MIDI_TEST_EXPORT</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>FitLayout fitLayout(</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">const</span> Pattern&amp; p, ossia::time_signature sig, <span class="keywordtype">double</span> x0, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> minStep);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>SCORE_PLUGIN_MIDI_EXPORT</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>SCORE_PLUGIN_MIDI_TEST_EXPORT</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keywordtype">int</span> playingSlot(</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">const</span> std::vector&lt;StepSlot&gt;&amp; slots, int64_t played, <span class="keywordtype">int</span> length, <span class="keywordtype">int</span> division,</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">double</span> span) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>SCORE_PLUGIN_MIDI_EXPORT</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>SCORE_PLUGIN_MIDI_TEST_EXPORT</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keywordtype">int</span> slotWithIndex(<span class="keyword">const</span> std::vector&lt;StepSlot&gt;&amp; slots, int64_t index) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}</div>
 <div class="ttc" id="astruct_patternist_1_1_fit_layout_html"><div class="ttname"><a href="struct_patternist_1_1_fit_layout.html">Patternist::FitLayout</a></div><div class="ttdoc">Every lane of a pattern over [x0; x1[.</div><div class="ttdef"><b>Definition</b> PatternGrid.hpp:90</div></div>

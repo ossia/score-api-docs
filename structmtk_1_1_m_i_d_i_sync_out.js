@@ -1,5 +1,26 @@
 var structmtk_1_1_m_i_d_i_sync_out =
 [
-    [ "MainThreadState", "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html", null ],
-    [ "storage", "unionmtk_1_1_m_i_d_i_sync_out_1_1storage.html", "unionmtk_1_1_m_i_d_i_sync_out_1_1storage" ]
+    [ "device_message", "structmtk_1_1_m_i_d_i_sync_out_1_1device__message.html", null ],
+    [ "ins", "structmtk_1_1_m_i_d_i_sync_out_1_1ins.html", null ],
+    [ "MainThreadState", "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html", "structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state" ],
+    [ "mtc_time", "structmtk_1_1_m_i_d_i_sync_out_1_1mtc__time.html", null ],
+    [ "ui", "structmtk_1_1_m_i_d_i_sync_out_1_1ui.html", null ],
+    [ "begin_tick", "structmtk_1_1_m_i_d_i_sync_out.html#ae26c2c44a1e3131bde756b278931735f", null ],
+    [ "bind_output", "structmtk_1_1_m_i_d_i_sync_out.html#a727a0fd8273e6d60da989d412425f59c", null ],
+    [ "clock_thread_main", "structmtk_1_1_m_i_d_i_sync_out.html#ab22bbae0aef229135146ae3fd2521ce8", null ],
+    [ "emit", "structmtk_1_1_m_i_d_i_sync_out.html#afbbed4ba1143e5b742212819cc7700a6", null ],
+    [ "emit_transport", "structmtk_1_1_m_i_d_i_sync_out.html#a33e0f46ffc69965b2b821bb57768f963", null ],
+    [ "locate", "structmtk_1_1_m_i_d_i_sync_out.html#ad37b5fb0d4a2e0a44f8695d4bf19e1aa", null ],
+    [ "next_even_frame", "structmtk_1_1_m_i_d_i_sync_out.html#ac54935718492423703b0764932733fee", null ],
+    [ "publish_clock_controls", "structmtk_1_1_m_i_d_i_sync_out.html#a47c462d0bc7cdaf7291ecd24528b4e36", null ],
+    [ "release_delayed", "structmtk_1_1_m_i_d_i_sync_out.html#a1383f1d48027514e62878ed6fe8b524b", null ],
+    [ "send_quarter_frames", "structmtk_1_1_m_i_d_i_sync_out.html#a4c8b61813373f151c8b1a33bf4f5180e", null ],
+    [ "set_device", "structmtk_1_1_m_i_d_i_sync_out.html#a509e1bdff416ef410587bf42101d26f2", null ],
+    [ "sort_output", "structmtk_1_1_m_i_d_i_sync_out.html#a5a318f7804e3ff586d2f289c0603e623", null ],
+    [ "free_tempo", "structmtk_1_1_m_i_d_i_sync_out.html#a94ba8ae03129b4ff64af9cb22eb2f677", null ],
+    [ "midi_out", "structmtk_1_1_m_i_d_i_sync_out.html#a71db950f7c888c70732a4efe860dfbb2", null ],
+    [ "pending_tap", "structmtk_1_1_m_i_d_i_sync_out.html#a44207122af4796489fc8b7c1fa117dc2", null ],
+    [ "start_requested", "structmtk_1_1_m_i_d_i_sync_out.html#aed0744f8549d904e3124335584fa72a4", null ],
+    [ "to_device", "structmtk_1_1_m_i_d_i_sync_out.html#add3829a3c4ed4dcfeb6479ed0b5947b3", null ],
+    [ "to_output_port", "structmtk_1_1_m_i_d_i_sync_out.html#af3664ab08ebca610272f1f0137fa0981", null ]
 ];

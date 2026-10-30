@@ -1,4 +1,6 @@
 var dir_7c139bd59e625856aabda5915c02864c =
 [
-    [ "ProcessDropHandler.hpp", "_process_drop_handler_8hpp_source.html", null ]
+    [ "ClipMetadata.hpp", "_clip_metadata_8hpp_source.html", null ],
+    [ "ProcessDropHandler.hpp", "_process_drop_handler_8hpp_source.html", null ],
+    [ "TakeDrop.hpp", "_take_drop_8hpp_source.html", null ]
 ];

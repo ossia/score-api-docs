@@ -1,18 +1,13 @@
 var struct_nodes_1_1_audio_looper_1_1_node =
 [
     [ "ins", "struct_nodes_1_1_audio_looper_1_1_node_1_1ins.html", null ],
-    [ "passthrough_selector", "struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1passthrough__selector" ],
-    [ "State", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1_state" ],
-    [ "ui", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html", null ],
-    [ "Passthrough", "struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338", [
-      [ "None", "struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6adf97f83acf6453d4a6a4b1070f3754", null ],
-      [ "Record", "struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338a6a0d9eaee314c567fd72fb97ee707a36", null ],
-      [ "Full", "struct_nodes_1_1_audio_looper_1_1_node.html#aef63d8cef5ef1373ba303bb2e656c338abbd47109890259c0127154db1af26c75", null ]
-    ] ],
-    [ "Restart", "struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4", [
-      [ "Always", "struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4a68eec46437c384d8dad18d5464ebc35c", null ],
-      [ "Recording", "struct_nodes_1_1_audio_looper_1_1_node.html#ae972d07b32b4e005d3122e1ca5711cc4ac5564d2e8b8e0ae08bf4363f2b947166", null ]
-    ] ],
-    [ "enterMode", "struct_nodes_1_1_audio_looper_1_1_node.html#a7572bd1f2dccb4aef88444e153ad9244", null ],
-    [ "silence", "struct_nodes_1_1_audio_looper_1_1_node.html#a1f3177ecacf5ac8b0e8b905b26b69e5f", null ]
+    [ "ui", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui.html", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui" ],
+    [ "worker_t", "struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html", null ],
+    [ "allocate_ring", "struct_nodes_1_1_audio_looper_1_1_node.html#a1ff091c625ab14d4e21e1da99b25b9d2", null ],
+    [ "fetch_audio", "struct_nodes_1_1_audio_looper_1_1_node.html#a76d193c77d51168aaa3471b82a45240e", null ],
+    [ "prepare_stretch", "struct_nodes_1_1_audio_looper_1_1_node.html#aab8913a442fb0ac74b6e202aadc5fac6", null ],
+    [ "process_message", "struct_nodes_1_1_audio_looper_1_1_node.html#a121b6552cdb71b47622480647e7497c5", null ],
+    [ "stop", "struct_nodes_1_1_audio_looper_1_1_node.html#a94c8293273843244d34b2d96241f4841", null ],
+    [ "send_message_from_worker", "struct_nodes_1_1_audio_looper_1_1_node.html#ab9ee52e6c7bc340d0f03ac1c800079e5", null ],
+    [ "stop_take", "struct_nodes_1_1_audio_looper_1_1_node.html#a8c7020b4c2991483503515380908a2e2", null ]
 ];

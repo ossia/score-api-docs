@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['ui_3a_3amididisplay_0',['MidiDisplay',['../namespace_ui_1_1_midi_display.html',1,'Ui']]]
+  ['pluginloader_0',['PluginLoader',['../namespace_plugin_loader.html',1,'']]],
+  ['process_1',['Process',['../namespace_process.html',1,'']]],
+  ['protocols_3a_3acan_2',['CAN',['../namespace_protocols_1_1_c_a_n.html',1,'Protocols']]]
 ];

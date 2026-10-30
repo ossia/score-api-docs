@@ -9,5 +9,6 @@ var dir_7ff5358d2bd55b55a62a1f887e2a2ea2 =
     [ "AutomationPresenter.hpp", "_automation_presenter_8hpp_source.html", null ],
     [ "AutomationProcessMetadata.hpp", "_automation_process_metadata_8hpp_source.html", null ],
     [ "AutomationView.hpp", "_automation_view_8hpp_source.html", null ],
-    [ "score-plugin-automation/Automation/LocalTree.hpp", "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html", null ]
+    [ "score-plugin-automation/Automation/LocalTree.hpp", "score-plugin-automation_2_automation_2_local_tree_8hpp_source.html", null ],
+    [ "ValueTakeDrop.hpp", "_value_take_drop_8hpp_source.html", null ]
 ];

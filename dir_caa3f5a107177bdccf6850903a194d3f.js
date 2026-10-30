@@ -9,6 +9,7 @@ var dir_caa3f5a107177bdccf6850903a194d3f =
     [ "Easetanbul.hpp", "_easetanbul_8hpp_source.html", null ],
     [ "EntityToMidi.hpp", "_entity_to_midi_8hpp_source.html", null ],
     [ "Interpolator.hpp", "_interpolator_8hpp_source.html", null ],
+    [ "MIDIClockEngine.hpp", "_m_i_d_i_clock_engine_8hpp_source.html", null ],
     [ "MIDISync.hpp", "_m_i_d_i_sync_8hpp_source.html", null ],
     [ "PointTracker.hpp", "_point_tracker_8hpp_source.html", null ],
     [ "Queue.hpp", "_queue_8hpp_source.html", null ],

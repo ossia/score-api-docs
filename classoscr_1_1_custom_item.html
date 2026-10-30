@@ -152,6 +152,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac586f24f930a019b401d95e1686ba46e" id="r_ac586f24f930a019b401d95e1686ba46e"><td class="memItemLeft" align="right" valign="top"><a id="ac586f24f930a019b401d95e1686ba46e" name="ac586f24f930a019b401d95e1686ba46e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:ac586f24f930a019b401d95e1686ba46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad609c20408194416b9bcbe8771e9ce" id="r_abad609c20408194416b9bcbe8771e9ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#abad609c20408194416b9bcbe8771e9ce">startDrag</a> (QGraphicsSceneMouseEvent *event)</td></tr>
+<tr class="separator:abad609c20408194416b9bcbe8771e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4da94367b803fac167a5fb1f46fb0e1" id="r_ab4da94367b803fac167a5fb1f46fb0e1"><td class="memItemLeft" align="right" valign="top"><a id="ab4da94367b803fac167a5fb1f46fb0e1" name="ab4da94367b803fac167a5fb1f46fb0e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:ab4da94367b803fac167a5fb1f46fb0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +176,35 @@ Item&#160;</td><td class="memItemRight" valign="bottom"><b>impl</b></td></tr>
 <tr class="separator:a4d881832a1301c79ed85912602e74b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abad609c20408194416b9bcbe8771e9ce" name="abad609c20408194416b9bcbe8771e9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abad609c20408194416b9bcbe8771e9ce">&#9670;&#160;</a></span>startDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Item , typename Control  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem</a>&lt; Item, Control &gt;::startDrag </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneMouseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An item with a drag_payload(x, y) starts a drag of what it returns once the mouse has moved far enough with the left button held, the way files are dragged out of a file manager. </p>
+
+</div>
+</div>
 <a id="a1b0d6f4a0ab325dc7e1b4b15c597b955" name="a1b0d6f4a0ab325dc7e1b4b15c597b955"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b0d6f4a0ab325dc7e1b4b15c597b955">&#9670;&#160;</a></span>wheelEvent()</h2>
 

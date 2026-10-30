@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('classscore_1_1_graphics_layout.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classscore_1_1_graphics_layout-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::GraphicsLayout Class Reference</div></div>
@@ -166,9 +167,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpacing</b> (qreal
 <tr class="memitem:ab60e4303a236ff231eb3ce34ab20d092" id="r_ab60e4303a236ff231eb3ce34ab20d092"><td class="memItemLeft" align="right" valign="top"><a id="ab60e4303a236ff231eb3ce34ab20d092" name="ab60e4303a236ff231eb3ce34ab20d092"></a>
 qreal&#160;</td><td class="memItemRight" valign="bottom"><b>spacing</b> () const noexcept</td></tr>
 <tr class="separator:ab60e4303a236ff231eb3ce34ab20d092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf6d365c4945551548367d0d28221bc" id="r_aeaf6d365c4945551548367d0d28221bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_graphics_layout.html#aeaf6d365c4945551548367d0d28221bc">setAlignment</a> (Qt::Alignment a)</td></tr>
+<tr class="separator:aeaf6d365c4945551548367d0d28221bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb1523a08681c64291c06d3bf92f4a8" id="r_affb1523a08681c64291c06d3bf92f4a8"><td class="memItemLeft" align="right" valign="top"><a id="affb1523a08681c64291c06d3bf92f4a8" name="affb1523a08681c64291c06d3bf92f4a8"></a>
+Qt::Alignment&#160;</td><td class="memItemRight" valign="bottom"><b>alignment</b> () const noexcept</td></tr>
+<tr class="separator:affb1523a08681c64291c06d3bf92f4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a464c9666613202148aa747b6ab1f84eb" id="r_a464c9666613202148aa747b6ab1f84eb"><td class="memItemLeft" align="right" valign="top"><a id="a464c9666613202148aa747b6ab1f84eb" name="a464c9666613202148aa747b6ab1f84eb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateChildrenRects</b> (const QList&lt; QGraphicsItem * &gt; &amp;)</td></tr>
 <tr class="separator:a464c9666613202148aa747b6ab1f84eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f13ae844758828e675b1ca859fdb11" id="r_a81f13ae844758828e675b1ca859fdb11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_graphics_layout.html#a81f13ae844758828e675b1ca859fdb11">setFitMargins</a> (qreal right, qreal bottom)</td></tr>
+<tr class="separator:a81f13ae844758828e675b1ca859fdb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee92912554a3523691ca5d6bb9ed2114" id="r_aee92912554a3523691ca5d6bb9ed2114"><td class="memItemLeft" align="right" valign="top"><a id="aee92912554a3523691ca5d6bb9ed2114" name="aee92912554a3523691ca5d6bb9ed2114"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:aee92912554a3523691ca5d6bb9ed2114"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +234,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>minimumWidthChanged</
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
 <tr class="separator:adbae571957b56fe74c2c3b0242a9b78c inherit pub_methods_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a12a02019d454c3c595407f98c00b8007" id="r_a12a02019d454c3c595407f98c00b8007"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_graphics_layout.html#a12a02019d454c3c595407f98c00b8007">relayoutAround</a> (QGraphicsItem *item)</td></tr>
+<tr class="separator:a12a02019d454c3c595407f98c00b8007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:acd424fd74e3b0a7976e4b666f9df4596" id="r_acd424fd74e3b0a7976e4b666f9df4596"><td class="memItemLeft" align="right" valign="top"><a id="acd424fd74e3b0a7976e4b666f9df4596" name="acd424fd74e3b0a7976e4b666f9df4596"></a>
@@ -243,6 +256,15 @@ qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_padding</b> {}</td
 <tr class="memitem:a2d03328b63063777db8aedda9f39960d" id="r_a2d03328b63063777db8aedda9f39960d"><td class="memItemLeft" align="right" valign="top"><a id="a2d03328b63063777db8aedda9f39960d" name="a2d03328b63063777db8aedda9f39960d"></a>
 qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_spacing</b> {-1.}</td></tr>
 <tr class="separator:a2d03328b63063777db8aedda9f39960d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6263fbfc6037a4ecee3b337d0a58ef3a" id="r_a6263fbfc6037a4ecee3b337d0a58ef3a"><td class="memItemLeft" align="right" valign="top"><a id="a6263fbfc6037a4ecee3b337d0a58ef3a" name="a6263fbfc6037a4ecee3b337d0a58ef3a"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_fitRight</b> {-1.}</td></tr>
+<tr class="separator:a6263fbfc6037a4ecee3b337d0a58ef3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e9e65514a15a69ededfd19765fd5c38" id="r_a9e9e65514a15a69ededfd19765fd5c38"><td class="memItemLeft" align="right" valign="top"><a id="a9e9e65514a15a69ededfd19765fd5c38" name="a9e9e65514a15a69ededfd19765fd5c38"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>m_fitBottom</b> {-1.}</td></tr>
+<tr class="separator:a9e9e65514a15a69ededfd19765fd5c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a653560d845871e7b84c7c9d59ea077d1" id="r_a653560d845871e7b84c7c9d59ea077d1"><td class="memItemLeft" align="right" valign="top"><a id="a653560d845871e7b84c7c9d59ea077d1" name="a653560d845871e7b84c7c9d59ea077d1"></a>
+Qt::Alignment&#160;</td><td class="memItemRight" valign="bottom"><b>m_alignment</b> {}</td></tr>
+<tr class="separator:a653560d845871e7b84c7c9d59ea077d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classscore_1_1_resizeable_item"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classscore_1_1_resizeable_item')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classscore_1_1_resizeable_item.html">score::ResizeableItem</a></td></tr>
 <tr class="memitem:a4ecbee0f5d88c403177b0107ac07a753 inherit pro_attribs_classscore_1_1_resizeable_item" id="r_a4ecbee0f5d88c403177b0107ac07a753"><td class="memItemLeft" align="right" valign="top">
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumHeight</b> {}</td></tr>
@@ -262,6 +284,82 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="separator:ad688227212594196d62326f268c38cb7 inherit pub_types_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12a02019d454c3c595407f98c00b8007" name="a12a02019d454c3c595407f98c00b8007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a02019d454c3c595407f98c00b8007">&#9670;&#160;</a></span>relayoutAround()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::GraphicsLayout::relayoutAround </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem *&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lays out again the containers and layouts around an item whose size changed, innermost first, and reports it to the outermost layout's owner through its childrenSizeChanged(). </p>
+
+</div>
+</div>
+<a id="aeaf6d365c4945551548367d0d28221bc" name="aeaf6d365c4945551548367d0d28221bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf6d365c4945551548367d0d28221bc">&#9670;&#160;</a></span>setAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::GraphicsLayout::setAlignment </td>
+          <td>(</td>
+          <td class="paramtype">Qt::Alignment&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where children sit across the free space of their cell, row or column. Only the horizontal flags count. None: the layout's own placement. </p>
+
+</div>
+</div>
+<a id="a81f13ae844758828e675b1ca859fdb11" name="a81f13ae844758828e675b1ca859fdb11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f13ae844758828e675b1ca859fdb11">&#9670;&#160;</a></span>setFitMargins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::GraphicsLayout::setFitMargins </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>right</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>bottom</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The layout keeps its children's bounding rect plus these margins as its size, also when <a class="el" href="classscore_1_1_graphics_layout.html#a12a02019d454c3c595407f98c00b8007">relayoutAround()</a> lays it out again. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_graphics_layout_8hpp_source.html">GraphicsLayout.hpp</a></li>
 <li><b>GraphicsLayout.cpp</b></li>

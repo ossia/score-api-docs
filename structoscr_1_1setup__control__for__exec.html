@@ -140,8 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1fde95467583228b3af43c09a492f2b" id="r_ad1fde95467583228b3af43c09a492f2b"><td class="memItemLeft" align="right" valign="top"><a id="ad1fde95467583228b3af43c09a492f2b" name="ad1fde95467583228b3af43c09a492f2b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_control</b> (Field &amp;param, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inlet, int k)</td></tr>
 <tr class="separator:ad1fde95467583228b3af43c09a492f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4becd981a3c8514f3e2f70600d7a80fb" id="r_a4becd981a3c8514f3e2f70600d7a80fb"><td class="memItemLeft" align="right" valign="top"><a id="a4becd981a3c8514f3e2f70600d7a80fb" name="a4becd981a3c8514f3e2f70600d7a80fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update_controller</b> (Field &amp;param, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inlet)</td></tr>
+<tr class="memitem:a4becd981a3c8514f3e2f70600d7a80fb" id="r_a4becd981a3c8514f3e2f70600d7a80fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1setup__control__for__exec.html#a4becd981a3c8514f3e2f70600d7a80fb">update_controller</a> (Field &amp;param, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inlet)</td></tr>
 <tr class="separator:a4becd981a3c8514f3e2f70600d7a80fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57041bee8c6373a325240340242fe762" id="r_a57041bee8c6373a325240340242fe762"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1setup__control__for__exec.html#a57041bee8c6373a325240340242fe762">reconnect_control_to_ui</a> (<a class="el" href="structoscr_1_1dynamic__ports__component__data.html">dynamic_ports_component_data</a>&lt; Node &gt; &amp;control_data, Field &amp;param, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *inlet, int k)</td></tr>
 <tr class="separator:a57041bee8c6373a325240340242fe762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,6 +264,45 @@ template&lt;typename Node , typename Field , std::size_t N, std::size_t NField&g
 </table>
 </div><div class="memdoc">
 <p>Connects inlet -&gt; exec unless it already is. Returns whether a connection was made. Used both at creation and when ports are added by a resize. </p>
+
+</div>
+</div>
+<a id="a4becd981a3c8514f3e2f70600d7a80fb" name="a4becd981a3c8514f3e2f70600d7a80fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4becd981a3c8514f3e2f70600d7a80fb">&#9670;&#160;</a></span>update_controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Node , typename Field , std::size_t N, std::size_t NField&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structoscr_1_1setup__control__for__exec.html">oscr::setup_control_for_exec</a>&lt; Node, Field, N, NField &gt;::update_controller </td>
+          <td>(</td>
+          <td class="paramtype">Field &amp;&#160;</td>
+          <td class="paramname"><em>param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td>
+          <td class="paramname"><em>inlet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The processor sets its control from its own thread. The value reaches the UI through a mailbox without allocation or lock; values the UI has not taken yet are replaced by newer ones. A text control's update_controller takes a std::string_view and passes at most Field::max_length() characters, 4096 when the field does not say. A value the control does not hold as is (e.g. a fixed-size table for a list of strings) is turned into the control's value on the UI thread by <code>static auto controller_value(const arg_type&amp;)</code>, which may allocate. </p>
 
 </div>
 </div>

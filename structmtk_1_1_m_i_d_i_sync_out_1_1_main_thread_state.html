@@ -108,24 +108,62 @@ $(document).ready(function(){initNavTree('structmtk_1_1_m_i_d_i_sync_out_1_1_mai
   <div class="headertitle"><div class="title">mtk::MIDISyncOut::MainThreadState Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+
+<p><a class="el" href="namespace_state.html" title="Utilities for OSSIA data structures.">State</a> of the audio thread.  
+ <a href="structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="namespace_state.html" title="Utilities for OSSIA data structures.">State</a> of the audio thread. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a59717db05a10a6a1824ac26141404382" id="r_a59717db05a10a6a1824ac26141404382"><td class="memItemLeft" align="right" valign="top"><a id="a59717db05a10a6a1824ac26141404382" name="a59717db05a10a6a1824ac26141404382"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>last_clock_time</b> = 0.0</td></tr>
-<tr class="separator:a59717db05a10a6a1824ac26141404382"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad436b9a14a4fc8b240c79afb77c1c195" id="r_ad436b9a14a4fc8b240c79afb77c1c195"><td class="memItemLeft" align="right" valign="top"><a id="ad436b9a14a4fc8b240c79afb77c1c195" name="ad436b9a14a4fc8b240c79afb77c1c195"></a>
+<a class="el" href="structmtk_1_1midi__clock_1_1timeline__clock.html">midi_clock::timeline_clock</a>&#160;</td><td class="memItemRight" valign="bottom"><b>clock</b></td></tr>
+<tr class="separator:ad436b9a14a4fc8b240c79afb77c1c195"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d79b85334ebc98f661d6f4321c7650" id="r_a01d79b85334ebc98f661d6f4321c7650"><td class="memItemLeft" align="right" valign="top"><a id="a01d79b85334ebc98f661d6f4321c7650" name="a01d79b85334ebc98f661d6f4321c7650"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>last_mtc_quarter_frame_time</b> = 0.0</td></tr>
 <tr class="separator:a01d79b85334ebc98f661d6f4321c7650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86da559ab883a7d146018b4079806bd1" id="r_a86da559ab883a7d146018b4079806bd1"><td class="memItemLeft" align="right" valign="top"><a id="a86da559ab883a7d146018b4079806bd1" name="a86da559ab883a7d146018b4079806bd1"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>mtc_quarter_frame_index</b> = 0</td></tr>
 <tr class="separator:a86da559ab883a7d146018b4079806bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a11dcc39f5b94c36d54ff500fc0554" id="r_af1a11dcc39f5b94c36d54ff500fc0554"><td class="memItemLeft" align="right" valign="top"><a id="af1a11dcc39f5b94c36d54ff500fc0554" name="af1a11dcc39f5b94c36d54ff500fc0554"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>clock_tick_count</b> = 0</td></tr>
-<tr class="separator:af1a11dcc39f5b94c36d54ff500fc0554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ba170c994b63420eb4a77eb4c189ed8" id="r_a8ba170c994b63420eb4a77eb4c189ed8"><td class="memItemLeft" align="right" valign="top"><a id="a8ba170c994b63420eb4a77eb4c189ed8" name="a8ba170c994b63420eb4a77eb4c189ed8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>transport_started</b> = false</td></tr>
-<tr class="separator:a8ba170c994b63420eb4a77eb4c189ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86713174a386a0fca2f47d96de21b5ab" id="r_a86713174a386a0fca2f47d96de21b5ab"><td class="memItemLeft" align="right" valign="top"><a id="a86713174a386a0fca2f47d96de21b5ab" name="a86713174a386a0fca2f47d96de21b5ab"></a>
+<a class="el" href="structmtk_1_1_m_i_d_i_sync_out_1_1mtc__time.html">mtc_time</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mtc_cycle</b> {}</td></tr>
+<tr class="memdesc:a86713174a386a0fca2f47d96de21b5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time the pieces of the current timecode carry. <br /></td></tr>
+<tr class="separator:a86713174a386a0fca2f47d96de21b5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add702ec06df4d072a669dc72f3259ac3" id="r_add702ec06df4d072a669dc72f3259ac3"><td class="memItemLeft" align="right" valign="top"><a id="add702ec06df4d072a669dc72f3259ac3" name="add702ec06df4d072a669dc72f3259ac3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>running</b> = false</td></tr>
+<tr class="memdesc:add702ec06df4d072a669dc72f3259ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Playing since the last start, stop or pause. <br /></td></tr>
+<tr class="separator:add702ec06df4d072a669dc72f3259ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefcc1c738cbdaacca9a4c49893243b4b" id="r_aefcc1c738cbdaacca9a4c49893243b4b"><td class="memItemLeft" align="right" valign="top"><a id="aefcc1c738cbdaacca9a4c49893243b4b" name="aefcc1c738cbdaacca9a4c49893243b4b"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_start_in_flicks</b> = 0</td></tr>
+<tr class="separator:aefcc1c738cbdaacca9a4c49893243b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3aa476db66a9c5f807a74318e201d11" id="r_ad3aa476db66a9c5f807a74318e201d11"><td class="memItemLeft" align="right" valign="top"><a id="ad3aa476db66a9c5f807a74318e201d11" name="ad3aa476db66a9c5f807a74318e201d11"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>out_frame</b> = 0</td></tr>
+<tr class="memdesc:ad3aa476db66a9c5f807a74318e201d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frames of output since the object started, and in the current tick. <br /></td></tr>
+<tr class="separator:ad3aa476db66a9c5f807a74318e201d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a52d727bed80afd26b85a02672b2d9" id="r_a84a52d727bed80afd26b85a02672b2d9"><td class="memItemLeft" align="right" valign="top"><a id="a84a52d727bed80afd26b85a02672b2d9" name="a84a52d727bed80afd26b85a02672b2d9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>tick_frames</b> = 0</td></tr>
+<tr class="separator:a84a52d727bed80afd26b85a02672b2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1eaa15de345d1eeb8f42dd01c66ded0" id="r_af1eaa15de345d1eeb8f42dd01c66ded0"><td class="memItemLeft" align="right" valign="top"><a id="af1eaa15de345d1eeb8f42dd01c66ded0" name="af1eaa15de345d1eeb8f42dd01c66ded0"></a>
+std::array&lt; <a class="el" href="structmtk_1_1midi__clock_1_1message.html">midi_clock::message</a>, 32 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>delayed</b> {}</td></tr>
+<tr class="separator:af1eaa15de345d1eeb8f42dd01c66ded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a737fa9be7f2e047ffb2feabdd39657" id="r_a5a737fa9be7f2e047ffb2feabdd39657"><td class="memItemLeft" align="right" valign="top"><a id="a5a737fa9be7f2e047ffb2feabdd39657" name="a5a737fa9be7f2e047ffb2feabdd39657"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>delayed_count</b> = 0</td></tr>
+<tr class="separator:a5a737fa9be7f2e047ffb2feabdd39657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd214a09b42e15758dbf41ed4652758" id="r_a2dd214a09b42e15758dbf41ed4652758"><td class="memItemLeft" align="right" valign="top"><a id="a2dd214a09b42e15758dbf41ed4652758" name="a2dd214a09b42e15758dbf41ed4652758"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>to_device</b> = false</td></tr>
+<tr class="separator:a2dd214a09b42e15758dbf41ed4652758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bda3342e10e9b89fc793ce3c79fd5d4" id="r_a3bda3342e10e9b89fc793ce3c79fd5d4"><td class="memItemLeft" align="right" valign="top"><a id="a3bda3342e10e9b89fc793ce3c79fd5d4" name="a3bda3342e10e9b89fc793ce3c79fd5d4"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tick_start_ns</b> = 0</td></tr>
+<tr class="separator:a3bda3342e10e9b89fc793ce3c79fd5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8af96ec0229111f5c750d55bec29852" id="r_ab8af96ec0229111f5c750d55bec29852"><td class="memItemLeft" align="right" valign="top"><a id="ab8af96ec0229111f5c750d55bec29852" name="ab8af96ec0229111f5c750d55bec29852"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>next_tick_ns</b> = 0</td></tr>
+<tr class="separator:ab8af96ec0229111f5c750d55bec29852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f9d22f106cea3deb3d589d6a4b1cb4d" id="r_a0f9d22f106cea3deb3d589d6a4b1cb4d"><td class="memItemLeft" align="right" valign="top"><a id="a0f9d22f106cea3deb3d589d6a4b1cb4d" name="a0f9d22f106cea3deb3d589d6a4b1cb4d"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>latency_ns</b> = 0</td></tr>
+<tr class="separator:a0f9d22f106cea3deb3d589d6a4b1cb4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8a2953158be39bd01ef1aa5e44d5d4" id="r_adf8a2953158be39bd01ef1aa5e44d5d4"><td class="memItemLeft" align="right" valign="top"><a id="adf8a2953158be39bd01ef1aa5e44d5d4" name="adf8a2953158be39bd01ef1aa5e44d5d4"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>ns_per_frame</b> = 0.</td></tr>
+<tr class="separator:adf8a2953158be39bd01ef1aa5e44d5d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_m_i_d_i_sync_8hpp_source.html">MIDISync.hpp</a></li>

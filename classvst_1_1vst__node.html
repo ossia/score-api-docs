@@ -182,6 +182,14 @@ std::conditional_t&lt;!UseDouble, std::array&lt; ossia::float_vector, 2 &gt;, <a
 <tr class="separator:a01d70fb3593692add755c8ef4a1ce8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cd2b08f631d711a487c653f673f2ee" id="r_a81cd2b08f631d711a487c653f673f2ee"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; libremidi::ump, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#a81cd2b08f631d711a487c653f673f2ee">m_deferred</a></td></tr>
 <tr class="separator:a81cd2b08f631d711a487c653f673f2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dae22d151d0b93e8cb33b3fac27c9e" id="r_a68dae22d151d0b93e8cb33b3fac27c9e"><td class="memItemLeft" align="right" valign="top">Process::MidiSysexArena::stream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#a68dae22d151d0b93e8cb33b3fac27c9e">m_sysexStream</a></td></tr>
+<tr class="separator:a68dae22d151d0b93e8cb33b3fac27c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8314c386eedf7d4b97c75915ad69aa9d" id="r_a8314c386eedf7d4b97c75915ad69aa9d"><td class="memItemLeft" align="right" valign="top"><a id="a8314c386eedf7d4b97c75915ad69aa9d" name="a8314c386eedf7d4b97c75915ad69aa9d"></a>
+<a class="el" href="class_process_1_1_midi_sysex_arena.html">Process::MidiSysexArena</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysexArena</b></td></tr>
+<tr class="separator:a8314c386eedf7d4b97c75915ad69aa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c441b5000885dd9db099d453e52832a" id="r_a6c441b5000885dd9db099d453e52832a"><td class="memItemLeft" align="right" valign="top"><a id="a6c441b5000885dd9db099d453e52832a" name="a6c441b5000885dd9db099d453e52832a"></a>
+std::array&lt; VstMidiSysexEvent, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_sysexEvents</b> {}</td></tr>
+<tr class="separator:a6c441b5000885dd9db099d453e52832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classvst_1_1vst__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classvst_1_1vst__node__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classvst_1_1vst__node__base.html">vst::vst_node_base</a></td></tr>
 <tr class="memitem:a7e7ab8608a1a98d88ab18526f3c918bd inherit pub_attribs_classvst_1_1vst__node__base" id="r_a7e7ab8608a1a98d88ab18526f3c918bd"><td class="memItemLeft" align="right" valign="top">
 std::shared_ptr&lt; AEffectWrapper &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fx</b> {}</td></tr>
@@ -250,6 +258,23 @@ template&lt;bool UseDouble, bool IsSynth&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Events from ticks that covered no whole sample, waiting for the next block that does cover one. </p>
+
+</div>
+</div>
+<a id="a68dae22d151d0b93e8cb33b3fac27c9e" name="a68dae22d151d0b93e8cb33b3fac27c9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68dae22d151d0b93e8cb33b3fac27c9e">&#9670;&#160;</a></span>m_sysexStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool UseDouble, bool IsSynth&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Process::MidiSysexArena::stream <a class="el" href="classvst_1_1vst__node.html">vst::vst_node</a>&lt; UseDouble, IsSynth &gt;::m_sysexStream</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The system-exclusive messages of one process call: the VST 2 events and the bytes they point at stay put until the plug-in has processed them. </p>
 
 </div>
 </div>

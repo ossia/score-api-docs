@@ -13,5 +13,7 @@ var namespace_automation =
     [ "ProcessModel", "class_automation_1_1_process_model.html", null ],
     [ "ProcessState", "class_automation_1_1_process_state.html", "class_automation_1_1_process_state" ],
     [ "StateInspectorFactory", "class_automation_1_1_state_inspector_factory.html", "class_automation_1_1_state_inspector_factory" ],
-    [ "StateInspectorWidget", "class_automation_1_1_state_inspector_widget.html", null ]
+    [ "StateInspectorWidget", "class_automation_1_1_state_inspector_widget.html", null ],
+    [ "ValueTake", "struct_automation_1_1_value_take.html", "struct_automation_1_1_value_take" ],
+    [ "ValueTakeDropHandler", "class_automation_1_1_value_take_drop_handler.html", null ]
 ];

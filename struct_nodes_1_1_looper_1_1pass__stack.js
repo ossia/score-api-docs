@@ -1,0 +1,27 @@
+var struct_nodes_1_1_looper_1_1pass__stack =
+[
+    [ "aside_state", "struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state.html", "struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state" ],
+    [ "unmerge_state", "struct_nodes_1_1_looper_1_1pass__stack_1_1unmerge__state.html", null ],
+    [ "begin_first_pass", "struct_nodes_1_1_looper_1_1pass__stack.html#ace102c1f2fbae1c7e2d354eb43358d4a", null ],
+    [ "begin_merge", "struct_nodes_1_1_looper_1_1pass__stack.html#ab933e42bc1931e6eaf9fb1b1512cd7bb", null ],
+    [ "drop_redo", "struct_nodes_1_1_looper_1_1pass__stack.html#ac72fa27747ca75e17f222f7fbac1befd", null ],
+    [ "drop_unmerge", "struct_nodes_1_1_looper_1_1pass__stack.html#a41a76925eec013f5724204d22f0c2c9d", null ],
+    [ "erase", "struct_nodes_1_1_looper_1_1pass__stack.html#a8f54227dd2b96ef3763f48a1275f85d0", null ],
+    [ "extend", "struct_nodes_1_1_looper_1_1pass__stack.html#a8025f0cbc61ada092501e98355191430", null ],
+    [ "forget_aside", "struct_nodes_1_1_looper_1_1pass__stack.html#a430ce7923da3fe7aae60b66ea3877480", null ],
+    [ "leaves_on_redo", "struct_nodes_1_1_looper_1_1pass__stack.html#a5d5138dfe1e557468882f0e74354c65b", null ],
+    [ "merged", "struct_nodes_1_1_looper_1_1pass__stack.html#a6033d633159bb904c2fb8237f97fa8db", null ],
+    [ "merged_pass", "struct_nodes_1_1_looper_1_1pass__stack.html#aa71368024fbfb76b8d4f5879fd08c277", null ],
+    [ "merged_period", "struct_nodes_1_1_looper_1_1pass__stack.html#a504be75e2c88f89d6c55e0a9de04e2c3", null ],
+    [ "push_pass", "struct_nodes_1_1_looper_1_1pass__stack.html#a4fc63ea0d2fb31c5092f891c238e77d2", null ],
+    [ "put_back", "struct_nodes_1_1_looper_1_1pass__stack.html#ad851d54672546f3d7b5a0b107f18037f", null ],
+    [ "replaced", "struct_nodes_1_1_looper_1_1pass__stack.html#a891837a6c1d35db268e1392c2a69b50e", null ],
+    [ "returns_on_undo", "struct_nodes_1_1_looper_1_1pass__stack.html#ab37028ed2e0f2f20de9a23949bf5c55c", null ],
+    [ "set_aside", "struct_nodes_1_1_looper_1_1pass__stack.html#aebff7ae96f859f3375f0b47705a9ad76", null ],
+    [ "set_muted", "struct_nodes_1_1_looper_1_1pass__stack.html#a1787a8a38d138a61846dc449bcd7441b", null ],
+    [ "count", "struct_nodes_1_1_looper_1_1pass__stack.html#a5c9134746d5ee5d5579715d55e35a4b8", null ],
+    [ "layers", "struct_nodes_1_1_looper_1_1pass__stack.html#a88b8019b79986f34d177b53197d6949e", null ],
+    [ "length", "struct_nodes_1_1_looper_1_1pass__stack.html#a450863526b7018b3f543a7563c7598c9", null ],
+    [ "pushes", "struct_nodes_1_1_looper_1_1pass__stack.html#ac838be67d0163c40196ce175aca6901f", null ],
+    [ "total", "struct_nodes_1_1_looper_1_1pass__stack.html#a1dfb1f1a733d7f720d25ae9bcddeba42", null ]
+];

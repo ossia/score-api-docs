@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('structoscr_1_1_message_bus_wrapper_to_
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">oscr::MessageBusWrapperToUi&lt; Info &gt; Struct Template Reference</div></div>
@@ -118,12 +119,76 @@ Inheritance diagram for oscr::MessageBusWrapperToUi&lt; Info &gt;:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad5747a5e4bb9a6e5dd4551f94402a389" id="r_ad5747a5e4bb9a6e5dd4551f94402a389"><td class="memItemLeft" align="right" valign="top"><a id="ad5747a5e4bb9a6e5dd4551f94402a389" name="ad5747a5e4bb9a6e5dd4551f94402a389"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_to_ui_listener</b> (QObject *view, std::function&lt; void(QByteArray)&gt; f)</td></tr>
+<tr class="separator:ad5747a5e4bb9a6e5dd4551f94402a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab808045f3c42ee1de570abf45c9f535c" id="r_ab808045f3c42ee1de570abf45c9f535c"><td class="memItemLeft" align="right" valign="top"><a id="ab808045f3c42ee1de570abf45c9f535c" name="ab808045f3c42ee1de570abf45c9f535c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MessageBusWrapperToUi</b> (const <a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui.html">MessageBusWrapperToUi</a> &amp;)=delete</td></tr>
+<tr class="separator:ab808045f3c42ee1de570abf45c9f535c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7677eda154c892de7d0e216638a7149" id="r_aa7677eda154c892de7d0e216638a7149"><td class="memItemLeft" align="right" valign="top"><a id="aa7677eda154c892de7d0e216638a7149" name="aa7677eda154c892de7d0e216638a7149"></a>
+<a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui.html">MessageBusWrapperToUi</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui.html">MessageBusWrapperToUi</a> &amp;)=delete</td></tr>
+<tr class="separator:aa7677eda154c892de7d0e216638a7149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a141faea657ef587aa71c80a2f16ac041" id="r_a141faea657ef587aa71c80a2f16ac041"><td class="memItemLeft" align="right" valign="top"><a id="a141faea657ef587aa71c80a2f16ac041" name="a141faea657ef587aa71c80a2f16ac041"></a>
-std::function&lt; void(QByteArray)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>to_ui</b> = dummy_ui_callback{}</td></tr>
+<tr class="memitem:a803552aa9869dbd0c59063173ae17674" id="r_a803552aa9869dbd0c59063173ae17674"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; QPointer&lt; QObject &gt;, std::function&lt; void(QByteArray)&gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">to_ui_listeners</a></td></tr>
+<tr class="separator:a803552aa9869dbd0c59063173ae17674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141faea657ef587aa71c80a2f16ac041" id="r_a141faea657ef587aa71c80a2f16ac041"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(QByteArray)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a141faea657ef587aa71c80a2f16ac041">to_ui</a></td></tr>
 <tr class="separator:a141faea657ef587aa71c80a2f16ac041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a141faea657ef587aa71c80a2f16ac041" name="a141faea657ef587aa71c80a2f16ac041"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141faea657ef587aa71c80a2f16ac041">&#9670;&#160;</a></span>to_ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;avnd::has_processor_to_gui_bus Info&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(QByteArray)&gt; <a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui.html">oscr::MessageBusWrapperToUi</a>&lt; Info &gt;::to_ui</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [<span class="keyword">this</span>](QByteArray mess) {</div>
+<div class="line">    std::erase_if(<a class="code hl_variable" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">to_ui_listeners</a>, [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; l) { <span class="keywordflow">return</span> l.first.isNull(); });</div>
+<div class="line">    <span class="keyword">const</span> <span class="keyword">auto</span> n = <a class="code hl_variable" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">to_ui_listeners</a>.size();</div>
+<div class="line">    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; n; i++)</div>
+<div class="line">    {</div>
+<div class="line">      </div>
+<div class="line">      <span class="keywordflow">if</span>(i &gt;= <a class="code hl_variable" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">to_ui_listeners</a>.size())</div>
+<div class="line">        <span class="keywordflow">break</span>;</div>
+<div class="line">      </div>
+<div class="line">      <span class="keyword">auto</span> f = <a class="code hl_variable" href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">to_ui_listeners</a>[i].second;</div>
+<div class="line">      <span class="keywordflow">if</span>(i + 1 == n)</div>
+<div class="line">        f(std::move(mess));</div>
+<div class="line">      <span class="keywordflow">else</span></div>
+<div class="line">        f(mess);</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="ttc" id="astructoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4_html_a803552aa9869dbd0c59063173ae17674"><div class="ttname"><a href="structoscr_1_1_message_bus_wrapper_to_ui_3_01_info_01_4.html#a803552aa9869dbd0c59063173ae17674">oscr::MessageBusWrapperToUi&lt; Info &gt;::to_ui_listeners</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; QPointer&lt; QObject &gt;, std::function&lt; void(QByteArray)&gt; &gt; &gt; to_ui_listeners</div><div class="ttdef"><b>Definition</b> score-plugin-avnd/Crousti/ProcessModel.hpp:71</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a803552aa9869dbd0c59063173ae17674" name="a803552aa9869dbd0c59063173ae17674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803552aa9869dbd0c59063173ae17674">&#9670;&#160;</a></span>to_ui_listeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;avnd::has_processor_to_gui_bus Info&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::pair&lt;QPointer&lt;QObject&gt;, std::function&lt;void(QByteArray)&gt; &gt; &gt; <a class="el" href="structoscr_1_1_message_bus_wrapper_to_ui.html">oscr::MessageBusWrapperToUi</a>&lt; Info &gt;::to_ui_listeners</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The process box, the node of the nodal view and the inspector each show the process: every one of them gets the messages. A view that is gone is forgotten at the next message, or when another view is added. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-avnd_2_crousti_2_process_model_8hpp_source.html">score-plugin-avnd/Crousti/ProcessModel.hpp</a></li>
 </ul>

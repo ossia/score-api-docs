@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"_color_space_out_8hpp.html#aef9c643c7a3c7197e629aa5194eda2d4":[13,0,0,2,17,1,4,1,2,2],
+"_color_space_out_8hpp.html#af3aca175af14569c34686539563eb7b7":[13,0,0,2,17,1,4,1,2,1],
+"_color_space_out_8hpp_source.html":[13,0,0,2,17,1,4,1,2],
 "_column_8hpp_source.html":[13,0,0,2,13,0,3,2],
 "_combiner_8hpp_source.html":[13,0,0,2,8,2,4],
 "_combo_box_8hpp_source.html":[13,0,0,1,1,13,4],
@@ -149,7 +152,7 @@ var NAVTREEINDEX1 =
 "_data_stream_visitor_8hpp.html":[13,0,0,1,1,10,5],
 "_data_stream_visitor_8hpp_source.html":[13,0,0,1,1,10,5],
 "_dataflow_clock_8hpp_source.html":[13,0,0,2,14,1,1,1],
-"_debug_fx_8hpp_source.html":[13,0,0,2,16,0,7],
+"_debug_fx_8hpp_source.html":[13,0,0,2,16,0,8],
 "_decoder_threading_8hpp.html":[13,0,0,2,24,2,1],
 "_decoder_threading_8hpp.html#a1336e2b455652724cac61577aac42c53":[13,0,0,2,24,2,1,5],
 "_decoder_threading_8hpp.html#a7be9309bf66f6154404dccfcba59415d":[13,0,0,2,24,2,1,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "_document_plugin_base_8hpp_source.html":[13,0,0,1,1,8,1,0,1],
 "_document_plugin_creator_8hpp_source.html":[13,0,0,1,1,8,1,0,2],
 "_document_presenter_8hpp_source.html":[13,0,0,1,0,2,6],
-"_document_templates_8hpp_source.html":[13,0,0,1,0,2,7],
-"_document_view_8hpp_source.html":[13,0,0,1,0,2,8],
-"_domain_8hpp_source.html":[13,0,0,2,4,0,3],
-"_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4]
+"_document_templates_8hpp_source.html":[13,0,0,1,0,2,7]
 };

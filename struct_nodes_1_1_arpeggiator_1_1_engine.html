@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_arpeggiator_1_1_engin
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_arpeggiator_1_1_engine-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Nodes::Arpeggiator::Engine Struct Reference</div></div>
 </div><!--header-->
@@ -124,9 +125,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>chord</b> = ossia::s
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a6ff7861bb17650f57d211eb04c706c49" id="r_a6ff7861bb17650f57d211eb04c706c49"><td class="memItemLeft" align="right" valign="top"><a id="a6ff7861bb17650f57d211eb04c706c49" name="a6ff7861bb17650f57d211eb04c706c49"></a>
+const chord &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>step</b> (std::size_t i) const noexcept</td></tr>
+<tr class="memdesc:a6ff7861bb17650f57d211eb04c706c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">The notes of a step of the arpeggio. <br /></td></tr>
+<tr class="separator:a6ff7861bb17650f57d211eb04c706c49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b1d4032eb11b7f1c6b010ea47ca9119" id="r_a6b1d4032eb11b7f1c6b010ea47ca9119"><td class="memItemLeft" align="right" valign="top"><a id="a6b1d4032eb11b7f1c6b010ea47ca9119" name="a6b1d4032eb11b7f1c6b010ea47ca9119"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
 <tr class="separator:a6b1d4032eb11b7f1c6b010ea47ca9119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab531d9938f74bc11526ced838eaac171" id="r_ab531d9938f74bc11526ced838eaac171"><td class="memItemLeft" align="right" valign="top">std::span&lt; const std::pair&lt; byte, byte &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_engine.html#ab531d9938f74bc11526ced838eaac171">notes_over_octaves</a> () noexcept</td></tr>
+<tr class="separator:ab531d9938f74bc11526ced838eaac171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fdcd8df8e6c7941e73a789ef5e2a60b" id="r_a6fdcd8df8e6c7941e73a789ef5e2a60b"><td class="memItemLeft" align="right" valign="top"><a id="a6fdcd8df8e6c7941e73a789ef5e2a60b" name="a6fdcd8df8e6c7941e73a789ef5e2a60b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>arpeggiate</b> (int size_mult)</td></tr>
 <tr class="separator:a6fdcd8df8e6c7941e73a789ef5e2a60b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +158,24 @@ ossia::flat_map&lt; byte, byte &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="memitem:aa9fac5b3d842926d159bf47b5ca532cf" id="r_aa9fac5b3d842926d159bf47b5ca532cf"><td class="memItemLeft" align="right" valign="top"><a id="aa9fac5b3d842926d159bf47b5ca532cf" name="aa9fac5b3d842926d159bf47b5ca532cf"></a>
 ossia::small_vector&lt; chord, 10 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>arpeggio</b></td></tr>
 <tr class="separator:aa9fac5b3d842926d159bf47b5ca532cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8356e3e09c6065b0449b72ed18eea8" id="r_a1e8356e3e09c6065b0449b72ed18eea8"><td class="memItemLeft" align="right" valign="top">chord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_engine.html#a1e8356e3e09c6065b0449b72ed18eea8">m_chord</a></td></tr>
+<tr class="separator:a1e8356e3e09c6065b0449b72ed18eea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e875cb4df748baa8a33a78e74ef24e" id="r_ac0e875cb4df748baa8a33a78e74ef24e"><td class="memItemLeft" align="right" valign="top"><a id="ac0e875cb4df748baa8a33a78e74ef24e" name="ac0e875cb4df748baa8a33a78e74ef24e"></a>
 std::array&lt; int8_t, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>in_flight</b> {}</td></tr>
 <tr class="separator:ac0e875cb4df748baa8a33a78e74ef24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4023e44c4da30e7be2e322775e92a9ef" id="r_a4023e44c4da30e7be2e322775e92a9ef"><td class="memItemLeft" align="right" valign="top"><a id="a4023e44c4da30e7be2e322775e92a9ef" name="a4023e44c4da30e7be2e322775e92a9ef"></a>
+std::array&lt; byte, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>order</b> {}</td></tr>
+<tr class="memdesc:a4023e44c4da30e7be2e322775e92a9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The held notes in the order they came, for "As played". <br /></td></tr>
+<tr class="separator:a4023e44c4da30e7be2e322775e92a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e1af3b32ec8ebbbff6c11cadf1bbee" id="r_ae7e1af3b32ec8ebbbff6c11cadf1bbee"><td class="memItemLeft" align="right" valign="top"><a id="ae7e1af3b32ec8ebbbff6c11cadf1bbee" name="ae7e1af3b32ec8ebbbff6c11cadf1bbee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>order_count</b> {}</td></tr>
+<tr class="separator:ae7e1af3b32ec8ebbbff6c11cadf1bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9c8e97911ef38099a95e408d3f1035" id="r_a6c9c8e97911ef38099a95e408d3f1035"><td class="memItemLeft" align="right" valign="top"><a id="a6c9c8e97911ef38099a95e408d3f1035" name="a6c9c8e97911ef38099a95e408d3f1035"></a>
+std::array&lt; std::pair&lt; byte, byte &gt;, 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ext</b> {}</td></tr>
+<tr class="separator:a6c9c8e97911ef38099a95e408d3f1035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a0b58aa36e60aaab1b4ff45ca278df" id="r_a72a0b58aa36e60aaab1b4ff45ca278df"><td class="memItemLeft" align="right" valign="top"><a id="a72a0b58aa36e60aaab1b4ff45ca278df" name="a72a0b58aa36e60aaab1b4ff45ca278df"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_ext_count</b> {}</td></tr>
+<tr class="separator:a72a0b58aa36e60aaab1b4ff45ca278df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0efd04d5e559df2a6a65dafc3276c85" id="r_ad0efd04d5e559df2a6a65dafc3276c85"><td class="memItemLeft" align="right" valign="top"><a id="ad0efd04d5e559df2a6a65dafc3276c85" name="ad0efd04d5e559df2a6a65dafc3276c85"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>previous_octave</b> {}</td></tr>
 <tr class="separator:ad0efd04d5e559df2a6a65dafc3276c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,8 +193,88 @@ std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> {}</
 <tr class="separator:a3088de67bdcb65a3a02248b054d5eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce9efa684305affdec31de3a91e49ef" id="r_a5ce9efa684305affdec31de3a91e49ef"><td class="memItemLeft" align="right" valign="top">rnd::pcg&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_engine.html#a5ce9efa684305affdec31de3a91e49ef">rng</a></td></tr>
 <tr class="separator:a5ce9efa684305affdec31de3a91e49ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a5795f445252c07f110c0db006580ac5f" id="r_a5795f445252c07f110c0db006580ac5f"><td class="memItemLeft" align="right" valign="top"><a id="a5795f445252c07f110c0db006580ac5f" name="a5795f445252c07f110c0db006580ac5f"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_octave</b> = 7</td></tr>
+<tr class="separator:a5795f445252c07f110c0db006580ac5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fc5ec2f7eb577101811066feec5739" id="r_ab3fc5ec2f7eb577101811066feec5739"><td class="memItemLeft" align="right" valign="top"><a id="ab3fc5ec2f7eb577101811066feec5739" name="ab3fc5ec2f7eb577101811066feec5739"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_repeat</b> = 8</td></tr>
+<tr class="separator:ab3fc5ec2f7eb577101811066feec5739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608b58af1278f45223eb6923d9ecad81" id="r_a608b58af1278f45223eb6923d9ecad81"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1_engine.html#a608b58af1278f45223eb6923d9ecad81">max_steps</a> = 128 * 2 * max_repeat * (2 * (max_octave - 1) + 1)</td></tr>
+<tr class="separator:a608b58af1278f45223eb6923d9ecad81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae583ca6ae1eafb2fc3eea2094f97d447" id="r_ae583ca6ae1eafb2fc3eea2094f97d447"><td class="memItemLeft" align="right" valign="top"><a id="ae583ca6ae1eafb2fc3eea2094f97d447" name="ae583ca6ae1eafb2fc3eea2094f97d447"></a>
+static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_chord</b> = 128 * (2 * (max_octave - 1) + 1)</td></tr>
+<tr class="memdesc:ae583ca6ae1eafb2fc3eea2094f97d447"><td class="mdescLeft">&#160;</td><td class="mdescRight">The largest chord: 128 notes, each copied over 6 octaves above and 6 below. <br /></td></tr>
+<tr class="separator:ae583ca6ae1eafb2fc3eea2094f97d447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab531d9938f74bc11526ced838eaac171" name="ab531d9938f74bc11526ced838eaac171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab531d9938f74bc11526ced838eaac171">&#9670;&#160;</a></span>notes_over_octaves()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::span&lt; const std::pair&lt; byte, byte &gt; &gt; Nodes::Arpeggiator::Engine::notes_over_octaves </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The held notes and their octave copies, lowest first, without duplicates (the copy from the lowest octave, then the lowest held note, wins): what the patterns that run across the octaves walk through. In a member buffer, as it is built on the audio thread. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1e8356e3e09c6065b0449b72ed18eea8" name="a1e8356e3e09c6065b0449b72ed18eea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e8356e3e09c6065b0449b72ed18eea8">&#9670;&#160;</a></span>m_chord</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">chord Nodes::Arpeggiator::Engine::m_chord</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The Chord pattern's single step. It holds every note and its octave copies, more than a chord's inline storage: kept apart from <code>arpeggio</code>, whose steps are destroyed and made again at each update, so that its storage is allocated once. </p>
+
+</div>
+</div>
+<a id="a608b58af1278f45223eb6923d9ecad81" name="a608b58af1278f45223eb6923d9ecad81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a608b58af1278f45223eb6923d9ecad81">&#9670;&#160;</a></span>max_steps</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t Nodes::Arpeggiator::Engine::max_steps = 128 * 2 * max_repeat * (2 * (max_octave - 1) + 1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The longest arpeggio: 128 notes back and forth, each repeated, copied over 6 octaves above and 6 below. </p>
+
+</div>
+</div>
 <a id="a5ce9efa684305affdec31de3a91e49ef" name="a5ce9efa684305affdec31de3a91e49ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ce9efa684305affdec31de3a91e49ef">&#9670;&#160;</a></span>rng</h2>
 

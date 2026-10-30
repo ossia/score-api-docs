@@ -1,5 +1,6 @@
 var dir_f8299ef4164e854b5e2248e47e6641c2 =
 [
+    [ "Looper", "dir_66654f7fbdf17365843e9891780f9a0e.html", "dir_66654f7fbdf17365843e9891780f9a0e" ],
     [ "AngleNode.hpp", "_angle_node_8hpp_source.html", null ],
     [ "Arpeggiator.hpp", "_arpeggiator_8hpp_source.html", null ],
     [ "Arpeggiator_v2.hpp", "_arpeggiator__v2_8hpp_source.html", null ],
@@ -16,7 +17,6 @@ var dir_f8299ef4164e854b5e2248e47e6641c2 =
     [ "LFO.hpp", "_l_f_o_8hpp_source.html", null ],
     [ "LFO_v2.hpp", "_l_f_o__v2_8hpp_source.html", null ],
     [ "LFO_v3.hpp", "_l_f_o__v3_8hpp_source.html", null ],
-    [ "Looper.hpp", "_looper_8hpp_source.html", null ],
     [ "MathAudioFilter.hpp", "_math_audio_filter_8hpp_source.html", null ],
     [ "MathAudioGenerator.hpp", "_math_audio_generator_8hpp_source.html", null ],
     [ "MathGenerator.hpp", "_math_generator_8hpp_source.html", null ],
