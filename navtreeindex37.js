@@ -1,5 +1,15 @@
 var NAVTREEINDEX37 =
 {
+"struct_nodes_1_1_looper_1_1looper__view.html#a34ca132f5daf761f757b6db687b7048a":[12,0,42,15,23,15],
+"struct_nodes_1_1_looper_1_1looper__view.html#a3a05aefbfb0d6c947f6fb28615ce471e":[12,0,42,15,23,14],
+"struct_nodes_1_1_looper_1_1looper__view.html#a434731674c96299e9c41314c9bb86dd3":[12,0,42,15,23,13],
+"struct_nodes_1_1_looper_1_1looper__view.html#a4505083af344187eecfcf4537f371a64":[12,0,42,15,23,12],
+"struct_nodes_1_1_looper_1_1looper__view.html#a551be84d71c02de8ff7a3285f7e4adcc":[12,0,42,15,23,22],
+"struct_nodes_1_1_looper_1_1looper__view.html#a55c013e1498d3594808d53b2e5ef7bc6":[12,0,42,15,23,31],
+"struct_nodes_1_1_looper_1_1looper__view.html#a589d5ae8b63437190ad11f547cf4a88e":[12,0,42,15,23,11],
+"struct_nodes_1_1_looper_1_1looper__view.html#a722e97d7104766ea73b4564e20424863":[12,0,42,15,23,10],
+"struct_nodes_1_1_looper_1_1looper__view.html#a74c658882c1302565141bdcf838a6535":[12,0,42,15,23,28],
+"struct_nodes_1_1_looper_1_1looper__view.html#a869e5c734a534621446802ce835d69ad":[12,0,42,15,23,26],
 "struct_nodes_1_1_looper_1_1looper__view.html#a8d51d4379b07dee6af0c46740c3b1ffb":[12,0,42,15,23,25],
 "struct_nodes_1_1_looper_1_1looper__view.html#a994286412023a5ec69d989152849cf71":[12,0,42,15,23,4],
 "struct_nodes_1_1_looper_1_1looper__view.html#a9de127dec38e9d27f63731212e150dcd":[12,0,42,15,23,16],
@@ -239,15 +249,5 @@ var NAVTREEINDEX37 =
 "struct_nodes_1_1_midi_looper_1_1_node.html":[12,0,42,23,0],
 "struct_nodes_1_1_midi_looper_1_1_node.html#a50698e0fb99863d90bf4731a18c54d57":[12,0,42,23,0,3],
 "struct_nodes_1_1_midi_looper_1_1_node.html#a7640c51a3ac06e10e7304ad1275ded9b":[12,0,42,23,0,5],
-"struct_nodes_1_1_midi_looper_1_1_node.html#a81be596eb105e13f443748e0b66f0571":[12,0,42,23,0,7],
-"struct_nodes_1_1_midi_looper_1_1_node.html#ac3c3d5104e12d152ed9dd56148dfae32":[12,0,42,23,0,4],
-"struct_nodes_1_1_midi_looper_1_1_node.html#ad5849aa5e0eb349ad64b2e4b9adba7d9":[12,0,42,23,0,6],
-"struct_nodes_1_1_midi_looper_1_1_node_1_1ins.html":[12,0,42,23,0,0],
-"struct_nodes_1_1_midi_looper_1_1_node_1_1ui.html":[12,0,42,23,0,1],
-"struct_nodes_1_1_midi_looper_1_1_node_1_1ui_1_1bus.html":[12,0,42,23,0,1,0],
-"struct_nodes_1_1_midi_looper_1_1_node_1_1worker__t.html":[12,0,42,23,0,2],
-"struct_nodes_1_1_midi_to_array_1_1_node.html":[12,0,42,24,0],
-"struct_nodes_1_1_midi_util_1_1_node.html":[12,0,42,25,0],
-"struct_nodes_1_1_midi_util_1_1_node.html#a24b22cff4dc829ccfe2e52f5887f1359":[12,0,42,25,0,8],
-"struct_nodes_1_1_midi_util_1_1_node.html#a5ceb5c7437f6b1ef772bac7ed0f2e90c":[12,0,42,25,0,2]
+"struct_nodes_1_1_midi_looper_1_1_node.html#a81be596eb105e13f443748e0b66f0571":[12,0,42,23,0,7]
 };

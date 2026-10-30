@@ -1,5 +1,11 @@
 var NAVTREEINDEX14 =
 {
+"class_media_1_1_audio_trimmer.html#af4c84cb1f60a53e868af66357f22ddca":[12,0,37,9,2],
+"class_media_1_1_change_audio_file.html":[12,0,37,13],
+"class_media_1_1_change_steps.html":[12,0,37,14],
+"class_media_1_1_load_processed_audio_file.html":[12,0,37,17],
+"class_media_1_1_merger_1_1_inspector_factory.html":[12,0,37,0,0],
+"class_media_1_1_merger_1_1_inspector_widget.html":[12,0,37,0,1],
 "class_media_1_1_merger_1_1_model.html":[12,0,37,0,2],
 "class_media_1_1_metro_1_1_model.html":[12,0,37,1,0],
 "class_media_1_1_metro_1_1_presenter.html":[12,0,37,1,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX14 =
 "class_pd_1_1pd__process.html":[12,0,46,9],
 "class_pd_dataflow_test.html":[12,0,224],
 "class_pretty_name__k.html":[12,0,225],
-"class_process_1_1_address_accessor_edit_widget.html":[11,0,10,0],
-"class_process_1_1_address_accessor_edit_widget.html":[12,0,48,0],
-"class_process_1_1_address_accessor_line_edit.html":[11,0,10,1],
-"class_process_1_1_address_accessor_line_edit.html":[12,0,48,1],
-"class_process_1_1_address_line_edit.html":[12,0,48,2],
-"class_process_1_1_address_line_edit.html":[11,0,10,2],
-"class_process_1_1_address_line_edit_base.html":[12,0,48,3]
+"class_process_1_1_address_accessor_edit_widget.html":[11,0,10,0]
 };

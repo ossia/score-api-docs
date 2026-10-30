@@ -1,9 +1,7 @@
 var structavnd__tools_1_1_pattern_combiner =
 [
-    [ "average", "structavnd__tools_1_1_pattern_combiner_1_1average.html", null ],
-    [ "do_process_fixed", "structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html", null ],
-    [ "maximum", "structavnd__tools_1_1_pattern_combiner_1_1maximum.html", null ],
-    [ "minimum", "structavnd__tools_1_1_pattern_combiner_1_1minimum.html", null ],
-    [ "sum", "structavnd__tools_1_1_pattern_combiner_1_1sum.html", null ],
-    [ "value_size", "structavnd__tools_1_1_pattern_combiner_1_1value__size.html", null ]
+    [ "value_hash", "structavnd__tools_1_1_pattern_combiner_1_1value__hash.html", null ],
+    [ "vote", "structavnd__tools_1_1_pattern_combiner_1_1vote.html", null ],
+    [ "emit_columns", "structavnd__tools_1_1_pattern_combiner.html#a1315a6ab33fce0963ddfab77ea54f8f5", null ],
+    [ "key_column", "structavnd__tools_1_1_pattern_combiner.html#a0884065bb7a64d780ba695c0d4b81952", null ]
 ];

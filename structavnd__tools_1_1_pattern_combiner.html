@@ -104,9 +104,11 @@ $(document).ready(function(){initNavTree('structavnd__tools_1_1_pattern_combiner
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structavnd__tools_1_1_pattern_combiner-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">avnd_tools::PatternCombiner Struct Reference</div></div>
 </div><!--header-->
@@ -123,18 +125,23 @@ Inheritance diagram for avnd_tools::PatternCombiner:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1average.html">average</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1value__hash.html">value_hash</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equal values (as <code>same</code> says) hash the same.  <a href="structavnd__tools_1_1_pattern_combiner_1_1value__hash.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1do__process__fixed.html">do_process_fixed</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1vote.html">vote</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1maximum.html">maximum</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1minimum.html">minimum</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1sum.html">sum</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1value__size.html">value_size</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a456ff9dc11ee966c8007b3116baba074" id="r_a456ff9dc11ee966c8007b3116baba074"><td class="memItemLeft" align="right" valign="top"><a id="a456ff9dc11ee966c8007b3116baba074" name="a456ff9dc11ee966c8007b3116baba074"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>column_shape</b> { <b>scalar</b>
+, <b>vec</b>
+, <b>list</b>
+, <b>map</b>
+ }</td></tr>
+<tr class="separator:a456ff9dc11ee966c8007b3116baba074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4713db7295ccaee9cc2ad7d5f21470" id="r_a2f4713db7295ccaee9cc2ad7d5f21470"><td class="memItemLeft" align="right" valign="top"><a id="a2f4713db7295ccaee9cc2ad7d5f21470" name="a2f4713db7295ccaee9cc2ad7d5f21470"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>statistic</b> = double(*)(std::span&lt; double &gt;) noexcept</td></tr>
+<tr class="separator:a2f4713db7295ccaee9cc2ad7d5f21470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -150,22 +157,93 @@ ossia team Apply an operation to all inputs matching a pattern&#160;</td><td cla
 <tr class="memitem:a9c9640ba46661adfebd3eecd8bc4794e" id="r_a9c9640ba46661adfebd3eecd8bc4794e"><td class="memItemLeft" align="right" valign="top"><a id="a9c9640ba46661adfebd3eecd8bc4794e" name="a9c9640ba46661adfebd3eecd8bc4794e"></a>
 ossia team Apply an operation to all inputs matching a pattern&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;https://ossia.io/score-docs/processes/pattern-combiner.html#pattern-combiner&quot;) struct</td></tr>
 <tr class="separator:a9c9640ba46661adfebd3eecd8bc4794e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3561b19d8384a232f58c66f65ddc9bd2" id="r_a3561b19d8384a232f58c66f65ddc9bd2"><td class="memItemLeft" align="right" valign="top"><a id="a3561b19d8384a232f58c66f65ddc9bd2" name="a3561b19d8384a232f58c66f65ddc9bd2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>process_various</b> (auto func)</td></tr>
-<tr class="separator:a3561b19d8384a232f58c66f65ddc9bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83fbfd249fbb6e0e4b0d6844bc64731f" id="r_a83fbfd249fbb6e0e4b0d6844bc64731f"><td class="memTemplParams" colspan="2"><a id="a83fbfd249fbb6e0e4b0d6844bc64731f" name="a83fbfd249fbb6e0e4b0d6844bc64731f"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a83fbfd249fbb6e0e4b0d6844bc64731f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_fixed</b> (T func)</td></tr>
-<tr class="separator:a83fbfd249fbb6e0e4b0d6844bc64731f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce7d99ca1d53188258b5ba68c7e10d5" id="r_a4ce7d99ca1d53188258b5ba68c7e10d5"><td class="memItemLeft" align="right" valign="top"><a id="a4ce7d99ca1d53188258b5ba68c7e10d5" name="a4ce7d99ca1d53188258b5ba68c7e10d5"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>address</b> (std::size_t i) const</td></tr>
+<tr class="separator:a4ce7d99ca1d53188258b5ba68c7e10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4664aaa10fd37a8bc24540ecb4be56c" id="r_af4664aaa10fd37a8bc24540ecb4be56c"><td class="memItemLeft" align="right" valign="top"><a id="af4664aaa10fd37a8bc24540ecb4be56c" name="af4664aaa10fd37a8bc24540ecb4be56c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_arg</b> (bool largest)</td></tr>
+<tr class="separator:af4664aaa10fd37a8bc24540ecb4be56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e21de04efeb6ff3abf48c642355b02" id="r_a32e21de04efeb6ff3abf48c642355b02"><td class="memItemLeft" align="right" valign="top"><a id="a32e21de04efeb6ff3abf48c642355b02" name="a32e21de04efeb6ff3abf48c642355b02"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_sorted</b> (bool largest_first, std::size_t n)</td></tr>
+<tr class="separator:a32e21de04efeb6ff3abf48c642355b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb57fe6a5c76608a69fba317429f8e3" id="r_a1bb57fe6a5c76608a69fba317429f8e3"><td class="memItemLeft" align="right" valign="top"><a id="a1bb57fe6a5c76608a69fba317429f8e3" name="a1bb57fe6a5c76608a69fba317429f8e3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_vote</b> ()</td></tr>
+<tr class="separator:a1bb57fe6a5c76608a69fba317429f8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47a280081742686ecd9325cffad4b53" id="r_ab47a280081742686ecd9325cffad4b53"><td class="memItemLeft" align="right" valign="top"><a id="ab47a280081742686ecd9325cffad4b53" name="ab47a280081742686ecd9325cffad4b53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>process_changed</b> (bool continuing)</td></tr>
+<tr class="separator:ab47a280081742686ecd9325cffad4b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b43d60b391edac0e7b17a00d84c837" id="r_aa9b43d60b391edac0e7b17a00d84c837"><td class="memItemLeft" align="right" valign="top"><a id="aa9b43d60b391edac0e7b17a00d84c837" name="aa9b43d60b391edac0e7b17a00d84c837"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>new_column</b> ()</td></tr>
+<tr class="separator:aa9b43d60b391edac0e7b17a00d84c837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0884065bb7a64d780ba695c0d4b81952" id="r_a0884065bb7a64d780ba695c0d4b81952"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner.html#a0884065bb7a64d780ba695c0d4b81952">key_column</a> (const std::string &amp;k, std::size_t place)</td></tr>
+<tr class="separator:a0884065bb7a64d780ba695c0d4b81952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b48f564a5e2f636c56ebacbaaffacbd" id="r_a7b48f564a5e2f636c56ebacbaaffacbd"><td class="memTemplParams" colspan="2"><a id="a7b48f564a5e2f636c56ebacbaaffacbd" name="a7b48f564a5e2f636c56ebacbaaffacbd"></a>
+template&lt;std::size_t N&gt; </td></tr>
+<tr class="memitem:a7b48f564a5e2f636c56ebacbaaffacbd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gather_vec</b> ()</td></tr>
+<tr class="separator:a7b48f564a5e2f636c56ebacbaaffacbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c4e75846b13b7aa5e50395b8181f21" id="r_ad3c4e75846b13b7aa5e50395b8181f21"><td class="memItemLeft" align="right" valign="top"><a id="ad3c4e75846b13b7aa5e50395b8181f21" name="ad3c4e75846b13b7aa5e50395b8181f21"></a>
+column_shape&#160;</td><td class="memItemRight" valign="bottom"><b>gather_columns</b> ()</td></tr>
+<tr class="separator:ad3c4e75846b13b7aa5e50395b8181f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1315a6ab33fce0963ddfab77ea54f8f5" id="r_a1315a6ab33fce0963ddfab77ea54f8f5"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a1315a6ab33fce0963ddfab77ea54f8f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner.html#a1315a6ab33fce0963ddfab77ea54f8f5">emit_columns</a> (column_shape s, F f)</td></tr>
+<tr class="separator:a1315a6ab33fce0963ddfab77ea54f8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16541367632243b8ee63dca07984a881" id="r_a16541367632243b8ee63dca07984a881"><td class="memTemplParams" colspan="2"><a id="a16541367632243b8ee63dca07984a881" name="a16541367632243b8ee63dca07984a881"></a>
+template&lt;statistic F&gt; </td></tr>
+<tr class="memitem:a16541367632243b8ee63dca07984a881"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_statistic</b> ()</td></tr>
+<tr class="separator:a16541367632243b8ee63dca07984a881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01782f90943244c542e8e516d2d9b9f0" id="r_a01782f90943244c542e8e516d2d9b9f0"><td class="memItemLeft" align="right" valign="top"><a id="a01782f90943244c542e8e516d2d9b9f0" name="a01782f90943244c542e8e516d2d9b9f0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_active</b> ()</td></tr>
+<tr class="separator:a01782f90943244c542e8e516d2d9b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271b90a49b440633c3e7d6cc351d35fd" id="r_a271b90a49b440633c3e7d6cc351d35fd"><td class="memItemLeft" align="right" valign="top"><a id="a271b90a49b440633c3e7d6cc351d35fd" name="a271b90a49b440633c3e7d6cc351d35fd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>passes</b> (double v, bool was) const noexcept</td></tr>
+<tr class="separator:a271b90a49b440633c3e7d6cc351d35fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e084aeb9f6184302c66f280b6454a64" id="r_a2e084aeb9f6184302c66f280b6454a64"><td class="memItemLeft" align="right" valign="top"><a id="a2e084aeb9f6184302c66f280b6454a64" name="a2e084aeb9f6184302c66f280b6454a64"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>count_passing</b> (const std::vector&lt; double &gt; &amp;c, std::size_t offset) noexcept</td></tr>
+<tr class="separator:a2e084aeb9f6184302c66f280b6454a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9de320b803bcef830493edb3bc9148d" id="r_af9de320b803bcef830493edb3bc9148d"><td class="memTemplParams" colspan="2"><a id="af9de320b803bcef830493edb3bc9148d" name="af9de320b803bcef830493edb3bc9148d"></a>
+template&lt;typename F &gt; </td></tr>
+<tr class="memitem:af9de320b803bcef830493edb3bc9148d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>process_counting</b> (F f)</td></tr>
+<tr class="separator:af9de320b803bcef830493edb3bc9148d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fd0723c712ed401925272714573da0f" id="r_a7fd0723c712ed401925272714573da0f"><td class="memItemLeft" align="right" valign="top"><a id="a7fd0723c712ed401925272714573da0f" name="a7fd0723c712ed401925272714573da0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> ()</td></tr>
 <tr class="separator:a7fd0723c712ed401925272714573da0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a41537da75e481d95f94213613f3ee030" id="r_a41537da75e481d95f94213613f3ee030"><td class="memItemLeft" align="right" valign="top"><a id="a41537da75e481d95f94213613f3ee030" name="a41537da75e481d95f94213613f3ee030"></a>
-static std::optional&lt; ossia::val_type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>all_have_same_type</b> (const std::vector&lt; ossia::value &gt; &amp;val) noexcept</td></tr>
-<tr class="separator:a41537da75e481d95f94213613f3ee030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb98d3f681a54fc1f28af361cccbaaa" id="r_a4cb98d3f681a54fc1f28af361cccbaaa"><td class="memItemLeft" align="right" valign="top"><a id="a4cb98d3f681a54fc1f28af361cccbaaa" name="a4cb98d3f681a54fc1f28af361cccbaaa"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>numeric</b> (const ossia::value &amp;v) noexcept</td></tr>
+<tr class="memdesc:a4cb98d3f681a54fc1f28af361cccbaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value as a number: NaN for what is not one. <br /></td></tr>
+<tr class="separator:a4cb98d3f681a54fc1f28af361cccbaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47463fe05831dcfbd6ee2d5ea29ad08e" id="r_a47463fe05831dcfbd6ee2d5ea29ad08e"><td class="memItemLeft" align="right" valign="top"><a id="a47463fe05831dcfbd6ee2d5ea29ad08e" name="a47463fe05831dcfbd6ee2d5ea29ad08e"></a>
+static ossia::val_type&#160;</td><td class="memItemRight" valign="bottom"><b>common_type</b> (const std::vector&lt; ossia::value &gt; &amp;val) noexcept</td></tr>
+<tr class="memdesc:a47463fe05831dcfbd6ee2d5ea29ad08e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type all the values share; NONE when they differ. <br /></td></tr>
+<tr class="separator:a47463fe05831dcfbd6ee2d5ea29ad08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49de9c6a4f42c5fddd0d60660ac01a0" id="r_ae49de9c6a4f42c5fddd0d60660ac01a0"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner.html#ae49de9c6a4f42c5fddd0d60660ac01a0">magnitude</a> (const ossia::value &amp;v) noexcept</td></tr>
+<tr class="separator:ae49de9c6a4f42c5fddd0d60660ac01a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a7b69f7d48808c131fbb5c983ae112" id="r_ae7a7b69f7d48808c131fbb5c983ae112"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_pattern_combiner.html#ae7a7b69f7d48808c131fbb5c983ae112">same</a> (const ossia::value &amp;a, const ossia::value &amp;b) noexcept</td></tr>
+<tr class="separator:ae7a7b69f7d48808c131fbb5c983ae112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5d8155b70e8c3737fc8a9f47a1c0764" id="r_ae5d8155b70e8c3737fc8a9f47a1c0764"><td class="memItemLeft" align="right" valign="top"><a id="ae5d8155b70e8c3737fc8a9f47a1c0764" name="ae5d8155b70e8c3737fc8a9f47a1c0764"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>total</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:ae5d8155b70e8c3737fc8a9f47a1c0764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d356be4ddb3483445d5cf227e46c9ac" id="r_a9d356be4ddb3483445d5cf227e46c9ac"><td class="memItemLeft" align="right" valign="top"><a id="a9d356be4ddb3483445d5cf227e46c9ac" name="a9d356be4ddb3483445d5cf227e46c9ac"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>mean</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:a9d356be4ddb3483445d5cf227e46c9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee2393aec6b443f1d5f527703b20bcf" id="r_acee2393aec6b443f1d5f527703b20bcf"><td class="memItemLeft" align="right" valign="top"><a id="acee2393aec6b443f1d5f527703b20bcf" name="acee2393aec6b443f1d5f527703b20bcf"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>smallest</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:acee2393aec6b443f1d5f527703b20bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ba0cdf1cdfd091d682120ea1e9d77d" id="r_a95ba0cdf1cdfd091d682120ea1e9d77d"><td class="memItemLeft" align="right" valign="top"><a id="a95ba0cdf1cdfd091d682120ea1e9d77d" name="a95ba0cdf1cdfd091d682120ea1e9d77d"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>largest</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:a95ba0cdf1cdfd091d682120ea1e9d77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b7be7e53af35482a0823c850a5b07f" id="r_a39b7be7e53af35482a0823c850a5b07f"><td class="memItemLeft" align="right" valign="top"><a id="a39b7be7e53af35482a0823c850a5b07f" name="a39b7be7e53af35482a0823c850a5b07f"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>median</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:a39b7be7e53af35482a0823c850a5b07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702d9acbf224695ce443650fc2868c3" id="r_a6702d9acbf224695ce443650fc2868c3"><td class="memItemLeft" align="right" valign="top"><a id="a6702d9acbf224695ce443650fc2868c3" name="a6702d9acbf224695ce443650fc2868c3"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>range</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="separator:a6702d9acbf224695ce443650fc2868c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa296f161cdb21b5981e669aa2900bbb" id="r_aaa296f161cdb21b5981e669aa2900bbb"><td class="memItemLeft" align="right" valign="top"><a id="aaa296f161cdb21b5981e669aa2900bbb" name="aaa296f161cdb21b5981e669aa2900bbb"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>stddev</b> (std::span&lt; double &gt; c) noexcept</td></tr>
+<tr class="memdesc:aaa296f161cdb21b5981e669aa2900bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Of the values themselves, not of a sample of them: divided by n. <br /></td></tr>
+<tr class="separator:aaa296f161cdb21b5981e669aa2900bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -175,14 +253,53 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a25d47f9d3af77f0ad26829f0cfdf22b8" id="r_a25d47f9d3af77f0ad26829f0cfdf22b8"><td class="memItemLeft" ><a id="a25d47f9d3af77f0ad26829f0cfdf22b8" name="a25d47f9d3af77f0ad26829f0cfdf22b8"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c12c2127e327d695fb3322a395709a" id="r_a02c12c2127e327d695fb3322a395709a"><td class="memItemLeft" >
-&#160;&#160;&#160;halp::val_port&lt;&quot;Output&quot;, ossia::value &gt;&#160;&#160;&#160;<b>output</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a02c12c2127e327d695fb3322a395709a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2496130410bac8b8dc4b17b4ec3fc7d" id="r_af2496130410bac8b8dc4b17b4ec3fc7d"><td class="memItemLeft" >
+&#160;&#160;&#160;halp::val_port&lt;&quot;Output&quot;, std::optional&lt; ossia::value &gt; &gt;&#160;&#160;&#160;<b>output</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:af2496130410bac8b8dc4b17b4ec3fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25d47f9d3af77f0ad26829f0cfdf22b8" id="r_a25d47f9d3af77f0ad26829f0cfdf22b8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a25d47f9d3af77f0ad26829f0cfdf22b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeb492cc928b7e0819cdf3666275350a" id="r_afeb492cc928b7e0819cdf3666275350a"><td class="memItemLeft" align="right" valign="top"><a id="afeb492cc928b7e0819cdf3666275350a" name="afeb492cc928b7e0819cdf3666275350a"></a>
 std::vector&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>current_values</b></td></tr>
 <tr class="separator:afeb492cc928b7e0819cdf3666275350a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d697fde624f3fda1605160487741f2" id="r_a10d697fde624f3fda1605160487741f2"><td class="memItemLeft" align="right" valign="top"><a id="a10d697fde624f3fda1605160487741f2" name="a10d697fde624f3fda1605160487741f2"></a>
+std::vector&lt; ossia::net::node_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>current_nodes</b></td></tr>
+<tr class="separator:a10d697fde624f3fda1605160487741f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3389eba1016416ac2294a1df5ee5f33b" id="r_a3389eba1016416ac2294a1df5ee5f33b"><td class="memItemLeft" align="right" valign="top"><a id="a3389eba1016416ac2294a1df5ee5f33b" name="a3389eba1016416ac2294a1df5ee5f33b"></a>
+std::vector&lt; std::pair&lt; double, std::size_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ranked</b></td></tr>
+<tr class="separator:a3389eba1016416ac2294a1df5ee5f33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43211176c68ba999379a797b3ce4cae" id="r_ad43211176c68ba999379a797b3ce4cae"><td class="memItemLeft" align="right" valign="top"><a id="ad43211176c68ba999379a797b3ce4cae" name="ad43211176c68ba999379a797b3ce4cae"></a>
+std::vector&lt; <a class="el" href="structavnd__tools_1_1_pattern_combiner_1_1vote.html">vote</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_votes</b></td></tr>
+<tr class="separator:ad43211176c68ba999379a797b3ce4cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f96ea126171435cf24c9cb764527dc" id="r_a63f96ea126171435cf24c9cb764527dc"><td class="memItemLeft" align="right" valign="top"><a id="a63f96ea126171435cf24c9cb764527dc" name="a63f96ea126171435cf24c9cb764527dc"></a>
+std::vector&lt; std::pair&lt; std::size_t, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_vote_group</b></td></tr>
+<tr class="separator:a63f96ea126171435cf24c9cb764527dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bbd905dde20d8cb7b125d7f83eb2aa7" id="r_a1bbd905dde20d8cb7b125d7f83eb2aa7"><td class="memItemLeft" align="right" valign="top"><a id="a1bbd905dde20d8cb7b125d7f83eb2aa7" name="a1bbd905dde20d8cb7b125d7f83eb2aa7"></a>
+std::vector&lt; ossia::net::node_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_previous_nodes</b></td></tr>
+<tr class="separator:a1bbd905dde20d8cb7b125d7f83eb2aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd03364e5975eb517c8b0718cae8157" id="r_a9bd03364e5975eb517c8b0718cae8157"><td class="memItemLeft" align="right" valign="top"><a id="a9bd03364e5975eb517c8b0718cae8157" name="a9bd03364e5975eb517c8b0718cae8157"></a>
+std::vector&lt; ossia::value &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_previous_values</b></td></tr>
+<tr class="separator:a9bd03364e5975eb517c8b0718cae8157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9add8ccff2d1f089a778b442f4beda0c" id="r_a9add8ccff2d1f089a778b442f4beda0c"><td class="memItemLeft" align="right" valign="top"><a id="a9add8ccff2d1f089a778b442f4beda0c" name="a9add8ccff2d1f089a778b442f4beda0c"></a>
+std::vector&lt; std::pair&lt; ossia::net::node_base *, std::size_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_previous_index</b></td></tr>
+<tr class="separator:a9add8ccff2d1f089a778b442f4beda0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2218205fd8f4aceb9910ee64e1f6ec36" id="r_a2218205fd8f4aceb9910ee64e1f6ec36"><td class="memItemLeft" align="right" valign="top"><a id="a2218205fd8f4aceb9910ee64e1f6ec36" name="a2218205fd8f4aceb9910ee64e1f6ec36"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_changed_ran</b> {}</td></tr>
+<tr class="separator:a2218205fd8f4aceb9910ee64e1f6ec36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82ba41e6b9eb526e448c4781a5944b6" id="r_aa82ba41e6b9eb526e448c4781a5944b6"><td class="memItemLeft" align="right" valign="top"><a id="aa82ba41e6b9eb526e448c4781a5944b6" name="aa82ba41e6b9eb526e448c4781a5944b6"></a>
+std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_columns</b></td></tr>
+<tr class="separator:aa82ba41e6b9eb526e448c4781a5944b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1cd7002aa3d35eeb6e8766d7f6d3003" id="r_ac1cd7002aa3d35eeb6e8766d7f6d3003"><td class="memItemLeft" align="right" valign="top"><a id="ac1cd7002aa3d35eeb6e8766d7f6d3003" name="ac1cd7002aa3d35eeb6e8766d7f6d3003"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_keys</b></td></tr>
+<tr class="separator:ac1cd7002aa3d35eeb6e8766d7f6d3003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e59b221301b6028db81fc68b9128fb2" id="r_a3e59b221301b6028db81fc68b9128fb2"><td class="memItemLeft" align="right" valign="top"><a id="a3e59b221301b6028db81fc68b9128fb2" name="a3e59b221301b6028db81fc68b9128fb2"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_column_count</b> {}</td></tr>
+<tr class="separator:a3e59b221301b6028db81fc68b9128fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a822f404eeac62b272ed2e19e1a89f827" id="r_a822f404eeac62b272ed2e19e1a89f827"><td class="memItemLeft" align="right" valign="top"><a id="a822f404eeac62b272ed2e19e1a89f827" name="a822f404eeac62b272ed2e19e1a89f827"></a>
+std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_active</b></td></tr>
+<tr class="separator:a822f404eeac62b272ed2e19e1a89f827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7467203164791e1191f894e8f674024f" id="r_a7467203164791e1191f894e8f674024f"><td class="memItemLeft" align="right" valign="top"><a id="a7467203164791e1191f894e8f674024f" name="a7467203164791e1191f894e8f674024f"></a>
+std::vector&lt; ossia::net::node_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_active_nodes</b></td></tr>
+<tr class="separator:a7467203164791e1191f894e8f674024f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structavnd__tools_1_1_pattern_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structavnd__tools_1_1_pattern_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structavnd__tools_1_1_pattern_object.html">avnd_tools::PatternObject</a></td></tr>
 <tr class="memitem:aaa1456c02e368e57f97a4a1d4abafc2d inherit pub_attribs_structavnd__tools_1_1_pattern_object" id="r_aaa1456c02e368e57f97a4a1d4abafc2d"><td class="memItemLeft" align="right" valign="top">
 ossia::exec_state_facade&#160;</td><td class="memItemRight" valign="bottom"><b>ossia_state</b></td></tr>
@@ -193,7 +310,154 @@ std::vector&lt; ossia::traversal::path &gt;&#160;</td><td class="memItemRight" v
 <tr class="memitem:a748a69574da625b8791b253d1b42239c inherit pub_attribs_structavnd__tools_1_1_pattern_object" id="r_a748a69574da625b8791b253d1b42239c"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; ossia::net::node_base * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>roots</b></td></tr>
 <tr class="separator:a748a69574da625b8791b253d1b42239c inherit pub_attribs_structavnd__tools_1_1_pattern_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a4662ce2dd33123c890592fe792335e85" id="r_a4662ce2dd33123c890592fe792335e85"><td class="memItemLeft" align="right" valign="top"><a id="a4662ce2dd33123c890592fe792335e85" name="a4662ce2dd33123c890592fe792335e85"></a>
+static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>nan</b> = std::numeric_limits&lt;double&gt;::quiet_NaN()</td></tr>
+<tr class="separator:a4662ce2dd33123c890592fe792335e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1315a6ab33fce0963ddfab77ea54f8f5" name="a1315a6ab33fce0963ddfab77ea54f8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1315a6ab33fce0963ddfab77ea54f8f5">&#9670;&#160;</a></span>emit_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void avnd_tools::PatternCombiner::emit_columns </td>
+          <td>(</td>
+          <td class="paramtype">column_shape&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>f(column, offset) reduces a column, to nothing (an invalid value) when it has nothing to reduce; offset is where the column starts among all the gathered numbers. Nothing goes out for a scalar or a map's key that reduced to nothing, NaN for a vector's or a list's element. </p>
+
+</div>
+</div>
+<a id="a0884065bb7a64d780ba695c0d4b81952" name="a0884065bb7a64d780ba695c0d4b81952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0884065bb7a64d780ba695c0d4b81952">&#9670;&#160;</a></span>key_column()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t avnd_tools::PatternCombiner::key_column </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>place</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The column of a map's key. Maps mostly list their keys in one order: the one at the key's place is tried first. </p>
+
+</div>
+</div>
+<a id="ae49de9c6a4f42c5fddd0d60660ac01a0" name="ae49de9c6a4f42c5fddd0d60660ac01a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49de9c6a4f42c5fddd0d60660ac01a0">&#9670;&#160;</a></span>magnitude()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::optional&lt; double &gt; avnd_tools::PatternCombiner::magnitude </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A value as one number, to rank it: numbers as they are, vectors, lists and maps by their length, over the elements that are numbers. None for the others, and for NaN, which has no rank. </p>
+
+</div>
+</div>
+<a id="ae7a7b69f7d48808c131fbb5c983ae112" name="ae7a7b69f7d48808c131fbb5c983ae112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a7b69f7d48808c131fbb5c983ae112">&#9670;&#160;</a></span>same()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool avnd_tools::PatternCombiner::same </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Same type and same value; NaN is the same as NaN, so that a sensor stuck on it neither changes every tick nor splits a vote. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_combiner_8hpp_source.html">Combiner.hpp</a></li>
 </ul>
