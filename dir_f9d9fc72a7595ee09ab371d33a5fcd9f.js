@@ -5,5 +5,6 @@ var dir_f9d9fc72a7595ee09ab371d33a5fcd9f =
     [ "score-plugin-ysfx/YSFX/ApplicationPlugin.hpp", "score-plugin-ysfx_2_y_s_f_x_2_application_plugin_8hpp_source.html", null ],
     [ "score-plugin-ysfx/YSFX/ProcessFactory.hpp", "score-plugin-ysfx_2_y_s_f_x_2_process_factory_8hpp_source.html", null ],
     [ "score-plugin-ysfx/YSFX/ProcessMetadata.hpp", "score-plugin-ysfx_2_y_s_f_x_2_process_metadata_8hpp_source.html", null ],
-    [ "score-plugin-ysfx/YSFX/ProcessModel.hpp", "score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp_source.html", null ]
+    [ "score-plugin-ysfx/YSFX/ProcessModel.hpp", "score-plugin-ysfx_2_y_s_f_x_2_process_model_8hpp_source.html", null ],
+    [ "StateGuard.hpp", "_state_guard_8hpp_source.html", null ]
 ];

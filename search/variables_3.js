@@ -25,7 +25,7 @@ var searchData=
   ['documentfile_22',['documentFile',['../structscore_1_1_path_roots.html#a75fce028dcfbd3c0224ffc45d4046564',1,'score::PathRoots']]],
   ['driverversion_23',['driverVersion',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a72ed837da6f5617c81d49bbb98437e86',1,'score::gfx::interop::GpuCapabilities']]],
   ['droponcablehandler_24',['dropOnCableHandler',['../class_process_1_1_node_item.html#a326ab2ad997a7cea3b0d77b2c0b5e974',1,'Process::NodeItem']]],
-  ['duration_25',['duration',['../struct_midi_1_1_midi_track_1_1_midi_song.html#a5c269848f73fcfb2df3b679ce966db7e',1,'Midi::MidiTrack::MidiSong']]],
+  ['duration_25',['duration',['../struct_midi_1_1_midi_track_1_1_midi_song.html#a5c269848f73fcfb2df3b679ce966db7e',1,'Midi::MidiTrack::MidiSong::duration'],['../struct_ui_1_1_loudness_1_1_readings.html#ae89d5f9096bb746ed8451e027a15491e',1,'Ui::Loudness::Readings::duration']]],
   ['durationinms_26',['durationInMs',['../struct_midi_1_1_midi_track_1_1_midi_song.html#aa4fcac5ed665d8005089954ecca174a3',1,'Midi::MidiTrack::MidiSong']]],
   ['dvphavecuda_27',['dvpHaveCuda',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#add9e0bb3799dcc052238db77d3844c01',1,'score::gfx::interop::GpuCapabilities']]],
   ['dvphaved3d11_28',['dvpHaveD3D11',['../structscore_1_1gfx_1_1interop_1_1_gpu_capabilities.html#a64bc07ca20183027a353f0822e0cc67c',1,'score::gfx::interop::GpuCapabilities']]],

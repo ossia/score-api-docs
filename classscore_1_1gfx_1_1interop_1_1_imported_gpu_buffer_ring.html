@@ -117,18 +117,16 @@ $(document).ready(function(){initNavTree('classscore_1_1gfx_1_1interop_1_1_impor
 <div class="line">cuda_interop_init(&amp;cuda);</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_class" href="classscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring.html">ImportedGpuBufferRing</a> ring;</div>
-<div class="line"><span class="keywordflow">if</span>(!ring.<a class="code hl_function" href="classscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring.html#a0f6ca2093192dd91419545fc43779fcd">create</a>({rhi, cuda, frameByteSize, 2, <span class="stringliteral">&quot;MyVendor-RDMA&quot;</span>}))</div>
+<div class="line"><span class="keywordflow">if</span>(!ring.create({rhi, cuda, frameByteSize, 2, <span class="stringliteral">&quot;MyVendor-RDMA&quot;</span>}))</div>
 <div class="line">  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// 1× per slot: register the GPU pointer with the vendor&#39;s DMA-pin API.</span></div>
 <div class="line"><span class="keywordflow">for</span>(std::size_t i = 0; i &lt; ring.slotCount(); ++i)</div>
-<div class="line">  vendor-&gt;RegisterGpuBuffer(ring.slot(i).<a class="code hl_variable" href="structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a0d524c244c73f664fe27df7f380c66e2">gpuDevicePtr</a>, frameByteSize);</div>
+<div class="line">  vendor-&gt;RegisterGpuBuffer(ring.slot(i).gpuDevicePtr, frameByteSize);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Per frame: encoder writes into ring.slot(ring.writeIndex()).qrhiBuffer;</span></div>
 <div class="line"><span class="comment">//            then ring.advance() rotates; peer DMAs from the just-written slot.</span></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring_html"><div class="ttname"><a href="classscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring.html">score::gfx::interop::ImportedGpuBufferRing</a></div><div class="ttdoc">Vendor-neutral helper that allocates + manages the slot ring.</div><div class="ttdef"><b>Definition</b> ImportedGpuBufferRing.hpp:103</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring_html_a0f6ca2093192dd91419545fc43779fcd"><div class="ttname"><a href="classscore_1_1gfx_1_1interop_1_1_imported_gpu_buffer_ring.html#a0f6ca2093192dd91419545fc43779fcd">score::gfx::interop::ImportedGpuBufferRing::create</a></div><div class="ttdeci">bool create(const ImportedGpuBufferRingConfig &amp;cfg)</div><div class="ttdoc">Allocate slots + CUDA-import each. Backend dispatch happens internally based on rhi-&gt;backend().</div><div class="ttdef"><b>Definition</b> ImportedGpuBufferRing.cpp:20</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot_html_a0d524c244c73f664fe27df7f380c66e2"><div class="ttname"><a href="structscore_1_1gfx_1_1interop_1_1_gpu_ring_buffer_slot.html#a0d524c244c73f664fe27df7f380c66e2">score::gfx::interop::GpuRingBufferSlot::gpuDevicePtr</a></div><div class="ttdeci">void * gpuDevicePtr</div><div class="ttdef"><b>Definition</b> ImportedGpuBufferRing.hpp:53</div></div>
 </div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>

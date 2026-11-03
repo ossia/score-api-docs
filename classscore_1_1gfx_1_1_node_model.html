@@ -119,15 +119,16 @@ Inheritance diagram for score::gfx::NodeModel:</div>
  <div class="center">
   <img src="classscore_1_1gfx_1_1_node_model.png" usemap="#score::gfx::NodeModel_map" alt=""/>
   <map id="score::gfx::NodeModel_map" name="score::gfx::NodeModel_map">
-<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="624,112,822,136"/>
-<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="624,56,822,80"/>
-<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="0,224,198,248"/>
-<area href="structscore_1_1gfx_1_1_gaussian_splat_node.html" title="Gaussian Splat rendering node." alt="score::gfx::GaussianSplatNode" shape="rect" coords="208,224,406,248"/>
-<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="416,224,614,248"/>
-<area href="structscore_1_1gfx_1_1_model_display_node.html" title="A node that renders a model to screen." alt="score::gfx::ModelDisplayNode" shape="rect" coords="624,224,822,248"/>
-<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="832,224,1030,248"/>
-<area href="structscore_1_1gfx_1_1_text_node.html" title="A node that renders text to screen." alt="score::gfx::TextNode" shape="rect" coords="1040,224,1238,248"/>
-<area href="structscore_1_1gfx_1_1_touch_history_node.html" title="The pointers of an output as a texture: vertexshaderart&#39;s touch history (greggman/vertexshaderart,..." alt="score::gfx::TouchHistoryNode" shape="rect" coords="1248,224,1446,248"/>
+<area href="classscore_1_1gfx_1_1_process_node.html" title="Common base class for nodes that map to score processes." alt="score::gfx::ProcessNode" shape="rect" coords="813,112,1074,136"/>
+<area href="classscore_1_1gfx_1_1_node.html" title="Root data model for visual nodes." alt="score::gfx::Node" shape="rect" coords="813,56,1074,80"/>
+<area href="structscore_1_1gfx_1_1_full_screen_image_node.html" alt="score::gfx::FullScreenImageNode" shape="rect" coords="0,224,261,248"/>
+<area href="structscore_1_1gfx_1_1_gaussian_splat_node.html" title="Gaussian Splat rendering node." alt="score::gfx::GaussianSplatNode" shape="rect" coords="271,224,532,248"/>
+<area href="structscore_1_1gfx_1_1_images_node.html" title="A node that renders an image to screen." alt="score::gfx::ImagesNode" shape="rect" coords="542,224,803,248"/>
+<area href="structscore_1_1gfx_1_1_model_display_node.html" title="A node that renders a model to screen." alt="score::gfx::ModelDisplayNode" shape="rect" coords="813,224,1074,248"/>
+<area href="structscore_1_1gfx_1_1_texgen_node.html" alt="score::gfx::TexgenNode" shape="rect" coords="1084,224,1345,248"/>
+<area href="structscore_1_1gfx_1_1_text_node.html" title="A node that renders text to screen." alt="score::gfx::TextNode" shape="rect" coords="1355,224,1616,248"/>
+<area href="structscore_1_1gfx_1_1_touch_history_node.html" title="The pointers of an output as a texture: vertexshaderart&#39;s touch history (greggman/vertexshaderart,..." alt="score::gfx::TouchHistoryNode" shape="rect" coords="1626,224,1887,248"/>
+<area href="struct_gfx_1_1_geometry_viewer_1_1_geometry_viewer_node.html" alt="Gfx::GeometryViewer::GeometryViewerNode" shape="rect" coords="813,280,1074,304"/>
   </map>
 </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -268,6 +269,10 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_port.html">Port</a> *
 ossia::flat_map&lt; <a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> *, <a class="el" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>renderedNodes</b></td></tr>
 <tr class="memdesc:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map associating each <a class="el" href="classscore_1_1gfx_1_1_render_list.html" title="List of nodes to be rendered to an output.">RenderList</a> to a Renderer for this model. <br /></td></tr>
 <tr class="separator:abbac77035201ad0586b55fb7f9075ea8 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6544153f6d56542983a52195b751e10 inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_ab6544153f6d56542983a52195b751e10"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; std::shared_ptr&lt; <a class="el" href="structscore_1_1gfx_1_1_preview_tap.html">PreviewTap</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>previewTaps</b></td></tr>
+<tr class="memdesc:ab6544153f6d56542983a52195b751e10 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Previews of the outputs of this node, read back by a render list of the patch that renders it. See <a class="el" href="structscore_1_1gfx_1_1_preview_tap.html" title="A preview of what a node outputs, read back by a render list that already renders the node.">PreviewTap</a>. <br /></td></tr>
+<tr class="separator:ab6544153f6d56542983a52195b751e10 inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node" id="r_a0f8f63f6ea44e509c74333b4f377456d"><td class="memItemLeft" align="right" valign="top">ossia::flat_map&lt; int32_t, ossia::render_target_spec &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d">renderTargetSpecs</a></td></tr>
 <tr class="memdesc:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render target info.  <br /></td></tr>
 <tr class="separator:a0f8f63f6ea44e509c74333b4f377456d inherit pub_attribs_classscore_1_1gfx_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -322,7 +327,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>requiresDepth</b> {}<
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Node.hpp</a></li>
-<li><b>Node.cpp</b></li>
+<li><b>score-plugin-gfx/Gfx/Graph/Node.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

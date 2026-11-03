@@ -103,6 +103,7 @@ $(document).ready(function(){initNavTree('class_gfx_1_1gfx__exec__node.html','')
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -132,6 +133,12 @@ Inheritance diagram for Gfx::gfx_exec_node:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_gfx_1_1gfx__exec__node_1_1ui__control__out.html">ui_control_out</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest value of a control output, on its way to the views.  <a href="struct_gfx_1_1gfx__exec__node_1_1ui__control__out.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab398d26e950f17c39cfd855704bcbe94" id="r_ab398d26e950f17c39cfd855704bcbe94"><td class="memItemLeft" align="right" valign="top"><a id="ab398d26e950f17c39cfd855704bcbe94" name="ab398d26e950f17c39cfd855704bcbe94"></a>
@@ -182,6 +189,11 @@ exec_controls&#160;</td><td class="memItemRight" valign="bottom"><b>controls</b>
 <tr class="memitem:a5be0eccafe444eb854fca08209b1f8b4" id="r_a5be0eccafe444eb854fca08209b1f8b4"><td class="memItemLeft" align="right" valign="top"><a id="a5be0eccafe444eb854fca08209b1f8b4" name="a5be0eccafe444eb854fca08209b1f8b4"></a>
 exec_controls&#160;</td><td class="memItemRight" valign="bottom"><b>control_outs</b></td></tr>
 <tr class="separator:a5be0eccafe444eb854fca08209b1f8b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae57d01834ea1f26f0811176330d40647" id="r_ae57d01834ea1f26f0811176330d40647"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="struct_gfx_1_1gfx__exec__node_1_1ui__control__out.html">ui_control_out</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gfx_1_1gfx__exec__node.html#ae57d01834ea1f26f0811176330d40647">ui_control_outs</a></td></tr>
+<tr class="separator:ae57d01834ea1f26f0811176330d40647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44dbebd8f9adae70ede6f612f8c368e0" id="r_a44dbebd8f9adae70ede6f612f8c368e0"><td class="memItemLeft" align="right" valign="top"><a id="a44dbebd8f9adae70ede6f612f8c368e0" name="a44dbebd8f9adae70ede6f612f8c368e0"></a>
+std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>notify_ui</b> {}</td></tr>
+<tr class="separator:a44dbebd8f9adae70ede6f612f8c368e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52f40e6553a5d5e06aaa3d2ed947bf98" id="r_a52f40e6553a5d5e06aaa3d2ed947bf98"><td class="memItemLeft" align="right" valign="top"><a id="a52f40e6553a5d5e06aaa3d2ed947bf98" name="a52f40e6553a5d5e06aaa3d2ed947bf98"></a>
 <a class="el" href="class_gfx_1_1_gfx_execution_action.html">GfxExecutionAction</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>exec_context</b> {}</td></tr>
 <tr class="separator:a52f40e6553a5d5e06aaa3d2ed947bf98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +207,22 @@ std::atomic_int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>script
 ossia::time_value&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_flicks</b> {}</td></tr>
 <tr class="separator:a34a8ec9ce025767e5536ec45b28d0cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae57d01834ea1f26f0811176330d40647" name="ae57d01834ea1f26f0811176330d40647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae57d01834ea1f26f0811176330d40647">&#9670;&#160;</a></span>ui_control_outs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="struct_gfx_1_1gfx__exec__node_1_1ui__control__out.html">ui_control_out</a>&gt; &gt; Gfx::gfx_exec_node::ui_control_outs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>One per control_outs, made with it. Only written while notify_ui is set, which the host keeps on while something reads them. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_gfx_exec_node_8hpp_source.html">GfxExecNode.hpp</a></li>
 <li><b>GfxExecNode.cpp</b></li>

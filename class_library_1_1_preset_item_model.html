@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('class_library_1_1_preset_item_model.ht
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="class_library_1_1_preset_item_model-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Library::PresetItemModel Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -116,28 +116,196 @@ Inheritance diagram for Library::PresetItemModel:</div>
  <div class="center">
   <img src="class_library_1_1_preset_item_model.png" alt=""/>
  </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The library's presets of one kind of process, in folders by category (<a class="el" href="struct_process_1_1_preset_tree.html">Process::PresetTree</a>). Rows refer to the application's preset list by index. </p>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_library_1_1_preset_item_model_1_1_node.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c95d6c7f84dbf6d30c9b4063094d359" id="r_a7c95d6c7f84dbf6d30c9b4063094d359"><td class="memItemLeft" align="right" valign="top"><a id="a7c95d6c7f84dbf6d30c9b4063094d359" name="a7c95d6c7f84dbf6d30c9b4063094d359"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PresetItemModel</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;ctx, QObject *parent)</td></tr>
 <tr class="separator:a7c95d6c7f84dbf6d30c9b4063094d359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e4e9f31f1294078633cf8be8d1539f" id="r_a27e4e9f31f1294078633cf8be8d1539f"><td class="memItemLeft" align="right" valign="top"><a id="a27e4e9f31f1294078633cf8be8d1539f" name="a27e4e9f31f1294078633cf8be8d1539f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc)</td></tr>
-<tr class="separator:a27e4e9f31f1294078633cf8be8d1539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941a7d8044803899ebacdbaf89a9b12b" id="r_a941a7d8044803899ebacdbaf89a9b12b"><td class="memItemLeft" align="right" valign="top"><a id="a941a7d8044803899ebacdbaf89a9b12b" name="a941a7d8044803899ebacdbaf89a9b12b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setProcess</b> (std::optional&lt; <a class="el" href="struct_process_1_1_process_identifier.html">Process::ProcessIdentifier</a> &gt; id)</td></tr>
+<tr class="memdesc:a941a7d8044803899ebacdbaf89a9b12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind of process whose presets it shows; none: no rows. <br /></td></tr>
+<tr class="separator:a941a7d8044803899ebacdbaf89a9b12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa713ff4efce58196e821a17035c367e4" id="r_aa713ff4efce58196e821a17035c367e4"><td class="memItemLeft" align="right" valign="top"><a id="aa713ff4efce58196e821a17035c367e4" name="aa713ff4efce58196e821a17035c367e4"></a>
+const std::optional&lt; <a class="el" href="struct_process_1_1_process_identifier.html">Process::ProcessIdentifier</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>process</b> () const noexcept</td></tr>
+<tr class="separator:aa713ff4efce58196e821a17035c367e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0496e606a8718dbccfce5660c69a6fd0" id="r_a0496e606a8718dbccfce5660c69a6fd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_preset_item_model.html#a0496e606a8718dbccfce5660c69a6fd0">setTarget</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *proc)</td></tr>
+<tr class="separator:a0496e606a8718dbccfce5660c69a6fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679f220268238592325358ed6b8e93ff" id="r_a679f220268238592325358ed6b8e93ff"><td class="memItemLeft" align="right" valign="top"><a id="a679f220268238592325358ed6b8e93ff" name="a679f220268238592325358ed6b8e93ff"></a>
+const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> () const noexcept</td></tr>
+<tr class="separator:a679f220268238592325358ed6b8e93ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad589066f853756f5e09f5c627ea0dee5" id="r_ad589066f853756f5e09f5c627ea0dee5"><td class="memItemLeft" align="right" valign="top"><a id="ad589066f853756f5e09f5c627ea0dee5" name="ad589066f853756f5e09f5c627ea0dee5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refreshCurrent</b> ()</td></tr>
+<tr class="memdesc:ad589066f853756f5e09f5c627ea0dee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's current preset changed. <br /></td></tr>
+<tr class="separator:ad589066f853756f5e09f5c627ea0dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15de4f63458d4c9c20719fdb121d30ab" id="r_a15de4f63458d4c9c20719fdb121d30ab"><td class="memItemLeft" align="right" valign="top"><a id="a15de4f63458d4c9c20719fdb121d30ab" name="a15de4f63458d4c9c20719fdb121d30ab"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>currentPresetIndex</b> () const</td></tr>
+<tr class="memdesc:a15de4f63458d4c9c20719fdb121d30ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target's current preset, if it is a row. <br /></td></tr>
+<tr class="separator:a15de4f63458d4c9c20719fdb121d30ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344a8188185921f2b2fe90351e4825ca" id="r_a344a8188185921f2b2fe90351e4825ca"><td class="memItemLeft" align="right" valign="top"><a id="a344a8188185921f2b2fe90351e4825ca" name="a344a8188185921f2b2fe90351e4825ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFilterText</b> (const QString &amp;text)</td></tr>
+<tr class="memdesc:a344a8188185921f2b2fe90351e4825ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only the presets whose name or category contains it. <br /></td></tr>
+<tr class="separator:a344a8188185921f2b2fe90351e4825ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d8ee771e23793daddd5f032546e66a0" id="r_a4d8ee771e23793daddd5f032546e66a0"><td class="memItemLeft" align="right" valign="top"><a id="a4d8ee771e23793daddd5f032546e66a0" name="a4d8ee771e23793daddd5f032546e66a0"></a>
+const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>filterText</b> () const noexcept</td></tr>
+<tr class="separator:a4d8ee771e23793daddd5f032546e66a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d510b25208fcaf36c43bcbf1ea9513" id="r_a38d510b25208fcaf36c43bcbf1ea9513"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_preset_item_model.html#a38d510b25208fcaf36c43bcbf1ea9513">presetRow</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a38d510b25208fcaf36c43bcbf1ea9513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c49ac10adc25b35282c9995b7a5a75" id="r_a43c49ac10adc25b35282c9995b7a5a75"><td class="memItemLeft" align="right" valign="top"><a id="a43c49ac10adc25b35282c9995b7a5a75" name="a43c49ac10adc25b35282c9995b7a5a75"></a>
+const <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>preset</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="separator:a43c49ac10adc25b35282c9995b7a5a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf894b095cddc4c344a5a428b8502ef6" id="r_abf894b095cddc4c344a5a428b8502ef6"><td class="memItemLeft" align="right" valign="top"><a id="abf894b095cddc4c344a5a428b8502ef6" name="abf894b095cddc4c344a5a428b8502ef6"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>indexOfPreset</b> (int <a class="el" href="class_library_1_1_preset_item_model.html#a38d510b25208fcaf36c43bcbf1ea9513">presetRow</a>) const</td></tr>
+<tr class="separator:abf894b095cddc4c344a5a428b8502ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9dea8f6e48af1ca2101e98c9df6ca17" id="r_ab9dea8f6e48af1ca2101e98c9df6ca17"><td class="memItemLeft" align="right" valign="top"><a id="ab9dea8f6e48af1ca2101e98c9df6ca17" name="ab9dea8f6e48af1ca2101e98c9df6ca17"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>presetRowOf</b> (const QString &amp;path) const</td></tr>
+<tr class="memdesc:ab9dea8f6e48af1ca2101e98c9df6ca17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The row in <code>presets</code> of the preset in this file; -1 if none is. <br /></td></tr>
+<tr class="separator:ab9dea8f6e48af1ca2101e98c9df6ca17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a730d49f638305dbf30756c475613055c" id="r_a730d49f638305dbf30756c475613055c"><td class="memItemLeft" align="right" valign="top"><a id="a730d49f638305dbf30756c475613055c" name="a730d49f638305dbf30756c475613055c"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>folderPath</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a730d49f638305dbf30756c475613055c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A folder's path, or the folder a preset is in. <br /></td></tr>
+<tr class="separator:a730d49f638305dbf30756c475613055c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec13db368e56433208dde6ff2f1cb08c" id="r_aec13db368e56433208dde6ff2f1cb08c"><td class="memItemLeft" align="right" valign="top"><a id="aec13db368e56433208dde6ff2f1cb08c" name="aec13db368e56433208dde6ff2f1cb08c"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>indexOfFolder</b> (const QStringList &amp;path) const</td></tr>
+<tr class="separator:aec13db368e56433208dde6ff2f1cb08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa474fcbb06c55fed62de0a47c13c0dcb" id="r_aa474fcbb06c55fed62de0a47c13c0dcb"><td class="memItemLeft" align="right" valign="top"><a id="aa474fcbb06c55fed62de0a47c13c0dcb" name="aa474fcbb06c55fed62de0a47c13c0dcb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc, const QString &amp;category={})</td></tr>
+<tr class="memdesc:aa474fcbb06c55fed62de0a47c13c0dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the current state of a process as a new preset, in a category. <br /></td></tr>
+<tr class="separator:aa474fcbb06c55fed62de0a47c13c0dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b2a8c86b52f86f545a8d4b6833174d" id="r_a07b2a8c86b52f86f545a8d4b6833174d"><td class="memItemLeft" align="right" valign="top"><a id="a07b2a8c86b52f86f545a8d4b6833174d" name="a07b2a8c86b52f86f545a8d4b6833174d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canEdit</b> (int <a class="el" href="class_library_1_1_preset_item_model.html#a38d510b25208fcaf36c43bcbf1ea9513">presetRow</a>) const</td></tr>
+<tr class="memdesc:a07b2a8c86b52f86f545a8d4b6833174d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only a preset in the user library can be renamed or deleted. <br /></td></tr>
+<tr class="separator:a07b2a8c86b52f86f545a8d4b6833174d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32b91ca62f1c686b435c11412241cdf" id="r_aa32b91ca62f1c686b435c11412241cdf"><td class="memItemLeft" align="right" valign="top"><a id="aa32b91ca62f1c686b435c11412241cdf" name="aa32b91ca62f1c686b435c11412241cdf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removePreset</b> (int <a class="el" href="class_library_1_1_preset_item_model.html#a38d510b25208fcaf36c43bcbf1ea9513">presetRow</a>)</td></tr>
+<tr class="memdesc:aa32b91ca62f1c686b435c11412241cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves its file to the trash. <br /></td></tr>
+<tr class="separator:aa32b91ca62f1c686b435c11412241cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58708d0ccb1d6df0a004d7b58e0c9442" id="r_a58708d0ccb1d6df0a004d7b58e0c9442"><td class="memItemLeft" align="right" valign="top"><a id="a58708d0ccb1d6df0a004d7b58e0c9442" name="a58708d0ccb1d6df0a004d7b58e0c9442"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>movePreset</b> (int <a class="el" href="class_library_1_1_preset_item_model.html#a38d510b25208fcaf36c43bcbf1ea9513">presetRow</a>, const QString &amp;category)</td></tr>
+<tr class="memdesc:a58708d0ccb1d6df0a004d7b58e0c9442"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts a preset in another category ("" for none, "A/B" for a subfolder) <br /></td></tr>
+<tr class="separator:a58708d0ccb1d6df0a004d7b58e0c9442"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763ed14156aebfaa0016037f55dc9564" id="r_a763ed14156aebfaa0016037f55dc9564"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_preset_item_model.html#a763ed14156aebfaa0016037f55dc9564">addCategory</a> (const QStringList &amp;path)</td></tr>
+<tr class="separator:a763ed14156aebfaa0016037f55dc9564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7dff8b56677dc61653f9150b8fd47b4" id="r_ab7dff8b56677dc61653f9150b8fd47b4"><td class="memItemLeft" align="right" valign="top"><a id="ab7dff8b56677dc61653f9150b8fd47b4" name="ab7dff8b56677dc61653f9150b8fd47b4"></a>
+QStringList&#160;</td><td class="memItemRight" valign="bottom"><b>categories</b> () const</td></tr>
+<tr class="memdesc:ab7dff8b56677dc61653f9150b8fd47b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Every category of the library's presets shown, as "A/B" paths. <br /></td></tr>
+<tr class="separator:ab7dff8b56677dc61653f9150b8fd47b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3a4df4f01000dbf1ac60cd0e00fca1" id="r_a9d3a4df4f01000dbf1ac60cd0e00fca1"><td class="memItemLeft" align="right" valign="top"><a id="a9d3a4df4f01000dbf1ac60cd0e00fca1" name="a9d3a4df4f01000dbf1ac60cd0e00fca1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isBuiltin</b> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:a9d3a4df4f01000dbf1ac60cd0e00fca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether it is the folder of the target's own presets, or in it. <br /></td></tr>
+<tr class="separator:a9d3a4df4f01000dbf1ac60cd0e00fca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76f39fc5dbc8ee02afccf287f3d23dea" id="r_a76f39fc5dbc8ee02afccf287f3d23dea"><td class="memItemLeft" align="right" valign="top"><a id="a76f39fc5dbc8ee02afccf287f3d23dea" name="a76f39fc5dbc8ee02afccf287f3d23dea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>renamed</b> (QModelIndex index)</td></tr>
+<tr class="memdesc:a76f39fc5dbc8ee02afccf287f3d23dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a rename, where the preset now is. <br /></td></tr>
+<tr class="separator:a76f39fc5dbc8ee02afccf287f3d23dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affe4a49b2268b31db5408fe7266ee893" id="r_affe4a49b2268b31db5408fe7266ee893"><td class="memItemLeft" align="right" valign="top"><a id="affe4a49b2268b31db5408fe7266ee893" name="affe4a49b2268b31db5408fe7266ee893"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>index</b> (int row, int column, const QModelIndex &amp;parent) const override</td></tr>
+<tr class="separator:affe4a49b2268b31db5408fe7266ee893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0140eb8d266b0aa2e85419f3d7ab9271" id="r_a0140eb8d266b0aa2e85419f3d7ab9271"><td class="memItemLeft" align="right" valign="top"><a id="a0140eb8d266b0aa2e85419f3d7ab9271" name="a0140eb8d266b0aa2e85419f3d7ab9271"></a>
+QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b> (const QModelIndex &amp;child) const override</td></tr>
+<tr class="separator:a0140eb8d266b0aa2e85419f3d7ab9271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48da42cc40c566b28a0717d09805a0e" id="r_ab48da42cc40c566b28a0717d09805a0e"><td class="memItemLeft" align="right" valign="top"><a id="ab48da42cc40c566b28a0717d09805a0e" name="ab48da42cc40c566b28a0717d09805a0e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>rowCount</b> (const QModelIndex &amp;parent) const override</td></tr>
+<tr class="separator:ab48da42cc40c566b28a0717d09805a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac97230f493a23cb26a53c36590d4473f" id="r_ac97230f493a23cb26a53c36590d4473f"><td class="memItemLeft" align="right" valign="top"><a id="ac97230f493a23cb26a53c36590d4473f" name="ac97230f493a23cb26a53c36590d4473f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const QModelIndex &amp;parent) const override</td></tr>
+<tr class="separator:ac97230f493a23cb26a53c36590d4473f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da1fc4b8a8506c5c427d516f328f6c5" id="r_a8da1fc4b8a8506c5c427d516f328f6c5"><td class="memItemLeft" align="right" valign="top"><a id="a8da1fc4b8a8506c5c427d516f328f6c5" name="a8da1fc4b8a8506c5c427d516f328f6c5"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> (const QModelIndex &amp;index, int role) const override</td></tr>
+<tr class="separator:a8da1fc4b8a8506c5c427d516f328f6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0f0ca1c340ba36e39f2bfb8c274219" id="r_afd0f0ca1c340ba36e39f2bfb8c274219"><td class="memItemLeft" align="right" valign="top"><a id="afd0f0ca1c340ba36e39f2bfb8c274219" name="afd0f0ca1c340ba36e39f2bfb8c274219"></a>
+Qt::ItemFlags&#160;</td><td class="memItemRight" valign="bottom"><b>flags</b> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:afd0f0ca1c340ba36e39f2bfb8c274219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9dfa82d64507b47da07317c0780a39a" id="r_ac9dfa82d64507b47da07317c0780a39a"><td class="memItemLeft" align="right" valign="top"><a id="ac9dfa82d64507b47da07317c0780a39a" name="ac9dfa82d64507b47da07317c0780a39a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setData</b> (const QModelIndex &amp;index, const QVariant &amp;value, int role) override</td></tr>
+<tr class="separator:ac9dfa82d64507b47da07317c0780a39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7c68f81f3f271ad897ead96e7d7e613" id="r_aa7c68f81f3f271ad897ead96e7d7e613"><td class="memItemLeft" align="right" valign="top"><a id="aa7c68f81f3f271ad897ead96e7d7e613" name="aa7c68f81f3f271ad897ead96e7d7e613"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>dropMimeData</b> (const QMimeData *data, Qt::DropAction act, int row, int col, const QModelIndex &amp;parent) override</td></tr>
+<tr class="separator:aa7c68f81f3f271ad897ead96e7d7e613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b73dc267601b1d3ab7487d9d22bd1c" id="r_a68b73dc267601b1d3ab7487d9d22bd1c"><td class="memItemLeft" align="right" valign="top"><a id="a68b73dc267601b1d3ab7487d9d22bd1c" name="a68b73dc267601b1d3ab7487d9d22bd1c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>canDropMimeData</b> (const QMimeData *data, Qt::DropAction act, int row, int col, const QModelIndex &amp;parent) const override</td></tr>
+<tr class="separator:a68b73dc267601b1d3ab7487d9d22bd1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8b7d15d2a050587de767ab4d54b959" id="r_aee8b7d15d2a050587de767ab4d54b959"><td class="memItemLeft" align="right" valign="top"><a id="aee8b7d15d2a050587de767ab4d54b959" name="aee8b7d15d2a050587de767ab4d54b959"></a>
+QMimeData *&#160;</td><td class="memItemRight" valign="bottom"><b>mimeData</b> (const QModelIndexList &amp;indexes) const override</td></tr>
+<tr class="separator:aee8b7d15d2a050587de767ab4d54b959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f7f80c263b5cb3be12f6e5c1a69a70" id="r_ae8f7f80c263b5cb3be12f6e5c1a69a70"><td class="memItemLeft" align="right" valign="top"><a id="ae8f7f80c263b5cb3be12f6e5c1a69a70" name="ae8f7f80c263b5cb3be12f6e5c1a69a70"></a>
+Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedDragActions</b> () const override</td></tr>
+<tr class="separator:ae8f7f80c263b5cb3be12f6e5c1a69a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d17ee91658fff6157938d06061e746d" id="r_a5d17ee91658fff6157938d06061e746d"><td class="memItemLeft" align="right" valign="top"><a id="a5d17ee91658fff6157938d06061e746d" name="a5d17ee91658fff6157938d06061e746d"></a>
+Qt::DropActions&#160;</td><td class="memItemRight" valign="bottom"><b>supportedDropActions</b> () const override</td></tr>
+<tr class="separator:a5d17ee91658fff6157938d06061e746d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0cb3d7a096929b39a4f342971fe42d34" id="r_a0cb3d7a096929b39a4f342971fe42d34"><td class="memItemLeft" align="right" valign="top"><a id="a0cb3d7a096929b39a4f342971fe42d34" name="a0cb3d7a096929b39a4f342971fe42d34"></a>
 std::vector&lt; <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presets</b></td></tr>
 <tr class="separator:a0cb3d7a096929b39a4f342971fe42d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:a376f42b4781e2a2bbbb0f6b7da83d6ca" id="r_a376f42b4781e2a2bbbb0f6b7da83d6ca"><td class="memItemLeft" align="right" valign="top"><a id="a376f42b4781e2a2bbbb0f6b7da83d6ca" name="a376f42b4781e2a2bbbb0f6b7da83d6ca"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>PresetFilterProxy</b></td></tr>
-<tr class="separator:a376f42b4781e2a2bbbb0f6b7da83d6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a763ed14156aebfaa0016037f55dc9564" name="a763ed14156aebfaa0016037f55dc9564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763ed14156aebfaa0016037f55dc9564">&#9670;&#160;</a></span>addCategory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex Library::PresetItemModel::addCategory </td>
+          <td>(</td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>An empty category of the shown process's presets, to move or save some into; kept until the application quits, or as long as presets are in it </p>
+
+</div>
+</div>
+<a id="a38d510b25208fcaf36c43bcbf1ea9513" name="a38d510b25208fcaf36c43bcbf1ea9513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d510b25208fcaf36c43bcbf1ea9513">&#9670;&#160;</a></span>presetRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Library::PresetItemModel::presetRow </td>
+          <td>(</td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The row in <code>presets</code> of a preset's index; -1 for a folder or a built-in preset </p>
+
+</div>
+</div>
+<a id="a0496e606a8718dbccfce5660c69a6fd0" name="a0496e606a8718dbccfce5660c69a6fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0496e606a8718dbccfce5660c69a6fd0">&#9670;&#160;</a></span>setTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::PresetItemModel::setTarget </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> *&#160;</td>
+          <td class="paramname"><em>proc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The process its presets load into, opened from its preset button: its own presets are shown too, in a "Built-in" folder, and its current one </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_preset_item_model_8hpp_source.html">PresetItemModel.hpp</a></li>
 <li><b>PresetItemModel.cpp</b></li>

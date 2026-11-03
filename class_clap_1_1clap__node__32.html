@@ -170,6 +170,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process_midi</b> ()</
 <tr class="separator:aec00506be595591c71e2e8240e64e700 inherit pub_methods_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1c34e0cf34cda3f90bb1b3cdf2df76e inherit pub_methods_class_clap_1_1clap__node__base" id="r_ac1c34e0cf34cda3f90bb1b3cdf2df76e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#ac1c34e0cf34cda3f90bb1b3cdf2df76e">stash_midi</a> ()</td></tr>
 <tr class="separator:ac1c34e0cf34cda3f90bb1b3cdf2df76e inherit pub_methods_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bf392c5d6cd926e3e50f65d7fcf53a inherit pub_methods_class_clap_1_1clap__node__base" id="r_a29bf392c5d6cd926e3e50f65d7fcf53a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a29bf392c5d6cd926e3e50f65d7fcf53a">run_in_blocks</a> (const ossia::token_request &amp;t, ossia::exec_state_facade e) noexcept</td></tr>
+<tr class="separator:a29bf392c5d6cd926e3e50f65d7fcf53a inherit pub_methods_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51eaff6915d7b32dfed026faba8f870a inherit pub_methods_class_clap_1_1clap__node__base" id="r_a51eaff6915d7b32dfed026faba8f870a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a51eaff6915d7b32dfed026faba8f870a">in_block</a> (int64_t t) const noexcept</td></tr>
+<tr class="separator:a51eaff6915d7b32dfed026faba8f870a inherit pub_methods_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cea9258cfb4a68ace080a8d40a2f3f inherit pub_methods_class_clap_1_1clap__node__base" id="r_a27cea9258cfb4a68ace080a8d40a2f3f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_input_events</b> (int64_t offset, int samples)</td></tr>
 <tr class="separator:a27cea9258cfb4a68ace080a8d40a2f3f inherit pub_methods_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,6 +245,12 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_tick_start</b> {
 <tr class="memitem:aac0aa2445afd6f5c21c91f509115cd3e inherit pub_attribs_class_clap_1_1clap__node__base" id="r_aac0aa2445afd6f5c21c91f509115cd3e"><td class="memItemLeft" align="right" valign="top">
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_tick_frames</b> {}</td></tr>
 <tr class="separator:aac0aa2445afd6f5c21c91f509115cd3e inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08785868f763d1af5e98f6d6e27a08d1 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a08785868f763d1af5e98f6d6e27a08d1"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_first_block</b> {true}</td></tr>
+<tr class="separator:a08785868f763d1af5e98f6d6e27a08d1 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac911e4f5a29c2a1bbbcb18ea79a6aac7 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_ac911e4f5a29c2a1bbbcb18ea79a6aac7"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_block</b> {true}</td></tr>
+<tr class="separator:ac911e4f5a29c2a1bbbcb18ea79a6aac7 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c3ee586078a26448d3807af35d3165 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a65c3ee586078a26448d3807af35d3165"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::pair&lt; uint16_t, libremidi::ump &gt;, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a65c3ee586078a26448d3807af35d3165">m_deferred_midi</a></td></tr>
 <tr class="separator:a65c3ee586078a26448d3807af35d3165 inherit pub_attribs_class_clap_1_1clap__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d56589c8fba7d4e8bf5a7f4f156ffa1 inherit pub_attribs_class_clap_1_1clap__node__base" id="r_a8d56589c8fba7d4e8bf5a7f4f156ffa1"><td class="memItemLeft" align="right" valign="top">

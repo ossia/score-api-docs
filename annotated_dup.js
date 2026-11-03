@@ -34,7 +34,7 @@ var annotated_dup =
     ] ],
     [ "Audio", null, [
       [ "Settings", null, [
-        [ "Model", "class_audio_1_1_settings_1_1_model.html", null ],
+        [ "Model", "class_audio_1_1_settings_1_1_model.html", "class_audio_1_1_settings_1_1_model" ],
         [ "Presenter", "class_audio_1_1_settings_1_1_presenter.html", null ],
         [ "View", "class_audio_1_1_settings_1_1_view.html", null ]
       ] ],
@@ -402,6 +402,7 @@ var annotated_dup =
       [ "PlayFromIntervalScenarioPruner", "struct_execution_1_1_play_from_interval_scenario_pruner.html", null ],
       [ "PlayListeningHandler", "class_execution_1_1_play_listening_handler.html", null ],
       [ "PlayListeningHandlerFactory", "class_execution_1_1_play_listening_handler_factory.html", null ],
+      [ "PortTap", "class_execution_1_1_port_tap.html", "class_execution_1_1_port_tap" ],
       [ "ProcessComponent", "class_execution_1_1_process_component.html", "class_execution_1_1_process_component" ],
       [ "ProcessComponent_T", "struct_execution_1_1_process_component___t.html", null ],
       [ "ProcessComponentFactory", "class_execution_1_1_process_component_factory.html", null ],
@@ -417,6 +418,8 @@ var annotated_dup =
       [ "StateComponent", "class_execution_1_1_state_component.html", null ],
       [ "StateComponentBase", "class_execution_1_1_state_component_base.html", "class_execution_1_1_state_component_base" ],
       [ "StepComponent", "class_execution_1_1_step_component.html", null ],
+      [ "TapMonitor", "struct_execution_1_1_tap_monitor.html", "struct_execution_1_1_tap_monitor" ],
+      [ "TapTicker", "class_execution_1_1_tap_ticker.html", "class_execution_1_1_tap_ticker" ],
       [ "TimeSyncComponent", "class_execution_1_1_time_sync_component.html", "class_execution_1_1_time_sync_component" ],
       [ "TimeSyncExecutionCallbacks", "struct_execution_1_1_time_sync_execution_callbacks.html", null ],
       [ "Transaction", "struct_execution_1_1_transaction.html", null ]
@@ -543,6 +546,24 @@ var annotated_dup =
         [ "Model", "class_gfx_1_1_geometry_filter_1_1_model.html", null ],
         [ "ProcessedGeometryProgram", "struct_gfx_1_1_geometry_filter_1_1_processed_geometry_program.html", null ],
         [ "ProcessExecutorComponent", "class_gfx_1_1_geometry_filter_1_1_process_executor_component.html", "class_gfx_1_1_geometry_filter_1_1_process_executor_component" ]
+      ] ],
+      [ "GeometryViewer", null, [
+        [ "GeometryViewerNode", "struct_gfx_1_1_geometry_viewer_1_1_geometry_viewer_node.html", "struct_gfx_1_1_geometry_viewer_1_1_geometry_viewer_node" ],
+        [ "InspectorFactory", "class_gfx_1_1_geometry_viewer_1_1_inspector_factory.html", null ],
+        [ "InspectorWidget", "class_gfx_1_1_geometry_viewer_1_1_inspector_widget.html", null ],
+        [ "Layer", "class_gfx_1_1_geometry_viewer_1_1_layer.html", "class_gfx_1_1_geometry_viewer_1_1_layer" ],
+        [ "LayerFactory", "class_gfx_1_1_geometry_viewer_1_1_layer_factory.html", null ],
+        [ "Model", "class_gfx_1_1_geometry_viewer_1_1_model.html", null ],
+        [ "OrbitHandle", "class_gfx_1_1_geometry_viewer_1_1_orbit_handle.html", "class_gfx_1_1_geometry_viewer_1_1_orbit_handle" ],
+        [ "ProcessExecutorComponent", "class_gfx_1_1_geometry_viewer_1_1_process_executor_component.html", null ],
+        [ "SceneCounts", "struct_gfx_1_1_geometry_viewer_1_1_scene_counts.html", null ],
+        [ "SceneDescription", "struct_gfx_1_1_geometry_viewer_1_1_scene_description.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_description" ],
+        [ "SceneDrawer", "class_gfx_1_1_geometry_viewer_1_1_scene_drawer.html", "class_gfx_1_1_geometry_viewer_1_1_scene_drawer" ],
+        [ "SceneDrawItem", "struct_gfx_1_1_geometry_viewer_1_1_scene_draw_item.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_draw_item" ],
+        [ "SceneGizmo", "struct_gfx_1_1_geometry_viewer_1_1_scene_gizmo.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_gizmo" ],
+        [ "SceneMonitor", "struct_gfx_1_1_geometry_viewer_1_1_scene_monitor.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_monitor" ],
+        [ "SceneRow", "struct_gfx_1_1_geometry_viewer_1_1_scene_row.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_row" ],
+        [ "SceneSummary", "struct_gfx_1_1_geometry_viewer_1_1_scene_summary.html", "struct_gfx_1_1_geometry_viewer_1_1_scene_summary" ]
       ] ],
       [ "GPhoto2", null, [
         [ "DefaultGPhoto2Enumerator", "class_gfx_1_1_g_photo2_1_1_default_g_photo2_enumerator.html", null ],
@@ -752,7 +773,7 @@ var annotated_dup =
       [ "GeometryInletFactory", "struct_gfx_1_1_geometry_inlet_factory.html", null ],
       [ "GeometryOutlet", "class_gfx_1_1_geometry_outlet.html", null ],
       [ "GeometryOutletFactory", "struct_gfx_1_1_geometry_outlet_factory.html", null ],
-      [ "gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", null ],
+      [ "gfx_exec_node", "class_gfx_1_1gfx__exec__node.html", "class_gfx_1_1gfx__exec__node" ],
       [ "gfx_node_base", "class_gfx_1_1gfx__node__base.html", null ],
       [ "gfx_parameter_base", "class_gfx_1_1gfx__parameter__base.html", null ],
       [ "gfx_protocol_base", "class_gfx_1_1gfx__protocol__base.html", null ],
@@ -784,6 +805,7 @@ var annotated_dup =
       [ "multiwindow_device", "class_gfx_1_1multiwindow__device.html", null ],
       [ "MuxerInfo", "struct_gfx_1_1_muxer_info.html", null ],
       [ "offscreen_device", "class_gfx_1_1offscreen__device.html", null ],
+      [ "OutletPreviewLayer", "class_gfx_1_1_outlet_preview_layer.html", "class_gfx_1_1_outlet_preview_layer" ],
       [ "OutputMapping", "struct_gfx_1_1_output_mapping.html", "struct_gfx_1_1_output_mapping" ],
       [ "OutputMappingCanvas", "class_gfx_1_1_output_mapping_canvas.html", "class_gfx_1_1_output_mapping_canvas" ],
       [ "OutputMappingItem", "class_gfx_1_1_output_mapping_item.html", null ],
@@ -838,6 +860,7 @@ var annotated_dup =
       [ "texture_input_stream_node", "class_gfx_1_1texture__input__stream__node.html", null ],
       [ "TextureOutletBackgroundRenderer", "class_gfx_1_1_texture_outlet_background_renderer.html", null ],
       [ "TextureOutletBackgroundRendererFactory", "class_gfx_1_1_texture_outlet_background_renderer_factory.html", null ],
+      [ "TexturePreview", "class_gfx_1_1_texture_preview.html", "class_gfx_1_1_texture_preview" ],
       [ "TextureSizeWidget", "struct_gfx_1_1_texture_size_widget.html", null ],
       [ "TreeControl", "struct_gfx_1_1_tree_control.html", "struct_gfx_1_1_tree_control" ],
       [ "V4L2CameraDeviceEnumerator", "struct_gfx_1_1_v4_l2_camera_device_enumerator.html", null ],
@@ -1035,16 +1058,16 @@ var annotated_dup =
       [ "CategoryPaths", "class_library_1_1_category_paths.html", "class_library_1_1_category_paths" ],
       [ "FileSystemModel", "class_library_1_1_file_system_model.html", null ],
       [ "FileSystemRecursiveFilterProxy", "class_library_1_1_file_system_recursive_filter_proxy.html", null ],
-      [ "InfoWidget", "class_library_1_1_info_widget.html", null ],
+      [ "InfoWidget", "class_library_1_1_info_widget.html", "class_library_1_1_info_widget" ],
       [ "InstalledPackage", "struct_library_1_1_installed_package.html", "struct_library_1_1_installed_package" ],
       [ "ItemModelFilterLineEdit", "struct_library_1_1_item_model_filter_line_edit.html", null ],
       [ "LibraryDocumentLoader", "class_library_1_1_library_document_loader.html", null ],
       [ "LibraryInterface", "class_library_1_1_library_interface.html", "class_library_1_1_library_interface" ],
       [ "LibraryInterfaceList", "class_library_1_1_library_interface_list.html", null ],
-      [ "PresetFilterProxy", "class_library_1_1_preset_filter_proxy.html", null ],
-      [ "PresetItemModel", "class_library_1_1_preset_item_model.html", null ],
+      [ "PresetAudition", "class_library_1_1_preset_audition.html", "class_library_1_1_preset_audition" ],
+      [ "PresetItemModel", "class_library_1_1_preset_item_model.html", "class_library_1_1_preset_item_model" ],
       [ "PresetLibraryHandler", "class_library_1_1_preset_library_handler.html", null ],
-      [ "PresetListView", "class_library_1_1_preset_list_view.html", null ],
+      [ "PresetTreeView", "class_library_1_1_preset_tree_view.html", "class_library_1_1_preset_tree_view" ],
       [ "ProcessData", "struct_library_1_1_process_data.html", null ],
       [ "ProcessEntry", "struct_library_1_1_process_entry.html", null ],
       [ "ProcessesItemModel", "class_library_1_1_processes_item_model.html", "class_library_1_1_processes_item_model" ],
@@ -1709,6 +1732,7 @@ var annotated_dup =
       [ "EffectLayerView", "class_process_1_1_effect_layer_view.html", null ],
       [ "EffectProcessFactory_T", "class_process_1_1_effect_process_factory___t.html", null ],
       [ "EnableWhenFocusedProcessIs", "struct_process_1_1_enable_when_focused_process_is.html", null ],
+      [ "EventRing", "class_process_1_1_event_ring.html", "class_process_1_1_event_ring" ],
       [ "ExternalFileMap", "class_process_1_1_external_file_map.html", "class_process_1_1_external_file_map" ],
       [ "ExternalFileRef", "struct_process_1_1_external_file_ref.html", "struct_process_1_1_external_file_ref" ],
       [ "FileEntry", "struct_process_1_1_file_entry.html", "struct_process_1_1_file_entry" ],
@@ -1725,6 +1749,7 @@ var annotated_dup =
       [ "InspectorWidgetDelegate_T", "class_process_1_1_inspector_widget_delegate___t.html", null ],
       [ "InspectorWidgetDelegateFactory", "class_process_1_1_inspector_widget_delegate_factory.html", "class_process_1_1_inspector_widget_delegate_factory" ],
       [ "InspectorWidgetDelegateFactory_T", "class_process_1_1_inspector_widget_delegate_factory___t.html", null ],
+      [ "LatestValue", "class_process_1_1_latest_value.html", "class_process_1_1_latest_value" ],
       [ "LayerContext", "struct_process_1_1_layer_context.html", null ],
       [ "LayerContextMenu", "class_process_1_1_layer_context_menu.html", null ],
       [ "LayerContextMenuManager", "class_process_1_1_layer_context_menu_manager.html", null ],
@@ -1749,8 +1774,12 @@ var annotated_dup =
       [ "MidiSysexArena", "class_process_1_1_midi_sysex_arena.html", "class_process_1_1_midi_sysex_arena" ],
       [ "MiniLayer", "class_process_1_1_mini_layer.html", null ],
       [ "MissingFilesDialog", "class_process_1_1_missing_files_dialog.html", null ],
+      [ "ModeSwitch", "struct_process_1_1_mode_switch.html", null ],
+      [ "Monitor", "struct_process_1_1_monitor.html", "struct_process_1_1_monitor" ],
+      [ "MonitorLink", "class_process_1_1_monitor_link.html", "class_process_1_1_monitor_link" ],
       [ "MultiScriptDialog", "class_process_1_1_multi_script_dialog.html", "class_process_1_1_multi_script_dialog" ],
       [ "NodeItem", "class_process_1_1_node_item.html", "class_process_1_1_node_item" ],
+      [ "NodeResizeCorner", "class_process_1_1_node_resize_corner.html", null ],
       [ "OfflineAction", "class_process_1_1_offline_action.html", null ],
       [ "OfflineActionList", "class_process_1_1_offline_action_list.html", "class_process_1_1_offline_action_list" ],
       [ "Outlet", "class_process_1_1_outlet.html", null ],
@@ -1764,8 +1793,13 @@ var annotated_dup =
       [ "PortFactoryList", "class_process_1_1_port_factory_list.html", null ],
       [ "PortItemLayout", "struct_process_1_1_port_item_layout.html", null ],
       [ "PortListWidget", "class_process_1_1_port_list_widget.html", null ],
+      [ "PortProbeFactory", "class_process_1_1_port_probe_factory.html", "class_process_1_1_port_probe_factory" ],
+      [ "PortProbeFactoryList", "class_process_1_1_port_probe_factory_list.html", null ],
+      [ "PortProbeHover", "class_process_1_1_port_probe_hover.html", "class_process_1_1_port_probe_hover" ],
+      [ "PortProbeItem", "class_process_1_1_port_probe_item.html", null ],
       [ "PortWidgetSetup", "class_process_1_1_port_widget_setup.html", null ],
       [ "Preset", "struct_process_1_1_preset.html", null ],
+      [ "PresetTree", "struct_process_1_1_preset_tree.html", "struct_process_1_1_preset_tree" ],
       [ "PreviewSettings", "class_process_1_1_preview_settings.html", null ],
       [ "ProcessComponentBase", "class_process_1_1_process_component_base.html", null ],
       [ "ProcessData", "struct_process_1_1_process_data.html", null ],
@@ -1789,12 +1823,13 @@ var annotated_dup =
       [ "RemoteControlInterface", "class_process_1_1_remote_control_interface.html", null ],
       [ "RemoteControlProvider", "class_process_1_1_remote_control_provider.html", null ],
       [ "RemoteControlProviderList", "class_process_1_1_remote_control_provider_list.html", null ],
+      [ "SampleRing", "class_process_1_1_sample_ring.html", "class_process_1_1_sample_ring" ],
       [ "ScriptChangeResult", "struct_process_1_1_script_change_result.html", null ],
       [ "ScriptDialog", "class_process_1_1_script_dialog.html", null ],
       [ "ScriptTabBar", "class_process_1_1_script_tab_bar.html", null ],
       [ "ScriptTabWidget", "class_process_1_1_script_tab_widget.html", null ],
       [ "SetControlOutletValue", "class_process_1_1_set_control_outlet_value.html", null ],
-      [ "SetControlValue", "class_process_1_1_set_control_value.html", null ],
+      [ "SetControlValue", "class_process_1_1_set_control_value.html", "class_process_1_1_set_control_value" ],
       [ "SetControlValues", "class_process_1_1_set_control_values.html", null ],
       [ "StateNodeData", "struct_process_1_1_state_node_data.html", "struct_process_1_1_state_node_data" ],
       [ "StateNodeValues", "struct_process_1_1_state_node_values.html", null ],
@@ -2114,6 +2149,7 @@ var annotated_dup =
         [ "MoveStateMacro", "class_scenario_1_1_command_1_1_move_state_macro.html", null ],
         [ "MoveTopEventMeta", "class_scenario_1_1_command_1_1_move_top_event_meta.html", null ],
         [ "PasteProcessesInInterval", "class_scenario_1_1_command_1_1_paste_processes_in_interval.html", null ],
+        [ "PortSignature", "struct_scenario_1_1_command_1_1_port_signature.html", "struct_scenario_1_1_command_1_1_port_signature" ],
         [ "PutProcessBefore", "class_scenario_1_1_command_1_1_put_process_before.html", null ],
         [ "PutStateProcessBefore", "class_scenario_1_1_command_1_1_put_state_process_before.html", null ],
         [ "RebindReferenceMacro", "class_scenario_1_1_command_1_1_rebind_reference_macro.html", null ],
@@ -2650,8 +2686,8 @@ var annotated_dup =
         [ "HAPMDecoder", "structscore_1_1gfx_1_1_h_a_p_m_decoder.html", "structscore_1_1gfx_1_1_h_a_p_m_decoder" ],
         [ "HWTransferDecoder", "structscore_1_1gfx_1_1_h_w_transfer_decoder.html", "structscore_1_1gfx_1_1_h_w_transfer_decoder" ],
         [ "I420Encoder", "structscore_1_1gfx_1_1_i420_encoder.html", "structscore_1_1gfx_1_1_i420_encoder" ],
-        [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
         [ "image", "structscore_1_1gfx_1_1image.html", null ],
+        [ "Image", "structscore_1_1gfx_1_1_image.html", null ],
         [ "ImagesNode", "structscore_1_1gfx_1_1_images_node.html", "structscore_1_1gfx_1_1_images_node" ],
         [ "IndirectCountClamp", "classscore_1_1gfx_1_1_indirect_count_clamp.html", "classscore_1_1gfx_1_1_indirect_count_clamp" ],
         [ "InstanceKey", "structscore_1_1gfx_1_1_instance_key.html", null ],
@@ -2674,6 +2710,8 @@ var annotated_dup =
         [ "Message", "structscore_1_1gfx_1_1_message.html", null ],
         [ "ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", "structscore_1_1gfx_1_1_model_camera_u_b_o" ],
         [ "ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", "structscore_1_1gfx_1_1_model_display_node" ],
+        [ "ModelSceneDrawer", "classscore_1_1gfx_1_1_model_scene_drawer.html", "classscore_1_1gfx_1_1_model_scene_drawer" ],
+        [ "ModelSceneView", "structscore_1_1gfx_1_1_model_scene_view.html", "structscore_1_1gfx_1_1_model_scene_view" ],
         [ "MultiWindowNode", "structscore_1_1gfx_1_1_multi_window_node.html", "structscore_1_1gfx_1_1_multi_window_node" ],
         [ "MultiWindowRenderer", "classscore_1_1gfx_1_1_multi_window_renderer.html", "classscore_1_1gfx_1_1_multi_window_renderer" ],
         [ "no_delay_edges", "structscore_1_1gfx_1_1no__delay__edges.html", null ],
@@ -2718,9 +2756,11 @@ var annotated_dup =
         [ "Port", "structscore_1_1gfx_1_1_port.html", "structscore_1_1gfx_1_1_port" ],
         [ "port_counts", "structscore_1_1gfx_1_1port__counts.html", "structscore_1_1gfx_1_1port__counts" ],
         [ "port_indices", "structscore_1_1gfx_1_1port__indices.html", null ],
+        [ "PreviewHubNode", "structscore_1_1gfx_1_1_preview_hub_node.html", "structscore_1_1gfx_1_1_preview_hub_node" ],
         [ "PreviewNode", "classscore_1_1gfx_1_1_preview_node.html", "classscore_1_1gfx_1_1_preview_node" ],
         [ "PreviewRenderer", "classscore_1_1gfx_1_1_preview_renderer.html", null ],
         [ "PreviewRendererInvertY", "classscore_1_1gfx_1_1_preview_renderer_invert_y.html", null ],
+        [ "PreviewTap", "structscore_1_1gfx_1_1_preview_tap.html", "structscore_1_1gfx_1_1_preview_tap" ],
         [ "ProcessNode", "classscore_1_1gfx_1_1_process_node.html", "classscore_1_1gfx_1_1_process_node" ],
         [ "ProcessUBO", "structscore_1_1gfx_1_1_process_u_b_o.html", null ],
         [ "Quirks", "structscore_1_1gfx_1_1_quirks.html", "structscore_1_1gfx_1_1_quirks" ],
@@ -2754,6 +2794,7 @@ var annotated_dup =
         [ "ScreenNode", "structscore_1_1gfx_1_1_screen_node.html", "structscore_1_1gfx_1_1_screen_node" ],
         [ "ShaderCache", "structscore_1_1gfx_1_1_shader_cache.html", null ],
         [ "ShadowCascadesUBO", "structscore_1_1gfx_1_1_shadow_cascades_u_b_o.html", null ],
+        [ "ShownTexture", "structscore_1_1gfx_1_1_shown_texture.html", "structscore_1_1gfx_1_1_shown_texture" ],
         [ "SimpleRenderedISFNode", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node.html", "structscore_1_1gfx_1_1_simple_rendered_i_s_f_node" ],
         [ "SimpleRenderedVSANode", "structscore_1_1gfx_1_1_simple_rendered_v_s_a_node.html", "structscore_1_1gfx_1_1_simple_rendered_v_s_a_node" ],
         [ "SinkNode", "classscore_1_1gfx_1_1_sink_node.html", "classscore_1_1gfx_1_1_sink_node" ],
@@ -2767,6 +2808,7 @@ var annotated_dup =
         [ "TexturedQuad", "structscore_1_1gfx_1_1_textured_quad.html", null ],
         [ "TexturedTriangle", "structscore_1_1gfx_1_1_textured_triangle.html", null ],
         [ "TextureRenderTarget", "structscore_1_1gfx_1_1_texture_render_target.html", null ],
+        [ "TextureShape", "structscore_1_1gfx_1_1_texture_shape.html", "structscore_1_1gfx_1_1_texture_shape" ],
         [ "TextureShare", "classscore_1_1gfx_1_1_texture_share.html", "classscore_1_1gfx_1_1_texture_share" ],
         [ "TextureShareBackend", "classscore_1_1gfx_1_1_texture_share_backend.html", null ],
         [ "TextureShareBackendBase", "classscore_1_1gfx_1_1_texture_share_backend_base.html", "classscore_1_1gfx_1_1_texture_share_backend_base" ],
@@ -3429,22 +3471,98 @@ var annotated_dup =
       [ "TransportInterfaceList", "class_transport_1_1_transport_interface_list.html", null ]
     ] ],
     [ "Ui", null, [
+      [ "AudioScope", null, [
+        [ "Layer", "struct_ui_1_1_audio_scope_1_1_layer.html", "struct_ui_1_1_audio_scope_1_1_layer" ],
+        [ "Node", "struct_ui_1_1_audio_scope_1_1_node.html", "struct_ui_1_1_audio_scope_1_1_node" ],
+        [ "ScopeMonitor", "struct_ui_1_1_audio_scope_1_1_scope_monitor.html", null ]
+      ] ],
+      [ "BufferView", "namespace_ui_1_1_buffer_view.html", [
+        [ "BufferMonitor", "struct_ui_1_1_buffer_view_1_1_buffer_monitor.html", "struct_ui_1_1_buffer_view_1_1_buffer_monitor" ],
+        [ "Frame", "struct_ui_1_1_buffer_view_1_1_frame.html", "struct_ui_1_1_buffer_view_1_1_frame" ],
+        [ "Layer", "struct_ui_1_1_buffer_view_1_1_layer.html", "struct_ui_1_1_buffer_view_1_1_layer" ],
+        [ "Node", "struct_ui_1_1_buffer_view_1_1_node.html", "struct_ui_1_1_buffer_view_1_1_node" ]
+      ] ],
+      [ "Loudness", null, [
+        [ "Layer", "struct_ui_1_1_loudness_1_1_layer.html", "struct_ui_1_1_loudness_1_1_layer" ],
+        [ "LoudnessMonitor", "struct_ui_1_1_loudness_1_1_loudness_monitor.html", "struct_ui_1_1_loudness_1_1_loudness_monitor" ],
+        [ "Node", "struct_ui_1_1_loudness_1_1_node.html", "struct_ui_1_1_loudness_1_1_node" ],
+        [ "Readings", "struct_ui_1_1_loudness_1_1_readings.html", "struct_ui_1_1_loudness_1_1_readings" ],
+        [ "Target", "struct_ui_1_1_loudness_1_1_target.html", null ]
+      ] ],
       [ "MidiDisplay", "namespace_ui_1_1_midi_display.html", [
+        [ "HeldNotes", "struct_ui_1_1_midi_display_1_1_held_notes.html", null ],
+        [ "MidiEvent", "struct_ui_1_1_midi_display_1_1_midi_event.html", "struct_ui_1_1_midi_display_1_1_midi_event" ],
+        [ "MidiMonitor", "struct_ui_1_1_midi_display_1_1_midi_monitor.html", null ],
         [ "Node", "struct_ui_1_1_midi_display_1_1_node.html", "struct_ui_1_1_midi_display_1_1_node" ]
       ] ],
+      [ "Monitor", "namespace_ui_1_1_monitor.html", [
+        [ "Buffer", "namespace_ui_1_1_monitor_1_1_buffer.html", [
+          [ "GatherParams", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_params.html", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_params" ],
+          [ "GatherPass", "class_ui_1_1_monitor_1_1_buffer_1_1_gather_pass.html", "class_ui_1_1_monitor_1_1_buffer_1_1_gather_pass" ],
+          [ "GatherPlan", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_plan.html", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_plan" ],
+          [ "GatherRange", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_range.html", "struct_ui_1_1_monitor_1_1_buffer_1_1_gather_range" ],
+          [ "Layout", "struct_ui_1_1_monitor_1_1_buffer_1_1_layout.html", "struct_ui_1_1_monitor_1_1_buffer_1_1_layout" ],
+          [ "Sampling", "struct_ui_1_1_monitor_1_1_buffer_1_1_sampling.html", "struct_ui_1_1_monitor_1_1_buffer_1_1_sampling" ]
+        ] ],
+        [ "Color", "namespace_ui_1_1_monitor_1_1_color.html", [
+          [ "LumaCoefficients", "struct_ui_1_1_monitor_1_1_color_1_1_luma_coefficients.html", null ],
+          [ "Primaries", "struct_ui_1_1_monitor_1_1_color_1_1_primaries.html", null ],
+          [ "YCbCr", "struct_ui_1_1_monitor_1_1_color_1_1_y_cb_cr.html", null ]
+        ] ],
+        [ "DensityImage", "struct_ui_1_1_monitor_1_1_density_image.html", "struct_ui_1_1_monitor_1_1_density_image" ],
+        [ "DoubleClick", "class_ui_1_1_monitor_1_1_double_click.html", null ],
+        [ "LayerControl", "struct_ui_1_1_monitor_1_1_layer_control.html", null ],
+        [ "LayoutControl", "struct_ui_1_1_monitor_1_1_layout_control.html", null ],
+        [ "PitchTracker", "class_ui_1_1_monitor_1_1_pitch_tracker.html", null ],
+        [ "Ring", "struct_ui_1_1_monitor_1_1_ring.html", null ],
+        [ "SliceControl", "struct_ui_1_1_monitor_1_1_slice_control.html", null ],
+        [ "Speaker", "struct_ui_1_1_monitor_1_1_speaker.html", "struct_ui_1_1_monitor_1_1_speaker" ],
+        [ "SpectrumAnalysis", "struct_ui_1_1_monitor_1_1_spectrum_analysis.html", "struct_ui_1_1_monitor_1_1_spectrum_analysis" ],
+        [ "TextureShapeMonitor", "struct_ui_1_1_monitor_1_1_texture_shape_monitor.html", null ],
+        [ "ThirdOctave", "struct_ui_1_1_monitor_1_1_third_octave.html", null ],
+        [ "Tick", "struct_ui_1_1_monitor_1_1_tick.html", null ]
+      ] ],
       [ "SignalDisplay", null, [
-        [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ]
+        [ "ArrayFrame", "struct_ui_1_1_signal_display_1_1_array_frame.html", null ],
+        [ "Node", "struct_ui_1_1_signal_display_1_1_node.html", "struct_ui_1_1_signal_display_1_1_node" ],
+        [ "Sample", "struct_ui_1_1_signal_display_1_1_sample.html", "struct_ui_1_1_signal_display_1_1_sample" ],
+        [ "SignalMonitor", "struct_ui_1_1_signal_display_1_1_signal_monitor.html", null ]
+      ] ],
+      [ "Spectrum", null, [
+        [ "Layer", "struct_ui_1_1_spectrum_1_1_layer.html", "struct_ui_1_1_spectrum_1_1_layer" ],
+        [ "Node", "struct_ui_1_1_spectrum_1_1_node.html", "struct_ui_1_1_spectrum_1_1_node" ],
+        [ "SpectrumMonitor", "struct_ui_1_1_spectrum_1_1_spectrum_monitor.html", null ]
       ] ],
       [ "TextBox", null, [
         [ "Node", "struct_ui_1_1_text_box_1_1_node.html", "struct_ui_1_1_text_box_1_1_node" ]
+      ] ],
+      [ "TextureView", "namespace_ui_1_1_texture_view.html", [
+        [ "Layer", "struct_ui_1_1_texture_view_1_1_layer.html", "struct_ui_1_1_texture_view_1_1_layer" ],
+        [ "Node", "struct_ui_1_1_texture_view_1_1_node.html", null ]
+      ] ],
+      [ "Tuner", "namespace_ui_1_1_tuner.html", [
+        [ "Layer", "struct_ui_1_1_tuner_1_1_layer.html", null ],
+        [ "Node", "struct_ui_1_1_tuner_1_1_node.html", null ],
+        [ "TunerMonitor", "struct_ui_1_1_tuner_1_1_tuner_monitor.html", null ]
       ] ],
       [ "ValueDisplay", null, [
         [ "Node", "struct_ui_1_1_value_display_1_1_node.html", "struct_ui_1_1_value_display_1_1_node" ],
         [ "raw_port", "struct_ui_1_1_value_display_1_1raw__port.html", null ]
       ] ],
+      [ "VideoScope", "namespace_ui_1_1_video_scope.html", [
+        [ "Layer", "struct_ui_1_1_video_scope_1_1_layer.html", "struct_ui_1_1_video_scope_1_1_layer" ],
+        [ "Node", "struct_ui_1_1_video_scope_1_1_node.html", null ],
+        [ "ScopeMonitor", "struct_ui_1_1_video_scope_1_1_scope_monitor.html", null ]
+      ] ],
       [ "VUMeter", null, [
-        [ "Node", "struct_ui_1_1_v_u_meter_1_1_node.html", "struct_ui_1_1_v_u_meter_1_1_node" ]
-      ] ]
+        [ "Frame", "struct_ui_1_1_v_u_meter_1_1_frame.html", "struct_ui_1_1_v_u_meter_1_1_frame" ],
+        [ "Layer", "struct_ui_1_1_v_u_meter_1_1_layer.html", null ],
+        [ "MeterMonitor", "struct_ui_1_1_v_u_meter_1_1_meter_monitor.html", "struct_ui_1_1_v_u_meter_1_1_meter_monitor" ],
+        [ "Node", "struct_ui_1_1_v_u_meter_1_1_node.html", "struct_ui_1_1_v_u_meter_1_1_node" ],
+        [ "Scale", "struct_ui_1_1_v_u_meter_1_1_scale.html", null ]
+      ] ],
+      [ "ProbeFactory", "class_ui_1_1_probe_factory.html", "class_ui_1_1_probe_factory" ],
+      [ "ProbeItem", "class_ui_1_1_probe_item.html", null ]
     ] ],
     [ "Video", null, [
       [ "AudioRingBuffer", "struct_video_1_1_audio_ring_buffer.html", null ],
@@ -3572,8 +3690,10 @@ var annotated_dup =
       [ "LayerFactory", "struct_y_s_f_x_1_1_layer_factory.html", null ],
       [ "LibraryHandler", "class_y_s_f_x_1_1_library_handler.html", null ],
       [ "ProcessFactory", "struct_y_s_f_x_1_1_process_factory.html", null ],
-      [ "ProcessModel", "class_y_s_f_x_1_1_process_model.html", null ],
+      [ "ProcessModel", "class_y_s_f_x_1_1_process_model.html", "class_y_s_f_x_1_1_process_model" ],
       [ "ScriptMacro", "class_y_s_f_x_1_1_script_macro.html", null ],
+      [ "StateGuard", "class_y_s_f_x_1_1_state_guard.html", "class_y_s_f_x_1_1_state_guard" ],
+      [ "StateLock", "class_y_s_f_x_1_1_state_lock.html", null ],
       [ "Window", "class_y_s_f_x_1_1_window.html", null ]
     ] ],
     [ "_CameraFileHandler", "struct___camera_file_handler.html", null ],

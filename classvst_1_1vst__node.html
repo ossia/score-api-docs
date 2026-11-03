@@ -139,19 +139,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () 
 <tr class="separator:aed0ebec822928cdcfc3ed39e35cc32b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3d5c304036842daa4e731fd608a5dd5" id="r_ae3d5c304036842daa4e731fd608a5dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#ae3d5c304036842daa4e731fd608a5dd5">stashMidi</a> ()</td></tr>
 <tr class="separator:ae3d5c304036842daa4e731fd608a5dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9378f0246dedd69e9c5d8989087fb82" id="r_aa9378f0246dedd69e9c5d8989087fb82"><td class="memTemplParams" colspan="2"><a id="aa9378f0246dedd69e9c5d8989087fb82" name="aa9378f0246dedd69e9c5d8989087fb82"></a>
-template&lt;typename Fun &gt; </td></tr>
-<tr class="memitem:aa9378f0246dedd69e9c5d8989087fb82"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>dispatchMidi</b> (int64_t offset, int64_t samples, Fun &amp;&amp;f)</td></tr>
-<tr class="separator:aa9378f0246dedd69e9c5d8989087fb82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4694e53b73a84a3c264132703dbaf7e" id="r_ab4694e53b73a84a3c264132703dbaf7e"><td class="memTemplParams" colspan="2">template&lt;typename Fun &gt; </td></tr>
+<tr class="memitem:ab4694e53b73a84a3c264132703dbaf7e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#ab4694e53b73a84a3c264132703dbaf7e">dispatchMidi</a> (int64_t offset, int64_t samples, bool first, bool last, Fun &amp;&amp;f)</td></tr>
+<tr class="separator:ab4694e53b73a84a3c264132703dbaf7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354a831caf8d60318264918392f3b790" id="r_a354a831caf8d60318264918392f3b790"><td class="memItemLeft" align="right" valign="top"><a id="a354a831caf8d60318264918392f3b790" name="a354a831caf8d60318264918392f3b790"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st) noexcept override</td></tr>
 <tr class="separator:a354a831caf8d60318264918392f3b790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4763fdef8aee4dd152f42a623a437a42" id="r_a4763fdef8aee4dd152f42a623a437a42"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a4763fdef8aee4dd152f42a623a437a42"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node.html#a4763fdef8aee4dd152f42a623a437a42">forEachBlock</a> (int64_t offset, int64_t samples, F &amp;&amp;f)</td></tr>
+<tr class="separator:a4763fdef8aee4dd152f42a623a437a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c67dc748a4fb9a03798f82daf124eb6" id="r_a4c67dc748a4fb9a03798f82daf124eb6"><td class="memItemLeft" align="right" valign="top"><a id="a4c67dc748a4fb9a03798f82daf124eb6" name="a4c67dc748a4fb9a03798f82daf124eb6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processFloat</b> (int64_t offset, int64_t samples)</td></tr>
 <tr class="separator:a4c67dc748a4fb9a03798f82daf124eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2c54c608c637450261f2f0b63dcfe6" id="r_a7b2c54c608c637450261f2f0b63dcfe6"><td class="memItemLeft" align="right" valign="top"><a id="a7b2c54c608c637450261f2f0b63dcfe6" name="a7b2c54c608c637450261f2f0b63dcfe6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>processDouble</b> (int64_t offset, int64_t samples)</td></tr>
 <tr class="separator:a7b2c54c608c637450261f2f0b63dcfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a524a872bc2618932e367ee907fac2eb6" id="r_a524a872bc2618932e367ee907fac2eb6"><td class="memItemLeft" align="right" valign="top"><a id="a524a872bc2618932e367ee907fac2eb6" name="a524a872bc2618932e367ee907fac2eb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processFloatBlock</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:a524a872bc2618932e367ee907fac2eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ee72910aa779f56097c38eda9985eb6" id="r_a2ee72910aa779f56097c38eda9985eb6"><td class="memItemLeft" align="right" valign="top"><a id="a2ee72910aa779f56097c38eda9985eb6" name="a2ee72910aa779f56097c38eda9985eb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processDoubleBlock</b> (int64_t offset, int64_t samples)</td></tr>
+<tr class="separator:a2ee72910aa779f56097c38eda9985eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvst_1_1vst__node__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvst_1_1vst__node__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvst_1_1vst__node__base.html">vst::vst_node_base</a></td></tr>
 <tr class="memitem:a3394e443f1c905739e264f8661bd65e2 inherit pub_methods_classvst_1_1vst__node__base" id="r_a3394e443f1c905739e264f8661bd65e2"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setControls</b> ()</td></tr>
@@ -215,6 +223,112 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (int32_t
 <tr class="separator:ae8555db49dbf264c3d5c166ac99212b0 inherit pro_methods_classvst_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab4694e53b73a84a3c264132703dbaf7e" name="ab4694e53b73a84a3c264132703dbaf7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4694e53b73a84a3c264132703dbaf7e">&#9670;&#160;</a></span>dispatchMidi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool UseDouble, bool IsSynth&gt; </div>
+<div class="memtemplate">
+template&lt;typename Fun &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvst_1_1vst__node.html">vst::vst_node</a>&lt; UseDouble, IsSynth &gt;::dispatchMidi </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Fun &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends the events dated in [offset, offset + samples), then calls f. The first block of a tick also takes the earlier ones and those held back from a tick that covered no whole sample, at its start; the last also takes the later ones, at its end. </p>
+
+</div>
+</div>
+<a id="a4763fdef8aee4dd152f42a623a437a42" name="a4763fdef8aee4dd152f42a623a437a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4763fdef8aee4dd152f42a623a437a42">&#9670;&#160;</a></span>forEachBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool UseDouble, bool IsSynth&gt; </div>
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classvst_1_1vst__node.html">vst::vst_node</a>&lt; UseDouble, IsSynth &gt;::forEachBlock </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>samples</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The plug-in was told at most m_bs frames per call (effSetBlockSize), but the engine's ticks can outgrow the block size it had then. Each block sees the transport where it starts. </p>
+
+</div>
+</div>
 <a id="ae3d5c304036842daa4e731fd608a5dd5" name="ae3d5c304036842daa4e731fd608a5dd5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae3d5c304036842daa4e731fd608a5dd5">&#9670;&#160;</a></span>stashMidi()</h2>
 

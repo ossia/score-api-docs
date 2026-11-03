@@ -104,6 +104,7 @@ $(document).ready(function(){initNavTree('struct_ui_1_1_midi_display_1_1_node_1_
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -125,7 +126,13 @@ Inheritance diagram for Ui::MidiDisplay::Node::Layer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html">Event</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_expression_point.html">ExpressionPoint</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_lane.html">Lane</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A continuous controller over time: CC, pitch bend, pressure.  <a href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_lane.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_log_entry.html">LogEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A message and its text, formatted once when it arrives.  <a href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_log_entry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_note.html">Note</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,22 +141,42 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_orphan_off.html">OrphanOff</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad6e590c292803f0fc5f1a803a15e4fc3" id="r_ad6e590c292803f0fc5f1a803a15e4fc3"><td class="memItemLeft" align="right" valign="top"><a id="ad6e590c292803f0fc5f1a803a15e4fc3" name="ad6e590c292803f0fc5f1a803a15e4fc3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Event</b> = <a class="el" href="struct_ui_1_1_midi_display_1_1_midi_event.html">MidiEvent</a></td></tr>
+<tr class="separator:ad6e590c292803f0fc5f1a803a15e4fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d49b83c18ab3fd8a741d201662e05f2" id="r_a5d49b83c18ab3fd8a741d201662e05f2"><td class="memItemLeft" align="right" valign="top"><a id="a5d49b83c18ab3fd8a741d201662e05f2" name="a5d49b83c18ab3fd8a741d201662e05f2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Layer</b> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;process, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parent)</td></tr>
 <tr class="separator:a5d49b83c18ab3fd8a741d201662e05f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdb3b48dc6597d245360b9dc7fd97af" id="r_adfdb3b48dc6597d245360b9dc7fd97af"><td class="memItemLeft" align="right" valign="top"><a id="adfdb3b48dc6597d245360b9dc7fd97af" name="adfdb3b48dc6597d245360b9dc7fd97af"></a>
+Mode&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b> () const</td></tr>
+<tr class="separator:adfdb3b48dc6597d245360b9dc7fd97af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1cd718bcf7abdfde12652d73b26cbb" id="r_aca1cd718bcf7abdfde12652d73b26cbb"><td class="memItemLeft" align="right" valign="top"><a id="aca1cd718bcf7abdfde12652d73b26cbb" name="aca1cd718bcf7abdfde12652d73b26cbb"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>channelFilter</b> () const</td></tr>
+<tr class="memdesc:aca1cd718bcf7abdfde12652d73b26cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel shown, 0 to 15, or -1 for all. <br /></td></tr>
+<tr class="separator:aca1cd718bcf7abdfde12652d73b26cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac38ac1e2b3067d992d2417c499c9de6" id="r_aac38ac1e2b3067d992d2417c499c9de6"><td class="memItemLeft" align="right" valign="top"><a id="aac38ac1e2b3067d992d2417c499c9de6" name="aac38ac1e2b3067d992d2417c499c9de6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shows</b> (const <a class="el" href="struct_ui_1_1_midi_display_1_1_midi_event.html">Event</a> &amp;e) const</td></tr>
+<tr class="separator:aac38ac1e2b3067d992d2417c499c9de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bff0ec981d36f6dde5d41eb34a20c22" id="r_a5bff0ec981d36f6dde5d41eb34a20c22"><td class="memItemLeft" align="right" valign="top"><a id="a5bff0ec981d36f6dde5d41eb34a20c22" name="a5bff0ec981d36f6dde5d41eb34a20c22"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>window</b> () const noexcept</td></tr>
 <tr class="separator:a5bff0ec981d36f6dde5d41eb34a20c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dc67e728b8fb750da31ffc85a2cdacf" id="r_a8dc67e728b8fb750da31ffc85a2cdacf"><td class="memItemLeft" align="right" valign="top"><a id="a8dc67e728b8fb750da31ffc85a2cdacf" name="a8dc67e728b8fb750da31ffc85a2cdacf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
 <tr class="separator:a8dc67e728b8fb750da31ffc85a2cdacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc293e2af56870042bcd7011505fd804" id="r_acc293e2af56870042bcd7011505fd804"><td class="memItemLeft" align="right" valign="top"><a id="acc293e2af56870042bcd7011505fd804" name="acc293e2af56870042bcd7011505fd804"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>on_events</b> (const ossia::value &amp;v)</td></tr>
-<tr class="separator:acc293e2af56870042bcd7011505fd804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1c0ec5090a00826eb85d2f698a6211" id="r_a2a1c0ec5090a00826eb85d2f698a6211"><td class="memItemLeft" align="right" valign="top"><a id="a2a1c0ec5090a00826eb85d2f698a6211" name="a2a1c0ec5090a00826eb85d2f698a6211"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh</b> (<a class="el" href="struct_ui_1_1_midi_display_1_1_midi_monitor.html">MidiMonitor</a> &amp;mon)</td></tr>
+<tr class="separator:a2a1c0ec5090a00826eb85d2f698a6211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbcaca84b63b906100d75aaf8b473493" id="r_afbcaca84b63b906100d75aaf8b473493"><td class="memItemLeft" align="right" valign="top"><a id="afbcaca84b63b906100d75aaf8b473493" name="afbcaca84b63b906100d75aaf8b473493"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>track</b> (const <a class="el" href="struct_ui_1_1_midi_display_1_1_midi_event.html">Event</a> &amp;e)</td></tr>
+<tr class="memdesc:afbcaca84b63b906100d75aaf8b473493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controllers, activity and MPE expression. <br /></td></tr>
+<tr class="separator:afbcaca84b63b906100d75aaf8b473493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3fddc4c2250af2ef3fe07df569e16ac" id="r_ad3fddc4c2250af2ef3fe07df569e16ac"><td class="memItemLeft" align="right" valign="top"><a id="ad3fddc4c2250af2ef3fe07df569e16ac" name="ad3fddc4c2250af2ef3fe07df569e16ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html">Event</a> &amp;e)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="struct_ui_1_1_midi_display_1_1_midi_event.html">Event</a> &amp;e)</td></tr>
 <tr class="separator:ad3fddc4c2250af2ef3fe07df569e16ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2444943c7cb80f9db439ac22be5ed2a7" id="r_a2444943c7cb80f9db439ac22be5ed2a7"><td class="memItemLeft" align="right" valign="top"><a id="a2444943c7cb80f9db439ac22be5ed2a7" name="a2444943c7cb80f9db439ac22be5ed2a7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>trim</b> ()</td></tr>
@@ -165,6 +192,9 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>logText</b> () con
 <tr class="separator:a0bcbe8a9c5af5c08405ef093245b9678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a273c15eb20b790525f6dcd0df0194f69" id="r_a273c15eb20b790525f6dcd0df0194f69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer.html#a273c15eb20b790525f6dcd0df0194f69">paint_impl</a> (QPainter *p) const override</td></tr>
 <tr class="separator:a273c15eb20b790525f6dcd0df0194f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3870870c8bad861b636188ff4a4a5b6b" id="r_a3870870c8bad861b636188ff4a4a5b6b"><td class="memItemLeft" align="right" valign="top"><a id="a3870870c8bad861b636188ff4a4a5b6b" name="a3870870c8bad861b636188ff4a4a5b6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paintRoll</b> (QPainter *p, bool expression) const</td></tr>
+<tr class="separator:a3870870c8bad861b636188ff4a4a5b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_process_1_1_effect_layer_view"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_process_1_1_effect_layer_view')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_process_1_1_effect_layer_view.html">Process::EffectLayerView</a></td></tr>
 <tr class="memitem:a6ce83af5fc8e3ec83d25416df9716d4a inherit pub_methods_class_process_1_1_effect_layer_view" id="r_a6ce83af5fc8e3ec83d25416df9716d4a"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>EffectLayerView</b> (QGraphicsItem *parent)</td></tr>
@@ -251,12 +281,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeave</b> (const 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a56e4e7fa94c9fe3e7edd684745b37631" id="r_a56e4e7fa94c9fe3e7edd684745b37631"><td class="memItemLeft" align="right" valign="top"><a id="a56e4e7fa94c9fe3e7edd684745b37631" name="a56e4e7fa94c9fe3e7edd684745b37631"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>describe</b> (const <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html">Event</a> &amp;e)</td></tr>
-<tr class="separator:a56e4e7fa94c9fe3e7edd684745b37631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9942aa163aed45aaccda8571c1bd41" id="r_a5e9942aa163aed45aaccda8571c1bd41"><td class="memItemLeft" align="right" valign="top"><a id="a5e9942aa163aed45aaccda8571c1bd41" name="a5e9942aa163aed45aaccda8571c1bd41"></a>
-static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>kind_color</b> (msg_kind k) noexcept</td></tr>
-<tr class="separator:a5e9942aa163aed45aaccda8571c1bd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d43bf15706bac8574f35438565a246" id="r_ab8d43bf15706bac8574f35438565a246"><td class="memItemLeft" align="right" valign="top"><a id="ab8d43bf15706bac8574f35438565a246" name="ab8d43bf15706bac8574f35438565a246"></a>
+static QColor&#160;</td><td class="memItemRight" valign="bottom"><b>kind_color</b> (libremidi::message_type k) noexcept</td></tr>
+<tr class="separator:ab8d43bf15706bac8574f35438565a246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -266,24 +293,72 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a675a6dc017d0645577ada49b07780184" id="r_a675a6dc017d0645577ada49b07780184"><td class="memItemLeft" align="right" valign="top"><a id="a675a6dc017d0645577ada49b07780184" name="a675a6dc017d0645577ada49b07780184"></a>
 <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_window_inlet</b> {}</td></tr>
 <tr class="separator:a675a6dc017d0645577ada49b07780184"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a8529673cd12bfe6f392ea18ff6e2e" id="r_af2a8529673cd12bfe6f392ea18ff6e2e"><td class="memItemLeft" align="right" valign="top"><a id="af2a8529673cd12bfe6f392ea18ff6e2e" name="af2a8529673cd12bfe6f392ea18ff6e2e"></a>
-std::deque&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_event.html">Event</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_log</b></td></tr>
-<tr class="separator:af2a8529673cd12bfe6f392ea18ff6e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd284f61cc89e72268a527ab384605cc" id="r_abd284f61cc89e72268a527ab384605cc"><td class="memItemLeft" align="right" valign="top"><a id="abd284f61cc89e72268a527ab384605cc" name="abd284f61cc89e72268a527ab384605cc"></a>
-std::deque&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_notes</b></td></tr>
-<tr class="separator:abd284f61cc89e72268a527ab384605cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a043573706f4c7668ee034f38e8c99e0f" id="r_a043573706f4c7668ee034f38e8c99e0f"><td class="memItemLeft" align="right" valign="top"><a id="a043573706f4c7668ee034f38e8c99e0f" name="a043573706f4c7668ee034f38e8c99e0f"></a>
-std::deque&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_orphan_off.html">OrphanOff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_orphans</b></td></tr>
-<tr class="separator:a043573706f4c7668ee034f38e8c99e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e05acd991a9debe9f3f47382b199cf" id="r_a62e05acd991a9debe9f3f47382b199cf"><td class="memItemLeft" align="right" valign="top"><a id="a62e05acd991a9debe9f3f47382b199cf" name="a62e05acd991a9debe9f3f47382b199cf"></a>
+const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_mode_inlet</b> {}</td></tr>
+<tr class="separator:a62e05acd991a9debe9f3f47382b199cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7de0df86485c155f3f56384180c5d0" id="r_add7de0df86485c155f3f56384180c5d0"><td class="memItemLeft" align="right" valign="top"><a id="add7de0df86485c155f3f56384180c5d0" name="add7de0df86485c155f3f56384180c5d0"></a>
+const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_channel_inlet</b> {}</td></tr>
+<tr class="separator:add7de0df86485c155f3f56384180c5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463971d660deb2654af3e2a3557781a0" id="r_a463971d660deb2654af3e2a3557781a0"><td class="memItemLeft" align="right" valign="top"><a id="a463971d660deb2654af3e2a3557781a0" name="a463971d660deb2654af3e2a3557781a0"></a>
+const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_clock_inlet</b> {}</td></tr>
+<tr class="separator:a463971d660deb2654af3e2a3557781a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c96dfe493af47d524c60414e10fd6b" id="r_a93c96dfe493af47d524c60414e10fd6b"><td class="memItemLeft" align="right" valign="top"><a id="a93c96dfe493af47d524c60414e10fd6b" name="a93c96dfe493af47d524c60414e10fd6b"></a>
+const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_palette_inlet</b> {}</td></tr>
+<tr class="separator:a93c96dfe493af47d524c60414e10fd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8acb7574abd57d65a6849e24051882ca" id="r_a8acb7574abd57d65a6849e24051882ca"><td class="memItemLeft" align="right" valign="top"><a id="a8acb7574abd57d65a6849e24051882ca" name="a8acb7574abd57d65a6849e24051882ca"></a>
+<a class="el" href="classscore_1_1_q_graphics_combo.html">score::QGraphicsCombo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_switch</b> {}</td></tr>
+<tr class="separator:a8acb7574abd57d65a6849e24051882ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f77b336a711781a2ca0e35238ef1a80" id="r_a2f77b336a711781a2ca0e35238ef1a80"><td class="memItemLeft" align="right" valign="top"><a id="a2f77b336a711781a2ca0e35238ef1a80" name="a2f77b336a711781a2ca0e35238ef1a80"></a>
+<a class="el" href="class_process_1_1_monitor_link.html">Process::MonitorLink</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_link</b> {}</td></tr>
+<tr class="separator:a2f77b336a711781a2ca0e35238ef1a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092c0d794e43be5e59246b5da83470ae" id="r_a092c0d794e43be5e59246b5da83470ae"><td class="memItemLeft" align="right" valign="top"><a id="a092c0d794e43be5e59246b5da83470ae" name="a092c0d794e43be5e59246b5da83470ae"></a>
+<a class="el" href="struct_ui_1_1_midi_display_1_1_held_notes.html">HeldNotes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_held_bits</b></td></tr>
+<tr class="separator:a092c0d794e43be5e59246b5da83470ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba097b1a23248b752ebbea379f01bb2" id="r_a3ba097b1a23248b752ebbea379f01bb2"><td class="memItemLeft" align="right" valign="top"><a id="a3ba097b1a23248b752ebbea379f01bb2" name="a3ba097b1a23248b752ebbea379f01bb2"></a>
+ossia::flat_map&lt; int, <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_lane.html">Lane</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lanes</b></td></tr>
+<tr class="memdesc:a3ba097b1a23248b752ebbea379f01bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Key: channel * 256 + controller; 128 is pitch bend, 129 channel pressure. <br /></td></tr>
+<tr class="separator:a3ba097b1a23248b752ebbea379f01bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e7e02e22c0db5981e1c849e2984bab7" id="r_a9e7e02e22c0db5981e1c849e2984bab7"><td class="memItemLeft" align="right" valign="top"><a id="a9e7e02e22c0db5981e1c849e2984bab7" name="a9e7e02e22c0db5981e1c849e2984bab7"></a>
+std::array&lt; double, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_activity</b> {}</td></tr>
+<tr class="memdesc:a9e7e02e22c0db5981e1c849e2984bab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per channel: when it last received something, and what. <br /></td></tr>
+<tr class="separator:a9e7e02e22c0db5981e1c849e2984bab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa370bf07480dd8b612493f95ae4921e8" id="r_aa370bf07480dd8b612493f95ae4921e8"><td class="memItemLeft" align="right" valign="top"><a id="aa370bf07480dd8b612493f95ae4921e8" name="aa370bf07480dd8b612493f95ae4921e8"></a>
+std::array&lt; uint8_t, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_status</b> {}</td></tr>
+<tr class="separator:aa370bf07480dd8b612493f95ae4921e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4d025585da1e4b8763b3d6120cf498" id="r_aad4d025585da1e4b8763b3d6120cf498"><td class="memItemLeft" align="right" valign="top"><a id="aad4d025585da1e4b8763b3d6120cf498" name="aad4d025585da1e4b8763b3d6120cf498"></a>
+std::array&lt; float, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_bend</b> {}</td></tr>
+<tr class="memdesc:aad4d025585da1e4b8763b3d6120cf498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per channel, the state an MPE note is shaped by. <br /></td></tr>
+<tr class="separator:aad4d025585da1e4b8763b3d6120cf498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea2c805bea12f734738eda455bcd89d" id="r_a4ea2c805bea12f734738eda455bcd89d"><td class="memItemLeft" align="right" valign="top"><a id="a4ea2c805bea12f734738eda455bcd89d" name="a4ea2c805bea12f734738eda455bcd89d"></a>
+std::array&lt; float, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_timbre</b> {}</td></tr>
+<tr class="separator:a4ea2c805bea12f734738eda455bcd89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672c5358eb8754dd0670c1b666a4a06a" id="r_a672c5358eb8754dd0670c1b666a4a06a"><td class="memItemLeft" align="right" valign="top"><a id="a672c5358eb8754dd0670c1b666a4a06a" name="a672c5358eb8754dd0670c1b666a4a06a"></a>
+std::array&lt; std::array&lt; float, 128 &gt;, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_note_pressure</b> {}</td></tr>
+<tr class="memdesc:a672c5358eb8754dd0670c1b666a4a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per channel and note: velocity, then channel or polyphonic pressure. <br /></td></tr>
+<tr class="separator:a672c5358eb8754dd0670c1b666a4a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb8957dd700fa3323f8876db281a0a1d" id="r_adb8957dd700fa3323f8876db281a0a1d"><td class="memItemLeft" align="right" valign="top"><a id="adb8957dd700fa3323f8876db281a0a1d" name="adb8957dd700fa3323f8876db281a0a1d"></a>
+ossia::flat_map&lt; int, boost::circular_buffer&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_expression_point.html">ExpressionPoint</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_paths</b></td></tr>
+<tr class="memdesc:adb8957dd700fa3323f8876db281a0a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per channel and note, the path of a sounding MPE note. <br /></td></tr>
+<tr class="separator:adb8957dd700fa3323f8876db281a0a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fa28dc5dc66c952bb3e0c79450ff429" id="r_a4fa28dc5dc66c952bb3e0c79450ff429"><td class="memItemLeft" align="right" valign="top"><a id="a4fa28dc5dc66c952bb3e0c79450ff429" name="a4fa28dc5dc66c952bb3e0c79450ff429"></a>
+boost::circular_buffer&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_log_entry.html">LogEntry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_log</b></td></tr>
+<tr class="separator:a4fa28dc5dc66c952bb3e0c79450ff429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074624fd4cb9571ce5b64b5435dd3034" id="r_a074624fd4cb9571ce5b64b5435dd3034"><td class="memItemLeft" align="right" valign="top"><a id="a074624fd4cb9571ce5b64b5435dd3034" name="a074624fd4cb9571ce5b64b5435dd3034"></a>
+boost::circular_buffer&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_note.html">Note</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_notes</b></td></tr>
+<tr class="separator:a074624fd4cb9571ce5b64b5435dd3034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10d8300310856557a1685855407fda3" id="r_ad10d8300310856557a1685855407fda3"><td class="memItemLeft" align="right" valign="top"><a id="ad10d8300310856557a1685855407fda3" name="ad10d8300310856557a1685855407fda3"></a>
+boost::circular_buffer&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_orphan_off.html">OrphanOff</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_orphans</b></td></tr>
+<tr class="separator:ad10d8300310856557a1685855407fda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6388609787da0d5b7b653e1d790334" id="r_aec6388609787da0d5b7b653e1d790334"><td class="memItemLeft" align="right" valign="top"><a id="aec6388609787da0d5b7b653e1d790334" name="aec6388609787da0d5b7b653e1d790334"></a>
 std::array&lt; std::array&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_layer_1_1_open_note.html">OpenNote</a>, 128 &gt;, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_open</b> {}</td></tr>
 <tr class="separator:aec6388609787da0d5b7b653e1d790334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70f69a4b968eca82f19e9d6c66e92c50" id="r_a70f69a4b968eca82f19e9d6c66e92c50"><td class="memItemLeft" align="right" valign="top"><a id="a70f69a4b968eca82f19e9d6c66e92c50" name="a70f69a4b968eca82f19e9d6c66e92c50"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_now</b> = 0.f</td></tr>
-<tr class="separator:a70f69a4b968eca82f19e9d6c66e92c50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9848f9b9240c05b375885c08e2ead2f4" id="r_a9848f9b9240c05b375885c08e2ead2f4"><td class="memItemLeft" align="right" valign="top"><a id="a9848f9b9240c05b375885c08e2ead2f4" name="a9848f9b9240c05b375885c08e2ead2f4"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_seq</b> = -1.f</td></tr>
-<tr class="separator:a9848f9b9240c05b375885c08e2ead2f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdcde0b8b8040d8bdbc6b229fb8ca7e" id="r_abcdcde0b8b8040d8bdbc6b229fb8ca7e"><td class="memItemLeft" align="right" valign="top"><a id="abcdcde0b8b8040d8bdbc6b229fb8ca7e" name="abcdcde0b8b8040d8bdbc6b229fb8ca7e"></a>
+QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><b>m_polyline</b></td></tr>
+<tr class="memdesc:abcdcde0b8b8040d8bdbc6b229fb8ca7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reused by the painting, which would otherwise allocate one per lane and note. <br /></td></tr>
+<tr class="separator:abcdcde0b8b8040d8bdbc6b229fb8ca7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dffcb1757af98f68874e5b04c727988" id="r_a4dffcb1757af98f68874e5b04c727988"><td class="memItemLeft" align="right" valign="top"><a id="a4dffcb1757af98f68874e5b04c727988" name="a4dffcb1757af98f68874e5b04c727988"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_now</b> = 0.</td></tr>
+<tr class="separator:a4dffcb1757af98f68874e5b04c727988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45bb5835e14ba25f695aa418ad7a30e" id="r_ab45bb5835e14ba25f695aa418ad7a30e"><td class="memItemLeft" align="right" valign="top"><a id="ab45bb5835e14ba25f695aa418ad7a30e" name="ab45bb5835e14ba25f695aa418ad7a30e"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_window</b> = 0.</td></tr>
 <tr class="separator:ab45bb5835e14ba25f695aa418ad7a30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,7 +375,7 @@ Static Public Attributes</h2></td></tr>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>left_gutter</b> = 34.</td></tr>
 <tr class="separator:a04972555e10deef18d85e3b2b543f396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e010eaded3460b0d44463d78eee613" id="r_ae6e010eaded3460b0d44463d78eee613"><td class="memItemLeft" align="right" valign="top"><a id="ae6e010eaded3460b0d44463d78eee613" name="ae6e010eaded3460b0d44463d78eee613"></a>
-static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>header_height</b> = 13.</td></tr>
+static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>header_height</b> = 18.</td></tr>
 <tr class="separator:ae6e010eaded3460b0d44463d78eee613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa091bc0278de9333cdb039ab8ffc4cf7" id="r_aa091bc0278de9333cdb039ab8ffc4cf7"><td class="memItemLeft" align="right" valign="top"><a id="aa091bc0278de9333cdb039ab8ffc4cf7" name="aa091bc0278de9333cdb039ab8ffc4cf7"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>system_lane_height</b> = 9.</td></tr>
@@ -312,8 +387,12 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>defau
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>default_high_pitch</b> = 72</td></tr>
 <tr class="separator:a49f53571c0c932cbfe57b1a437c4add3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c44864e61ebcee728c06440b3ea5e09" id="r_a0c44864e61ebcee728c06440b3ea5e09"><td class="memItemLeft" align="right" valign="top"><a id="a0c44864e61ebcee728c06440b3ea5e09" name="a0c44864e61ebcee728c06440b3ea5e09"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_log</b> = 256</td></tr>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_log</b> = 4096</td></tr>
 <tr class="separator:a0c44864e61ebcee728c06440b3ea5e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ed96df500589e78024f93961a17252" id="r_ab9ed96df500589e78024f93961a17252"><td class="memItemLeft" align="right" valign="top"><a id="ab9ed96df500589e78024f93961a17252" name="ab9ed96df500589e78024f93961a17252"></a>
+static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>mpe_bend_range</b> = 48.f</td></tr>
+<tr class="memdesc:ab9ed96df500589e78024f93961a17252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Semitones of a full pitch bend for an MPE member channel. <br /></td></tr>
+<tr class="separator:ab9ed96df500589e78024f93961a17252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

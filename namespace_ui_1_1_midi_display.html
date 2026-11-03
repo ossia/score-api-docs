@@ -103,7 +103,9 @@ $(document).ready(function(){initNavTree('namespace_ui_1_1_midi_display.html',''
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Ui::MidiDisplay Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -115,17 +117,78 @@ $(document).ready(function(){initNavTree('namespace_ui_1_1_midi_display.html',''
 <p>Cable any MIDI outlet to it to see the raw message stream; outlets fan out, so it taps a chain without interrupting it. It is primarily meant to debug note lifetime issues: a note whose note-off is never sent is drawn as a bar that never ends, in red, and counted in the "stuck" readout in the header. Retriggers without an intervening note-off, and note-offs for notes that were not held, are also flagged, as those are the usual symptoms of a broken note-off path.</p>
 <p>Implementation notes:</p>
 <ul>
-<li>The engine -&gt; UI transport for control outputs is <em>lossy</em>: the UI polls <code>coarseUpdateTimer</code> (~2x the UI event rate, so roughly every 60-100ms) and only keeps the last value it finds in the queue. We therefore cannot push "the events of this tick" and expect the UI to see all of them. Instead the node keeps a small ring of the events of the last <code>retain_seconds</code> and pushes the <em>whole ring</em> every time; the layer deduplicates using the per-event sequence number. As long as the UI wakes up at least once per <code>retain_seconds</code>, no event can be missed.</li>
-<li>A heartbeat push (every <code>heartbeat_seconds</code>) keeps the view scrolling when no MIDI is coming in.</li>
-<li>Note pairing (held / stuck / retriggered / unmatched note-off) is done in the node, not in the layer, and shipped as a per-event flag. The layer only ever holds the last <code>retain_seconds</code> and is rebuilt from scratch when playback restarts; deriving pairing from such a window reports the note-ons whose note-off fell before it as stuck, and the note-offs whose note-on fell before it as unmatched. Both are artifacts of the window, not of the stream.</li>
+<li>Messages reach the view through an event ring on the process monitor, none lost while the view keeps up; the node also publishes which notes are held, so that a view opened during playback starts from the right state.</li>
+<li>Note pairing (held / stuck / retriggered / unmatched note-off) is done in the node, not in the layer, and shipped as a per-event flag. The layer only only holds what came while it was shown, and is rebuilt from scratch when playback restarts; deriving pairing from such a window reports the note-ons whose note-off fell before it as stuck, and the note-offs whose note-on fell before it as unmatched. Both are artifacts of the window, not of the stream.</li>
 <li>Caveat: avendish drops incoming messages whose timestamp falls outside [tick_start; tick_start + frames[ (see port_run_preprocess.hpp). Messages emitted by an upstream node with an out-of-tick timestamp are therefore invisible here as well as to every other avnd process. </li>
 </ul>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_held_notes.html">HeldNotes</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Which notes are held on each channel.  <a href="struct_ui_1_1_midi_display_1_1_held_notes.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_midi_event.html">MidiEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One message as the node saw it.  <a href="struct_ui_1_1_midi_display_1_1_midi_event.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_midi_monitor.html">MidiMonitor</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node.html">Node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a3aa708df47ffc796f59d446d67ec252a" id="r_a3aa708df47ffc796f59d446d67ec252a"><td class="memItemLeft" align="right" valign="top"><a id="a3aa708df47ffc796f59d446d67ec252a" name="a3aa708df47ffc796f59d446d67ec252a"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Mode</b> { <br />
+&#160;&#160;<b>PianoRoll</b>
+, <b>EventList</b>
+, <b>Controllers</b>
+, <b>Activity</b>
+, <br />
+&#160;&#160;<b>Expression</b>
+<br />
+ }</td></tr>
+<tr class="separator:a3aa708df47ffc796f59d446d67ec252a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00afc59c98cf27ad6d8095766b7a42ee" id="r_a00afc59c98cf27ad6d8095766b7a42ee"><td class="memItemLeft" align="right" valign="top"><a id="a00afc59c98cf27ad6d8095766b7a42ee" name="a00afc59c98cf27ad6d8095766b7a42ee"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>NotePalette</b> { <br />
+&#160;&#160;<b>Green</b>
+, <b>Inferno</b>
+, <b>Viridis</b>
+, <b>Magma</b>
+, <br />
+&#160;&#160;<b>Turbo</b>
+, <b>Channels</b>
+<br />
+ }</td></tr>
+<tr class="separator:a00afc59c98cf27ad6d8095766b7a42ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a836ba27356451ecdc105b57d4a9ad9d5" id="r_a836ba27356451ecdc105b57d4a9ad9d5"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui_1_1_midi_display.html#a836ba27356451ecdc105b57d4a9ad9d5">mode_names</a> []</td></tr>
+<tr class="separator:a836ba27356451ecdc105b57d4a9ad9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a836ba27356451ecdc105b57d4a9ad9d5" name="a836ba27356451ecdc105b57d4a9ad9d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836ba27356451ecdc105b57d4a9ad9d5">&#9670;&#160;</a></span>mode_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::string_view Ui::MidiDisplay::mode_names[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="stringliteral">&quot;Piano roll&quot;</span>, <span class="stringliteral">&quot;Event list&quot;</span>, <span class="stringliteral">&quot;Controllers&quot;</span>, <span class="stringliteral">&quot;Activity&quot;</span>, <span class="stringliteral">&quot;Expression&quot;</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -120,78 +120,107 @@ $(document).ready(function(){initNavTree('_stepper_8hpp_source.html',''); initRe
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore.html">score</a></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html">   13</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_stepper.html">Stepper</a></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> width = 12.;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">   18</a></span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">visible</a>(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span> { <span class="keywordflow">return</span> box.width() &gt; 3. * width; }</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html">   14</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structscore_1_1_stepper.html">Stepper</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> width = 12.;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a90abeac62576407ef7ba360bbab2d727">   18</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="structscore_1_1_stepper.html#a90abeac62576407ef7ba360bbab2d727">min_stacked_height</a> = 18.;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">static</span> QRectF rect(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> sideBySide(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> left = std::max(box.left(), box.right() - width);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> QRectF{QPointF{left, box.top()}, QPointF{box.right(), box.bottom()}};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  }</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">   27</a></span>  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">stepAt</a>(<span class="keyword">const</span> QRectF&amp; box, QPointF pos) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">visible</a>(box))</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> QRectF r = rect(box);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">if</span>(!r.contains(pos))</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> pos.y() &lt; r.center().y() ? +1 : -1;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">return</span> box.height() &lt; <a class="code hl_variable" href="structscore_1_1_stepper.html#a90abeac62576407ef7ba360bbab2d727">min_stacked_height</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a31179d945ef708749689a5e85f3cba5a">   26</a></span>  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a31179d945ef708749689a5e85f3cba5a">stripWidth</a>(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">return</span> sideBySide(box) ? 2. * width : width;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">   32</a></span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">visible</a>(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> box.width() &gt; <a class="code hl_function" href="structscore_1_1_stepper.html#a31179d945ef708749689a5e85f3cba5a">stripWidth</a>(box) + 2. * width;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  }</div>
 </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">   38</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">paint</a>(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      QPainter&amp; painter, <span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1_skin.html">score::Skin</a>&amp; skin, <span class="keyword">const</span> QRectF&amp; box, <span class="keywordtype">int</span> pressedStep)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">const</span> QRectF strip = rect(box);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">const</span> QRectF halves[2]</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        = {QRectF{strip.topLeft(), QSizeF{strip.width(), strip.height() / 2.}},</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>           QRectF{</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>               QPointF{strip.left(), strip.top() + strip.height() / 2.},</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>               QSizeF{strip.width(), strip.height() / 2.}}};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">// Half the glyph&#39;s arm length, so that + and - are the same width.</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> arm = 2.;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 2; i++)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keyword">const</span> <span class="keywordtype">int</span> step = i == 0 ? +1 : -1;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keyword">const</span> QRectF&amp; half = halves[i];</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="comment">// A pressed half flashes in the text&#39;s orange, its glyph in the</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="comment">// background colour.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed = pressedStep == step;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">if</span>(pressed)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        painter.setPen(skin.NoPen);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        painter.setBrush(skin.Base4.main.brush);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        painter.drawRect(half);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="comment">// Rounded: a one-pixel pen with antialiasing off needs a whole pixel,</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="comment">// and the two glyphs have to line up with each other.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">const</span> QPointF c{std::round(half.center().x()), std::round(half.center().y())};</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      painter.setPen(pressed ? skin.Emphasis2.main.pen1 : skin.Base4.main.pen1);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      painter.drawLine(QPointF{c.x() - arm, c.y()}, QPointF{c.x() + arm, c.y()});</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">if</span>(step &gt; 0)</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        painter.drawLine(QPointF{c.x(), c.y() - arm}, QPointF{c.x(), c.y() + arm});</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">static</span> QRectF rect(<span class="keyword">const</span> QRectF&amp; box) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> left = std::max(box.left(), box.right() - <a class="code hl_function" href="structscore_1_1_stepper.html#a31179d945ef708749689a5e85f3cba5a">stripWidth</a>(box));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> QRectF{QPointF{left, box.top()}, QPointF{box.right(), box.bottom()}};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">   44</a></span>  <span class="keyword">static</span> QRectF <a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>(<span class="keyword">const</span> QRectF&amp; box, <span class="keywordtype">int</span> step) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">const</span> QRectF strip = rect(box);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span>(sideBySide(box))</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">return</span> step &gt; 0 ? QRectF{QPointF{strip.center().x(), strip.top()}, strip.bottomRight()}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                      : QRectF{strip.topLeft(), QPointF{strip.center().x(), strip.bottom()}};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> step &gt; 0 ? QRectF{strip.topLeft(), QPointF{strip.right(), strip.center().y()}}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                    : QRectF{QPointF{strip.left(), strip.center().y()}, strip.bottomRight()};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
 </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">   55</a></span>  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">stepAt</a>(<span class="keyword">const</span> QRectF&amp; box, QPointF pos) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">if</span>(!<a class="code hl_function" href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">visible</a>(box))</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>(box, +1).contains(pos))</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keywordflow">return</span> +1;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span>(<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>(box, -1).contains(pos))</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">   67</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">paint</a>(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      QPainter&amp; painter, <span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1_skin.html">score::Skin</a>&amp; skin, <span class="keyword">const</span> QRectF&amp; box, <span class="keywordtype">int</span> pressedStep)</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">const</span> QRectF halves[2] = {<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>(box, +1), <a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>(box, -1)};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// Half the glyph&#39;s arm length, so that + and - are the same width.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keywordtype">double</span> arm = 2.;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 2; i++)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keyword">const</span> <span class="keywordtype">int</span> step = i == 0 ? +1 : -1;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keyword">const</span> QRectF&amp; <a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a> = halves[i];</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      <span class="comment">// A pressed half flashes in the text&#39;s orange, its glyph in the</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="comment">// background colour.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="keyword">const</span> <span class="keywordtype">bool</span> pressed = pressedStep == step;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <span class="keywordflow">if</span>(pressed)</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        painter.setPen(skin.NoPen);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        painter.setBrush(skin.Base4.main.brush);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        painter.drawRect(<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="comment">// Rounded: a one-pixel pen with antialiasing off needs a whole pixel,</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="comment">// and the two glyphs have to line up with each other.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keyword">const</span> QPointF c{std::round(<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>.center().x()), std::round(<a class="code hl_function" href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">half</a>.center().y())};</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      painter.setPen(pressed ? skin.Emphasis2.main.pen1 : skin.Base4.main.pen1);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      painter.drawLine(QPointF{c.x() - arm, c.y()}, QPointF{c.x() + arm, c.y()});</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">if</span>(step &gt; 0)</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        painter.drawLine(QPointF{c.x(), c.y() - arm}, QPointF{c.x(), c.y() + arm});</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 <div class="ttc" id="aclassscore_1_1_skin_html"><div class="ttname"><a href="classscore_1_1_skin.html">score::Skin</a></div><div class="ttdef"><b>Definition</b> Skin.hpp:100</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:83</div></div>
-<div class="ttc" id="astructscore_1_1_stepper_html"><div class="ttname"><a href="structscore_1_1_stepper.html">score::Stepper</a></div><div class="ttdef"><b>Definition</b> Stepper.hpp:14</div></div>
-<div class="ttc" id="astructscore_1_1_stepper_html_a1ca65274ccebfa4c91a98ffa9ed2e45b"><div class="ttname"><a href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">score::Stepper::visible</a></div><div class="ttdeci">static bool visible(const QRectF &amp;box) noexcept</div><div class="ttdoc">Shown only when the box leaves room for its content next to it.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:18</div></div>
-<div class="ttc" id="astructscore_1_1_stepper_html_a4149c396848e4c0c8d3f149ec3a44fc8"><div class="ttname"><a href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">score::Stepper::stepAt</a></div><div class="ttdeci">static int stepAt(const QRectF &amp;box, QPointF pos) noexcept</div><div class="ttdoc">+1 for the upper half, -1 for the lower half, 0 outside the strip.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:27</div></div>
-<div class="ttc" id="astructscore_1_1_stepper_html_a71647373048510e5b432f8b9c3ae3e3d"><div class="ttname"><a href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">score::Stepper::paint</a></div><div class="ttdeci">static void paint(QPainter &amp;painter, const score::Skin &amp;skin, const QRectF &amp;box, int pressedStep)</div><div class="ttdoc">pressedStep: the half held down (0 for none) while the pointer is on it.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:38</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html"><div class="ttname"><a href="structscore_1_1_stepper.html">score::Stepper</a></div><div class="ttdef"><b>Definition</b> Stepper.hpp:15</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a1ca65274ccebfa4c91a98ffa9ed2e45b"><div class="ttname"><a href="structscore_1_1_stepper.html#a1ca65274ccebfa4c91a98ffa9ed2e45b">score::Stepper::visible</a></div><div class="ttdeci">static bool visible(const QRectF &amp;box) noexcept</div><div class="ttdoc">Shown only when the box leaves room for its content next to it.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:32</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a31179d945ef708749689a5e85f3cba5a"><div class="ttname"><a href="structscore_1_1_stepper.html#a31179d945ef708749689a5e85f3cba5a">score::Stepper::stripWidth</a></div><div class="ttdeci">static double stripWidth(const QRectF &amp;box) noexcept</div><div class="ttdoc">Width of the strip in that box.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:26</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a4149c396848e4c0c8d3f149ec3a44fc8"><div class="ttname"><a href="structscore_1_1_stepper.html#a4149c396848e4c0c8d3f149ec3a44fc8">score::Stepper::stepAt</a></div><div class="ttdeci">static int stepAt(const QRectF &amp;box, QPointF pos) noexcept</div><div class="ttdoc">+1 or -1 for the half under pos, 0 outside the strip.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:55</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a71647373048510e5b432f8b9c3ae3e3d"><div class="ttname"><a href="structscore_1_1_stepper.html#a71647373048510e5b432f8b9c3ae3e3d">score::Stepper::paint</a></div><div class="ttdeci">static void paint(QPainter &amp;painter, const score::Skin &amp;skin, const QRectF &amp;box, int pressedStep)</div><div class="ttdoc">pressedStep: the half held down (0 for none) while the pointer is on it.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:67</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a7dd0cb12f63d575ff8e8c70293091ff6"><div class="ttname"><a href="structscore_1_1_stepper.html#a7dd0cb12f63d575ff8e8c70293091ff6">score::Stepper::half</a></div><div class="ttdeci">static QRectF half(const QRectF &amp;box, int step) noexcept</div><div class="ttdoc">The half that steps by step: +1 or -1.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:44</div></div>
+<div class="ttc" id="astructscore_1_1_stepper_html_a90abeac62576407ef7ba360bbab2d727"><div class="ttname"><a href="structscore_1_1_stepper.html#a90abeac62576407ef7ba360bbab2d727">score::Stepper::min_stacked_height</a></div><div class="ttdeci">static constexpr double min_stacked_height</div><div class="ttdoc">Below this height the halves sit side by side.</div><div class="ttdef"><b>Definition</b> Stepper.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

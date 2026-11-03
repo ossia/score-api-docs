@@ -8,6 +8,8 @@ var searchData=
   ['zipentry_5',['ZipEntry',['../structscore_1_1_zip_entry.html',1,'score']]],
   ['zipprogress_6',['ZipProgress',['../namespacescore.html#af7a698bc64ebdf6edc567a10906b1550',1,'score']]],
   ['znear_7',['znear',['../structscore_1_1gfx_1_1_model_camera_u_b_o.html#abe81cc50ca34f47c892dd5ec2f18df69',1,'score::gfx::ModelCameraUBO']]],
-  ['zoomitem_8',['ZoomItem',['../classscore_1_1_zoom_item.html',1,'score']]],
-  ['zpos_9',['ZPos',['../class_scenario_1_1_z_pos.html',1,'Scenario']]]
+  ['zonecolor_8',['zoneColor',['../namespace_ui_1_1_monitor.html#abc321ea6985c0d6d560dd484f94338ac',1,'Ui::Monitor']]],
+  ['zonegradient_9',['zoneGradient',['../namespace_ui_1_1_monitor.html#ab20f370c16f73ed6d5e86da30e4c9132',1,'Ui::Monitor']]],
+  ['zoomitem_10',['ZoomItem',['../classscore_1_1_zoom_item.html',1,'score']]],
+  ['zpos_11',['ZPos',['../class_scenario_1_1_z_pos.html',1,'Scenario']]]
 ];

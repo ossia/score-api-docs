@@ -1234,6 +1234,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>pinDefaultOpenGLForma
 <tr class="memitem:a52c09d16d1344a85f85513ee7d2a8c2d" id="r_a52c09d16d1344a85f85513ee7d2a8c2d"><td class="memItemLeft" align="right" valign="top">QPointer&lt; QGraphicsProxyWidget &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a52c09d16d1344a85f85513ee7d2a8c2d">currentRightClickWidget</a> ()</td></tr>
 <tr class="memdesc:a52c09d16d1344a85f85513ee7d2a8c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The one type-in box a right-click may have open.  <br /></td></tr>
 <tr class="separator:a52c09d16d1344a85f85513ee7d2a8c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac117bfefa2c531d617d66245a16ce88" id="r_aac117bfefa2c531d617d66245a16ce88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aac117bfefa2c531d617d66245a16ce88">setLayoutStretch</a> (QGraphicsItem &amp;item)</td></tr>
+<tr class="separator:aac117bfefa2c531d617d66245a16ce88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf49f94ce372b8ebddfe347b42bc5a8" id="r_acaf49f94ce372b8ebddfe347b42bc5a8"><td class="memItemLeft" align="right" valign="top"><a id="acaf49f94ce372b8ebddfe347b42bc5a8" name="acaf49f94ce372b8ebddfe347b42bc5a8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeRightClickWidget</b> ()</td></tr>
 <tr class="memdesc:acaf49f94ce372b8ebddfe347b42bc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes down whatever right-click box is open, if any. <br /></td></tr>
@@ -3233,6 +3235,25 @@ template&lt;typename T &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="aac117bfefa2c531d617d66245a16ce88" name="aac117bfefa2c531d617d66245a16ce88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac117bfefa2c531d617d66245a16ce88">&#9670;&#160;</a></span>setLayoutStretch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_BASE_EXPORT void score::setLayoutStretch </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Marks an item of a <a class="el" href="classscore_1_1_graphics_h_box_layout.html">GraphicsHBoxLayout</a> as a stretch: it takes whatever width the row has beyond its content, which puts the items after it at the row's right edge. </p>
 
 </div>
 </div>

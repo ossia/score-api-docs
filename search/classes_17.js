@@ -48,7 +48,7 @@ var searchData=
   ['wordlist_45',['WordList',['../struct_word_list.html',1,'']]],
   ['worker_46',['worker',['../structao_1_1_regex_1_1worker.html',1,'ao::Regex::worker'],['../classscore_1_1_file_watch_1_1_worker.html',1,'score::FileWatch::Worker'],['../struct_threedim_1_1_gltf_live_link_1_1worker.html',1,'Threedim::GltfLiveLink::worker'],['../struct_threedim_1_1_struc_synth_1_1worker.html',1,'Threedim::StrucSynth::worker']]],
   ['worker_5frouting_5fscope_47',['worker_routing_scope',['../struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html',1,'LV2::lv2_node']]],
-  ['worker_5ft_48',['worker_t',['../struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html',1,'Nodes::AudioLooper::Node::worker_t'],['../struct_nodes_1_1_value_looper_1_1_node_1_1worker__t.html',1,'Nodes::ValueLooper::Node::worker_t'],['../struct_nodes_1_1_midi_looper_1_1_node_1_1worker__t.html',1,'Nodes::MidiLooper::Node::worker_t']]],
+  ['worker_5ft_48',['worker_t',['../struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html',1,'Nodes::AudioLooper::Node::worker_t'],['../struct_ui_1_1_loudness_1_1_node_1_1worker__t.html',1,'Ui::Loudness::Node::worker_t'],['../struct_nodes_1_1_midi_looper_1_1_node_1_1worker__t.html',1,'Nodes::MidiLooper::Node::worker_t'],['../struct_nodes_1_1_value_looper_1_1_node_1_1worker__t.html',1,'Nodes::ValueLooper::Node::worker_t']]],
   ['worldtransformemit_49',['WorldTransformEmit',['../structscore_1_1gfx_1_1_world_transform_emit.html',1,'score::gfx']]],
   ['worldtransformmat4_50',['WorldTransformMat4',['../structscore_1_1gfx_1_1_world_transform_mat4.html',1,'score::gfx']]],
   ['wrap_51',['Wrap',['../struct_faust_d_s_p_1_1_wrap.html',1,'FaustDSP']]],

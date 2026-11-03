@@ -447,7 +447,7 @@ $(document).ready(function(){initNavTree('_create_curves_8cpp_source.html',''); 
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="keyword">const</span> <span class="keyword">auto</span> N = addresses.automCount();</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="comment">// Generate brand new ids for the processes</span></div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keyword">auto</span> process_ids = getStrongIdRange&lt;Process::ProcessModel&gt;(N, interval.<a class="code hl_variable" href="class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030">processes</a>);</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keyword">auto</span> process_ids = getStrongIdRange&lt;Process::ProcessModel&gt;(N, interval.processes);</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordflow">if</span>(interval.smallView().empty())</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  {</div>
@@ -735,7 +735,7 @@ $(document).ready(function(){initNavTree('_create_curves_8cpp_source.html',''); 
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>    std::vector&lt;Process::ProcessModel*&gt;&amp; created)</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>{</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  <span class="comment">// Generate brand new ids for the processes</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <span class="keyword">auto</span> process_ids = getStrongIdRange&lt;Process::ProcessModel&gt;(N, interval.<a class="code hl_variable" href="class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030">processes</a>);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <span class="keyword">auto</span> process_ids = getStrongIdRange&lt;Process::ProcessModel&gt;(N, interval.processes);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>  <span class="keyword">auto</span> macro = Scenario::Command::makeAddProcessMacro(interval, N);</div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span> </div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>  <span class="keyword">auto</span> slots = macro-&gt;slotsToUse;</div>
@@ -850,7 +850,6 @@ $(document).ready(function(){initNavTree('_create_curves_8cpp_source.html',''); 
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_add_multiple_processes_to_multiple_intervals_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_add_multiple_processes_to_multiple_intervals_macro.html">Scenario::Command::AddMultipleProcessesToMultipleIntervalsMacro</a></div><div class="ttdef"><b>Definition</b> InterpolateMacro.hpp:19</div></div>
 <div class="ttc" id="aclass_scenario_1_1_command_1_1_macro_html"><div class="ttname"><a href="class_scenario_1_1_command_1_1_macro.html">Scenario::Command::Macro</a></div><div class="ttdef"><b>Definition</b> CommandAPI.hpp:28</div></div>
 <div class="ttc" id="aclass_scenario_1_1_interval_model_html"><div class="ttname"><a href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a></div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:50</div></div>
-<div class="ttc" id="aclass_scenario_1_1_interval_model_html_ad39d590d7ad5fee373fb74b020ba7030"><div class="ttname"><a href="class_scenario_1_1_interval_model.html#ad39d590d7ad5fee373fb74b020ba7030">Scenario::IntervalModel::processes</a></div><div class="ttdeci">score::EntityMap&lt; Process::ProcessModel, true &gt; processes</div><div class="ttdef"><b>Definition</b> IntervalModel.hpp:62</div></div>
 <div class="ttc" id="aclass_scenario_1_1_scenario_interface_html"><div class="ttname"><a href="class_scenario_1_1_scenario_interface.html">Scenario::ScenarioInterface</a></div><div class="ttdef"><b>Definition</b> ScenarioInterface.hpp:20</div></div>
 <div class="ttc" id="aclass_scenario_1_1_state_model_html"><div class="ttname"><a href="class_scenario_1_1_state_model.html">Scenario::StateModel</a></div><div class="ttdef"><b>Definition</b> StateModel.hpp:62</div></div>
 <div class="ttc" id="aclass_tree_node_html"><div class="ttname"><a href="class_tree_node.html">TreeNode&lt; StateNodeData &gt;</a></div></div>

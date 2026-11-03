@@ -131,6 +131,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>rescan</b> ()</td></t
 <tr class="memitem:a24c36f09abff1600b8e8731a7ca842e2" id="r_a24c36f09abff1600b8e8731a7ca842e2"><td class="memItemLeft" align="right" valign="top"><a id="a24c36f09abff1600b8e8731a7ca842e2" name="a24c36f09abff1600b8e8731a7ca842e2"></a>
 QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (const Process::ProcessModelFactory::ConcreteKey &amp;k)</td></tr>
 <tr class="separator:a24c36f09abff1600b8e8731a7ca842e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94f64a93fb1887658501408a69d30c0b" id="r_a94f64a93fb1887658501408a69d30c0b"><td class="memItemLeft" align="right" valign="top">QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a94f64a93fb1887658501408a69d30c0b">find</a> (const Process::ProcessModelFactory::ConcreteKey &amp;k, const QString &amp;customData)</td></tr>
+<tr class="separator:a94f64a93fb1887658501408a69d30c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a953d154e54f56c59a90253153221d7a8" id="r_a953d154e54f56c59a90253153221d7a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a953d154e54f56c59a90253153221d7a8">publish</a> (<a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;entry)</td></tr>
 <tr class="separator:a953d154e54f56c59a90253153221d7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4442831bf9f6d3cfb65028b1e4b22302" id="r_a4442831bf9f6d3cfb65028b1e4b22302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_processes_item_model.html#a4442831bf9f6d3cfb65028b1e4b22302">publish</a> (<a class="el" href="struct_library_1_1_process_entry.html">ProcessEntry</a> &amp;&amp;entry, uint64_t <a class="el" href="class_library_1_1_processes_item_model.html#ab14db44c82dac14fcd3c9fefa30adb42">generation</a>)</td></tr>
@@ -228,6 +230,35 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>node_type</b> = Proc
       </table>
 </div><div class="memdoc">
 <p>Marks a process node as a pure container: plugin databases clear the anchor's key so only their per-plugin children are user-creatable. </p>
+
+</div>
+</div>
+<a id="a94f64a93fb1887658501408a69d30c0b" name="a94f64a93fb1887658501408a69d30c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94f64a93fb1887658501408a69d30c0b">&#9670;&#160;</a></span>find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QModelIndex Library::ProcessesItemModel::find </td>
+          <td>(</td>
+          <td class="paramtype">const Process::ProcessModelFactory::ConcreteKey &amp;&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>customData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A process's entry: the one of its plug-in or script if there is one, else the one of its kind </p>
 
 </div>
 </div>

@@ -2,7 +2,7 @@ var searchData=
 [
   ['waitafterload_0',['waitAfterLoad',['../structscore_1_1_application_settings.html#adf1c9cd0f8980bf337fb2ba639553011',1,'score::ApplicationSettings']]],
   ['waitfortick_1',['waitForTick',['../structscore_1_1gfx_1_1interop_1_1_paced_frame_pump_1_1_hooks.html#a26743078984565036e4ec1bcb3b83210',1,'score::gfx::interop::PacedFramePump::Hooks']]],
-  ['wanted_2',['wanted',['../struct_nodes_1_1_looper_1_1transport.html#a90042327c900d6749f2da2c1e6e30ebd',1,'Nodes::Looper::transport']]],
+  ['wanted_2',['wanted',['../struct_nodes_1_1_looper_1_1transport.html#a90042327c900d6749f2da2c1e6e30ebd',1,'Nodes::Looper::transport::wanted'],['../structscore_1_1gfx_1_1_preview_tap.html#af29c9d779f3752ea7b55084a0c794315',1,'score::gfx::PreviewTap::wanted']]],
   ['warnings_3',['warnings',['../struct_protocols_1_1_c_a_n_1_1_database.html#af4abfdfe998d6ac83b89118116db00df',1,'Protocols::CAN::Database::warnings'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_device_map.html#a3337621ae4c1efadb85cfa56f579c4d0',1,'Protocols::MIDIDevices::DeviceMap::warnings']]],
   ['waveform1_4',['Waveform1',['../classscore_1_1_skin.html#a48beb304443355e6b169ff71f870ee6d',1,'score::Skin']]],
   ['when_5',['when',['../struct_protocols_1_1_m_i_d_i_devices_1_1_control.html#ac9c3b952b3d384006bc8de1ab2014b60',1,'Protocols::MIDIDevices::Control']]],
@@ -11,7 +11,7 @@ var searchData=
   ['widgetpalette_8',['WidgetPalette',['../classscore_1_1_skin.html#ad122962d74c1d5fcfde6719aa8bdab88',1,'score::Skin']]],
   ['width_9',['width',['../structscore_1_1gfx_1_1_kms_output_settings.html#a4d965cd6dbf9b6d9c4e4119dac324787',1,'score::gfx::KmsOutputSettings::width'],['../structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4',1,'score::gfx::BitField::width']]],
   ['width_5fexpression_10',['width_expression',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a9bfef26e3846b7b9c1cc917b969da666',1,'score::gfx::GraphicsStorageImage']]],
-  ['window_11',['window',['../struct_ui_1_1_midi_display_1_1_node.html#acf189e6f75d668c486f8749262f6fd25',1,'Ui::MidiDisplay::Node']]],
+  ['window_11',['window',['../struct_ui_1_1_midi_display_1_1_node.html#acf189e6f75d668c486f8749262f6fd25',1,'Ui::MidiDisplay::Node::window'],['../struct_ui_1_1_monitor_1_1_buffer_1_1_sampling.html#a3415afa9f883bd3afbc0850a11bb7285',1,'Ui::Monitor::Buffer::Sampling::window']]],
   ['windowposition_12',['windowPosition',['../struct_gfx_1_1_output_mapping.html#a380582436e9ebd607f70a1d65712bd9d',1,'Gfx::OutputMapping']]],
   ['work_5fper_5ftick_13',['work_per_tick',['../struct_nodes_1_1_audio_looper_1_1_node.html#a089977beacfb97ada4564848dca62c09',1,'Nodes::AudioLooper::Node']]],
   ['worker_5fresults_14',['worker_results',['../structoscr_1_1node__with__worker.html#a649783340d8fe7775d3051d6951f615a',1,'oscr::node_with_worker']]],

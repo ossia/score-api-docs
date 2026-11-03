@@ -1,5 +1,6 @@
 var class_gfx_1_1_rhi_preview_widget =
 [
+    [ "contextPreview", "class_gfx_1_1_rhi_preview_widget.html#a9dbf809ecf0a570f9ac7e030a99e695e", null ],
     [ "detach", "class_gfx_1_1_rhi_preview_widget.html#a369437f1d43a1b28a6313fccece7c2a4", null ],
     [ "liveNode", "class_gfx_1_1_rhi_preview_widget.html#a1fbfe40e88b0b1ab82dd57940bf51ac8", null ],
     [ "useContext", "class_gfx_1_1_rhi_preview_widget.html#a20e23126b9e6ccedf2665c2f9f3e541b", null ],

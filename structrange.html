@@ -114,9 +114,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab784a0a98f0238f775772ccc2e44e18b" id="r_ab784a0a98f0238f775772ccc2e44e18b"><td class="memItemLeft" align="right" valign="top"><a id="ab784a0a98f0238f775772ccc2e44e18b" name="ab784a0a98f0238f775772ccc2e44e18b"></a>
 std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>values</b> [4] = {&quot;24&quot;, &quot;25&quot;, &quot;29.97&quot;, &quot;30&quot;}</td></tr>
 <tr class="separator:ab784a0a98f0238f775772ccc2e44e18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1b2ed559a978d979aefe03daa271da" id="r_a0b1b2ed559a978d979aefe03daa271da"><td class="memItemLeft" align="right" valign="top"><a id="a0b1b2ed559a978d979aefe03daa271da" name="a0b1b2ed559a978d979aefe03daa271da"></a>
+<tr class="memitem:af4fa3b08399a18e828802b03940369cd" id="r_af4fa3b08399a18e828802b03940369cd"><td class="memItemLeft" align="right" valign="top"><a id="af4fa3b08399a18e828802b03940369cd" name="af4fa3b08399a18e828802b03940369cd"></a>
 MidiTimeCodeFrameRate&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {}</td></tr>
-<tr class="separator:a0b1b2ed559a978d979aefe03daa271da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af4fa3b08399a18e828802b03940369cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afebc177921201cea48219745ffdd9109" id="r_afebc177921201cea48219745ffdd9109"><td class="memItemLeft" align="right" valign="top"><a id="afebc177921201cea48219745ffdd9109" name="afebc177921201cea48219745ffdd9109"></a>
 OutputMode&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {EveryTick}</td></tr>
 <tr class="separator:afebc177921201cea48219745ffdd9109"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +141,24 @@ Looper::Passes&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> = 
 <tr class="memitem:a0b1b2ed559a978d979aefe03daa271da" id="r_a0b1b2ed559a978d979aefe03daa271da"><td class="memItemLeft" align="right" valign="top"><a id="a0b1b2ed559a978d979aefe03daa271da" name="a0b1b2ed559a978d979aefe03daa271da"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {0}</td></tr>
 <tr class="separator:a0b1b2ed559a978d979aefe03daa271da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4fa3b08399a18e828802b03940369cd" id="r_af4fa3b08399a18e828802b03940369cd"><td class="memItemLeft" align="right" valign="top"><a id="af4fa3b08399a18e828802b03940369cd" name="af4fa3b08399a18e828802b03940369cd"></a>
+Mode&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {Mode::Oscilloscope}</td></tr>
+<tr class="separator:af4fa3b08399a18e828802b03940369cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a7a491519c85ee0ac8b153c52965a5" id="r_a40a7a491519c85ee0ac8b153c52965a5"><td class="memItemLeft" align="right" valign="top"><a id="a40a7a491519c85ee0ac8b153c52965a5" name="a40a7a491519c85ee0ac8b153c52965a5"></a>
+Polar&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {Polar::Lissajous}</td></tr>
+<tr class="separator:a40a7a491519c85ee0ac8b153c52965a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1ddf6191b3e2c1750473273f741988" id="r_aff1ddf6191b3e2c1750473273f741988"><td class="memItemLeft" align="right" valign="top"><a id="aff1ddf6191b3e2c1750473273f741988" name="aff1ddf6191b3e2c1750473273f741988"></a>
+Smoothing&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {Smoothing::Off}</td></tr>
+<tr class="separator:aff1ddf6191b3e2c1750473273f741988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841cfcdc95cedf4e6dfdbfe8e49054f5" id="r_a841cfcdc95cedf4e6dfdbfe8e49054f5"><td class="memItemLeft" align="right" valign="top"><a id="a841cfcdc95cedf4e6dfdbfe8e49054f5" name="a841cfcdc95cedf4e6dfdbfe8e49054f5"></a>
+Channels&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {Channels::Sum}</td></tr>
+<tr class="separator:a841cfcdc95cedf4e6dfdbfe8e49054f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7768cd10e543ee63d7582854f00ba6d8" id="r_a7768cd10e543ee63d7582854f00ba6d8"><td class="memItemLeft" align="right" valign="top"><a id="a7768cd10e543ee63d7582854f00ba6d8" name="a7768cd10e543ee63d7582854f00ba6d8"></a>
+LumaStandard&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {LumaStandard::Rec709}</td></tr>
+<tr class="separator:a7768cd10e543ee63d7582854f00ba6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52aac500a91de11c21454931614d8711" id="r_a52aac500a91de11c21454931614d8711"><td class="memItemLeft" align="right" valign="top"><a id="a52aac500a91de11c21454931614d8711" name="a52aac500a91de11c21454931614d8711"></a>
+Units&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {Units::Percent}</td></tr>
+<tr class="separator:a52aac500a91de11c21454931614d8711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_m_i_d_i_sync_8hpp_source.html">MIDISync.hpp</a></li>
@@ -163,6 +181,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> {0}</td></tr>
 <li><a class="el" href="_scene_inspector_8hpp_source.html">SceneInspector.hpp</a></li>
 <li><a class="el" href="_scene_selector_8hpp_source.html">SceneSelector.hpp</a></li>
 <li><a class="el" href="_voxel_loader_8hpp_source.html">VoxelLoader.hpp</a></li>
+<li><a class="el" href="_audio_scope_8hpp_source.html">AudioScope.hpp</a></li>
+<li><a class="el" href="_buffer_view_8hpp_source.html">BufferView.hpp</a></li>
+<li><a class="el" href="_loudness_8hpp_source.html">Loudness.hpp</a></li>
+<li><a class="el" href="_midi_display_8hpp_source.html">MidiDisplay.hpp</a></li>
+<li><a class="el" href="_signal_display_8hpp_source.html">SignalDisplay.hpp</a></li>
+<li><a class="el" href="_spectrum_8hpp_source.html">Spectrum.hpp</a></li>
+<li><a class="el" href="_texture_view_8hpp_source.html">TextureView.hpp</a></li>
+<li><a class="el" href="_video_scope_8hpp_source.html">VideoScope.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

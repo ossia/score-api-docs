@@ -1,6 +1,7 @@
 var class_library_1_1_processes_item_model =
 [
     [ "clearAnchorKey", "class_library_1_1_processes_item_model.html#aa2e8a1f0d85e757ebaf9edd47c5ebfeb", null ],
+    [ "find", "class_library_1_1_processes_item_model.html#a94f64a93fb1887658501408a69d30c0b", null ],
     [ "flushPending", "class_library_1_1_processes_item_model.html#a7e0c636a10da368c64bcafdc9dc60dfe", null ],
     [ "generation", "class_library_1_1_processes_item_model.html#ab14db44c82dac14fcd3c9fefa30adb42", null ],
     [ "publish", "class_library_1_1_processes_item_model.html#a953d154e54f56c59a90253153221d7a8", null ],

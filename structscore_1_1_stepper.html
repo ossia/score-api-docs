@@ -110,10 +110,17 @@ $(document).ready(function(){initNavTree('structscore_1_1_stepper.html',''); ini
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The +/- strip on the right of a combo box or an int spinbox: the upper half steps up, the lower half down. </p>
+<div class="textblock"><p>The +/- strip on the right of a combo box or an int spinbox: the upper half steps up, the lower half down. In a box too short for two halves one above the other, they sit side by side, - then +. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa711976079f57caa95ecde42c9dcc039" id="r_aa711976079f57caa95ecde42c9dcc039"><td class="memItemLeft" align="right" valign="top"><a id="aa711976079f57caa95ecde42c9dcc039" name="aa711976079f57caa95ecde42c9dcc039"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>sideBySide</b> (const QRectF &amp;box) noexcept</td></tr>
+<tr class="separator:aa711976079f57caa95ecde42c9dcc039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31179d945ef708749689a5e85f3cba5a" id="r_a31179d945ef708749689a5e85f3cba5a"><td class="memItemLeft" align="right" valign="top"><a id="a31179d945ef708749689a5e85f3cba5a" name="a31179d945ef708749689a5e85f3cba5a"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>stripWidth</b> (const QRectF &amp;box) noexcept</td></tr>
+<tr class="memdesc:a31179d945ef708749689a5e85f3cba5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Width of the strip in that box. <br /></td></tr>
+<tr class="separator:a31179d945ef708749689a5e85f3cba5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ca65274ccebfa4c91a98ffa9ed2e45b" id="r_a1ca65274ccebfa4c91a98ffa9ed2e45b"><td class="memItemLeft" align="right" valign="top"><a id="a1ca65274ccebfa4c91a98ffa9ed2e45b" name="a1ca65274ccebfa4c91a98ffa9ed2e45b"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b> (const QRectF &amp;box) noexcept</td></tr>
 <tr class="memdesc:a1ca65274ccebfa4c91a98ffa9ed2e45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shown only when the box leaves room for its content next to it. <br /></td></tr>
@@ -121,9 +128,13 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b> (c
 <tr class="memitem:af57e0c032ba38e39e1fadadb057de936" id="r_af57e0c032ba38e39e1fadadb057de936"><td class="memItemLeft" align="right" valign="top"><a id="af57e0c032ba38e39e1fadadb057de936" name="af57e0c032ba38e39e1fadadb057de936"></a>
 static QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>rect</b> (const QRectF &amp;box) noexcept</td></tr>
 <tr class="separator:af57e0c032ba38e39e1fadadb057de936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd0cb12f63d575ff8e8c70293091ff6" id="r_a7dd0cb12f63d575ff8e8c70293091ff6"><td class="memItemLeft" align="right" valign="top"><a id="a7dd0cb12f63d575ff8e8c70293091ff6" name="a7dd0cb12f63d575ff8e8c70293091ff6"></a>
+static QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>half</b> (const QRectF &amp;box, int step) noexcept</td></tr>
+<tr class="memdesc:a7dd0cb12f63d575ff8e8c70293091ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The half that steps by <code>step</code>: +1 or -1. <br /></td></tr>
+<tr class="separator:a7dd0cb12f63d575ff8e8c70293091ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4149c396848e4c0c8d3f149ec3a44fc8" id="r_a4149c396848e4c0c8d3f149ec3a44fc8"><td class="memItemLeft" align="right" valign="top"><a id="a4149c396848e4c0c8d3f149ec3a44fc8" name="a4149c396848e4c0c8d3f149ec3a44fc8"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>stepAt</b> (const QRectF &amp;box, QPointF pos) noexcept</td></tr>
-<tr class="memdesc:a4149c396848e4c0c8d3f149ec3a44fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">+1 for the upper half, -1 for the lower half, 0 outside the strip. <br /></td></tr>
+<tr class="memdesc:a4149c396848e4c0c8d3f149ec3a44fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">+1 or -1 for the half under <code>pos</code>, 0 outside the strip. <br /></td></tr>
 <tr class="separator:a4149c396848e4c0c8d3f149ec3a44fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71647373048510e5b432f8b9c3ae3e3d" id="r_a71647373048510e5b432f8b9c3ae3e3d"><td class="memItemLeft" align="right" valign="top"><a id="a71647373048510e5b432f8b9c3ae3e3d" name="a71647373048510e5b432f8b9c3ae3e3d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter &amp;painter, const <a class="el" href="classscore_1_1_skin.html">score::Skin</a> &amp;skin, const QRectF &amp;box, int pressedStep)</td></tr>
@@ -135,6 +146,10 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:a9a81c330b75da2f7e85487c24a6d8b38" id="r_a9a81c330b75da2f7e85487c24a6d8b38"><td class="memItemLeft" align="right" valign="top"><a id="a9a81c330b75da2f7e85487c24a6d8b38" name="a9a81c330b75da2f7e85487c24a6d8b38"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>width</b> = 12.</td></tr>
 <tr class="separator:a9a81c330b75da2f7e85487c24a6d8b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90abeac62576407ef7ba360bbab2d727" id="r_a90abeac62576407ef7ba360bbab2d727"><td class="memItemLeft" align="right" valign="top"><a id="a90abeac62576407ef7ba360bbab2d727" name="a90abeac62576407ef7ba360bbab2d727"></a>
+static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>min_stacked_height</b> = 18.</td></tr>
+<tr class="memdesc:a90abeac62576407ef7ba360bbab2d727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Below this height the halves sit side by side. <br /></td></tr>
+<tr class="separator:a90abeac62576407ef7ba360bbab2d727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_stepper_8hpp_source.html">Stepper.hpp</a></li>

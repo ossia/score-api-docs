@@ -1,5 +1,6 @@
 var classscore_1_1_command_stack =
 [
+    [ "aboutToChange", "classscore_1_1_command_stack.html#a8dd2ded5c14faac6699c05f7ddf8b388", null ],
     [ "beginPendingEdit", "classscore_1_1_command_stack.html#a04ec29ff7c7042199ce643de4f1724ab", null ],
     [ "disableActions", "classscore_1_1_command_stack.html#a34febb0870463d0784933e345ceee949", null ],
     [ "enableActions", "classscore_1_1_command_stack.html#a8d92c198cf578f67d44245f327beb29f", null ],

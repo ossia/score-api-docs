@@ -122,6 +122,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_presenter.html">Presenter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1_time_axis.html">TimeAxis</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -130,19 +132,6 @@ Public Types</h2></td></tr>
 , <b>flag_orphan</b> = 2
  }</td></tr>
 <tr class="separator:ae1d18ec13b5f32c8dedd05aff8f21008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b27948be0f1c703222d23b37af4de9" id="r_a39b27948be0f1c703222d23b37af4de9"><td class="memItemLeft" align="right" valign="top"><a id="a39b27948be0f1c703222d23b37af4de9" name="a39b27948be0f1c703222d23b37af4de9"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>msg_kind</b> { <br />
-&#160;&#160;<b>note_on</b>
-, <b>note_off</b>
-, <b>poly_pressure</b>
-, <b>control_change</b>
-, <br />
-&#160;&#160;<b>program_change</b>
-, <b>aftertouch</b>
-, <b>pitch_bend</b>
-, <b>system</b>
-<br />
- }</td></tr>
-<tr class="separator:a39b27948be0f1c703222d23b37af4de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5171aaf73f445327161bb35449e7965b" id="r_a5171aaf73f445327161bb35449e7965b"><td class="memItemLeft" align="right" valign="top"><a id="a5171aaf73f445327161bb35449e7965b" name="a5171aaf73f445327161bb35449e7965b"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>tick</b> = halp::tick_musical</td></tr>
 <tr class="separator:a5171aaf73f445327161bb35449e7965b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,9 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5532c7df7f12df79b2f8500a3666c97" id="r_ac5532c7df7f12df79b2f8500a3666c97"><td class="memItemLeft" align="right" valign="top"><a id="ac5532c7df7f12df79b2f8500a3666c97" name="ac5532c7df7f12df79b2f8500a3666c97"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (name, &quot;MIDI display&quot;) halp_meta(c_name</td></tr>
 <tr class="separator:ac5532c7df7f12df79b2f8500a3666c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78ce19ecffe5a3e50f280f536c0c0af2" id="r_a78ce19ecffe5a3e50f280f536c0c0af2"><td class="memItemLeft" align="right" valign="top"><a id="a78ce19ecffe5a3e50f280f536c0c0af2" name="a78ce19ecffe5a3e50f280f536c0c0af2"></a>
-MidiDisplay&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Monitoring&quot;) halp_meta(author</td></tr>
-<tr class="separator:a78ce19ecffe5a3e50f280f536c0c0af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97151b91f3bb5c4ea49640f4930491d" id="r_ab97151b91f3bb5c4ea49640f4930491d"><td class="memItemLeft" align="right" valign="top"><a id="ab97151b91f3bb5c4ea49640f4930491d" name="ab97151b91f3bb5c4ea49640f4930491d"></a>
+MidiDisplay&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (category, &quot;Monitoring/Midi&quot;) halp_meta(author</td></tr>
+<tr class="separator:ab97151b91f3bb5c4ea49640f4930491d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac156a471c540b5324f1c891b2d85fe36" id="r_ac156a471c540b5324f1c891b2d85fe36"><td class="memItemLeft" align="right" valign="top"><a id="ac156a471c540b5324f1c891b2d85fe36" name="ac156a471c540b5324f1c891b2d85fe36"></a>
 MidiDisplay ossia score&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (manual_url, &quot;&quot;) halp_meta(description</td></tr>
 <tr class="separator:ac156a471c540b5324f1c891b2d85fe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,38 +164,50 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5f53893bc6dd5472ff43fc5daf266501" id="r_a5f53893bc6dd5472ff43fc5daf266501"><td class="memItemLeft" align="right" valign="top"><a id="a5f53893bc6dd5472ff43fc5daf266501" name="a5f53893bc6dd5472ff43fc5daf266501"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>recommended_height</b> ()</td></tr>
 <tr class="separator:a5f53893bc6dd5472ff43fc5daf266501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec17fee799a34b2f7b737c6822aae287" id="r_aec17fee799a34b2f7b737c6822aae287"><td class="memItemLeft" align="right" valign="top"><a id="aec17fee799a34b2f7b737c6822aae287" name="aec17fee799a34b2f7b737c6822aae287"></a>
-static msg_kind&#160;</td><td class="memItemRight" valign="bottom"><b>kind_of</b> (int status, int data2) noexcept</td></tr>
-<tr class="separator:aec17fee799a34b2f7b737c6822aae287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6422337952e684481f3bcdac821cb70" id="r_af6422337952e684481f3bcdac821cb70"><td class="memItemLeft" align="right" valign="top"><a id="af6422337952e684481f3bcdac821cb70" name="af6422337952e684481f3bcdac821cb70"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>note_name</b> (int pitch)</td></tr>
-<tr class="separator:af6422337952e684481f3bcdac821cb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ae9173d32cb958ad0ac41befc14069cad" id="r_ae9173d32cb958ad0ac41befc14069cad"><td class="memItemLeft" ><a id="ae9173d32cb958ad0ac41befc14069cad" name="ae9173d32cb958ad0ac41befc14069cad"></a>
+<tr class="memitem:aa45791cb19ceb4faf88dc204ebc2b273" id="r_aa45791cb19ceb4faf88dc204ebc2b273"><td class="memItemLeft" ><a id="aa45791cb19ceb4faf88dc204ebc2b273" name="aa45791cb19ceb4faf88dc204ebc2b273"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4a2cb3ee6cb1234331a2a4154bb8dc" id="r_acc4a2cb3ee6cb1234331a2a4154bb8dc"><td class="memItemLeft" >
+<tr class="memitem:ace011eada8378837ab1cbd423fdde5b0" id="r_ace011eada8378837ab1cbd423fdde5b0"><td class="memItemLeft" >
 &#160;&#160;&#160;halp::midi_bus&lt;&quot;in&quot;&gt;&#160;&#160;&#160;<b>midi</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:acc4a2cb3ee6cb1234331a2a4154bb8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3943c3beba72b7644257bba1e6f0d6f6" id="r_a3943c3beba72b7644257bba1e6f0d6f6"><td class="memItemLeft" >
+<tr class="separator:ace011eada8378837ab1cbd423fdde5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00175cc2fd7f7b4f2feb92b0d57a14ac" id="r_a00175cc2fd7f7b4f2feb92b0d57a14ac"><td class="memItemLeft" >
 &#160;&#160;&#160;halp::time_chooser&lt;&quot;Window&quot;, halp::range{0.5, 60., 8.}&gt;&#160;&#160;&#160;<b>window</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="memdesc:a3943c3beba72b7644257bba1e6f0d6f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much of the past is shown: seconds, or a note value (bars). <br /></td></tr>
-<tr class="separator:a3943c3beba72b7644257bba1e6f0d6f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9173d32cb958ad0ac41befc14069cad" id="r_ae9173d32cb958ad0ac41befc14069cad"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ae9173d32cb958ad0ac41befc14069cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8935dd47f0bd4e2c24f623a1e26550e7" id="r_a8935dd47f0bd4e2c24f623a1e26550e7"><td class="memItemLeft" ><a id="a8935dd47f0bd4e2c24f623a1e26550e7" name="a8935dd47f0bd4e2c24f623a1e26550e7"></a>
+<tr class="memdesc:a00175cc2fd7f7b4f2feb92b0d57a14ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">How much of the past is shown: seconds, or a note value (bars). <br /></td></tr>
+<tr class="separator:a00175cc2fd7f7b4f2feb92b0d57a14ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e08cf67b9a10b30ca7fdb11aa73520" id="r_a01e08cf67b9a10b30ca7fdb11aa73520"><td class="memItemLeft" align="right" valign="top"><a id="a01e08cf67b9a10b30ca7fdb11aa73520" name="a01e08cf67b9a10b30ca7fdb11aa73520"></a>
+struct <a class="el" href="structrange.html">range</a>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a01e08cf67b9a10b30ca7fdb11aa73520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc890fdd0af0f67094709b300200198a" id="r_acc890fdd0af0f67094709b300200198a"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>mode</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:acc890fdd0af0f67094709b300200198a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3d0363a63c8387d5bcebedb62554dc" id="r_a7d3d0363a63c8387d5bcebedb62554dc"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>channel</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7d3d0363a63c8387d5bcebedb62554dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c56ffe82046cd0ed6d25c24b65e06c" id="r_a50c56ffe82046cd0ed6d25c24b65e06c"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>hide_clock</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a50c56ffe82046cd0ed6d25c24b65e06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd4b23698ab39cbfe3f1e2a25a8554fd" id="r_abd4b23698ab39cbfe3f1e2a25a8554fd"><td class="memItemLeft" >
+&#160;&#160;&#160;&#160;&#160;&#160;<b>palette</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:abd4b23698ab39cbfe3f1e2a25a8554fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45791cb19ceb4faf88dc204ebc2b273" id="r_aa45791cb19ceb4faf88dc204ebc2b273"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aa45791cb19ceb4faf88dc204ebc2b273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58539b73016c37107a0473357bd41d0" id="r_ab58539b73016c37107a0473357bd41d0"><td class="memItemLeft" ><a id="ab58539b73016c37107a0473357bd41d0" name="ab58539b73016c37107a0473357bd41d0"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f6d2915a0a6035b62389a65630fa131" id="r_a7f6d2915a0a6035b62389a65630fa131"><td class="memItemLeft" align="right" valign="top"><a id="a7f6d2915a0a6035b62389a65630fa131" name="a7f6d2915a0a6035b62389a65630fa131"></a>
+<tr class="memitem:abeef30e2e1a8e54e254668bcd751648a" id="r_abeef30e2e1a8e54e254668bcd751648a"><td class="memItemLeft" align="right" valign="top"><a id="abeef30e2e1a8e54e254668bcd751648a" name="abeef30e2e1a8e54e254668bcd751648a"></a>
 enum widget&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7f6d2915a0a6035b62389a65630fa131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9f72ca5a403defa220a908ea3875433" id="r_aa9f72ca5a403defa220a908ea3875433"><td class="memItemLeft" >
+<tr class="separator:abeef30e2e1a8e54e254668bcd751648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7117fd92a8bd7a6557369e6ecb65e6b" id="r_ab7117fd92a8bd7a6557369e6ecb65e6b"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;<b>events</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:aa9f72ca5a403defa220a908ea3875433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8935dd47f0bd4e2c24f623a1e26550e7" id="r_a8935dd47f0bd4e2c24f623a1e26550e7"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a8935dd47f0bd4e2c24f623a1e26550e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab7117fd92a8bd7a6557369e6ecb65e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58539b73016c37107a0473357bd41d0" id="r_ab58539b73016c37107a0473357bd41d0"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ab58539b73016c37107a0473357bd41d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada3bc1543edc58f7349b26744828d02d" id="r_ada3bc1543edc58f7349b26744828d02d"><td class="memItemLeft" align="right" valign="top"><a id="ada3bc1543edc58f7349b26744828d02d" name="ada3bc1543edc58f7349b26744828d02d"></a>
+std::shared_ptr&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_midi_monitor.html">MidiMonitor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>monitor</b> = std::make_shared&lt;<a class="el" href="struct_ui_1_1_midi_display_1_1_midi_monitor.html">MidiMonitor</a>&gt;()</td></tr>
+<tr class="separator:ada3bc1543edc58f7349b26744828d02d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbdbab00902d8e2294d0228c7d9d920" id="r_abdbdbab00902d8e2294d0228c7d9d920"><td class="memItemLeft" align="right" valign="top"><a id="abdbdbab00902d8e2294d0228c7d9d920" name="abdbdbab00902d8e2294d0228c7d9d920"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_rate</b> = 48000.</td></tr>
 <tr class="separator:abdbdbab00902d8e2294d0228c7d9d920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,33 +217,21 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_frames</b> = 0</
 <tr class="memitem:ad0a8d1a80b7c8cc9ddae59c1b5015366" id="r_ad0a8d1a80b7c8cc9ddae59c1b5015366"><td class="memItemLeft" align="right" valign="top"><a id="ad0a8d1a80b7c8cc9ddae59c1b5015366" name="ad0a8d1a80b7c8cc9ddae59c1b5015366"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_push</b> = -1e9</td></tr>
 <tr class="separator:ad0a8d1a80b7c8cc9ddae59c1b5015366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f123fba609e251e43dc93b04f2f74f2" id="r_a9f123fba609e251e43dc93b04f2f74f2"><td class="memItemLeft" align="right" valign="top"><a id="a9f123fba609e251e43dc93b04f2f74f2" name="a9f123fba609e251e43dc93b04f2f74f2"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_seq</b> = 0.f</td></tr>
-<tr class="separator:a9f123fba609e251e43dc93b04f2f74f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b619613e448376be88f5f9ce2140abe" id="r_a0b619613e448376be88f5f9ce2140abe"><td class="memItemLeft" align="right" valign="top"><a id="a0b619613e448376be88f5f9ce2140abe" name="a0b619613e448376be88f5f9ce2140abe"></a>
-std::deque&lt; std::array&lt; float, fields_per_event &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ring</b></td></tr>
-<tr class="separator:a0b619613e448376be88f5f9ce2140abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7686d76c501b79417c48fc250abc61a3" id="r_a7686d76c501b79417c48fc250abc61a3"><td class="memItemLeft" align="right" valign="top"><a id="a7686d76c501b79417c48fc250abc61a3" name="a7686d76c501b79417c48fc250abc61a3"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_seq</b> = 0</td></tr>
+<tr class="separator:a7686d76c501b79417c48fc250abc61a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ee3b5419fc469e7789d14243ded2334" id="r_a6ee3b5419fc469e7789d14243ded2334"><td class="memItemLeft" align="right" valign="top"><a id="a6ee3b5419fc469e7789d14243ded2334" name="a6ee3b5419fc469e7789d14243ded2334"></a>
 std::array&lt; std::array&lt; <a class="el" href="struct_ui_1_1_midi_display_1_1_node_1_1held__note.html">held_note</a>, 128 &gt;, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_held_notes</b> {}</td></tr>
 <tr class="separator:a6ee3b5419fc469e7789d14243ded2334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b38475e0345bb184c5be6b28473ae3" id="r_ac2b38475e0345bb184c5be6b28473ae3"><td class="memItemLeft" align="right" valign="top"><a id="ac2b38475e0345bb184c5be6b28473ae3" name="ac2b38475e0345bb184c5be6b28473ae3"></a>
+<a class="el" href="struct_ui_1_1_midi_display_1_1_held_notes.html">HeldNotes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_held_state</b></td></tr>
+<tr class="separator:ac2b38475e0345bb184c5be6b28473ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:acd9d51910ac5c53aedd27d36b82262dd" id="r_acd9d51910ac5c53aedd27d36b82262dd"><td class="memItemLeft" align="right" valign="top"><a id="acd9d51910ac5c53aedd27d36b82262dd" name="acd9d51910ac5c53aedd27d36b82262dd"></a>
-static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>retain_seconds</b> = 1.0</td></tr>
-<tr class="separator:acd9d51910ac5c53aedd27d36b82262dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1316ef14c2be3be5832bce077c965edc" id="r_a1316ef14c2be3be5832bce077c965edc"><td class="memItemLeft" align="right" valign="top"><a id="a1316ef14c2be3be5832bce077c965edc" name="a1316ef14c2be3be5832bce077c965edc"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>heartbeat_seconds</b> = 0.03</td></tr>
 <tr class="separator:a1316ef14c2be3be5832bce077c965edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88332179849fb7cbeacd0d49b83900c0" id="r_a88332179849fb7cbeacd0d49b83900c0"><td class="memItemLeft" align="right" valign="top"><a id="a88332179849fb7cbeacd0d49b83900c0" name="a88332179849fb7cbeacd0d49b83900c0"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_events</b> = 512</td></tr>
-<tr class="separator:a88332179849fb7cbeacd0d49b83900c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a5c12300b819f935a4a9d2dcf38c06" id="r_a27a5c12300b819f935a4a9d2dcf38c06"><td class="memItemLeft" align="right" valign="top"><a id="a27a5c12300b819f935a4a9d2dcf38c06" name="a27a5c12300b819f935a4a9d2dcf38c06"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>fields_per_event</b> = 6</td></tr>
-<tr class="separator:a27a5c12300b819f935a4a9d2dcf38c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad954a513eee022ffb5c372790305395b" id="r_ad954a513eee022ffb5c372790305395b"><td class="memItemLeft" align="right" valign="top"><a id="ad954a513eee022ffb5c372790305395b" name="ad954a513eee022ffb5c372790305395b"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>header_fields</b> = 4</td></tr>
-<tr class="separator:ad954a513eee022ffb5c372790305395b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03c4bef05e8a25d152f7985e7763001d" id="r_a03c4bef05e8a25d152f7985e7763001d"><td class="memItemLeft" align="right" valign="top"><a id="a03c4bef05e8a25d152f7985e7763001d" name="a03c4bef05e8a25d152f7985e7763001d"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>stuck_after_seconds</b> = 2.</td></tr>
 <tr class="separator:a03c4bef05e8a25d152f7985e7763001d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,7 +282,7 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>st
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pairs a message against the running held-note state, returning what is anomalous about it. </p>
+<p>Pairs a message against the running held-note state, returning what is anomalous about it. Malformed messages are not paired. </p>
 
 </div>
 </div>

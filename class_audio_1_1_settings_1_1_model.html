@@ -123,6 +123,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c8a1782cb76407ab29564e2a16cba3b" id="r_a8c8a1782cb76407ab29564e2a16cba3b"><td class="memItemLeft" align="right" valign="top"><a id="a8c8a1782cb76407ab29564e2a16cba3b" name="a8c8a1782cb76407ab29564e2a16cba3b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Model</b> (const <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; <a class="el" href="classscore_1_1_settings_delegate_factory.html">score::SettingsDelegateFactory</a> &gt; &amp;k, QSettings &amp;set, const <a class="el" href="structscore_1_1_application_context.html">score::ApplicationContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a8c8a1782cb76407ab29564e2a16cba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12774ff97161cba7134dee7f2f78c503" id="r_a12774ff97161cba7134dee7f2f78c503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_settings_1_1_model.html#a12774ff97161cba7134dee7f2f78c503">adoptRate</a> (int val)</td></tr>
+<tr class="separator:a12774ff97161cba7134dee7f2f78c503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c72317a19d8e1ede7d30a410cc7585" id="r_ab6c72317a19d8e1ede7d30a410cc7585"><td class="memItemLeft" align="right" valign="top"><a id="ab6c72317a19d8e1ede7d30a410cc7585" name="ab6c72317a19d8e1ede7d30a410cc7585"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>adoptBufferSize</b> (int val)</td></tr>
+<tr class="separator:ab6c72317a19d8e1ede7d30a410cc7585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381ea73c6e1854fd7a877d2a5c98dc72" id="r_a381ea73c6e1854fd7a877d2a5c98dc72"><td class="memItemLeft" align="right" valign="top"><a id="a381ea73c6e1854fd7a877d2a5c98dc72" name="a381ea73c6e1854fd7a877d2a5c98dc72"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>savedRate</b> () const noexcept</td></tr>
+<tr class="memdesc:a381ea73c6e1854fd7a877d2a5c98dc72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rate the user chose, which the device may not be running at. <br /></td></tr>
+<tr class="separator:a381ea73c6e1854fd7a877d2a5c98dc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a021f922ab9a7a0bdfe82859d00402451" id="r_a021f922ab9a7a0bdfe82859d00402451"><td class="memItemLeft" align="right" valign="top"><a id="a021f922ab9a7a0bdfe82859d00402451" name="a021f922ab9a7a0bdfe82859d00402451"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> ()</td></tr>
 <tr class="separator:a021f922ab9a7a0bdfe82859d00402451"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +146,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b> ()</td></
 <a class="el" href="class_uuid_key.html">UuidKey</a>&lt; <a class="el" href="classscore_1_1_settings_delegate_factory.html">SettingsDelegateFactory</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>concreteKey</b> () const noexcept</td></tr>
 <tr class="separator:ab4f3bfe3da9a6aaa5a710f41989d0e37 inherit pub_methods_classscore_1_1_settings_delegate_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12774ff97161cba7134dee7f2f78c503" name="a12774ff97161cba7134dee7f2f78c503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12774ff97161cba7134dee7f2f78c503">&#9670;&#160;</a></span>adoptRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio::Settings::Model::adoptRate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>What the device runs at, for this session: unlike the setters, the user's preference stays saved and is asked for at the next start. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="score-plugin-audio_2_audio_2_settings_2_model_8hpp_source.html">score-plugin-audio/Audio/Settings/Model.hpp</a></li>
 <li><b>score-plugin-audio/Audio/Settings/Model.cpp</b></li>

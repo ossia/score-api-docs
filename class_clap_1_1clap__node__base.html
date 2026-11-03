@@ -159,6 +159,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process_midi</b> ()</
 <tr class="separator:aec00506be595591c71e2e8240e64e700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1c34e0cf34cda3f90bb1b3cdf2df76e" id="r_ac1c34e0cf34cda3f90bb1b3cdf2df76e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#ac1c34e0cf34cda3f90bb1b3cdf2df76e">stash_midi</a> ()</td></tr>
 <tr class="separator:ac1c34e0cf34cda3f90bb1b3cdf2df76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29bf392c5d6cd926e3e50f65d7fcf53a" id="r_a29bf392c5d6cd926e3e50f65d7fcf53a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a29bf392c5d6cd926e3e50f65d7fcf53a">run_in_blocks</a> (const ossia::token_request &amp;t, ossia::exec_state_facade e) noexcept</td></tr>
+<tr class="separator:a29bf392c5d6cd926e3e50f65d7fcf53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51eaff6915d7b32dfed026faba8f870a" id="r_a51eaff6915d7b32dfed026faba8f870a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a51eaff6915d7b32dfed026faba8f870a">in_block</a> (int64_t t) const noexcept</td></tr>
+<tr class="separator:a51eaff6915d7b32dfed026faba8f870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27cea9258cfb4a68ace080a8d40a2f3f" id="r_a27cea9258cfb4a68ace080a8d40a2f3f"><td class="memItemLeft" align="right" valign="top"><a id="a27cea9258cfb4a68ace080a8d40a2f3f" name="a27cea9258cfb4a68ace080a8d40a2f3f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_input_events</b> (int64_t offset, int samples)</td></tr>
 <tr class="separator:a27cea9258cfb4a68ace080a8d40a2f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,6 +208,12 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_tick_start</b> {
 <tr class="memitem:aac0aa2445afd6f5c21c91f509115cd3e" id="r_aac0aa2445afd6f5c21c91f509115cd3e"><td class="memItemLeft" align="right" valign="top"><a id="aac0aa2445afd6f5c21c91f509115cd3e" name="aac0aa2445afd6f5c21c91f509115cd3e"></a>
 int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_tick_frames</b> {}</td></tr>
 <tr class="separator:aac0aa2445afd6f5c21c91f509115cd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08785868f763d1af5e98f6d6e27a08d1" id="r_a08785868f763d1af5e98f6d6e27a08d1"><td class="memItemLeft" align="right" valign="top"><a id="a08785868f763d1af5e98f6d6e27a08d1" name="a08785868f763d1af5e98f6d6e27a08d1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_first_block</b> {true}</td></tr>
+<tr class="separator:a08785868f763d1af5e98f6d6e27a08d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac911e4f5a29c2a1bbbcb18ea79a6aac7" id="r_ac911e4f5a29c2a1bbbcb18ea79a6aac7"><td class="memItemLeft" align="right" valign="top"><a id="ac911e4f5a29c2a1bbbcb18ea79a6aac7" name="ac911e4f5a29c2a1bbbcb18ea79a6aac7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_block</b> {true}</td></tr>
+<tr class="separator:ac911e4f5a29c2a1bbbcb18ea79a6aac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c3ee586078a26448d3807af35d3165" id="r_a65c3ee586078a26448d3807af35d3165"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::pair&lt; uint16_t, libremidi::ump &gt;, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a65c3ee586078a26448d3807af35d3165">m_deferred_midi</a></td></tr>
 <tr class="separator:a65c3ee586078a26448d3807af35d3165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d56589c8fba7d4e8bf5a7f4f156ffa1" id="r_a8d56589c8fba7d4e8bf5a7f4f156ffa1"><td class="memItemLeft" align="right" valign="top"><a id="a8d56589c8fba7d4e8bf5a7f4f156ffa1" name="a8d56589c8fba7d4e8bf5a7f4f156ffa1"></a>
@@ -252,6 +262,70 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a20f675e6054716be9201ca4d85883df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a51eaff6915d7b32dfed026faba8f870a" name="a51eaff6915d7b32dfed026faba8f870a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51eaff6915d7b32dfed026faba8f870a">&#9670;&#160;</a></span>in_block()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Clap::clap_node_base::in_block </td>
+          <td>(</td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether an event dated <code>t</code> frames from the start of the block goes in it: a tick run in blocks gives the earlier ones to its first and the later ones to its last. </p>
+
+</div>
+</div>
+<a id="a29bf392c5d6cd926e3e50f65d7fcf53a" name="a29bf392c5d6cd926e3e50f65d7fcf53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29bf392c5d6cd926e3e50f65d7fcf53a">&#9670;&#160;</a></span>run_in_blocks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Clap::clap_node_base::run_in_blocks </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ossia::exec_state_facade&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The plug-in was activated for at most m_buffer_size frames per process call, but the engine's ticks can outgrow the block size it had then: a longer one runs as consecutive ticks of at most that many frames, each with the transport where it starts. Returns whether it did. </p>
+
+</div>
+</div>
 <a id="ac1c34e0cf34cda3f90bb1b3cdf2df76e" name="ac1c34e0cf34cda3f90bb1b3cdf2df76e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac1c34e0cf34cda3f90bb1b3cdf2df76e">&#9670;&#160;</a></span>stash_midi()</h2>
 

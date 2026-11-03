@@ -218,6 +218,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPreset</b> (QObje
 <tr class="memitem:a0e9fb3a31215e2a472383cfea3707103" id="r_a0e9fb3a31215e2a472383cfea3707103"><td class="memItemLeft" align="right" valign="top"><a id="a0e9fb3a31215e2a472383cfea3707103" name="a0e9fb3a31215e2a472383cfea3707103"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>savePreset</b> (QObject *<a class="el" href="class_j_s_1_1_edit_js_context.html#ad0cb4d37d5910786bf52ae1854b29b59">process</a>)</td></tr>
 <tr class="separator:a0e9fb3a31215e2a472383cfea3707103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1deefbd0f961f03d9329fbabba4c7cba" id="r_a1deefbd0f961f03d9329fbabba4c7cba"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_j_s_1_1_edit_js_context.html#a1deefbd0f961f03d9329fbabba4c7cba">builtinPresets</a> (QObject *<a class="el" href="class_j_s_1_1_edit_js_context.html#ad0cb4d37d5910786bf52ae1854b29b59">process</a>)</td></tr>
+<tr class="separator:a1deefbd0f961f03d9329fbabba4c7cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bcfb5e3e11f68ba578c46a8e67cb7f4" id="r_a9bcfb5e3e11f68ba578c46a8e67cb7f4"><td class="memItemLeft" align="right" valign="top"><a id="a9bcfb5e3e11f68ba578c46a8e67cb7f4" name="a9bcfb5e3e11f68ba578c46a8e67cb7f4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (QObject *sel, QString new_name)</td></tr>
 <tr class="separator:a9bcfb5e3e11f68ba578c46a8e67cb7f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -746,6 +748,25 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>w_state</b>
       </table>
 </div><div class="memdoc">
 <p>Create automations for every parameter matching <code>addr</code> in <code>interval</code>. Returns the created processes: an address may expand to several curves. </p>
+
+</div>
+</div>
+<a id="a1deefbd0f961f03d9329fbabba4c7cba" name="a1deefbd0f961f03d9329fbabba4c7cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1deefbd0f961f03d9329fbabba4c7cba">&#9670;&#160;</a></span>builtinPresets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList JS::EditJsContext::builtinPresets </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>process</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The process's own presets (a plug-in's programs, a script's bank), as JSON that loadPreset takes </p>
 
 </div>
 </div>

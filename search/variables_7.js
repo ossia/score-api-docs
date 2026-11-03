@@ -10,13 +10,15 @@ var searchData=
   ['haspinnedmemory_7',['hasPinnedMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_pinned_buffers.html#ab123a1ca2916d311c1430afa59713113',1,'score::gfx::interop::AmdPinnedBuffers']]],
   ['hasrange_8',['hasRange',['../struct_protocols_1_1_c_a_n_1_1_signal.html#aaadde4fc4fcb1d18c792e2cbf83092b9',1,'Protocols::CAN::Signal']]],
   ['hasscript_9',['hasScript',['../structscore_1_1_application_settings.html#a295ee44962abb2cc64fd0672671f1743',1,'score::ApplicationSettings']]],
-  ['header_10',['header',['../structscore_1_1_license_info.html#a9c7f75c57d69b67b3e0a4daef9714f87',1,'score::LicenseInfo']]],
+  ['header_10',['header',['../struct_ui_1_1_v_u_meter_1_1_layer.html#a84f3b8315040495101c8c5f1fa2330ae',1,'Ui::VUMeter::Layer::header'],['../structscore_1_1_license_info.html#a9c7f75c57d69b67b3e0a4daef9714f87',1,'score::LicenseInfo::header']]],
   ['heading_11',['heading',['../structavnd__tools_1_1_entity_to_midi_1_1synth__state.html#a9d94ec1e9914127ed1c08143babdf9dd',1,'avnd_tools::EntityToMidi::synth_state']]],
   ['heard_12',['heard',['../struct_nodes_1_1_looper_1_1view__note.html#ae299f4149a557a9753e9c0ddb32f9850',1,'Nodes::Looper::view_note']]],
-  ['held_13',['held',['../struct_nodes_1_1_looper_1_1audio__layers.html#a5ec63a52260e5f50a410b9a748a4837f',1,'Nodes::Looper::audio_layers::held'],['../struct_patternist_1_1pattern__node_1_1lane__state.html#a5eed478ce09884fea855f0c3ec411993',1,'Patternist::pattern_node::lane_state::held']]],
-  ['held_5fon_14',['held_on',['../struct_patternist_1_1pattern__node_1_1lane__state.html#a0cb02ab07c5da49a17802d379b45b02b',1,'Patternist::pattern_node::lane_state']]],
-  ['hide_15',['hide',['../struct_local_tree_1_1_scriptable_roots.html#aafde39f0fe00c22d3b7b9498d6921a0f',1,'LocalTree::ScriptableRoots']]],
-  ['hitradius_16',['hitRadius',['../class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a',1,'Dataflow::PortItem']]],
-  ['horizontalsubsampling_17',['horizontalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#adc4bfe0c931d56bbcfcbae72bcf3a305',1,'Video::VideoPixelFormatInfo']]],
-  ['host_18',['host',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#a0bd6e5a37dfc2195b54ab5f49007626d',1,'score::gfx::interop::HostPinnedSlot']]]
+  ['height_13',['height',['../struct_process_1_1_mode_switch.html#ae8deaca6fd3f2c8bf5ec5b6def88b2ee',1,'Process::ModeSwitch']]],
+  ['held_14',['held',['../struct_nodes_1_1_looper_1_1audio__layers.html#a5ec63a52260e5f50a410b9a748a4837f',1,'Nodes::Looper::audio_layers::held'],['../struct_patternist_1_1pattern__node_1_1lane__state.html#a5eed478ce09884fea855f0c3ec411993',1,'Patternist::pattern_node::lane_state::held']]],
+  ['held_5fon_15',['held_on',['../struct_patternist_1_1pattern__node_1_1lane__state.html#a0cb02ab07c5da49a17802d379b45b02b',1,'Patternist::pattern_node::lane_state']]],
+  ['hide_16',['hide',['../struct_local_tree_1_1_scriptable_roots.html#aafde39f0fe00c22d3b7b9498d6921a0f',1,'LocalTree::ScriptableRoots']]],
+  ['history_5fper_5fsecond_17',['history_per_second',['../struct_ui_1_1_audio_scope_1_1_layer.html#ad446ad2e9dcf0f770aed3040b2f26754',1,'Ui::AudioScope::Layer']]],
+  ['hitradius_18',['hitRadius',['../class_dataflow_1_1_port_item.html#a8e8b5c2e111e8cd14b8e99d86c27169a',1,'Dataflow::PortItem']]],
+  ['horizontalsubsampling_19',['horizontalSubsampling',['../struct_video_1_1_video_pixel_format_info.html#adc4bfe0c931d56bbcfcbae72bcf3a305',1,'Video::VideoPixelFormatInfo']]],
+  ['host_20',['host',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#a0bd6e5a37dfc2195b54ab5f49007626d',1,'score::gfx::interop::HostPinnedSlot']]]
 ];

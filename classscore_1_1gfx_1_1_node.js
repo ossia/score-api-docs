@@ -11,6 +11,7 @@ var classscore_1_1gfx_1_1_node =
     [ "renderTargetChange", "classscore_1_1gfx_1_1_node.html#a5de8199d87e59e3e7cd0a8039c697f14", null ],
     [ "input", "classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146", null ],
     [ "output", "classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5", null ],
+    [ "previewTaps", "classscore_1_1gfx_1_1_node.html#ab6544153f6d56542983a52195b751e10", null ],
     [ "renderedNodes", "classscore_1_1gfx_1_1_node.html#abbac77035201ad0586b55fb7f9075ea8", null ],
     [ "renderTargetSpecs", "classscore_1_1gfx_1_1_node.html#a0f8f63f6ea44e509c74333b4f377456d", null ]
 ];

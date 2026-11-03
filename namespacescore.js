@@ -466,6 +466,7 @@ var namespacescore =
     [ "setGlobalScaleFactor", "namespacescore.html#a36d9f78314f24a83d6b4906cce145132", null ],
     [ "setInputValidity", "namespacescore.html#a2fa5d4efcf31c883b9271f58f5947875", null ],
     [ "setItemViewDragPixmap", "namespacescore.html#ab11dec7313a08388192b2259f2b50e62", null ],
+    [ "setLayoutStretch", "namespacescore.html#aac117bfefa2c531d617d66245a16ce88", null ],
     [ "setSkinIconSize", "namespacescore.html#a4372514d556da9c9a43745e92540190d", null ],
     [ "setSnappedPixelSize", "namespacescore.html#a841522fe196021135eb98ac62222b5c1", null ],
     [ "setupApplicationFont", "namespacescore.html#a075985eb195ac17ec732f8ea2b7b07b7", null ],

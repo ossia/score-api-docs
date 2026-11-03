@@ -265,6 +265,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a8ef9384f8c4fb8d4f9170ff395a387a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08eaa981357a6fd0950fb8495ff9ba7c" id="r_a08eaa981357a6fd0950fb8495ff9ba7c"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#a08eaa981357a6fd0950fb8495ff9ba7c">points_between</a> (double from, double to, double bar_line, double bar, int division) noexcept</td></tr>
 <tr class="separator:a08eaa981357a6fd0950fb8495ff9ba7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ed08775bdcb3db6e57f815d2739e43" id="r_ad3ed08775bdcb3db6e57f815d2739e43"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#ad3ed08775bdcb3db6e57f815d2739e43">start_bar_line</a> (const ossia::token_request &amp;tk) noexcept</td></tr>
+<tr class="separator:ad3ed08775bdcb3db6e57f815d2739e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48c5c69f9f69a12602ca123a8b960bf7" id="r_a48c5c69f9f69a12602ca123a8b960bf7"><td class="memItemLeft" align="right" valign="top"><a id="a48c5c69f9f69a12602ca123a8b960bf7" name="a48c5c69f9f69a12602ca123a8b960bf7"></a>
 static double&#160;</td><td class="memItemRight" valign="bottom"><b>timing</b> (const <a class="el" href="struct_patternist_1_1_lane.html">Lane</a> &amp;l, int step, double shift) noexcept</td></tr>
 <tr class="memdesc:a48c5c69f9f69a12602ca123a8b960bf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where a step's note starts, in steps from its grid point. <br /></td></tr>
@@ -946,6 +948,33 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_p
 </table>
 </div><div class="memdoc">
 <p>Puts the lanes flagged by replace_patterns where they would be had they always played: a lane on the pattern's grid on its count, another on the points of its own grid since the origin. What they hold carries on. </p>
+
+</div>
+</div>
+<a id="ad3ed08775bdcb3db6e57f815d2739e43" name="ad3ed08775bdcb3db6e57f815d2739e43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ed08775bdcb3db6e57f815d2739e43">&#9670;&#160;</a></span>start_bar_line()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Patternist::pattern_node::start_bar_line </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::token_request &amp;&#160;</td>
+          <td class="paramname"><em>tk</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The bar line at or before the musical position the process starts at, date 0 of its tokens, which the steps count from. That position is not in the token: it is worked back from this tick's quarters per date unit, so it holds as long as the tempo and the signature have not changed since the process started. </p>
 
 </div>
 </div>

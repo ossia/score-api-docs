@@ -8,16 +8,17 @@ var searchData=
   ['in_5fuse_5',['in_use',['../struct_nodes_1_1_looper_1_1midi__export.html#a6a7ef553fd6194f59870a563fcc6511f',1,'Nodes::Looper::midi_export::in_use'],['../struct_nodes_1_1_looper_1_1export__buffer.html#ae2c8463fe5a02273aece346141412865',1,'Nodes::Looper::export_buffer::in_use'],['../struct_nodes_1_1_looper_1_1value__export.html#ab128764913739a04491cd73b683f87db',1,'Nodes::Looper::value_export::in_use']]],
   ['indent_6',['indent',['../struct_state_1_1_pretty_print_options.html#ab3ec74072bebf3c06be70badbe71ecc5',1,'State::PrettyPrintOptions']]],
   ['independentsignalmessage_7',['independentSignalMessage',['../namespace_protocols_1_1_c_a_n.html#a8f4f6a99687eda30a7a2304cf572850f',1,'Protocols::CAN']]],
-  ['index_8',['index',['../struct_patternist_1_1_step_slot.html#a2502c70adda826a6f4ad1a9f72a5c080',1,'Patternist::StepSlot']]],
+  ['index_8',['index',['../struct_patternist_1_1_step_slot.html#a2502c70adda826a6f4ad1a9f72a5c080',1,'Patternist::StepSlot::index'],['../structscore_1_1gfx_1_1_shown_texture.html#aaefa7d241e5f6ad68f247324400d0256',1,'score::gfx::ShownTexture::index']]],
   ['init_9',['init',['../classscore_1_1_q_graphics_grid_chooser.html#a3bd2ae3c77537de78ca46eb9014d689f',1,'score::QGraphicsGridChooser']]],
   ['inlets_10',['inlets',['../structscore_1_1gfx_1_1port__counts.html#ad549b42761d50dc771e77cc59eeae18a',1,'score::gfx::port_counts']]],
   ['input_11',['input',['../classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146',1,'score::gfx::Node::input'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_protocol_settings.html#af07fa729a5006b80b681a9afeee87a11',1,'Protocols::MIDIDevices::ProtocolSettings::input']]],
   ['input_5fhold_5fseconds_12',['input_hold_seconds',['../struct_nodes_1_1_value_looper_1_1_node.html#a47695d2653b71a47119927c65f02a1b4',1,'Nodes::ValueLooper::Node']]],
   ['instancemultiplier_13',['instanceMultiplier',['../structscore_1_1gfx_1_1_mesh_buffers.html#aba512cb0e66465623f7b66542198d557',1,'score::gfx::MeshBuffers']]],
   ['interlacing_14',['interlacing',['../struct_video_1_1_image_format.html#aa77225782c6887a30b33d35e3f0f087e',1,'Video::ImageFormat']]],
-  ['inverted_15',['inverted',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a380f68dcdd5cf627efac3028fc090060',1,'Protocols::MIDIDevices::Value']]],
-  ['is_5farray_16',['is_array',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a0650e8f9aeda40c8aeb6daf739084837',1,'score::gfx::GraphicsStorageImage']]],
-  ['ismultiplexed_17',['isMultiplexed',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a6208ae5ac0176014912ff935addd5189',1,'Protocols::CAN::Signal']]],
-  ['ismultiplexer_18',['isMultiplexer',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a758d563921d5da60c4ce0647e67d4bbc',1,'Protocols::CAN::Signal']]],
-  ['itemfont_19',['itemFont',['../structscore_1_1_about_widget_1_1_style.html#ad5ede9968f345c7a3e89289991101b0c',1,'score::AboutWidget::Style']]]
+  ['interval_15',['interval',['../struct_ui_1_1_buffer_view_1_1_buffer_monitor.html#a47e9f056047254b63a01c0532ebb8e91',1,'Ui::BufferView::BufferMonitor']]],
+  ['inverted_16',['inverted',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a380f68dcdd5cf627efac3028fc090060',1,'Protocols::MIDIDevices::Value']]],
+  ['is_5farray_17',['is_array',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a0650e8f9aeda40c8aeb6daf739084837',1,'score::gfx::GraphicsStorageImage']]],
+  ['ismultiplexed_18',['isMultiplexed',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a6208ae5ac0176014912ff935addd5189',1,'Protocols::CAN::Signal']]],
+  ['ismultiplexer_19',['isMultiplexer',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a758d563921d5da60c4ce0647e67d4bbc',1,'Protocols::CAN::Signal']]],
+  ['itemfont_20',['itemFont',['../structscore_1_1_about_widget_1_1_style.html#ad5ede9968f345c7a3e89289991101b0c',1,'score::AboutWidget::Style']]]
 ];

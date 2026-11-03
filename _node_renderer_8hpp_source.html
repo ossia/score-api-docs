@@ -319,118 +319,123 @@ $(document).ready(function(){initNavTree('_node_renderer_8hpp_source.html',''); 
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    RenderList&amp; renderer, <span class="keyword">const</span> Mesh&amp; mesh, <span class="keyword">const</span> MeshBuffers&amp; bufs,</div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>    QRhiCommandBuffer&amp; cb, Edge&amp; edge, PassMap&amp; passes);</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="keywordtype">void</span> quadRenderPass(</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    RenderList&amp; renderer, <span class="keyword">const</span> MeshBuffers&amp; bufs, QRhiCommandBuffer&amp; cb, Edge&amp; edge,</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    PassMap&amp; passes);</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
-<div class="foldopen" id="foldopen00329" data-start="{" data-end="};">
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html">  329</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>{</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node) noexcept</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>      : <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>{node}</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  {</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  }</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">~GenericNodeRenderer</a>() { }</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>* imageOutlet() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
-<div class="foldopen" id="foldopen00347" data-start="{" data-end="}">
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">  347</a></span>  <span class="keyword">virtual</span> std::span&lt;const Sampler&gt; <a class="code hl_function" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">samplersForOutputEdge</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  {</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    <span class="keywordflow">return</span> m_samplers;</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>  }</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a8b7e8b08e8fa8dadf028c4d35b759aa4">drawMeshWithPlan</a>(</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keyword">const</span> Mesh&amp; mesh, <span class="keyword">const</span> MeshBuffers&amp; bufs, QRhiCommandBuffer&amp; cb,</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>    <span class="keyword">const</span> FallbackBindingPlan&amp; plan) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="keywordtype">void</span> quadRenderPass(</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    RenderList&amp; renderer, <span class="keyword">const</span> MeshBuffers&amp; bufs, QRhiCommandBuffer&amp; cb, Edge&amp; edge,</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>    PassMap&amp; passes);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="foldopen" id="foldopen00336" data-start="{" data-end="};">
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html">  336</a></span><span class="keyword">class </span>SCORE_PLUGIN_GFX_EXPORT <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a> : <span class="keyword">public</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>{</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">GenericNodeRenderer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_node_model.html">NodeModel</a>&amp; node) noexcept</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>      : <a class="code hl_class" href="classscore_1_1gfx_1_1_node_renderer.html">NodeRenderer</a>{node}</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  }</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span> </div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classscore_1_1gfx_1_1_generic_node_renderer.html">~GenericNodeRenderer</a>() { }</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a>* imageOutlet() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="foldopen" id="foldopen00354" data-start="{" data-end="}">
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">  354</a></span>  <span class="keyword">virtual</span> std::span&lt;const Sampler&gt; <a class="code hl_function" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">samplersForOutputEdge</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_edge.html">Edge</a>&amp; edge) <span class="keyword">const</span> <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  {</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordflow">return</span> m_samplers;</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  }</div>
 </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  ossia::small_vector&lt;Sampler, 8&gt; m_samplers;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  QShader m_vertexS;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  QShader m_fragmentS;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#ae488b2c527f0a0312182e0697e7716a3">  361</a></span>  <span class="keywordtype">bool</span> m_outputPremultiplied{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span> </div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <span class="comment">// Pipeline</span></div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  PassMap m_p;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <span class="comment">// Per-renderer pipeline cache, keyed by the rp-desc&#39;s serializedFormat().</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  <span class="comment">// QRhi guarantees a pipeline can be used with any render target whose</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="comment">// rp-desc isCompatible with the pipeline&#39;s, and serializedFormat() is</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  <span class="comment">// documented as the in-memory comparison key for exactly that relation —</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  <span class="comment">// identical blobs ⇔ isCompatible. Keying by pointer instead would be</span></div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="comment">// ABA-unsafe: a freshly allocated rp-desc can reuse the address of one</span></div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  <span class="comment">// just destroyed, silently serving a pipeline built for a dead layout.</span></div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="comment">// Ownership: Pass::p.pipeline is NON-OWNING — the actual QRhiGraphicsPipeline</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <span class="comment">// lives in this cache. Pass::p.srb is still per-edge and owned by the Pass.</span></div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="comment">// GenericNodeRenderer::removeOutputPass and releaseState take care of</span></div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <span class="comment">// nulling Pass::p.pipeline before calling Pipeline::release() so it</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="comment">// does not try to deleteLater() a pointer we still own here.</span></div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  ossia::small_vector&lt;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>      std::pair&lt;QVector&lt;quint32&gt;, QRhiGraphicsPipeline*&gt;, 2&gt;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>      m_pipelineCache;</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  <span class="comment">// The vertex-binding plan every cached pipeline was built with. The cache</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  <span class="comment">// stores bare pipelines, so without this a hit would hand the Pass an empty</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  <span class="comment">// plan and the draw would bind the geometry&#39;s streams one-to-one against a</span></div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  <span class="comment">// layout that was compacted.</span></div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> m_pipelinePlan;</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> m_meshbufs;</div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span> </div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  QRhiBuffer* m_processUBO{};</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  DefaultShaderMaterial m_material;</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>* m_mesh{};</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a4e2ab24da4daa136da69f81c0b2eae62">  397</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>* m_initMesh{};</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">  398</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">currentMesh</a>() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> m_mesh; }</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  ossia::small_vector&lt;Sampler, 8&gt; m_samplers;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>  QShader m_vertexS;</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  QShader m_fragmentS;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#ae488b2c527f0a0312182e0697e7716a3">  368</a></span>  <span class="keywordtype">bool</span> m_outputPremultiplied{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  <span class="comment">// Pipeline</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  PassMap m_p;</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="comment">// Per-renderer pipeline cache, keyed by the rp-desc&#39;s serializedFormat().</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="comment">// QRhi guarantees a pipeline can be used with any render target whose</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <span class="comment">// rp-desc isCompatible with the pipeline&#39;s, and serializedFormat() is</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="comment">// documented as the in-memory comparison key for exactly that relation —</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <span class="comment">// identical blobs ⇔ isCompatible. Keying by pointer instead would be</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="comment">// ABA-unsafe: a freshly allocated rp-desc can reuse the address of one</span></div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  <span class="comment">// just destroyed, silently serving a pipeline built for a dead layout.</span></div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>  <span class="comment">// Ownership: Pass::p.pipeline is NON-OWNING — the actual QRhiGraphicsPipeline</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <span class="comment">// lives in this cache. Pass::p.srb is still per-edge and owned by the Pass.</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>  <span class="comment">// GenericNodeRenderer::removeOutputPass and releaseState take care of</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>  <span class="comment">// nulling Pass::p.pipeline before calling Pipeline::release() so it</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>  <span class="comment">// does not try to deleteLater() a pointer we still own here.</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>  ossia::small_vector&lt;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>      std::pair&lt;QVector&lt;quint32&gt;, QRhiGraphicsPipeline*&gt;, 2&gt;</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>      m_pipelineCache;</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  <span class="comment">// The vertex-binding plan every cached pipeline was built with. The cache</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>  <span class="comment">// stores bare pipelines, so without this a hit would hand the Pass an empty</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  <span class="comment">// plan and the draw would bind the geometry&#39;s streams one-to-one against a</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>  <span class="comment">// layout that was compacted.</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_fallback_binding_plan.html">FallbackBindingPlan</a> m_pipelinePlan;</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> m_meshbufs;</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>  QRhiBuffer* m_processUBO{};</div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  <span class="comment">// Render loop</span></div>
-<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>  <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  defaultMeshInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>  <span class="keywordtype">void</span> processUBOInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>  <span class="keywordtype">void</span> defaultPassesInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh);</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  <span class="keywordtype">void</span> defaultPassesInit(</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh, <span class="keyword">const</span> QShader&amp; v, <span class="keyword">const</span> QShader&amp; f,</div>
-<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>      std::span&lt;QRhiShaderResourceBinding&gt; additionalBindings = {});</div>
-<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span> </div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  <span class="keywordtype">void</span> init(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span> </div>
-<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  <span class="keywordtype">void</span> initState(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  <span class="keywordtype">void</span> releaseState(RenderList&amp; renderer) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  <span class="keywordtype">void</span> addOutputPass(</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      RenderList&amp; renderer, Edge&amp; edge, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>  <span class="keywordtype">void</span> removeOutputPass(RenderList&amp; renderer, Edge&amp; edge) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keywordtype">bool</span> hasOutputPassForEdge(Edge&amp; edge) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>  DefaultShaderMaterial m_material;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>* m_mesh{};</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a4e2ab24da4daa136da69f81c0b2eae62">  404</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a>* m_initMesh{};</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">  405</a></span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>* <a class="code hl_function" href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">currentMesh</a>() const noexcept<span class="keyword"> override </span>{ <span class="keywordflow">return</span> m_mesh; }</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>  <span class="comment">// Render loop</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>  <span class="keywordtype">void</span></div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>  defaultMeshInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  <span class="keywordtype">void</span> processUBOInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer);</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  <span class="keywordtype">void</span> defaultPassesInit(<a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh);</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  <span class="keywordtype">void</span> defaultPassesInit(</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>      <a class="code hl_class" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a>&amp; renderer, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1gfx_1_1_mesh.html">Mesh</a>&amp; mesh, <span class="keyword">const</span> QShader&amp; v, <span class="keyword">const</span> QShader&amp; f,</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>      std::span&lt;QRhiShaderResourceBinding&gt; additionalBindings = {});</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span> </div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>  <span class="keywordtype">void</span> init(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keywordtype">void</span> defaultUBOUpdate(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  <span class="keywordtype">void</span> defaultMeshUpdate(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  <span class="keywordtype">void</span> update(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res, Edge* edge) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="keywordtype">void</span> defaultRelease(RenderList&amp;);</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  <span class="keywordtype">void</span> release(RenderList&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keywordtype">void</span> initState(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  <span class="keywordtype">void</span> releaseState(RenderList&amp; renderer) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  <span class="keywordtype">void</span> addOutputPass(</div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>      RenderList&amp; renderer, Edge&amp; edge, QRhiResourceUpdateBatch&amp; res) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>  <span class="keywordtype">void</span> removeOutputPass(RenderList&amp; renderer, Edge&amp; edge) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>  <span class="keywordtype">bool</span> hasOutputPassForEdge(Edge&amp; edge) <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span> </div>
-<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  <span class="keywordtype">void</span> defaultRenderPass(</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>      RenderList&amp;, <span class="keyword">const</span> Mesh&amp; mesh, QRhiCommandBuffer&amp; commands, Edge&amp; edge);</div>
-<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span> </div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  <span class="keywordtype">void</span> defaultRenderPass(</div>
-<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>      RenderList&amp;, <span class="keyword">const</span> Mesh&amp; mesh, QRhiCommandBuffer&amp; commands, Edge&amp; edge,</div>
-<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>      PassMap&amp; passes);</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  <span class="keywordtype">void</span> defaultUBOUpdate(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>  <span class="keywordtype">void</span> defaultMeshUpdate(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>  <span class="keywordtype">void</span> update(RenderList&amp; renderer, QRhiResourceUpdateBatch&amp; res, Edge* edge) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span> </div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>  <span class="keywordtype">void</span> defaultRelease(RenderList&amp;);</div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  <span class="keywordtype">void</span> release(RenderList&amp;) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
-<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  <span class="keywordtype">void</span> runRenderPass(RenderList&amp;, QRhiCommandBuffer&amp; commands, Edge&amp; edge) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span> </div>
-<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>  <span class="keywordtype">void</span> updateInputTexture(<span class="keyword">const</span> Port&amp; input, QRhiTexture* tex, QRhiTexture* depthTex = <span class="keyword">nullptr</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>};</div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>  <span class="keywordtype">void</span> defaultRenderPass(</div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span>      RenderList&amp;, <span class="keyword">const</span> Mesh&amp; mesh, QRhiCommandBuffer&amp; commands, Edge&amp; edge);</div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span> </div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>  <span class="keywordtype">void</span> defaultRenderPass(</div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>      RenderList&amp;, <span class="keyword">const</span> Mesh&amp; mesh, QRhiCommandBuffer&amp; commands, Edge&amp; edge,</div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>      PassMap&amp; passes);</div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span> </div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  <span class="keywordtype">void</span> runRenderPass(RenderList&amp;, QRhiCommandBuffer&amp; commands, Edge&amp; edge) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span> </div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>  <span class="keywordtype">void</span> updateInputTexture(<span class="keyword">const</span> Port&amp; input, QRhiTexture* tex, QRhiTexture* depthTex = <span class="keyword">nullptr</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>};</div>
 </div>
-<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span> </div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span>}</div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:330</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html_a006c73232fb9a65ab2995a42d06b0474"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">score::gfx::GenericNodeRenderer::samplersForOutputEdge</a></div><div class="ttdeci">virtual std::span&lt; const Sampler &gt; samplersForOutputEdge(const Edge &amp;edge) const noexcept</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:347</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html_a203724e85d97d88880d37d709e3ae72e"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">score::gfx::GenericNodeRenderer::currentMesh</a></div><div class="ttdeci">const Mesh * currentMesh() const noexcept override</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:398</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:105</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:313</div></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span> </div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>}</div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html">score::gfx::GenericNodeRenderer</a></div><div class="ttdoc">Generic renderer.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:337</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html_a006c73232fb9a65ab2995a42d06b0474"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html#a006c73232fb9a65ab2995a42d06b0474">score::gfx::GenericNodeRenderer::samplersForOutputEdge</a></div><div class="ttdeci">virtual std::span&lt; const Sampler &gt; samplersForOutputEdge(const Edge &amp;edge) const noexcept</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:354</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_generic_node_renderer_html_a203724e85d97d88880d37d709e3ae72e"><div class="ttname"><a href="classscore_1_1gfx_1_1_generic_node_renderer.html#a203724e85d97d88880d37d709e3ae72e">score::gfx::GenericNodeRenderer::currentMesh</a></div><div class="ttdeci">const Mesh * currentMesh() const noexcept override</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:405</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:111</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_model_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_model.html">score::gfx::NodeModel</a></div><div class="ttdoc">Common base class for most single-pass, simple nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:325</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html_a112486fa2b7fc58e1187de6a537d2746"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html#a112486fa2b7fc58e1187de6a537d2746">score::gfx::NodeRenderer::removeOutputPass</a></div><div class="ttdeci">virtual void removeOutputPass(RenderList &amp;renderer, Edge &amp;edge)=0</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html_a30ae9d23cc7c0deb7af0902fb7b3e1db"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html#a30ae9d23cc7c0deb7af0902fb7b3e1db">score::gfx::NodeRenderer::MergeCacheKey</a></div><div class="ttdeci">std::pair&lt; const ossia::scene_state *, int64_t &gt; MergeCacheKey</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:240</div></div>
@@ -445,8 +450,9 @@ $(document).ready(function(){initNavTree('_node_renderer_8hpp_source.html',''); 
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html_aaf61e69d0af5eb34b72c09a4f1301aa0"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html#aaf61e69d0af5eb34b72c09a4f1301aa0">score::gfx::NodeRenderer::depthCompare</a></div><div class="ttdeci">virtual QRhiGraphicsPipeline::CompareOp depthCompare() const noexcept</div><div class="ttdoc">The depth compare this renderer's pipeline was built with.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:56</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html_ab20b73db66693b34e16039529290ee33"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html#ab20b73db66693b34e16039529290ee33">score::gfx::NodeRenderer::forEachSceneOnPort</a></div><div class="ttdeci">void forEachSceneOnPort(int32_t port, F &amp;&amp;fn) const</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:176</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html_ac0478272e7a65732be5dc390110af0c9"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html#ac0478272e7a65732be5dc390110af0c9">score::gfx::NodeRenderer::findGeometryByPort</a></div><div class="ttdeci">const ossia::geometry_spec * findGeometryByPort(int32_t port) const</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:161</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:33</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:36</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a8b7e8b08e8fa8dadf028c4d35b759aa4"><div class="ttname"><a href="namespacescore_1_1gfx.html#a8b7e8b08e8fa8dadf028c4d35b759aa4">score::gfx::drawMeshWithPlan</a></div><div class="ttdeci">void drawMeshWithPlan(const Mesh &amp;mesh, const MeshBuffers &amp;bufs, QRhiCommandBuffer &amp;cb, const FallbackBindingPlan &amp;plan) noexcept</div><div class="ttdef"><b>Definition</b> NodeRenderer.cpp:38</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_ac80b4d57c77c48c523661f7f1f731ce6"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac80b4d57c77c48c523661f7f1f731ce6">score::gfx::updateInputSamplerFilter</a></div><div class="ttdeci">void updateInputSamplerFilter(std::span&lt; Sampler &gt; samplers, const score::gfx::Node &amp;node, const Port &amp;input, const RenderTargetSpecs &amp;spec)</div><div class="ttdoc">Give the sampler initInputSamplers() created for input, one of node's input ports,...</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.cpp:2029</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_buffer_view_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_buffer_view.html">score::gfx::BufferView</a></div><div class="ttdef"><b>Definition</b> Mesh.hpp:18</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_edge_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_edge.html">score::gfx::Edge</a></div><div class="ttdoc">Connection between two score::gfx::Port.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:236</div></div>
@@ -456,7 +462,7 @@ $(document).ready(function(){initNavTree('_node_renderer_8hpp_source.html',''); 
 <div class="ttc" id="astructscore_1_1gfx_1_1_pass_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_pass.html">score::gfx::Pass</a></div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:268</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_pipeline_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_pipeline.html">score::gfx::Pipeline</a></div><div class="ttdoc">Useful abstraction for storing a graphics pipeline and associated resource bindings.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:278</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:215</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_render_target_specs_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_target_specs.html">score::gfx::RenderTargetSpecs</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:61</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_render_target_specs_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_target_specs.html">score::gfx::RenderTargetSpecs</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:67</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:307</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -19,6 +19,7 @@ var dir_c1795678b349032337c770a7195025ac =
     [ "PortForward.hpp", "_port_forward_8hpp_source.html", null ],
     [ "score-lib-process/Process/Dataflow/PortItem.hpp", "score-lib-process_2_process_2_dataflow_2_port_item_8hpp_source.html", null ],
     [ "PortListWidget.hpp", "_port_list_widget_8hpp_source.html", null ],
+    [ "score-lib-process/Process/Dataflow/PortProbe.hpp", "score-lib-process_2_process_2_dataflow_2_port_probe_8hpp_source.html", null ],
     [ "PortSerialization.hpp", "_port_serialization_8hpp_source.html", null ],
     [ "PortType.hpp", "_port_type_8hpp_source.html", null ],
     [ "PortVisibility.hpp", "_port_visibility_8hpp_source.html", null ],

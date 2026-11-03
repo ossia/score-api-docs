@@ -132,14 +132,19 @@ const <a class="el" href="class_library_1_1_process_tree_view.html">ProcessTreeV
 <tr class="memitem:ab2d5addd1894ab8b75218c5f3fc2e338" id="r_ab2d5addd1894ab8b75218c5f3fc2e338"><td class="memItemLeft" align="right" valign="top"><a id="ab2d5addd1894ab8b75218c5f3fc2e338" name="ab2d5addd1894ab8b75218c5f3fc2e338"></a>
 <a class="el" href="class_library_1_1_process_tree_view.html">ProcessTreeView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processView</b> () noexcept</td></tr>
 <tr class="separator:ab2d5addd1894ab8b75218c5f3fc2e338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261ffad51223d6d3512d19e63621e05e" id="r_a261ffad51223d6d3512d19e63621e05e"><td class="memItemLeft" align="right" valign="top"><a id="a261ffad51223d6d3512d19e63621e05e" name="a261ffad51223d6d3512d19e63621e05e"></a>
-const <a class="el" href="class_library_1_1_preset_list_view.html">PresetListView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presetView</b> () const noexcept</td></tr>
-<tr class="separator:a261ffad51223d6d3512d19e63621e05e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3b2983966a0d798375acd6ef7ea050a" id="r_af3b2983966a0d798375acd6ef7ea050a"><td class="memItemLeft" align="right" valign="top"><a id="af3b2983966a0d798375acd6ef7ea050a" name="af3b2983966a0d798375acd6ef7ea050a"></a>
-<a class="el" href="class_library_1_1_preset_list_view.html">PresetListView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presetView</b> () noexcept</td></tr>
-<tr class="separator:af3b2983966a0d798375acd6ef7ea050a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86884ada60b15f611eccc5b01ffbf93e" id="r_a86884ada60b15f611eccc5b01ffbf93e"><td class="memItemLeft" align="right" valign="top"><a id="a86884ada60b15f611eccc5b01ffbf93e" name="a86884ada60b15f611eccc5b01ffbf93e"></a>
+const <a class="el" href="class_library_1_1_preset_tree_view.html">PresetTreeView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presetView</b> () const noexcept</td></tr>
+<tr class="separator:a86884ada60b15f611eccc5b01ffbf93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b1731059fd411d79e7d92b9f9af8bc" id="r_ac9b1731059fd411d79e7d92b9f9af8bc"><td class="memItemLeft" align="right" valign="top"><a id="ac9b1731059fd411d79e7d92b9f9af8bc" name="ac9b1731059fd411d79e7d92b9f9af8bc"></a>
+<a class="el" href="class_library_1_1_preset_tree_view.html">PresetTreeView</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presetView</b> () noexcept</td></tr>
+<tr class="separator:ac9b1731059fd411d79e7d92b9f9af8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d18168fa4c8674cb1f9aa0eaa7d792" id="r_ad5d18168fa4c8674cb1f9aa0eaa7d792"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_process_widget.html#ad5d18168fa4c8674cb1f9aa0eaa7d792">setNotice</a> (const QString &amp;html, std::function&lt; void()&gt; onActivated={})</td></tr>
 <tr class="separator:ad5d18168fa4c8674cb1f9aa0eaa7d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b0574115925840084f7a73273cc0ba3" id="r_a1b0574115925840084f7a73273cc0ba3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_library_1_1_process_widget.html#a1b0574115925840084f7a73273cc0ba3">showPresets</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;proc)</td></tr>
+<tr class="separator:a1b0574115925840084f7a73273cc0ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd5589e66d0cebc4617f8a79a842377c" id="r_abd5589e66d0cebc4617f8a79a842377c"><td class="memItemLeft" align="right" valign="top"><a id="abd5589e66d0cebc4617f8a79a842377c" name="abd5589e66d0cebc4617f8a79a842377c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearTarget</b> ()</td></tr>
+<tr class="separator:abd5589e66d0cebc4617f8a79a842377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad5d18168fa4c8674cb1f9aa0eaa7d792" name="ad5d18168fa4c8674cb1f9aa0eaa7d792"></a>
@@ -168,6 +173,25 @@ const <a class="el" href="class_library_1_1_preset_list_view.html">PresetListVie
       </table>
 </div><div class="memdoc">
 <p>Put a line of rich text above the process list, or take it away when the text is empty. Anything the user has to be told about the library itself belongs here rather than in a dialog: it is what they are looking at. A link in the text calls <code>onActivated</code> instead of opening a browser. </p>
+
+</div>
+</div>
+<a id="a1b0574115925840084f7a73273cc0ba3" name="a1b0574115925840084f7a73273cc0ba3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b0574115925840084f7a73273cc0ba3">&#9670;&#160;</a></span>showPresets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Library::ProcessWidget::showPresets </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;&#160;</td>
+          <td class="paramname"><em>proc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The presets of this process, which load into it: what its preset button opens </p>
 
 </div>
 </div>

@@ -108,6 +108,7 @@ var namespaceoscr =
     [ "reflect_controller_controls", "namespaceoscr.html#aff603550764466eab1394f6a8fb7795d", null ],
     [ "bind_worker", "namespaceoscr.html#ac073f0c37e5c1d225008bbb608178f76", null ],
     [ "free_on_main_thread", "namespaceoscr.html#af39d16e73c14c85b75123ecd9f40a15c", null ],
+    [ "hideAllInlets", "namespaceoscr.html#ae627ed911512ad6a894d1a0cc83adc8f", null ],
     [ "make_drag_mime", "namespaceoscr.html#a7d62f82f53f9e226348a62642f65150a", null ],
     [ "normalizedValue", "namespaceoscr.html#aacbc2f572f15f53e4c035fb076bce7d9", null ],
     [ "resolveControlPath", "namespaceoscr.html#aba311161d8802baf7215a4457e1dc192", null ],

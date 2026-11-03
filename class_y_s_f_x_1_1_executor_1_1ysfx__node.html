@@ -118,9 +118,9 @@ Inheritance diagram for YSFX::Executor::ysfx_node:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e9e79964994b87e90fd8ee3ade9b2c5" id="r_a8e9e79964994b87e90fd8ee3ade9b2c5"><td class="memItemLeft" align="right" valign="top"><a id="a8e9e79964994b87e90fd8ee3ade9b2c5" name="a8e9e79964994b87e90fd8ee3ade9b2c5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ysfx_node</b> (bool audio_in, bool midi_in, bool audio_out, bool midi_out, std::shared_ptr&lt; ysfx_t &gt;, ossia::execution_state &amp;st)</td></tr>
-<tr class="separator:a8e9e79964994b87e90fd8ee3ade9b2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf330bdc7ef6a94da0f9a736dfe91733" id="r_acf330bdc7ef6a94da0f9a736dfe91733"><td class="memItemLeft" align="right" valign="top"><a id="acf330bdc7ef6a94da0f9a736dfe91733" name="acf330bdc7ef6a94da0f9a736dfe91733"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ysfx_node</b> (bool audio_in, bool midi_in, bool audio_out, bool midi_out, std::shared_ptr&lt; ysfx_t &gt;, std::shared_ptr&lt; <a class="el" href="class_y_s_f_x_1_1_state_guard.html">StateGuard</a> &gt;, ossia::execution_state &amp;st)</td></tr>
+<tr class="separator:acf330bdc7ef6a94da0f9a736dfe91733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a832b9432788c5c620793e01a35996c86" id="r_a832b9432788c5c620793e01a35996c86"><td class="memItemLeft" align="right" valign="top"><a id="a832b9432788c5c620793e01a35996c86" name="a832b9432788c5c620793e01a35996c86"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const ossia::token_request &amp;t, ossia::exec_state_facade) noexcept override</td></tr>
 <tr class="separator:a832b9432788c5c620793e01a35996c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () c
 <tr class="memitem:a6ed94c1283739f476d24ac5df3278934" id="r_a6ed94c1283739f476d24ac5df3278934"><td class="memItemLeft" align="right" valign="top"><a id="a6ed94c1283739f476d24ac5df3278934" name="a6ed94c1283739f476d24ac5df3278934"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:a6ed94c1283739f476d24ac5df3278934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1b9fb085169aa9c2ddb589c8005ef2" id="r_a0a1b9fb085169aa9c2ddb589c8005ef2"><td class="memItemLeft" align="right" valign="top"><a id="a0a1b9fb085169aa9c2ddb589c8005ef2" name="a0a1b9fb085169aa9c2ddb589c8005ef2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>release_notes</b> () noexcept</td></tr>
+<tr class="separator:a0a1b9fb085169aa9c2ddb589c8005ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f2392dad10bf4d7c44110231c0386a6" id="r_a5f2392dad10bf4d7c44110231c0386a6"><td class="memItemLeft" align="right" valign="top"><a id="a5f2392dad10bf4d7c44110231c0386a6" name="a5f2392dad10bf4d7c44110231c0386a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stash_midi</b> () noexcept</td></tr>
+<tr class="separator:a5f2392dad10bf4d7c44110231c0386a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af711dde80255246333740bcf4467e1d5" id="r_af711dde80255246333740bcf4467e1d5"><td class="memItemLeft" align="right" valign="top"><a id="af711dde80255246333740bcf4467e1d5" name="af711dde80255246333740bcf4467e1d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept override</td></tr>
 <tr class="separator:af711dde80255246333740bcf4467e1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +145,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:af7e0a34188401935fda9e69055222f1d" id="r_af7e0a34188401935fda9e69055222f1d"><td class="memItemLeft" align="right" valign="top"><a id="af7e0a34188401935fda9e69055222f1d" name="af7e0a34188401935fda9e69055222f1d"></a>
 std::shared_ptr&lt; ysfx_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fx</b></td></tr>
 <tr class="separator:af7e0a34188401935fda9e69055222f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61bc9b981b2fec15675bdfc192965cfc" id="r_a61bc9b981b2fec15675bdfc192965cfc"><td class="memItemLeft" align="right" valign="top"><a id="a61bc9b981b2fec15675bdfc192965cfc" name="a61bc9b981b2fec15675bdfc192965cfc"></a>
+std::shared_ptr&lt; <a class="el" href="class_y_s_f_x_1_1_state_guard.html">StateGuard</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_guard</b></td></tr>
+<tr class="separator:a61bc9b981b2fec15675bdfc192965cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7a747a1a5524181a2a92703cf730e1" id="r_ace7a747a1a5524181a2a92703cf730e1"><td class="memItemLeft" align="right" valign="top"><a id="ace7a747a1a5524181a2a92703cf730e1" name="ace7a747a1a5524181a2a92703cf730e1"></a>
 ossia::execution_state &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_st</b></td></tr>
 <tr class="separator:ace7a747a1a5524181a2a92703cf730e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +171,10 @@ std::vector&lt; ossia::value_port * &gt;&#160;</td><td class="memItemRight" vali
 <tr class="memitem:a711d279a5d7d89d332b698b507d6b973" id="r_a711d279a5d7d89d332b698b507d6b973"><td class="memItemLeft" align="right" valign="top"><a id="a711d279a5d7d89d332b698b507d6b973" name="a711d279a5d7d89d332b698b507d6b973"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>generation</b> = 0</td></tr>
 <tr class="separator:a711d279a5d7d89d332b698b507d6b973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2cd37f4530935ff924fd164481bda0" id="r_a9e2cd37f4530935ff924fd164481bda0"><td class="memItemLeft" align="right" valign="top"><a id="a9e2cd37f4530935ff924fd164481bda0" name="a9e2cd37f4530935ff924fd164481bda0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_pendingNotesOff</b> {}</td></tr>
+<tr class="memdesc:a9e2cd37f4530935ff924fd164481bda0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An all-notes-off that came while the script's state was in use. <br /></td></tr>
+<tr class="separator:a9e2cd37f4530935ff924fd164481bda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abe534c6827d30ec91e9828e28f56efde" name="abe534c6827d30ec91e9828e28f56efde"></a>

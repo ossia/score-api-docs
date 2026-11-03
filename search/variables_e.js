@@ -1,7 +1,7 @@
 var searchData=
 [
   ['of_0',['of',['../struct_protocols_1_1_m_i_d_i_devices_1_1_layer.html#ab282d50f0a305819747af2663feb9f3c',1,'Protocols::MIDIDevices::Layer']]],
-  ['offset_1',['offset',['../structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3',1,'score::gfx::BitField::offset'],['../struct_patternist_1_1_step_params.html#afa52afba10c08bc729a29eba2886a3a3',1,'Patternist::StepParams::offset'],['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#af1d079a71dedf9fc4f08539fffa1f97a',1,'score::gfx::GraphicsSSBO::offset'],['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a27abf14195201faa4d2d27bd052a5f78',1,'score::gfx::GraphicsUBO::offset']]],
+  ['offset_1',['offset',['../structscore_1_1gfx_1_1_bit_field.html#ace65909e66e829a3f98f3a66e3dedfc3',1,'score::gfx::BitField::offset'],['../struct_ui_1_1_monitor_1_1_buffer_1_1_layout.html#a808fa84d7ee234963bed224974b7daa3',1,'Ui::Monitor::Buffer::Layout::offset'],['../struct_patternist_1_1_step_params.html#afa52afba10c08bc729a29eba2886a3a3',1,'Patternist::StepParams::offset'],['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#af1d079a71dedf9fc4f08539fffa1f97a',1,'score::gfx::GraphicsSSBO::offset'],['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a27abf14195201faa4d2d27bd052a5f78',1,'score::gfx::GraphicsUBO::offset']]],
   ['offsetrandom_2',['offsetRandom',['../struct_patternist_1_1_step_params.html#ae7022ebe48144bfaa8372635b40817e0',1,'Patternist::StepParams']]],
   ['onabouttorender_3',['onAboutToRender',['../classscore_1_1gfx_1_1_window.html#a8583732542b1d5d1527353296a9ba91b',1,'score::gfx::Window']]],
   ['onactivated_4',['onActivated',['../classscore_1_1_example_card.html#ae023efa5091519db22175c94bbda505e',1,'score::ExampleCard']]],
@@ -21,10 +21,11 @@ var searchData=
   ['originaldir_18',['originalDir',['../struct_j_s_1_1detail_1_1_staged_scripts_1_1_entry.html#a2e55cd1a16f13345d1689eb12634f178',1,'JS::detail::StagedScripts::Entry']]],
   ['ossiavaluerole_19',['OssiaValueRole',['../namespace_scenario.html#a9898d19376399bc499a123b2105c93f7',1,'Scenario']]],
   ['out_5fframe_20',['out_frame',['../structmtk_1_1_m_i_d_i_sync_out_1_1_main_thread_state.html#ad3aa476db66a9c5f807a74318e201d11',1,'mtk::MIDISyncOut::MainThreadState']]],
-  ['outlets_21',['outlets',['../structscore_1_1gfx_1_1port__counts.html#a8e6c568819676947bfe232e829eae245',1,'score::gfx::port_counts']]],
-  ['output_22',['output',['../classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5',1,'score::gfx::Node::output'],['../classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4',1,'score::gfx::RenderList::output']]],
-  ['outputtexture_23',['outputTexture',['../structscore_1_1gfx_1_1interop_1_1_video_capture_strategy_config.html#abf3a528170ba08173c09655379b373fc',1,'score::gfx::interop::VideoCaptureStrategyConfig']]],
-  ['outsidelimit_24',['outsideLimit',['../class_dataflow_1_1_cable_drag_auto_scroller.html#abc6c5228062453d160bc27c90550385d',1,'Dataflow::CableDragAutoScroller']]],
-  ['owned_25',['owned',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#ae6abf88703e4c55c4fd0b9664a140a88',1,'score::gfx::GraphicsSSBO::owned'],['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a087ebea45095b153f8e96624e0529102',1,'score::gfx::GraphicsUBO::owned']]],
-  ['owner_26',['owner',['../struct_process_1_1_external_file_ref.html#a10fadb58959f00d0194b376e26f683f5',1,'Process::ExternalFileRef::owner'],['../class_process_1_1_external_file_map.html#a7bffbe44feca36078ea0be1756bcf8f4',1,'Process::ExternalFileMap::owner'],['../struct_process_1_1_file_entry.html#afc80d8390218a6100026428b3cdbe70c',1,'Process::FileEntry::owner']]]
+  ['out_5fwords_21',['out_words',['../struct_ui_1_1_monitor_1_1_buffer_1_1_gather_params.html#adc98c3b8a40f80ecf55b1c3b978ce99e',1,'Ui::Monitor::Buffer::GatherParams']]],
+  ['outlets_22',['outlets',['../structscore_1_1gfx_1_1port__counts.html#a8e6c568819676947bfe232e829eae245',1,'score::gfx::port_counts']]],
+  ['output_23',['output',['../classscore_1_1gfx_1_1_node.html#afb7194d7e2605a0a39c17eb3ac3e2fa5',1,'score::gfx::Node::output'],['../classscore_1_1gfx_1_1_render_list.html#ae178a78f64300b29ba29beb21653e2b4',1,'score::gfx::RenderList::output']]],
+  ['outputtexture_24',['outputTexture',['../structscore_1_1gfx_1_1interop_1_1_video_capture_strategy_config.html#abf3a528170ba08173c09655379b373fc',1,'score::gfx::interop::VideoCaptureStrategyConfig']]],
+  ['outsidelimit_25',['outsideLimit',['../class_dataflow_1_1_cable_drag_auto_scroller.html#abc6c5228062453d160bc27c90550385d',1,'Dataflow::CableDragAutoScroller']]],
+  ['owned_26',['owned',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#ae6abf88703e4c55c4fd0b9664a140a88',1,'score::gfx::GraphicsSSBO::owned'],['../structscore_1_1gfx_1_1_graphics_u_b_o.html#a087ebea45095b153f8e96624e0529102',1,'score::gfx::GraphicsUBO::owned']]],
+  ['owner_27',['owner',['../struct_process_1_1_external_file_ref.html#a10fadb58959f00d0194b376e26f683f5',1,'Process::ExternalFileRef::owner'],['../class_process_1_1_external_file_map.html#a7bffbe44feca36078ea0be1756bcf8f4',1,'Process::ExternalFileMap::owner'],['../struct_process_1_1_file_entry.html#afc80d8390218a6100026428b3cdbe70c',1,'Process::FileEntry::owner']]]
 ];
