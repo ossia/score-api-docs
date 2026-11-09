@@ -121,6 +121,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:a07bff95bfd15d14d11154a62255a9622" id="r_a07bff95bfd15d14d11154a62255a9622"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622">Widget</a> { <b>Default</b>
 , <a class="el" href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622a848c38c91fcb0189d65c35746c884e36">Knob</a>
 , <a class="el" href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622ad8929068f239cc2984d214ec4717cc5f">Combo</a>
+, <a class="el" href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622a6adf97f83acf6453d4a6a4b1070f3754">None</a>
  }</td></tr>
 <tr class="memdesc:a07bff95bfd15d14d11154a62255a9622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Widget override, where the port supports it.  <a href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622">More...</a><br /></td></tr>
 <tr class="separator:a07bff95bfd15d14d11154a62255a9622"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,6 +150,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>valueOnHover</b> {fal
 <tr class="memitem:af6323bb0c93ccaddbdd3e1ee2aaf993f" id="r_af6323bb0c93ccaddbdd3e1ee2aaf993f"><td class="memItemLeft" align="right" valign="top"><a id="af6323bb0c93ccaddbdd3e1ee2aaf993f" name="af6323bb0c93ccaddbdd3e1ee2aaf993f"></a>
 <a class="el" href="struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622">Widget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>widget</b> {Widget::Default}</td></tr>
 <tr class="separator:af6323bb0c93ccaddbdd3e1ee2aaf993f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ec58468cd5cbd8154753fa6a577ca7d" id="r_a1ec58468cd5cbd8154753fa6a577ca7d"><td class="memItemLeft" align="right" valign="top">Qt::Alignment&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_control_presentation.html#a1ec58468cd5cbd8154753fa6a577ca7d">alignment</a> {}</td></tr>
+<tr class="separator:a1ec58468cd5cbd8154753fa6a577ca7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a07bff95bfd15d14d11154a62255a9622" name="a07bff95bfd15d14d11154a62255a9622"></a>
@@ -177,7 +180,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>valueOnHover</b> {fal
 </td></tr>
 <tr><td class="fieldname"><a id="a07bff95bfd15d14d11154a62255a9622ad8929068f239cc2984d214ec4717cc5f" name="a07bff95bfd15d14d11154a62255a9622ad8929068f239cc2984d214ec4717cc5f"></a>Combo&#160;</td><td class="fielddoc"><p>enumerations </p>
 </td></tr>
+<tr><td class="fieldname"><a id="a07bff95bfd15d14d11154a62255a9622a6adf97f83acf6453d4a6a4b1070f3754" name="a07bff95bfd15d14d11154a62255a9622a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>the port and its label only, for any control </p>
+</td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1ec58468cd5cbd8154753fa6a577ca7d" name="a1ec58468cd5cbd8154753fa6a577ca7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ec58468cd5cbd8154753fa6a577ca7d">&#9670;&#160;</a></span>alignment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Qt::Alignment Process::ControlPresentation::alignment {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Where the label and the value sit across the control: Qt::AlignLeft at its left edge, else as its widget places them. From the layout the control is in, e.g. a grid aligned left. </p>
 
 </div>
 </div>

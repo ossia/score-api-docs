@@ -162,7 +162,8 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_sampler.html">Sampler
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a400b9288490c6e9c2f5e2f1fce3de213" id="r_a400b9288490c6e9c2f5e2f1fce3de213"><td class="memItemLeft" align="right" valign="top">static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p_a16_decoder.html#a400b9288490c6e9c2f5e2f1fce3de213">frag</a></td></tr>
+<tr class="memitem:a400b9288490c6e9c2f5e2f1fce3de213" id="r_a400b9288490c6e9c2f5e2f1fce3de213"><td class="memItemLeft" align="right" valign="top"><a id="a400b9288490c6e9c2f5e2f1fce3de213" name="a400b9288490c6e9c2f5e2f1fce3de213"></a>
+static const constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>frag</b></td></tr>
 <tr class="separator:a400b9288490c6e9c2f5e2f1fce3de213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -261,59 +262,6 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html#a2006599f62b8b95fdc6bc2e0224ef56e">score::gfx::GPUVideoDecoder</a>.</p>
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a400b9288490c6e9c2f5e2f1fce3de213" name="a400b9288490c6e9c2f5e2f1fce3de213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a400b9288490c6e9c2f5e2f1fce3de213">&#9670;&#160;</a></span>frag</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const constexpr auto score::gfx::PA16Decoder::frag</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= R<span class="stringliteral">&quot;_(#version 450</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">)_&quot; SCORE_GFX_VIDEO_UNIFORMS R</span><span class="stringliteral">&quot;_(</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">layout(binding=3) uniform sampler2D y_tex;</span></div>
-<div class="line"><span class="stringliteral">layout(binding=4) uniform sampler2D uv_tex;</span></div>
-<div class="line"><span class="stringliteral">layout(binding=5) uniform sampler2D a_tex;</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">layout(location = 0) in vec2 v_texcoord;</span></div>
-<div class="line"><span class="stringliteral">layout(location = 0) out vec4 fragColor;</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">%2</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">vec4 processTexture(vec4 tex) {</span></div>
-<div class="line"><span class="stringliteral">  vec4 processed = convert_to_rgb(tex);</span></div>
-<div class="line"><span class="stringliteral">  { %1 }</span></div>
-<div class="line"><span class="stringliteral">  return processed;</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">void main() {</span></div>
-<div class="line"><span class="stringliteral">  vec2 tc = score_tc(v_texcoord);</span></div>
-<div class="line"><span class="stringliteral">  float y = texture(y_tex, tc).r;</span></div>
-<div class="line"><span class="stringliteral">  float u = texture(uv_tex, tc).r;</span></div>
-<div class="line"><span class="stringliteral">  float v = texture(uv_tex, tc).g;</span></div>
-<div class="line"><span class="stringliteral">  float a = texture(a_tex, tc).r;</span></div>
-<div class="line"><span class="stringliteral"></span> </div>
-<div class="line"><span class="stringliteral">  vec4 rgb = processTexture(vec4(y, u, v, 1.));</span></div>
-<div class="line"><span class="stringliteral">  fragColor = vec4(rgb.rgb, a);</span></div>
-<div class="line"><span class="stringliteral">}</span></div>
-<div class="line"><span class="stringliteral">)_&quot;</span></div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

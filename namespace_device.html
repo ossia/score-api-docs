@@ -375,8 +375,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dumpTree</b> (const <
 <tr class="memitem:a3d2055559fcb9ee5cc1d02af6c2ed783" id="r_a3d2055559fcb9ee5cc1d02af6c2ed783"><td class="memItemLeft" align="right" valign="top"><a id="a3d2055559fcb9ee5cc1d02af6c2ed783" name="a3d2055559fcb9ee5cc1d02af6c2ed783"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>deviceName</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Node</a> &amp;treeNode)</td></tr>
 <tr class="separator:a3d2055559fcb9ee5cc1d02af6c2ed783"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fb665cc670bb03a130e575a8c0cd9e1" id="r_a5fb665cc670bb03a130e575a8c0cd9e1"><td class="memItemLeft" align="right" valign="top"><a id="a5fb665cc670bb03a130e575a8c0cd9e1" name="a5fb665cc670bb03a130e575a8c0cd9e1"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>findChildNode_it</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node, const QString &amp;name)</td></tr>
+<tr class="memitem:a5fb665cc670bb03a130e575a8c0cd9e1" id="r_a5fb665cc670bb03a130e575a8c0cd9e1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_device.html#a5fb665cc670bb03a130e575a8c0cd9e1">findChildNode_it</a> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node, const QString &amp;name)</td></tr>
 <tr class="separator:a5fb665cc670bb03a130e575a8c0cd9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66322aaebfc59ffef7deaa8595f7a01" id="r_ac66322aaebfc59ffef7deaa8595f7a01"><td class="memItemLeft" align="right" valign="top"><a id="ac66322aaebfc59ffef7deaa8595f7a01" name="ac66322aaebfc59ffef7deaa8595f7a01"></a>
 const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>findChildNode</b> (const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;node, const QString &amp;name)</td></tr>
@@ -489,6 +488,43 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5fb665cc670bb03a130e575a8c0cd9e1" name="a5fb665cc670bb03a130e575a8c0cd9e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb665cc670bb03a130e575a8c0cd9e1">&#9670;&#160;</a></span>findChildNode_it()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Device::findChildNode_it </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespace_device.html#a5f5b5ed941f74703051e858d8733d0fc">Device::Node</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The child address of <code>node</code> named <code>name</code>. The children of the root are devices, which are never matched: look them up by <a class="el" href="struct_device_1_1_device_settings.html">Device::DeviceSettings</a>. </p>
+
+</div>
+</div>
 <a id="ae28e7db29ec71528be7138e7ff38e166" name="ae28e7db29ec71528be7138e7ff38e166"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae28e7db29ec71528be7138e7ff38e166">&#9670;&#160;</a></span>loadDeviceFromXML()</h2>
 

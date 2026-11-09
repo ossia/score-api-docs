@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['overdubmode_0',['OverdubMode',['../namespace_nodes_1_1_looper.html#abdc79053258c6bc8edd85cb95972c7ed',1,'Nodes::Looper']]]
+  ['nodekind_0',['NodeKind',['../namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9',1,'Device']]],
+  ['nvidiaglxvendorstate_1',['NvidiaGlxVendorState',['../namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853',1,'score']]]
 ];

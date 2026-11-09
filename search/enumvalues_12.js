@@ -6,6 +6,8 @@ var searchData=
   ['unpublished_3',['Unpublished',['../namespace_local_tree.html#a01be089041cd55557cf25c710c44214ba0774e163cd7df482edd2abd498189f8b',1,'LocalTree']]],
   ['unsigned_4',['Unsigned',['../namespace_protocols_1_1_c_a_n.html#aaa0f7ca0d6a021782b341b707d5d30b8aa1a914735b205424ba6c40b85528d78a',1,'Protocols::CAN']]],
   ['unsupported_5',['Unsupported',['../namespace_process.html#a10d23874bbbd9dcf91f2054338003079ab4080bdf74febf04d578ff105cce9d3f',1,'Process']]],
-  ['unused_6',['Unused',['../namespace_process.html#a10d23874bbbd9dcf91f2054338003079a92e592d90b9548016776a6fb68dccded',1,'Process']]],
-  ['unverified_7',['Unverified',['../_rdma_playout_probe_8hpp.html#ab7eb5d14c0670c75fb0102fac64212dcad5ca088299d5908ca359f17692071761',1,'score::gfx::interop']]]
+  ['unused_6',['unused',['../struct_process_1_1_address_status.html#ad4c1455b3c5143ae1a8b189423fc3b19a5030f9518fa14ca32bb4a8f9d5c42086',1,'Process::AddressStatus::Unused'],['../namespace_process.html#a10d23874bbbd9dcf91f2054338003079a92e592d90b9548016776a6fb68dccded',1,'Process::Unused']]],
+  ['unverified_7',['Unverified',['../_rdma_playout_probe_8hpp.html#ab7eb5d14c0670c75fb0102fac64212dcad5ca088299d5908ca359f17692071761',1,'score::gfx::interop']]],
+  ['updateavailable_8',['UpdateAvailable',['../classscore_1_1_default_library.html#aa3ef1551147403e4fcb0fbfb589cddaca4ca50bd5e1da4e7eb295d50a191aa4ec',1,'score::DefaultLibrary']]],
+  ['used_9',['Used',['../struct_process_1_1_address_status.html#ad4c1455b3c5143ae1a8b189423fc3b19a71ba7a7eb8c09c438a3fab772bf30858',1,'Process::AddressStatus']]]
 ];

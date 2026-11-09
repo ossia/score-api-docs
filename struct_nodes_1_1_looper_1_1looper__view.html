@@ -118,6 +118,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_looper_1_1looper__vie
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -129,6 +131,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76dbeba95faeaab51562e6d42b52abb2" id="r_a76dbeba95faeaab51562e6d42b52abb2"><td class="memItemLeft" align="right" valign="top"><a id="a76dbeba95faeaab51562e6d42b52abb2" name="a76dbeba95faeaab51562e6d42b52abb2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>watch</b> (const auto &amp;exported)</td></tr>
 <tr class="separator:a76dbeba95faeaab51562e6d42b52abb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7fed5b0cd738feb8882cfd628b02e83" id="r_ad7fed5b0cd738feb8882cfd628b02e83"><td class="memItemLeft" align="right" valign="top"><a id="ad7fed5b0cd738feb8882cfd628b02e83" name="ad7fed5b0cd738feb8882cfd628b02e83"></a>
+const <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pending_of</b> (uint32_t id) const noexcept</td></tr>
+<tr class="separator:ad7fed5b0cd738feb8882cfd628b02e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e912a831b41505a0d0426f2c11762d8" id="r_a6e912a831b41505a0d0426f2c11762d8"><td class="memItemLeft" align="right" valign="top"><a id="a6e912a831b41505a0d0426f2c11762d8" name="a6e912a831b41505a0d0426f2c11762d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_pending</b> (<a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> a) noexcept</td></tr>
+<tr class="separator:a6e912a831b41505a0d0426f2c11762d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a705b4b54c645a3cabea70877761a5bc6" id="r_a705b4b54c645a3cabea70877761a5bc6"><td class="memItemLeft" align="right" valign="top"><a id="a705b4b54c645a3cabea70877761a5bc6" name="a705b4b54c645a3cabea70877761a5bc6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>settle_pending</b> () noexcept</td></tr>
+<tr class="memdesc:a705b4b54c645a3cabea70877761a5bc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the looper shows done, or cannot do any more, is not pending. <br /></td></tr>
+<tr class="separator:a705b4b54c645a3cabea70877761a5bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3afe63984831310cfa2d61d85bf6db3" id="r_af3afe63984831310cfa2d61d85bf6db3"><td class="memItemLeft" align="right" valign="top"><a id="af3afe63984831310cfa2d61d85bf6db3" name="af3afe63984831310cfa2d61d85bf6db3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>queued</b> (uint32_t id) const noexcept</td></tr>
+<tr class="separator:af3afe63984831310cfa2d61d85bf6db3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a0eafc1d2538e3a70b36cb8c50bf24" id="r_a57a0eafc1d2538e3a70b36cb8c50bf24"><td class="memItemLeft" align="right" valign="top"><a id="a57a0eafc1d2538e3a70b36cb8c50bf24" name="a57a0eafc1d2538e3a70b36cb8c50bf24"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lane_of_id</b> (uint32_t id) const noexcept</td></tr>
+<tr class="separator:a57a0eafc1d2538e3a70b36cb8c50bf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706693a19866769a845bc002282655ea" id="r_a706693a19866769a845bc002282655ea"><td class="memItemLeft" align="right" valign="top"><a id="a706693a19866769a845bc002282655ea" name="a706693a19866769a845bc002282655ea"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>live</b> () const noexcept</td></tr>
 <tr class="separator:a706693a19866769a845bc002282655ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +224,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>lane_height</b> () 
 int&#160;</td><td class="memItemRight" valign="bottom"><b>pass_of_lane</b> (int lane) const noexcept</td></tr>
 <tr class="memdesc:a434731674c96299e9c41314c9bb86dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pass a lane shows alone, -1 for a lane of several passes or none. <br /></td></tr>
 <tr class="separator:a434731674c96299e9c41314c9bb86dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d6221c744f099d0c624f97e897d223" id="r_a27d6221c744f099d0c624f97e897d223"><td class="memItemLeft" align="right" valign="top"><a id="a27d6221c744f099d0c624f97e897d223" name="a27d6221c744f099d0c624f97e897d223"></a>
-<a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a>&#160;</td><td class="memItemRight" valign="bottom"><b>erase_box</b> (int lane) const noexcept</td></tr>
-<tr class="memdesc:a27d6221c744f099d0c624f97e897d223"><td class="mdescLeft">&#160;</td><td class="mdescRight">The erase button of a lane, at its right edge. <br /></td></tr>
+<tr class="memitem:a27d6221c744f099d0c624f97e897d223" id="r_a27d6221c744f099d0c624f97e897d223"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view.html#a27d6221c744f099d0c624f97e897d223">erase_box</a> (int lane) const noexcept</td></tr>
 <tr class="separator:a27d6221c744f099d0c624f97e897d223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad180bb999bcd421f4b9a8702547a9c6" id="r_aad180bb999bcd421f4b9a8702547a9c6"><td class="memItemLeft" align="right" valign="top"><a id="aad180bb999bcd421f4b9a8702547a9c6" name="aad180bb999bcd421f4b9a8702547a9c6"></a>
 <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mute_box</b> (int lane) const noexcept</td></tr>
@@ -216,7 +232,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pass_of_lane</b> (int 
 <tr class="separator:aad180bb999bcd421f4b9a8702547a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e800cec0c8041d2eb69400e075de9d1" id="r_a1e800cec0c8041d2eb69400e075de9d1"><td class="memItemLeft" align="right" valign="top"><a id="a1e800cec0c8041d2eb69400e075de9d1" name="a1e800cec0c8041d2eb69400e075de9d1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_muted</b> (int lane) const noexcept</td></tr>
+<tr class="memdesc:a1e800cec0c8041d2eb69400e075de9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muted, or about to be, the looper waiting for the grid. <br /></td></tr>
 <tr class="separator:a1e800cec0c8041d2eb69400e075de9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f7a27e58903868d78a6a232f4f0561" id="r_af8f7a27e58903868d78a6a232f4f0561"><td class="memItemLeft" align="right" valign="top"><a id="af8f7a27e58903868d78a6a232f4f0561" name="af8f7a27e58903868d78a6a232f4f0561"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_erasing</b> (int lane) const noexcept</td></tr>
+<tr class="memdesc:af8f7a27e58903868d78a6a232f4f0561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erased once the grid comes. <br /></td></tr>
+<tr class="separator:af8f7a27e58903868d78a6a232f4f0561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c77804101cae7831968b3aca31995ef" id="r_a0c77804101cae7831968b3aca31995ef"><td class="memItemLeft" align="right" valign="top"><a id="a0c77804101cae7831968b3aca31995ef" name="a0c77804101cae7831968b3aca31995ef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_pending</b> (int lane) const noexcept</td></tr>
+<tr class="separator:a0c77804101cae7831968b3aca31995ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c590e5f79d6525bb261930b73cb41bd" id="r_a0c590e5f79d6525bb261930b73cb41bd"><td class="memItemLeft" align="right" valign="top"><a id="a0c590e5f79d6525bb261930b73cb41bd" name="a0c590e5f79d6525bb261930b73cb41bd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>layer_buttons</b> () const noexcept</td></tr>
+<tr class="separator:a0c590e5f79d6525bb261930b73cb41bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9376fec75f08a0a2b2de9dc9e7b0481" id="r_ab9376fec75f08a0a2b2de9dc9e7b0481"><td class="memItemLeft" align="right" valign="top"><a id="ab9376fec75f08a0a2b2de9dc9e7b0481" name="ab9376fec75f08a0a2b2de9dc9e7b0481"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>selected_lane</b> () const noexcept</td></tr>
 <tr class="memdesc:ab9376fec75f08a0a2b2de9dc9e7b0481"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lane of the pass Layer says, when it has one of its own, else -1. <br /></td></tr>
@@ -324,6 +351,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_send_waiting</b> {}
 <tr class="memitem:a2791decc836cb324faa62763ae292c5c" id="r_a2791decc836cb324faa62763ae292c5c"><td class="memItemLeft" align="right" valign="top"><a id="a2791decc836cb324faa62763ae292c5c" name="a2791decc836cb324faa62763ae292c5c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stopped_stops</b> {-1}</td></tr>
 <tr class="separator:a2791decc836cb324faa62763ae292c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab251d69d82045e7d582fbb0b931c308c" id="r_ab251d69d82045e7d582fbb0b931c308c"><td class="memItemLeft" align="right" valign="top"><a id="ab251d69d82045e7d582fbb0b931c308c" name="ab251d69d82045e7d582fbb0b931c308c"></a>
+std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a>, max_pending &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending</b> {}</td></tr>
+<tr class="separator:ab251d69d82045e7d582fbb0b931c308c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a505a5cda1a73c60c5ad64f6c3a942f04" id="r_a505a5cda1a73c60c5ad64f6c3a942f04"><td class="memItemLeft" align="right" valign="top"><a id="a505a5cda1a73c60c5ad64f6c3a942f04" name="a505a5cda1a73c60c5ad64f6c3a942f04"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_pending_count</b> {}</td></tr>
+<tr class="separator:a505a5cda1a73c60c5ad64f6c3a942f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89bc1a20aaf75ffd0cfd21f0dfd43167" id="r_a89bc1a20aaf75ffd0cfd21f0dfd43167"><td class="memItemLeft" align="right" valign="top"><a id="a89bc1a20aaf75ffd0cfd21f0dfd43167" name="a89bc1a20aaf75ffd0cfd21f0dfd43167"></a>
 clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_message</b> {}</td></tr>
 <tr class="separator:a89bc1a20aaf75ffd0cfd21f0dfd43167"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,6 +394,11 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>he
 <tr class="memitem:a6418ef191f142c978e968cff9e5fc937" id="r_a6418ef191f142c978e968cff9e5fc937"><td class="memItemLeft" align="right" valign="top"><a id="a6418ef191f142c978e968cff9e5fc937" name="a6418ef191f142c978e968cff9e5fc937"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>send_w</b> = 56.</td></tr>
 <tr class="separator:a6418ef191f142c978e968cff9e5fc937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e12c751423f658ef332a915fd0ce70" id="r_ab9e12c751423f658ef332a915fd0ce70"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view.html#ab9e12c751423f658ef332a915fd0ce70">max_unseen</a> = 15</td></tr>
+<tr class="separator:ab9e12c751423f658ef332a915fd0ce70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ad1af0bd95507804c3262bd8dcf9cf" id="r_a47ad1af0bd95507804c3262bd8dcf9cf"><td class="memItemLeft" align="right" valign="top"><a id="a47ad1af0bd95507804c3262bd8dcf9cf" name="a47ad1af0bd95507804c3262bd8dcf9cf"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_pending</b> = 16</td></tr>
+<tr class="separator:a47ad1af0bd95507804c3262bd8dcf9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b3fd49aae4925c54b7ff69bf472624" id="r_a78b3fd49aae4925c54b7ff69bf472624"><td class="memItemLeft" align="right" valign="top"><a id="a78b3fd49aae4925c54b7ff69bf472624" name="a78b3fd49aae4925c54b7ff69bf472624"></a>
 static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>silent_after</b> = std::chrono::milliseconds(300)</td></tr>
 <tr class="separator:a78b3fd49aae4925c54b7ff69bf472624"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,6 +413,8 @@ static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>la
 <tr class="memitem:a9d1bcc553f484369463df2e118da5e89" id="r_a9d1bcc553f484369463df2e118da5e89"><td class="memItemLeft" align="right" valign="top"><a id="a9d1bcc553f484369463df2e118da5e89" name="a9d1bcc553f484369463df2e118da5e89"></a>
 static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>min_lane_height</b> = 6.</td></tr>
 <tr class="separator:a9d1bcc553f484369463df2e118da5e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcfa80bbe195f3a0c3c267caabb27d32" id="r_abcfa80bbe195f3a0c3c267caabb27d32"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view.html#abcfa80bbe195f3a0c3c267caabb27d32">buttons_after</a> = std::chrono::seconds(2)</td></tr>
+<tr class="separator:abcfa80bbe195f3a0c3c267caabb27d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7868f7dc44c8ed93fc2c4d3a109284d" id="r_aa7868f7dc44c8ed93fc2c4d3a109284d"><td class="memItemLeft" align="right" valign="top"><a id="aa7868f7dc44c8ed93fc2c4d3a109284d" name="aa7868f7dc44c8ed93fc2c4d3a109284d"></a>
 static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lane_bg</b> {34, 34, 38, 255}</td></tr>
 <tr class="memdesc:aa7868f7dc44c8ed93fc2c4d3a109284d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The selected lane: a lighter background, and an outline. <br /></td></tr>
@@ -400,6 +440,33 @@ static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a27d6221c744f099d0c624f97e897d223" name="a27d6221c744f099d0c624f97e897d223"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d6221c744f099d0c624f97e897d223">&#9670;&#160;</a></span>erase_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a> Nodes::Looper::looper_view::erase_box </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lane</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The erase button of a lane, in its top right corner: as far from its top as from its right edge, or centred in a lane too short for that. </p>
+
+</div>
+</div>
 <a id="aef1e360831818f56d3dc4438a4fd0a0c" name="aef1e360831818f56d3dc4438a4fd0a0c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aef1e360831818f56d3dc4438a4fd0a0c">&#9670;&#160;</a></span>height()</h2>
 
@@ -645,6 +712,29 @@ static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba<
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="abcfa80bbe195f3a0c3c267caabb27d32" name="abcfa80bbe195f3a0c3c267caabb27d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcfa80bbe195f3a0c3c267caabb27d32">&#9670;&#160;</a></span>buttons_after</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto Nodes::Looper::looper_view::buttons_after = std::chrono::seconds(2)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The m and x act on a looper that runs: a looper stopped with the score has no passes any more, only the take its stop left, and one whose box ended, or that is paused, would only act once it runs again. A looper is taken for running a while after its last message, longer than live(): a busy UI may take a press before the messages that came first. </p>
+
+</div>
+</div>
 <a id="a8d51d4379b07dee6af0c46740c3b1ffb" name="a8d51d4379b07dee6af0c46740c3b1ffb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d51d4379b07dee6af0c46740c3b1ffb">&#9670;&#160;</a></span>erase</h2>
 
@@ -755,6 +845,29 @@ static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba<
 </table>
 </div><div class="memdoc">
 <p>A lane is not taller than this, so that a few lanes stay a size a lane reads at, and not shorter than that, which max_lanes lanes fit in. </p>
+
+</div>
+</div>
+<a id="ab9e12c751423f658ef332a915fd0ce70" name="ab9e12c751423f658ef332a915fd0ce70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e12c751423f658ef332a915fd0ce70">&#9670;&#160;</a></span>max_unseen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Nodes::Looper::looper_view::max_unseen = 15</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Messages an m or x may take to reach the looper and come back in what it shows queued: past them, the looper did not take it. </p>
 
 </div>
 </div>

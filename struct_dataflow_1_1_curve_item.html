@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('struct_dataflow_1_1_curve_item.html','
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="struct_dataflow_1_1_curve_item-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Dataflow::CurveItem Struct Reference</div></div>
 </div><!--header-->
@@ -124,40 +125,110 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af964b0f3a26e62bba8bf0f3e44f1cc40" id="r_af964b0f3a26e62bba8bf0f3e44f1cc40"><td class="memItemLeft" align="right" valign="top"><a id="af964b0f3a26e62bba8bf0f3e44f1cc40" name="af964b0f3a26e62bba8bf0f3e44f1cc40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CurveItem</b> (<a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &amp;model, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QGraphicsItem *parent)</td></tr>
-<tr class="separator:af964b0f3a26e62bba8bf0f3e44f1cc40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591ef25eb243bc59eaf09a88fffc9c9d" id="r_a591ef25eb243bc59eaf09a88fffc9c9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dataflow_1_1_curve_item.html#a591ef25eb243bc59eaf09a88fffc9c9d">CurveItem</a> (<a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &amp;model, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QGraphicsItem *parent, <a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> *selectionStack=nullptr)</td></tr>
+<tr class="separator:a591ef25eb243bc59eaf09a88fffc9c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5da508ea0d9fa172d0035a9c6dc99c" id="r_a1c5da508ea0d9fa172d0035a9c6dc99c"><td class="memItemLeft" align="right" valign="top"><a id="a1c5da508ea0d9fa172d0035a9c6dc99c" name="a1c5da508ea0d9fa172d0035a9c6dc99c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setModel</b> (<a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &amp;model)</td></tr>
+<tr class="separator:a1c5da508ea0d9fa172d0035a9c6dc99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae008ccac7250bbcc6b06b641c0f495ce" id="r_ae008ccac7250bbcc6b06b641c0f495ce"><td class="memItemLeft" align="right" valign="top"><a id="ae008ccac7250bbcc6b06b641c0f495ce" name="ae008ccac7250bbcc6b06b641c0f495ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setRect</b> (const QRectF &amp;rect)</td></tr>
+<tr class="separator:ae008ccac7250bbcc6b06b641c0f495ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af69a998af900956d8016ed12ccbadf6b" id="r_af69a998af900956d8016ed12ccbadf6b"><td class="memItemLeft" align="right" valign="top"><a id="af69a998af900956d8016ed12ccbadf6b" name="af69a998af900956d8016ed12ccbadf6b"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
 <tr class="separator:af69a998af900956d8016ed12ccbadf6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5fd0c875edade62463ca49a54f70b08" id="r_aa5fd0c875edade62463ca49a54f70b08"><td class="memItemLeft" align="right" valign="top"><a id="aa5fd0c875edade62463ca49a54f70b08" name="aa5fd0c875edade62463ca49a54f70b08"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
-<tr class="separator:aa5fd0c875edade62463ca49a54f70b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ff3a995b14aa537edc2f503e175180" id="r_a49ff3a995b14aa537edc2f503e175180"><td class="memItemLeft" align="right" valign="top"><a id="a49ff3a995b14aa537edc2f503e175180" name="a49ff3a995b14aa537edc2f503e175180"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *) override</td></tr>
+<tr class="separator:a49ff3a995b14aa537edc2f503e175180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0277153e02e8e0bc01a737d88f14f920" id="r_a0277153e02e8e0bc01a737d88f14f920"><td class="memItemLeft" align="right" valign="top"><a id="a0277153e02e8e0bc01a737d88f14f920" name="a0277153e02e8e0bc01a737d88f14f920"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rollbackGesture</b> ()</td></tr>
+<tr class="separator:a0277153e02e8e0bc01a737d88f14f920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a63af12418120673855aafadf74874b96" id="r_a63af12418120673855aafadf74874b96"><td class="memItemLeft" align="right" valign="top"><a id="a63af12418120673855aafadf74874b96" name="a63af12418120673855aafadf74874b96"></a>
 class <a class="el" href="class_dataflow_1_1_curve_item_1_1_colors.html">Dataflow::CurveItem::Colors</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_colors</b></td></tr>
 <tr class="separator:a63af12418120673855aafadf74874b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70d0588c32037e100c5bdc2e8e26d2e1" id="r_a70d0588c32037e100c5bdc2e8e26d2e1"><td class="memItemLeft" align="right" valign="top"><a id="a70d0588c32037e100c5bdc2e8e26d2e1" name="a70d0588c32037e100c5bdc2e8e26d2e1"></a>
-<a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td></tr>
-<tr class="separator:a70d0588c32037e100c5bdc2e8e26d2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af476ceca2e4adfe8da4cbbe9795f1da2" id="r_af476ceca2e4adfe8da4cbbe9795f1da2"><td class="memItemLeft" align="right" valign="top"><a id="af476ceca2e4adfe8da4cbbe9795f1da2" name="af476ceca2e4adfe8da4cbbe9795f1da2"></a>
+const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
+<tr class="separator:af476ceca2e4adfe8da4cbbe9795f1da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe2dd54fca3fcca666179e4d2b6c614" id="r_a1fe2dd54fca3fcca666179e4d2b6c614"><td class="memItemLeft" align="right" valign="top"><a id="a1fe2dd54fca3fcca666179e4d2b6c614" name="a1fe2dd54fca3fcca666179e4d2b6c614"></a>
+<a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_selectionStack</b> {}</td></tr>
+<tr class="separator:a1fe2dd54fca3fcca666179e4d2b6c614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a855c55036dbd09ced1c67cdd82d718e7" id="r_a855c55036dbd09ced1c67cdd82d718e7"><td class="memItemLeft" align="right" valign="top"><a id="a855c55036dbd09ced1c67cdd82d718e7" name="a855c55036dbd09ced1c67cdd82d718e7"></a>
+QPointer&lt; <a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td></tr>
+<tr class="separator:a855c55036dbd09ced1c67cdd82d718e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b23eeb61d847e1afbdca448cb23939" id="r_a89b23eeb61d847e1afbdca448cb23939"><td class="memItemLeft" align="right" valign="top"><a id="a89b23eeb61d847e1afbdca448cb23939" name="a89b23eeb61d847e1afbdca448cb23939"></a>
 <a class="el" href="class_curve_1_1_view.html">Curve::View</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b> {}</td></tr>
 <tr class="separator:a89b23eeb61d847e1afbdca448cb23939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057dca1b1b31faf6462dc32cc5498705" id="r_a057dca1b1b31faf6462dc32cc5498705"><td class="memItemLeft" align="right" valign="top"><a id="a057dca1b1b31faf6462dc32cc5498705" name="a057dca1b1b31faf6462dc32cc5498705"></a>
 <a class="el" href="class_curve_1_1_presenter.html">Curve::Presenter</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_presenter</b> {}</td></tr>
 <tr class="separator:a057dca1b1b31faf6462dc32cc5498705"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad06c16f507063ea003ad48b289db64c5" id="r_ad06c16f507063ea003ad48b289db64c5"><td class="memItemLeft" align="right" valign="top"><a id="ad06c16f507063ea003ad48b289db64c5" name="ad06c16f507063ea003ad48b289db64c5"></a>
-<a class="el" href="class_command_dispatcher.html">CommandDispatcher</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_commandDispatcher</b></td></tr>
-<tr class="separator:ad06c16f507063ea003ad48b289db64c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f14fb147a7b166dc6bb2e3d9bd18abf" id="r_a0f14fb147a7b166dc6bb2e3d9bd18abf"><td class="memItemLeft" align="right" valign="top"><a id="a0f14fb147a7b166dc6bb2e3d9bd18abf" name="a0f14fb147a7b166dc6bb2e3d9bd18abf"></a>
 <a class="el" href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_sm</b> {}</td></tr>
 <tr class="separator:a0f14fb147a7b166dc6bb2e3d9bd18abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc57b2ee02b6438b78f837f4eac41193" id="r_abc57b2ee02b6438b78f837f4eac41193"><td class="memItemLeft" align="right" valign="top"><a id="abc57b2ee02b6438b78f837f4eac41193" name="abc57b2ee02b6438b78f837f4eac41193"></a>
 <a class="el" href="class_dataflow_1_1_basic_tool_palette_input_dispatcher.html">BasicToolPaletteInputDispatcher</a>&lt; Curve::Tool, <a class="el" href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a>, <a class="el" href="class_curve_1_1_view.html">Curve::View</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>m_disp</b> {}</td></tr>
 <tr class="separator:abc57b2ee02b6438b78f837f4eac41193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8693e369042f1cc7f9b28da54898be2f" id="r_a8693e369042f1cc7f9b28da54898be2f"><td class="memItemLeft" align="right" valign="top"><a id="a8693e369042f1cc7f9b28da54898be2f" name="a8693e369042f1cc7f9b28da54898be2f"></a>
+QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>m_rect</b> {0., 0., 100., 60.}</td></tr>
+<tr class="separator:a8693e369042f1cc7f9b28da54898be2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acb321d16c68d3a627165bdbec9062cc0" id="r_acb321d16c68d3a627165bdbec9062cc0"><td class="memItemLeft" align="right" valign="top"><a id="acb321d16c68d3a627165bdbec9062cc0" name="acb321d16c68d3a627165bdbec9062cc0"></a>
+QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>itemChange</b> (GraphicsItemChange change, const QVariant &amp;value) override</td></tr>
+<tr class="separator:acb321d16c68d3a627165bdbec9062cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a591ef25eb243bc59eaf09a88fffc9c9d" name="a591ef25eb243bc59eaf09a88fffc9c9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591ef25eb243bc59eaf09a88fffc9c9d">&#9670;&#160;</a></span>CurveItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dataflow::CurveItem::CurveItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_curve_1_1_model.html">Curve::Model</a> &amp;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QGraphicsItem *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> *&#160;</td>
+          <td class="paramname"><em>selectionStack</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>selectionStack: where point and segment selections go; the document's when null. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><b>CurveInlet.cpp</b></li>
 </ul>

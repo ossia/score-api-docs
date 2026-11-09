@@ -814,6 +814,12 @@ Enumerations</h2></td></tr>
 , <b>Mirrored</b>
  }</td></tr>
 <tr class="separator:add5f72745723b9cdbc8038d333a059dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52de025f732e8d12f05fa746f9ffa5f2" id="r_a52de025f732e8d12f05fa746f9ffa5f2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2">OutputDepth</a> { <b>None</b>
+, <a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2aa3e8ae43188ae76d38f414b2bdb0077b">Texture</a>
+, <a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2a2fa8076285272883c91e14402975a441">DepthStencil</a>
+ }</td></tr>
+<tr class="memdesc:a52de025f732e8d12f05fa746f9ffa5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The depth attachment of an output's render target.  <a href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2">More...</a><br /></td></tr>
+<tr class="separator:a52de025f732e8d12f05fa746f9ffa5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6a96306e1a02ccc56d8bb785bc6734" id="r_a5b6a96306e1a02ccc56d8bb785bc6734"><td class="memItemLeft" align="right" valign="top"><a id="a5b6a96306e1a02ccc56d8bb785bc6734" name="a5b6a96306e1a02ccc56d8bb785bc6734"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734">GraphicsApi</a> { <br />
 &#160;&#160;<b>Null</b>
 , <b>OpenGL</b>
@@ -1106,6 +1112,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>defaultRenderPass</b>
 <tr class="memitem:a0a58880047dd23a1e25e529168536d2b" id="r_a0a58880047dd23a1e25e529168536d2b"><td class="memItemLeft" align="right" valign="top"><a id="a0a58880047dd23a1e25e529168536d2b" name="a0a58880047dd23a1e25e529168536d2b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>quadRenderPass</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">RenderList</a> &amp;renderer, const <a class="el" href="structscore_1_1gfx_1_1_mesh_buffers.html">MeshBuffers</a> &amp;bufs, QRhiCommandBuffer &amp;cb, <a class="el" href="structscore_1_1gfx_1_1_edge.html">Edge</a> &amp;edge, PassMap &amp;passes)</td></tr>
 <tr class="separator:a0a58880047dd23a1e25e529168536d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303cdecd840ea184b3ed276237d0d62f" id="r_a303cdecd840ea184b3ed276237d0d62f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#a303cdecd840ea184b3ed276237d0d62f">createOutputRenderTarget</a> (<a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture &amp;texture, <a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2">OutputDepth</a> depth=OutputDepth::None, int samples=0)</td></tr>
+<tr class="memdesc:a303cdecd840ea184b3ed276237d0d62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The render target an offscreen output's input is drawn into.  <br /></td></tr>
+<tr class="separator:a303cdecd840ea184b3ed276237d0d62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac582753812525cac8a9e33f249f96039" id="r_ac582753812525cac8a9e33f249f96039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ac582753812525cac8a9e33f249f96039">releaseOutputRenderTarget</a> (<a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;target, bool deferred=false) noexcept</td></tr>
+<tr class="memdesc:ac582753812525cac8a9e33f249f96039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees what createOutputRenderTarget allocated, but not the texture.  <br /></td></tr>
+<tr class="separator:ac582753812525cac8a9e33f249f96039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa0ce984a2d512fbc6b9cabca8c799f" id="r_abfa0ce984a2d512fbc6b9cabca8c799f"><td class="memItemLeft" align="right" valign="top"><a id="abfa0ce984a2d512fbc6b9cabca8c799f" name="abfa0ce984a2d512fbc6b9cabca8c799f"></a>
 QRhiGraphicsPipeline::CompareOp&#160;</td><td class="memItemRight" valign="bottom"><b>toCompareOp</b> (std::string_view s) noexcept</td></tr>
 <tr class="separator:abfa0ce984a2d512fbc6b9cabca8c799f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1397,6 +1409,9 @@ QRhiTexture *&#160;</td><td class="memItemRight" valign="bottom"><b>loadAndUploa
 <a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><b>createRenderTarget</b> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture *tex, int samples, bool depth, bool samplableDepth=false)</td></tr>
 <tr class="memdesc:a51bb4eaee676109688bc83de5e6eaa2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture. <br /></td></tr>
 <tr class="separator:a51bb4eaee676109688bc83de5e6eaa2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2569ae1ea33f50408b2365cbd596109" id="r_aa2569ae1ea33f50408b2365cbd596109"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#aa2569ae1ea33f50408b2365cbd596109">zeroTexture</a> (QRhi &amp;rhi, QRhiResourceUpdateBatch &amp;res, QRhiTexture &amp;tex)</td></tr>
+<tr class="memdesc:aa2569ae1ea33f50408b2365cbd596109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue zeros into every level, layer, face and slice of a texture.  <br /></td></tr>
+<tr class="separator:aa2569ae1ea33f50408b2365cbd596109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd369167c62119471d4e47fdcd901a43" id="r_afd369167c62119471d4e47fdcd901a43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#afd369167c62119471d4e47fdcd901a43">createRenderTarget</a> (const <a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;state, QRhiTexture::Format fmt, QSize sz, int samples, bool depth, bool samplableDepth=false, QRhiTexture::Flags flags={})</td></tr>
 <tr class="memdesc:afd369167c62119471d4e47fdcd901a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a render target from a texture format and size.  <br /></td></tr>
 <tr class="separator:afd369167c62119471d4e47fdcd901a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1615,12 +1630,6 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hashVertexFallbac
 <tr class="memitem:ac2933c6b5e6d908a461fd02878972efe" id="r_ac2933c6b5e6d908a461fd02878972efe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#ac2933c6b5e6d908a461fd02878972efe">videoDecoderNeedsRebuild</a> (bool hasDecoder, const <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;built, const <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;src, AVPixelFormat fmt, int w, int h) noexcept</td></tr>
 <tr class="memdesc:ac2933c6b5e6d908a461fd02878972efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the GPU decoder has to be rebuilt for this frame.  <br /></td></tr>
 <tr class="separator:ac2933c6b5e6d908a461fd02878972efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc8e91b69eccd07b22b07ea01f402a8d" id="r_abc8e91b69eccd07b22b07ea01f402a8d"><td class="memItemLeft" align="right" valign="top"><a id="abc8e91b69eccd07b22b07ea01f402a8d" name="abc8e91b69eccd07b22b07ea01f402a8d"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash_qstring</b> (const QString &amp;s) noexcept</td></tr>
-<tr class="separator:abc8e91b69eccd07b22b07ea01f402a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cf77baa8779932e9d73b3c12747535f" id="r_a7cf77baa8779932e9d73b3c12747535f"><td class="memItemLeft" align="right" valign="top"><a id="a7cf77baa8779932e9d73b3c12747535f" name="a7cf77baa8779932e9d73b3c12747535f"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>hash_qbytearray</b> (const QByteArray &amp;b) noexcept</td></tr>
-<tr class="separator:a7cf77baa8779932e9d73b3c12747535f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae85c7d16497bc58b30c636dd75e677a" id="r_aae85c7d16497bc58b30c636dd75e677a"><td class="memItemLeft" align="right" valign="top">ossia::aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1gfx.html#aae85c7d16497bc58b30c636dd75e677a">geometryPositionBounds</a> (const ossia::geometry &amp;g) noexcept</td></tr>
 <tr class="separator:aae85c7d16497bc58b30c636dd75e677a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1671,6 +1680,36 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>texture_kind
 <li>D3D11 : CopySubresourceRegion (offsets supported via D3D11_BOX)</li>
 <li>Metal : MTLBlitCommandEncoder copyFromBuffer </li>
 </ul>
+
+</div>
+</div>
+<a id="a52de025f732e8d12f05fa746f9ffa5f2" name="a52de025f732e8d12f05fa746f9ffa5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52de025f732e8d12f05fa746f9ffa5f2">&#9670;&#160;</a></span>OutputDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2">score::gfx::OutputDepth</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The depth attachment of an output's render target. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a52de025f732e8d12f05fa746f9ffa5f2aa3e8ae43188ae76d38f414b2bdb0077b" name="a52de025f732e8d12f05fa746f9ffa5f2aa3e8ae43188ae76d38f414b2bdb0077b"></a>Texture&#160;</td><td class="fielddoc"><p>D32F texture, the format reverse-Z wants. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a52de025f732e8d12f05fa746f9ffa5f2a2fa8076285272883c91e14402975a441" name="a52de025f732e8d12f05fa746f9ffa5f2a2fa8076285272883c91e14402975a441"></a>DepthStencil&#160;</td><td class="fielddoc"><p>Depth-stencil render buffer, as a window's swap chain has. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -3084,6 +3123,51 @@ else if (usage &amp; IndirectBuffer) targetForDataOps = GL_DRAW_INDIRECT_BUFFER;
 
 <p>Multi-attachment (MRT) multiview render target. </p>
 <p>Same as the single-texture overload but attaches ALL <code>colorTextures</code> (each a TextureArray with &gt;= multiViewCount layers) with per-attachment multiview, so attachments == pipeline blend targets. Requires state.caps.multiview == true. </p>
+
+</div>
+</div>
+<a id="a303cdecd840ea184b3ed276237d0d62f" name="a303cdecd840ea184b3ed276237d0d62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303cdecd840ea184b3ed276237d0d62f">&#9670;&#160;</a></span>createOutputRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> score::gfx::createOutputRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture &amp;&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2">OutputDepth</a>&#160;</td>
+          <td class="paramname"><em>depth</em> = <code>OutputDepth::None</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>samples</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The render target an offscreen output's input is drawn into. </p>
+<p><code>texture</code> is the output's picture: single-sample, and what its encoders, readbacks, previews and texture sharing read. When <code>samples</code> is above one the passes draw into a multisample colour buffer instead, which QRhi resolves into <code>texture</code> at the end of every pass, so the output gets the anti-aliasing a window's multisampled swap chain gets. A backend or format that cannot multisample falls back to drawing into <code>texture</code> directly, with a warning: the passes drawing into the target take their sample count from TextureRenderTarget::sampleCount(), so they follow either way.</p>
+<p><code>samples</code> &lt; 1 means RenderState::samples, the count the render list renders at. An output whose renderer draws into this target with a pass of its own at one sample (a scaling blit, say) passes 1.</p>
+<p>Sets state.renderPassDescriptor to the target's descriptor. Returns an empty target when the backend refuses even the single-sample one. The caller keeps owning <code>texture</code>; releaseOutputRenderTarget frees the rest. </p>
 
 </div>
 </div>
@@ -5020,6 +5104,51 @@ template&lt;typename CB  = QRhiCommandBuffer&gt; </div>
 
 </div>
 </div>
+<a id="ac582753812525cac8a9e33f249f96039" name="ac582753812525cac8a9e33f249f96039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac582753812525cac8a9e33f249f96039">&#9670;&#160;</a></span>releaseOutputRenderTarget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::releaseOutputRenderTarget </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_render_state.html">RenderState</a> &amp;&#160;</td>
+          <td class="paramname"><em>state</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structscore_1_1gfx_1_1_texture_render_target.html">TextureRenderTarget</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>deferred</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Frees what createOutputRenderTarget allocated, but not the texture. </p>
+<p>Clears state.renderPassDescriptor when it is this target's. <code>deferred</code> releases through deleteLater(), for a target replaced while the QRhi keeps rendering. </p>
+
+</div>
+</div>
 <a id="a9730457c4347a92b074fbb88360776b5" name="a9730457c4347a92b074fbb88360776b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9730457c4347a92b074fbb88360776b5">&#9670;&#160;</a></span>remapPipelineVertexInputs() <span class="overload">[1/2]</span></h2>
 
@@ -5679,7 +5808,7 @@ vec4 shownTexel(ivec2 p, ivec2 size, int layout, int index, bool flip, out bool 
 </table>
 </div><div class="memdoc">
 <p>Row order of the 2D image textures that travel between nodes.</p>
-<p>A render target holds its image bottom row first in memory on OpenGL, Metal and Direct3D &ndash; the GL framebuffer origin, and the isf_vertShaderFinish() negation on the others: QRhi::isYUpInNDC() &ndash; and top row first on Vulkan. Every 2D image texture a node publishes has the row order of a rendered one, whoever produced it, so a consumer (IMG_NORM_PIXEL, the output blits, a STATIC binding, a readback, a material slot) never needs to know whether it was drawn or uploaded.</p>
+<p>A render target holds its image bottom row first in memory on OpenGL, Metal and Direct3D &ndash; the GL framebuffer origin, and the Y negation of isf_vertShaderApplyClipSpace() on the others: QRhi::isYUpInNDC() &ndash; and top row first on Vulkan. Every 2D image texture a node publishes has the row order of a rendered one, whoever produced it, so a consumer (IMG_NORM_PIXEL, the output blits, a STATIC binding, a readback, a material slot) never needs to know whether it was drawn or uploaded.</p>
 <p>An image coming from the CPU is top row first (QImage, decoded files, halp CPU textures), so a producer publishing it reverses its rows on upload when <a class="el" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows()</a> is true. Data tables (LUTs addressed by a parameter, not by an image position) are not images and keep their memory order: their row 0 is at v = 0 on every backend, for a raw texture() read. </p>
 
 </div>
@@ -5941,6 +6070,43 @@ vec4 shownTexel(ivec2 p, ivec2 size, int layout, int index, bool flip, out bool 
 </table>
 </div><div class="memdoc">
 <p>Whether the compute encoder can handle (fmt, width): v210 needs width % 6, UYVY needs width % 2, BGRA is unconstrained. </p>
+
+</div>
+</div>
+<a id="aa2569ae1ea33f50408b2365cbd596109" name="aa2569ae1ea33f50408b2365cbd596109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2569ae1ea33f50408b2365cbd596109">&#9670;&#160;</a></span>zeroTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::zeroTexture </td>
+          <td>(</td>
+          <td class="paramtype">QRhi &amp;&#160;</td>
+          <td class="paramname"><em>rhi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiResourceUpdateBatch &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRhiTexture &amp;&#160;</td>
+          <td class="paramname"><em>tex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Queue zeros into every level, layer, face and slice of a texture. </p>
+<p>A new QRhiTexture holds whatever memory the driver hands out: zeros on most desktop drivers, the previous owner's pixels on lavapipe and others. Use this on a texture that can be sampled or loaded before anything writes it. The zeros are copied from a small zeroed tile of the same format, so the staging cost is bounded whatever the texture size. Returns false and queues nothing for depth and block-compressed formats. </p>
 
 </div>
 </div>

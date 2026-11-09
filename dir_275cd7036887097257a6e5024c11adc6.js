@@ -1,5 +1,6 @@
 var dir_275cd7036887097257a6e5024c11adc6 =
 [
+    [ "MappingPanel", "dir_f23face6d204829cc6314afdff729462.html", "dir_f23face6d204829cc6314afdff729462" ],
     [ "AudioInletItem.hpp", "_audio_inlet_item_8hpp_source.html", null ],
     [ "AudioOutletItem.hpp", "_audio_outlet_item_8hpp_source.html", null ],
     [ "CableInspector.hpp", "_cable_inspector_8hpp_source.html", null ],
@@ -13,5 +14,6 @@ var dir_275cd7036887097257a6e5024c11adc6 =
     [ "score-plugin-dataflow/Dataflow/PortItem.hpp", "score-plugin-dataflow_2_dataflow_2_port_item_8hpp_source.html", null ],
     [ "ValueInletItem.hpp", "_value_inlet_item_8hpp_source.html", null ],
     [ "ValueOutletItem.hpp", "_value_outlet_item_8hpp_source.html", null ],
+    [ "WaveformInlet.hpp", "_waveform_inlet_8hpp_source.html", null ],
     [ "WidgetInletFactory.hpp", "_widget_inlet_factory_8hpp_source.html", null ]
 ];

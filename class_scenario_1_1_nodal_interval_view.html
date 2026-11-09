@@ -151,7 +151,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>recenter</b> ()</td><
 <tr class="memdesc:a7df8aa45c143f3426e8e88494f5c3e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fits all the nodes in the view. <br /></td></tr>
 <tr class="separator:a7df8aa45c143f3426e8e88494f5c3e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e0803c6af33400d9166bc14ea3ff76" id="r_a67e0803c6af33400d9166bc14ea3ff76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a67e0803c6af33400d9166bc14ea3ff76">recenterRelativeToView</a> ()</td></tr>
-<tr class="memdesc:a67e0803c6af33400d9166bc14ea3ff76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places the canvas so that the model's nodal center is at the center of the visible part of this item, at the model's scale.  <br /></td></tr>
+<tr class="memdesc:a67e0803c6af33400d9166bc14ea3ff76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places the canvas so that the model's nodal center is at viewportCenter(), at the model's scale.  <br /></td></tr>
 <tr class="separator:a67e0803c6af33400d9166bc14ea3ff76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada661f33950e655a4a7f72d3e4633ead" id="r_ada661f33950e655a4a7f72d3e4633ead"><td class="memItemLeft" align="right" valign="top"><a id="ada661f33950e655a4a7f72d3e4633ead" name="ada661f33950e655a4a7f72d3e4633ead"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>panBy</b> (QPointF delta)</td></tr>
@@ -169,12 +169,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>zoomMinus</b> ()</td>
 <tr class="memitem:a3aff203628568852c37f7d7e33e634b4" id="r_a3aff203628568852c37f7d7e33e634b4"><td class="memItemLeft" align="right" valign="top"><a id="a3aff203628568852c37f7d7e33e634b4" name="a3aff203628568852c37f7d7e33e634b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>zoomTo</b> (double newZoomLevel)</td></tr>
 <tr class="separator:a3aff203628568852c37f7d7e33e634b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f120972069ac1085951533f9e04e8fc" id="r_a8f120972069ac1085951533f9e04e8fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a8f120972069ac1085951533f9e04e8fc">reveal</a> (const <a class="el" href="class_process_1_1_node_item.html">Process::NodeItem</a> &amp;item)</td></tr>
+<tr class="separator:a8f120972069ac1085951533f9e04e8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7013f3c73dbb78b9965932ce8b7bf61e" id="r_a7013f3c73dbb78b9965932ce8b7bf61e"><td class="memItemLeft" align="right" valign="top"><a id="a7013f3c73dbb78b9965932ce8b7bf61e" name="a7013f3c73dbb78b9965932ce8b7bf61e"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>enclosingRect</b> () const noexcept</td></tr>
 <tr class="separator:a7013f3c73dbb78b9965932ce8b7bf61e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a631202c7acd1434dcdb50d547e80fb21" id="r_a631202c7acd1434dcdb50d547e80fb21"><td class="memItemLeft" align="right" valign="top"><a id="a631202c7acd1434dcdb50d547e80fb21" name="a631202c7acd1434dcdb50d547e80fb21"></a>
 QGraphicsItem &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>nodeContainer</b> () const noexcept</td></tr>
 <tr class="separator:a631202c7acd1434dcdb50d547e80fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a03a292e6df9163fb54e6d4cc434ae" id="r_a89a03a292e6df9163fb54e6d4cc434ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a89a03a292e6df9163fb54e6d4cc434ae">zoom</a> () const noexcept</td></tr>
+<tr class="separator:a89a03a292e6df9163fb54e6d4cc434ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e60718020fbe551286c2e98ab02bed0" id="r_a9e60718020fbe551286c2e98ab02bed0"><td class="memItemLeft" align="right" valign="top"><a id="a9e60718020fbe551286c2e98ab02bed0" name="a9e60718020fbe551286c2e98ab02bed0"></a>
 const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> () const noexcept</td></tr>
 <tr class="separator:a9e60718020fbe551286c2e98ab02bed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +187,8 @@ const <a class="el" href="class_scenario_1_1_interval_model.html">IntervalModel<
 <tr class="memitem:a50ad82a2c60babb6e69d155d5da3a5ec" id="r_a50ad82a2c60babb6e69d155d5da3a5ec"><td class="memItemLeft" align="right" valign="top"><a id="a50ad82a2c60babb6e69d155d5da3a5ec" name="a50ad82a2c60babb6e69d155d5da3a5ec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const override</td></tr>
 <tr class="separator:a50ad82a2c60babb6e69d155d5da3a5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c33078875d280a70a8f4b7341e6ddb" id="r_a35c33078875d280a70a8f4b7341e6ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_scenario_1_1_nodal_interval_view.html#a35c33078875d280a70a8f4b7341e6ddb">openProcessPicker</a> (QPointF nodePos)</td></tr>
+<tr class="separator:a35c33078875d280a70a8f4b7341e6ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_empty_rect_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_empty_rect_item')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_empty_rect_item.html">score::EmptyRectItem</a></td></tr>
 <tr class="memitem:ab24d9e333679ca1e0f3d40141f52781a inherit pub_methods_classscore_1_1_empty_rect_item" id="r_ab24d9e333679ca1e0f3d40141f52781a"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>EmptyRectItem</b> (QGraphicsItem *parent)</td></tr>
@@ -252,6 +258,25 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumWidth</b> 
 <tr class="separator:abff67af1b8dc1eac6003755e45381591 inherit pro_attribs_classscore_1_1_resizeable_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a35c33078875d280a70a8f4b7341e6ddb" name="a35c33078875d280a70a8f4b7341e6ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35c33078875d280a70a8f4b7341e6ddb">&#9670;&#160;</a></span>openProcessPicker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::NodalIntervalView::openProcessPicker </td>
+          <td>(</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>nodePos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Asks which process to add, and adds it with its node at <code>nodePos</code> (nodeContainer() coordinates). </p>
+
+</div>
+</div>
 <a id="a0bf12ef338195a94e01b573369a813ca" name="a0bf12ef338195a94e01b573369a813ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0bf12ef338195a94e01b573369a813ca">&#9670;&#160;</a></span>pastePosition()</h2>
 
@@ -286,8 +311,53 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_minimumWidth</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Places the canvas so that the model's nodal center is at the center of the visible part of this item, at the model's scale. </p>
+<p>Places the canvas so that the model's nodal center is at viewportCenter(), at the model's scale. </p>
 <p>Called whenever the view's geometry changes; what is at the center stays there. The first time, when the model has no center yet (new or older document), the center of the nodes is taken and stored. </p>
+
+</div>
+</div>
+<a id="a8f120972069ac1085951533f9e04e8fc" name="a8f120972069ac1085951533f9e04e8fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f120972069ac1085951533f9e04e8fc">&#9670;&#160;</a></span>reveal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Scenario::NodalIntervalView::reveal </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_node_item.html">Process::NodeItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pans, and zooms out if needed, so that the node is in the visible part, and keeps it there while it is laid out; the canvas stops following all of its nodes, as after a pan by the user. </p>
+
+</div>
+</div>
+<a id="a89a03a292e6df9163fb54e6d4cc434ae" name="a89a03a292e6df9163fb54e6d4cc434ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89a03a292e6df9163fb54e6d4cc434ae">&#9670;&#160;</a></span>zoom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Scenario::NodalIntervalView::zoom </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The scale of nodeContainer(). It is set as its transform, not its scale: Qt tells the items inside about a new transform (ports keep their panels and cables on them), never about a new scale. </p>
 
 </div>
 </div>

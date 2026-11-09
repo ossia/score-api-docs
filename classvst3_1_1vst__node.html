@@ -152,8 +152,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>processDouble</b> (in
 <tr class="memitem:ab8e15c9c77d23a3170037b4fe4fdfc11 inherit pub_methods_classvst3_1_1vst__node__base" id="r_ab8e15c9c77d23a3170037b4fe4fdfc11"><td class="memItemLeft" align="right" valign="top">
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>add_control</b> (ossia::value_inlet *inlet, Steinberg::Vst::ParamID id, float v)</td></tr>
 <tr class="separator:ab8e15c9c77d23a3170037b4fe4fdfc11 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16746c89e01d5980d8f94d906851eac9 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a16746c89e01d5980d8f94d906851eac9"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control</b> (std::size_t queue_idx, float value)</td></tr>
+<tr class="memitem:a16746c89e01d5980d8f94d906851eac9 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a16746c89e01d5980d8f94d906851eac9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a16746c89e01d5980d8f94d906851eac9">set_control</a> (std::size_t queue_idx, float value)</td></tr>
 <tr class="separator:a16746c89e01d5980d8f94d906851eac9 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8da367dcb1ea32493b9b23710e8627 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a8a8da367dcb1ea32493b9b23710e8627"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setControls</b> ()</td></tr>
@@ -166,6 +165,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> (int
 <tr class="memitem:a446ce19c8721dad0452aaa82e30896f7 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a446ce19c8721dad0452aaa82e30896f7"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatchMidi</b> (ossia::midi_port &amp;port, int index, int64_t tick_start, int64_t samples)</td></tr>
 <tr class="separator:a446ce19c8721dad0452aaa82e30896f7 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a4a7f478356cf5c4dd2db9be3d4605 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a45a4a7f478356cf5c4dd2db9be3d4605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a45a4a7f478356cf5c4dd2db9be3d4605">clearInputChanges</a> () noexcept</td></tr>
+<tr class="separator:a45a4a7f478356cf5c4dd2db9be3d4605 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e2edf5c7d452070385ede7a82c9fb0 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a89e2edf5c7d452070385ede7a82c9fb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a89e2edf5c7d452070385ede7a82c9fb0">readOutputChanges</a> () noexcept</td></tr>
+<tr class="separator:a89e2edf5c7d452070385ede7a82c9fb0 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab605328ef9c9164476ef78d34a78c110 inherit pub_methods_classvst3_1_1vst__node__base" id="r_ab605328ef9c9164476ef78d34a78c110"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ab605328ef9c9164476ef78d34a78c110 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#ab605328ef9c9164476ef78d34a78c110">consumeOutputValues</a> (F &amp;&amp;f)</td></tr>
+<tr class="separator:ab605328ef9c9164476ef78d34a78c110 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f47efcd0a1755ecfd43081a23aa2a55 inherit pub_methods_classvst3_1_1vst__node__base" id="r_a5f47efcd0a1755ecfd43081a23aa2a55"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>readbackMidi</b> (int64_t tick_start)</td></tr>
 <tr class="separator:a5f47efcd0a1755ecfd43081a23aa2a55 inherit pub_methods_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,9 +227,18 @@ Steinberg::Vst::ProcessContext&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:ab604dd9431d84146f8cda4814158c037 inherit pub_attribs_classvst3_1_1vst__node__base" id="r_ab604dd9431d84146f8cda4814158c037"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="classvst3_1_1param__changes.html">param_changes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputChanges</b></td></tr>
 <tr class="separator:ab604dd9431d84146f8cda4814158c037 inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e16edd359cdb96ee21232964b179438 inherit pub_attribs_classvst3_1_1vst__node__base" id="r_a4e16edd359cdb96ee21232964b179438"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classvst3_1_1param__changes.html">param_changes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputChanges</b></td></tr>
-<tr class="separator:a4e16edd359cdb96ee21232964b179438 inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac84cea3a476961c3e2c2d064a7d0e720 inherit pub_attribs_classvst3_1_1vst__node__base" id="r_ac84cea3a476961c3e2c2d064a7d0e720"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classvst3_1_1output__param__changes.html">output_param_changes</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputChanges</b></td></tr>
+<tr class="separator:ac84cea3a476961c3e2c2d064a7d0e720 inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb041b7f02836d4036903bc3538f49d inherit pub_attribs_classvst3_1_1vst__node__base" id="r_a3cb041b7f02836d4036903bc3538f49d"><td class="memItemLeft" align="right" valign="top">
+std::unique_ptr&lt; <a class="el" href="structvst3_1_1vst__node__base_1_1output__value.html">output_value</a>[]&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputValues</b></td></tr>
+<tr class="separator:a3cb041b7f02836d4036903bc3538f49d inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4097d2a0bf38ab975b547e46a80f5e inherit pub_attribs_classvst3_1_1vst__node__base" id="r_a4b4097d2a0bf38ab975b547e46a80f5e"><td class="memItemLeft" align="right" valign="top">
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputValueCount</b> {}</td></tr>
+<tr class="separator:a4b4097d2a0bf38ab975b547e46a80f5e inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0834d6c7db86f1c3e70a4063df994ef inherit pub_attribs_classvst3_1_1vst__node__base" id="r_ac0834d6c7db86f1c3e70a4063df994ef"><td class="memItemLeft" align="right" valign="top">
+ossia::hash_map&lt; Steinberg::Vst::ParamID, std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_outputValueIndex</b></td></tr>
+<tr class="separator:ac0834d6c7db86f1c3e70a4063df994ef inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad50cd67302755bf6773a25e3f39c00f6 inherit pub_attribs_classvst3_1_1vst__node__base" id="r_ad50cd67302755bf6773a25e3f39c00f6"><td class="memItemLeft" align="right" valign="top">
 Steinberg::Vst::EventList&#160;</td><td class="memItemRight" valign="bottom"><b>m_inputEvents</b></td></tr>
 <tr class="separator:ad50cd67302755bf6773a25e3f39c00f6 inherit pub_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,8 +263,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a969bfef9d4f2a0b59810259f072f24cb inherit pro_attribs_classvst3_1_1vst__node__base" id="r_a969bfef9d4f2a0b59810259f072f24cb"><td class="memItemLeft" align="right" valign="top">
 ossia::hash_map&lt; Steinberg::Vst::ParamID, std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue_map</b></td></tr>
 <tr class="separator:a969bfef9d4f2a0b59810259f072f24cb inherit pro_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f03e7ff550d30ab27e27533654da23b inherit pro_attribs_classvst3_1_1vst__node__base" id="r_a8f03e7ff550d30ab27e27533654da23b"><td class="memItemLeft" align="right" valign="top">ossia::small_vector&lt; std::size_t, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst3_1_1vst__node__base.html#a8f03e7ff550d30ab27e27533654da23b">m_midi_only_queues</a></td></tr>
-<tr class="separator:a8f03e7ff550d30ab27e27533654da23b inherit pro_attribs_classvst3_1_1vst__node__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-vst3_2_vst3_2_node_8hpp_source.html">score-plugin-vst3/Vst3/Node.hpp</a></li>

@@ -12,6 +12,7 @@ var struct_nodes_1_1_looper_1_1view__message =
     [ "part_files", "struct_nodes_1_1_looper_1_1view__message.html#a563ad5a0f239564fcfb36891e7fd2af7", null ],
     [ "take_files", "struct_nodes_1_1_looper_1_1view__message.html#a6659a897fb2fae3aa7bf320128e13f27", null ],
     [ "answered", "struct_nodes_1_1_looper_1_1view__message.html#a55b507cbe5cea2b91e838fcac0cd2d86", null ],
+    [ "lane_id", "struct_nodes_1_1_looper_1_1view__message.html#a0b4af294ecef4d6b9c430aa5c32cb1c5", null ],
     [ "mode", "struct_nodes_1_1_looper_1_1view__message.html#ad239bac6e9cbd263ce6bd27964bc3bae", null ],
     [ "muted", "struct_nodes_1_1_looper_1_1view__message.html#a83d104317d2612a72e096f510bd066ce", null ],
     [ "part_base", "struct_nodes_1_1_looper_1_1view__message.html#a079d592586e8b8d34eb0323c0cadb78e", null ],

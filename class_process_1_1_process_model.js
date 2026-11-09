@@ -5,6 +5,7 @@ var class_process_1_1_process_model =
     [ "executionPosition", "class_process_1_1_process_model.html#a2b858f24776acabe4739af9a34c883fd", null ],
     [ "externalSourceOutOfDate", "class_process_1_1_process_model.html#aade83e078da656d15ced5f20d0fd981e", null ],
     [ "folded", "class_process_1_1_process_model.html#a63ae15dc8002c6aaa5f4be9c8cf2b712", null ],
+    [ "foldedSize", "class_process_1_1_process_model.html#a86394b441987e848c3cb0293fe9b8f29", null ],
     [ "mapExternalFiles", "class_process_1_1_process_model.html#a449468f1c8afa5aa82ef3b5e4aa20618", null ],
     [ "monitor", "class_process_1_1_process_model.html#a8773a60a66657a410ef9dd11c04a6912", null ],
     [ "position", "class_process_1_1_process_model.html#a41b20d7a3edfc3f5969a3cf177c9fd5c", null ],

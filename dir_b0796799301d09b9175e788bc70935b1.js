@@ -7,9 +7,11 @@ var dir_b0796799301d09b9175e788bc70935b1 =
     [ "cc1_main.cpp", "cc1__main_8cpp_source.html", null ],
     [ "ClangDriver.hpp", "_clang_driver_8hpp_source.html", null ],
     [ "score-plugin-jit/JitCpp/EditScript.hpp", "score-plugin-jit_2_jit_cpp_2_edit_script_8hpp_source.html", null ],
+    [ "JitBuildTree.hpp", "_jit_build_tree_8hpp_source.html", null ],
     [ "JitModel.hpp", "_jit_model_8hpp_source.html", null ],
     [ "JitOptions.hpp", "_jit_options_8hpp_source.html", null ],
     [ "JitPlatform.hpp", "_jit_platform_8hpp_source.html", null ],
+    [ "JitSearchPaths.hpp", "_jit_search_paths_8hpp_source.html", null ],
     [ "JitUtils.hpp", "_jit_utils_8hpp_source.html", null ],
     [ "MetadataGenerator.hpp", "_metadata_generator_8hpp_source.html", null ]
 ];

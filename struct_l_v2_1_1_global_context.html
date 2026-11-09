@@ -124,19 +124,29 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a74feab103dd445512c0539cbc6c251d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f7ea9ac90d62ca26191c6b54e1a073e" id="r_a5f7ea9ac90d62ca26191c6b54e1a073e"><td class="memItemLeft" align="right" valign="top"><a id="a5f7ea9ac90d62ca26191c6b54e1a073e" name="a5f7ea9ac90d62ca26191c6b54e1a073e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPlugins</b> ()</td></tr>
+<tr class="memdesc:a5f7ea9ac90d62ca26191c6b54e1a073e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LV2_PATH to the system plug-in directories, then mapHostUrids. <br /></td></tr>
 <tr class="separator:a5f7ea9ac90d62ca26191c6b54e1a073e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2073be6fc0d11e89b1b8faacffc29c3c" id="r_a2073be6fc0d11e89b1b8faacffc29c3c"><td class="memItemLeft" align="right" valign="top"><a id="a2073be6fc0d11e89b1b8faacffc29c3c" name="a2073be6fc0d11e89b1b8faacffc29c3c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mapHostUrids</b> ()</td></tr>
+<tr class="memdesc:a2073be6fc0d11e89b1b8faacffc29c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URIDs every instance is run with: atom, MIDI and time. <br /></td></tr>
+<tr class="separator:a2073be6fc0d11e89b1b8faacffc29c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897cfed6ad9c603e383b698613565fda" id="r_a897cfed6ad9c603e383b698613565fda"><td class="memItemLeft" align="right" valign="top"><a id="a897cfed6ad9c603e383b698613565fda" name="a897cfed6ad9c603e383b698613565fda"></a>
 LV2_Feature const *const *&#160;</td><td class="memItemRight" valign="bottom"><b>features</b> () const</td></tr>
 <tr class="separator:a897cfed6ad9c603e383b698613565fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32804c196cefad777cdbbb63602482d" id="r_ad32804c196cefad777cdbbb63602482d"><td class="memItemLeft" align="right" valign="top"><a id="ad32804c196cefad777cdbbb63602482d" name="ad32804c196cefad777cdbbb63602482d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSampleRate</b> (double rate) noexcept</td></tr>
+<tr class="memdesc:ad32804c196cefad777cdbbb63602482d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both, as the options plug-ins and UIs are given point at them. <br /></td></tr>
+<tr class="separator:ad32804c196cefad777cdbbb63602482d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a522dd0e4a2a4b355b6c74ed8efe20912" id="r_a522dd0e4a2a4b355b6c74ed8efe20912"><td class="memItemLeft" align="right" valign="top"><a id="a522dd0e4a2a4b355b6c74ed8efe20912" name="a522dd0e4a2a4b355b6c74ed8efe20912"></a>
 <a class="el" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>host</b></td></tr>
 <tr class="separator:a522dd0e4a2a4b355b6c74ed8efe20912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeba70127d767422b3e7cf2df82d4295" id="r_abeba70127d767422b3e7cf2df82d4295"><td class="memItemLeft" align="right" valign="top"><a id="abeba70127d767422b3e7cf2df82d4295" name="abeba70127d767422b3e7cf2df82d4295"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>sampleRate</b> = 44100</td></tr>
-<tr class="separator:abeba70127d767422b3e7cf2df82d4295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d7987e9ea4e7be08e13a0755bb1a0f" id="r_ae4d7987e9ea4e7be08e13a0755bb1a0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_global_context.html#ae4d7987e9ea4e7be08e13a0755bb1a0f">sampleRate</a> = 44100.</td></tr>
+<tr class="separator:ae4d7987e9ea4e7be08e13a0755bb1a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5e67704cb7f93d750fe95e2ded3814" id="r_aab5e67704cb7f93d750fe95e2ded3814"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_global_context.html#aab5e67704cb7f93d750fe95e2ded3814">paramSampleRate</a> = 44100.f</td></tr>
+<tr class="separator:aab5e67704cb7f93d750fe95e2ded3814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe7f07edba90c0f50d307edadaca8d89" id="r_afe7f07edba90c0f50d307edadaca8d89"><td class="memItemLeft" align="right" valign="top"><a id="afe7f07edba90c0f50d307edadaca8d89" name="afe7f07edba90c0f50d307edadaca8d89"></a>
 std::vector&lt; LV2_Options_Option &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>options</b></td></tr>
 <tr class="separator:afe7f07edba90c0f50d307edadaca8d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +247,37 @@ SuilHost *&#160;</td><td class="memItemRight" valign="bottom"><b>ui_host</b> {}<
 const LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>data_feature</b> {LV2_DATA_ACCESS_URI, &amp;ext_data}</td></tr>
 <tr class="separator:ab32107d8505e6882b15db85e85a775ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aab5e67704cb7f93d750fe95e2ded3814" name="aab5e67704cb7f93d750fe95e2ded3814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5e67704cb7f93d750fe95e2ded3814">&#9670;&#160;</a></span>paramSampleRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float LV2::GlobalContext::paramSampleRate = 44100.f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The same, for the param:sampleRate option, an atom:Float: what the UIs read it from, DPF's among others. </p>
+
+</div>
+</div>
+<a id="ae4d7987e9ea4e7be08e13a0755bb1a0f" name="ae4d7987e9ea4e7be08e13a0755bb1a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4d7987e9ea4e7be08e13a0755bb1a0f">&#9670;&#160;</a></span>sampleRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LV2::GlobalContext::sampleRate = 44100.</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The rate the audio runs at; a double, as the lv2:sampleRate option points at it as an atom:Double. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
 <li><b>Context.cpp</b></li>

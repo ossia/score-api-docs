@@ -509,6 +509,8 @@ std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_image.html">score::gf
 <tr class="memitem:a7b4e06d39f5e410307503e7e79039777" id="r_a7b4e06d39f5e410307503e7e79039777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#a7b4e06d39f5e410307503e7e79039777">makeLongInputControl</a> (const isf::long_input &amp;v, const QString &amp;name, <a class="el" href="classid__base__t.html">Id</a>&lt; <a class="el" href="class_process_1_1_port.html">Process::Port</a> &gt; id, QObject *parent)</td></tr>
 <tr class="memdesc:a7b4e06d39f5e410307503e7e79039777"><td class="mdescLeft">&#160;</td><td class="mdescRight">The control of an ISF / CSF / geometry-filter <code>long</code> input.  <br /></td></tr>
 <tr class="separator:a7b4e06d39f5e410307503e7e79039777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04500ebc0f8550ab97e5618c7167072f" id="r_a04500ebc0f8550ab97e5618c7167072f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_gfx.html#a04500ebc0f8550ab97e5618c7167072f">updateToGlsl45</a> (<a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> &amp;program)</td></tr>
+<tr class="separator:a04500ebc0f8550ab97e5618c7167072f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d3839082a4bf1ef9a0edec356869f7e" id="r_a0d3839082a4bf1ef9a0edec356869f7e"><td class="memItemLeft" align="right" valign="top"><a id="a0d3839082a4bf1ef9a0edec356869f7e" name="a0d3839082a4bf1ef9a0edec356869f7e"></a>
 <a class="el" href="namespace_gfx.html#aed7034d7fdd5f95a3ffc3a9ec63e88ef">ShaderFamily</a>&#160;</td><td class="memItemRight" valign="bottom"><b>shaderFileFamily</b> (const QString &amp;path) noexcept</td></tr>
 <tr class="separator:a0d3839082a4bf1ef9a0edec356869f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -842,6 +844,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_shaderPreviewSchedu
       </table>
 </div><div class="memdoc">
 <p>Headless factory for the Syphon publishing node, so a test harness can drive the real output without the <a class="el" href="namespace_device.html" title="Manipulation of Devices from Qt.">Device</a> / Document machinery &ndash; the same hook Gfx::PipeWire::makePipewireOutput provides. </p>
+
+</div>
+</div>
+<a id="a04500ebc0f8550ab97e5618c7167072f" name="a04500ebc0f8550ab97e5618c7167072f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04500ebc0f8550ab97e5618c7167072f">&#9670;&#160;</a></span>updateToGlsl45()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gfx::updateToGlsl45 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_gfx_1_1_shader_source.html">ShaderSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gives the varyings a generated ISF stage pair declares without a layout their locations, from 1 in declaration order, the fragment inputs taking the location of the vertex output of the same name. </p>
 
 </div>
 </div>

@@ -146,9 +146,11 @@ static std::optional&lt; <a class="el" href="struct_media_1_1_audio_info.html">A
 <tr class="memitem:a39ab4c1e7860ee829fbcec88935a269a" id="r_a39ab4c1e7860ee829fbcec88935a269a"><td class="memItemLeft" align="right" valign="top"><a id="a39ab4c1e7860ee829fbcec88935a269a" name="a39ab4c1e7860ee829fbcec88935a269a"></a>
 static std::optional&lt; std::pair&lt; <a class="el" href="struct_media_1_1_audio_info.html">AudioInfo</a>, audio_array &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>decode_synchronous</b> (const QString &amp;path, int rate)</td></tr>
 <tr class="separator:a39ab4c1e7860ee829fbcec88935a269a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ece65c0e480172b1e44f33f4e78ae2" id="r_af2ece65c0e480172b1e44f33f4e78ae2"><td class="memItemLeft" align="right" valign="top"><a id="af2ece65c0e480172b1e44f33f4e78ae2" name="af2ece65c0e480172b1e44f33f4e78ae2"></a>
-static QHash&lt; QString, <a class="el" href="struct_media_1_1_audio_info.html">AudioInfo</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>database</b> ()</td></tr>
-<tr class="separator:af2ece65c0e480172b1e44f33f4e78ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e04d4d5d970ea36d944794f83cd0ad3" id="r_a4e04d4d5d970ea36d944794f83cd0ad3"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="struct_media_1_1_audio_info.html">AudioInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_audio_decoder.html#a4e04d4d5d970ea36d944794f83cd0ad3">find_info</a> (const QString &amp;path)</td></tr>
+<tr class="separator:a4e04d4d5d970ea36d944794f83cd0ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a611ca897388c0588c3269beebffd45" id="r_a3a611ca897388c0588c3269beebffd45"><td class="memItemLeft" align="right" valign="top"><a id="a3a611ca897388c0588c3269beebffd45" name="a3a611ca897388c0588c3269beebffd45"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>store_info</b> (const QString &amp;path, const <a class="el" href="struct_media_1_1_audio_info.html">AudioInfo</a> &amp;info)</td></tr>
+<tr class="separator:a3a611ca897388c0588c3269beebffd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -169,6 +171,34 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>track</b> {-1}</td
 <tr class="memitem:aee16aabebeb2ee02a56989f8df016e9e" id="r_aee16aabebeb2ee02a56989f8df016e9e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_media_1_1_audio_decoder.html#aee16aabebeb2ee02a56989f8df016e9e">produced</a> {}</td></tr>
 <tr class="separator:aee16aabebeb2ee02a56989f8df016e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4e04d4d5d970ea36d944794f83cd0ad3" name="a4e04d4d5d970ea36d944794f83cd0ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e04d4d5d970ea36d944794f83cd0ad3">&#9670;&#160;</a></span>find_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_media_1_1_audio_info.html">AudioInfo</a> &gt; Media::AudioDecoder::find_info </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What probing a file found, by path. The threads that decode read and write it concurrently; the audio thread never does. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a804bde0e2d2eac5ba424d0f600c2806e" name="a804bde0e2d2eac5ba424d0f600c2806e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a804bde0e2d2eac5ba424d0f600c2806e">&#9670;&#160;</a></span>decoded</h2>

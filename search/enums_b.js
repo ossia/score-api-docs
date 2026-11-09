@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nodekind_0',['NodeKind',['../namespace_device.html#a894eb8afb112a7d3667fd1ac16cee5d9',1,'Device']]],
-  ['nvidiaglxvendorstate_1',['NvidiaGlxVendorState',['../namespacescore.html#a462d170c9a5df05d2e41fe25c1b61853',1,'score']]]
+  ['merge_5fmark_0',['merge_mark',['../namespace_nodes_1_1_looper.html#a553c3b289eba029c84f994071c5c874d',1,'Nodes::Looper']]],
+  ['mode_1',['mode',['../structao_1_1_regex.html#af0427d9378f66010ddad956c35d07597',1,'ao::Regex::Mode'],['../class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973',1,'Patternist::View::Mode'],['../struct_protocols_1_1_m_c_u_specific_settings.html#a14269f68b34cce032f7509382a705cd2',1,'Protocols::MCUSpecificSettings::Mode']]]
 ];

@@ -104,7 +104,6 @@ $(document).ready(function(){initNavTree('classoscr_1_1_custom_control.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classoscr_1_1_custom_control-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">oscr::CustomControl&lt; Item &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -115,15 +114,20 @@ Inheritance diagram for oscr::CustomControl&lt; Item &gt;:</div>
  <div class="center">
   <img src="classoscr_1_1_custom_control.png" usemap="#oscr::CustomControl_3C_20Item_20_3E_map" alt=""/>
   <map id="oscr::CustomControl_3C_20Item_20_3E_map" name="oscr::CustomControl_3C_20Item_20_3E_map">
-<area href="classoscr_1_1_custom_item.html" alt="oscr::CustomItem&lt; Item, Control &gt;" shape="rect" coords="0,56,171,80"/>
+<area href="classoscr_1_1_custom_item.html" alt="oscr::CustomItem&lt; Item, Control &gt;" shape="rect" coords="90,56,261,80"/>
+<area href="classscore_1_1_fills_width.html" alt="score::FillsWidth" shape="rect" coords="181,0,352,24"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Item&gt;<br />
+class oscr::CustomControl&lt; Item &gt;</div><p>A custom item editing one control through its halp::transaction: a gesture is one undo step, in the ui's edits (see <a class="el" href="classoscr_1_1_ui_edits.html" title="The edits a custom ui makes to its process&#39;s controls.">UiEdits</a>) </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05aab42095233fb8542044bb4e08fec6" id="r_a05aab42095233fb8542044bb4e08fec6"><td class="memItemLeft" align="right" valign="top"><a id="a05aab42095233fb8542044bb4e08fec6" name="a05aab42095233fb8542044bb4e08fec6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CustomControl</b> (Item item_init, <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;ctl, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
-<tr class="separator:a05aab42095233fb8542044bb4e08fec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3cd56f2468efdec23a38ab2f69067f" id="r_a4a3cd56f2468efdec23a38ab2f69067f"><td class="memTemplParams" colspan="2"><a id="a4a3cd56f2468efdec23a38ab2f69067f" name="a4a3cd56f2468efdec23a38ab2f69067f"></a>
+template&lt;typename <a class="el" href="structoscr_1_1_port.html">Port</a> &gt; </td></tr>
+<tr class="memitem:a4a3cd56f2468efdec23a38ab2f69067f"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>CustomControl</b> (Item item_init, <a class="el" href="structoscr_1_1_port.html">Port</a> &amp;ctl, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="classoscr_1_1_ui_edits.html">UiEdits</a> &amp;edits)</td></tr>
+<tr class="separator:a4a3cd56f2468efdec23a38ab2f69067f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classoscr_1_1_custom_item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classoscr_1_1_custom_item')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem&lt; Item, Control &gt;</a></td></tr>
 <tr class="memitem:ad82b097f622734d0e5af155123c1b73e inherit pub_methods_classoscr_1_1_custom_item" id="r_ad82b097f622734d0e5af155123c1b73e"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>CustomItem</b> (Item t)</td></tr>
@@ -131,15 +135,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27d49d3a55c7c85884958883045ab92f inherit pub_methods_classoscr_1_1_custom_item" id="r_a27d49d3a55c7c85884958883045ab92f"><td class="memItemLeft" align="right" valign="top">
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
 <tr class="separator:a27d49d3a55c7c85884958883045ab92f inherit pub_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff37e01a6a6f48484a6b45bd9093fa70 inherit pub_methods_classoscr_1_1_custom_item" id="r_aff37e01a6a6f48484a6b45bd9093fa70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#aff37e01a6a6f48484a6b45bd9093fa70">fillWidth</a> (qreal width) override</td></tr>
+<tr class="separator:aff37e01a6a6f48484a6b45bd9093fa70 inherit pub_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99a53a01034be7aefb70f62edd8e528 inherit pub_methods_classoscr_1_1_custom_item" id="r_ab99a53a01034be7aefb70f62edd8e528"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDocument</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc) noexcept</td></tr>
+<tr class="memdesc:ab99a53a01034be7aefb70f62edd8e528 inherit pub_methods_classoscr_1_1_custom_item"><td class="mdescLeft">&#160;</td><td class="mdescRight">The document the sound files drawn with draw_waveform() are looked up in. <br /></td></tr>
+<tr class="separator:ab99a53a01034be7aefb70f62edd8e528 inherit pub_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1797a69f0ffc8ff09b74b3d02b8060 inherit pub_methods_classoscr_1_1_custom_item" id="r_a0d1797a69f0ffc8ff09b74b3d02b8060"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:a0d1797a69f0ffc8ff09b74b3d02b8060 inherit pub_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a38c48e0f26bce8dc7f2a66568faa8b6a" id="r_a38c48e0f26bce8dc7f2a66568faa8b6a"><td class="memItemLeft" align="right" valign="top"><a id="a38c48e0f26bce8dc7f2a66568faa8b6a" name="a38c48e0f26bce8dc7f2a66568faa8b6a"></a>
-<a class="el" href="class_ongoing_command_dispatcher.html">OngoingCommandDispatcher</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cmd</b></td></tr>
-<tr class="separator:a38c48e0f26bce8dc7f2a66568faa8b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -159,6 +163,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 <tr class="memitem:a160937fef15de81dd0ef19c6ebdd1767 inherit pro_methods_classoscr_1_1_custom_item" id="r_a160937fef15de81dd0ef19c6ebdd1767"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:a160937fef15de81dd0ef19c6ebdd1767 inherit pro_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70dbf0f4813065332d987645cf9e44a0 inherit pro_methods_classoscr_1_1_custom_item" id="r_a70dbf0f4813065332d987645cf9e44a0"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a70dbf0f4813065332d987645cf9e44a0 inherit pro_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97acef889ff34209c03b2d050fedd5d6 inherit pro_methods_classoscr_1_1_custom_item" id="r_a97acef889ff34209c03b2d050fedd5d6"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMoveEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a97acef889ff34209c03b2d050fedd5d6 inherit pro_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b38c45ac5048964120049c9e226d1bb inherit pro_methods_classoscr_1_1_custom_item" id="r_a9b38c45ac5048964120049c9e226d1bb"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a9b38c45ac5048964120049c9e226d1bb inherit pro_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0d6f4a0ab325dc7e1b4b15c597b955 inherit pro_methods_classoscr_1_1_custom_item" id="r_a1b0d6f4a0ab325dc7e1b4b15c597b955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#a1b0d6f4a0ab325dc7e1b4b15c597b955">wheelEvent</a> (QGraphicsSceneWheelEvent *event) override</td></tr>
 <tr class="separator:a1b0d6f4a0ab325dc7e1b4b15c597b955 inherit pro_methods_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_methods_classoscr_1_1_custom_item"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classoscr_1_1_custom_item')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem&lt; Item, Control &gt;</a></td></tr>
@@ -169,6 +182,9 @@ static <a class="el" href="structoscr_1_1_custom_item_1_1custom__mouse__event.ht
 <tr class="memitem:a4d881832a1301c79ed85912602e74b09 inherit pro_attribs_classoscr_1_1_custom_item" id="r_a4d881832a1301c79ed85912602e74b09"><td class="memItemLeft" align="right" valign="top">
 Item&#160;</td><td class="memItemRight" valign="bottom"><b>impl</b></td></tr>
 <tr class="separator:a4d881832a1301c79ed85912602e74b09 inherit pro_attribs_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_classoscr_1_1_custom_item"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classoscr_1_1_custom_item')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem&lt; Item, Control &gt;</a></td></tr>
+<tr class="memitem:afd23e7f2e201827249238e273d77c7bd inherit pro_static_attribs_classoscr_1_1_custom_item" id="r_afd23e7f2e201827249238e273d77c7bd"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#afd23e7f2e201827249238e273d77c7bd">accepts_drops</a> = requires(Item i) { i.drop(std::vector&lt;std::string&gt;{}); }</td></tr>
+<tr class="separator:afd23e7f2e201827249238e273d77c7bd inherit pro_static_attribs_classoscr_1_1_custom_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_painter_8hpp_source.html">Painter.hpp</a></li>

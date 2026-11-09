@@ -175,21 +175,23 @@ $(document).ready(function(){initNavTree('_curve_tool_8hpp_source.html',''); ini
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keyword">const</span> <a class="code hl_class" href="class_curve_1_1_model.html">Model</a>&amp; model, <span class="keyword">const</span> <a class="code hl_class" href="class_selection.html">Selection</a>&amp; selected,</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordtype">bool</span> multi = CommonSelectionState::multiSelection())</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_class" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a>{context().selectionStack}.select(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_class" href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a>{selectionStack()}.select(</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        filterSelections(&amp;model, selected, multi));</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a>&amp; m_parentSM;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; context() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <a class="code hl_class" href="classscore_1_1_selection_stack.html">score::SelectionStack</a>&amp; selectionStack() <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
 </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
 <div class="ttc" id="aclass_curve_1_1_curve_tool_html"><div class="ttname"><a href="class_curve_1_1_curve_tool.html">Curve::CurveTool</a></div><div class="ttdef"><b>Definition</b> CurveTool.hpp:19</div></div>
 <div class="ttc" id="aclass_curve_1_1_model_html"><div class="ttname"><a href="class_curve_1_1_model.html">Curve::Model</a></div><div class="ttdef"><b>Definition</b> CurveModel.hpp:26</div></div>
 <div class="ttc" id="aclass_curve_1_1_tool_palette_html"><div class="ttname"><a href="class_curve_1_1_tool_palette.html">Curve::ToolPalette</a></div><div class="ttdef"><b>Definition</b> CurvePalette.hpp:33</div></div>
 <div class="ttc" id="aclass_graphics_scene_tool_html"><div class="ttname"><a href="class_graphics_scene_tool.html">GraphicsSceneTool</a></div><div class="ttdef"><b>Definition</b> GraphicsSceneTool.hpp:11</div></div>
 <div class="ttc" id="aclass_selection_html"><div class="ttname"><a href="class_selection.html">Selection</a></div><div class="ttdef"><b>Definition</b> Selection.hpp:12</div></div>
 <div class="ttc" id="aclassscore_1_1_selection_dispatcher_html"><div class="ttname"><a href="classscore_1_1_selection_dispatcher.html">score::SelectionDispatcher</a></div><div class="ttdoc">The SelectionDispatcher class.</div><div class="ttdef"><b>Definition</b> SelectionDispatcher.hpp:15</div></div>
+<div class="ttc" id="aclassscore_1_1_selection_stack_html"><div class="ttname"><a href="classscore_1_1_selection_stack.html">score::SelectionStack</a></div><div class="ttdoc">The SelectionStack class.</div><div class="ttdef"><b>Definition</b> SelectionStack.hpp:24</div></div>
 <div class="ttc" id="anamespace_curve_html"><div class="ttname"><a href="namespace_curve.html">Curve</a></div><div class="ttdoc">Utilities and base classes for 1D curves.</div><div class="ttdef"><b>Definition</b> FocusDispatcher.hpp:12</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->

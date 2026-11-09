@@ -143,6 +143,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>release_frame
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad22fa83792f30d06ae86f93f276d0819" id="r_ad22fa83792f30d06ae86f93f276d0819"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad22fa83792f30d06ae86f93f276d0819">seek_generation</a> {}</td></tr>
 <tr class="separator:ad22fa83792f30d06ae86f93f276d0819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8bc000a54c0d7929f14273b44a43272" id="r_ad8bc000a54c0d7929f14273b44a43272"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad8bc000a54c0d7929f14273b44a43272">seeks_done</a> {}</td></tr>
+<tr class="separator:ad8bc000a54c0d7929f14273b44a43272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_metadata')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></td></tr>
 <tr class="memitem:a2c8b785ad1b3e3f64daa0c0149bb94dc inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a2c8b785ad1b3e3f64daa0c0149bb94dc"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
@@ -266,6 +268,21 @@ Deinterlace&#160;</td><td class="memItemRight" valign="bottom"><b>deinterlace</b
       </table>
 </div><div class="memdoc">
 <p>The generation (frameGeneration) of the last seek done: a frame of an earlier one is from before it, and is not to be shown. </p>
+
+</div>
+</div>
+<a id="ad8bc000a54c0d7929f14273b44a43272" name="ad8bc000a54c0d7929f14273b44a43272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8bc000a54c0d7929f14273b44a43272">&#9670;&#160;</a></span>seeks_done</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_int Video::VideoInterface::seeks_done {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The seek requests taken and done, one each, whether they moved the stream or found the frames queued already at the time: a request replaced before it was taken is done with the one that replaced it. </p>
 
 </div>
 </div>

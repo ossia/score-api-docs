@@ -441,39 +441,43 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>  ossia::small_flat_map&lt;const Port*, QRhiTexture*, 2&gt; m_selfFeedbackPlaceholders;</div>
 <div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>  ossia::flat_set&lt;const Port*&gt; m_selfFeedbackWarned;</div>
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  <span class="keywordtype">void</span> updateSelfFeedbackTargets(QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>  <span class="keywordtype">void</span> updateSelfFeedbackGrabs(QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  <span class="keywordtype">void</span> removeSelfFeedbackTarget(<span class="keyword">const</span> Port* port);</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>  <span class="keywordtype">bool</span> ensureSelfFeedbackTarget(<span class="keyword">const</span> Port&amp; in);</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  <span class="keywordtype">void</span> rebuildOutputTargets(QRhiResourceUpdateBatch&amp; res);</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>  QSize m_lastSize{};</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span> </div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>  <span class="keywordtype">int</span> m_samples{1};</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  Quirks m_quirks;</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>  <span class="keywordtype">bool</span> m_warnedMixedDepthCompare = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>  <span class="keywordtype">bool</span> m_ready{};</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  <span class="keywordtype">bool</span> m_built{};</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>  <span class="keywordtype">bool</span> m_outputTargetsStale{};</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>  <span class="keywordtype">bool</span> m_renderSizeChanged{};</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>};</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  ossia::flat_set&lt;const QRhiTexture*&gt; m_targetsToClear;</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>  <span class="keywordtype">void</span> clearOnFirstUse(<span class="keyword">const</span> TextureRenderTarget&amp; rt);</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  <span class="keywordtype">void</span> clearNewTargets(QRhiCommandBuffer&amp; commands, QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  <span class="keywordtype">void</span> updateSelfFeedbackTargets(QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>  <span class="keywordtype">void</span> updateSelfFeedbackGrabs(QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>  <span class="keywordtype">void</span> removeSelfFeedbackTarget(<span class="keyword">const</span> Port* port);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>  <span class="keywordtype">bool</span> ensureSelfFeedbackTarget(<span class="keyword">const</span> Port&amp; in);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  <span class="keywordtype">void</span> rebuildOutputTargets(QRhiResourceUpdateBatch&amp; res);</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>  QSize m_lastSize{};</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>  <span class="keywordtype">int</span> m_minTexSize{};</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>  <span class="keywordtype">int</span> m_maxTexSize{};</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>  <span class="keywordtype">int</span> m_samples{1};</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>  Quirks m_quirks;</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>  <span class="keywordtype">bool</span> m_warnedMixedDepthCompare = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>  <span class="keywordtype">bool</span> m_requiresDepth{};</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>  <span class="keywordtype">bool</span> m_ready{};</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  <span class="keywordtype">bool</span> m_built{};</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>  <span class="keywordtype">bool</span> m_outputTargetsStale{};</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  <span class="keywordtype">bool</span> m_renderSizeChanged{};</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>};</div>
 </div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span> </div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>QRhiTexture::Format <a class="code hl_function" href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">imageTextureFormat</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span> </div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>SCORE_PLUGIN_GFX_EXPORT</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">adaptImageFormat</a>(QImage img, QRhiTexture::Format fmt);</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>}</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>QRhiTexture::Format <a class="code hl_function" href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">imageTextureFormat</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span> </div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>SCORE_PLUGIN_GFX_EXPORT</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">adaptImageFormat</a>(QImage img, QRhiTexture::Format fmt);</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_asset_table_html"><div class="ttname"><a href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a></div><div class="ttdoc">Cross-RenderList content-hash dedup for decoded asset bytes.</div><div class="ttdef"><b>Definition</b> AssetTable.hpp:71</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_gpu_resource_registry_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_gpu_resource_registry.html">score::gfx::GpuResourceRegistry</a></div><div class="ttdoc">Per-RenderList arena store for GPU-resident scene data.</div><div class="ttdef"><b>Definition</b> GpuResourceRegistry.hpp:45</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_gpu_timings_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_gpu_timings.html">score::gfx::GpuTimings</a></div><div class="ttdoc">Named-bucket GPU timing collector.</div><div class="ttdef"><b>Definition</b> GpuTiming.hpp:38</div></div>
-<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:111</div></div>
+<div class="ttc" id="aclassscore_1_1gfx_1_1_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node.html">score::gfx::Node</a></div><div class="ttdoc">Root data model for visual nodes.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:115</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_node_renderer_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_node_renderer.html">score::gfx::NodeRenderer</a></div><div class="ttdoc">Renderer for a given node.</div><div class="ttdef"><b>Definition</b> NodeRenderer.hpp:11</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_output_node_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a></div><div class="ttdoc">Base class for sink nodes (QWindow, spout, syphon, NDI output, ...)</div><div class="ttdef"><b>Definition</b> OutputNode.hpp:56</div></div>
 <div class="ttc" id="aclassscore_1_1gfx_1_1_render_list_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a></div><div class="ttdoc">List of nodes to be rendered to an output.</div><div class="ttdef"><b>Definition</b> RenderList.hpp:36</div></div>
@@ -496,8 +500,8 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="ttc" id="aclassscore_1_1gfx_1_1_vertex_fallback_pool_html"><div class="ttname"><a href="classscore_1_1gfx_1_1_vertex_fallback_pool.html">score::gfx::VertexFallbackPool</a></div><div class="ttdef"><b>Definition</b> VertexFallbackPool.hpp:43</div></div>
 <div class="ttc" id="anamespace_gfx_html"><div class="ttname"><a href="namespace_gfx.html">Gfx</a></div><div class="ttdoc">Binds the rendering pipeline to ossia processes.</div><div class="ttdef"><b>Definition</b> AssetTable.cpp:7</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a1afad5e820974bb9d839a320a2325f08"><div class="ttname"><a href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">score::gfx::imageTextureFormat</a></div><div class="ttdeci">QRhiTexture::Format imageTextureFormat(const QRhi &amp;rhi) noexcept</div><div class="ttdoc">Texture format to use for images uploaded from the CPU.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1883</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a584e58d0fb4a7139d3bbdadb7221ccc6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">score::gfx::adaptImageFormat</a></div><div class="ttdeci">QImage adaptImageFormat(QImage img, QRhiTexture::Format fmt)</div><div class="ttdoc">Put an image in the byte order imageTextureFormat() asks for.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1889</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a1afad5e820974bb9d839a320a2325f08"><div class="ttname"><a href="namespacescore_1_1gfx.html#a1afad5e820974bb9d839a320a2325f08">score::gfx::imageTextureFormat</a></div><div class="ttdeci">QRhiTexture::Format imageTextureFormat(const QRhi &amp;rhi) noexcept</div><div class="ttdoc">Texture format to use for images uploaded from the CPU.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1946</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a584e58d0fb4a7139d3bbdadb7221ccc6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a584e58d0fb4a7139d3bbdadb7221ccc6">score::gfx::adaptImageFormat</a></div><div class="ttdeci">QImage adaptImageFormat(QImage img, QRhiTexture::Format fmt)</div><div class="ttdoc">Put an image in the byte order imageTextureFormat() asks for.</div><div class="ttdef"><b>Definition</b> RenderList.cpp:1952</div></div>
 <div class="ttc" id="anamespacescore_1_1gfx_html_a96e9e5079b1732c80c9948002a5d301d"><div class="ttname"><a href="namespacescore_1_1gfx.html#a96e9e5079b1732c80c9948002a5d301d">score::gfx::TextureKind</a></div><div class="ttdeci">TextureKind</div><div class="ttdef"><b>Definition</b> TextureKind.hpp:20</div></div>
 <div class="ttc" id="anamespacescore_html"><div class="ttname"><a href="namespacescore.html">score</a></div><div class="ttdoc">Base toolkit upon which the software is built.</div><div class="ttdef"><b>Definition</b> Application.cpp:83</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
@@ -508,7 +512,7 @@ $(document).ready(function(){initNavTree('_render_list_8hpp_source.html',''); in
 <div class="ttc" id="astructscore_1_1gfx_1_1_mesh_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_mesh.html">score::gfx::Mesh</a></div><div class="ttdoc">Data model for meshes.</div><div class="ttdef"><b>Definition</b> Mesh.hpp:196</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_port_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_port.html">score::gfx::Port</a></div><div class="ttdoc">Port of a score::gfx::Node.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:215</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_render_state_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_state.html">score::gfx::RenderState</a></div><div class="ttdoc">Global state associated to a rendering context.</div><div class="ttdef"><b>Definition</b> RenderState.hpp:40</div></div>
-<div class="ttc" id="astructscore_1_1gfx_1_1_render_target_specs_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_target_specs.html">score::gfx::RenderTargetSpecs</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:67</div></div>
+<div class="ttc" id="astructscore_1_1gfx_1_1_render_target_specs_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_render_target_specs.html">score::gfx::RenderTargetSpecs</a></div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Node.hpp:71</div></div>
 <div class="ttc" id="astructscore_1_1gfx_1_1_texture_render_target_html"><div class="ttname"><a href="structscore_1_1gfx_1_1_texture_render_target.html">score::gfx::TextureRenderTarget</a></div><div class="ttdoc">Useful abstraction for storing all the data related to a render target.</div><div class="ttdef"><b>Definition</b> score-plugin-gfx/Gfx/Graph/Utils.hpp:307</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

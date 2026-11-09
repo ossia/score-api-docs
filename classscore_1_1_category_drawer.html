@@ -121,7 +121,7 @@ Inheritance diagram for score::CategoryDrawer:</div>
  </div></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A score presented as a card: thumbnail, name, author. </p>
-<p>A titled section that folds its content away. </p>
+<p>A titled section that folds its content away. Its title sits on a band that runs from the left edge of its content to the right edge of the list: a section's band is tinted and edged with the accent colour, a subsection's is fainter. Every row of the list, band or cards, is <code>Gap</code> below the previous one; a subsection steps <code>Step</code> to the right of its section, and the cards of a band start at its left edge. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc56f3d243802594dff136559a5806af" id="r_afc56f3d243802594dff136559a5806af"><td class="memItemLeft" align="right" valign="top"><a id="afc56f3d243802594dff136559a5806af" name="afc56f3d243802594dff136559a5806af"></a>
 QVBoxLayout *&#160;</td><td class="memItemRight" valign="bottom"><b>body</b> () const noexcept</td></tr>
 <tr class="separator:afc56f3d243802594dff136559a5806af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6839cf47e92956d7c8bea646904d5a8e" id="r_a6839cf47e92956d7c8bea646904d5a8e"><td class="memItemLeft" align="right" valign="top"><a id="a6839cf47e92956d7c8bea646904d5a8e" name="a6839cf47e92956d7c8bea646904d5a8e"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>header</b> () const noexcept</td></tr>
+<tr class="separator:a6839cf47e92956d7c8bea646904d5a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d5d119fcc91a5df478da48af119b9e" id="r_a92d5d119fcc91a5df478da48af119b9e"><td class="memItemLeft" align="right" valign="top"><a id="a92d5d119fcc91a5df478da48af119b9e" name="a92d5d119fcc91a5df478da48af119b9e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>expanded</b> () const noexcept</td></tr>
 <tr class="separator:a92d5d119fcc91a5df478da48af119b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,12 +146,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCount</b> (int c)<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a848105ead341c15c8c2c318a46fff5e3" id="r_a848105ead341c15c8c2c318a46fff5e3"><td class="memItemLeft" align="right" valign="top"><a id="a848105ead341c15c8c2c318a46fff5e3" name="a848105ead341c15c8c2c318a46fff5e3"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>HeaderHeight</b> = 26</td></tr>
-<tr class="separator:a848105ead341c15c8c2c318a46fff5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063b625d9cf8f995cb4bc94acb17c6e1" id="r_a063b625d9cf8f995cb4bc94acb17c6e1"><td class="memItemLeft" align="right" valign="top"><a id="a063b625d9cf8f995cb4bc94acb17c6e1" name="a063b625d9cf8f995cb4bc94acb17c6e1"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Indent</b> = 12</td></tr>
-<tr class="separator:a063b625d9cf8f995cb4bc94acb17c6e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e22bc92e6587bab2ab86e824a9f960b" id="r_a5e22bc92e6587bab2ab86e824a9f960b"><td class="memItemLeft" align="right" valign="top"><a id="a5e22bc92e6587bab2ab86e824a9f960b" name="a5e22bc92e6587bab2ab86e824a9f960b"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>BandHeight</b> = 24</td></tr>
+<tr class="separator:a5e22bc92e6587bab2ab86e824a9f960b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a8207671d55c317b1705db60835154" id="r_a01a8207671d55c317b1705db60835154"><td class="memItemLeft" align="right" valign="top"><a id="a01a8207671d55c317b1705db60835154" name="a01a8207671d55c317b1705db60835154"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Gap</b> = 8</td></tr>
+<tr class="memdesc:a01a8207671d55c317b1705db60835154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical space between two rows of the list. <br /></td></tr>
+<tr class="separator:a01a8207671d55c317b1705db60835154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa382a141f142d3be0c7ffdcf145e951a" id="r_aa382a141f142d3be0c7ffdcf145e951a"><td class="memItemLeft" align="right" valign="top"><a id="aa382a141f142d3be0c7ffdcf145e951a" name="aa382a141f142d3be0c7ffdcf145e951a"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Step</b> = 16</td></tr>
+<tr class="memdesc:aa382a141f142d3be0c7ffdcf145e951a"><td class="mdescLeft">&#160;</td><td class="mdescRight">How far a subsection steps right of its section. <br /></td></tr>
+<tr class="separator:aa382a141f142d3be0c7ffdcf145e951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>

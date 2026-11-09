@@ -155,9 +155,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>muting</b> (int k) no
 <tr class="memitem:a59efc82db775df82c00c557eee5b3fc2" id="r_a59efc82db775df82c00c557eee5b3fc2"><td class="memItemLeft" align="right" valign="top"><a id="a59efc82db775df82c00c557eee5b3fc2" name="a59efc82db775df82c00c557eee5b3fc2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removing</b> (int k) noexcept</td></tr>
 <tr class="separator:a59efc82db775df82c00c557eee5b3fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a173a32f5ef65dce8868a21bf186a90a5" id="r_a173a32f5ef65dce8868a21bf186a90a5"><td class="memItemLeft" align="right" valign="top"><a id="a173a32f5ef65dce8868a21bf186a90a5" name="a173a32f5ef65dce8868a21bf186a90a5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>erased</b> (int) noexcept</td></tr>
-<tr class="separator:a173a32f5ef65dce8868a21bf186a90a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583faf1cda3f37d79c4ee254edf7914f" id="r_a583faf1cda3f37d79c4ee254edf7914f"><td class="memItemLeft" align="right" valign="top"><a id="a583faf1cda3f37d79c4ee254edf7914f" name="a583faf1cda3f37d79c4ee254edf7914f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>kept_taken</b> (int, int) noexcept</td></tr>
+<tr class="separator:a583faf1cda3f37d79c4ee254edf7914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8a87c33948bdaaa2999e62481afe70" id="r_a3e8a87c33948bdaaa2999e62481afe70"><td class="memItemLeft" align="right" valign="top"><a id="a3e8a87c33948bdaaa2999e62481afe70" name="a3e8a87c33948bdaaa2999e62481afe70"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>kept_returned</b> (int k, int) noexcept</td></tr>
+<tr class="separator:a3e8a87c33948bdaaa2999e62481afe70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af59ec1c747d857b2b1e122020862e925" id="r_af59ec1c747d857b2b1e122020862e925"><td class="memItemLeft" align="right" valign="top"><a id="af59ec1c747d857b2b1e122020862e925" name="af59ec1c747d857b2b1e122020862e925"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>kept_forgotten</b> (int) noexcept</td></tr>
+<tr class="separator:af59ec1c747d857b2b1e122020862e925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52028efe543415345b320c1a25f264f0" id="r_a52028efe543415345b320c1a25f264f0"><td class="memItemLeft" align="right" valign="top"><a id="a52028efe543415345b320c1a25f264f0" name="a52028efe543415345b320c1a25f264f0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>aside_taken</b> (int) noexcept</td></tr>
 <tr class="separator:a52028efe543415345b320c1a25f264f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,9 +243,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>slot_used</b> (int s)
 <tr class="memitem:a40118ea64c8489f40b712b24b4018b69" id="r_a40118ea64c8489f40b712b24b4018b69"><td class="memItemLeft" align="right" valign="top"><a id="a40118ea64c8489f40b712b24b4018b69" name="a40118ea64c8489f40b712b24b4018b69"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_reserved</b> (int s) const noexcept</td></tr>
 <tr class="separator:a40118ea64c8489f40b712b24b4018b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa008a65b7b105b475016fbefba46e8" id="r_affa008a65b7b105b475016fbefba46e8"><td class="memItemLeft" align="right" valign="top"><a id="affa008a65b7b105b475016fbefba46e8" name="affa008a65b7b105b475016fbefba46e8"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>take_slot</b> () noexcept</td></tr>
-<tr class="memdesc:affa008a65b7b105b475016fbefba46e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffer no pass uses, one nothing else reads when there is one. <br /></td></tr>
+<tr class="memitem:affa008a65b7b105b475016fbefba46e8" id="r_affa008a65b7b105b475016fbefba46e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layers.html#affa008a65b7b105b475016fbefba46e8">take_slot</a> () noexcept</td></tr>
 <tr class="separator:affa008a65b7b105b475016fbefba46e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a215cf8c6eb5f1b2b798f5e150d254" id="r_a71a215cf8c6eb5f1b2b798f5e150d254"><td class="memTemplParams" colspan="2"><a id="a71a215cf8c6eb5f1b2b798f5e150d254" name="a71a215cf8c6eb5f1b2b798f5e150d254"></a>
 template&lt;typename F &gt; </td></tr>
@@ -302,6 +306,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>note_peak</b> (int sl
 <tr class="memitem:a0feca9161e011a3e9d29c59781ab4718 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a0feca9161e011a3e9d29c59781ab4718"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
 <tr class="separator:a0feca9161e011a3e9d29c59781ab4718 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e11f21f036fc273a4247199da9acd2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ab9e11f21f036fc273a4247199da9acd2"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>index_of</b> (uint32_t id) const noexcept</td></tr>
+<tr class="memdesc:ab9e11f21f036fc273a4247199da9acd2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the pass heard whose id is <code>id</code>, -1 when none is. <br /></td></tr>
+<tr class="separator:ab9e11f21f036fc273a4247199da9acd2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77295d07ae82279718d9dd3a3380d7a0 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a77295d07ae82279718d9dd3a3380d7a0"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_group</b> () noexcept</td></tr>
+<tr class="memdesc:a77295d07ae82279718d9dd3a3380d7a0 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actions until end_group() are one for undo. <br /></td></tr>
+<tr class="separator:a77295d07ae82279718d9dd3a3380d7a0 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d7b48728330ace169eff7fea29a8e2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ab4d7b48728330ace169eff7fea29a8e2"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>end_group</b> () noexcept</td></tr>
+<tr class="separator:ab4d7b48728330ace169eff7fea29a8e2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db1505b96af84686f46cf515633bdbe inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a7db1505b96af84686f46cf515633bdbe"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>undoes_action</b> () const noexcept</td></tr>
+<tr class="memdesc:a7db1505b96af84686f46cf515633bdbe inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo takes back an action: its last one is not the pass being taken in. <br /></td></tr>
+<tr class="separator:a7db1505b96af84686f46cf515633bdbe inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f736ff66a6582ab28cd8b583576414c inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a7f736ff66a6582ab28cd8b583576414c"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>can_undo</b> () const noexcept</td></tr>
+<tr class="separator:a7f736ff66a6582ab28cd8b583576414c inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad278dbe338f39092f174221c20ebad34 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ad278dbe338f39092f174221c20ebad34"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>can_redo</b> () const noexcept</td></tr>
+<tr class="separator:ad278dbe338f39092f174221c20ebad34 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66dca84514b5316fc7d5a32231db581 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_af66dca84514b5316fc7d5a32231db581"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>redoes_action</b> () const noexcept</td></tr>
+<tr class="memdesc:af66dca84514b5316fc7d5a32231db581 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redo does an action again, rather than showing a pass undo hid. <br /></td></tr>
+<tr class="separator:af66dca84514b5316fc7d5a32231db581 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0da7b19732219b6dc8d6769b426d8a inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a1a0da7b19732219b6dc8d6769b426d8a"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_nodes_1_1_looper_1_1audio__layer.html">audio_layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () noexcept</td></tr>
 <tr class="separator:a1a0da7b19732219b6dc8d6769b426d8a inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,7 +348,7 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>merged_period</b> 
 <tr class="separator:a8025f0cbc61ada092501e98355191430 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a1787a8a38d138a61846dc449bcd7441b"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_muted</b> (int k, bool m) noexcept</td></tr>
-<tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard. <br /></td></tr>
+<tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard: an action undo takes back. <br /></td></tr>
 <tr class="separator:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277ac6f805658bb8770724dbfae07d3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ae277ac6f805658bb8770724dbfae07d3"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
@@ -334,6 +363,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept
 <tr class="separator:a4fc63ea0d2fb31c5092f891c238e77d2 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72fa27747ca75e17f222f7fbac1befd inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ac72fa27747ca75e17f222f7fbac1befd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ac72fa27747ca75e17f222f7fbac1befd">drop_redo</a> () noexcept</td></tr>
 <tr class="separator:ac72fa27747ca75e17f222f7fbac1befd inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65be8e79f19cbd6b83e02a5055627eb9 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a65be8e79f19cbd6b83e02a5055627eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a65be8e79f19cbd6b83e02a5055627eb9">forget_history</a> () noexcept</td></tr>
+<tr class="separator:a65be8e79f19cbd6b83e02a5055627eb9 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbb36c09db7802429966c55197ac693 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a3cbb36c09db7802429966c55197ac693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a3cbb36c09db7802429966c55197ac693">forget_oldest_kept</a> () noexcept</td></tr>
+<tr class="separator:a3cbb36c09db7802429966c55197ac693 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430ce7923da3fe7aae60b66ea3877480 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a430ce7923da3fe7aae60b66ea3877480"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forget_aside</b> () noexcept</td></tr>
 <tr class="memdesc:a430ce7923da3fe7aae60b66ea3877480 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets the layer set aside. <br /></td></tr>
@@ -352,12 +385,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>returns_on_undo</b> ()
 <tr class="separator:a5d5138dfe1e557468882f0e74354c65b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad851d54672546f3d7b5a0b107f18037f inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ad851d54672546f3d7b5a0b107f18037f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ad851d54672546f3d7b5a0b107f18037f">put_back</a> () noexcept</td></tr>
 <tr class="separator:ad851d54672546f3d7b5a0b107f18037f inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57176c69e449032fa530b4068d305f33 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a57176c69e449032fa530b4068d305f33"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> () noexcept</td></tr>
-<tr class="separator:a57176c69e449032fa530b4068d305f33 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d74898395261a63ad60a4daceb7da3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a38d74898395261a63ad60a4daceb7da3"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> () noexcept</td></tr>
-<tr class="separator:a38d74898395261a63ad60a4daceb7da3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b91b6f998d6fc1de187478a7dee7f3e inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a8b91b6f998d6fc1de187478a7dee7f3e"><td class="memItemLeft" align="right" valign="top">step&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8b91b6f998d6fc1de187478a7dee7f3e">undo</a> () noexcept</td></tr>
+<tr class="separator:a8b91b6f998d6fc1de187478a7dee7f3e inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac193b8985824178d08530d43e2116e47 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ac193b8985824178d08530d43e2116e47"><td class="memItemLeft" align="right" valign="top">
+step&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> () noexcept</td></tr>
+<tr class="memdesc:ac193b8985824178d08530d43e2116e47 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does again what undo took back last, or shows the pass it hid. <br /></td></tr>
+<tr class="separator:ac193b8985824178d08530d43e2116e47 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f64249991d89ecc31805a71debbf34f inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a9f64249991d89ecc31805a71debbf34f"><td class="memItemLeft" align="right" valign="top">step&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a9f64249991d89ecc31805a71debbf34f">drop_top</a> () noexcept</td></tr>
+<tr class="separator:a9f64249991d89ecc31805a71debbf34f inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61f4227d415e622c11f04e3c5b91434 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_af61f4227d415e622c11f04e3c5b91434"><td class="memItemLeft" align="right" valign="top">
+step&#160;</td><td class="memItemRight" valign="bottom"><b>undo_top</b> () noexcept</td></tr>
+<tr class="memdesc:af61f4227d415e622c11f04e3c5b91434 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the newest pass: a layer it replaced comes back in its place. <br /></td></tr>
+<tr class="separator:af61f4227d415e622c11f04e3c5b91434 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e9db486d3508f2c7d51f66e05d9f73 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a92e9db486d3508f2c7d51f66e05d9f73"><td class="memItemLeft" align="right" valign="top">
+step&#160;</td><td class="memItemRight" valign="bottom"><b>redo_top</b> () noexcept</td></tr>
+<tr class="memdesc:a92e9db486d3508f2c7d51f66e05d9f73 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the pass <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#af61f4227d415e622c11f04e3c5b91434" title="Hides the newest pass: a layer it replaced comes back in its place.">undo_top()</a> hid last. <br /></td></tr>
+<tr class="separator:a92e9db486d3508f2c7d51f66e05d9f73 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f54227dd2b96ef3763f48a1275f85d0 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a8f54227dd2b96ef3763f48a1275f85d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8f54227dd2b96ef3763f48a1275f85d0">erase</a> (int k) noexcept</td></tr>
 <tr class="separator:a8f54227dd2b96ef3763f48a1275f85d0 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab933e42bc1931e6eaf9fb1b1512cd7bb inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ab933e42bc1931e6eaf9fb1b1512cd7bb"><td class="memItemLeft" align="right" valign="top">
@@ -463,6 +506,29 @@ struct <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1aside__stat
 <tr class="memitem:adefef185fdb9843ed4f27efc09d0c041 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_adefef185fdb9843ed4f27efc09d0c041"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_nodes_1_1_looper_1_1merge__log.html">merge_log</a>&#160;</td><td class="memItemRight" valign="bottom"><b>merged_passes</b></td></tr>
 <tr class="separator:adefef185fdb9843ed4f27efc09d0c041 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa564c03d18ca22c8138fd0fb1e2cd370 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_aa564c03d18ca22c8138fd0fb1e2cd370"><td class="memItemLeft" align="right" valign="top">
+std::array&lt; action, max_history &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>history</b></td></tr>
+<tr class="separator:aa564c03d18ca22c8138fd0fb1e2cd370 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8899355a4193f72fafe8446bd433bfb5 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_a8899355a4193f72fafe8446bd433bfb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8899355a4193f72fafe8446bd433bfb5">done</a></td></tr>
+<tr class="separator:a8899355a4193f72fafe8446bd433bfb5 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71e3b68a101625141dd0923d4779269 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_ab71e3b68a101625141dd0923d4779269"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>recorded</b></td></tr>
+<tr class="separator:ab71e3b68a101625141dd0923d4779269 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7755e8f2fa6c3ad69b14a83379e9f16 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_ad7755e8f2fa6c3ad69b14a83379e9f16"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>group</b></td></tr>
+<tr class="separator:ad7755e8f2fa6c3ad69b14a83379e9f16 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199742fc1413df9c1b97ab66067837b5 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_a199742fc1413df9c1b97ab66067837b5"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>grouping</b></td></tr>
+<tr class="separator:a199742fc1413df9c1b97ab66067837b5 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf5eba93aaa2002d6e48402a3677217 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_a3bf5eba93aaa2002d6e48402a3677217"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1audio__layer.html">audio_layer</a>, max_kept &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a3bf5eba93aaa2002d6e48402a3677217">kept_passes</a></td></tr>
+<tr class="separator:a3bf5eba93aaa2002d6e48402a3677217 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96539f9a0fb85b7388e480e1af31e14e inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_a96539f9a0fb85b7388e480e1af31e14e"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>kept_used</b></td></tr>
+<tr class="separator:a96539f9a0fb85b7388e480e1af31e14e inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51c66cd9ebb84587591414cfaedb704 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_ab51c66cd9ebb84587591414cfaedb704"><td class="memItemLeft" align="right" valign="top">
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_id</b></td></tr>
+<tr class="memdesc:ab51c66cd9ebb84587591414cfaedb704 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the last pass made. <br /></td></tr>
+<tr class="separator:ab51c66cd9ebb84587591414cfaedb704 inherit pub_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -488,6 +554,14 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_l
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_passes</b></td></tr>
 <tr class="memdesc:aee0663d8b037c9b83385044dfa003653 inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pass past Max layers is one more until it is merged. <br /></td></tr>
 <tr class="separator:aee0663d8b037c9b83385044dfa003653 inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2339994a76d5bbb5c718415c3e685fd inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_ac2339994a76d5bbb5c718415c3e685fd"><td class="memItemLeft" align="right" valign="top">
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_kept</b></td></tr>
+<tr class="memdesc:ac2339994a76d5bbb5c718415c3e685fd inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erased passes kept for undo, at most. <br /></td></tr>
+<tr class="separator:ac2339994a76d5bbb5c718415c3e685fd inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8e65cae1a96dd6b9ed7c506d848724 inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack" id="r_a0e8e65cae1a96dd6b9ed7c506d848724"><td class="memItemLeft" align="right" valign="top">
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_history</b></td></tr>
+<tr class="memdesc:a0e8e65cae1a96dd6b9ed7c506d848724 inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions undo goes back through, at most. <br /></td></tr>
+<tr class="separator:a0e8e65cae1a96dd6b9ed7c506d848724 inherit pub_static_attribs_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aad38b562cd00fb3290f52a4a8b6b17d3" name="aad38b562cd00fb3290f52a4a8b6b17d3"></a>
@@ -1105,6 +1179,32 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_p
 </table>
 </div><div class="memdoc">
 <p>Starts merging pass <code>at</code> and the one over it into a spare buffer, the lower one scaled by the decay of the upper one, so that the merged pass is heard as the two were with the gain of the upper one. The two passes are heard as they are until the merged one takes their place. <code>undoable</code> keeps them for undo once merged. </p>
+
+</div>
+</div>
+<a id="affa008a65b7b105b475016fbefba46e8" name="affa008a65b7b105b475016fbefba46e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affa008a65b7b105b475016fbefba46e8">&#9670;&#160;</a></span>take_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Nodes::Looper::audio_layers::take_slot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A buffer no pass uses, one nothing else reads when there is one. The buffers of erased passes kept for undo are taken back when there is none, the oldest first. </p>
 
 </div>
 </div>

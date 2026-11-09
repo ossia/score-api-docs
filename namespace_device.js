@@ -41,6 +41,7 @@ var namespace_device =
     [ "addressSettings", "namespace_device.html#a1cbad6f2f0280ff33726d76689e9059e", null ],
     [ "carries", "namespace_device.html#a875f36aa64bc4a597def54be38ed4d44", null ],
     [ "dumpTree", "namespace_device.html#a8d0d2923bc93c55003d111113918c390", null ],
+    [ "findChildNode_it", "namespace_device.html#a5fb665cc670bb03a130e575a8c0cd9e1", null ],
     [ "hasEditableValue", "namespace_device.html#a80de34992a1ca4155f4ea4a1ddae1529", null ],
     [ "loadDeviceFromXML", "namespace_device.html#ae28e7db29ec71528be7138e7ff38e166", null ],
     [ "makeFullAddressAccessorSettings", "namespace_device.html#a862ec4c7f80047fbd2e8f16717fd1a9c", null ],

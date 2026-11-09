@@ -10,8 +10,9 @@ var searchData=
   ['snapshottable_7',['Snapshottable',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a329bab4a774c16e9f031ddbe332e1d57',1,'Process']]],
   ['split_8',['Split',['../structao_1_1_regex.html#af0427d9378f66010ddad956c35d07597a721f673ca12c85d39fcb89746a2baa2e',1,'ao::Regex']]],
   ['state_9',['State',['../namespace_local_tree.html#a90bb61026261cc86d08c61032c3c0b32a46a2a41cc6e552044816a2d04634545d',1,'LocalTree']]],
-  ['stop_10',['Stop',['../namespace_local_tree.html#a90bb61026261cc86d08c61032c3c0b32a11a755d598c0c417f9a36758c3da7481',1,'LocalTree']]],
-  ['supportsstate_11',['SupportsState',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa',1,'Process']]],
-  ['supportstemporal_12',['SupportsTemporal',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96',1,'Process']]],
-  ['symlink_13',['Symlink',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75a026d95891ec4bf12f490fc5989af61c2',1,'score']]]
+  ['statuscolumn_10',['StatusColumn',['../class_dataflow_1_1_connections_widget.html#a4a9005c63df0007fb7f174f433e2a22ea07e13038471c6c8f01fb6977f025400e',1,'Dataflow::ConnectionsWidget']]],
+  ['stop_11',['Stop',['../namespace_local_tree.html#a90bb61026261cc86d08c61032c3c0b32a11a755d598c0c417f9a36758c3da7481',1,'LocalTree']]],
+  ['supportsstate_12',['SupportsState',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a116a8cc93738260c508ea2e898df19fa',1,'Process']]],
+  ['supportstemporal_13',['SupportsTemporal',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a41b45c4f979aae481267ddb77cd85e96',1,'Process']]],
+  ['symlink_14',['Symlink',['../namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75a026d95891ec4bf12f490fc5989af61c2',1,'score']]]
 ];

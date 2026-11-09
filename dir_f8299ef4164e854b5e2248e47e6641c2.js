@@ -31,6 +31,7 @@ var dir_f8299ef4164e854b5e2248e47e6641c2 =
     [ "MidiToArray.hpp", "_midi_to_array_8hpp_source.html", null ],
     [ "MidiUtil.hpp", "_midi_util_8hpp_source.html", null ],
     [ "NoiseFilter.hpp", "_noise_filter_8hpp_source.html", null ],
+    [ "NoteValueGrid.hpp", "_note_value_grid_8hpp_source.html", null ],
     [ "PitchToValue.hpp", "_pitch_to_value_8hpp_source.html", null ],
     [ "Quantifier.hpp", "_quantifier_8hpp_source.html", null ],
     [ "Quantifier_v2.hpp", "_quantifier__v2_8hpp_source.html", null ],

@@ -1,11 +1,14 @@
 var struct_nodes_1_1_looper_1_1looper__view =
 [
     [ "box", "struct_nodes_1_1_looper_1_1looper__view_1_1box.html", null ],
+    [ "pending_action", "struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html", "struct_nodes_1_1_looper_1_1looper__view_1_1pending__action" ],
     [ "clock", "struct_nodes_1_1_looper_1_1looper__view.html#a14c576b1b9d19d2ec62c181ac192af7e", null ],
     [ "erase_box", "struct_nodes_1_1_looper_1_1looper__view.html#a27d6221c744f099d0c624f97e897d223", null ],
     [ "erase_lane_at", "struct_nodes_1_1_looper_1_1looper__view.html#a2798ebbd23e952a2ffed67257394210f", null ],
     [ "lane_at", "struct_nodes_1_1_looper_1_1looper__view.html#a994286412023a5ec69d989152849cf71", null ],
+    [ "lane_erasing", "struct_nodes_1_1_looper_1_1looper__view.html#af8f7a27e58903868d78a6a232f4f0561", null ],
     [ "lane_files", "struct_nodes_1_1_looper_1_1looper__view.html#ad6e4837870b7f5a9be09b77023ba06cd", null ],
+    [ "lane_muted", "struct_nodes_1_1_looper_1_1looper__view.html#a1e800cec0c8041d2eb69400e075de9d1", null ],
     [ "lane_passes", "struct_nodes_1_1_looper_1_1looper__view.html#a1db459fe1dc0b206776c5826844f7268", null ],
     [ "mute_box", "struct_nodes_1_1_looper_1_1looper__view.html#aad180bb999bcd421f4b9a8702547a9c6", null ],
     [ "mute_lane_at", "struct_nodes_1_1_looper_1_1looper__view.html#aa40e0a423a52c37fa158b757b43dd1de", null ],
@@ -20,6 +23,7 @@ var struct_nodes_1_1_looper_1_1looper__view =
     [ "selected_lane", "struct_nodes_1_1_looper_1_1looper__view.html#ab9376fec75f08a0a2b2de9dc9e7b0481", null ],
     [ "send", "struct_nodes_1_1_looper_1_1looper__view.html#ad5d6427f5521fd0fa55f919e4870f483", null ],
     [ "send_files", "struct_nodes_1_1_looper_1_1looper__view.html#ac1569347ef3cd9b2c977f5759be5bfee", null ],
+    [ "settle_pending", "struct_nodes_1_1_looper_1_1looper__view.html#a705b4b54c645a3cabea70877761a5bc6", null ],
     [ "speed_name", "struct_nodes_1_1_looper_1_1looper__view.html#adcb26f697798d33d3a98eb5629df516b", null ],
     [ "take_has_export", "struct_nodes_1_1_looper_1_1looper__view.html#a1999a1d4957c07fc5801af6757cd3831", null ],
     [ "take_has_layers", "struct_nodes_1_1_looper_1_1looper__view.html#a551be84d71c02de8ff7a3285f7e4adcc", null ],

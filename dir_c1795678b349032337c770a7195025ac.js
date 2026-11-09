@@ -26,5 +26,6 @@ var dir_c1795678b349032337c770a7195025ac =
     [ "PrettyPortName.hpp", "_pretty_port_name_8hpp_source.html", null ],
     [ "StringListEditor.hpp", "_string_list_editor_8hpp_source.html", null ],
     [ "TimeSignature.hpp", "_time_signature_8hpp_source.html", null ],
+    [ "Wavetable.hpp", "_wavetable_8hpp_source.html", null ],
     [ "WidgetInlets.hpp", "_widget_inlets_8hpp_source.html", null ]
 ];

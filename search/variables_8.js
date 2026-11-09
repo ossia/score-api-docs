@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../struct_protocols_1_1_c_a_n_1_1_message.html#a81a3699e927c095f4c0e16e7f11b2cd8',1,'Protocols::CAN::Message::id'],['../structscore_1_1_online_example.html#aa7c961569e434a70096c4afc0af0ae49',1,'score::OnlineExample::id']]],
+  ['id_0',['id',['../struct_nodes_1_1_looper_1_1audio__layer.html#a9d5ae7eb1c862c085bf94bcd89478a81',1,'Nodes::Looper::audio_layer::id'],['../struct_nodes_1_1_looper_1_1tagged__pass.html#a304688e795746cdd3122502ae9328bef',1,'Nodes::Looper::tagged_pass::id'],['../struct_nodes_1_1_looper_1_1pass__stack_1_1action.html#a7caab1760550dd8d494798ba3276be88',1,'Nodes::Looper::pass_stack::action::id'],['../struct_protocols_1_1_c_a_n_1_1_message.html#a81a3699e927c095f4c0e16e7f11b2cd8',1,'Protocols::CAN::Message::id'],['../structscore_1_1_online_example.html#aa7c961569e434a70096c4afc0af0ae49',1,'score::OnlineExample::id']]],
   ['identity_1',['identity',['../struct_protocols_1_1_m_i_d_i_devices_1_1_device_entry.html#a682054edac4221de03643f4c144b7a34',1,'Protocols::MIDIDevices::DeviceEntry']]],
   ['immediate_2',['immediate',['../class_patternist_1_1pattern__node.html#a6a0e5d25ef19a6303deb0a1219c56935',1,'Patternist::pattern_node']]],
   ['impulse_3',['impulse',['../struct_nodes_1_1_looper_1_1value__event.html#a151c55a29d6b8e99d2e89344f53a01ac',1,'Nodes::Looper::value_event']]],
@@ -8,17 +8,18 @@ var searchData=
   ['in_5fuse_5',['in_use',['../struct_nodes_1_1_looper_1_1midi__export.html#a6a7ef553fd6194f59870a563fcc6511f',1,'Nodes::Looper::midi_export::in_use'],['../struct_nodes_1_1_looper_1_1export__buffer.html#ae2c8463fe5a02273aece346141412865',1,'Nodes::Looper::export_buffer::in_use'],['../struct_nodes_1_1_looper_1_1value__export.html#ab128764913739a04491cd73b683f87db',1,'Nodes::Looper::value_export::in_use']]],
   ['indent_6',['indent',['../struct_state_1_1_pretty_print_options.html#ab3ec74072bebf3c06be70badbe71ecc5',1,'State::PrettyPrintOptions']]],
   ['independentsignalmessage_7',['independentSignalMessage',['../namespace_protocols_1_1_c_a_n.html#a8f4f6a99687eda30a7a2304cf572850f',1,'Protocols::CAN']]],
-  ['index_8',['index',['../struct_patternist_1_1_step_slot.html#a2502c70adda826a6f4ad1a9f72a5c080',1,'Patternist::StepSlot::index'],['../structscore_1_1gfx_1_1_shown_texture.html#aaefa7d241e5f6ad68f247324400d0256',1,'score::gfx::ShownTexture::index']]],
+  ['index_8',['index',['../structscore_1_1gfx_1_1_shown_texture.html#aaefa7d241e5f6ad68f247324400d0256',1,'score::gfx::ShownTexture::index'],['../struct_patternist_1_1_step_slot.html#a2502c70adda826a6f4ad1a9f72a5c080',1,'Patternist::StepSlot::index']]],
   ['init_9',['init',['../classscore_1_1_q_graphics_grid_chooser.html#a3bd2ae3c77537de78ca46eb9014d689f',1,'score::QGraphicsGridChooser']]],
   ['inlets_10',['inlets',['../structscore_1_1gfx_1_1port__counts.html#ad549b42761d50dc771e77cc59eeae18a',1,'score::gfx::port_counts']]],
-  ['input_11',['input',['../classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146',1,'score::gfx::Node::input'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_protocol_settings.html#af07fa729a5006b80b681a9afeee87a11',1,'Protocols::MIDIDevices::ProtocolSettings::input']]],
-  ['input_5fhold_5fseconds_12',['input_hold_seconds',['../struct_nodes_1_1_value_looper_1_1_node.html#a47695d2653b71a47119927c65f02a1b4',1,'Nodes::ValueLooper::Node']]],
-  ['instancemultiplier_13',['instanceMultiplier',['../structscore_1_1gfx_1_1_mesh_buffers.html#aba512cb0e66465623f7b66542198d557',1,'score::gfx::MeshBuffers']]],
-  ['interlacing_14',['interlacing',['../struct_video_1_1_image_format.html#aa77225782c6887a30b33d35e3f0f087e',1,'Video::ImageFormat']]],
-  ['interval_15',['interval',['../struct_ui_1_1_buffer_view_1_1_buffer_monitor.html#a47e9f056047254b63a01c0532ebb8e91',1,'Ui::BufferView::BufferMonitor']]],
-  ['inverted_16',['inverted',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a380f68dcdd5cf627efac3028fc090060',1,'Protocols::MIDIDevices::Value']]],
-  ['is_5farray_17',['is_array',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a0650e8f9aeda40c8aeb6daf739084837',1,'score::gfx::GraphicsStorageImage']]],
-  ['ismultiplexed_18',['isMultiplexed',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a6208ae5ac0176014912ff935addd5189',1,'Protocols::CAN::Signal']]],
-  ['ismultiplexer_19',['isMultiplexer',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a758d563921d5da60c4ce0647e67d4bbc',1,'Protocols::CAN::Signal']]],
-  ['itemfont_20',['itemFont',['../structscore_1_1_about_widget_1_1_style.html#ad5ede9968f345c7a3e89289991101b0c',1,'score::AboutWidget::Style']]]
+  ['inletspacing_11',['inletSpacing',['../namespace_ui_1_1_monitor.html#a615738c42173bd2eb26a3a687b79e039',1,'Ui::Monitor']]],
+  ['input_12',['input',['../classscore_1_1gfx_1_1_node.html#a32f530890af66e0ecee6c66cdf430146',1,'score::gfx::Node::input'],['../struct_protocols_1_1_m_i_d_i_devices_1_1_protocol_settings.html#af07fa729a5006b80b681a9afeee87a11',1,'Protocols::MIDIDevices::ProtocolSettings::input']]],
+  ['input_5fhold_5fseconds_13',['input_hold_seconds',['../struct_nodes_1_1_value_looper_1_1_node.html#a47695d2653b71a47119927c65f02a1b4',1,'Nodes::ValueLooper::Node']]],
+  ['instancemultiplier_14',['instanceMultiplier',['../structscore_1_1gfx_1_1_mesh_buffers.html#aba512cb0e66465623f7b66542198d557',1,'score::gfx::MeshBuffers']]],
+  ['interlacing_15',['interlacing',['../struct_video_1_1_image_format.html#aa77225782c6887a30b33d35e3f0f087e',1,'Video::ImageFormat']]],
+  ['interval_16',['interval',['../struct_ui_1_1_buffer_view_1_1_buffer_monitor.html#a47e9f056047254b63a01c0532ebb8e91',1,'Ui::BufferView::BufferMonitor']]],
+  ['inverted_17',['inverted',['../struct_protocols_1_1_m_i_d_i_devices_1_1_value.html#a380f68dcdd5cf627efac3028fc090060',1,'Protocols::MIDIDevices::Value']]],
+  ['is_5farray_18',['is_array',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a0650e8f9aeda40c8aeb6daf739084837',1,'score::gfx::GraphicsStorageImage']]],
+  ['ismultiplexed_19',['isMultiplexed',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a6208ae5ac0176014912ff935addd5189',1,'Protocols::CAN::Signal']]],
+  ['ismultiplexer_20',['isMultiplexer',['../struct_protocols_1_1_c_a_n_1_1_signal.html#a758d563921d5da60c4ce0647e67d4bbc',1,'Protocols::CAN::Signal']]],
+  ['itemfont_21',['itemFont',['../structscore_1_1_about_widget_1_1_style.html#ad5ede9968f345c7a3e89289991101b0c',1,'score::AboutWidget::Style']]]
 ];

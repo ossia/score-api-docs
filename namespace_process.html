@@ -153,6 +153,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_address_line_edit_base.html">AddressLineEditBase</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="class_process_1_1_address_line_edit.html">AddressLineEdit</a> class.  <a href="class_process_1_1_address_line_edit_base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_address_status.html">AddressStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the cables of a port keep its address from taking effect.  <a href="struct_process_1_1_address_status.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_application_plugin.html">ApplicationPlugin</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_audio_inlet.html">AudioInlet</a></td></tr>
@@ -476,6 +479,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_value_outlet.html">ValueOutlet</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -541,6 +546,19 @@ Enumerations</h2></td></tr>
 , <b>ReloadValue</b> = (1 &lt;&lt; 0)
  }</td></tr>
 <tr class="separator:a9f53a9d13badc300e89917bc97878f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51d6b03eb7188e0d862815b8b4fad7c" id="r_ab51d6b03eb7188e0d862815b8b4fad7c"><td class="memItemLeft" align="right" valign="top"><a id="ab51d6b03eb7188e0d862815b8b4fad7c" name="ab51d6b03eb7188e0d862815b8b4fad7c"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>WaveformShape</b> { <br />
+&#160;&#160;<b>Sine</b>
+, <b>Triangle</b>
+, <b>SawUp</b>
+, <b>SawDown</b>
+, <br />
+&#160;&#160;<b>Square</b>
+, <b>Pulse25</b>
+, <b>Pulse12</b>
+, <b>Noise</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab51d6b03eb7188e0d862815b8b4fad7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1141259fffab90432f93030dbe6193" id="r_a9c1141259fffab90432f93030dbe6193"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193">FileUsage</a> { <a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193a324118a6721dd6b8a9b9f4e327df2bf5">Input</a>
 , <a class="el" href="namespace_process.html#a9c1141259fffab90432f93030dbe6193a29c2c02a361c9d7028472e5d92cd4a54">Output</a>
  }</td></tr>
@@ -698,6 +716,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>copyProcess</b> (<a c
 <tr class="memitem:aca9caf5b23b73ab96c7ccdd34bad0878" id="r_aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memItemLeft" align="right" valign="top"><a id="aca9caf5b23b73ab96c7ccdd34bad0878" name="aca9caf5b23b73ab96c7ccdd34bad0878"></a>
 const <a class="el" href="class_string_key.html">CommandGroupKey</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>CommandFactoryName</b> ()</td></tr>
 <tr class="separator:aca9caf5b23b73ab96c7ccdd34bad0878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3166358de9b28ee8f4d90470efbeae" id="r_a1f3166358de9b28ee8f4d90470efbeae"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a1f3166358de9b28ee8f4d90470efbeae">learnAddress</a> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
+<tr class="separator:a1f3166358de9b28ee8f4d90470efbeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e0534a72677a078aefad73eecc64e22" id="r_a6e0534a72677a078aefad73eecc64e22"><td class="memItemLeft" align="right" valign="top"><a id="a6e0534a72677a078aefad73eecc64e22" name="a6e0534a72677a078aefad73eecc64e22"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;lhs, const <a class="el" href="struct_process_1_1_cable_data.html">CableData</a> &amp;rhs)</td></tr>
 <tr class="separator:a6e0534a72677a078aefad73eecc64e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -716,6 +736,8 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a535ec17ce025a333d025095707fb450f"><td class="memTemplItemLeft" align="right" valign="top">Dataflow::SerializedCables&#160;</td><td class="memTemplItemRight" valign="bottom"><b>cablesToCopy</b> (const std::vector&lt; T * &gt; &amp;array, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a535ec17ce025a333d025095707fb450f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e62e347c8ec4a4395abfd0feca5d8d6" id="r_a7e62e347c8ec4a4395abfd0feca5d8d6"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a7e62e347c8ec4a4395abfd0feca5d8d6">displayName</a> (const <a class="el" href="class_process_1_1_port.html">Port</a> &amp;port)</td></tr>
+<tr class="separator:a7e62e347c8ec4a4395abfd0feca5d8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a203e68b2fafa3a09eb57fe648f497a7b" id="r_a203e68b2fafa3a09eb57fe648f497a7b"><td class="memItemLeft" align="right" valign="top"><a id="a203e68b2fafa3a09eb57fe648f497a7b" name="a203e68b2fafa3a09eb57fe648f497a7b"></a>
 std::unique_ptr&lt; <a class="el" href="class_process_1_1_inlet.html">Inlet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>load_inlet</b> (<a class="el" href="class_data_stream_writer.html">DataStreamWriter</a> &amp;wr, QObject *parent)</td></tr>
 <tr class="separator:a203e68b2fafa3a09eb57fe648f497a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -816,6 +838,60 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isControlPort</b> (co
 <tr class="separator:afb0b96266a82507dd33e7675aa20c9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b6351e99744b8679bb6f2da3921bc2c" id="r_a6b6351e99744b8679bb6f2da3921bc2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_control_page.html">ControlPage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a6b6351e99744b8679bb6f2da3921bc2c">nodeControlPage</a> (int controlCount, int requestedPage, int gridOffset) noexcept</td></tr>
 <tr class="separator:a6b6351e99744b8679bb6f2da3921bc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd084a08bdeed270b092add95a940aa1" id="r_afd084a08bdeed270b092add95a940aa1"><td class="memItemLeft" align="right" valign="top">std::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#afd084a08bdeed270b092add95a940aa1">waveformNumber</a> (const ossia::value &amp;value) noexcept</td></tr>
+<tr class="separator:afd084a08bdeed270b092add95a940aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac196690d01fd9404bc8680f9a0985f3b" id="r_ac196690d01fd9404bc8680f9a0985f3b"><td class="memItemLeft" align="right" valign="top"><a id="ac196690d01fd9404bc8680f9a0985f3b" name="ac196690d01fd9404bc8680f9a0985f3b"></a>
+std::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>waveformSample</b> (const ossia::value &amp;value) noexcept</td></tr>
+<tr class="memdesc:ac196690d01fd9404bc8680f9a0985f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A sample of a waveform value: a waveformNumber clamped to [-1, 1]. <br /></td></tr>
+<tr class="separator:ac196690d01fd9404bc8680f9a0985f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015c3181e335e2576cac1d8baccd3e9b" id="r_a015c3181e335e2576cac1d8baccd3e9b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a015c3181e335e2576cac1d8baccd3e9b">wavetableFromValue</a> (const ossia::value &amp;value)</td></tr>
+<tr class="separator:a015c3181e335e2576cac1d8baccd3e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66410f959cba3f24ae1be768eb32a4b" id="r_ac66410f959cba3f24ae1be768eb32a4b"><td class="memItemLeft" align="right" valign="top"><a id="ac66410f959cba3f24ae1be768eb32a4b" name="ac66410f959cba3f24ae1be768eb32a4b"></a>
+ossia::value&#160;</td><td class="memItemRight" valign="bottom"><b>wavetableToValue</b> (const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;table)</td></tr>
+<tr class="separator:ac66410f959cba3f24ae1be768eb32a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2603c9dac760c3cdcc9fa6965ac0d4de" id="r_a2603c9dac760c3cdcc9fa6965ac0d4de"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::span&lt; const ossia::value &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a2603c9dac760c3cdcc9fa6965ac0d4de">waveformFrame</a> (const ossia::value &amp;value, std::size_t frame=0) noexcept</td></tr>
+<tr class="separator:a2603c9dac760c3cdcc9fa6965ac0d4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23823b1613165652e436ede5da6bd340" id="r_a23823b1613165652e436ede5da6bd340"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a23823b1613165652e436ede5da6bd340">waveformFromValue</a> (const ossia::value &amp;value)</td></tr>
+<tr class="separator:a23823b1613165652e436ede5da6bd340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df4dd339fa735e895330292f1a419cb" id="r_a3df4dd339fa735e895330292f1a419cb"><td class="memItemLeft" align="right" valign="top"><a id="a3df4dd339fa735e895330292f1a419cb" name="a3df4dd339fa735e895330292f1a419cb"></a>
+<a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>makeTriangleWavetable</b> (std::size_t frameSize=32)</td></tr>
+<tr class="separator:a3df4dd339fa735e895330292f1a419cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4da850907eeade8bd8aaff1c67f099a" id="r_ac4da850907eeade8bd8aaff1c67f099a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#ac4da850907eeade8bd8aaff1c67f099a">quantizeSample</a> (double value, int levels) noexcept</td></tr>
+<tr class="separator:ac4da850907eeade8bd8aaff1c67f099a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd936e59f68078807508cd5cc763663" id="r_adfd936e59f68078807508cd5cc763663"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#adfd936e59f68078807508cd5cc763663">sampleLevel</a> (float value, int levels) noexcept</td></tr>
+<tr class="separator:adfd936e59f68078807508cd5cc763663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29be834a37f815a13cd882d52082811a" id="r_a29be834a37f815a13cd882d52082811a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a29be834a37f815a13cd882d52082811a">generateWaveform</a> (std::span&lt; float &gt; frame, WaveformShape shape, int levels, std::uint32_t seed=1) noexcept</td></tr>
+<tr class="separator:a29be834a37f815a13cd882d52082811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961f0c160caac46ba0c3911b855dbd97" id="r_a961f0c160caac46ba0c3911b855dbd97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a961f0c160caac46ba0c3911b855dbd97">normalizeWaveform</a> (std::span&lt; float &gt; frame, int levels) noexcept</td></tr>
+<tr class="separator:a961f0c160caac46ba0c3911b855dbd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe42e6860d1ac52ad28e1902acb942a3" id="r_abe42e6860d1ac52ad28e1902acb942a3"><td class="memItemLeft" align="right" valign="top"><a id="abe42e6860d1ac52ad28e1902acb942a3" name="abe42e6860d1ac52ad28e1902acb942a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>invertWaveform</b> (std::span&lt; float &gt; frame, int levels) noexcept</td></tr>
+<tr class="separator:abe42e6860d1ac52ad28e1902acb942a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae54f30d7b7c73a03e26e040019bafc69" id="r_ae54f30d7b7c73a03e26e040019bafc69"><td class="memItemLeft" align="right" valign="top"><a id="ae54f30d7b7c73a03e26e040019bafc69" name="ae54f30d7b7c73a03e26e040019bafc69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reverseWaveform</b> (std::span&lt; float &gt; frame) noexcept</td></tr>
+<tr class="separator:ae54f30d7b7c73a03e26e040019bafc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba9f8870c754c4ade8b232c61246632" id="r_a1ba9f8870c754c4ade8b232c61246632"><td class="memItemLeft" align="right" valign="top"><a id="a1ba9f8870c754c4ade8b232c61246632" name="a1ba9f8870c754c4ade8b232c61246632"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>rotateWaveform</b> (std::span&lt; float &gt; frame, bool left) noexcept</td></tr>
+<tr class="memdesc:a1ba9f8870c754c4ade8b232c61246632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves every sample one position earlier (left) or later, wrapping. <br /></td></tr>
+<tr class="separator:a1ba9f8870c754c4ade8b232c61246632"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c6ceb47faaaebed0a2838a326c7319" id="r_a57c6ceb47faaaebed0a2838a326c7319"><td class="memItemLeft" align="right" valign="top"><a id="a57c6ceb47faaaebed0a2838a326c7319" name="a57c6ceb47faaaebed0a2838a326c7319"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>smoothWaveform</b> (std::span&lt; float &gt; frame, int levels)</td></tr>
+<tr class="memdesc:a57c6ceb47faaaebed0a2838a326c7319"><td class="mdescLeft">&#160;</td><td class="mdescRight">One pass of a periodic [1 2 1] / 4 low-pass. <br /></td></tr>
+<tr class="separator:a57c6ceb47faaaebed0a2838a326c7319"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6c4e932380b8d551536b1ad6985e98" id="r_a0d6c4e932380b8d551536b1ad6985e98"><td class="memItemLeft" align="right" valign="top"><a id="a0d6c4e932380b8d551536b1ad6985e98" name="a0d6c4e932380b8d551536b1ad6985e98"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearWaveform</b> (std::span&lt; float &gt; frame, int levels) noexcept</td></tr>
+<tr class="memdesc:a0d6c4e932380b8d551536b1ad6985e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets every sample to the level nearest to zero. <br /></td></tr>
+<tr class="separator:a0d6c4e932380b8d551536b1ad6985e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84d31be0b552817f267081ebe740476" id="r_ad84d31be0b552817f267081ebe740476"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#ad84d31be0b552817f267081ebe740476">sampleWavetable</a> (const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;table, std::size_t frame, double phase) noexcept</td></tr>
+<tr class="separator:ad84d31be0b552817f267081ebe740476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021186fbdd2d12c77b7e8629a0ca0aae" id="r_a021186fbdd2d12c77b7e8629a0ca0aae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_process.html#a021186fbdd2d12c77b7e8629a0ca0aae">resampleWavetable</a> (const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;source, std::size_t size)</td></tr>
+<tr class="separator:a021186fbdd2d12c77b7e8629a0ca0aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5d0a0a270438e251a5a091714ae510" id="r_afe5d0a0a270438e251a5a091714ae510"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:afe5d0a0a270438e251a5a091714ae510"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_process.html#afe5d0a0a270438e251a5a091714ae510">prepareWaveform</a> (const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;table, std::array&lt; T, N &gt; &amp;destination, double low, double high, std::size_t frame=0) noexcept</td></tr>
+<tr class="separator:afe5d0a0a270438e251a5a091714ae510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d59116900b974c145797caaf881764d" id="r_a5d59116900b974c145797caaf881764d"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a5d59116900b974c145797caaf881764d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_process.html#a5d59116900b974c145797caaf881764d">prepareWaveform</a> (const ossia::value &amp;value, std::array&lt; T, N &gt; &amp;destination, double low, double high, std::size_t frame=0) noexcept</td></tr>
+<tr class="separator:a5d59116900b974c145797caaf881764d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa250ca8b2edc16360bcf1523ebe212b4" id="r_aa250ca8b2edc16360bcf1523ebe212b4"><td class="memItemLeft" align="right" valign="top"><a id="aa250ca8b2edc16360bcf1523ebe212b4" name="aa250ca8b2edc16360bcf1523ebe212b4"></a>
 std::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>readEntryIndex</b> (const ossia::value &amp;v, int n) noexcept</td></tr>
 <tr class="separator:aa250ca8b2edc16360bcf1523ebe212b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1575,6 +1651,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a7e62e347c8ec4a4395abfd0feca5d8d6" name="a7e62e347c8ec4a4395abfd0feca5d8d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e62e347c8ec4a4395abfd0feca5d8d6">&#9670;&#160;</a></span>displayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Process::displayName </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>How the port is named wherever it is shown: visualName(), or what kind of port it is when it has no name at all (ports of some older documents) </p>
+
+</div>
+</div>
 <a id="a535ae95f6170e17fce20ef59f292c707" name="a535ae95f6170e17fce20ef59f292c707"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a535ae95f6170e17fce20ef59f292c707">&#9670;&#160;</a></span>displayNameForPort()</h2>
 
@@ -1643,6 +1738,55 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a29be834a37f815a13cd882d52082811a" name="a29be834a37f815a13cd882d52082811a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29be834a37f815a13cd882d52082811a">&#9670;&#160;</a></span>generateWaveform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::generateWaveform </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WaveformShape&#160;</td>
+          <td class="paramname"><em>shape</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::uint32_t&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fills one frame with a periodic shape, quantized to <code>levels</code>. Noise is a deterministic function of <code>seed</code>. </p>
+
+</div>
+</div>
 <a id="afb0b96266a82507dd33e7675aa20c9ff" name="afb0b96266a82507dd33e7675aa20c9ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb0b96266a82507dd33e7675aa20c9ff">&#9670;&#160;</a></span>isVisibleWhenFolded()</h2>
 
@@ -1667,6 +1811,35 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>True for the ports a folded node still has to show. A folded node displays the routing only: everything that is not a control, plus the controls that take part in the patch - those with a cable or an exposed address - and those the process declares visibleWhenFolded. </p>
+
+</div>
+</div>
+<a id="a1f3166358de9b28ee8f4d90470efbeae" name="a1f3166358de9b28ee8f4d90470efbeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f3166358de9b28ee8f4d90470efbeae">&#9670;&#160;</a></span>learnAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_device_1_1_full_address_accessor_settings.html">Device::FullAddressAccessorSettings</a> &gt; Process::learnAddress </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shows the addresses of the document's devices as their values change, and returns the one the user picks; nothing if they cancel. </p>
 
 </div>
 </div>
@@ -1972,6 +2145,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a961f0c160caac46ba0c3911b855dbd97" name="a961f0c160caac46ba0c3911b855dbd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a961f0c160caac46ba0c3911b855dbd97">&#9670;&#160;</a></span>normalizeWaveform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Process::normalizeWaveform </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Scales the frame around zero so that its largest magnitude reaches 1. A silent frame is left as it is. </p>
+
+</div>
+</div>
 <a id="aab76f50b1565a0629c69b905653a702e" name="aab76f50b1565a0629c69b905653a702e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab76f50b1565a0629c69b905653a702e">&#9670;&#160;</a></span>overlayScriptStyle()</h2>
 
@@ -1987,6 +2197,120 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The same theme for an editor drawn over a preview: no background behind the text and the line numbers, a barely visible current line. </p>
+
+</div>
+</div>
+<a id="a5d59116900b974c145797caaf881764d" name="a5d59116900b974c145797caaf881764d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d59116900b974c145797caaf881764d">&#9670;&#160;</a></span>prepareWaveform() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Process::prepareWaveform </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>frame</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The same from a port value as execution delivers it, read in place: this one is safe on the audio thread. See waveformFrame for the accepted shapes. </p>
+
+</div>
+</div>
+<a id="afe5d0a0a270438e251a5a091714ae510" name="afe5d0a0a270438e251a5a091714ae510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5d0a0a270438e251a5a091714ae510">&#9670;&#160;</a></span>prepareWaveform() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , std::size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Process::prepareWaveform </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>destination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>high</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>frame</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Periodic resampling into a fixed-size playback representation, mapping [-1, 1] onto [low, high]. Invalid input leaves destination untouched; integral chips round once, after resampling. Engines own their prepared arrays, not this model. Neither overload allocates. </p>
 
 </div>
 </div>
@@ -2019,6 +2343,43 @@ Variables</h2></td></tr>
 <p>The files that make up a project, ready to be archived. </p>
 <p>Built from a consolidation report rather than by listing the project folder: the report knows exactly which files this document uses, so an archive does not sweep up the neighbouring project, last week's backups, or the render someone left in there. It also means trimming shrinks the archive without anything else being aware of it &ndash; the untrimmed originals simply stop being referenced.</p>
 <p>Everything is placed under one top-level folder named after the document, so that unpacking never scatters files into whatever directory the archive was opened in. </p>
+
+</div>
+</div>
+<a id="ac4da850907eeade8bd8aaff1c67f099a" name="ac4da850907eeade8bd8aaff1c67f099a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4da850907eeade8bd8aaff1c67f099a">&#9670;&#160;</a></span>quantizeSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Process::quantizeSample </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rounds a bipolar amplitude to the nearest of <code>levels</code> evenly spaced values spanning [-1, 1]. Zero levels means continuous: the value is only clamped. </p>
 
 </div>
 </div>
@@ -2169,6 +2530,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a021186fbdd2d12c77b7e8629a0ca0aae" name="a021186fbdd2d12c77b7e8629a0ca0aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021186fbdd2d12c77b7e8629a0ca0aae">&#9670;&#160;</a></span>resampleWavetable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> Process::resampleWavetable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every frame of a valid table resampled to <code>size</code> samples by periodic linear interpolation. </p>
+
+</div>
+</div>
 <a id="a4f02bf9f379ab196441f5e6da39b0f95" name="a4f02bf9f379ab196441f5e6da39b0f95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4f02bf9f379ab196441f5e6da39b0f95">&#9670;&#160;</a></span>runFileOperation()</h2>
 
@@ -2209,6 +2607,86 @@ Variables</h2></td></tr>
 
 <p>Run <code>policy</code> over every external file reference of a document. </p>
 <p>This is the single traversal every file operation in score goes through. <code>dryRun</code> suppresses the rewrites without changing the report by one field, so "show me what would happen" and "do it" cannot describe different things. Otherwise the rewrites are committed as one undoable command. </p>
+
+</div>
+</div>
+<a id="adfd936e59f68078807508cd5cc763663" name="adfd936e59f68078807508cd5cc763663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd936e59f68078807508cd5cc763663">&#9670;&#160;</a></span>sampleLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Process::sampleLevel </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>levels</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Index of the amplitude level a quantized sample sits on, from 0 (-1) to levels - 1 (+1). </p>
+
+</div>
+</div>
+<a id="ad84d31be0b552817f267081ebe740476" name="ad84d31be0b552817f267081ebe740476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84d31be0b552817f267081ebe740476">&#9670;&#160;</a></span>sampleWavetable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Process::sampleWavetable </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>frame</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>phase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Periodic linear interpolation. The caller supplies a validated table, existing frame and finite phase. No preparation or allocation occurs here. </p>
 
 </div>
 </div>
@@ -2340,6 +2818,124 @@ Variables</h2></td></tr>
 
 <p>Reasons to think twice before acting on that report, in plain words. </p>
 <p>Empty when there are none. Deciding a file is unused is deciding that nothing score knows about references it, and there are a handful of situations where that is a weaker statement than it sounds &ndash; a broken reference the user is about to relink, a second document sharing the folder. The dialog shows these; the caller cannot get the list by accident. </p>
+
+</div>
+</div>
+<a id="a2603c9dac760c3cdcc9fa6965ac0d4de" name="a2603c9dac760c3cdcc9fa6965ac0d4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2603c9dac760c3cdcc9fa6965ac0d4de">&#9670;&#160;</a></span>waveformFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; std::span&lt; const ossia::value &gt; &gt; Process::waveformFrame </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>frame</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>One frame of a waveform value as it arrives through a cable or an address, read in place without allocating. A list of numbers is a single frame, as a multislider or an OSC message with several arguments produce; a list of number lists is a bank, as the canonical value is. Samples are clamped to [-1, 1]; non-numeric or non-finite samples and frames shorter than two samples are rejected. </p>
+
+</div>
+</div>
+<a id="a23823b1613165652e436ede5da6bd340" name="a23823b1613165652e436ede5da6bd340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23823b1613165652e436ede5da6bd340">&#9670;&#160;</a></span>waveformFromValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &gt; Process::waveformFromValue </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every frame of a value accepted by waveformFrame, for display on the UI thread. Unlike wavetableFromValue it takes a flat list as one frame and clamps the samples; a bank needs frames of equal size. </p>
+
+</div>
+</div>
+<a id="afd084a08bdeed270b092add95a940aa1" name="afd084a08bdeed270b092add95a940aa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd084a08bdeed270b092add95a940aa1">&#9670;&#160;</a></span>waveformNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; float &gt; Process::waveformNumber </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A number as waveform values hold one: a float, an int or a bool. Empty for anything else and for a value that is not finite. </p>
+
+</div>
+</div>
+<a id="a015c3181e335e2576cac1d8baccd3e9b" name="a015c3181e335e2576cac1d8baccd3e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015c3181e335e2576cac1d8baccd3e9b">&#9670;&#160;</a></span>wavetableFromValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="struct_process_1_1_wavetable_data.html">WavetableData</a> &gt; Process::wavetableFromValue </td>
+          <td>(</td>
+          <td class="paramtype">const ossia::value &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Canonical control value: a list of frames, each a list of bipolar samples. Stricter than waveformFromValue: a flat list or a sample outside [-1, 1] is not canonical. </p>
 
 </div>
 </div>

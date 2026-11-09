@@ -130,6 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a193300fd1ac3e626e297674cc6c6da0f" id="r_a193300fd1ac3e626e297674cc6c6da0f"><td class="memItemLeft" align="right" valign="top"><a id="a193300fd1ac3e626e297674cc6c6da0f" name="a193300fd1ac3e626e297674cc6c6da0f"></a>
 <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a193300fd1ac3e626e297674cc6c6da0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebef85113678edfc0589ed4275356a53" id="r_aebef85113678edfc0589ed4275356a53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1voice.html#aebef85113678edfc0589ed4275356a53">~voice</a> () noexcept</td></tr>
+<tr class="separator:aebef85113678edfc0589ed4275356a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a9a170c9ee7ff7498942c11dfc4755" id="r_ab7a9a170c9ee7ff7498942c11dfc4755"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1voice.html#ab7a9a170c9ee7ff7498942c11dfc4755">park_ports</a> () noexcept</td></tr>
+<tr class="separator:ab7a9a170c9ee7ff7498942c11dfc4755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -183,6 +187,10 @@ std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;
 <tr class="memitem:a54b074635edb61a0589e9e6604586f09" id="r_a54b074635edb61a0589e9e6604586f09"><td class="memItemLeft" align="right" valign="top"><a id="a54b074635edb61a0589e9e6604586f09" name="a54b074635edb61a0589e9e6604586f09"></a>
 std::vector&lt; ossia::small_vector&lt; <a class="el" href="struct_l_v2_1_1_message.html">Message</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>message_for_atom_ins</b></td></tr>
 <tr class="separator:a54b074635edb61a0589e9e6604586f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27135146ade4248fb7a5a5272f8b0cb9" id="r_a27135146ade4248fb7a5a5272f8b0cb9"><td class="memItemLeft" align="right" valign="top"><a id="a27135146ade4248fb7a5a5272f8b0cb9" name="a27135146ade4248fb7a5a5272f8b0cb9"></a>
+std::vector&lt; <a class="el" href="struct_atom_buffer.html">AtomBuffer</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>atom_others</b></td></tr>
+<tr class="memdesc:a27135146ade4248fb7a5a5272f8b0cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The atom ports with no direction: an empty sequence, every run. <br /></td></tr>
+<tr class="separator:a27135146ade4248fb7a5a5272f8b0cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf03f6cebf4122c8833ae0fa7ffccbd7" id="r_adf03f6cebf4122c8833ae0fa7ffccbd7"><td class="memItemLeft" align="right" valign="top"><a id="adf03f6cebf4122c8833ae0fa7ffccbd7" name="adf03f6cebf4122c8833ae0fa7ffccbd7"></a>
 std::vector&lt; <a class="el" href="struct_l_v2_1_1voice_1_1_time_port.html">TimePort</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>atom_timePosition_midi</b></td></tr>
 <tr class="separator:adf03f6cebf4122c8833ae0fa7ffccbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,7 +206,63 @@ const LV2_Worker_Interface *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:ac6a87f0a6306edb3ac719ca1904ecece" id="r_ac6a87f0a6306edb3ac719ca1904ecece"><td class="memItemLeft" align="right" valign="top"><a id="ac6a87f0a6306edb3ac719ca1904ecece" name="ac6a87f0a6306edb3ac719ca1904ecece"></a>
 ossia::mpmc_queue&lt; std::vector&lt; char &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>worker_datas</b></td></tr>
 <tr class="separator:ac6a87f0a6306edb3ac719ca1904ecece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f77f3d18bfe1e7dfb36fb63d750b2d1" id="r_a1f77f3d18bfe1e7dfb36fb63d750b2d1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1voice.html#a1f77f3d18bfe1e7dfb36fb63d750b2d1">port_count</a> {}</td></tr>
+<tr class="separator:a1f77f3d18bfe1e7dfb36fb63d750b2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aebef85113678edfc0589ed4275356a53" name="aebef85113678edfc0589ed4275356a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebef85113678edfc0589ed4275356a53">&#9670;&#160;</a></span>~voice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LV2::voice::~voice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Voice 0's instance survives via the Model's shared ref and is activated again on the next play. A newer voice that took the instance already runs it: it stays active, its ports where that voice put them. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab7a9a170c9ee7ff7498942c11dfc4755" name="ab7a9a170c9ee7ff7498942c11dfc4755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a9a170c9ee7ff7498942c11dfc4755">&#9670;&#160;</a></span>park_ports()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LV2::voice::park_ports </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Model's instance lives on to the next play, connected to the buffers of this voice, which go now. A plug-in may write to its outputs whenever a port is connected (Rubber Band updates its latency): until the next play connects its own, they are connected to a buffer that never goes. That buffer is shared by every parked instance and never run with: the voice that takes the instance connects each of its ports. Not when a newer voice already took the instance. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abe649d5daf74510bbc02f0c0e19369b6" name="abe649d5daf74510bbc02f0c0e19369b6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe649d5daf74510bbc02f0c0e19369b6">&#9670;&#160;</a></span>midi_2to1</h2>
@@ -212,6 +276,21 @@ ossia::mpmc_queue&lt; std::vector&lt; char &gt; &gt;&#160;</td><td class="memIte
       </table>
 </div><div class="memdoc">
 <p>A system-exclusive message reaches the plug-in as one MIDI event, F0 to F7, once the last of its SysEx7 packets is in. </p>
+
+</div>
+</div>
+<a id="a1f77f3d18bfe1e7dfb36fb63d750b2d1" name="a1f77f3d18bfe1e7dfb36fb63d750b2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f77f3d18bfe1e7dfb36fb63d750b2d1">&#9670;&#160;</a></span>port_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LV2::voice::port_count {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The ports of the plug-in, all of them: what is parked when the instance outlives this voice </p>
 
 </div>
 </div>

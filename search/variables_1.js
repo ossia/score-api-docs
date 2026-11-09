@@ -25,6 +25,7 @@ var searchData=
   ['builtin_22',['builtin',['../struct_library_1_1_preset_item_model_1_1_node.html#af8f7418a6472d5c3414c4d9eae08276c',1,'Library::PresetItemModel::Node']]],
   ['builtins_23',['builtins',['../struct_library_1_1_preset_item_model_1_1_node.html#a3512cedb846a46750c502276992be6c6',1,'Library::PresetItemModel::Node']]],
   ['busaddressable_24',['busAddressable',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#aff2934743bef38f5ec46ca39396082f2',1,'score::gfx::interop::AmdGlExtensions']]],
-  ['by_25',['by',['../struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state.html#a5dd429ff1878eae79dd05e7e49654707',1,'Nodes::Looper::pass_stack::aside_state']]],
-  ['bytes_26',['bytes',['../structmtk_1_1midi__clock_1_1message.html#ae8e2ef176d95584cef0f475e11b9999e',1,'mtk::midi_clock::message']]]
+  ['buttons_5fafter_25',['buttons_after',['../struct_nodes_1_1_looper_1_1looper__view.html#abcfa80bbe195f3a0c3c267caabb27d32',1,'Nodes::Looper::looper_view']]],
+  ['by_26',['by',['../struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state.html#a5dd429ff1878eae79dd05e7e49654707',1,'Nodes::Looper::pass_stack::aside_state']]],
+  ['bytes_27',['bytes',['../structmtk_1_1midi__clock_1_1message.html#ae8e2ef176d95584cef0f475e11b9999e',1,'mtk::midi_clock::message']]]
 ];

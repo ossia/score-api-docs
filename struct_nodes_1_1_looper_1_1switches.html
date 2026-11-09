@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_looper_1_1switches.ht
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The actions of the Switches tab, read each tick. What changes what is heard waits for the grid point, the transport calling looper_point(); selecting a layer is done at once. </p>
+<div class="textblock"><p>The actions of the Switches tab, read each tick. What changes what is heard waits for the grid point, the transport calling looper_point(); selecting a layer is done at once.</p>
+<p>A layer action waiting for the grid is the last thing done to the layers: Undo takes it back before anything the passes went through, and Redo presses it again, to wait for the grid once more. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -120,7 +121,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> () noexcept
 <tr class="separator:a25ec1ca534bb9975a7dc7d5ef459022d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf4fbf0b6b712a4b67f8e5f0134e89b0" id="r_adf4fbf0b6b712a4b67f8e5f0134e89b0"><td class="memItemLeft" align="right" valign="top"><a id="adf4fbf0b6b712a4b67f8e5f0134e89b0" name="adf4fbf0b6b712a4b67f8e5f0134e89b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (<a class="el" href="struct_nodes_1_1_looper_1_1layer__action.html">layer_action</a> a, <a class="el" href="struct_nodes_1_1_looper_1_1transport.html">transport</a> &amp;t) noexcept</td></tr>
+<tr class="memdesc:adf4fbf0b6b712a4b67f8e5f0134e89b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A new action: what Undo took back before the grid cannot be done again. <br /></td></tr>
 <tr class="separator:adf4fbf0b6b712a4b67f8e5f0134e89b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c3c3a08da49c936f40da4369b33d03b" id="r_a7c3c3a08da49c936f40da4369b33d03b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1switches.html#a7c3c3a08da49c936f40da4369b33d03b">withdraw_last</a> (<a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a> at) noexcept</td></tr>
+<tr class="separator:a7c3c3a08da49c936f40da4369b33d03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132827e7ccc94f56bceaddf0b1a3c824" id="r_a132827e7ccc94f56bceaddf0b1a3c824"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1switches.html#a132827e7ccc94f56bceaddf0b1a3c824">may_press_again</a> (<a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a> now) const noexcept</td></tr>
+<tr class="separator:a132827e7ccc94f56bceaddf0b1a3c824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0fe12aeb2f9a5e43aa6ae24bab4397" id="r_a5d0fe12aeb2f9a5e43aa6ae24bab4397"><td class="memItemLeft" align="right" valign="top"><a id="a5d0fe12aeb2f9a5e43aa6ae24bab4397" name="a5d0fe12aeb2f9a5e43aa6ae24bab4397"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>press_again</b> (<a class="el" href="struct_nodes_1_1_looper_1_1transport.html">transport</a> &amp;t) noexcept</td></tr>
+<tr class="separator:a5d0fe12aeb2f9a5e43aa6ae24bab4397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93094efa5dbe4d18f936c7226ee72c6" id="r_ab93094efa5dbe4d18f936c7226ee72c6"><td class="memTemplParams" colspan="2">template&lt;typename Inputs , typename Engine &gt; </td></tr>
 <tr class="memitem:ab93094efa5dbe4d18f936c7226ee72c6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1switches.html#ab93094efa5dbe4d18f936c7226ee72c6">read</a> (Inputs &amp;in, <a class="el" href="struct_nodes_1_1_looper_1_1transport.html">transport</a> &amp;t, Engine &amp;e, bool empty)</td></tr>
 <tr class="separator:ab93094efa5dbe4d18f936c7226ee72c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,6 +177,14 @@ std::optional&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>seen_passes</b> {}</td></tr>
 <tr class="memdesc:a010037e6315fab7ce7c40bc382180c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes when Layer was last made to follow them. <br /></td></tr>
 <tr class="separator:a010037e6315fab7ce7c40bc382180c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935450abf181aef8bf677fcdbb56e795" id="r_a935450abf181aef8bf677fcdbb56e795"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1layer__action.html">layer_action</a>, max_actions &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1switches.html#a935450abf181aef8bf677fcdbb56e795">withdrawn</a> {}</td></tr>
+<tr class="separator:a935450abf181aef8bf677fcdbb56e795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ef8130f3cdba03c11181c0e69cdcc2" id="r_aa6ef8130f3cdba03c11181c0e69cdcc2"><td class="memItemLeft" align="right" valign="top"><a id="aa6ef8130f3cdba03c11181c0e69cdcc2" name="aa6ef8130f3cdba03c11181c0e69cdcc2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>withdrawn_count</b> {}</td></tr>
+<tr class="separator:aa6ef8130f3cdba03c11181c0e69cdcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ff462e47a57fbb21ad44ecbebfd34f" id="r_a78ff462e47a57fbb21ad44ecbebfd34f"><td class="memItemLeft" align="right" valign="top"><a id="a78ff462e47a57fbb21ad44ecbebfd34f" name="a78ff462e47a57fbb21ad44ecbebfd34f"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a>&#160;</td><td class="memItemRight" valign="bottom"><b>withdrawn_at</b> {}</td></tr>
+<tr class="separator:a78ff462e47a57fbb21ad44ecbebfd34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -299,6 +316,33 @@ template&lt;typename Inputs &gt; </div>
 
 </div>
 </div>
+<a id="a132827e7ccc94f56bceaddf0b1a3c824" name="a132827e7ccc94f56bceaddf0b1a3c824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132827e7ccc94f56bceaddf0b1a3c824">&#9670;&#160;</a></span>may_press_again()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nodes::Looper::switches::may_press_again </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a>&#160;</td>
+          <td class="paramname"><em>now</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Redo presses again what Undo took back last before its grid point, when the passes are where they were then. </p>
+
+</div>
+</div>
 <a id="a425d1fd1253218d3fca60b1a66023b0b" name="a425d1fd1253218d3fca60b1a66023b0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a425d1fd1253218d3fca60b1a66023b0b">&#9670;&#160;</a></span>merged()</h2>
 
@@ -386,6 +430,49 @@ template&lt;typename Inputs , typename Engine &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Reads the actions pressed this tick. <code>empty</code>: there is no loop and none is being recorded. </p>
+
+</div>
+</div>
+<a id="a7c3c3a08da49c936f40da4369b33d03b" name="a7c3c3a08da49c936f40da4369b33d03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c3c3a08da49c936f40da4369b33d03b">&#9670;&#160;</a></span>withdraw_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nodes::Looper::switches::withdraw_last </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a>&#160;</td>
+          <td class="paramname"><em>at</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Undo: the action pressed last, if it still waits for the grid, is not to be done. False when none waits. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a935450abf181aef8bf677fcdbb56e795" name="a935450abf181aef8bf677fcdbb56e795"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935450abf181aef8bf677fcdbb56e795">&#9670;&#160;</a></span>withdrawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;<a class="el" href="struct_nodes_1_1_looper_1_1layer__action.html">layer_action</a>, max_actions&gt; Nodes::Looper::switches::withdrawn {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The actions Undo took back before their grid point, the one Redo presses again first at the end, and where the passes were then. </p>
 
 </div>
 </div>

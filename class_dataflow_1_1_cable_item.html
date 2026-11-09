@@ -140,6 +140,17 @@ const <a class="el" href="class_process_1_1_cable.html">Process::Cable</a> &amp;
 <tr class="memitem:a06330db679cd34aced06276bb6652bf9" id="r_a06330db679cd34aced06276bb6652bf9"><td class="memItemLeft" align="right" valign="top"><a id="a06330db679cd34aced06276bb6652bf9" name="a06330db679cd34aced06276bb6652bf9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> () const final override</td></tr>
 <tr class="separator:a06330db679cd34aced06276bb6652bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adddba12d0679fa917e4f8b1c6018b78f" id="r_adddba12d0679fa917e4f8b1c6018b78f"><td class="memItemLeft" align="right" valign="top"><a id="adddba12d0679fa917e4f8b1c6018b78f" name="adddba12d0679fa917e4f8b1c6018b78f"></a>
+qreal&#160;</td><td class="memItemRight" valign="bottom"><b>restingZ</b> () const noexcept</td></tr>
+<tr class="memdesc:adddba12d0679fa917e4f8b1c6018b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the cable sits when nothing makes it stand out. <br /></td></tr>
+<tr class="separator:adddba12d0679fa917e4f8b1c6018b78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac11d8ca06a14fb58d1ef0169e9e733a2" id="r_ac11d8ca06a14fb58d1ef0169e9e733a2"><td class="memItemLeft" align="right" valign="top"><a id="ac11d8ca06a14fb58d1ef0169e9e733a2" name="ac11d8ca06a14fb58d1ef0169e9e733a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>linksSelectedNode</b> () const noexcept</td></tr>
+<tr class="memdesc:ac11d8ca06a14fb58d1ef0169e9e733a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cable of a selected node is drawn as selected and over the others. <br /></td></tr>
+<tr class="separator:ac11d8ca06a14fb58d1ef0169e9e733a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0dffcfcb60212fb2d611849a720c44c" id="r_ac0dffcfcb60212fb2d611849a720c44c"><td class="memItemLeft" align="right" valign="top"><a id="ac0dffcfcb60212fb2d611849a720c44c" name="ac0dffcfcb60212fb2d611849a720c44c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>updateHighlight</b> ()</td></tr>
+<tr class="separator:ac0dffcfcb60212fb2d611849a720c44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f3cbb05e82e0330b7084b62ed63d90" id="r_a81f3cbb05e82e0330b7084b62ed63d90"><td class="memItemLeft" align="right" valign="top"><a id="a81f3cbb05e82e0330b7084b62ed63d90" name="a81f3cbb05e82e0330b7084b62ed63d90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resize</b> ()</td></tr>
 <tr class="separator:a81f3cbb05e82e0330b7084b62ed63d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +195,14 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>g_cables_enabl
 <tr class="memitem:aee0303e891cda448967eb7a69c23a21f" id="r_aee0303e891cda448967eb7a69c23a21f"><td class="memItemLeft" align="right" valign="top"><a id="aee0303e891cda448967eb7a69c23a21f" name="aee0303e891cda448967eb7a69c23a21f"></a>
 static const constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> = QGraphicsItem::UserType + 9999</td></tr>
 <tr class="separator:aee0303e891cda448967eb7a69c23a21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d133bc201fae86d59042ed58bf702a7" id="r_a8d133bc201fae86d59042ed58bf702a7"><td class="memItemLeft" align="right" valign="top"><a id="a8d133bc201fae86d59042ed58bf702a7" name="a8d133bc201fae86d59042ed58bf702a7"></a>
+static constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><b>selectedZ</b> = 999999.</td></tr>
+<tr class="memdesc:a8d133bc201fae86d59042ed58bf702a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Above every other item of a view while the cable or one of its ports is selected. <br /></td></tr>
+<tr class="separator:a8d133bc201fae86d59042ed58bf702a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56214447abc9c13ddc17fe3260b1d39" id="r_af56214447abc9c13ddc17fe3260b1d39"><td class="memItemLeft" align="right" valign="top"><a id="af56214447abc9c13ddc17fe3260b1d39" name="af56214447abc9c13ddc17fe3260b1d39"></a>
+static constexpr qreal&#160;</td><td class="memItemRight" valign="bottom"><b>nodalZ</b> = 500.</td></tr>
+<tr class="memdesc:af56214447abc9c13ddc17fe3260b1d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Above the nodes of a nodal view, below its selection rectangle. <br /></td></tr>
+<tr class="separator:af56214447abc9c13ddc17fe3260b1d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a64543ffaf845dad7125d98356a33eaf0" name="a64543ffaf845dad7125d98356a33eaf0"></a>

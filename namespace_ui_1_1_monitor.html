@@ -216,8 +216,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>floatValue</b> (cons
 <tr class="memitem:a10c23f31579c3c75654ab686868451c1" id="r_a10c23f31579c3c75654ab686868451c1"><td class="memItemLeft" align="right" valign="top"><a id="a10c23f31579c3c75654ab686868451c1" name="a10c23f31579c3c75654ab686868451c1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>boolValue</b> (const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *c, bool fallback) noexcept</td></tr>
 <tr class="separator:a10c23f31579c3c75654ab686868451c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f0c27d171953e5b49cbf5af292d1f92" id="r_a9f0c27d171953e5b49cbf5af292d1f92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui_1_1_monitor.html#a9f0c27d171953e5b49cbf5af292d1f92">showInlet</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;p, std::size_t index, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parent, QObject *owner, double y=5.)</td></tr>
-<tr class="separator:a9f0c27d171953e5b49cbf5af292d1f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbb92e73c853650af069cb03ff6aa27" id="r_a8fbb92e73c853650af069cb03ff6aa27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui_1_1_monitor.html#a8fbb92e73c853650af069cb03ff6aa27">showInlet</a> (const <a class="el" href="class_process_1_1_process_model.html">Process::ProcessModel</a> &amp;p, std::size_t index, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;doc, QGraphicsItem *parent, QObject *owner, double y=<a class="el" href="namespace_ui_1_1_monitor.html#a19a1013b9d65e2ff8b847716a090f66c">firstInletY</a>)</td></tr>
+<tr class="separator:a8fbb92e73c853650af069cb03ff6aa27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f88c8d23b0d1faf59dd8bda8388f35" id="r_a23f88c8d23b0d1faf59dd8bda8388f35"><td class="memTemplParams" colspan="2"><a id="a23f88c8d23b0d1faf59dd8bda8388f35" name="a23f88c8d23b0d1faf59dd8bda8388f35"></a>
 template&lt;typename Item , typename... C&gt; </td></tr>
 <tr class="memitem:a23f88c8d23b0d1faf59dd8bda8388f35"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>repaintOn</b> (Item *item, C *... controls)</td></tr>
@@ -328,6 +328,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>publish</b> (<a class
 Variables</h2></td></tr>
 <tr class="memitem:a41b623afda299dc0b701a075c9f92252" id="r_a41b623afda299dc0b701a075c9f92252"><td class="memItemLeft" align="right" valign="top">constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui_1_1_monitor.html#a41b623afda299dc0b701a075c9f92252">channel_layout_names</a> []</td></tr>
 <tr class="separator:a41b623afda299dc0b701a075c9f92252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a1013b9d65e2ff8b847716a090f66c" id="r_a19a1013b9d65e2ff8b847716a090f66c"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_ui_1_1_monitor.html#a19a1013b9d65e2ff8b847716a090f66c">firstInletY</a></td></tr>
+<tr class="separator:a19a1013b9d65e2ff8b847716a090f66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615738c42173bd2eb26a3a687b79e039" id="r_a615738c42173bd2eb26a3a687b79e039"><td class="memItemLeft" align="right" valign="top"><a id="a615738c42173bd2eb26a3a687b79e039" name="a615738c42173bd2eb26a3a687b79e039"></a>
+constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>inletSpacing</b> = 10.</td></tr>
+<tr class="memdesc:a615738c42173bd2eb26a3a687b79e039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distance between two inlets shown one under the other. <br /></td></tr>
+<tr class="separator:a615738c42173bd2eb26a3a687b79e039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a2c4b902b1ff82a0d87ada96eb79aa066" name="a2c4b902b1ff82a0d87ada96eb79aa066"></a>
@@ -788,8 +794,8 @@ template&lt;typename T , typename V &gt; </div>
 
 </div>
 </div>
-<a id="a9f0c27d171953e5b49cbf5af292d1f92" name="a9f0c27d171953e5b49cbf5af292d1f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f0c27d171953e5b49cbf5af292d1f92">&#9670;&#160;</a></span>showInlet()</h2>
+<a id="a8fbb92e73c853650af069cb03ff6aa27" name="a8fbb92e73c853650af069cb03ff6aa27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fbb92e73c853650af069cb03ff6aa27">&#9670;&#160;</a></span>showInlet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -831,7 +837,7 @@ template&lt;typename T , typename V &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>y</em> = <code>5.</code>&#160;</td>
+          <td class="paramname"><em>y</em> = <code><a class="el" href="namespace_ui_1_1_monitor.html#a19a1013b9d65e2ff8b847716a090f66c">firstInletY</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1019,6 +1025,34 @@ template&lt;typename T , typename V &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    <span class="stringliteral">&quot;Auto&quot;</span>, <span class="stringliteral">&quot;Numbered&quot;</span>, <span class="stringliteral">&quot;Stereo&quot;</span>, <span class="stringliteral">&quot;5.1&quot;</span>, <span class="stringliteral">&quot;7.1&quot;</span>, <span class="stringliteral">&quot;7.1.4&quot;</span>, <span class="stringliteral">&quot;Ambisonic&quot;</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a19a1013b9d65e2ff8b847716a090f66c" name="a19a1013b9d65e2ff8b847716a090f66c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a1013b9d65e2ff8b847716a090f66c">&#9670;&#160;</a></span>firstInletY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double Ui::Monitor::firstInletY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_variable" href="struct_process_1_1_mode_switch.html#af5fb4f096a5599976aceb91d905a623f">Process::ModeSwitch::position</a>.y() + <a class="code hl_variable" href="struct_process_1_1_mode_switch.html#ae8deaca6fd3f2c8bf5ec5b6def88b2ee">Process::ModeSwitch::height</a> / 2.</div>
+<div class="line">      - <a class="code hl_function" href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">Dataflow::PortItem::portCenter</a>().y()</div>
+<div class="ttc" id="aclass_dataflow_1_1_port_item_html_acee25e2176b15efb097579d42fb05436"><div class="ttname"><a href="class_dataflow_1_1_port_item.html#acee25e2176b15efb097579d42fb05436">Dataflow::PortItem::portCenter</a></div><div class="ttdeci">static constexpr QPointF portCenter() noexcept</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Dataflow/PortItem.hpp:91</div></div>
+<div class="ttc" id="astruct_process_1_1_mode_switch_html_ae8deaca6fd3f2c8bf5ec5b6def88b2ee"><div class="ttname"><a href="struct_process_1_1_mode_switch.html#ae8deaca6fd3f2c8bf5ec5b6def88b2ee">Process::ModeSwitch::height</a></div><div class="ttdeci">static constexpr double height</div><div class="ttdoc">The views draw from 18 px down or lower.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Monitoring/ModeSwitch.hpp:25</div></div>
+<div class="ttc" id="astruct_process_1_1_mode_switch_html_af5fb4f096a5599976aceb91d905a623f"><div class="ttname"><a href="struct_process_1_1_mode_switch.html#af5fb4f096a5599976aceb91d905a623f">Process::ModeSwitch::position</a></div><div class="ttdeci">static constexpr QPointF position</div><div class="ttdoc">Where views put it: right of the inlets of their top-left corner.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Monitoring/ModeSwitch.hpp:23</div></div>
+</div><!-- fragment --><p>Where a fully custom item puts its first inlet: centered on the strip at its top where the mode switch is, as the inlets of a node with a title are on its title. </p>
+
 </div>
 </div>
 </div><!-- contents -->

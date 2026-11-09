@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('classoscr_1_1_custom_item.html',''); i
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classoscr_1_1_custom_item-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">oscr::CustomItem&lt; Item, Control &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -119,8 +120,9 @@ Inheritance diagram for oscr::CustomItem&lt; Item, Control &gt;:</div>
  <div class="center">
   <img src="classoscr_1_1_custom_item.png" usemap="#oscr::CustomItem_3C_20Item_2C_20Control_20_3E_map" alt=""/>
   <map id="oscr::CustomItem_3C_20Item_2C_20Control_20_3E_map" name="oscr::CustomItem_3C_20Item_2C_20Control_20_3E_map">
+<area href="classscore_1_1_fills_width.html" alt="score::FillsWidth" shape="rect" coords="212,0,414,24"/>
 <area href="classoscr_1_1_custom_control.html" alt="oscr::CustomControl&lt; Item &gt;" shape="rect" coords="0,112,202,136"/>
-<area href="classoscr_1_1_custom_multi_control.html" title="halp::custom_multi_control. Values are normalized; a gesture is one undo step." alt="oscr::CustomMultiControl&lt; Item &gt;" shape="rect" coords="212,112,414,136"/>
+<area href="classoscr_1_1_custom_multi_control.html" alt="oscr::CustomMultiControl&lt; Item &gt;" shape="rect" coords="212,112,414,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -143,6 +145,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a27d49d3a55c7c85884958883045ab92f" id="r_a27d49d3a55c7c85884958883045ab92f"><td class="memItemLeft" align="right" valign="top"><a id="a27d49d3a55c7c85884958883045ab92f" name="a27d49d3a55c7c85884958883045ab92f"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
 <tr class="separator:a27d49d3a55c7c85884958883045ab92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff37e01a6a6f48484a6b45bd9093fa70" id="r_aff37e01a6a6f48484a6b45bd9093fa70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#aff37e01a6a6f48484a6b45bd9093fa70">fillWidth</a> (qreal width) override</td></tr>
+<tr class="separator:aff37e01a6a6f48484a6b45bd9093fa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab99a53a01034be7aefb70f62edd8e528" id="r_ab99a53a01034be7aefb70f62edd8e528"><td class="memItemLeft" align="right" valign="top"><a id="ab99a53a01034be7aefb70f62edd8e528" name="ab99a53a01034be7aefb70f62edd8e528"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDocument</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;doc) noexcept</td></tr>
+<tr class="memdesc:ab99a53a01034be7aefb70f62edd8e528"><td class="mdescLeft">&#160;</td><td class="mdescRight">The document the sound files drawn with draw_waveform() are looked up in. <br /></td></tr>
+<tr class="separator:ab99a53a01034be7aefb70f62edd8e528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1797a69f0ffc8ff09b74b3d02b8060" id="r_a0d1797a69f0ffc8ff09b74b3d02b8060"><td class="memItemLeft" align="right" valign="top"><a id="a0d1797a69f0ffc8ff09b74b3d02b8060" name="a0d1797a69f0ffc8ff09b74b3d02b8060"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:a0d1797a69f0ffc8ff09b74b3d02b8060"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +168,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 <tr class="memitem:a160937fef15de81dd0ef19c6ebdd1767" id="r_a160937fef15de81dd0ef19c6ebdd1767"><td class="memItemLeft" align="right" valign="top"><a id="a160937fef15de81dd0ef19c6ebdd1767" name="a160937fef15de81dd0ef19c6ebdd1767"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QGraphicsSceneMouseEvent *event) override</td></tr>
 <tr class="separator:a160937fef15de81dd0ef19c6ebdd1767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70dbf0f4813065332d987645cf9e44a0" id="r_a70dbf0f4813065332d987645cf9e44a0"><td class="memItemLeft" align="right" valign="top"><a id="a70dbf0f4813065332d987645cf9e44a0" name="a70dbf0f4813065332d987645cf9e44a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a70dbf0f4813065332d987645cf9e44a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97acef889ff34209c03b2d050fedd5d6" id="r_a97acef889ff34209c03b2d050fedd5d6"><td class="memItemLeft" align="right" valign="top"><a id="a97acef889ff34209c03b2d050fedd5d6" name="a97acef889ff34209c03b2d050fedd5d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dragMoveEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a97acef889ff34209c03b2d050fedd5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b38c45ac5048964120049c9e226d1bb" id="r_a9b38c45ac5048964120049c9e226d1bb"><td class="memItemLeft" align="right" valign="top"><a id="a9b38c45ac5048964120049c9e226d1bb" name="a9b38c45ac5048964120049c9e226d1bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QGraphicsSceneDragDropEvent *event) override</td></tr>
+<tr class="separator:a9b38c45ac5048964120049c9e226d1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0d6f4a0ab325dc7e1b4b15c597b955" id="r_a1b0d6f4a0ab325dc7e1b4b15c597b955"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#a1b0d6f4a0ab325dc7e1b4b15c597b955">wheelEvent</a> (QGraphicsSceneWheelEvent *event) override</td></tr>
 <tr class="separator:a1b0d6f4a0ab325dc7e1b4b15c597b955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -174,8 +191,44 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a4d881832a1301c79ed85912602e74b09" id="r_a4d881832a1301c79ed85912602e74b09"><td class="memItemLeft" align="right" valign="top"><a id="a4d881832a1301c79ed85912602e74b09" name="a4d881832a1301c79ed85912602e74b09"></a>
 Item&#160;</td><td class="memItemRight" valign="bottom"><b>impl</b></td></tr>
 <tr class="separator:a4d881832a1301c79ed85912602e74b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:afd23e7f2e201827249238e273d77c7bd" id="r_afd23e7f2e201827249238e273d77c7bd"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_custom_item.html#afd23e7f2e201827249238e273d77c7bd">accepts_drops</a> = requires(Item i) { i.drop(std::vector&lt;std::string&gt;{}); }</td></tr>
+<tr class="separator:afd23e7f2e201827249238e273d77c7bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aff37e01a6a6f48484a6b45bd9093fa70" name="aff37e01a6a6f48484a6b45bd9093fa70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff37e01a6a6f48484a6b45bd9093fa70">&#9670;&#160;</a></span>fillWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Item , typename Control  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem</a>&lt; Item, Control &gt;::fillWidth </td>
+          <td>(</td>
+          <td class="paramtype">qreal&#160;</td>
+          <td class="paramname"><em>width</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An item with set_width(double) and a width() of its own takes the width of its column; set_width keeps it above the item's smallest. </p>
+
+<p>Implements <a class="el" href="classscore_1_1_fills_width.html#a8d03b302b95ebd7db02d38abb4cd589b">score::FillsWidth</a>.</p>
+
+</div>
+</div>
 <a id="abad609c20408194416b9bcbe8771e9ce" name="abad609c20408194416b9bcbe8771e9ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abad609c20408194416b9bcbe8771e9ce">&#9670;&#160;</a></span>startDrag()</h2>
 
@@ -231,6 +284,32 @@ template&lt;typename Item , typename Control  = void&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Only widgets that define wheel() take the event: everything else keeps letting the view scroll. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="afd23e7f2e201827249238e273d77c7bd" name="afd23e7f2e201827249238e273d77c7bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd23e7f2e201827249238e273d77c7bd">&#9670;&#160;</a></span>accepts_drops</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Item , typename Control  = void&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="classoscr_1_1_custom_item.html">oscr::CustomItem</a>&lt; Item, Control &gt;::accepts_drops = requires(Item i) { i.drop(std::vector&lt;std::string&gt;{}); }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Widgets that define drop(paths) take files dropped on them: drop() gets their local paths and returns whether it used them. </p>
 
 </div>
 </div>

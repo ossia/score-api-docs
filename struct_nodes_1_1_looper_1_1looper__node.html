@@ -159,18 +159,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_point</b> ()</
 <tr class="memitem:a07a714c08ef26669471010879ca13e8f" id="r_a07a714c08ef26669471010879ca13e8f"><td class="memItemLeft" align="right" valign="top"><a id="a07a714c08ef26669471010879ca13e8f" name="a07a714c08ef26669471010879ca13e8f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>looper_passes</b> () const noexcept</td></tr>
 <tr class="separator:a07a714c08ef26669471010879ca13e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f808301131b6c2a345e67b4ecbe1c0" id="r_aa2f808301131b6c2a345e67b4ecbe1c0"><td class="memItemLeft" align="right" valign="top"><a id="aa2f808301131b6c2a345e67b4ecbe1c0" name="aa2f808301131b6c2a345e67b4ecbe1c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>looper_pass_of</b> (uint32_t id) const noexcept</td></tr>
+<tr class="separator:aa2f808301131b6c2a345e67b4ecbe1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1b1859485b3ef8cd66d18370f77e86" id="r_a1b1b1859485b3ef8cd66d18370f77e86"><td class="memItemLeft" align="right" valign="top"><a id="a1b1b1859485b3ef8cd66d18370f77e86" name="a1b1b1859485b3ef8cd66d18370f77e86"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>looper_muted</b> (int pass) const noexcept</td></tr>
 <tr class="separator:a1b1b1859485b3ef8cd66d18370f77e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944ac3bfd6086aaaf6b01fe8a9eafa17" id="r_a944ac3bfd6086aaaf6b01fe8a9eafa17"><td class="memItemLeft" align="right" valign="top"><a id="a944ac3bfd6086aaaf6b01fe8a9eafa17" name="a944ac3bfd6086aaaf6b01fe8a9eafa17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_set_muted</b> (int pass, bool muted)</td></tr>
 <tr class="separator:a944ac3bfd6086aaaf6b01fe8a9eafa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa974c2cb2d0edb056af84e16344834cc" id="r_aa974c2cb2d0edb056af84e16344834cc"><td class="memItemLeft" align="right" valign="top"><a id="aa974c2cb2d0edb056af84e16344834cc" name="aa974c2cb2d0edb056af84e16344834cc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_mute</b> (int pass)</td></tr>
-<tr class="separator:aa974c2cb2d0edb056af84e16344834cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84dfdbebdeb8d8b7adda08c2392fcde" id="r_af84dfdbebdeb8d8b7adda08c2392fcde"><td class="memItemLeft" align="right" valign="top"><a id="af84dfdbebdeb8d8b7adda08c2392fcde" name="af84dfdbebdeb8d8b7adda08c2392fcde"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_mute</b> (int pass, int muted=-1)</td></tr>
+<tr class="separator:af84dfdbebdeb8d8b7adda08c2392fcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8551eea1f5a525a6b7a4254e1c14aa10" id="r_a8551eea1f5a525a6b7a4254e1c14aa10"><td class="memItemLeft" align="right" valign="top"><a id="a8551eea1f5a525a6b7a4254e1c14aa10" name="a8551eea1f5a525a6b7a4254e1c14aa10"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_erase</b> (int pass)</td></tr>
 <tr class="separator:a8551eea1f5a525a6b7a4254e1c14aa10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652988e2b13125bf8d330be14bb736d5" id="r_a652988e2b13125bf8d330be14bb736d5"><td class="memItemLeft" align="right" valign="top"><a id="a652988e2b13125bf8d330be14bb736d5" name="a652988e2b13125bf8d330be14bb736d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_begin_actions</b> () noexcept</td></tr>
+<tr class="separator:a652988e2b13125bf8d330be14bb736d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d23fbfb39859f69f26b3fb4d1d405a" id="r_ab2d23fbfb39859f69f26b3fb4d1d405a"><td class="memItemLeft" align="right" valign="top"><a id="ab2d23fbfb39859f69f26b3fb4d1d405a" name="ab2d23fbfb39859f69f26b3fb4d1d405a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_end_actions</b> () noexcept</td></tr>
+<tr class="separator:ab2d23fbfb39859f69f26b3fb4d1d405a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -186,6 +195,12 @@ Protected Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>pass_open</b> () const noexcept</td></tr>
 <tr class="memdesc:a23beb5bd08186846c8876a7611daf3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pass is open in the stack. <br /></td></tr>
 <tr class="separator:a23beb5bd08186846c8876a7611daf3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f24b8523e4f4338d7755fb1bc4b9d21" id="r_a1f24b8523e4f4338d7755fb1bc4b9d21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a1f24b8523e4f4338d7755fb1bc4b9d21">may_redo</a> () const noexcept</td></tr>
+<tr class="separator:a1f24b8523e4f4338d7755fb1bc4b9d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa622a9fa00b6662013380fa667785a05" id="r_aa622a9fa00b6662013380fa667785a05"><td class="memItemLeft" align="right" valign="top"><a id="aa622a9fa00b6662013380fa667785a05" name="aa622a9fa00b6662013380fa667785a05"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">Looper::undo_mark</a>&#160;</td><td class="memItemRight" valign="bottom"><b>undo_mark</b> () const noexcept</td></tr>
+<tr class="memdesc:aa622a9fa00b6662013380fa667785a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the passes and the actions undo goes back through are. <br /></td></tr>
+<tr class="separator:aa622a9fa00b6662013380fa667785a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60dbfde0e77b1969ca36e6c029b4f7e7" id="r_a60dbfde0e77b1969ca36e6c029b4f7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60dbfde0e77b1969ca36e6c029b4f7e7">material_arriving</a> ()</td></tr>
 <tr class="separator:a60dbfde0e77b1969ca36e6c029b4f7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d6e7fb03549c9d9978c0df73f864c4" id="r_a79d6e7fb03549c9d9978c0df73f864c4"><td class="memItemLeft" align="right" valign="top"><a id="a79d6e7fb03549c9d9978c0df73f864c4" name="a79d6e7fb03549c9d9978c0df73f864c4"></a>
@@ -231,12 +246,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>follow_merges</b> ()<
 <tr class="separator:ad5d1984730ed289333147ca05ee51eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60732bd38f89eafb5cf223924fffff9b" id="r_a60732bd38f89eafb5cf223924fffff9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60732bd38f89eafb5cf223924fffff9b">undo_pass</a> ()</td></tr>
 <tr class="separator:a60732bd38f89eafb5cf223924fffff9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf71d666e1a480f85e604d12999d66b4" id="r_adf71d666e1a480f85e604d12999d66b4"><td class="memItemLeft" align="right" valign="top"><a id="adf71d666e1a480f85e604d12999d66b4" name="adf71d666e1a480f85e604d12999d66b4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_top_pass</b> ()</td></tr>
+<tr class="memdesc:adf71d666e1a480f85e604d12999d66b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The newest pass goes, as undo hides it, and redo does not bring it back. <br /></td></tr>
+<tr class="separator:adf71d666e1a480f85e604d12999d66b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82091993a7d81a6b6f86e7cf1b4d3634" id="r_a82091993a7d81a6b6f86e7cf1b4d3634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a82091993a7d81a6b6f86e7cf1b4d3634">erase_pass</a> (int pass)</td></tr>
 <tr class="separator:a82091993a7d81a6b6f86e7cf1b4d3634"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a2069bec3b2da272a85c3177a9579a" id="r_aa3a2069bec3b2da272a85c3177a9579a"><td class="memItemLeft" align="right" valign="top"><a id="aa3a2069bec3b2da272a85c3177a9579a" name="aa3a2069bec3b2da272a85c3177a9579a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mute_pass</b> (int pass)</td></tr>
-<tr class="memdesc:aa3a2069bec3b2da272a85c3177a9579a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A muted pass is kept as it is; muting it again lets it be heard. <br /></td></tr>
-<tr class="separator:aa3a2069bec3b2da272a85c3177a9579a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e5ae238bbf6d15043290e7c903e44d" id="r_a81e5ae238bbf6d15043290e7c903e44d"><td class="memItemLeft" align="right" valign="top"><a id="a81e5ae238bbf6d15043290e7c903e44d" name="a81e5ae238bbf6d15043290e7c903e44d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mute_pass</b> (int pass, int muted=-1)</td></tr>
+<tr class="memdesc:a81e5ae238bbf6d15043290e7c903e44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes a pass, or lets it be heard: <code>muted</code> says which, or it toggles. <br /></td></tr>
+<tr class="separator:a81e5ae238bbf6d15043290e7c903e44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1cdc9e230b7bda68528a986951f81c" id="r_afd1cdc9e230b7bda68528a986951f81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#afd1cdc9e230b7bda68528a986951f81c">make_room</a> ()</td></tr>
 <tr class="separator:afd1cdc9e230b7bda68528a986951f81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320ce60c3a51c0c489c568bb8ddc8d8b" id="r_a320ce60c3a51c0c489c568bb8ddc8d8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a320ce60c3a51c0c489c568bb8ddc8d8b">begin_pass</a> (int64_t start)</td></tr>
@@ -419,12 +438,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stops</b> {}</td></t
 <tr class="memitem:a08ecfa66d19d6ed0739b7f2401711ee5" id="r_a08ecfa66d19d6ed0739b7f2401711ee5"><td class="memItemLeft" align="right" valign="top"><a id="a08ecfa66d19d6ed0739b7f2401711ee5" name="a08ecfa66d19d6ed0739b7f2401711ee5"></a>
 <a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b> {}</td></tr>
 <tr class="separator:a08ecfa66d19d6ed0739b7f2401711ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6e45b0363c4b559bd79a6e0e1172c6" id="r_a0d6e45b0363c4b559bd79a6e0e1172c6"><td class="memItemLeft" align="right" valign="top"><a id="a0d6e45b0363c4b559bd79a6e0e1172c6" name="a0d6e45b0363c4b559bd79a6e0e1172c6"></a>
-<a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_request</b> {}</td></tr>
-<tr class="separator:a0d6e45b0363c4b559bd79a6e0e1172c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca8edc501c968d7b6bb3a58aade5906" id="r_a9ca8edc501c968d7b6bb3a58aade5906"><td class="memItemLeft" align="right" valign="top"><a id="a9ca8edc501c968d7b6bb3a58aade5906" name="a9ca8edc501c968d7b6bb3a58aade5906"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_requested</b> {}</td></tr>
-<tr class="separator:a9ca8edc501c968d7b6bb3a58aade5906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055871cf3065cb0c734e6e84c433b86a" id="r_a055871cf3065cb0c734e6e84c433b86a"><td class="memItemLeft" align="right" valign="top"><a id="a055871cf3065cb0c734e6e84c433b86a" name="a055871cf3065cb0c734e6e84c433b86a"></a>
+std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_requests</b> {}</td></tr>
+<tr class="memdesc:a055871cf3065cb0c734e6e84c433b86a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The m and x the view sent since the last tick. <br /></td></tr>
+<tr class="separator:a055871cf3065cb0c734e6e84c433b86a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ec0a5c649120150e8bd3b6a0031c6a" id="r_a75ec0a5c649120150e8bd3b6a0031c6a"><td class="memItemLeft" align="right" valign="top"><a id="a75ec0a5c649120150e8bd3b6a0031c6a" name="a75ec0a5c649120150e8bd3b6a0031c6a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_count</b> {}</td></tr>
+<tr class="separator:a75ec0a5c649120150e8bd3b6a0031c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a320ce60c3a51c0c489c568bb8ddc8d8b" name="a320ce60c3a51c0c489c568bb8ddc8d8b"></a>
@@ -800,6 +820,34 @@ template&lt;typename Node &gt; </div>
 
 </div>
 </div>
+<a id="a1f24b8523e4f4338d7755fb1bc4b9d21" name="a1f24b8523e4f4338d7755fb1bc4b9d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f24b8523e4f4338d7755fb1bc4b9d21">&#9670;&#160;</a></span>may_redo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Node &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node</a>&lt; Node &gt;::may_redo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Redo acts: while a pass is taken in, only on what was undone since it started, the actions done over it. </p>
+
+</div>
+</div>
 <a id="a8d674113ce0a38769554bb2f858f743e" name="a8d674113ce0a38769554bb2f858f743e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d674113ce0a38769554bb2f858f743e">&#9670;&#160;</a></span>pass_pending()</h2>
 
@@ -1004,7 +1052,7 @@ template&lt;typename Node &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Undoes the top pass: a layer it replaced comes back to its place, the one Layer says keeping its own. </p>
+<p>Undoes the last action: a pass is hidden, a layer it replaced coming back to its place, an erased pass comes back, a mute is taken back. The layer Layer says keeps its place. </p>
 
 </div>
 </div>

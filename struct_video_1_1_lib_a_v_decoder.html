@@ -150,6 +150,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>load_packet_in_frame<
 <tr class="memitem:aabddcb8114e1e30ee841f34b2c241d22" id="r_aabddcb8114e1e30ee841f34b2c241d22"><td class="memItemLeft" align="right" valign="top"><a id="aabddcb8114e1e30ee841f34b2c241d22" name="aabddcb8114e1e30ee841f34b2c241d22"></a>
 <a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read_one_frame_avcodec</b> (AVPacket &amp;packet)</td></tr>
 <tr class="separator:aabddcb8114e1e30ee841f34b2c241d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489e7f9ffb81a5242bbd3c1bf8fd6378" id="r_a489e7f9ffb81a5242bbd3c1bf8fd6378"><td class="memItemLeft" align="right" valign="top"><a id="a489e7f9ffb81a5242bbd3c1bf8fd6378" name="a489e7f9ffb81a5242bbd3c1bf8fd6378"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>landSkip</b> (AVFrame *f) noexcept</td></tr>
+<tr class="separator:a489e7f9ffb81a5242bbd3c1bf8fd6378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5557f79f2fb6fb5842c240b3e026b614" id="r_a5557f79f2fb6fb5842c240b3e026b614"><td class="memItemLeft" align="right" valign="top"><a id="a5557f79f2fb6fb5842c240b3e026b614" name="a5557f79f2fb6fb5842c240b3e026b614"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropSkipCandidate</b> () noexcept</td></tr>
+<tr class="memdesc:a5557f79f2fb6fb5842c240b3e026b614"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the held-back frame back to the frame pool. <br /></td></tr>
+<tr class="separator:a5557f79f2fb6fb5842c240b3e026b614"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a32b3694a3a12ca793ef21fae329de" id="r_aa7a32b3694a3a12ca793ef21fae329de"><td class="memItemLeft" align="right" valign="top"><a id="aa7a32b3694a3a12ca793ef21fae329de" name="aa7a32b3694a3a12ca793ef21fae329de"></a>
+<a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>takeSkipCandidate</b> () noexcept</td></tr>
+<tr class="memdesc:aa7a32b3694a3a12ca793ef21fae329de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The held-back frame, converted as enqueue_frame converts its frames. <br /></td></tr>
+<tr class="separator:aa7a32b3694a3a12ca793ef21fae329de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -181,6 +192,12 @@ AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecCo
 <tr class="separator:ad790cee501b4e490d19e0bead99cc860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170605948a2e0966838b0829f9ff21b" id="r_a9170605948a2e0966838b0829f9ff21b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#a9170605948a2e0966838b0829f9ff21b">m_skipBefore</a> {AV_NOPTS_VALUE}</td></tr>
 <tr class="separator:a9170605948a2e0966838b0829f9ff21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb52c0f66750561b2665bf37a4ec191f" id="r_aeb52c0f66750561b2665bf37a4ec191f"><td class="memItemLeft" align="right" valign="top"><a id="aeb52c0f66750561b2665bf37a4ec191f" name="aeb52c0f66750561b2665bf37a4ec191f"></a>
+AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>m_skipCandidate</b> {}</td></tr>
+<tr class="memdesc:aeb52c0f66750561b2665bf37a4ec191f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last frame held back while m_skipBefore is set. <br /></td></tr>
+<tr class="separator:aeb52c0f66750561b2665bf37a4ec191f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1e255e902f7ef5dfd16938f52656ff" id="r_aab1e255e902f7ef5dfd16938f52656ff"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#aab1e255e902f7ef5dfd16938f52656ff">m_skipLandingPts</a> {AV_NOPTS_VALUE}</td></tr>
+<tr class="separator:aab1e255e902f7ef5dfd16938f52656ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13afbdf213067ad9b390aa68e44bb176" id="r_a13afbdf213067ad9b390aa68e44bb176"><td class="memItemLeft" align="right" valign="top"><a id="a13afbdf213067ad9b390aa68e44bb176" name="a13afbdf213067ad9b390aa68e44bb176"></a>
 std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
 <tr class="memdesc:a13afbdf213067ad9b390aa68e44bb176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by the decoding thread, polled by the owner waiting for the end. <br /></td></tr>
@@ -213,7 +230,22 @@ std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finishe
         </tr>
       </table>
 </div><div class="memdoc">
-<p>While set, enqueue_frame decodes the frames that end before this pts and drops them, unconverted: a seek lands on the keyframe before its target, and the frames up to the target are references, not pictures. The first frame kept clears it. </p>
+<p>While set, enqueue_frame holds back the frames that start at or before this pts, unconverted: a seek lands on the keyframe before its target, and the frames up to the target are references, not pictures. The first frame starting after it clears it, and goes out after the last frame held back, the one shown at the target. Frame durations do not decide it: in a rounded time base (matroska's milliseconds at 30 fps) a frame can end before the next one starts. </p>
+
+</div>
+</div>
+<a id="aab1e255e902f7ef5dfd16938f52656ff" name="aab1e255e902f7ef5dfd16938f52656ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1e255e902f7ef5dfd16938f52656ff">&#9670;&#160;</a></span>m_skipLandingPts</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t Video::LibAVDecoder::m_skipLandingPts {AV_NOPTS_VALUE}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pts of the first frame given out when m_skipBefore was cleared, queued or returned by enqueue_frame: where the seek landed. The frame itself is m_frames.watched() while the consumer has not given it back. </p>
 
 </div>
 </div>

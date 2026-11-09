@@ -149,21 +149,23 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-nodal_2_nodal_2_
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> on_created(<a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; n);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> on_removing(<span class="keyword">const</span> <a class="code hl_class" href="class_process_1_1_process_model.html">Process::ProcessModel</a>&amp; n);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> on_drop(<span class="keyword">const</span> QPointF&amp; pos, <span class="keyword">const</span> QMimeData&amp; mime);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> on_areaSelect(QRectF rect, <span class="keywordtype">bool</span> cumulation);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="class_id_container.html">IdContainer&lt;Process::NodeItem, Process::ProcessModel&gt;</a> m_nodes;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_nodal_1_1_model.html">Model</a>&amp; m_model;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  qreal m_defaultW{};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  ZoomRatio m_ratio{1.};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="class_nodal_1_1_view.html">View</a>* m_view{};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_nodal_1_1_presenter.html#a5ad993e21e94b25fa90856984239c7ad">openProcessPicker</a>(QPointF pos);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> on_areaSelect(QRectF rect, <span class="keywordtype">bool</span> cumulation);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="class_id_container.html">IdContainer&lt;Process::NodeItem, Process::ProcessModel&gt;</a> m_nodes;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">const</span> <a class="code hl_class" href="class_nodal_1_1_model.html">Model</a>&amp; m_model;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  qreal m_defaultW{};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  ZoomRatio m_ratio{1.};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="class_nodal_1_1_view.html">View</a>* m_view{};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="aclass_id_container_html"><div class="ttname"><a href="class_id_container.html">IdContainer</a></div><div class="ttdoc">A map to access child objects through their id.</div><div class="ttdef"><b>Definition</b> IdentifiedObjectMap.hpp:17</div></div>
 <div class="ttc" id="aclass_nodal_1_1_model_html"><div class="ttname"><a href="class_nodal_1_1_model.html">Nodal::Model</a></div><div class="ttdef"><b>Definition</b> score-plugin-nodal/Nodal/Process.hpp:15</div></div>
 <div class="ttc" id="aclass_nodal_1_1_presenter_html"><div class="ttname"><a href="class_nodal_1_1_presenter.html">Nodal::Presenter</a></div><div class="ttdef"><b>Definition</b> plugins/score-plugin-nodal/Nodal/Presenter.hpp:20</div></div>
+<div class="ttc" id="aclass_nodal_1_1_presenter_html_a5ad993e21e94b25fa90856984239c7ad"><div class="ttname"><a href="class_nodal_1_1_presenter.html#a5ad993e21e94b25fa90856984239c7ad">Nodal::Presenter::openProcessPicker</a></div><div class="ttdeci">void openProcessPicker(QPointF pos)</div><div class="ttdoc">Asks which process to add, and adds it as a node at pos</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-nodal/Nodal/Presenter.cpp:154</div></div>
 <div class="ttc" id="aclass_nodal_1_1_view_html"><div class="ttname"><a href="class_nodal_1_1_view.html">Nodal::View</a></div><div class="ttdef"><b>Definition</b> score-plugin-nodal/Nodal/View.hpp:16</div></div>
 <div class="ttc" id="aclass_process_1_1_layer_presenter_html"><div class="ttname"><a href="class_process_1_1_layer_presenter.html">Process::LayerPresenter</a></div><div class="ttdef"><b>Definition</b> LayerPresenter.hpp:34</div></div>
 <div class="ttc" id="aclass_process_1_1_process_model_html"><div class="ttname"><a href="class_process_1_1_process_model.html">Process::ProcessModel</a></div><div class="ttdoc">The Process class.</div><div class="ttdef"><b>Definition</b> score-lib-process/Process/Process.hpp:82</div></div>

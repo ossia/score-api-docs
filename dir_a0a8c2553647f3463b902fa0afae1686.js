@@ -9,5 +9,6 @@ var dir_a0a8c2553647f3463b902fa0afae1686 =
     [ "SoundModel.hpp", "_sound_model_8hpp_source.html", null ],
     [ "SoundPresenter.hpp", "_sound_presenter_8hpp_source.html", null ],
     [ "SoundView.hpp", "_sound_view_8hpp_source.html", null ],
-    [ "WaveformComputer.hpp", "_waveform_computer_8hpp_source.html", null ]
+    [ "WaveformComputer.hpp", "_waveform_computer_8hpp_source.html", null ],
+    [ "WaveformRenderer.hpp", "_waveform_renderer_8hpp_source.html", null ]
 ];

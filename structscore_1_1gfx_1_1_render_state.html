@@ -165,6 +165,8 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>outputSize</b> {}</t
 <tr class="memitem:aa36a72c9f68f5a5bdc282fdb51f4e76e" id="r_aa36a72c9f68f5a5bdc282fdb51f4e76e"><td class="memItemLeft" align="right" valign="top"><a id="aa36a72c9f68f5a5bdc282fdb51f4e76e" name="aa36a72c9f68f5a5bdc282fdb51f4e76e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>samples</b> {1}</td></tr>
 <tr class="separator:aa36a72c9f68f5a5bdc282fdb51f4e76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3da1c91ee0cdc8dc7a8f63d04ae001e" id="r_ac3da1c91ee0cdc8dc7a8f63d04ae001e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_render_state.html#ac3da1c91ee0cdc8dc7a8f63d04ae001e">warnedSampleFallback</a> {}</td></tr>
+<tr class="separator:ac3da1c91ee0cdc8dc7a8f63d04ae001e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57bbafa00505a01a15ac8d61dc3de90" id="r_aa57bbafa00505a01a15ac8d61dc3de90"><td class="memItemLeft" align="right" valign="top"><a id="aa57bbafa00505a01a15ac8d61dc3de90" name="aa57bbafa00505a01a15ac8d61dc3de90"></a>
 QRhiTexture::Format&#160;</td><td class="memItemRight" valign="bottom"><b>renderFormat</b> {QRhiTexture::RGBA8}</td></tr>
 <tr class="separator:aa57bbafa00505a01a15ac8d61dc3de90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +189,22 @@ std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom">
 std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>savePipelineCache</b></td></tr>
 <tr class="separator:a96427650e85bdb25f5d7c4b054384fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac3da1c91ee0cdc8dc7a8f63d04ae001e" name="ac3da1c91ee0cdc8dc7a8f63d04ae001e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3da1c91ee0cdc8dc7a8f63d04ae001e">&#9670;&#160;</a></span>warnedSampleFallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::gfx::RenderState::warnedSampleFallback {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>createOutputRenderTarget fell back to one sample for this output once already: it is rebuilt on every resize, and says so the first time only. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_render_state_8hpp_source.html">RenderState.hpp</a></li>
 </ul>

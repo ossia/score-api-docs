@@ -126,10 +126,8 @@ halp::hslider_i32&lt;&quot;Octave&quot;, halp::irange{1, 7, 1}&gt;&#160;</td><td
 <tr class="memitem:ac9c97d915467a6c3488afac58c3e3f08" id="r_ac9c97d915467a6c3488afac58c3e3f08"><td class="memItemLeft" align="right" valign="top"><a id="ac9c97d915467a6c3488afac58c3e3f08" name="ac9c97d915467a6c3488afac58c3e3f08"></a>
 halp::hslider_i32&lt;&quot;Repeat&quot;, halp::irange{1, 8, 1}&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>repeat</b></td></tr>
 <tr class="separator:ac9c97d915467a6c3488afac58c3e3f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f2a7445c1d5a5018788a72457c0cddb" id="r_a7f2a7445c1d5a5018788a72457c0cddb"><td class="memItemLeft" align="right" valign="top"><a id="a7f2a7445c1d5a5018788a72457c0cddb" name="a7f2a7445c1d5a5018788a72457c0cddb"></a>
-halp::time_chooser&lt;&quot;Rate&quot;, halp::range{0.01, 4., 0.125}&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rate</b></td></tr>
-<tr class="memdesc:a7f2a7445c1d5a5018788a72457c0cddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Between two steps: seconds, or a note value, on the bars' grid. <br /></td></tr>
-<tr class="separator:a7f2a7445c1d5a5018788a72457c0cddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1317956b003ca240724efb308345bea" id="r_ac1317956b003ca240724efb308345bea"><td class="memItemLeft" align="right" valign="top">halp::time_chooser&lt;&quot;Rate&quot;, halp::range{0.01, 4., 0.125}, halp::bar_sync::pulse &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_arpeggiator_1_1v2_1_1_node_1_1ins.html#ac1317956b003ca240724efb308345bea">rate</a></td></tr>
+<tr class="separator:ac1317956b003ca240724efb308345bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaaae9ea6700554d6d15e15322238920" id="r_adaaae9ea6700554d6d15e15322238920"><td class="memItemLeft" align="right" valign="top"><a id="adaaae9ea6700554d6d15e15322238920" name="adaaae9ea6700554d6d15e15322238920"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>gate</b></td></tr>
 <tr class="separator:adaaae9ea6700554d6d15e15322238920"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +162,22 @@ halp::time_chooser&lt;&quot;Rate&quot;, halp::range{0.01, 4., 0.125}&gt;&#160;</
 &#160;</td><td class="memItemRight" valign="bottom"><b>seed</b></td></tr>
 <tr class="separator:a901c98a5feb9beedf4a1a9ff32b4feb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac1317956b003ca240724efb308345bea" name="ac1317956b003ca240724efb308345bea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1317956b003ca240724efb308345bea">&#9670;&#160;</a></span>rate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">halp::time_chooser&lt;&quot;Rate&quot;, halp::range{0.01, 4., 0.125}, halp::bar_sync::pulse&gt; Nodes::Arpeggiator::v2::Node::ins::rate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Between two steps: seconds, or a note value. A note value that does not fill the bar restarts at each bar line; a new Arpeggiator's goes on as one pulse across them, and the user picks either. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_arpeggiator__v2_8hpp_source.html">Arpeggiator_v2.hpp</a></li>
 </ul>

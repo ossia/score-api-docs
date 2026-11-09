@@ -15,5 +15,6 @@ var searchData=
   ['cpustaging_12',['CpuStaging',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea6c4f5c5957161c170d020440d8e4e1ee',1,'score::gfx::interop']]],
   ['createcontrols_13',['CreateControls',['../namespace_process.html#a592bb361ebf8fbc09c929c93208c71f1a38523301770f54c3e6f8daa92606322d',1,'Process']]],
   ['cuda_14',['Cuda',['../_rdma_gpu_buffer_8hpp.html#a4fd5995e708352db065278769194307ca8b95dcff7397d0693c03e394af5552aa',1,'score::gfx::interop']]],
-  ['cudahostreg_15',['CudaHostReg',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea5660b521841b6ec41207a5a5156e0f80',1,'score::gfx::interop']]]
+  ['cudahostreg_15',['CudaHostReg',['../_host_pinned_ring_8hpp.html#aca2bab1bfc42531f496092e2ebb22b8ea5660b521841b6ec41207a5a5156e0f80',1,'score::gfx::interop']]],
+  ['current_16',['Current',['../classscore_1_1_default_library.html#aa3ef1551147403e4fcb0fbfb589cddaca222a267cc5778206b253be35ee3ddab5',1,'score::DefaultLibrary']]]
 ];

@@ -123,6 +123,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b44c8ffb5726c1769bcdfe42a90d299" id="r_a5b44c8ffb5726c1769bcdfe42a90d299"><td class="memItemLeft" align="right" valign="top"><a id="a5b44c8ffb5726c1769bcdfe42a90d299" name="a5b44c8ffb5726c1769bcdfe42a90d299"></a>
 static std::shared_ptr&lt; <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fromJson</b> (const <a class="el" href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a> &amp;procs, const QByteArray &amp;obj) noexcept</td></tr>
 <tr class="separator:a5b44c8ffb5726c1769bcdfe42a90d299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a0b1bbc555e27602bccb4a734df9373" id="r_a7a0b1bbc555e27602bccb4a734df9373"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="struct_process_1_1_preset.html">Process::Preset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_preset.html#a7a0b1bbc555e27602bccb4a734df9373">fromFile</a> (const <a class="el" href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a> &amp;procs, const QString &amp;file) noexcept</td></tr>
+<tr class="separator:a7a0b1bbc555e27602bccb4a734df9373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -157,6 +159,44 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="struct_process_1_1_preset.html">Preset</a> &amp;lhs, const <a class="el" href="struct_process_1_1_preset.html">Preset</a> &amp;rhs) noexcept</td></tr>
 <tr class="separator:a79456f2ea80d5390280a5c9987cdd29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7a0b1bbc555e27602bccb4a734df9373" name="a7a0b1bbc555e27602bccb4a734df9373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a0b1bbc555e27602bccb4a734df9373">&#9670;&#160;</a></span>fromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="struct_process_1_1_preset.html">Preset</a> &gt; Process::Preset::fromFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_process_factory_list.html">Process::ProcessFactoryList</a> &amp;&#160;</td>
+          <td class="paramname"><em>procs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>file</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The preset stored in this file (.scp), with <code>path</code> set to it and its &lt;PRESET&gt;: paths resolved against its folder: what every preset read from disk goes through. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_preset_8hpp_source.html">Preset.hpp</a></li>
 <li><b>Preset.cpp</b></li>

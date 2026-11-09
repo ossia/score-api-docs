@@ -105,9 +105,12 @@ $(document).ready(function(){initNavTree('class_dataflow_1_1_audio_outlet_mini_p
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="class_dataflow_1_1_audio_outlet_mini_panel-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dataflow::AudioOutletMiniPanel Class Reference</div></div>
+  <div class="headertitle"><div class="title">Dataflow::AudioOutletMiniPanel Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The panel shown when clicking an audio output in the nodal view.  
+ <a href="class_dataflow_1_1_audio_outlet_mini_panel.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for Dataflow::AudioOutletMiniPanel:</div>
 <div class="dyncontent">
@@ -117,7 +120,10 @@ Inheritance diagram for Dataflow::AudioOutletMiniPanel:</div>
 <area href="classscore_1_1_arrow_dialog.html" alt="score::ArrowDialog" shape="rect" coords="99,56,288,80"/>
   </map>
 </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The panel shown when clicking an audio output in the nodal view. </p>
+<p>The gain and pan sub-ports (to plug cables or automations into), the gain trim, propagation to the parent interval, the address and where the cables go. Every edit goes through a command. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a46e4e379a82d747f0cd0b2f03d647289" id="r_a46e4e379a82d747f0cd0b2f03d647289"><td class="memItemLeft" align="right" valign="top"><a id="a46e4e379a82d747f0cd0b2f03d647289" name="a46e4e379a82d747f0cd0b2f03d647289"></a>
@@ -129,6 +135,9 @@ QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> ()
 <tr class="memitem:ac8e7bae10c3f5fc2177bc9627886cca8" id="r_ac8e7bae10c3f5fc2177bc9627886cca8"><td class="memItemLeft" align="right" valign="top"><a id="ac8e7bae10c3f5fc2177bc9627886cca8" name="ac8e7bae10c3f5fc2177bc9627886cca8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint</b> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
 <tr class="separator:ac8e7bae10c3f5fc2177bc9627886cca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7407cb18a8cc50024ef6d6ee1e959541" id="r_a7407cb18a8cc50024ef6d6ee1e959541"><td class="memItemLeft" align="right" valign="top"><a id="a7407cb18a8cc50024ef6d6ee1e959541" name="a7407cb18a8cc50024ef6d6ee1e959541"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAnchor</b> (QGraphicsItem *item)</td></tr>
+<tr class="separator:a7407cb18a8cc50024ef6d6ee1e959541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_arrow_dialog"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_arrow_dialog')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_arrow_dialog.html">score::ArrowDialog</a></td></tr>
 <tr class="memitem:af3c68d1d7c8e25404358c06722004135 inherit pub_methods_classscore_1_1_arrow_dialog" id="r_af3c68d1d7c8e25404358c06722004135"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>ArrowDialog</b> (QGraphicsScene *parent)</td></tr>

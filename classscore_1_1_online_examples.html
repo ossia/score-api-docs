@@ -137,10 +137,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadCache</b> ()</td>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>refresh</b> ()</td></tr>
 <tr class="memdesc:a06be902104bd327ba27968b685ed9312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits updated() only if the manifest changed. <br /></td></tr>
 <tr class="separator:a06be902104bd327ba27968b685ed9312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f955c6913e21915b663fa8542ddd07f" id="r_a2f955c6913e21915b663fa8542ddd07f"><td class="memItemLeft" align="right" valign="top"><a id="a2f955c6913e21915b663fa8542ddd07f" name="a2f955c6913e21915b663fa8542ddd07f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>install</b> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex, std::function&lt; void(QString)&gt; done)</td></tr>
-<tr class="memdesc:a2f955c6913e21915b663fa8542ddd07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls <code>done</code> with the local path, or an empty string on failure. <br /></td></tr>
-<tr class="separator:a2f955c6913e21915b663fa8542ddd07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b1e108b5672766c25c42b5cbf2407a" id="r_af5b1e108b5672766c25c42b5cbf2407a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_online_examples.html#af5b1e108b5672766c25c42b5cbf2407a">install</a> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex, std::function&lt; void(QString)&gt; done, bool replace=false)</td></tr>
+<tr class="separator:af5b1e108b5672766c25c42b5cbf2407a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322e16149ddc9abcd874eb9b17a1fa25" id="r_a322e16149ddc9abcd874eb9b17a1fa25"><td class="memItemLeft" align="right" valign="top"><a id="a322e16149ddc9abcd874eb9b17a1fa25" name="a322e16149ddc9abcd874eb9b17a1fa25"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDownloading</b> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex) const</td></tr>
+<tr class="separator:a322e16149ddc9abcd874eb9b17a1fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55fd2cced7fd78842fc234cb3fdab18c" id="r_a55fd2cced7fd78842fc234cb3fdab18c"><td class="memItemLeft" align="right" valign="top"><a id="a55fd2cced7fd78842fc234cb3fdab18c" name="a55fd2cced7fd78842fc234cb3fdab18c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updated</b> ()</td></tr>
 <tr class="separator:a55fd2cced7fd78842fc234cb3fdab18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,14 +154,109 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>manifestUrl
 <tr class="memitem:a50f5db2bd8aa24a85c27c1b2b2ad1b4f" id="r_a50f5db2bd8aa24a85c27c1b2b2ad1b4f"><td class="memItemLeft" align="right" valign="top"><a id="a50f5db2bd8aa24a85c27c1b2b2ad1b4f" name="a50f5db2bd8aa24a85c27c1b2b2ad1b4f"></a>
 static QString&#160;</td><td class="memItemRight" valign="bottom"><b>installRoot</b> ()</td></tr>
 <tr class="separator:a50f5db2bd8aa24a85c27c1b2b2ad1b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9841ba3682d17a52346383037ee6ac8" id="r_ad9841ba3682d17a52346383037ee6ac8"><td class="memItemLeft" align="right" valign="top"><a id="ad9841ba3682d17a52346383037ee6ac8" name="ad9841ba3682d17a52346383037ee6ac8"></a>
-static QString&#160;</td><td class="memItemRight" valign="bottom"><b>installFolder</b> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex)</td></tr>
+<tr class="memitem:ad9841ba3682d17a52346383037ee6ac8" id="r_ad9841ba3682d17a52346383037ee6ac8"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_online_examples.html#ad9841ba3682d17a52346383037ee6ac8">installFolder</a> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex)</td></tr>
 <tr class="separator:ad9841ba3682d17a52346383037ee6ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619747ba42b155d726e44c1252de6a96" id="r_a619747ba42b155d726e44c1252de6a96"><td class="memItemLeft" align="right" valign="top"><a id="a619747ba42b155d726e44c1252de6a96" name="a619747ba42b155d726e44c1252de6a96"></a>
+static QString&#160;</td><td class="memItemRight" valign="bottom"><b>contentFolder</b> (const QString &amp;folder)</td></tr>
+<tr class="memdesc:a619747ba42b155d726e44c1252de6a96"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>folder</code>, or the only folder in it: where the files of a zip example are <br /></td></tr>
+<tr class="separator:a619747ba42b155d726e44c1252de6a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a93e15e5860e3b1e9d6ab3be8631db" id="r_a69a93e15e5860e3b1e9d6ab3be8631db"><td class="memItemLeft" align="right" valign="top"><a id="a69a93e15e5860e3b1e9d6ab3be8631db" name="a69a93e15e5860e3b1e9d6ab3be8631db"></a>
 static QString&#160;</td><td class="memItemRight" valign="bottom"><b>localPath</b> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex)</td></tr>
 <tr class="memdesc:a69a93e15e5860e3b1e9d6ab3be8631db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty until the example has been installed. <br /></td></tr>
 <tr class="separator:a69a93e15e5860e3b1e9d6ab3be8631db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a3c625d5196fcb2621883253ae223e6" id="r_a2a3c625d5196fcb2621883253ae223e6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_online_examples.html#a2a3c625d5196fcb2621883253ae223e6">changedOnline</a> (const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;ex)</td></tr>
+<tr class="separator:a2a3c625d5196fcb2621883253ae223e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2a3c625d5196fcb2621883253ae223e6" name="a2a3c625d5196fcb2621883253ae223e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3c625d5196fcb2621883253ae223e6">&#9670;&#160;</a></span>changedOnline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::OnlineExamples::changedOnline </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;&#160;</td>
+          <td class="paramname"><em>ex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The example is installed, and the manifest describes another file than the one that was downloaded. Unknown, hence false, for copies downloaded without the record this compares to. </p>
+
+</div>
+</div>
+<a id="af5b1e108b5672766c25c42b5cbf2407a" name="af5b1e108b5672766c25c42b5cbf2407a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b1e108b5672766c25c42b5cbf2407a">&#9670;&#160;</a></span>install()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::OnlineExamples::install </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;&#160;</td>
+          <td class="paramname"><em>ex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(QString)&gt;&#160;</td>
+          <td class="paramname"><em>done</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>replace</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calls <code>done</code> with the local path, or an empty string on failure. An installed example is downloaded again only when <code>replace</code> is set; the local copy is then replaced whole, files the new version does not have included, and only once the new version is completely written: on any failure the local copy stays as it was. A request for an example already being downloaded waits for that download. </p>
+
+</div>
+</div>
+<a id="ad9841ba3682d17a52346383037ee6ac8" name="ad9841ba3682d17a52346383037ee6ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9841ba3682d17a52346383037ee6ac8">&#9670;&#160;</a></span>installFolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString score::OnlineExamples::installFolder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_online_example.html">OnlineExample</a> &amp;&#160;</td>
+          <td class="paramname"><em>ex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Empty when the id is not a relative path of plain folder names, which could otherwise name the library's own folders. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_online_examples_8hpp_source.html">OnlineExamples.hpp</a></li>
 <li><b>OnlineExamples.cpp</b></li>

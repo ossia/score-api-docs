@@ -330,44 +330,45 @@ $(document).ready(function(){initNavTree('_gfx_context_8hpp_source.html',''); in
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  moodycamel::ConcurrentQueue&lt;Command&gt; tick_commands;</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  moodycamel::ConcurrentQueue&lt;score::gfx::Message&gt; tick_messages;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  std::vector&lt;std::pair&lt;score::gfx::Message, int&gt;&gt; m_deferredMessages;</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  std::vector&lt;std::pair&lt;EdgeSpec, int&gt;&gt; m_deferredEdges;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  std::mutex m_disownedLock;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  ossia::flat_set&lt;int32_t&gt; m_disownedPending;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordtype">bool</span> isDisownedPending(int32_t index);</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  std::mutex edges_lock;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  ossia::flat_set&lt;EdgeSpec&gt; new_edges TS_GUARDED_BY(edges_lock);</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  ossia::flat_set&lt;EdgeSpec&gt; edges TS_GUARDED_BY(edges_lock);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  ossia::flat_set&lt;EdgeSpec&gt; preview_edges TS_GUARDED_BY(edges_lock);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  std::atomic_bool edges_changed{};</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  <span class="keywordtype">bool</span> m_fullRebuildThisFrame{};</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <a class="code hl_class" href="classscore_1_1_high_resolution_timer.html">score::HighResolutionTimer</a>* m_no_vsync_timer{};</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  <a class="code hl_class" href="classscore_1_1_high_resolution_timer.html">score::HighResolutionTimer</a>* m_watchdog_timer{};</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="comment">// Rate == 0 with vsync off: zero-interval timer, renders back-to-back.</span></div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  QTimer* m_freewheel_timer{};</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  <span class="comment">// Per-output render clocks (the render-clock / genlock abstraction).</span></div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="comment">// Each TimerClock owns one shared HighResolutionTimer at a given</span></div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// manualRenderingRate and the coalesced set of outputs driven by it</span></div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="comment">// (clock #2, the default); the single DisplayVSyncClock wraps the</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="comment">// swap-chain vsync callback (clock #1).</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  std::vector&lt;std::unique_ptr&lt;score::gfx::TimerClock&gt;&gt; m_renderClocks;</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  std::unique_ptr&lt;score::gfx::DisplayVSyncClock&gt; m_vsyncClock;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  ossia::object_pool&lt;std::vector&lt;score::gfx::gfx_input&gt;&gt; m_buffers;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  std::vector&lt;score::gfx::Message&gt; m_drainedMessages;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  std::vector&lt;std::pair&lt;EdgeSpec, int&gt;&gt; m_deferredEdges;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  std::mutex m_disownedLock;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  ossia::flat_set&lt;int32_t&gt; m_disownedPending;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  <span class="keywordtype">bool</span> isDisownedPending(int32_t index);</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  std::mutex edges_lock;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  ossia::flat_set&lt;EdgeSpec&gt; new_edges TS_GUARDED_BY(edges_lock);</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  ossia::flat_set&lt;EdgeSpec&gt; edges TS_GUARDED_BY(edges_lock);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  ossia::flat_set&lt;EdgeSpec&gt; preview_edges TS_GUARDED_BY(edges_lock);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  std::atomic_bool edges_changed{};</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  <span class="keywordtype">bool</span> m_fullRebuildThisFrame{};</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <a class="code hl_class" href="classscore_1_1_high_resolution_timer.html">score::HighResolutionTimer</a>* m_no_vsync_timer{};</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  <a class="code hl_class" href="classscore_1_1_high_resolution_timer.html">score::HighResolutionTimer</a>* m_watchdog_timer{};</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  <span class="comment">// Rate == 0 with vsync off: zero-interval timer, renders back-to-back.</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  QTimer* m_freewheel_timer{};</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  <span class="comment">// Per-output render clocks (the render-clock / genlock abstraction).</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="comment">// Each TimerClock owns one shared HighResolutionTimer at a given</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="comment">// manualRenderingRate and the coalesced set of outputs driven by it</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="comment">// (clock #2, the default); the single DisplayVSyncClock wraps the</span></div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="comment">// swap-chain vsync callback (clock #1).</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  std::vector&lt;std::unique_ptr&lt;score::gfx::TimerClock&gt;&gt; m_renderClocks;</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  std::unique_ptr&lt;score::gfx::DisplayVSyncClock&gt; m_vsyncClock;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  AssetTable m_assets;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  ossia::object_pool&lt;std::vector&lt;score::gfx::gfx_input&gt;&gt; m_buffers;</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <a class="code hl_class" href="classscore_1_1_timers.html">score::Timers</a> m_timers;</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  AssetTable m_assets;</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">int</span> m_renderDepth{};</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">int</span> m_nestedRenders{};</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>};</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <a class="code hl_class" href="classscore_1_1_timers.html">score::Timers</a> m_timers;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordtype">int</span> m_renderDepth{};</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordtype">int</span> m_nestedRenders{};</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>};</div>
 </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>}</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>}</div>
 <div class="ttc" id="aclass_gfx_1_1_asset_table_html"><div class="ttname"><a href="class_gfx_1_1_asset_table.html">Gfx::AssetTable</a></div><div class="ttdoc">Cross-RenderList content-hash dedup for decoded asset bytes.</div><div class="ttdef"><b>Definition</b> AssetTable.hpp:71</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_context_html"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html">Gfx::GfxContext</a></div><div class="ttdef"><b>Definition</b> GfxContext.hpp:74</div></div>
 <div class="ttc" id="aclass_gfx_1_1_gfx_context_html_a4ae5cfe1b2d57c0564d7d7d0c6015760"><div class="ttname"><a href="class_gfx_1_1_gfx_context.html#a4ae5cfe1b2d57c0564d7d7d0c6015760">Gfx::GfxContext::assets</a></div><div class="ttdeci">AssetTable &amp; assets() noexcept</div><div class="ttdoc">Session-wide content-hash decode cache.</div><div class="ttdef"><b>Definition</b> GfxContext.hpp:196</div></div>

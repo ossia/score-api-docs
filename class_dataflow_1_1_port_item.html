@@ -130,6 +130,9 @@ Inheritance diagram for Dataflow::PortItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5a64870b2ceacee4c1e7e57122e279b5" id="r_a5a64870b2ceacee4c1e7e57122e279b5"><td class="memItemLeft" align="right" valign="top"><a id="a5a64870b2ceacee4c1e7e57122e279b5" name="a5a64870b2ceacee4c1e7e57122e279b5"></a>
+const std::vector&lt; QPointer&lt; <a class="el" href="class_dataflow_1_1_cable_item.html">CableItem</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>connectedCables</b> () const noexcept</td></tr>
+<tr class="separator:a5a64870b2ceacee4c1e7e57122e279b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3694c949dc05a5dd2ad9e34d3aaab6a2" id="r_a3694c949dc05a5dd2ad9e34d3aaab6a2"><td class="memItemLeft" align="right" valign="top"><a id="a3694c949dc05a5dd2ad9e34d3aaab6a2" name="a3694c949dc05a5dd2ad9e34d3aaab6a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PortItem</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;p, const <a class="el" href="struct_process_1_1_context.html">Process::Context</a> &amp;ctx, QGraphicsItem *parent)</td></tr>
 <tr class="separator:a3694c949dc05a5dd2ad9e34d3aaab6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +142,8 @@ const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#
 <tr class="memitem:a5a573de329632239376fc48b06baaddc" id="r_a5a573de329632239376fc48b06baaddc"><td class="memItemLeft" align="right" valign="top"><a id="a5a573de329632239376fc48b06baaddc" name="a5a573de329632239376fc48b06baaddc"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setupMenu</b> (QMenu &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
 <tr class="separator:a5a573de329632239376fc48b06baaddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d5a57d5c4f202436a120cbaed58947d" id="r_a2d5a57d5c4f202436a120cbaed58947d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dataflow_1_1_port_item.html#a2d5a57d5c4f202436a120cbaed58947d">addLearnAction</a> (QMenu &amp;, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx)</td></tr>
+<tr class="separator:a2d5a57d5c4f202436a120cbaed58947d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa402db3adf19826c9a4920d8b78fbdbd" id="r_aa402db3adf19826c9a4920d8b78fbdbd"><td class="memItemLeft" align="right" valign="top"><a id="aa402db3adf19826c9a4920d8b78fbdbd" name="aa402db3adf19826c9a4920d8b78fbdbd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setPortVisible</b> (bool b)</td></tr>
 <tr class="separator:aa402db3adf19826c9a4920d8b78fbdbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,6 +284,35 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Dataflow::CableItem<
 <tr class="separator:a380607356dcc2ae2fedf67094017b3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2d5a57d5c4f202436a120cbaed58947d" name="a2d5a57d5c4f202436a120cbaed58947d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d5a57d5c4f202436a120cbaed58947d">&#9670;&#160;</a></span>addLearnAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Dataflow::PortItem::addLearnAction </td>
+          <td>(</td>
+          <td class="paramtype">QMenu &amp;&#160;</td>
+          <td class="paramname"><em>menu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>"Learn address": lists the device addresses whose value changes while it is open; the port takes the one the user picks </p>
+
+</div>
+</div>
 <a id="a80a652f2265b50ea08d9a1c6b70a95b5" name="a80a652f2265b50ea08d9a1c6b70a95b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80a652f2265b50ea08d9a1c6b70a95b5">&#9670;&#160;</a></span>collidesWithPath()</h2>
 

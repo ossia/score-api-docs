@@ -20,6 +20,7 @@ var searchData=
   ['expanded_17',['expanded',['../struct_protocols_1_1_m_i_d_i_devices_1_1_generic_channel.html#a5a3862892bf3eda310879512ad33e629',1,'Protocols::MIDIDevices::GenericChannel']]],
   ['exposure_18',['exposure',['../structscore_1_1gfx_1_1_capture_adjust.html#ad3121e6ce60dc5c09505b35061e220d1',1,'score::gfx::CaptureAdjust']]],
   ['extended_19',['extended',['../struct_protocols_1_1_c_a_n_1_1_message.html#a5d52f2624bf46e02d1e8eeb71bac1a7b',1,'Protocols::CAN::Message']]],
-  ['externalphysicalmemory_20',['externalPhysicalMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a8165bd326220c89f7df2fe234dcde5fb',1,'score::gfx::interop::AmdGlExtensions']]],
-  ['externalvirtualmemory_21',['externalVirtualMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a30bf0c827d4c05b576427298222495b8',1,'score::gfx::interop::AmdGlExtensions']]]
+  ['extensions_20',['extensions',['../structoscr_1_1_sound_set_options.html#a4bbe52b7c8c08422e369b073cb85e036',1,'oscr::SoundSetOptions']]],
+  ['externalphysicalmemory_21',['externalPhysicalMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a8165bd326220c89f7df2fe234dcde5fb',1,'score::gfx::interop::AmdGlExtensions']]],
+  ['externalvirtualmemory_22',['externalVirtualMemory',['../structscore_1_1gfx_1_1interop_1_1_amd_gl_extensions.html#a30bf0c827d4c05b576427298222495b8',1,'score::gfx::interop::AmdGlExtensions']]]
 ];

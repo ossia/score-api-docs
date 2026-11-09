@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Nodes::Looper::tagged_material&lt; MaxPasses &gt; Struct Template Reference</title>
+        <title>score: Nodes::Looper::tagged_material&lt; MaxPasses, MaxKept &gt; Struct Template Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -106,57 +106,66 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_looper_1_1tagged__mat
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_nodes_1_1_looper_1_1tagged__material-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Nodes::Looper::tagged_material&lt; MaxPasses &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Nodes::Looper::tagged_material&lt; MaxPasses, MaxKept &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int MaxPasses&gt;<br />
-struct Nodes::Looper::tagged_material&lt; MaxPasses &gt;</div><p>Material kept apart from the passes, each piece tagged with <code>pass</code>, the index of its pass, <code>replaced_by</code>, the passes that replace it, a bit each, and <code>merged</code>, its merge_marks: how a <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">pass_stack</a>'s hooks move it along.</p>
-<p>Two indices past every pass there can be hold the material of the layer set aside, and that of a muted pass a merge lost, which undoing the merge gives back. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int MaxPasses, int MaxKept&gt;<br />
+struct Nodes::Looper::tagged_material&lt; MaxPasses, MaxKept &gt;</div><p>Material kept apart from the passes, each piece tagged with <code>pass</code>, the index of its pass, <code>replaced_by</code>, the passes that replace it, a bit each, and <code>merged</code>, its merge_marks: how a <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">pass_stack</a>'s hooks move it along.</p>
+<p>Indices past every pass there can be hold the material of the layer set aside, that of a muted pass a merge lost, which undoing the merge gives back, and that of the erased passes undo can bring back, which the passes moving leave where it is. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a479ee29f56e680e229fb88df455290d1" id="r_a479ee29f56e680e229fb88df455290d1"><td class="memItemLeft" align="right" valign="top"><a id="a479ee29f56e680e229fb88df455290d1" name="a479ee29f56e680e229fb88df455290d1"></a>
+<tr class="memitem:aa2b6a52cd9a8395a3847701e06189c05" id="r_aa2b6a52cd9a8395a3847701e06189c05"><td class="memItemLeft" align="right" valign="top"><a id="aa2b6a52cd9a8395a3847701e06189c05" name="aa2b6a52cd9a8395a3847701e06189c05"></a>
 static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>bit</b> (int k) noexcept</td></tr>
-<tr class="separator:a479ee29f56e680e229fb88df455290d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace479833826fadf7646fd942b9aa75f9" id="r_ace479833826fadf7646fd942b9aa75f9"><td class="memTemplParams" colspan="2"><a id="ace479833826fadf7646fd942b9aa75f9" name="ace479833826fadf7646fd942b9aa75f9"></a>
+<tr class="separator:aa2b6a52cd9a8395a3847701e06189c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436a966f4b60783c42029fb6d8fd76c1" id="r_a436a966f4b60783c42029fb6d8fd76c1"><td class="memItemLeft" align="right" valign="top"><a id="a436a966f4b60783c42029fb6d8fd76c1" name="a436a966f4b60783c42029fb6d8fd76c1"></a>
+static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>without</b> (uint64_t m, int k) noexcept</td></tr>
+<tr class="separator:a436a966f4b60783c42029fb6d8fd76c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4eaf3bf82801503e0012c9111fe8934" id="r_ab4eaf3bf82801503e0012c9111fe8934"><td class="memItemLeft" align="right" valign="top"><a id="ab4eaf3bf82801503e0012c9111fe8934" name="ab4eaf3bf82801503e0012c9111fe8934"></a>
+static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>with_room</b> (uint64_t m, int k) noexcept</td></tr>
+<tr class="separator:ab4eaf3bf82801503e0012c9111fe8934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6280ec5d0d24f766c70e0d701854c221" id="r_a6280ec5d0d24f766c70e0d701854c221"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6280ec5d0d24f766c70e0d701854c221"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html#a6280ec5d0d24f766c70e0d701854c221">set_aside</a> (T &amp;e, int k, int to=aside_pass) noexcept</td></tr>
+<tr class="separator:a6280ec5d0d24f766c70e0d701854c221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f3eb2ec6affc3977b551d504daad5d" id="r_a90f3eb2ec6affc3977b551d504daad5d"><td class="memTemplParams" colspan="2"><a id="a90f3eb2ec6affc3977b551d504daad5d" name="a90f3eb2ec6affc3977b551d504daad5d"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ace479833826fadf7646fd942b9aa75f9"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>erase</b> (T &amp;e, int k) noexcept</td></tr>
-<tr class="separator:ace479833826fadf7646fd942b9aa75f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2528f5634b5ee62c012b5be9b2ca16ba" id="r_a2528f5634b5ee62c012b5be9b2ca16ba"><td class="memTemplParams" colspan="2"><a id="a2528f5634b5ee62c012b5be9b2ca16ba" name="a2528f5634b5ee62c012b5be9b2ca16ba"></a>
+<tr class="memitem:a90f3eb2ec6affc3977b551d504daad5d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>put_back</b> (T &amp;e, int k, int from=aside_pass) noexcept</td></tr>
+<tr class="memdesc:a90f3eb2ec6affc3977b551d504daad5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pass at index <code>from</code> past the passes comes back at k. <br /></td></tr>
+<tr class="separator:a90f3eb2ec6affc3977b551d504daad5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6698b8bb0952afb456e692f1503d24c1" id="r_a6698b8bb0952afb456e692f1503d24c1"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a6698b8bb0952afb456e692f1503d24c1"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html#a6698b8bb0952afb456e692f1503d24c1">merge</a> (T &amp;e, int a, bool lost_a, bool lost_b) noexcept</td></tr>
+<tr class="separator:a6698b8bb0952afb456e692f1503d24c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8031d9498d407c5fd3f5cf4b6cb5409" id="r_aa8031d9498d407c5fd3f5cf4b6cb5409"><td class="memTemplParams" colspan="2"><a id="aa8031d9498d407c5fd3f5cf4b6cb5409" name="aa8031d9498d407c5fd3f5cf4b6cb5409"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2528f5634b5ee62c012b5be9b2ca16ba"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>set_aside</b> (T &amp;e, int k) noexcept</td></tr>
-<tr class="separator:a2528f5634b5ee62c012b5be9b2ca16ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b7ca37e520f779b9f041e25fede839" id="r_a72b7ca37e520f779b9f041e25fede839"><td class="memTemplParams" colspan="2"><a id="a72b7ca37e520f779b9f041e25fede839" name="a72b7ca37e520f779b9f041e25fede839"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a72b7ca37e520f779b9f041e25fede839"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>put_back</b> (T &amp;e, int k) noexcept</td></tr>
-<tr class="separator:a72b7ca37e520f779b9f041e25fede839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a274ac82b316bb40d12e4c386f60e799d" id="r_a274ac82b316bb40d12e4c386f60e799d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a274ac82b316bb40d12e4c386f60e799d"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html#a274ac82b316bb40d12e4c386f60e799d">merge</a> (T &amp;e, int a, bool lost_a, bool lost_b) noexcept</td></tr>
-<tr class="separator:a274ac82b316bb40d12e4c386f60e799d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbc0093d02ed0c3f8e0cf369294094c" id="r_a5fbc0093d02ed0c3f8e0cf369294094c"><td class="memTemplParams" colspan="2"><a id="a5fbc0093d02ed0c3f8e0cf369294094c" name="a5fbc0093d02ed0c3f8e0cf369294094c"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a5fbc0093d02ed0c3f8e0cf369294094c"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unmerge</b> (T &amp;e, int a) noexcept</td></tr>
-<tr class="memdesc:a5fbc0093d02ed0c3f8e0cf369294094c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The merge of <code>a</code> and <code>a + 1</code> is undone. <br /></td></tr>
-<tr class="separator:a5fbc0093d02ed0c3f8e0cf369294094c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8031d9498d407c5fd3f5cf4b6cb5409"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>unmerge</b> (T &amp;e, int a) noexcept</td></tr>
+<tr class="memdesc:aa8031d9498d407c5fd3f5cf4b6cb5409"><td class="mdescLeft">&#160;</td><td class="mdescRight">The merge of <code>a</code> and <code>a + 1</code> is undone. <br /></td></tr>
+<tr class="separator:aa8031d9498d407c5fd3f5cf4b6cb5409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a7d5355385e34f19d59fd387001118564" id="r_a7d5355385e34f19d59fd387001118564"><td class="memItemLeft" align="right" valign="top"><a id="a7d5355385e34f19d59fd387001118564" name="a7d5355385e34f19d59fd387001118564"></a>
+<tr class="memitem:abe86eea3871e96288ea07b4ae0b55bcd" id="r_abe86eea3871e96288ea07b4ae0b55bcd"><td class="memItemLeft" align="right" valign="top"><a id="abe86eea3871e96288ea07b4ae0b55bcd" name="abe86eea3871e96288ea07b4ae0b55bcd"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>aside_pass</b> = MaxPasses</td></tr>
-<tr class="separator:a7d5355385e34f19d59fd387001118564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7204e9bae127434501576bc0065cae6b" id="r_a7204e9bae127434501576bc0065cae6b"><td class="memItemLeft" align="right" valign="top"><a id="a7204e9bae127434501576bc0065cae6b" name="a7204e9bae127434501576bc0065cae6b"></a>
+<tr class="separator:abe86eea3871e96288ea07b4ae0b55bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeca2f6b873dec36716db9cf2b7f1e777" id="r_aeca2f6b873dec36716db9cf2b7f1e777"><td class="memItemLeft" align="right" valign="top"><a id="aeca2f6b873dec36716db9cf2b7f1e777" name="aeca2f6b873dec36716db9cf2b7f1e777"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>lost_pass</b> = MaxPasses + 1</td></tr>
-<tr class="separator:a7204e9bae127434501576bc0065cae6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aeca2f6b873dec36716db9cf2b7f1e777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ca25eccea819646476af5bed53d94b6" id="r_a4ca25eccea819646476af5bed53d94b6"><td class="memItemLeft" align="right" valign="top"><a id="a4ca25eccea819646476af5bed53d94b6" name="a4ca25eccea819646476af5bed53d94b6"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kept_pass</b> = MaxPasses + 2</td></tr>
+<tr class="separator:a4ca25eccea819646476af5bed53d94b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf43daf9bfa9ac5731bc914aadca990" id="r_abdf43daf9bfa9ac5731bc914aadca990"><td class="memItemLeft" align="right" valign="top"><a id="abdf43daf9bfa9ac5731bc914aadca990" name="abdf43daf9bfa9ac5731bc914aadca990"></a>
+static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>passes_mask</b> = bit(aside_pass) - 1</td></tr>
+<tr class="memdesc:abdf43daf9bfa9ac5731bc914aadca990"><td class="mdescLeft">&#160;</td><td class="mdescRight">The bits of the passes, under the ones of the material kept apart. <br /></td></tr>
+<tr class="separator:abdf43daf9bfa9ac5731bc914aadca990"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a274ac82b316bb40d12e4c386f60e799d" name="a274ac82b316bb40d12e4c386f60e799d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a274ac82b316bb40d12e4c386f60e799d">&#9670;&#160;</a></span>merge()</h2>
+<a id="a6698b8bb0952afb456e692f1503d24c1" name="a6698b8bb0952afb456e692f1503d24c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6698b8bb0952afb456e692f1503d24c1">&#9670;&#160;</a></span>merge()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int MaxPasses&gt; </div>
+template&lt;int MaxPasses, int MaxKept&gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
 <table class="mlabels">
@@ -164,7 +173,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html">Nodes::Looper::tagged_material</a>&lt; MaxPasses &gt;::merge </td>
+          <td class="memname">static void <a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html">Nodes::Looper::tagged_material</a>&lt; MaxPasses, MaxKept &gt;::merge </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>e</em>, </td>
@@ -200,6 +209,53 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Passes <code>a</code> and <code>a + 1</code> become one. What either of them replaces, the merged one does, its own material under it included, which stays silent; but a lost pass, muted and merged with one that is not, takes its material and its replacing with it. </p>
+
+</div>
+</div>
+<a id="a6280ec5d0d24f766c70e0d701854c221" name="a6280ec5d0d24f766c70e0d701854c221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6280ec5d0d24f766c70e0d701854c221">&#9670;&#160;</a></span>set_aside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int MaxPasses, int MaxKept&gt; </div>
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html">Nodes::Looper::tagged_material</a>&lt; MaxPasses, MaxKept &gt;::set_aside </td>
+          <td>(</td>
+          <td class="paramtype">T &amp;&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>to</em> = <code>aside_pass</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pass k goes to index <code>to</code> past the passes, the side or a place of the kept passes: the passes over it move down. </p>
 
 </div>
 </div>

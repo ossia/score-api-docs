@@ -120,7 +120,25 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>node_id</b> {}</td
 <tr class="memitem:a7b93fc408334cf04822ae3ffed7e82b4" id="r_a7b93fc408334cf04822ae3ffed7e82b4"><td class="memItemLeft" align="right" valign="top"><a id="a7b93fc408334cf04822ae3ffed7e82b4" name="a7b93fc408334cf04822ae3ffed7e82b4"></a>
 std::vector&lt; gfx_input &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>input</b></td></tr>
 <tr class="separator:a7b93fc408334cf04822ae3ffed7e82b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfce0a807d65f3d813fc873a11745df" id="r_a5cfce0a807d65f3d813fc873a11745df"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_message.html#a5cfce0a807d65f3d813fc873a11745df">tick</a> {}</td></tr>
+<tr class="separator:a5cfce0a807d65f3d813fc873a11745df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5cfce0a807d65f3d813fc873a11745df" name="a5cfce0a807d65f3d813fc873a11745df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cfce0a807d65f3d813fc873a11745df">&#9670;&#160;</a></span>tick</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t score::gfx::Message::tick {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The execution tick that sent it. A parallel execution sends a node's messages from whichever thread ran it, and the queue keeps the order of each thread only: the receiver applies them by tick. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-gfx_2_gfx_2_graph_2_node_8hpp_source.html">score-plugin-gfx/Gfx/Graph/Node.hpp</a></li>
 </ul>

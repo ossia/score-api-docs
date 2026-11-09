@@ -128,7 +128,7 @@ Inheritance diagram for score::gfx::P210Decoder:</div>
 <li>Plane 0: Y (16-bit words), full resolution</li>
 <li>Plane 1: UV interleaved (16-bit per component), half width, full height</li>
 </ul>
-<p>P210 puts 10 bits in the HIGH bits of each word, so R16 unorm returns a value that is short of 1.0 at full scale and has to be renormalized &ndash; that is what the scale is for. P216 uses all 16 bits and wants no scaling at all, which is the only difference between the two and why they share this decoder.</p>
+<p>Both store the 8-bit code shifted left by 8 &ndash; P210 has ten significant bits at the top of each word, P216 sixteen &ndash; so R16 unorm returns code/65535 for a sample whose 8-bit-normalised value is code/65280, and both need the same renormalization (SCORE_GFX_MSB_ALIGNED_SCALE).</p>
 <p>P216 is what NDI delivers for a 16-bit source, and NDI delivers it as individual FIELDS: half-height frames at twice the rate. Those are uploaded into the two halves of one full-height texture (see planeRows) and resolved by score_tc, so nothing here weaves anything on the CPU. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -153,7 +153,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a77a1ca70b0d016c84995a5aec3c22e94" id="r_a77a1ca70b0d016c84995a5aec3c22e94"><td class="memItemLeft" align="right" valign="top"><a id="a77a1ca70b0d016c84995a5aec3c22e94" name="a77a1ca70b0d016c84995a5aec3c22e94"></a>
 <a class="el" href="struct_video_1_1_image_format.html">Video::ImageFormat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>decoder</b></td></tr>
 <tr class="separator:a77a1ca70b0d016c84995a5aec3c22e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693b455bf046cf98c0036f0263ec2e65" id="r_a693b455bf046cf98c0036f0263ec2e65"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_p210_decoder.html#a693b455bf046cf98c0036f0263ec2e65">scale</a> {SCORE_GFX_MSB_ALIGNED_SCALE}</td></tr>
+<tr class="memitem:a693b455bf046cf98c0036f0263ec2e65" id="r_a693b455bf046cf98c0036f0263ec2e65"><td class="memItemLeft" align="right" valign="top"><a id="a693b455bf046cf98c0036f0263ec2e65" name="a693b455bf046cf98c0036f0263ec2e65"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>scale</b> {SCORE_GFX_MSB_ALIGNED_SCALE}</td></tr>
+<tr class="memdesc:a693b455bf046cf98c0036f0263ec2e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MSB-aligned renormalization, which P210 and P216 share. <br /></td></tr>
 <tr class="separator:a693b455bf046cf98c0036f0263ec2e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classscore_1_1gfx_1_1_g_p_u_video_decoder.html">score::gfx::GPUVideoDecoder</a></td></tr>
 <tr class="memitem:ac798b702a346427f64cbe627bc71dd59 inherit pub_attribs_classscore_1_1gfx_1_1_g_p_u_video_decoder" id="r_ac798b702a346427f64cbe627bc71dd59"><td class="memItemLeft" align="right" valign="top">
@@ -317,21 +319,6 @@ static QString&#160;</td><td class="memItemRight" valign="bottom"><b>vertexShade
 <div class="line"><span class="stringliteral">  fragColor = processTexture(vec4(y, u, v, 1.));</span></div>
 <div class="line"><span class="stringliteral">})_&quot;</span></div>
 </div><!-- fragment -->
-</div>
-</div>
-<a id="a693b455bf046cf98c0036f0263ec2e65" name="a693b455bf046cf98c0036f0263ec2e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a693b455bf046cf98c0036f0263ec2e65">&#9670;&#160;</a></span>scale</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* score::gfx::P210Decoder::scale {SCORE_GFX_MSB_ALIGNED_SCALE}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>"1.0" for P216, which uses every bit; the MSB-aligned renormalization for P210, whose ten bits sit at the top of a 16-bit word. </p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

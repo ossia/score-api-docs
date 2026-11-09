@@ -168,12 +168,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>load_packet_in_frame<
 <tr class="memitem:aabddcb8114e1e30ee841f34b2c241d22 inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_aabddcb8114e1e30ee841f34b2c241d22"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>read_one_frame_avcodec</b> (AVPacket &amp;packet)</td></tr>
 <tr class="separator:aabddcb8114e1e30ee841f34b2c241d22 inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a489e7f9ffb81a5242bbd3c1bf8fd6378 inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_a489e7f9ffb81a5242bbd3c1bf8fd6378"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>landSkip</b> (AVFrame *f) noexcept</td></tr>
+<tr class="separator:a489e7f9ffb81a5242bbd3c1bf8fd6378 inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5557f79f2fb6fb5842c240b3e026b614 inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_a5557f79f2fb6fb5842c240b3e026b614"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dropSkipCandidate</b> () noexcept</td></tr>
+<tr class="memdesc:a5557f79f2fb6fb5842c240b3e026b614 inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the held-back frame back to the frame pool. <br /></td></tr>
+<tr class="separator:a5557f79f2fb6fb5842c240b3e026b614 inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7a32b3694a3a12ca793ef21fae329de inherit pub_methods_struct_video_1_1_lib_a_v_decoder" id="r_aa7a32b3694a3a12ca793ef21fae329de"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_video_1_1_read_frame.html">ReadFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><b>takeSkipCandidate</b> () noexcept</td></tr>
+<tr class="memdesc:aa7a32b3694a3a12ca793ef21fae329de inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The held-back frame, converted as enqueue_frame converts its frames. <br /></td></tr>
+<tr class="separator:aa7a32b3694a3a12ca793ef21fae329de inherit pub_methods_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_interface')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></td></tr>
 <tr class="memitem:ad22fa83792f30d06ae86f93f276d0819 inherit pub_attribs_struct_video_1_1_video_interface" id="r_ad22fa83792f30d06ae86f93f276d0819"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad22fa83792f30d06ae86f93f276d0819">seek_generation</a> {}</td></tr>
 <tr class="separator:ad22fa83792f30d06ae86f93f276d0819 inherit pub_attribs_struct_video_1_1_video_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8bc000a54c0d7929f14273b44a43272 inherit pub_attribs_struct_video_1_1_video_interface" id="r_ad8bc000a54c0d7929f14273b44a43272"><td class="memItemLeft" align="right" valign="top">std::atomic_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_video_interface.html#ad8bc000a54c0d7929f14273b44a43272">seeks_done</a> {}</td></tr>
+<tr class="separator:ad8bc000a54c0d7929f14273b44a43272 inherit pub_attribs_struct_video_1_1_video_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_video_1_1_video_metadata"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_video_1_1_video_metadata')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></td></tr>
 <tr class="memitem:a2c8b785ad1b3e3f64daa0c0149bb94dc inherit pub_attribs_struct_video_1_1_video_metadata" id="r_a2c8b785ad1b3e3f64daa0c0149bb94dc"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filePath</b></td></tr>
@@ -282,6 +295,12 @@ AVCodecContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_codecCo
 <tr class="separator:ad790cee501b4e490d19e0bead99cc860 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9170605948a2e0966838b0829f9ff21b inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_a9170605948a2e0966838b0829f9ff21b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#a9170605948a2e0966838b0829f9ff21b">m_skipBefore</a> {AV_NOPTS_VALUE}</td></tr>
 <tr class="separator:a9170605948a2e0966838b0829f9ff21b inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb52c0f66750561b2665bf37a4ec191f inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_aeb52c0f66750561b2665bf37a4ec191f"><td class="memItemLeft" align="right" valign="top">
+AVFrame *&#160;</td><td class="memItemRight" valign="bottom"><b>m_skipCandidate</b> {}</td></tr>
+<tr class="memdesc:aeb52c0f66750561b2665bf37a4ec191f inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last frame held back while m_skipBefore is set. <br /></td></tr>
+<tr class="separator:aeb52c0f66750561b2665bf37a4ec191f inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1e255e902f7ef5dfd16938f52656ff inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_aab1e255e902f7ef5dfd16938f52656ff"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_video_1_1_lib_a_v_decoder.html#aab1e255e902f7ef5dfd16938f52656ff">m_skipLandingPts</a> {AV_NOPTS_VALUE}</td></tr>
+<tr class="separator:aab1e255e902f7ef5dfd16938f52656ff inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13afbdf213067ad9b390aa68e44bb176 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder" id="r_a13afbdf213067ad9b390aa68e44bb176"><td class="memItemLeft" align="right" valign="top">
 std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_finished</b> {}</td></tr>
 <tr class="memdesc:a13afbdf213067ad9b390aa68e44bb176 inherit pub_attribs_struct_video_1_1_lib_a_v_decoder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set by the decoding thread, polled by the owner waiting for the end. <br /></td></tr>

@@ -158,6 +158,7 @@ var namespace_gfx =
     [ "logShaderError", "namespace_gfx.html#a93561637c56abe4b15506dabf77c2475", null ],
     [ "makeLongInputControl", "namespace_gfx.html#a7b4e06d39f5e410307503e7e79039777", null ],
     [ "makeSyphonOutput", "namespace_gfx.html#a295b675353308693113a6e495af73f86", null ],
+    [ "updateToGlsl45", "namespace_gfx.html#a04500ebc0f8550ab97e5618c7167072f", null ],
     [ "vertexShaderSibling", "namespace_gfx.html#aaee3421fd5c107475410341638ec6ec8", null ],
     [ "windowPositionForSource", "namespace_gfx.html#ae98149f75cde599f05ee7c75a4d52cb9", null ]
 ];

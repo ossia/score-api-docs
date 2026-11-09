@@ -391,10 +391,10 @@ $(document).ready(function(){initNavTree('_wire_decoder_factory_8hpp_source.html
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>      <span class="keywordflow">return</span> std::make_unique&lt;YUV444P12Decoder&gt;(d);</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keywordflow">case</span> F::P210:</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>      <span class="keywordflow">return</span> std::make_unique&lt;P210Decoder&gt;(d);</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="comment">// P216 is P210&#39;s layout with every bit used rather than ten of them at the</span></div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="comment">// top, which is the scale argument and the only difference.</span></div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="comment">// P216 is P210&#39;s layout with sixteen significant bits rather than ten, and</span></div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="comment">// the same MSB-aligned scale.</span></div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordflow">case</span> F::P216:</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>      <span class="keywordflow">return</span> std::make_unique&lt;P210Decoder&gt;(d, <span class="stringliteral">&quot;1.0&quot;</span>);</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>      <span class="keywordflow">return</span> std::make_unique&lt;P210Decoder&gt;(d);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>    <span class="comment">// NDI&#39;s two alpha layouts: a picture followed by its own alpha plane.</span></div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <span class="keywordflow">case</span> F::UYVA422A:</div>

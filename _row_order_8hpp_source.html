@@ -120,54 +120,54 @@ $(document).ready(function(){initNavTree('_row_order_8hpp_source.html',''); init
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacescore_1_1gfx.html">score::gfx</a></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">   28</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> rhi.isYUpInNDC();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">   29</a></span><span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(<span class="keyword">const</span> QRhi&amp; rhi) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> rhi.isYUpInNDC();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">   35</a></span><a class="code hl_function" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">copyRowsReversed</a>(<span class="keywordtype">void</span>* dst, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, qsizetype rowBytes, <span class="keywordtype">int</span> rows) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">auto</span>* d = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(dst);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">auto</span>* s = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(src) + qsizetype(rows - 1) * rowBytes;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = 0; y &lt; rows; ++y, d += rowBytes, s -= rowBytes)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::memcpy(d, s, rowBytes);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">inline</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">   36</a></span><a class="code hl_function" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">copyRowsReversed</a>(<span class="keywordtype">void</span>* dst, <span class="keyword">const</span> <span class="keywordtype">void</span>* src, qsizetype rowBytes, <span class="keywordtype">int</span> rows) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">auto</span>* d = <span class="keyword">static_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(dst);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">auto</span>* s = <span class="keyword">static_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(src) + qsizetype(rows - 1) * rowBytes;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> y = 0; y &lt; rows; ++y, d += rowBytes, s -= rowBytes)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    std::memcpy(d, s, rowBytes);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">inline</span> QByteArray</div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">   46</a></span><a class="code hl_function" href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">bytesInPublishedRowOrder</a>(<span class="keyword">const</span> QRhi&amp; rhi, QByteArray bytes, <span class="keywordtype">int</span> rows)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(rhi) || rows &lt;= 1 || bytes.size() % rows != 0)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">return</span> bytes;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  QByteArray out(bytes.size(), Qt::Uninitialized);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_function" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">copyRowsReversed</a>(out.data(), bytes.constData(), bytes.size() / rows, rows);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">return</span> out;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">inline</span> QByteArray</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">   47</a></span><a class="code hl_function" href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">bytesInPublishedRowOrder</a>(<span class="keyword">const</span> QRhi&amp; rhi, QByteArray bytes, <span class="keywordtype">int</span> rows)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(rhi) || rows &lt;= 1 || bytes.size() % rows != 0)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">return</span> bytes;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  QByteArray out(bytes.size(), Qt::Uninitialized);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_function" href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">copyRowsReversed</a>(out.data(), bytes.constData(), bytes.size() / rows, rows);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">return</span> out;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">   56</a></span><span class="keyword">inline</span> QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">imageInPublishedRowOrder</a>(<span class="keyword">const</span> QRhi&amp; rhi, QImage img)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(rhi) || img.height() &lt;= 1)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> img;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">return</span> std::move(img).flipped(Qt::Vertical);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">return</span> std::move(img).mirrored(<span class="keyword">false</span>, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">   57</a></span><span class="keyword">inline</span> QImage <a class="code hl_function" href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">imageInPublishedRowOrder</a>(<span class="keyword">const</span> QRhi&amp; rhi, QImage img)</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordflow">if</span>(!<a class="code hl_function" href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">uploadReversesRows</a>(rhi) || img.height() &lt;= 1)</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> img;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#if QT_VERSION &gt;= QT_VERSION_CHECK(6, 9, 0)</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">return</span> std::move(img).flipped(Qt::Vertical);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">return</span> std::move(img).mirrored(<span class="keyword">false</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 <div class="ttc" id="anamespacescore_1_1gfx_html"><div class="ttname"><a href="namespacescore_1_1gfx.html">score::gfx</a></div><div class="ttdoc">Graphics rendering pipeline for ossia score.</div><div class="ttdef"><b>Definition</b> Filter/PreviewWidget.hpp:11</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a0c965b81df625d9368d94a280cb694b6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">score::gfx::uploadReversesRows</a></div><div class="ttdeci">bool uploadReversesRows(const QRhi &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:28</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a245a69c0d1b00e9a31f762b30541e3dc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">score::gfx::imageInPublishedRowOrder</a></div><div class="ttdeci">QImage imageInPublishedRowOrder(const QRhi &amp;rhi, QImage img)</div><div class="ttdoc">img in the published row order: flipped where uploads reverse rows.</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:56</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_a32f928cb3dd4e2cc7d510738484b32e9"><div class="ttname"><a href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">score::gfx::copyRowsReversed</a></div><div class="ttdeci">void copyRowsReversed(void *dst, const void *src, qsizetype rowBytes, int rows) noexcept</div><div class="ttdoc">dst = src with its rows in reverse order: one memcpy per row.</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:35</div></div>
-<div class="ttc" id="anamespacescore_1_1gfx_html_ac689ba2dd6af2b2fc4e90406de6d3733"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">score::gfx::bytesInPublishedRowOrder</a></div><div class="ttdeci">QByteArray bytesInPublishedRowOrder(const QRhi &amp;rhi, QByteArray bytes, int rows)</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:46</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a0c965b81df625d9368d94a280cb694b6"><div class="ttname"><a href="namespacescore_1_1gfx.html#a0c965b81df625d9368d94a280cb694b6">score::gfx::uploadReversesRows</a></div><div class="ttdeci">bool uploadReversesRows(const QRhi &amp;rhi) noexcept</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:29</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a245a69c0d1b00e9a31f762b30541e3dc"><div class="ttname"><a href="namespacescore_1_1gfx.html#a245a69c0d1b00e9a31f762b30541e3dc">score::gfx::imageInPublishedRowOrder</a></div><div class="ttdeci">QImage imageInPublishedRowOrder(const QRhi &amp;rhi, QImage img)</div><div class="ttdoc">img in the published row order: flipped where uploads reverse rows.</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:57</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_a32f928cb3dd4e2cc7d510738484b32e9"><div class="ttname"><a href="namespacescore_1_1gfx.html#a32f928cb3dd4e2cc7d510738484b32e9">score::gfx::copyRowsReversed</a></div><div class="ttdeci">void copyRowsReversed(void *dst, const void *src, qsizetype rowBytes, int rows) noexcept</div><div class="ttdoc">dst = src with its rows in reverse order: one memcpy per row.</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:36</div></div>
+<div class="ttc" id="anamespacescore_1_1gfx_html_ac689ba2dd6af2b2fc4e90406de6d3733"><div class="ttname"><a href="namespacescore_1_1gfx.html#ac689ba2dd6af2b2fc4e90406de6d3733">score::gfx::bytesInPublishedRowOrder</a></div><div class="ttdeci">QByteArray bytesInPublishedRowOrder(const QRhi &amp;rhi, QByteArray bytes, int rows)</div><div class="ttdef"><b>Definition</b> RowOrder.hpp:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

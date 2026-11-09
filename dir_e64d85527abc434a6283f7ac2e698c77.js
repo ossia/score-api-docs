@@ -6,6 +6,7 @@ var dir_e64d85527abc434a6283f7ac2e698c77 =
     [ "CoAP", "dir_f51c2e74be4e7b1f507975ce33e45187.html", "dir_f51c2e74be4e7b1f507975ce33e45187" ],
     [ "Evdev", "dir_7b88acaaf65572c1f6869262975b8f10.html", "dir_7b88acaaf65572c1f6869262975b8f10" ],
     [ "GPS", "dir_1188f01a60bb6e1e760e31802786c973.html", "dir_1188f01a60bb6e1e760e31802786c973" ],
+    [ "HID", "dir_70b77531b7675c1c570d9aec910315d4.html", "dir_70b77531b7675c1c570d9aec910315d4" ],
     [ "HTTP", "dir_ef2865f0059821f2b08b8f6b276a0210.html", "dir_ef2865f0059821f2b08b8f6b276a0210" ],
     [ "Joystick", "dir_54fad3a8630d4769c3c8b9364e939cb4.html", "dir_54fad3a8630d4769c3c8b9364e939cb4" ],
     [ "Libmapper", "dir_9013f114fbcc2e7a0f1bded7d9304834.html", "dir_9013f114fbcc2e7a0f1bded7d9304834" ],

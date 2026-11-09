@@ -103,17 +103,41 @@ $(document).ready(function(){initNavTree('class_process_1_1_port_widget_setup.ht
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_process_1_1_port_widget_setup-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Process::PortWidgetSetup Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_process_1_1_port_widget_setup_1_1_drawer.html">Drawer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collapsible group of rows shown under a port.  <a href="struct_process_1_1_port_widget_setup_1_1_drawer.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a58f49255e2406f9cdc2ade2856934ea6" id="r_a58f49255e2406f9cdc2ade2856934ea6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_process_1_1_port_widget_setup_1_1_drawer.html">Drawer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_widget_setup.html#a58f49255e2406f9cdc2ade2856934ea6">setupWithDrawer</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, QWidget *main, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QWidget *parent)</td></tr>
+<tr class="memdesc:a58f49255e2406f9cdc2ade2856934ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the row of a port: its name, then <code>main</code> (the address picker, a control...).  <br /></td></tr>
+<tr class="separator:a58f49255e2406f9cdc2ade2856934ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66142c41ff6fea012a5f02d02c41418" id="r_ab66142c41ff6fea012a5f02d02c41418"><td class="memItemLeft" align="right" valign="top"><a id="ab66142c41ff6fea012a5f02d02c41418" name="ab66142c41ff6fea012a5f02d02c41418"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setupAddressPort</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QWidget *parent)</td></tr>
+<tr class="memdesc:ab66142c41ff6fea012a5f02d02c41418"><td class="mdescLeft">&#160;</td><td class="mdescRight">The row of a port whose only setting is the address picker, and its cables. <br /></td></tr>
+<tr class="separator:ab66142c41ff6fea012a5f02d02c41418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4333f5715d5b35d21a6fa53a6c94f8" id="r_a9a4333f5715d5b35d21a6fa53a6c94f8"><td class="memItemLeft" align="right" valign="top"><a id="a9a4333f5715d5b35d21a6fa53a6c94f8" name="a9a4333f5715d5b35d21a6fa53a6c94f8"></a>
+static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeCablesWidget</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
+<tr class="memdesc:a9a4333f5715d5b35d21a6fa53a6c94f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The cables of a port, each with a link to the other end; hidden without cables. <br /></td></tr>
+<tr class="separator:a9a4333f5715d5b35d21a6fa53a6c94f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96666299b496cef035059284a79c1f7" id="r_ad96666299b496cef035059284a79c1f7"><td class="memItemLeft" align="right" valign="top">static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_process_1_1_port_widget_setup.html#ad96666299b496cef035059284a79c1f7">withAddressStatus</a> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, QWidget *address_widget, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, QWidget *parent)</td></tr>
+<tr class="separator:ad96666299b496cef035059284a79c1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c24542105e1bb75f2f26be7c811050e" id="r_a6c24542105e1bb75f2f26be7c811050e"><td class="memItemLeft" align="right" valign="top"><a id="a6c24542105e1bb75f2f26be7c811050e" name="a6c24542105e1bb75f2f26be7c811050e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setupAlone</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QWidget *parent)</td></tr>
 <tr class="separator:a6c24542105e1bb75f2f26be7c811050e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a940417ab3c8fe098fef7cb42902d5cde" id="r_a940417ab3c8fe098fef7cb42902d5cde"><td class="memItemLeft" align="right" valign="top"><a id="a940417ab3c8fe098fef7cb42902d5cde" name="a940417ab3c8fe098fef7cb42902d5cde"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setupInInspector</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QWidget *parent)</td></tr>
+<tr class="memdesc:a940417ab3c8fe098fef7cb42902d5cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rows of a port in an inspector, as its <a class="el" href="class_process_1_1_port_factory.html">PortFactory</a> lays them out: the gain and propagation of an audio outlet, the control of a control inlet... Ports without a factory get setupAlone. <br /></td></tr>
+<tr class="separator:a940417ab3c8fe098fef7cb42902d5cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee150997794740b5c498b9ee1208c4c1" id="r_aee150997794740b5c498b9ee1208c4c1"><td class="memItemLeft" align="right" valign="top"><a id="aee150997794740b5c498b9ee1208c4c1" name="aee150997794740b5c498b9ee1208c4c1"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>setupInLayout</b> (const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;port, const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;lay, QWidget *parent)</td></tr>
 <tr class="separator:aee150997794740b5c498b9ee1208c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +155,113 @@ static QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>makeScrip
 <tr class="memdesc:a24af08f86c0b2ab529ab5e1ed5ebbadb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A checkbox and the scripting name under which the port is published. <br /></td></tr>
 <tr class="separator:a24af08f86c0b2ab529ab5e1ed5ebbadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a58f49255e2406f9cdc2ade2856934ea6" name="a58f49255e2406f9cdc2ade2856934ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f49255e2406f9cdc2ade2856934ea6">&#9670;&#160;</a></span>setupWithDrawer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_process_1_1_port_widget_setup_1_1_drawer.html">PortWidgetSetup::Drawer</a> Process::PortWidgetSetup::setupWithDrawer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>main</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_inspector_1_1_layout.html">Inspector::Layout</a> &amp;&#160;</td>
+          <td class="paramname"><em>lay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the row of a port: its name, then <code>main</code> (the address picker, a control...). </p>
+<p>The drawer it returns is not added: the caller fills its layout, ending with makeCablesWidget so that the cables of the port are listed inside it, and adds its widget where the settings go. </p>
+
+</div>
+</div>
+<a id="ad96666299b496cef035059284a79c1f7" name="ad96666299b496cef035059284a79c1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96666299b496cef035059284a79c1f7">&#9670;&#160;</a></span>withAddressStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QWidget * Process::PortWidgetSetup::withAddressStatus </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_process_1_1_port.html">Process::Port</a> &amp;&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>address_widget</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><code>address_widget</code> followed by an indicator shown when <a class="el" href="struct_process_1_1_address_status.html" title="Whether the cables of a port keep its address from taking effect.">AddressStatus</a> says the cables bypass the address. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_port_list_widget_8hpp_source.html">PortListWidget.hpp</a></li>
 <li><b>PortListWidget.cpp</b></li>

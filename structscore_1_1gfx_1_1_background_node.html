@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e7ec366ee32bdb8d8b60605b6cf5d6d" id="r_a9e7ec366ee32bdb8d8b60605b6cf5d6d"><td class="memItemLeft" align="right" valign="top"><a id="a9e7ec366ee32bdb8d8b60605b6cf5d6d" name="a9e7ec366ee32bdb8d8b60605b6cf5d6d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BackgroundNode</b> (<a class="el" href="namespacescore_1_1gfx.html#aa2eb0e55dd6a208a978fef7bc88983ec">SharedDeviceMode</a> deviceMode=SharedDeviceMode::Owned)</td></tr>
 <tr class="separator:a9e7ec366ee32bdb8d8b60605b6cf5d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebf6cb19b9b6b930d2b5a073397fcc6" id="r_aaebf6cb19b9b6b930d2b5a073397fcc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_background_node.html#aaebf6cb19b9b6b930d2b5a073397fcc6">setSingleSample</a> (bool b) noexcept</td></tr>
+<tr class="memdesc:aaebf6cb19b9b6b930d2b5a073397fcc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render at one sample whatever the anti-aliasing setting.  <br /></td></tr>
+<tr class="separator:aaebf6cb19b9b6b930d2b5a073397fcc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37e9f9bf9f8a2b4e0e44ee577e8486f" id="r_ac37e9f9bf9f8a2b4e0e44ee577e8486f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_background_node.html#ac37e9f9bf9f8a2b4e0e44ee577e8486f">startRendering</a> () override</td></tr>
 <tr class="separator:ac37e9f9bf9f8a2b4e0e44ee577e8486f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a279c0d163124c0b8b793e5a91e19ae51" id="r_a279c0d163124c0b8b793e5a91e19ae51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1gfx_1_1_background_node.html#a279c0d163124c0b8b793e5a91e19ae51">render</a> () override</td></tr>
@@ -151,6 +154,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSwapchainFormat</b
 <tr class="memitem:a39199d9137d5e1f8cf9d6a36c8e3cd9d" id="r_a39199d9137d5e1f8cf9d6a36c8e3cd9d"><td class="memItemLeft" align="right" valign="top"><a id="a39199d9137d5e1f8cf9d6a36c8e3cd9d" name="a39199d9137d5e1f8cf9d6a36c8e3cd9d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSize</b> (QSize newSz)</td></tr>
 <tr class="separator:a39199d9137d5e1f8cf9d6a36c8e3cd9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf03d37ea045035d340985cc92d87d92" id="r_abf03d37ea045035d340985cc92d87d92"><td class="memItemLeft" align="right" valign="top"><a id="abf03d37ea045035d340985cc92d87d92" name="abf03d37ea045035d340985cc92d87d92"></a>
+QSize&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const noexcept</td></tr>
+<tr class="separator:abf03d37ea045035d340985cc92d87d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a379f2c6ac4b82b4422a20878f71f46f1" id="r_a379f2c6ac4b82b4422a20878f71f46f1"><td class="memItemLeft" align="right" valign="top"><a id="a379f2c6ac4b82b4422a20878f71f46f1" name="a379f2c6ac4b82b4422a20878f71f46f1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRenderSize</b> (QSize newSz)</td></tr>
 <tr class="separator:a379f2c6ac4b82b4422a20878f71f46f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -627,6 +633,35 @@ captured at createRenderer() time".</p>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classscore_1_1gfx_1_1_output_node.html">score::gfx::OutputNode</a>.</p>
+
+</div>
+</div>
+<a id="aaebf6cb19b9b6b930d2b5a073397fcc6" name="aaebf6cb19b9b6b930d2b5a073397fcc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaebf6cb19b9b6b930d2b5a073397fcc6">&#9670;&#160;</a></span>setSingleSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::gfx::BackgroundNode::setSingleSample </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render at one sample whatever the anti-aliasing setting. </p>
+<p>For previews: small pictures in the UI, where a multisampled colour and depth pair costs tens of megabytes per preview and shows nothing the picture's size can carry. The preview hub renders at one sample too, so a preview looks the same whichever of the two serves it. Takes effect at the next createOutput. </p>
 
 </div>
 </div>

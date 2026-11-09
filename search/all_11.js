@@ -66,10 +66,11 @@ var searchData=
   ['quantif_5fgrid_63',['quantif_grid',['../namespace_nodes_1_1_looper.html#a6a2220cdd40cce0b06fed1814bc48091',1,'Nodes::Looper']]],
   ['quantif_5fselector_64',['quantif_selector',['../struct_nodes_1_1_looper_1_1quantif__selector.html',1,'Nodes::Looper']]],
   ['quantificationwidget_65',['QuantificationWidget',['../classscore_1_1_quantification_widget.html',1,'score']]],
-  ['queue_66',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
-  ['queued_67',['queued',['../struct_nodes_1_1_looper_1_1transport.html#a8fc444f5c926ffa4f9739aac77dbc893',1,'Nodes::Looper::transport']]],
-  ['queues_68',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
-  ['quiesce_69',['quiesce',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a865601899e118eef07d34f76c7235692',1,'score::gfx::DirectVideoOutputBackend']]],
-  ['quiet_70',['quiet',['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet'],['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet']]],
-  ['quirks_71',['Quirks',['../structscore_1_1gfx_1_1_quirks.html',1,'score::gfx']]]
+  ['quantizesample_66',['quantizeSample',['../namespace_process.html#ac4da850907eeade8bd8aaff1c67f099a',1,'Process']]],
+  ['queue_67',['Queue',['../structavnd__tools_1_1_queue.html',1,'avnd_tools']]],
+  ['queued_68',['queued',['../struct_nodes_1_1_looper_1_1transport.html#a8fc444f5c926ffa4f9739aac77dbc893',1,'Nodes::Looper::transport']]],
+  ['queues_69',['Queues',['../struct_execution_1_1_queues.html',1,'Execution']]],
+  ['quiesce_70',['quiesce',['../structscore_1_1gfx_1_1_direct_video_output_backend.html#a865601899e118eef07d34f76c7235692',1,'score::gfx::DirectVideoOutputBackend']]],
+  ['quiet_71',['quiet',['../struct_send_strategy_1_1_quiet.html',1,'SendStrategy::Quiet'],['../struct_redo_strategy_1_1_quiet.html',1,'RedoStrategy::Quiet']]],
+  ['quirks_72',['Quirks',['../structscore_1_1gfx_1_1_quirks.html',1,'score::gfx']]]
 ];

@@ -378,12 +378,12 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>meshEmitsDraw<
 <tr class="memitem:a7bc731611801fa0c925a799690292312" id="r_a7bc731611801fa0c925a799690292312"><td class="memItemLeft" align="right" valign="top"><a id="a7bc731611801fa0c925a799690292312" name="a7bc731611801fa0c925a799690292312"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>growBuf</b> (<a class="el" href="classscore_1_1gfx_1_1_render_list.html">score::gfx::RenderList</a> &amp;renderer, QRhiResourceUpdateBatch &amp;res, QRhiBuffer *&amp;buf, int64_t &amp;cap, int64_t need, QRhiBuffer::UsageFlags flags, const char *name, bool exact=false)</td></tr>
 <tr class="separator:a7bc731611801fa0c925a799690292312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af602a955a13a510cb405ea78f6e727aa" id="r_af602a955a13a510cb405ea78f6e727aa"><td class="memItemLeft" align="right" valign="top"><a id="af602a955a13a510cb405ea78f6e727aa" name="af602a955a13a510cb405ea78f6e727aa"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>primitiveCloudBucketKey</b> (const ossia::primitive_cloud_component &amp;cloud) noexcept</td></tr>
-<tr class="separator:af602a955a13a510cb405ea78f6e727aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb090dde81bb35dec452f9fd0cbf0cd" id="r_a4eb090dde81bb35dec452f9fd0cbf0cd"><td class="memItemLeft" align="right" valign="top"><a id="a4eb090dde81bb35dec452f9fd0cbf0cd" name="a4eb090dde81bb35dec452f9fd0cbf0cd"></a>
-static ossia::flat_map&lt; uint32_t, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bucketPrimitiveClouds</b> (const <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
-<tr class="separator:a4eb090dde81bb35dec452f9fd0cbf0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b6fdb55c123a2927026608716ea76e9" id="r_a9b6fdb55c123a2927026608716ea76e9"><td class="memItemLeft" align="right" valign="top"><a id="a9b6fdb55c123a2927026608716ea76e9" name="a9b6fdb55c123a2927026608716ea76e9"></a>
+static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>primitiveCloudBucketKey</b> (const ossia::primitive_cloud_component &amp;cloud) noexcept</td></tr>
+<tr class="separator:a9b6fdb55c123a2927026608716ea76e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d3dbff3b55a868740880310e606e70" id="r_aa2d3dbff3b55a868740880310e606e70"><td class="memItemLeft" align="right" valign="top"><a id="aa2d3dbff3b55a868740880310e606e70" name="aa2d3dbff3b55a868740880310e606e70"></a>
+static ossia::flat_map&lt; uint64_t, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bucketPrimitiveClouds</b> (const <a class="el" href="structscore_1_1gfx_1_1_flat_scene.html">FlatScene</a> &amp;fs)</td></tr>
+<tr class="separator:aa2d3dbff3b55a868740880310e606e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebde7c8a3f16df1a9f471a7d638d35cd" id="r_aebde7c8a3f16df1a9f471a7d638d35cd"><td class="memItemLeft" align="right" valign="top"><a id="aebde7c8a3f16df1a9f471a7d638d35cd" name="aebde7c8a3f16df1a9f471a7d638d35cd"></a>
 static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>packCloudMeta</b> (const <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket.html">PrimitiveCloudBucket</a> &amp;b, std::vector&lt; <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_cloud_meta_g_p_u.html">CloudMetaGPU</a> &gt; &amp;out, ossia::aabb &amp;worldBounds)</td></tr>
 <tr class="separator:aebde7c8a3f16df1a9f471a7d638d35cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,9 +506,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_envSlotSeeded</b> {
 <tr class="memitem:a94b289297f4c3a213b955cf25f38ef35" id="r_a94b289297f4c3a213b955cf25f38ef35"><td class="memItemLeft" align="right" valign="top"><a id="a94b289297f4c3a213b955cf25f38ef35" name="a94b289297f4c3a213b955cf25f38ef35"></a>
 <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_m_d_i_state.html">MDIState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_mdi</b></td></tr>
 <tr class="separator:a94b289297f4c3a213b955cf25f38ef35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f306e19b75060b4bd0b273f1db7019" id="r_a12f306e19b75060b4bd0b273f1db7019"><td class="memItemLeft" align="right" valign="top"><a id="a12f306e19b75060b4bd0b273f1db7019" name="a12f306e19b75060b4bd0b273f1db7019"></a>
-ossia::flat_map&lt; uint32_t, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket_buffers.html">PrimitiveCloudBucketBuffers</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_primitiveCloudBuckets</b></td></tr>
-<tr class="separator:a12f306e19b75060b4bd0b273f1db7019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30969b7b4eeb4caddb3e8061ad40789b" id="r_a30969b7b4eeb4caddb3e8061ad40789b"><td class="memItemLeft" align="right" valign="top"><a id="a30969b7b4eeb4caddb3e8061ad40789b" name="a30969b7b4eeb4caddb3e8061ad40789b"></a>
+ossia::flat_map&lt; uint64_t, <a class="el" href="structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_primitive_cloud_bucket_buffers.html">PrimitiveCloudBucketBuffers</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_primitiveCloudBuckets</b></td></tr>
+<tr class="separator:a30969b7b4eeb4caddb3e8061ad40789b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a8200a705548edfa0990b328d618e0" id="r_a63a8200a705548edfa0990b328d618e0"><td class="memItemLeft" align="right" valign="top"><a id="a63a8200a705548edfa0990b328d618e0" name="a63a8200a705548edfa0990b328d618e0"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_primitiveCloudFrame</b> {0}</td></tr>
 <tr class="separator:a63a8200a705548edfa0990b328d618e0"><td class="memSeparator" colspan="2">&#160;</td></tr>

@@ -122,12 +122,15 @@ Inheritance diagram for Curve::ToolPalette:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5679ffedc499ea9ac6d77b527c693b66" id="r_a5679ffedc499ea9ac6d77b527c693b66"><td class="memItemLeft" align="right" valign="top"><a id="a5679ffedc499ea9ac6d77b527c693b66" name="a5679ffedc499ea9ac6d77b527c693b66"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ToolPalette</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_curve_1_1_presenter.html">Presenter</a> &amp;pres)</td></tr>
-<tr class="separator:a5679ffedc499ea9ac6d77b527c693b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef17607c93be078f0f0296935f571457" id="r_aef17607c93be078f0f0296935f571457"><td class="memItemLeft" align="right" valign="top"><a id="aef17607c93be078f0f0296935f571457" name="aef17607c93be078f0f0296935f571457"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ToolPalette</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;ctx, <a class="el" href="class_curve_1_1_presenter.html">Presenter</a> &amp;pres, <a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> *selectionStack=nullptr)</td></tr>
+<tr class="separator:aef17607c93be078f0f0296935f571457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a975601be93d13e182e46ec496f4f36c5" id="r_a975601be93d13e182e46ec496f4f36c5"><td class="memItemLeft" align="right" valign="top"><a id="a975601be93d13e182e46ec496f4f36c5" name="a975601be93d13e182e46ec496f4f36c5"></a>
 <a class="el" href="class_curve_1_1_presenter.html">Presenter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>presenter</b> () const</td></tr>
 <tr class="separator:a975601be93d13e182e46ec496f4f36c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92517ee3ee018431a07b17b189981ee9" id="r_a92517ee3ee018431a07b17b189981ee9"><td class="memItemLeft" align="right" valign="top"><a id="a92517ee3ee018431a07b17b189981ee9" name="a92517ee3ee018431a07b17b189981ee9"></a>
+<a class="el" href="classscore_1_1_selection_stack.html">score::SelectionStack</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>selectionStack</b> () const noexcept</td></tr>
+<tr class="separator:a92517ee3ee018431a07b17b189981ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea9e3f13d6edbd36ba6a02901c9b541" id="r_a0ea9e3f13d6edbd36ba6a02901c9b541"><td class="memItemLeft" align="right" valign="top"><a id="a0ea9e3f13d6edbd36ba6a02901c9b541" name="a0ea9e3f13d6edbd36ba6a02901c9b541"></a>
 <a class="el" href="class_curve_1_1_edition_settings.html">Curve::EditionSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>editionSettings</b> () const</td></tr>
 <tr class="separator:a0ea9e3f13d6edbd36ba6a02901c9b541"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,6 +149,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>on_released</b> (QPoi
 <tr class="memitem:a898ee20fe9da4fc7bbd3041fc4a0fa58" id="r_a898ee20fe9da4fc7bbd3041fc4a0fa58"><td class="memItemLeft" align="right" valign="top"><a id="a898ee20fe9da4fc7bbd3041fc4a0fa58" name="a898ee20fe9da4fc7bbd3041fc4a0fa58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_cancel</b> ()</td></tr>
 <tr class="separator:a898ee20fe9da4fc7bbd3041fc4a0fa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1583664e86fbd6e9b7148b4fd3f04de8" id="r_a1583664e86fbd6e9b7148b4fd3f04de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_curve_1_1_tool_palette.html#a1583664e86fbd6e9b7148b4fd3f04de8">cancelGesture</a> ()</td></tr>
+<tr class="separator:a1583664e86fbd6e9b7148b4fd3f04de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d23f2653f467606572714999427dd2" id="r_a44d23f2653f467606572714999427dd2"><td class="memItemLeft" align="right" valign="top"><a id="a44d23f2653f467606572714999427dd2" name="a44d23f2653f467606572714999427dd2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>gestureInProgress</b> () const noexcept</td></tr>
+<tr class="separator:a44d23f2653f467606572714999427dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23eb8d1a0ede39eb756f96ee102ab754" id="r_a23eb8d1a0ede39eb756f96ee102ab754"><td class="memItemLeft" align="right" valign="top"><a id="a23eb8d1a0ede39eb756f96ee102ab754" name="a23eb8d1a0ede39eb756f96ee102ab754"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>activate</b> (Curve::Tool)</td></tr>
 <tr class="separator:a23eb8d1a0ede39eb756f96ee102ab754"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +178,25 @@ Additional Inherited Members</h2></td></tr>
 QPointF&#160;</td><td class="memItemRight" valign="bottom"><b>scenePoint</b></td></tr>
 <tr class="separator:a25451090acc7aab7460ab382795cdd0e inherit pub_attribs_class_graphics_scene_tool_palette"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1583664e86fbd6e9b7148b4fd3f04de8" name="a1583664e86fbd6e9b7148b4fd3f04de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1583664e86fbd6e9b7148b4fd3f04de8">&#9670;&#160;</a></span>cancelGesture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Curve::ToolPalette::cancelGesture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rolls back a gesture in progress before returning, also one whose release is still queued or from inside a transition of a tool, for an editor that is destroyed or rebound right after: on_cancel only queues the cancellation. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_curve_palette_8hpp_source.html">CurvePalette.hpp</a></li>
 <li><b>CurvePalette.cpp</b></li>

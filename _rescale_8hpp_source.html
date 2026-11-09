@@ -202,21 +202,27 @@ $(document).ready(function(){initNavTree('_rescale_8hpp_source.html',''); initRe
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <a class="code hl_class" href="class_video_1_1_rescale.html">Rescale</a> m_rescale;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  <a class="code hl_struct" href="struct_video_1_1_missing_timestamps.html">MissingTimestamps</a> m_missingTimestamps;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#ad790cee501b4e490d19e0bead99cc860">   90</a></span>  int64_t m_ptsLead{};</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#a9170605948a2e0966838b0829f9ff21b">   95</a></span>  int64_t m_skipBefore{AV_NOPTS_VALUE};</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#a13afbdf213067ad9b390aa68e44bb176">   97</a></span>  std::atomic_bool m_finished{};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#a9170605948a2e0966838b0829f9ff21b">   98</a></span>  int64_t m_skipBefore{AV_NOPTS_VALUE};</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#aeb52c0f66750561b2665bf37a4ec191f">  100</a></span>  AVFrame* m_skipCandidate{};</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#aab1e255e902f7ef5dfd16938f52656ff">  104</a></span>  int64_t m_skipLandingPts{AV_NOPTS_VALUE};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordtype">void</span> landSkip(AVFrame* f) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> dropSkipCandidate() noexcept;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <a class="code hl_struct" href="struct_video_1_1_read_frame.html">ReadFrame</a> takeSkipCandidate() noexcept;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_video_1_1_lib_a_v_decoder.html#a13afbdf213067ad9b390aa68e44bb176">  111</a></span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::atomic_bool m_finished{};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>};</div>
 </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_decoder_threading_8hpp_html"><div class="ttname"><a href="_decoder_threading_8hpp.html">DecoderThreading.hpp</a></div><div class="ttdoc">Which of libavcodec's threading models a decoder runs, and how wide.</div></div>
 <div class="ttc" id="a_decoder_threading_8hpp_html_abb59061d13179bbe6c0c4582622c8774"><div class="ttname"><a href="_decoder_threading_8hpp.html#abb59061d13179bbe6c0c4582622c8774">Video::DecodeUseCase</a></div><div class="ttdeci">DecodeUseCase</div><div class="ttdoc">What consumes the decoded frames, which sets how much delay is acceptable.</div><div class="ttdef"><b>Definition</b> DecoderThreading.hpp:36</div></div>
 <div class="ttc" id="aclass_video_1_1_rescale_html"><div class="ttname"><a href="class_video_1_1_rescale.html">Video::Rescale</a></div><div class="ttdef"><b>Definition</b> Rescale.hpp:24</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="astruct_video_1_1_decoder_configuration_html"><div class="ttname"><a href="struct_video_1_1_decoder_configuration.html">Video::DecoderConfiguration</a></div><div class="ttdef"><b>Definition</b> Rescale.hpp:48</div></div>
 <div class="ttc" id="astruct_video_1_1_frame_queue_html"><div class="ttname"><a href="struct_video_1_1_frame_queue.html">Video::FrameQueue</a></div><div class="ttdef"><b>Definition</b> FrameQueue.hpp:53</div></div>
 <div class="ttc" id="astruct_video_1_1_lib_a_v_decoder_html"><div class="ttname"><a href="struct_video_1_1_lib_a_v_decoder.html">Video::LibAVDecoder</a></div><div class="ttdef"><b>Definition</b> Rescale.hpp:61</div></div>
-<div class="ttc" id="astruct_video_1_1_missing_timestamps_html"><div class="ttname"><a href="struct_video_1_1_missing_timestamps.html">Video::MissingTimestamps</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:120</div></div>
-<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:105</div></div>
+<div class="ttc" id="astruct_video_1_1_missing_timestamps_html"><div class="ttname"><a href="struct_video_1_1_missing_timestamps.html">Video::MissingTimestamps</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:124</div></div>
+<div class="ttc" id="astruct_video_1_1_read_frame_html"><div class="ttname"><a href="struct_video_1_1_read_frame.html">Video::ReadFrame</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:109</div></div>
 <div class="ttc" id="astruct_video_1_1_video_interface_html"><div class="ttname"><a href="struct_video_1_1_video_interface.html">Video::VideoInterface</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:91</div></div>
 <div class="ttc" id="astruct_video_1_1_video_metadata_html"><div class="ttname"><a href="struct_video_1_1_video_metadata.html">Video::VideoMetadata</a></div><div class="ttdef"><b>Definition</b> VideoInterface.hpp:73</div></div>
 </div><!-- fragment --></div><!-- contents -->

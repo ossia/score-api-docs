@@ -240,10 +240,17 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
 std::array&lt; uint8_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>muted</b></td></tr>
 <tr class="memdesc:a83d104317d2612a72e096f510bd066ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lanes of a single pass that is muted. <br /></td></tr>
 <tr class="separator:a83d104317d2612a72e096f510bd066ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4af294ecef4d6b9c430aa5c32cb1c5" id="r_a0b4af294ecef4d6b9c430aa5c32cb1c5"><td class="memItemLeft" align="right" valign="top"><a id="a0b4af294ecef4d6b9c430aa5c32cb1c5" name="a0b4af294ecef4d6b9c430aa5c32cb1c5"></a>
+std::array&lt; uint32_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lane_id</b></td></tr>
+<tr class="memdesc:a0b4af294ecef4d6b9c430aa5c32cb1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the pass of each lane of a single pass, 0 for the others. <br /></td></tr>
+<tr class="separator:a0b4af294ecef4d6b9c430aa5c32cb1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a151163d2abb6c51dc62af41be8ee921e" id="r_a151163d2abb6c51dc62af41be8ee921e"><td class="memItemLeft" align="right" valign="top"><a id="a151163d2abb6c51dc62af41be8ee921e" name="a151163d2abb6c51dc62af41be8ee921e"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>selected</b></td></tr>
 <tr class="memdesc:a151163d2abb6c51dc62af41be8ee921e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pass Layer says, from the oldest one, which the layer actions act on. <br /></td></tr>
 <tr class="separator:a151163d2abb6c51dc62af41be8ee921e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c698e4a94be5efe92c195c60de8c750" id="r_a1c698e4a94be5efe92c195c60de8c750"><td class="memItemLeft" align="right" valign="top"><a id="a1c698e4a94be5efe92c195c60de8c750" name="a1c698e4a94be5efe92c195c60de8c750"></a>
+std::array&lt; uint32_t, <a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#aba32101634658db4a0259c82ed32cfd5">max_queued</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queued</b></td></tr>
+<tr class="separator:a1c698e4a94be5efe92c195c60de8c750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687265f1ac27cb400c8f3b56cdfe748a" id="r_a687265f1ac27cb400c8f3b56cdfe748a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#a687265f1ac27cb400c8f3b56cdfe748a">restart_pending</a></td></tr>
 <tr class="separator:a687265f1ac27cb400c8f3b56cdfe748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b90f5813ddca9496f663b47e5ae461" id="r_a42b90f5813ddca9496f663b47e5ae461"><td class="memItemLeft" align="right" valign="top"><a id="a42b90f5813ddca9496f663b47e5ae461" name="a42b90f5813ddca9496f663b47e5ae461"></a>
@@ -296,6 +303,8 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>bins<
 <tr class="memitem:a6432aa5b3c5ddf91fc2cc6ffb94ddc34" id="r_a6432aa5b3c5ddf91fc2cc6ffb94ddc34"><td class="memItemLeft" align="right" valign="top"><a id="a6432aa5b3c5ddf91fc2cc6ffb94ddc34" name="a6432aa5b3c5ddf91fc2cc6ffb94ddc34"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_notes</b> = 768</td></tr>
 <tr class="separator:a6432aa5b3c5ddf91fc2cc6ffb94ddc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba32101634658db4a0259c82ed32cfd5" id="r_aba32101634658db4a0259c82ed32cfd5"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#aba32101634658db4a0259c82ed32cfd5">max_queued</a> = 32</td></tr>
+<tr class="separator:aba32101634658db4a0259c82ed32cfd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="acc163ff8ca577e8e8230795335276a45" name="acc163ff8ca577e8e8230795335276a45"></a>
@@ -339,6 +348,29 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_n
       </table>
 </div><div class="memdoc">
 <p>The last take the view asked for that is written, or that there was no loop to make: the last take is the one it asked for, or a later one. </p>
+
+</div>
+</div>
+<a id="aba32101634658db4a0259c82ed32cfd5" name="aba32101634658db4a0259c82ed32cfd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba32101634658db4a0259c82ed32cfd5">&#9670;&#160;</a></span>max_queued</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int Nodes::Looper::view_message::max_queued = 32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The passes an m or x was asked for, that the looper got and did not do yet, by id, 0 past them: an m or x the looper turned down is not among them. </p>
 
 </div>
 </div>

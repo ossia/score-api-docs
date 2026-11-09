@@ -166,6 +166,18 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>freeText</b> () co
 <tr class="memitem:afdbbdcb504e8b336d086331e3d674a45" id="r_afdbbdcb504e8b336d086331e3d674a45"><td class="memItemLeft" align="right" valign="top"><a id="afdbbdcb504e8b336d086331e3d674a45" name="afdbbdcb504e8b336d086331e3d674a45"></a>
 <a class="el" href="classscore_1_1_q_graphics_time_chooser.html#a67323e06522fe440cad46a93ea31ed9d">Feel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>feel</b> () const noexcept</td></tr>
 <tr class="separator:afdbbdcb504e8b336d086331e3d674a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3446fdf7c2ae0264c1b8aab944dc7c18" id="r_a3446fdf7c2ae0264c1b8aab944dc7c18"><td class="memItemLeft" align="right" valign="top"><a id="a3446fdf7c2ae0264c1b8aab944dc7c18" name="a3446fdf7c2ae0264c1b8aab944dc7c18"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>barSync</b> () const noexcept</td></tr>
+<tr class="memdesc:a3446fdf7c2ae0264c1b8aab944dc7c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synced: whether the steps restart at each bar line. <br /></td></tr>
+<tr class="separator:a3446fdf7c2ae0264c1b8aab944dc7c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b02c3c31bb544fcc4a0fd2a197b3f2" id="r_a01b02c3c31bb544fcc4a0fd2a197b3f2"><td class="memItemLeft" align="right" valign="top"><a id="a01b02c3c31bb544fcc4a0fd2a197b3f2" name="a01b02c3c31bb544fcc4a0fd2a197b3f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBarSync</b> (bool restart)</td></tr>
+<tr class="memdesc:a01b02c3c31bb544fcc4a0fd2a197b3f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An edit, as a drag's: the mode becomes 2 or 3. <br /></td></tr>
+<tr class="separator:a01b02c3c31bb544fcc4a0fd2a197b3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a024d1de947c88b9a05c305e58e1388" id="r_a1a024d1de947c88b9a05c305e58e1388"><td class="memItemLeft" align="right" valign="top"><a id="a1a024d1de947c88b9a05c305e58e1388" name="a1a024d1de947c88b9a05c305e58e1388"></a>
+QMenu *&#160;</td><td class="memItemRight" valign="bottom"><b>makeSyncMenu</b> ()</td></tr>
+<tr class="memdesc:a1a024d1de947c88b9a05c305e58e1388"><td class="mdescLeft">&#160;</td><td class="mdescRight">The right-click menu of a synced time. <br /></td></tr>
+<tr class="separator:a1a024d1de947c88b9a05c305e58e1388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4aa9fd5cbb8e333ac7e07131cf164b" id="r_ada4aa9fd5cbb8e333ac7e07131cf164b"><td class="memItemLeft" align="right" valign="top"><a id="ada4aa9fd5cbb8e333ac7e07131cf164b" name="ada4aa9fd5cbb8e333ac7e07131cf164b"></a>
 QRectF&#160;</td><td class="memItemRight" valign="bottom"><b>boundingRect</b> () const override</td></tr>
 <tr class="separator:ada4aa9fd5cbb8e333ac7e07131cf164b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +207,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>moving</b> {}</td></t
 <tr class="memitem:aaa268d528918ac0c03171ae224a7e402" id="r_aaa268d528918ac0c03171ae224a7e402"><td class="memItemLeft" align="right" valign="top"><a id="aaa268d528918ac0c03171ae224a7e402" name="aaa268d528918ac0c03171ae224a7e402"></a>
 std::function&lt; double(double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>secondsToPosition</b></td></tr>
 <tr class="separator:aaa268d528918ac0c03171ae224a7e402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73b768d94629503f69b90b7702e599fb" id="r_a73b768d94629503f69b90b7702e599fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_q_graphics_time_chooser.html#a73b768d94629503f69b90b7702e599fb">offersBarSync</a> {}</td></tr>
+<tr class="separator:a73b768d94629503f69b90b7702e599fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3bc361c3b0a2a24a39715780fd19d48" id="r_ab3bc361c3b0a2a24a39715780fd19d48"><td class="memItemLeft" align="right" valign="top"><a id="ab3bc361c3b0a2a24a39715780fd19d48" name="ab3bc361c3b0a2a24a39715780fd19d48"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>barSyncDefault</b> {true}</td></tr>
+<tr class="separator:ab3bc361c3b0a2a24a39715780fd19d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -225,6 +242,21 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultGraphicsKnob
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a73b768d94629503f69b90b7702e599fb" name="a73b768d94629503f69b90b7702e599fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73b768d94629503f69b90b7702e599fb">&#9670;&#160;</a></span>offersBarSync</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool score::QGraphicsTimeChooser::offersBarSync {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Whether a right-click on a synced time offers the bar lines choice, and what mode 1 means. </p>
+
+</div>
+</div>
 <a id="acb299258dec25a44a6d20ee89f218031" name="acb299258dec25a44a6d20ee89f218031"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acb299258dec25a44a6d20ee89f218031">&#9670;&#160;</a></span>positionToSeconds</h2>
 

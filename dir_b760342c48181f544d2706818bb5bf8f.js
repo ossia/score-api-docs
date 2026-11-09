@@ -26,7 +26,10 @@ var dir_b760342c48181f544d2706818bb5bf8f =
     [ "ProcessModelPortInit.hpp", "_process_model_port_init_8hpp_source.html", null ],
     [ "SceneConcepts.hpp", "_scene_concepts_8hpp_source.html", null ],
     [ "ScoreLayer.hpp", "_score_layer_8hpp_source.html", null ],
+    [ "SoundSet.hpp", "_sound_set_8hpp_source.html", null ],
     [ "TextureConversion.hpp", "_texture_conversion_8hpp_source.html", null ],
     [ "TextureFormat.hpp", "_texture_format_8hpp_source.html", null ],
+    [ "UiEdits.hpp", "_ui_edits_8hpp_source.html", null ],
+    [ "Waveform.hpp", "_waveform_8hpp_source.html", null ],
     [ "WorkerBinding.hpp", "_worker_binding_8hpp_source.html", null ]
 ];

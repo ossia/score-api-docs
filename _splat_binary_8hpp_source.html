@@ -130,14 +130,17 @@ $(document).ready(function(){initNavTree('_splat_binary_8hpp_source.html',''); i
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//                  (q + 1) * 127.5 around index 0; recipient</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//                  reconstructs by (b - 128) / 128)</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// We pass these bytes through verbatim. The &quot;3dgs.splat-binary&quot; preset&#39;s</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// CSF declares the matching LAYOUT, dequantizes color8 to color, and</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// reconstructs the quat from the int8s.</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// Returns nullptr if `bytes.size() % 32 != 0` or the input is empty.</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>ossia::primitive_cloud_component_ptr parse_splat_binary(std::string_view bytes);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace Threedim::PrimitiveCloud</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// Columns: x y z (float), scale_linear_0..2 (float), red green blue alpha</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// (uint8), rot_u8_0..3 (uint8, w x y z).</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// We pass these bytes through verbatim. The &quot;3dgs.splat-binary&quot; preset&#39;s</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// CSF declares the matching LAYOUT, dequantizes color8 to color, and</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// reconstructs the quat from the int8s.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// Returns nullptr if `bytes.size() % 32 != 0` or the input is empty.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>ossia::primitive_cloud_component_ptr parse_splat_binary(std::string_view bytes);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace Threedim::PrimitiveCloud</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

@@ -92,7 +92,7 @@ var namespacescore_1_1gfx =
     [ "Mesh", "structscore_1_1gfx_1_1_mesh.html", "structscore_1_1gfx_1_1_mesh" ],
     [ "MeshBuffers", "structscore_1_1gfx_1_1_mesh_buffers.html", "structscore_1_1gfx_1_1_mesh_buffers" ],
     [ "MeshUBO", "structscore_1_1gfx_1_1_mesh_u_b_o.html", null ],
-    [ "Message", "structscore_1_1gfx_1_1_message.html", null ],
+    [ "Message", "structscore_1_1gfx_1_1_message.html", "structscore_1_1gfx_1_1_message" ],
     [ "ModelCameraUBO", "structscore_1_1gfx_1_1_model_camera_u_b_o.html", "structscore_1_1gfx_1_1_model_camera_u_b_o" ],
     [ "ModelDisplayNode", "structscore_1_1gfx_1_1_model_display_node.html", "structscore_1_1gfx_1_1_model_display_node" ],
     [ "ModelSceneDrawer", "classscore_1_1gfx_1_1_model_scene_drawer.html", "classscore_1_1gfx_1_1_model_scene_drawer" ],
@@ -256,6 +256,11 @@ var namespacescore_1_1gfx =
       [ "Metal", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734a9bb04ea840c3a95d7be0c3f7f5846293", null ],
       [ "D3D12", "namespacescore_1_1gfx.html#a5b6a96306e1a02ccc56d8bb785bc6734af6a8d2f77966ef08037db61b37793bcd", null ]
     ] ],
+    [ "OutputDepth", "namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2", [
+      [ "None", "namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Texture", "namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2aa3e8ae43188ae76d38f414b2bdb0077b", null ],
+      [ "DepthStencil", "namespacescore_1_1gfx.html#a52de025f732e8d12f05fa746f9ffa5f2a2fa8076285272883c91e14402975a441", null ]
+    ] ],
     [ "PlaybackMode", "namespacescore_1_1gfx.html#a6b3dbe9777899456b6f1336bf14a4b04", [
       [ "AutoPlayback", "namespacescore_1_1gfx.html#a6b3dbe9777899456b6f1336bf14a4b04a7b4286561650723cd7bd907c7cc9660d", null ],
       [ "Direct", "namespacescore_1_1gfx.html#a6b3dbe9777899456b6f1336bf14a4b04aad863c0f702f90584c586d2a2b3ac3ec", null ],
@@ -321,6 +326,7 @@ var namespacescore_1_1gfx =
     [ "createLayeredRenderTarget", "namespacescore_1_1gfx.html#a41f44deb18d072604a6718e850aa6893", null ],
     [ "createMultiViewRenderTarget", "namespacescore_1_1gfx.html#ab2133796579cb28c90b5d1d82c51f9f2", null ],
     [ "createMultiViewRenderTarget", "namespacescore_1_1gfx.html#a470ce7ea9971343a5d792f89939e83c4", null ],
+    [ "createOutputRenderTarget", "namespacescore_1_1gfx.html#a303cdecd840ea184b3ed276237d0d62f", null ],
     [ "createReadbackTarget", "namespacescore_1_1gfx.html#af614d46404ea0d88c16899624bb393bd", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#a51bb4eaee676109688bc83de5e6eaa2a", null ],
     [ "createRenderTarget", "namespacescore_1_1gfx.html#afd369167c62119471d4e47fdcd901a43", null ],
@@ -381,6 +387,7 @@ var namespacescore_1_1gfx =
     [ "readbackTextureSupported", "namespacescore_1_1gfx.html#aa5959fa86e5b75220dfbc2cad7c90546", null ],
     [ "readbackTextureToHost", "namespacescore_1_1gfx.html#a5c01a1b3080f28bc17ff70abc939158c", null ],
     [ "reapplyStorageBindings", "namespacescore_1_1gfx.html#aaf1f037c94d2859779d192431649c7c2", null ],
+    [ "releaseOutputRenderTarget", "namespacescore_1_1gfx.html#ac582753812525cac8a9e33f249f96039", null ],
     [ "remapPipelineVertexInputs", "namespacescore_1_1gfx.html#a9730457c4347a92b074fbb88360776b5", null ],
     [ "remapPipelineVertexInputs", "namespacescore_1_1gfx.html#a025901c49fd879a6d6e1ecbebeca5aa8", null ],
     [ "renameReservedIdentifiers", "namespacescore_1_1gfx.html#aed9717c232f12c63d03ae21821c54bcc", null ],
@@ -423,6 +430,7 @@ var namespacescore_1_1gfx =
     [ "warnStorageImageUnits", "namespacescore_1_1gfx.html#abd68affdaf958c900e361f71e4c80c72", null ],
     [ "widensGpuIndices", "namespacescore_1_1gfx.html#ab81e1d8361306f254009b8b97b63fc33", null ],
     [ "wireComputeSupports", "namespacescore_1_1gfx.html#a843aa4372e6afa53def5b752bfd8b08b", null ],
+    [ "zeroTexture", "namespacescore_1_1gfx.html#aa2569ae1ea33f50408b2365cbd596109", null ],
     [ "rhiHasIndirectCommandBufferFlags", "namespacescore_1_1gfx.html#aa00d5d224ab0b6906c54625b26eb58e9", null ],
     [ "unsetSamplerField", "namespacescore_1_1gfx.html#acfa8f06258767b46428381c9aa0268c1", null ]
 ];

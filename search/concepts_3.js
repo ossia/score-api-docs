@@ -16,8 +16,9 @@ var searchData=
   ['oscr_3a_3arecursive_5fcontainer_5flayout_13',['recursive_container_layout',['../conceptoscr_1_1recursive__container__layout.html',1,'oscr']]],
   ['oscr_3a_3ascene_5fport_14',['scene_port',['../conceptoscr_1_1scene__port.html',1,'oscr']]],
   ['oscr_3a_3asingle_5fcable_5fport_15',['single_cable_port',['../conceptoscr_1_1single__cable__port.html',1,'oscr']]],
-  ['oscr_3a_3astops_5fwith_5fextra_5ftick_16',['stops_with_extra_tick',['../conceptoscr_1_1stops__with__extra__tick.html',1,'oscr']]],
-  ['oscr_3a_3astring_5flist_5ffield_17',['string_list_field',['../conceptoscr_1_1string__list__field.html',1,'oscr']]],
-  ['oscr_3a_3atoggle_5fgrid_5ffield_18',['toggle_grid_field',['../conceptoscr_1_1toggle__grid__field.html',1,'oscr']]],
-  ['oscr_3a_3avalue_5flist_5ffield_19',['value_list_field',['../conceptoscr_1_1value__list__field.html',1,'oscr']]]
+  ['oscr_3a_3asound_5fset_5fcontrol_5fport_16',['sound_set_control_port',['../conceptoscr_1_1sound__set__control__port.html',1,'oscr']]],
+  ['oscr_3a_3astops_5fwith_5fextra_5ftick_17',['stops_with_extra_tick',['../conceptoscr_1_1stops__with__extra__tick.html',1,'oscr']]],
+  ['oscr_3a_3astring_5flist_5ffield_18',['string_list_field',['../conceptoscr_1_1string__list__field.html',1,'oscr']]],
+  ['oscr_3a_3atoggle_5fgrid_5ffield_19',['toggle_grid_field',['../conceptoscr_1_1toggle__grid__field.html',1,'oscr']]],
+  ['oscr_3a_3avalue_5flist_5ffield_20',['value_list_field',['../conceptoscr_1_1value__list__field.html',1,'oscr']]]
 ];

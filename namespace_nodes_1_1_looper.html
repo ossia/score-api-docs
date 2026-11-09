@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('namespace_nodes_1_1_looper.html',''); 
 <div class="textblock"><p>The actions of the loopers' Switches tab, made for footswitches, and the settings that say what they and the transport do.</p>
 <p>Mode is the state: it shows what the looper does or is about to do, whatever changed it. Play, Stop, Record and Overdub set it, as setting it by hand does. The other actions say what no value can: "the next thing", "a new layer", "from the start", "this layer". Everything that changes what is heard waits for the next point of the grid, as a change of Mode does; Undo, Redo and Clear act at once, and selecting a layer as well.</p>
 <p>The looper (the <a class="el" href="namespace_engine.html" title="Link of score with the OSSIA API execution engine.">Engine</a> below) provides, besides the transport's engine:</p>
-<p>int looper_passes() const; // passes heard bool looper_muted(int pass) const; void looper_set_muted(int pass, bool muted); void looper_mute(int pass); // toggles void looper_erase(int pass);</p>
+<p>int looper_passes() const; // passes heard int looper_pass_of(uint32_t id) const; // the pass heard of that id, or -1 bool looper_muted(int pass) const; void looper_set_muted(int pass, bool muted); void looper_mute(int pass, int muted); // muted: 1, 0, or -1 to toggle void looper_erase(int pass); void looper_begin_actions(); // what follows is one action void looper_end_actions(); // for undo, until this</p>
 <p>What the audio and the MIDI looper share: when they record, overdub, play or stop, sample by sample.</p>
 <p>The loopers ask for a mode; the transport waits for the next point of the quantification grid before taking it up, splits the tick there, and hands the looper the spans of the tick with the mode each of them is in. A recording can end on its own after a number of bars, into After record.</p>
 <p>The looper (the <a class="el" href="namespace_engine.html" title="Link of score with the OSSIA API execution engine.">Engine</a> below) provides:</p>
@@ -266,6 +266,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1transport.html">transport</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1transport__settings.html">transport_settings</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">undo_mark</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1value__event.html">value_event</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A value of the loop.  <a href="struct_nodes_1_1_looper_1_1value__event.html#details">More...</a><br /></td></tr>

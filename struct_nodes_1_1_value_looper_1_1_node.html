@@ -212,18 +212,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_point</b> ()</
 <tr class="memitem:a07a714c08ef26669471010879ca13e8f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a07a714c08ef26669471010879ca13e8f"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>looper_passes</b> () const noexcept</td></tr>
 <tr class="separator:a07a714c08ef26669471010879ca13e8f inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f808301131b6c2a345e67b4ecbe1c0 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa2f808301131b6c2a345e67b4ecbe1c0"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>looper_pass_of</b> (uint32_t id) const noexcept</td></tr>
+<tr class="separator:aa2f808301131b6c2a345e67b4ecbe1c0 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1b1859485b3ef8cd66d18370f77e86 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a1b1b1859485b3ef8cd66d18370f77e86"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>looper_muted</b> (int pass) const noexcept</td></tr>
 <tr class="separator:a1b1b1859485b3ef8cd66d18370f77e86 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944ac3bfd6086aaaf6b01fe8a9eafa17 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a944ac3bfd6086aaaf6b01fe8a9eafa17"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_set_muted</b> (int pass, bool muted)</td></tr>
 <tr class="separator:a944ac3bfd6086aaaf6b01fe8a9eafa17 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa974c2cb2d0edb056af84e16344834cc inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa974c2cb2d0edb056af84e16344834cc"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_mute</b> (int pass)</td></tr>
-<tr class="separator:aa974c2cb2d0edb056af84e16344834cc inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84dfdbebdeb8d8b7adda08c2392fcde inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_af84dfdbebdeb8d8b7adda08c2392fcde"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_mute</b> (int pass, int muted=-1)</td></tr>
+<tr class="separator:af84dfdbebdeb8d8b7adda08c2392fcde inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8551eea1f5a525a6b7a4254e1c14aa10 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a8551eea1f5a525a6b7a4254e1c14aa10"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_erase</b> (int pass)</td></tr>
 <tr class="separator:a8551eea1f5a525a6b7a4254e1c14aa10 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652988e2b13125bf8d330be14bb736d5 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a652988e2b13125bf8d330be14bb736d5"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_begin_actions</b> () noexcept</td></tr>
+<tr class="separator:a652988e2b13125bf8d330be14bb736d5 inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d23fbfb39859f69f26b3fb4d1d405a inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_ab2d23fbfb39859f69f26b3fb4d1d405a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>looper_end_actions</b> () noexcept</td></tr>
+<tr class="separator:ab2d23fbfb39859f69f26b3fb4d1d405a inherit pub_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -236,17 +245,17 @@ value_looper ossia score Loop a stream of values in impulses fired where they&#1
 <tr class="memitem:aa9f9e7529adeac3f894b6210b7d6463a" id="r_aa9f9e7529adeac3f894b6210b7d6463a"><td class="memItemLeft" align="right" valign="top"><a id="aa9f9e7529adeac3f894b6210b7d6463a" name="aa9f9e7529adeac3f894b6210b7d6463a"></a>
 struct <a class="el" href="struct_nodes_1_1_value_looper_1_1_node_1_1ins.html">Nodes::ValueLooper::Node::ins</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
 <tr class="separator:aa9f9e7529adeac3f894b6210b7d6463a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1774e725b440d14d4ddfb343bb8aed" id="r_a7e1774e725b440d14d4ddfb343bb8aed"><td class="memItemLeft" ><a id="a7e1774e725b440d14d4ddfb343bb8aed" name="a7e1774e725b440d14d4ddfb343bb8aed"></a>
+<tr class="memitem:a38f177e3567c8130fdf199522813faa6" id="r_a38f177e3567c8130fdf199522813faa6"><td class="memItemLeft" ><a id="a38f177e3567c8130fdf199522813faa6" name="a38f177e3567c8130fdf199522813faa6"></a>
 struct {&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68078ec4c02cd602f2add7dae5485e5" id="r_af68078ec4c02cd602f2add7dae5485e5"><td class="memItemLeft" >
+<tr class="memitem:a8befeb10150e213b8a0578ba1a88f59e" id="r_a8befeb10150e213b8a0578ba1a88f59e"><td class="memItemLeft" >
 &#160;&#160;&#160;<a class="el" href="struct_nodes_1_1ossia__port.html">ossia_port</a>&lt;&quot;out&quot;, ossia::value_port &gt;&#160;&#160;&#160;<b>values</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:af68078ec4c02cd602f2add7dae5485e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69151972952b6851fe8d57e3f6778311" id="r_a69151972952b6851fe8d57e3f6778311"><td class="memItemLeft" >
+<tr class="separator:a8befeb10150e213b8a0578ba1a88f59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e236c8ec1d02776d911b3ff9b98a22" id="r_a58e236c8ec1d02776d911b3ff9b98a22"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;<b>phase</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a69151972952b6851fe8d57e3f6778311"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e1774e725b440d14d4ddfb343bb8aed" id="r_a7e1774e725b440d14d4ddfb343bb8aed"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7e1774e725b440d14d4ddfb343bb8aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a58e236c8ec1d02776d911b3ff9b98a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f177e3567c8130fdf199522813faa6" id="r_a38f177e3567c8130fdf199522813faa6"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>outputs</b>&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a38f177e3567c8130fdf199522813faa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a415770bab38d49f65d526e3e2293ed4e" id="r_a415770bab38d49f65d526e3e2293ed4e"><td class="memItemLeft" align="right" valign="top"><a id="a415770bab38d49f65d526e3e2293ed4e" name="a415770bab38d49f65d526e3e2293ed4e"></a>
 struct <a class="el" href="struct_nodes_1_1_value_looper_1_1_node_1_1worker__t.html">Nodes::ValueLooper::Node::worker_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>worker</b></td></tr>
 <tr class="separator:a415770bab38d49f65d526e3e2293ed4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +314,12 @@ Additional Inherited Members</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>pass_open</b> () const noexcept</td></tr>
 <tr class="memdesc:a23beb5bd08186846c8876a7611daf3f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pass is open in the stack. <br /></td></tr>
 <tr class="separator:a23beb5bd08186846c8876a7611daf3f7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f24b8523e4f4338d7755fb1bc4b9d21 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a1f24b8523e4f4338d7755fb1bc4b9d21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a1f24b8523e4f4338d7755fb1bc4b9d21">may_redo</a> () const noexcept</td></tr>
+<tr class="separator:a1f24b8523e4f4338d7755fb1bc4b9d21 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa622a9fa00b6662013380fa667785a05 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa622a9fa00b6662013380fa667785a05"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_nodes_1_1_looper_1_1undo__mark.html">Looper::undo_mark</a>&#160;</td><td class="memItemRight" valign="bottom"><b>undo_mark</b> () const noexcept</td></tr>
+<tr class="memdesc:aa622a9fa00b6662013380fa667785a05 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the passes and the actions undo goes back through are. <br /></td></tr>
+<tr class="separator:aa622a9fa00b6662013380fa667785a05 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60dbfde0e77b1969ca36e6c029b4f7e7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a60dbfde0e77b1969ca36e6c029b4f7e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60dbfde0e77b1969ca36e6c029b4f7e7">material_arriving</a> ()</td></tr>
 <tr class="separator:a60dbfde0e77b1969ca36e6c029b4f7e7 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d6e7fb03549c9d9978c0df73f864c4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a79d6e7fb03549c9d9978c0df73f864c4"><td class="memItemLeft" align="right" valign="top">
@@ -350,12 +365,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>follow_merges</b> ()<
 <tr class="separator:ad5d1984730ed289333147ca05ee51eb9 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60732bd38f89eafb5cf223924fffff9b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a60732bd38f89eafb5cf223924fffff9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a60732bd38f89eafb5cf223924fffff9b">undo_pass</a> ()</td></tr>
 <tr class="separator:a60732bd38f89eafb5cf223924fffff9b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf71d666e1a480f85e604d12999d66b4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_adf71d666e1a480f85e604d12999d66b4"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>drop_top_pass</b> ()</td></tr>
+<tr class="memdesc:adf71d666e1a480f85e604d12999d66b4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The newest pass goes, as undo hides it, and redo does not bring it back. <br /></td></tr>
+<tr class="separator:adf71d666e1a480f85e604d12999d66b4 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82091993a7d81a6b6f86e7cf1b4d3634 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a82091993a7d81a6b6f86e7cf1b4d3634"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a82091993a7d81a6b6f86e7cf1b4d3634">erase_pass</a> (int pass)</td></tr>
 <tr class="separator:a82091993a7d81a6b6f86e7cf1b4d3634 inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_aa3a2069bec3b2da272a85c3177a9579a"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mute_pass</b> (int pass)</td></tr>
-<tr class="memdesc:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">A muted pass is kept as it is; muting it again lets it be heard. <br /></td></tr>
-<tr class="separator:aa3a2069bec3b2da272a85c3177a9579a inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81e5ae238bbf6d15043290e7c903e44d inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a81e5ae238bbf6d15043290e7c903e44d"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mute_pass</b> (int pass, int muted=-1)</td></tr>
+<tr class="memdesc:a81e5ae238bbf6d15043290e7c903e44d inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes a pass, or lets it be heard: <code>muted</code> says which, or it toggles. <br /></td></tr>
+<tr class="separator:a81e5ae238bbf6d15043290e7c903e44d inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1cdc9e230b7bda68528a986951f81c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_afd1cdc9e230b7bda68528a986951f81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#afd1cdc9e230b7bda68528a986951f81c">make_room</a> ()</td></tr>
 <tr class="separator:afd1cdc9e230b7bda68528a986951f81c inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a320ce60c3a51c0c489c568bb8ddc8d8b inherit pro_methods_struct_nodes_1_1_looper_1_1looper__node" id="r_a320ce60c3a51c0c489c568bb8ddc8d8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html#a320ce60c3a51c0c489c568bb8ddc8d8b">begin_pass</a> (int64_t start)</td></tr>
@@ -534,12 +553,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_stops</b> {}</td></t
 <tr class="memitem:a08ecfa66d19d6ed0739b7f2401711ee5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a08ecfa66d19d6ed0739b7f2401711ee5"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_nodes_1_1_looper_1_1view__message.html">Looper::view_message</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_view</b> {}</td></tr>
 <tr class="separator:a08ecfa66d19d6ed0739b7f2401711ee5 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d6e45b0363c4b559bd79a6e0e1172c6 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a0d6e45b0363c4b559bd79a6e0e1172c6"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_request</b> {}</td></tr>
-<tr class="separator:a0d6e45b0363c4b559bd79a6e0e1172c6 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca8edc501c968d7b6bb3a58aade5906 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a9ca8edc501c968d7b6bb3a58aade5906"><td class="memItemLeft" align="right" valign="top">
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_requested</b> {}</td></tr>
-<tr class="separator:a9ca8edc501c968d7b6bb3a58aade5906 inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a055871cf3065cb0c734e6e84c433b86a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a055871cf3065cb0c734e6e84c433b86a"><td class="memItemLeft" align="right" valign="top">
+std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_requests</b> {}</td></tr>
+<tr class="memdesc:a055871cf3065cb0c734e6e84c433b86a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="mdescLeft">&#160;</td><td class="mdescRight">The m and x the view sent since the last tick. <br /></td></tr>
+<tr class="separator:a055871cf3065cb0c734e6e84c433b86a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ec0a5c649120150e8bd3b6a0031c6a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_a75ec0a5c649120150e8bd3b6a0031c6a"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_count</b> {}</td></tr>
+<tr class="separator:a75ec0a5c649120150e8bd3b6a0031c6a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a09cf943a9fccf989116cb22c59cab1a2" name="a09cf943a9fccf989116cb22c59cab1a2"></a>

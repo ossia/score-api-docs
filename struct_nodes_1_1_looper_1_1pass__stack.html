@@ -128,13 +128,18 @@ Inheritance diagram for Nodes::Looper::pass_stack&lt; Store, Pass, MaxLayers &gt
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Store, typename Pass, int MaxLayers&gt;<br />
 struct Nodes::Looper::pass_stack&lt; Store, Pass, MaxLayers &gt;</div><p>The passes of a loop, one over the other, whatever they hold.</p>
-<p>A pass is the first recording or an overdub on top of it. Undo hides the newest one and redo shows it again; erase takes one out for good; mute keeps one but does not hear it; a pass past Max layers is merged with another, or takes the place of one, which is set aside for undo to put back. The stack does the bookkeeping of all of it, the same for every looper: which passes are heard and which redo brings back, the length each one repeats with, the length of the loop before and after each one, which ones are muted, the layer set aside and the merge undo can take apart.</p>
+<p>A pass is the first recording or an overdub on top of it. Erase takes one out, mute keeps one but does not hear it; a pass past Max layers is merged with another, or takes the place of one, which is set aside for undo to put back. The stack does the bookkeeping of all of it, the same for every looper: which passes are heard and which redo brings back, the length each one repeats with, the length of the loop before and after each one, which ones are muted, the layer set aside and the merge undo can take apart.</p>
+<p>Undo goes back through what was done, the last first: a pass is hidden, an erased pass comes back where it was, with what it recorded, and a mute is taken back; redo does it again, until something else is done. An erased pass is kept for that, at most max_kept of them, the oldest going for good, with the actions before it, when another is erased or when its memory is wanted for a new pass. A merge, a pass set aside to make room or a clear change the passes in a way the actions before cannot be taken back over: undo then hides passes from the newest, as it does past the oldest action kept.</p>
 <p><code>Pass</code> holds, besides what the looper keeps of its own for a pass (a buffer, a gain...), <code>period</code>, <code>loop_before</code>, <code>loop_after</code> and <code>muted</code>, and is copied whole as the passes move. What a pass recorded may instead be kept apart, each piece tagged with the index of its pass and with the passes that replace it, e.g. MIDI events: <code>Store</code> moves those along as the passes move, through these hooks, which <a class="el" href="struct_nodes_1_1_looper_1_1tagged__material.html">tagged_material</a> below implements for any such piece:</p>
-<p>void passes_changed(); // what is heard of the passes changed bool may_remove(int k) const; // pass k can be erased or set aside now void muting(int k); // pass k is about to be muted or unmuted void removing(int k); // pass k is about to be erased or set // aside: the passes over it move down void erased(int k); // pass k is erased: its material goes void aside_taken(int k); // pass k goes to the side void aside_returned(int k); // the pass set aside comes back at k void aside_forgotten(); // the pass set aside is gone for good void redo_dropped(bool aside); // passes from <code>count</code> on are gone for // good, the one set aside kept if <code>aside</code> void unmerge_dropped(); // the last merge cannot be undone now void unmerged(int at); // the last merge, of <code>at</code> and the pass // over it, is undone void cleared(); // every pass is gone void undoing(); // undo or redo is about to act </p>
+<p>void passes_changed(); // what is heard of the passes changed bool may_remove(int k) const; // pass k can be erased or set aside now void muting(int k); // pass k is about to be muted or unmuted void removing(int k); // pass k is about to be erased or set // aside: the passes over it move down void kept_taken(int k, int j); // pass k is erased: kept in place j void kept_returned(int k, int j); // the pass kept in place j comes back // at k, the passes from there moving up void kept_forgotten(int j); // the pass kept in place j is gone for good void aside_taken(int k); // pass k goes to the side void aside_returned(int k); // the pass set aside comes back at k void aside_forgotten(); // the pass set aside is gone for good void redo_dropped(bool aside); // passes from <code>count</code> on are gone for // good, the one set aside kept if <code>aside</code> void unmerge_dropped(); // the last merge cannot be undone now void unmerged(int at); // the last merge, of <code>at</code> and the pass // over it, is undone void cleared(); // every pass is gone void undoing(); // undo or redo is about to act </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1action.html">action</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state.html">aside_state</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1unmerge__state.html">unmerge_state</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +149,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0feca9161e011a3e9d29c59781ab4718" id="r_a0feca9161e011a3e9d29c59781ab4718"><td class="memItemLeft" align="right" valign="top"><a id="a0feca9161e011a3e9d29c59781ab4718" name="a0feca9161e011a3e9d29c59781ab4718"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const noexcept</td></tr>
 <tr class="separator:a0feca9161e011a3e9d29c59781ab4718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e11f21f036fc273a4247199da9acd2" id="r_ab9e11f21f036fc273a4247199da9acd2"><td class="memItemLeft" align="right" valign="top"><a id="ab9e11f21f036fc273a4247199da9acd2" name="ab9e11f21f036fc273a4247199da9acd2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>index_of</b> (uint32_t id) const noexcept</td></tr>
+<tr class="memdesc:ab9e11f21f036fc273a4247199da9acd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the pass heard whose id is <code>id</code>, -1 when none is. <br /></td></tr>
+<tr class="separator:ab9e11f21f036fc273a4247199da9acd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77295d07ae82279718d9dd3a3380d7a0" id="r_a77295d07ae82279718d9dd3a3380d7a0"><td class="memItemLeft" align="right" valign="top"><a id="a77295d07ae82279718d9dd3a3380d7a0" name="a77295d07ae82279718d9dd3a3380d7a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_group</b> () noexcept</td></tr>
+<tr class="memdesc:a77295d07ae82279718d9dd3a3380d7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The actions until end_group() are one for undo. <br /></td></tr>
+<tr class="separator:a77295d07ae82279718d9dd3a3380d7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d7b48728330ace169eff7fea29a8e2" id="r_ab4d7b48728330ace169eff7fea29a8e2"><td class="memItemLeft" align="right" valign="top"><a id="ab4d7b48728330ace169eff7fea29a8e2" name="ab4d7b48728330ace169eff7fea29a8e2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>end_group</b> () noexcept</td></tr>
+<tr class="separator:ab4d7b48728330ace169eff7fea29a8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7db1505b96af84686f46cf515633bdbe" id="r_a7db1505b96af84686f46cf515633bdbe"><td class="memItemLeft" align="right" valign="top"><a id="a7db1505b96af84686f46cf515633bdbe" name="a7db1505b96af84686f46cf515633bdbe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>undoes_action</b> () const noexcept</td></tr>
+<tr class="memdesc:a7db1505b96af84686f46cf515633bdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Undo takes back an action: its last one is not the pass being taken in. <br /></td></tr>
+<tr class="separator:a7db1505b96af84686f46cf515633bdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f736ff66a6582ab28cd8b583576414c" id="r_a7f736ff66a6582ab28cd8b583576414c"><td class="memItemLeft" align="right" valign="top"><a id="a7f736ff66a6582ab28cd8b583576414c" name="a7f736ff66a6582ab28cd8b583576414c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>can_undo</b> () const noexcept</td></tr>
+<tr class="separator:a7f736ff66a6582ab28cd8b583576414c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad278dbe338f39092f174221c20ebad34" id="r_ad278dbe338f39092f174221c20ebad34"><td class="memItemLeft" align="right" valign="top"><a id="ad278dbe338f39092f174221c20ebad34" name="ad278dbe338f39092f174221c20ebad34"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>can_redo</b> () const noexcept</td></tr>
+<tr class="separator:ad278dbe338f39092f174221c20ebad34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66dca84514b5316fc7d5a32231db581" id="r_af66dca84514b5316fc7d5a32231db581"><td class="memItemLeft" align="right" valign="top"><a id="af66dca84514b5316fc7d5a32231db581" name="af66dca84514b5316fc7d5a32231db581"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>redoes_action</b> () const noexcept</td></tr>
+<tr class="memdesc:af66dca84514b5316fc7d5a32231db581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redo does an action again, rather than showing a pass undo hid. <br /></td></tr>
+<tr class="separator:af66dca84514b5316fc7d5a32231db581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a0da7b19732219b6dc8d6769b426d8a" id="r_a1a0da7b19732219b6dc8d6769b426d8a"><td class="memItemLeft" align="right" valign="top"><a id="a1a0da7b19732219b6dc8d6769b426d8a" name="a1a0da7b19732219b6dc8d6769b426d8a"></a>
 Pass *&#160;</td><td class="memItemRight" valign="bottom"><b>top</b> () noexcept</td></tr>
 <tr class="separator:a1a0da7b19732219b6dc8d6769b426d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,7 +191,7 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>merged_period</b> 
 <tr class="separator:a8025f0cbc61ada092501e98355191430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1787a8a38d138a61846dc449bcd7441b" id="r_a1787a8a38d138a61846dc449bcd7441b"><td class="memItemLeft" align="right" valign="top"><a id="a1787a8a38d138a61846dc449bcd7441b" name="a1787a8a38d138a61846dc449bcd7441b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_muted</b> (int k, bool m) noexcept</td></tr>
-<tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard. <br /></td></tr>
+<tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard: an action undo takes back. <br /></td></tr>
 <tr class="separator:a1787a8a38d138a61846dc449bcd7441b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277ac6f805658bb8770724dbfae07d3" id="r_ae277ac6f805658bb8770724dbfae07d3"><td class="memItemLeft" align="right" valign="top"><a id="ae277ac6f805658bb8770724dbfae07d3" name="ae277ac6f805658bb8770724dbfae07d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
@@ -176,6 +206,10 @@ Pass &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>push_pass</b> (
 <tr class="separator:a4fc63ea0d2fb31c5092f891c238e77d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac72fa27747ca75e17f222f7fbac1befd" id="r_ac72fa27747ca75e17f222f7fbac1befd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ac72fa27747ca75e17f222f7fbac1befd">drop_redo</a> () noexcept</td></tr>
 <tr class="separator:ac72fa27747ca75e17f222f7fbac1befd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65be8e79f19cbd6b83e02a5055627eb9" id="r_a65be8e79f19cbd6b83e02a5055627eb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a65be8e79f19cbd6b83e02a5055627eb9">forget_history</a> () noexcept</td></tr>
+<tr class="separator:a65be8e79f19cbd6b83e02a5055627eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cbb36c09db7802429966c55197ac693" id="r_a3cbb36c09db7802429966c55197ac693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a3cbb36c09db7802429966c55197ac693">forget_oldest_kept</a> () noexcept</td></tr>
+<tr class="separator:a3cbb36c09db7802429966c55197ac693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430ce7923da3fe7aae60b66ea3877480" id="r_a430ce7923da3fe7aae60b66ea3877480"><td class="memItemLeft" align="right" valign="top"><a id="a430ce7923da3fe7aae60b66ea3877480" name="a430ce7923da3fe7aae60b66ea3877480"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>forget_aside</b> () noexcept</td></tr>
 <tr class="memdesc:a430ce7923da3fe7aae60b66ea3877480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forgets the layer set aside. <br /></td></tr>
@@ -194,12 +228,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>returns_on_undo</b> ()
 <tr class="separator:a5d5138dfe1e557468882f0e74354c65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad851d54672546f3d7b5a0b107f18037f" id="r_ad851d54672546f3d7b5a0b107f18037f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ad851d54672546f3d7b5a0b107f18037f">put_back</a> () noexcept</td></tr>
 <tr class="separator:ad851d54672546f3d7b5a0b107f18037f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57176c69e449032fa530b4068d305f33" id="r_a57176c69e449032fa530b4068d305f33"><td class="memItemLeft" align="right" valign="top"><a id="a57176c69e449032fa530b4068d305f33" name="a57176c69e449032fa530b4068d305f33"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>undo</b> () noexcept</td></tr>
-<tr class="separator:a57176c69e449032fa530b4068d305f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d74898395261a63ad60a4daceb7da3" id="r_a38d74898395261a63ad60a4daceb7da3"><td class="memItemLeft" align="right" valign="top"><a id="a38d74898395261a63ad60a4daceb7da3" name="a38d74898395261a63ad60a4daceb7da3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> () noexcept</td></tr>
-<tr class="separator:a38d74898395261a63ad60a4daceb7da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b91b6f998d6fc1de187478a7dee7f3e" id="r_a8b91b6f998d6fc1de187478a7dee7f3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8b91b6f998d6fc1de187478a7dee7f3e">undo</a> () noexcept</td></tr>
+<tr class="separator:a8b91b6f998d6fc1de187478a7dee7f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac193b8985824178d08530d43e2116e47" id="r_ac193b8985824178d08530d43e2116e47"><td class="memItemLeft" align="right" valign="top"><a id="ac193b8985824178d08530d43e2116e47" name="ac193b8985824178d08530d43e2116e47"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a>&#160;</td><td class="memItemRight" valign="bottom"><b>redo</b> () noexcept</td></tr>
+<tr class="memdesc:ac193b8985824178d08530d43e2116e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does again what undo took back last, or shows the pass it hid. <br /></td></tr>
+<tr class="separator:ac193b8985824178d08530d43e2116e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f64249991d89ecc31805a71debbf34f" id="r_a9f64249991d89ecc31805a71debbf34f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a9f64249991d89ecc31805a71debbf34f">drop_top</a> () noexcept</td></tr>
+<tr class="separator:a9f64249991d89ecc31805a71debbf34f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61f4227d415e622c11f04e3c5b91434" id="r_af61f4227d415e622c11f04e3c5b91434"><td class="memItemLeft" align="right" valign="top"><a id="af61f4227d415e622c11f04e3c5b91434" name="af61f4227d415e622c11f04e3c5b91434"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a>&#160;</td><td class="memItemRight" valign="bottom"><b>undo_top</b> () noexcept</td></tr>
+<tr class="memdesc:af61f4227d415e622c11f04e3c5b91434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hides the newest pass: a layer it replaced comes back in its place. <br /></td></tr>
+<tr class="separator:af61f4227d415e622c11f04e3c5b91434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e9db486d3508f2c7d51f66e05d9f73" id="r_a92e9db486d3508f2c7d51f66e05d9f73"><td class="memItemLeft" align="right" valign="top"><a id="a92e9db486d3508f2c7d51f66e05d9f73" name="a92e9db486d3508f2c7d51f66e05d9f73"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a>&#160;</td><td class="memItemRight" valign="bottom"><b>redo_top</b> () noexcept</td></tr>
+<tr class="memdesc:a92e9db486d3508f2c7d51f66e05d9f73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the pass <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#af61f4227d415e622c11f04e3c5b91434" title="Hides the newest pass: a layer it replaced comes back in its place.">undo_top()</a> hid last. <br /></td></tr>
+<tr class="separator:a92e9db486d3508f2c7d51f66e05d9f73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f54227dd2b96ef3763f48a1275f85d0" id="r_a8f54227dd2b96ef3763f48a1275f85d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8f54227dd2b96ef3763f48a1275f85d0">erase</a> (int k) noexcept</td></tr>
 <tr class="separator:a8f54227dd2b96ef3763f48a1275f85d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab933e42bc1931e6eaf9fb1b1512cd7bb" id="r_ab933e42bc1931e6eaf9fb1b1512cd7bb"><td class="memItemLeft" align="right" valign="top"><a id="ab933e42bc1931e6eaf9fb1b1512cd7bb" name="ab933e42bc1931e6eaf9fb1b1512cd7bb"></a>
@@ -249,6 +293,29 @@ struct <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1aside__stat
 <tr class="memitem:adefef185fdb9843ed4f27efc09d0c041" id="r_adefef185fdb9843ed4f27efc09d0c041"><td class="memItemLeft" align="right" valign="top"><a id="adefef185fdb9843ed4f27efc09d0c041" name="adefef185fdb9843ed4f27efc09d0c041"></a>
 <a class="el" href="struct_nodes_1_1_looper_1_1merge__log.html">merge_log</a>&#160;</td><td class="memItemRight" valign="bottom"><b>merged_passes</b></td></tr>
 <tr class="separator:adefef185fdb9843ed4f27efc09d0c041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa564c03d18ca22c8138fd0fb1e2cd370" id="r_aa564c03d18ca22c8138fd0fb1e2cd370"><td class="memItemLeft" align="right" valign="top"><a id="aa564c03d18ca22c8138fd0fb1e2cd370" name="aa564c03d18ca22c8138fd0fb1e2cd370"></a>
+std::array&lt; <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1action.html">action</a>, <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a0e8e65cae1a96dd6b9ed7c506d848724">max_history</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>history</b> {}</td></tr>
+<tr class="separator:aa564c03d18ca22c8138fd0fb1e2cd370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8899355a4193f72fafe8446bd433bfb5" id="r_a8899355a4193f72fafe8446bd433bfb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a8899355a4193f72fafe8446bd433bfb5">done</a> {}</td></tr>
+<tr class="separator:a8899355a4193f72fafe8446bd433bfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab71e3b68a101625141dd0923d4779269" id="r_ab71e3b68a101625141dd0923d4779269"><td class="memItemLeft" align="right" valign="top"><a id="ab71e3b68a101625141dd0923d4779269" name="ab71e3b68a101625141dd0923d4779269"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>recorded</b> {}</td></tr>
+<tr class="separator:ab71e3b68a101625141dd0923d4779269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7755e8f2fa6c3ad69b14a83379e9f16" id="r_ad7755e8f2fa6c3ad69b14a83379e9f16"><td class="memItemLeft" align="right" valign="top"><a id="ad7755e8f2fa6c3ad69b14a83379e9f16" name="ad7755e8f2fa6c3ad69b14a83379e9f16"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>group</b> {}</td></tr>
+<tr class="separator:ad7755e8f2fa6c3ad69b14a83379e9f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199742fc1413df9c1b97ab66067837b5" id="r_a199742fc1413df9c1b97ab66067837b5"><td class="memItemLeft" align="right" valign="top"><a id="a199742fc1413df9c1b97ab66067837b5" name="a199742fc1413df9c1b97ab66067837b5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>grouping</b> {}</td></tr>
+<tr class="separator:a199742fc1413df9c1b97ab66067837b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf5eba93aaa2002d6e48402a3677217" id="r_a3bf5eba93aaa2002d6e48402a3677217"><td class="memItemLeft" align="right" valign="top">std::array&lt; Pass, <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ac2339994a76d5bbb5c718415c3e685fd">max_kept</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a3bf5eba93aaa2002d6e48402a3677217">kept_passes</a> {}</td></tr>
+<tr class="separator:a3bf5eba93aaa2002d6e48402a3677217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96539f9a0fb85b7388e480e1af31e14e" id="r_a96539f9a0fb85b7388e480e1af31e14e"><td class="memItemLeft" align="right" valign="top"><a id="a96539f9a0fb85b7388e480e1af31e14e" name="a96539f9a0fb85b7388e480e1af31e14e"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>kept_used</b> {}</td></tr>
+<tr class="separator:a96539f9a0fb85b7388e480e1af31e14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51c66cd9ebb84587591414cfaedb704" id="r_ab51c66cd9ebb84587591414cfaedb704"><td class="memItemLeft" align="right" valign="top"><a id="ab51c66cd9ebb84587591414cfaedb704" name="ab51c66cd9ebb84587591414cfaedb704"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>last_id</b> {}</td></tr>
+<tr class="memdesc:ab51c66cd9ebb84587591414cfaedb704"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the last pass made. <br /></td></tr>
+<tr class="separator:ab51c66cd9ebb84587591414cfaedb704"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -260,6 +327,14 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_l
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_passes</b> = <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#a1f48cf800cd1d42a587922cd55949738">max_layers</a> + 1</td></tr>
 <tr class="memdesc:aee0663d8b037c9b83385044dfa003653"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pass past Max layers is one more until it is merged. <br /></td></tr>
 <tr class="separator:aee0663d8b037c9b83385044dfa003653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2339994a76d5bbb5c718415c3e685fd" id="r_ac2339994a76d5bbb5c718415c3e685fd"><td class="memItemLeft" align="right" valign="top"><a id="ac2339994a76d5bbb5c718415c3e685fd" name="ac2339994a76d5bbb5c718415c3e685fd"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_kept</b> = 8</td></tr>
+<tr class="memdesc:ac2339994a76d5bbb5c718415c3e685fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erased passes kept for undo, at most. <br /></td></tr>
+<tr class="separator:ac2339994a76d5bbb5c718415c3e685fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e8e65cae1a96dd6b9ed7c506d848724" id="r_a0e8e65cae1a96dd6b9ed7c506d848724"><td class="memItemLeft" align="right" valign="top"><a id="a0e8e65cae1a96dd6b9ed7c506d848724" name="a0e8e65cae1a96dd6b9ed7c506d848724"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_history</b> = 64</td></tr>
+<tr class="memdesc:a0e8e65cae1a96dd6b9ed7c506d848724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actions undo goes back through, at most. <br /></td></tr>
+<tr class="separator:a0e8e65cae1a96dd6b9ed7c506d848724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac72fa27747ca75e17f222f7fbac1befd" name="ac72fa27747ca75e17f222f7fbac1befd"></a>
@@ -290,6 +365,34 @@ template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
 
 </div>
 </div>
+<a id="a9f64249991d89ecc31805a71debbf34f" name="a9f64249991d89ecc31805a71debbf34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f64249991d89ecc31805a71debbf34f">&#9670;&#160;</a></span>drop_top()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a> <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::drop_top </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The pass being taken in, the newest, goes, without being an action redo does again: with it what was done to it. Its actions are found by its id: the oldest ones may be forgotten, its own among them. </p>
+
+</div>
+</div>
 <a id="a8f54227dd2b96ef3763f48a1275f85d0" name="a8f54227dd2b96ef3763f48a1275f85d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f54227dd2b96ef3763f48a1275f85d0">&#9670;&#160;</a></span>erase()</h2>
 
@@ -315,7 +418,7 @@ template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Takes pass k out of the loop, k being heard and not the only one heard: the passes over it and the ones redo brings back move down a place, and the loop keeps its length. </p>
+<p>Takes pass k out of the loop, k being heard and not the only one heard: the passes over it move down a place, and the loop keeps its length. The pass is kept for undo to put back. </p>
 
 </div>
 </div>
@@ -361,6 +464,62 @@ template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>The top pass goes on past the end of the loop: the loop grows by <code>unit</code> frames, and the passes under it play again over the new part. False when the loop would be longer than <code>max_length</code>. Without <code>top_open</code>, the pass going on is not in the stack yet: every pass plays again. </p>
+
+</div>
+</div>
+<a id="a65be8e79f19cbd6b83e02a5055627eb9" name="a65be8e79f19cbd6b83e02a5055627eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65be8e79f19cbd6b83e02a5055627eb9">&#9670;&#160;</a></span>forget_history()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::forget_history </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Forgets every action: undo hides passes from the newest. The erased passes kept for it are gone for good. </p>
+
+</div>
+</div>
+<a id="a3cbb36c09db7802429966c55197ac693" name="a3cbb36c09db7802429966c55197ac693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cbb36c09db7802429966c55197ac693">&#9670;&#160;</a></span>forget_oldest_kept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::forget_oldest_kept </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Forgets the actions up to the oldest erase undo can take back, the memory of its pass being wanted. False when there is none. </p>
 
 </div>
 </div>
@@ -590,7 +749,69 @@ template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
 
 </div>
 </div>
+<a id="a8b91b6f998d6fc1de187478a7dee7f3e" name="a8b91b6f998d6fc1de187478a7dee7f3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b91b6f998d6fc1de187478a7dee7f3e">&#9670;&#160;</a></span>undo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_nodes_1_1_looper_1_1pass__stack_1_1step.html">step</a> <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::undo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Undoes the last action, or hides the newest pass once there is none. The actions of a group are undone together. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8899355a4193f72fafe8446bd433bfb5" name="a8899355a4193f72fafe8446bd433bfb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8899355a4193f72fafe8446bd433bfb5">&#9670;&#160;</a></span>done</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::done {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Actions done; the ones from <code>done</code> to <code>recorded</code> are what redo does again. </p>
+
+</div>
+</div>
+<a id="a3bf5eba93aaa2002d6e48402a3677217" name="a3bf5eba93aaa2002d6e48402a3677217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf5eba93aaa2002d6e48402a3677217">&#9670;&#160;</a></span>kept_passes</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Store , typename Pass , int MaxLayers&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;Pass, <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html#ac2339994a76d5bbb5c718415c3e685fd">max_kept</a>&gt; <a class="el" href="struct_nodes_1_1_looper_1_1pass__stack.html">Nodes::Looper::pass_stack</a>&lt; Store, Pass, MaxLayers &gt;::kept_passes {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The erased passes undo can bring back, <code>kept_used</code> saying which places hold one. </p>
+
+</div>
+</div>
 <a id="ac838be67d0163c40196ce175aca6901f" name="ac838be67d0163c40196ce175aca6901f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac838be67d0163c40196ce175aca6901f">&#9670;&#160;</a></span>pushes</h2>
 
