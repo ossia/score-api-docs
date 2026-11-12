@@ -105,8 +105,10 @@ $(document).ready(function(){initNavTree('classvst_1_1vst__node__base.html','');
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classvst_1_1vst__node__base-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vst::vst_node_base Class Reference</div></div>
 </div><!--header-->
@@ -128,6 +130,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8858d65dd72b1913c86464a1c497a1a3" id="r_a8858d65dd72b1913c86464a1c497a1a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node__base.html#a8858d65dd72b1913c86464a1c497a1a3">receiveEvents</a> (const VstEvents *events) noexcept</td></tr>
+<tr class="separator:a8858d65dd72b1913c86464a1c497a1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3394e443f1c905739e264f8661bd65e2" id="r_a3394e443f1c905739e264f8661bd65e2"><td class="memItemLeft" align="right" valign="top"><a id="a3394e443f1c905739e264f8661bd65e2" name="a3394e443f1c905739e264f8661bd65e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setControls</b> ()</td></tr>
 <tr class="separator:a3394e443f1c905739e264f8661bd65e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,6 +145,12 @@ auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>prepareOutput</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setupTimeInfo</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
 <tr class="separator:a3831c663ceb7eb3653d587321358e2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab8d12e23d93a5e3a5d3fd31c8e5def3c" id="r_ab8d12e23d93a5e3a5d3fd31c8e5def3c"><td class="memItemLeft" align="right" valign="top"><a id="ab8d12e23d93a5e3a5d3fd31c8e5def3c" name="ab8d12e23d93a5e3a5d3fd31c8e5def3c"></a>
+static std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>midiMessageSize</b> (unsigned char status) noexcept</td></tr>
+<tr class="separator:ab8d12e23d93a5e3a5d3fd31c8e5def3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7e7ab8608a1a98d88ab18526f3c918bd" id="r_a7e7ab8608a1a98d88ab18526f3c918bd"><td class="memItemLeft" align="right" valign="top"><a id="a7e7ab8608a1a98d88ab18526f3c918bd" name="a7e7ab8608a1a98d88ab18526f3c918bd"></a>
@@ -149,6 +159,14 @@ std::shared_ptr&lt; AEffectWrapper &gt;&#160;</td><td class="memItemRight" valig
 <tr class="memitem:a20b7b890ab32880630d91f1d0f12cfce" id="r_a20b7b890ab32880630d91f1d0f12cfce"><td class="memItemLeft" align="right" valign="top"><a id="a20b7b890ab32880630d91f1d0f12cfce" name="a20b7b890ab32880630d91f1d0f12cfce"></a>
 ossia::small_vector&lt; <a class="el" href="structvst_1_1vst__node__base_1_1vst__control.html">vst_control</a>, 16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>controls</b></td></tr>
 <tr class="separator:a20b7b890ab32880630d91f1d0f12cfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832b5ac3ecb541cb3fa113d83e78eb9d" id="r_a832b5ac3ecb541cb3fa113d83e78eb9d"><td class="memItemLeft" align="right" valign="top"><a id="a832b5ac3ecb541cb3fa113d83e78eb9d" name="a832b5ac3ecb541cb3fa113d83e78eb9d"></a>
+ossia::midi_outlet *&#160;</td><td class="memItemRight" valign="bottom"><b>midi_out</b> {}</td></tr>
+<tr class="memdesc:a832b5ac3ecb541cb3fa113d83e78eb9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MIDI output of the process, when it has one. <br /></td></tr>
+<tr class="separator:a832b5ac3ecb541cb3fa113d83e78eb9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3790b72c2252ad9467dca643985253e0" id="r_a3790b72c2252ad9467dca643985253e0"><td class="memItemLeft" align="right" valign="top"><a id="a3790b72c2252ad9467dca643985253e0" name="a3790b72c2252ad9467dca643985253e0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_backwards</b> {}</td></tr>
+<tr class="memdesc:a3790b72c2252ad9467dca643985253e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tick being processed plays the timeline backwards. <br /></td></tr>
+<tr class="separator:a3790b72c2252ad9467dca643985253e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -158,7 +176,70 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae8555db49dbf264c3d5c166ac99212b0" id="r_ae8555db49dbf264c3d5c166ac99212b0"><td class="memItemLeft" align="right" valign="top"><a id="ae8555db49dbf264c3d5c166ac99212b0" name="ae8555db49dbf264c3d5c166ac99212b0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch</b> (int32_t opcode, int32_t index=0, intptr_t value=0, void *ptr=nullptr, float opt=0.0f)</td></tr>
 <tr class="separator:ae8555db49dbf264c3d5c166ac99212b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a28f29f56b969f36a3092de91399f8775" id="r_a28f29f56b969f36a3092de91399f8775"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; std::thread::id &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvst_1_1vst__node__base.html#a28f29f56b969f36a3092de91399f8775">m_processThread</a> {}</td></tr>
+<tr class="separator:a28f29f56b969f36a3092de91399f8775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cb52fefb6474bf07004b398cfe4d4e" id="r_a98cb52fefb6474bf07004b398cfe4d4e"><td class="memItemLeft" align="right" valign="top"><a id="a98cb52fefb6474bf07004b398cfe4d4e" name="a98cb52fefb6474bf07004b398cfe4d4e"></a>
+int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_blockStart</b> {}</td></tr>
+<tr class="separator:a98cb52fefb6474bf07004b398cfe4d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5439dd5657c8f10281bdcdb46152c8f" id="r_aa5439dd5657c8f10281bdcdb46152c8f"><td class="memItemLeft" align="right" valign="top"><a id="aa5439dd5657c8f10281bdcdb46152c8f" name="aa5439dd5657c8f10281bdcdb46152c8f"></a>
+libremidi::midi1_to_midi2&#160;</td><td class="memItemRight" valign="bottom"><b>m_toUmp</b></td></tr>
+<tr class="separator:aa5439dd5657c8f10281bdcdb46152c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8858d65dd72b1913c86464a1c497a1a3" name="a8858d65dd72b1913c86464a1c497a1a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8858d65dd72b1913c86464a1c497a1a3">&#9670;&#160;</a></span>receiveEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vst::vst_node_base::receiveEvents </td>
+          <td>(</td>
+          <td class="paramtype">const VstEvents *&#160;</td>
+          <td class="paramname"><em>events</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The events the plug-in sends (audioMasterProcessEvents) while it processes a block, dated in the tick. Sent from any other thread, or at any other time, they have no date and are dropped. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a28f29f56b969f36a3092de91399f8775" name="a28f29f56b969f36a3092de91399f8775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f29f56b969f36a3092de91399f8775">&#9670;&#160;</a></span>m_processThread</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;std::thread::id&gt; vst::vst_node_base::m_processThread {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The thread that is in a process call of the plug-in, and where in the tick the block it processes starts </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-vst_2_vst_2_node_8hpp_source.html">score-plugin-vst/Vst/Node.hpp</a></li>
 </ul>

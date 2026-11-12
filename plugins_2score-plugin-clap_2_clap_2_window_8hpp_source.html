@@ -130,44 +130,47 @@ $(document).ready(function(){initNavTree('plugins_2score-plugin-clap_2_clap_2_wi
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="class_clap_1_1_window.html">Window</a>(<span class="keyword">const</span> Model&amp; e, <span class="keyword">const</span> <a class="code hl_struct" href="structscore_1_1_document_context.html">score::DocumentContext</a>&amp; ctx, QWidget* parent);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_class" href="class_clap_1_1_window.html">~Window</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">void</span> resize(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">bool</span> createClapWindow();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> destroyClapWindow();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">void</span> showEvent(QShowEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> hideEvent(QHideEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent* event) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> setup_rect(QWidget* container, <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">bool</span> queryExtensions();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> initializeGui();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_clap_1_1_window.html#af194ef7ee7c8fb65089f3ce5359e5980">resize</a>(<span class="keywordtype">int</span> w, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_clap_1_1_window.html#ab7b3062eb3e851b982c525bdd173006a">resizeHintsChanged</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">bool</span> createClapWindow();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> destroyClapWindow();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">void</span> resizeEvent(QResizeEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">void</span> closeEvent(QCloseEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">void</span> showEvent(QShowEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">void</span> hideEvent(QHideEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">void</span> contextMenuEvent(QContextMenuEvent* event) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> setup_rect(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  QPointer&lt;const Model&gt; m_model;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  std::shared_ptr&lt;PluginHandle&gt; m_handle{};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">bool</span> queryExtensions();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> initializeGui();</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="comment">// CLAP GUI extension</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">const</span> clap_plugin_gui_t* m_gui_ext{};</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  QPointer&lt;const Model&gt; m_model;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  std::shared_ptr&lt;PluginHandle&gt; m_handle{};</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// Window state</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">bool</span> m_gui_created{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">bool</span> m_gui_visible{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">bool</span> m_is_floating{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// Platform specific window handle</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  clap_window_t m_clap_window{};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="comment">// CLAP GUI extension</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">const</span> clap_plugin_gui_t* m_gui_ext{};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="comment">// Window state</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">bool</span> m_gui_created{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">bool</span> m_gui_visible{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">bool</span> m_is_floating{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// GUI API being used</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  std::string m_gui_api;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// Platform specific window handle</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  clap_window_t m_clap_window{};</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// GUI API being used</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  std::string m_gui_api;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
 <div class="ttc" id="aclass_clap_1_1_window_html"><div class="ttname"><a href="class_clap_1_1_window.html">Clap::Window</a></div><div class="ttdef"><b>Definition</b> plugins/score-plugin-clap/Clap/Window.hpp:15</div></div>
+<div class="ttc" id="aclass_clap_1_1_window_html_ab7b3062eb3e851b982c525bdd173006a"><div class="ttname"><a href="class_clap_1_1_window.html#ab7b3062eb3e851b982c525bdd173006a">Clap::Window::resizeHintsChanged</a></div><div class="ttdeci">void resizeHintsChanged()</div><div class="ttdoc">Whether the window can be resized follows the editor again.</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-clap/Clap/Window.cpp:291</div></div>
+<div class="ttc" id="aclass_clap_1_1_window_html_af194ef7ee7c8fb65089f3ce5359e5980"><div class="ttname"><a href="class_clap_1_1_window.html#af194ef7ee7c8fb65089f3ce5359e5980">Clap::Window::resize</a></div><div class="ttdeci">void resize(int w, int h)</div><div class="ttdoc">A size in the editor's own pixels.</div><div class="ttdef"><b>Definition</b> plugins/score-plugin-clap/Clap/Window.cpp:286</div></div>
 <div class="ttc" id="aclassscore_1_1_plugin_window_html"><div class="ttname"><a href="classscore_1_1_plugin_window.html">score::PluginWindow</a></div><div class="ttdef"><b>Definition</b> PluginWindow.hpp:9</div></div>
 <div class="ttc" id="astructscore_1_1_document_context_html"><div class="ttname"><a href="structscore_1_1_document_context.html">score::DocumentContext</a></div><div class="ttdef"><b>Definition</b> DocumentContext.hpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->

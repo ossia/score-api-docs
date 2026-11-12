@@ -124,6 +124,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_size</b> ()</
 <tr class="memitem:ae10949eb9246b3fedbceacb4a5a4b32e" id="r_ae10949eb9246b3fedbceacb4a5a4b32e"><td class="memItemLeft" align="right" valign="top"><a id="ae10949eb9246b3fedbceacb4a5a4b32e" name="ae10949eb9246b3fedbceacb4a5a4b32e"></a>
 LV2_Atom_Sequence *&#160;</td><td class="memItemRight" valign="bottom"><b>get_sequence</b> (<a class="el" href="struct_l_v2___atom___buffer.html">LV2_Atom_Buffer</a> *buf)</td></tr>
 <tr class="separator:ae10949eb9246b3fedbceacb4a5a4b32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a857236bdaf17d3f111217b796d77aec7" id="r_a857236bdaf17d3f111217b796d77aec7"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a857236bdaf17d3f111217b796d77aec7"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_l_v2___atom___buffer.html#a857236bdaf17d3f111217b796d77aec7">for_each_output_event</a> (F &amp;&amp;f) const</td></tr>
+<tr class="separator:a857236bdaf17d3f111217b796d77aec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -139,6 +142,36 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>chunk_type</b></t
 LV2_Atom_Sequence&#160;</td><td class="memItemRight" valign="bottom"><b>atoms</b></td></tr>
 <tr class="separator:abe9014ea96ac8163cffa6184f8426fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a857236bdaf17d3f111217b796d77aec7" name="a857236bdaf17d3f111217b796d77aec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a857236bdaf17d3f111217b796d77aec7">&#9670;&#160;</a></span>for_each_output_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LV2_Atom_Buffer::for_each_output_event </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calls f on each event of the sequence a plug-in wrote in this output. A plug-in that wrote none leaves the atom:Chunk that reset(false) gave it, whose bytes are whatever the buffer held, not events. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a72360898736d7f07ea0269f0aa982da7" name="a72360898736d7f07ea0269f0aa982da7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72360898736d7f07ea0269f0aa982da7">&#9670;&#160;</a></span>sequence_type</h2>

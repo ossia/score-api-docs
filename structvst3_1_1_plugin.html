@@ -148,9 +148,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loadPresets</b> ()</t
 <tr class="memitem:acdee8b5b460865f74580a106940a3789" id="r_acdee8b5b460865f74580a106940a3789"><td class="memItemLeft" align="right" valign="top"><a id="acdee8b5b460865f74580a106940a3789" name="acdee8b5b460865f74580a106940a3789"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadProcessorStateToController</b> ()</td></tr>
 <tr class="separator:acdee8b5b460865f74580a106940a3789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b99ca98cd3852a46d7280be23d34f9d" id="r_a7b99ca98cd3852a46d7280be23d34f9d"><td class="memItemLeft" align="right" valign="top"><a id="a7b99ca98cd3852a46d7280be23d34f9d" name="a7b99ca98cd3852a46d7280be23d34f9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>activateBuses</b> ()</td></tr>
+<tr class="memdesc:a7b99ca98cd3852a46d7280be23d34f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches on the buses the plug-in says are on by default. <br /></td></tr>
+<tr class="separator:a7b99ca98cd3852a46d7280be23d34f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44b5d43f69005212f9522bd2b152c72" id="r_ab44b5d43f69005212f9522bd2b152c72"><td class="memItemLeft" align="right" valign="top"><a id="ab44b5d43f69005212f9522bd2b152c72" name="ab44b5d43f69005212f9522bd2b152c72"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> (double sample_rate, int max_bs)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> (double <a class="el" href="structvst3_1_1_plugin.html#ad3d52a3dc2d568dd6808419b999cf699">sample_rate</a>, int max_bs)</td></tr>
 <tr class="separator:ab44b5d43f69005212f9522bd2b152c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d28e8b27c6bd62703a8b337e1376e87" id="r_a4d28e8b27c6bd62703a8b337e1376e87"><td class="memItemLeft" align="right" valign="top"><a id="a4d28e8b27c6bd62703a8b337e1376e87" name="a4d28e8b27c6bd62703a8b337e1376e87"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>restart</b> (double <a class="el" href="structvst3_1_1_plugin.html#ad3d52a3dc2d568dd6808419b999cf699">sample_rate</a>, int max_bs)</td></tr>
+<tr class="memdesc:a4d28e8b27c6bd62703a8b337e1376e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the plug-in up again if it was not for this rate and largest block. <br /></td></tr>
+<tr class="separator:a4d28e8b27c6bd62703a8b337e1376e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73603cbc02b57cb943320d475de402e7" id="r_a73603cbc02b57cb943320d475de402e7"><td class="memItemLeft" align="right" valign="top"><a id="a73603cbc02b57cb943320d475de402e7" name="a73603cbc02b57cb943320d475de402e7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
 <tr class="separator:a73603cbc02b57cb943320d475de402e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +198,13 @@ Steinberg::Vst::IConnectionPoint *&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:aa16183a332dc6cf27c307d0c351fd7eb" id="r_aa16183a332dc6cf27c307d0c351fd7eb"><td class="memItemLeft" align="right" valign="top"><a id="aa16183a332dc6cf27c307d0c351fd7eb" name="aa16183a332dc6cf27c307d0c351fd7eb"></a>
 <a class="el" href="classvst3_1_1_component_handler.html">ComponentHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>componentHandler</b> {}</td></tr>
 <tr class="separator:aa16183a332dc6cf27c307d0c351fd7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d52a3dc2d568dd6808419b999cf699" id="r_ad3d52a3dc2d568dd6808419b999cf699"><td class="memItemLeft" align="right" valign="top"><a id="ad3d52a3dc2d568dd6808419b999cf699" name="ad3d52a3dc2d568dd6808419b999cf699"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>sample_rate</b> {}</td></tr>
+<tr class="memdesc:ad3d52a3dc2d568dd6808419b999cf699"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the plug-in is set up for, in start() <br /></td></tr>
+<tr class="separator:ad3d52a3dc2d568dd6808419b999cf699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15d4c6819a75c68448b7486b9d5f581" id="r_ac15d4c6819a75c68448b7486b9d5f581"><td class="memItemLeft" align="right" valign="top"><a id="ac15d4c6819a75c68448b7486b9d5f581" name="ac15d4c6819a75c68448b7486b9d5f581"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>max_block</b> {}</td></tr>
+<tr class="separator:ac15d4c6819a75c68448b7486b9d5f581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a21ca192c401ee0b57e17890b26cb9" id="r_ad8a21ca192c401ee0b57e17890b26cb9"><td class="memItemLeft" align="right" valign="top"><a id="ad8a21ca192c401ee0b57e17890b26cb9" name="ad8a21ca192c401ee0b57e17890b26cb9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>supports_double</b> {}</td></tr>
 <tr class="separator:ad8a21ca192c401ee0b57e17890b26cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,10 +238,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>event_outs</b> = 0</td
 <tr class="memitem:a57e3c2963cafe425bfafab1d8a4d928d" id="r_a57e3c2963cafe425bfafab1d8a4d928d"><td class="memItemLeft" align="right" valign="top"><a id="a57e3c2963cafe425bfafab1d8a4d928d" name="a57e3c2963cafe425bfafab1d8a4d928d"></a>
 MIDIControls&#160;</td><td class="memItemRight" valign="bottom"><b>midiControls</b> {}</td></tr>
 <tr class="separator:a57e3c2963cafe425bfafab1d8a4d928d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378892e80f8c1a6f87518670c2a67b84" id="r_a378892e80f8c1a6f87518670c2a67b84"><td class="memItemLeft" align="right" valign="top">ossia::flat_set&lt; Steinberg::Vst::ParamID &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_plugin.html#a378892e80f8c1a6f87518670c2a67b84">unsentParameters</a></td></tr>
+<tr class="separator:a378892e80f8c1a6f87518670c2a67b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af970182e5add1d88754b78fa8def0dff" id="r_af970182e5add1d88754b78fa8def0dff"><td class="memItemLeft" align="right" valign="top"><a id="af970182e5add1d88754b78fa8def0dff" name="af970182e5add1d88754b78fa8def0dff"></a>
 Steinberg::Vst::ProgramListInfo&#160;</td><td class="memItemRight" valign="bottom"><b>programs</b></td></tr>
 <tr class="separator:af970182e5add1d88754b78fa8def0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a378892e80f8c1a6f87518670c2a67b84" name="a378892e80f8c1a6f87518670c2a67b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a378892e80f8c1a6f87518670c2a67b84">&#9670;&#160;</a></span>unsentParameters</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::flat_set&lt;Steinberg::Vst::ParamID&gt; vst3::Plugin::unsentParameters</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parameters set on the edit controller, from score or from the plug-in's editor, since the last execution: the processor only learns a value through process(), so the next execution gives it these first. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="_plugin_8hpp_source.html">Plugin.hpp</a></li>
 <li><b>Plugin.cpp</b></li>

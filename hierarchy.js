@@ -130,6 +130,7 @@ var hierarchy =
     [ "Threedim::ArrayToTexture", "class_threedim_1_1_array_to_texture.html", null ],
     [ "Protocols::ArtnetSpecificSettings", "struct_protocols_1_1_artnet_specific_settings.html", null ],
     [ "Nodes::Looper::pass_stack< Store, Pass, MaxLayers >::aside_state", "struct_nodes_1_1_looper_1_1pass__stack_1_1aside__state.html", null ],
+    [ "vst3::EditorSize::Asked", "structvst3_1_1_editor_size_1_1_asked.html", null ],
     [ "Threedim::AssetLoader::asset_file_view", "struct_threedim_1_1_asset_loader_1_1asset__file__view.html", null ],
     [ "Threedim::AssetLoader", "class_threedim_1_1_asset_loader.html", null ],
     [ "Threedim::AssetLoaderRegistry", "class_threedim_1_1_asset_loader_registry.html", null ],
@@ -248,7 +249,6 @@ var hierarchy =
     [ "Nodes::AudioLooper::Node::ui::bus", "struct_nodes_1_1_audio_looper_1_1_node_1_1ui_1_1bus.html", null ],
     [ "Nodes::MidiLooper::Node::ui::bus", "struct_nodes_1_1_midi_looper_1_1_node_1_1ui_1_1bus.html", null ],
     [ "Nodes::ValueLooper::Node::ui::bus", "struct_nodes_1_1_value_looper_1_1_node_1_1ui_1_1bus.html", null ],
-    [ "vst3::BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
     [ "WidgetFactory::Button", "struct_widget_factory_1_1_button.html", null ],
     [ "Jit::BytebeatLanguageSpec", "struct_jit_1_1_bytebeat_language_spec.html", null ],
     [ "avnd_tools::BytesToString", "structavnd__tools_1_1_bytes_to_string.html", null ],
@@ -999,6 +999,7 @@ var hierarchy =
     [ "Gfx::EdgeBlend", "struct_gfx_1_1_edge_blend.html", null ],
     [ "score::gfx::MultiWindowNode::EdgeBlendData", "structscore_1_1gfx_1_1_multi_window_node_1_1_edge_blend_data.html", null ],
     [ "Gfx::EdgeSpec", "struct_gfx_1_1_edge_spec.html", null ],
+    [ "vst3::EditorSize", "structvst3_1_1_editor_size.html", null ],
     [ "Process::MultiScriptDialog::EditorTab", "struct_process_1_1_multi_script_dialog_1_1_editor_tab.html", null ],
     [ "LV2::EffectContext", "struct_l_v2_1_1_effect_context.html", null ],
     [ "avnd_tools::detail::element_accessor< Dim, CurrentIdx >", "structavnd__tools_1_1detail_1_1element__accessor.html", null ],
@@ -1622,8 +1623,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< model >", "classid__base__t.html", null ],
+    [ "id_base_t< Model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1671,8 +1672,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
+    [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
     [ "Threedim::LiveLink::image_message", "struct_threedim_1_1_live_link_1_1image__message.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
@@ -2350,6 +2351,9 @@ var hierarchy =
     ] ],
     [ "Steinberg::IPlugFrame", null, [
       [ "vst3::PlugFrame", "classvst3_1_1_plug_frame.html", null ]
+    ] ],
+    [ "Steinberg::Vst::IPlugInterfaceSupport", null, [
+      [ "vst3::HostApp::InterfaceSupport", "structvst3_1_1_host_app_1_1_interface_support.html", null ]
     ] ],
     [ "boost::spirit::traits::is_empty_container< QString >", "structboost_1_1spirit_1_1traits_1_1is__empty__container_3_01_q_string_01_4.html", null ],
     [ "score::gfx::is_output", "structscore_1_1gfx_1_1is__output.html", null ],
@@ -3082,8 +3086,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model >", "class_path.html", null ],
+    [ "Path< Model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],

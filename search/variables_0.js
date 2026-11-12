@@ -20,15 +20,16 @@ var searchData=
   ['arrived_17',['arrived',['../struct_nodes_1_1_looper_1_1loop__input.html#a754d517a65ecccf0af27f82b9f27ffde',1,'Nodes::Looper::loop_input']]],
   ['aside_5fpass_18',['aside_pass',['../struct_nodes_1_1_looper_1_1tagged__pass__stack.html#ab67db3fabb5f784cbce724b2854427a3',1,'Nodes::Looper::tagged_pass_stack']]],
   ['aspect_19',['aspect',['../class_gfx_1_1_outlet_preview_layer.html#a462ff829e532ea3ec7dd9e49bee83ec2',1,'Gfx::OutletPreviewLayer']]],
-  ['at_20',['at',['../structmtk_1_1midi__clock_1_1message.html#a0119d0f772e116b5e07edd427b92bc40',1,'mtk::midi_clock::message::at'],['../struct_nodes_1_1_looper_1_1audio__seam__end.html#a1c82e87784c171be33f9d372e9aa3611',1,'Nodes::Looper::audio_seam_end::at'],['../struct_nodes_1_1_looper_1_1pass__stack_1_1action.html#ab31c932ca84eddc06ba1b62d72ea05ad',1,'Nodes::Looper::pass_stack::action::at']]],
+  ['at_20',['at',['../struct_nodes_1_1_looper_1_1audio__seam__end.html#a1c82e87784c171be33f9d372e9aa3611',1,'Nodes::Looper::audio_seam_end::at'],['../struct_nodes_1_1_looper_1_1pass__stack_1_1action.html#ab31c932ca84eddc06ba1b62d72ea05ad',1,'Nodes::Looper::pass_stack::action::at'],['../structmtk_1_1midi__clock_1_1message.html#a0119d0f772e116b5e07edd427b92bc40',1,'mtk::midi_clock::message::at']]],
   ['atom_5fminimum_5fsizes_21',['atom_minimum_sizes',['../struct_l_v2_1_1_l_v2_data.html#ac3350eb31d4f95783181e81c1a301ac4',1,'LV2::LV2Data']]],
   ['atom_5fother_5fports_22',['atom_other_ports',['../struct_l_v2_1_1_l_v2_data.html#a7dc9686476ad2494d72a5a15bc417b56',1,'LV2::LV2Data']]],
   ['atom_5fothers_23',['atom_others',['../struct_l_v2_1_1voice.html#a27135146ade4248fb7a5a5272f8b0cb9',1,'LV2::voice']]],
   ['atomic_24',['atomic',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#a337e346372bf414ab12290c95aaa1efd',1,'score::gfx::drm::DeviceInfo']]],
-  ['authors_25',['authors',['../struct_protocols_1_1_m_i_d_i_devices_1_1_source.html#a270c88d043db61006e45a5aa8c2e384b',1,'Protocols::MIDIDevices::Source']]],
-  ['autoplay_26',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]],
-  ['autoscrollhandler_27',['autoScrollHandler',['../class_scenario_1_1_process_graphics_view.html#ad952d3fd6772a48eee4b77a73b431ba1',1,'Scenario::ProcessGraphicsView']]],
-  ['available_28',['available',['../struct_ui_1_1_buffer_view_1_1_frame.html#a396e3a018c22e924003a3a20ec36d4b1',1,'Ui::BufferView::Frame']]],
-  ['axes_29',['axes',['../structscore_1_1gfx_1_1_model_display_node_1_1_guides.html#ad570bfc614406e14ed35e60eda925a57',1,'score::gfx::ModelDisplayNode::Guides']]],
-  ['azimuth_30',['azimuth',['../struct_ui_1_1_monitor_1_1_speaker.html#af55ef81e8eae3a18eff9b60c0f40521f',1,'Ui::Monitor::Speaker']]]
+  ['attached_25',['attached',['../structvst3_1_1_editor_size.html#ae3ceddf5eb4a595e70fb8839f046da76',1,'vst3::EditorSize']]],
+  ['authors_26',['authors',['../struct_protocols_1_1_m_i_d_i_devices_1_1_source.html#a270c88d043db61006e45a5aa8c2e384b',1,'Protocols::MIDIDevices::Source']]],
+  ['autoplay_27',['autoplay',['../structscore_1_1_application_settings.html#ae2b0c986e978926b5acc72732490123d',1,'score::ApplicationSettings']]],
+  ['autoscrollhandler_28',['autoScrollHandler',['../class_scenario_1_1_process_graphics_view.html#ad952d3fd6772a48eee4b77a73b431ba1',1,'Scenario::ProcessGraphicsView']]],
+  ['available_29',['available',['../struct_ui_1_1_buffer_view_1_1_frame.html#a396e3a018c22e924003a3a20ec36d4b1',1,'Ui::BufferView::Frame']]],
+  ['axes_30',['axes',['../structscore_1_1gfx_1_1_model_display_node_1_1_guides.html#ad570bfc614406e14ed35e60eda925a57',1,'score::gfx::ModelDisplayNode::Guides']]],
+  ['azimuth_31',['azimuth',['../struct_ui_1_1_monitor_1_1_speaker.html#af55ef81e8eae3a18eff9b60c0f40521f',1,'Ui::Monitor::Speaker']]]
 ];

@@ -10,9 +10,10 @@ var searchData=
   ['universalplanes_7',['universalPlanes',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#acd5d5094e6aac76534dd84cc422cd82a',1,'score::gfx::drm::DeviceInfo']]],
   ['unmuted_5fgain_8',['unmuted_gain',['../struct_nodes_1_1_looper_1_1audio__layer.html#ad549bdde4168cc065fb7c23b1556bd65',1,'Nodes::Looper::audio_layer']]],
   ['unseen_9',['unseen',['../struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html#abb70e6b22ae47254b693e53f44b710d4',1,'Nodes::Looper::looper_view::pending_action']]],
-  ['unsetsamplerfield_10',['unsetSamplerField',['../namespacescore_1_1gfx.html#acfa8f06258767b46428381c9aa0268c1',1,'score::gfx']]],
-  ['up_11',['up',['../structscore_1_1gfx_1_1_model_display_node.html#ab3c2bfaa1eaf0042ecd7e821fa3e23cd',1,'score::gfx::ModelDisplayNode']]],
-  ['upgradeindex_12',['upgradeindex',['../structbitfocus_1_1module__data.html#a25f1b565d8dd3879b798783ae293c832',1,'bitfocus::module_data::upgradeIndex'],['../struct_protocols_1_1_bitfocus_specific_settings.html#a1b21038034606719e741757a7486d31c',1,'Protocols::BitfocusSpecificSettings::upgradeIndex']]],
-  ['usedrange_13',['usedRange',['../struct_process_1_1_external_file_ref.html#a0b8a82354d3bd272b811093f7539e026',1,'Process::ExternalFileRef']]],
-  ['usekindsubfolders_14',['useKindSubfolders',['../structscore_1_1_consolidate_options.html#a405da0ee41befe58ac354cd491e74539',1,'score::ConsolidateOptions']]]
+  ['unsentparameters_10',['unsentParameters',['../structvst3_1_1_plugin.html#a378892e80f8c1a6f87518670c2a67b84',1,'vst3::Plugin']]],
+  ['unsetsamplerfield_11',['unsetSamplerField',['../namespacescore_1_1gfx.html#acfa8f06258767b46428381c9aa0268c1',1,'score::gfx']]],
+  ['up_12',['up',['../structscore_1_1gfx_1_1_model_display_node.html#ab3c2bfaa1eaf0042ecd7e821fa3e23cd',1,'score::gfx::ModelDisplayNode']]],
+  ['upgradeindex_13',['upgradeindex',['../structbitfocus_1_1module__data.html#a25f1b565d8dd3879b798783ae293c832',1,'bitfocus::module_data::upgradeIndex'],['../struct_protocols_1_1_bitfocus_specific_settings.html#a1b21038034606719e741757a7486d31c',1,'Protocols::BitfocusSpecificSettings::upgradeIndex']]],
+  ['usedrange_14',['usedRange',['../struct_process_1_1_external_file_ref.html#a0b8a82354d3bd272b811093f7539e026',1,'Process::ExternalFileRef']]],
+  ['usekindsubfolders_15',['useKindSubfolders',['../structscore_1_1_consolidate_options.html#a405da0ee41befe58ac354cd491e74539',1,'score::ConsolidateOptions']]]
 ];

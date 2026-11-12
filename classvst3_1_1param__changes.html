@@ -115,9 +115,22 @@ Inheritance diagram for vst3::param_changes:</div>
  <div class="center">
   <img src="classvst3_1_1param__changes.png" alt=""/>
  </div></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The parameter changes given to a plug-in in one process() call: a queue per parameter the host may change, of which the plug-in only sees those with points in the block. A plug-in reads the last point of each queue it is given as the new value of its parameter, so a queue without one would set the parameter back, every block, to whatever the host last sent. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1f754c7b803c51d776f9c92befa3a0dd" id="r_a1f754c7b803c51d776f9c92befa3a0dd"><td class="memItemLeft" align="right" valign="top"><a id="a1f754c7b803c51d776f9c92befa3a0dd" name="a1f754c7b803c51d776f9c92befa3a0dd"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>add_queue</b> (Steinberg::Vst::ParamID id)</td></tr>
+<tr class="memdesc:a1f754c7b803c51d776f9c92befa3a0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Its storage is made here, so that <a class="el" href="classvst3_1_1param__changes.html#a6251b7e19975db08f8fac4b2dbe7e3cf" title="Lists the queues with points, for the process() call to come.">collect()</a> does not allocate. <br /></td></tr>
+<tr class="separator:a1f754c7b803c51d776f9c92befa3a0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6251b7e19975db08f8fac4b2dbe7e3cf" id="r_a6251b7e19975db08f8fac4b2dbe7e3cf"><td class="memItemLeft" align="right" valign="top"><a id="a6251b7e19975db08f8fac4b2dbe7e3cf" name="a6251b7e19975db08f8fac4b2dbe7e3cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>collect</b> () noexcept</td></tr>
+<tr class="memdesc:a6251b7e19975db08f8fac4b2dbe7e3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists the queues with points, for the process() call to come. <br /></td></tr>
+<tr class="separator:a6251b7e19975db08f8fac4b2dbe7e3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad793f6ce1a791afa5bbf721796d4aecf" id="r_ad793f6ce1a791afa5bbf721796d4aecf"><td class="memItemLeft" align="right" valign="top"><a id="ad793f6ce1a791afa5bbf721796d4aecf" name="ad793f6ce1a791afa5bbf721796d4aecf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
+<tr class="separator:ad793f6ce1a791afa5bbf721796d4aecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3546396e3170f3565329e3ce1175d795" id="r_a3546396e3170f3565329e3ce1175d795"><td class="memItemLeft" align="right" valign="top"><a id="a3546396e3170f3565329e3ce1175d795" name="a3546396e3170f3565329e3ce1175d795"></a>
 Steinberg::tresult PLUGIN_API&#160;</td><td class="memItemRight" valign="bottom"><b>queryInterface</b> (const Steinberg::TUID _iid, void **obj) override</td></tr>
 <tr class="separator:a3546396e3170f3565329e3ce1175d795"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +148,7 @@ Steinberg::int32 PLUGIN_API&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="separator:aca73edb79781e90231de464168ed55b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d4a8dc955478c901ab09e115e40f99" id="r_ab5d4a8dc955478c901ab09e115e40f99"><td class="memItemLeft" align="right" valign="top"><a id="ab5d4a8dc955478c901ab09e115e40f99" name="ab5d4a8dc955478c901ab09e115e40f99"></a>
 <a class="el" href="classvst3_1_1param__queue.html">param_queue</a> *PLUGIN_API&#160;</td><td class="memItemRight" valign="bottom"><b>addParameterData</b> (const Steinberg::Vst::ParamID &amp;id, Steinberg::int32 &amp;index) override</td></tr>
+<tr class="memdesc:ab5d4a8dc955478c901ab09e115e40f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">The changes are the host's to write. <br /></td></tr>
 <tr class="separator:ab5d4a8dc955478c901ab09e115e40f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -142,6 +156,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a76cb40743881be6b16985a1df4a400d5" id="r_a76cb40743881be6b16985a1df4a400d5"><td class="memItemLeft" align="right" valign="top"><a id="a76cb40743881be6b16985a1df4a400d5" name="a76cb40743881be6b16985a1df4a400d5"></a>
 std::vector&lt; <a class="el" href="classvst3_1_1param__queue.html">param_queue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queues</b></td></tr>
 <tr class="separator:a76cb40743881be6b16985a1df4a400d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655b53eff7d7860cfd20adf9cdeb317c" id="r_a655b53eff7d7860cfd20adf9cdeb317c"><td class="memItemLeft" align="right" valign="top"><a id="a655b53eff7d7860cfd20adf9cdeb317c" name="a655b53eff7d7860cfd20adf9cdeb317c"></a>
+std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>changed</b></td></tr>
+<tr class="memdesc:a655b53eff7d7860cfd20adf9cdeb317c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The queues the plug-in sees, by index in queues. <br /></td></tr>
+<tr class="separator:a655b53eff7d7860cfd20adf9cdeb317c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="score-plugin-vst3_2_vst3_2_node_8hpp_source.html">score-plugin-vst3/Vst3/Node.hpp</a></li>

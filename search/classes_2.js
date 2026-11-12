@@ -74,9 +74,8 @@ var searchData=
   ['bufferstogeometry2_71',['BuffersToGeometry2',['../class_threedim_1_1_buffers_to_geometry2.html',1,'Threedim']]],
   ['bufferview_72',['BufferView',['../structscore_1_1gfx_1_1_buffer_view.html',1,'score::gfx']]],
   ['bus_73',['bus',['../struct_nodes_1_1_audio_looper_1_1_node_1_1ui_1_1bus.html',1,'Nodes::AudioLooper::Node::ui::bus'],['../struct_nodes_1_1_midi_looper_1_1_node_1_1ui_1_1bus.html',1,'Nodes::MidiLooper::Node::ui::bus'],['../struct_nodes_1_1_value_looper_1_1_node_1_1ui_1_1bus.html',1,'Nodes::ValueLooper::Node::ui::bus']]],
-  ['busactivationvisitor_74',['BusActivationVisitor',['../structvst3_1_1_bus_activation_visitor.html',1,'vst3']]],
-  ['button_75',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
-  ['bytebeatexecutor_76',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
-  ['bytebeatlanguagespec_77',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
-  ['bytestostring_78',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
+  ['button_74',['button',['../class_j_s_1_1_button.html',1,'JS::Button'],['../struct_widget_factory_1_1_button.html',1,'WidgetFactory::Button']]],
+  ['bytebeatexecutor_75',['BytebeatExecutor',['../class_jit_1_1_bytebeat_executor.html',1,'Jit']]],
+  ['bytebeatlanguagespec_76',['BytebeatLanguageSpec',['../struct_jit_1_1_bytebeat_language_spec.html',1,'Jit']]],
+  ['bytestostring_77',['BytesToString',['../structavnd__tools_1_1_bytes_to_string.html',1,'avnd_tools']]]
 ];

@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('structvst3_1_1_window_container.html',
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structvst3_1_1_window_container-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vst3::WindowContainer Struct Reference</div></div>
 </div><!--header-->
@@ -113,20 +114,39 @@ $(document).ready(function(){initNavTree('structvst3_1_1_window_container.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1068515b222a23ec409fb7d308e48eae" id="r_a1068515b222a23ec409fb7d308e48eae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a1068515b222a23ec409fb7d308e48eae">resizeWindow</a> (Steinberg::IPlugView &amp;view, int qw, int qh, QDialog &amp;parentWindow) const</td></tr>
+<tr class="separator:a1068515b222a23ec409fb7d308e48eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a771f9d06d73d7aa0db1c70a19f70194c" id="r_a771f9d06d73d7aa0db1c70a19f70194c"><td class="memItemLeft" align="right" valign="top"><a id="a771f9d06d73d7aa0db1c70a19f70194c" name="a771f9d06d73d7aa0db1c70a19f70194c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendSize</b> (Steinberg::IPlugView &amp;view, Steinberg::ViewRect r) const</td></tr>
+<tr class="memdesc:a771f9d06d73d7aa0db1c70a19f70194c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The editor takes the size r. <br /></td></tr>
+<tr class="separator:a771f9d06d73d7aa0db1c70a19f70194c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb897dfbc54b83cf3770dfbfbaaeafad" id="r_acb897dfbc54b83cf3770dfbfbaaeafad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#acb897dfbc54b83cf3770dfbfbaaeafad">setAttached</a> () const noexcept</td></tr>
+<tr class="separator:acb897dfbc54b83cf3770dfbfbaaeafad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cffe87db04713ac78e724e752a73ee7" id="r_a5cffe87db04713ac78e724e752a73ee7"><td class="memItemLeft" align="right" valign="top"><a id="a5cffe87db04713ac78e724e752a73ee7" name="a5cffe87db04713ac78e724e752a73ee7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sendPendingSize</b> (Steinberg::IPlugView &amp;view) const</td></tr>
+<tr class="memdesc:a5cffe87db04713ac78e724e752a73ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">To call once attached(): the size the plug-in asked for before. <br /></td></tr>
+<tr class="separator:a5cffe87db04713ac78e724e752a73ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cac1f467fac8917be04de0fca4c426e" id="r_a4cac1f467fac8917be04de0fca4c426e"><td class="memItemLeft" align="right" valign="top"><a id="a4cac1f467fac8917be04de0fca4c426e" name="a4cac1f467fac8917be04de0fca4c426e"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeFromQt</b> (Steinberg::IPlugView &amp;view, const Steinberg::ViewRect &amp;r, QDialog &amp;parentWindow) const</td></tr>
+<tr class="memdesc:a4cac1f467fac8917be04de0fca4c426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The window takes the size the editor says it has (getSize) <br /></td></tr>
 <tr class="separator:a4cac1f467fac8917be04de0fca4c426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2543de81ed4d64f91c43bb71b1b1b3f7" id="r_a2543de81ed4d64f91c43bb71b1b1b3f7"><td class="memItemLeft" align="right" valign="top"><a id="a2543de81ed4d64f91c43bb71b1b1b3f7" name="a2543de81ed4d64f91c43bb71b1b1b3f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeFromUser</b> (Steinberg::IPlugView &amp;view, const QSize &amp;sz, QDialog &amp;parentWindow)</td></tr>
+<tr class="memitem:a2543de81ed4d64f91c43bb71b1b1b3f7" id="r_a2543de81ed4d64f91c43bb71b1b1b3f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a2543de81ed4d64f91c43bb71b1b1b3f7">setSizeFromUser</a> (Steinberg::IPlugView &amp;view, const QSize &amp;sz, QDialog &amp;parentWindow)</td></tr>
 <tr class="separator:a2543de81ed4d64f91c43bb71b1b1b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e7395c9189c5acdd6ca8db915cb27c9" id="r_a6e7395c9189c5acdd6ca8db915cb27c9"><td class="memItemLeft" align="right" valign="top"><a id="a6e7395c9189c5acdd6ca8db915cb27c9" name="a6e7395c9189c5acdd6ca8db915cb27c9"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>setSizeFromVst</b> (Steinberg::IPlugView &amp;view, Steinberg::ViewRect &amp;r, QDialog &amp;parentWindow)</td></tr>
-<tr class="separator:a6e7395c9189c5acdd6ca8db915cb27c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b85653e6b36c197b2c55816a4828b4e" id="r_a8b85653e6b36c197b2c55816a4828b4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a8b85653e6b36c197b2c55816a4828b4e">setSizeFromVst</a> (Steinberg::IPlugView &amp;view, Steinberg::ViewRect &amp;r, QDialog &amp;parentWindow) const</td></tr>
+<tr class="separator:a8b85653e6b36c197b2c55816a4828b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4cc2a8014b8a3728d5d34d17e61b76a8" id="r_a4cc2a8014b8a3728d5d34d17e61b76a8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a4cc2a8014b8a3728d5d34d17e61b76a8">qtScaleFactor</a> (const QWidget &amp;w) noexcept</td></tr>
 <tr class="separator:a4cc2a8014b8a3728d5d34d17e61b76a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6438fceadaa74ab4ede121c14ac43577" id="r_a6438fceadaa74ab4ede121c14ac43577"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a6438fceadaa74ab4ede121c14ac43577">toQt</a> (int editorPixels, double scale) noexcept</td></tr>
+<tr class="separator:a6438fceadaa74ab4ede121c14ac43577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6191c1ac55845527557b3f7a94e9f3b9" id="r_a6191c1ac55845527557b3f7a94e9f3b9"><td class="memItemLeft" align="right" valign="top"><a id="a6191c1ac55845527557b3f7a94e9f3b9" name="a6191c1ac55845527557b3f7a94e9f3b9"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>toEditor</b> (int qtPixels, double scale) noexcept</td></tr>
+<tr class="separator:a6191c1ac55845527557b3f7a94e9f3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e4197945a887e135da9efffa513e258" id="r_a8e4197945a887e135da9efffa513e258"><td class="memItemLeft" align="right" valign="top"><a id="a8e4197945a887e135da9efffa513e258" name="a8e4197945a887e135da9efffa513e258"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>sameSize</b> (const Steinberg::ViewRect &amp;a, const Steinberg::ViewRect &amp;b) noexcept</td></tr>
+<tr class="separator:a8e4197945a887e135da9efffa513e258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -142,6 +162,14 @@ QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>container</b> {}
 <tr class="memitem:a87121fef9315c3725bd504aa267daf91" id="r_a87121fef9315c3725bd504aa267daf91"><td class="memItemLeft" align="right" valign="top"><a id="a87121fef9315c3725bd504aa267daf91" name="a87121fef9315c3725bd504aa267daf91"></a>
 <a class="el" href="classvst3_1_1_plug_frame.html">vst3::PlugFrame</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>frame</b> {}</td></tr>
 <tr class="separator:a87121fef9315c3725bd504aa267daf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a580dc91d306fb8cd335b462050d9a5c0" id="r_a580dc91d306fb8cd335b462050d9a5c0"><td class="memItemLeft" align="right" valign="top"><a id="a580dc91d306fb8cd335b462050d9a5c0" name="a580dc91d306fb8cd335b462050d9a5c0"></a>
+std::shared_ptr&lt; <a class="el" href="structvst3_1_1_editor_size.html">EditorSize</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> = std::make_shared&lt;<a class="el" href="structvst3_1_1_editor_size.html">EditorSize</a>&gt;()</td></tr>
+<tr class="separator:a580dc91d306fb8cd335b462050d9a5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a65daab255347c276636521c5ccd5fbe8" id="r_a65daab255347c276636521c5ccd5fbe8"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvst3_1_1_window_container.html#a65daab255347c276636521c5ccd5fbe8">maxOnSizeDepth</a> = 2</td></tr>
+<tr class="separator:a65daab255347c276636521c5ccd5fbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4cc2a8014b8a3728d5d34d17e61b76a8" name="a4cc2a8014b8a3728d5d34d17e61b76a8"></a>
@@ -167,7 +195,229 @@ QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>container</b> {}
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Factor to go from the coordinates the plug-in gives us to the logical pixels Qt lays out with </p>
+<p>Factor to go from the coordinates the plug-in gives us to the logical pixels Qt lays out with: device pixels on Windows and X11, points on macOS, both scaled by Qt's own scaling </p>
+
+</div>
+</div>
+<a id="a1068515b222a23ec409fb7d308e48eae" name="a1068515b222a23ec409fb7d308e48eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1068515b222a23ec409fb7d308e48eae">&#9670;&#160;</a></span>resizeWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vst3::WindowContainer::resizeWindow </td>
+          <td>(</td>
+          <td class="paramtype">Steinberg::IPlugView &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>qw</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>qh</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDialog &amp;&#160;</td>
+          <td class="paramname"><em>parentWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gives the window the size of the editor. The resize events this sends synchronously are not the user's, nor are those the window system sends later for it. </p>
+
+</div>
+</div>
+<a id="acb897dfbc54b83cf3770dfbfbaaeafad" name="acb897dfbc54b83cf3770dfbfbaaeafad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb897dfbc54b83cf3770dfbfbaaeafad">&#9670;&#160;</a></span>setAttached()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vst3::WindowContainer::setAttached </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>To call right before IPlugView::attached(): a resize the plug-in asks for from there on is done in the same call stack, as are those of the user </p>
+
+</div>
+</div>
+<a id="a2543de81ed4d64f91c43bb71b1b1b3f7" name="a2543de81ed4d64f91c43bb71b1b1b3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2543de81ed4d64f91c43bb71b1b1b3f7">&#9670;&#160;</a></span>setSizeFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vst3::WindowContainer::setSizeFromUser </td>
+          <td>(</td>
+          <td class="paramtype">Steinberg::IPlugView &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSize &amp;&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDialog &amp;&#160;</td>
+          <td class="paramname"><em>parentWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The window was resized from outside: by the user, through the window manager. IPlugView: checkSizeConstraint() corrects the size, the window takes the corrected size, then onSize(). </p>
+
+</div>
+</div>
+<a id="a8b85653e6b36c197b2c55816a4828b4e" name="a8b85653e6b36c197b2c55816a4828b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b85653e6b36c197b2c55816a4828b4e">&#9670;&#160;</a></span>setSizeFromVst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vst3::WindowContainer::setSizeFromVst </td>
+          <td>(</td>
+          <td class="paramtype">Steinberg::IPlugView &amp;&#160;</td>
+          <td class="paramname"><em>view</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Steinberg::ViewRect &amp;&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QDialog &amp;&#160;</td>
+          <td class="paramname"><em>parentWindow</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The plug-in asks for a size (IPlugFrame::resizeView): the window takes it, then onSize() in the same call stack. False when refused. </p>
+
+</div>
+</div>
+<a id="a6438fceadaa74ab4ede121c14ac43577" name="a6438fceadaa74ab4ede121c14ac43577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6438fceadaa74ab4ede121c14ac43577">&#9670;&#160;</a></span>toQt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int vst3::WindowContainer::toQt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>editorPixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rounded to the nearest pixel both ways: with a ratio of at least 1 a size that goes to the editor and comes back is the same size </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a65daab255347c276636521c5ccd5fbe8" name="a65daab255347c276636521c5ccd5fbe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65daab255347c276636521c5ccd5fbe8">&#9670;&#160;</a></span>maxOnSizeDepth</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int vst3::WindowContainer::maxOnSizeDepth = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A plug-in answering onSize() with resizeView() to another size is given that one, which it may answer again: past this depth its resizeView() is refused </p>
 
 </div>
 </div>

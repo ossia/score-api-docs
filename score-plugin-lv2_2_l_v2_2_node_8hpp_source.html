@@ -673,517 +673,520 @@ $(document).ready(function(){initNavTree('score-plugin-lv2_2_l_v2_2_node_8hpp_so
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>    LV2_Atom_Forge_Frame frame;</div>
 <div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>    lv2_atom_forge_object(&amp;forge, &amp;frame, 0, host.time_Position_id);</div>
 <div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span> </div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    lv2_atom_forge_key(&amp;forge, host.time_frame_id);</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    lv2_atom_forge_long(&amp;forge, this-&gt;m_transport_frames);</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span> </div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    lv2_atom_forge_key(&amp;forge, host.time_framesPerSecond_id);</div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    lv2_atom_forge_long(&amp;forge, st.sampleRate());</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span> </div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    lv2_atom_forge_key(&amp;forge, host.time_speed_id);</div>
-<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    lv2_atom_forge_float(&amp;forge, speed);</div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span> </div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    lv2_atom_forge_key(&amp;forge, host.time_bar_id);</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    lv2_atom_forge_long(&amp;forge, tk.musical_start_last_bar / 4.);</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span> </div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>    lv2_atom_forge_key(&amp;forge, host.time_beat_id);</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    lv2_atom_forge_double(&amp;forge, tk.musical_start_position);</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span> </div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>    <span class="keyword">auto</span> barBeat = float(tk.musical_start_position - tk.musical_start_last_bar);</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    lv2_atom_forge_key(&amp;forge, host.time_barBeat_id);</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    lv2_atom_forge_float(&amp;forge, barBeat);</div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="comment">// The playhead at the first sample of this run. m_transport_frames is</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="comment">// only updated once a node has run: it is that of the previous tick.</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    lv2_atom_forge_key(&amp;forge, host.time_frame_id);</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    lv2_atom_forge_long(</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>        &amp;forge, tk.speed != 0. ? tk.start_date_to_physical(st.modelToSamples())</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>                               : this-&gt;m_transport_frames);</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span> </div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    lv2_atom_forge_key(&amp;forge, host.time_framesPerSecond_id);</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    lv2_atom_forge_long(&amp;forge, st.sampleRate());</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>    lv2_atom_forge_key(&amp;forge, host.time_speed_id);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>    lv2_atom_forge_float(&amp;forge, speed);</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span> </div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>    lv2_atom_forge_key(&amp;forge, host.time_bar_id);</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>    lv2_atom_forge_long(&amp;forge, tk.musical_start_last_bar / 4.);</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    lv2_atom_forge_key(&amp;forge, host.time_beat_id);</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    lv2_atom_forge_double(&amp;forge, tk.musical_start_position);</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    lv2_atom_forge_key(&amp;forge, host.time_beatUnit_id);</div>
-<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    lv2_atom_forge_int(&amp;forge, 4);</div>
-<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span> </div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    lv2_atom_forge_key(&amp;forge, host.time_beatsPerBar_id);</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    lv2_atom_forge_float(</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>        &amp;forge, 4 * <span class="keywordtype">double</span>(tk.signature.upper) / <span class="keywordtype">double</span>(tk.signature.lower));</div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>    <span class="keyword">auto</span> barBeat = float(tk.musical_start_position - tk.musical_start_last_bar);</div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>    lv2_atom_forge_key(&amp;forge, host.time_barBeat_id);</div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    lv2_atom_forge_float(&amp;forge, barBeat);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span>    lv2_atom_forge_key(&amp;forge, host.time_beatUnit_id);</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    lv2_atom_forge_int(&amp;forge, 4);</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span> </div>
-<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    lv2_atom_forge_key(&amp;forge, host.time_beatsPerMinute_id);</div>
-<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    lv2_atom_forge_float(&amp;forge, tk.tempo);</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    lv2_atom_forge_pop(&amp;forge, &amp;frame);</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>  }</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span> </div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>  <span class="comment">// Vec slices by voice (clamped); scalars broadcast. Mirrors faust_mono_fx::set_control.</span></div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>  <span class="keyword">static</span> std::optional&lt;float&gt;</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  voice_control_value(<span class="keyword">const</span> ossia::value&amp; val, std::size_t voice_idx) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  {</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    <span class="keywordflow">return</span> ossia::apply_nonnull(</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>        [voice_idx](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; v) -&gt; std::optional&lt;float&gt; {</div>
-<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>      <span class="keyword">using </span>T = std::decay_t&lt;<span class="keyword">decltype</span>(v)&gt;;</div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, std::vector&lt;ossia::value&gt;&gt;)</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>      {</div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        <span class="keywordflow">if</span>(v.empty())</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>          <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem = (voice_idx &lt; v.size()) ? v[voice_idx] : v.back();</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>        <span class="keywordflow">return</span> ossia::convert&lt;float&gt;(elem);</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>      }</div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec2f&gt;)</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 1)];</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec3f&gt;)</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 2)];</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec4f&gt;)</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 3)];</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>          std::is_same_v&lt;T, float&gt; || std::is_same_v&lt;T, int&gt;</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>          || std::is_same_v&lt;T, bool&gt;)</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        <span class="keywordflow">return</span> <span class="keywordtype">float</span>(v);</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>    },</div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        val.v);</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  }</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>  <span class="keywordtype">void</span> preProcessVoice(voice&amp; v, std::size_t voice_idx)</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>  {</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keyword">const</span> std::size_t audio_in_size = data.audio_in_ports.size();</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="keyword">const</span> std::size_t cv_size = data.cv_ports.size();</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">const</span> std::size_t midi_in_size = data.midi_in_ports.size();</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>    <span class="keyword">const</span> std::size_t atom_in_size = data.atom_in_ports.size();</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">const</span> std::size_t control_in_size = data.control_in_ports.size();</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span> </div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keywordtype">int</span> first_midi_idx = (audio_in_size &gt; 0 ? 1 : 0) + cv_size;</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.midi_atom_ins.size(); i++)</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    {</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>      <span class="keyword">auto</span>&amp; ossia_port</div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>          = this-&gt;m_inlets[i + first_midi_idx]-&gt;template cast&lt;ossia::midi_port&gt;();</div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>      <span class="keyword">auto</span>&amp; lv2_port = v.midi_atom_ins[i];</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>      <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{lv2_port.buf};</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span> </div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>      <span class="comment">// The position first: the sequence is in time order, and the events of</span></div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      <span class="comment">// this block are at this position.</span></div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>      <span class="keywordflow">if</span>(ossia::any_of(v.atom_timePosition_midi, [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t) {</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>           return t.buffer == &amp;lv2_port;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>         }))</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(it);</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span> </div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> Message&amp; msg : v.message_for_midi_atom_ins[i])</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>      {</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <span class="keyword">auto</span>* atom = (LV2_Atom*)msg.body.data();</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        <span class="keyword">auto</span>* atom_data = (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom);</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        it.write(0, 0, atom-&gt;type, atom-&gt;size, atom_data);</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      }</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>      <span class="comment">// Port timestamps are relative to the buffer, the plug-in&#39;s to the tick:</span></div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>      <span class="comment">// as the VST3 host does, what falls outside it goes to its nearest end.</span></div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      <span class="keyword">auto</span>&amp; conv = v.midi_2to1[i];</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> libremidi::ump&amp; msg : ossia_port.messages)</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      {</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>        <span class="keyword">const</span> int64_t frame = std::clamp&lt;int64_t&gt;(</div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>            msg.timestamp - m_span.start, 0,</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            m_span.samples &gt; 0 ? m_span.samples - 1 : 0);</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>        conv.convert(</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>            msg.data, msg.size(), frame,</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            [&amp;](<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* midi1, std::size_t bytes, int64_t) {</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>          if(bytes &gt; 0)</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            it.write(frame, 0, data.host.midi_event_id, bytes, midi1);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>          return stdx::error{};</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        });</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>      }</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    }</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span> </div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    {</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>      <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{buf-&gt;buf};</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>      <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(it);</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    }</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_start</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        = (audio_in_size &gt; 0 ? 1 : 0) + midi_in_size + atom_in_size + cv_size;</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; control_in_size; i++)</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>    {</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>      <span class="keyword">auto</span>&amp; in = m_inlets[control_start + i]</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>                     -&gt;template cast&lt;ossia::value_port&gt;()</div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>                     .get_data();</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>      <span class="keywordflow">if</span>(in.empty())</div>
-<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> new_val = voice_control_value(in.back().value, voice_idx))</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>        v.fInControls[i] = *new_val * <a class="code hl_variable" href="struct_l_v2_1_1lv2__node.html#ac81d91071c1bec1a6a65e9a24c08718a">fInScale</a>[i];</div>
-<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>    }</div>
-<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span> </div>
-<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>    (void)atom_in_size;</div>
-<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>  }</div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span> </div>
-<div class="foldopen" id="foldopen00713" data-start="{" data-end="};">
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">  713</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a></div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>  {</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    int64_t start{};</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>    int64_t samples{};</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>    int64_t size{};</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>  } m_span;</div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    lv2_atom_forge_key(&amp;forge, host.time_beatsPerBar_id);</div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>    lv2_atom_forge_float(</div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>        &amp;forge, 4 * <span class="keywordtype">double</span>(tk.signature.upper) / <span class="keywordtype">double</span>(tk.signature.lower));</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    lv2_atom_forge_key(&amp;forge, host.time_beatsPerMinute_id);</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    lv2_atom_forge_float(&amp;forge, tk.tempo);</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>    lv2_atom_forge_pop(&amp;forge, &amp;frame);</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>  }</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span> </div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>  <span class="comment">// Vec slices by voice (clamped); scalars broadcast. Mirrors faust_mono_fx::set_control.</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>  <span class="keyword">static</span> std::optional&lt;float&gt;</div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>  voice_control_value(<span class="keyword">const</span> ossia::value&amp; val, std::size_t voice_idx) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>  {</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>    <span class="keywordflow">return</span> ossia::apply_nonnull(</div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span>        [voice_idx](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; v) -&gt; std::optional&lt;float&gt; {</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>      <span class="keyword">using </span>T = std::decay_t&lt;<span class="keyword">decltype</span>(v)&gt;;</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, std::vector&lt;ossia::value&gt;&gt;)</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>      {</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>        <span class="keywordflow">if</span>(v.empty())</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>          <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; elem = (voice_idx &lt; v.size()) ? v[voice_idx] : v.back();</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>        <span class="keywordflow">return</span> ossia::convert&lt;float&gt;(elem);</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>      }</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec2f&gt;)</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 1)];</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec3f&gt;)</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 2)];</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(std::is_same_v&lt;T, ossia::vec4f&gt;)</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>        <span class="keywordflow">return</span> v[std::min&lt;std::size_t&gt;(voice_idx, 3)];</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>      <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span>(</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>          std::is_same_v&lt;T, float&gt; || std::is_same_v&lt;T, int&gt;</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>          || std::is_same_v&lt;T, bool&gt;)</div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span>        <span class="keywordflow">return</span> <span class="keywordtype">float</span>(v);</div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>    },</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>        val.v);</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>  }</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>  <span class="keywordtype">void</span> preProcessVoice(voice&amp; v, std::size_t voice_idx)</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  {</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">const</span> std::size_t audio_in_size = data.audio_in_ports.size();</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keyword">const</span> std::size_t cv_size = data.cv_ports.size();</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="keyword">const</span> std::size_t midi_in_size = data.midi_in_ports.size();</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="keyword">const</span> std::size_t atom_in_size = data.atom_in_ports.size();</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    <span class="keyword">const</span> std::size_t control_in_size = data.control_in_ports.size();</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>    <span class="keywordtype">int</span> first_midi_idx = (audio_in_size &gt; 0 ? 1 : 0) + cv_size;</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.midi_atom_ins.size(); i++)</div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span>    {</div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span>      <span class="keyword">auto</span>&amp; ossia_port</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>          = this-&gt;m_inlets[i + first_midi_idx]-&gt;template cast&lt;ossia::midi_port&gt;();</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>      <span class="keyword">auto</span>&amp; lv2_port = v.midi_atom_ins[i];</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>      <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{lv2_port.buf};</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span> </div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>      <span class="comment">// The position first: the sequence is in time order, and the events of</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>      <span class="comment">// this block are at this position.</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>      <span class="keywordflow">if</span>(ossia::any_of(v.atom_timePosition_midi, [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t) {</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>           return t.buffer == &amp;lv2_port;</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>         }))</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(it);</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span> </div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> Message&amp; msg : v.message_for_midi_atom_ins[i])</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>      {</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keyword">auto</span>* atom = (LV2_Atom*)msg.body.data();</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>        <span class="keyword">auto</span>* atom_data = (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom);</div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>        it.write(0, 0, atom-&gt;type, atom-&gt;size, atom_data);</div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>      }</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span> </div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>      <span class="comment">// Port timestamps are relative to the buffer, the plug-in&#39;s to the tick:</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>      <span class="comment">// as the VST3 host does, what falls outside it goes to its nearest end.</span></div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>      <span class="keyword">auto</span>&amp; conv = v.midi_2to1[i];</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>      <span class="keywordflow">for</span>(<span class="keyword">const</span> libremidi::ump&amp; msg : ossia_port.messages)</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>      {</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>        <span class="keyword">const</span> int64_t frame = std::clamp&lt;int64_t&gt;(</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>            msg.timestamp - m_span.start, 0,</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            m_span.samples &gt; 0 ? m_span.samples - 1 : 0);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>        conv.convert(</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            msg.data, msg.size(), frame,</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>            [&amp;](<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* midi1, std::size_t bytes, int64_t) {</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>          if(bytes &gt; 0)</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            it.write(frame, 0, data.host.midi_event_id, bytes, midi1);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>          return stdx::error{};</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        });</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>      }</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>    }</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    {</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>      <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{buf-&gt;buf};</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>      <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(it);</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    }</div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_start</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        = (audio_in_size &gt; 0 ? 1 : 0) + midi_in_size + atom_in_size + cv_size;</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; control_in_size; i++)</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>    {</div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>      <span class="keyword">auto</span>&amp; in = m_inlets[control_start + i]</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>                     -&gt;template cast&lt;ossia::value_port&gt;()</div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>                     .get_data();</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>      <span class="keywordflow">if</span>(in.empty())</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>      <span class="keywordflow">if</span>(<span class="keyword">auto</span> new_val = voice_control_value(in.back().value, voice_idx))</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>        v.fInControls[i] = *new_val * <a class="code hl_variable" href="struct_l_v2_1_1lv2__node.html#ac81d91071c1bec1a6a65e9a24c08718a">fInScale</a>[i];</div>
+<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span>    }</div>
+<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>    (void)atom_in_size;</div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span>  }</div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="foldopen" id="foldopen00717" data-start="{" data-end="};">
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">  717</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>  {</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>    int64_t start{};</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>    int64_t samples{};</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>    int64_t size{};</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  } m_span;</div>
 </div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span> </div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Channel&gt;</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readChannel(<span class="keyword">const</span> Channel&amp; ch, <span class="keywordtype">float</span>* dst, <span class="keyword">const</span> <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a>&amp; s) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>  {</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    <span class="keyword">const</span> int64_t n = std::clamp&lt;int64_t&gt;(int64_t(ch.size()) - s.start, 0, s.samples);</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="keywordflow">for</span>(int64_t j = 0; j &lt; n; j++)</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>      dst[j] = <span class="keywordtype">float</span>(ch[s.start + j]);</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    std::fill(dst + n, dst + s.samples, 0.f);</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>  }</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Channel&gt;</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> writeChannel(Channel&amp; ch, <span class="keyword">const</span> <span class="keywordtype">float</span>* src, <span class="keyword">const</span> buffer_span&amp; s)</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  {</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="keywordflow">if</span>(int64_t(ch.size()) &lt; s.size)</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>      ch.resize(s.size);</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>    std::copy_n(src, s.samples, ch.begin() + s.start);</div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  }</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span> </div>
-<div class="foldopen" id="foldopen00739" data-start="{" data-end="}">
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">  739</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">feedCVInputs</a>(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v, std::size_t voice_idx) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  {</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    <span class="keyword">const</span> std::size_t first_cv = data.audio_in_ports.size() &gt; 0 ? 1 : 0;</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.fCVs.size(); i++)</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    {</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>      <span class="keyword">auto</span>* buf = v.fCVs[i].data();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; in = m_inlets[first_cv + i]-&gt;template cast&lt;ossia::audio_port&gt;();</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>      <span class="keywordflow">if</span>(<span class="keyword">const</span> <span class="keyword">auto</span> chans = in.channels(); chans &gt; 0)</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        readChannel(in.channel(voice_idx &lt; chans ? voice_idx : 0), buf, m_span);</div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        std::fill_n(buf, m_span.samples, 0.f);</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>  }</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Channel&gt;</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> readChannel(<span class="keyword">const</span> Channel&amp; ch, <span class="keywordtype">float</span>* dst, <span class="keyword">const</span> <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a>&amp; s) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>  {</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    <span class="keyword">const</span> int64_t n = std::clamp&lt;int64_t&gt;(int64_t(ch.size()) - s.start, 0, s.samples);</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    <span class="keywordflow">for</span>(int64_t j = 0; j &lt; n; j++)</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>      dst[j] = <span class="keywordtype">float</span>(ch[s.start + j]);</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    std::fill(dst + n, dst + s.samples, 0.f);</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  }</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span> </div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Channel&gt;</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> writeChannel(Channel&amp; ch, <span class="keyword">const</span> <span class="keywordtype">float</span>* src, <span class="keyword">const</span> buffer_span&amp; s)</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>  {</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    <span class="keywordflow">if</span>(int64_t(ch.size()) &lt; s.size)</div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>      ch.resize(s.size);</div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    std::copy_n(src, s.samples, ch.begin() + s.start);</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>  }</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
+<div class="foldopen" id="foldopen00743" data-start="{" data-end="}">
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">  743</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">feedCVInputs</a>(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v, std::size_t voice_idx) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>  {</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    <span class="keyword">const</span> std::size_t first_cv = data.audio_in_ports.size() &gt; 0 ? 1 : 0;</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.fCVs.size(); i++)</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>    {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>      <span class="keyword">auto</span>* buf = v.fCVs[i].data();</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; in = m_inlets[first_cv + i]-&gt;template cast&lt;ossia::audio_port&gt;();</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>      <span class="keywordflow">if</span>(<span class="keyword">const</span> <span class="keyword">auto</span> chans = in.channels(); chans &gt; 0)</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>        readChannel(in.channel(voice_idx &lt; chans ? voice_idx : 0), buf, m_span);</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>      <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>        std::fill_n(buf, m_span.samples, 0.f);</div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    }</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  }</div>
 </div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
-<div class="foldopen" id="foldopen00754" data-start="{" data-end="}">
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">  754</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">writeCVOutputs</a>(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>  {</div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>    <span class="keyword">const</span> std::size_t first_cv = (data.audio_out_ports.size() &gt; 0 ? 1 : 0)</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>                                 + data.midi_out_ports.size()</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>                                 + data.atom_out_ports.size()</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>                                 + data.control_out_ports.size();</div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.fCVOuts.size(); i++)</div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    {</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>      <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[first_cv + i])-&gt;data;</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>      out.set_channels(1);</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>      writeChannel(out.channel(0), v.fCVOuts[i].data(), m_span);</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    }</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>  }</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span> </div>
+<div class="foldopen" id="foldopen00758" data-start="{" data-end="}">
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">  758</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">writeCVOutputs</a>(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>  {</div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keyword">const</span> std::size_t first_cv = (data.audio_out_ports.size() &gt; 0 ? 1 : 0)</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>                                 + data.midi_out_ports.size()</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>                                 + data.atom_out_ports.size()</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>                                 + data.control_out_ports.size();</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.fCVOuts.size(); i++)</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    {</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>      <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[first_cv + i])-&gt;data;</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>      out.set_channels(1);</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>      writeChannel(out.channel(0), v.fCVOuts[i].data(), m_span);</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    }</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>  }</div>
 </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span> </div>
-<div class="foldopen" id="foldopen00770" data-start="{" data-end="}">
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">  770</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(<a class="code hl_struct" href="struct_iterator.html">Iterator</a>&amp; it) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>  {</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>    <span class="keyword">auto</span> write = [&amp;](<span class="keyword">const</span> uint8_t* buf) {</div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>      <span class="keyword">const</span> LV2_Atom* atom = (<span class="keyword">const</span> LV2_Atom*)buf;</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>      it.write(0, 0, atom-&gt;type, atom-&gt;size, (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom));</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>    };</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="keywordflow">if</span>(!timePositionBuffer || !m_timeForged)</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>    <span class="keywordflow">if</span>(m_sendStopped || mustStop)</div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>      write(stoppedPositionBuffer.get());</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordflow">if</span>(!mustStop)</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>      write(timePositionBuffer.get());</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>  }</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span> </div>
+<div class="foldopen" id="foldopen00774" data-start="{" data-end="}">
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">  774</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a>(<a class="code hl_struct" href="struct_iterator.html">Iterator</a>&amp; it) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>  {</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>    <span class="keyword">auto</span> write = [&amp;](<span class="keyword">const</span> uint8_t* buf) {</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>      <span class="keyword">const</span> LV2_Atom* atom = (<span class="keyword">const</span> LV2_Atom*)buf;</div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>      it.write(0, 0, atom-&gt;type, atom-&gt;size, (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom));</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>    };</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>    <span class="keywordflow">if</span>(!timePositionBuffer || !m_timeForged)</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>    <span class="keywordflow">if</span>(m_sendStopped || mustStop)</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>      write(stoppedPositionBuffer.get());</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>    <span class="keywordflow">if</span>(!mustStop)</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>      write(timePositionBuffer.get());</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>  }</div>
 </div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span> </div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>  <span class="keywordtype">void</span> postProcessVoice(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>  {</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>    <span class="keywordflow">if</span>(v.worker &amp;&amp; v.worker-&gt;work_response)</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>    {</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>      std::vector&lt;char&gt; vec;</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>      <span class="keywordflow">while</span>(v.worker_datas.try_dequeue(vec))</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        v.worker-&gt;work_response(v.instance-&gt;lv2_handle, vec.size(), vec.data());</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    }</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    <span class="keywordflow">if</span>(v.worker &amp;&amp; v.worker-&gt;end_run)</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>      v.worker-&gt;end_run(v.instance-&gt;lv2_handle);</div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.midi_atom_ins)</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>      port.buf-&gt;reset(true);</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_ins)</div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>      port.buf-&gt;reset(true);</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>      buf-&gt;buf-&gt;reset(true);</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.midi_atom_outs)</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>      port.buf-&gt;reset(false);</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_outs)</div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>      port.buf-&gt;reset(false);</div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_others)</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>      port.buf-&gt;reset(true);</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; mqueue : v.message_for_midi_atom_ins)</div>
-<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>      mqueue.clear();</div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>  }</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>  <span class="comment">// per_channel: inputs broadcast -&gt; voice 0 outputs are canonical</span></div>
-<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>  <span class="keywordtype">void</span> surfaceVoiceZeroOutputs(int64_t offset)</div>
-<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  {</div>
-<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span>    <span class="keyword">auto</span>&amp; v0 = *voices[0];</div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_out_size = data.audio_out_ports.size();</div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>    <span class="keyword">const</span> <span class="keyword">auto</span> midi_out_size = data.midi_out_ports.size();</div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_out_size = data.control_out_ports.size();</div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span> </div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keywordtype">int</span> first_midi_idx = (audio_out_size &gt; 0 ? 1 : 0);</div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v0.midi_atom_outs.size(); i++)</div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    {</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span>      <span class="keyword">auto</span>&amp; ossia_port</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>          = this-&gt;m_outlets[i + first_midi_idx]-&gt;template cast&lt;ossia::midi_port&gt;();</div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>      <span class="keyword">auto</span>&amp; lv2_port = v0.midi_atom_outs[i];</div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>      <span class="keyword">auto</span>&amp; conv = v0.midi_1to2[i];</div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span> </div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>      LV2_ATOM_SEQUENCE_FOREACH(&amp;lv2_port.buf-&gt;atoms, ev)</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>      {</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>        <span class="keywordflow">if</span>(ev-&gt;body.type == data.host.midi_event_id)</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span>        {</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>          <span class="keyword">auto</span> bytes = (uint8_t*)LV2_ATOM_BODY_CONST(&amp;ev-&gt;body);</div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>          conv.convert(</div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>              bytes, ev-&gt;body.size, ev-&gt;time.frames,</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>              [&amp;](<span class="keyword">const</span> uint32_t* ump, <span class="keywordtype">int</span> count, int64_t ts) {</div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>            libremidi::ump u;</div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>            std::copy_n(ump, std::min(count, 4), u.data);</div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>            u.timestamp = offset + ts;</div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>            ossia_port.messages.push_back(u);</div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>            <span class="keywordflow">return</span> stdx::error{};</div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>          });</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>        }</div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>        <span class="comment">// Other events on a MIDI port are for the plug-in&#39;s UI (on_finish</span></div>
-<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>        <span class="comment">// forwards them); FIXME also forward them (patch:Set...) to a value</span></div>
-<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        <span class="comment">// outlet.</span></div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>      }</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>    }</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_start</div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>        = (audio_out_size &gt; 0 ? 1 : 0) + midi_out_size + data.atom_out_ports.size();</div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; control_out_size; i++)</div>
-<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    {</div>
-<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>      <span class="keyword">auto</span>&amp; out</div>
-<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>          = m_outlets[control_start + i]-&gt;template cast&lt;ossia::value_port&gt;();</div>
-<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>      out.write_value(v0.fOutControls[i] / fOutScale[i], offset);</div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>    }</div>
-<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>  }</div>
-<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span> </div>
-<div class="foldopen" id="foldopen00860" data-start="{" data-end="}">
-<div class="line"><a id="l00860" name="l00860"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">  860</a></span>  uint32_t <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">stop_run_samples</a>() const noexcept</div>
-<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span>  {</div>
-<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>    <span class="keyword">constexpr</span> int64_t fallback = 64;</div>
-<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span>    <span class="keyword">const</span> int64_t n = m_span.samples &gt; 0 ? m_span.samples : fallback;</div>
-<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    <span class="keywordflow">return</span> uint32_t(std::min&lt;int64_t&gt;(n, int64_t(max_block_size)));</div>
-<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>  }</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span> </div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>  <span class="keywordtype">void</span> postProcessVoice(<a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>  {</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>    <span class="keywordflow">if</span>(v.worker &amp;&amp; v.worker-&gt;work_response)</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    {</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>      std::vector&lt;char&gt; vec;</div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>      <span class="keywordflow">while</span>(v.worker_datas.try_dequeue(vec))</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        v.worker-&gt;work_response(v.instance-&gt;lv2_handle, vec.size(), vec.data());</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    }</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    <span class="keywordflow">if</span>(v.worker &amp;&amp; v.worker-&gt;end_run)</div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>      v.worker-&gt;end_run(v.instance-&gt;lv2_handle);</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.midi_atom_ins)</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>      port.buf-&gt;reset(true);</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_ins)</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>      port.buf-&gt;reset(true);</div>
+<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
+<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span>      buf-&gt;buf-&gt;reset(true);</div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.midi_atom_outs)</div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span>      port.buf-&gt;reset(false);</div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_outs)</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>      port.buf-&gt;reset(false);</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; port : v.atom_others)</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span>      port.buf-&gt;reset(true);</div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; mqueue : v.message_for_midi_atom_ins)</div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span>      mqueue.clear();</div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span>  }</div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span> </div>
+<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>  <span class="comment">// per_channel: inputs broadcast -&gt; voice 0 outputs are canonical</span></div>
+<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  <span class="keywordtype">void</span> surfaceVoiceZeroOutputs(int64_t offset)</div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>  {</div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span>    <span class="keyword">auto</span>&amp; v0 = *voices[0];</div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_out_size = data.audio_out_ports.size();</div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span>    <span class="keyword">const</span> <span class="keyword">auto</span> midi_out_size = data.midi_out_ports.size();</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_out_size = data.control_out_ports.size();</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span>    <span class="keywordtype">int</span> first_midi_idx = (audio_out_size &gt; 0 ? 1 : 0);</div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v0.midi_atom_outs.size(); i++)</div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span>    {</div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>      <span class="keyword">auto</span>&amp; ossia_port</div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>          = this-&gt;m_outlets[i + first_midi_idx]-&gt;template cast&lt;ossia::midi_port&gt;();</div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>      <span class="keyword">auto</span>&amp; lv2_port = v0.midi_atom_outs[i];</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span>      <span class="keyword">auto</span>&amp; conv = v0.midi_1to2[i];</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>      lv2_port.buf-&gt;for_each_output_event([&amp;](<span class="keyword">const</span> LV2_Atom_Event&amp; ev) {</div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>        <span class="keywordflow">if</span>(ev.body.type == data.host.midi_event_id)</div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>        {</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>          auto bytes = (const uint8_t*)LV2_ATOM_BODY_CONST(&amp;ev.body);</div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>          conv.convert(</div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>              bytes, ev.body.size, ev.time.frames,</div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span>              [&amp;](const uint32_t* ump, int count, int64_t ts) {</div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span>            libremidi::ump u;</div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>            std::copy_n(ump, std::min(count, 4), u.data);</div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>            u.timestamp = offset + ts;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span>            ossia_port.messages.push_back(u);</div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span>            return stdx::error{};</div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span>          });</div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span>        }</div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>        <span class="comment">// Other events on a MIDI port are for the plug-in&#39;s UI (on_finish</span></div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>        <span class="comment">// forwards them); FIXME also forward them (patch:Set...) to a value</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>        <span class="comment">// outlet.</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>      });</div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span>    }</div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span> </div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span>    <span class="keyword">const</span> <span class="keyword">auto</span> control_start</div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span>        = (audio_out_size &gt; 0 ? 1 : 0) + midi_out_size + data.atom_out_ports.size();</div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; control_out_size; i++)</div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>    {</div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>      <span class="keyword">auto</span>&amp; out</div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span>          = m_outlets[control_start + i]-&gt;template cast&lt;ossia::value_port&gt;();</div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span>      out.write_value(v0.fOutControls[i] / fOutScale[i], offset);</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>    }</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  }</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span> </div>
+<div class="foldopen" id="foldopen00863" data-start="{" data-end="}">
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">  863</a></span>  uint32_t <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">stop_run_samples</a>() const noexcept</div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>  {</div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>    <span class="keyword">constexpr</span> int64_t fallback = 64;</div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>    <span class="keyword">const</span> int64_t n = m_span.samples &gt; 0 ? m_span.samples : fallback;</div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span>    <span class="keywordflow">return</span> uint32_t(std::min&lt;int64_t&gt;(n, int64_t(max_block_size)));</div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span>  }</div>
 </div>
-<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span> </div>
-<div class="foldopen" id="foldopen00869" data-start="{" data-end="}">
-<div class="line"><a id="l00869" name="l00869"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">  869</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">stop_voices</a>() noexcept</div>
-<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span>  {</div>
-<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span>    data.host.current = &amp;data.effect;</div>
-<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; vp : voices)</div>
-<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>    {</div>
-<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>      <span class="keyword">auto</span>&amp; v = *vp;</div>
-<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.midi_atom_ins.size(); i++)</div>
-<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>      {</div>
-<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>        <span class="keyword">auto</span>&amp; lv2_port = v.midi_atom_ins[i];</div>
-<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>        <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{lv2_port.buf};</div>
-<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>        <span class="keywordflow">if</span>(ossia::any_of(v.atom_timePosition_midi, [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t) {</div>
-<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>             return t.buffer == &amp;lv2_port;</div>
-<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>           }))</div>
-<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>          writeTime(it);</div>
-<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_l_v2_1_1_message.html">Message</a>&amp; msg : v.message_for_midi_atom_ins[i])</div>
-<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>        {</div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>          <span class="keyword">auto</span>* atom = (LV2_Atom*)msg.body.data();</div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>          it.write(0, 0, atom-&gt;type, atom-&gt;size, (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom));</div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        }</div>
-<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>      }</div>
-<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
-<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>      {</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>        <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{buf-&gt;buf};</div>
-<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>        writeTime(it);</div>
-<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>      }</div>
-<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span> </div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.audio_in_scratch.size(); i++)</div>
-<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>      {</div>
-<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>        <span class="keyword">auto</span>&amp; scratch = v.audio_in_scratch[i];</div>
-<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>        std::fill(scratch.begin(), scratch.end(), 0.f);</div>
-<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>        lilv_instance_connect_port(v.instance, data.audio_in_ports[i], scratch.data());</div>
-<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>      }</div>
-<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.audio_out_scratch.size(); i++)</div>
-<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        lilv_instance_connect_port(</div>
-<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>            v.instance, data.audio_out_ports[i], v.audio_out_scratch[i].data());</div>
-<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span> </div>
-<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>      <span class="comment">// As long as the last tick, not a single frame: plug-ins dividing by</span></div>
-<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>      <span class="comment">// (sample_count - 1) to ramp a parameter (SWH&#39;s Constant Signal</span></div>
-<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span>      <span class="comment">// Generator) turn their state to NaN on a run of one frame</span></div>
-<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>      {</div>
-<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>        <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a> ws{data.host, v};</div>
-<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>        lilv_instance_run(v.instance, stop_run_samples());</div>
-<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>      }</div>
-<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>      postProcessVoice(v);</div>
-<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>    }</div>
-<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>  }</div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span> </div>
+<div class="foldopen" id="foldopen00872" data-start="{" data-end="}">
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">  872</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">stop_voices</a>() noexcept</div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>  {</div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>    data.host.current = &amp;data.effect;</div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; vp : voices)</div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span>    {</div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span>      <span class="keyword">auto</span>&amp; v = *vp;</div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.midi_atom_ins.size(); i++)</div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span>      {</div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span>        <span class="keyword">auto</span>&amp; lv2_port = v.midi_atom_ins[i];</div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span>        <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{lv2_port.buf};</div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span>        <span class="keywordflow">if</span>(ossia::any_of(v.atom_timePosition_midi, [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t) {</div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span>             return t.buffer == &amp;lv2_port;</div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span>           }))</div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span>          writeTime(it);</div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span>        <span class="keywordflow">for</span>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_l_v2_1_1_message.html">Message</a>&amp; msg : v.message_for_midi_atom_ins[i])</div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span>        {</div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>          <span class="keyword">auto</span>* atom = (LV2_Atom*)msg.body.data();</div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>          it.write(0, 0, atom-&gt;type, atom-&gt;size, (<span class="keyword">const</span> uint8_t*)LV2_ATOM_BODY(atom));</div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>        }</div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span>      }</div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>      <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; [_, buf] : v.atom_timePosition_owned)</div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>      {</div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>        <a class="code hl_struct" href="struct_iterator.html">Iterator</a> it{buf-&gt;buf};</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>        writeTime(it);</div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>      }</div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span> </div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.audio_in_scratch.size(); i++)</div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span>      {</div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span>        <span class="keyword">auto</span>&amp; scratch = v.audio_in_scratch[i];</div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span>        std::fill(scratch.begin(), scratch.end(), 0.f);</div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span>        lilv_instance_connect_port(v.instance, data.audio_in_ports[i], scratch.data());</div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span>      }</div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; v.audio_out_scratch.size(); i++)</div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span>        lilv_instance_connect_port(</div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span>            v.instance, data.audio_out_ports[i], v.audio_out_scratch[i].data());</div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span> </div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span>      <span class="comment">// As long as the last tick, not a single frame: plug-ins dividing by</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span>      <span class="comment">// (sample_count - 1) to ramp a parameter (SWH&#39;s Constant Signal</span></div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span>      <span class="comment">// Generator) turn their state to NaN on a run of one frame</span></div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span>      {</div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>        <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a> ws{data.host, v};</div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>        lilv_instance_run(v.instance, stop_run_samples());</div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>      }</div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span>      postProcessVoice(v);</div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>    }</div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>  }</div>
 </div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade st) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span>  {</div>
-<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span>    <span class="comment">// Before the paused check: the tick requested by stop() is empty.</span></div>
-<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>    <span class="keywordflow">if</span>(mustStop)</div>
-<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>    {</div>
-<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>      stop_voices();</div>
-<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>      mustStop = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>      m_sendStopped = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>    }</div>
-<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>    <span class="keywordflow">if</span>(tk.paused())</div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span> </div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span>  <span class="keywordtype">void</span> run(<span class="keyword">const</span> ossia::token_request&amp; tk, ossia::exec_state_facade st) <span class="keyword">noexcept</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span>  {</div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>    <span class="comment">// Before the paused check: the tick requested by stop() is empty.</span></div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>    <span class="keywordflow">if</span>(mustStop)</div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span>    {</div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span>      stop_voices();</div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span>      mustStop = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span>      m_sendStopped = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span> </div>
-<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    data.host.current = &amp;data.effect;</div>
-<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    <span class="keywordflow">if</span>(!data.time_Position_ports.empty())</div>
-<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>      updateTime(tk, st);</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
-<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, samples] = st.timings(tk);</div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> samples_valid</div>
-<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>        = samples &gt; 0 &amp;&amp; std::size_t(samples) &lt;= max_block_size &amp;&amp; tick_start &gt;= 0;</div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    m_span = {</div>
-<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>        std::max&lt;int64_t&gt;(tick_start, 0), samples_valid ? samples : 0,</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        std::max&lt;int64_t&gt;(st.bufferSize(), tick_start + samples)};</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>    on_start();</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>    <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; voices.size(); ++c)</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>      preProcessVoice(*voices[c], c);</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span> </div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <span class="keywordflow">if</span>(samples_valid)</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    {</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>      <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; voices.size(); ++c)</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>        feedCVInputs(*voices[c], c);</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>      <span class="keywordflow">switch</span>(routing)</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>      {</div>
-<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        <span class="keywordflow">case</span> voice_routing::single:</div>
-<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>          runSingle(samples);</div>
-<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        <span class="keywordflow">case</span> voice_routing::per_channel:</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>          runPerChannel(samples);</div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span>    }</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>    <span class="keywordflow">if</span>(tk.paused())</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span> </div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>    data.host.current = &amp;data.effect;</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    <span class="keywordflow">if</span>(!data.time_Position_ports.empty())</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>      updateTime(tk, st);</div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span> </div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    <span class="keyword">const</span> <span class="keyword">auto</span> [tick_start, samples] = st.timings(tk);</div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> samples_valid</div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>        = samples &gt; 0 &amp;&amp; std::size_t(samples) &lt;= max_block_size &amp;&amp; tick_start &gt;= 0;</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    m_span = {</div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        std::max&lt;int64_t&gt;(tick_start, 0), samples_valid ? samples : 0,</div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>        std::max&lt;int64_t&gt;(st.bufferSize(), tick_start + samples)};</div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span> </div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>    on_start();</div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; voices.size(); ++c)</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>      preProcessVoice(*voices[c], c);</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span> </div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>    <span class="keywordflow">if</span>(samples_valid)</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    {</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>      <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; voices.size(); ++c)</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        feedCVInputs(*voices[c], c);</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>      <span class="keywordflow">switch</span>(routing)</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>      {</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        <span class="keywordflow">case</span> voice_routing::single:</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>          runSingle(samples);</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>      }</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>    }</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    surfaceVoiceZeroOutputs(tk.physical_start(st.modelToSamples()));</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    on_finished();</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>        <span class="keywordflow">case</span> voice_routing::per_channel:</div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>          runPerChannel(samples);</div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>      }</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    }</div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span> </div>
-<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : voices)</div>
-<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>      postProcessVoice(*v);</div>
-<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>    m_sendStopped = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>  }</div>
-<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span> </div>
-<div class="foldopen" id="foldopen00967" data-start="{" data-end="};">
-<div class="line"><a id="l00967" name="l00967"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">  967</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a></div>
-<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  {</div>
-<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>    <a class="code hl_struct" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a>&amp; host;</div>
-<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span>    <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a>(<a class="code hl_struct" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a>&amp; h, <a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) noexcept</div>
-<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>        : host{h}</div>
-<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    {</div>
-<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>      host.current_worker_datas = &amp;v.worker_datas;</div>
-<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>    }</div>
-<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">~worker_routing_scope</a>() <span class="keyword">noexcept</span> { host.current_worker_datas = <span class="keyword">nullptr</span>; }</div>
-<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>  };</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>    surfaceVoiceZeroOutputs(tk.physical_start(st.modelToSamples()));</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>    on_finished();</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span> </div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : voices)</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>      postProcessVoice(*v);</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>    m_sendStopped = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>  }</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span> </div>
+<div class="foldopen" id="foldopen00970" data-start="{" data-end="};">
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno"><a class="line" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">  970</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a></div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>  {</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>    <a class="code hl_struct" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a>&amp; host;</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>    <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a>(<a class="code hl_struct" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a>&amp; h, <a class="code hl_struct" href="struct_l_v2_1_1voice.html">voice</a>&amp; v) noexcept</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span>        : host{h}</div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>    {</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>      host.current_worker_datas = &amp;v.worker_datas;</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>    }</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>    <a class="code hl_struct" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">~worker_routing_scope</a>() <span class="keyword">noexcept</span> { host.current_worker_datas = <span class="keyword">nullptr</span>; }</div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>  };</div>
 </div>
-<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span> </div>
-<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span>  <span class="keywordtype">void</span> runSingle(<span class="keywordtype">int</span> samples) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>  {</div>
-<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>    <span class="keyword">auto</span>&amp; v = *voices[0];</div>
-<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_ins = data.audio_in_ports.size();</div>
-<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_outs = data.audio_out_ports.size();</div>
-<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span> </div>
-<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    <span class="keywordflow">if</span>(audio_ins &gt; 0)</div>
-<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    {</div>
-<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; audio_in = m_inlets[0]-&gt;template cast&lt;ossia::audio_port&gt;();</div>
-<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>      <span class="keyword">const</span> <span class="keyword">auto</span> in_channels = audio_in.channels();</div>
-<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_ins; i++)</div>
-<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>      {</div>
-<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>        <span class="keyword">auto</span>&amp; scratch = v.audio_in_scratch[i];</div>
-<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>        <span class="keywordflow">if</span>(in_channels &gt; i)</div>
-<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>          readChannel(audio_in.channel(i), scratch.data(), m_span);</div>
-<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>          std::fill_n(scratch.data(), samples, 0.0f);</div>
-<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>        lilv_instance_connect_port(</div>
-<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>            v.instance, data.audio_in_ports[i], scratch.data());</div>
-<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>      }</div>
-<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>    }</div>
-<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span> </div>
-<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_outs; i++)</div>
-<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>      lilv_instance_connect_port(</div>
-<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span>          v.instance, data.audio_out_ports[i], v.audio_out_scratch[i].data());</div>
-<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span> </div>
-<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>    {</div>
-<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>      worker_routing_scope ws{data.host, v};</div>
-<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span>      lilv_instance_run(v.instance, samples);</div>
-<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    }</div>
-<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>    writeCVOutputs(v);</div>
-<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span> </div>
-<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    <span class="keywordflow">if</span>(audio_outs &gt; 0)</div>
-<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    {</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>      <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[0])-&gt;data;</div>
-<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>      out.set_channels(audio_outs);</div>
-<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_outs; i++)</div>
-<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>        writeChannel(out.channel(i), v.audio_out_scratch[i].data(), m_span);</div>
-<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>    }</div>
-<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>  }</div>
-<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
-<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>  <span class="comment">// voice c &lt;-&gt; channel c; MIDI/controls broadcast in preProcessVoice</span></div>
-<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>  <span class="keywordtype">void</span> runPerChannel(<span class="keywordtype">int</span> samples) <span class="keyword">noexcept</span></div>
-<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>  {</div>
-<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>    <span class="keywordflow">if</span>(voices.empty())</div>
-<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span> </div>
-<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <span class="keyword">const</span> <span class="keyword">auto</span>* audio_in_inlet</div>
-<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>        = m_inlets.empty() ? nullptr : m_inlets[0]-&gt;template target&lt;ossia::audio_port&gt;();</div>
-<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>    <span class="keyword">const</span> <span class="keyword">auto</span> in_channels = audio_in_inlet ? audio_in_inlet-&gt;channels() : 0;</div>
-<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span> </div>
-<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>    <span class="comment">// Pure synths drive all voices; otherwise follow input channel count</span></div>
-<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    <span class="keyword">const</span> <span class="keyword">auto</span> requested</div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>        = (audio_in_inlet ? std::max&lt;std::size_t&gt;(in_channels, 1) : voices.size());</div>
-<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>    request_voice_count(requested);</div>
-<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span> </div>
-<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>    <span class="keyword">const</span> <span class="keyword">auto</span> active = std::min&lt;std::size_t&gt;(voices.size(), requested);</div>
-<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span> </div>
-<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>    <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[0])-&gt;data;</div>
-<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    out.set_channels(active);</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span> </div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>  <span class="keywordtype">void</span> runSingle(<span class="keywordtype">int</span> samples) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span>  {</div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>    <span class="keyword">auto</span>&amp; v = *voices[0];</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_ins = data.audio_in_ports.size();</div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>    <span class="keyword">const</span> <span class="keyword">auto</span> audio_outs = data.audio_out_ports.size();</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>    <span class="keywordflow">if</span>(audio_ins &gt; 0)</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span>    {</div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; audio_in = m_inlets[0]-&gt;template cast&lt;ossia::audio_port&gt;();</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span>      <span class="keyword">const</span> <span class="keyword">auto</span> in_channels = audio_in.channels();</div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_ins; i++)</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span>      {</div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>        <span class="keyword">auto</span>&amp; scratch = v.audio_in_scratch[i];</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span>        <span class="keywordflow">if</span>(in_channels &gt; i)</div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>          readChannel(audio_in.channel(i), scratch.data(), m_span);</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>          std::fill_n(scratch.data(), samples, 0.0f);</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span>        lilv_instance_connect_port(</div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>            v.instance, data.audio_in_ports[i], scratch.data());</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>      }</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>    }</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>    <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_outs; i++)</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>      lilv_instance_connect_port(</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>          v.instance, data.audio_out_ports[i], v.audio_out_scratch[i].data());</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>    {</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>      worker_routing_scope ws{data.host, v};</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>      lilv_instance_run(v.instance, samples);</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>    }</div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>    writeCVOutputs(v);</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span> </div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>    <span class="keywordflow">if</span>(audio_outs &gt; 0)</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span>    {</div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>      <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[0])-&gt;data;</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>      out.set_channels(audio_outs);</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>      <span class="keywordflow">for</span>(std::size_t i = 0; i &lt; audio_outs; i++)</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span>        writeChannel(out.channel(i), v.audio_out_scratch[i].data(), m_span);</div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>    }</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>  }</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span> </div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span>  <span class="comment">// voice c &lt;-&gt; channel c; MIDI/controls broadcast in preProcessVoice</span></div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>  <span class="keywordtype">void</span> runPerChannel(<span class="keywordtype">int</span> samples) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>  {</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>    <span class="keywordflow">if</span>(voices.empty())</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span> </div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>    <span class="keyword">const</span> <span class="keyword">auto</span>* audio_in_inlet</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>        = m_inlets.empty() ? nullptr : m_inlets[0]-&gt;template target&lt;ossia::audio_port&gt;();</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span>    <span class="keyword">const</span> <span class="keyword">auto</span> in_channels = audio_in_inlet ? audio_in_inlet-&gt;channels() : 0;</div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span> </div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>    <span class="comment">// Pure synths drive all voices; otherwise follow input channel count</span></div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>    <span class="keyword">const</span> <span class="keyword">auto</span> requested</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span>        = (audio_in_inlet ? std::max&lt;std::size_t&gt;(in_channels, 1) : voices.size());</div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>    request_voice_count(requested);</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span> </div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>    <span class="keyword">const</span> <span class="keyword">auto</span> active = std::min&lt;std::size_t&gt;(voices.size(), requested);</div>
 <div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span> </div>
-<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; active; ++c)</div>
-<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>    {</div>
-<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>      <span class="keyword">auto</span>&amp; v = *voices[c];</div>
-<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span> </div>
-<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>      <span class="keywordflow">if</span>(audio_in_inlet)</div>
-<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>      {</div>
-<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>        <span class="keyword">auto</span>&amp; in_scratch = v.audio_in_scratch[0];</div>
-<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>        <span class="keywordflow">if</span>(in_channels &gt; c)</div>
-<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>          readChannel(audio_in_inlet-&gt;channel(c), in_scratch.data(), m_span);</div>
-<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        <span class="keywordflow">else</span></div>
-<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>          std::fill_n(in_scratch.data(), samples, 0.0f);</div>
-<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>        lilv_instance_connect_port(</div>
-<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>            v.instance, data.audio_in_ports[0], in_scratch.data());</div>
-<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>      }</div>
-<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span> </div>
-<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>      <span class="keyword">auto</span>&amp; out_scratch = v.audio_out_scratch[0];</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>      lilv_instance_connect_port(</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>          v.instance, data.audio_out_ports[0], out_scratch.data());</div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span> </div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>      {</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>        worker_routing_scope ws{data.host, v};</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>        lilv_instance_run(v.instance, samples);</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>      }</div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>      writeChannel(out.channel(c), out_scratch.data(), m_span);</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>      <span class="keywordflow">if</span>(c == 0)</div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        writeCVOutputs(v);</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>    }</div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>  }</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>};</div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>    <span class="keyword">auto</span>&amp; out = <span class="keyword">static_cast&lt;</span>ossia::audio_outlet*<span class="keyword">&gt;</span>(m_outlets[0])-&gt;data;</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>    out.set_channels(active);</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span> </div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span>    <span class="keywordflow">for</span>(std::size_t c = 0; c &lt; active; ++c)</div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span>    {</div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>      <span class="keyword">auto</span>&amp; v = *voices[c];</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span> </div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>      <span class="keywordflow">if</span>(audio_in_inlet)</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>      {</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>        <span class="keyword">auto</span>&amp; in_scratch = v.audio_in_scratch[0];</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>        <span class="keywordflow">if</span>(in_channels &gt; c)</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span>          readChannel(audio_in_inlet-&gt;channel(c), in_scratch.data(), m_span);</div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span>          std::fill_n(in_scratch.data(), samples, 0.0f);</div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>        lilv_instance_connect_port(</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>            v.instance, data.audio_in_ports[0], in_scratch.data());</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>      }</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span> </div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>      <span class="keyword">auto</span>&amp; out_scratch = v.audio_out_scratch[0];</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>      lilv_instance_connect_port(</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>          v.instance, data.audio_out_ports[0], out_scratch.data());</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span> </div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>      {</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>        worker_routing_scope ws{data.host, v};</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>        lilv_instance_run(v.instance, samples);</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>      }</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span> </div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>      writeChannel(out.channel(c), out_scratch.data(), m_span);</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>      <span class="keywordflow">if</span>(c == 0)</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>        writeCVOutputs(v);</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    }</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>  }</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>};</div>
 </div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span> </div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>} <span class="comment">// namespace LV2</span></div>
-<div class="ttc" id="astruct_atom_buffer_html"><div class="ttname"><a href="struct_atom_buffer.html">AtomBuffer</a></div><div class="ttdef"><b>Definition</b> lv2_atom_helpers.hpp:202</div></div>
-<div class="ttc" id="astruct_iterator_html"><div class="ttname"><a href="struct_iterator.html">Iterator</a></div><div class="ttdef"><b>Definition</b> lv2_atom_helpers.hpp:106</div></div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>} <span class="comment">// namespace LV2</span></div>
+<div class="ttc" id="astruct_atom_buffer_html"><div class="ttname"><a href="struct_atom_buffer.html">AtomBuffer</a></div><div class="ttdef"><b>Definition</b> lv2_atom_helpers.hpp:228</div></div>
+<div class="ttc" id="astruct_iterator_html"><div class="ttname"><a href="struct_iterator.html">Iterator</a></div><div class="ttdef"><b>Definition</b> lv2_atom_helpers.hpp:132</div></div>
 <div class="ttc" id="astruct_l_v2_1_1_host_context_html"><div class="ttname"><a href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a></div><div class="ttdef"><b>Definition</b> Context.hpp:61</div></div>
 <div class="ttc" id="astruct_l_v2_1_1_l_v2_data_html"><div class="ttname"><a href="struct_l_v2_1_1_l_v2_data.html">LV2::LV2Data</a></div><div class="ttdef"><b>Definition</b> Context.hpp:286</div></div>
 <div class="ttc" id="astruct_l_v2_1_1_message_html"><div class="ttname"><a href="struct_l_v2_1_1_message.html">LV2::Message</a></div><div class="ttdef"><b>Definition</b> Context.hpp:330</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_1_1buffer__span_html"><div class="ttname"><a href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">LV2::lv2_node::buffer_span</a></div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:714</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_1_1worker__routing__scope_html"><div class="ttname"><a href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">LV2::lv2_node::worker_routing_scope</a></div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:968</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_1_1buffer__span_html"><div class="ttname"><a href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">LV2::lv2_node::buffer_span</a></div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:718</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_1_1worker__routing__scope_html"><div class="ttname"><a href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">LV2::lv2_node::worker_routing_scope</a></div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:971</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a></div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:138</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a13ab078eec145893ac5249254bec901a"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">LV2::lv2_node::stop_run_samples</a></div><div class="ttdeci">uint32_t stop_run_samples() const noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:860</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a13ab078eec145893ac5249254bec901a"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a13ab078eec145893ac5249254bec901a">LV2::lv2_node::stop_run_samples</a></div><div class="ttdeci">uint32_t stop_run_samples() const noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:863</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a406e80a6b2691d504bab2a17e94c0b4f"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a406e80a6b2691d504bab2a17e94c0b4f">LV2::lv2_node::connect_voice_ports</a></div><div class="ttdeci">void connect_voice_ports(voice &amp;v) noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:477</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a49eb102655030a7f580366133acf2554"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">LV2::lv2_node::writeCVOutputs</a></div><div class="ttdeci">void writeCVOutputs(voice &amp;v) noexcept</div><div class="ttdoc">The CV outputs of voice 0, after the control outlets.</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:754</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a644c05a76aaccfeae7354ffb566a73f4"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">LV2::lv2_node::feedCVInputs</a></div><div class="ttdeci">void feedCVInputs(voice &amp;v, std::size_t voice_idx) noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:739</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a6e19709747c81b209688d9fe6aaf7efa"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">LV2::lv2_node::writeTime</a></div><div class="ttdeci">void writeTime(Iterator &amp;it) noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:770</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a49eb102655030a7f580366133acf2554"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a49eb102655030a7f580366133acf2554">LV2::lv2_node::writeCVOutputs</a></div><div class="ttdeci">void writeCVOutputs(voice &amp;v) noexcept</div><div class="ttdoc">The CV outputs of voice 0, after the control outlets.</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:758</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a644c05a76aaccfeae7354ffb566a73f4"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a644c05a76aaccfeae7354ffb566a73f4">LV2::lv2_node::feedCVInputs</a></div><div class="ttdeci">void feedCVInputs(voice &amp;v, std::size_t voice_idx) noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:743</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a6e19709747c81b209688d9fe6aaf7efa"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">LV2::lv2_node::writeTime</a></div><div class="ttdeci">void writeTime(Iterator &amp;it) noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:774</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a74241ef1698e40b205c63ff423417303"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a74241ef1698e40b205c63ff423417303">LV2::lv2_node::m_timeForged</a></div><div class="ttdeci">bool m_timeForged</div><div class="ttdoc">The position buffers hold a position: a run happened.</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:158</div></div>
-<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a87249cce6b1bf0af416e84a05ec58a41"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">LV2::lv2_node::stop_voices</a></div><div class="ttdeci">void stop_voices() noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:869</div></div>
+<div class="ttc" id="astruct_l_v2_1_1lv2__node_html_a87249cce6b1bf0af416e84a05ec58a41"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#a87249cce6b1bf0af416e84a05ec58a41">LV2::lv2_node::stop_voices</a></div><div class="ttdeci">void stop_voices() noexcept</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:872</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html_aa9115c7b265f9812112fa3e9fe0fc7a8"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#aa9115c7b265f9812112fa3e9fe0fc7a8">LV2::lv2_node::m_sendStopped</a></div><div class="ttdeci">bool m_sendStopped</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:153</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html_abc6ceded9292b7db0b1b2dca00006539"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#abc6ceded9292b7db0b1b2dca00006539">LV2::lv2_node::stoppedPositionBuffer</a></div><div class="ttdeci">std::unique_ptr&lt; uint8_t[]&gt; stoppedPositionBuffer</div><div class="ttdoc">The same position with a speed of 0: the transport is stopped.</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:149</div></div>
 <div class="ttc" id="astruct_l_v2_1_1lv2__node_html_ac44a9ec5cf65037c774098152c0adeb5"><div class="ttname"><a href="struct_l_v2_1_1lv2__node.html#ac44a9ec5cf65037c774098152c0adeb5">LV2::lv2_node::mustStop</a></div><div class="ttdeci">bool mustStop</div><div class="ttdef"><b>Definition</b> score-plugin-lv2/LV2/Node.hpp:156</div></div>

@@ -104,6 +104,8 @@ $(document).ready(function(){initNavTree('classscore_1_1_plugin_window.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classscore_1_1_plugin_window-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">score::PluginWindow Class Reference</div></div>
 </div><!--header-->
@@ -127,7 +129,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c4777c26860dbd64f839c3d1c8e134a" id="r_a4c4777c26860dbd64f839c3d1c8e134a"><td class="memItemLeft" align="right" valign="top"><a id="a4c4777c26860dbd64f839c3d1c8e134a" name="a4c4777c26860dbd64f839c3d1c8e134a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PluginWindow</b> (bool onTop, QWidget *parent)</td></tr>
 <tr class="separator:a4c4777c26860dbd64f839c3d1c8e134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab98803b31b89c2aa7ac383c09e94a680" id="r_ab98803b31b89c2aa7ac383c09e94a680"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_plugin_window.html#ab98803b31b89c2aa7ac383c09e94a680">editorPixelRatio</a> (const QWidget &amp;w)</td></tr>
+<tr class="separator:ab98803b31b89c2aa7ac383c09e94a680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab687474386ebbf0ccb98043c965cb380" id="r_ab687474386ebbf0ccb98043c965cb380"><td class="memItemLeft" align="right" valign="top"><a id="ab687474386ebbf0ccb98043c965cb380" name="ab687474386ebbf0ccb98043c965cb380"></a>
+static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>editorPixelRatio</b> (double devicePixelRatio, double qtScaleFactor) noexcept</td></tr>
+<tr class="memdesc:ab687474386ebbf0ccb98043c965cb380"><td class="mdescLeft">&#160;</td><td class="mdescRight">The same, from the device pixel ratio and Qt's own scaling. <br /></td></tr>
+<tr class="separator:ab687474386ebbf0ccb98043c965cb380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab796f60d1361f22f8cfbcb12c8c94b2b" id="r_ab796f60d1361f22f8cfbcb12c8c94b2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_plugin_window.html#ab796f60d1361f22f8cfbcb12c8c94b2b">keyPressEvent</a> (QKeyEvent *event) override</td></tr>
+<tr class="separator:ab796f60d1361f22f8cfbcb12c8c94b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab98803b31b89c2aa7ac383c09e94a680" name="ab98803b31b89c2aa7ac383c09e94a680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98803b31b89c2aa7ac383c09e94a680">&#9670;&#160;</a></span>editorPixelRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double score::PluginWindow::editorPixelRatio </td>
+          <td>(</td>
+          <td class="paramtype">const QWidget &amp;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>How many of an editor's own pixels make one of Qt's logical pixels, on the screen of w. Win32 and X11 editors count physical pixels: this is the device pixel ratio. Cocoa editors count points, which are Qt's logical pixels unless Qt scales those itself (QT_SCALE_FACTOR, QT_SCREEN_SCALE_FACTORS): this is then that scaling alone, whatever the backing scale of the screen. </p>
+
+</div>
+</div>
+<a id="ab796f60d1361f22f8cfbcb12c8c94b2b" name="ab796f60d1361f22f8cfbcb12c8c94b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab796f60d1361f22f8cfbcb12c8c94b2b">&#9670;&#160;</a></span>keyPressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::PluginWindow::keyPressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Escape closes the window as its close button does. QDialog would reject it instead, which since Qt 6.3 closes it without a closeEvent: the one place each plug-in host learns that its editor is gone. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_plugin_window_8hpp_source.html">PluginWindow.hpp</a></li>
 <li><b>PluginWindow.cpp</b></li>

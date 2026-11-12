@@ -5,5 +5,6 @@ var searchData=
   ['keeps_2',['keeps',['../struct_scenario_1_1_command_1_1_port_signature.html#ac25dcd051a7afefb208ec140879edfd7',1,'Scenario::Command::PortSignature']]],
   ['key_3',['key',['../classscore_1_1_default_library.html#af210f7155edd5cff9d461cb317fb966f',1,'score::DefaultLibrary::key()'],['../struct_nodes_1_1_looper_1_1midi__control.html#ac71f4cdc667f83845ab8c98df56b7335',1,'Nodes::Looper::midi_control::key()'],['../struct_j_s_1_1_component_cache.html#a9eadf9b2560af1cc107e373e58547ef7',1,'JS::ComponentCache::key()']]],
   ['key_5fcolumn_4',['key_column',['../structavnd__tools_1_1_pattern_combiner.html#a0884065bb7a64d780ba695c0d4b81952',1,'avnd_tools::PatternCombiner']]],
-  ['kind_5',['kind',['../class_j_s_1_1_scriptable_names.html#a7505008956f61d55ab12229004948cff',1,'JS::ScriptableNames']]]
+  ['keypressevent_5',['keyPressEvent',['../classscore_1_1_plugin_window.html#ab796f60d1361f22f8cfbcb12c8c94b2b',1,'score::PluginWindow']]],
+  ['kind_6',['kind',['../class_j_s_1_1_scriptable_names.html#a7505008956f61d55ab12229004948cff',1,'JS::ScriptableNames']]]
 ];

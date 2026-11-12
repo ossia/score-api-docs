@@ -182,7 +182,7 @@ var annotated_dup =
       [ "LibraryHandler", "class_clap_1_1_library_handler.html", null ],
       [ "PluginInfo", "struct_clap_1_1_plugin_info.html", null ],
       [ "SettingsWidget", "class_clap_1_1_settings_widget.html", null ],
-      [ "Window", "class_clap_1_1_window.html", null ]
+      [ "Window", "class_clap_1_1_window.html", "class_clap_1_1_window" ]
     ] ],
     [ "ControlSurface", null, [
       [ "AddControl", "class_control_surface_1_1_add_control.html", null ],
@@ -3128,7 +3128,7 @@ var annotated_dup =
       [ "PathRoots", "structscore_1_1_path_roots.html", "structscore_1_1_path_roots" ],
       [ "Plugin", "structscore_1_1_plugin.html", null ],
       [ "Plugin_QtInterface", "classscore_1_1_plugin___qt_interface.html", null ],
-      [ "PluginWindow", "classscore_1_1_plugin_window.html", null ],
+      [ "PluginWindow", "classscore_1_1_plugin_window.html", "classscore_1_1_plugin_window" ],
       [ "PointerLock", "structscore_1_1_pointer_lock.html", null ],
       [ "PolymorphicComponentHierarchyManager", "classscore_1_1_polymorphic_component_hierarchy_manager.html", "classscore_1_1_polymorphic_component_hierarchy_manager" ],
       [ "PositionedEvent", "structscore_1_1_positioned_event.html", null ],
@@ -3643,19 +3643,19 @@ var annotated_dup =
     [ "vst3", null, [
       [ "ApplicationPlugin", "classvst3_1_1_application_plugin.html", "classvst3_1_1_application_plugin" ],
       [ "AvailablePlugin", "structvst3_1_1_available_plugin.html", null ],
-      [ "BusActivationVisitor", "structvst3_1_1_bus_activation_visitor.html", null ],
       [ "ComponentHandler", "classvst3_1_1_component_handler.html", null ],
       [ "ControlInlet", "classvst3_1_1_control_inlet.html", null ],
       [ "CreateControl", "classvst3_1_1_create_control.html", null ],
+      [ "EditorSize", "structvst3_1_1_editor_size.html", "structvst3_1_1_editor_size" ],
       [ "Executor", "classvst3_1_1_executor.html", null ],
-      [ "HostApp", "structvst3_1_1_host_app.html", null ],
+      [ "HostApp", "structvst3_1_1_host_app.html", "structvst3_1_1_host_app" ],
       [ "LibraryHandler", "classvst3_1_1_library_handler.html", null ],
       [ "Model", "classvst3_1_1_model.html", "classvst3_1_1_model" ],
       [ "output_param_changes", "classvst3_1_1output__param__changes.html", "classvst3_1_1output__param__changes" ],
-      [ "param_changes", "classvst3_1_1param__changes.html", null ],
+      [ "param_changes", "classvst3_1_1param__changes.html", "classvst3_1_1param__changes" ],
       [ "param_queue", "classvst3_1_1param__queue.html", null ],
       [ "PlugFrame", "classvst3_1_1_plug_frame.html", null ],
-      [ "Plugin", "structvst3_1_1_plugin.html", null ],
+      [ "Plugin", "structvst3_1_1_plugin.html", "structvst3_1_1_plugin" ],
       [ "PortCreationVisitor", "structvst3_1_1_port_creation_visitor.html", null ],
       [ "RemoveControl", "classvst3_1_1_remove_control.html", null ],
       [ "SetControl", "classvst3_1_1_set_control.html", null ],
@@ -3668,7 +3668,7 @@ var annotated_dup =
       [ "VSTFloatSlider", "structvst3_1_1_v_s_t_float_slider.html", null ],
       [ "VSTGraphicsSlider", "classvst3_1_1_v_s_t_graphics_slider.html", null ],
       [ "Window", "classvst3_1_1_window.html", null ],
-      [ "WindowContainer", "structvst3_1_1_window_container.html", null ]
+      [ "WindowContainer", "structvst3_1_1_window_container.html", "structvst3_1_1_window_container" ]
     ] ],
     [ "WidgetFactory", null, [
       [ "Button", "struct_widget_factory_1_1_button.html", null ],
