@@ -133,6 +133,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mapHostUrids</b> ()</
 <tr class="memitem:a897cfed6ad9c603e383b698613565fda" id="r_a897cfed6ad9c603e383b698613565fda"><td class="memItemLeft" align="right" valign="top"><a id="a897cfed6ad9c603e383b698613565fda" name="a897cfed6ad9c603e383b698613565fda"></a>
 LV2_Feature const *const *&#160;</td><td class="memItemRight" valign="bottom"><b>features</b> () const</td></tr>
 <tr class="separator:a897cfed6ad9c603e383b698613565fda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a475092ccedc2571c9f683ae7fc56b2c7" id="r_a475092ccedc2571c9f683ae7fc56b2c7"><td class="memItemLeft" align="right" valign="top">SharedInstance&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_global_context.html#a475092ccedc2571c9f683ae7fc56b2c7">instantiate</a> (const LilvPlugin *plugin, double rate)</td></tr>
+<tr class="separator:a475092ccedc2571c9f683ae7fc56b2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32804c196cefad777cdbbb63602482d" id="r_ad32804c196cefad777cdbbb63602482d"><td class="memItemLeft" align="right" valign="top"><a id="ad32804c196cefad777cdbbb63602482d" name="ad32804c196cefad777cdbbb63602482d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setSampleRate</b> (double rate) noexcept</td></tr>
 <tr class="memdesc:ad32804c196cefad777cdbbb63602482d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both, as the options plug-ins and UIs are given point at them. <br /></td></tr>
@@ -143,6 +145,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a522dd0e4a2a4b355b6c74ed8efe20912" id="r_a522dd0e4a2a4b355b6c74ed8efe20912"><td class="memItemLeft" align="right" valign="top"><a id="a522dd0e4a2a4b355b6c74ed8efe20912" name="a522dd0e4a2a4b355b6c74ed8efe20912"></a>
 <a class="el" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>host</b></td></tr>
 <tr class="separator:a522dd0e4a2a4b355b6c74ed8efe20912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c155fb88265560fa0d70a341db85fa" id="r_a79c155fb88265560fa0d70a341db85fa"><td class="memItemLeft" align="right" valign="top"><a id="a79c155fb88265560fa0d70a341db85fa" name="a79c155fb88265560fa0d70a341db85fa"></a>
+<a class="el" href="class_l_v2_1_1_worker_thread.html">WorkerThread</a>&#160;</td><td class="memItemRight" valign="bottom"><b>works</b></td></tr>
+<tr class="separator:a79c155fb88265560fa0d70a341db85fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4d7987e9ea4e7be08e13a0755bb1a0f" id="r_ae4d7987e9ea4e7be08e13a0755bb1a0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_global_context.html#ae4d7987e9ea4e7be08e13a0755bb1a0f">sampleRate</a> = 44100.</td></tr>
 <tr class="separator:ae4d7987e9ea4e7be08e13a0755bb1a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab5e67704cb7f93d750fe95e2ded3814" id="r_aab5e67704cb7f93d750fe95e2ded3814"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1_global_context.html#aab5e67704cb7f93d750fe95e2ded3814">paramSampleRate</a> = 44100.f</td></tr>
@@ -179,6 +184,7 @@ LV2_Event_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>event</b
 <tr class="separator:aa9dc098b8160b5a98c2d7d64a4f16a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ea0c64739c3b201981411f98c5f222" id="r_af1ea0c64739c3b201981411f98c5f222"><td class="memItemLeft" align="right" valign="top"><a id="af1ea0c64739c3b201981411f98c5f222" name="af1ea0c64739c3b201981411f98c5f222"></a>
 LV2_Worker_Schedule&#160;</td><td class="memItemRight" valign="bottom"><b>worker</b> {}</td></tr>
+<tr class="memdesc:af1ea0c64739c3b201981411f98c5f222"><td class="mdescLeft">&#160;</td><td class="mdescRight">What an instance not made by <a class="el" href="struct_l_v2_1_1_global_context.html#a475092ccedc2571c9f683ae7fc56b2c7">instantiate()</a> is given: it cannot schedule. <br /></td></tr>
 <tr class="separator:af1ea0c64739c3b201981411f98c5f222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3fd50b2d44b9e16d4c8dd6a874c6274" id="r_aa3fd50b2d44b9e16d4c8dd6a874c6274"><td class="memItemLeft" align="right" valign="top"><a id="aa3fd50b2d44b9e16d4c8dd6a874c6274" name="aa3fd50b2d44b9e16d4c8dd6a874c6274"></a>
 LV2_Worker_Schedule&#160;</td><td class="memItemRight" valign="bottom"><b>worker_state</b> {}</td></tr>
@@ -211,10 +217,10 @@ LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>event_feature<
 LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>options_feature</b> {LV2_OPTIONS__options, nullptr}</td></tr>
 <tr class="separator:a7e0002f4135ed850d7b172e605b09f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9d84762d430bad9f58ca3b12c2d520" id="r_a4a9d84762d430bad9f58ca3b12c2d520"><td class="memItemLeft" align="right" valign="top"><a id="a4a9d84762d430bad9f58ca3b12c2d520" name="a4a9d84762d430bad9f58ca3b12c2d520"></a>
-LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>worker_feature</b> {LV2_WORKER__schedule, &amp;worker}</td></tr>
+LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>worker_feature</b> {LV2_WORKER__schedule, &amp;<a class="el" href="struct_l_v2_1_1_global_context.html#af1ea0c64739c3b201981411f98c5f222">worker</a>}</td></tr>
 <tr class="separator:a4a9d84762d430bad9f58ca3b12c2d520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a773290910bb5e71c043f3fede84558b6" id="r_a773290910bb5e71c043f3fede84558b6"><td class="memItemLeft" align="right" valign="top"><a id="a773290910bb5e71c043f3fede84558b6" name="a773290910bb5e71c043f3fede84558b6"></a>
-LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>worker_state_feature</b> {LV2_WORKER__schedule, &amp;worker}</td></tr>
+LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>worker_state_feature</b> {LV2_WORKER__schedule, &amp;<a class="el" href="struct_l_v2_1_1_global_context.html#af1ea0c64739c3b201981411f98c5f222">worker</a>}</td></tr>
 <tr class="separator:a773290910bb5e71c043f3fede84558b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0659c04170424154891f28454abb3cd6" id="r_a0659c04170424154891f28454abb3cd6"><td class="memItemLeft" align="right" valign="top"><a id="a0659c04170424154891f28454abb3cd6" name="a0659c04170424154891f28454abb3cd6"></a>
 LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>logger_feature</b> {LV2_LOG__log, &amp;logger}</td></tr>
@@ -247,6 +253,36 @@ SuilHost *&#160;</td><td class="memItemRight" valign="bottom"><b>ui_host</b> {}<
 const LV2_Feature&#160;</td><td class="memItemRight" valign="bottom"><b>data_feature</b> {LV2_DATA_ACCESS_URI, &amp;ext_data}</td></tr>
 <tr class="separator:ab32107d8505e6882b15db85e85a775ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a475092ccedc2571c9f683ae7fc56b2c7" name="a475092ccedc2571c9f683ae7fc56b2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a475092ccedc2571c9f683ae7fc56b2c7">&#9670;&#160;</a></span>instantiate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SharedInstance LV2::GlobalContext::instantiate </td>
+          <td>(</td>
+          <td class="paramtype">const LilvPlugin *&#160;</td>
+          <td class="paramname"><em>plugin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[main thread] An instance of the plug-in, with a worker of its own when it has the worker interface; null when lilv cannot make one. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aab5e67704cb7f93d750fe95e2ded3814" name="aab5e67704cb7f93d750fe95e2ded3814"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab5e67704cb7f93d750fe95e2ded3814">&#9670;&#160;</a></span>paramSampleRate</h2>

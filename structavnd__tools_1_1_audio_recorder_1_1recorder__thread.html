@@ -115,6 +115,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc675d5805bc06b83b2f2aa3f0323222" id="r_acc675d5805bc06b83b2f2aa3f0323222"><td class="memItemLeft" align="right" valign="top"><a id="acc675d5805bc06b83b2f2aa3f0323222" name="acc675d5805bc06b83b2f2aa3f0323222"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>recorder_thread</b> (const <a class="el" href="structscore_1_1_document_context.html">score::DocumentContext</a> &amp;context)</td></tr>
 <tr class="separator:acc675d5805bc06b83b2f2aa3f0323222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73a0ce87e26090263b6925ab5f08bdb" id="r_ae73a0ce87e26090263b6925ab5f08bdb"><td class="memItemLeft" align="right" valign="top"><a id="ae73a0ce87e26090263b6925ab5f08bdb" name="ae73a0ce87e26090263b6925ab5f08bdb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve</b> (std::size_t capacity, int count)</td></tr>
+<tr class="memdesc:ae73a0ce87e26090263b6925ab5f08bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main thread, before the first tick. <br /></td></tr>
+<tr class="separator:ae73a0ce87e26090263b6925ab5f08bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee716dec0faf4a86d86015f5a692e07b" id="r_aee716dec0faf4a86d86015f5a692e07b"><td class="memItemLeft" align="right" valign="top"><a id="aee716dec0faf4a86d86015f5a692e07b" name="aee716dec0faf4a86d86015f5a692e07b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>give_back</b> (audio_buffer b, std::size_t needed)</td></tr>
+<tr class="memdesc:aee716dec0faf4a86d86015f5a692e07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grows a buffer to what the ticks have needed, then puts it back. <br /></td></tr>
+<tr class="separator:aee716dec0faf4a86d86015f5a692e07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18a14b3ab16738525ca90bae5b97636d" id="r_a18a14b3ab16738525ca90bae5b97636d"><td class="memItemLeft" align="right" valign="top"><a id="a18a14b3ab16738525ca90bae5b97636d" name="a18a14b3ab16738525ca90bae5b97636d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> ()</td></tr>
 <tr class="separator:a18a14b3ab16738525ca90bae5b97636d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +153,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>rate</b> = 0</td></tr>
 <tr class="memitem:ab28b1f9c3391748d6601c27fa6116f03" id="r_ab28b1f9c3391748d6601c27fa6116f03"><td class="memItemLeft" align="right" valign="top"><a id="ab28b1f9c3391748d6601c27fa6116f03" name="ab28b1f9c3391748d6601c27fa6116f03"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>must_record</b> = false</td></tr>
 <tr class="separator:ab28b1f9c3391748d6601c27fa6116f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf5b34d7a3f8b6163f25bbca8c16e62" id="r_a9bf5b34d7a3f8b6163f25bbca8c16e62"><td class="memItemLeft" align="right" valign="top">ossia::object_pool&lt; audio_buffer &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_audio_recorder_1_1recorder__thread.html#a9bf5b34d7a3f8b6163f25bbca8c16e62">pool</a></td></tr>
+<tr class="separator:a9bf5b34d7a3f8b6163f25bbca8c16e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b80c592fa077041a34edd6289ccae1" id="r_ad8b80c592fa077041a34edd6289ccae1"><td class="memItemLeft" align="right" valign="top"><a id="ad8b80c592fa077041a34edd6289ccae1" name="ad8b80c592fa077041a34edd6289ccae1"></a>
+std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>buffer_capacity</b> = 0</td></tr>
+<tr class="separator:ad8b80c592fa077041a34edd6289ccae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9bf5b34d7a3f8b6163f25bbca8c16e62" name="a9bf5b34d7a3f8b6163f25bbca8c16e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bf5b34d7a3f8b6163f25bbca8c16e62">&#9670;&#160;</a></span>pool</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ossia::object_pool&lt;audio_buffer&gt; avnd_tools::AudioRecorder::recorder_thread::pool</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The buffers the audio thread copies its ticks in: taken there, given back here once written. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_audio_recorder_8hpp_source.html">AudioRecorder.hpp</a></li>
 </ul>

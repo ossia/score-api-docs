@@ -8,5 +8,6 @@ var dir_d4a8d9b1bd7538626b72098c59c9f5a1 =
     [ "DMXProtocolCreation.hpp", "_d_m_x_protocol_creation_8hpp_source.html", null ],
     [ "FixtureDatabase.hpp", "_fixture_database_8hpp_source.html", null ],
     [ "FixtureDialog.hpp", "_fixture_dialog_8hpp_source.html", null ],
-    [ "LEDDialog.hpp", "_l_e_d_dialog_8hpp_source.html", null ]
+    [ "LEDDialog.hpp", "_l_e_d_dialog_8hpp_source.html", null ],
+    [ "OpenFixtureLibrary.hpp", "_open_fixture_library_8hpp_source.html", null ]
 ];

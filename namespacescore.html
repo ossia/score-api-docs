@@ -1250,6 +1250,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>pinDefaultOpenGLForma
 <tr class="separator:a52c09d16d1344a85f85513ee7d2a8c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac117bfefa2c531d617d66245a16ce88" id="r_aac117bfefa2c531d617d66245a16ce88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#aac117bfefa2c531d617d66245a16ce88">setLayoutStretch</a> (QGraphicsItem &amp;item)</td></tr>
 <tr class="separator:aac117bfefa2c531d617d66245a16ce88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b8e676c85104cabb67d70bbb1a189a" id="r_a07b8e676c85104cabb67d70bbb1a189a"><td class="memItemLeft" align="right" valign="top"><a id="a07b8e676c85104cabb67d70bbb1a189a" name="a07b8e676c85104cabb67d70bbb1a189a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLayoutExcluded</b> (const QGraphicsItem &amp;item) noexcept</td></tr>
+<tr class="separator:a07b8e676c85104cabb67d70bbb1a189a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d84dd17057e79c23ff66a3f6fc60fb" id="r_aa1d84dd17057e79c23ff66a3f6fc60fb"><td class="memItemLeft" align="right" valign="top"><a id="aa1d84dd17057e79c23ff66a3f6fc60fb" name="aa1d84dd17057e79c23ff66a3f6fc60fb"></a>
+QList&lt; QGraphicsItem * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>layoutItems</b> (const QGraphicsItem &amp;parent)</td></tr>
+<tr class="memdesc:aa1d84dd17057e79c23ff66a3f6fc60fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The children a layout places: those not excluded, in order. <br /></td></tr>
+<tr class="separator:aa1d84dd17057e79c23ff66a3f6fc60fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa810b806d36fcd645b5dfbbe79b301" id="r_a6fa810b806d36fcd645b5dfbbe79b301"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a6fa810b806d36fcd645b5dfbbe79b301">setLayoutExcluded</a> (QGraphicsItem &amp;item, bool excluded)</td></tr>
+<tr class="separator:a6fa810b806d36fcd645b5dfbbe79b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaf49f94ce372b8ebddfe347b42bc5a8" id="r_acaf49f94ce372b8ebddfe347b42bc5a8"><td class="memItemLeft" align="right" valign="top"><a id="acaf49f94ce372b8ebddfe347b42bc5a8" name="acaf49f94ce372b8ebddfe347b42bc5a8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>closeRightClickWidget</b> ()</td></tr>
 <tr class="memdesc:acaf49f94ce372b8ebddfe347b42bc5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes down whatever right-click box is open, if any. <br /></td></tr>
@@ -3497,6 +3506,35 @@ template&lt;typename T &gt; </div>
 
 <p>Give a QDrag the drag image QAbstractItemView::startDrag would have made. </p>
 <p>Renders the dragged indices through the view's item delegate, the way the default startDrag implementation does. Views that override startDrag and do not set a pixmap otherwise leave QDrag::pixmap() null, which the platform plugin is then free to fill in with whatever it likes. </p>
+
+</div>
+</div>
+<a id="a6fa810b806d36fcd645b5dfbbe79b301" name="a6fa810b806d36fcd645b5dfbbe79b301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa810b806d36fcd645b5dfbbe79b301">&#9670;&#160;</a></span>setLayoutExcluded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SCORE_LIB_BASE_EXPORT void score::setLayoutExcluded </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsItem &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>excluded</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opt-in collapsed controls: unlike setVisible(false), these reserve no cell. The item's scale is restored when it becomes part of the layout again. </p>
 
 </div>
 </div>

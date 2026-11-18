@@ -127,6 +127,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac616a2465bdc1e37e64e84a4333d64d8" id="r_ac616a2465bdc1e37e64e84a4333d64d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_application_plugin.html#ac616a2465bdc1e37e64e84a4333d64d8">makeGUIElements</a> () override</td></tr>
 <tr class="memdesc:ac616a2465bdc1e37e64e84a4333d64d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeGUIElements  <br /></td></tr>
 <tr class="separator:ac616a2465bdc1e37e64e84a4333d64d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8a9a93ef3c4c0a10f23c978aa8dbeb" id="r_add8a9a93ef3c4c0a10f23c978aa8dbeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_application_plugin.html#add8a9a93ef3c4c0a10f23c978aa8dbeb">setPlayingDocument</a> (<a class="el" href="classscore_1_1_document.html">score::Document</a> *doc)</td></tr>
+<tr class="separator:add8a9a93ef3c4c0a10f23c978aa8dbeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3e4699fab1f6f97d5443a371dbf276" id="r_a9b3e4699fab1f6f97d5443a371dbf276"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_application_plugin.html#a9b3e4699fab1f6f97d5443a371dbf276">engineAboutToChange</a> ()</td></tr>
+<tr class="separator:a9b3e4699fab1f6f97d5443a371dbf276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classscore_1_1_g_u_i_application_plugin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classscore_1_1_g_u_i_application_plugin')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html">score::GUIApplicationPlugin</a></td></tr>
 <tr class="memitem:aba3e49da450d061909daaab4f4847f28 inherit pub_methods_classscore_1_1_g_u_i_application_plugin" id="r_aba3e49da450d061909daaab4f4847f28"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>GUIApplicationPlugin</b> (const <a class="el" href="structscore_1_1_g_u_i_application_context.html">score::GUIApplicationContext</a> &amp;presenter)</td></tr>
@@ -188,6 +192,24 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <tr class="separator:a45b38739c51b1dd0e42e238a3f061e08 inherit pub_types_classscore_1_1_g_u_i_application_plugin"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9b3e4699fab1f6f97d5443a371dbf276" name="a9b3e4699fab1f6f97d5443a371dbf276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3e4699fab1f6f97d5443a371dbf276">&#9670;&#160;</a></span>engineAboutToChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio::ApplicationPlugin::engineAboutToChange </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The engine is about to be replaced, rebound to another document's audio device, or stopped: what plays in it has to stop first. </p>
+
+</div>
+</div>
 <a id="ac616a2465bdc1e37e64e84a4333d64d8" name="ac616a2465bdc1e37e64e84a4333d64d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac616a2465bdc1e37e64e84a4333d64d8">&#9670;&#160;</a></span>makeGUIElements()</h2>
 
@@ -217,6 +239,25 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>GUIElements</b> = <a
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structscore_1_1_g_u_i_elements.html">score::GUIElements</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classscore_1_1_g_u_i_application_plugin.html#adfcaff7c9e36c36d8f0138bebeb7a27a">score::GUIApplicationPlugin</a>.</p>
+
+</div>
+</div>
+<a id="add8a9a93ef3c4c0a10f23c978aa8dbeb" name="add8a9a93ef3c4c0a10f23c978aa8dbeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add8a9a93ef3c4c0a10f23c978aa8dbeb">&#9670;&#160;</a></span>setPlayingDocument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Audio::ApplicationPlugin::setPlayingDocument </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classscore_1_1_document.html">score::Document</a> *&#160;</td>
+          <td class="paramname"><em>doc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The document whose execution runs in the engine, null when none plays: set by the execution. </p>
 
 </div>
 </div>

@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Member List</title>
+        <title>score: LV2::WorkerThread Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_protocols_1_1_wheel.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('class_l_v2_1_1_worker_thread.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -102,15 +102,55 @@ $(document).ready(function(){initNavTree('struct_protocols_1_1_wheel.html',''); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Protocols::Wheel Member List</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_l_v2_1_1_worker_thread-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">LV2::WorkerThread Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Runs the works the plug-ins schedule, one after the other: an instance never has two at once, as the worker extension requires, and the convolvers that plan their FFTs in a work (zita-convolver) never run FFTW's planner, which is not reentrant, on two threads. </p>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa4c7ffdd249782e00815b582adc5ffa4" id="r_aa4c7ffdd249782e00815b582adc5ffa4"><td class="memItemLeft" align="right" valign="top"><a id="aa4c7ffdd249782e00815b582adc5ffa4" name="aa4c7ffdd249782e00815b582adc5ffa4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WorkerThread</b> (const <a class="el" href="class_l_v2_1_1_worker_thread.html">WorkerThread</a> &amp;)=delete</td></tr>
+<tr class="separator:aa4c7ffdd249782e00815b582adc5ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19149806cc3aa8d4b2cafc1473e8c0c" id="r_aa19149806cc3aa8d4b2cafc1473e8c0c"><td class="memItemLeft" align="right" valign="top"><a id="aa19149806cc3aa8d4b2cafc1473e8c0c" name="aa19149806cc3aa8d4b2cafc1473e8c0c"></a>
+<a class="el" href="class_l_v2_1_1_worker_thread.html">WorkerThread</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_l_v2_1_1_worker_thread.html">WorkerThread</a> &amp;)=delete</td></tr>
+<tr class="separator:aa19149806cc3aa8d4b2cafc1473e8c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01cbcc4a2725de82f6ecc9aa88e21c55" id="r_a01cbcc4a2725de82f6ecc9aa88e21c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_v2_1_1_worker_thread.html#a01cbcc4a2725de82f6ecc9aa88e21c55">add</a> (const SharedInstance &amp;h)</td></tr>
+<tr class="separator:a01cbcc4a2725de82f6ecc9aa88e21c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e0ad8d8fcd565718e3068cafc58dfc5" id="r_a2e0ad8d8fcd565718e3068cafc58dfc5"><td class="memItemLeft" align="right" valign="top"><a id="a2e0ad8d8fcd565718e3068cafc58dfc5" name="a2e0ad8d8fcd565718e3068cafc58dfc5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> () noexcept</td></tr>
+<tr class="memdesc:a2e0ad8d8fcd565718e3068cafc58dfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[run context] A request was queued. Wait-free: wakes the thread up. <br /></td></tr>
+<tr class="separator:a2e0ad8d8fcd565718e3068cafc58dfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a01cbcc4a2725de82f6ecc9aa88e21c55" name="a01cbcc4a2725de82f6ecc9aa88e21c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01cbcc4a2725de82f6ecc9aa88e21c55">&#9670;&#160;</a></span>add()</h2>
 
-<p>This is the complete list of members for <a class="el" href="struct_protocols_1_1_wheel.html">Protocols::Wheel</a>, including all inherited members.</p>
-<table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>name</b> (defined in <a class="el" href="struct_protocols_1_1_wheel.html">Protocols::Wheel</a>)</td><td class="entry"><a class="el" href="struct_protocols_1_1_wheel.html">Protocols::Wheel</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>wheelslots</b> (defined in <a class="el" href="struct_protocols_1_1_wheel.html">Protocols::Wheel</a>)</td><td class="entry"><a class="el" href="struct_protocols_1_1_wheel.html">Protocols::Wheel</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LV2::WorkerThread::add </td>
+          <td>(</td>
+          <td class="paramtype">const SharedInstance &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[main thread] The works of this instance are run from now on. It is held only while one runs. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
+<li><b>Context.cpp</b></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->
 <!-- start footer part -->

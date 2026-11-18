@@ -104,10 +104,11 @@ $(document).ready(function(){initNavTree('class_clap_1_1clap__node__base.html','
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="class_clap_1_1clap__node__base-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Clap::clap_node_base Class Reference</div></div>
+  <div class="headertitle"><div class="title">Clap::clap_node_base Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -127,27 +128,34 @@ Inheritance diagram for Clap::clap_node_base:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4aff0abb4980e1da45f3512f12c2bf23" id="r_a4aff0abb4980e1da45f3512f12c2bf23"><td class="memItemLeft" align="right" valign="top"><a id="a4aff0abb4980e1da45f3512f12c2bf23" name="a4aff0abb4980e1da45f3512f12c2bf23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>clap_node_base</b> (const Clap::Model &amp;proc)</td></tr>
-<tr class="separator:a4aff0abb4980e1da45f3512f12c2bf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80378cecb4b2885c29c04574df7805cb" id="r_a80378cecb4b2885c29c04574df7805cb"><td class="memItemLeft" align="right" valign="top"><a id="a80378cecb4b2885c29c04574df7805cb" name="a80378cecb4b2885c29c04574df7805cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>clap_node_base</b> (const Clap::Model &amp;proc, double sample_rate, uint32_t block_size)</td></tr>
+<tr class="separator:a80378cecb4b2885c29c04574df7805cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9770e6dcc289026d91f515fba82796c5" id="r_a9770e6dcc289026d91f515fba82796c5"><td class="memItemLeft" align="right" valign="top"><a id="a9770e6dcc289026d91f515fba82796c5" name="a9770e6dcc289026d91f515fba82796c5"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>label</b> () const noexcept override</td></tr>
 <tr class="separator:a9770e6dcc289026d91f515fba82796c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ce505bf33feb991e7c71a1f9dff64be" id="r_a9ce505bf33feb991e7c71a1f9dff64be"><td class="memItemLeft" align="right" valign="top"><a id="a9ce505bf33feb991e7c71a1f9dff64be" name="a9ce505bf33feb991e7c71a1f9dff64be"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>activate_plugin</b> (const clap_plugin_t *plugin, double sample_rate, uint32_t max_buffer_size)</td></tr>
-<tr class="separator:a9ce505bf33feb991e7c71a1f9dff64be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a107d7d7126143d4efb169c55109be44a" id="r_a107d7d7126143d4efb169c55109be44a"><td class="memItemLeft" align="right" valign="top"><a id="a107d7d7126143d4efb169c55109be44a" name="a107d7d7126143d4efb169c55109be44a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>start_plugin</b> (const clap_plugin_t *plugin)</td></tr>
-<tr class="separator:a107d7d7126143d4efb169c55109be44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589e78f3a9ed2240bc83cfdb57c65fad" id="r_a589e78f3a9ed2240bc83cfdb57c65fad"><td class="memItemLeft" align="right" valign="top"><a id="a589e78f3a9ed2240bc83cfdb57c65fad" name="a589e78f3a9ed2240bc83cfdb57c65fad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_plugin</b> (const clap_plugin_t *plugin)</td></tr>
-<tr class="separator:a589e78f3a9ed2240bc83cfdb57c65fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d4f91498f6d4387bec4277438a59433" id="r_a2d4f91498f6d4387bec4277438a59433"><td class="memItemLeft" align="right" valign="top"><a id="a2d4f91498f6d4387bec4277438a59433" name="a2d4f91498f6d4387bec4277438a59433"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_parameter_values</b> (const clap_plugin_t *plugin)</td></tr>
-<tr class="separator:a2d4f91498f6d4387bec4277438a59433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa639fadd4db3841e13f39e5b305954a" id="r_afa639fadd4db3841e13f39e5b305954a"><td class="memItemLeft" align="right" valign="top"><a id="afa639fadd4db3841e13f39e5b305954a" name="afa639fadd4db3841e13f39e5b305954a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>deactivate_plugin</b> (const clap_plugin_t *plugin)</td></tr>
-<tr class="separator:afa639fadd4db3841e13f39e5b305954a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700ebd95b5b59415e74a7d1f05cc59b5" id="r_a700ebd95b5b59415e74a7d1f05cc59b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a700ebd95b5b59415e74a7d1f05cc59b5">notify_stopped</a> (PluginInstance &amp;inst) noexcept</td></tr>
+<tr class="separator:a700ebd95b5b59415e74a7d1f05cc59b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57ce9e07128d0488b42582107d50516" id="r_af57ce9e07128d0488b42582107d50516"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#af57ce9e07128d0488b42582107d50516">ensure_processing</a> (PluginInstance &amp;inst, bool &amp;processing, bool own_cookies) noexcept</td></tr>
+<tr class="separator:af57ce9e07128d0488b42582107d50516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f36abfd61df5b04de56dab18068a06" id="r_ac7f36abfd61df5b04de56dab18068a06"><td class="memItemLeft" align="right" valign="top"><a id="ac7f36abfd61df5b04de56dab18068a06" name="ac7f36abfd61df5b04de56dab18068a06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stop_instance</b> (PluginInstance &amp;inst, bool &amp;processing) noexcept</td></tr>
+<tr class="separator:ac7f36abfd61df5b04de56dab18068a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ec9aafe946ff595439e3e46d8cc35f" id="r_a96ec9aafe946ff595439e3e46d8cc35f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a96ec9aafe946ff595439e3e46d8cc35f">stop_all</a> () noexcept=0</td></tr>
+<tr class="memdesc:a96ec9aafe946ff595439e3e46d8cc35f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops every instance this node processes.  <br /></td></tr>
+<tr class="separator:a96ec9aafe946ff595439e3e46d8cc35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56dc33114e164a9cf1ef4e722b126164" id="r_a56dc33114e164a9cf1ef4e722b126164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a56dc33114e164a9cf1ef4e722b126164">flush_last_values</a> (const clap_plugin_t *plugin, const clap_plugin_params_t *params, bool own_cookies, bool inputs_only=false, const std::vector&lt; uint8_t &gt; *changed=nullptr) noexcept</td></tr>
+<tr class="separator:a56dc33114e164a9cf1ef4e722b126164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d6c30cab241d3edbdd59f9001814390" id="r_a2d6c30cab241d3edbdd59f9001814390"><td class="memItemLeft" align="right" valign="top"><a id="a2d6c30cab241d3edbdd59f9001814390" name="a2d6c30cab241d3edbdd59f9001814390"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>sent_input_values</b> () noexcept</td></tr>
+<tr class="memdesc:a2d6c30cab241d3edbdd59f9001814390"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first instance was given the values the parameter inputs carry. <br /></td></tr>
+<tr class="separator:a2d6c30cab241d3edbdd59f9001814390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c95c0ef96ffd47893c19959d618299" id="r_a93c95c0ef96ffd47893c19959d618299"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a93c95c0ef96ffd47893c19959d618299">carries_value</a> (std::size_t i) const noexcept</td></tr>
+<tr class="separator:a93c95c0ef96ffd47893c19959d618299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d631b537862fe57b12f7779cdaab4c" id="r_ad5d631b537862fe57b12f7779cdaab4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#ad5d631b537862fe57b12f7779cdaab4c">flush_input_values</a> (PluginInstance &amp;inst, bool processing, bool own_cookies, const std::vector&lt; uint8_t &gt; *changed=nullptr) noexcept</td></tr>
+<tr class="separator:ad5d631b537862fe57b12f7779cdaab4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e28a705f5bb48eb2c59b947ea7d4f0" id="r_aa0e28a705f5bb48eb2c59b947ea7d4f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#aa0e28a705f5bb48eb2c59b947ea7d4f0">remember_plugin_values</a> () noexcept</td></tr>
+<tr class="separator:aa0e28a705f5bb48eb2c59b947ea7d4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffa79c0b0e2eca4c130088132af8ed1" id="r_afffa79c0b0e2eca4c130088132af8ed1"><td class="memItemLeft" align="right" valign="top"><a id="afffa79c0b0e2eca4c130088132af8ed1" name="afffa79c0b0e2eca4c130088132af8ed1"></a>
 auto&#160;</td><td class="memItemRight" valign="bottom"><b>make_transport</b> (const ossia::token_request &amp;tk, ossia::exec_state_facade st)</td></tr>
 <tr class="separator:afffa79c0b0e2eca4c130088132af8ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,8 +174,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>process_midi</b> ()</
 <tr class="memitem:a27cea9258cfb4a68ace080a8d40a2f3f" id="r_a27cea9258cfb4a68ace080a8d40a2f3f"><td class="memItemLeft" align="right" valign="top"><a id="a27cea9258cfb4a68ace080a8d40a2f3f" name="a27cea9258cfb4a68ace080a8d40a2f3f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare_input_events</b> (int64_t offset, int samples)</td></tr>
 <tr class="separator:a27cea9258cfb4a68ace080a8d40a2f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606e79a9cd97ce016ea9bb12cd8d70d0" id="r_a606e79a9cd97ce016ea9bb12cd8d70d0"><td class="memItemLeft" align="right" valign="top"><a id="a606e79a9cd97ce016ea9bb12cd8d70d0" name="a606e79a9cd97ce016ea9bb12cd8d70d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>inject_all_notes_off</b> ()</td></tr>
+<tr class="memitem:a606e79a9cd97ce016ea9bb12cd8d70d0" id="r_a606e79a9cd97ce016ea9bb12cd8d70d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a606e79a9cd97ce016ea9bb12cd8d70d0">inject_all_notes_off</a> ()</td></tr>
 <tr class="separator:a606e79a9cd97ce016ea9bb12cd8d70d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49133ed914867e75e773ebe641dc9d0" id="r_ac49133ed914867e75e773ebe641dc9d0"><td class="memItemLeft" align="right" valign="top"><a id="ac49133ed914867e75e773ebe641dc9d0" name="ac49133ed914867e75e773ebe641dc9d0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
@@ -176,11 +183,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispatch_param_outputs</b> ()</td></tr>
 <tr class="separator:a558445e1c179316f0ac5ce56ac2b6cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a48c09c2c7b1e6daee9d3e3244f93c9b8" id="r_a48c09c2c7b1e6daee9d3e3244f93c9b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a48c09c2c7b1e6daee9d3e3244f93c9b8">release_instance</a> (PluginInstance &amp;inst, bool &amp;processing) noexcept</td></tr>
+<tr class="separator:a48c09c2c7b1e6daee9d3e3244f93c9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0a08c4afe07b5685d22e7a0c2483109d" id="r_a0a08c4afe07b5685d22e7a0c2483109d"><td class="memItemLeft" align="right" valign="top"><a id="a0a08c4afe07b5685d22e7a0c2483109d" name="a0a08c4afe07b5685d22e7a0c2483109d"></a>
 std::shared_ptr&lt; Clap::PluginHandle &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>handle</b></td></tr>
 <tr class="separator:a0a08c4afe07b5685d22e7a0c2483109d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57c4f01b53ec1c255c9ba4fb27a4364e" id="r_a57c4f01b53ec1c255c9ba4fb27a4364e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a57c4f01b53ec1c255c9ba4fb27a4364e">m_stopped</a> {}</td></tr>
+<tr class="separator:a57c4f01b53ec1c255c9ba4fb27a4364e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f2ed4ec3b2869265c425c5aac0093e" id="r_a91f2ed4ec3b2869265c425c5aac0093e"><td class="memItemLeft" align="right" valign="top"><a id="a91f2ed4ec3b2869265c425c5aac0093e" name="a91f2ed4ec3b2869265c425c5aac0093e"></a>
+std::weak_ptr&lt; <a class="el" href="struct_execution_1_1_edition_command_queue.html">Execution::EditionCommandQueue</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_edit</b></td></tr>
+<tr class="memdesc:a91f2ed4ec3b2869265c425c5aac0093e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where the main thread hears that an instance stopped processing. <br /></td></tr>
+<tr class="separator:a91f2ed4ec3b2869265c425c5aac0093e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae909343553e5743e3633ef691036d247" id="r_ae909343553e5743e3633ef691036d247"><td class="memItemLeft" align="right" valign="top"><a id="ae909343553e5743e3633ef691036d247" name="ae909343553e5743e3633ef691036d247"></a>
 ossia::small_vector&lt; ossia::audio_inlet *, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>audio_ins</b></td></tr>
 <tr class="separator:ae909343553e5743e3633ef691036d247"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,12 +246,22 @@ std::vector&lt; Process::MidiSysexArena::stream &gt;&#160;</td><td class="memIte
 <tr class="memitem:ab4be11cca213b373ef2f4bb9d1a2bcdc" id="r_ab4be11cca213b373ef2f4bb9d1a2bcdc"><td class="memItemLeft" align="right" valign="top"><a id="ab4be11cca213b373ef2f4bb9d1a2bcdc" name="ab4be11cca213b373ef2f4bb9d1a2bcdc"></a>
 <a class="el" href="struct_clap_1_1event__storage.html">event_storage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_output_events</b></td></tr>
 <tr class="separator:ab4be11cca213b373ef2f4bb9d1a2bcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9f27738bb48315406f6cc6c4fd81219" id="r_aa9f27738bb48315406f6cc6c4fd81219"><td class="memItemLeft" align="right" valign="top"><a id="aa9f27738bb48315406f6cc6c4fd81219" name="aa9f27738bb48315406f6cc6c4fd81219"></a>
-const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_ins</b></td></tr>
-<tr class="separator:aa9f27738bb48315406f6cc6c4fd81219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add94948b929490735d40f7a7e3839945" id="r_add94948b929490735d40f7a7e3839945"><td class="memItemLeft" align="right" valign="top"><a id="add94948b929490735d40f7a7e3839945" name="add94948b929490735d40f7a7e3839945"></a>
-const std::vector&lt; clap_param_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_outs</b></td></tr>
-<tr class="separator:add94948b929490735d40f7a7e3839945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29b7fa8861e0b64783e3c5428fca131" id="r_aa29b7fa8861e0b64783e3c5428fca131"><td class="memItemLeft" align="right" valign="top"><a id="aa29b7fa8861e0b64783e3c5428fca131" name="aa29b7fa8861e0b64783e3c5428fca131"></a>
+<a class="el" href="struct_clap_1_1event__storage.html">event_storage</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_initial_values</b></td></tr>
+<tr class="separator:aa29b7fa8861e0b64783e3c5428fca131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2875c61b076a893940afc577eb960c5e" id="r_a2875c61b076a893940afc577eb960c5e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; clap_param_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a2875c61b076a893940afc577eb960c5e">m_param_ins</a></td></tr>
+<tr class="separator:a2875c61b076a893940afc577eb960c5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14fcf233b7fe10ea21d0497169a82ecd" id="r_a14fcf233b7fe10ea21d0497169a82ecd"><td class="memItemLeft" align="right" valign="top"><a id="a14fcf233b7fe10ea21d0497169a82ecd" name="a14fcf233b7fe10ea21d0497169a82ecd"></a>
+const std::vector&lt; clap_param_info_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_outs</b></td></tr>
+<tr class="separator:a14fcf233b7fe10ea21d0497169a82ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99206a39edaeb4f1cf75106bd9dd0f64" id="r_a99206a39edaeb4f1cf75106bd9dd0f64"><td class="memItemLeft" align="right" valign="top"><a id="a99206a39edaeb4f1cf75106bd9dd0f64" name="a99206a39edaeb4f1cf75106bd9dd0f64"></a>
+ossia::flat_map&lt; clap_id, uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_param_in_index</b></td></tr>
+<tr class="memdesc:a99206a39edaeb4f1cf75106bd9dd0f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each writable parameter's index, by its id. <br /></td></tr>
+<tr class="separator:a99206a39edaeb4f1cf75106bd9dd0f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab64b6eeac5efbc7ff04367b5cf7f0380" id="r_ab64b6eeac5efbc7ff04367b5cf7f0380"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#ab64b6eeac5efbc7ff04367b5cf7f0380">m_last_values</a></td></tr>
+<tr class="separator:ab64b6eeac5efbc7ff04367b5cf7f0380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f87a2edc245892d9e804331cfecb56" id="r_a69f87a2edc245892d9e804331cfecb56"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_clap_1_1clap__node__base.html#a69f87a2edc245892d9e804331cfecb56">m_unsent</a></td></tr>
+<tr class="separator:a69f87a2edc245892d9e804331cfecb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce12cd00efbe9e3b7024fdc416e90ae" id="r_adce12cd00efbe9e3b7024fdc416e90ae"><td class="memItemLeft" align="right" valign="top"><a id="adce12cd00efbe9e3b7024fdc416e90ae" name="adce12cd00efbe9e3b7024fdc416e90ae"></a>
 const std::vector&lt; clap_note_port_info_t &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_midi_ins</b></td></tr>
 <tr class="separator:adce12cd00efbe9e3b7024fdc416e90ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +290,180 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a20f675e6054716be9201ca4d85883df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a93c95c0ef96ffd47893c19959d618299" name="a93c95c0ef96ffd47893c19959d618299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c95c0ef96ffd47893c19959d618299">&#9670;&#160;</a></span>carries_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Clap::clap_node_base::carries_value </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether the input of a parameter carries a value for every instance in this block </p>
+
+</div>
+</div>
+<a id="af57ce9e07128d0488b42582107d50516" name="af57ce9e07128d0488b42582107d50516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af57ce9e07128d0488b42582107d50516">&#9670;&#160;</a></span>ensure_processing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Clap::clap_node_base::ensure_processing </td>
+          <td>(</td>
+          <td class="paramtype">PluginInstance &amp;&#160;</td>
+          <td class="paramname"><em>inst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>processing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>own_cookies</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An instance this node processes, ready for this block: a restart asked for stops it until the main thread did it, an instance not processing yet starts with the values its parameters last had. A plug-in instance other than the one the parameters were listed from does not get their cookies: they point into that one. </p>
+
+</div>
+</div>
+<a id="ad5d631b537862fe57b12f7779cdaab4c" name="ad5d631b537862fe57b12f7779cdaab4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d631b537862fe57b12f7779cdaab4c">&#9670;&#160;</a></span>flush_input_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::clap_node_base::flush_input_values </td>
+          <td>(</td>
+          <td class="paramtype">PluginInstance &amp;&#160;</td>
+          <td class="paramname"><em>inst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>processing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>own_cookies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; *&#160;</td>
+          <td class="paramname"><em>changed</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An instance that processes but is not given this block: the values the parameter inputs carry, which the graph clears once the node ran, reach it through clap.params.flush, as they would when it starts processing. [active ? audio-thread : main-thread], not concurrently to its process(). The parameters <code>changed</code> marks get the value the plug-in last sent out for them, which it set after it was given the inputs' ones. </p>
+
+</div>
+</div>
+<a id="a56dc33114e164a9cf1ef4e722b126164" name="a56dc33114e164a9cf1ef4e722b126164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56dc33114e164a9cf1ef4e722b126164">&#9670;&#160;</a></span>flush_last_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::clap_node_base::flush_last_values </td>
+          <td>(</td>
+          <td class="paramtype">const clap_plugin_t *&#160;</td>
+          <td class="paramname"><em>plugin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const clap_plugin_params_t *&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>own_cookies</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inputs_only</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; uint8_t &gt; *&#160;</td>
+          <td class="paramname"><em>changed</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The values the parameters last had, sent to the plug-in through clap.params.flush rather than process(): process() requires the plug-in's declared audio port layout (a plug-in may assert on it, e.g. Floe). clap/ext/params.h: flush is [active ? audio-thread : main-thread], and this is the audio thread, not within process(). With <code>inputs_only</code>, only those of the parameters whose input carries a value in this block, and those <code>changed</code> marks. </p>
+
+</div>
+</div>
 <a id="a51eaff6915d7b32dfed026faba8f870a" name="a51eaff6915d7b32dfed026faba8f870a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51eaff6915d7b32dfed026faba8f870a">&#9670;&#160;</a></span>in_block()</h2>
 
@@ -286,6 +488,122 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Whether an event dated <code>t</code> frames from the start of the block goes in it: a tick run in blocks gives the earlier ones to its first and the later ones to its last. </p>
+
+</div>
+</div>
+<a id="a606e79a9cd97ce016ea9bb12cd8d70d0" name="a606e79a9cd97ce016ea9bb12cd8d70d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a606e79a9cd97ce016ea9bb12cd8d70d0">&#9670;&#160;</a></span>inject_all_notes_off()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::clap_node_base::inject_all_notes_off </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Each note input gets what its dialects say ends every note: a NOTE_CHOKE of all its keys, CC#120/123 on its 16 channels in MIDI 1 or MIDI 2, or all of them, as a plug-in may take several dialects and ignore chokes. A plug-in without note inputs gets nothing. </p>
+
+</div>
+</div>
+<a id="a700ebd95b5b59415e74a7d1f05cc59b5" name="a700ebd95b5b59415e74a7d1f05cc59b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700ebd95b5b59415e74a7d1f05cc59b5">&#9670;&#160;</a></span>notify_stopped()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::clap_node_base::notify_stopped </td>
+          <td>(</td>
+          <td class="paramtype">PluginInstance &amp;&#160;</td>
+          <td class="paramname"><em>inst</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Notes that the main thread may now deactivate an instance, or restart it </p>
+
+</div>
+</div>
+<a id="a48c09c2c7b1e6daee9d3e3244f93c9b8" name="a48c09c2c7b1e6daee9d3e3244f93c9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48c09c2c7b1e6daee9d3e3244f93c9b8">&#9670;&#160;</a></span>release_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Clap::clap_node_base::release_instance </td>
+          <td>(</td>
+          <td class="paramtype">PluginInstance &amp;&#160;</td>
+          <td class="paramname"><em>inst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>processing</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>An instance this node let go of while it processed it, its stop for the audio thread lost with the execution queue: no audio thread reaches it any more, so this one is its audio thread. The main thread then deactivates it if nothing else holds it. </p>
+
+</div>
+</div>
+<a id="aa0e28a705f5bb48eb2c59b947ea7d4f0" name="aa0e28a705f5bb48eb2c59b947ea7d4f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e28a705f5bb48eb2c59b947ea7d4f0">&#9670;&#160;</a></span>remember_plugin_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::clap_node_base::remember_plugin_values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The values the plug-in sent out for its writable parameters, from its editor: they are the ones it starts with again </p>
 
 </div>
 </div>
@@ -352,6 +670,35 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a96ec9aafe946ff595439e3e46d8cc35f" name="a96ec9aafe946ff595439e3e46d8cc35f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ec9aafe946ff595439e3e46d8cc35f">&#9670;&#160;</a></span>stop_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Clap::clap_node_base::stop_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stops every instance this node processes. </p>
+
+<p>Implemented in <a class="el" href="class_clap_1_1clap__node.html#a292281f8f16b101642886c356c51b5a7">Clap::clap_node</a>, and <a class="el" href="class_clap_1_1clap__node__mono.html#a3e7c9dd960e3688a09aae7e6ae514f25">Clap::clap_node_mono</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a65c3ee586078a26448d3807af35d3165" name="a65c3ee586078a26448d3807af35d3165"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65c3ee586078a26448d3807af35d3165">&#9670;&#160;</a></span>m_deferred_midi</h2>
@@ -365,6 +712,66 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Events from ticks that covered no whole sample, with the port they came in on, waiting for the next block that does cover one. </p>
+
+</div>
+</div>
+<a id="ab64b6eeac5efbc7ff04367b5cf7f0380" name="ab64b6eeac5efbc7ff04367b5cf7f0380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab64b6eeac5efbc7ff04367b5cf7f0380">&#9670;&#160;</a></span>m_last_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; Clap::clap_node_base::m_last_values</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The value each writable parameter last had, from score or from the plug-in: what it starts processing with </p>
+
+</div>
+</div>
+<a id="a2875c61b076a893940afc577eb960c5e" name="a2875c61b076a893940afc577eb960c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2875c61b076a893940afc577eb960c5e">&#9670;&#160;</a></span>m_param_ins</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;clap_param_info_t&gt; Clap::clap_node_base::m_param_ins</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copied: the main thread updates the model's on a rescan of their information, and nothing the audio thread reads changes then (clap/ext/params.h: min, max and cookie change with RESCAN_ALL only, "while the plugin is deactivated") </p>
+
+</div>
+</div>
+<a id="a57c4f01b53ec1c255c9ba4fb27a4364e" name="a57c4f01b53ec1c255c9ba4fb27a4364e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57c4f01b53ec1c255c9ba4fb27a4364e">&#9670;&#160;</a></span>m_stopped</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Clap::clap_node_base::m_stopped {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Its process was stopped: the ticks still running before the engine takes the next one do not start the plug-in again. A start of its process clears it. </p>
+
+</div>
+</div>
+<a id="a69f87a2edc245892d9e804331cfecb56" name="a69f87a2edc245892d9e804331cfecb56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f87a2edc245892d9e804331cfecb56">&#9670;&#160;</a></span>m_unsent</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; Clap::clap_node_base::m_unsent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The parameters whose value from score the first instance was not given yet: what the main thread reads from the plug-in for them is older </p>
 
 </div>
 </div>

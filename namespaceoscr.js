@@ -90,6 +90,7 @@ var namespaceoscr =
     [ "ValueBarItem", "classoscr_1_1_value_bar_item.html", null ],
     [ "ValueListConfig", "structoscr_1_1_value_list_config.html", null ],
     [ "View", "structoscr_1_1_view.html", null ],
+    [ "WheelGesture", "classoscr_1_1_wheel_gesture.html", "classoscr_1_1_wheel_gesture" ],
     [ "xy_bounds", "structoscr_1_1xy__bounds.html", null ],
     [ "string_list_field", "conceptoscr_1_1string__list__field.html", null ],
     [ "value_list_field", "conceptoscr_1_1value__list__field.html", null ],

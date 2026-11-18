@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('_drm_prime_wrap_8hpp_source.html','');
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// calloc&#39;d descriptor the caller must either free() or hand to</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// av_buffer_create with a release callback (see wrapDescriptorAsDrmPrime).</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#if defined(__linux__)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#if defined(__linux__) || defined(__FreeBSD__)</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;libavutil/buffer.h&gt;</span></div>

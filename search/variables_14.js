@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ui_0',['ui',['../structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b',1,'score::ApplicationSettings']]],
+  ['ui_0',['ui',['../struct_l_v2_1_1lv2__node.html#a9b0673e1f121fddcb4269ca2b62d50e6',1,'LV2::lv2_node::ui'],['../structscore_1_1_application_settings.html#a00d81c4a424618b1f79e81e00c64932b',1,'score::ApplicationSettings::ui']]],
   ['ui_5fcontrol_5fouts_1',['ui_control_outs',['../class_gfx_1_1gfx__exec__node.html#ae57d01834ea1f26f0811176330d40647',1,'Gfx::gfx_exec_node']]],
   ['uiconnections_2',['uiConnections',['../structoscr_1_1_root_item.html#a7f93a19f0f2006a1b273de5aaaa6ad06',1,'oscr::RootItem']]],
   ['uiedits_3',['uiEdits',['../structoscr_1_1_root_item.html#ab1ab25e9b8529e6cb899497f02b5a042',1,'oscr::RootItem']]],

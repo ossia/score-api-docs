@@ -1225,7 +1225,8 @@ var hierarchy =
       [ "TreeNode< FixtureData >", "class_tree_node.html", null ]
     ] ],
     [ "Protocols::FixtureData", "class_protocols_1_1_fixture_data.html", null ],
-    [ "Protocols::FixtureMode", "struct_protocols_1_1_fixture_mode.html", null ],
+    [ "Protocols::OFL::FixtureDefinition", "struct_protocols_1_1_o_f_l_1_1_fixture_definition.html", null ],
+    [ "Protocols::OFL::FixtureMode", "struct_protocols_1_1_o_f_l_1_1_fixture_mode.html", null ],
     [ "score::gfx::FlatScene", "structscore_1_1gfx_1_1_flat_scene.html", null ],
     [ "score::gfx::FlattenVisitor", "structscore_1_1gfx_1_1_flatten_visitor.html", null ],
     [ "score::FlicksSpinBox", "structscore_1_1_flicks_spin_box.html", null ],
@@ -1549,6 +1550,7 @@ var hierarchy =
     [ "ossia::hash_map", null, [
       [ "score::CommandStore", "structscore_1_1_command_store.html", null ]
     ] ],
+    [ "LV2::message_ring::header", "struct_l_v2_1_1message__ring_1_1header.html", null ],
     [ "Media::RMSData::Header", "struct_media_1_1_r_m_s_data_1_1_header.html", null ],
     [ "Nodes::Quantifier::v2::Node::Held", "struct_nodes_1_1_quantifier_1_1v2_1_1_node_1_1_held.html", null ],
     [ "Ui::MidiDisplay::Node::held_note", "struct_ui_1_1_midi_display_1_1_node_1_1held__note.html", null ],
@@ -1623,8 +1625,8 @@ var hierarchy =
     [ "id_base_t< EventModel >", "classid__base__t.html", null ],
     [ "id_base_t< IntervalModel >", "classid__base__t.html", null ],
     [ "id_base_t< Midi::Note >", "classid__base__t.html", null ],
-    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Model >", "classid__base__t.html", null ],
+    [ "id_base_t< model >", "classid__base__t.html", null ],
     [ "id_base_t< Note >", "classid__base__t.html", null ],
     [ "id_base_t< PointModel >", "classid__base__t.html", null ],
     [ "id_base_t< Port >", "classid__base__t.html", null ],
@@ -1672,8 +1674,8 @@ var hierarchy =
     [ "Steinberg::Vst::IHostApplication", null, [
       [ "vst3::HostApp", "structvst3_1_1_host_app.html", null ]
     ] ],
-    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "score::gfx::Image", "structscore_1_1gfx_1_1_image.html", null ],
+    [ "score::gfx::image", "structscore_1_1gfx_1_1image.html", null ],
     [ "Threedim::LiveLink::image_message", "struct_threedim_1_1_live_link_1_1image__message.html", null ],
     [ "Gfx::ImageCache", "struct_gfx_1_1_image_cache.html", null ],
     [ "Video::ImageFormat", "struct_video_1_1_image_format.html", [
@@ -1820,11 +1822,13 @@ var hierarchy =
     [ "Threedim::VoxelLoader::ins", "struct_threedim_1_1_voxel_loader_1_1ins.html", null ],
     [ "Library::InstalledPackage", "struct_library_1_1_installed_package.html", null ],
     [ "Pd::Instance", "struct_pd_1_1_instance.html", null ],
+    [ "LV2::InstanceDeleter", "struct_l_v2_1_1_instance_deleter.html", null ],
     [ "score::gfx::FlatScene::InstanceDraw", "structscore_1_1gfx_1_1_flat_scene_1_1_instance_draw.html", null ],
     [ "LV2::InstanceHandle", "struct_l_v2_1_1_instance_handle.html", null ],
     [ "score::gfx::InstanceKey", "structscore_1_1gfx_1_1_instance_key.html", null ],
     [ "score::gfx::InstanceKeyHash", "structscore_1_1gfx_1_1_instance_key_hash.html", null ],
     [ "Threedim::Instancer", "class_threedim_1_1_instancer.html", null ],
+    [ "LV2::InstanceWorker", "struct_l_v2_1_1_instance_worker.html", null ],
     [ "score::gfx::RenderedScenePreprocessorNode::InstSlotLayout", "structscore_1_1gfx_1_1_rendered_scene_preprocessor_node_1_1_inst_slot_layout.html", null ],
     [ "Nodes::Chord::int_list< N >", "struct_nodes_1_1_chord_1_1int__list.html", null ],
     [ "Nodes::Chord::int_list< max_intervals >", "struct_nodes_1_1_chord_1_1int__list.html", null ],
@@ -2558,6 +2562,7 @@ var hierarchy =
     [ "Protocols::MIDIDevices::Message", "struct_protocols_1_1_m_i_d_i_devices_1_1_message.html", null ],
     [ "score::gfx::Message", "structscore_1_1gfx_1_1_message.html", null ],
     [ "State::Message", "struct_state_1_1_message.html", null ],
+    [ "LV2::message_ring", "class_l_v2_1_1message__ring.html", null ],
     [ "oscr::MessageBusReader", "structoscr_1_1_message_bus_reader.html", null ],
     [ "oscr::MessageBusSender", "structoscr_1_1_message_bus_sender.html", null ],
     [ "oscr::MessageBusUi< Info >", "structoscr_1_1_message_bus_ui.html", null ],
@@ -2752,7 +2757,6 @@ var hierarchy =
     ] ],
     [ "Threedim::LiveLink::node_name_record", "struct_threedim_1_1_live_link_1_1node__name__record.html", null ],
     [ "ossia::node_process", null, [
-      [ "Clap::clap_mono_process", "struct_clap_1_1clap__mono__process.html", null ],
       [ "Clap::clap_process", "struct_clap_1_1clap__process.html", null ],
       [ "Gfx::Video::video_process", "class_gfx_1_1_video_1_1video__process.html", null ],
       [ "JS::js_process", "struct_j_s_1_1js__process.html", null ],
@@ -3086,8 +3090,8 @@ var hierarchy =
     [ "Path< Media::Sound::ProcessModel >", "class_path.html", null ],
     [ "Path< Media::Step::Model >", "class_path.html", null ],
     [ "Path< Midi::ProcessModel >", "class_path.html", null ],
-    [ "Path< model >", "class_path.html", null ],
     [ "Path< Model >", "class_path.html", null ],
+    [ "Path< model >", "class_path.html", null ],
     [ "Path< model_t >", "class_path.html", null ],
     [ "Path< Nodal::Model >", "class_path.html", null ],
     [ "Path< Note >", "class_path.html", null ],
@@ -3151,11 +3155,8 @@ var hierarchy =
     [ "Protocols::PhidgetSpecificSettings", "struct_protocols_1_1_phidget_specific_settings.html", null ],
     [ "score::gfx::Pipeline", "structscore_1_1gfx_1_1_pipeline.html", null ],
     [ "Ui::Monitor::PitchTracker", "class_ui_1_1_monitor_1_1_pitch_tracker.html", null ],
-    [ "Protocols::Pixel", "struct_protocols_1_1_pixel.html", null ],
     [ "Curve::PixelColumns", "struct_curve_1_1_pixel_columns.html", null ],
     [ "score::gfx::PixelFormatInfo", "structscore_1_1gfx_1_1_pixel_format_info.html", null ],
-    [ "Protocols::PixelGroup", "struct_protocols_1_1_pixel_group.html", null ],
-    [ "Protocols::PixelMatrix", "struct_protocols_1_1_pixel_matrix.html", null ],
     [ "Process::Pixmaps", "struct_process_1_1_pixmaps.html", null ],
     [ "score::FilePlacement::Placement", "structscore_1_1_file_placement_1_1_placement.html", null ],
     [ "score::gfx::PlanarYUVLayout", "structscore_1_1gfx_1_1_planar_y_u_v_layout.html", null ],
@@ -4402,6 +4403,7 @@ var hierarchy =
       [ "oscr::SoundSetLoader", "classoscr_1_1_sound_set_loader.html", null ],
       [ "oscr::UiEdits", "classoscr_1_1_ui_edits.html", null ],
       [ "oscr::ValueBarItem", "classoscr_1_1_value_bar_item.html", null ],
+      [ "oscr::WheelGesture", "classoscr_1_1_wheel_gesture.html", null ],
       [ "ossia::net::bitfocus_protocol", "classossia_1_1net_1_1bitfocus__protocol.html", null ],
       [ "score::ActionManager", "classscore_1_1_action_manager.html", null ],
       [ "score::ApplicationRegistrar", "classscore_1_1_application_registrar.html", [
@@ -4639,7 +4641,8 @@ var hierarchy =
       [ "Explorer::DeviceExplorerFilterProxyModel", "class_explorer_1_1_device_explorer_filter_proxy_model.html", null ],
       [ "Library::RecursiveFilterProxy", "class_library_1_1_recursive_filter_proxy.html", [
         [ "Library::FileSystemRecursiveFilterProxy", "class_library_1_1_file_system_recursive_filter_proxy.html", null ],
-        [ "Library::ProcessFilterProxy", "class_library_1_1_process_filter_proxy.html", null ]
+        [ "Library::ProcessFilterProxy", "class_library_1_1_process_filter_proxy.html", null ],
+        [ "Protocols::FixtureFilterProxy", "class_protocols_1_1_fixture_filter_proxy.html", null ]
       ] ]
     ] ],
     [ "QSpinBox", null, [
@@ -5052,6 +5055,7 @@ var hierarchy =
       [ "oscr::RootItem< Info, RootLayout >", "structoscr_1_1_root_item.html", null ]
     ] ],
     [ "Nodes::Quantifier::v2::Node::Running", "struct_nodes_1_1_quantifier_1_1v2_1_1_node_1_1_running.html", null ],
+    [ "score::gfx::RenderedCSFNode::GeometryBinding::RuntimeSlot", "structscore_1_1gfx_1_1_rendered_c_s_f_node_1_1_geometry_binding_1_1_runtime_slot.html", null ],
     [ "safe_node", null, [
       [ "oscr::node_with_ui_wakeups< Node >", "structoscr_1_1node__with__ui__wakeups.html", [
         [ "oscr::node_with_worker< Node >", "structoscr_1_1node__with__worker.html", null ]
@@ -5199,6 +5203,7 @@ var hierarchy =
     [ "Media::Sound::WaveformComputerImpl::SizeInfos", "struct_media_1_1_sound_1_1_waveform_computer_impl_1_1_size_infos.html", null ],
     [ "score::SizeVisitor", "structscore_1_1_size_visitor.html", null ],
     [ "score::gfx::SkeletonGPU", "structscore_1_1gfx_1_1_skeleton_g_p_u.html", null ],
+    [ "Clap::clap_node_mono::skipped_voices", "struct_clap_1_1clap__node__mono_1_1skipped__voices.html", null ],
     [ "mtk::sleep_accurate", "structmtk_1_1sleep__accurate.html", null ],
     [ "score::SliderWrapper< T >", "structscore_1_1_slider_wrapper.html", null ],
     [ "oscr::CustomItemWaveforms::Slot", "structoscr_1_1_custom_item_waveforms_1_1_slot.html", null ],
@@ -5645,7 +5650,9 @@ var hierarchy =
       [ "FaustDSP::Wrap< T >", "struct_faust_d_s_p_1_1_wrap.html", null ]
     ] ],
     [ "Gfx::gfx_exec_node::ui_control_out", "struct_gfx_1_1gfx__exec__node_1_1ui__control__out.html", null ],
+    [ "LV2::lv2_node< OnExecStart, OnExecFinished >::ui_input", "struct_l_v2_1_1lv2__node_1_1ui__input.html", null ],
     [ "oscr::ui_wakeups", "structoscr_1_1ui__wakeups.html", null ],
+    [ "LV2::UiChannel", "class_l_v2_1_1_ui_channel.html", null ],
     [ "Process::UIPlacementSettings", "struct_process_1_1_u_i_placement_settings.html", null ],
     [ "Nodes::Looper::undo_mark", "struct_nodes_1_1_looper_1_1undo__mark.html", null ],
     [ "UndoName_k", "class_undo_name__k.html", null ],
@@ -5800,8 +5807,6 @@ var hierarchy =
     [ "Media::WaveformSummary", "struct_media_1_1_waveform_summary.html", null ],
     [ "Process::WavetableData", "struct_process_1_1_wavetable_data.html", null ],
     [ "Threedim::LiveLink::weights_record", "struct_threedim_1_1_live_link_1_1weights__record.html", null ],
-    [ "Protocols::Wheel", "struct_protocols_1_1_wheel.html", null ],
-    [ "Protocols::WheelSlot", "struct_protocols_1_1_wheel_slot.html", null ],
     [ "Protocols::WiimoteSpecificSettings", "struct_protocols_1_1_wiimote_specific_settings.html", null ],
     [ "bitfocus::win32_handles", "structbitfocus_1_1win32__handles.html", null ],
     [ "Gfx::WindowCapture::WindowCaptureBackend", "struct_gfx_1_1_window_capture_1_1_window_capture_backend.html", [
@@ -5815,11 +5820,12 @@ var hierarchy =
     [ "ao::Regex::worker", "structao_1_1_regex_1_1worker.html", null ],
     [ "Threedim::GltfLiveLink::worker", "struct_threedim_1_1_gltf_live_link_1_1worker.html", null ],
     [ "Threedim::StrucSynth::worker", "struct_threedim_1_1_struc_synth_1_1worker.html", null ],
-    [ "LV2::lv2_node< OnExecStart, OnExecFinished >::worker_routing_scope", "struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html", null ],
     [ "Nodes::AudioLooper::Node::worker_t", "struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html", null ],
     [ "Nodes::MidiLooper::Node::worker_t", "struct_nodes_1_1_midi_looper_1_1_node_1_1worker__t.html", null ],
     [ "Nodes::ValueLooper::Node::worker_t", "struct_nodes_1_1_value_looper_1_1_node_1_1worker__t.html", null ],
     [ "Ui::Loudness::Node::worker_t", "struct_ui_1_1_loudness_1_1_node_1_1worker__t.html", null ],
+    [ "LV2::WorkerPacket", "struct_l_v2_1_1_worker_packet.html", null ],
+    [ "LV2::WorkerThread", "class_l_v2_1_1_worker_thread.html", null ],
     [ "score::gfx::WorldTransformEmit", "structscore_1_1gfx_1_1_world_transform_emit.html", null ],
     [ "score::gfx::WorldTransformMat4", "structscore_1_1gfx_1_1_world_transform_mat4.html", null ],
     [ "JSONWriter::wrapper", "struct_j_s_o_n_writer_1_1wrapper.html", null ],

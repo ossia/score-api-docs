@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['value_0',['value',['../structbitfocus_1_1module__data_1_1config__field_1_1choice.html#a5de71a443a9d08231c2a73329ecfc0d8',1,'bitfocus::module_data::config_field::choice::value'],['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port::value']]],
+  ['value_0',['value',['../structbitfocus_1_1module__data_1_1config__field_1_1choice.html#a5de71a443a9d08231c2a73329ecfc0d8',1,'bitfocus::module_data::config_field::choice::value'],['../structvst_1_1vst__node__base_1_1vst__control.html#ac2ed257249b196072c159591509205bb',1,'vst::vst_node_base::vst_control::value'],['../structscore_1_1gfx_1_1_port.html#a25892065d473e121291fbbad7eee6643',1,'score::gfx::Port::value']]],
   ['valuealignmentdatakey_1',['ValueAlignmentDataKey',['../namespacescore.html#a60a94b8008a34e81093bdb4f52aaf91b',1,'score']]],
   ['valueonhoverdatakey_2',['ValueOnHoverDataKey',['../namespacescore.html#ae9cf17a97b8ef7894150cec3a871b3bf',1,'score']]],
   ['values_3',['values',['../struct_ui_1_1_buffer_view_1_1_frame.html#a40edced88eb7f766416f8373d8b37ce2',1,'Ui::BufferView::Frame::values'],['../struct_execution_1_1_tap_monitor.html#a4bc445be8a09dc16064de86cb3fcbd34',1,'Execution::TapMonitor::values'],['../struct_nodes_1_1_looper_1_1view__message.html#aadc5749475e7e3bac891cf3f6e6f29f3',1,'Nodes::Looper::view_message::values']]],

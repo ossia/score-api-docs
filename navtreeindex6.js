@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"_refresh_states_8hpp_source.html":[13,0,0,2,32,4,1,0,6],
 "_refresh_states_macro_8hpp_source.html":[13,0,0,2,32,4,1,0,7],
 "_regex_8hpp_source.html":[13,0,0,2,8,2,13],
 "_relation_8hpp_source.html":[13,0,0,2,4,0,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "_speed_slider_8hpp_source.html":[13,0,0,2,32,4,6,3,4],
 "_spin_boxes_8hpp_source.html":[13,0,0,1,1,13,28],
 "_splat_binary_8hpp_source.html":[13,0,0,2,35,0,5,3],
-"_spline_2_execution_8hpp_source.html":[13,0,0,2,33,0,1],
-"_spline_2_generator_dialog_8hpp_source.html":[13,0,0,2,33,0,2]
+"_spline_2_execution_8hpp_source.html":[13,0,0,2,33,0,1]
 };

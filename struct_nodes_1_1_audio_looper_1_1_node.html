@@ -173,8 +173,7 @@ Audio Utilities Loop audio in and turn the loop into a clip of the timeline&#160
 void&#160;</td><td class="memItemRight" valign="bottom"><b>process_message</b> (const <a class="el" href="struct_nodes_1_1_looper_1_1erase__request.html">Looper::erase_request</a> &amp;r)</td></tr>
 <tr class="memdesc:a121b6552cdb71b47622480647e7497c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">From the view: applied at the start of the next tick. <br /></td></tr>
 <tr class="separator:a121b6552cdb71b47622480647e7497c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ea8eab3c336caf60b4b7c5ced7c8f7" id="r_af8ea8eab3c336caf60b4b7c5ced7c8f7"><td class="memItemLeft" align="right" valign="top"><a id="af8ea8eab3c336caf60b4b7c5ced7c8f7" name="af8ea8eab3c336caf60b4b7c5ced7c8f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="memitem:af8ea8eab3c336caf60b4b7c5ced7c8f7" id="r_af8ea8eab3c336caf60b4b7c5ced7c8f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#af8ea8eab3c336caf60b4b7c5ced7c8f7">prepare</a> (halp::setup s)</td></tr>
 <tr class="separator:af8ea8eab3c336caf60b4b7c5ced7c8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab8913a442fb0ac74b6e202aadc5fac6" id="r_aab8913a442fb0ac74b6e202aadc5fac6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#aab8913a442fb0ac74b6e202aadc5fac6">prepare_stretch</a> (double rate, int frames)</td></tr>
 <tr class="separator:aab8913a442fb0ac74b6e202aadc5fac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +307,9 @@ std::shared_ptr&lt; <a class="el" href="struct_nodes_1_1_looper_1_1export__buffe
 <tr class="separator:abfd803704659a325f0261ed4db124d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c7020b4c2991483503515380908a2e2" id="r_a8c7020b4c2991483503515380908a2e2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="struct_nodes_1_1_looper_1_1audio__stop__take.html">Looper::audio_stop_take</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_audio_looper_1_1_node.html#a8c7020b4c2991483503515380908a2e2">stop_take</a></td></tr>
 <tr class="separator:a8c7020b4c2991483503515380908a2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a500e0f428e044b63e39ad6ff5982d" id="r_ae9a500e0f428e044b63e39ad6ff5982d"><td class="memItemLeft" align="right" valign="top"><a id="ae9a500e0f428e044b63e39ad6ff5982d" name="ae9a500e0f428e044b63e39ad6ff5982d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>m_prepared_rate</b> {}</td></tr>
+<tr class="separator:ae9a500e0f428e044b63e39ad6ff5982d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_nodes_1_1_looper_1_1looper__node"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_nodes_1_1_looper_1_1looper__node')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_nodes_1_1_looper_1_1looper__node.html">Nodes::Looper::looper_node&lt; Node &gt;</a></td></tr>
 <tr class="memitem:ac614ad2465d1f6c84e06a782de3ca7bf inherit pub_attribs_struct_nodes_1_1_looper_1_1looper__node" id="r_ac614ad2465d1f6c84e06a782de3ca7bf"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="struct_nodes_1_1_looper_1_1transport.html">Looper::transport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>transport</b></td></tr>
@@ -581,6 +583,33 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_erase_count</b> {}</
 <tr class="separator:a75ec0a5c649120150e8bd3b6a0031c6a inherit pro_attribs_struct_nodes_1_1_looper_1_1looper__node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af8ea8eab3c336caf60b4b7c5ced7c8f7" name="af8ea8eab3c336caf60b4b7c5ced7c8f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ea8eab3c336caf60b4b7c5ced7c8f7">&#9670;&#160;</a></span>prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nodes::AudioLooper::Node::prepare </td>
+          <td>(</td>
+          <td class="paramtype">halp::setup&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The binding prepares the node again, from the audio thread, when the input's channel count or the engine's buffer size change. What is set up here only depends on the rate and on controls read at the start, and the stretched loop is played in spans of the prepared length: then there is nothing to do. </p>
+
+</div>
+</div>
 <a id="aab8913a442fb0ac74b6e202aadc5fac6" name="aab8913a442fb0ac74b6e202aadc5fac6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab8913a442fb0ac74b6e202aadc5fac6">&#9670;&#160;</a></span>prepare_stretch()</h2>
 

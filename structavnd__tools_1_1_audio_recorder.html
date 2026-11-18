@@ -144,8 +144,7 @@ ossia team&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (
 <tr class="memitem:a07e29a1db0178f5527d86db0e32cfe00" id="r_a07e29a1db0178f5527d86db0e32cfe00"><td class="memItemLeft" align="right" valign="top"><a id="a07e29a1db0178f5527d86db0e32cfe00" name="a07e29a1db0178f5527d86db0e32cfe00"></a>
 ossia team Records audio to a file&#160;</td><td class="memItemRight" valign="bottom"><b>halp_meta</b> (c_name, &quot;avnd_audio_recorder&quot;) halp_meta(manual_url</td></tr>
 <tr class="separator:a07e29a1db0178f5527d86db0e32cfe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067dfe0149c7eb1afcd6f1d24653d601" id="r_a067dfe0149c7eb1afcd6f1d24653d601"><td class="memItemLeft" align="right" valign="top"><a id="a067dfe0149c7eb1afcd6f1d24653d601" name="a067dfe0149c7eb1afcd6f1d24653d601"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>prepare</b> (halp::setup s)</td></tr>
+<tr class="memitem:a067dfe0149c7eb1afcd6f1d24653d601" id="r_a067dfe0149c7eb1afcd6f1d24653d601"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structavnd__tools_1_1_audio_recorder.html#a067dfe0149c7eb1afcd6f1d24653d601">prepare</a> (halp::setup s)</td></tr>
 <tr class="separator:a067dfe0149c7eb1afcd6f1d24653d601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d175bb5255526b211b6c4cba83cf80e" id="r_a4d175bb5255526b211b6c4cba83cf80e"><td class="memItemLeft" align="right" valign="top"><a id="a4d175bb5255526b211b6c4cba83cf80e" name="a4d175bb5255526b211b6c4cba83cf80e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> ()</td></tr>
@@ -201,6 +200,10 @@ const <a class="el" href="structscore_1_1_document_context.html">score::Document
 <tr class="memitem:a9f2bbbf103273a7cad32b919b89f7108" id="r_a9f2bbbf103273a7cad32b919b89f7108"><td class="memItemLeft" align="right" valign="top"><a id="a9f2bbbf103273a7cad32b919b89f7108" name="a9f2bbbf103273a7cad32b919b89f7108"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>current_rate</b> = 0</td></tr>
 <tr class="separator:a9f2bbbf103273a7cad32b919b89f7108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd02a6d5051a46ef56ecedec4b8b819" id="r_a0bd02a6d5051a46ef56ecedec4b8b819"><td class="memItemLeft" align="right" valign="top"><a id="a0bd02a6d5051a46ef56ecedec4b8b819" name="a0bd02a6d5051a46ef56ecedec4b8b819"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dropped_blocks</b> = 0</td></tr>
+<tr class="memdesc:a0bd02a6d5051a46ef56ecedec4b8b819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ticks not recorded because no buffer was free or large enough. <br /></td></tr>
+<tr class="separator:a0bd02a6d5051a46ef56ecedec4b8b819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27e40dc674f17c890b0fbceaf6201cff" id="r_a27e40dc674f17c890b0fbceaf6201cff"><td class="memItemLeft" align="right" valign="top"><a id="a27e40dc674f17c890b0fbceaf6201cff" name="a27e40dc674f17c890b0fbceaf6201cff"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>started</b> {}</td></tr>
 <tr class="separator:a27e40dc674f17c890b0fbceaf6201cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,13 +213,38 @@ std::optional&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom
 <tr class="memitem:a00bfdb3c81e598ff1bfceaac8e2484b0" id="r_a00bfdb3c81e598ff1bfceaac8e2484b0"><td class="memItemLeft" align="right" valign="top"><a id="a00bfdb3c81e598ff1bfceaac8e2484b0" name="a00bfdb3c81e598ff1bfceaac8e2484b0"></a>
 std::optional&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>last_message_sent_pos</b></td></tr>
 <tr class="separator:a00bfdb3c81e598ff1bfceaac8e2484b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a8f0251e152fdf48479e6d6d125ddd" id="r_a05a8f0251e152fdf48479e6d6d125ddd"><td class="memItemLeft" align="right" valign="top"><a id="a05a8f0251e152fdf48479e6d6d125ddd" name="a05a8f0251e152fdf48479e6d6d125ddd"></a>
-audio_buffer&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="separator:a05a8f0251e152fdf48479e6d6d125ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba1a7e7609dc651a98b45ef25d5f2a1" id="r_a9ba1a7e7609dc651a98b45ef25d5f2a1"><td class="memItemLeft" align="right" valign="top"><a id="a9ba1a7e7609dc651a98b45ef25d5f2a1" name="a9ba1a7e7609dc651a98b45ef25d5f2a1"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>filename_to_output</b></td></tr>
 <tr class="separator:a9ba1a7e7609dc651a98b45ef25d5f2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a067dfe0149c7eb1afcd6f1d24653d601" name="a067dfe0149c7eb1afcd6f1d24653d601"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067dfe0149c7eb1afcd6f1d24653d601">&#9670;&#160;</a></span>prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void avnd_tools::AudioRecorder::prepare </td>
+          <td>(</td>
+          <td class="paramtype">halp::setup&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The binding prepares again, from the audio thread, when the input's channel count or the engine buffer change: the worker follows the channel count of what it is given, and only a new rate is told to it. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_audio_recorder_8hpp_source.html">AudioRecorder.hpp</a></li>
 </ul>

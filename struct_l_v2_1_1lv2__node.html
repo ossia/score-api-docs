@@ -123,7 +123,7 @@ Inheritance diagram for LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;:</div
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">buffer_span</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html">worker_routing_scope</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node_1_1ui__input.html">ui_input</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84a85b08da78a63fcddf9333231585f4" id="r_a84a85b08da78a63fcddf9333231585f4"><td class="memItemLeft" align="right" valign="top"><a id="a84a85b08da78a63fcddf9333231585f4" name="a84a85b08da78a63fcddf9333231585f4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>lv2_node</b> (const <a class="el" href="struct_l_v2_1_1_l_v2_data.html">LV2Data</a> &amp;dat, int sampleRate, <a class="el" href="struct_l_v2_1_1voice__strategy.html">voice_strategy</a> strat, OnExecStart os, OnExecFinished of)</td></tr>
 <tr class="separator:a84a85b08da78a63fcddf9333231585f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadbab2ebc0886de65d641917884e343a" id="r_aadbab2ebc0886de65d641917884e343a"><td class="memItemLeft" align="right" valign="top"><a id="aadbab2ebc0886de65d641917884e343a" name="aadbab2ebc0886de65d641917884e343a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_ui_input</b> (int port)</td></tr>
+<tr class="separator:aadbab2ebc0886de65d641917884e343a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5720146df3cee5b6009960458a42ae50" id="r_a5720146df3cee5b6009960458a42ae50"><td class="memItemLeft" align="right" valign="top"><a id="a5720146df3cee5b6009960458a42ae50" name="a5720146df3cee5b6009960458a42ae50"></a>
 std::unique_ptr&lt; <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>build_voice</b> (SharedInstance handle)</td></tr>
 <tr class="separator:a5720146df3cee5b6009960458a42ae50"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,6 +163,22 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>allocate_voice_buffer
 <tr class="memitem:aa9f13bab570701f9de4b4914e969f11d" id="r_aa9f13bab570701f9de4b4914e969f11d"><td class="memItemLeft" align="right" valign="top"><a id="aa9f13bab570701f9de4b4914e969f11d" name="aa9f13bab570701f9de4b4914e969f11d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>activate_voice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
 <tr class="separator:aa9f13bab570701f9de4b4914e969f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f127b428f0034d7a73f8bf610dd8ef3" id="r_a3f127b428f0034d7a73f8bf610dd8ef3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a3f127b428f0034d7a73f8bf610dd8ef3">receive_ui_messages</a> () noexcept</td></tr>
+<tr class="separator:a3f127b428f0034d7a73f8bf610dd8ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33fb87b892434da9371d58c9276f339a" id="r_a33fb87b892434da9371d58c9276f339a"><td class="memItemLeft" align="right" valign="top"><a id="a33fb87b892434da9371d58c9276f339a" name="a33fb87b892434da9371d58c9276f339a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>write_ui_messages</b> (<a class="el" href="struct_iterator.html">Iterator</a> &amp;it, std::size_t k) noexcept</td></tr>
+<tr class="memdesc:a33fb87b892434da9371d58c9276f339a"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the UI sent to UI input <code>k</code>, at the start of the run. <br /></td></tr>
+<tr class="separator:a33fb87b892434da9371d58c9276f339a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e59af6a6207fa10788ee053bc407940" id="r_a6e59af6a6207fa10788ee053bc407940"><td class="memItemLeft" align="right" valign="top"><a id="a6e59af6a6207fa10788ee053bc407940" name="a6e59af6a6207fa10788ee053bc407940"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear_ui_messages</b> () noexcept</td></tr>
+<tr class="separator:a6e59af6a6207fa10788ee053bc407940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64cf2addfdfce19ed370da313c4dd50" id="r_ae64cf2addfdfce19ed370da313c4dd50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#ae64cf2addfdfce19ed370da313c4dd50">write_notes_off</a> (<a class="el" href="struct_iterator.html">Iterator</a> &amp;it) noexcept</td></tr>
+<tr class="separator:ae64cf2addfdfce19ed370da313c4dd50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf915615e910dd4caeb3f6a2b421cac" id="r_adcf915615e910dd4caeb3f6a2b421cac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#adcf915615e910dd4caeb3f6a2b421cac">send_ui_messages</a> () noexcept</td></tr>
+<tr class="separator:adcf915615e910dd4caeb3f6a2b421cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78ce180463043992774e95a9fd840978" id="r_a78ce180463043992774e95a9fd840978"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a78ce180463043992774e95a9fd840978"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a78ce180463043992774e95a9fd840978">for_each_ui_event</a> (F &amp;&amp;f) const</td></tr>
+<tr class="separator:a78ce180463043992774e95a9fd840978"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f5f3cfdd495d05639ffe2e6473b077" id="r_a77f5f3cfdd495d05639ffe2e6473b077"><td class="memItemLeft" align="right" valign="top"><a id="a77f5f3cfdd495d05639ffe2e6473b077" name="a77f5f3cfdd495d05639ffe2e6473b077"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_notes_off</b> () noexcept override</td></tr>
 <tr class="separator:a77f5f3cfdd495d05639ffe2e6473b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +202,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>writeCVOutputs</b> (<
 <tr class="separator:a49eb102655030a7f580366133acf2554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e19709747c81b209688d9fe6aaf7efa" id="r_a6e19709747c81b209688d9fe6aaf7efa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a6e19709747c81b209688d9fe6aaf7efa">writeTime</a> (<a class="el" href="struct_iterator.html">Iterator</a> &amp;it) noexcept</td></tr>
 <tr class="separator:a6e19709747c81b209688d9fe6aaf7efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af577dd03abf61ef5e4832eebf82f6552" id="r_af577dd03abf61ef5e4832eebf82f6552"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#af577dd03abf61ef5e4832eebf82f6552">writeAtomIns</a> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
+<tr class="separator:af577dd03abf61ef5e4832eebf82f6552"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ab24e41d6c00dbfec316539b0d1843" id="r_a43ab24e41d6c00dbfec316539b0d1843"><td class="memItemLeft" align="right" valign="top"><a id="a43ab24e41d6c00dbfec316539b0d1843" name="a43ab24e41d6c00dbfec316539b0d1843"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>postProcessVoice</b> (<a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
 <tr class="separator:a43ab24e41d6c00dbfec316539b0d1843"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,6 +278,10 @@ std::unique_ptr&lt; uint8_t[]&gt;&#160;</td><td class="memItemRight" valign="bot
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_timeForged</b> {}</td></tr>
 <tr class="memdesc:a74241ef1698e40b205c63ff423417303"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position buffers hold a position: a run happened. <br /></td></tr>
 <tr class="separator:a74241ef1698e40b205c63ff423417303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17857ef6261a07bbca875819e80d192" id="r_ae17857ef6261a07bbca875819e80d192"><td class="memItemLeft" align="right" valign="top"><a id="ae17857ef6261a07bbca875819e80d192" name="ae17857ef6261a07bbca875819e80d192"></a>
+LV2_Atom_Forge&#160;</td><td class="memItemRight" valign="bottom"><b>m_forge</b> {}</td></tr>
+<tr class="memdesc:ae17857ef6261a07bbca875819e80d192"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the positions are written with. <br /></td></tr>
+<tr class="separator:ae17857ef6261a07bbca875819e80d192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7454ace4056772d63cdf3d2f553a1fb6" id="r_a7454ace4056772d63cdf3d2f553a1fb6"><td class="memItemLeft" align="right" valign="top"><a id="a7454ace4056772d63cdf3d2f553a1fb6" name="a7454ace4056772d63cdf3d2f553a1fb6"></a>
 std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>max_block_size</b> {4096}</td></tr>
 <tr class="separator:a7454ace4056772d63cdf3d2f553a1fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +294,13 @@ OnExecStart&#160;</td><td class="memItemRight" valign="bottom"><b>on_start</b></
 <tr class="memitem:aafb93dcacf0a8d917d3946b7fc6bc97f" id="r_aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memItemLeft" align="right" valign="top"><a id="aafb93dcacf0a8d917d3946b7fc6bc97f" name="aafb93dcacf0a8d917d3946b7fc6bc97f"></a>
 OnExecFinished&#160;</td><td class="memItemRight" valign="bottom"><b>on_finished</b></td></tr>
 <tr class="separator:aafb93dcacf0a8d917d3946b7fc6bc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0673e1f121fddcb4269ca2b62d50e6" id="r_a9b0673e1f121fddcb4269ca2b62d50e6"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_l_v2_1_1_ui_channel.html">UiChannel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#a9b0673e1f121fddcb4269ca2b62d50e6">ui</a></td></tr>
+<tr class="separator:a9b0673e1f121fddcb4269ca2b62d50e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00abb7ff05b4c654fbc3c4390459e730" id="r_a00abb7ff05b4c654fbc3c4390459e730"><td class="memItemLeft" align="right" valign="top"><a id="a00abb7ff05b4c654fbc3c4390459e730" name="a00abb7ff05b4c654fbc3c4390459e730"></a>
+std::vector&lt; <a class="el" href="struct_l_v2_1_1lv2__node_1_1ui__input.html">ui_input</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiInputs</b></td></tr>
+<tr class="separator:a00abb7ff05b4c654fbc3c4390459e730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c52defc2b55f83b37ecc26993c709a" id="r_ac5c52defc2b55f83b37ecc26993c709a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_v2_1_1lv2__node.html#ac5c52defc2b55f83b37ecc26993c709a">m_notesOff</a> {}</td></tr>
+<tr class="separator:ac5c52defc2b55f83b37ecc26993c709a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad05020e763c4ab9ad39c88ac5824c5ac" id="r_ad05020e763c4ab9ad39c88ac5824c5ac"><td class="memItemLeft" align="right" valign="top"><a id="ad05020e763c4ab9ad39c88ac5824c5ac" name="ad05020e763c4ab9ad39c88ac5824c5ac"></a>
 struct <a class="el" href="struct_l_v2_1_1lv2__node_1_1buffer__span.html">LV2::lv2_node::buffer_span</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_span</b></td></tr>
 <tr class="separator:ad05020e763c4ab9ad39c88ac5824c5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,6 +380,93 @@ template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
 
 </div>
 </div>
+<a id="a78ce180463043992774e95a9fd840978" name="a78ce180463043992774e95a9fd840978"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ce180463043992774e95a9fd840978">&#9670;&#160;</a></span>for_each_ui_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::for_each_ui_event </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What voice 0 wrote on its atom outputs, MIDI or not, for the UI: f(port index, atom) for each event. </p>
+
+</div>
+</div>
+<a id="a3f127b428f0034d7a73f8bf610dd8ef3" name="a3f127b428f0034d7a73f8bf610dd8ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f127b428f0034d7a73f8bf610dd8ef3">&#9670;&#160;</a></span>receive_ui_messages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::receive_ui_messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>[audio thread] What the UI sent, for this run: as much as the inputs have room for, in order; the rest stays in the ring for the next runs. </p>
+
+</div>
+</div>
+<a id="adcf915615e910dd4caeb3f6a2b421cac" name="adcf915615e910dd4caeb3f6a2b421cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcf915615e910dd4caeb3f6a2b421cac">&#9670;&#160;</a></span>send_ui_messages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::send_ui_messages </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>[audio thread] What voice 0 wrote on its atom outputs, for the UI that listens </p>
+
+</div>
+</div>
 <a id="a13ab078eec145893ac5249254bec901a" name="a13ab078eec145893ac5249254bec901a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13ab078eec145893ac5249254bec901a">&#9670;&#160;</a></span>stop_run_samples()</h2>
 
@@ -404,6 +523,64 @@ template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
 
 </div>
 </div>
+<a id="ae64cf2addfdfce19ed370da313c4dd50" name="ae64cf2addfdfce19ed370da313c4dd50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64cf2addfdfce19ed370da313c4dd50">&#9670;&#160;</a></span>write_notes_off()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::write_notes_off </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_iterator.html">Iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>it</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>CC#120 (All Sound Off) and CC#123 (All Notes Off) on every channel, when all_notes_off() asked for them </p>
+
+</div>
+</div>
+<a id="af577dd03abf61ef5e4832eebf82f6552" name="af577dd03abf61ef5e4832eebf82f6552"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af577dd03abf61ef5e4832eebf82f6552">&#9670;&#160;</a></span>writeAtomIns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::writeAtomIns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The atom inputs that are not MIDI: the position first when they carry one, then what the UI sent to them. </p>
+
+</div>
+</div>
 <a id="a6e19709747c81b209688d9fe6aaf7efa" name="a6e19709747c81b209688d9fe6aaf7efa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6e19709747c81b209688d9fe6aaf7efa">&#9670;&#160;</a></span>writeTime()</h2>
 
@@ -451,6 +628,23 @@ template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
 
 </div>
 </div>
+<a id="ac5c52defc2b55f83b37ecc26993c709a" name="ac5c52defc2b55f83b37ecc26993c709a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c52defc2b55f83b37ecc26993c709a">&#9670;&#160;</a></span>m_notesOff</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::m_notesOff {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>all_notes_off() was called: the next run turns off the notes of every channel, on the first MIDI input. </p>
+
+</div>
+</div>
 <a id="aa9115c7b265f9812112fa3e9fe0fc7a8" name="aa9115c7b265f9812112fa3e9fe0fc7a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9115c7b265f9812112fa3e9fe0fc7a8">&#9670;&#160;</a></span>m_sendStopped</h2>
 
@@ -482,6 +676,23 @@ template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Set by the process when the transport stops: the next (empty) tick tells the plug-in, runs it once, and nothing else. </p>
+
+</div>
+</div>
+<a id="a9b0673e1f121fddcb4269ca2b62d50e6" name="a9b0673e1f121fddcb4269ca2b62d50e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0673e1f121fddcb4269ca2b62d50e6">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename OnExecStart , typename OnExecFinished &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="class_l_v2_1_1_ui_channel.html">UiChannel</a>&gt; <a class="el" href="struct_l_v2_1_1lv2__node.html">LV2::lv2_node</a>&lt; OnExecStart, OnExecFinished &gt;::ui</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>What the UI of the plug-in and the plug-in say to each other, when it has one. Set on the main thread before the node runs. </p>
 
 </div>
 </div>

@@ -8,5 +8,6 @@ var dir_8a4e6332f07504b8c84a82f112e8278a =
     [ "score-plugin-lv2/LV2/Node.hpp", "score-plugin-lv2_2_l_v2_2_node_8hpp_source.html", null ],
     [ "plugins/score-plugin-lv2/LV2/Settings.hpp", "plugins_2score-plugin-lv2_2_l_v2_2_settings_8hpp_source.html", null ],
     [ "Suil.hpp", "_suil_8hpp_source.html", null ],
+    [ "UiChannel.hpp", "_ui_channel_8hpp_source.html", null ],
     [ "plugins/score-plugin-lv2/LV2/Window.hpp", "plugins_2score-plugin-lv2_2_l_v2_2_window_8hpp_source.html", null ]
 ];

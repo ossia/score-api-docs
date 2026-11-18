@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: Protocols::FixtureMode Struct Reference</title>
+        <title>score: oscr::WheelGesture Class Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_protocols_1_1_fixture_mode.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('classoscr_1_1_wheel_gesture.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -104,32 +104,75 @@ $(document).ready(function(){initNavTree('struct_protocols_1_1_fixture_mode.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_protocols_1_1_fixture_mode-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Protocols::FixtureMode Struct Reference</div></div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="classoscr_1_1_wheel_gesture-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">oscr::WheelGesture Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="dynheader">
+Inheritance diagram for oscr::WheelGesture:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classoscr_1_1_wheel_gesture.png" alt=""/>
+ </div></div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Opt-in custom-item wheel gestures. Only the active item filters application events; its values still change synchronously in the item's wheel handler. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa10c2569b5bdfdc0b82bd6d2b31cbf95" id="r_aa10c2569b5bdfdc0b82bd6d2b31cbf95"><td class="memItemLeft" align="right" valign="top"><a id="aa10c2569b5bdfdc0b82bd6d2b31cbf95" name="aa10c2569b5bdfdc0b82bd6d2b31cbf95"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> () const noexcept</td></tr>
-<tr class="separator:aa10c2569b5bdfdc0b82bd6d2b31cbf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5656f60d522b2abb5e2cc7619729139" id="r_af5656f60d522b2abb5e2cc7619729139"><td class="memItemLeft" align="right" valign="top"><a id="af5656f60d522b2abb5e2cc7619729139" name="af5656f60d522b2abb5e2cc7619729139"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>WheelGesture</b> (QGraphicsItem &amp;item, void(*finish)(QGraphicsItem &amp;))</td></tr>
+<tr class="separator:af5656f60d522b2abb5e2cc7619729139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0df3358a188e51d44edbca6de047de59" id="r_a0df3358a188e51d44edbca6de047de59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classoscr_1_1_wheel_gesture.html#a0df3358a188e51d44edbca6de047de59">prepare</a> (QGraphicsSceneWheelEvent &amp;event, int target)</td></tr>
+<tr class="separator:a0df3358a188e51d44edbca6de047de59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9faa201e48cc6951f8dfa34f08163473" id="r_a9faa201e48cc6951f8dfa34f08163473"><td class="memItemLeft" align="right" valign="top"><a id="a9faa201e48cc6951f8dfa34f08163473" name="a9faa201e48cc6951f8dfa34f08163473"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>finish</b> ()</td></tr>
+<tr class="separator:a9faa201e48cc6951f8dfa34f08163473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14f23fc8f67a118876089b3a7c52a3a" id="r_af14f23fc8f67a118876089b3a7c52a3a"><td class="memItemLeft" align="right" valign="top"><a id="af14f23fc8f67a118876089b3a7c52a3a" name="af14f23fc8f67a118876089b3a7c52a3a"></a>
+QTimer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>idleTimer</b> () noexcept</td></tr>
+<tr class="memdesc:af14f23fc8f67a118876089b3a7c52a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a gesture without scroll phases once no event came for a while. <br /></td></tr>
+<tr class="separator:af14f23fc8f67a118876089b3a7c52a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a8bc6e730e15529904594e5fda05a4dc8" id="r_a8bc6e730e15529904594e5fda05a4dc8"><td class="memItemLeft" align="right" valign="top"><a id="a8bc6e730e15529904594e5fda05a4dc8" name="a8bc6e730e15529904594e5fda05a4dc8"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="separator:a8bc6e730e15529904594e5fda05a4dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa65e6e2cac98ab40b1210103f2d860db" id="r_aa65e6e2cac98ab40b1210103f2d860db"><td class="memItemLeft" align="right" valign="top"><a id="aa65e6e2cac98ab40b1210103f2d860db" name="aa65e6e2cac98ab40b1210103f2d860db"></a>
-std::vector&lt; QString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>allChannels</b></td></tr>
-<tr class="separator:aa65e6e2cac98ab40b1210103f2d860db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a007ff6f50b0a503949b8ffaa90e6eb17" id="r_a007ff6f50b0a503949b8ffaa90e6eb17"><td class="memItemLeft" align="right" valign="top"><a id="a007ff6f50b0a503949b8ffaa90e6eb17" name="a007ff6f50b0a503949b8ffaa90e6eb17"></a>
-std::vector&lt; <a class="el" href="struct_protocols_1_1_artnet_1_1_channel.html">Artnet::Channel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>channels</b></td></tr>
-<tr class="separator:a007ff6f50b0a503949b8ffaa90e6eb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0732ebb2b47497a683614e5167a31e6d" id="r_a0732ebb2b47497a683614e5167a31e6d"><td class="memItemLeft" align="right" valign="top"><a id="a0732ebb2b47497a683614e5167a31e6d" name="a0732ebb2b47497a683614e5167a31e6d"></a>
+static <a class="el" href="classoscr_1_1_wheel_gesture.html">WheelGesture</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>active</b> () noexcept</td></tr>
+<tr class="memdesc:a0732ebb2b47497a683614e5167a31e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gesture under way, if any. <br /></td></tr>
+<tr class="separator:a0732ebb2b47497a683614e5167a31e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_fixture_database_8hpp_source.html">FixtureDatabase.hpp</a></li>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0df3358a188e51d44edbca6de047de59" name="a0df3358a188e51d44edbca6de047de59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0df3358a188e51d44edbca6de047de59">&#9670;&#160;</a></span>prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void oscr::WheelGesture::prepare </td>
+          <td>(</td>
+          <td class="paramtype">QGraphicsSceneWheelEvent &amp;&#160;</td>
+          <td class="paramname"><em>event</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>target</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ends a previous item/target and handles zero-delta native phase boundaries. A nonzero ScrollEnd is dispatched first, then closed with finish(). </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_ui_edits_8hpp_source.html">UiEdits.hpp</a></li>
+<li><b>UiEdits.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

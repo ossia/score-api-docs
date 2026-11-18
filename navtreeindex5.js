@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"_path_serialization_8hpp_source.html":[13,0,0,1,1,7,0,4],
 "_pattern_command_factory_8hpp_source.html":[13,0,0,2,25,1,1],
 "_pattern_controller_8hpp_source.html":[13,0,0,2,25,1,2],
 "_pattern_edit_8hpp_source.html":[13,0,0,2,25,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "_recursive_filter_proxy_8hpp_source.html":[13,0,0,2,21,0,15],
 "_recursive_watch_8hpp_source.html":[13,0,0,1,1,12,35],
 "_reference_index_8hpp_source.html":[13,0,0,2,14,2,2],
-"_references_dialog_8hpp_source.html":[13,0,0,2,14,2,3],
-"_refresh_states_8hpp_source.html":[13,0,0,2,32,4,1,0,6]
+"_references_dialog_8hpp_source.html":[13,0,0,2,14,2,3]
 };

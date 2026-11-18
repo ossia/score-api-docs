@@ -145,6 +145,9 @@ std::shared_ptr&lt; <a class="el" href="structscore_1_1_layout_selection.html">s
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:a20afa509a75947494eee8fec7df47368"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_process_1_1_control_presentation.html">Process::ControlPresentation</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>presentationFor</b> () const</td></tr>
 <tr class="separator:a20afa509a75947494eee8fec7df47368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3eb0a8709fcf5fa1c7847be8b43ded0" id="r_aa3eb0a8709fcf5fa1c7847be8b43ded0"><td class="memTemplParams" colspan="2">template&lt;typename Field , typename Item &gt; </td></tr>
+<tr class="memitem:aa3eb0a8709fcf5fa1c7847be8b43ded0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structoscr_1_1_layout_builder.html#aa3eb0a8709fcf5fa1c7847be8b43ded0">setupDependentControl</a> (<a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *port, const <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &amp;lay, Item &amp;item)</td></tr>
+<tr class="separator:aa3eb0a8709fcf5fa1c7847be8b43ded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5968955e45867c9bd29788b7a971e9" id="r_aee5968955e45867c9bd29788b7a971e9"><td class="memTemplParams" colspan="2"><a id="aee5968955e45867c9bd29788b7a971e9" name="aee5968955e45867c9bd29788b7a971e9"></a>
 template&lt;typename Item &gt; </td></tr>
 <tr class="memitem:aee5968955e45867c9bd29788b7a971e9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>createControl</b> (Item &amp;item, auto... member)</td></tr>
@@ -243,6 +246,11 @@ template&lt;typename Item &gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2b76be764ce0b3d6898abaa597a30efe" id="r_a2b76be764ce0b3d6898abaa597a30efe"><td class="memTemplParams" colspan="2"><a id="a2b76be764ce0b3d6898abaa597a30efe" name="a2b76be764ce0b3d6898abaa597a30efe"></a>
+template&lt;typename Item , typename Field &gt; </td></tr>
+<tr class="memitem:a2b76be764ce0b3d6898abaa597a30efe"><td class="memTemplItemLeft" align="right" valign="top">static consteval bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>shownAsCombo</b> ()</td></tr>
+<tr class="memdesc:a2b76be764ce0b3d6898abaa597a30efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the native widget of Field, as Item presents it, is a QGraphicsCombo. <br /></td></tr>
+<tr class="separator:a2b76be764ce0b3d6898abaa597a30efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0290b03017a46868efc75c066c5a6394" id="r_a0290b03017a46868efc75c066c5a6394"><td class="memItemLeft" align="right" valign="top"><a id="a0290b03017a46868efc75c066c5a6394" name="a0290b03017a46868efc75c066c5a6394"></a>
 static QString&#160;</td><td class="memItemRight" valign="bottom"><b>displayText</b> (const <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> &amp;port, const ossia::value &amp;v, const QFontMetricsF &amp;metrics, qreal max_width=72.)</td></tr>
 <tr class="memdesc:a0290b03017a46868efc75c066c5a6394"><td class="mdescLeft">&#160;</td><td class="mdescRight">What a display shows for a value: an entry's name, or a number. <br /></td></tr>
@@ -287,6 +295,10 @@ std::map&lt; std::string, std::shared_ptr&lt; <a class="el" href="structscore_1_
 <tr class="memitem:af0e953da36fd60bb54d2a08290a5e028" id="r_af0e953da36fd60bb54d2a08290a5e028"><td class="memItemLeft" align="right" valign="top"><a id="af0e953da36fd60bb54d2a08290a5e028" name="af0e953da36fd60bb54d2a08290a5e028"></a>
 std::map&lt; <a class="el" href="classscore_1_1_graphics_table_layout.html">score::GraphicsTableLayout</a> *, std::shared_ptr&lt; <a class="el" href="structscore_1_1_layout_selection.html">score::LayoutSelection</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>tableSelections</b></td></tr>
 <tr class="separator:af0e953da36fd60bb54d2a08290a5e028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7140a958e8b25a98fa39b5ab578274" id="r_aea7140a958e8b25a98fa39b5ab578274"><td class="memItemLeft" align="right" valign="top"><a id="aea7140a958e8b25a98fa39b5ab578274" name="aea7140a958e8b25a98fa39b5ab578274"></a>
+std::map&lt; QGraphicsItem *, QTimer * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>dependentRelayouts</b></td></tr>
+<tr class="memdesc:aea7140a958e8b25a98fa39b5ab578274"><td class="mdescLeft">&#160;</td><td class="mdescRight">One queued geometry refresh per native row, owned by this UI build. <br /></td></tr>
+<tr class="separator:aea7140a958e8b25a98fa39b5ab578274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_process_1_1_layout_builder_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_process_1_1_layout_builder_base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_process_1_1_layout_builder_base.html">Process::LayoutBuilderBase</a></td></tr>
 <tr class="memitem:a145049cc33341cb017c5608e8d63e5fb inherit pub_attribs_struct_process_1_1_layout_builder_base" id="r_a145049cc33341cb017c5608e8d63e5fb"><td class="memItemLeft" align="right" valign="top">
 QObject &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>context</b></td></tr>
@@ -407,6 +419,55 @@ template&lt;typename Port_T , typename Item &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Port_T is <a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> or <a class="el" href="class_process_1_1_control_outlet.html">Process::ControlOutlet</a>: a control a layout names is set up the same way whichever side it is on, the widget following the port's value. </p>
+
+</div>
+</div>
+<a id="aa3eb0a8709fcf5fa1c7847be8b43ded0" name="aa3eb0a8709fcf5fa1c7847be8b43ded0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3eb0a8709fcf5fa1c7847be8b43ded0">&#9670;&#160;</a></span>setupDependentControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Info &gt; </div>
+<div class="memtemplate">
+template&lt;typename Field , typename Item &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structoscr_1_1_layout_builder.html">oscr::LayoutBuilder</a>&lt; Info &gt;::setupDependentControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_process_1_1_control_inlet.html">Process::ControlInlet</a> *&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_process_1_1_control_layout.html">Process::ControlLayout</a> &amp;&#160;</td>
+          <td class="paramname"><em>lay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Item &amp;&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Native dependent controls: read model values, never mutate them while refreshing. Only a user's categorical edit resolves and records dependent values, together in <a class="el" href="classoscr_1_1_ui_edits.html" title="The edits a custom ui makes to its process&#39;s controls.">UiEdits</a>, so presets and undo do not create new edits. </p>
+<p>The value of each entry of the combo, or unlisted for the one showing a selection that the current choices do not offer.</p>
+<p>The values when a scrub started: every step of it is a pick from there.</p>
 
 </div>
 </div>

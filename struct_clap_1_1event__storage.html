@@ -115,6 +115,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad69175ba0eecb69d2d48e62dc176d0cc" id="r_ad69175ba0eecb69d2d48e62dc176d0cc"><td class="memItemLeft" align="right" valign="top"><a id="ad69175ba0eecb69d2d48e62dc176d0cc" name="ad69175ba0eecb69d2d48e62dc176d0cc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:ad69175ba0eecb69d2d48e62dc176d0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42475e3774b7f0afc55752bd947eb80" id="r_ad42475e3774b7f0afc55752bd947eb80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_clap_1_1event__storage.html#ad42475e3774b7f0afc55752bd947eb80">reserve_outputs</a> ()</td></tr>
+<tr class="separator:ad42475e3774b7f0afc55752bd947eb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba0b8d2ddbcab544e6c968686386833" id="r_abba0b8d2ddbcab544e6c968686386833"><td class="memItemLeft" align="right" valign="top"><a id="abba0b8d2ddbcab544e6c968686386833" name="abba0b8d2ddbcab544e6c968686386833"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reserve_sort</b> (std::size_t n)</td></tr>
+<tr class="separator:abba0b8d2ddbcab544e6c968686386833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f2fdbc1488e324bf5a0b0ca1ec9449c" id="r_a7f2fdbc1488e324bf5a0b0ca1ec9449c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_clap_1_1event__storage.html#a7f2fdbc1488e324bf5a0b0ca1ec9449c">sort</a> ()</td></tr>
+<tr class="separator:a7f2fdbc1488e324bf5a0b0ca1ec9449c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -133,13 +140,74 @@ std::vector&lt; clap_event_param_value_t &gt;&#160;</td><td class="memItemRight"
 <tr class="memitem:a95a676881fea7f3e75bf918fc8d52e86" id="r_a95a676881fea7f3e75bf918fc8d52e86"><td class="memItemLeft" align="right" valign="top"><a id="a95a676881fea7f3e75bf918fc8d52e86" name="a95a676881fea7f3e75bf918fc8d52e86"></a>
 std::vector&lt; clap_event_midi_sysex_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sysex_events</b></td></tr>
 <tr class="separator:a95a676881fea7f3e75bf918fc8d52e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb4a64fad30cccd7863cb1cb9e4559ae" id="r_abb4a64fad30cccd7863cb1cb9e4559ae"><td class="memItemLeft" align="right" valign="top"><a id="abb4a64fad30cccd7863cb1cb9e4559ae" name="abb4a64fad30cccd7863cb1cb9e4559ae"></a>
-std::vector&lt; std::vector&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sysex_data</b></td></tr>
-<tr class="separator:abb4a64fad30cccd7863cb1cb9e4559ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d92f80433a4dfadfd981b968dc8447" id="r_ad8d92f80433a4dfadfd981b968dc8447"><td class="memItemLeft" align="right" valign="top"><a id="ad8d92f80433a4dfadfd981b968dc8447" name="ad8d92f80433a4dfadfd981b968dc8447"></a>
+std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sysex_data</b></td></tr>
+<tr class="separator:ad8d92f80433a4dfadfd981b968dc8447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c27051f08b263135eb2b4eeeef521e" id="r_a60c27051f08b263135eb2b4eeeef521e"><td class="memItemLeft" align="right" valign="top"><a id="a60c27051f08b263135eb2b4eeeef521e" name="a60c27051f08b263135eb2b4eeeef521e"></a>
 std::vector&lt; clap_event_header_t * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>all_events</b></td></tr>
 <tr class="separator:a60c27051f08b263135eb2b4eeeef521e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03485f9cc8c6731a8f034661182d059" id="r_ab03485f9cc8c6731a8f034661182d059"><td class="memItemLeft" align="right" valign="top"><a id="ab03485f9cc8c6731a8f034661182d059" name="ab03485f9cc8c6731a8f034661182d059"></a>
+std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sort_keys</b></td></tr>
+<tr class="memdesc:ab03485f9cc8c6731a8f034661182d059"><td class="mdescLeft">&#160;</td><td class="mdescRight">What sorting all_events uses. <br /></td></tr>
+<tr class="separator:ab03485f9cc8c6731a8f034661182d059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfb62ab319b79e61e7aa8c2ff70dd39" id="r_adbfb62ab319b79e61e7aa8c2ff70dd39"><td class="memItemLeft" align="right" valign="top"><a id="adbfb62ab319b79e61e7aa8c2ff70dd39" name="adbfb62ab319b79e61e7aa8c2ff70dd39"></a>
+std::vector&lt; clap_event_header_t * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>sort_scratch</b></td></tr>
+<tr class="separator:adbfb62ab319b79e61e7aa8c2ff70dd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad42475e3774b7f0afc55752bd947eb80" name="ad42475e3774b7f0afc55752bd947eb80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42475e3774b7f0afc55752bd947eb80">&#9670;&#160;</a></span>reserve_outputs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::event_storage::reserve_outputs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What the plug-in sends out of a call goes in what was reserved for it when the node was made: clap/events.h, try_push "returns false if the
+event could not be pushed to the queue" </p>
+
+</div>
+</div>
+<a id="a7f2fdbc1488e324bf5a0b0ca1ec9449c" name="a7f2fdbc1488e324bf5a0b0ca1ec9449c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f2fdbc1488e324bf5a0b0ca1ec9449c">&#9670;&#160;</a></span>sort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Clap::event_storage::sort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>By time, the events of a same time in the order they were queued, as a note off has to stay before the note on that follows it; with no allocation once reserve_sort made room for them </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><b>score-plugin-clap/Clap/Executor.cpp</b></li>
 </ul>

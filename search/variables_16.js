@@ -11,15 +11,16 @@ var searchData=
   ['whitebalance_8',['whiteBalance',['../structscore_1_1gfx_1_1_capture_adjust.html#af6473cc7000eb0b0413c66bdfd3edc4c',1,'score::gfx::CaptureAdjust']]],
   ['whole_9',['whole',['../struct_nodes_1_1_looper_1_1value__loop.html#a4a9b7f087420bcaf9a04de755f878e14',1,'Nodes::Looper::value_loop']]],
   ['widgetpalette_10',['WidgetPalette',['../classscore_1_1_skin.html#ad122962d74c1d5fcfde6719aa8bdab88',1,'score::Skin']]],
-  ['width_11',['width',['../structscore_1_1gfx_1_1_kms_output_settings.html#a4d965cd6dbf9b6d9c4e4119dac324787',1,'score::gfx::KmsOutputSettings::width'],['../structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4',1,'score::gfx::BitField::width']]],
+  ['width_11',['width',['../structscore_1_1gfx_1_1_bit_field.html#aa1672c501f1f3474cf653fa6e2a808c4',1,'score::gfx::BitField::width'],['../structscore_1_1gfx_1_1_kms_output_settings.html#a4d965cd6dbf9b6d9c4e4119dac324787',1,'score::gfx::KmsOutputSettings::width']]],
   ['width_5fexpression_12',['width_expression',['../structscore_1_1gfx_1_1_graphics_storage_image.html#a9bfef26e3846b7b9c1cc917b969da666',1,'score::gfx::GraphicsStorageImage']]],
   ['window_13',['window',['../struct_ui_1_1_midi_display_1_1_node.html#acf189e6f75d668c486f8749262f6fd25',1,'Ui::MidiDisplay::Node::window'],['../struct_ui_1_1_monitor_1_1_buffer_1_1_sampling.html#a3415afa9f883bd3afbc0850a11bb7285',1,'Ui::Monitor::Buffer::Sampling::window']]],
   ['windowposition_14',['windowPosition',['../struct_gfx_1_1_output_mapping.html#a380582436e9ebd607f70a1d65712bd9d',1,'Gfx::OutputMapping']]],
   ['withdrawn_15',['withdrawn',['../struct_nodes_1_1_looper_1_1switches.html#a935450abf181aef8bf677fcdbb56e795',1,'Nodes::Looper::switches']]],
   ['work_5fper_5ftick_16',['work_per_tick',['../struct_nodes_1_1_audio_looper_1_1_node.html#a089977beacfb97ada4564848dca62c09',1,'Nodes::AudioLooper::Node']]],
-  ['worker_5fresults_17',['worker_results',['../structoscr_1_1node__with__worker.html#a649783340d8fe7775d3051d6951f615a',1,'oscr::node_with_worker']]],
-  ['writeback_18',['writeback',['../structscore_1_1gfx_1_1drm_1_1_connector_info.html#ab19d52d2294d109eaa56462d0062d114',1,'score::gfx::drm::ConnectorInfo']]],
-  ['writebackconnectors_19',['writebackConnectors',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#a019a89624c03d917eb26d82209573144',1,'score::gfx::drm::DeviceInfo']]],
-  ['writes_20',['writes',['../struct_local_tree_1_1_scriptable_roots.html#a1bfca08c9aab3cb4884a52099c1b4591',1,'LocalTree::ScriptableRoots']]],
-  ['written_21',['written',['../struct_local_tree_1_1_scriptable_process_base_1_1_kept.html#a55158163d2b24bf0a7949228f54d25f1',1,'LocalTree::ScriptableProcessBase::Kept::written'],['../struct_nodes_1_1_looper_1_1audio__layer.html#a12107413399c72c90a46645c82da748b',1,'Nodes::Looper::audio_layer::written'],['../struct_nodes_1_1_looper_1_1value__event.html#aca81be725b63c169c38935510ca73ccd',1,'Nodes::Looper::value_event::written']]]
+  ['worker_17',['worker',['../struct_l_v2_1_1_global_context.html#af1ea0c64739c3b201981411f98c5f222',1,'LV2::GlobalContext::worker'],['../struct_l_v2_1_1voice.html#ac8ec826b18bddd02b320220021a1d949',1,'LV2::voice::worker']]],
+  ['worker_5fresults_18',['worker_results',['../structoscr_1_1node__with__worker.html#a649783340d8fe7775d3051d6951f615a',1,'oscr::node_with_worker']]],
+  ['writeback_19',['writeback',['../structscore_1_1gfx_1_1drm_1_1_connector_info.html#ab19d52d2294d109eaa56462d0062d114',1,'score::gfx::drm::ConnectorInfo']]],
+  ['writebackconnectors_20',['writebackConnectors',['../structscore_1_1gfx_1_1drm_1_1_device_info.html#a019a89624c03d917eb26d82209573144',1,'score::gfx::drm::DeviceInfo']]],
+  ['writes_21',['writes',['../struct_local_tree_1_1_scriptable_roots.html#a1bfca08c9aab3cb4884a52099c1b4591',1,'LocalTree::ScriptableRoots']]],
+  ['written_22',['written',['../struct_local_tree_1_1_scriptable_process_base_1_1_kept.html#a55158163d2b24bf0a7949228f54d25f1',1,'LocalTree::ScriptableProcessBase::Kept::written'],['../struct_nodes_1_1_looper_1_1audio__layer.html#a12107413399c72c90a46645c82da748b',1,'Nodes::Looper::audio_layer::written'],['../struct_nodes_1_1_looper_1_1value__event.html#aca81be725b63c169c38935510ca73ccd',1,'Nodes::Looper::value_event::written']]]
 ];

@@ -5,6 +5,7 @@ var struct_nodes_1_1_audio_looper_1_1_node =
     [ "worker_t", "struct_nodes_1_1_audio_looper_1_1_node_1_1worker__t.html", null ],
     [ "allocate_ring", "struct_nodes_1_1_audio_looper_1_1_node.html#a1ff091c625ab14d4e21e1da99b25b9d2", null ],
     [ "fetch_audio", "struct_nodes_1_1_audio_looper_1_1_node.html#a76d193c77d51168aaa3471b82a45240e", null ],
+    [ "prepare", "struct_nodes_1_1_audio_looper_1_1_node.html#af8ea8eab3c336caf60b4b7c5ced7c8f7", null ],
     [ "prepare_stretch", "struct_nodes_1_1_audio_looper_1_1_node.html#aab8913a442fb0ac74b6e202aadc5fac6", null ],
     [ "process_message", "struct_nodes_1_1_audio_looper_1_1_node.html#a121b6552cdb71b47622480647e7497c5", null ],
     [ "stop", "struct_nodes_1_1_audio_looper_1_1_node.html#a94c8293273843244d34b2d96241f4841", null ],

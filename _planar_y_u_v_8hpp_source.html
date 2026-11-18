@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('_planar_y_u_v_8hpp_source.html',''); i
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span>(plane == 1 || plane == 2)</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          AV_CEIL_RSHIFT(decoder.width, layout.<a class="code hl_variable" href="structscore_1_1gfx_1_1_planar_y_u_v_layout.html#ae3384386be42edeb134288638506369a">log2ChromaW</a>),</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          AV_CEIL_RSHIFT(decoder.width, layout.log2ChromaW),</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>          AV_CEIL_RSHIFT(decoder.height, layout.log2ChromaH)};</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">return</span> {decoder.width, decoder.height};</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('_planar_y_u_v_8hpp_source.html',''); i
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        QString(frag)</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            .arg(filter)</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            .arg(colorMatrix(decoder))</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            .arg(layout.<a class="code hl_variable" href="structscore_1_1gfx_1_1_planar_y_u_v_layout.html#ad80d139ff48d50ab9b635b5f2c3ed4a1">scale</a>)</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            .arg(layout.scale)</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            .arg(chromaCoord)</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            .arg(alpha));</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  }</div>

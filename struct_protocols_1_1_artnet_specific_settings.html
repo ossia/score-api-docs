@@ -104,6 +104,8 @@ $(document).ready(function(){initNavTree('struct_protocols_1_1_artnet_specific_s
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_protocols_1_1_artnet_specific_settings-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Protocols::ArtnetSpecificSettings Struct Reference</div></div>
@@ -112,7 +114,7 @@ $(document).ready(function(){initNavTree('struct_protocols_1_1_artnet_specific_s
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1b2f808ad4500195ab5bbeb28e8fdc85" id="r_a1b2f808ad4500195ab5bbeb28e8fdc85"><td class="memItemLeft" align="right" valign="top"><a id="a1b2f808ad4500195ab5bbeb28e8fdc85" name="a1b2f808ad4500195ab5bbeb28e8fdc85"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:a2f1beabb7267b0881ed676111561fc9e" id="r_a2f1beabb7267b0881ed676111561fc9e"><td class="memItemLeft" align="right" valign="top"><a id="a2f1beabb7267b0881ed676111561fc9e" name="a2f1beabb7267b0881ed676111561fc9e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Transport</b> { <br />
 &#160;&#160;<b>ArtNet</b>
 , <b>E131</b>
 , <b>DMXUSBPRO</b>
@@ -122,11 +124,23 @@ Public Types</h2></td></tr>
 , <b>OpenDMX_USB</b>
 <br />
  }</td></tr>
-<tr class="separator:a1b2f808ad4500195ab5bbeb28e8fdc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a384e0321a733ddb77885c9284edd0d19" id="r_a384e0321a733ddb77885c9284edd0d19"><td class="memItemLeft" align="right" valign="top"><a id="a384e0321a733ddb77885c9284edd0d19" name="a384e0321a733ddb77885c9284edd0d19"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Source</b>
+<tr class="separator:a2f1beabb7267b0881ed676111561fc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2f808ad4500195ab5bbeb28e8fdc85" id="r_a1b2f808ad4500195ab5bbeb28e8fdc85"><td class="memItemLeft" align="right" valign="top"><a id="a1b2f808ad4500195ab5bbeb28e8fdc85" name="a1b2f808ad4500195ab5bbeb28e8fdc85"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Source</b>
 , <b>Sink</b>
  }</td></tr>
-<tr class="separator:a384e0321a733ddb77885c9284edd0d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a1b2f808ad4500195ab5bbeb28e8fdc85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1c3fd190c69db873fb85ac48722e8308" id="r_a1c3fd190c69db873fb85ac48722e8308"><td class="memItemLeft" align="right" valign="top">constexpr std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_protocols_1_1_artnet_specific_settings.html#a1c3fd190c69db873fb85ac48722e8308">outputUniverses</a> () const noexcept</td></tr>
+<tr class="separator:a1c3fd190c69db873fb85ac48722e8308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b648daf014cbdad86ace0dba3c5179" id="r_a19b648daf014cbdad86ace0dba3c5179"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_protocols_1_1_artnet_specific_settings.html#a19b648daf014cbdad86ace0dba3c5179">clampUniverses</a> () noexcept</td></tr>
+<tr class="separator:a19b648daf014cbdad86ace0dba3c5179"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0da650ff2055750fd153918e956eda66" id="r_a0da650ff2055750fd153918e956eda66"><td class="memItemLeft" align="right" valign="top">static constexpr std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_protocols_1_1_artnet_specific_settings.html#a0da650ff2055750fd153918e956eda66">universeLimits</a> (Transport t) noexcept</td></tr>
+<tr class="separator:a0da650ff2055750fd153918e956eda66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -151,13 +165,93 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>channels_per_universe<
 <tr class="memitem:ae6da612c25c028b343f952315c217560" id="r_ae6da612c25c028b343f952315c217560"><td class="memItemLeft" align="right" valign="top"><a id="ae6da612c25c028b343f952315c217560" name="ae6da612c25c028b343f952315c217560"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>multicast</b> {}</td></tr>
 <tr class="separator:ae6da612c25c028b343f952315c217560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad594be1d4d4886be21cb2d7049a1954" id="r_aad594be1d4d4886be21cb2d7049a1954"><td class="memItemLeft" align="right" valign="top"><a id="aad594be1d4d4886be21cb2d7049a1954" name="aad594be1d4d4886be21cb2d7049a1954"></a>
-enum Protocols::ArtnetSpecificSettings:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>ArtNetV2</b></td></tr>
-<tr class="separator:aad594be1d4d4886be21cb2d7049a1954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62fd642cfcc498022bdda100b9ed3766" id="r_a62fd642cfcc498022bdda100b9ed3766"><td class="memItemLeft" align="right" valign="top"><a id="a62fd642cfcc498022bdda100b9ed3766" name="a62fd642cfcc498022bdda100b9ed3766"></a>
+<tr class="memitem:ab9a26e8b9b1b36b71b02c6018c94dd4f" id="r_ab9a26e8b9b1b36b71b02c6018c94dd4f"><td class="memItemLeft" align="right" valign="top"><a id="ab9a26e8b9b1b36b71b02c6018c94dd4f" name="ab9a26e8b9b1b36b71b02c6018c94dd4f"></a>
+enum Protocols::ArtnetSpecificSettings::Transport&#160;</td><td class="memItemRight" valign="bottom"><b>ArtNetV2</b></td></tr>
+<tr class="separator:ab9a26e8b9b1b36b71b02c6018c94dd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafb976d6e4ce060e25b72bfcb7c9b11b" id="r_aafb976d6e4ce060e25b72bfcb7c9b11b"><td class="memItemLeft" align="right" valign="top"><a id="aafb976d6e4ce060e25b72bfcb7c9b11b" name="aafb976d6e4ce060e25b72bfcb7c9b11b"></a>
 enum Protocols::ArtnetSpecificSettings:: { ... } &#160;</td><td class="memItemRight" valign="bottom"><b>Source</b></td></tr>
-<tr class="separator:a62fd642cfcc498022bdda100b9ed3766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aafb976d6e4ce060e25b72bfcb7c9b11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a19b648daf014cbdad86ace0dba3c5179" name="a19b648daf014cbdad86ace0dba3c5179"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b648daf014cbdad86ace0dba3c5179">&#9670;&#160;</a></span>clampUniverses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr void Protocols::ArtnetSpecificSettings::clampUniverses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Brings the start universe, the universe count and the universe size within what the transport and DMX allow. </p>
+
+</div>
+</div>
+<a id="a1c3fd190c69db873fb85ac48722e8308" name="a1c3fd190c69db873fb85ac48722e8308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c3fd190c69db873fb85ac48722e8308">&#9670;&#160;</a></span>outputUniverses()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::pair&lt; int, int &gt; Protocols::ArtnetSpecificSettings::outputUniverses </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The universes this device can output: from its start universe to the last one its transport allows. </p>
+
+</div>
+</div>
+<a id="a0da650ff2055750fd153918e956eda66" name="a0da650ff2055750fd153918e956eda66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da650ff2055750fd153918e956eda66">&#9670;&#160;</a></span>universeLimits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr std::pair&lt; int, int &gt; Protocols::ArtnetSpecificSettings::universeLimits </td>
+          <td>(</td>
+          <td class="paramtype">Transport&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>First and last universe a transport can output, numbered as on the wire: an Art-Net Port-Address has 15 bits, E1.31 reserves universe 0 and those from 64000, a DMX USB Pro has a single output and a Pro Mk2 two. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_artnet_specific_settings_8hpp_source.html">ArtnetSpecificSettings.hpp</a></li>
 </ul>

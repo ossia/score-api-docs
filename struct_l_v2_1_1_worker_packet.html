@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
         <meta name="generator" content="Doxygen 1.9.8"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <title>score: LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;::worker_routing_scope Struct Reference</title>
+        <title>score: LV2::WorkerPacket Struct Reference</title>
         <!--<link href="tabs.css" rel="stylesheet" type="text/css"/>-->
         <script type="text/javascript" src="dynsections.js"></script>
         <link href="navtree.css" rel="stylesheet" type="text/css"/>
@@ -76,7 +76,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('struct_l_v2_1_1lv2__node_1_1worker__routing__scope.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_l_v2_1_1_worker_packet.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,27 +103,32 @@ $(document).ready(function(){initNavTree('struct_l_v2_1_1lv2__node_1_1worker__ro
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="struct_l_v2_1_1lv2__node_1_1worker__routing__scope-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">LV2::lv2_node&lt; OnExecStart, OnExecFinished &gt;::worker_routing_scope Struct Reference</div></div>
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="struct_l_v2_1_1_worker_packet-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">LV2::WorkerPacket Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a10bca05cbe499b5ed5e23a2ee61ab551" id="r_a10bca05cbe499b5ed5e23a2ee61ab551"><td class="memItemLeft" align="right" valign="top"><a id="a10bca05cbe499b5ed5e23a2ee61ab551" name="a10bca05cbe499b5ed5e23a2ee61ab551"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>worker_routing_scope</b> (<a class="el" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a> &amp;h, <a class="el" href="struct_l_v2_1_1voice.html">voice</a> &amp;v) noexcept</td></tr>
-<tr class="separator:a10bca05cbe499b5ed5e23a2ee61ab551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>One request to work(), or one answer to work_response(): a copy of what the plug-in gives, at most <code>capacity</code> bytes. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9aa3fdc66c87f6791a676af550e3c85b" id="r_a9aa3fdc66c87f6791a676af550e3c85b"><td class="memItemLeft" align="right" valign="top"><a id="a9aa3fdc66c87f6791a676af550e3c85b" name="a9aa3fdc66c87f6791a676af550e3c85b"></a>
-<a class="el" href="struct_l_v2_1_1_host_context.html">LV2::HostContext</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>host</b></td></tr>
-<tr class="separator:a9aa3fdc66c87f6791a676af550e3c85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96c6199b94d8d65da4d3602ff9df5496" id="r_a96c6199b94d8d65da4d3602ff9df5496"><td class="memItemLeft" align="right" valign="top"><a id="a96c6199b94d8d65da4d3602ff9df5496" name="a96c6199b94d8d65da4d3602ff9df5496"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> {}</td></tr>
+<tr class="separator:a96c6199b94d8d65da4d3602ff9df5496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62b5319ffd3720cd35cd92eb1c11a2eb" id="r_a62b5319ffd3720cd35cd92eb1c11a2eb"><td class="memItemLeft" align="right" valign="top"><a id="a62b5319ffd3720cd35cd92eb1c11a2eb" name="a62b5319ffd3720cd35cd92eb1c11a2eb"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [capacity]</td></tr>
+<tr class="separator:a62b5319ffd3720cd35cd92eb1c11a2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a108601f8c489d8d381499f1911cf533a" id="r_a108601f8c489d8d381499f1911cf533a"><td class="memItemLeft" align="right" valign="top"><a id="a108601f8c489d8d381499f1911cf533a" name="a108601f8c489d8d381499f1911cf533a"></a>
+static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>capacity</b> = 4096 - sizeof(uint32_t)</td></tr>
+<tr class="separator:a108601f8c489d8d381499f1911cf533a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="score-plugin-lv2_2_l_v2_2_node_8hpp_source.html">score-plugin-lv2/LV2/Node.hpp</a></li>
+<li><a class="el" href="_context_8hpp_source.html">Context.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
