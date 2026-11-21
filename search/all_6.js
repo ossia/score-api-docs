@@ -108,7 +108,7 @@ var searchData=
   ['firstrundocumenttemplate_105',['firstRunDocumentTemplate',['../namespacescore.html#aff1f95bf21d79efef25a7bd8cbfafa05',1,'score']]],
   ['firstuserinput_106',['FirstUserInput',['../classscore_1_1_first_user_input.html',1,'score']]],
   ['firstwindowdevicename_107',['firstWindowDeviceName',['../struct_gfx_1_1_i_s_f_helpers.html#aa87e0478854149b62085931d7090cf4c',1,'Gfx::ISFHelpers']]],
-  ['fit_108',['fit',['../class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973a01e49ee7364d951a3d1bdea7dd3a1b7b',1,'Patternist::View::Fit'],['../class_gfx_1_1_texture_preview.html#a7d86836fb67cb9b19bb102a166437945',1,'Gfx::TexturePreview::fit()']]],
+  ['fit_108',['fit',['../class_gfx_1_1_texture_preview.html#a7d86836fb67cb9b19bb102a166437945',1,'Gfx::TexturePreview::fit()'],['../class_patternist_1_1_view.html#aa32088ce24a44af6ea06fc88c7be7973a01e49ee7364d951a3d1bdea7dd3a1b7b',1,'Patternist::View::Fit']]],
   ['fit_5frequest_109',['fit_request',['../structscore_1_1gfx_1_1_model_display_node.html#a59349e65c4ac9e3114a5fa1690f2a8ee',1,'score::gfx::ModelDisplayNode']]],
   ['fitbounds_110',['fitbounds',['../structscore_1_1gfx_1_1_model_display_node.html#a3935e8eeb9099dd8715e2798718d7278',1,'score::gfx::ModelDisplayNode::fitBounds()'],['../struct_gfx_1_1_geometry_viewer_1_1_geometry_viewer_node.html#a977bca033dab103c3a6f6208d7b3113b',1,'Gfx::GeometryViewer::GeometryViewerNode::fitBounds()']]],
   ['fitininspector_111',['fitInInspector',['../namespace_inspector.html#ada5555bb41b0b8d27149626b146adc66',1,'Inspector']]],
