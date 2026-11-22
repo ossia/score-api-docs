@@ -131,9 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76dbeba95faeaab51562e6d42b52abb2" id="r_a76dbeba95faeaab51562e6d42b52abb2"><td class="memItemLeft" align="right" valign="top"><a id="a76dbeba95faeaab51562e6d42b52abb2" name="a76dbeba95faeaab51562e6d42b52abb2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>watch</b> (const auto &amp;exported)</td></tr>
 <tr class="separator:a76dbeba95faeaab51562e6d42b52abb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7fed5b0cd738feb8882cfd628b02e83" id="r_ad7fed5b0cd738feb8882cfd628b02e83"><td class="memItemLeft" align="right" valign="top"><a id="ad7fed5b0cd738feb8882cfd628b02e83" name="ad7fed5b0cd738feb8882cfd628b02e83"></a>
-const <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pending_of</b> (uint32_t id) const noexcept</td></tr>
-<tr class="separator:ad7fed5b0cd738feb8882cfd628b02e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b44dfc091a9047c29f8a69f0661b1af" id="r_a4b44dfc091a9047c29f8a69f0661b1af"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view.html#a4b44dfc091a9047c29f8a69f0661b1af">pending_of</a> (uint32_t id, bool stop=false) const noexcept</td></tr>
+<tr class="separator:a4b44dfc091a9047c29f8a69f0661b1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e912a831b41505a0d0426f2c11762d8" id="r_a6e912a831b41505a0d0426f2c11762d8"><td class="memItemLeft" align="right" valign="top"><a id="a6e912a831b41505a0d0426f2c11762d8" name="a6e912a831b41505a0d0426f2c11762d8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>add_pending</b> (<a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> a) noexcept</td></tr>
 <tr class="separator:a6e912a831b41505a0d0426f2c11762d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +229,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>pass_of_lane</b> (int 
 <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mute_box</b> (int lane) const noexcept</td></tr>
 <tr class="memdesc:aad180bb999bcd421f4b9a8702547a9c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mute button of a lane, left of its erase button. <br /></td></tr>
 <tr class="separator:aad180bb999bcd421f4b9a8702547a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9137d10a35de3df3ff19dbdc319e2c7" id="r_ab9137d10a35de3df3ff19dbdc319e2c7"><td class="memItemLeft" align="right" valign="top"><a id="ab9137d10a35de3df3ff19dbdc319e2c7" name="ab9137d10a35de3df3ff19dbdc319e2c7"></a>
+<a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1box.html">box</a>&#160;</td><td class="memItemRight" valign="bottom"><b>stop_box</b> (int lane) const noexcept</td></tr>
+<tr class="memdesc:ab9137d10a35de3df3ff19dbdc319e2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The play and stop button of a lane, left of its mute button. <br /></td></tr>
+<tr class="separator:ab9137d10a35de3df3ff19dbdc319e2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c0121ceb6598ff3cec3ea30f3d1911c" id="r_a4c0121ceb6598ff3cec3ea30f3d1911c"><td class="memItemLeft" align="right" valign="top"><a id="a4c0121ceb6598ff3cec3ea30f3d1911c" name="a4c0121ceb6598ff3cec3ea30f3d1911c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_stopped</b> (int lane) const noexcept</td></tr>
+<tr class="memdesc:a4c0121ceb6598ff3cec3ea30f3d1911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stopped, or about to be, the looper waiting for the grid. <br /></td></tr>
+<tr class="separator:a4c0121ceb6598ff3cec3ea30f3d1911c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c4401749516406ce3a0a1ae43a956a" id="r_a73c4401749516406ce3a0a1ae43a956a"><td class="memItemLeft" align="right" valign="top"><a id="a73c4401749516406ce3a0a1ae43a956a" name="a73c4401749516406ce3a0a1ae43a956a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_silent</b> (int lane) const noexcept</td></tr>
+<tr class="memdesc:a73c4401749516406ce3a0a1ae43a956a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not heard, or about to be: drawn dimmed. <br /></td></tr>
+<tr class="separator:a73c4401749516406ce3a0a1ae43a956a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e800cec0c8041d2eb69400e075de9d1" id="r_a1e800cec0c8041d2eb69400e075de9d1"><td class="memItemLeft" align="right" valign="top"><a id="a1e800cec0c8041d2eb69400e075de9d1" name="a1e800cec0c8041d2eb69400e075de9d1"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_muted</b> (int lane) const noexcept</td></tr>
 <tr class="memdesc:a1e800cec0c8041d2eb69400e075de9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muted, or about to be, the looper waiting for the grid. <br /></td></tr>
@@ -241,6 +252,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_erasing</b> (int
 <tr class="memitem:a0c77804101cae7831968b3aca31995ef" id="r_a0c77804101cae7831968b3aca31995ef"><td class="memItemLeft" align="right" valign="top"><a id="a0c77804101cae7831968b3aca31995ef" name="a0c77804101cae7831968b3aca31995ef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_pending</b> (int lane) const noexcept</td></tr>
 <tr class="separator:a0c77804101cae7831968b3aca31995ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443e633ce2c1f9ae2b668e92607fd5af" id="r_a443e633ce2c1f9ae2b668e92607fd5af"><td class="memItemLeft" align="right" valign="top"><a id="a443e633ce2c1f9ae2b668e92607fd5af" name="a443e633ce2c1f9ae2b668e92607fd5af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lane_stop_pending</b> (int lane) const noexcept</td></tr>
+<tr class="separator:a443e633ce2c1f9ae2b668e92607fd5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c590e5f79d6525bb261930b73cb41bd" id="r_a0c590e5f79d6525bb261930b73cb41bd"><td class="memItemLeft" align="right" valign="top"><a id="a0c590e5f79d6525bb261930b73cb41bd" name="a0c590e5f79d6525bb261930b73cb41bd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>layer_buttons</b> () const noexcept</td></tr>
 <tr class="separator:a0c590e5f79d6525bb261930b73cb41bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,6 +276,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>erase_lane_at</b> (dou
 int&#160;</td><td class="memItemRight" valign="bottom"><b>mute_lane_at</b> (double x, double y) const noexcept</td></tr>
 <tr class="memdesc:aa40e0a423a52c37fa158b757b43dd1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lane whose mute button is at (x, y), -1 for none. <br /></td></tr>
 <tr class="separator:aa40e0a423a52c37fa158b757b43dd1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77b7913e383e56a2a694daa93e2d9d3" id="r_aa77b7913e383e56a2a694daa93e2d9d3"><td class="memItemLeft" align="right" valign="top"><a id="aa77b7913e383e56a2a694daa93e2d9d3" name="aa77b7913e383e56a2a694daa93e2d9d3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>stop_lane_at</b> (double x, double y) const noexcept</td></tr>
+<tr class="memdesc:aa77b7913e383e56a2a694daa93e2d9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lane whose play and stop button is at (x, y), -1 for none. <br /></td></tr>
+<tr class="separator:aa77b7913e383e56a2a694daa93e2d9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46d52ed11a525fd9e34d222b64407f67" id="r_a46d52ed11a525fd9e34d222b64407f67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1looper__view.html#a46d52ed11a525fd9e34d222b64407f67">paint_stop_box</a> (auto &amp;ctx, int l)</td></tr>
+<tr class="separator:a46d52ed11a525fd9e34d222b64407f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86aef04cb9692388d49caaec857805d3" id="r_a86aef04cb9692388d49caaec857805d3"><td class="memItemLeft" align="right" valign="top"><a id="a86aef04cb9692388d49caaec857805d3" name="a86aef04cb9692388d49caaec857805d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>paint_erase_boxes</b> (auto &amp;ctx)</td></tr>
 <tr class="separator:a86aef04cb9692388d49caaec857805d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -616,6 +636,43 @@ static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba<
 
 </div>
 </div>
+<a id="a46d52ed11a525fd9e34d222b64407f67" name="a46d52ed11a525fd9e34d222b64407f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46d52ed11a525fd9e34d222b64407f67">&#9670;&#160;</a></span>paint_stop_box()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nodes::Looper::looper_view::paint_stop_box </td>
+          <td>(</td>
+          <td class="paramtype">auto &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The play and stop button of a lane: what a press does. A square while the layer plays; a triangle, lit, while it is stopped. </p>
+
+</div>
+</div>
 <a id="a4505083af344187eecfcf4537f371a64" name="a4505083af344187eecfcf4537f371a64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4505083af344187eecfcf4537f371a64">&#9670;&#160;</a></span>paint_values()</h2>
 
@@ -656,6 +713,43 @@ static constexpr <a class="el" href="struct_nodes_1_1_looper_1_1rgba.html">rgba<
 </table>
 </div><div class="memdoc">
 <p>One lane per pass: the numbers it holds as steps, over the numbers the lane holds; what is not a number as a line across the lane's middle; impulses and the start of values that are not numbers as ticks. What is not heard is dimmed. </p>
+
+</div>
+</div>
+<a id="a4b44dfc091a9047c29f8a69f0661b1af" name="a4b44dfc091a9047c29f8a69f0661b1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b44dfc091a9047c29f8a69f0661b1af">&#9670;&#160;</a></span>pending_of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_nodes_1_1_looper_1_1looper__view_1_1pending__action.html">pending_action</a> * Nodes::Looper::looper_view::pending_of </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>stop</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The last press still pending on the pass of that id: on its play and stop button with <code>stop</code>, on its m or x without. </p>
 
 </div>
 </div>

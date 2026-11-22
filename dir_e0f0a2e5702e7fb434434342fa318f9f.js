@@ -7,6 +7,8 @@ var dir_e0f0a2e5702e7fb434434342fa318f9f =
     [ "ComboBox.hpp", "_combo_box_8hpp_source.html", null ],
     [ "CommandSpinBox.hpp", "_command_spin_box_8hpp_source.html", null ],
     [ "lib/score/widgets/ControlWidgets.hpp", "lib_2score_2widgets_2_control_widgets_8hpp_source.html", null ],
+    [ "CursorTheme.hpp", "_cursor_theme_8hpp_source.html", null ],
+    [ "CursorThemeNative.hpp", "_cursor_theme_native_8hpp_source.html", null ],
     [ "DoubleSlider.hpp", "_double_slider_8hpp_source.html", null ],
     [ "DoubleSpinBox.hpp", "_double_spin_box_8hpp_source.html", null ],
     [ "FormWidget.hpp", "_form_widget_8hpp_source.html", null ],

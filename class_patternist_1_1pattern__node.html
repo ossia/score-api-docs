@@ -168,6 +168,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reset_lanes</b> () no
 void&#160;</td><td class="memItemRight" valign="bottom"><b>replace_patterns</b> (std::vector&lt; <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &gt; &amp;list) noexcept</td></tr>
 <tr class="memdesc:aeda49c74bbcab9123b405ee192a1e8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a new list, swapped in so that the old one is freed elsewhere. <br /></td></tr>
 <tr class="separator:aeda49c74bbcab9123b405ee192a1e8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6fda73a435b910c5611f57e62831c21" id="r_aa6fda73a435b910c5611f57e62831c21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1pattern__node.html#aa6fda73a435b910c5611f57e62831c21">follow_lanes</a> (const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;before, const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;after, int count_before, int count_after) noexcept</td></tr>
+<tr class="separator:aa6fda73a435b910c5611f57e62831c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad45d6374b738a9426a2512f5f3e0c15" id="r_aad45d6374b738a9426a2512f5f3e0c15"><td class="memItemLeft" align="right" valign="top"><a id="aad45d6374b738a9426a2512f5f3e0c15" name="aad45d6374b738a9426a2512f5f3e0c15"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_channel</b> (uint8_t c) noexcept</td></tr>
 <tr class="separator:aad45d6374b738a9426a2512f5f3e0c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -386,6 +388,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mustStop</b> {}</td><
 <tr class="memitem:ac2f0c0b09490e2cd018145cb671ba3e6" id="r_ac2f0c0b09490e2cd018145cb671ba3e6"><td class="memItemLeft" align="right" valign="top"><a id="ac2f0c0b09490e2cd018145cb671ba3e6" name="ac2f0c0b09490e2cd018145cb671ba3e6"></a>
 std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1lane__state.html">lane_state</a>, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lanes</b> {}</td></tr>
 <tr class="separator:ac2f0c0b09490e2cd018145cb671ba3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dccbfd1cb9803679da0cd1bd2a6c275" id="r_a0dccbfd1cb9803679da0cd1bd2a6c275"><td class="memItemLeft" align="right" valign="top"><a id="a0dccbfd1cb9803679da0cd1bd2a6c275" name="a0dccbfd1cb9803679da0cd1bd2a6c275"></a>
+std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1lane__state.html">lane_state</a>, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lane_scratch</b> {}</td></tr>
+<tr class="memdesc:a0dccbfd1cb9803679da0cd1bd2a6c275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where follow_lanes reads the states from while it moves them. <br /></td></tr>
+<tr class="separator:a0dccbfd1cb9803679da0cd1bd2a6c275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ed25b57f7485b2ba96e211f73a2524e" id="r_a0ed25b57f7485b2ba96e211f73a2524e"><td class="memItemLeft" align="right" valign="top"><a id="a0ed25b57f7485b2ba96e211f73a2524e" name="a0ed25b57f7485b2ba96e211f73a2524e"></a>
 std::array&lt; <a class="el" href="struct_patternist_1_1pattern__node_1_1event.html">event</a>, <a class="el" href="class_patternist_1_1pattern__node.html#a2fc17e2b2ff355038f22bbd08e44fc6d">max_events</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> {}</td></tr>
 <tr class="separator:a0ed25b57f7485b2ba96e211f73a2524e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -577,6 +583,55 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_p
 </table>
 </div><div class="memdoc">
 <p>The controls, from the inlets or from the GUI: each one keeps its value when given something that is not a finite number, and is held to its range otherwise. </p>
+
+</div>
+</div>
+<a id="aa6fda73a435b910c5611f57e62831c21" name="aa6fda73a435b910c5611f57e62831c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6fda73a435b910c5611f57e62831c21">&#9670;&#160;</a></span>follow_lanes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Patternist::pattern_node::follow_lanes </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td>
+          <td class="paramname"><em>before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> &amp;&#160;</td>
+          <td class="paramname"><em>after</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count_before</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count_after</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>What a lane holds and where it is in its loop is kept by its place in the list: when lanes are moved, added or removed, each state goes to the place its lane now has, so that a tie carries on with its own note and a step already scheduled is not played again. Lanes are told apart by their note. A lane that is new starts fresh; the state of one that is gone is left past the last lane, where release_removed_lanes ends the note it holds. False when the lanes are the ones there were, in the same order. </p>
 
 </div>
 </div>

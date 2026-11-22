@@ -5,5 +5,6 @@ var struct_nodes_1_1_looper_1_1midi__loop =
     [ "end_pass", "struct_nodes_1_1_looper_1_1midi__loop.html#a36d7e538f2284ec886f31056b13838e3", null ],
     [ "heard", "struct_nodes_1_1_looper_1_1midi__loop.html#a38553ac5551ca704660c6ccc21c74c7a", null ],
     [ "open_note", "struct_nodes_1_1_looper_1_1midi__loop.html#ab5e68855570c334fd77cb9883a56b6be", null ],
+    [ "sounds_on", "struct_nodes_1_1_looper_1_1midi__loop.html#a0b95bd3a64bc3248c5e1f5fb40e69099", null ],
     [ "touch", "struct_nodes_1_1_looper_1_1midi__loop.html#aeeb9f828f8edad4c4797b840c3fc4868", null ]
 ];

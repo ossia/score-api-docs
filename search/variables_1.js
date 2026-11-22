@@ -1,11 +1,11 @@
 var searchData=
 [
   ['backendopaque_0',['backendOpaque',['../structscore_1_1gfx_1_1interop_1_1_host_pinned_slot.html#a719d0fd60adbfd1f2923017f6b20554f',1,'score::gfx::interop::HostPinnedSlot']]],
-  ['backwards_1',['backwards',['../struct_nodes_1_1_looper_1_1audio__layer.html#a4b5dd80cf39aa36dfa8a566f3c0f7d3a',1,'Nodes::Looper::audio_layer']]],
-  ['bank_2',['bank',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#a06723e7cf1b35ac2c6be58bdfda13eb8',1,'Protocols::MIDIDevices::Message']]],
+  ['bank_1',['bank',['../struct_protocols_1_1_m_i_d_i_devices_1_1_message.html#a06723e7cf1b35ac2c6be58bdfda13eb8',1,'Protocols::MIDIDevices::Message']]],
+  ['bar_2',['bar',['../struct_scenario_1_1_musical_position.html#a8af8870f051062e5785d9dae672dce2f',1,'Scenario::MusicalPosition']]],
   ['base_3',['base',['../struct_ui_1_1_monitor_1_1_buffer_1_1_gather_params.html#a92962faf5e460647359fe1b1c86c7ed4',1,'Ui::Monitor::Buffer::GatherParams']]],
   ['baseinstancesupported_4',['baseInstanceSupported',['../structscore_1_1gfx_1_1_mesh_buffers.html#aecf580081c2a0460772e79c4c9b026be',1,'score::gfx::MeshBuffers']]],
-  ['beat_5',['beat',['../struct_patternist_1_1_step_slot.html#adca211fe241ade8c40d7b182fc3f2430',1,'Patternist::StepSlot']]],
+  ['beat_5',['beat',['../class_media_1_1_metro_1_1_model.html#a74d4e70bfb8c7282d08399799d1bac3d',1,'Media::Metro::Model::beat'],['../struct_patternist_1_1_step_slot.html#adca211fe241ade8c40d7b182fc3f2430',1,'Patternist::StepSlot::beat']]],
   ['bigendian_6',['bigEndian',['../structscore_1_1gfx_1_1_packed_bitfield_layout.html#ad98ecb6e25fe1e02e477a9ed1b2648ed',1,'score::gfx::PackedBitfieldLayout']]],
   ['bind_5foffset_7',['bind_offset',['../struct_ui_1_1_monitor_1_1_buffer_1_1_gather_plan.html#a5fba64c9fd59d518fac774c12434e0fa',1,'Ui::Monitor::Buffer::GatherPlan']]],
   ['binding_8',['binding',['../structscore_1_1gfx_1_1_graphics_s_s_b_o.html#aea299fa962038c8cb8f2500681bad932',1,'score::gfx::GraphicsSSBO']]],

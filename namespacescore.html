@@ -137,6 +137,8 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacescore_1_1_project_info" id="r_namespacescore_1_1_project_info"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1_project_info.html">ProjectInfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacescore_1_1win32__hit" id="r_namespacescore_1_1win32__hit"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore_1_1win32__hit.html">win32_hit</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -282,6 +284,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_core_application_plugin.html">CoreApplicationPlugin</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base actions for the score software.  <a href="classscore_1_1_core_application_plugin.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_cursor_artwork_info.html">CursorArtworkInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_cursor_theme.html">CursorTheme</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscore_1_1_custom_action_condition.html">CustomActionCondition</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="structscore_1_1_custom_action_condition.html" title="The CustomActionCondition struct.">CustomActionCondition</a> struct.  <a href="structscore_1_1_custom_action_condition.html#details">More...</a><br /></td></tr>
@@ -1156,6 +1164,49 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6cb349de62f53e5ee6e529b69da89e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">How a collected file is materialized in the project folder.  <a href="namespacescore.html#a6cb349de62f53e5ee6e529b69da89e75">More...</a><br /></td></tr>
 <tr class="separator:a6cb349de62f53e5ee6e529b69da89e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa69978ed6986d498fce6c42f43f11db" id="r_afa69978ed6986d498fce6c42f43f11db"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> : uint8_t { <br />
+&#160;&#160;<b>Pointer</b>
+, <b>UpArrow</b>
+, <b>Cross</b>
+, <b>Wait</b>
+, <br />
+&#160;&#160;<b>IBeam</b>
+, <b>ScaleV</b>
+, <b>ScaleH</b>
+, <b>ScaleBDiag</b>
+, <br />
+&#160;&#160;<b>ScaleFDiag</b>
+, <b>Move</b>
+, <b>SplitV</b>
+, <b>SplitH</b>
+, <br />
+&#160;&#160;<b>PointingHand</b>
+, <b>Forbidden</b>
+, <b>WhatsThis</b>
+, <b>Busy</b>
+, <br />
+&#160;&#160;<b>OpenHand</b>
+, <b>ClosedHand</b>
+, <b>DragCopy</b>
+, <b>DragMove</b>
+, <br />
+&#160;&#160;<b>DragLink</b>
+, <b>Magnifier</b>
+, <b>Spin</b>
+, <b>PlayFromHere</b>
+, <br />
+&#160;&#160;<b>CreationMode</b>
+, <b>Count</b>
+<br />
+ }</td></tr>
+<tr class="separator:afa69978ed6986d498fce6c42f43f11db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3c77f46dd71b488760b74509143376a" id="r_ad3c77f46dd71b488760b74509143376a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">CursorPlatform</a> : uint8_t { <a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376aad21ab1ce30c9c7735c0591317f50ab85">X11</a>
+, <a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376aaaea23489ce3aa9b6406ebb28e0cda430">Windows</a>
+, <a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376aa0a5b7edb55b772c60bfa8af868b679cf">MacOS</a>
+, <a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376aabd9c6c9ca372721e187caeb1654b4209">Wayland</a>
+ }</td></tr>
+<tr class="memdesc:ad3c77f46dd71b488760b74509143376a"><td class="mdescLeft">&#160;</td><td class="mdescRight">How a platform plug-in of Qt turns a pixmap cursor into the one on screen.  <a href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">More...</a><br /></td></tr>
+<tr class="separator:ad3c77f46dd71b488760b74509143376a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3834cbcd77e334a4ab6ebfd20d4e61d" id="r_ad3834cbcd77e334a4ab6ebfd20d4e61d"><td class="memItemLeft" align="right" valign="top"><a id="ad3834cbcd77e334a4ab6ebfd20d4e61d" name="ad3834cbcd77e334a4ab6ebfd20d4e61d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TimeMode</b> { <b>Bars</b>
 , <b>Seconds</b>
 , <b>Flicks</b>
@@ -1627,6 +1678,10 @@ template&lt;typename CastTo , typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a76f8542469b25e8c3ca3e4347b92003f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wrap_indirect</b> (T &amp;container)</td></tr>
 <tr class="separator:a76f8542469b25e8c3ca3e4347b92003f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a881449e519b0c9c9172f19a8af0af808" id="r_a881449e519b0c9c9172f19a8af0af808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a881449e519b0c9c9172f19a8af0af808">setupX11CursorScale</a> (double zoom)</td></tr>
+<tr class="separator:a881449e519b0c9c9172f19a8af0af808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a1a2ec63bd54c211284db881d08a4d" id="r_a10a1a2ec63bd54c211284db881d08a4d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a10a1a2ec63bd54c211284db881d08a4d">x11DesktopCursorScale</a> () noexcept</td></tr>
+<tr class="separator:a10a1a2ec63bd54c211284db881d08a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad32ad6cfb1279d37a4f0eeff73d4c3ef" id="r_ad32ad6cfb1279d37a4f0eeff73d4c3ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ad32ad6cfb1279d37a4f0eeff73d4c3ef">writeZipArchive</a> (const QString &amp;destination, const std::vector&lt; <a class="el" href="structscore_1_1_zip_entry.html">ZipEntry</a> &gt; &amp;entries, int level, QString &amp;error, const <a class="el" href="namespacescore.html#af7a698bc64ebdf6edc567a10906b1550">ZipProgress</a> &amp;progress={})</td></tr>
 <tr class="memdesc:ad32ad6cfb1279d37a4f0eeff73d4c3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write <code>entries</code> into a zip archive at <code>destination</code>.  <br /></td></tr>
 <tr class="separator:ad32ad6cfb1279d37a4f0eeff73d4c3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1647,6 +1702,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCursor</b> (Qt::Cu
 <tr class="memitem:affa9b66a444ea88b0605b63e83f3f0f4" id="r_affa9b66a444ea88b0605b63e83f3f0f4"><td class="memItemLeft" align="right" valign="top"><a id="affa9b66a444ea88b0605b63e83f3f0f4" name="affa9b66a444ea88b0605b63e83f3f0f4"></a>
 SCORE_LIB_BASE_EXPORT const QPalette &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>transparentPalette</b> ()</td></tr>
 <tr class="separator:affa9b66a444ea88b0605b63e83f3f0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb6a6f4f1d3a4c53b7ad888ecd88a3d" id="r_a3bb6a6f4f1d3a4c53b7ad888ecd88a3d"><td class="memItemLeft" align="right" valign="top"><a id="a3bb6a6f4f1d3a4c53b7ad888ecd88a3d" name="a3bb6a6f4f1d3a4c53b7ad888ecd88a3d"></a>
+const <a class="el" href="structscore_1_1_cursor_artwork_info.html">CursorArtworkInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>cursorArtworkInfo</b> (<a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> a) noexcept</td></tr>
+<tr class="separator:a3bb6a6f4f1d3a4c53b7ad888ecd88a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0131c08d5e126c36920e8c56c26a0f" id="r_a5e0131c08d5e126c36920e8c56c26a0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a5e0131c08d5e126c36920e8c56c26a0f">cursorArtworkForShape</a> (Qt::CursorShape s) noexcept</td></tr>
+<tr class="separator:a5e0131c08d5e126c36920e8c56c26a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affec36a9672a7c84b7d17064b54768bd" id="r_affec36a9672a7c84b7d17064b54768bd"><td class="memItemLeft" align="right" valign="top"><a id="affec36a9672a7c84b7d17064b54768bd" name="affec36a9672a7c84b7d17064b54768bd"></a>
+<a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">CursorPlatform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cursorPlatform</b> (const QString &amp;platformName) noexcept</td></tr>
+<tr class="separator:affec36a9672a7c84b7d17064b54768bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e089d78c6f7965c343c4143d4e700d" id="r_a05e089d78c6f7965c343c4143d4e700d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a05e089d78c6f7965c343c4143d4e700d">cursorGeometry</a> (<a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">CursorPlatform</a> platform, QSize canvas, QPointF hotspot, double zoom, double screenScale) noexcept</td></tr>
+<tr class="separator:a05e089d78c6f7965c343c4143d4e700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8e61108bbe9e381ae60c25441c07328" id="r_ac8e61108bbe9e381ae60c25441c07328"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#ac8e61108bbe9e381ae60c25441c07328">renderCursorArtwork</a> (<a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> a, const <a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a> &amp;g)</td></tr>
+<tr class="separator:ac8e61108bbe9e381ae60c25441c07328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe097a303f340f1427126ece18d22dd" id="r_adbe097a303f340f1427126ece18d22dd"><td class="memItemLeft" align="right" valign="top">QPixmap&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#adbe097a303f340f1427126ece18d22dd">renderDragCursor</a> (<a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> a, const <a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a> &amp;g, bool topLeft)</td></tr>
+<tr class="separator:adbe097a303f340f1427126ece18d22dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d05677a7fd7a13e881907faaf83b42a" id="r_a1d05677a7fd7a13e881907faaf83b42a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a1d05677a7fd7a13e881907faaf83b42a">windowsHitTestCursor</a> (int hitTest, bool windowBlocked) noexcept</td></tr>
+<tr class="separator:a1d05677a7fd7a13e881907faaf83b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757b876a48b8d1af3a32d00cdfab86ed" id="r_a757b876a48b8d1af3a32d00cdfab86ed"><td class="memItemLeft" align="right" valign="top"><a id="a757b876a48b8d1af3a32d00cdfab86ed" name="a757b876a48b8d1af3a32d00cdfab86ed"></a>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>isThemeCursorShape</b> (Qt::CursorShape s) noexcept</td></tr>
+<tr class="memdesc:a757b876a48b8d1af3a32d00cdfab86ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The shapes of Qt::CursorShape that the platform draws from its own theme. <br /></td></tr>
+<tr class="separator:a757b876a48b8d1af3a32d00cdfab86ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28a7edd7b35ce0455f4e1b713cea199" id="r_aa28a7edd7b35ce0455f4e1b713cea199"><td class="memItemLeft" align="right" valign="top"><a id="aa28a7edd7b35ce0455f4e1b713cea199" name="aa28a7edd7b35ce0455f4e1b713cea199"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setHelp</b> (QWidget *widg, const QString &amp;shorttxt, const QString &amp;txt)</td></tr>
 <tr class="separator:aa28a7edd7b35ce0455f4e1b713cea199"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1704,6 +1779,10 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>ValueAlignme
 <tr class="separator:a60a94b8008a34e81093bdb4f52aaf91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a213725d41d100671c0e68e2a83ef6923" id="r_a213725d41d100671c0e68e2a83ef6923"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacescore.html#a213725d41d100671c0e68e2a83ef6923">referenceFontSize</a> = 13</td></tr>
 <tr class="separator:a213725d41d100671c0e68e2a83ef6923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015fc1563d50856ae4d23a8383f68a98" id="r_a015fc1563d50856ae4d23a8383f68a98"><td class="memItemLeft" align="right" valign="top"><a id="a015fc1563d50856ae4d23a8383f68a98" name="a015fc1563d50856ae4d23a8383f68a98"></a>
+constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>minimumGlobalScaleFactor</b> = 0.5</td></tr>
+<tr class="memdesc:a015fc1563d50856ae4d23a8383f68a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">The smallest zoom of the user interface that stays usable. <br /></td></tr>
+<tr class="separator:a015fc1563d50856ae4d23a8383f68a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89811fd7b6d1b98c7a046f02c45674bd" id="r_a89811fd7b6d1b98c7a046f02c45674bd"><td class="memItemLeft" align="right" valign="top"><a id="a89811fd7b6d1b98c7a046f02c45674bd" name="a89811fd7b6d1b98c7a046f02c45674bd"></a>
 thread_local char&#160;</td><td class="memItemRight" valign="bottom"><b>g_file_search_buffer</b> [16384]</td></tr>
 <tr class="separator:a89811fd7b6d1b98c7a046f02c45674bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1744,6 +1823,64 @@ TimeMode&#160;</td><td class="memItemRight" valign="bottom"><b>globalTimeMode</b
 </td></tr>
 <tr><td class="fieldname"><a id="a6cb349de62f53e5ee6e529b69da89e75a047e594a98d3cb5bf74ddfecab2932f3" name="a6cb349de62f53e5ee6e529b69da89e75a047e594a98d3cb5bf74ddfecab2932f3"></a>Hardlink&#160;</td><td class="fielddoc"><p>A hard link. </p>
 <p>Same filesystem only. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="afa69978ed6986d498fce6c42f43f11db" name="afa69978ed6986d498fce6c42f43f11db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa69978ed6986d498fce6c42f43f11db">&#9670;&#160;</a></span>CursorArtwork</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">score::CursorArtwork</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Every cursor score shows is drawn from score's own artwork: the platforms' cursor themes neither follow the graphical zoom nor match score's look.</p>
+<p>The artwork is vector, laid out on a 32 pixel canvas, and rendered at the exact pixel size the platform will show on the screen it is shown on, so that a cursor measures its canvas size times the zoom times the scale of that screen, and stays sharp at fractional zooms and on every screen of a desktop whose screens have different scales. </p>
+
+</div>
+</div>
+<a id="ad3c77f46dd71b488760b74509143376a" name="ad3c77f46dd71b488760b74509143376a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3c77f46dd71b488760b74509143376a">&#9670;&#160;</a></span>CursorPlatform</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">score::CursorPlatform</a> : uint8_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>How a platform plug-in of Qt turns a pixmap cursor into the one on screen. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad3c77f46dd71b488760b74509143376aad21ab1ce30c9c7735c0591317f50ab85" name="ad3c77f46dd71b488760b74509143376aad21ab1ce30c9c7735c0591317f50ab85"></a>X11&#160;</td><td class="fielddoc"><p>xcb: the pixmap is shown pixel for pixel, the hotspot is in pixels. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3c77f46dd71b488760b74509143376aaaea23489ce3aa9b6406ebb28e0cda430" name="ad3c77f46dd71b488760b74509143376aaaea23489ce3aa9b6406ebb28e0cda430"></a>Windows&#160;</td><td class="fielddoc"><p>The pixmap is rescaled by the scale factor of the window's screen over its device pixel ratio, the hotspot is in device independent pixels and multiplied by that factor. Also the default for the other plug-ins, which go through the same device independent coordinates. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3c77f46dd71b488760b74509143376aa0a5b7edb55b772c60bfa8af868b679cf" name="ad3c77f46dd71b488760b74509143376aa0a5b7edb55b772c60bfa8af868b679cf"></a>MacOS&#160;</td><td class="fielddoc"><p>cocoa: the cursor measures the pixmap's size over its device pixel ratio in points, the hotspot is in points. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ad3c77f46dd71b488760b74509143376aabd9c6c9ca372721e187caeb1654b4209" name="ad3c77f46dd71b488760b74509143376aabd9c6c9ca372721e187caeb1654b4209"></a>Wayland&#160;</td><td class="fielddoc"><p>wayland: the buffer scale is the integer part of the pixmap's device pixel ratio, the hotspot is in surface coordinates (multiplied by the fractional part of the ratio if there is one). </p>
 </td></tr>
 </table>
 
@@ -2056,6 +2193,89 @@ template&lt;typename T &gt; </div>
 <p>The one type-in box a right-click may have open. </p>
 <p>Right-clicking a second control &ndash; or the same one twice &ndash; used to leave the first box floating over the scene with nobody owning it: it is parented to the scene, not to the control, so nothing took it down.</p>
 <p>A QPointer, so that a box torn down by its own control leaves nothing dangling here. </p>
+
+</div>
+</div>
+<a id="a5e0131c08d5e126c36920e8c56c26a0f" name="a5e0131c08d5e126c36920e8c56c26a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e0131c08d5e126c36920e8c56c26a0f">&#9670;&#160;</a></span>cursorArtworkForShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> score::cursorArtworkForShape </td>
+          <td>(</td>
+          <td class="paramtype">Qt::CursorShape&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The artwork that replaces a standard shape; Count for Qt::BlankCursor and the shapes that are not standard (Qt::BitmapCursor, Qt::CustomCursor). </p>
+
+</div>
+</div>
+<a id="a05e089d78c6f7965c343c4143d4e700d" name="a05e089d78c6f7965c343c4143d4e700d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05e089d78c6f7965c343c4143d4e700d">&#9670;&#160;</a></span>cursorGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a> score::cursorGeometry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacescore.html#ad3c77f46dd71b488760b74509143376a">CursorPlatform</a>&#160;</td>
+          <td class="paramname"><em>platform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QSize&#160;</td>
+          <td class="paramname"><em>canvas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>hotspot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoom</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>screenScale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Size, device pixel ratio and hotspot of a cursor drawn on a canvas of <code>canvas</code> units whose point <code>hotspot</code> clicks, so that the platform shows it at canvas * zoom * screenScale device pixels, pixel for pixel.</p>
+<p><code>zoom</code> is the graphical zoom of score (the global scale factor of Qt). <code>screenScale</code> is the scale of the screen without the zoom: the device pixel ratio of the screen over the zoom, except on X11 where it is the desktop's pointer size over 24, as X11 has no scale for the pointer. </p>
 
 </div>
 </div>
@@ -3252,6 +3472,70 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ac8e61108bbe9e381ae60c25441c07328" name="ac8e61108bbe9e381ae60c25441c07328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8e61108bbe9e381ae60c25441c07328">&#9670;&#160;</a></span>renderCursorArtwork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage score::renderCursorArtwork </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The artwork rendered with a geometry from <a class="el" href="namespacescore.html#a05e089d78c6f7965c343c4143d4e700d">cursorGeometry()</a>: the image the QCursor is built from. Null without the artwork's source. </p>
+
+</div>
+</div>
+<a id="adbe097a303f340f1427126ece18d22dd" name="adbe097a303f340f1427126ece18d22dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe097a303f340f1427126ece18d22dd">&#9670;&#160;</a></span>renderDragCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap score::renderDragCursor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structscore_1_1_cursor_geometry.html">CursorGeometry</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>topLeft</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pixmap for QDrag::setDragCursor. QBasicDrag (X11, Wayland and the other plug-ins built on it) makes a QCursor of it with the default hotspot, the centre, so the artwork is laid out around its hotspot. QWindowsDrag shows it pixel for pixel with its top left corner at the pointer (<code>topLeft</code>): the artwork starts at its own top left, which is the apex for the arrows. Its device pixel ratio is then 1, and its size the one for the screen the pointer is on. </p>
+
+</div>
+</div>
 <a id="ac7d962dce2b6b53be1f804804261053e" name="ac7d962dce2b6b53be1f804804261053e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7d962dce2b6b53be1f804804261053e">&#9670;&#160;</a></span>resolvePresetPaths()</h2>
 
@@ -3604,6 +3888,26 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a881449e519b0c9c9172f19a8af0af808" name="a881449e519b0c9c9172f19a8af0af808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a881449e519b0c9c9172f19a8af0af808">&#9670;&#160;</a></span>setupX11CursorScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void score::setupX11CursorScale </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zoom</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>On X11 the pointer does not follow the scale factor of an application: theme cursors come at the size of the desktop, and pixmap cursors are drawn pixel for pixel. score draws all of its cursors itself, at the desktop's pointer size times the zoom (see <a class="el" href="classscore_1_1_cursor_theme.html">CursorTheme</a>). The theme cursors are asked at that size too, for what score does not draw: the instant between Qt setting a standard shape and score replacing it, and the editors of plug-ins, which load theme cursors in score's process. Child processes inherit it with QT_SCALE_FACTOR.</p>
+<p>Must run before the QGuiApplication is created: the size of the theme cursors is read once, when the platform plug-in starts. </p>
+
+</div>
+</div>
 <a id="a6cb459eb1982afcf5c5a80cb7b6f0b2c" name="a6cb459eb1982afcf5c5a80cb7b6f0b2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cb459eb1982afcf5c5a80cb7b6f0b2c">&#9670;&#160;</a></span>setValueAlignment()</h2>
 
@@ -3877,6 +4181,43 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a1d05677a7fd7a13e881907faaf83b42a" name="a1d05677a7fd7a13e881907faaf83b42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d05677a7fd7a13e881907faaf83b42a">&#9670;&#160;</a></span>windowsHitTestCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacescore.html#afa69978ed6986d498fce6c42f43f11db">CursorArtwork</a> score::windowsHitTestCursor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hitTest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>windowBlocked</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The cursor score shows for a WM_SETCURSOR no Qt event reaches: the frame and title bar of its windows, and the whole of a window blocked by a modal one, which Windows disables. Count where Qt or the system decide: the client area of a window that is not blocked, and what is not score's. </p>
+
+</div>
+</div>
 <a id="ad32ad6cfb1279d37a4f0eeff73d4c3ef" name="ad32ad6cfb1279d37a4f0eeff73d4c3ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad32ad6cfb1279d37a4f0eeff73d4c3ef">&#9670;&#160;</a></span>writeZipArchive()</h2>
 
@@ -3924,6 +4265,32 @@ template&lt;typename T &gt; </div>
 <p>Write <code>entries</code> into a zip archive at <code>destination</code>. </p>
 <p>Aborting or failing leaves no half-written archive behind: the archive is built next to the destination and only moved into place once complete.</p>
 <p><code>level</code> is 0 (store) to 9 (smallest). Media is already compressed, so the default is deliberately low &ndash; spending minutes to shave a percent off a folder of video is not a trade anyone wants. </p>
+
+</div>
+</div>
+<a id="a10a1a2ec63bd54c211284db881d08a4d" name="a10a1a2ec63bd54c211284db881d08a4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a1a2ec63bd54c211284db881d08a4d">&#9670;&#160;</a></span>x11DesktopCursorScale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double score::x11DesktopCursorScale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The desktop's pointer size over the 24 pixels score's cursor artwork is drawn next to, without the zoom: the scale of the screen for cursors on X11. 0 when there is no X11 display. </p>
 
 </div>
 </div>

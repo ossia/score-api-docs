@@ -18,5 +18,6 @@ var searchData=
   ['kmsdevice_15',['KmsDevice',['../classscore_1_1gfx_1_1drm_1_1_kms_device.html',1,'score::gfx::drm']]],
   ['kmsoutputnode_16',['KmsOutputNode',['../classscore_1_1gfx_1_1_kms_output_node.html',1,'score::gfx']]],
   ['kmsoutputsettings_17',['KmsOutputSettings',['../structscore_1_1gfx_1_1_kms_output_settings.html',1,'score::gfx']]],
-  ['kurtosis_18',['Kurtosis',['../struct_analysis_1_1_kurtosis.html',1,'Analysis']]]
+  ['known_18',['Known',['../structscore_1_1_cursor_theme_1_1_impl_1_1_known.html',1,'score::CursorTheme::Impl']]],
+  ['kurtosis_19',['Kurtosis',['../struct_analysis_1_1_kurtosis.html',1,'Analysis']]]
 ];

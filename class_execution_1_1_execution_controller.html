@@ -136,6 +136,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init_transport</b> ()
 <tr class="memitem:a9b3a23cb0167150933fff870c6326812" id="r_a9b3a23cb0167150933fff870c6326812"><td class="memItemLeft" align="right" valign="top"><a id="a9b3a23cb0167150933fff870c6326812" name="a9b3a23cb0167150933fff870c6326812"></a>
 <a class="el" href="struct_time_val.html">TimeVal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>execution_time</b> () const</td></tr>
 <tr class="separator:a9b3a23cb0167150933fff870c6326812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9daa5aff92ed42634d631f9b436323a2" id="r_a9daa5aff92ed42634d631f9b436323a2"><td class="memItemLeft" align="right" valign="top"><a id="a9daa5aff92ed42634d631f9b436323a2" name="a9daa5aff92ed42634d631f9b436323a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_execution</b> () const noexcept</td></tr>
+<tr class="memdesc:a9daa5aff92ed42634d631f9b436323a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an execution exists, playing or paused. <br /></td></tr>
+<tr class="separator:a9daa5aff92ed42634d631f9b436323a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5101abc3f734579f7919950542df983" id="r_aa5101abc3f734579f7919950542df983"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_execution_1_1_execution_controller.html#aa5101abc3f734579f7919950542df983">execution_interval</a> () const</td></tr>
+<tr class="separator:aa5101abc3f734579f7919950542df983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4fba77f51b9cf6be56475547f127513" id="r_af4fba77f51b9cf6be56475547f127513"><td class="memItemLeft" align="right" valign="top"><a id="af4fba77f51b9cf6be56475547f127513" name="af4fba77f51b9cf6be56475547f127513"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>on_record</b> (<a class="el" href="struct_time_val.html">::TimeVal</a> t)</td></tr>
 <tr class="separator:af4fba77f51b9cf6be56475547f127513"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +204,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>request_scrub</b> (<a
 void&#160;</td><td class="memItemRight" valign="bottom"><b>request_end_scrub</b> (<a class="el" href="struct_time_val.html">TimeVal</a> t)</td></tr>
 <tr class="separator:af9bedf00f5937647732b0e05075ac6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa5101abc3f734579f7919950542df983" name="aa5101abc3f734579f7919950542df983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5101abc3f734579f7919950542df983">&#9670;&#160;</a></span>execution_interval()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_scenario_1_1_interval_model.html">Scenario::IntervalModel</a> * Execution::ExecutionController::execution_interval </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The interval execution_time() is a date in: the root of what plays, or of the current document when nothing does. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_execution_controller_8hpp_source.html">ExecutionController.hpp</a></li>
 <li><b>ExecutionController.cpp</b></li>

@@ -143,8 +143,8 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>loop_after</b> {}<
 <tr class="separator:ad17913284ff3df01a4f3b5499850a5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d83e71df67e75ce86b2ac177aa6135" id="r_af5d83e71df67e75ce86b2ac177aa6135"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layer.html#af5d83e71df67e75ce86b2ac177aa6135">muted</a> {}</td></tr>
 <tr class="separator:af5d83e71df67e75ce86b2ac177aa6135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b5dd80cf39aa36dfa8a566f3c0f7d3a" id="r_a4b5dd80cf39aa36dfa8a566f3c0f7d3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layer.html#a4b5dd80cf39aa36dfa8a566f3c0f7d3a">backwards</a> {}</td></tr>
-<tr class="separator:a4b5dd80cf39aa36dfa8a566f3c0f7d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3042b367cfa0e525fe68a7562696cda" id="r_ab3042b367cfa0e525fe68a7562696cda"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layer.html#ab3042b367cfa0e525fe68a7562696cda">stopped</a> {}</td></tr>
+<tr class="separator:ab3042b367cfa0e525fe68a7562696cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d86050ac501a57379093e3ffe1717e" id="r_af7d86050ac501a57379093e3ffe1717e"><td class="memItemLeft" align="right" valign="top"><a id="af7d86050ac501a57379093e3ffe1717e" name="af7d86050ac501a57379093e3ffe1717e"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>from</b> {1.f}</td></tr>
 <tr class="memdesc:af7d86050ac501a57379093e3ffe1717e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gain it was heard with when the gains last started to glide. <br /></td></tr>
@@ -157,21 +157,6 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>from</b> {1.f}</td><
 <tr class="separator:a351c5f691582b82c6588b444cf941f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4b5dd80cf39aa36dfa8a566f3c0f7d3a" name="a4b5dd80cf39aa36dfa8a566f3c0f7d3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b5dd80cf39aa36dfa8a566f3c0f7d3a">&#9670;&#160;</a></span>backwards</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Nodes::Looper::audio_layer::backwards {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The playhead went backwards over it last: its last frames are the first of the part it wrote. </p>
-
-</div>
-</div>
 <a id="ad04784f4afda145ae5511fc3cfdfd0e8" name="ad04784f4afda145ae5511fc3cfdfd0e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad04784f4afda145ae5511fc3cfdfd0e8">&#9670;&#160;</a></span>decay</h2>
 
@@ -244,6 +229,21 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>from</b> {1.f}</td><
       </table>
 </div><div class="memdoc">
 <p>Length it repeats with: zero while it is the length of the loop. A pass made before the loop was extended plays again over the longer loop. </p>
+
+</div>
+</div>
+<a id="ab3042b367cfa0e525fe68a7562696cda" name="ab3042b367cfa0e525fe68a7562696cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3042b367cfa0e525fe68a7562696cda">&#9670;&#160;</a></span>stopped</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nodes::Looper::audio_layer::stopped {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Not playing: silent, the passes under it keeping what its feedback took from them. </p>
 
 </div>
 </div>

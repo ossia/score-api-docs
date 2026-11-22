@@ -7,6 +7,7 @@ var searchData=
   ['score_3a_3agfx_3a_3arhiclearbuffer_4',['RhiClearBuffer',['../namespacescore_1_1gfx_1_1_rhi_clear_buffer.html',1,'score::gfx']]],
   ['score_3a_3anote_5fvalues_5',['note_values',['../namespacescore_1_1note__values.html',1,'score']]],
   ['score_3a_3aprojectinfo_6',['ProjectInfo',['../namespacescore_1_1_project_info.html',1,'score']]],
-  ['state_7',['State',['../namespace_state.html',1,'']]],
-  ['std_8',['std',['../namespacestd.html',1,'']]]
+  ['score_3a_3awin32_5fhit_7',['win32_hit',['../namespacescore_1_1win32__hit.html',1,'score']]],
+  ['state_8',['State',['../namespace_state.html',1,'']]],
+  ['std_9',['std',['../namespacestd.html',1,'']]]
 ];

@@ -110,13 +110,14 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_looper_1_1layer__acti
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A layer action waiting for the grid: on the layer Layer says then, or on the pass a lane of the view showed: the one of id <code>id</code> wherever it is then, or else pass <code>pass</code> when the loop still has <code>layers</code>. A mute sets <code>muted</code> when it is 0 or 1, and toggles else. </p>
+<div class="textblock"><p>A layer action waiting for the grid: on the layer Layer says then, or on the pass a lane of the view showed: the one of id <code>id</code> wherever it is then, or else pass <code>pass</code> when the loop still has <code>layers</code>. A mute sets <code>muted</code> when it is 0 or 1, and toggles else; a stop does with <code>stopped</code>. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af136680d99d27553262f940b05592948" id="r_af136680d99d27553262f940b05592948"><td class="memItemLeft" align="right" valign="top"><a id="af136680d99d27553262f940b05592948" name="af136680d99d27553262f940b05592948"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>kind_t</b> : uint8_t { <b>mute</b>
 , <b>erase</b>
 , <b>solo</b>
+, <b>stop</b>
  }</td></tr>
 <tr class="separator:af136680d99d27553262f940b05592948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -137,6 +138,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> {}</td></t
 <tr class="memitem:a71dd9d5354768e0fb9e4f673d5888a1c" id="r_a71dd9d5354768e0fb9e4f673d5888a1c"><td class="memItemLeft" align="right" valign="top"><a id="a71dd9d5354768e0fb9e4f673d5888a1c" name="a71dd9d5354768e0fb9e4f673d5888a1c"></a>
 int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>muted</b> {-1}</td></tr>
 <tr class="separator:a71dd9d5354768e0fb9e4f673d5888a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28334286f2f0b1848ba65cd313e7fe5b" id="r_a28334286f2f0b1848ba65cd313e7fe5b"><td class="memItemLeft" align="right" valign="top"><a id="a28334286f2f0b1848ba65cd313e7fe5b" name="a28334286f2f0b1848ba65cd313e7fe5b"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>stopped</b> {-1}</td></tr>
+<tr class="separator:a28334286f2f0b1848ba65cd313e7fe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_switches_8hpp_source.html">Switches.hpp</a></li>

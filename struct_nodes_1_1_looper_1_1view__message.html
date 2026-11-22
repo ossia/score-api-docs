@@ -236,10 +236,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>reverse</b></td></tr>
 <tr class="memitem:aa9f247362585d314f26d8f65302d2eb0" id="r_aa9f247362585d314f26d8f65302d2eb0"><td class="memItemLeft" align="right" valign="top"><a id="aa9f247362585d314f26d8f65302d2eb0" name="aa9f247362585d314f26d8f65302d2eb0"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b></td></tr>
 <tr class="separator:aa9f247362585d314f26d8f65302d2eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b7298450c82e72ee7ed6bbbd6ce941" id="r_a77b7298450c82e72ee7ed6bbbd6ce941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#a77b7298450c82e72ee7ed6bbbd6ce941">write_head</a></td></tr>
+<tr class="separator:a77b7298450c82e72ee7ed6bbbd6ce941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049041650a21c3a4c2afdd1fc333d598" id="r_a049041650a21c3a4c2afdd1fc333d598"><td class="memItemLeft" align="right" valign="top"><a id="a049041650a21c3a4c2afdd1fc333d598" name="a049041650a21c3a4c2afdd1fc333d598"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>write_position</b></td></tr>
+<tr class="separator:a049041650a21c3a4c2afdd1fc333d598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d104317d2612a72e096f510bd066ce" id="r_a83d104317d2612a72e096f510bd066ce"><td class="memItemLeft" align="right" valign="top"><a id="a83d104317d2612a72e096f510bd066ce" name="a83d104317d2612a72e096f510bd066ce"></a>
 std::array&lt; uint8_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>muted</b></td></tr>
 <tr class="memdesc:a83d104317d2612a72e096f510bd066ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lanes of a single pass that is muted. <br /></td></tr>
 <tr class="separator:a83d104317d2612a72e096f510bd066ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2b9087ae12b798a8d2a431a7e1a6a2" id="r_a4b2b9087ae12b798a8d2a431a7e1a6a2"><td class="memItemLeft" align="right" valign="top"><a id="a4b2b9087ae12b798a8d2a431a7e1a6a2" name="a4b2b9087ae12b798a8d2a431a7e1a6a2"></a>
+std::array&lt; uint8_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lane_stopped</b></td></tr>
+<tr class="memdesc:a4b2b9087ae12b798a8d2a431a7e1a6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lanes of a single pass that is stopped. <br /></td></tr>
+<tr class="separator:a4b2b9087ae12b798a8d2a431a7e1a6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4af294ecef4d6b9c430aa5c32cb1c5" id="r_a0b4af294ecef4d6b9c430aa5c32cb1c5"><td class="memItemLeft" align="right" valign="top"><a id="a0b4af294ecef4d6b9c430aa5c32cb1c5" name="a0b4af294ecef4d6b9c430aa5c32cb1c5"></a>
 std::array&lt; uint32_t, max_lanes &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lane_id</b></td></tr>
 <tr class="memdesc:a0b4af294ecef4d6b9c430aa5c32cb1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The id of the pass of each lane of a single pass, 0 for the others. <br /></td></tr>
@@ -506,6 +515,21 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_n
       </table>
 </div><div class="memdoc">
 <p>Counts the changes of the passes: the last take has the passes as they are when the two are the same, and no pass is taken in. </p>
+
+</div>
+</div>
+<a id="a77b7298450c82e72ee7ed6bbbd6ce941" name="a77b7298450c82e72ee7ed6bbbd6ce941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b7298450c82e72ee7ed6bbbd6ce941">&#9670;&#160;</a></span>write_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nodes::Looper::view_message::write_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The pass taken in is written elsewhere than where the loop is read, under the reversed loop: where, from 0 to 1. </p>
 
 </div>
 </div>

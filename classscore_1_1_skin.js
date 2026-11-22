@@ -6,7 +6,9 @@ var classscore_1_1_skin =
       [ "Fonts", "classscore_1_1_skin.html#ac9e9a7eb2eda5ba4dfe18fff3483ce49a58f053213a7da8e8e9d5a5a44414eed5", null ],
       [ "Everything", "classscore_1_1_skin.html#ac9e9a7eb2eda5ba4dfe18fff3483ce49a4b7f37dc87de05e18c6ffdb29ebe0b3f", null ]
     ] ],
+    [ "cursor", "classscore_1_1_skin.html#a23d5656dbc0e9d3a038de9054a1174c2", null ],
     [ "fonts", "classscore_1_1_skin.html#a528db68c4967caec0f69718716d12e24", null ],
+    [ "loadCursors", "classscore_1_1_skin.html#a5855b1f76c57918152631f7c0f5bd4c0", null ],
     [ "toJson", "classscore_1_1_skin.html#a170ec65734e65e5b53235e1313011052", null ],
     [ "ApplicationFont", "classscore_1_1_skin.html#a5bbcbf48822e9c2096b93514f0bec105", null ],
     [ "CodeFont", "classscore_1_1_skin.html#a7939cd3a9d5ece9a16275f03efd9a0fe", null ],

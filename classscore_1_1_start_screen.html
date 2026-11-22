@@ -167,6 +167,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>reopen</b> ()</td></t
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:af08a8af4e762d564159b1f52e82f4de7" id="r_af08a8af4e762d564159b1f52e82f4de7"><td class="memItemLeft" align="right" valign="top"><a id="af08a8af4e762d564159b1f52e82f4de7" name="af08a8af4e762d564159b1f52e82f4de7"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Width</b> = 880</td></tr>
+<tr class="memdesc:af08a8af4e762d564159b1f52e82f4de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size the artwork is drawn for. <br /></td></tr>
 <tr class="separator:af08a8af4e762d564159b1f52e82f4de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6418c26e44418dfd5d8ed72f4da719f" id="r_af6418c26e44418dfd5d8ed72f4da719f"><td class="memItemLeft" align="right" valign="top"><a id="af6418c26e44418dfd5d8ed72f4da719f" name="af6418c26e44418dfd5d8ed72f4da719f"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Height</b> = 640</td></tr>
@@ -174,6 +175,11 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Heigh
 <tr class="memitem:a51db018b4d0c5f1a2e133be5dcd686d3" id="r_a51db018b4d0c5f1a2e133be5dcd686d3"><td class="memItemLeft" align="right" valign="top"><a id="a51db018b4d0c5f1a2e133be5dcd686d3" name="a51db018b4d0c5f1a2e133be5dcd686d3"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>HeaderHeight</b> = 220</td></tr>
 <tr class="separator:a51db018b4d0c5f1a2e133be5dcd686d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c7ab5463cb45e8326114f1e4690a8f" id="r_ac3c7ab5463cb45e8326114f1e4690a8f"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classscore_1_1_start_screen.html#ac3c7ab5463cb45e8326114f1e4690a8f">MinimumHeaderHeight</a> = 140</td></tr>
+<tr class="separator:ac3c7ab5463cb45e8326114f1e4690a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0335d5acd4d36b1578cf3f3f0b01878" id="r_ac0335d5acd4d36b1578cf3f3f0b01878"><td class="memItemLeft" align="right" valign="top"><a id="ac0335d5acd4d36b1578cf3f3f0b01878" name="ac0335d5acd4d36b1578cf3f3f0b01878"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>MinimumHeight</b> = Height - (HeaderHeight - <a class="el" href="classscore_1_1_start_screen.html#ac3c7ab5463cb45e8326114f1e4690a8f">MinimumHeaderHeight</a>)</td></tr>
+<tr class="separator:ac0335d5acd4d36b1578cf3f3f0b01878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a891d5295d41b91ac22f502d783645e" id="r_a4a891d5295d41b91ac22f502d783645e"><td class="memItemLeft" align="right" valign="top"><a id="a4a891d5295d41b91ac22f502d783645e" name="a4a891d5295d41b91ac22f502d783645e"></a>
 static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>NavWidth</b> = 190</td></tr>
 <tr class="separator:a4a891d5295d41b91ac22f502d783645e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,7 +207,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowE
 <tr class="memitem:ae3c1801aec788a14d2a5dbe43b2a60b1" id="r_ae3c1801aec788a14d2a5dbe43b2a60b1"><td class="memItemLeft" align="right" valign="top"><a id="ae3c1801aec788a14d2a5dbe43b2a60b1" name="ae3c1801aec788a14d2a5dbe43b2a60b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>hideEvent</b> (QHideEvent *event) override</td></tr>
 <tr class="separator:ae3c1801aec788a14d2a5dbe43b2a60b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48fa7dfd32712ac9f9a1ab2700a25fb" id="r_af48fa7dfd32712ac9f9a1ab2700a25fb"><td class="memItemLeft" align="right" valign="top"><a id="af48fa7dfd32712ac9f9a1ab2700a25fb" name="af48fa7dfd32712ac9f9a1ab2700a25fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
+<tr class="separator:af48fa7dfd32712ac9f9a1ab2700a25fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac3c7ab5463cb45e8326114f1e4690a8f" name="ac3c7ab5463cb45e8326114f1e4690a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c7ab5463cb45e8326114f1e4690a8f">&#9670;&#160;</a></span>MinimumHeaderHeight</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int score::StartScreen::MinimumHeaderHeight = 140</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>A window shorter than Height takes the difference from the header, down to this: a 4K screen at 300% leaves less than Height under a menu bar, a dock or a panel and the window's title bar. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_start_screen_8hpp_source.html">StartScreen.hpp</a></li>
 </ul>

@@ -295,6 +295,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>merged_at</b> (const
 <tr class="separator:aa0a121bed55396f1176c20ddf93c48dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8134d858d870bab74cccbe2038cf43" id="r_a0c8134d858d870bab74cccbe2038cf43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layers.html#a0c8134d858d870bab74cccbe2038cf43">decay</a> (float feedback, int64_t glide=fade_frames) noexcept</td></tr>
 <tr class="separator:a0c8134d858d870bab74cccbe2038cf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0774d0b1a35113af789cb7c594adcd4b" id="r_a0774d0b1a35113af789cb7c594adcd4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1audio__layers.html#a0774d0b1a35113af789cb7c594adcd4b">set_playing</a> (int k, bool playing, int64_t glide=fade_frames) noexcept</td></tr>
+<tr class="separator:a0774d0b1a35113af789cb7c594adcd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a0898353efe9674ce890a2954eaf64c" id="r_a5a0898353efe9674ce890a2954eaf64c"><td class="memItemLeft" align="right" valign="top"><a id="a5a0898353efe9674ce890a2954eaf64c" name="a5a0898353efe9674ce890a2954eaf64c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>note_peak</b> (int slot, int64_t k, float v) noexcept</td></tr>
 <tr class="separator:a5a0898353efe9674ce890a2954eaf64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,6 +352,14 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>merged_period</b> 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_muted</b> (int k, bool m) noexcept</td></tr>
 <tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard: an action undo takes back. <br /></td></tr>
 <tr class="separator:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a7a846f113cbdd72cf05d6ee37ddd6552"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_stopped</b> (int k, bool s) noexcept</td></tr>
+<tr class="memdesc:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops pass k, k being heard, or plays it again. <br /></td></tr>
+<tr class="separator:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a6a9c66926932f91ccc6c870f895777ac"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>silent</b> (int k) const noexcept</td></tr>
+<tr class="memdesc:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass k is not heard: muted, or stopped. <br /></td></tr>
+<tr class="separator:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277ac6f805658bb8770724dbfae07d3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ae277ac6f805658bb8770724dbfae07d3"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
 <tr class="separator:ae277ac6f805658bb8770724dbfae07d3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1078,6 +1088,49 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>max_h
 </table>
 </div><div class="memdoc">
 <p>Weight of frame d of an end of n frames at a seam, d = 0 being the one next to it: <code>rho</code> there, one past the end. </p>
+
+</div>
+</div>
+<a id="a0774d0b1a35113af789cb7c594adcd4b" name="a0774d0b1a35113af789cb7c594adcd4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0774d0b1a35113af789cb7c594adcd4b">&#9670;&#160;</a></span>set_playing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nodes::Looper::audio_layers::set_playing </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>playing</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>glide</em> = <code>fade_frames</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stops pass k or plays it again, its gain gliding there over <code>glide</code> frames from <code>now</code>: a step would click. </p>
 
 </div>
 </div>

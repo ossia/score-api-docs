@@ -115,32 +115,36 @@ $(document).ready(function(){initNavTree('_m_i_d_i_specific_settings_8hpp_source
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;libremidi/api.hpp&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;libremidi/observer_configuration.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;verdigris&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>Protocols</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">   11</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">MIDISpecificSettings</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  libremidi::port_information handle;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">enum class</span> IO</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    In,</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Out</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  } io{};</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">bool</span> virtualPort{};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">bool</span> createWholeTree{};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">bool</span> velocityZeroIsNoteOff{};</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;libremidi/types.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;verdigris&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>Protocols</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">MIDISpecificSettings</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  libremidi::port_information handle;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">enum class</span> IO</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    In,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    Out</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  } io{};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">bool</span> virtualPort{};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">bool</span> createWholeTree{};</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordtype">bool</span> velocityZeroIsNoteOff{};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_protocols_1_1_m_i_d_i_specific_settings.html#a83d871f731eb7aa86caee4dc00d92e03">   30</a></span>  libremidi::controller_translation <a class="code hl_variable" href="struct_protocols_1_1_m_i_d_i_specific_settings.html#a83d871f731eb7aa86caee4dc00d92e03">controllers</a>{libremidi::controller_translation::raw};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>Q_DECLARE_METATYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>W_REGISTER_ARGTYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
-<div class="ttc" id="astruct_protocols_1_1_m_i_d_i_specific_settings_html"><div class="ttname"><a href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a></div><div class="ttdef"><b>Definition</b> MIDISpecificSettings.hpp:12</div></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>Q_DECLARE_METATYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>W_REGISTER_ARGTYPE(<a class="code hl_struct" href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a>)</div>
+<div class="ttc" id="astruct_protocols_1_1_m_i_d_i_specific_settings_html"><div class="ttname"><a href="struct_protocols_1_1_m_i_d_i_specific_settings.html">Protocols::MIDISpecificSettings</a></div><div class="ttdef"><b>Definition</b> MIDISpecificSettings.hpp:13</div></div>
+<div class="ttc" id="astruct_protocols_1_1_m_i_d_i_specific_settings_html_a83d871f731eb7aa86caee4dc00d92e03"><div class="ttname"><a href="struct_protocols_1_1_m_i_d_i_specific_settings.html#a83d871f731eb7aa86caee4dc00d92e03">Protocols::MIDISpecificSettings::controllers</a></div><div class="ttdeci">libremidi::controller_translation controllers</div><div class="ttdef"><b>Definition</b> MIDISpecificSettings.hpp:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.8-->

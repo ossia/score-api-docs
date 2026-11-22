@@ -7,7 +7,7 @@ var struct_nodes_1_1_looper_1_1value__loop =
     [ "find_stretch", "struct_nodes_1_1_looper_1_1value__loop.html#af0071d312d0ec849c38587393453c7a6", null ],
     [ "heard", "struct_nodes_1_1_looper_1_1value__loop.html#abf6c1160840e8bbdf9c1d291461c00da", null ],
     [ "remove_events", "struct_nodes_1_1_looper_1_1value__loop.html#a01124290cbeb2b338643b952edfd7b6d", null ],
-    [ "touch_key", "struct_nodes_1_1_looper_1_1value__loop.html#ad0e4ead0b6077f2d481195282fe23279", null ],
+    [ "touch_key", "struct_nodes_1_1_looper_1_1value__loop.html#a0a9108f4027dee2eed009bcbf12441da", null ],
     [ "update_open_stretches", "struct_nodes_1_1_looper_1_1value__loop.html#a3bce24e77f80ff138d7dd0e33fcb9603", null ],
     [ "write_over", "struct_nodes_1_1_looper_1_1value__loop.html#afaab0bc8238ad8fa5955cb408440a5fd", null ],
     [ "next_serial", "struct_nodes_1_1_looper_1_1value__loop.html#a78838e0ef0af0897c360605b02d238c9", null ],

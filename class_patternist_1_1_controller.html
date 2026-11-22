@@ -127,10 +127,13 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>attach</b> (<a class="el" href="class_patternist_1_1_view.html">View</a> &amp;view)</td></tr>
 <tr class="memdesc:a094c9d894ac9f08f26deec55633bf2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edits made in the view become commands. <br /></td></tr>
 <tr class="separator:a094c9d894ac9f08f26deec55633bf2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d7aa80473956b4bde8fbfda69c12c9" id="r_ae8d7aa80473956b4bde8fbfda69c12c9"><td class="memItemLeft" align="right" valign="top"><a id="ae8d7aa80473956b4bde8fbfda69c12c9" name="ae8d7aa80473956b4bde8fbfda69c12c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fillMenu</b> (QMenu &amp;menu, int lane)</td></tr>
-<tr class="memdesc:ae8d7aa80473956b4bde8fbfda69c12c9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> actions, and those of <code>lane</code> when it is valid. <br /></td></tr>
-<tr class="separator:ae8d7aa80473956b4bde8fbfda69c12c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af2c43882840f8aa1d55597c9bec493" id="r_a1af2c43882840f8aa1d55597c9bec493"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_controller.html#a1af2c43882840f8aa1d55597c9bec493">fillMenu</a> (QMenu &amp;menu, int lane, int addAfter=-1)</td></tr>
+<tr class="separator:a1af2c43882840f8aa1d55597c9bec493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298bea646278f9d83c52225a448a1435" id="r_a298bea646278f9d83c52225a448a1435"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_patternist_1_1_controller.html#a298bea646278f9d83c52225a448a1435">drop</a> (const QMimeData &amp;mime)</td></tr>
+<tr class="separator:a298bea646278f9d83c52225a448a1435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cfb21326df2aa59da509019bd72155d" id="r_a5cfb21326df2aa59da509019bd72155d"><td class="memItemLeft" align="right" valign="top"><a id="a5cfb21326df2aa59da509019bd72155d" name="a5cfb21326df2aa59da509019bd72155d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>importMidi</b> (const <a class="el" href="struct_patternist_1_1_midi_clip.html">MidiClip</a> &amp;clip)</td></tr>
+<tr class="separator:a5cfb21326df2aa59da509019bd72155d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae22a6a8e244a602f8d6021e8dbed193e" id="r_ae22a6a8e244a602f8d6021e8dbed193e"><td class="memItemLeft" align="right" valign="top"><a id="ae22a6a8e244a602f8d6021e8dbed193e" name="ae22a6a8e244a602f8d6021e8dbed193e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>copy</b> () const</td></tr>
 <tr class="separator:ae22a6a8e244a602f8d6021e8dbed193e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,15 +178,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>pasteLanes</b> (const
 <tr class="memitem:a025e9250f4506ebce89e824b817e8b6b" id="r_a025e9250f4506ebce89e824b817e8b6b"><td class="memItemLeft" align="right" valign="top"><a id="a025e9250f4506ebce89e824b817e8b6b" name="a025e9250f4506ebce89e824b817e8b6b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clearLanes</b> (const std::vector&lt; int &gt; &amp;lanes)</td></tr>
 <tr class="separator:a025e9250f4506ebce89e824b817e8b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85abd3c8dcfb0083ac20e074a33a13d0" id="r_a85abd3c8dcfb0083ac20e074a33a13d0"><td class="memItemLeft" align="right" valign="top"><a id="a85abd3c8dcfb0083ac20e074a33a13d0" name="a85abd3c8dcfb0083ac20e074a33a13d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addLane</b> ()</td></tr>
-<tr class="separator:a85abd3c8dcfb0083ac20e074a33a13d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aea1623899424fa55e8a8981dad54cd" id="r_a3aea1623899424fa55e8a8981dad54cd"><td class="memItemLeft" align="right" valign="top"><a id="a3aea1623899424fa55e8a8981dad54cd" name="a3aea1623899424fa55e8a8981dad54cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addLane</b> (int after=-1)</td></tr>
+<tr class="memdesc:a3aea1623899424fa55e8a8981dad54cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An empty lane under <code>after</code>, or under the last note lane. <br /></td></tr>
+<tr class="separator:a3aea1623899424fa55e8a8981dad54cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d8e616185a8ae8e8ad685ae8ce1ded" id="r_a29d8e616185a8ae8e8ad685ae8ce1ded"><td class="memItemLeft" align="right" valign="top"><a id="a29d8e616185a8ae8e8ad685ae8ce1ded" name="a29d8e616185a8ae8e8ad685ae8ce1ded"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>addControlLane</b> (uint8_t note)</td></tr>
 <tr class="separator:a29d8e616185a8ae8e8ad685ae8ce1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f6fe5d20cb9d3c074ded7c760e49c0" id="r_ac9f6fe5d20cb9d3c074ded7c760e49c0"><td class="memItemLeft" align="right" valign="top"><a id="ac9f6fe5d20cb9d3c074ded7c760e49c0" name="ac9f6fe5d20cb9d3c074ded7c760e49c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>removeLane</b> (int lane)</td></tr>
 <tr class="separator:ac9f6fe5d20cb9d3c074ded7c760e49c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993ba291e1e2c58427c3ee4454cb170f" id="r_a993ba291e1e2c58427c3ee4454cb170f"><td class="memItemLeft" align="right" valign="top"><a id="a993ba291e1e2c58427c3ee4454cb170f" name="a993ba291e1e2c58427c3ee4454cb170f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>moveLane</b> (int lane, int delta)</td></tr>
+<tr class="memdesc:a993ba291e1e2c58427c3ee4454cb170f"><td class="mdescLeft">&#160;</td><td class="mdescRight">One lane up (-1) or down (1). <br /></td></tr>
+<tr class="separator:a993ba291e1e2c58427c3ee4454cb170f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b05116d584cbce3ffce4937578cd055" id="r_a0b05116d584cbce3ffce4937578cd055"><td class="memItemLeft" align="right" valign="top"><a id="a0b05116d584cbce3ffce4937578cd055" name="a0b05116d584cbce3ffce4937578cd055"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLength</b> (int length)</td></tr>
 <tr class="separator:a0b05116d584cbce3ffce4937578cd055"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,8 +233,73 @@ Public Attributes</h2></td></tr>
 std::function&lt; void(const QString &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>status</b></td></tr>
 <tr class="memdesc:a71261de11ab7c2e7e4fea762b2e3cc84"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the last action did, for the editor to show. <br /></td></tr>
 <tr class="separator:a71261de11ab7c2e7e4fea762b2e3cc84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba77bbde2acda08eb4f700925561b1e" id="r_a2ba77bbde2acda08eb4f700925561b1e"><td class="memItemLeft" align="right" valign="top"><a id="a2ba77bbde2acda08eb4f700925561b1e" name="a2ba77bbde2acda08eb4f700925561b1e"></a>
+std::function&lt; void(int)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>selectLane</b></td></tr>
+<tr class="memdesc:a2ba77bbde2acda08eb4f700925561b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lane an action leaves the user on: the one added, the one moved. <br /></td></tr>
+<tr class="separator:a2ba77bbde2acda08eb4f700925561b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a989e38fa184b871f7fc3cfe62faace" id="r_a1a989e38fa184b871f7fc3cfe62faace"><td class="memItemLeft" align="right" valign="top"><a id="a1a989e38fa184b871f7fc3cfe62faace" name="a1a989e38fa184b871f7fc3cfe62faace"></a>
+QKeySequence&#160;</td><td class="memItemRight" valign="bottom"><b>moveUpShortcut</b></td></tr>
+<tr class="memdesc:a1a989e38fa184b871f7fc3cfe62faace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shown beside the menu's entries that move a lane, where the keys do it. <br /></td></tr>
+<tr class="separator:a1a989e38fa184b871f7fc3cfe62faace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bf4fccd4b84fd995c3776de6c8a77f" id="r_aa2bf4fccd4b84fd995c3776de6c8a77f"><td class="memItemLeft" align="right" valign="top"><a id="aa2bf4fccd4b84fd995c3776de6c8a77f" name="aa2bf4fccd4b84fd995c3776de6c8a77f"></a>
+QKeySequence&#160;</td><td class="memItemRight" valign="bottom"><b>moveDownShortcut</b></td></tr>
+<tr class="separator:aa2bf4fccd4b84fd995c3776de6c8a77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a298bea646278f9d83c52225a448a1435" name="a298bea646278f9d83c52225a448a1435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298bea646278f9d83c52225a448a1435">&#9670;&#160;</a></span>drop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Patternist::Controller::drop </td>
+          <td>(</td>
+          <td class="paramtype">const QMimeData &amp;&#160;</td>
+          <td class="paramname"><em>mime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> text files and MIDI files dropped on the pattern: the first pattern of the first, or the notes of the second on the pattern's grid. False when the drop holds neither. </p>
+
+</div>
+</div>
+<a id="a1af2c43882840f8aa1d55597c9bec493" name="a1af2c43882840f8aa1d55597c9bec493"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af2c43882840f8aa1d55597c9bec493">&#9670;&#160;</a></span>fillMenu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Patternist::Controller::fillMenu </td>
+          <td>(</td>
+          <td class="paramtype">QMenu &amp;&#160;</td>
+          <td class="paramname"><em>menu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>addAfter</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p><a class="el" href="struct_patternist_1_1_pattern.html">Pattern</a> actions, and those of <code>lane</code> when it is valid. A lane added from the menu goes under <code>addAfter</code>, or under <code>lane</code> when it is left out. </p>
+
+</div>
+</div>
 <a id="a1f224831d283dd69f4e2e70e305535ed" name="a1f224831d283dd69f4e2e70e305535ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f224831d283dd69f4e2e70e305535ed">&#9670;&#160;</a></span>pasteSteps()</h2>
 

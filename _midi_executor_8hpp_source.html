@@ -147,14 +147,15 @@ $(document).ready(function(){initNavTree('_midi_executor_8hpp_source.html',''); 
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> on_noteAdded(<span class="keyword">const</span> <a class="code hl_class" href="class_midi_1_1_note.html">Midi::Note</a>&amp;);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> on_noteRemoved(<span class="keyword">const</span> <a class="code hl_class" href="class_midi_1_1_note.html">Midi::Note</a>&amp;);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> on_notesReplaced();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  ossia::nodes::note_data to_note(<span class="keyword">const</span> <a class="code hl_struct" href="struct_midi_1_1_note_data.html">NoteData</a>&amp; n);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> connect_note(<span class="keyword">const</span> <a class="code hl_class" href="class_midi_1_1_note.html">Midi::Note</a>&amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  ossia::nodes::note_data to_note(<span class="keyword">const</span> <a class="code hl_struct" href="struct_midi_1_1_note_data.html">NoteData</a>&amp; n);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">using </span><a class="code hl_class" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code hl_class" href="class_execution_1_1_process_component_factory___t.html">::Execution::ProcessComponentFactory_T&lt;Component&gt;</a>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">using </span><a class="code hl_class" href="class_execution_1_1_process_component_factory___t.html">ComponentFactory</a> = <a class="code hl_class" href="class_execution_1_1_process_component_factory___t.html">::Execution::ProcessComponentFactory_T&lt;Component&gt;</a>;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 <div class="ttc" id="aclass_execution_1_1_process_component_factory___t_html"><div class="ttname"><a href="class_execution_1_1_process_component_factory___t.html">Execution::ProcessComponentFactory_T</a></div><div class="ttdef"><b>Definition</b> Process/Execution/ProcessComponent.hpp:131</div></div>
 <div class="ttc" id="aclass_midi_1_1_executor_1_1_component_html"><div class="ttname"><a href="class_midi_1_1_executor_1_1_component.html">Midi::Executor::Component</a></div><div class="ttdef"><b>Definition</b> MidiExecutor.hpp:27</div></div>
 <div class="ttc" id="aclass_midi_1_1_note_html"><div class="ttname"><a href="class_midi_1_1_note.html">Midi::Note</a></div><div class="ttdoc">The Note class.</div><div class="ttdef"><b>Definition</b> MidiNote.hpp:60</div></div>

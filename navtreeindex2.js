@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"_document_builder_8hpp_source.html":[13,0,0,1,0,2,4],
+"_document_context_8hpp_source.html":[13,0,0,1,1,3,1],
 "_document_delegate_factory_8hpp_source.html":[13,0,0,1,1,8,1,1],
 "_document_delegate_model_8hpp_source.html":[13,0,0,1,1,8,1,2],
 "_document_delegate_presenter_8hpp_source.html":[13,0,0,1,1,8,1,3],
@@ -15,8 +17,8 @@ var NAVTREEINDEX2 =
 "_document_view_8hpp_source.html":[13,0,0,1,0,2,9],
 "_domain_8hpp_source.html":[13,0,0,2,4,0,3],
 "_domain_serialization_impl_8hpp_source.html":[13,0,0,2,4,0,4],
-"_double_slider_8hpp_source.html":[13,0,0,1,1,13,7],
-"_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,8],
+"_double_slider_8hpp_source.html":[13,0,0,1,1,13,9],
+"_double_spin_box_8hpp_source.html":[13,0,0,1,1,13,10],
 "_driver_8hpp_source.html":[13,0,0,2,19,2,0,1],
 "_drm_fourcc_8hpp_source.html":[13,0,0,2,17,1,4,2,18],
 "_drm_functions_8hpp.html":[13,0,0,2,17,1,4,2,19],
@@ -156,7 +158,7 @@ var NAVTREEINDEX2 =
 "_focus_manager_8hpp_source.html":[13,0,0,1,1,9,0],
 "_folder_files_8hpp_source.html":[13,0,0,1,1,12,17],
 "_for_each_8hpp_source.html":[13,0,0,1,1,12,18],
-"_form_widget_8hpp_source.html":[13,0,0,1,1,13,9],
+"_form_widget_8hpp_source.html":[13,0,0,1,1,13,11],
 "_format_override_8hpp_source.html":[13,0,0,2,35,0,5,0],
 "_format_registry_8hpp_source.html":[13,0,0,2,17,1,29],
 "_forward_declaration_8hpp_source.html":[13,0,0,2,32,5,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "_gpu_capabilities_8hpp.html#ab757a58cb9cd68e5cc393fe998d3c906aaea23489ce3aa9b6406ebb28e0cda430":[13,0,0,2,17,1,4,2,30,3,1],
 "_gpu_capabilities_8hpp.html#ab757a58cb9cd68e5cc393fe998d3c906aedc9f0a5a5d57797bf68e37364743831":[13,0,0,2,17,1,4,2,30,3,0],
 "_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4":[13,0,0,2,17,1,4,2,30,2],
-"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a6311ae17c1ee52b36e68aaf4ad066387":[13,0,0,2,17,1,4,2,30,2,6],
-"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a88183b946cc5f0e8c96b2e66e1c74a7e":[13,0,0,2,17,1,4,2,30,2,0],
-"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a9f6290f4436e5a2351f12e03b6433c3c":[13,0,0,2,17,1,4,2,30,2,4]
+"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a6311ae17c1ee52b36e68aaf4ad066387":[13,0,0,2,17,1,4,2,30,2,6]
 };

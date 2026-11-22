@@ -31,6 +31,7 @@ var searchData=
   ['kmsoutputnode_2ehpp_28',['KmsOutputNode.hpp',['../_kms_output_node_8hpp.html',1,'']]],
   ['kmsoutputsettings_29',['KmsOutputSettings',['../structscore_1_1gfx_1_1_kms_output_settings.html',1,'score::gfx']]],
   ['knob_30',['Knob',['../struct_process_1_1_control_presentation.html#a07bff95bfd15d14d11154a62255a9622a848c38c91fcb0189d65c35746c884e36',1,'Process::ControlPresentation']]],
-  ['ksharedarrayname_31',['kSharedArrayName',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a94bc634ed03ee0dc9f7960429f0ff747',1,'score::gfx::GpuResourceRegistry']]],
-  ['kurtosis_32',['Kurtosis',['../struct_analysis_1_1_kurtosis.html',1,'Analysis']]]
+  ['known_31',['known',['../structscore_1_1_cursor_theme_1_1_impl_1_1_known.html',1,'score::CursorTheme::Impl::Known'],['../structscore_1_1_cursor_theme_1_1_impl.html#aefc7ede8528f848e516940f19a443679',1,'score::CursorTheme::Impl::known']]],
+  ['ksharedarrayname_32',['kSharedArrayName',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a94bc634ed03ee0dc9f7960429f0ff747',1,'score::gfx::GpuResourceRegistry']]],
+  ['kurtosis_33',['Kurtosis',['../struct_analysis_1_1_kurtosis.html',1,'Analysis']]]
 ];

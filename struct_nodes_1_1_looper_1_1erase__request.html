@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('struct_nodes_1_1_looper_1_1erase__requ
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Sent by the view to the looper: erase pass <code>pass</code>, counting from the oldest one, of a loop the view showed with <code>layers</code> passes, or mute it or unmute it when <code>mute</code> is set. With <code>id</code>, the pass of that id is the one, wherever it is when the grid comes; without, a loop that has changed since is left alone. A mute sets the pass muted when <code>muted</code> is 1, heard when it is 0, and toggles it else. With <code>take</code> set, it asks instead for a take of the loop as it is heard now, the pass being taken in included as far as it went: <code>take</code> numbers the request, which <a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#a55b507cbe5cea2b91e838fcac0cd2d86">view_message::answered</a> gives back once it is written. With <code>last</code> set as well, the take is only the files of passes <code>pass</code> to <code>last</code> of the <code>layers</code> the view showed, given back as the message's part. </p>
+<div class="textblock"><p>Sent by the view to the looper: erase pass <code>pass</code>, counting from the oldest one, of a loop the view showed with <code>layers</code> passes, or mute it or unmute it when <code>mute</code> is set. With <code>id</code>, the pass of that id is the one, wherever it is when the grid comes; without, a loop that has changed since is left alone. A mute sets the pass muted when <code>muted</code> is 1, heard when it is 0, and toggles it else. With <code>stopped</code> 0 or 1, it plays the pass or stops it instead. With <code>take</code> set, it asks instead for a take of the loop as it is heard now, the pass being taken in included as far as it went: <code>take</code> numbers the request, which <a class="el" href="struct_nodes_1_1_looper_1_1view__message.html#a55b507cbe5cea2b91e838fcac0cd2d86">view_message::answered</a> gives back once it is written. With <code>last</code> set as well, the take is only the files of passes <code>pass</code> to <code>last</code> of the <code>layers</code> the view showed, given back as the message's part. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -134,6 +134,9 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b> {}</td></t
 <tr class="memitem:a24454567a5ded67df087abe27c4a1220" id="r_a24454567a5ded67df087abe27c4a1220"><td class="memItemLeft" align="right" valign="top"><a id="a24454567a5ded67df087abe27c4a1220" name="a24454567a5ded67df087abe27c4a1220"></a>
 int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>muted</b> {-1}</td></tr>
 <tr class="separator:a24454567a5ded67df087abe27c4a1220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f4fe10852e3fb64b45fc40a525f327f" id="r_a5f4fe10852e3fb64b45fc40a525f327f"><td class="memItemLeft" align="right" valign="top"><a id="a5f4fe10852e3fb64b45fc40a525f327f" name="a5f4fe10852e3fb64b45fc40a525f327f"></a>
+int8_t&#160;</td><td class="memItemRight" valign="bottom"><b>stopped</b> {-1}</td></tr>
+<tr class="separator:a5f4fe10852e3fb64b45fc40a525f327f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="_looper_view_8hpp_source.html">LooperView.hpp</a></li>

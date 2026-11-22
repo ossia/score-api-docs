@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a88183b946cc5f0e8c96b2e66e1c74a7e":[13,0,0,2,17,1,4,2,30,2,0],
+"_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4a9f6290f4436e5a2351f12e03b6433c3c":[13,0,0,2,17,1,4,2,30,2,4],
 "_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4abfd16f84e6b719aba6717bf2f3eb3580":[13,0,0,2,17,1,4,2,30,2,3],
 "_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4ae518021b9b497a1727f631ee0f24ba19":[13,0,0,2,17,1,4,2,30,2,2],
 "_gpu_capabilities_8hpp.html#ae4b701ff991e6e61d1e53cbdf24069b4ae5c8478f4997e99aafc7c1b2851ee9c1":[13,0,0,2,17,1,4,2,30,2,1],
@@ -50,7 +52,7 @@ var NAVTREEINDEX3 =
 "_hash_map_8hpp_source.html":[13,0,0,1,1,12,2,2],
 "_hash_map_serialization_8hpp_source.html":[13,0,0,1,1,12,2,3],
 "_header_delegate_8hpp_source.html":[13,0,0,2,3,4,29],
-"_help_interaction_8hpp_source.html":[13,0,0,1,1,13,10],
+"_help_interaction_8hpp_source.html":[13,0,0,1,1,13,12],
 "_helper_panel_delegate_8hpp_source.html":[13,0,0,1,0,9,2],
 "_helpers_8hpp_source.html":[13,0,0,2,5,0,7],
 "_hide_rack_in_view_model_8hpp_source.html":[13,0,0,2,32,4,1,5,6],
@@ -84,7 +86,7 @@ var NAVTREEINDEX3 =
 "_i_s_f_node_8hpp_source.html":[13,0,0,2,17,1,4,26],
 "_i_s_f_process_8hpp_source.html":[13,0,0,2,17,1,40],
 "_i_s_f_visitors_8hpp_source.html":[13,0,0,2,17,1,4,27],
-"_icon_provider_8hpp_source.html":[13,0,0,1,1,13,11],
+"_icon_provider_8hpp_source.html":[13,0,0,1,1,13,13],
 "_identified_object_8hpp_source.html":[13,0,0,1,1,7,17],
 "_identified_object_abstract_8hpp_source.html":[13,0,0,1,1,7,18],
 "_identified_object_map_8hpp_source.html":[13,0,0,1,1,7,19],
@@ -117,7 +119,7 @@ var NAVTREEINDEX3 =
 "_inspector_widget_list_8hpp_source.html":[13,0,0,2,1,0,4],
 "_install_8hpp_source.html":[13,0,0,2,27,0,2],
 "_instancer_8hpp_source.html":[13,0,0,2,35,0,47],
-"_int_slider_8hpp_source.html":[13,0,0,1,1,13,12],
+"_int_slider_8hpp_source.html":[13,0,0,1,1,13,14],
 "_interface_8hpp_source.html":[13,0,0,1,1,8,9],
 "_interface_list_8hpp_source.html":[13,0,0,1,1,8,10],
 "_interop_fence_8hpp.html":[13,0,0,2,17,1,4,2,35],
@@ -161,7 +163,7 @@ var NAVTREEINDEX3 =
 "_isf_bindings_builder_8hpp_source.html":[13,0,0,2,17,1,4,25],
 "_item_bounder_8hpp_source.html":[13,0,0,1,1,5,16],
 "_item_model_filter_line_edit_8hpp_source.html":[13,0,0,2,21,0,2],
-"_item_view_drag_8hpp_source.html":[13,0,0,1,1,13,13],
+"_item_view_drag_8hpp_source.html":[13,0,0,1,1,13,15],
 "_j_s_a_p_i_wrapper_8hpp_source.html":[13,0,0,2,20,0,1,4],
 "_j_s_command_factory_8hpp_source.html":[13,0,0,2,20,0,0,1],
 "_j_s_o_n_parse_8hpp_source.html":[13,0,0,1,1,10,7],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_looper_node_8hpp_source.html":[13,0,0,2,16,0,0,2],
 "_looper_view_8hpp_source.html":[13,0,0,2,16,0,0,3],
 "_loudness_8hpp_source.html":[13,0,0,2,37,0,3],
-"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,11,0],
-"_m_c_u_protocol_factory_8hpp_source.html":[13,0,0,2,29,0,11,1],
-"_m_c_u_protocol_settings_widget_8hpp_source.html":[13,0,0,2,29,0,11,2]
+"_m_c_u_device_8hpp_source.html":[13,0,0,2,29,0,11,0]
 };

@@ -29,6 +29,8 @@ var struct_nodes_1_1_looper_1_1pass__stack =
     [ "returns_on_undo", "struct_nodes_1_1_looper_1_1pass__stack.html#ab37028ed2e0f2f20de9a23949bf5c55c", null ],
     [ "set_aside", "struct_nodes_1_1_looper_1_1pass__stack.html#aebff7ae96f859f3375f0b47705a9ad76", null ],
     [ "set_muted", "struct_nodes_1_1_looper_1_1pass__stack.html#a1787a8a38d138a61846dc449bcd7441b", null ],
+    [ "set_stopped", "struct_nodes_1_1_looper_1_1pass__stack.html#a7a846f113cbdd72cf05d6ee37ddd6552", null ],
+    [ "silent", "struct_nodes_1_1_looper_1_1pass__stack.html#a6a9c66926932f91ccc6c870f895777ac", null ],
     [ "undo", "struct_nodes_1_1_looper_1_1pass__stack.html#a8b91b6f998d6fc1de187478a7dee7f3e", null ],
     [ "undo_top", "struct_nodes_1_1_looper_1_1pass__stack.html#af61f4227d415e622c11f04e3c5b91434", null ],
     [ "undoes_action", "struct_nodes_1_1_looper_1_1pass__stack.html#a7db1505b96af84686f46cf515633bdbe", null ],

@@ -19,6 +19,7 @@ var struct_nodes_1_1_looper_1_1audio__layers =
     [ "open_seam", "struct_nodes_1_1_looper_1_1audio__layers.html#ae8b5980e7344d308816415405a3b10c0", null ],
     [ "resolve", "struct_nodes_1_1_looper_1_1audio__layers.html#a5cd216d4ebaeb318f49f2e7e93c0050e", null ],
     [ "seam_index", "struct_nodes_1_1_looper_1_1audio__layers.html#aacfe207bfd60dd31201a7042f2023d86", null ],
+    [ "set_playing", "struct_nodes_1_1_looper_1_1audio__layers.html#a0774d0b1a35113af789cb7c594adcd4b", null ],
     [ "settled_gain", "struct_nodes_1_1_looper_1_1audio__layers.html#a794984e09a7071b42e1e775d8c993dfa", null ],
     [ "shift_earlier", "struct_nodes_1_1_looper_1_1audio__layers.html#a379ffb7b799a1de37d12f6e1a89e85df", null ],
     [ "silence", "struct_nodes_1_1_looper_1_1audio__layers.html#aad70bc05c6eb60a192795a4bdd2d8a1d", null ],

@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('namespace_nodes_1_1_looper.html',''); 
 <div class="textblock"><p>The actions of the loopers' Switches tab, made for footswitches, and the settings that say what they and the transport do.</p>
 <p>Mode is the state: it shows what the looper does or is about to do, whatever changed it. Play, Stop, Record and Overdub set it, as setting it by hand does. The other actions say what no value can: "the next thing", "a new layer", "from the start", "this layer". Everything that changes what is heard waits for the next point of the grid, as a change of Mode does; Undo, Redo and Clear act at once, and selecting a layer as well.</p>
 <p>The looper (the <a class="el" href="namespace_engine.html" title="Link of score with the OSSIA API execution engine.">Engine</a> below) provides, besides the transport's engine:</p>
-<p>int looper_passes() const; // passes heard int looper_pass_of(uint32_t id) const; // the pass heard of that id, or -1 bool looper_muted(int pass) const; void looper_set_muted(int pass, bool muted); void looper_mute(int pass, int muted); // muted: 1, 0, or -1 to toggle void looper_erase(int pass); void looper_begin_actions(); // what follows is one action void looper_end_actions(); // for undo, until this</p>
+<p>int looper_passes() const; // passes heard int looper_pass_of(uint32_t id) const; // the pass heard of that id, or -1 bool looper_muted(int pass) const; void looper_set_muted(int pass, bool muted); void looper_mute(int pass, int muted); // muted: 1, 0, or -1 to toggle void looper_stop(int pass, int stopped); // stopped: 1, 0, or -1 to toggle void looper_erase(int pass); void looper_begin_actions(); // what follows is one action void looper_end_actions(); // for undo, until this</p>
 <p>What the audio and the MIDI looper share: when they record, overdub, play or stop, sample by sample.</p>
 <p>The loopers ask for a mode; the transport waits for the next point of the quantification grid before taking it up, splits the tick there, and hands the looper the spans of the tick with the mode each of them is in. A recording can end on its own after a number of bars, into After record.</p>
 <p>The looper (the <a class="el" href="namespace_engine.html" title="Link of score with the OSSIA API execution engine.">Engine</a> below) provides:</p>
@@ -163,6 +163,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1export__buffer.html">export_buffer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1half__speed__button.html">half_speed_button</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1held__notes__selector.html">held_notes_selector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1held__scratch.html">held_scratch</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,6 +248,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1stop__button.html">stop_button</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1stop__layer__button.html">stop_layer_button</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1stop__take__notice.html">stop_take_notice</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1switches.html">switches</a></td></tr>
@@ -308,11 +312,6 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:abdc79053258c6bc8edd85cb95972c7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">What the MIDI looper does with notes of earlier passes under an overdub.  <a href="namespace_nodes_1_1_looper.html#abdc79053258c6bc8edd85cb95972c7ed">More...</a><br /></td></tr>
 <tr class="separator:abdc79053258c6bc8edd85cb95972c7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46037de107d8d753fc333f5d7757d4ff" id="r_a46037de107d8d753fc333f5d7757d4ff"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ff">HeldNotes</a> { <a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ffaa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap</a>
-, <a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ffaa8156810bfee2bd2b44765b9e91db3bd">Truncate</a>
- }</td></tr>
-<tr class="memdesc:a46037de107d8d753fc333f5d7757d4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A note still held at the end of the loop.  <a href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ff">More...</a><br /></td></tr>
-<tr class="separator:a46037de107d8d753fc333f5d7757d4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553c3b289eba029c84f994071c5c874d" id="r_a553c3b289eba029c84f994071c5c874d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_nodes_1_1_looper.html#a553c3b289eba029c84f994071c5c874d">merge_mark</a> : uint8_t { <a class="el" href="namespace_nodes_1_1_looper.html#a553c3b289eba029c84f994071c5c874da6c8be39d2846edfefdf4a6b6a1958a3c">from_upper</a> = 1
 , <a class="el" href="namespace_nodes_1_1_looper.html#a553c3b289eba029c84f994071c5c874dab9d675cbb8e813a9bb8f9c11a0748c11">replaced_by_lower</a> = 2
 , <a class="el" href="namespace_nodes_1_1_looper.html#a553c3b289eba029c84f994071c5c874da6c4c5134a24ab9d852779e253a790e27">replaced_by_upper</a> = 4
@@ -382,6 +381,11 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a6ba80fa6ded32e303692a73a307f4c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">How an audio loop follows the tempo of the score, as sound files do. <br /></td></tr>
 <tr class="separator:a6ba80fa6ded32e303692a73a307f4c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46037de107d8d753fc333f5d7757d4ff" id="r_a46037de107d8d753fc333f5d7757d4ff"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ff">HeldNotes</a> { <a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ffaa212b19ef5f2fb30acf92e6cbccc1f2d">Wrap</a>
+, <a class="el" href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ffaa8156810bfee2bd2b44765b9e91db3bd">Truncate</a>
+ }</td></tr>
+<tr class="memdesc:a46037de107d8d753fc333f5d7757d4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A note still held at the end of the loop.  <a href="namespace_nodes_1_1_looper.html#a46037de107d8d753fc333f5d7757d4ff">More...</a><br /></td></tr>
+<tr class="separator:a46037de107d8d753fc333f5d7757d4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -1258,7 +1262,7 @@ template&lt;typename Data &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    .units = halp::grid_units::free | halp::grid_units::note | halp::grid_units::bars</div>
 <div class="line">             | halp::grid_units::period,</div>
-<div class="line">    .init = halp::grid_value::note(0.25),</div>
+<div class="line">    .init = halp::grid_value::bars(1.),</div>
 <div class="line">    .max_bars = 16}</div>
 </div><!-- fragment -->
 <p>The units Quantize offers: a time, a note value, bars, or the loop itself. </p>

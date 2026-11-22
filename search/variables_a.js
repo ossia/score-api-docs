@@ -6,5 +6,6 @@ var searchData=
   ['kept_5fpasses_3',['kept_passes',['../struct_nodes_1_1_looper_1_1pass__stack.html#a3bf5eba93aaa2002d6e48402a3677217',1,'Nodes::Looper::pass_stack']]],
   ['key_4',['key',['../struct_local_tree_1_1_scriptable_process_base_1_1_port_entry.html#a9d75c38d256d4d4ed3d9f48641ae9fe2',1,'LocalTree::ScriptableProcessBase::PortEntry::key'],['../struct_nodes_1_1_looper_1_1value__event.html#afd2bbbc9357a148cafad71aa80ac887e',1,'Nodes::Looper::value_event::key']]],
   ['kind_5',['kind',['../struct_local_tree_1_1_scriptable_snapshot_1_1_entry.html#ae8716cdb762af8cacb8e74a53f20b0b3',1,'LocalTree::ScriptableSnapshot::Entry']]],
-  ['ksharedarrayname_6',['kSharedArrayName',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a94bc634ed03ee0dc9f7960429f0ff747',1,'score::gfx::GpuResourceRegistry']]]
+  ['known_6',['known',['../structscore_1_1_cursor_theme_1_1_impl.html#aefc7ede8528f848e516940f19a443679',1,'score::CursorTheme::Impl']]],
+  ['ksharedarrayname_7',['kSharedArrayName',['../classscore_1_1gfx_1_1_gpu_resource_registry.html#a94bc634ed03ee0dc9f7960429f0ff747',1,'score::gfx::GpuResourceRegistry']]]
 ];

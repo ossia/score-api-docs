@@ -13,6 +13,7 @@ var struct_nodes_1_1_looper_1_1view__message =
     [ "take_files", "struct_nodes_1_1_looper_1_1view__message.html#a6659a897fb2fae3aa7bf320128e13f27", null ],
     [ "answered", "struct_nodes_1_1_looper_1_1view__message.html#a55b507cbe5cea2b91e838fcac0cd2d86", null ],
     [ "lane_id", "struct_nodes_1_1_looper_1_1view__message.html#a0b4af294ecef4d6b9c430aa5c32cb1c5", null ],
+    [ "lane_stopped", "struct_nodes_1_1_looper_1_1view__message.html#a4b2b9087ae12b798a8d2a431a7e1a6a2", null ],
     [ "mode", "struct_nodes_1_1_looper_1_1view__message.html#ad239bac6e9cbd263ce6bd27964bc3bae", null ],
     [ "muted", "struct_nodes_1_1_looper_1_1view__message.html#a83d104317d2612a72e096f510bd066ce", null ],
     [ "part_base", "struct_nodes_1_1_looper_1_1view__message.html#a079d592586e8b8d34eb0323c0cadb78e", null ],
@@ -26,5 +27,6 @@ var struct_nodes_1_1_looper_1_1view__message =
     [ "take_placeable", "struct_nodes_1_1_looper_1_1view__message.html#a1112ed9654612798a7c89ebe7b3cc5e2", null ],
     [ "take_stretch", "struct_nodes_1_1_looper_1_1view__message.html#aec7c00d3258f45d5a1f714b8e6f36d4d", null ],
     [ "values", "struct_nodes_1_1_looper_1_1view__message.html#aadc5749475e7e3bac891cf3f6e6f29f3", null ],
-    [ "version", "struct_nodes_1_1_looper_1_1view__message.html#aef3a8c2eaa40043b0fabaaab556c6fa1", null ]
+    [ "version", "struct_nodes_1_1_looper_1_1view__message.html#aef3a8c2eaa40043b0fabaaab556c6fa1", null ],
+    [ "write_head", "struct_nodes_1_1_looper_1_1view__message.html#a77b7298450c82e72ee7ed6bbbd6ce941", null ]
 ];

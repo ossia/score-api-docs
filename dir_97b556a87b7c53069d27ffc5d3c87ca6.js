@@ -43,5 +43,6 @@ var dir_97b556a87b7c53069d27ffc5d3c87ca6 =
     [ "Unused.hpp", "_unused_8hpp_source.html", null ],
     [ "Version.hpp", "_version_8hpp_source.html", null ],
     [ "WinMainToMain.hpp", "_win_main_to_main_8hpp_source.html", null ],
+    [ "X11CursorScale.hpp", "_x11_cursor_scale_8hpp_source.html", null ],
     [ "Zip.hpp", "_zip_8hpp_source.html", null ]
 ];

@@ -166,8 +166,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>find_stretch</b> (uint
 <tr class="memitem:a6fc5f28c3280cb1ace804159870bcb7e" id="r_a6fc5f28c3280cb1ace804159870bcb7e"><td class="memItemLeft" align="right" valign="top"><a id="a6fc5f28c3280cb1ace804159870bcb7e" name="a6fc5f28c3280cb1ace804159870bcb7e"></a>
 const <a class="el" href="struct_nodes_1_1_looper_1_1value__loop_1_1touch.html">touch</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>touched</b> (uint16_t key) const noexcept</td></tr>
 <tr class="separator:a6fc5f28c3280cb1ace804159870bcb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e4ead0b6077f2d481195282fe23279" id="r_ad0e4ead0b6077f2d481195282fe23279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1value__loop.html#ad0e4ead0b6077f2d481195282fe23279">touch_key</a> (uint16_t key, int64_t pos, int64_t at, bool backwards) noexcept</td></tr>
-<tr class="separator:ad0e4ead0b6077f2d481195282fe23279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9108f4027dee2eed009bcbf12441da" id="r_a0a9108f4027dee2eed009bcbf12441da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1value__loop.html#a0a9108f4027dee2eed009bcbf12441da">touch_key</a> (uint16_t key, int64_t pos, int64_t at) noexcept</td></tr>
+<tr class="separator:a0a9108f4027dee2eed009bcbf12441da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bce24e77f80ff138d7dd0e33fcb9603" id="r_a3bce24e77f80ff138d7dd0e33fcb9603"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1value__loop.html#a3bce24e77f80ff138d7dd0e33fcb9603">update_open_stretches</a> () noexcept</td></tr>
 <tr class="separator:a3bce24e77f80ff138d7dd0e33fcb9603"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e47aa7198912cb852aa214c24b6ad0" id="r_ab6e47aa7198912cb852aa214c24b6ad0"><td class="memItemLeft" align="right" valign="top"><a id="ab6e47aa7198912cb852aa214c24b6ad0" name="ab6e47aa7198912cb852aa214c24b6ad0"></a>
@@ -250,8 +250,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_recording</b> (
 <tr class="memitem:a3796dd1a082300ecac61b85f0c2d426e inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_a3796dd1a082300ecac61b85f0c2d426e"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>begin_pass_state</b> (int64_t start) noexcept</td></tr>
 <tr class="separator:a3796dd1a082300ecac61b85f0c2d426e inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c849a8f383760fe9a2d7bf6ac0852aa inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_a4c849a8f383760fe9a2d7bf6ac0852aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html#a4c849a8f383760fe9a2d7bf6ac0852aa">advance_pass</a> (double frames, bool backwards=false) noexcept</td></tr>
-<tr class="separator:a4c849a8f383760fe9a2d7bf6ac0852aa inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c216c042f5d7e4ba958ba13d1cc6a81 inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_a5c216c042f5d7e4ba958ba13d1cc6a81"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>advance_pass</b> (double frames) noexcept</td></tr>
+<tr class="memdesc:a5c216c042f5d7e4ba958ba13d1cc6a81 inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">The pass went over <code>frames</code> more frames of the loop. <br /></td></tr>
+<tr class="separator:a5c216c042f5d7e4ba958ba13d1cc6a81 inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4823ebe463008380aa3334e2ac4d300e inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_a4823ebe463008380aa3334e2ac4d300e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html#a4823ebe463008380aa3334e2ac4d300e">assign_passes</a> (const <a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html">tagged_pass_stack</a> &amp;o) noexcept</td></tr>
 <tr class="separator:a4823ebe463008380aa3334e2ac4d300e inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4561561b6b746b884f7f3253ba20b0 inherit pub_methods_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_acb4561561b6b746b884f7f3253ba20b0"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html#acb4561561b6b746b884f7f3253ba20b0">distance</a> (int64_t from, int64_t to) const noexcept</td></tr>
@@ -304,6 +306,14 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>merged_period</b> 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_muted</b> (int k, bool m) noexcept</td></tr>
 <tr class="memdesc:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes pass k, k being heard: an action undo takes back. <br /></td></tr>
 <tr class="separator:a1787a8a38d138a61846dc449bcd7441b inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a7a846f113cbdd72cf05d6ee37ddd6552"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>set_stopped</b> (int k, bool s) noexcept</td></tr>
+<tr class="memdesc:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops pass k, k being heard, or plays it again. <br /></td></tr>
+<tr class="separator:a7a846f113cbdd72cf05d6ee37ddd6552 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_a6a9c66926932f91ccc6c870f895777ac"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>silent</b> (int k) const noexcept</td></tr>
+<tr class="memdesc:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass k is not heard: muted, or stopped. <br /></td></tr>
+<tr class="separator:a6a9c66926932f91ccc6c870f895777ac inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae277ac6f805658bb8770724dbfae07d3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack" id="r_ae277ac6f805658bb8770724dbfae07d3"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> () noexcept</td></tr>
 <tr class="separator:ae277ac6f805658bb8770724dbfae07d3 inherit pub_methods_struct_nodes_1_1_looper_1_1pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,8 +436,6 @@ int64_t&#160;</td><td class="memItemRight" valign="bottom"><b>pass_written</b></
 <tr class="separator:aca76efcc51773563a803953605af6e33 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab059d057ad751df78125ca679e03897 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_aab059d057ad751df78125ca679e03897"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html#aab059d057ad751df78125ca679e03897">pass_progress</a></td></tr>
 <tr class="separator:aab059d057ad751df78125ca679e03897 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e8d55272732dec2d3ff16a6feda0137 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_a7e8d55272732dec2d3ff16a6feda0137"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_nodes_1_1_looper_1_1tagged__pass__stack.html#a7e8d55272732dec2d3ff16a6feda0137">pass_backwards</a></td></tr>
-<tr class="separator:a7e8d55272732dec2d3ff16a6feda0137 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa37953963449bf14e1db12740278c93 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack" id="r_afa37953963449bf14e1db12740278c93"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>taking</b></td></tr>
 <tr class="separator:afa37953963449bf14e1db12740278c93 inherit pub_attribs_struct_nodes_1_1_looper_1_1tagged__pass__stack"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -638,12 +646,12 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Heard, the pass being taken in included. <code>own_mute</code> false hears a muted pass's material as if it were not muted. </p>
+<p>Heard, the pass being taken in included. <code>own_mute</code> false hears the material of a muted or stopped pass as if it were neither. </p>
 
 </div>
 </div>
-<a id="ad0e4ead0b6077f2d481195282fe23279" name="ad0e4ead0b6077f2d481195282fe23279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0e4ead0b6077f2d481195282fe23279">&#9670;&#160;</a></span>touch_key()</h2>
+<a id="a0a9108f4027dee2eed009bcbf12441da" name="a0a9108f4027dee2eed009bcbf12441da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9108f4027dee2eed009bcbf12441da">&#9670;&#160;</a></span>touch_key()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -667,13 +675,7 @@ template&lt;typename T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int64_t&#160;</td>
-          <td class="paramname"><em>at</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>backwards</em>&#160;</td>
+          <td class="paramname"><em>at</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
